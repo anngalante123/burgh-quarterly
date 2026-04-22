@@ -2,45 +2,62 @@
   "slug": "tazza-doro",
   "themes": [
     {
-      "phrase": "coffee quality and drinks",
-      "frequency": 6,
-      "sentiment": "positive",
-      "exampleQuote": "The Barista featured drink (Amaretto & Brown Sugar Latte) might be thee best cup of coffee I've ever had."
-    },
-    {
-      "phrase": "friendly welcoming staff",
+      "phrase": "staff warmth and consistency",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Everyone is always so nice when I go here."
+      "exampleQuote": "Everyone is always so nice when I go here. Their food and coffee are amazing."
     },
     {
-      "phrase": "baked goods and food options",
-      "frequency": 3,
+      "phrase": "seasonal and rotating drinks",
+      "frequency": 2,
       "sentiment": "positive",
+      "exampleQuote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had."
+    },
+    {
+      "phrase": "baked goods availability",
+      "frequency": 2,
+      "sentiment": "neutral",
       "exampleQuote": "Wish they had the zucchini muffins year-round, but there are lots of other great baked goods."
     },
     {
-      "phrase": "cozy vibey atmosphere",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Very cute, vibey spot."
-    },
-    {
-      "phrase": "specialty tea selection",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Loved the cinnamon plum tea and was impressed by the number of tasty food options."
-    },
-    {
-      "phrase": "price versus experience",
+      "phrase": "interior vs. price tension",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "The interior leaves something to be desired for the price of the coffee."
+    },
+    {
+      "phrase": "tea program depth",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Loved the cinnamon plum tea and was impressed by the number of tasty food options."
     }
   ],
-  "sentiment_summary": "Reviewers rave about the creative specialty drinks, warm staff, and eclectic baked goods, with the only gripe being that the interior ambiance doesn't quite justify the coffee prices.",
-  "notable_quote": "One of my fave coffee shops in Pittsburgh. Fabulous staff and consistent drinks.",
+  "notable_quote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had.",
+  "sentiment_summary": "Reviewers return for the staff and the drink consistency, and the tea and specialty latte programs draw specific, enthusiastic praise — the recurring friction point is whether the interior justifies the price point.",
+  "quarter_narrative": "Tazza D'Oro came into Spring 2026 sitting on 573 Google reviews at 74% five-star, still publishing to Instagram eleven times in the last thirty days, and holding a conversion path that leaves nothing on the table. The catalog of 244 photos across eleven Google categories is solid, but it trails the family median slightly, and zero Reels in the last thirty days is the clearest explanation for an Instagram engagement rate — 0.79% — that lags the energy the café projects in person. Allegheny Coffee & Tea Exchange holds the category lead on social momentum; for Tazza D'Oro to close that gap, the Instagram signal has to graduate from still-images into motion.",
+  "tldr_read": "Complete conversion path, active Instagram presence, but no Reels and below-median engagement — Ones to Watch, #1 in Pittsburgh Cafes.",
+  "tldr_meaning": "The review foundation is deep and the posting cadence is there; the rank ceiling is set by whether short-form video can lift a 0.79% engagement rate closer to what the café's word-of-mouth already suggests it deserves.",
+  "playbook": [
+    {
+      "headline": "Turn eleven posts into one Reel",
+      "action": "Zero Reels in the last 30 days — film one fifteen-second clip of a barista-featured drink build to test whether video moves the 0.79% engagement rate.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Make the rotating menu a documented catalog",
+      "action": "The MLK Day Amaretto Latte and seasonal zucchini muffin both surfaced in reviews; tag those items as named Google photo categories before they disappear from the menu.",
+      "signal": "content_canvas",
+      "priority": "medium"
+    },
+    {
+      "headline": "Surface the tea program explicitly",
+      "action": "Two reviewers called out the cinnamon plum tea and matcha by name, but neither Google nor Instagram reflects a tea-forward identity — a dedicated highlight or photo set closes that gap.",
+      "signal": "collab_fit",
+      "priority": "low"
+    }
+  ],
   "review_count": 8,
-  "analyzed_at": "2026-04-22T22:13:04.721Z",
+  "analyzed_at": "2026-04-22T22:27:18.564Z",
   "model": "claude-sonnet-4-6"
 }

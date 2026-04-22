@@ -2,45 +2,62 @@
   "slug": "golden-age-beer-company",
   "themes": [
     {
-      "phrase": "beer quality and value",
-      "frequency": 6,
+      "phrase": "pilsners and liter deals",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Liters of beer $10, super deal."
     },
     {
-      "phrase": "food quality mixed",
-      "frequency": 4,
-      "sentiment": "neutral",
-      "exampleQuote": "Half of your food is 'Meh', the other half is absolutely terrible."
-    },
-    {
-      "phrase": "pierogi dishes",
-      "frequency": 3,
+      "phrase": "weekend specials worth the trip",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Special for the weekend were shepherd pie pierogis.. omg."
+      "exampleQuote": "Special for the weekend were shepherd pie pierogis.. omg. Worth the trip out of the city."
     },
     {
-      "phrase": "cozy welcoming atmosphere",
-      "frequency": 3,
+      "phrase": "pierogis with potential",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "Pierogis have potential - just stop trying to be fancy. Butter and onions, keep it simple."
+    },
+    {
+      "phrase": "cozy unpretentious space",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "So yummy and a fun, cozy, unpretentious space."
     },
     {
-      "phrase": "overcooking food issues",
-      "frequency": 2,
+      "phrase": "overcooked overpriced food",
+      "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "You guys need to stop overcooking everything."
-    },
-    {
-      "phrase": "events and repeat visits",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Place is great and always has events going on."
+      "exampleQuote": "Half of your food is 'Meh', the other half is absolutely terrible - especially for the price."
     }
   ],
-  "sentiment_summary": "Reviewers consistently rave about the beer selection and value, love the cozy vibe and standout dishes like pierogis, but a vocal critic flags overcooking and overpriced food as real concerns.",
-  "notable_quote": "Worth the trip out of the 'city' but so lucky bc we live up the street.",
+  "notable_quote": "Special for the weekend were shepherd pie pierogis.. omg. Worth the trip out of the city.",
+  "sentiment_summary": "Reviewers are consistent on the beer — pilsners, liters, the value — and warm on the atmosphere, but the kitchen gets called out specifically on execution: overfried seitan, a burger with no give, and a general pattern of overcooking that one reviewer detailed at length.",
+  "quarter_narrative": "Golden Age Beer Company entered Spring 2026 with a tightly held rating — 85 percent five-star across 195 Google reviews — and posted twelve times to Instagram in thirty days, more frequently than most of its peer set. That activity translated to an Instagram momentum signal that clears the family median, which is something Hidden Harbor, the current Pittsburgh Bars leader, has built its standout signal around. What Golden Age hasn't done is convert that posting frequency into reel-driven reach: zero reels in the past month means the feed is active but not expanding. The rank moves when the visual catalog deepens and the short-form video gap closes — two things the existing post cadence suggests are within reach.",
+  "tldr_read": "Solid review volume and a conversion path that leaves nothing on the table, but the visual catalog sits below the family median and reels are absent entirely — Ones to Watch, #2 in Pittsburgh Breweries.",
+  "tldr_meaning": "The review foundation is stable and the posting cadence is real, but without reels and a stronger photo catalog, the Instagram momentum signal plateaus before it pulls the rank upward.",
+  "playbook": [
+    {
+      "headline": "Turn twelve posts into reel reach",
+      "action": "Post frequency is there — twelve posts in thirty days — but zero reels means the algorithm isn't distributing that effort beyond existing followers.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Fill the photo catalog's empty categories",
+      "action": "298 photos exist but cluster in default categories; food-specific tagging is thin for a kitchen running weekend specials like shepherd pie pierogis.",
+      "signal": "content_canvas",
+      "priority": "medium"
+    },
+    {
+      "headline": "Match creator fit to the beer-forward positioning",
+      "action": "Creator fit trails the family median — pairing with Pittsburgh beer or food creators would put the liter-deal value proposition in front of audiences already primed for it.",
+      "signal": "collab_fit",
+      "priority": "low"
+    }
+  ],
   "review_count": 8,
-  "analyzed_at": "2026-04-22T22:11:04.775Z",
+  "analyzed_at": "2026-04-22T22:20:43.775Z",
   "model": "claude-sonnet-4-6"
 }

@@ -401,20 +401,33 @@ export default async function BusinessPage({ params }: PageProps) {
   const categoryLabel = pluralizeCategoryLabel(meta.categoryName);
   const neighborhoodLabel = biz.neighborhood;
 
+  // Optional Claude-mined business analysis (cached at content/review-analysis/).
+  // When present, it supplies narrative + TL;DR + playbook + review voice.
+  // Deterministic helpers act as fallbacks when a cache file is missing.
+  const reviewAnalysis = loadReviewAnalysis(biz.slug);
+
   // TL;DR — executive preview at the top of the page (the read + what it means).
-  const tldr = buildBusinessTldr(art, social, categoryLabel);
+  const tldr =
+    reviewAnalysis?.tldr_read && reviewAnalysis.tldr_meaning
+      ? {
+          read: reviewAnalysis.tldr_read,
+          meaning: reviewAnalysis.tldr_meaning,
+        }
+      : buildBusinessTldr(art, social, categoryLabel);
 
   // Narrative paragraph — the story of this quarter for this business.
-  const narrative = buildQuarterNarrative(art, social, all, "Spring 2026");
+  const narrative = reviewAnalysis?.quarter_narrative
+    ? { body: reviewAnalysis.quarter_narrative, issue: "Spring 2026" }
+    : buildQuarterNarrative(art, social, all, "Spring 2026");
 
   // Playbook — 3 data-derived recommendations sorted by leverage.
-  const playbook = buildPlaybook(art, social);
+  const playbook = reviewAnalysis?.playbook?.length
+    ? { items: reviewAnalysis.playbook }
+    : buildPlaybook(art, social);
 
-  // Creator-ready audit — 10 boolean checks with one-line fixes.
+  // Creator-ready audit — 10 boolean checks with one-line fixes (stays
+  // deterministic; it's a diagnostic, not an editorial block).
   const creatorAudit = buildCreatorAudit(art, social);
-
-  // Optional Claude-mined review analysis (cached at content/review-analysis/).
-  const reviewAnalysis = loadReviewAnalysis(biz.slug);
 
   // Fallback pullquote — picked from actual review texts on file.
   // Used by the non-AI Review Voice display.

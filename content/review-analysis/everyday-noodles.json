@@ -2,45 +2,62 @@
   "slug": "everyday-noodles",
   "themes": [
     {
-      "phrase": "noodle and soup dishes",
-      "frequency": 6,
-      "sentiment": "positive",
-      "exampleQuote": "Contender for best noodle soup in Pittsburgh."
-    },
-    {
-      "phrase": "dumplings and dim sum",
+      "phrase": "noodle soup quality",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Can never go wrong with the soup dumplings."
+      "exampleQuote": "Contender for best noodle soup in Pittsburgh"
     },
     {
-      "phrase": "staff and service quality",
-      "frequency": 3,
-      "sentiment": "neutral",
-      "exampleQuote": "Wonderful service, delicious food, kind and welcoming staff."
-    },
-    {
-      "phrase": "noodle-making to watch",
+      "phrase": "live noodle making",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Fun to watch them make noodles, potstickers, and wontons."
+      "exampleQuote": "Fun to watch them make noodles, potstickers, and wontons"
     },
     {
-      "phrase": "server overcharging incident",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "Server deliberately overcharged card for tip after receiving cash tip on top of demanding more tip on Chinese New Year."
+      "phrase": "soup dumplings and boba",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Can never go wrong with the soup dumplings. And of course some Boba."
     },
     {
-      "phrase": "missing or wrong orders",
+      "phrase": "server conduct and billing",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "Server kept bringing out food that was not ordered."
+      "exampleQuote": "Server also deliberately overcharged card for tip after receiving cash tip"
+    },
+    {
+      "phrase": "menu gaps",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Where is my beef noodle? Really disappointed"
     }
   ],
-  "sentiment_summary": "Reviewers rave about the handmade noodles, soups, and dumplings — calling the noodle soup a Pittsburgh best — but a standout negative review flags a serious incident of a server overcharging and demanding extra tips.",
-  "notable_quote": "Contender for best noodle soup in Pittsburgh.",
+  "notable_quote": "Contender for best noodle soup in Pittsburgh",
+  "sentiment_summary": "Reviewers keep coming back for the handmade noodles, soup dumplings, and the theater of watching them made in-house — the friction shows up in isolated but pointed complaints about server conduct and menu availability.",
+  "quarter_narrative": "Everyday Noodles carried the strongest review volume of any noodle shop in Pittsburgh into Spring 2026 — 2,216 Google reviews at 75% five-star, with a new review landing just two days ago, signaling a room that stays full and a crowd that stays vocal. The visual catalog, nearly 1,900 photos across multiple categories, does real work as a discovery engine, even without a functioning Instagram presence: the shop is effectively nowhere on that platform, unindexed and absent while family leader Mola is pulling ahead on precisely the creator-collaboration signal that a photogenic, noodle-pulling kitchen could own. The rank holds at number one in its category for now, but closing the Instagram gap is the single condition separating this business from a jump into the Icons tier.",
+  "tldr_read": "Dominant Google presence and a near-perfect conversion path, no Instagram signal whatsoever — Ones to Watch, #1 in Pittsburgh Noodle Shops.",
+  "tldr_meaning": "Every measurable signal except Instagram is at or above family median; the platform gap is the only thing preventing this volume of goodwill from translating into a higher tier.",
+  "playbook": [
+    {
+      "headline": "Get an Instagram account indexed",
+      "action": "The shop has no indexed Instagram presence — establishing one and posting even twice a month puts it on the same footing as every competitor in its family.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Put the noodle-making on camera",
+      "action": "Reviewers already describe the handmade process as a draw — a short, repeatable video series of that moment is a natural creator-collaboration hook that Mola is currently winning by default.",
+      "signal": "collab_fit",
+      "priority": "medium"
+    },
+    {
+      "headline": "Address the service pattern in responses",
+      "action": "At least two reviews cite billing and server conduct specifically; a direct, non-generic owner response to those threads protects a 75% five-star ratio from quiet erosion.",
+      "signal": "community_spark",
+      "priority": "low"
+    }
+  ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:11:00.239Z",
+  "analyzed_at": "2026-04-22T22:20:25.425Z",
   "model": "claude-sonnet-4-6"
 }

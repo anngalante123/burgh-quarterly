@@ -2,45 +2,68 @@
   "slug": "hidden-harbor",
   "themes": [
     {
-      "phrase": "creative tiki drinks",
-      "frequency": 7,
-      "sentiment": "positive",
-      "exampleQuote": "Some of the best tiki drinks in the U.S."
-    },
-    {
-      "phrase": "attentive friendly staff",
-      "frequency": 5,
-      "sentiment": "positive",
-      "exampleQuote": "The staff is super excited to give recommendations, which are needed with how many options they have!"
-    },
-    {
-      "phrase": "immersive tiki atmosphere",
+      "phrase": "tiki atmosphere and curation",
       "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "Tiki isn't just a theme, it's a movement."
     },
     {
-      "phrase": "auto 20% gratuity",
-      "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "Auto 20% tip that is hidden — no one tells you, all you see is a receipt that says total."
-    },
-    {
-      "phrase": "unique drink vessels",
-      "frequency": 2,
+      "phrase": "creative drink presentation",
+      "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "Each drink has its own unique glass/mug, some of which you can buy to take home."
     },
     {
-      "phrase": "high prices and value concerns",
-      "frequency": 2,
+      "phrase": "staff attentiveness and recommendations",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The staff are super excited to give recommendations, which are needed with how many options they have."
+    },
+    {
+      "phrase": "automatic gratuity policy",
+      "frequency": 3,
       "sentiment": "negative",
-      "exampleQuote": "I got a 'very strong' tiki drink at around $20, but it only had 1.5 shots of liquor — do not advertise like it's alcohol-packed."
+      "exampleQuote": "There is a 20% forced gratuity — I personally dislike these forced costs."
+    },
+    {
+      "phrase": "drink pricing and value",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Do not advertise like it's alcohol-packed for what you are paying."
+    },
+    {
+      "phrase": "mocktail and non-alcoholic options",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "There's a wide variety of options for everybody, including a couple mocktails for those who don't drink."
     }
   ],
-  "sentiment_summary": "Reviewers rave about Hidden Harbor's immersive tiki atmosphere, inventive cocktails, and enthusiastic staff, but a vocal minority resents the undisclosed 20% auto-gratuity and questions whether the premium pricing reflects genuine value.",
-  "notable_quote": "Tiki isn't just a theme, it's a movement.",
+  "notable_quote": "Some of the best tiki drinks in the U.S. — staff is always very helpful and friendly.",
+  "sentiment_summary": "Reviewers are reliably won over by the immersive tiki environment and the craftsmanship of individual drinks, while a recurring friction point — the mandatory 20% gratuity and its disclosure — surfaces enough times to register as a structural complaint rather than a one-off.",
+  "quarter_narrative": "Hidden Harbor entered Spring 2026 with one of the deepest visual catalogs in the Pittsburgh bar category — 1,086 photos across a well-tagged Google presence — and a review pool of 765 that skews sharply positive and was refreshed as recently as six days ago. As the family leader across four bars, it carries the banner on the strength of its conversion infrastructure, which is airtight, and a sentiment signal that sits well above the family median. The one place it gives ground is Instagram: posting daily in static images but running zero Reels in the past 30 days, the account's 0.79% engagement rate trails the platform's appetite for motion, and that gap is what separates a Ones to Watch ceiling from an Icons floor.",
+  "tldr_read": "Deep review catalog and a locked-down conversion path, but Instagram momentum is trailing on zero Reels — Ones to Watch, #1 in Pittsburgh Bars.",
+  "tldr_meaning": "The review and visual signals are already pulling toward Icons territory; the Instagram engagement rate suggests the account is broadcasting rather than circulating, and Reels are the clearest single variable left to move.",
+  "playbook": [
+    {
+      "headline": "Shoot one Reel per week, consistently",
+      "action": "Zero Reels in the last 30 days is the clearest drag on a 0.79% engagement rate — a single weekly pour or prep clip changes the algorithm surface area immediately.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Tag the auto-gratuity proactively in digital touchpoints",
+      "action": "The 20% gratuity complaint appears in at least three of seven sampled reviews; a single menu-page line item or Google Q&A response neutralizes the surprise and trims the sentiment gap.",
+      "signal": "community_spark",
+      "priority": "medium"
+    },
+    {
+      "headline": "Push the drink vessel purchase moment to creators",
+      "action": "The take-home glassware detail surfaces in reviews but not visibly in the Instagram feed — seeding that angle to the 78-percentile creator pool gives a natural gifting and unboxing hook.",
+      "signal": "collab_fit",
+      "priority": "low"
+    }
+  ],
   "review_count": 7,
-  "analyzed_at": "2026-04-22T22:11:12.042Z",
+  "analyzed_at": "2026-04-22T22:21:05.816Z",
   "model": "claude-sonnet-4-6"
 }

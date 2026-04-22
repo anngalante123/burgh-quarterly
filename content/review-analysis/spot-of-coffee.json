@@ -5,42 +5,59 @@
       "phrase": "housemade natural ingredients",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "They homemake all of their syrups which makes it worth it and so much tastier!"
+      "exampleQuote": "Their drinks are very differently delicious from the syrup-based lattes you'll find elsewhere — housemade cashew milk and real bananas."
     },
     {
-      "phrase": "unique creative latte flavors",
+      "phrase": "signature latte flavors",
       "frequency": 6,
       "sentiment": "positive",
       "exampleQuote": "Come to Spot of Coffee for a toasted miso latte that will change your life."
     },
     {
-      "phrase": "matcha drinks standout",
+      "phrase": "neighborhood community feel",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Excellent conscientious neighborhood vibes at a time when finding your community matters."
+    },
+    {
+      "phrase": "matcha program strength",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha!!!"
     },
     {
-      "phrase": "warm friendly staff",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "The man who took my order and made my drink was very friendly and nice as well."
-    },
-    {
-      "phrase": "neighborhood community feel",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Come to Spot of Coffee for excellent conscientious neighborhood vibes at a time when finding your community matters."
-    },
-    {
-      "phrase": "burnt coffee taste",
+      "phrase": "bitter or burnt coffee",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste!"
+      "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste — I almost threw it out on my way out of the door."
     }
   ],
-  "sentiment_summary": "Reviewers rave about Spot of Coffee's inventive, housemade-ingredient lattes and matcha drinks, while one outlier flagged a badly burnt cup as a quality-control concern.",
-  "notable_quote": "Their drinks are very differently delicious from the syrup-based lattes you'll find elsewhere.",
+  "notable_quote": "I've worked at a number of independent coffee shops — I'm at a very popular, very viral, very delicious one now — and I still come to Spot of Coffee as often as possible.",
+  "sentiment_summary": "Reviewers keep coming back for the housemade syrups, unconventional latte builds, and a shop personality that feels genuinely rooted in its neighborhood; the rare dissent centers on execution inconsistency — specifically one report of burnt coffee — rather than any structural flaw.",
+  "quarter_narrative": "Spot of Coffee entered Spring 2026 as Pittsburgh's most Instagram-active café, logging six posts and three Reels in a single month at an engagement rate that sits more than double the family median — a signal strong enough to pull it to #2 in both the Coffee and Cafes rankings. Allegheny Coffee & Tea Exchange holds the Cafes lead on social momentum broadly, but Spot of Coffee's Instagram numbers are the sharpest in the cohort; what keeps it from first is the absence of a linked website on Google and review sentiment that trails the family median, suggesting the discovery experience outperforms the conversion path. The gap to #1 closes if the Google Business listing gets a website attached and the review base deepens past 173 — the creative energy is already there.",
+  "tldr_read": "Dominant Instagram momentum and a devoted housemade-ingredient narrative, undercut by no website on Google and review sentiment below the family median — Icons of the Burgh, #2 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The Instagram signal is already exceptional; the rank ceiling is now determined by the conversion path gap — specifically the missing website — and whether a 173-review base grows fast enough to close the sentiment distance on the family leader.",
+  "playbook": [
+    {
+      "headline": "Add a website link to Google Business now",
+      "action": "Spot of Coffee has no website listed on Google — the single missing field on an otherwise complete profile — costing direct conversion from every search impression.",
+      "signal": "conversion_path",
+      "priority": "high"
+    },
+    {
+      "headline": "Turn Instagram reach into review volume",
+      "action": "With a 15% engagement rate across 6 recent posts, a Story-based review prompt tied to a seasonal drink would move 173 reviews toward the 250-plus range where sentiment averages stabilize.",
+      "signal": "community_spark",
+      "priority": "medium"
+    },
+    {
+      "headline": "Build the Google photo catalog beyond six categories",
+      "action": "126 photos across only 6 labeled categories leaves interior, staff, and sourcing stories unrepresented — the Reels already being made are raw material for static Google uploads.",
+      "signal": "content_canvas",
+      "priority": "low"
+    }
+  ],
   "review_count": 10,
-  "analyzed_at": "2026-04-22T22:12:53.484Z",
+  "analyzed_at": "2026-04-22T22:26:38.216Z",
   "model": "claude-sonnet-4-6"
 }

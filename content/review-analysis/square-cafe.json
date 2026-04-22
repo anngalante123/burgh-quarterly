@@ -2,45 +2,62 @@
   "slug": "square-cafe",
   "themes": [
     {
-      "phrase": "food quality and taste",
-      "frequency": 6,
-      "sentiment": "positive",
-      "exampleQuote": "The food is amazing, and the staff are super nice."
-    },
-    {
-      "phrase": "vegan-friendly menu options",
+      "phrase": "vegan-friendly menu depth",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for."
     },
     {
-      "phrase": "weekend wait and crowds",
+      "phrase": "weekend wait and table pace",
       "frequency": 2,
-      "sentiment": "neutral",
-      "exampleQuote": "Usually, there's a wait list, since the food is so good."
-    },
-    {
-      "phrase": "friendly attentive staff",
-      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Great service! Great food!"
+      "exampleQuote": "They do a good job of quickly and efficiently clearing tables to keep the wait as short as possible."
     },
     {
-      "phrase": "price versus portion size",
+      "phrase": "price-to-portion tension",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "The portion to price ratio is not the best."
+      "exampleQuote": "The food is excellent here. However the portion to price ratio is not the best."
     },
     {
-      "phrase": "relaxed no-rush atmosphere",
+      "phrase": "unhurried linger culture",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "No pressure to eat up and go."
+      "exampleQuote": "I enjoyed being there and stayed longer talking and drinking lattes. No pressure to eat up and go."
+    },
+    {
+      "phrase": "specific dish recall",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The Brussels sprout hash was amazing and unique. Would go back."
     }
   ],
-  "sentiment_summary": "Reviewers rave about Square Cafe's standout dishes, vegan options, and warm staff, but a few note that portions feel small for the price and the men's restroom needs maintenance attention.",
   "notable_quote": "It's no wonder this place gets slammed with customers.",
+  "sentiment_summary": "Reviewers consistently call out specific dishes — Brussels sprout hash, vegan biscuit sandwich, eggs Benedict — and praise a staff that keeps the room moving without rushing anyone out; the recurring friction is a perceived value gap on portions and, in one review, a bathroom that needed maintenance attention.",
+  "quarter_narrative": "Square Cafe entered Spring 2026 holding the strongest conversion infrastructure in its family — every contact point on Google is complete and functional — while stacking nearly 1,900 reviews at a 72% five-star rate on a review posted just four days ago. The visual catalog, spread across seventeen photo categories, is one of the largest of any brunch restaurant in the city. Nan Xiang Soup Dumplings leads the Pittsburgh Businesses family this issue on social momentum, a signal where Square Cafe is notably quieter — eleven posts and two Reels in thirty days is activity without acceleration. The rank holds at #1 in Pittsburgh Brunch because the review engine and creator fit are exceptional; moving the overall family position means closing the gap that Nan Xiang has opened on Instagram.",
+  "tldr_read": "Dominant reviews and a perfect conversion path, flat Instagram momentum — Icons of the Burgh, #1 in Pittsburgh Brunch.",
+  "tldr_meaning": "The review axis and discoverability infrastructure are as strong as they get at this tier; the only variable that could shift the family rank is whether Instagram engagement rate — currently at 0.19% — begins to reflect the room-filling demand the reviews describe.",
+  "playbook": [
+    {
+      "headline": "Turn 11 posts into reachable ones",
+      "action": "With only 2 Reels in the last 30 days, shifting even half of static posts to short video would directly address a 0.19% engagement rate.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Match the creator fit signal to real outreach",
+      "action": "Creator fit is the strongest differentiator in the family — identify the food creators already tagging the Brussels sprout hash and eggs Benedict and formalize those relationships.",
+      "signal": "collab_fit",
+      "priority": "medium"
+    },
+    {
+      "headline": "Protect the 17-category photo catalog",
+      "action": "The 1,386-photo Google library is a competitive asset; continuing to seed new uploads across existing categories — especially Vibe and Videos — sustains ranking visibility as newer competitors build their own catalogs.",
+      "signal": "content_canvas",
+      "priority": "low"
+    }
+  ],
   "review_count": 7,
-  "analyzed_at": "2026-04-22T22:12:58.769Z",
+  "analyzed_at": "2026-04-22T22:26:58.696Z",
   "model": "claude-sonnet-4-6"
 }

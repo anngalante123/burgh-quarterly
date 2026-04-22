@@ -2,45 +2,62 @@
   "slug": "pusadees-garden",
   "themes": [
     {
-      "phrase": "beautiful atmosphere and ambiance",
-      "frequency": 6,
+      "phrase": "reservation process friction",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Getting a reservation can be quite challenging — and the confirmation and reserve buttons are meaningless."
+    },
+    {
+      "phrase": "atmosphere exceeds expectations",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Very unassuming from the outside, but absolutely beautiful."
     },
     {
-      "phrase": "standout Thai dishes",
-      "frequency": 4,
+      "phrase": "standout individual dishes",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The biggest standout was the shrimp tom yum, I've never had anything like it."
+      "exampleQuote": "The shrimp tom yum — I've never had anything like it."
     },
     {
-      "phrase": "high price for value",
-      "frequency": 3,
+      "phrase": "price-to-portion tension",
+      "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "You can get the same meal at a different place for less."
     },
     {
-      "phrase": "difficult reservation process",
-      "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "Getting a reservation can be quite challenging."
-    },
-    {
-      "phrase": "inconsistent front-of-house service",
+      "phrase": "front-of-house inconsistency",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "The host stand staff seemed more engaged in conversation with each other than in helping make our wait more comfortable."
-    },
-    {
-      "phrase": "curries and signature dishes",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Their curries are ridiculously tasty too!"
     }
   ],
-  "sentiment_summary": "Reviewers consistently rave about Pusadee's Garden's stunning atmosphere and standout dishes like the shrimp tom yum and 17-ingredient salad, but frequently nitpick the difficult reservation system, inconsistent front-of-house communication, and whether the flavors and portion sizes justify the price.",
-  "notable_quote": "This place is the love of my life.",
+  "notable_quote": "The 17-ingredient salad, the yellow roti, the curries — I don't think you could go wrong with this menu.",
+  "sentiment_summary": "Reviewers consistently fall for the room and a handful of specific dishes — the shrimp tom yum, the 17-ingredient salad, the roti — while a recurring undercurrent of complaints about the reservation system, small portions, and uneven front-of-house attentiveness keeps the ceiling from lifting higher.",
+  "quarter_narrative": "Pusadee's Garden entered Spring 2026 with one of the deepest photo catalogs in Pittsburgh's Thai category — 1,892 images across 18 tagged categories — and a review base that has held above 86% five-stars across 1,224 ratings, with activity as recent as two days ago. Instagram tells a different story: two posts in the last 30 days, no Reels, an 0.83% engagement rate, and a profile that still has no bio copy. Within Pittsburgh Asian Kitchens, Mola currently leads the family on creator collaboration fit, a signal Pusadee's has the visual substrate to compete on but hasn't activated. The rank holds at number one in Pittsburgh Thai for now, but the gap between a static Instagram presence and a restaurant this photogenic is the clearest single variable separating Ones to Watch from the tier above.",
+  "tldr_read": "Deep photo catalog and durable five-star sentiment, near-silent Instagram. Ones to Watch — #1 in Pittsburgh Thai restaurants.",
+  "tldr_meaning": "Every signal axis except Instagram is at or above the family median — the ranking math does not move until the platform with the lowest signal starts reflecting what 1,892 Google photos already prove exists.",
+  "playbook": [
+    {
+      "headline": "Give the Instagram account a functional identity",
+      "action": "Add a bio, post cadence, and at least one Reel — the account has no bio copy and zero Reels in 30 days.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Fix the reservation flow before it compounds",
+      "action": "The booking bug described in reviews — where confirmed time slots silently swap — is appearing in public text and eroding trust before a guest arrives.",
+      "signal": "conversion_path",
+      "priority": "medium"
+    },
+    {
+      "headline": "Let the room earn its own creator invitations",
+      "action": "With a visual catalog already at the family median and a documented aesthetic that surprises first-time visitors, a structured press-table or creator-visit program would close the gap on Mola's current family lead in collaboration fit.",
+      "signal": "collab_fit",
+      "priority": "low"
+    }
+  ],
   "review_count": 8,
-  "analyzed_at": "2026-04-22T22:12:40.623Z",
+  "analyzed_at": "2026-04-22T22:25:54.931Z",
   "model": "claude-sonnet-4-6"
 }

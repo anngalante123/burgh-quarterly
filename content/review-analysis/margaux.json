@@ -2,45 +2,62 @@
   "slug": "margaux",
   "themes": [
     {
-      "phrase": "cocktails and drink quality",
-      "frequency": 5,
+      "phrase": "cocktails and seasonal drinks",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Great cocktails, good beer selection, and incredibly friendly staff."
     },
     {
-      "phrase": "inconsistent bar service",
-      "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "Even after being waved down, is ridiculous — the bartenders chose to chat with other patrons or stand around."
-    },
-    {
-      "phrase": "cozy welcoming atmosphere",
+      "phrase": "cozy atmosphere and seating",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Their coffee is really good, and the atmosphere of the place is wonderful."
+      "exampleQuote": "The atmosphere of the place is wonderful — lots of cozy seating around the room."
     },
     {
-      "phrase": "black coffee refill pricing",
+      "phrase": "bartenders ignoring customers",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "Even after being waved down, ignoring your other customers entirely is ridiculous."
+    },
+    {
+      "phrase": "pricing pushback on refills",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Refill for black coffee is over three dollars; srsly?"
     },
     {
-      "phrase": "management incident response",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "The manager didn't come over to say 'sorry about that, thanks for your help.'"
-    },
-    {
-      "phrase": "cozy work-friendly seating",
-      "frequency": 1,
+      "phrase": "regulars anchoring the bar",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "There's lots of cozy seating around the room, and it's a great place to chill and work."
+      "exampleQuote": "There are always regulars at the bar, and it's clear why."
     }
   ],
-  "sentiment_summary": "Reviewers consistently praise Margaux's cocktails and cozy atmosphere, but a recurring thread of bartenders ignoring customers and a couple of management missteps undercut what could otherwise be a standout neighborhood bar.",
   "notable_quote": "There are always regulars at the bar, and it's clear why.",
+  "sentiment_summary": "Reviewers consistently praise the drinks and the room's atmosphere, but a recurring thread of inattentive bar service — staff chatting with regulars while newcomers go unacknowledged — surfaces in enough reviews to be a pattern, not an outlier.",
+  "quarter_narrative": "Margaux entered Spring 2026 with its strongest asset already in place: a visual catalog of 530 photos across six tagged categories that sits well above the family median and draws the kind of image-forward attention that converts passive browsers into first visits. Review velocity stayed live — a new review landed within the last 24 hours — and 75 percent of 386 ratings are five-star, a number that holds even as service complaints chip at the edges. Meanwhile, Allegheny Coffee & Tea Exchange is running away with social momentum at the top of the Pittsburgh Cafes ranking, a gap Margaux hasn't yet moved to close — nine posts in 30 days with no Reels and a 0.26 percent engagement rate leaves Instagram doing almost nothing for a business that creators, by every other measure, are primed to cover. The path from Ones to Watch to a stronger rank runs directly through that Instagram signal: the creative raw material is there; the distribution of it isn't.",
+  "tldr_read": "Creator-ready visual catalog and steady review flow, but Instagram engagement is near-flat with no Reels and a missing phone number on Google. Ones to Watch — #3 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The visual and review axes are already performing above the family median; the ceiling on this rank is set almost entirely by an Instagram signal that posts regularly but reaches almost no one, and a conversion path with a gap where a phone number should be.",
+  "playbook": [
+    {
+      "headline": "Add a phone number to the Google listing",
+      "action": "Conversion path is the single gap on Google — no phone number means lost bookings and event inquiries that never start.",
+      "signal": "conversion_path",
+      "priority": "high"
+    },
+    {
+      "headline": "Publish one Reel per week for 30 days",
+      "action": "Nine posts last month, zero Reels — the format that actually surfaces new audiences on Instagram is completely absent for a bar with seasonal cocktails and a photogenic room.",
+      "signal": "momentum",
+      "priority": "medium"
+    },
+    {
+      "headline": "Pitch one local creator a behind-the-bar feature",
+      "action": "Creator Fit is the highest signal in the family at 96 — that ceiling goes unclaimed as long as no external voices are putting the room in front of their own audiences.",
+      "signal": "collab_fit",
+      "priority": "low"
+    }
+  ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:11:57.964Z",
+  "analyzed_at": "2026-04-22T22:23:44.993Z",
   "model": "claude-sonnet-4-6"
 }

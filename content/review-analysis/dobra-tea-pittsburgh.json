@@ -5,42 +5,59 @@
       "phrase": "extensive tea selection",
       "frequency": 7,
       "sentiment": "positive",
-      "exampleQuote": "One of the widest tea selections I have ever seen."
+      "exampleQuote": "One of the widest tea selections I have ever seen"
     },
     {
-      "phrase": "relaxing welcoming atmosphere",
-      "frequency": 7,
+      "phrase": "third-space atmosphere",
+      "frequency": 6,
       "sentiment": "positive",
-      "exampleQuote": "A wonderfully large selection of teas from around the world, served in an intimate and quiet setting."
+      "exampleQuote": "a wonderful pseudo-'third space' where you can sip tea, relax, play a board game, study, and talk to other patrons"
     },
     {
-      "phrase": "knowledgeable friendly staff",
-      "frequency": 4,
+      "phrase": "knowledgeable, friendly staff",
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Staff is extremely friendly and knowledgeable about tea."
+      "exampleQuote": "Staff is extremely friendly and knowledgeable about tea"
     },
     {
-      "phrase": "third-space for work and socializing",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "A wonderful pseudo-'third space' where you can sip tea, relax, play a board game, study, and talk to other patrons."
-    },
-    {
-      "phrase": "good food and snacks",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "The babaganoush is delicious!"
-    },
-    {
-      "phrase": "crowded hard to seat",
+      "phrase": "crowded, hard to seat",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "It's hard to get a seat sometimes because it's crowded."
+      "exampleQuote": "It's hard to get a seat sometimes because it's crowded"
+    },
+    {
+      "phrase": "food worth ordering",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The babaganoush is delicious — I went back just to try the food"
     }
   ],
-  "sentiment_summary": "Reviewers rave about the vast, worldly tea selection and cozy welcoming atmosphere that invites lingering, with the only consistent nitpick being that it can get crowded and seats are hard to come by.",
-  "notable_quote": "If I could live there, I would!",
+  "notable_quote": "One of my favorite places on Earth — a wonderfully large selection of teas from around the world, served in an intimate and quiet setting.",
+  "sentiment_summary": "Reviewers are consistent and effusive about the tea range, the bell-service ritual, and the room's ability to hold both solitary study and loud friend groups; the only recurring friction is seating scarcity during busy hours.",
+  "quarter_narrative": "Dobrá Tea Pittsburgh arrived at Spring 2026 with the strongest review sentiment in the Pittsburgh Cafes family — 1,107 Google reviews at 82% five-star, a catalog of 690 photos spanning six tagged categories, and a conversion path (hours, phone, website, address) that is fully built out. What it didn't do was show up on Instagram: one post in 30 days, no Reels, and an engagement rate that sits well below the family median while Allegheny Coffee & Tea Exchange — this issue's café family leader — runs the table on social momentum. Dobrá holds the top tea-house rank on the strength of accumulated trust, but closing the gap to the café family's upper tier requires the Instagram signal to wake up.",
+  "tldr_read": "Exceptional review sentiment and a complete conversion path, offset by a near-dormant Instagram — Ones to Watch, #1 in Pittsburgh Tea Houses.",
+  "tldr_meaning": "Every axis tied to on-platform reputation is at or above family median; the only ceiling on upward movement is an Instagram presence that posted once in the last month and has produced zero Reels.",
+  "playbook": [
+    {
+      "headline": "Restart Instagram with Reels, not photos",
+      "action": "Zero Reels in 30 days against a family median engagement rate nearly 40% higher — short video of the table-bell ritual or a tea being prepared would close that gap faster than static posts.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Invite creators into the ritual, not the menu",
+      "action": "Creator Fit sits just below the family median — pitching the bell-service format and the board-game third-space angle gives visiting creators a specific visual hook rather than another café walkthrough.",
+      "signal": "collab_fit",
+      "priority": "medium"
+    },
+    {
+      "headline": "Tag food subcategories in the photo catalog",
+      "action": "With 690 photos already uploaded, ensuring the baba ganoush, sesame cookies, and snack platters are tagged under distinct food subcategories deepens the visual catalog reviewers are already referencing.",
+      "signal": "content_canvas",
+      "priority": "low"
+    }
+  ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:10:53.842Z",
+  "analyzed_at": "2026-04-22T22:20:08.997Z",
   "model": "claude-sonnet-4-6"
 }

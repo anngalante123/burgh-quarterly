@@ -2,45 +2,68 @@
   "slug": "millies-homemade-ice-cream",
   "themes": [
     {
-      "phrase": "friendly enthusiastic staff",
-      "frequency": 5,
-      "sentiment": "positive",
-      "exampleQuote": "Gibson was very enthusiastic, boosted my mood up real quick, makes you really get in the mood for some good ice cream."
-    },
-    {
-      "phrase": "ice cream flavor quality",
+      "phrase": "standout staff moments",
       "frequency": 4,
-      "sentiment": "neutral",
-      "exampleQuote": "Buckeye had no flavor, the s'mores had no marshmallow, no Graham cracker — all of it was basically flavorless."
-    },
-    {
-      "phrase": "pricing feels high",
-      "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "Pricey, very good, good service."
-    },
-    {
-      "phrase": "non-dairy options available",
-      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "It was nice to stop in for non-dairy options."
+      "exampleQuote": "Gibson was very enthusiastic — boosted my mood up real quick"
     },
     {
-      "phrase": "cash not accepted",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "I had $100 cash on me and the girl said she's not allowed to take it — that's a very interesting policy."
+      "phrase": "seasonal and specialty flavors",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Loved the cranberry crumble and the strawberry jam flavors"
     },
     {
-      "phrase": "dirty bathroom",
+      "phrase": "non-dairy options noted",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "Nice to stop in for non-dairy options"
+    },
+    {
+      "phrase": "price-to-value tension",
+      "frequency": 3,
+      "sentiment": "neutral",
+      "exampleQuote": "Pricey, very good, good service"
+    },
+    {
+      "phrase": "flavor execution doubts",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "Buckeye had no flavor, the s'mores had no marshmallow, no Graham cracker"
+    },
+    {
+      "phrase": "bathroom and cleanliness",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Each step across the bathroom floor my feet stuck — looks like it hasn't been cleaned in a month."
+      "exampleQuote": "Looks like it hasn't been cleaned in a month — each step my feet stuck"
     }
   ],
-  "sentiment_summary": "Reviewers frequently praise individual staff members by name for their warmth and energy, but opinions on the ice cream itself are polarized — standout flavors like cranberry crumble impress some while others find the homemade offerings bland and overpriced, with cleanliness and a no-cash policy adding friction.",
-  "notable_quote": "Loved the cranberry crumble and the strawberry jam flavors. Waffle cone was amazing too.",
+  "notable_quote": "Loved the cranberry crumble and the strawberry jam flavors — the waffle cone was amazing too.",
+  "sentiment_summary": "Reviewers consistently praise individual staff members by name and highlight rotating specialty flavors as the draw, but a recurring undercurrent questions whether the base flavors justify the price — and one detailed negative review raises cleanliness concerns that the rating volume has so far absorbed.",
+  "quarter_narrative": "Millie's Shadyside entered Spring 2026 with the deepest review base in Pittsburgh's Sweets family — 1,150 Google reviews at 76% five-star, with the most recent landing just seven days ago — and a visual catalog of 482 photos that keeps the profile active without the shop having to do much. Instagram told a different story: 12 posts and 7 reels in 30 days is genuine volume, but a 0.34% engagement rate means most of it is disappearing into the feed. Page's holds the Pittsburgh Sweets lead on social momentum, and that gap is the only real distance between Millie's #2 ranking in Sweets and the top slot. Closing it doesn't require more posts — it requires posts that pull people back into conversation.",
+  "tldr_read": "Dominant review base and a flawless conversion path, but Instagram engagement is running well below what the posting volume should produce — Icons of the Burgh, #1 in Pittsburgh Ice Cream, #2 in Pittsburgh Sweets.",
+  "tldr_meaning": "The review foundation and discoverability infrastructure are fully built; the signal ceiling now sits entirely on whether Instagram engagement catches up to posting frequency.",
+  "playbook": [
+    {
+      "headline": "Convert reels frequency into actual engagement",
+      "action": "Seven reels in 30 days at 0.34% engagement means the format isn't landing — test named-staff features and in-process flavor shots to invite response.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Surface the rotating flavors as a recurring hook",
+      "action": "Specialty callouts like cranberry crumble appear in reviews but not as a consistent visual thread — a weekly rotating-flavor post could anchor repeat visits to the profile.",
+      "signal": "content_canvas",
+      "priority": "medium"
+    },
+    {
+      "headline": "Address the cleanliness signal before it compounds",
+      "action": "One detailed negative review citing bathroom condition has not yet damaged the 76% five-star share, but a second would move the sentiment needle — a visible ops response in the review thread would contain it.",
+      "signal": "community_spark",
+      "priority": "low"
+    }
+  ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:12:10.510Z",
+  "analyzed_at": "2026-04-22T22:24:19.416Z",
   "model": "claude-sonnet-4-6"
 }

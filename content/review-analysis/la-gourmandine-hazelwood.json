@@ -2,39 +2,62 @@
   "slug": "la-gourmandine-hazelwood",
   "themes": [
     {
-      "phrase": "exceptional overall quality",
-      "frequency": 4,
+      "phrase": "hidden gem worth finding",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Simply amazing"
+      "exampleQuote": "Please do not miss this hidden gem in Pittsburgh"
     },
     {
-      "phrase": "Paris-worthy bakery",
+      "phrase": "Paris-quality pastry",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed."
+      "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed"
     },
     {
       "phrase": "raspberry lychee macaron",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "Make sure you get the raspberry lychee macaroon, it is the best thing I've ever put in my mouth hands down."
+      "exampleQuote": "make sure you get the raspberry lychee macaroon, it is the best thing I've ever put in my mouth"
     },
     {
-      "phrase": "gluten-free almond flour option",
+      "phrase": "multiple locations, one reputation",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "It is gluten free made with almond flour."
+      "exampleQuote": "there are multiple locations so please make sure you check it out"
     },
     {
-      "phrase": "hidden gem multiple locations",
-      "frequency": 1,
+      "phrase": "simply delicious baked goods",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Please do not miss this hidden gem in Pittsburgh — actually there are multiple locations."
+      "exampleQuote": "Excelente panadería, todo es delicioso"
     }
   ],
-  "sentiment_summary": "Reviewers are unanimously enthusiastic about the pastry quality, with standout praise for the raspberry lychee macaron and the shop's Parisian-caliber baking, and no notable criticisms across any review.",
   "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
+  "sentiment_summary": "Reviewers reach for superlatives — Paris comparisons, best-thing-I've-ever-eaten declarations — with the raspberry lychee macaron named specifically; nitpicks are essentially absent across 525 reviews, though the praise skews brief and experience-based rather than descriptive.",
+  "quarter_narrative": "La Gourmandine Hazelwood entered Spring 2026 with a full deck on every signal except one: 525 Google reviews at 88% five-star, 304 photos spanning multiple categories, a conversion path (hours, phone, website) that leaves nothing to chance, and a creator-fit profile that should be drawing food photographers through the door — yet the Instagram account posted nothing in the past 37 days and logged zero Reels in the past month. Meanwhile, Page's holds the Pittsburgh Sweets family lead on the back of social momentum, the one axis where La Gourmandine is genuinely dormant. The Hazelwood location sits at the top of its pastry category for now, but that position gets harder to defend if the city's visual conversation moves on without it.",
+  "tldr_read": "Ironclad reviews and a perfect conversion path, zero Instagram activity in 37 days — Ones to Watch, #1 in Pittsburgh Pastry Shops.",
+  "tldr_meaning": "Every axis that depends on the business itself is at or near ceiling; the only ceiling left to raise is the one controlled entirely by how often the account posts.",
+  "playbook": [
+    {
+      "headline": "Break the 37-day Instagram silence now",
+      "action": "Resume posting immediately — even one Reel of the macaron case restarts an engagement rate that's currently meaningless at 2.29% with no new posts.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Put the raspberry lychee macaron on camera",
+      "action": "The most-cited specific product in the reviews has no dedicated visual presence; a single well-lit photo or short video of that macaron is the lowest-effort, highest-return content this shop can produce.",
+      "signal": "content_canvas",
+      "priority": "medium"
+    },
+    {
+      "headline": "Formalize the creator pipeline",
+      "action": "With a creator-fit profile at the family median and 304 Google photos already uploaded by visitors, the audience for food-focused creators exists — a standing open-kitchen or product-access invite turns passive visitors into repeat visual contributors.",
+      "signal": "collab_fit",
+      "priority": "low"
+    }
+  ],
   "review_count": 4,
-  "analyzed_at": "2026-04-22T22:11:40.810Z",
+  "analyzed_at": "2026-04-22T22:22:46.278Z",
   "model": "claude-sonnet-4-6"
 }

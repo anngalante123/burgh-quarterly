@@ -2,39 +2,62 @@
   "slug": "kyo-matcha",
   "themes": [
     {
-      "phrase": "Japanese cakes and desserts",
-      "frequency": 5,
+      "phrase": "not overly sweet cakes",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Their cakes are awesome — if you are a fan of not overly sweet cakes, this place is a must try."
+      "exampleQuote": "If you are a fan of not overly sweet cakes, this place is a must try."
     },
     {
-      "phrase": "matcha drinks and ice cream",
-      "frequency": 4,
+      "phrase": "matcha latte richness",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The matcha latte was rich and creamy and sweet — the best matcha I've had in a long time."
+      "exampleQuote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time."
     },
     {
       "phrase": "cozy work-friendly seating",
-      "frequency": 3,
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Tons of wall plugs and comfortable seating, making it a great spot to get some work done."
     },
     {
-      "phrase": "crowded and loud at times",
-      "frequency": 3,
-      "sentiment": "neutral",
-      "exampleQuote": "Can get crowded and a bit loud at times, but that's a testament to how much people love this place!"
-    },
-    {
-      "phrase": "inconsistent portions and early closing",
+      "phrase": "inconsistent portion sizes",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "Sometimes my ice cream size varies too much — especially when it's like $8 I expect a decent portion."
+      "exampleQuote": "Sometimes my ice cream sizes varies too much especially when it's like $8 I expect a decent portion."
+    },
+    {
+      "phrase": "early closing and staffing friction",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Closing five minutes early while customers are still actively trying to order feels inconsistent and unprofessional."
     }
   ],
-  "sentiment_summary": "Reviewers rave about Kyo Matcha's not-too-sweet Japanese cakes, rich matcha drinks, and cozy work-friendly atmosphere, while nitpicking inconsistent ice cream portions, limited parking, and at least one instance of closing before the posted time.",
-  "notable_quote": "Pittsburgh needs more cozy coffee shops with this sort of vibe!",
+  "notable_quote": "The matcha latte was rich and creamy and sweet — the best matcha I've had in a long time.",
+  "sentiment_summary": "Reviewers come back for the restrained sweetness of the cakes and a matcha latte that earns genuine superlatives, but they ding the shop on inconsistent soft-serve portions and at least one closing-time enforcement that left a customer locked out five minutes early.",
+  "quarter_narrative": "Kyo Matcha entered Spring 2026 holding 314 Google reviews at 86% five-star and a review posted just two days ago — the kind of active review cadence that most dessert shops in this family would envy. Where it distinguishes itself even further is on Instagram: a 47.87% engagement rate and five Reels in the last 30 days put it well ahead of the family median and make it the most creator-compatible business in the Pittsburgh Sweets tier, even without a verified account. Page's leads the family this issue on social momentum, but Kyo's creator-fit signal suggests the gap is closeable — the posts are landing, they're just not quite accumulating at Page's volume. The rank moves on one thing: whether sentiment catches up to the visual and social strength, which means the portion-consistency and closing-procedure complaints need to stop showing up in new reviews.",
+  "tldr_read": "Dominant Instagram engagement and near-perfect creator fit, undercut by review sentiment sitting below the family median — Icons of the Burgh, #2 in Pittsburgh Dessert Shops.",
+  "tldr_meaning": "The visual and social signals are already at the top of the family; the ceiling on this rank is now set entirely by whether operational friction — portions, closing consistency — stops generating the negative reviews that are pulling sentiment below the median.",
+  "playbook": [
+    {
+      "headline": "Close the sentiment gap before it widens",
+      "action": "Review sentiment sits below the family median of 83 — portion inconsistency and a closing-time complaint are the two recurring drags; address both operationally.",
+      "signal": "community_spark",
+      "priority": "high"
+    },
+    {
+      "headline": "Convert the Instagram account to business status",
+      "action": "The account is running as a personal profile despite 47.87% engagement — switching to a business account unlocks audience analytics without changing what's already working.",
+      "signal": "momentum",
+      "priority": "medium"
+    },
+    {
+      "headline": "Expand the Google photo catalog beyond six active categories",
+      "action": "405 photos across 13 listed categories is strong, but the visual catalog signal trails the family median by one point — seating and behind-the-counter shots are the thinnest categories in the current set.",
+      "signal": "content_canvas",
+      "priority": "low"
+    }
+  ],
   "review_count": 8,
-  "analyzed_at": "2026-04-22T22:11:35.547Z",
+  "analyzed_at": "2026-04-22T22:22:27.582Z",
   "model": "claude-sonnet-4-6"
 }

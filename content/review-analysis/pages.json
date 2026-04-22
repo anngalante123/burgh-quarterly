@@ -2,45 +2,62 @@
   "slug": "pages",
   "themes": [
     {
-      "phrase": "long but fast-moving line",
-      "frequency": 7,
-      "sentiment": "neutral",
+      "phrase": "line moves quickly",
+      "frequency": 4,
+      "sentiment": "positive",
       "exampleQuote": "Line will be long but moves quickly."
     },
     {
-      "phrase": "best ice cream in Pittsburgh",
-      "frequency": 5,
+      "phrase": "soft serve portions and texture",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Best ice cream in the burgh, thick and creamy, always delicious and they never miss."
+      "exampleQuote": "Thick and creamy, always delicious and they never miss."
     },
     {
-      "phrase": "friendly and efficient staff",
+      "phrase": "crowded evening wait",
+      "frequency": 5,
+      "sentiment": "neutral",
+      "exampleQuote": "Great just be prepared to wait in line for an hour."
+    },
+    {
+      "phrase": "friendly and professional staff",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Shout out to the friendly and professional staff!"
     },
     {
-      "phrase": "generous portions for price",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "They gave me WAY too much ice cream, the price was RIDICULOUSLY affordable."
-    },
-    {
-      "phrase": "wide dessert selection",
+      "phrase": "ridiculously affordable price",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "They have so many choices of desserts, and it can be a challenge to make a decision on what to order."
-    },
-    {
-      "phrase": "coconut soft serve standout",
-      "frequency": 1,
-      "sentiment": "positive",
-      "exampleQuote": "I had coconut soft serve dipped in a cherry shell and it was incredible — you could really taste the homemade coconut."
+      "exampleQuote": "The price was RIDICULOUSLY affordable."
     }
   ],
-  "sentiment_summary": "Reviewers rave about Page's thick, homemade-quality ice cream and outsize portions at affordable prices, with the long lines being the only consistent friction — softened by the fact that the line moves fast.",
-  "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype!",
+  "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype — coconut soft serve dipped in a cherry shell, texture and taste were perfect, and you could really taste the homemade coconut.",
+  "sentiment_summary": "Reviewers consistently celebrate the housemade soft serve quality, generous portions, and a staff that keeps the line — reliably long, especially evenings — moving at a clip that disarms the wait; the one recurring friction is flavoring fatigue on larger format items like the Arctic Swirl, where salty mix-ins can overwhelm by the halfway point.",
+  "quarter_narrative": "Spring 2026, Page's did what Icons do: it held. With 3,145 Google reviews at 87% five-star and a review posted as recently as today, the signal never went cold — the ratings stack here isn't a relic, it's actively refreshed. As the Pittsburgh Sweets family leader on social momentum, Page's is posting nine times a month to a verified Instagram account with a 1.29% engagement rate that sits a full ten points above the family median, and a 1,454-photo catalog on Google that outpaces every comparable shop in the category. The rank is safe for now, but holding the top position in a family of eight means any competitor who tightens the Instagram gap — reels are the current soft spot, at three per month — has a clear line of attack.",
+  "tldr_read": "A near-perfect conversion path, the deepest photo catalog in its family, and reviews arriving daily — offset by an Instagram engagement rate that's healthy but not dominant for a shop at this tier. Icons of the Burgh — #1 in Pittsburgh Dessert Shops.",
+  "tldr_meaning": "The foundational signals — review volume, recency, visual catalog, and discoverability infrastructure — are locked in at the top of the family; the only variable that could compress the gap between Page's and a challenger is Reels output, where three per month leaves room for a competitor to close on momentum alone.",
+  "playbook": [
+    {
+      "headline": "Turn three Reels a month into six",
+      "action": "Reels are the weakest output format at 3 per month — doubling cadence is the single fastest path to widening the momentum lead over the eight-shop family.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Get the Nancy B sundae its own frame",
+      "action": "Reviewers name specific items — the Nancy B sundae, coconut soft serve, Big Back Arctic Swirl — but the 1,454 Google photos lack named-item anchors that could pull search traffic to those menu moments.",
+      "signal": "content_canvas",
+      "priority": "medium"
+    },
+    {
+      "headline": "Make the wait part of the story",
+      "action": "The line is the most-mentioned feature in reviews; a creator walkthrough of the queue-to-cone experience would channel that friction into shareable, relatable content that fits the 1.29% engagement baseline.",
+      "signal": "collab_fit",
+      "priority": "low"
+    }
+  ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:12:34.716Z",
+  "analyzed_at": "2026-04-22T22:25:37.378Z",
   "model": "claude-sonnet-4-6"
 }

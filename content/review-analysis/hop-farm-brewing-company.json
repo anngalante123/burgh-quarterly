@@ -2,45 +2,62 @@
   "slug": "hop-farm-brewing-company",
   "themes": [
     {
-      "phrase": "standout staff and Bradley",
-      "frequency": 6,
+      "phrase": "Bradley by name",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Shout out to Bradley for the fun introduction to the brewery. He was pretty cool for a Penguins fan."
+      "exampleQuote": "Bradley, the manager, was great — he made it so easy to schedule our upcoming event."
     },
     {
-      "phrase": "beer selection quality",
-      "frequency": 7,
+      "phrase": "beer selection breadth",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "They let us taste around 5 different beers before we made a decision... this brewery has a lot of IPAs: that is a positive for me."
-    },
-    {
-      "phrase": "food quality and variety",
-      "frequency": 6,
-      "sentiment": "positive",
-      "exampleQuote": "The Yinser Cheesesteak was big, the cheesesteak was very good. The key…I WILL BE HERE AGAIN."
+      "exampleQuote": "They let us taste around 5 different beers before we made a decision — that is a positive for me."
     },
     {
       "phrase": "event and party hosting",
-      "frequency": 3,
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Bradley made it so easy for me to schedule our upcoming pop-up choir event."
+      "exampleQuote": "We had a great time in the party room right in front of the open garage door on a pleasant weekend afternoon."
     },
     {
-      "phrase": "atmosphere and interior decor",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Absolutely love the lights and the live edge tables... this place is a nice quiet vibe on a Thursday!"
-    },
-    {
-      "phrase": "inconsistent ordering system",
+      "phrase": "ordering system confusion",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "It's been QR codes, then table service, and now suddenly you have to order at the bar—with no clear communication."
+      "exampleQuote": "QR codes, then table service, and now suddenly you have to order at the bar — with no clear communication."
+    },
+    {
+      "phrase": "space and atmosphere",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Beautiful live edge tables, pool tables, gorgeous old wood — a nice quiet vibe on a Thursday."
     }
   ],
-  "sentiment_summary": "Reviewers consistently rave about the knowledgeable and personable staff (especially Bradley), the wide beer selection, and the food, while the one notable complaint centers on confusing and inconsistent ordering processes that left a customer feeling ignored.",
-  "notable_quote": "The key…I WILL BE HERE AGAIN.",
+  "notable_quote": "The key… I WILL BE HERE AGAIN.",
+  "sentiment_summary": "Reviewers consistently celebrate the beer range, the warmth of the floor staff — Bradley in particular by name, across four separate reviews — and a physical space that handles everything from retirement parties to pop-up choir events; the single persistent complaint is an inconsistent ordering system that left at least one regular walking out the door.",
+  "quarter_narrative": "Hop Farm Brewing enters Spring 2026 with its strongest Google signal intact — 298 reviews at 80% five-star and a review posted within the last 24 hours, which is the kind of steady drumbeat that keeps a brewery visible in local search without any additional push. Its Instagram is the more interesting story: 12 posts and 4 Reels in the last 30 days shows a feed that's alive, and a momentum signal that clears the family median by a meaningful margin, even if the engagement rate hasn't caught up to the post volume yet. In the Pittsburgh Bars family, Hidden Harbor holds the runner-up slot on social momentum — Hop Farm leads the brewery category outright but that bar ranking gap narrows the moment Hidden Harbor's social advantage starts pulling casual searchers. Closing the distance means converting the Instagram activity into engagement density, and letting the Bradley-by-name word-of-mouth that already lives in the reviews find its way onto the feed.",
+  "tldr_read": "Active Instagram and a dominant conversion path, held back by middling review sentiment relative to its volume. Ones to Watch — #1 in Pittsburgh Breweries, #2 in Pittsburgh Bars.",
+  "tldr_meaning": "The Instagram momentum signal is moving in the right direction, but engagement rate at 0.47% suggests the post cadence has outpaced audience response — closing that gap, alongside resolving the ordering-system friction that surfaces in reviews, is what separates a sustained climb from a plateau.",
+  "playbook": [
+    {
+      "headline": "Turn post volume into actual engagement",
+      "action": "12 posts in 30 days is solid output — shift 2-3 of those toward content that prompts a response: tap list votes, event RSVPs, or Reels featuring Bradley-style moments that reviewers already describe.",
+      "signal": "momentum",
+      "priority": "high"
+    },
+    {
+      "headline": "Resolve the ordering system in the review record",
+      "action": "One reviewer left without ordering due to service confusion — a public owner response on that review, and a consistent floor protocol, directly protects the 80% five-star ratio at 298 reviews.",
+      "signal": "community_spark",
+      "priority": "medium"
+    },
+    {
+      "headline": "Tag the private event product on Google photos",
+      "action": "364 photos across 7 categories but no dedicated event-space category — a set of party room and choir-night photos would surface the hosting use case in the visual catalog for planners searching nearby.",
+      "signal": "content_canvas",
+      "priority": "low"
+    }
+  ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:11:17.595Z",
+  "analyzed_at": "2026-04-22T22:21:25.370Z",
   "model": "claude-sonnet-4-6"
 }
