@@ -1,0 +1,38 @@
+{
+  "slug": "dobra-tea-pittsburgh",
+  "handle": "dobrateapgh",
+  "followers": 2421,
+  "follows": 63,
+  "posts_total": 289,
+  "posts_30d": 1,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.02759,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Drink Good Tea \n✧ Hours ✧\nM-Th  11-10   ||  F+Sat 11-11   ||  Sun 10-8\n✧Last Call 30 Min. Before Close✧",
+  "full_name": "Dobra Tea Pittsburgh",
+  "last_post_at": "2026-04-07T22:35:12.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 1103,
+      "end": 1107,
+      "delta": 4,
+      "per_month": 4.81
+    },
+    "rating": {
+      "start": 4.7,
+      "end": 4.7,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 689,
+      "end": 690,
+      "delta": 1
+    }
+  }
+}

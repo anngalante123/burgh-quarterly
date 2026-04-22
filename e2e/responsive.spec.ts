@@ -1,9 +1,10 @@
 import { test } from "@playwright/test";
 
 const routes = [
-  { path: "/",                                                    name: "home" },
-  { path: "/business/la-gourmandine-lawrenceville",               name: "business-unclaimed" },
-  { path: "/business/la-gourmandine-lawrenceville?claimed=true",  name: "business-claimed" },
+  { path: "/",                                                   name: "home" },
+  { path: "/business/la-gourmandine-lawrenceville",              name: "business-unclaimed" },
+  { path: "/business/la-gourmandine-lawrenceville?claimed=true", name: "business-claimed" },
+  { path: "/business/pages",                                     name: "business-pages-top-rank" },
 ];
 
 for (const r of routes) {

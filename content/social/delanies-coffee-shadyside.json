@@ -1,0 +1,38 @@
+{
+  "slug": "delanies-coffee-shadyside",
+  "handle": "delaniescoffee",
+  "followers": 22684,
+  "follows": 5434,
+  "posts_total": 982,
+  "posts_30d": 3,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.04674,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "specialty coffee shop in Pittsburgh serving - @onyxcoffeelab & @partnerscoffee \nLocations ⤵️\n•1737 E Carson, SouthSide \n•200 S Highland Ave, Shadyside",
+  "full_name": "Delanie’s Coffee",
+  "last_post_at": "2026-04-10T16:35:53.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 101,
+      "end": 104,
+      "delta": 3,
+      "per_month": 3.61
+    },
+    "rating": {
+      "start": 4.6,
+      "end": 4.6,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 98,
+      "end": 96,
+      "delta": -2
+    }
+  }
+}

@@ -247,24 +247,85 @@ export function conversionPathScore(
 }
 
 /**
- * Momentum — STUB. Once Instagram data ingests, compute from posts_last_30
- * and reels_last_30. For now, return a flat 60 and flag the source.
+ * Momentum — Instagram-derived. Scored when an IG snapshot is available;
+ * otherwise falls back to the 60-point stub.
  *
- * Arguments are received (and referenced so eslint doesn't complain) so the
- * function shape stays consistent with the other subscorers for when
- * Instagram-derived inputs land on Business / NormalizedArtifact.meta.
+ * Formula (per the ops plan):
+ *   momentum =
+ *     40 * normalize(posts_30d, category_median_posts_30d)
+ *   + 30 * normalize(reels_30d, 4)         // 4+ reels/month is strong
+ *   + 20 * normalize(engagement_rate, 0.03) // 3% engagement is solid
+ *   + 10 * presence_signal                  // verified +10; has handle +5
+ *
+ * Each `normalize` call caps at 1.0 (so a single subscore can't exceed its
+ * max-weight contribution). Final output clamped to 0–100.
+ *
+ * Category-median posts_30d is loosely tied to the CATEGORY_REVIEW_MEDIAN
+ * curve: SMB food/beverage with healthy IG habits posts 6–12/month; the
+ * median we target is 8.
  */
+export const MOMENTUM_SOURCE_STUB = "stub_pending_instagram_data";
+export const MOMENTUM_SOURCE_IG = "instagram_scrape";
+export const MOMENTUM_SOURCE_NO_HANDLE = "no_instagram_handle";
+
+const CATEGORY_POSTS_30D_MEDIAN: Record<Business["category"], number> = {
+  bakery: 8,
+  cafe: 8,
+  restaurant: 10,
+  salon: 6,
+  boutique: 6,
+  fitness: 8,
+  experience: 6,
+};
+
+export interface IgSnapshot {
+  handle?: string;
+  followers?: number;
+  posts_total?: number;
+  posts_30d?: number;
+  reels_30d?: number;
+  avg_engagement_rate?: number; // fractional
+  verified?: boolean;
+  private?: boolean;
+  error?: string;
+}
+
+function normalizeCapped(obs: number, target: number): number {
+  // 0 → 0, target → 1, capped at 1.
+  if (target <= 0) return 0;
+  return Math.max(0, Math.min(1, obs / target));
+}
+
 export function momentumScore(
   biz: Business,
   art: NormalizedArtifact["meta"],
+  ig?: IgSnapshot | null,
 ): number {
-  // Touch both args so future refactors have a seam to plug into.
-  void biz.slug;
   void art.placeId;
-  return 60;
-}
+  if (!ig || ig.error || ig.private) {
+    // No usable IG data — keep the old stub value so composites don't tank.
+    return 60;
+  }
 
-export const MOMENTUM_SOURCE_STUB = "stub_pending_instagram_data";
+  const postsTarget = CATEGORY_POSTS_30D_MEDIAN[biz.category];
+  const postsPart = 40 * normalizeCapped(ig.posts_30d ?? 0, postsTarget);
+  const reelsPart = 30 * normalizeCapped(ig.reels_30d ?? 0, 4);
+
+  // Engagement rate — clip the absurd tail from new/bursty accounts so a
+  // single viral reel doesn't inflate the score. Cap incoming rate at 10%.
+  const rawRate = ig.avg_engagement_rate ?? 0;
+  const cleanRate = Math.min(rawRate, 0.10);
+  const engagementPart = 20 * normalizeCapped(cleanRate, 0.03);
+
+  // Presence signal: verified = 10; has handle = 5 (scalar multiplier = 1.0
+  // or 0.5 against the 10 weight).
+  let presenceMult = 0.5; // has handle
+  if (ig.verified) presenceMult = 1.0;
+  const presencePart = 10 * presenceMult;
+
+  const score = postsPart + reelsPart + engagementPart + presencePart;
+  return Math.round(clamp(score));
+}
 
 export function collabFitScore(
   biz: Business,
@@ -298,12 +359,13 @@ export function collabFitScore(
 export function scoreSubscores(
   biz: Business,
   art: NormalizedArtifact["meta"],
+  ig?: IgSnapshot | null,
 ): ScoreBreakdown {
   return {
     content_canvas: contentCanvasScore(biz, art),
     community_spark: communitySparkScore(biz, art),
     conversion_path: conversionPathScore(biz, art),
-    momentum: momentumScore(biz, art),
+    momentum: momentumScore(biz, art, ig),
     collab_fit: collabFitScore(biz, art),
   };
 }
@@ -335,13 +397,18 @@ export interface ScoredResult {
 export function scoreBusiness(
   biz: Business,
   art: NormalizedArtifact["meta"],
+  ig?: IgSnapshot | null,
 ): ScoredResult {
-  const subs = scoreSubscores(biz, art);
+  const subs = scoreSubscores(biz, art, ig);
   const comp = composite(subs);
+  let momentum_source: string;
+  if (!ig) momentum_source = MOMENTUM_SOURCE_NO_HANDLE;
+  else if (ig.error || ig.private) momentum_source = MOMENTUM_SOURCE_NO_HANDLE;
+  else momentum_source = MOMENTUM_SOURCE_IG;
   return {
     subscores: subs,
     composite: comp,
     tier: tierOf(comp),
-    momentum_source: MOMENTUM_SOURCE_STUB,
+    momentum_source,
   };
 }

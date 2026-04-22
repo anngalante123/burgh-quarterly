@@ -78,14 +78,14 @@
       "content_canvas": 80,
       "community_spark": 90,
       "conversion_path": 100,
-      "momentum": 60,
+      "momentum": 27,
       "collab_fit": 78
     },
-    "composite": 82,
-    "tier": "icons",
+    "composite": 75,
+    "tier": "ones_to_watch",
     "rank_category": 1,
-    "rank_neighborhood": 2,
-    "rank_overall": 9,
+    "rank_neighborhood": 4,
+    "rank_overall": 14,
     "movement": {
       "category": null,
       "neighborhood": null,
@@ -95,7 +95,7 @@
       "label": "community affection",
       "evidence": "1,107 Google reviews with a review in the last 5 days — the highest community-spark reading in this issue's set."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

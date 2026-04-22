@@ -62,10 +62,10 @@
       "content_canvas": 56,
       "community_spark": 59,
       "conversion_path": 100,
-      "momentum": 60,
+      "momentum": 26,
       "collab_fit": 78
     },
-    "composite": 70,
+    "composite": 63,
     "tier": "ones_to_watch",
     "rank_category": 2,
     "rank_neighborhood": 5,
@@ -79,7 +79,7 @@
       "label": "conversion path clarity",
       "evidence": "Every conversion-path signal present: website, phone, hours, claimed profile."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

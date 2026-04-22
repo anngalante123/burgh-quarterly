@@ -68,10 +68,10 @@
       "content_canvas": 74,
       "community_spark": 80,
       "conversion_path": 75,
-      "momentum": 60,
+      "momentum": 42,
       "collab_fit": 84
     },
-    "composite": 74,
+    "composite": 71,
     "tier": "ones_to_watch",
     "rank_category": 1,
     "rank_neighborhood": 1,
@@ -85,7 +85,7 @@
       "label": "community affection",
       "evidence": "519 Google reviews with a review in the last 3 days — the highest community-spark reading in this issue's set."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

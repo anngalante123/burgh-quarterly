@@ -89,10 +89,10 @@
       "content_canvas": 91,
       "community_spark": 83,
       "conversion_path": 100,
-      "momentum": 60,
+      "momentum": 81,
       "collab_fit": 84
     },
-    "composite": 84,
+    "composite": 88,
     "tier": "icons",
     "rank_category": 1,
     "rank_neighborhood": 1,
@@ -103,10 +103,10 @@
       "overall": null
     },
     "unfair_advantage": {
-      "label": "visual storytelling",
-      "evidence": "1,454 photos across 10 Google-indexed categories — a visual catalog creators can pull from."
+      "label": "social momentum",
+      "evidence": "Social momentum is the standout here — awaiting Instagram data in the next scrape to show the exact margin."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

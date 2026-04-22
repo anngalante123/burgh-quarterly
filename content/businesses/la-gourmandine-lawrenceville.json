@@ -69,14 +69,14 @@
       "content_canvas": 84,
       "community_spark": 78,
       "conversion_path": 100,
-      "momentum": 60,
+      "momentum": 20,
       "collab_fit": 84
     },
-    "composite": 81,
-    "tier": "icons",
+    "composite": 73,
+    "tier": "ones_to_watch",
     "rank_category": 1,
-    "rank_neighborhood": 2,
-    "rank_overall": 15,
+    "rank_neighborhood": 3,
+    "rank_overall": 19,
     "movement": {
       "category": null,
       "neighborhood": null,
@@ -86,7 +86,7 @@
       "label": "visual storytelling",
       "evidence": "779 photos across 13 Google-indexed categories — a visual catalog creators can pull from."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

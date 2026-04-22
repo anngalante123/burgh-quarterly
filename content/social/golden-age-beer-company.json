@@ -1,0 +1,38 @@
+{
+  "slug": "golden-age-beer-company",
+  "handle": "goldenagebeer",
+  "followers": 6462,
+  "follows": 120,
+  "posts_total": 1017,
+  "posts_30d": 12,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.02046,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Carefully brewing German & Czech style lagers alongside hoppy modern pilsners 🍻 Full kitchen & bar\nWed-Fri 4-10p * Sat 11:30a-10p * Sun 11:30a-8p",
+  "full_name": "Golden Age Beer Co.",
+  "last_post_at": "2026-04-19T14:07:49.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 188,
+      "end": 195,
+      "delta": 7,
+      "per_month": 8.42
+    },
+    "rating": {
+      "start": 4.8,
+      "end": 4.8,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 296,
+      "end": 298,
+      "delta": 2
+    }
+  }
+}

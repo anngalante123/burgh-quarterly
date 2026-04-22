@@ -80,14 +80,14 @@
       "content_canvas": 87,
       "community_spark": 79,
       "conversion_path": 100,
-      "momentum": 60,
+      "momentum": 25,
       "collab_fit": 96
     },
-    "composite": 84,
-    "tier": "icons",
-    "rank_category": 1,
+    "composite": 77,
+    "tier": "ones_to_watch",
+    "rank_category": 2,
     "rank_neighborhood": 1,
-    "rank_overall": 2,
+    "rank_overall": 13,
     "movement": {
       "category": null,
       "neighborhood": null,
@@ -97,7 +97,7 @@
       "label": "creator collaboration fit",
       "evidence": "Clear neighborhood identity in Lawrenceville (Identifies as women-owned) — a natural match for local creator audiences."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

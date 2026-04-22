@@ -71,10 +71,10 @@
       "content_canvas": 46,
       "community_spark": 48,
       "conversion_path": 50,
-      "momentum": 60,
+      "momentum": 14,
       "collab_fit": 78
     },
-    "composite": 55,
+    "composite": 46,
     "tier": "neighborhood_staples",
     "rank_category": 2,
     "rank_neighborhood": 6,
@@ -85,10 +85,10 @@
       "overall": null
     },
     "unfair_advantage": {
-      "label": "social momentum",
-      "evidence": "Social momentum is the standout here — awaiting Instagram data in the next scrape to show the exact margin."
+      "label": "creator collaboration fit",
+      "evidence": "Clear neighborhood identity in East Liberty — a natural match for local creator audiences."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

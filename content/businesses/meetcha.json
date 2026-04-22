@@ -73,14 +73,14 @@
       "content_canvas": 60,
       "community_spark": 48,
       "conversion_path": 100,
-      "momentum": 60,
+      "momentum": 25,
       "collab_fit": 96
     },
-    "composite": 71,
+    "composite": 64,
     "tier": "ones_to_watch",
     "rank_category": 4,
     "rank_neighborhood": 5,
-    "rank_overall": 26,
+    "rank_overall": 27,
     "movement": {
       "category": null,
       "neighborhood": null,
@@ -90,7 +90,7 @@
       "label": "creator collaboration fit",
       "evidence": "Clear neighborhood identity in Squirrel Hill South (Identifies as Asian-owned, Identifies as women-owned) — a natural match for local creator audiences."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

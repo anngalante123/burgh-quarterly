@@ -25,6 +25,7 @@ import {
   loadBusinessBySlug,
   type BusinessArtifact,
 } from "@/lib/data/load-business";
+import { loadSocialBySlug } from "@/lib/data/load-social";
 
 /**
  * Business page — the QUIET RECORD zone (EDITORIAL_VOICE.md § loud-quiet asymmetry).
@@ -165,17 +166,42 @@ export default async function BusinessPage({ params }: PageProps) {
   const signal = buildSignal(art);
   const reviewPhrases = meta.keywordPhrases.slice(0, 5);
 
-  // Social state — stubbed handle, component renders a preview badge.
-  const socialHandle = biz.instagram ?? biz.slug.replace(/-/g, "");
+  // Social data — IG snapshot + Google Maps growth (Dec→Apr).
+  const social = loadSocialBySlug(biz.slug);
 
-  // Single-point history for SocialTrend (no prior issues yet).
-  const history = [
-    {
-      quarter: "Sp26",
-      reviewCount: biz.google_review_count ?? 0,
-      rating: biz.google_rating ?? 0,
-    },
-  ];
+  // Trend history: two points (v1 + v2 Google Maps scrapes) if growth data
+  // exists; otherwise single-point "tracking from today" fallback.
+  //
+  // Quarter labels derive from the actual scrape dates — the v1 scrape in
+  // these files landed in late March 2026 (not Dec 2025), so we label by
+  // month rather than hardcoding a season. "Mar 26" → "Apr 26" is less
+  // misleading than "Wi25 → Sp26" for a ~25-day window.
+  function labelFor(iso: string): string {
+    const d = new Date(iso);
+    const month = d.toLocaleString("en-US", { month: "short" });
+    const yy = d.getFullYear().toString().slice(-2);
+    return `${month} ${yy}`;
+  }
+  const history = social.growth
+    ? [
+        {
+          quarter: labelFor(social.growth.period_start),
+          reviewCount: social.growth.review_count.start,
+          rating: social.growth.rating.start,
+        },
+        {
+          quarter: labelFor(social.growth.period_end),
+          reviewCount: social.growth.review_count.end,
+          rating: social.growth.rating.end,
+        },
+      ]
+    : [
+        {
+          quarter: "Sp26",
+          reviewCount: biz.google_review_count ?? 0,
+          rating: biz.google_rating ?? 0,
+        },
+      ];
 
   // Labels for the ScoreCard.
   const categoryLabel = pluralizeCategoryLabel(meta.categoryName);
@@ -277,11 +303,19 @@ export default async function BusinessPage({ params }: PageProps) {
                 peers={peers}
               />
 
-              {/* Social snapshot (stub — pending Instagram ingest) */}
-              <SocialState handle={socialHandle} />
+              {/* Social snapshot — real IG data when present, empty state otherwise. */}
+              <SocialState
+                handle={social.ig ? social.ig.handle : null}
+                posts30d={social.ig?.posts_30d ?? 0}
+                reels30d={social.ig?.reels_30d ?? 0}
+                engagementRate={social.ig?.avg_engagement_rate ?? 0}
+                verified={social.ig?.verified ?? false}
+                private={social.ig?.private ?? false}
+                hasRealData={!!social.ig}
+              />
 
-              {/* Social trend (single-point first-issue state) */}
-              <SocialTrend history={history} />
+              {/* Social trend — 2-point Dec→Apr line if growth data exists. */}
+              <SocialTrend history={history} hasRealData={!!social.growth} />
 
               {/* Photo grid */}
               <section aria-label="Photos">

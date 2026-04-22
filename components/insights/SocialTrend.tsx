@@ -29,6 +29,7 @@ export type TrendPoint = {
 
 type SocialTrendProps = {
   history?: TrendPoint[];
+  hasRealData?: boolean; // if true, hide the PreviewBadge
 };
 
 const DEFAULT_HISTORY: TrendPoint[] = [
@@ -45,6 +46,7 @@ const PADDING = { top: 18, right: 40, bottom: 28, left: 40 };
 
 export function SocialTrend({
   history = DEFAULT_HISTORY,
+  hasRealData = false,
 }: SocialTrendProps) {
   const singlePoint = history.length === 1;
 
@@ -60,7 +62,7 @@ export function SocialTrend({
             <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-brand-black">
               Trend
             </h3>
-            <PreviewBadge />
+            {!hasRealData && <PreviewBadge />}
           </div>
           <p className="font-body text-xs text-brand-black/55">
             {point.quarter}

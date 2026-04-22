@@ -1,0 +1,38 @@
+{
+  "slug": "jenis-splendid-ice-creams",
+  "handle": "jenisicecreams",
+  "followers": 522411,
+  "follows": 963,
+  "posts_total": 4121,
+  "posts_30d": 12,
+  "reels_30d": 4,
+  "avg_engagement_rate": 0.00492,
+  "verified": true,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Often imitated. Never duplicated. Always splendid.",
+  "full_name": "Jeni's Splendid Ice Creams",
+  "last_post_at": "2026-04-17T13:51:06.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 245,
+      "end": 251,
+      "delta": 6,
+      "per_month": 7.22
+    },
+    "rating": {
+      "start": 4.5,
+      "end": 4.5,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 390,
+      "end": 450,
+      "delta": 60
+    }
+  }
+}

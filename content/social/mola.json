@@ -1,0 +1,38 @@
+{
+  "slug": "mola",
+  "handle": "mola.pgh",
+  "followers": 6074,
+  "follows": 109,
+  "posts_total": 226,
+  "posts_30d": 2,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.01416,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "open for dine-in, take-out, & delivery 🐠🧋 \nwe’ve got sushi, rice bowls, baos, bubble teas, and more!\n☎️ call to reserve a table!",
+  "full_name": "Mola",
+  "last_post_at": "2026-04-09T16:37:38.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 756,
+      "end": 767,
+      "delta": 11,
+      "per_month": 13.23
+    },
+    "rating": {
+      "start": 4.6,
+      "end": 4.6,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 925,
+      "end": 935,
+      "delta": 10
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "tazza-doro",
+  "handle": "tazzadoro",
+  "followers": 4022,
+  "follows": 1332,
+  "posts_total": 980,
+  "posts_30d": 11,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.00793,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Highland Park - 1125 N Highland Ave\nOpen 7am to 5pm daily\nOakland - 125 Lytton Ave\nMon-Fri 7am-5:00pm, Sa-Su Closed",
+  "full_name": "tazza d'oro",
+  "last_post_at": "2026-04-20T12:00:00.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 570,
+      "end": 573,
+      "delta": 3,
+      "per_month": 3.61
+    },
+    "rating": {
+      "start": 4.6,
+      "end": 4.6,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 244,
+      "end": 244,
+      "delta": 0
+    }
+  }
+}

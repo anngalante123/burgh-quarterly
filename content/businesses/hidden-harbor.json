@@ -66,24 +66,24 @@
       "content_canvas": 81,
       "community_spark": 76,
       "conversion_path": 100,
-      "momentum": 60,
+      "momentum": 50,
       "collab_fit": 78
     },
-    "composite": 79,
+    "composite": 77,
     "tier": "ones_to_watch",
     "rank_category": 1,
-    "rank_neighborhood": 4,
-    "rank_overall": 17,
+    "rank_neighborhood": 3,
+    "rank_overall": 10,
     "movement": {
       "category": null,
       "neighborhood": null,
       "overall": null
     },
     "unfair_advantage": {
-      "label": "conversion path clarity",
-      "evidence": "Every conversion-path signal present: website, phone, hours, claimed profile."
+      "label": "social momentum",
+      "evidence": "Social momentum is the standout here — awaiting Instagram data in the next scrape to show the exact margin."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

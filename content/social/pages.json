@@ -1,0 +1,38 @@
+{
+  "slug": "pages",
+  "handle": "pagesdairymart",
+  "followers": 103944,
+  "follows": 86,
+  "posts_total": 679,
+  "posts_30d": 9,
+  "reels_30d": 3,
+  "avg_engagement_rate": 0.01286,
+  "verified": true,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Pittsburgh’s #1 spot for all things ICE CREAM❗️ Celebrating 7️⃣5️⃣ years in business 🎉 \nTHANK YOU for your support! \n🍦OPEN DAILY 11:30AM — 10:00PM🍦",
+  "full_name": "Page’s",
+  "last_post_at": "2026-04-22T14:40:06.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 3114,
+      "end": 3145,
+      "delta": 31,
+      "per_month": 37.28
+    },
+    "rating": {
+      "start": 4.8,
+      "end": 4.8,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 1425,
+      "end": 1454,
+      "delta": 29
+    }
+  }
+}

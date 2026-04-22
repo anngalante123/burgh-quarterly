@@ -68,14 +68,14 @@
       "content_canvas": 62,
       "community_spark": 69,
       "conversion_path": 100,
-      "momentum": 60,
+      "momentum": 32,
       "collab_fit": 84
     },
-    "composite": 74,
+    "composite": 68,
     "tier": "ones_to_watch",
     "rank_category": 3,
     "rank_neighborhood": 1,
-    "rank_overall": 23,
+    "rank_overall": 25,
     "movement": {
       "category": null,
       "neighborhood": null,
@@ -85,7 +85,7 @@
       "label": "conversion path clarity",
       "evidence": "Every conversion-path signal present: website, phone, hours, claimed profile."
     },
-    "scored_at": "2026-04-22T14:51:49.945Z",
-    "momentum_source": "stub_pending_instagram_data"
+    "scored_at": "2026-04-22T15:28:41.007Z",
+    "momentum_source": "instagram_scrape"
   }
 }

@@ -1,0 +1,38 @@
+{
+  "slug": "margaux",
+  "handle": "margauxpgh",
+  "followers": 8022,
+  "follows": 1778,
+  "posts_total": 227,
+  "posts_30d": 9,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.00264,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "☕️+🥂Penn & Highland 💕East Liberty - Pittsburgh. ⏰Sun: 9am-3pm, Mon: 8am-3pm, Tues-Fri: 8am-11pm & Sat: 9am-11pm.  First come service.",
+  "full_name": "Margaux",
+  "last_post_at": "2026-04-21T20:14:36.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 386,
+      "end": 386,
+      "delta": 0,
+      "per_month": 0
+    },
+    "rating": {
+      "start": 4.4,
+      "end": 4.5,
+      "delta": 0.1
+    },
+    "photo_count": {
+      "start": 526,
+      "end": 530,
+      "delta": 4
+    }
+  }
+}

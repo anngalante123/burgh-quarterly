@@ -1,0 +1,38 @@
+{
+  "slug": "lorelei",
+  "handle": "loreleipgh",
+  "followers": 13091,
+  "follows": 45,
+  "posts_total": 1116,
+  "posts_30d": 4,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.00794,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Alpine-inspired cocktail bar, beer hall, and wine shop, with pizzas from @woodfiredpgh. Wed-Thu 5-10p (kitchen 5-9p) | Fri-Sat 3p-12a (kitchen 5-10p)",
+  "full_name": "Lorelei",
+  "last_post_at": "2026-04-13T21:48:15.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 391,
+      "end": 392,
+      "delta": 1,
+      "per_month": 1.2
+    },
+    "rating": {
+      "start": 4.5,
+      "end": 4.5,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 291,
+      "end": 291,
+      "delta": 0
+    }
+  }
+}

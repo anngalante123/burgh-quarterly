@@ -1,0 +1,38 @@
+{
+  "slug": "millies-homemade-ice-cream",
+  "handle": "millies",
+  "followers": 36930,
+  "follows": 1378,
+  "posts_total": 2686,
+  "posts_30d": 12,
+  "reels_30d": 7,
+  "avg_engagement_rate": 0.00337,
+  "verified": true,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Grass-grazed ice creams & dairy-free gelatos 🩷\n📍OPENING SOON - LUBBOCK, TX 🤩\n📍JAX, FL - 2 shops!\n📍PGH, PA - 10 shops!",
+  "full_name": "Millie’s Homemade Ice Cream",
+  "last_post_at": "2026-04-21T19:25:48.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 1145,
+      "end": 1150,
+      "delta": 5,
+      "per_month": 6.01
+    },
+    "rating": {
+      "start": 4.6,
+      "end": 4.6,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 479,
+      "end": 482,
+      "delta": 3
+    }
+  }
+}

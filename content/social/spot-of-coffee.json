@@ -1,0 +1,38 @@
+{
+  "slug": "spot-of-coffee",
+  "handle": "spot.of.coffee",
+  "followers": 2816,
+  "follows": 197,
+  "posts_total": 75,
+  "posts_30d": 6,
+  "reels_30d": 3,
+  "avg_engagement_rate": 0.15185,
+  "verified": true,
+  "private": false,
+  "is_business_account": true,
+  "biography": "☕️ Single Origin Organic Coffee\n🍯Naturally Sweetened!\n📍Shadyside, Pittsburgh\nNow open - Daily 8am-4pm",
+  "full_name": "Spot of Coffee",
+  "last_post_at": "2026-04-19T16:20:00.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 156,
+      "end": 173,
+      "delta": 17,
+      "per_month": 20.44
+    },
+    "rating": {
+      "start": 4.9,
+      "end": 4.8,
+      "delta": -0.1
+    },
+    "photo_count": {
+      "start": 127,
+      "end": 126,
+      "delta": -1
+    }
+  }
+}

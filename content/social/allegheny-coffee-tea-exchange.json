@@ -1,0 +1,38 @@
+{
+  "slug": "allegheny-coffee-tea-exchange",
+  "handle": "alleghenycoffee",
+  "followers": 4516,
+  "follows": 1057,
+  "posts_total": 824,
+  "posts_30d": 12,
+  "reels_30d": 5,
+  "avg_engagement_rate": 0.01233,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Gourmet Coffee & Tea Exchange in Pittsburgh's historic Strip District. ☕️ Open 9 a.m. to 4 p.m. daily.",
+  "full_name": "Allegheny Coffee",
+  "last_post_at": "2026-04-21T14:07:40.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 916,
+      "end": 924,
+      "delta": 8,
+      "per_month": 9.62
+    },
+    "rating": {
+      "start": 4.8,
+      "end": 4.8,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 574,
+      "end": 589,
+      "delta": 15
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "kyo-matcha",
+  "handle": "kyomatchausa",
+  "followers": 13453,
+  "follows": 301,
+  "posts_total": 914,
+  "posts_30d": 6,
+  "reels_30d": 5,
+  "avg_engagement_rate": 0.4787,
+  "verified": false,
+  "private": false,
+  "is_business_account": false,
+  "biography": "📍 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻𝘀 in MD, VA, PA, IL, MA & MN\n𝗖𝗵𝗲𝗰𝗸 𝗼𝘂𝗿 𝗽𝗼𝘀𝘁𝘀 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗳𝘂𝗹𝗹 𝗱𝗲𝘁𝗮𝗶𝗹𝘀!",
+  "full_name": "Kyo Matcha USA",
+  "last_post_at": "2026-04-17T22:12:03.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 307,
+      "end": 314,
+      "delta": 7,
+      "per_month": 8.42
+    },
+    "rating": {
+      "start": 4.7,
+      "end": 4.7,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 400,
+      "end": 405,
+      "delta": 5
+    }
+  }
+}

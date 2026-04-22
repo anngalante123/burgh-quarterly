@@ -1,0 +1,38 @@
+{
+  "slug": "24-carrot-juice",
+  "handle": "twentyfourcarrotjuice",
+  "followers": 1326,
+  "follows": 624,
+  "posts_total": 253,
+  "posts_30d": 3,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.02534,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Cold Pressed Juices & Smoothies | Minority Owned\n“Being healthy doesn’t have to be hard!” 🥕",
+  "full_name": "24 Carrot Juice",
+  "last_post_at": "2026-04-21T13:30:03.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 502,
+      "end": 519,
+      "delta": 17,
+      "per_month": 20.44
+    },
+    "rating": {
+      "start": 5,
+      "end": 5,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 175,
+      "end": 177,
+      "delta": 2
+    }
+  }
+}
