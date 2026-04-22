@@ -81,15 +81,22 @@ export function PeerPulse({
       aria-label={`Peer pulse — ${neighborhood}`}
       className="border border-brand-black/15 bg-white/60 p-5 md:p-6"
     >
-      <div className="flex items-baseline justify-between border-b border-brand-black/10 pb-3 mb-4 gap-3 flex-wrap">
-        <div className="flex items-baseline gap-2">
-          <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-brand-black">
-            Peer pulse
-          </h3>
-          <PreviewBadge />
+      <div className="border-b border-brand-black/10 pb-3 mb-4">
+        <div className="flex items-baseline justify-between gap-3 flex-wrap">
+          <div className="flex items-baseline gap-2">
+            <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-brand-black">
+              Your neighborhood
+            </h3>
+            <PreviewBadge />
+          </div>
+          <p className="font-display text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-brand-purple">
+            {neighborhood} · {peers.length} businesses
+          </p>
         </div>
-        <p className="font-body text-xs text-brand-black/55">
-          {neighborhood} · {peers.length} businesses
+        <p className="mt-2 font-body text-xs md:text-sm text-brand-black/60 leading-snug max-w-2xl">
+          Other businesses near you in {neighborhood} — ranked by
+          neighborhood signal, not by category. A block-level pulse, not a
+          bakery-vs-bakery cut.
         </p>
       </div>
 

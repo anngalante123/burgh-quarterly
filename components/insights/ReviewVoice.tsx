@@ -31,6 +31,10 @@ type ReviewVoiceProps = {
   /** Preferred: full Claude analysis. When present, phrases is ignored. */
   analysis?: ReviewAnalysis | null;
   phrases?: ReviewPhrase[];
+  /** Optional pull-quote surfaced above the phrase list in fallback mode. */
+  pullquote?: string | null;
+  /** Total review count (for "X of Y" framing in the header). */
+  totalReviews?: number;
   /** Optional heading override (defaults to "Review voice"). */
   heading?: string;
 };
@@ -110,12 +114,21 @@ const DEFAULT_PHRASES: ReviewPhrase[] = [
 export function ReviewVoice({
   analysis,
   phrases = DEFAULT_PHRASES,
+  pullquote,
+  totalReviews,
   heading = "Review voice",
 }: ReviewVoiceProps) {
   if (analysis) {
     return <AiReviewVoice analysis={analysis} heading={heading} />;
   }
-  return <PhraseReviewVoice phrases={phrases} heading={heading} />;
+  return (
+    <PhraseReviewVoice
+      phrases={phrases}
+      pullquote={pullquote}
+      totalReviews={totalReviews}
+      heading={heading}
+    />
+  );
 }
 
 /* ----------------------------- AI version ----------------------------- */
@@ -227,9 +240,13 @@ function AiReviewVoice({
 
 function PhraseReviewVoice({
   phrases,
+  pullquote,
+  totalReviews,
   heading,
 }: {
   phrases: ReviewPhrase[];
+  pullquote?: string | null;
+  totalReviews?: number;
   heading: string;
 }) {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
@@ -251,8 +268,20 @@ function PhraseReviewVoice({
         </div>
         <p className="font-body text-xs text-brand-black/55">
           {phrases.length} recurring
+          {totalReviews
+            ? ` · ${totalReviews.toLocaleString()} total reviews`
+            : ""}
         </p>
       </div>
+
+      {/* Pullquote — picked from the actual review texts on record. Sits
+          above the phrase list to give the block real voice even before
+          the Claude analysis is run. */}
+      {pullquote && (
+        <blockquote className="border-l-4 border-brand-lime pl-4 pr-2 py-2 mb-5 font-body italic text-base md:text-lg text-brand-black leading-snug">
+          &ldquo;{pullquote}&rdquo;
+        </blockquote>
+      )}
 
       <ol className="space-y-1.5">
         {phrases.map((p, i) => {

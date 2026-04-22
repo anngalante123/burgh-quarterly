@@ -87,19 +87,24 @@ export function buildBusinessTldr(
 
   const read = `${capitalize(strengthPhrase)}, ${weaknessPhrase}. ${tierPhrase} — ${rankClause}.`;
 
-  // "What it means" — frame differently by tier
+  // "What it means" — frame in data terms, not audience terms. The TL;DR
+  // should describe how the business's signals trend; "visit this weekend"
+  // and "owners: claim" are not the scorecard's job (they belong in
+  // editorial lists + the claim affordance).
   let meaning: string;
   switch (score.tier) {
     case "icons":
-      meaning = `Visit this weekend. Owners: claim to track the next-issue climb path.`;
+      meaning = igDormant
+        ? `An Icon holding ground on every axis except the social layer — the rank depends on keeping the Instagram signal live.`
+        : `Firing on every axis this quarter. The rank holds when the cadence holds.`;
       break;
     case "ones_to_watch":
       meaning = igDormant
-        ? `Visit this weekend — there's a creator gap worth filling. Owners: claim to see the climb path.`
-        : `On the rise. Visit this weekend. Owners: claim to see the climb path.`;
+        ? `The climb to Icons depends on the Instagram signal restarting — the other axes are already there.`
+        : `On the rise. The climb is in motion — next issue will show how much holds.`;
       break;
     case "neighborhood_staples":
-      meaning = `Rooted but under-covered. Visit this weekend. Owners: claim to see what's holding the rank back.`;
+      meaning = `Rooted but under-covered. The numbers are there; the coverage layer hasn't caught up yet.`;
       break;
   }
 

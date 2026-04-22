@@ -22,6 +22,7 @@ import { buildQuarterNarrative } from "@/lib/editorial/quarter-narrative";
 import { buildPlaybook } from "@/lib/editorial/playbook";
 import { buildCreatorAudit } from "@/lib/editorial/creator-audit";
 import { loadReviewAnalysis } from "@/lib/data/load-review-analysis";
+import { pickPullquote } from "@/lib/editorial/pick-pullquote";
 import {
   SubscoreBars,
   type SubscoreKey,
@@ -415,6 +416,10 @@ export default async function BusinessPage({ params }: PageProps) {
   // Optional Claude-mined review analysis (cached at content/review-analysis/).
   const reviewAnalysis = loadReviewAnalysis(biz.slug);
 
+  // Fallback pullquote — picked from actual review texts on file.
+  // Used by the non-AI Review Voice display.
+  const reviewPullquote = pickPullquote(meta.reviewTexts);
+
   // Whisper variant near Momentum: editorial when IG is dormant, whisper otherwise.
   const momentumIsDormant = !!social.ig && social.ig.posts_30d === 0;
 
@@ -546,10 +551,12 @@ export default async function BusinessPage({ params }: PageProps) {
               />
 
               {/* Review voice — prefers Claude analysis when cached, falls
-                  back to regex phrases otherwise. */}
+                  back to regex phrases + a data-picked pullquote otherwise. */}
               <ReviewVoice
                 analysis={reviewAnalysis}
                 phrases={reviewPhrases.length >= 2 ? reviewPhrases : undefined}
+                pullquote={reviewPullquote}
+                totalReviews={totalRev}
               />
 
               {/* Peer pulse */}
