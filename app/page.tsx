@@ -5,6 +5,10 @@ import { SubscribeInline } from "@/components/SubscribeInline";
 import { Reveal } from "@/components/motion/Reveal";
 import { loadAllBusinesses } from "@/lib/data/load-business";
 import { computeTierCounts } from "@/lib/data/stats";
+import {
+  BusinessSearch,
+  type SearchableBusiness,
+} from "@/components/BusinessSearch";
 
 /**
  * Homepage, editorial table of contents for the quarterly issue.
@@ -31,6 +35,15 @@ import { computeTierCounts } from "@/lib/data/stats";
 export default function Home() {
   const all = loadAllBusinesses();
   const tc = computeTierCounts(all);
+
+  // Slim searchable payload, passed to the client-side BusinessSearch.
+  const searchable: SearchableBusiness[] = all.map((a) => ({
+    slug: a.business.slug,
+    name: a.business.name,
+    neighborhood: a.business.neighborhood,
+    categoryName: a.meta.categoryName ?? a.business.category,
+    tier: a.score.tier,
+  }));
 
   return (
     <>
@@ -175,6 +188,14 @@ export default function Home() {
               </Link>
             </li>
           </ul>
+        </Reveal>
+
+        {/* ── SEARCH / BROWSE ─────────────────────────────────────
+            Readers who didn't find the business they came for in the
+            three lists above can search the full index by name,
+            neighborhood, or category. */}
+        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
+          <BusinessSearch businesses={searchable} />
         </Reveal>
 
         {/* ── HOW WE RANK, one-line teaser linking to /about ────── */}
