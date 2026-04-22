@@ -16,6 +16,12 @@ Non-obvious behaviors, foot-guns, hard-won lessons. Max 30 entries, rolling — 
 **Fix:** re-run the scraper with `maxReviews: 10–20` configured. ~$0.01–0.03/business extra. Or deprioritize review-text-dependent signals in MVP.
 **Keep in mind:** affects every sentiment-based scoring signal. Flag when we graduate to Phase 4 automation.
 
+## 2026-04-21 — Chrome `resize_window` on Mac has a minimum width
+**Context:** orchestrator verifying mobile responsive layouts at 375×812
+**What bit:** `mcp__claude-in-chrome__resize_window` returns success for `width: 375` but Chrome on Mac refuses to go below ~500px wide. Screenshots keep rendering at a desktop-ish viewport, making local mobile QA unreliable.
+**Fix:** verify mobile responsive behavior on the deployed URL instead — use Vercel's mobile preview, a real phone, or a Playwright test with an explicit mobile `viewport` (Playwright respects `{ width: 375, height: 812 }`).
+**Keep in mind:** don't claim responsive is broken just because local `resize_window` mobile screenshots show desktop layout. Verify on deployed or via Playwright.
+
 ## 2026-04-21 — `neighborhood` field is not always populated
 **Context:** scoring `pit-cph-saloncore` candidates
 **What bit:** several records had `neighborhood: null` even though they had address + city. This happens for places where Google Maps doesn't resolve a tagged neighborhood.

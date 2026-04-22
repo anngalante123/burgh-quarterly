@@ -62,6 +62,33 @@ Dated entries, what shipped, what broke, where we left off. Append-only. Future 
 - Write `scripts/ingest-apify.ts` + `lib/data/normalize.ts`
 - Scaffold Next.js (Task #5) in parallel
 
+---
+
+## 2026-04-21 — Session 001 continued: Masthead + pilot page shipped
+
+**Shipped:**
+- First root commit `fb46cb4` pushed to public GitHub repo `anngalante123/burgh-quarterly`.
+- Apify targeted rescrape of La Gourmandine Lawrenceville by placeId — 15 reviews, 6 with text. Raw record saved at `content/raw/apify/la-gourmandine-raw.json`.
+- Relay logos installed at `public/brand/relay/` and `assets/brand/`. Brand purple locked as exact `#AB35EE` from the Logo SVG (D-012 revised). Blue/cyan palette from `Colors.png` flagged as secondary; added as `--color-data-*` tokens (D-017).
+- 9 user-facing components shipped via dev agent:
+  `Masthead` (home + compact variants), `Colophon`, `TierBadge` (3 tier styles), `ScoreCard` (public hides composite; private shows gap-to-next-tier), `UnfairAdvantage`, `ClaimAffordance`, `SidebarCTA` (gated by `visible` prop), `OwnerFirstVisit`, `SubscribeInline`.
+- Two live routes: `/` (editorial homepage) and `/business/la-gourmandine-lawrenceville` with `?claimed=true` toggle for the claimed/unclaimed states.
+- Stub API route: `/api/subscribe` (validates email shape, console.logs, 200).
+- All copy verbatim-matched to `EDITORIAL_VOICE.md`. Forbidden-phrase grep: zero hits. Relay placement audit: colophon + claimed-sidebar only.
+- Orchestrator screenshot verification: desktop homepage, desktop business page (claimed + unclaimed), tablet all green. Mobile testing flagged as degraded locally (see GOTCHAS — Chrome `resize_window` minimum-width quirk).
+
+**Blockers resolved this session:**
+- Apify data access, pilot selection, re-scrape decision, brand token precision all closed.
+
+**Still pending:**
+- Task #9 (full claim flow + Resend wiring) — partial: subscribe form exists with stub API; Resend not yet wired; `/claim/[slug]` route not built; email verification flow not built.
+- Task #11 (Vercel link + preview deploy) — next.
+
+**Next session picks up at:**
+- Commit + push agent's work
+- Link Vercel, deploy preview, capture URL
+- Begin Phase 2: full claim flow, Resend wiring, Underrated List editorial template
+
 **Files touched:**
 - `/Users/annamariegalante/burgh-quarterly/CLAUDE.md` (created)
 - `/Users/annamariegalante/burgh-quarterly/.claude/MEMORY.md` (created)
