@@ -12,6 +12,9 @@ import { SocialState } from "@/components/insights/SocialState";
 import { SocialTrend } from "@/components/insights/SocialTrend";
 import { PhotoHero } from "@/components/insights/PhotoHero";
 import { ScoreHero } from "@/components/insights/ScoreHero";
+import { BusinessTldr } from "@/components/insights/BusinessTldr";
+import { RelayWhisper } from "@/components/RelayWhisper";
+import { buildBusinessTldr } from "@/lib/editorial/business-tldr";
 import {
   SubscoreBars,
   type SubscoreKey,
@@ -390,6 +393,12 @@ export default async function BusinessPage({ params }: PageProps) {
   const categoryLabel = pluralizeCategoryLabel(meta.categoryName);
   const neighborhoodLabel = biz.neighborhood;
 
+  // TL;DR — executive preview at the top of the page (the read + what it means).
+  const tldr = buildBusinessTldr(art, social, categoryLabel);
+
+  // Whisper variant near Momentum: editorial when IG is dormant, whisper otherwise.
+  const momentumIsDormant = !!social.ig && social.ig.posts_30d === 0;
+
   return (
     <>
       <Masthead variant="compact" />
@@ -439,6 +448,12 @@ export default async function BusinessPage({ params }: PageProps) {
             </Suspense>
           </header>
 
+          {/* TL;DR — executive preview. Sits above ScoreHero so the reader
+              gets the diagnosis + so-what in 2 lines before the full page. */}
+          <div className="mt-8 md:mt-10">
+            <BusinessTldr read={tldr.read} meaning={tldr.meaning} />
+          </div>
+
           {/* Main two-column layout on larger screens */}
           <div className="mt-10 md:mt-12 grid grid-cols-1 lg:grid-cols-[1fr_18rem] gap-8 lg:gap-10">
             <div className="space-y-8 md:space-y-10">
@@ -470,13 +485,22 @@ export default async function BusinessPage({ params }: PageProps) {
               />
 
               {/* Momentum sparkline — 30-day IG cadence. */}
-              <MomentumSparkline
-                posts30d={social.ig?.posts_30d ?? 0}
-                reels30d={social.ig?.reels_30d ?? 0}
-                handle={social.ig?.handle ?? null}
-                hasRealData={!!social.ig}
-                seed={biz.slug}
-              />
+              <div>
+                <MomentumSparkline
+                  posts30d={social.ig?.posts_30d ?? 0}
+                  reels30d={social.ig?.reels_30d ?? 0}
+                  handle={social.ig?.handle ?? null}
+                  hasRealData={!!social.ig}
+                  seed={biz.slug}
+                />
+                {/* Relay whisper — editorial callout when IG is dormant,
+                    whisper chip otherwise. Earned-in-context. */}
+                {momentumIsDormant ? (
+                  <RelayWhisper variant="editorial" />
+                ) : (
+                  <RelayWhisper variant="whisper" />
+                )}
+              </div>
 
               {/* Unfair advantage */}
               <UnfairAdvantage

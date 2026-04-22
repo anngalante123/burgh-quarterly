@@ -29,7 +29,7 @@ function Wordmark({ size }: { size: "home" | "compact" }) {
       : "font-display font-black uppercase tracking-[-0.01em] text-lg sm:text-xl text-brand-lime";
   return (
     <span className={className}>
-      The Burgh <span className="text-brand-off-white">Quarterly</span>
+      Signal <span className="text-brand-off-white">Pittsburgh</span>
     </span>
   );
 }

@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
  *
  * Replaces the old ScoreCard as the page's primary rank display. Ports the
  * "giant tier phrase + rank + movement chip" aesthetic from the Pittsburgh
- * Social Scorecard HTML reference into Burgh Quarterly's editorial system.
+ * Social Scorecard HTML reference into Signal Pittsburgh's editorial system.
  *
  * HARD RULES (DESIGN_DIRECTION.md + EDITORIAL_VOICE.md § Gap, not grade):
  *   - Never display the raw composite score number.

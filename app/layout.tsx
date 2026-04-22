@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "The Burgh Quarterly",
+  title: "Signal Pittsburgh",
   description:
     "The businesses Pittsburgh is talking about, ranked every quarter. Published by Relay.",
 };

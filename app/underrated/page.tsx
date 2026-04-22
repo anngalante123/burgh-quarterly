@@ -15,7 +15,7 @@ import {
  */
 
 export const metadata = {
-  title: "The Underrated List — The Burgh Quarterly",
+  title: "The Underrated List — Signal Pittsburgh",
   description:
     "Pittsburgh's small businesses the city hasn't caught up to yet.",
 };
@@ -42,7 +42,9 @@ export default function UnderratedIndexPage() {
               aria-label="Breadcrumb"
               className="font-display text-[0.62rem] md:text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55"
             >
-              <span>The Burgh Quarterly</span>
+              <Link href="/" className="hover:text-brand-purple">
+                Signal Pittsburgh
+              </Link>
               <span className="mx-2 text-brand-black/30">›</span>
               <span className="text-brand-black">The Underrated List</span>
             </nav>
