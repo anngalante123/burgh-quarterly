@@ -9,9 +9,11 @@
     "lint": "eslint",
     "ingest": "tsx scripts/ingest-apify.ts",
     "ingest30": "tsx scripts/ingest-30.ts",
-    "rank": "tsx scripts/compute-ranks.ts"
+    "rank": "tsx scripts/compute-ranks.ts",
+    "analyze:reviews": "tsx scripts/analyze-reviews.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.90.0",
     "@base-ui/react": "^1.4.1",
     "@hookform/resolvers": "^5.2.2",
     "@react-email/components": "^1.0.12",

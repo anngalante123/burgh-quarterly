@@ -14,7 +14,14 @@ import { PhotoHero } from "@/components/insights/PhotoHero";
 import { ScoreHero } from "@/components/insights/ScoreHero";
 import { BusinessTldr } from "@/components/insights/BusinessTldr";
 import { RelayWhisper } from "@/components/RelayWhisper";
+import { QuarterNarrative } from "@/components/insights/QuarterNarrative";
+import { Playbook } from "@/components/insights/Playbook";
+import { CreatorReadyAudit } from "@/components/insights/CreatorReadyAudit";
 import { buildBusinessTldr } from "@/lib/editorial/business-tldr";
+import { buildQuarterNarrative } from "@/lib/editorial/quarter-narrative";
+import { buildPlaybook } from "@/lib/editorial/playbook";
+import { buildCreatorAudit } from "@/lib/editorial/creator-audit";
+import { loadReviewAnalysis } from "@/lib/data/load-review-analysis";
 import {
   SubscoreBars,
   type SubscoreKey,
@@ -396,6 +403,18 @@ export default async function BusinessPage({ params }: PageProps) {
   // TL;DR — executive preview at the top of the page (the read + what it means).
   const tldr = buildBusinessTldr(art, social, categoryLabel);
 
+  // Narrative paragraph — the story of this quarter for this business.
+  const narrative = buildQuarterNarrative(art, social, all, "Spring 2026");
+
+  // Playbook — 3 data-derived recommendations sorted by leverage.
+  const playbook = buildPlaybook(art, social);
+
+  // Creator-ready audit — 10 boolean checks with one-line fixes.
+  const creatorAudit = buildCreatorAudit(art, social);
+
+  // Optional Claude-mined review analysis (cached at content/review-analysis/).
+  const reviewAnalysis = loadReviewAnalysis(biz.slug);
+
   // Whisper variant near Momentum: editorial when IG is dormant, whisper otherwise.
   const momentumIsDormant = !!social.ig && social.ig.posts_30d === 0;
 
@@ -448,9 +467,14 @@ export default async function BusinessPage({ params }: PageProps) {
             </Suspense>
           </header>
 
+          {/* Quarter narrative — auto-generated editorial paragraph. */}
+          <div className="mt-8 md:mt-10">
+            <QuarterNarrative body={narrative.body} issue={narrative.issue} />
+          </div>
+
           {/* TL;DR — executive preview. Sits above ScoreHero so the reader
               gets the diagnosis + so-what in 2 lines before the full page. */}
-          <div className="mt-8 md:mt-10">
+          <div className="mt-6 md:mt-8">
             <BusinessTldr read={tldr.read} meaning={tldr.meaning} />
           </div>
 
@@ -502,6 +526,12 @@ export default async function BusinessPage({ params }: PageProps) {
                 )}
               </div>
 
+              {/* The Playbook — 3 data-derived recommendations */}
+              <Playbook playbook={playbook} />
+
+              {/* Creator-ready audit — pass/fail checklist */}
+              <CreatorReadyAudit audit={creatorAudit} />
+
               {/* Unfair advantage */}
               <UnfairAdvantage
                 label={score.unfair_advantage.label}
@@ -515,12 +545,12 @@ export default async function BusinessPage({ params }: PageProps) {
                 direction={signal.direction}
               />
 
-              {/* Review voice — phrases mined from reviews */}
-              {reviewPhrases.length >= 2 ? (
-                <ReviewVoice phrases={reviewPhrases} />
-              ) : (
-                <ReviewVoice />
-              )}
+              {/* Review voice — prefers Claude analysis when cached, falls
+                  back to regex phrases otherwise. */}
+              <ReviewVoice
+                analysis={reviewAnalysis}
+                phrases={reviewPhrases.length >= 2 ? reviewPhrases : undefined}
+              />
 
               {/* Peer pulse */}
               <PeerPulse
