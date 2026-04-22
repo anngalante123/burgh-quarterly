@@ -20,15 +20,17 @@ export function UnfairAdvantage({ label, evidence }: UnfairAdvantageProps) {
   return (
     <aside
       aria-label="Unfair advantage"
-      className="border-l-4 border-brand-purple bg-brand-cream/60 px-5 py-5 md:px-6 md:py-6"
+      className="border-l-4 border-brand-purple bg-brand-cream/60 px-5 py-5 md:px-6 md:py-6 overflow-hidden"
     >
-      <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
+      <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-purple break-words">
         Unfair advantage
       </p>
-      <p className="mt-2 font-display text-xl md:text-2xl font-black tracking-[-0.01em] text-brand-black">
-        {label}
+      <p className="mt-2 font-display text-lg sm:text-xl md:text-2xl font-black tracking-[-0.01em] text-brand-black leading-tight break-words hyphens-auto">
+        <span className="bg-brand-lime px-1.5 box-decoration-clone">
+          {label}
+        </span>
       </p>
-      <p className="mt-2 font-body text-sm md:text-base leading-relaxed text-brand-black/80">
+      <p className="mt-3 font-body text-sm md:text-base leading-relaxed text-brand-black/80 break-words">
         {evidence}
       </p>
     </aside>

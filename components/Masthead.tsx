@@ -27,7 +27,7 @@ export function Masthead({ variant = "compact" }: MastheadProps) {
             href="/"
             className="block text-brand-black no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
           >
-            <h1 className="font-display font-black uppercase leading-[0.88] tracking-[-0.02em] text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem]">
+            <h1 className="font-display font-black uppercase leading-[0.88] tracking-[-0.02em] text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] break-words">
               The Burgh{" "}
               <span className="bg-brand-lime px-2 box-decoration-clone">
                 Quarterly
@@ -56,8 +56,8 @@ export function Masthead({ variant = "compact" }: MastheadProps) {
             </span>
           </span>
         </Link>
-        <nav className="hidden sm:block font-body text-xs uppercase tracking-[0.14em] text-brand-black/60">
-          Spring 2026
+        <nav className="hidden sm:block font-body text-[0.7rem] tracking-wide text-brand-black/45">
+          Updated Spring 2026
         </nav>
       </div>
     </header>

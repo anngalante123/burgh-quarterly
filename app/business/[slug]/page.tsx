@@ -108,7 +108,7 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
 
       <main className="flex-1 bg-brand-off-white">
         <article className="mx-auto max-w-5xl px-6 py-10 md:py-14">
-          {/* Breadcrumb */}
+          {/* Breadcrumb — geography-first (web-native), not issue-first */}
           <nav
             aria-label="Breadcrumb"
             className="font-body text-xs md:text-sm text-brand-black/60"
@@ -116,7 +116,7 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
             <ol className="flex flex-wrap items-center gap-1.5">
               <li>
                 <Link href="/" className="hover:text-brand-purple">
-                  Spring 2026
+                  Pittsburgh
                 </Link>
               </li>
               <li aria-hidden="true">›</li>
@@ -132,7 +132,7 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
 
           {/* Name + locality */}
           <header className="mt-5 md:mt-7">
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.9] tracking-[-0.02em] text-brand-black">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.9] tracking-[-0.02em] text-brand-black break-words hyphens-auto">
               {biz.title}
             </h1>
             <p className="mt-4 font-body text-sm md:text-base text-brand-black/70">
@@ -140,6 +140,9 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
               {biz.neighborhood ? ` · ${biz.neighborhood}` : ""}
               {" · "}
               {biz.address}
+            </p>
+            <p className="mt-2 font-body text-xs text-brand-black/45">
+              Updated Spring 2026
             </p>
             {claimed && (
               <p className="mt-3 inline-flex items-center gap-2 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">

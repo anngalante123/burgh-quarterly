@@ -7,11 +7,16 @@ import { SubscribeInline } from "@/components/SubscribeInline";
 /**
  * Homepage — the loud editorial zone (EDITORIAL_VOICE.md § loud-quiet asymmetry).
  *
- * Structure (per brief):
+ * Framing: web-native publication (Infatuation / Eater / Grub Street), not a
+ * printed issue's table of contents. "The Burgh Quarterly" is the publication
+ * name; the cadence is quarterly; the format is a living website. We keep
+ * "Updated Spring 2026" as a quiet metadata line, not a hero-prominent label.
+ *
+ * Structure:
  *   1. Masthead (with tagline — homepage only)
- *   2. Coverline: "Issue 01 · Spring 2026"
- *   3. Three short editorial teasers (placeholders — headlines only for now)
- *   4. Featured this issue (La Gourmandine)
+ *   2. Hero coverline + "Updated Spring 2026" metadata
+ *   3. Three editorial teasers under "Read" (formerly "In this issue")
+ *   4. Featured block (formerly "Featured this issue")
  *   5. SubscribeInline
  *   6. Colophon
  *
@@ -55,12 +60,9 @@ export default function Home() {
       <Masthead variant="home" />
 
       <main className="flex-1 bg-brand-off-white">
-        {/* Coverline */}
+        {/* Hero coverline — web-native, no issue-number framing */}
         <section className="mx-auto max-w-5xl px-6 pt-10 pb-6 md:pt-14 md:pb-8">
-          <p className="font-display text-[0.7rem] md:text-xs uppercase tracking-[0.22em] text-brand-black/60">
-            Issue 01 · Spring 2026
-          </p>
-          <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.015em] text-brand-black max-w-3xl">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.015em] text-brand-black max-w-3xl break-words">
             Ranked, reviewed, and{" "}
             <span className="bg-brand-lime px-2 box-decoration-clone">
               covered
@@ -68,19 +70,22 @@ export default function Home() {
             .
           </h2>
           <p className="mt-5 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
-            Every quarter, a fresh index of Pittsburgh&apos;s small businesses —
-            who climbed, who held, who the city hasn&apos;t caught up to yet.
+            A living index of Pittsburgh&apos;s small businesses — who climbed,
+            who held, who the city hasn&apos;t caught up to yet.
+          </p>
+          <p className="mt-4 font-body text-xs tracking-wide text-brand-black/45">
+            Updated Spring 2026
           </p>
         </section>
 
-        {/* Three editorial teasers */}
+        {/* Editorial teasers */}
         <section
-          aria-label="In this issue"
+          aria-label="Read"
           className="mx-auto max-w-5xl px-6 pb-12 md:pb-16"
         >
           <div className="flex items-baseline justify-between border-b border-brand-black/15 pb-3 mb-6">
             <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-brand-black">
-              In this issue
+              Read
             </h3>
             <span className="font-body text-xs text-brand-black/50">
               3 features
@@ -105,14 +110,14 @@ export default function Home() {
           </ul>
         </section>
 
-        {/* Featured this issue — La Gourmandine */}
+        {/* Featured — La Gourmandine */}
         <section
-          aria-label="Featured this issue"
+          aria-label="Featured"
           className="mx-auto max-w-5xl px-6 pb-12 md:pb-20"
         >
           <div className="flex items-baseline justify-between border-b border-brand-black/15 pb-3 mb-6">
             <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-brand-black">
-              Featured this issue
+              Featured
             </h3>
           </div>
           <Link
@@ -120,11 +125,11 @@ export default function Home() {
             className="block group border border-brand-black/15 bg-white/60 p-6 md:p-10 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
           >
             <div className="flex flex-wrap items-start justify-between gap-5">
-              <div>
+              <div className="min-w-0">
                 <p className="font-body text-xs uppercase tracking-[0.18em] text-brand-black/60">
                   Lawrenceville · Bakery
                 </p>
-                <h4 className="mt-2 font-display text-3xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.01em] text-brand-black group-hover:underline decoration-brand-lime decoration-4 underline-offset-[6px]">
+                <h4 className="mt-2 font-display text-2xl sm:text-3xl md:text-5xl font-black uppercase leading-[0.95] tracking-[-0.01em] text-brand-black group-hover:underline decoration-brand-lime decoration-4 underline-offset-[6px] break-words">
                   La Gourmandine
                 </h4>
               </div>

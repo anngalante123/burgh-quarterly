@@ -89,7 +89,7 @@ export function ScoreCard({
 
         <div className="flex flex-col items-end gap-1">
           <span className="font-body text-[0.7rem] uppercase tracking-[0.14em] text-brand-black/50">
-            This quarter
+            Movement
           </span>
           <span
             className={cn(
