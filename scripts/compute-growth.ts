@@ -5,7 +5,7 @@
  * `content/social/<slug>.json`.
  *
  * For businesses that don't appear in v1 (added later in the dataset, or
- * outside the foodniche vertical in Dec), `growth: null` — the UI falls back
+ * outside the foodniche vertical in Dec), `growth: null`, the UI falls back
  * to the "tracking from today" state.
  */
 

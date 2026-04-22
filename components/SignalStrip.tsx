@@ -4,7 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { Reveal } from "@/components/motion/Reveal";
 
 /**
- * SignalStrip — the "This Quarter in Signal" data-viz band on the homepage.
+ * SignalStrip, the "This Quarter in Signal" data-viz band on the homepage.
  *
  * Sits between the hero and the "Read" teasers, giving the homepage
  * publication weight: a tier-distribution donut, three stat cards, and a
@@ -83,7 +83,7 @@ function TierDonut({
     { key: "staples", value: tierCounts.staples, color: COLORS.staples },
   ];
 
-  // Running offset around the circle — start at the 12 o'clock position
+  // Running offset around the circle, start at the 12 o'clock position
   // (SVG circles start at 3 o'clock by default; rotate -90deg on the group).
   let cumulative = 0;
   const segments = arcs.map((arc) => {
@@ -107,7 +107,7 @@ function TierDonut({
           className="h-full w-full -rotate-90"
           aria-hidden="true"
         >
-          {/* Background ring — hairline for empty space */}
+          {/* Background ring, hairline for empty space */}
           <circle
             cx={cx}
             cy={cy}
@@ -301,7 +301,7 @@ export function SignalStrip({
   return (
     <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
       <div className="border-y-2 border-brand-black">
-        {/* Section header — inside the rules, matches other section-header tracking */}
+        {/* Section header, inside the rules, matches other section-header tracking */}
         <div className="flex items-baseline justify-between pt-6 md:pt-7">
           <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
             This Quarter in Signal
@@ -324,7 +324,7 @@ export function SignalStrip({
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
               <StatCard
                 label="Top Neighborhood"
-                value={topNeighborhood.name || "—"}
+                value={topNeighborhood.name || ","}
                 sub={
                   topNeighborhood.count
                     ? `${topNeighborhood.count} businesses`
@@ -333,7 +333,7 @@ export function SignalStrip({
               />
               <StatCard
                 label="Top Category"
-                value={topCategory?.category ?? "—"}
+                value={topCategory?.category ?? ","}
                 sub={
                   topCategory
                     ? `${topCategory.count} scored`

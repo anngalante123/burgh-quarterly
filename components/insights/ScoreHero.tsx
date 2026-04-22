@@ -4,7 +4,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 
 /**
- * ScoreHero — the big visual anchor at the top of a business page.
+ * ScoreHero, the big visual anchor at the top of a business page.
  *
  * Replaces the old ScoreCard as the page's primary rank display. Ports the
  * "giant tier phrase + rank + movement chip" aesthetic from the Pittsburgh
@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
  * HARD RULES (DESIGN_DIRECTION.md + EDITORIAL_VOICE.md § Gap, not grade):
  *   - Never display the raw composite score number.
  *   - Never display a letter grade.
- *   - Only the TIER PHRASE is shown at display scale — no number on the anchor.
+ *   - Only the TIER PHRASE is shown at display scale, no number on the anchor.
  *   - Gap-to-next-tier framing only appears in the "Private view" strip
  *     (claimed pages only).
  */
@@ -24,16 +24,16 @@ const TIER_COPY: Record<Tier, string> = {
   neighborhood_staples: "Neighborhood Staples",
 };
 
-// Per-tier stance — telegraphs what the tier means without falling back to
+// Per-tier stance, telegraphs what the tier means without falling back to
 // "taste" framing. The methodology block on the homepage tells readers we
 // rank the conversation (reviews, sentiment, photos, Instagram, momentum);
 // these sentences assume that and don't re-explain.
 const TIER_STANCE: Record<Tier, string> = {
-  icons: "Top of the index this quarter — reviews, photos, and momentum all moving.",
+  icons: "Top of the index this quarter, reviews, photos, and momentum all moving.",
   ones_to_watch:
     "Strong presence. Climbing the index.",
   neighborhood_staples:
-    "Rooted in the neighborhood — the index hasn't caught up yet.",
+    "Rooted in the neighborhood, the index hasn't caught up yet.",
 };
 
 type Movement = number | "Debut" | null;
@@ -55,13 +55,13 @@ function formatMovement(m: Movement): {
   tone: "up" | "down" | "flat" | "debut";
 } {
   if (m === "Debut") return { label: "Debut", symbol: "★", tone: "debut" };
-  if (m === null) return { label: "—", symbol: "—", tone: "flat" };
+  if (m === null) return { label: ",", symbol: ",", tone: "flat" };
   if (m > 0) return { label: `+${m}`, symbol: "↑", tone: "up" };
   if (m < 0) return { label: `${m}`, symbol: "↓", tone: "down" };
   return { label: "=", symbol: "=", tone: "flat" };
 }
 
-// Tier accent — every tier gets a distinct on-brand color that tints the
+// Tier accent, every tier gets a distinct on-brand color that tints the
 // stamp stripe + the rank prefix. Keeps the card bg consistent black while
 // letting the tier read at a glance.
 const TIER_ACCENT: Record<Tier, string> = {
@@ -82,13 +82,13 @@ export function ScoreHero({
 }: ScoreHeroProps) {
   const mv = formatMovement(movement);
   const toneClass = {
-    // Climb — lime on black card reads loud.
+    // Climb, lime on black card reads loud.
     up: "text-brand-black bg-brand-lime",
-    // Drop — muted cream pill with black text, quiet (we don't punish).
+    // Drop, muted cream pill with black text, quiet (we don't punish).
     down: "text-brand-black bg-brand-cream",
     // Neutral holding / no data.
     flat: "text-brand-off-white/70 bg-brand-off-white/10 border border-brand-off-white/20",
-    // Debut — purple pill for first-issue businesses.
+    // Debut, purple pill for first-issue businesses.
     debut: "text-brand-off-white bg-brand-purple",
   }[mv.tone];
 
@@ -100,7 +100,7 @@ export function ScoreHero({
         aria-label="Rank and tier"
         className="relative overflow-hidden bg-brand-black text-brand-off-white px-6 py-8 md:px-10 md:py-12"
       >
-        {/* Diagonal tier accent stripe — tier-colored, bleeds off the right */}
+        {/* Diagonal tier accent stripe, tier-colored, bleeds off the right */}
         <span
           aria-hidden="true"
           className={cn(
@@ -137,7 +137,7 @@ export function ScoreHero({
 
         {/* The anchor: the tier phrase at display scale. Fluid clamp so it
             scales continuously from narrow mobile (32px floor) to wide
-            desktop (72px ceiling) — no breakpoint jumps. */}
+            desktop (72px ceiling), no breakpoint jumps. */}
         <h2 className="relative font-display font-black uppercase tracking-[-0.025em] text-brand-off-white [text-wrap:balance] [word-break:break-word] text-[clamp(2rem,6vw,4.5rem)] leading-[0.92]">
           {TIER_COPY[tier]}
         </h2>
@@ -163,7 +163,7 @@ export function ScoreHero({
           </p>
         </div>
 
-        {/* Private view strip — only when claimed AND gap copy provided */}
+        {/* Private view strip, only when claimed AND gap copy provided */}
         {claimed && gapToNextTier && (
           <p className="relative mt-8 pt-6 border-t border-brand-off-white/20 font-body text-sm text-brand-off-white/85">
             <span className="font-display font-semibold uppercase tracking-[0.12em] text-[0.7rem] text-brand-lime">

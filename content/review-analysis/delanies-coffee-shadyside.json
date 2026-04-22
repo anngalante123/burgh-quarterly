@@ -29,7 +29,7 @@
       "phrase": "order mix-up cost me",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin — I had to pay for a new muffin."
+      "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin, I had to pay for a new muffin."
     },
     {
       "phrase": "not a work café",
@@ -39,26 +39,26 @@
     }
   ],
   "notable_quote": "The strawberry matcha here might be the best I've ever had.",
-  "sentiment_summary": "Reviewers consistently single out the specialty drinks — the strawberry matcha and iced tiramisu latte in particular — and the warmth of the staff, while the most pointed criticism comes from a single service error that cost a customer money and a finding that the wi-fi can't support remote work.",
-  "quarter_narrative": "Delanie's Coffee Shadyside held an 82% five-star rate across 104 Google reviews and drew a fresh review as recently as two days ago, signaling a loyal, returning customer base and a room that stays busy enough to keep generating opinions. Where it lags is in the channels that build discovery beyond the immediate neighborhood: Instagram produced three posts and zero reels in the last 30 days, with the account going quiet for nearly two weeks, a thin output for a shop whose specialty drinks are the kind of visually arresting thing that circulates. In the Pittsburgh Cafes family, Allegheny Coffee & Tea Exchange leads this issue largely on social momentum — a signal Delanie's hasn't yet turned on. The path upward in the rankings runs directly through Instagram frequency; the review foundation and the creator-fit signal suggest the raw material is already there.",
-  "tldr_read": "Exceptional creator fit and a locked conversion path, undercut by a dormant Instagram — Ones to Watch, #4 in Pittsburgh Coffee Shops.",
+  "sentiment_summary": "Reviewers consistently single out the specialty drinks, the strawberry matcha and iced tiramisu latte in particular, and the warmth of the staff, while the most pointed criticism comes from a single service error that cost a customer money and a finding that the wi-fi can't support remote work.",
+  "quarter_narrative": "Delanie's Coffee Shadyside held an 82% five-star rate across 104 Google reviews and drew a fresh review as recently as two days ago, signaling a loyal, returning customer base and a room that stays busy enough to keep generating opinions. Where it lags is in the channels that build discovery beyond the immediate neighborhood: Instagram produced three posts and zero reels in the last 30 days, with the account going quiet for nearly two weeks, a thin output for a shop whose specialty drinks are the kind of visually arresting thing that circulates. In the Pittsburgh Cafes family, Allegheny Coffee & Tea Exchange leads this issue largely on social momentum, a signal Delanie's hasn't yet turned on. The path upward in the rankings runs directly through Instagram frequency; the review foundation and the creator-fit signal suggest the raw material is already there.",
+  "tldr_read": "Exceptional creator fit and a locked conversion path, undercut by a dormant Instagram, Ones to Watch, #4 in Pittsburgh Coffee Shops.",
   "tldr_meaning": "The review engine is running and the profile infrastructure is complete; the rank ceiling is currently set by an Instagram cadence that produced three posts and no reels in the past 30 days.",
   "playbook": [
     {
       "headline": "Post reels around your signature drinks",
-      "action": "Zero reels in 30 days is the single gap between a 96 creator-fit score and actual discovery — start with the strawberry matcha.",
+      "action": "Zero reels in 30 days is the single gap between a 96 creator-fit score and actual discovery, start with the strawberry matcha.",
       "signal": "momentum",
       "priority": "high"
     },
     {
       "headline": "Build out the Google photo catalog",
-      "action": "96 photos across 10 categories sits below the family median of 77 visual score — add dedicated shots of the seasonal menu board and baked goods case.",
+      "action": "96 photos across 10 categories sits below the family median of 77 visual score, add dedicated shots of the seasonal menu board and baked goods case.",
       "signal": "content_canvas",
       "priority": "medium"
     },
     {
       "headline": "Tighten the order-correction policy",
-      "action": "One documented case of charging a customer for a staff error is the most concrete service complaint in the review set — a clear remake protocol removes it as a recurring risk.",
+      "action": "One documented case of charging a customer for a staff error is the most concrete service complaint in the review set, a clear remake protocol removes it as a recurring risk.",
       "signal": "community_spark",
       "priority": "low"
     }

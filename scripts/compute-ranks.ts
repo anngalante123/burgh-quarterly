@@ -3,11 +3,11 @@
  * Compute rank fields across all ingested businesses.
  *
  * Reads every file in content/businesses/*.json (post-ingest30), computes:
- *   - rank_overall      — position across all 30 by composite score
- *   - rank_category     — position within same categoryName
- *   - rank_neighborhood — position within same neighborhood
- *   - movement          — null for first issue (no history)
- *   - unfair_advantage  — the subscore where the business most exceeds its
+ *   - rank_overall     , position across all 30 by composite score
+ *   - rank_category    , position within same categoryName
+ *   - rank_neighborhood, position within same neighborhood
+ *   - movement         , null for first issue (no history)
+ *   - unfair_advantage , the subscore where the business most exceeds its
  *                         tier average
  *
  * Writes the completed Score back into each file's `_score` field,
@@ -130,7 +130,7 @@ function pickUnfairAdvantage(
     }
   }
 
-  // Evidence line — data-grounded, voice-compliant (no "leverage" etc.).
+  // Evidence line, data-grounded, voice-compliant (no "leverage" etc.).
   const label = SUBSCORE_LABEL[bestKey];
   let evidence: string;
 
@@ -142,12 +142,12 @@ function pickUnfairAdvantage(
         ? ` with a review in the last ${fresh === 0 ? "day" : `${fresh} days`}`
         : "";
       evidence =
-        `${count.toLocaleString()} Google reviews${freshPart} — the highest community-spark reading in this issue's set.`;
+        `${count.toLocaleString()} Google reviews${freshPart}, the highest community-spark reading in this issue's set.`;
       break;
     }
     case "content_canvas": {
       evidence =
-        `${rec.meta.imagesCount.toLocaleString()} photos across ${rec.meta.imageCategories.length} Google-indexed categories — a visual catalog creators can pull from.`;
+        `${rec.meta.imagesCount.toLocaleString()} photos across ${rec.meta.imageCategories.length} Google-indexed categories, a visual catalog creators can pull from.`;
       break;
     }
     case "conversion_path": {
@@ -161,7 +161,7 @@ function pickUnfairAdvantage(
     }
     case "momentum": {
       evidence =
-        `Social momentum is the standout here — awaiting Instagram data in the next scrape to show the exact margin.`;
+        `Social momentum is the standout here, awaiting Instagram data in the next scrape to show the exact margin.`;
       break;
     }
     case "collab_fit": {
@@ -169,7 +169,7 @@ function pickUnfairAdvantage(
         ? ` (${rec.meta.fromTheBusinessFlags.slice(0, 2).join(", ")})`
         : "";
       evidence =
-        `Clear neighborhood identity in ${rec.business.neighborhood}${flags} — a natural match for local creator audiences.`;
+        `Clear neighborhood identity in ${rec.business.neighborhood}${flags}, a natural match for local creator audiences.`;
       break;
     }
     default:
@@ -257,7 +257,7 @@ async function main(): Promise<void> {
   const overallRank = new Map<string, number>();
   byOverall.forEach((r, i) => overallRank.set(r.business.slug, i + 1));
 
-  // Category rank (by _meta.categoryName — the raw Apify label).
+  // Category rank (by _meta.categoryName, the raw Apify label).
   const categoryBuckets = new Map<string, ScoredRecord[]>();
   for (const r of records) {
     const k = r.meta.categoryName || "Unknown";
@@ -363,13 +363,13 @@ async function main(): Promise<void> {
   const pick = (arr: number[], pct: number) =>
     arr.length === 0 ? 0 : arr[Math.min(arr.length - 1, Math.floor(arr.length * pct))];
   console.log(
-    `\nMomentum distribution — before: min=${beforeVals[0]} p50=${pick(beforeVals, 0.5)} max=${beforeVals[beforeVals.length - 1]}`,
+    `\nMomentum distribution, before: min=${beforeVals[0]} p50=${pick(beforeVals, 0.5)} max=${beforeVals[beforeVals.length - 1]}`,
   );
   console.log(
-    `Momentum distribution — after:  min=${afterVals[0]} p50=${pick(afterVals, 0.5)} max=${afterVals[afterVals.length - 1]}`,
+    `Momentum distribution, after:  min=${afterVals[0]} p50=${pick(afterVals, 0.5)} max=${afterVals[afterVals.length - 1]}`,
   );
 
-  // La Gourmandine sanity check (non-fatal — real momentum may shift the
+  // La Gourmandine sanity check (non-fatal, real momentum may shift the
   // composite outside the original calibration window; report only).
   const lg = records.find((r) => r.business.slug === "la-gourmandine-lawrenceville");
   if (lg) {
@@ -382,7 +382,7 @@ async function main(): Promise<void> {
     );
     if (lg.scoreStub.composite < 78 || lg.scoreStub.composite > 85) {
       console.warn(
-        `[ranks] NOTE: La Gourmandine composite ${lg.scoreStub.composite} is outside original calibration range [78,85]. Expected once real IG momentum lands — update SCORING_RUBRIC.md § Calibration when ready.`,
+        `[ranks] NOTE: La Gourmandine composite ${lg.scoreStub.composite} is outside original calibration range [78,85]. Expected once real IG momentum lands, update SCORING_RUBRIC.md § Calibration when ready.`,
       );
     }
   }

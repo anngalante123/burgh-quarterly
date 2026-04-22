@@ -1,13 +1,13 @@
 import { Reveal } from "@/components/motion/Reveal";
 
 /**
- * BusinessTldr — executive preview at the top of a business page.
+ * BusinessTldr, executive preview at the top of a business page.
  *
  * Two lines of editorial-voice summary:
  *   THE READ → plain-language diagnosis (strongest + weakest signal + tier+rank)
  *   WHAT IT MEANS → action for the reader / owner
  *
- * Pulled from deterministic logic in lib/editorial/business-tldr.ts — no
+ * Pulled from deterministic logic in lib/editorial/business-tldr.ts, no
  * hand-written copy per business.
  */
 

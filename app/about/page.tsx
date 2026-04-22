@@ -5,21 +5,21 @@ import { Reveal } from "@/components/motion/Reveal";
 import Link from "next/link";
 
 /**
- * /about — methodology + mission + publisher transparency.
+ * /about, methodology + mission + publisher transparency.
  *
  * Sections, in order:
- *   1. Hero — what the index is, in one sentence
- *   2. How we rank — the full 5-signal methodology (HowWeRank component)
- *   3. Who publishes — explicit Relay-as-publisher framing so readers
+ *   1. Hero, what the index is, in one sentence
+ *   2. How we rank, the full 5-signal methodology (HowWeRank component)
+ *   3. Who publishes, explicit Relay-as-publisher framing so readers
  *      can tell this isn't a back-channel ad. Decenters Relay by
  *      emphasizing editorial independence + open methodology.
- *   4. The voice — our editorial stance (optional, short)
+ *   4. The voice, our editorial stance (optional, short)
  */
 
 export const metadata = {
-  title: "About — Signal Pittsburgh",
+  title: "About, Signal Pittsburgh",
   description:
-    "How we rank Pittsburgh's small businesses every quarter — reviews, sentiment, photos, Instagram, momentum. Published by Relay.",
+    "How we rank Pittsburgh's small businesses every quarter, reviews, sentiment, photos, Instagram, momentum. Published by Relay.",
 };
 
 export default function AboutPage() {
@@ -52,7 +52,7 @@ export default function AboutPage() {
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
               Signal Pittsburgh is a living index of the city&apos;s small
               businesses, published every quarter. We don&apos;t rank taste.
-              We rank the conversation — reviews, sentiment, photos,
+              We rank the conversation, reviews, sentiment, photos,
               Instagram, and how all of it is moving this quarter.
             </p>
           </Reveal>
@@ -98,7 +98,7 @@ export default function AboutPage() {
 
               <div className="space-y-5 font-body text-base md:text-lg text-brand-black/85 leading-relaxed max-w-3xl">
                 <p>
-                  Relay is a Pittsburgh-based creator network — we match
+                  Relay is a Pittsburgh-based creator network, we match
                   local small businesses with vetted local micro-influencers.
                   We built Signal Pittsburgh to understand what makes a
                   business creator-ready in our city, and to track how the
@@ -108,7 +108,7 @@ export default function AboutPage() {
                   The index is open, the methodology is public, and every
                   business page is free to read and share. Relay is one
                   service among many that can help a business move a
-                  signal — we think a healthier small-business scene is
+                  signal, we think a healthier small-business scene is
                   good for Pittsburgh regardless.
                 </p>
                 <p className="text-brand-black/75">
@@ -121,7 +121,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Editorial guarantees — quick-hit transparency */}
+            {/* Editorial guarantees, quick-hit transparency */}
             <ul className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
               <li className="border border-brand-black/15 bg-white/60 p-5">
                 <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">

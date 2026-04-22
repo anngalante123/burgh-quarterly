@@ -5,20 +5,20 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 
 /**
- * MomentumSparkline — 30-day IG cadence as a stylized sparkline.
+ * MomentumSparkline, 30-day IG cadence as a stylized sparkline.
  *
  * Without per-day data (v1), we render 30 vertical bars spanning 30 days.
  * If posts30d=0, every bar is minimal height → visually flat, feels heavy.
  * If posts30d>0, distribute "post days" via a deterministic slug hash so
  * the same business always renders the same silhouette.
  *
- * This is the Relay conversion visual — when a shop's IG is dormant the
+ * This is the Relay conversion visual, when a shop's IG is dormant the
  * flat line becomes the editorial punchline (without naming Relay).
  *
  * Motion (2026-04-22):
  *   - Bars rise from the baseline on scroll-into-view, staggered left→right
  *     so the 30 days "deal" into the screen like a card spread
- *   - Respects useReducedMotion — static render when the OS flag is on
+ *   - Respects useReducedMotion, static render when the OS flag is on
  */
 
 type MomentumSparklineProps = {
@@ -28,7 +28,7 @@ type MomentumSparklineProps = {
   hasRealData: boolean;
   /**
    * Seed used to deterministically distribute "post" days across the 30-day
-   * window. Usually the business slug — guarantees stable rendering.
+   * window. Usually the business slug, guarantees stable rendering.
    */
   seed: string;
 };
@@ -36,7 +36,7 @@ type MomentumSparklineProps = {
 const DAY_COUNT = 30;
 
 function hashSeed(seed: string): number {
-  // Simple djb2 hash — deterministic, no dependencies.
+  // Simple djb2 hash, deterministic, no dependencies.
   let h = 5381;
   for (let i = 0; i < seed.length; i++) {
     h = ((h << 5) + h + seed.charCodeAt(i)) | 0;
@@ -72,15 +72,15 @@ function callout(
 ): string {
   if (!hasRealData) return "Instagram cadence not yet indexed.";
   if (posts30d === 0) {
-    return "Zero posts in the last 30 days — a gap creators can fill.";
+    return "Zero posts in the last 30 days, a gap creators can fill.";
   }
   if (posts30d <= 3) {
-    return `Light Instagram cadence — ${posts30d} posts in 30 days.`;
+    return `Light Instagram cadence, ${posts30d} posts in 30 days.`;
   }
   if (posts30d <= 10) {
-    return `Steady cadence — ${posts30d} posts, ${reels30d} reels.`;
+    return `Steady cadence, ${posts30d} posts, ${reels30d} reels.`;
   }
-  return `Active cadence — ${posts30d} posts, ${reels30d} reels.`;
+  return `Active cadence, ${posts30d} posts, ${reels30d} reels.`;
 }
 
 export function MomentumSparkline({
@@ -103,7 +103,7 @@ export function MomentumSparkline({
           30-day Instagram cadence
         </h2>
 
-        {/* Sparkline — bars deal in left→right on scroll */}
+        {/* Sparkline, bars deal in left→right on scroll */}
         <div
           className="flex items-end gap-[3px] h-10"
           aria-hidden="true"

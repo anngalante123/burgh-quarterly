@@ -2,7 +2,7 @@ import type { BusinessArtifact } from "@/lib/data/load-business";
 import type { SocialRecord } from "@/lib/data/load-social";
 
 /**
- * Creator-Ready Audit — pass/fail checks that Google Maps doesn't audit.
+ * Creator-Ready Audit, pass/fail checks that Google Maps doesn't audit.
  * Each check is boolean, derived from record + social. Fails carry a
  * one-line fix suggestion.
  *
@@ -48,7 +48,7 @@ export function buildCreatorAudit(
       pass: meta.imageCategories.length >= 5,
       fix:
         meta.imageCategories.length < 5
-          ? `Only ${meta.imageCategories.length} tagged — Google needs variety (menu, vibe, food, exterior, etc).`
+          ? `Only ${meta.imageCategories.length} tagged, Google needs variety (menu, vibe, food, exterior, etc).`
           : undefined,
     },
     {
@@ -64,7 +64,7 @@ export function buildCreatorAudit(
       label: "Phone number on Google",
       pass: meta.hasPhone,
       fix: !meta.hasPhone
-        ? "Publish a phone number — Google de-ranks listings without one."
+        ? "Publish a phone number, Google de-ranks listings without one."
         : undefined,
     },
     {
@@ -72,7 +72,7 @@ export function buildCreatorAudit(
       label: "Opening hours published",
       pass: meta.hasOpeningHours,
       fix: !meta.hasOpeningHours
-        ? "Fill in every day's hours — 'hours unavailable' caps discovery."
+        ? "Fill in every day's hours, 'hours unavailable' caps discovery."
         : undefined,
     },
     {
@@ -89,7 +89,7 @@ export function buildCreatorAudit(
       pass: ig ? !!ig.is_business_account : false,
       fix:
         ig && !ig.is_business_account
-          ? "Switch to a business account in IG settings — unlocks insights and creator tags."
+          ? "Switch to a business account in IG settings, unlocks insights and creator tags."
           : undefined,
     },
     {
@@ -107,7 +107,7 @@ export function buildCreatorAudit(
       pass: ig ? ig.posts_30d > 0 : false,
       fix:
         ig && ig.posts_30d === 0
-          ? "Post one photo or story this week — dormant accounts fall out of the feed."
+          ? "Post one photo or story this week, dormant accounts fall out of the feed."
           : undefined,
     },
     {
@@ -116,7 +116,7 @@ export function buildCreatorAudit(
       pass: ig ? ig.reels_30d > 0 : false,
       fix:
         ig && ig.reels_30d === 0
-          ? "Film one 15-second reel — reels pick up signal faster than static posts."
+          ? "Film one 15-second reel, reels pick up signal faster than static posts."
           : undefined,
     },
   ];

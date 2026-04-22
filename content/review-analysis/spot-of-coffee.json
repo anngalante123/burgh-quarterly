@@ -5,7 +5,7 @@
       "phrase": "housemade natural ingredients",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Their drinks are very differently delicious from the syrup-based lattes you'll find elsewhere — housemade cashew milk and real bananas."
+      "exampleQuote": "Their drinks are very differently delicious from the syrup-based lattes you'll find elsewhere, housemade cashew milk and real bananas."
     },
     {
       "phrase": "signature latte flavors",
@@ -29,18 +29,18 @@
       "phrase": "bitter or burnt coffee",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste — I almost threw it out on my way out of the door."
+      "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste, I almost threw it out on my way out of the door."
     }
   ],
-  "notable_quote": "I've worked at a number of independent coffee shops — I'm at a very popular, very viral, very delicious one now — and I still come to Spot of Coffee as often as possible.",
-  "sentiment_summary": "Reviewers keep coming back for the housemade syrups, unconventional latte builds, and a shop personality that feels genuinely rooted in its neighborhood; the rare dissent centers on execution inconsistency — specifically one report of burnt coffee — rather than any structural flaw.",
-  "quarter_narrative": "Spot of Coffee entered Spring 2026 as Pittsburgh's most Instagram-active café, logging six posts and three Reels in a single month at an engagement rate that sits more than double the family median — a signal strong enough to pull it to #2 in both the Coffee and Cafes rankings. Allegheny Coffee & Tea Exchange holds the Cafes lead on social momentum broadly, but Spot of Coffee's Instagram numbers are the sharpest in the cohort; what keeps it from first is the absence of a linked website on Google and review sentiment that trails the family median, suggesting the discovery experience outperforms the conversion path. The gap to #1 closes if the Google Business listing gets a website attached and the review base deepens past 173 — the creative energy is already there.",
-  "tldr_read": "Dominant Instagram momentum and a devoted housemade-ingredient narrative, undercut by no website on Google and review sentiment below the family median — Icons of the Burgh, #2 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The Instagram signal is already exceptional; the rank ceiling is now determined by the conversion path gap — specifically the missing website — and whether a 173-review base grows fast enough to close the sentiment distance on the family leader.",
+  "notable_quote": "I've worked at a number of independent coffee shops, I'm at a very popular, very viral, very delicious one now, and I still come to Spot of Coffee as often as possible.",
+  "sentiment_summary": "Reviewers keep coming back for the housemade syrups, unconventional latte builds, and a shop personality that feels genuinely rooted in its neighborhood; the rare dissent centers on execution inconsistency, specifically one report of burnt coffee, rather than any structural flaw.",
+  "quarter_narrative": "Spot of Coffee entered Spring 2026 as Pittsburgh's most Instagram-active café, logging six posts and three Reels in a single month at an engagement rate that sits more than double the family median, a signal strong enough to pull it to #2 in both the Coffee and Cafes rankings. Allegheny Coffee & Tea Exchange holds the Cafes lead on social momentum broadly, but Spot of Coffee's Instagram numbers are the sharpest in the cohort; what keeps it from first is the absence of a linked website on Google and review sentiment that trails the family median, suggesting the discovery experience outperforms the conversion path. The gap to #1 closes if the Google Business listing gets a website attached and the review base deepens past 173, the creative energy is already there.",
+  "tldr_read": "Dominant Instagram momentum and a devoted housemade-ingredient narrative, undercut by no website on Google and review sentiment below the family median, Icons of the Burgh, #2 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The Instagram signal is already exceptional; the rank ceiling is now determined by the conversion path gap, specifically the missing website, and whether a 173-review base grows fast enough to close the sentiment distance on the family leader.",
   "playbook": [
     {
       "headline": "Add a website link to Google Business now",
-      "action": "Spot of Coffee has no website listed on Google — the single missing field on an otherwise complete profile — costing direct conversion from every search impression.",
+      "action": "Spot of Coffee has no website listed on Google, the single missing field on an otherwise complete profile, costing direct conversion from every search impression.",
       "signal": "conversion_path",
       "priority": "high"
     },
@@ -52,7 +52,7 @@
     },
     {
       "headline": "Build the Google photo catalog beyond six categories",
-      "action": "126 photos across only 6 labeled categories leaves interior, staff, and sourcing stories unrepresented — the Reels already being made are raw material for static Google uploads.",
+      "action": "126 photos across only 6 labeled categories leaves interior, staff, and sourcing stories unrepresented, the Reels already being made are raw material for static Google uploads.",
       "signal": "content_canvas",
       "priority": "low"
     }

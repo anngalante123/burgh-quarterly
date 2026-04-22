@@ -8,12 +8,12 @@ import { cn } from "@/lib/utils";
 import { PreviewBadge } from "./PreviewBadge";
 
 /**
- * PeerPulse — mini-leaderboard of 4-5 named neighborhood peers.
+ * PeerPulse, mini-leaderboard of 4-5 named neighborhood peers.
  *
  * Shows the current business in the context of its neighborhood cohort.
  * The current business row is highlighted (lime accent bar + bolder ink).
  *
- * Voice stays quiet/factual — this block lives inside the business page
+ * Voice stays quiet/factual, this block lives inside the business page
  * (quiet record zone per D-006). No editorializing; just rank + name +
  * one-line distinguishing signal per peer.
  */
@@ -78,7 +78,7 @@ export function PeerPulse({
   const reduced = useReducedMotion();
   return (
     <section
-      aria-label={`Peer pulse — ${neighborhood}`}
+      aria-label={`Peer pulse, ${neighborhood}`}
       className="border border-brand-black/15 bg-white/60 p-5 md:p-6"
     >
       <div className="border-b border-brand-black/10 pb-3 mb-4">
@@ -94,7 +94,7 @@ export function PeerPulse({
           </p>
         </div>
         <p className="mt-2 font-body text-xs md:text-sm text-brand-black/60 leading-snug max-w-2xl">
-          Other businesses near you in {neighborhood} — ranked by
+          Other businesses near you in {neighborhood}, ranked by
           neighborhood signal, not by category. A block-level pulse, not a
           bakery-vs-bakery cut.
         </p>

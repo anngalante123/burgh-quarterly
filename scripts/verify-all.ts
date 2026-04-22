@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Post-ingest verification — walks content/businesses/*.json and confirms
+ * Post-ingest verification, walks content/businesses/*.json and confirms
  * every record validates against the Business + Score schemas.
  *
  * Exit non-zero on any failure. Used by the Pre-Delivery Checklist.

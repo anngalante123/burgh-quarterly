@@ -1,7 +1,7 @@
 /**
  * Minimal typing for the Apify Google Maps raw record we consume in the pilot.
  * Only the fields the business page actually reads are modeled here.
- * Full record has ~55 fields — see content/raw/apify/la-gourmandine-raw.json.
+ * Full record has ~55 fields, see content/raw/apify/la-gourmandine-raw.json.
  */
 
 export type RawApifyReview = {

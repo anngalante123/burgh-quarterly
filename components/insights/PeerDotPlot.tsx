@@ -7,10 +7,10 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 
 /**
- * PeerDotPlot — dual-view leaderboard.
+ * PeerDotPlot, dual-view leaderboard.
  *
  * Design direction (2026-04-22, /product-delight + /ui-ux pass):
- *   Previous single-line dot plot was too abstract — a reader couldn't tell
+ *   Previous single-line dot plot was too abstract, a reader couldn't tell
  *   which dot was which business without hovering one at a time. New design:
  *
  *     1. Compact tier-colored dot row at the top (spatial at-a-glance)
@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
  *        hover a dot → corresponding list row highlights
  *
  * Dots are colored by tier so the reader gets a visual census without
- * clicking. Current business's dot pulses once on mount (delight hook —
+ * clicking. Current business's dot pulses once on mount (delight hook ,
  * "you are here" made into a micro-celebration).
  *
  * Brand kit check (2026-04-22, BrandKit.pen):
@@ -72,7 +72,7 @@ const TIER_DOT_CLASS: Record<Tier, string> = {
   icons: "bg-brand-lime",
   ones_to_watch: "bg-brand-purple",
   // Staples uses a cream fill with a black ring so it's on-brand (brand
-  // palette is purple/lime/black/lavender/cream — no terracotta) and still
+  // palette is purple/lime/black/lavender/cream, no terracotta) and still
   // visually distinct from the other two tiers on the plot.
   neighborhood_staples: "bg-brand-cream ring-1 ring-brand-black/60",
 };
@@ -170,7 +170,7 @@ export function PeerDotPlot({
           </span>
         </div>
 
-        {/* Legend — brand-compliant tier colors up front */}
+        {/* Legend, brand-compliant tier colors up front */}
         <ul className="mb-5 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-[0.65rem] md:text-xs text-brand-black/65">
           <LegendDot className="bg-brand-lime ring-1 ring-brand-black/15" label="Icons of the Burgh" />
           <LegendDot className="bg-brand-purple" label="Ones to Watch" />
@@ -204,6 +204,13 @@ export function PeerDotPlot({
                 const leftPct = pct(peer.rank);
                 const idx = staggerIndex.get(peer.slug) ?? 0;
 
+                // Edge-alignment: when a dot is near the left or right edge
+                // of the plot, center-anchoring the popover + "You are
+                // here" label causes them to clip the viewport on mobile.
+                // Switch anchor based on position.
+                const nearLeftEdge = leftPct < 18;
+                const nearRightEdge = leftPct > 82;
+
                 return (
                   <div
                     key={peer.slug}
@@ -228,11 +235,19 @@ export function PeerDotPlot({
                       onHoverEnd={() => setHoveredSlug(null)}
                     />
 
-                    {/* Mini rank label under every dot — persistent */}
+                    {/* Mini rank label under every dot, persistent.
+                        Edge-aware anchoring matches the "You are here"
+                        badge so the last rank number doesn't clip off
+                        the viewport on mobile. */}
                     <span
                       aria-hidden="true"
                       className={cn(
-                        "pointer-events-none absolute left-1/2 -translate-x-1/2 top-[calc(100%+0.25rem)] font-display text-[0.58rem] font-semibold tabular-nums tracking-[0.14em] transition-colors",
+                        "pointer-events-none absolute top-[calc(100%+0.25rem)] font-display text-[0.58rem] font-semibold tabular-nums tracking-[0.14em] transition-colors",
+                        nearRightEdge
+                          ? "right-0"
+                          : nearLeftEdge
+                            ? "left-0"
+                            : "left-1/2 -translate-x-1/2",
                         isCurrent
                           ? "text-brand-black"
                           : "text-brand-black/45 group-hover:text-brand-black",
@@ -249,17 +264,28 @@ export function PeerDotPlot({
                           category={categoryShort}
                           reduced={!!reduced}
                           isCurrent={isCurrent}
+                          nearLeftEdge={nearLeftEdge}
+                          nearRightEdge={nearRightEdge}
                           onMouseEnter={() => openPopover(peer.slug)}
                           onMouseLeave={scheduleClose}
                         />
                       )}
                     </AnimatePresence>
 
-                    {/* Current business "YOU ARE HERE" badge */}
+                    {/* Current business "YOU ARE HERE" badge, edge-aware
+                        so it doesn't clip off the viewport on mobile when
+                        the current dot sits at #1 or the last rank. */}
                     {isCurrent && !isActive && (
                       <span
                         aria-hidden="true"
-                        className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-[calc(100%+0.5rem)] whitespace-nowrap"
+                        className={cn(
+                          "pointer-events-none absolute bottom-[calc(100%+0.5rem)] whitespace-nowrap",
+                          nearRightEdge
+                            ? "right-0"
+                            : nearLeftEdge
+                              ? "left-0"
+                              : "left-1/2 -translate-x-1/2",
+                        )}
                       >
                         <span className="inline-block bg-brand-black text-brand-lime font-display text-[0.58rem] font-semibold uppercase tracking-[0.18em] px-2 py-0.5">
                           You are here
@@ -343,7 +369,7 @@ export function PeerDotPlot({
                         </p>
                       )}
                     </div>
-                    {/* Mini dot — mirror of the plot, reinforces mapping */}
+                    {/* Mini dot, mirror of the plot, reinforces mapping */}
                     <span
                       aria-hidden="true"
                       className={cn(
@@ -496,7 +522,7 @@ function Dot({
         onClose();
         onHoverEnd();
       }}
-      aria-label={`${peer.name} — rank ${peer.rank}`}
+      aria-label={`${peer.name}, rank ${peer.rank}`}
       aria-expanded={isActive}
       className={cn(
         "relative block rounded-full transition-all duration-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-purple/40",
@@ -548,6 +574,8 @@ function PeerPopover({
   category,
   reduced,
   isCurrent,
+  nearLeftEdge,
+  nearRightEdge,
   onMouseEnter,
   onMouseLeave,
 }: {
@@ -555,6 +583,8 @@ function PeerPopover({
   category: string;
   reduced: boolean;
   isCurrent: boolean;
+  nearLeftEdge: boolean;
+  nearRightEdge: boolean;
   onMouseEnter: () => void;
   onMouseLeave: () => void;
 }) {
@@ -581,21 +611,36 @@ function PeerPopover({
               mass: 0.6,
             }
       }
-      className="absolute left-1/2 -translate-x-1/2 z-20 w-56 md:w-64 bottom-[calc(100%+1rem)]"
+      className={cn(
+        "absolute z-20 w-[14rem] md:w-64 bottom-[calc(100%+1rem)]",
+        nearRightEdge
+          ? "right-0"
+          : nearLeftEdge
+            ? "left-0"
+            : "left-1/2 -translate-x-1/2",
+      )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      {/* Invisible hover bridge — 1rem tall transparent strip covering the
-          gap between the popover and the dot, so the cursor doesn't cross
+      {/* Invisible hover bridge, transparent strip covering the gap
+          between the popover and the dot so the cursor doesn't cross
           "dead space" when moving down to interact with the popover. */}
       <span
         aria-hidden="true"
         className="absolute top-full left-0 right-0 h-4"
       />
-      {/* Visible connector line */}
+      {/* Visible connector line, align with the dot (at the edge
+          when the popover is edge-anchored, center otherwise). */}
       <span
         aria-hidden="true"
-        className="absolute top-full left-1/2 -translate-x-1/2 h-4 w-px bg-brand-black/30"
+        className={cn(
+          "absolute top-full h-4 w-px bg-brand-black/30",
+          nearRightEdge
+            ? "right-[0.625rem]"
+            : nearLeftEdge
+              ? "left-[0.625rem]"
+              : "left-1/2 -translate-x-1/2",
+        )}
       />
 
       <div className="relative bg-brand-black text-brand-off-white border-l-4 border-brand-lime p-3.5 md:p-4 shadow-[6px_6px_0_0_rgba(15,15,15,0.12)]">

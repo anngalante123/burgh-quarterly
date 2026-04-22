@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 /**
- * POST /api/subscribe — stubbed subscribe endpoint.
+ * POST /api/subscribe, stubbed subscribe endpoint.
  *
  * Per the current task brief: wiring to Resend + leads.jsonl writes happens
  * in a later task. For now this endpoint validates the shape of the request,

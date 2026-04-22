@@ -2,7 +2,7 @@ import { z } from "zod";
 
 /**
  * Data model for Signal Pittsburgh.
- * Mirrors .claude/memory/DATA_MODEL.md — keep them in sync.
+ * Mirrors .claude/memory/DATA_MODEL.md, keep them in sync.
  *
  * Schemas validate on read AND write. If a file fails Zod, the build fails
  * loudly: data integrity > convenience.

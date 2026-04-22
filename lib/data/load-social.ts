@@ -2,12 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 
 /**
- * Social snapshot for a business — IG profile stats + Google Maps
+ * Social snapshot for a business, IG profile stats + Google Maps
  * growth deltas (Dec 2025 → Apr 2026). Written by:
  *   - scripts/scrape-ig-profiles.ts  (IG block)
  *   - scripts/compute-growth.ts       (growth block)
  *
- * Both fields are optional — a file may have IG only, growth only, or both.
+ * Both fields are optional, a file may have IG only, growth only, or both.
  * UI components degrade gracefully when a field is null.
  */
 

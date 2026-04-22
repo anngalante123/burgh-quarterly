@@ -1,11 +1,11 @@
 /**
- * extract-phrases — mine recurring 2–3 word phrases from review text.
+ * extract-phrases, mine recurring 2–3 word phrases from review text.
  *
  * Inputs: an array of { text, stars? } review records.
  * Output: top-N phrases ranked by frequency, with a representative example
  *   quote attached (the first review the phrase appeared in).
  *
- * Algorithm (intentionally simple — this runs at build time, not request):
+ * Algorithm (intentionally simple, this runs at build time, not request):
  *   1. Lowercase + tokenize each review's text (strip punctuation).
  *   2. Generate bigrams AND trigrams.
  *   3. Drop any n-gram whose first/last token is a stop word, and any
@@ -16,7 +16,7 @@
  *   5. Return top N with their examples.
  *
  * Known limitation: with only 6 reviews (current La Gourmandine state),
- * counts degenerate to 1 — every phrase looks equally common. Callers
+ * counts degenerate to 1, every phrase looks equally common. Callers
  * should use the fallback defaults when `result.length < 3` OR the top
  * count is below the `minCount` threshold.
  */

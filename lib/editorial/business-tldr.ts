@@ -2,16 +2,16 @@ import type { BusinessArtifact } from "@/lib/data/load-business";
 import type { SocialRecord } from "@/lib/data/load-social";
 
 /**
- * Business TL;DR — plain-language summary + "so what" derived from
+ * Business TL;DR, plain-language summary + "so what" derived from
  * the record's data. Sits at the top of the business page to give the
  * dense scorecard an executive preview.
  *
  * Shape:
- *   read    — one sentence. "Strong X, weak Y. Tier — #Z in Category."
- *   meaning — one sentence. Action the reader / owner should take.
+ *   read   , one sentence. "Strong X, weak Y. Tier, #Z in Category."
+ *   meaning, one sentence. Action the reader / owner should take.
  *
  * Generation is deterministic from `_score.subscores`, freshness, and
- * IG data — no Claude call needed.
+ * IG data, no Claude call needed.
  */
 
 export type BusinessTldr = {
@@ -85,9 +85,9 @@ export function buildBusinessTldr(
       ? `#1 in Pittsburgh ${categoryShort}`
       : `#${score.rank_category} in Pittsburgh ${categoryShort}`;
 
-  const read = `${capitalize(strengthPhrase)}, ${weaknessPhrase}. ${tierPhrase} — ${rankClause}.`;
+  const read = `${capitalize(strengthPhrase)}, ${weaknessPhrase}. ${tierPhrase}, ${rankClause}.`;
 
-  // "What it means" — frame in data terms, not audience terms. The TL;DR
+  // "What it means", frame in data terms, not audience terms. The TL;DR
   // should describe how the business's signals trend; "visit this weekend"
   // and "owners: claim" are not the scorecard's job (they belong in
   // editorial lists + the claim affordance).
@@ -95,13 +95,13 @@ export function buildBusinessTldr(
   switch (score.tier) {
     case "icons":
       meaning = igDormant
-        ? `An Icon holding ground on every axis except the social layer — the rank depends on keeping the Instagram signal live.`
+        ? `An Icon holding ground on every axis except the social layer, the rank depends on keeping the Instagram signal live.`
         : `Firing on every axis this quarter. The rank holds when the cadence holds.`;
       break;
     case "ones_to_watch":
       meaning = igDormant
-        ? `The climb to Icons depends on the Instagram signal restarting — the other axes are already there.`
-        : `On the rise. The climb is in motion — next issue will show how much holds.`;
+        ? `The climb to Icons depends on the Instagram signal restarting, the other axes are already there.`
+        : `On the rise. The climb is in motion, next issue will show how much holds.`;
       break;
     case "neighborhood_staples":
       meaning = `Rooted but under-covered. The numbers are there; the coverage layer hasn't caught up yet.`;

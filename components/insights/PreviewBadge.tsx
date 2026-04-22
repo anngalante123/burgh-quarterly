@@ -1,5 +1,5 @@
 /**
- * PreviewBadge — a tiny "Preview" flag rendered only when NODE_ENV === "development".
+ * PreviewBadge, a tiny "Preview" flag rendered only when NODE_ENV === "development".
  *
  * Insight-block components include this so designers/orchestrators can see
  * at a glance which blocks are running on placeholder defaults vs. real data.

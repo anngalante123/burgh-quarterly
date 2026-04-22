@@ -5,13 +5,13 @@ import { motion, useReducedMotion } from "framer-motion";
 import { fireConfettiFromElement } from "@/components/motion/ConfettiBurst";
 
 /**
- * SubscribeInline — inline subscribe form (gate 2).
+ * SubscribeInline, inline subscribe form (gate 2).
  *
  * Copy verbatim from EDITORIAL_VOICE.md § Subscribe copy / LEAD_CAPTURE.md § Gate 2:
  *   "Get each quarterly issue the day it drops.
  *    4 emails a year. No filler."
  *
- * POSTs to `/api/subscribe` (stubbed — Resend wiring comes in a later
+ * POSTs to `/api/subscribe` (stubbed, Resend wiring comes in a later
  * task). Per project brief: for now the route just console.logs + 200s.
  * This component is intentionally minimalist: email only, one button.
  *
@@ -70,7 +70,7 @@ export function SubscribeInline() {
       aria-label="Subscribe"
       className="relative overflow-hidden border border-brand-black/15 bg-brand-cream px-6 py-8 md:px-10 md:py-10"
     >
-      {/* Decorative corner accent — a single lime wedge. Not a gradient. */}
+      {/* Decorative corner accent, a single lime wedge. Not a gradient. */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -top-6 -right-6 h-20 w-20 rotate-12 bg-brand-lime/60"

@@ -10,7 +10,7 @@ import {
 } from "./underrated";
 
 /**
- * Top Performers List — selection logic. The celebratory counterpart to
+ * Top Performers List, selection logic. The celebratory counterpart to
  * the Underrated List. Uses the SAME category bucket definitions
  * (`UNDERRATED_CATEGORIES`) so the two lists stay consistent about what
  * "bakeries" means editorially.

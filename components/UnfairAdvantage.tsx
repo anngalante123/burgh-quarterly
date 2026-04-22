@@ -1,8 +1,8 @@
 /**
- * UnfairAdvantage — one dimension where the business outperforms the Icons tier.
+ * UnfairAdvantage, one dimension where the business outperforms the Icons tier.
  *
  * Per SCORING_RUBRIC.md § Hard rules and EDITORIAL_VOICE.md § Patterns:
- *   "Every business page surfaces one 'unfair advantage' — the dimension
+ *   "Every business page surfaces one 'unfair advantage', the dimension
  *    where the business outperforms the Icons tier median. Even a #83
  *    business has one of these."
  *
@@ -13,7 +13,7 @@
 
 type UnfairAdvantageProps = {
   label: string; // short tag, e.g. "Five-star reviews"
-  evidence: string; // the data sentence, e.g. "1,138 of 1,294 reviews — 88% — the highest concentration…"
+  evidence: string; // the data sentence, e.g. "1,138 of 1,294 reviews, 88%, the highest concentration…"
 };
 
 export function UnfairAdvantage({ label, evidence }: UnfairAdvantageProps) {

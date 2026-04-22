@@ -5,25 +5,25 @@ import {
 import type { Category } from "./schemas";
 
 /**
- * Underrated List — selection logic.
+ * Underrated List, selection logic.
  *
  * v1: "bakeries" only. The URL slug "bakeries" maps to a *broader* editorial
- * definition than the strict Zod enum `category: "bakery"` — it also sweeps
+ * definition than the strict Zod enum `category: "bakery"`, it also sweeps
  * pastry shops, dessert shops, and dessert restaurants. The data pipeline
  * sometimes files pastry/dessert spots under `category: "boutique"` because
  * the enum is narrow; an editorial "bakeries" list should include them.
  *
  * Selection rule (per the spec in the v1 contract):
  *   1. Filter to the category's broader match set.
- *   2. Exclude `tier === "icons"` — the Underrated List is about climbers,
+ *   2. Exclude `tier === "icons"`, the Underrated List is about climbers,
  *      not established winners.
  *   3. Sort by `composite` ASC so the most-underrated (lowest composite)
- *      appears first — editorially this is "the one the city is most behind on."
+ *      appears first, editorially this is "the one the city is most behind on."
  *   4. Take up to 5. If fewer than 5 non-Icons exist in the broader match,
  *      we return whatever we have (down to 3 minimum).
  *   5. If fewer than 3 qualify, return null so the page 404s.
  *
- * No scores or grades are exposed by this module — it returns raw artifacts
+ * No scores or grades are exposed by this module, it returns raw artifacts
  * and the page renders rank + tier labels only.
  */
 
@@ -104,7 +104,7 @@ export function selectUnderratedForCategory(
 
   const nonIcons = inCategory.filter((b) => b.score.tier !== "icons");
 
-  // Sort by composite ASC — most underrated first (lowest composite).
+  // Sort by composite ASC, most underrated first (lowest composite).
   // Deterministic tiebreaker on slug to keep static builds stable.
   nonIcons.sort((a, b) => {
     if (a.score.composite !== b.score.composite) {

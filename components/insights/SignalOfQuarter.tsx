@@ -2,15 +2,15 @@ import { PreviewBadge } from "./PreviewBadge";
 import { cn } from "@/lib/utils";
 
 /**
- * SignalOfQuarter — "what changed this quarter."
+ * SignalOfQuarter, "what changed this quarter."
  *
  * One bold editorial-tone statement + one supporting number/evidence
  * line + a directional glyph. Meant to be the first "insight" the eye
- * lands on after the ScoreCard — the answer to "why does this business
+ * lands on after the ScoreCard, the answer to "why does this business
  * look different this quarter?"
  *
  * Direction drives a small visual cue (not a full traffic-light). We
- * keep this quiet on the business page per D-006 — it's a datapoint,
+ * keep this quiet on the business page per D-006, it's a datapoint,
  * not a headline.
  */
 
@@ -42,7 +42,7 @@ const DIRECTION_STYLES: Record<Direction, { badge: string; glyph: string; label:
 
 export function SignalOfQuarter({
   signal = "Review velocity picked up",
-  evidence = "23 new reviews in the last 30 days — 2.1x your normal pace.",
+  evidence = "23 new reviews in the last 30 days, 2.1x your normal pace.",
   direction = "up",
 }: SignalOfQuarterProps) {
   const style = DIRECTION_STYLES[direction];

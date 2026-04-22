@@ -5,7 +5,7 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Reveal } from "@/components/motion/Reveal";
 
 /**
- * PhotoHero — visual anchor for a business's photography.
+ * PhotoHero, visual anchor for a business's photography.
  *
  * Replaces the old 6-cell placeholder grid, which rendered as mostly empty
  * "Photo pending" boxes when the Apify scrape only saved one image per
@@ -15,7 +15,7 @@ import { Reveal } from "@/components/motion/Reveal";
  *   - If no photos: clean "Photo pending" single-cell state
  *   - If >=1 photo: single big hero image with overlay badge
  *     ("{count} photos on Google") and a click-to-enlarge lightbox
- *   - If >1 photo passed (future — when we re-scrape with images): a
+ *   - If >1 photo passed (future, when we re-scrape with images): a
  *     horizontal thumbnail strip appears under the hero
  *
  * Interactivity:
@@ -79,7 +79,7 @@ export function PhotoHero({
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={heroSrc ?? ""}
-                alt={`${businessName} — photo ${displayIdx + 1}`}
+                alt={`${businessName}, photo ${displayIdx + 1}`}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
                 loading="eager"
               />
@@ -107,7 +107,7 @@ export function PhotoHero({
               )}
             </button>
 
-            {/* Thumbnail strip — only renders when >1 photo */}
+            {/* Thumbnail strip, only renders when >1 photo */}
             {photos.length > 1 && (
               <ul className="mt-3 flex gap-2 overflow-x-auto pb-1">
                 {photos.map((src, i) => (
@@ -171,11 +171,11 @@ export function PhotoHero({
             onClick={() => setLightboxIdx(null)}
             role="dialog"
             aria-modal="true"
-            aria-label={`${businessName} — full-size photo`}
+            aria-label={`${businessName}, full-size photo`}
           >
             <motion.img
               src={photos[lightboxIdx]}
-              alt={`${businessName} — photo`}
+              alt={`${businessName}, photo`}
               className="max-h-full max-w-full object-contain"
               initial={{ scale: reduced ? 1 : 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}

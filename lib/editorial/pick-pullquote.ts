@@ -1,5 +1,5 @@
 /**
- * pick-pullquote — given an array of review texts, pick the one that
+ * pick-pullquote, given an array of review texts, pick the one that
  * reads best as a featured blockquote.
  *
  * Heuristic: a good pullquote is:

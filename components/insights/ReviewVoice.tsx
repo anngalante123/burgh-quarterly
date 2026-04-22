@@ -7,15 +7,15 @@ import { cn } from "@/lib/utils";
 import type { ReviewAnalysis } from "@/lib/data/load-review-analysis";
 
 /**
- * ReviewVoice — customer-voice distillation.
+ * ReviewVoice, customer-voice distillation.
  *
  * Two modes, preferred in this order:
- *   1. AI analysis mode — when `analysis` is passed, render Claude-mined
+ *   1. AI analysis mode, when `analysis` is passed, render Claude-mined
  *      themes + sentiment polarity + the "notable quote" + a one-line
  *      summary of what reviewers love vs nitpick. Generated offline via
  *      `scripts/analyze-reviews.ts` and cached at
  *      content/review-analysis/{slug}.json.
- *   2. Phrase mode (fallback) — regex-mined bigram/trigram phrases with
+ *   2. Phrase mode (fallback), regex-mined bigram/trigram phrases with
  *      counts and click-to-expand example quotes.
  *
  * Both modes share the same ranked-bar visualization and motion primitives.
@@ -159,7 +159,7 @@ function AiReviewVoice({
         </p>
       </div>
 
-      {/* Notable quote — pulled from the reviews */}
+      {/* Notable quote, pulled from the reviews */}
       <blockquote className="border-l-4 border-brand-lime pl-4 pr-2 py-2 mb-5 font-body italic text-base md:text-lg text-brand-black leading-snug">
         &ldquo;{analysis.notable_quote}&rdquo;
       </blockquote>
@@ -274,7 +274,7 @@ function PhraseReviewVoice({
         </p>
       </div>
 
-      {/* Pullquote — picked from the actual review texts on record. Sits
+      {/* Pullquote, picked from the actual review texts on record. Sits
           above the phrase list to give the block real voice even before
           the Claude analysis is run. */}
       {pullquote && (

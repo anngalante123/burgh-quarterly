@@ -4,12 +4,12 @@ import { motion, useReducedMotion } from "framer-motion";
 import { Reveal } from "@/components/motion/Reveal";
 
 /**
- * HowWeRank — methodology explainer.
+ * HowWeRank, methodology explainer.
  *
  * The reader's first-screen question on the homepage and business pages is
  * "what are you ranking?" Before this block, the visual language suggested
- * "best of Pittsburgh" — a quality ranking. Reality: we rank the whole
- * conversation around a business — what's said in reviews (sentiment,
+ * "best of Pittsburgh", a quality ranking. Reality: we rank the whole
+ * conversation around a business, what's said in reviews (sentiment,
  * themes, freshness), what's shot for Instagram, how it's all moving.
  *
  * Demand-gen-operator pass (2026-04-22) established:
@@ -21,7 +21,7 @@ import { Reveal } from "@/components/motion/Reveal";
  * Motion (2026-04-22):
  *   - Each signal chip fades + slides up on scroll-into-view, staggered
  *     so the reader's eye walks down the list rather than jumping in
- *   - Respects `useReducedMotion` — static when the OS flag is on
+ *   - Respects `useReducedMotion`, static when the OS flag is on
  *
  * Placement:
  *   - Homepage: between SignalStrip and "Read" section
@@ -86,7 +86,7 @@ export function HowWeRank() {
           <p className="mt-5 font-body text-sm md:text-base text-brand-black/70 leading-relaxed max-w-md">
             Reviews, sentiment, photos, Instagram, and how all of it is
             moving this quarter. Everything the city says and shows about a
-            business — in one index.
+            business, in one index.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ export function HowWeRank() {
         Google are ten years old, if the Instagram has gone quiet. A salon
         can climb faster than the cafe next door because the sentiment in
         their reviews is sharper and their captions stick. We measure what
-        the city says and sees — not whether the croissant is good.
+        the city says and sees, not whether the croissant is good.
       </p>
     </Reveal>
   );

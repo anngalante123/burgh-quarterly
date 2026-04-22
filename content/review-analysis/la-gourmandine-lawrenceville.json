@@ -17,7 +17,7 @@
       "phrase": "cream puffs and croissants",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Nut and chocolate croissants that were all fantastic — and the cream puff was delicious."
+      "exampleQuote": "Nut and chocolate croissants that were all fantastic, and the cream puff was delicious."
     },
     {
       "phrase": "busy on weekends",
@@ -33,10 +33,10 @@
     }
   ],
   "notable_quote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had.",
-  "sentiment_summary": "Reviewers reach for superlatives — comparisons to Paris, declarations of discovery, repeat-visit questions about specific items like the délice de pistache — with the rare friction being weekend crowds that prompt regulars to call ahead.",
-  "quarter_narrative": "La Gourmandine Lawrenceville entered Spring 2026 with the most-reviewed bakery profile in Pittsburgh, 1,294 ratings stacked at 88% five-star, and a visual catalog of 779 photos that gives any browser a vivid, credible first impression. The conversion path is airtight — hours, phone, and website all present on Google — and creator interest in the brand remains strong relative to the family median. What went dormant was Instagram: zero posts and zero reels in 30 days, with the last update landing 37 days ago, while Page's held the Pittsburgh Sweets family lead largely on social momentum that La Gourmandine is currently not generating. Holding the bakery rank at number one is defensible on review depth alone, but closing the gap on the sweets side — and defending against any bakery challenger with an active feed — depends almost entirely on whether the Instagram account wakes up.",
-  "tldr_read": "Bulletproof reviews and a complete Google presence, offset by a completely dormant Instagram — Ones to Watch, #1 in Pittsburgh Bakeries.",
-  "tldr_meaning": "Every signal axis is at or above the family median except Instagram momentum, which sits far below it — the ceiling here is higher than the current rank reflects, and it hinges on one variable.",
+  "sentiment_summary": "Reviewers reach for superlatives, comparisons to Paris, declarations of discovery, repeat-visit questions about specific items like the délice de pistache, with the rare friction being weekend crowds that prompt regulars to call ahead.",
+  "quarter_narrative": "La Gourmandine Lawrenceville entered Spring 2026 with the most-reviewed bakery profile in Pittsburgh, 1,294 ratings stacked at 88% five-star, and a visual catalog of 779 photos that gives any browser a vivid, credible first impression. The conversion path is airtight, hours, phone, and website all present on Google, and creator interest in the brand remains strong relative to the family median. What went dormant was Instagram: zero posts and zero reels in 30 days, with the last update landing 37 days ago, while Page's held the Pittsburgh Sweets family lead largely on social momentum that La Gourmandine is currently not generating. Holding the bakery rank at number one is defensible on review depth alone, but closing the gap on the sweets side, and defending against any bakery challenger with an active feed, depends almost entirely on whether the Instagram account wakes up.",
+  "tldr_read": "Bulletproof reviews and a complete Google presence, offset by a completely dormant Instagram, Ones to Watch, #1 in Pittsburgh Bakeries.",
+  "tldr_meaning": "Every signal axis is at or above the family median except Instagram momentum, which sits far below it, the ceiling here is higher than the current rank reflects, and it hinges on one variable.",
   "playbook": [
     {
       "headline": "End the 37-day Instagram silence now",
@@ -46,7 +46,7 @@
     },
     {
       "headline": "Turn seasonal items into recurring content hooks",
-      "action": "Reviewers are already asking about specific items like the délice de pistache by name — naming and dating seasonal drops publicly gives creators and regulars a reason to post.",
+      "action": "Reviewers are already asking about specific items like the délice de pistache by name, naming and dating seasonal drops publicly gives creators and regulars a reason to post.",
       "signal": "community_spark",
       "priority": "medium"
     },

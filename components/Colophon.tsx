@@ -1,5 +1,5 @@
 /**
- * Colophon — one-line footer.
+ * Colophon, one-line footer.
  *
  * Copy is verbatim from EDITORIAL_VOICE.md § Colophon:
  *   "Published by Relay. Pittsburgh, PA."

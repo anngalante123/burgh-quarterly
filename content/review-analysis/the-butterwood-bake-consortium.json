@@ -5,7 +5,7 @@
       "phrase": "elevated flavor and texture",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Not just your normal sugary affair but elevated with unique flavor and texture — you can tell a lot of time and love went into crafting those recipes."
+      "exampleQuote": "Not just your normal sugary affair but elevated with unique flavor and texture, you can tell a lot of time and love went into crafting those recipes."
     },
     {
       "phrase": "cozy date-night atmosphere",
@@ -17,7 +17,7 @@
       "phrase": "slow-moving service line",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "They've always had issues regarding speed of service — we wound up leaving both times. The lines are long and do not move."
+      "exampleQuote": "They've always had issues regarding speed of service, we wound up leaving both times. The lines are long and do not move."
     },
     {
       "phrase": "coffee execution falling short",
@@ -32,27 +32,27 @@
       "exampleQuote": "Gluten and nut free options are fire. Went here around 9 PM or so. Staff friendly."
     }
   ],
-  "notable_quote": "Not just your normal sugary affair but elevated with unique flavor and texture — you can tell a lot of time and love went into crafting those recipes.",
-  "sentiment_summary": "Reviewers arrive for the pastry work — the lavender cakes, brown butter blondies, and vegan options earn genuine loyalty — but the coffee program, from slow service lines to a macchiato served in an espresso cup with no lid, keeps pulling the ceiling down.",
-  "quarter_narrative": "Spring 2026 found Butterwood stacking reviews at a steady clip — 736 on Google with 79% at five stars, a photo catalog pushing nearly a thousand images across a well-organized set of categories, and a conversion path that runs clean from search to visit. What it didn't do was post a single thing on Instagram for the second consecutive year; the account has been silent for 511 days while the family leader, Allegheny Coffee & Tea Exchange, rode social momentum to the top of the rankings. Butterwood holds the #2 cafe slot on the strength of its visual catalog and the sheer volume of creator-driven content it inspires — a Creator Fit signal that sits notably above the family median — but closing the gap with Allegheny depends almost entirely on whether the Instagram account comes back to life.",
-  "tldr_read": "Near-perfect conversion path and a visually rich Google presence undercut by 511 days of Instagram silence. Ones to Watch — #2 in Pittsburgh Cafes.",
-  "tldr_meaning": "Every signal except Instagram is at or above the family median; the rank ceiling is not a product problem or a discovery problem — it is a single dormant account holding a well-regarded business below where the rest of its data would otherwise place it.",
+  "notable_quote": "Not just your normal sugary affair but elevated with unique flavor and texture, you can tell a lot of time and love went into crafting those recipes.",
+  "sentiment_summary": "Reviewers arrive for the pastry work, the lavender cakes, brown butter blondies, and vegan options earn genuine loyalty, but the coffee program, from slow service lines to a macchiato served in an espresso cup with no lid, keeps pulling the ceiling down.",
+  "quarter_narrative": "Spring 2026 found Butterwood stacking reviews at a steady clip, 736 on Google with 79% at five stars, a photo catalog pushing nearly a thousand images across a well-organized set of categories, and a conversion path that runs clean from search to visit. What it didn't do was post a single thing on Instagram for the second consecutive year; the account has been silent for 511 days while the family leader, Allegheny Coffee & Tea Exchange, rode social momentum to the top of the rankings. Butterwood holds the #2 cafe slot on the strength of its visual catalog and the sheer volume of creator-driven content it inspires, a Creator Fit signal that sits notably above the family median, but closing the gap with Allegheny depends almost entirely on whether the Instagram account comes back to life.",
+  "tldr_read": "Near-perfect conversion path and a visually rich Google presence undercut by 511 days of Instagram silence. Ones to Watch, #2 in Pittsburgh Cafes.",
+  "tldr_meaning": "Every signal except Instagram is at or above the family median; the rank ceiling is not a product problem or a discovery problem, it is a single dormant account holding a well-regarded business below where the rest of its data would otherwise place it.",
   "playbook": [
     {
       "headline": "End the 511-day Instagram blackout now",
-      "action": "One post per week of the actual pastry work — lavender cakes, blondies, the late-night vegan case — would restart the momentum signal that is currently the only axis below the family median.",
+      "action": "One post per week of the actual pastry work, lavender cakes, blondies, the late-night vegan case, would restart the momentum signal that is currently the only axis below the family median.",
       "signal": "momentum",
       "priority": "high"
     },
     {
       "headline": "Address the coffee program publicly and directly",
-      "action": "At least three of seven available reviews flag coffee execution — cup size confusion, missing chai, no ice at 4pm — and each one represents a repeat-visit risk worth resolving on the record.",
+      "action": "At least three of seven available reviews flag coffee execution, cup size confusion, missing chai, no ice at 4pm, and each one represents a repeat-visit risk worth resolving on the record.",
       "signal": "community_spark",
       "priority": "medium"
     },
     {
       "headline": "Channel the creator pull into tagged photo categories",
-      "action": "With a Creator Fit signal already well above the family median, nudging in-store signage toward specific Google photo categories — Vibe, Menu, Food & drink — would deepen a catalog already at 984 images.",
+      "action": "With a Creator Fit signal already well above the family median, nudging in-store signage toward specific Google photo categories, Vibe, Menu, Food & drink, would deepen a catalog already at 984 images.",
       "signal": "content_canvas",
       "priority": "low"
     }

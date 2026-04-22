@@ -3,12 +3,12 @@ import type { CreatorAudit } from "@/lib/editorial/creator-audit";
 import { cn } from "@/lib/utils";
 
 /**
- * CreatorReadyAudit — boolean checklist of creator-readiness signals.
+ * CreatorReadyAudit, boolean checklist of creator-readiness signals.
  * Each fail carries a one-line fix so the reader (or owner) walks away
  * with a concrete to-do list.
  *
- * Pass/fail uses visual tokens from the brand palette — lime for pass,
- * purple for fail — rather than green/red.
+ * Pass/fail uses visual tokens from the brand palette, lime for pass,
+ * purple for fail, rather than green/red.
  */
 
 type CreatorReadyAuditProps = {

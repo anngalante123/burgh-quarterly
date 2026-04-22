@@ -1,5 +1,5 @@
 /**
- * category-family — group businesses by a wider editorial "family" than
+ * category-family, group businesses by a wider editorial "family" than
  * Google's literal `categoryName` provides.
  *
  * Why this exists: Google's category labels are noisy at the small-business
@@ -9,7 +9,7 @@
  *   - Show 1 dot (too narrow match) OR
  *   - Mix breweries with ice cream (too broad Zod enum match)
  *
- * Anna flagged 2026-04-22: "some of these aren't bakeries" — because the
+ * Anna flagged 2026-04-22: "some of these aren't bakeries", because the
  * Zod category bucket was conflating dessert shops with bakeries.
  *
  * This helper returns a family key + display label per Google categoryName.
@@ -29,7 +29,7 @@ export type CategoryFamily = {
 };
 
 const CATEGORY_TO_FAMILY: Record<string, CategoryFamily> = {
-  // Sweets — bakeries, pastry, dessert, ice cream
+  // Sweets, bakeries, pastry, dessert, ice cream
   Bakery: { key: "sweets", label: "Pittsburgh Sweets", singular: "sweet shop" },
   "Pastry shop": {
     key: "sweets",
@@ -52,7 +52,7 @@ const CATEGORY_TO_FAMILY: Record<string, CategoryFamily> = {
     singular: "ice cream shop",
   },
 
-  // Cafes — coffee, tea, juice
+  // Cafes, coffee, tea, juice
   Cafe: { key: "cafes", label: "Pittsburgh Cafes", singular: "cafe" },
   "Coffee shop": {
     key: "cafes",

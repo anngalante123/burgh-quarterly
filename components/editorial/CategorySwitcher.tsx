@@ -6,19 +6,19 @@ import {
 } from "@/lib/data/underrated";
 
 /**
- * CategorySwitcher — horizontal pill-tab bar showing available categories
+ * CategorySwitcher, horizontal pill-tab bar showing available categories
  * for a given list section (Underrated or Top). The active slug gets the
  * lime highlight; the rest are purple-outlined links. If there's only one
  * category live, the bar still renders with a "More coming next issue"
  * hint so readers know the list will grow.
  *
  * Both Underrated and Top use the SAME category registry
- * (UNDERRATED_CATEGORIES) — the two lists always stay in sync about what
+ * (UNDERRATED_CATEGORIES), the two lists always stay in sync about what
  * "bakeries" means.
  */
 
 type CategorySwitcherProps = {
-  /** The route base — "/underrated" or "/top". */
+  /** The route base, "/underrated" or "/top". */
   basePath: "/underrated" | "/top";
   /** The currently active category slug. */
   current: UnderratedCategorySlug;

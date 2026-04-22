@@ -20,13 +20,13 @@ import { ListTOC, toEntryAnchor } from "@/components/editorial/ListTOC";
 import { CompanionLink } from "@/components/editorial/CompanionLink";
 
 /**
- * Top Performers — the celebratory counterpart to the Underrated List.
+ * Top Performers, the celebratory counterpart to the Underrated List.
  *
  * Voice (EDITORIAL_VOICE.md):
- *   - LOUD editorial, celebratory — not braggy, not listicle
+ *   - LOUD editorial, celebratory, not braggy, not listicle
  *   - Specific: neighborhoods, product types, what the city actually loves
  *   - No raw composite scores, no grades, no Relay mention in body copy
- *   - No "best-of" framing ("best bakery") — use "Icons," "top of the index"
+ *   - No "best-of" framing ("best bakery"), use "Icons," "top of the index"
  *
  * v1 ships /top/bakeries (sweets family). Add categories by extending
  * TOP_CATEGORIES (shared with Underrated) and writing ENTRY_COPY clauses.
@@ -71,7 +71,7 @@ const ENTRY_COPY: Record<string, EntryCopy> = {
   },
   "jenis-splendid-ice-creams": {
     hook:
-      "Larimer, and the case reads like a mood board. Fewer reviews than the Shadyside shops — but the ones that are there are in love. The photography on the listing is better than most bakeries' Instagrams.",
+      "Larimer, and the case reads like a mood board. Fewer reviews than the Shadyside shops, but the ones that are there are in love. The photography on the listing is better than most bakeries' Instagrams.",
     stat: "251 reviews. 191 of them five-star. 450 photos on the listing.",
   },
   "kyo-matcha": {
@@ -81,7 +81,7 @@ const ENTRY_COPY: Record<string, EntryCopy> = {
   },
   waffallonia: {
     hook:
-      "Murray Avenue's single-product shop. Liège waffles with chocolate and ice cream — and nothing else on the menu. Nine years of a 4.6 rating on one thing. The city knows what it is.",
+      "Murray Avenue's single-product shop. Liège waffles with chocolate and ice cream, and nothing else on the menu. Nine years of a 4.6 rating on one thing. The city knows what it is.",
     stat: "605 reviews. 462 of them five-star. 291 photos on the listing.",
   },
 };
@@ -119,7 +119,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
   const countWord = numberWord(count);
   const dek = `${capitalize(countWord)} ${
     count === 1 ? spec.singularLower : spec.pluralLower
-  } firing on every signal — reviews, photos, and momentum.`;
+  } firing on every signal, reviews, photos, and momentum.`;
   const readMinutes = estimateReadingMinutes(count);
   const tocItems = entries.map((e) => ({ name: e.business.name }));
 
@@ -175,7 +175,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
           <Reveal delay={0.1}>
             <p className="mt-10 max-w-3xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
               Every quarter we rank Pittsburgh&apos;s small businesses on the
-              conversation — reviews, sentiment, photos, Instagram, how it
+              conversation, reviews, sentiment, photos, Instagram, how it
               keeps moving. These are the {spec.pluralLower} at the top of
               the index this issue. Reviews stack. Photos document. The line
               is part of the point.
@@ -187,7 +187,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
             <CategorySwitcher basePath="/top" current={category} />
           </Reveal>
 
-          {/* How we picked these — methodology note */}
+          {/* How we picked these, methodology note */}
           <Reveal delay={0.18}>
             <div className="mt-10 border-l-4 border-brand-lime bg-white/60 px-5 py-4 max-w-3xl">
               <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-black">
@@ -195,7 +195,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
                 We filtered the {spec.pluralLower} to every Icons-tier
-                business this issue, sorted by composite score descending —
+                business this issue, sorted by composite score descending ,
                 the highest-ranked first. Composite comes from five signals:
                 reviews, sentiment, photos, Instagram cadence, and creator
                 fit.{" "}
@@ -241,7 +241,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
                         : "md:grid-cols-[10rem_1fr]"
                     }`}
                   >
-                    {/* Big numeral — rendered first on odd rows (left),
+                    {/* Big numeral, rendered first on odd rows (left),
                         second on even rows (right) so it lands in the
                         narrow grid track either way. */}
                     {!alt && (
@@ -304,14 +304,14 @@ export default async function TopCategoryPage({ params }: PageProps) {
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/85 leading-relaxed">
                 The index rewards businesses whose signal fires across every
-                axis — reviews, sentiment, photos, Instagram cadence, and
+                axis, reviews, sentiment, photos, Instagram cadence, and
                 reachability. These {spec.pluralLower} have it on all five.
                 Next issue we&apos;ll see who holds and who gets passed.
               </p>
             </div>
           </Reveal>
 
-          {/* Companion link to Underrated — upgraded from a tiny text link
+          {/* Companion link to Underrated, upgraded from a tiny text link
               to a full card that matches the treatment on the Underrated
               page. Gives the reader an obvious next step. */}
           <Reveal as="section" className="mt-14 md:mt-20">
@@ -319,7 +319,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
               href={`/underrated/${category}`}
               kicker="The Underrated List"
               headline={`Pittsburgh's Most Underrated ${spec.label}, Spring 2026`}
-              dek={`The ${spec.pluralLower} whose rank we expect to move most — the counterweight to this list.`}
+              dek={`The ${spec.pluralLower} whose rank we expect to move most, the counterweight to this list.`}
               accent="purple"
             />
           </Reveal>

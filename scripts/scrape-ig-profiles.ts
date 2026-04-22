@@ -3,7 +3,7 @@
  * Scrape Instagram profile details + recent posts for every discovered handle.
  *
  * Actor: apify/instagram-scraper (shu8hvrXbJbY3Eb9W)
- * Single run with all directUrls — much cheaper than N runs.
+ * Single run with all directUrls, much cheaper than N runs.
  *
  * Output (per business):
  *   content/social/<slug>.json = {
@@ -116,7 +116,7 @@ async function waitForRun(runId: string, budgetUsd = 8): Promise<{ datasetId: st
         `https://api.apify.com/v2/actor-runs/${runId}/abort?token=${APIFY_TOKEN}`,
         { method: "POST" },
       );
-      throw new Error(`Aborted — run exceeded $${budgetUsd} cap at $${cost.toFixed(2)}`);
+      throw new Error(`Aborted, run exceeded $${budgetUsd} cap at $${cost.toFixed(2)}`);
     }
     if (["SUCCEEDED", "FAILED", "ABORTED", "TIMED-OUT"].includes(data.status)) {
       process.stdout.write("\n");
@@ -178,7 +178,7 @@ function summarizeProfile(p: ScrapedProfile, scrapedAt: string): {
 async function main(): Promise<void> {
   const handles = JSON.parse(await readFile(HANDLES_PATH, "utf8")) as HandleRecord[];
   const withHandles = handles.filter((h) => h.instagram_handle);
-  // Dedupe — multiple businesses can share a handle (e.g. both La Gourmandine
+  // Dedupe, multiple businesses can share a handle (e.g. both La Gourmandine
   // locations use @lagourmandinebakery). One scrape result feeds both records.
   const uniqueHandles = [...new Set(withHandles.map((h) => h.instagram_handle!.toLowerCase()))];
   const urls = uniqueHandles.map((h) => `https://www.instagram.com/${h}/`);
@@ -190,7 +190,7 @@ async function main(): Promise<void> {
   console.log(`[scrape] run id: ${runId}`);
 
   const { datasetId, costUsd } = await waitForRun(runId, 8);
-  console.log(`[scrape] dataset ${datasetId} — cost $${costUsd.toFixed(3)}`);
+  console.log(`[scrape] dataset ${datasetId}, cost $${costUsd.toFixed(3)}`);
 
   const items = await fetchDataset(datasetId);
   console.log(`[scrape] fetched ${items.length} items`);

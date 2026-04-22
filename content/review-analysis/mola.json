@@ -32,11 +32,11 @@
       "exampleQuote": "For the service, I cannot give a positive review."
     }
   ],
-  "notable_quote": "One of the best sushi experiences I have ever had overall — the quality of the food is excellent.",
-  "sentiment_summary": "Reviewers keep returning to the same word — 'best' — applied not just to Pittsburgh but to their broader dining lives, with the chef's technical range and ingredient quality doing the heavy lifting; the friction points are predictable: price ceiling and weekend crowding, with one isolated service complaint breaking an otherwise warm consensus.",
-  "quarter_narrative": "Mola closed out Spring 2026 stacking reviews at a rate most East Liberty restaurants would envy — 767 on Google, 80 percent at five stars, with the newest arriving a day before publication. Its photo catalog, nearly a thousand images spread across fourteen categories, is the most complete visual record in the Pittsburgh Asian Kitchens family, and Mola leads that family this issue on the strength of creator collaboration fit, the single signal where it most clearly outpaces its peers. The one conspicuous gap is Instagram: two posts in the last thirty days, no reels, and a 1.42 percent engagement rate on an account that has otherwise done the foundational work of having a bio, a handle, and a business profile. Rank defense at number one in both Pittsburgh Sushi and the Asian Kitchens family depends on closing the distance between its off-platform reputation and what it's actually publishing.",
-  "tldr_read": "Near-perfect conversion path and a creator-fit signal that leads the Asian Kitchens family — hobbled by an Instagram account posting twice a month with no reels. Ones to Watch — #1 in Pittsburgh Sushi Restaurants.",
-  "tldr_meaning": "Every structural axis — reviews, visual catalog, discoverability, creator appeal — is already built; the only thing keeping Mola from Icons territory is an Instagram cadence that currently runs at about one post per two weeks.",
+  "notable_quote": "One of the best sushi experiences I have ever had overall, the quality of the food is excellent.",
+  "sentiment_summary": "Reviewers keep returning to the same word, 'best', applied not just to Pittsburgh but to their broader dining lives, with the chef's technical range and ingredient quality doing the heavy lifting; the friction points are predictable: price ceiling and weekend crowding, with one isolated service complaint breaking an otherwise warm consensus.",
+  "quarter_narrative": "Mola closed out Spring 2026 stacking reviews at a rate most East Liberty restaurants would envy, 767 on Google, 80 percent at five stars, with the newest arriving a day before publication. Its photo catalog, nearly a thousand images spread across fourteen categories, is the most complete visual record in the Pittsburgh Asian Kitchens family, and Mola leads that family this issue on the strength of creator collaboration fit, the single signal where it most clearly outpaces its peers. The one conspicuous gap is Instagram: two posts in the last thirty days, no reels, and a 1.42 percent engagement rate on an account that has otherwise done the foundational work of having a bio, a handle, and a business profile. Rank defense at number one in both Pittsburgh Sushi and the Asian Kitchens family depends on closing the distance between its off-platform reputation and what it's actually publishing.",
+  "tldr_read": "Near-perfect conversion path and a creator-fit signal that leads the Asian Kitchens family, hobbled by an Instagram account posting twice a month with no reels. Ones to Watch, #1 in Pittsburgh Sushi Restaurants.",
+  "tldr_meaning": "Every structural axis, reviews, visual catalog, discoverability, creator appeal, is already built; the only thing keeping Mola from Icons territory is an Instagram cadence that currently runs at about one post per two weeks.",
   "playbook": [
     {
       "headline": "Restart Instagram with weekly reels",
@@ -46,7 +46,7 @@
     },
     {
       "headline": "Open the door to creator visits",
-      "action": "Creator fit is already the family's highest at 90 — formalizing a standing invite for food photographers or video creators converts latent fit into actual posts and reach.",
+      "action": "Creator fit is already the family's highest at 90, formalizing a standing invite for food photographers or video creators converts latent fit into actual posts and reach.",
       "signal": "collab_fit",
       "priority": "medium"
     },

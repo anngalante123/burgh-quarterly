@@ -4,7 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
 /**
- * Reveal — scroll-triggered fade + translate-up wrapper.
+ * Reveal, scroll-triggered fade + translate-up wrapper.
  *
  * Motion spec:
  *   - initial: opacity 0, y +16px
@@ -19,13 +19,13 @@ import type { ReactNode } from "react";
 
 type RevealProps = {
   children: ReactNode;
-  /** Stagger — delay in seconds before the reveal starts. Useful for sibling lists. */
+  /** Stagger, delay in seconds before the reveal starts. Useful for sibling lists. */
   delay?: number;
   /** Override default vertical translate distance (px). */
   y?: number;
   className?: string;
   as?: "div" | "section" | "li" | "article" | "header";
-  /** Optional anchor id — forwarded to the wrapped element so sections can be jump-link targets. */
+  /** Optional anchor id, forwarded to the wrapped element so sections can be jump-link targets. */
   id?: string;
 };
 

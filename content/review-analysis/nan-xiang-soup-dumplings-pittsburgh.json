@@ -5,7 +5,7 @@
       "phrase": "server name shoutouts",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Our server Morgan had an amazing smile and great customer service — she held amazing conversation and made the experience very welcoming."
+      "exampleQuote": "Our server Morgan had an amazing smile and great customer service, she held amazing conversation and made the experience very welcoming."
     },
     {
       "phrase": "soup dumplings and sampler",
@@ -23,7 +23,7 @@
       "phrase": "new menu items",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "We tried the new spicy beef dumplings and sweet and sour soup — both were incredible."
+      "exampleQuote": "We tried the new spicy beef dumplings and sweet and sour soup, both were incredible."
     },
     {
       "phrase": "bathroom cleanliness",
@@ -32,27 +32,27 @@
       "exampleQuote": "Everything was great, but the bathroom was not clean."
     }
   ],
-  "notable_quote": "Our server Morgan had an amazing smile and great customer service — she was quick, efficient, and always had refills ready, and the new spicy beef dumplings and sweet and sour soup were both incredible.",
-  "sentiment_summary": "Reviewers arrive for the xiao long bao and leave talking about their server by name — Galilea, Morgan, Chavely surface repeatedly — with the lone friction point being bathroom upkeep in an otherwise clean, fast operation.",
-  "quarter_narrative": "Spring 2026 was a stacking quarter for Nan Xiang Soup Dumplings: 1,212 Google reviews at 88% five-star, a review posted two days before this issue closed, and a 1,349-photo catalog spread across fifteen categories — a visual footprint that most South Side Flats restaurants haven't approached. The business leads the Pittsburgh Businesses family ranking on the strength of its Instagram momentum, where eleven posts and four Reels in thirty days — including one posted today — push its social signal well above the family median. What moves the rank from here is closing the gap between posting volume and engagement: the account is showing up every few days but not yet converting that frequency into measurable community response.",
-  "tldr_read": "Immaculate conversion path and deep photo catalog, engagement rate trailing the posting pace — Icons of the Burgh, #1 in Pittsburgh Restaurants and #1 in Pittsburgh Businesses.",
-  "tldr_meaning": "The structural signals — reviews, photos, discovery completeness — are as locked in as they get; the remaining variable is whether Instagram engagement catches up to posting frequency.",
+  "notable_quote": "Our server Morgan had an amazing smile and great customer service, she was quick, efficient, and always had refills ready, and the new spicy beef dumplings and sweet and sour soup were both incredible.",
+  "sentiment_summary": "Reviewers arrive for the xiao long bao and leave talking about their server by name, Galilea, Morgan, Chavely surface repeatedly, with the lone friction point being bathroom upkeep in an otherwise clean, fast operation.",
+  "quarter_narrative": "Spring 2026 was a stacking quarter for Nan Xiang Soup Dumplings: 1,212 Google reviews at 88% five-star, a review posted two days before this issue closed, and a 1,349-photo catalog spread across fifteen categories, a visual footprint that most South Side Flats restaurants haven't approached. The business leads the Pittsburgh Businesses family ranking on the strength of its Instagram momentum, where eleven posts and four Reels in thirty days, including one posted today, push its social signal well above the family median. What moves the rank from here is closing the gap between posting volume and engagement: the account is showing up every few days but not yet converting that frequency into measurable community response.",
+  "tldr_read": "Immaculate conversion path and deep photo catalog, engagement rate trailing the posting pace, Icons of the Burgh, #1 in Pittsburgh Restaurants and #1 in Pittsburgh Businesses.",
+  "tldr_meaning": "The structural signals, reviews, photos, discovery completeness, are as locked in as they get; the remaining variable is whether Instagram engagement catches up to posting frequency.",
   "playbook": [
     {
       "headline": "Turn posting volume into comment volume",
-      "action": "With 11 posts in 30 days and a 0.21% engagement rate, prompt a response — ask followers to name their server or their dumpling order in comments.",
+      "action": "With 11 posts in 30 days and a 0.21% engagement rate, prompt a response, ask followers to name their server or their dumpling order in comments.",
       "signal": "momentum",
       "priority": "high"
     },
     {
       "headline": "Put Didi and the named servers on Reels",
-      "action": "Four Reels last month is a start — the robot and the named-server culture are two ready-made recurring formats that reviewers already respond to.",
+      "action": "Four Reels last month is a start, the robot and the named-server culture are two ready-made recurring formats that reviewers already respond to.",
       "signal": "content_canvas",
       "priority": "medium"
     },
     {
       "headline": "Route the bathroom note before it compounds",
-      "action": "A single negative mention in nine reviews is low noise, but bathroom cleanliness is the kind of complaint that clusters quickly in a high-volume room — a visible checklist closes it.",
+      "action": "A single negative mention in nine reviews is low noise, but bathroom cleanliness is the kind of complaint that clusters quickly in a high-volume room, a visible checklist closes it.",
       "signal": "community_spark",
       "priority": "low"
     }

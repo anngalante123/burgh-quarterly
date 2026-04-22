@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 /**
- * Editorial masthead — dark band at the very top of every page.
+ * Editorial masthead, dark band at the very top of every page.
  *
  * Aesthetic pulled from the Pittsburgh Social Scorecard HTML reference:
  * solid black band, lime wordmark, Unbounded 800. Reads like the

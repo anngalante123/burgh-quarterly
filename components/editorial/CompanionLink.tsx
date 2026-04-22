@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 /**
- * CompanionLink — bottom-of-page card linking to the paired list.
+ * CompanionLink, bottom-of-page card linking to the paired list.
  *
  * Underrated pages link to the Top Performers list of the same category;
  * Top Performers pages link to the Underrated list. Gives the reader an
@@ -17,7 +17,7 @@ type CompanionLinkProps = {
   headline: string;
   /** One-line reason to click. */
   dek: string;
-  /** Color scheme — lime for Icons, purple for Underrated. */
+  /** Color scheme, lime for Icons, purple for Underrated. */
   accent: "lime" | "purple";
 };
 

@@ -46,7 +46,7 @@ import { loadSocialBySlug } from "@/lib/data/load-social";
 import { familyForCategory } from "@/lib/data/category-family";
 
 /**
- * Business page — the QUIET RECORD zone (EDITORIAL_VOICE.md § loud-quiet asymmetry).
+ * Business page, the QUIET RECORD zone (EDITORIAL_VOICE.md § loud-quiet asymmetry).
  *
  * Voice: Wikipedia-neutral. Factual. No editorializing on the page body.
  * The loud voice lives on /issue/* editorial pages, not here.
@@ -169,7 +169,7 @@ function computePeerMedians(
  * which is too narrow for most small-business categories.
  *
  * Ranks are reassigned 1..N within the family, ordered by composite score
- * descending — so the plot reads "rank within Pittsburgh Sweets" even if
+ * descending, so the plot reads "rank within Pittsburgh Sweets" even if
  * the JSON's `rank_category` was scoped to a narrower bucket.
  */
 function buildCategoryPeerDots(
@@ -216,7 +216,7 @@ function buildSignal(art: BusinessArtifact): {
       signal: "Review activity is current",
       evidence: `Most recent review landed ${
         fresh === 0 ? "today" : fresh === 1 ? "yesterday" : `${fresh} days ago`
-      } — customers are still posting.`,
+      }, customers are still posting.`,
       direction: "up",
     };
   }
@@ -230,7 +230,7 @@ function buildSignal(art: BusinessArtifact): {
   return {
     signal: "Review text catches up next issue",
     evidence:
-      "Review-text rescrape is in flight — the full voice-miner will run before the next issue drops.",
+      "Review-text rescrape is in flight, the full voice-miner will run before the next issue drops.",
     direction: "flat",
   };
 }
@@ -272,11 +272,11 @@ export default async function BusinessPage({ params }: PageProps) {
     all,
   );
 
-  // Social data — IG snapshot + Google Maps growth (Dec→Apr).
+  // Social data, IG snapshot + Google Maps growth (Dec→Apr).
   const social = loadSocialBySlug(biz.slug);
 
-  // Subscore expansion details — concrete data pulled from the record,
-  // surfaced when a reader clicks a subscore row. No numeric scores here —
+  // Subscore expansion details, concrete data pulled from the record,
+  // surfaced when a reader clicks a subscore row. No numeric scores here ,
   // just the raw signals the bar is derived from.
   const lastPostAt = social.ig?.last_post_at
     ? new Date(social.ig.last_post_at)
@@ -291,10 +291,10 @@ export default async function BusinessPage({ params }: PageProps) {
   > = {
     content_canvas: {
       explainer:
-        "A business's visible photo catalog — the raw material creators pull from when they film, post, or write about a place.",
+        "A business's visible photo catalog, the raw material creators pull from when they film, post, or write about a place.",
       bullets: [
         `${meta.imagesCount.toLocaleString()} photos on Google across ${meta.imageCategories.length} categories`,
-        `Hero photo indexed — ${biz.photos.length > 0 ? "available" : "pending"}`,
+        `Hero photo indexed, ${biz.photos.length > 0 ? "available" : "pending"}`,
         meta.imageCategories.slice(0, 4).length > 0
           ? `Tagged: ${meta.imageCategories.slice(0, 4).join(", ")}`
           : "No category tags yet",
@@ -302,7 +302,7 @@ export default async function BusinessPage({ params }: PageProps) {
     },
     community_spark: {
       explainer:
-        "The conversation around a business in reviews — how recent, how dense, and what themes recur.",
+        "The conversation around a business in reviews, how recent, how dense, and what themes recur.",
       bullets: [
         `${totalRev.toLocaleString()} total reviews`,
         pct !== null ? `${pct}% five-star` : "No review distribution yet",
@@ -325,7 +325,7 @@ export default async function BusinessPage({ params }: PageProps) {
           ? "Opening hours published"
           : "No opening hours on Google",
         meta.claimThisBusiness
-          ? "Unclaimed on Google — owner hasn't stepped in"
+          ? "Unclaimed on Google, owner hasn't stepped in"
           : "Claimed on Google",
       ],
     },
@@ -348,7 +348,7 @@ export default async function BusinessPage({ params }: PageProps) {
     },
     collab_fit: {
       explainer:
-        "How ready a business is for a creator partnership — public presence, real contact surface, and an owner who's reachable.",
+        "How ready a business is for a creator partnership, public presence, real contact surface, and an owner who's reachable.",
       bullets: [
         meta.hasWebsite ? "Website (linkable in captions)" : "No website",
         meta.hasPhone ? "Phone line live" : "No phone",
@@ -366,7 +366,7 @@ export default async function BusinessPage({ params }: PageProps) {
   // Trend history: two points (v1 + v2 Google Maps scrapes) if growth data
   // exists; otherwise single-point "tracking from today" fallback.
   //
-  // Quarter labels derive from the actual scrape dates — the v1 scrape in
+  // Quarter labels derive from the actual scrape dates, the v1 scrape in
   // these files landed in late March 2026 (not Dec 2025), so we label by
   // month rather than hardcoding a season. "Mar 26" → "Apr 26" is less
   // misleading than "Wi25 → Sp26" for a ~25-day window.
@@ -406,7 +406,7 @@ export default async function BusinessPage({ params }: PageProps) {
   // Deterministic helpers act as fallbacks when a cache file is missing.
   const reviewAnalysis = loadReviewAnalysis(biz.slug);
 
-  // TL;DR — executive preview at the top of the page (the read + what it means).
+  // TL;DR, executive preview at the top of the page (the read + what it means).
   const tldr =
     reviewAnalysis?.tldr_read && reviewAnalysis.tldr_meaning
       ? {
@@ -415,21 +415,21 @@ export default async function BusinessPage({ params }: PageProps) {
         }
       : buildBusinessTldr(art, social, categoryLabel);
 
-  // Narrative paragraph — the story of this quarter for this business.
+  // Narrative paragraph, the story of this quarter for this business.
   const narrative = reviewAnalysis?.quarter_narrative
     ? { body: reviewAnalysis.quarter_narrative, issue: "Spring 2026" }
     : buildQuarterNarrative(art, social, all, "Spring 2026");
 
-  // Playbook — 3 data-derived recommendations sorted by leverage.
+  // Playbook, 3 data-derived recommendations sorted by leverage.
   const playbook = reviewAnalysis?.playbook?.length
     ? { items: reviewAnalysis.playbook }
     : buildPlaybook(art, social);
 
-  // Creator-ready audit — 10 boolean checks with one-line fixes (stays
+  // Creator-ready audit, 10 boolean checks with one-line fixes (stays
   // deterministic; it's a diagnostic, not an editorial block).
   const creatorAudit = buildCreatorAudit(art, social);
 
-  // Fallback pullquote — picked from actual review texts on file.
+  // Fallback pullquote, picked from actual review texts on file.
   // Used by the non-AI Review Voice display.
   const reviewPullquote = pickPullquote(meta.reviewTexts);
 
@@ -442,7 +442,7 @@ export default async function BusinessPage({ params }: PageProps) {
 
       <main className="flex-1">
         <article className="mx-auto max-w-7xl px-6 py-10 md:py-14">
-          {/* Breadcrumb — geography-first */}
+          {/* Breadcrumb, geography-first */}
           <nav
             aria-label="Breadcrumb"
             className="font-body text-xs md:text-sm text-brand-black/60"
@@ -485,12 +485,12 @@ export default async function BusinessPage({ params }: PageProps) {
             </Suspense>
           </header>
 
-          {/* Quarter narrative — auto-generated editorial paragraph. */}
+          {/* Quarter narrative, auto-generated editorial paragraph. */}
           <div className="mt-8 md:mt-10">
             <QuarterNarrative body={narrative.body} issue={narrative.issue} />
           </div>
 
-          {/* TL;DR — executive preview. Sits above ScoreHero so the reader
+          {/* TL;DR, executive preview. Sits above ScoreHero so the reader
               gets the diagnosis + so-what in 2 lines before the full page. */}
           <div className="mt-6 md:mt-8">
             <BusinessTldr read={tldr.read} meaning={tldr.meaning} />
@@ -499,7 +499,7 @@ export default async function BusinessPage({ params }: PageProps) {
           {/* Main two-column layout on larger screens */}
           <div className="mt-10 md:mt-12 grid grid-cols-1 lg:grid-cols-[1fr_18rem] gap-8 lg:gap-10">
             <div className="space-y-8 md:space-y-10">
-              {/* ScoreHero — the big visual anchor (no raw composite, ever). */}
+              {/* ScoreHero, the big visual anchor (no raw composite, ever). */}
               <ScoreHero
                 tier={score.tier}
                 categoryLabel={categoryLabel}
@@ -511,7 +511,7 @@ export default async function BusinessPage({ params }: PageProps) {
                 gapToNextTier={null}
               />
 
-              {/* Subscore bars — click a row to expand marginalia. */}
+              {/* Subscore bars, click a row to expand marginalia. */}
               <SubscoreBars
                 subscores={score.subscores}
                 peerMedians={peerMedians}
@@ -519,14 +519,14 @@ export default async function BusinessPage({ params }: PageProps) {
                 details={subscoreDetails}
               />
 
-              {/* Peer dot plot — this business vs editorial-family peers. */}
+              {/* Peer dot plot, this business vs editorial-family peers. */}
               <PeerDotPlot
                 currentSlug={biz.slug}
                 category={familyLabel}
                 peers={categoryPeerDots}
               />
 
-              {/* Momentum sparkline — 30-day IG cadence. */}
+              {/* Momentum sparkline, 30-day IG cadence. */}
               <div>
                 <MomentumSparkline
                   posts30d={social.ig?.posts_30d ?? 0}
@@ -535,7 +535,7 @@ export default async function BusinessPage({ params }: PageProps) {
                   hasRealData={!!social.ig}
                   seed={biz.slug}
                 />
-                {/* Relay whisper — editorial callout when IG is dormant,
+                {/* Relay whisper, editorial callout when IG is dormant,
                     whisper chip otherwise. Earned-in-context. */}
                 {momentumIsDormant ? (
                   <RelayWhisper variant="editorial" />
@@ -544,10 +544,10 @@ export default async function BusinessPage({ params }: PageProps) {
                 )}
               </div>
 
-              {/* The Playbook — 3 data-derived recommendations */}
+              {/* The Playbook, 3 data-derived recommendations */}
               <Playbook playbook={playbook} />
 
-              {/* Creator-ready audit — pass/fail checklist */}
+              {/* Creator-ready audit, pass/fail checklist */}
               <CreatorReadyAudit audit={creatorAudit} />
 
               {/* Unfair advantage */}
@@ -563,7 +563,7 @@ export default async function BusinessPage({ params }: PageProps) {
                 direction={signal.direction}
               />
 
-              {/* Review voice — prefers Claude analysis when cached, falls
+              {/* Review voice, prefers Claude analysis when cached, falls
                   back to regex phrases + a data-picked pullquote otherwise. */}
               <ReviewVoice
                 analysis={reviewAnalysis}
@@ -579,7 +579,7 @@ export default async function BusinessPage({ params }: PageProps) {
                 peers={peers}
               />
 
-              {/* Social snapshot — real IG data when present, empty state otherwise. */}
+              {/* Social snapshot, real IG data when present, empty state otherwise. */}
               <SocialState
                 handle={social.ig ? social.ig.handle : null}
                 posts30d={social.ig?.posts_30d ?? 0}
@@ -590,10 +590,10 @@ export default async function BusinessPage({ params }: PageProps) {
                 hasRealData={!!social.ig}
               />
 
-              {/* Social trend — 2-point Dec→Apr line if growth data exists. */}
+              {/* Social trend, 2-point Dec→Apr line if growth data exists. */}
               <SocialTrend history={history} hasRealData={!!social.growth} />
 
-              {/* Photo hero — single big image + click-to-enlarge lightbox */}
+              {/* Photo hero, single big image + click-to-enlarge lightbox */}
               <PhotoHero
                 photos={heroImages}
                 googleImagesCount={meta.imagesCount}

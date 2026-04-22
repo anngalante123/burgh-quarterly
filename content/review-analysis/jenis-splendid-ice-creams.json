@@ -5,13 +5,13 @@
       "phrase": "surprising seasonal flavors",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "I always make sure to try their new flavors — because it always surprises me"
+      "exampleQuote": "I always make sure to try their new flavors, because it always surprises me"
     },
     {
       "phrase": "portion size vs. price",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "never received a portion so small for $7 — these portions definitely need to be reevaluated"
+      "exampleQuote": "never received a portion so small for $7, these portions definitely need to be reevaluated"
     },
     {
       "phrase": "fresh waffle cones",
@@ -23,20 +23,20 @@
       "phrase": "dog-friendly visits",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "me and my dog's favorite spot — I always order him a small scoop of vanilla with waffle wedge"
+      "exampleQuote": "me and my dog's favorite spot, I always order him a small scoop of vanilla with waffle wedge"
     },
     {
       "phrase": "long but worthwhile line",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "the longest line I've seen since the Great State Fair — but we stuck it out"
+      "exampleQuote": "the longest line I've seen since the Great State Fair, but we stuck it out"
     }
   ],
-  "notable_quote": "All the flavors tasted fresh and have robust flavors — they allow you to try any flavor before you pick one out.",
+  "notable_quote": "All the flavors tasted fresh and have robust flavors, they allow you to try any flavor before you pick one out.",
   "sentiment_summary": "Reviewers return for the rotating flavor calendar and fresh-made waffle cones, but a recurring complaint about small portion sizes at the Bakery Square location puts a ceiling on the five-star rate that 76% haven't cleared.",
-  "quarter_narrative": "Jeni's came into Spring 2026 with one of the tidiest conversion paths in the Pittsburgh Sweets family — every practical field on Google complete, 450 photos across six categories, and a review pulse that's still active within the last 48 hours. Instagram told a more complicated story: 12 posts and 4 Reels in 30 days is a credible clip, but a 0.49% engagement rate suggests the national account's content isn't landing with Pittsburgh's crowd the way a locally-rooted signal would. Page's holds the family's social momentum crown this issue, and that gap is visible. The rank stays at #2 in Ice Cream as long as sentiment sits just below the family median — closing the portion-size conversation in reviews is the most direct path to closing that gap.",
-  "tldr_read": "Flawless conversion path and strong visual catalog, but engagement lags on a national Instagram account that doesn't speak Pittsburgh — Icons tier, #2 in Pittsburgh Ice Cream.",
-  "tldr_meaning": "The review sentiment signal is the one soft axis in an otherwise well-maintained profile — a pattern of portion complaints at a single location is keeping the rating from matching the catalog's visual strength.",
+  "quarter_narrative": "Jeni's came into Spring 2026 with one of the tidiest conversion paths in the Pittsburgh Sweets family, every practical field on Google complete, 450 photos across six categories, and a review pulse that's still active within the last 48 hours. Instagram told a more complicated story: 12 posts and 4 Reels in 30 days is a credible clip, but a 0.49% engagement rate suggests the national account's content isn't landing with Pittsburgh's crowd the way a locally-rooted signal would. Page's holds the family's social momentum crown this issue, and that gap is visible. The rank stays at #2 in Ice Cream as long as sentiment sits just below the family median, closing the portion-size conversation in reviews is the most direct path to closing that gap.",
+  "tldr_read": "Flawless conversion path and strong visual catalog, but engagement lags on a national Instagram account that doesn't speak Pittsburgh, Icons tier, #2 in Pittsburgh Ice Cream.",
+  "tldr_meaning": "The review sentiment signal is the one soft axis in an otherwise well-maintained profile, a pattern of portion complaints at a single location is keeping the rating from matching the catalog's visual strength.",
   "playbook": [
     {
       "headline": "Address the portion complaint directly in-store",
@@ -46,13 +46,13 @@
     },
     {
       "headline": "Route Pittsburgh moments to a local content stream",
-      "action": "At 0.49% engagement, the national @jenisicecreams feed isn't converting Pittsburgh followers — a geo-tagged Story series or Pittsburgh-specific Reel cadence would close the gap with Page's momentum signal.",
+      "action": "At 0.49% engagement, the national @jenisicecreams feed isn't converting Pittsburgh followers, a geo-tagged Story series or Pittsburgh-specific Reel cadence would close the gap with Page's momentum signal.",
       "signal": "momentum",
       "priority": "medium"
     },
     {
       "headline": "Activate the dog-friendly angle with creators",
-      "action": "Two independent reviews mention dogs unprompted — pairing with a Pittsburgh pet or lifestyle creator for a waffle-cone moment is a low-lift fit given the Creator Fit signal already sitting at the family ceiling.",
+      "action": "Two independent reviews mention dogs unprompted, pairing with a Pittsburgh pet or lifestyle creator for a waffle-cone moment is a low-lift fit given the Creator Fit signal already sitting at the family ceiling.",
       "signal": "collab_fit",
       "priority": "low"
     }

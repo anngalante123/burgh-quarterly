@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Apify ingestion script — pulls raw Google Maps records from Anna's Apify
+ * Apify ingestion script, pulls raw Google Maps records from Anna's Apify
  * workspace into `content/raw/apify/<task-name>.json`.
  *
  * Run with: `npm run ingest`
@@ -9,13 +9,13 @@
  * - Lists every actor-task in the org whose `name` starts with `pit-`.
  * - For each task, fetches the MOST RECENT successful run and its
  *   `defaultDatasetId`.
- * - If the manifest shows the same dataset was already downloaded, we skip —
+ * - If the manifest shows the same dataset was already downloaded, we skip ,
  *   keeps repeat runs idempotent and cheap.
  * - Otherwise, pages through dataset items (JSON) and writes them to disk.
  * - The manifest (`content/raw/apify/.manifest.json`) is the source of truth
  *   for "what's on disk and how fresh is it."
  *
- * Normalization / scoring is a SEPARATE step — this script only lands raw
+ * Normalization / scoring is a SEPARATE step, this script only lands raw
  * JSON. See `lib/data/normalize.ts` for the normalizer.
  */
 
@@ -124,7 +124,7 @@ async function getLastSuccessfulRun(
     return res.data;
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
-    // 404 when a task has never had a successful run — not an error for us
+    // 404 when a task has never had a successful run, not an error for us
     if (msg.includes("404")) return null;
     throw err;
   }
@@ -220,7 +220,7 @@ async function main(): Promise<void> {
       downloaded += 1;
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
-      console.error(`[ingest] ${task.name}: FAILED — ${msg}`);
+      console.error(`[ingest] ${task.name}: FAILED, ${msg}`);
       failed += 1;
     }
   }

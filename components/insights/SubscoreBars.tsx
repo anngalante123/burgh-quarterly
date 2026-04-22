@@ -6,12 +6,12 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 
 /**
- * SubscoreBars — interactive annotated infographic.
+ * SubscoreBars, interactive annotated infographic.
  *
  * Design direction (2026-04-22, /frontend-design pass):
  *   Editorial annotated-chart feel. Not a dashboard. Bars are click-to-
  *   expand: each row opens a "marginalia" panel showing what the bar
- *   actually measures for THIS business — concrete data points pulled
+ *   actually measures for THIS business, concrete data points pulled
  *   from the record. Only one panel open at a time (accordion).
  *
  * HARD RULES (EDITORIAL_VOICE.md § Gap, not grade):
@@ -43,11 +43,11 @@ export type SubscoreKey =
 type Subscores = Record<SubscoreKey, number>;
 
 export type SubscoreDetail = {
-  /** Longer explainer — one sentence, starts with "We read X as..." or similar */
+  /** Longer explainer, one sentence, starts with "We read X as..." or similar */
   explainer?: string;
   /** 2-4 concrete data points from this business's record */
   bullets: string[];
-  /** Optional editorial pullquote — short phrase in italic */
+  /** Optional editorial pullquote, short phrase in italic */
   pullquote?: string;
 };
 
@@ -181,7 +181,7 @@ export function SubscoreBars({
                     </p>
                   </div>
 
-                  {/* Bar column — hidden on mobile (we show full-width under the
+                  {/* Bar column, hidden on mobile (we show full-width under the
                       label to avoid cramping) */}
                   <div className="hidden md:block md:col-start-2">
                     <Bar
@@ -217,7 +217,7 @@ export function SubscoreBars({
                   </div>
                 </div>
 
-                {/* Mobile bar — full-width below the label */}
+                {/* Mobile bar, full-width below the label */}
                 <div className="md:hidden pb-4">
                   <Bar
                     score={score}
@@ -305,7 +305,7 @@ export function SubscoreBars({
 
         <p className="mt-5 font-body text-[0.7rem] text-brand-black/50 leading-relaxed">
           Tick marks show the peer median for this family. Bars show relative
-          position only — no numeric scores are published.
+          position only, no numeric scores are published.
         </p>
       </div>
     </Reveal>

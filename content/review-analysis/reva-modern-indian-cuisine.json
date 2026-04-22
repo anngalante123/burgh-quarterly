@@ -5,7 +5,7 @@
       "phrase": "friendly, attentive service",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Sahil provided outstanding service — so attentive and did everything perfectly."
+      "exampleQuote": "Sahil provided outstanding service, so attentive and did everything perfectly."
     },
     {
       "phrase": "custom order flexibility",
@@ -32,27 +32,27 @@
       "exampleQuote": "Reva Modern Indian Cuisine is hands down our number one restaurant in Pittsburgh."
     }
   ],
-  "notable_quote": "Reva first opened in June 2024 and I have been a regular customer ever since — no other Indian restaurant can match the level.",
-  "sentiment_summary": "Reviewers are drawn in by specific staff warmth — Sahil is named twice — and a sense that the restaurant earns loyalty fast, but two reviews describe a sharply different front-of-house: condescending responses to basic questions and a refusal of extra cutlery, which suggests the experience is inconsistent depending on who's working.",
-  "quarter_narrative": "Spring 2026 found Reva stacking reviews at a pace few East Liberty restaurants can match — 527 Google reviews with an 80 percent five-star rate just under two years after opening, with a submission as recently as today. The visual catalog holds 443 photos across a range of categories, a respectable body of work that still runs slightly below the family median. What Reva has not done is touch Instagram: zero posts, zero reels in 30 days, with the account last active 68 days ago — a stark contrast to Mola, the Pittsburgh Asian Kitchens leader this issue, whose standout signal is creator collaboration fit and whose social presence is driving the category. Holding the #1 Indian restaurant rank is real, but closing the gap to the family top requires the one signal that is clearly switched off.",
-  "tldr_read": "Dominant Google review volume and a perfect conversion path, paired with a dormant Instagram silent for 68 days. Ones to Watch — #1 in Pittsburgh Indian Restaurants.",
-  "tldr_meaning": "Every discoverable signal is pointed upward except Instagram, which has functionally gone dark — the review engine is running on its own momentum for now, but without social activity that momentum has no multiplier.",
+  "notable_quote": "Reva first opened in June 2024 and I have been a regular customer ever since, no other Indian restaurant can match the level.",
+  "sentiment_summary": "Reviewers are drawn in by specific staff warmth, Sahil is named twice, and a sense that the restaurant earns loyalty fast, but two reviews describe a sharply different front-of-house: condescending responses to basic questions and a refusal of extra cutlery, which suggests the experience is inconsistent depending on who's working.",
+  "quarter_narrative": "Spring 2026 found Reva stacking reviews at a pace few East Liberty restaurants can match, 527 Google reviews with an 80 percent five-star rate just under two years after opening, with a submission as recently as today. The visual catalog holds 443 photos across a range of categories, a respectable body of work that still runs slightly below the family median. What Reva has not done is touch Instagram: zero posts, zero reels in 30 days, with the account last active 68 days ago, a stark contrast to Mola, the Pittsburgh Asian Kitchens leader this issue, whose standout signal is creator collaboration fit and whose social presence is driving the category. Holding the #1 Indian restaurant rank is real, but closing the gap to the family top requires the one signal that is clearly switched off.",
+  "tldr_read": "Dominant Google review volume and a perfect conversion path, paired with a dormant Instagram silent for 68 days. Ones to Watch, #1 in Pittsburgh Indian Restaurants.",
+  "tldr_meaning": "Every discoverable signal is pointed upward except Instagram, which has functionally gone dark, the review engine is running on its own momentum for now, but without social activity that momentum has no multiplier.",
   "playbook": [
     {
       "headline": "Restart Instagram before momentum stalls",
-      "action": "Account has posted nothing in 68 days and has no bio — the 37.85% engagement rate shows a primed audience waiting for content.",
+      "action": "Account has posted nothing in 68 days and has no bio, the 37.85% engagement rate shows a primed audience waiting for content.",
       "signal": "momentum",
       "priority": "high"
     },
     {
       "headline": "Address the service inconsistency in public replies",
-      "action": "Two reviews describe dismissive staff interactions that contradict the warmth cited in five others — a direct, non-defensive owner response on each shifts the perception.",
+      "action": "Two reviews describe dismissive staff interactions that contradict the warmth cited in five others, a direct, non-defensive owner response on each shifts the perception.",
       "signal": "community_spark",
       "priority": "medium"
     },
     {
       "headline": "Build a creator introduction around the custom-order story",
-      "action": "The flexibility Sahil offers repeat guests is an unreported differentiator — a single creator visit documenting an off-menu request is a natural fit given the 78 creator fit signal.",
+      "action": "The flexibility Sahil offers repeat guests is an unreported differentiator, a single creator visit documenting an off-menu request is a natural fit given the 78 creator fit signal.",
       "signal": "collab_fit",
       "priority": "low"
     }

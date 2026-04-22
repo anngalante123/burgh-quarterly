@@ -7,7 +7,7 @@ import { loadAllBusinesses } from "@/lib/data/load-business";
 import { computeTierCounts } from "@/lib/data/stats";
 
 /**
- * Homepage — editorial table of contents for the quarterly issue.
+ * Homepage, editorial table of contents for the quarterly issue.
  *
  * Rebuilt 2026-04-22 per /ui-ux-pro-max audit (primary-action + content-priority
  * violations in the prior layout). Changes:
@@ -23,8 +23,8 @@ import { computeTierCounts } from "@/lib/data/stats";
  *
  * Structure (4 sections instead of 8):
  *   1. Masthead + Hero + compact this-quarter stat line
- *   2. This Issue — 3 editorial entries
- *   3. How we rank — one-line teaser linking to /about
+ *   2. This Issue, 3 editorial entries
+ *   3. How we rank, one-line teaser linking to /about
  *   4. Subscribe + Colophon
  */
 
@@ -51,7 +51,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.12}>
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
-              How Pittsburgh&apos;s small businesses show up — in{" "}
+              How Pittsburgh&apos;s small businesses show up, in{" "}
               <span className="font-semibold text-brand-black">reviews</span>,
               on{" "}
               <span className="font-semibold text-brand-black">Instagram</span>,
@@ -63,7 +63,7 @@ export default function Home() {
             </p>
           </Reveal>
 
-          {/* Compact this-quarter stat line — one row, no donut, no bar chart */}
+          {/* Compact this-quarter stat line, one row, no donut, no bar chart */}
           <Reveal delay={0.2}>
             <dl className="mt-10 flex flex-wrap items-baseline gap-x-8 gap-y-3 border-y border-brand-black/15 py-4">
               <div className="flex items-baseline gap-2">
@@ -177,7 +177,7 @@ export default function Home() {
           </ul>
         </Reveal>
 
-        {/* ── HOW WE RANK — one-line teaser linking to /about ────── */}
+        {/* ── HOW WE RANK, one-line teaser linking to /about ────── */}
         <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
           <div className="border-y-2 border-brand-black py-7 md:py-9 flex flex-wrap items-baseline justify-between gap-4">
             <p className="font-display font-black uppercase tracking-[-0.01em] text-brand-black text-[clamp(1.25rem,3vw,2rem)] leading-[1.05]">

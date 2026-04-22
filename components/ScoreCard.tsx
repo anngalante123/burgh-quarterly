@@ -4,12 +4,12 @@ import { AnimatedRank } from "./motion/AnimatedRank";
 import { cn } from "@/lib/utils";
 
 /**
- * ScoreCard — the public-facing rank display for a business page.
+ * ScoreCard, the public-facing rank display for a business page.
  *
  * HARD RULE (SCORING_RUBRIC.md + EDITORIAL_VOICE.md § Gap, not grade):
  *   - Never show the raw composite score number on public pages.
  *   - Public view shows tier label + rank + movement only.
- *   - "Distance to next tier" framing is PRIVATE — only appears on claimed
+ *   - "Distance to next tier" framing is PRIVATE, only appears on claimed
  *     pages (when `claimed=true`).
  *
  * Movement strings are intentionally short:
@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
  * Motion (modernization pass):
  *   - Category rank number counts up from 0 to final value over ~1s on mount.
  *     Triggers ONCE per page load. Reduced-motion users see the final value.
- *   - Neighborhood rank is not animated (kept quiet — secondary datapoint).
+ *   - Neighborhood rank is not animated (kept quiet, secondary datapoint).
  */
 
 type Movement = number | "Debut" | null;
@@ -36,7 +36,7 @@ type ScoreCardProps = {
    */
   claimed?: boolean;
   /**
-   * Only used when `claimed` is true — the distance-to-next-tier phrase,
+   * Only used when `claimed` is true, the distance-to-next-tier phrase,
    * e.g. "6 points from Ones to Watch". Null when already top-tier.
    */
   gapToNextTier?: string | null;
@@ -48,7 +48,7 @@ function formatMovement(m: Movement): {
   tone: "up" | "down" | "flat" | "debut";
 } {
   if (m === "Debut") return { label: "Debut", symbol: "★", tone: "debut" };
-  if (m === null) return { label: "—", symbol: "—", tone: "flat" };
+  if (m === null) return { label: ",", symbol: ",", tone: "flat" };
   if (m > 0) return { label: `+${m}`, symbol: "↑", tone: "up" };
   if (m < 0) return { label: `${m}`, symbol: "↓", tone: "down" };
   return { label: "=", symbol: "=", tone: "flat" };

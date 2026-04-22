@@ -5,7 +5,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { TOP_CATEGORIES, type TopCategorySlug } from "@/lib/data/top";
 
 /**
- * /top — index page listing every available Top Performers list.
+ * /top, index page listing every available Top Performers list.
  *
  * v1 ships bakeries only. As more categories earn editorial hooks and
  * qualify on the data, they get added to TOP_CATEGORIES and show up here
@@ -13,9 +13,9 @@ import { TOP_CATEGORIES, type TopCategorySlug } from "@/lib/data/top";
  */
 
 export const metadata = {
-  title: "The Icons — Signal Pittsburgh",
+  title: "The Icons, Signal Pittsburgh",
   description:
-    "Pittsburgh's small businesses firing on every signal this quarter — reviews, photos, and momentum.",
+    "Pittsburgh's small businesses firing on every signal this quarter, reviews, photos, and momentum.",
 };
 
 export default function TopIndexPage() {
@@ -53,7 +53,7 @@ export default function TopIndexPage() {
 
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
               Each quarter, we cover the small businesses firing on every
-              signal — reviews stacking, photos documenting, Instagram
+              signal, reviews stacking, photos documenting, Instagram
               cadence holding. Browse the lists by category.
             </p>
           </Reveal>
@@ -82,7 +82,7 @@ export default function TopIndexPage() {
                       </h3>
                       <p className="mt-3 font-body text-sm md:text-base text-brand-black/70 leading-snug">
                         The five {spec.pluralLower} setting the bar this
-                        quarter — reviews, photos, and momentum all firing.
+                        quarter, reviews, photos, and momentum all firing.
                       </p>
                       <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-black group-hover:text-brand-purple">
                         Read the list

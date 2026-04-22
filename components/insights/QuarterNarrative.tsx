@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/motion/Reveal";
 
 /**
- * QuarterNarrative — a one-paragraph editorial summary at the top of the
+ * QuarterNarrative, a one-paragraph editorial summary at the top of the
  * business page. Pulled from deterministic logic in
  * lib/editorial/quarter-narrative.ts.
  *

@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * analyze-business — single Claude call per business generates everything
+ * analyze-business, single Claude call per business generates everything
  * editorial: review voice, quarter narrative, TL;DR, and the 3-move playbook.
  *
  * Replaces the string-template fallbacks for:
@@ -63,14 +63,14 @@ type BusinessAnalysis = {
   notable_quote: string;
   sentiment_summary: string;
 
-  // Quarter Narrative — the story of the quarter for this business
+  // Quarter Narrative, the story of the quarter for this business
   quarter_narrative: string;
 
-  // TL;DR — read + meaning
+  // TL;DR, read + meaning
   tldr_read: string;
   tldr_meaning: string;
 
-  // Playbook — 3 specific moves
+  // Playbook, 3 specific moves
   playbook: PlaybookItem[];
 };
 
@@ -114,9 +114,9 @@ async function analyzeOne(
     neighborhood_staples: "Neighborhood Staples",
   }[input.tier];
 
-  const prompt = `You are writing editorial copy for Signal Pittsburgh, a quarterly publication that ranks Pittsburgh's small businesses on the conversation around them — reviews, sentiment, photos, Instagram, and momentum. We don't rank taste; we rank how the city sees a business.
+  const prompt = `You are writing editorial copy for Signal Pittsburgh, a quarterly publication that ranks Pittsburgh's small businesses on the conversation around them, reviews, sentiment, photos, Instagram, and momentum. We don't rank taste; we rank how the city sees a business.
 
-Your job is to produce a full editorial analysis for ONE business, returning a single JSON object. The voice is a smart food/business journalist — specific, confident, no marketing cliches, no "we noticed" surveillance tone, no yinzer dialect. When a signal is weak, be honest about it. When it's strong, be specific about why.
+Your job is to produce a full editorial analysis for ONE business, returning a single JSON object. The voice is a smart food/business journalist, specific, confident, no marketing cliches, no "we noticed" surveillance tone, no yinzer dialect. When a signal is weak, be honest about it. When it's strong, be specific about why.
 
 Never use these phrases: "leverage", "amplify", "organic growth", "content strategy", "authentic engagement", "best bakery", "top-rated", "grade", "score of". Never cite a raw 0-100 composite score.
 
@@ -128,7 +128,7 @@ Tier: ${tierLabel}
 Rank: #${input.rankCategory} in Pittsburgh ${input.category}s · #${input.rankFamily} in ${input.familyLabel} (${input.familySize} businesses in the family)
 
 === FAMILY CONTEXT ===
-${input.familyLabel} leader this issue: ${input.familyLeaderName} — their standout signal is "${input.familyLeaderAdvantage}".
+${input.familyLabel} leader this issue: ${input.familyLeaderName}, their standout signal is "${input.familyLeaderAdvantage}".
 
 === SIGNAL STRENGTHS (0-100, never quote the numbers) ===
 Visual Catalog: ${input.subscores.content_canvas} (family median ${input.peerMedians.content_canvas})
@@ -167,19 +167,19 @@ Return ONLY a valid JSON object with this exact shape (no markdown, no prose out
   "themes": [
     {"phrase": "specific 2-5 word phrase from the reviews", "frequency": approximate_count, "sentiment": "positive" | "neutral" | "negative", "exampleQuote": "short quote lightly cleaned"}
   ],
-  "notable_quote": "the strongest pull-quote from the reviews — one sentence, captures the appeal",
+  "notable_quote": "the strongest pull-quote from the reviews, one sentence, captures the appeal",
   "sentiment_summary": "one sentence: what reviewers love + what they nitpick, specific not generic",
 
   "quarter_narrative": "2-3 sentence editorial paragraph describing what this business's Spring 2026 looked like. Lead with what the signal did (stacked reviews / held a rating / built a catalog / went dormant on Instagram). Include the family-leader context in a compressed form. End with a forward-looking sentence about what moves the rank. Write like a journalist, not a marketer.",
 
-  "tldr_read": "One sentence: strongest signal in plain language + weakest signal + tier and rank. Example template: 'Strong reviews, dormant Instagram. Ones to Watch — #1 in Pittsburgh Bakeries.' Adapt wording to this business.",
+  "tldr_read": "One sentence: strongest signal in plain language + weakest signal + tier and rank. Example template: 'Strong reviews, dormant Instagram. Ones to Watch, #1 in Pittsburgh Bakeries.' Adapt wording to this business.",
 
-  "tldr_meaning": "One sentence describing what the data says about the business's trajectory. NOT a call to action. Write in data terms. Example: 'The climb to Icons depends on the Instagram signal restarting — the other axes are already there.' Adapt to this business.",
+  "tldr_meaning": "One sentence describing what the data says about the business's trajectory. NOT a call to action. Write in data terms. Example: 'The climb to Icons depends on the Instagram signal restarting, the other axes are already there.' Adapt to this business.",
 
   "playbook": [
     {
       "headline": "5-8 words, action-oriented",
-      "action": "10-18 words, specific to this business — cite the actual number or gap when you can",
+      "action": "10-18 words, specific to this business, cite the actual number or gap when you can",
       "signal": "momentum" | "content_canvas" | "community_spark" | "conversion_path" | "collab_fit",
       "priority": "high" | "medium" | "low"
     }
@@ -195,7 +195,7 @@ Playbook rules:
 
 Themes rules:
 - 4-6 themes.
-- Phrases should be specific ("morning pastry case", "Liège waffle", "busy weekends") — not generic ("food", "service").
+- Phrases should be specific ("morning pastry case", "Liège waffle", "busy weekends"), not generic ("food", "service").
 - Sentiment reflects the theme: "busy weekends" could be negative or positive; use your judgment from the actual review text.`;
 
   const response = await client.messages.create({
@@ -249,7 +249,7 @@ async function main() {
     }),
   );
 
-  // Family grouping — inline so this script is self-contained
+  // Family grouping, inline so this script is self-contained
   const SWEETS = new Set([
     "Bakery",
     "Pastry shop",
@@ -299,11 +299,11 @@ async function main() {
           existing.tldr_read &&
           existing.playbook
         ) {
-          console.log(`[skip] ${slug} — cached (new shape)`);
+          console.log(`[skip] ${slug}, cached (new shape)`);
           skipped++;
           continue;
         }
-        console.log(`[migrate] ${slug} — cache is old shape, regenerating`);
+        console.log(`[migrate] ${slug}, cache is old shape, regenerating`);
       } catch {
         // fall through to regenerate
       }
@@ -311,7 +311,7 @@ async function main() {
 
     const reviews: string[] = record._meta?.reviewTexts ?? [];
     if (reviews.length < 2) {
-      console.log(`[skip] ${slug} — only ${reviews.length} review(s)`);
+      console.log(`[skip] ${slug}, only ${reviews.length} review(s)`);
       skipped++;
       continue;
     }
@@ -389,7 +389,7 @@ async function main() {
 
     try {
       console.log(
-        `[call] ${slug} — ${reviews.length} reviews · ${fam.label} #${familyRank}`,
+        `[call] ${slug}, ${reviews.length} reviews · ${fam.label} #${familyRank}`,
       );
       const result = await analyzeOne(client, {
         name: record.name,
@@ -431,7 +431,7 @@ async function main() {
       };
       await writeFile(outPath, JSON.stringify(full, null, 2), "utf-8");
       console.log(
-        `[ok]   ${slug} — narrative ✓ · tldr ✓ · playbook ${result.playbook?.length ?? 0} · themes ${result.themes?.length ?? 0}`,
+        `[ok]   ${slug}, narrative ✓ · tldr ✓ · playbook ${result.playbook?.length ?? 0} · themes ${result.themes?.length ?? 0}`,
       );
       processed++;
     } catch (e) {

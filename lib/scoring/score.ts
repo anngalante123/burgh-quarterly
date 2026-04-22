@@ -1,5 +1,5 @@
 /**
- * Creator Readiness Score — 5-factor weighted rubric.
+ * Creator Readiness Score, 5-factor weighted rubric.
  *
  * Formula (SCORING_RUBRIC.md):
  *   composite = 0.25·content_canvas
@@ -13,7 +13,7 @@
  *
  * Calibration target (D-016):
  *   La Gourmandine Lawrenceville should land in [78, 85].
- *   The weights in scoreSubscores below are tuned against that target —
+ *   The weights in scoreSubscores below are tuned against that target ,
  *   any change must re-verify against the pilot.
  */
 
@@ -157,7 +157,7 @@ export function contentCanvasScore(
     CATEGORY_PHOTO_MEDIAN[biz.category],
   );
 
-  // Photo richness — imageCategories.length is a proxy for how many
+  // Photo richness, imageCategories.length is a proxy for how many
   // distinct visual contexts Google has indexed. 3 categories = ok,
   // 8+ categories = rich.
   const catCount = art.imageCategories.length;
@@ -171,7 +171,7 @@ export function contentCanvasScore(
     ? 85
     : 95;
 
-  // Narrative hooks — any review-phrase traction signals creators have
+  // Narrative hooks, any review-phrase traction signals creators have
   // something to latch onto (named dishes, rituals, specific items).
   // Higher = more distinct recurring phrases.
   const phraseCount = art.keywordPhrases.length;
@@ -200,7 +200,7 @@ export function communitySparkScore(
     CATEGORY_REVIEW_MEDIAN[biz.category],
   );
 
-  // Freshness — most recent review recency.
+  // Freshness, most recent review recency.
   const fresh = biz.review_freshness_days;
   let freshScore: number;
   if (fresh === undefined) freshScore = 50;
@@ -211,7 +211,7 @@ export function communitySparkScore(
   else if (fresh <= 365) freshScore = 35;
   else freshScore = 15;
 
-  // Sentiment intensity — affection words per review text sampled.
+  // Sentiment intensity, affection words per review text sampled.
   const affectionHits = countAffection(art.reviewTexts);
   const perReview = art.reviewTexts.length > 0
     ? affectionHits / art.reviewTexts.length
@@ -219,7 +219,7 @@ export function communitySparkScore(
   // 0 per review → 30; 0.5 → ~65; 1.0 → ~80; 2.0+ → 95
   const sentimentScore = clamp(30 + perReview * 35);
 
-  // UGC indicator — any "From the business" attribute means the owner has
+  // UGC indicator, any "From the business" attribute means the owner has
   // engaged with Google Business (active profile).
   const ugcScore = art.fromTheBusinessFlags.length > 0 ? 78 : 55;
 
@@ -232,7 +232,7 @@ export function conversionPathScore(
   _biz: Business,
   art: NormalizedArtifact["meta"],
 ): number {
-  // Presence checks — each signal worth ~25 points.
+  // Presence checks, each signal worth ~25 points.
   let pts = 0;
   if (art.hasWebsite) pts += 25;
   if (art.hasPhone) pts += 25;
@@ -247,7 +247,7 @@ export function conversionPathScore(
 }
 
 /**
- * Momentum — Instagram-derived. Scored when an IG snapshot is available;
+ * Momentum, Instagram-derived. Scored when an IG snapshot is available;
  * otherwise falls back to the 60-point stub.
  *
  * Formula (per the ops plan):
@@ -303,7 +303,7 @@ export function momentumScore(
 ): number {
   void art.placeId;
   if (!ig || ig.error || ig.private) {
-    // No usable IG data — keep the old stub value so composites don't tank.
+    // No usable IG data, keep the old stub value so composites don't tank.
     return 60;
   }
 
@@ -311,7 +311,7 @@ export function momentumScore(
   const postsPart = 40 * normalizeCapped(ig.posts_30d ?? 0, postsTarget);
   const reelsPart = 30 * normalizeCapped(ig.reels_30d ?? 0, 4);
 
-  // Engagement rate — clip the absurd tail from new/bursty accounts so a
+  // Engagement rate, clip the absurd tail from new/bursty accounts so a
   // single viral reel doesn't inflate the score. Cap incoming rate at 10%.
   const rawRate = ig.avg_engagement_rate ?? 0;
   const cleanRate = Math.min(rawRate, 0.10);
@@ -331,11 +331,11 @@ export function collabFitScore(
   biz: Business,
   art: NormalizedArtifact["meta"],
 ): number {
-  // Category clarity — single category → high; many categories dilute fit.
+  // Category clarity, single category → high; many categories dilute fit.
   // We use the Apify raw categoryName presence as the proxy.
   const clarityScore = art.categoryName.trim().length > 0 ? 80 : 60;
 
-  // Neighborhood identity — having a named, non-default neighborhood.
+  // Neighborhood identity, having a named, non-default neighborhood.
   const neighborhoodScore =
     biz.neighborhood && biz.neighborhood !== "Pittsburgh" ? 85 : 55;
 

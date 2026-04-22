@@ -8,7 +8,7 @@
  *  3) Fall back to "@handle" patterns if no link
  *  4) Write `content/social/handles.json` with confidence metadata
  *
- * No Apify calls here — all free.
+ * No Apify calls here, all free.
  */
 
 import { readdir, readFile, writeFile } from "node:fs/promises";
@@ -211,7 +211,7 @@ async function main(): Promise<void> {
   const results: HandleRecord[] = [];
   for (const b of bizList) {
     const r = await discoverOne(b);
-    const tag = r.instagram_handle ? `@${r.instagram_handle} (${r.confidence})` : "—";
+    const tag = r.instagram_handle ? `@${r.instagram_handle} (${r.confidence})` : ",";
     console.log(`  ${r.slug.padEnd(45)}  ${tag}`);
     results.push(r);
   }

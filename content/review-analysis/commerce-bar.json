@@ -11,13 +11,13 @@
       "phrase": "standout cocktail creativity",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "A superb riff on a Sazerac/Manhattan/old fashioned — slightly sweet, little liquorice flavor, booze heavy."
+      "exampleQuote": "A superb riff on a Sazerac/Manhattan/old fashioned, slightly sweet, little liquorice flavor, booze heavy."
     },
     {
       "phrase": "named bartender praise",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Alicia was one of the best bartenders I've had — definitely deserves the bar manager position."
+      "exampleQuote": "Alicia was one of the best bartenders I've had, definitely deserves the bar manager position."
     },
     {
       "phrase": "90-minute time limit policy",
@@ -29,30 +29,30 @@
       "phrase": "hard to get a table",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "I have tried to get in a few times but it is always super packed — it is definitely worth the try."
+      "exampleQuote": "I have tried to get in a few times but it is always super packed, it is definitely worth the try."
     }
   ],
   "notable_quote": "I will be making the drive from Cleveland just for this bar in the near future.",
-  "sentiment_summary": "Reviewers are loud about the cocktail program and the room — the botanical candlelit room draws real reverence — but the 90-minute turnover policy, when it surfaces without a heads-up from staff, converts a great night into a grievance.",
-  "quarter_narrative": "Commerce Bar held an 83% five-star rate across 106 reviews this spring, a rating that signals a room people want to evangelize — the problem is the room is barely speaking back. One post in the last 30 days and an engagement rate that sits below one percent means the Instagram presence offers almost nothing for the surge of interest a place like this could be generating. Hidden Harbor leads the Pittsburgh Bars family this issue on social momentum, and the gap between their feed and Commerce's is the clearest illustration of why rank and reputation don't always match. Until Commerce closes that loop — specifically on Google discoverability, where there's no website, no phone number, and no clear path from search to reservation — the ceiling on its rank is structural, not reputational.",
-  "tldr_read": "Exceptional review sentiment and strong creator fit undercut by a near-dormant Instagram and a Google listing missing both a website and a phone number — Neighborhood Staple, #2 in Pittsburgh Bars.",
+  "sentiment_summary": "Reviewers are loud about the cocktail program and the room, the botanical candlelit room draws real reverence, but the 90-minute turnover policy, when it surfaces without a heads-up from staff, converts a great night into a grievance.",
+  "quarter_narrative": "Commerce Bar held an 83% five-star rate across 106 reviews this spring, a rating that signals a room people want to evangelize, the problem is the room is barely speaking back. One post in the last 30 days and an engagement rate that sits below one percent means the Instagram presence offers almost nothing for the surge of interest a place like this could be generating. Hidden Harbor leads the Pittsburgh Bars family this issue on social momentum, and the gap between their feed and Commerce's is the clearest illustration of why rank and reputation don't always match. Until Commerce closes that loop, specifically on Google discoverability, where there's no website, no phone number, and no clear path from search to reservation, the ceiling on its rank is structural, not reputational.",
+  "tldr_read": "Exceptional review sentiment and strong creator fit undercut by a near-dormant Instagram and a Google listing missing both a website and a phone number, Neighborhood Staple, #2 in Pittsburgh Bars.",
   "tldr_meaning": "The review signal is already doing the work a much larger account would envy; the constraint on rank movement is a conversion path that essentially doesn't exist and an Instagram channel operating at a fraction of its potential reach.",
   "playbook": [
     {
       "headline": "Add a website and phone number to Google",
-      "action": "The Google listing has hours but no website and no phone — two fields that directly determine whether search traffic converts to a visit.",
+      "action": "The Google listing has hours but no website and no phone, two fields that directly determine whether search traffic converts to a visit.",
       "signal": "conversion_path",
       "priority": "high"
     },
     {
       "headline": "Post reels of the room, not stills",
-      "action": "Zero reels in the last 30 days and a 0.72% engagement rate — the candlelit, botanical interior is exactly the kind of visual that performs on short-form video without a large following.",
+      "action": "Zero reels in the last 30 days and a 0.72% engagement rate, the candlelit, botanical interior is exactly the kind of visual that performs on short-form video without a large following.",
       "signal": "momentum",
       "priority": "medium"
     },
     {
       "headline": "Let bartenders claim their moment on camera",
-      "action": "Alicia and Addie are named in multiple reviews — short bartender-led cocktail videos would activate creator fit that already ranks at the family median without requiring outside collaborators.",
+      "action": "Alicia and Addie are named in multiple reviews, short bartender-led cocktail videos would activate creator fit that already ranks at the family median without requiring outside collaborators.",
       "signal": "collab_fit",
       "priority": "low"
     }

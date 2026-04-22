@@ -23,7 +23,7 @@
       "phrase": "automatic gratuity policy",
       "frequency": 3,
       "sentiment": "negative",
-      "exampleQuote": "There is a 20% forced gratuity — I personally dislike these forced costs."
+      "exampleQuote": "There is a 20% forced gratuity, I personally dislike these forced costs."
     },
     {
       "phrase": "drink pricing and value",
@@ -38,15 +38,15 @@
       "exampleQuote": "There's a wide variety of options for everybody, including a couple mocktails for those who don't drink."
     }
   ],
-  "notable_quote": "Some of the best tiki drinks in the U.S. — staff is always very helpful and friendly.",
-  "sentiment_summary": "Reviewers are reliably won over by the immersive tiki environment and the craftsmanship of individual drinks, while a recurring friction point — the mandatory 20% gratuity and its disclosure — surfaces enough times to register as a structural complaint rather than a one-off.",
-  "quarter_narrative": "Hidden Harbor entered Spring 2026 with one of the deepest visual catalogs in the Pittsburgh bar category — 1,086 photos across a well-tagged Google presence — and a review pool of 765 that skews sharply positive and was refreshed as recently as six days ago. As the family leader across four bars, it carries the banner on the strength of its conversion infrastructure, which is airtight, and a sentiment signal that sits well above the family median. The one place it gives ground is Instagram: posting daily in static images but running zero Reels in the past 30 days, the account's 0.79% engagement rate trails the platform's appetite for motion, and that gap is what separates a Ones to Watch ceiling from an Icons floor.",
-  "tldr_read": "Deep review catalog and a locked-down conversion path, but Instagram momentum is trailing on zero Reels — Ones to Watch, #1 in Pittsburgh Bars.",
+  "notable_quote": "Some of the best tiki drinks in the U.S., staff is always very helpful and friendly.",
+  "sentiment_summary": "Reviewers are reliably won over by the immersive tiki environment and the craftsmanship of individual drinks, while a recurring friction point, the mandatory 20% gratuity and its disclosure, surfaces enough times to register as a structural complaint rather than a one-off.",
+  "quarter_narrative": "Hidden Harbor entered Spring 2026 with one of the deepest visual catalogs in the Pittsburgh bar category, 1,086 photos across a well-tagged Google presence, and a review pool of 765 that skews sharply positive and was refreshed as recently as six days ago. As the family leader across four bars, it carries the banner on the strength of its conversion infrastructure, which is airtight, and a sentiment signal that sits well above the family median. The one place it gives ground is Instagram: posting daily in static images but running zero Reels in the past 30 days, the account's 0.79% engagement rate trails the platform's appetite for motion, and that gap is what separates a Ones to Watch ceiling from an Icons floor.",
+  "tldr_read": "Deep review catalog and a locked-down conversion path, but Instagram momentum is trailing on zero Reels, Ones to Watch, #1 in Pittsburgh Bars.",
   "tldr_meaning": "The review and visual signals are already pulling toward Icons territory; the Instagram engagement rate suggests the account is broadcasting rather than circulating, and Reels are the clearest single variable left to move.",
   "playbook": [
     {
       "headline": "Shoot one Reel per week, consistently",
-      "action": "Zero Reels in the last 30 days is the clearest drag on a 0.79% engagement rate — a single weekly pour or prep clip changes the algorithm surface area immediately.",
+      "action": "Zero Reels in the last 30 days is the clearest drag on a 0.79% engagement rate, a single weekly pour or prep clip changes the algorithm surface area immediately.",
       "signal": "momentum",
       "priority": "high"
     },
@@ -58,7 +58,7 @@
     },
     {
       "headline": "Push the drink vessel purchase moment to creators",
-      "action": "The take-home glassware detail surfaces in reviews but not visibly in the Instagram feed — seeding that angle to the 78-percentile creator pool gives a natural gifting and unboxing hook.",
+      "action": "The take-home glassware detail surfaces in reviews but not visibly in the Instagram feed, seeding that angle to the 78-percentile creator pool gives a natural gifting and unboxing hook.",
       "signal": "collab_fit",
       "priority": "low"
     }

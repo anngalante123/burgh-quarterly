@@ -5,7 +5,7 @@
       "phrase": "standout staff moments",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Gibson was very enthusiastic — boosted my mood up real quick"
+      "exampleQuote": "Gibson was very enthusiastic, boosted my mood up real quick"
     },
     {
       "phrase": "seasonal and specialty flavors",
@@ -35,30 +35,30 @@
       "phrase": "bathroom and cleanliness",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Looks like it hasn't been cleaned in a month — each step my feet stuck"
+      "exampleQuote": "Looks like it hasn't been cleaned in a month, each step my feet stuck"
     }
   ],
-  "notable_quote": "Loved the cranberry crumble and the strawberry jam flavors — the waffle cone was amazing too.",
-  "sentiment_summary": "Reviewers consistently praise individual staff members by name and highlight rotating specialty flavors as the draw, but a recurring undercurrent questions whether the base flavors justify the price — and one detailed negative review raises cleanliness concerns that the rating volume has so far absorbed.",
-  "quarter_narrative": "Millie's Shadyside entered Spring 2026 with the deepest review base in Pittsburgh's Sweets family — 1,150 Google reviews at 76% five-star, with the most recent landing just seven days ago — and a visual catalog of 482 photos that keeps the profile active without the shop having to do much. Instagram told a different story: 12 posts and 7 reels in 30 days is genuine volume, but a 0.34% engagement rate means most of it is disappearing into the feed. Page's holds the Pittsburgh Sweets lead on social momentum, and that gap is the only real distance between Millie's #2 ranking in Sweets and the top slot. Closing it doesn't require more posts — it requires posts that pull people back into conversation.",
-  "tldr_read": "Dominant review base and a flawless conversion path, but Instagram engagement is running well below what the posting volume should produce — Icons of the Burgh, #1 in Pittsburgh Ice Cream, #2 in Pittsburgh Sweets.",
+  "notable_quote": "Loved the cranberry crumble and the strawberry jam flavors, the waffle cone was amazing too.",
+  "sentiment_summary": "Reviewers consistently praise individual staff members by name and highlight rotating specialty flavors as the draw, but a recurring undercurrent questions whether the base flavors justify the price, and one detailed negative review raises cleanliness concerns that the rating volume has so far absorbed.",
+  "quarter_narrative": "Millie's Shadyside entered Spring 2026 with the deepest review base in Pittsburgh's Sweets family, 1,150 Google reviews at 76% five-star, with the most recent landing just seven days ago, and a visual catalog of 482 photos that keeps the profile active without the shop having to do much. Instagram told a different story: 12 posts and 7 reels in 30 days is genuine volume, but a 0.34% engagement rate means most of it is disappearing into the feed. Page's holds the Pittsburgh Sweets lead on social momentum, and that gap is the only real distance between Millie's #2 ranking in Sweets and the top slot. Closing it doesn't require more posts, it requires posts that pull people back into conversation.",
+  "tldr_read": "Dominant review base and a flawless conversion path, but Instagram engagement is running well below what the posting volume should produce, Icons of the Burgh, #1 in Pittsburgh Ice Cream, #2 in Pittsburgh Sweets.",
   "tldr_meaning": "The review foundation and discoverability infrastructure are fully built; the signal ceiling now sits entirely on whether Instagram engagement catches up to posting frequency.",
   "playbook": [
     {
       "headline": "Convert reels frequency into actual engagement",
-      "action": "Seven reels in 30 days at 0.34% engagement means the format isn't landing — test named-staff features and in-process flavor shots to invite response.",
+      "action": "Seven reels in 30 days at 0.34% engagement means the format isn't landing, test named-staff features and in-process flavor shots to invite response.",
       "signal": "momentum",
       "priority": "high"
     },
     {
       "headline": "Surface the rotating flavors as a recurring hook",
-      "action": "Specialty callouts like cranberry crumble appear in reviews but not as a consistent visual thread — a weekly rotating-flavor post could anchor repeat visits to the profile.",
+      "action": "Specialty callouts like cranberry crumble appear in reviews but not as a consistent visual thread, a weekly rotating-flavor post could anchor repeat visits to the profile.",
       "signal": "content_canvas",
       "priority": "medium"
     },
     {
       "headline": "Address the cleanliness signal before it compounds",
-      "action": "One detailed negative review citing bathroom condition has not yet damaged the 76% five-star share, but a second would move the sentiment needle — a visible ops response in the review thread would contain it.",
+      "action": "One detailed negative review citing bathroom condition has not yet damaged the 76% five-star share, but a second would move the sentiment needle, a visible ops response in the review thread would contain it.",
       "signal": "community_spark",
       "priority": "low"
     }

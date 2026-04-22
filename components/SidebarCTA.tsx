@@ -1,7 +1,7 @@
 /**
- * SidebarCTA — the ONE Relay placement on a claimed business page.
+ * SidebarCTA, the ONE Relay placement on a claimed business page.
  *
- * Per D-007 + D-008: Relay appears in exactly two places on the property —
+ * Per D-007 + D-008: Relay appears in exactly two places on the property ,
  * the Colophon (published-by line) and this sidebar CTA, which renders
  * only on CLAIMED business pages. Editorial features never name Relay.
  *

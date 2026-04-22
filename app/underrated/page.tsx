@@ -8,14 +8,14 @@ import {
 } from "@/lib/data/underrated";
 
 /**
- * /underrated — index page listing every available Underrated List.
+ * /underrated, index page listing every available Underrated List.
  *
  * v1 ships bakeries only. Adds happen in UNDERRATED_CATEGORIES + a new
  * ENTRY_COPY clause in app/underrated/[category]/page.tsx.
  */
 
 export const metadata = {
-  title: "The Underrated List — Signal Pittsburgh",
+  title: "The Underrated List, Signal Pittsburgh",
   description:
     "Pittsburgh's small businesses the city hasn't caught up to yet.",
 };
@@ -59,7 +59,7 @@ export default function UnderratedIndexPage() {
 
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
               Every quarter, we cover the businesses the city hasn&apos;t
-              caught up to yet — low on the index, high on potential, and
+              caught up to yet, low on the index, high on potential, and
               worth a visit this weekend.
             </p>
           </Reveal>
@@ -88,7 +88,7 @@ export default function UnderratedIndexPage() {
                       </h3>
                       <p className="mt-3 font-body text-sm md:text-base text-brand-black/70 leading-snug">
                         The {spec.pluralLower} whose rank we expect to move
-                        most — and soonest.
+                        most, and soonest.
                       </p>
                       <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-black group-hover:text-brand-purple">
                         Read the list

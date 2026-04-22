@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * analyze-reviews — Claude pass over each business's review texts.
+ * analyze-reviews, Claude pass over each business's review texts.
  *
  * Reads content/businesses/*.json, extracts _meta.reviewTexts, calls
  * Claude once per business, writes content/review-analysis/{slug}.json.
@@ -61,15 +61,15 @@ Return ONLY a valid JSON object with this exact shape:
   "themes": [
     {"phrase": "short 2-5 word phrase", "frequency": approximate_count, "sentiment": "positive" | "neutral" | "negative", "exampleQuote": "short quote that illustrates"}
   ],
-  "sentiment_summary": "one sentence describing what reviewers love and what they nitpick — specific, not generic",
+  "sentiment_summary": "one sentence describing what reviewers love and what they nitpick, specific, not generic",
   "notable_quote": "one short quote from the reviews that captures the business's appeal"
 }
 
 Rules:
-- Keep phrases specific ("morning pastry case", "Liège waffle", "busy weekends") — not generic ("food", "service").
+- Keep phrases specific ("morning pastry case", "Liège waffle", "busy weekends"), not generic ("food", "service").
 - Return 3-6 themes, ranked by frequency descending.
 - Sentiment reflects the theme, not overall vibe: "busy weekends" could be negative (too crowded) or positive (popular).
-- exampleQuote should be short — one sentence max, lightly cleaned of typos but preserve the voice.
+- exampleQuote should be short, one sentence max, lightly cleaned of typos but preserve the voice.
 - Return pure JSON. No markdown, no prose outside the JSON.
 
 Reviews:
@@ -129,7 +129,7 @@ async function main() {
 
     const outPath = join(ANALYSIS_DIR, `${slug}.json`);
     if (!force && existsSync(outPath)) {
-      console.log(`[skip] ${slug} — cached`);
+      console.log(`[skip] ${slug}, cached`);
       skipped++;
       continue;
     }
@@ -138,13 +138,13 @@ async function main() {
     const record = JSON.parse(raw);
     const reviews: string[] = record._meta?.reviewTexts ?? [];
     if (reviews.length < 2) {
-      console.log(`[skip] ${slug} — only ${reviews.length} review(s)`);
+      console.log(`[skip] ${slug}, only ${reviews.length} review(s)`);
       skipped++;
       continue;
     }
 
     try {
-      console.log(`[call] ${slug} — ${reviews.length} reviews`);
+      console.log(`[call] ${slug}, ${reviews.length} reviews`);
       const analysis = await analyzeOne(
         client,
         record.name,
@@ -160,7 +160,7 @@ async function main() {
       };
       await writeFile(outPath, JSON.stringify(full, null, 2), "utf-8");
       console.log(
-        `[ok]   ${slug} — ${analysis.themes.length} themes · ${analysis.review_count} reviews`,
+        `[ok]   ${slug}, ${analysis.themes.length} themes · ${analysis.review_count} reviews`,
       );
       processed++;
     } catch (e) {

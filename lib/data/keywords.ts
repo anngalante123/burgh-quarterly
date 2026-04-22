@@ -7,14 +7,14 @@
  *   2. Produce an enriched list of { text, count, exampleQuote } for the
  *      Review Voice insight block on the business page.
  *
- * Heuristic — deliberately simple:
+ * Heuristic, deliberately simple:
  *   - lowercase + strip punctuation
  *   - 2- and 3-word n-grams
  *   - drop stopword-only phrases and phrases whose head/tail is a stopword
  *   - drop phrases that appear in only 1 review
  *   - return top N phrases with counts + one example sentence per phrase
  *
- * This is NOT nlp — no lemmatization, no embeddings. Matches the POC scope
+ * This is NOT nlp, no lemmatization, no embeddings. Matches the POC scope
  * and keeps the pipeline deterministic.
  */
 

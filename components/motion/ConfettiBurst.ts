@@ -1,5 +1,5 @@
 /**
- * fireSubscribeConfetti — a classy, editorial-appropriate confetti burst.
+ * fireSubscribeConfetti, a classy, editorial-appropriate confetti burst.
  *
  * Visual spec:
  *   - ~80 particles total across 2 bursts (left + right of origin)
@@ -8,7 +8,7 @@
  *   - Origin accepts viewport-relative coords (x/y, 0-1) so callers can fire
  *     from a specific element's getBoundingClientRect
  *
- * Respects prefers-reduced-motion — in that case, returns early without firing.
+ * Respects prefers-reduced-motion, in that case, returns early without firing.
  */
 
 type Origin = { x: number; y: number };
@@ -37,7 +37,7 @@ export async function fireSubscribeConfetti(origin: Origin): Promise<void> {
     scalar: 0.9,
   };
 
-  // Two staggered bursts — produces a layered, editorial feel vs. one
+  // Two staggered bursts, produces a layered, editorial feel vs. one
   // homogenous blast.
   confetti({
     ...baseDefaults,
@@ -55,7 +55,7 @@ export async function fireSubscribeConfetti(origin: Origin): Promise<void> {
 }
 
 /**
- * fireConfettiFromElement — convenience wrapper that computes the origin
+ * fireConfettiFromElement, convenience wrapper that computes the origin
  * from an HTMLElement's bounding rect.
  */
 export function fireConfettiFromElement(el: HTMLElement | null): void {

@@ -3,7 +3,7 @@ import type { Playbook as PlaybookData } from "@/lib/editorial/playbook";
 import { cn } from "@/lib/utils";
 
 /**
- * Playbook — three data-derived recommendations per business, each tied
+ * Playbook, three data-derived recommendations per business, each tied
  * to a specific subscore. Replaces the generic "here's one unfair
  * advantage" framing with prescriptive, specific guidance.
  *
@@ -93,7 +93,7 @@ export function Playbook({ playbook }: PlaybookProps) {
         </ol>
 
         <p className="mt-4 font-body text-[0.7rem] text-brand-black/50 leading-relaxed">
-          Recommendations are pulled from the record — lowest-leverage signals,
+          Recommendations are pulled from the record, lowest-leverage signals,
           gaps in the Google listing, and dormant Instagram cadence. They&apos;re
           generic enough to respect the business and specific enough to act on.
         </p>

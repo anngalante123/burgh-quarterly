@@ -64,7 +64,7 @@ export const ApifyGoogleMapsRecordSchema = z
     permanentlyClosed: z.boolean().optional(),
     claimThisBusiness: z.boolean().optional(),
 
-    // Hours — Apify returns an ARRAY of per-day entries OR a numeric count
+    // Hours, Apify returns an ARRAY of per-day entries OR a numeric count
     // depending on the task. Accept both shapes defensively.
     openingHours: z.unknown().optional(),
 
@@ -237,7 +237,7 @@ export function normalizeApifyRecord(
     }
   }
 
-  // Review text mining — only if rescrape surfaced actual text.
+  // Review text mining, only if rescrape surfaced actual text.
   const rawReviews = Array.isArray(rec.reviews) ? rec.reviews : [];
   const reviewTexts: string[] = [];
   const reviewDates: Date[] = [];
@@ -291,7 +291,7 @@ export function normalizeApifyRecord(
     claimed: false,
   };
 
-  // Final strict validation — if our normalization produced something that
+  // Final strict validation, if our normalization produced something that
   // doesn't match Business, treat it as a bug and skip loudly.
   const out = BusinessSchema.safeParse(candidate);
   if (!out.success) {

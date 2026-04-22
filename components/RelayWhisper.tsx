@@ -1,5 +1,5 @@
 /**
- * RelayWhisper — small on-brand chip linking to run-relay.com.
+ * RelayWhisper, small on-brand chip linking to run-relay.com.
  *
  * Per the Spring 2026 editorial-voice revision, Relay can now appear
  * earned-in-context around the Social State / Instagram cadence block
@@ -8,8 +8,8 @@
  * claimed-page sidebar only.
  *
  * Two variants:
- *   whisper — compact chip, renders on every business page under Momentum
- *   editorial — longer line, renders only when IG is dormant (posts_30d=0)
+ *   whisper, compact chip, renders on every business page under Momentum
+ *   editorial, longer line, renders only when IG is dormant (posts_30d=0)
  */
 
 type RelayWhisperProps = {

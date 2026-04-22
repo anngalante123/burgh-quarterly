@@ -1,9 +1,9 @@
 import { PreviewBadge } from "./PreviewBadge";
 
 /**
- * SocialTrend — 4-quarter trend chart of a business's public signals.
+ * SocialTrend, 4-quarter trend chart of a business's public signals.
  *
- * Hand-rolled SVG (no `recharts`, no `@visx/visx`) — we only need one small
+ * Hand-rolled SVG (no `recharts`, no `@visx/visx`), we only need one small
  * chart with two paths (reviews + rating), and the editorial restraint of
  * a single-line-weight chart is more on-brand than a charting library's
  * default flourishes.
@@ -39,7 +39,7 @@ const DEFAULT_HISTORY: TrendPoint[] = [
   { quarter: "Sp26", reviewCount: 1294, rating: 4.8 },
 ];
 
-// Chart dimensions (viewBox — actual render is responsive).
+// Chart dimensions (viewBox, actual render is responsive).
 const CHART_W = 560;
 const CHART_H = 180;
 const PADDING = { top: 18, right: 40, bottom: 28, left: 40 };
@@ -168,7 +168,7 @@ export function SocialTrend({
       <svg
         viewBox={`0 0 ${CHART_W} ${CHART_H}`}
         role="img"
-        aria-label={`Trend chart — review count and rating over ${history.length} quarters`}
+        aria-label={`Trend chart, review count and rating over ${history.length} quarters`}
         className="w-full h-auto"
       >
         {/* Horizontal baseline */}

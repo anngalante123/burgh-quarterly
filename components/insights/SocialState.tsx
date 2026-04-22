@@ -1,14 +1,14 @@
 import { PreviewBadge } from "./PreviewBadge";
 
 /**
- * SocialState — Instagram cold-read.
+ * SocialState, Instagram cold-read.
  *
  * A quiet 4-stat grid showing what the publication can see of the business's
- * Instagram presence over the last 30 days. No editorializing — just the
+ * Instagram presence over the last 30 days. No editorializing, just the
  * cadence, the engagement, and the verification status.
  *
  * Lives in the business page quiet-record zone. Matches the neutral voice
- * — numbers and short descriptors, nothing like "your engagement is strong."
+ *, numbers and short descriptors, nothing like "your engagement is strong."
  *
  * States:
  *   - handle + scraped data  → full stats grid (no preview badge)
@@ -43,7 +43,7 @@ export function SocialState(props: Partial<SocialStateProps>) {
     hasRealData = false,
   } = props;
 
-  // Empty state — no handle at all.
+  // Empty state, no handle at all.
   if (handle === null) {
     return (
       <section
@@ -54,7 +54,7 @@ export function SocialState(props: Partial<SocialStateProps>) {
           <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-brand-black">
             Social state
           </h3>
-          <p className="font-body text-xs text-brand-black/55">—</p>
+          <p className="font-body text-xs text-brand-black/55">,</p>
         </div>
         <p className="font-body text-sm text-brand-black/70 max-w-md leading-relaxed">
           Not on Instagram yet. No public handle surfaced from the website.
@@ -66,7 +66,7 @@ export function SocialState(props: Partial<SocialStateProps>) {
   const cleanHandle = (handle ?? "").replace(/^@/, "");
   const profileHref = `https://www.instagram.com/${cleanHandle}/`;
 
-  // Private state — handle known, data not available.
+  // Private state, handle known, data not available.
   if (isPrivate) {
     return (
       <section

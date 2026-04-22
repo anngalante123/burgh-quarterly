@@ -1,20 +1,20 @@
 import Link from "next/link";
 
 /**
- * ClaimAffordance — a quiet, one-line link to the claim flow.
+ * ClaimAffordance, a quiet, one-line link to the claim flow.
  *
  * Copy verbatim from LEAD_CAPTURE.md § Gate 3:
  *   "Is this your business? Claim it →"
  *
  * Not aggressive. Not a banner. A link. Per D-008 + D-009, the claim
- * flow is the path to the Opportunities view + Relay sidebar CTA — but
+ * flow is the path to the Opportunities view + Relay sidebar CTA, but
  * the link itself stays whisper-quiet on unclaimed pages.
  *
  * Motion: the arrow slides 4px right on hover of the entire link via
  * Tailwind's `group` + `group-hover:` utilities. A 150ms ease-out.
  * `prefers-reduced-motion` users get no translate (CSS variant).
  *
- * This component stays server-renderable — the arrow motion is pure CSS.
+ * This component stays server-renderable, the arrow motion is pure CSS.
  */
 
 type ClaimAffordanceProps = {

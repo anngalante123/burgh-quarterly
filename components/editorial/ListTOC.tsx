@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 /**
- * ListTOC — "In this list" table of contents. A horizontal strip of
+ * ListTOC, "In this list" table of contents. A horizontal strip of
  * numbered entries as anchor-jump links. Sits between the standfirst
  * and the first entry, gives readers a skimmable roadmap of the piece.
  *
@@ -15,7 +15,7 @@ export type TOCItem = {
 
 type ListTOCProps = {
   items: TOCItem[];
-  /** Section heading — usually "In this list". */
+  /** Section heading, usually "In this list". */
   heading?: string;
 };
 

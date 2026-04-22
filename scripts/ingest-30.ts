@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Ingest 30 Pittsburgh businesses — the Spring 2026 issue manifest.
+ * Ingest 30 Pittsburgh businesses, the Spring 2026 issue manifest.
  *
  * Reads:
  *   - content/raw/apify/pit-dts-foodniche-v2.json   (29 of 30)
@@ -25,7 +25,7 @@
  * Writes:
  *   - content/businesses/<slug>.json   (Business schema + _meta scoring data + _score)
  *
- * Validation: each record round-trips through Zod — any failure aborts the run.
+ * Validation: each record round-trips through Zod, any failure aborts the run.
  *
  * Run with: npm run ingest30   (or: npx tsx scripts/ingest-30.ts)
  */
@@ -103,7 +103,7 @@ function qualifies(rec: RawApifyLike): boolean {
  *     Bloomfield, East Liberty, Squirrel Hill N/S, Highland Park, etc.)
  */
 const V2_PICKS: string[] = [
-  // ----- Bakeries / cafes / coffee (9 — La Gourmandine Lville is the 10th, pilot) -----
+  // ----- Bakeries / cafes / coffee (9, La Gourmandine Lville is the 10th, pilot) -----
   "The Butterwood Bake Consortium", // Lawrenceville · Cafe
   "La Gourmandine Hazelwood", // Hazelwood · Pastry shop (cafe-adjacent)
   "Tazza D'Oro", // Highland Park · Cafe
@@ -281,10 +281,10 @@ async function main(): Promise<void> {
       continue;
     }
 
-    // Compute the score NOW — rank will be filled in by compute-ranks.ts.
+    // Compute the score NOW, rank will be filled in by compute-ranks.ts.
     const scored = scoreBusiness(art.business, art.meta);
 
-    // Provisional score — rank fields are placeholders until compute-ranks
+    // Provisional score, rank fields are placeholders until compute-ranks
     // runs. We validate a minimum shape here; full Score validation lives in
     // compute-ranks.ts once ranks are known.
     const provisionalScore = {

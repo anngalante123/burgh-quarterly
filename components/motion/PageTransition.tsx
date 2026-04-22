@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 
 /**
- * PageTransition — subtle fade between routes.
+ * PageTransition, subtle fade between routes.
  *
  * Spec:
  *   - ~200ms fade (no slides, no scales)
@@ -13,7 +13,7 @@ import type { ReactNode } from "react";
  *   - Reduced-motion users get a static wrapper with no opacity animation
  *
  * Wrapped around {children} in the root layout. Because this is a client
- * boundary, the children themselves remain server-rendered Suspense trees —
+ * boundary, the children themselves remain server-rendered Suspense trees ,
  * this wrapper just animates their mount/unmount when the key changes.
  */
 

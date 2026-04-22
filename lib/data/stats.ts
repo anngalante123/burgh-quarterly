@@ -2,7 +2,7 @@ import type { BusinessArtifact } from "./load-business";
 import type { Category, Tier } from "./schemas";
 
 /**
- * Aggregate statistics across all scored businesses — powers the homepage
+ * Aggregate statistics across all scored businesses, powers the homepage
  * "This Quarter in Signal" strip.
  *
  * All counts derive from BusinessArtifact[]. No numeric composite scores
