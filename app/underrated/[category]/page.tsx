@@ -14,6 +14,10 @@ import {
 } from "@/lib/data/underrated";
 import type { BusinessArtifact } from "@/lib/data/load-business";
 import type { Tier } from "@/lib/data/schemas";
+import { estimateReadingMinutes } from "@/lib/editorial/reading-time";
+import { CategorySwitcher } from "@/components/editorial/CategorySwitcher";
+import { ListTOC, toEntryAnchor } from "@/components/editorial/ListTOC";
+import { CompanionLink } from "@/components/editorial/CompanionLink";
 
 /**
  * The Underrated List — loud editorial, one category per quarterly issue.
@@ -139,6 +143,8 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
   const dekCount = `${capitalize(countWord)} ${
     count === 1 ? spec.singularLower : spec.pluralLower
   } the city hasn't caught up to yet.`;
+  const readMinutes = estimateReadingMinutes(count);
+  const tocItems = entries.map((e) => ({ name: e.business.name }));
 
   return (
     <>
@@ -178,7 +184,7 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <span className="font-display text-[0.62rem] md:text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-black/60">
-                By the editors · Spring 2026
+                By the editors · Spring 2026 · {readMinutes} min read
               </span>
               <span className="inline-flex items-center bg-brand-lime px-2.5 py-1 font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-black">
                 PGH · Signal Index
@@ -193,6 +199,35 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
               our top-ranked — the ones whose rank we expect to move most,
               and soonest. If you haven&apos;t been, go this weekend.
             </p>
+
+            {/* Category switcher — tabs for every Underrated list live */}
+            <div className="mt-10">
+              <CategorySwitcher basePath="/underrated" current={category} />
+            </div>
+
+            {/* How we picked these — inline methodology note */}
+            <div className="mt-10 border-l-4 border-brand-purple bg-white/60 px-5 py-4 max-w-3xl">
+              <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
+                How we picked these
+              </p>
+              <p className="mt-2 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
+                We filtered the {spec.pluralLower} to every business outside
+                the Icons tier this issue, sorted by composite score ascending
+                — the lowest-ranked first. Composite comes from five signals:
+                reviews, sentiment, photos, Instagram cadence, and creator fit.{" "}
+                <Link
+                  href="/about"
+                  className="text-brand-purple hover:underline font-medium"
+                >
+                  Full methodology →
+                </Link>
+              </p>
+            </div>
+
+            {/* Table of contents — jump to any entry */}
+            <div className="mt-10">
+              <ListTOC items={tocItems} />
+            </div>
           </Reveal>
         </article>
 
@@ -230,6 +265,19 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
                 </p>
               </div>
             </Reveal>
+          </div>
+        </section>
+
+        {/* ---------- COMPANION LINK ---------- */}
+        <section className="border-t border-brand-black/15">
+          <div className="mx-auto max-w-7xl px-6 py-14 md:py-20">
+            <CompanionLink
+              href={`/top/${category}`}
+              kicker="The Icons"
+              headline={`Pittsburgh's Top ${spec.label}, Spring 2026`}
+              dek={`The ${spec.pluralLower} firing on every signal this quarter — the counterweight to this list.`}
+              accent="lime"
+            />
           </div>
         </section>
 
@@ -273,10 +321,11 @@ function EntryBlock({
 
   return (
     <li
+      id={toEntryAnchor(index)}
       className={[
         "grid grid-cols-1 md:grid-cols-12 gap-y-6 md:gap-x-10",
         "border-b border-brand-black/15",
-        "py-14 md:py-20",
+        "py-14 md:py-20 scroll-mt-24",
       ].join(" ")}
     >
       {/* numeral — order swap on desktop via md:col-start */}

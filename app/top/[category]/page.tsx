@@ -14,6 +14,10 @@ import {
 } from "@/lib/data/top";
 import type { BusinessArtifact } from "@/lib/data/load-business";
 import type { Tier } from "@/lib/data/schemas";
+import { estimateReadingMinutes } from "@/lib/editorial/reading-time";
+import { CategorySwitcher } from "@/components/editorial/CategorySwitcher";
+import { ListTOC, toEntryAnchor } from "@/components/editorial/ListTOC";
+import { CompanionLink } from "@/components/editorial/CompanionLink";
 
 /**
  * Top Performers — the celebratory counterpart to the Underrated List.
@@ -116,6 +120,8 @@ export default async function TopCategoryPage({ params }: PageProps) {
   const dek = `${capitalize(countWord)} ${
     count === 1 ? spec.singularLower : spec.pluralLower
   } firing on every signal — reviews, photos, and momentum.`;
+  const readMinutes = estimateReadingMinutes(count);
+  const tocItems = entries.map((e) => ({ name: e.business.name }));
 
   return (
     <>
@@ -154,7 +160,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
             </h1>
 
             <p className="mt-6 font-display text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55">
-              By the editors · Spring 2026 ·{" "}
+              By the editors · Spring 2026 · {readMinutes} min read ·{" "}
               <span className="text-brand-lime bg-brand-black px-1.5 py-0.5">
                 PGH
               </span>
@@ -172,6 +178,38 @@ export default async function TopCategoryPage({ params }: PageProps) {
             </p>
           </Reveal>
 
+          {/* Category switcher */}
+          <Reveal delay={0.14} className="mt-10">
+            <CategorySwitcher basePath="/top" current={category} />
+          </Reveal>
+
+          {/* How we picked these — methodology note */}
+          <Reveal delay={0.18}>
+            <div className="mt-10 border-l-4 border-brand-lime bg-white/60 px-5 py-4 max-w-3xl">
+              <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-black">
+                How we picked these
+              </p>
+              <p className="mt-2 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
+                We filtered the {spec.pluralLower} to every Icons-tier
+                business this issue, sorted by composite score descending —
+                the highest-ranked first. Composite comes from five signals:
+                reviews, sentiment, photos, Instagram cadence, and creator
+                fit.{" "}
+                <Link
+                  href="/about"
+                  className="text-brand-purple hover:underline font-medium"
+                >
+                  Full methodology →
+                </Link>
+              </p>
+            </div>
+          </Reveal>
+
+          {/* Table of contents */}
+          <Reveal delay={0.22} className="mt-8">
+            <ListTOC items={tocItems} />
+          </Reveal>
+
           {/* ---------- ENTRIES ---------- */}
           <div className="mt-14 md:mt-20 space-y-12 md:space-y-0">
             {entries.map((artifact, i) => {
@@ -185,7 +223,8 @@ export default async function TopCategoryPage({ params }: PageProps) {
                   key={artifact.business.slug}
                   delay={i * 0.08}
                   as="article"
-                  className={`relative py-10 md:py-16 ${
+                  id={toEntryAnchor(i)}
+                  className={`relative py-10 md:py-16 scroll-mt-24 ${
                     i < entries.length - 1
                       ? "border-b border-brand-black/15"
                       : ""
@@ -268,15 +307,17 @@ export default async function TopCategoryPage({ params }: PageProps) {
             </div>
           </Reveal>
 
-          {/* Companion link to Underrated */}
-          <Reveal as="section" className="mt-12 md:mt-16">
-            <Link
-              href="/underrated/bakeries"
-              className="group inline-flex items-center gap-2 font-display text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-brand-black/70 hover:text-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
-            >
-              <span className="text-brand-purple">→</span>
-              Read the Underrated {spec.label} this quarter
-            </Link>
+          {/* Companion link to Underrated — upgraded from a tiny text link
+              to a full card that matches the treatment on the Underrated
+              page. Gives the reader an obvious next step. */}
+          <Reveal as="section" className="mt-14 md:mt-20">
+            <CompanionLink
+              href={`/underrated/${category}`}
+              kicker="The Underrated List"
+              headline={`Pittsburgh's Most Underrated ${spec.label}, Spring 2026`}
+              dek={`The ${spec.pluralLower} whose rank we expect to move most — the counterweight to this list.`}
+              accent="purple"
+            />
           </Reveal>
         </article>
 

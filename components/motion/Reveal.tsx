@@ -25,6 +25,8 @@ type RevealProps = {
   y?: number;
   className?: string;
   as?: "div" | "section" | "li" | "article" | "header";
+  /** Optional anchor id — forwarded to the wrapped element so sections can be jump-link targets. */
+  id?: string;
 };
 
 export function Reveal({
@@ -33,17 +35,23 @@ export function Reveal({
   y = 16,
   className,
   as = "div",
+  id,
 }: RevealProps) {
   const reduced = useReducedMotion();
   const MotionTag = motion[as];
 
   if (reduced) {
     const Tag = as;
-    return <Tag className={className}>{children}</Tag>;
+    return (
+      <Tag id={id} className={className}>
+        {children}
+      </Tag>
+    );
   }
 
   return (
     <MotionTag
+      id={id}
       className={className}
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
