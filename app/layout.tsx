@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="en"
       className={`${unbounded.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body bg-brand-off-white paper-grain">
+      <body className="min-h-full flex flex-col font-body bg-editorial paper-grain">
         <PageTransition>{children}</PageTransition>
       </body>
     </html>

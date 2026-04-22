@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { motion, useReducedMotion } from "framer-motion";
 import { TierBadge } from "@/components/TierBadge";
 import type { Tier } from "@/lib/data/schemas";
 import { cn } from "@/lib/utils";
@@ -72,6 +75,7 @@ export function PeerPulse({
   neighborhood,
   peers = DEFAULT_PEERS,
 }: PeerPulseProps) {
+  const reduced = useReducedMotion();
   return (
     <section
       aria-label={`Peer pulse — ${neighborhood}`}
@@ -90,16 +94,14 @@ export function PeerPulse({
       </div>
 
       <ol className="divide-y divide-brand-black/10">
-        {peers.map((peer) => {
+        {peers.map((peer, i) => {
           const isCurrent = peer.slug === businessSlug;
-          return (
-            <li
-              key={peer.slug}
-              className={cn(
-                "flex items-start gap-3 py-3 first:pt-0 last:pb-0",
-                isCurrent && "relative pl-3 -ml-3",
-              )}
-            >
+          const rowClass = cn(
+            "flex items-start gap-3 py-3 first:pt-0 last:pb-0",
+            isCurrent && "relative pl-3 -ml-3",
+          );
+          const rowInner = (
+            <>
               {isCurrent && (
                 <span
                   aria-hidden="true"
@@ -117,11 +119,7 @@ export function PeerPulse({
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-center gap-2">
                   {isCurrent ? (
-                    <span
-                      className={cn(
-                        "font-display font-black tracking-[-0.01em] text-base md:text-lg text-brand-black",
-                      )}
-                    >
+                    <span className="font-display font-black tracking-[-0.01em] text-base md:text-lg text-brand-black">
                       {peer.name}
                     </span>
                   ) : (
@@ -138,7 +136,30 @@ export function PeerPulse({
                   {peer.distinguishingSignal}
                 </p>
               </div>
-            </li>
+            </>
+          );
+          if (reduced) {
+            return (
+              <li key={peer.slug} className={rowClass}>
+                {rowInner}
+              </li>
+            );
+          }
+          return (
+            <motion.li
+              key={peer.slug}
+              className={rowClass}
+              initial={{ opacity: 0, x: -12 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                duration: 0.4,
+                delay: 0.1 + i * 0.06,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
+              {rowInner}
+            </motion.li>
           );
         })}
       </ol>

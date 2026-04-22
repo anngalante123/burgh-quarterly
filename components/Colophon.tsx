@@ -11,10 +11,13 @@
 
 export function Colophon() {
   return (
-    <footer className="w-full border-t border-brand-black/10 bg-brand-off-white">
-      <div className="mx-auto max-w-5xl px-6 py-8">
-        <p className="font-body text-xs tracking-wide text-brand-black/45">
+    <footer className="w-full bg-brand-black text-brand-off-white/70">
+      <div className="mx-auto max-w-7xl px-6 py-8 flex flex-wrap items-center justify-between gap-3">
+        <p className="font-body text-xs tracking-wide">
           Published by Relay. Pittsburgh, PA.
+        </p>
+        <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-lime">
+          PGH · Signal Index · Spring 2026
         </p>
       </div>
     </footer>

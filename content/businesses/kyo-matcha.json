@@ -1,7 +1,7 @@
 {
   "slug": "kyo-matcha",
   "name": "Kyo Matcha",
-  "category": "bakery",
+  "category": "cafe",
   "neighborhood": "Squirrel Hill South",
   "address": "5864 Forbes Ave, Pittsburgh, PA 15217",
   "website": "https://www.kyotomatcha.us/",
@@ -106,7 +106,7 @@
       "label": "social momentum",
       "evidence": "Social momentum is the standout here — awaiting Instagram data in the next scrape to show the exact margin."
     },
-    "scored_at": "2026-04-22T15:28:41.007Z",
+    "scored_at": "2026-04-22T17:19:10.279Z",
     "momentum_source": "instagram_scrape"
   }
 }

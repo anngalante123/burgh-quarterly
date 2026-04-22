@@ -13,6 +13,60 @@ Use `{PUB}` as placeholder for the final publication name.
 The businesses Pittsburgh is talking about, ranked every quarter.
 ```
 
+### Ranking stance (non-negotiable — 2026-04-22, demand-gen-operator pass)
+
+**Revised 2026-04-22 (second pass)** — the prior "We rank signal" stance read
+as social-only. Anna flagged: the ranking is also about review sentiment,
+brand themes, reputation, and movement. We broadened to "the conversation"
+so reviews and social both fit under one umbrella.
+
+The reader's first-screen question is "what are you ranking?" Every explainer
+must answer this before mechanics.
+
+Primary stance (use verbatim on the HowWeRank stance block):
+> "We don't rank taste. We rank the conversation."
+
+Expanded stance (homepage hero dek):
+> "How Pittsburgh's small businesses show up — in reviews, on Instagram,
+> in the neighborhood conversation. Ranked every quarter on **reputation,
+> presence, and momentum.** We don't rank taste."
+
+Supporting subhead (under the stance block):
+> "Reviews, sentiment, photos, Instagram, and how all of it is moving this
+> quarter. Everything the city says and shows about a business — in one
+> index."
+
+The **five signals**, in canonical order, with canonical labels + captions.
+These MUST stay byte-identical across `HowWeRank.tsx` (homepage) and
+`SubscoreBars.tsx` (business page). If one changes, change both.
+
+1. **Visual catalog** (`content_canvas`) — "Photos creators can pull from"
+2. **Review sentiment** (`community_spark`) — "Themes, tone, and what
+   reviewers keep saying"
+3. **Conversion path** (`conversion_path`) — "How easy to find, visit, and
+   post about"
+4. **Instagram momentum** (`momentum`) — "Posts, reels, and cadence in the
+   last 30 days"
+5. **Creator fit** (`collab_fit`) — "Owner presence, hours, claim status"
+
+Tier stances (appear on the business-page ScoreHero under the tier phrase —
+no "signal" word; the methodology block establishes the frame):
+- **Icons of the Burgh** → "Top of the index this quarter — reviews, photos,
+  and momentum all moving."
+- **Ones to Watch** → "Strong presence. Climbing the index."
+- **Neighborhood Staples** → "Rooted in the neighborhood — the index hasn't
+  caught up yet."
+
+**Never** say any of these in ranking-explainer copy:
+- "Best bakery", "top-rated", "highest quality", "finest", "most popular"
+  (these imply quality judgments we don't make)
+- "Scored X out of 100" (we never show the composite)
+- "Grade A" (we rejected letter grades — gap-not-grade rule)
+- "Our algorithm" (too SaaS; use "the index" or "the signal model")
+- "AI-powered" (it's mostly deterministic scoring — don't oversell)
+- "Social signal" as the sole ranking dimension (too narrow — we also score
+  review sentiment, themes, volume, freshness)
+
 ### Colophon (footer of every page)
 ```
 Published by Relay. Pittsburgh, PA.

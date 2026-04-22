@@ -4,14 +4,20 @@ import { useEffect, useRef, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 
 /**
- * AnimatedRank — number that counts up from 0 to `value` on mount.
+ * AnimatedRank — number that counts up to `value` once the component has
+ * mounted on the client.
  *
  * Contract:
- *   - Triggers ONCE per page load (useRef guard), not on every re-render.
- *   - Duration ~1000ms, ease-out quart so the final digits settle quickly.
- *   - Prefix like "#" is rendered outside the animated number so screen
- *     readers and the visual layout both render it stable.
- *   - Reduced-motion users see the final value immediately.
+ *   - SSR + initial client render shows the FINAL value (no more "#0" flash
+ *     before hydration). This was a real bug — Anna spotted "#0 in
+ *     Pittsburgh Bakeries" in prod 2026-04-22.
+ *   - On mount (client only), the counter rewinds to 0 and animates up to
+ *     `value` via requestAnimationFrame. Because the SSR HTML already
+ *     shows the final value, we gate the animation behind a one-tick
+ *     `didMount` flag: the render right after hydration keeps the final
+ *     value, and the frame after that kicks off the count-up.
+ *   - Reduced-motion users never see the count-up — the number sits still.
+ *   - Triggers ONCE per mount (useRef guard).
  *
  * Intentionally a dependency-free counter (framer-motion's motion-values
  * are heavier than we need for a single number in the quiet zone).
@@ -37,34 +43,39 @@ export function AnimatedRank({
   className,
 }: AnimatedRankProps) {
   const reduced = useReducedMotion();
-  const [display, setDisplay] = useState<number>(reduced ? value : 0);
+  // Initialize to `value` so SSR + pre-hydration client render show the
+  // final number — never "#0".
+  const [display, setDisplay] = useState<number>(value);
   const startedRef = useRef(false);
+  const rafIdRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (startedRef.current) return;
     startedRef.current = true;
-
-    // Reduced-motion: skip animation entirely. `display` is already
-    // initialized to `value` in that branch via useState's initial arg,
-    // so no setState is needed here.
     if (reduced) return;
 
-    const start = performance.now();
-    let raf = 0;
-
-    const tick = (now: number) => {
-      const elapsed = now - start;
-      const progress = Math.min(1, elapsed / duration);
-      const eased = easeOutQuart(progress);
-      setDisplay(Math.round(eased * value));
-      if (progress < 1) {
-        raf = requestAnimationFrame(tick);
-      } else {
-        setDisplay(value);
-      }
+    // Defer the count-up to the NEXT frame so the hydrated DOM matches the
+    // SSR HTML for one paint, then rewind to 0 and animate up.
+    const rafKick = requestAnimationFrame(() => {
+      setDisplay(0);
+      const start = performance.now();
+      const tick = (now: number) => {
+        const elapsed = now - start;
+        const progress = Math.min(1, elapsed / duration);
+        const eased = easeOutQuart(progress);
+        setDisplay(Math.round(eased * value));
+        if (progress < 1) {
+          rafIdRef.current = requestAnimationFrame(tick);
+        } else {
+          setDisplay(value);
+        }
+      };
+      rafIdRef.current = requestAnimationFrame(tick);
+    });
+    rafIdRef.current = rafKick;
+    return () => {
+      if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
     };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
   }, [value, duration, reduced]);
 
   return (

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 import { PreviewBadge } from "./PreviewBadge";
 import { cn } from "@/lib/utils";
 
@@ -94,6 +95,7 @@ export function ReviewVoice({
   heading = "Review voice",
 }: ReviewVoiceProps) {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const reduced = useReducedMotion();
 
   const max = phrases.reduce((m, p) => Math.max(m, p.count), 1);
 
@@ -129,11 +131,26 @@ export function ReviewVoice({
                   isOpen && "bg-brand-cream/80",
                 )}
               >
-                <span
-                  aria-hidden="true"
-                  className="absolute left-0 top-0 bottom-0 bg-brand-lime/40"
-                  style={{ width: `${widthPct}%` }}
-                />
+                {reduced ? (
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-0 top-0 bottom-0 bg-brand-lime/40"
+                    style={{ width: `${widthPct}%` }}
+                  />
+                ) : (
+                  <motion.span
+                    aria-hidden="true"
+                    className="absolute left-0 top-0 bottom-0 bg-brand-lime/40"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${widthPct}%` }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    transition={{
+                      duration: 0.7,
+                      delay: 0.1 + i * 0.06,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                  />
+                )}
                 <span className="relative flex items-baseline justify-between gap-3">
                   <span className="font-medium">
                     &ldquo;{p.text}&rdquo;

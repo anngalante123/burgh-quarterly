@@ -4,6 +4,14 @@ import { Colophon } from "@/components/Colophon";
 import { TierBadge } from "@/components/TierBadge";
 import { SubscribeInline } from "@/components/SubscribeInline";
 import { Reveal } from "@/components/motion/Reveal";
+import { SignalStrip } from "@/components/SignalStrip";
+import { HowWeRank } from "@/components/HowWeRank";
+import { loadAllBusinesses } from "@/lib/data/load-business";
+import {
+  computeCategoryBreakdown,
+  computeTierCounts,
+  computeTopNeighborhood,
+} from "@/lib/data/stats";
 
 /**
  * Homepage — the loud editorial zone (EDITORIAL_VOICE.md § loud-quiet asymmetry).
@@ -69,15 +77,20 @@ const TEASERS: Teaser[] = [
 ];
 
 export default function Home() {
+  const all = loadAllBusinesses();
+  const tierCounts = computeTierCounts(all);
+  const topNeighborhood = computeTopNeighborhood(all);
+  const categoryBreakdown = computeCategoryBreakdown(all, 5);
+
   return (
     <>
       <Masthead variant="home" />
 
-      <main className="flex-1 bg-brand-off-white">
+      <main className="flex-1">
         {/* Hero coverline — web-native, no issue-number framing */}
-        <section className="mx-auto max-w-5xl px-6 pt-10 pb-10 md:pt-16 md:pb-14">
+        <section className="mx-auto max-w-7xl px-6 pt-10 pb-10 md:pt-16 md:pb-14">
           <Reveal delay={0.05}>
-            <h2 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-black uppercase leading-[0.9] tracking-[-0.02em] text-brand-black max-w-4xl break-words">
+            <h2 className="font-display font-black uppercase tracking-[-0.02em] text-brand-black max-w-4xl [text-wrap:balance] [word-break:break-word] text-[clamp(2.25rem,7.5vw,5.5rem)] leading-[0.9]">
               Ranked, reviewed,
               <br className="hidden sm:block" /> and{" "}
               <span className="bg-brand-lime px-2 box-decoration-clone">
@@ -88,8 +101,15 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.12}>
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
-              A living index of Pittsburgh&apos;s small businesses — who
-              climbed, who held, who the city hasn&apos;t caught up to yet.
+              How Pittsburgh&apos;s small businesses show up — in{" "}
+              <span className="font-semibold text-brand-black">reviews</span>,
+              on{" "}
+              <span className="font-semibold text-brand-black">Instagram</span>
+              , in the neighborhood conversation. Ranked every quarter on{" "}
+              <span className="font-semibold text-brand-black">
+                reputation, presence, and momentum.
+              </span>{" "}
+              We don&apos;t rank taste.
             </p>
           </Reveal>
           <Reveal delay={0.18}>
@@ -99,8 +119,21 @@ export default function Home() {
           </Reveal>
         </section>
 
+        {/* Signal strip — tier donut + stat cards + category bar */}
+        <SignalStrip
+          totalScored={all.length}
+          tierCounts={tierCounts}
+          biggestClimber={null}
+          topNeighborhood={topNeighborhood}
+          categoryBreakdown={categoryBreakdown}
+        />
+
+        {/* How we rank — methodology stance so readers know we rank
+            social signal, not taste. */}
+        <HowWeRank />
+
         {/* Editorial teasers — asymmetric 2+1 on desktop */}
-        <Reveal as="section" className="mx-auto max-w-5xl px-6 pb-14 md:pb-20">
+        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
           <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-8">
             <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
               Read
@@ -156,7 +189,7 @@ export default function Home() {
         </Reveal>
 
         {/* Featured — La Gourmandine (with stat rail) */}
-        <Reveal as="section" className="mx-auto max-w-5xl px-6 pb-14 md:pb-20">
+        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
           <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-8">
             <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
               Featured
@@ -171,11 +204,11 @@ export default function Home() {
                 <p className="font-body text-xs uppercase tracking-[0.18em] text-brand-black/60">
                   Lawrenceville · Bakery
                 </p>
-                <h4 className="mt-2 font-display text-3xl sm:text-4xl md:text-6xl font-black uppercase leading-[0.92] tracking-[-0.015em] text-brand-black group-hover:underline decoration-brand-lime decoration-[6px] underline-offset-[8px] break-words">
+                <h4 className="mt-2 font-display font-black uppercase tracking-[-0.015em] text-brand-black [word-break:break-word] text-[clamp(1.75rem,5.5vw,4rem)] leading-[0.95] group-hover:underline decoration-brand-lime decoration-[6px] underline-offset-[8px]">
                   La Gourmandine
                 </h4>
               </div>
-              <TierBadge tier="icons" />
+              <TierBadge tier="ones_to_watch" />
             </div>
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
               1,138 five-star reviews out of 1,294 — the highest concentration
@@ -222,8 +255,40 @@ export default function Home() {
           </Link>
         </Reveal>
 
+        {/* Underrated — editorial entry point into the conversion list */}
+        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
+          <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-8">
+            <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
+              Underrated
+            </h3>
+          </div>
+          <Link
+            href="/underrated/bakeries"
+            className="group block border border-brand-black/15 bg-white/60 p-6 md:p-8 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-purple)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+          >
+            <p className="font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
+              The list
+            </p>
+            <h4 className="mt-3 font-display text-2xl md:text-4xl font-black uppercase leading-[1.02] tracking-[-0.015em] text-brand-black">
+              Pittsburgh&apos;s most underrated bakeries
+            </h4>
+            <p className="mt-3 font-body text-sm md:text-base text-brand-black/70 leading-relaxed max-w-xl">
+              Five places the city hasn&apos;t caught up to yet.
+            </p>
+            <p className="mt-5 font-display text-xs font-semibold uppercase tracking-[0.14em] text-brand-black/60 inline-flex items-center gap-1">
+              <span>Read the list</span>
+              <span
+                aria-hidden="true"
+                className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+              >
+                →
+              </span>
+            </p>
+          </Link>
+        </Reveal>
+
         {/* Subscribe */}
-        <Reveal as="section" className="mx-auto max-w-5xl px-6 pb-20">
+        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-20">
           <SubscribeInline />
         </Reveal>
       </main>

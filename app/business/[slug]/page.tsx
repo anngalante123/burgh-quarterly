@@ -4,14 +4,20 @@ import Link from "next/link";
 
 import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
-import { ScoreCard } from "@/components/ScoreCard";
 import { UnfairAdvantage } from "@/components/UnfairAdvantage";
-import { OwnerFirstVisit } from "@/components/OwnerFirstVisit";
 import { PeerPulse, type PeerRow } from "@/components/insights/PeerPulse";
 import { ReviewVoice } from "@/components/insights/ReviewVoice";
 import { SignalOfQuarter } from "@/components/insights/SignalOfQuarter";
 import { SocialState } from "@/components/insights/SocialState";
 import { SocialTrend } from "@/components/insights/SocialTrend";
+import { PhotoHero } from "@/components/insights/PhotoHero";
+import { ScoreHero } from "@/components/insights/ScoreHero";
+import {
+  SubscoreBars,
+  type SubscoreKey,
+} from "@/components/insights/SubscoreBars";
+import { PeerDotPlot } from "@/components/insights/PeerDotPlot";
+import { MomentumSparkline } from "@/components/insights/MomentumSparkline";
 
 import {
   ClaimAffordanceUnlessClaimed,
@@ -26,6 +32,7 @@ import {
   type BusinessArtifact,
 } from "@/lib/data/load-business";
 import { loadSocialBySlug } from "@/lib/data/load-social";
+import { familyForCategory } from "@/lib/data/category-family";
 
 /**
  * Business page — the QUIET RECORD zone (EDITORIAL_VOICE.md § loud-quiet asymmetry).
@@ -106,6 +113,85 @@ function buildPeers(
   }));
 }
 
+/* ----------------------------- peer medians (subscores) --------------- */
+
+function median(values: number[]): number {
+  if (values.length === 0) return 0;
+  const sorted = values.slice().sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 === 0
+    ? Math.round((sorted[mid - 1] + sorted[mid]) / 2)
+    : sorted[mid];
+}
+
+function computePeerMedians(
+  current: BusinessArtifact,
+  all: BusinessArtifact[],
+): Record<SubscoreKey, number> {
+  // Use the editorial "family" (lib/data/category-family.ts) so medians are
+  // computed across a meaningful peer set, not a narrow Google categoryName
+  // match. Example: a Bakery is compared against all Pittsburgh Sweets
+  // (Bakery + Pastry shop + Dessert shop + Ice cream shop).
+  const currentFamily = familyForCategory(current.meta.categoryName).key;
+  const sameFamily = all.filter(
+    (b) => familyForCategory(b.meta.categoryName).key === currentFamily,
+  );
+  const keys: SubscoreKey[] = [
+    "content_canvas",
+    "community_spark",
+    "conversion_path",
+    "momentum",
+    "collab_fit",
+  ];
+  const out = {} as Record<SubscoreKey, number>;
+  for (const k of keys) {
+    out[k] = median(sameFamily.map((b) => b.score.subscores[k]));
+  }
+  return out;
+}
+
+/* ----------------------------- category peer dots --------------------- */
+
+/**
+ * Build peer dots for the category dot plot. Grouped by editorial family
+ * (see lib/data/category-family.ts), not Google's literal categoryName,
+ * which is too narrow for most small-business categories.
+ *
+ * Ranks are reassigned 1..N within the family, ordered by composite score
+ * descending — so the plot reads "rank within Pittsburgh Sweets" even if
+ * the JSON's `rank_category` was scoped to a narrower bucket.
+ */
+function buildCategoryPeerDots(
+  current: BusinessArtifact,
+  all: BusinessArtifact[],
+): {
+  peers: {
+    slug: string;
+    name: string;
+    rank: number;
+    tier: "icons" | "ones_to_watch" | "neighborhood_staples";
+    distinguishingSignal: string;
+  }[];
+  familyLabel: string;
+} {
+  const currentFamily = familyForCategory(current.meta.categoryName);
+  const sameFamily = all.filter(
+    (b) => familyForCategory(b.meta.categoryName).key === currentFamily.key,
+  );
+  // Rank 1..N within family by composite score desc.
+  const rankedInFamily = sameFamily
+    .slice()
+    .sort((a, b) => b.score.composite - a.score.composite)
+    .map((b, i) => ({
+      slug: b.business.slug,
+      name: b.business.name,
+      rank: i + 1,
+      tier: b.score.tier,
+      distinguishingSignal: b.score.unfair_advantage.label,
+    }));
+  return { peers: rankedInFamily, familyLabel: currentFamily.label };
+}
+
 /* ----------------------------- signal of quarter ---------------------- */
 
 function buildSignal(art: BusinessArtifact): {
@@ -166,8 +252,105 @@ export default async function BusinessPage({ params }: PageProps) {
   const signal = buildSignal(art);
   const reviewPhrases = meta.keywordPhrases.slice(0, 5);
 
+  // Subscore bars: peer median per subscore across same-category businesses.
+  const peerMedians = computePeerMedians(art, all);
+
+  // Peer dot plot: one dot per business in the same editorial family.
+  const { peers: categoryPeerDots, familyLabel } = buildCategoryPeerDots(
+    art,
+    all,
+  );
+
   // Social data — IG snapshot + Google Maps growth (Dec→Apr).
   const social = loadSocialBySlug(biz.slug);
+
+  // Subscore expansion details — concrete data pulled from the record,
+  // surfaced when a reader clicks a subscore row. No numeric scores here —
+  // just the raw signals the bar is derived from.
+  const lastPostAt = social.ig?.last_post_at
+    ? new Date(social.ig.last_post_at)
+    : null;
+  const now = new Date();
+  const daysSinceLastPost = lastPostAt
+    ? Math.round((now.getTime() - lastPostAt.getTime()) / 86_400_000)
+    : null;
+
+  const subscoreDetails: Partial<
+    Record<SubscoreKey, import("@/components/insights/SubscoreBars").SubscoreDetail>
+  > = {
+    content_canvas: {
+      explainer:
+        "A business's visible photo catalog — the raw material creators pull from when they film, post, or write about a place.",
+      bullets: [
+        `${meta.imagesCount.toLocaleString()} photos on Google across ${meta.imageCategories.length} categories`,
+        `Hero photo indexed — ${biz.photos.length > 0 ? "available" : "pending"}`,
+        meta.imageCategories.slice(0, 4).length > 0
+          ? `Tagged: ${meta.imageCategories.slice(0, 4).join(", ")}`
+          : "No category tags yet",
+      ],
+    },
+    community_spark: {
+      explainer:
+        "The conversation around a business in reviews — how recent, how dense, and what themes recur.",
+      bullets: [
+        `${totalRev.toLocaleString()} total reviews`,
+        pct !== null ? `${pct}% five-star` : "No review distribution yet",
+        biz.review_freshness_days !== undefined
+          ? `Most recent review ${biz.review_freshness_days === 0 ? "today" : biz.review_freshness_days === 1 ? "yesterday" : `${biz.review_freshness_days} days ago`}`
+          : "Freshness unknown",
+        reviewPhrases.length >= 2
+          ? `Recurring themes: ${reviewPhrases.slice(0, 3).join(", ")}`
+          : "Review-text mining queued for next issue",
+      ],
+      pullquote: meta.reviewTexts[0],
+    },
+    conversion_path: {
+      explainer:
+        "How easy it is for a stranger to find this business, show up, and post about it. Website, phone, hours, and claim status each count.",
+      bullets: [
+        meta.hasWebsite ? "Website linked on Google" : "No website on Google",
+        meta.hasPhone ? "Phone number published" : "No phone number",
+        meta.hasOpeningHours
+          ? "Opening hours published"
+          : "No opening hours on Google",
+        meta.claimThisBusiness
+          ? "Unclaimed on Google — owner hasn't stepped in"
+          : "Claimed on Google",
+      ],
+    },
+    momentum: {
+      explainer:
+        "Instagram cadence as a proxy for whether the business is an active participant in the conversation or just a static record.",
+      bullets: social.ig
+        ? [
+            `${social.ig.posts_30d} posts in the last 30 days`,
+            `${social.ig.reels_30d} reels in the last 30 days`,
+            `${Math.round(social.ig.avg_engagement_rate * 1000) / 10}% average engagement rate`,
+            daysSinceLastPost !== null
+              ? `Last post ${daysSinceLastPost} days ago`
+              : "Last post unknown",
+            social.ig.followers
+              ? `${social.ig.followers.toLocaleString()} followers`
+              : "",
+          ].filter(Boolean)
+        : ["Instagram handle not yet discovered"],
+    },
+    collab_fit: {
+      explainer:
+        "How ready a business is for a creator partnership — public presence, real contact surface, and an owner who's reachable.",
+      bullets: [
+        meta.hasWebsite ? "Website (linkable in captions)" : "No website",
+        meta.hasPhone ? "Phone line live" : "No phone",
+        meta.hasOpeningHours ? "Hours published" : "No hours",
+        social.ig?.is_business_account
+          ? "Instagram is a business account"
+          : social.ig
+            ? "Instagram not configured as business account"
+            : "Instagram handle pending",
+        social.ig?.verified ? "Verified on Instagram" : "",
+      ].filter(Boolean),
+    },
+  };
 
   // Trend history: two points (v1 + v2 Google Maps scrapes) if growth data
   // exists; otherwise single-point "tracking from today" fallback.
@@ -211,8 +394,8 @@ export default async function BusinessPage({ params }: PageProps) {
     <>
       <Masthead variant="compact" />
 
-      <main className="flex-1 bg-brand-off-white">
-        <article className="mx-auto max-w-5xl px-6 py-10 md:py-14">
+      <main className="flex-1">
+        <article className="mx-auto max-w-7xl px-6 py-10 md:py-14">
           {/* Breadcrumb — geography-first */}
           <nav
             aria-label="Breadcrumb"
@@ -239,7 +422,7 @@ export default async function BusinessPage({ params }: PageProps) {
 
           {/* Name + locality */}
           <header className="mt-5 md:mt-7">
-            <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.9] tracking-[-0.02em] text-brand-black break-words hyphens-auto">
+            <h1 className="font-display font-black uppercase tracking-[-0.02em] text-brand-black [text-wrap:balance] [word-break:break-word] text-[clamp(1.5rem,6.5vw,4.5rem)] leading-[0.95] sm:leading-[0.9]">
               {biz.name}
             </h1>
             <p className="mt-4 font-body text-sm md:text-base text-brand-black/70">
@@ -256,16 +439,11 @@ export default async function BusinessPage({ params }: PageProps) {
             </Suspense>
           </header>
 
-          {/* Owner first-visit block */}
-          <div className="mt-8 md:mt-10">
-            <OwnerFirstVisit businessName={biz.name} />
-          </div>
-
           {/* Main two-column layout on larger screens */}
           <div className="mt-10 md:mt-12 grid grid-cols-1 lg:grid-cols-[1fr_18rem] gap-8 lg:gap-10">
-            <div className="space-y-10 md:space-y-12">
-              {/* ScoreCard (public view — no raw composite, ever). */}
-              <ScoreCard
+            <div className="space-y-8 md:space-y-10">
+              {/* ScoreHero — the big visual anchor (no raw composite, ever). */}
+              <ScoreHero
                 tier={score.tier}
                 categoryLabel={categoryLabel}
                 neighborhoodLabel={neighborhoodLabel}
@@ -274,6 +452,30 @@ export default async function BusinessPage({ params }: PageProps) {
                 movement={score.movement.overall ?? "Debut"}
                 claimed={false}
                 gapToNextTier={null}
+              />
+
+              {/* Subscore bars — click a row to expand marginalia. */}
+              <SubscoreBars
+                subscores={score.subscores}
+                peerMedians={peerMedians}
+                peerFamilyLabel={familyLabel}
+                details={subscoreDetails}
+              />
+
+              {/* Peer dot plot — this business vs editorial-family peers. */}
+              <PeerDotPlot
+                currentSlug={biz.slug}
+                category={familyLabel}
+                peers={categoryPeerDots}
+              />
+
+              {/* Momentum sparkline — 30-day IG cadence. */}
+              <MomentumSparkline
+                posts30d={social.ig?.posts_30d ?? 0}
+                reels30d={social.ig?.reels_30d ?? 0}
+                handle={social.ig?.handle ?? null}
+                hasRealData={!!social.ig}
+                seed={biz.slug}
               />
 
               {/* Unfair advantage */}
@@ -317,73 +519,57 @@ export default async function BusinessPage({ params }: PageProps) {
               {/* Social trend — 2-point Dec→Apr line if growth data exists. */}
               <SocialTrend history={history} hasRealData={!!social.growth} />
 
-              {/* Photo grid */}
-              <section aria-label="Photos">
-                <h2 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-brand-black border-b border-brand-black/15 pb-3 mb-5">
-                  Photos
-                </h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
-                  {Array.from({ length: photoSlots }).map((_, i) => {
-                    const src = heroImages[i];
-                    if (src) {
-                      return (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          key={i}
-                          src={src}
-                          alt={`${biz.name} — photo ${i + 1}`}
-                          className="aspect-[4/3] w-full object-cover bg-brand-cream border border-brand-black/10"
-                          loading={i === 0 ? "eager" : "lazy"}
-                        />
-                      );
-                    }
-                    return (
-                      <div
-                        key={i}
-                        aria-hidden="true"
-                        className="aspect-[4/3] w-full bg-brand-cream border border-brand-black/10 flex items-center justify-center"
-                      >
-                        <span className="font-body text-[0.65rem] uppercase tracking-[0.18em] text-brand-black/30">
-                          Photo pending
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-                {meta.imagesCount > 0 && (
-                  <p className="mt-3 font-body text-xs text-brand-black/50">
-                    {meta.imagesCount.toLocaleString()} photos on Google.
-                  </p>
-                )}
-              </section>
+              {/* Photo hero — single big image + click-to-enlarge lightbox */}
+              <PhotoHero
+                photos={heroImages}
+                googleImagesCount={meta.imagesCount}
+                businessName={biz.name}
+              />
 
               {/* Reviewers say */}
               <section aria-label="Reviewers say">
-                <h2 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-brand-black border-b border-brand-black/15 pb-3 mb-5">
-                  Reviewers say
-                </h2>
+                <div className="border-b border-brand-black/15 pb-3 mb-5 flex flex-wrap items-baseline justify-between gap-2">
+                  <h2 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-brand-black">
+                    Reviewers say
+                  </h2>
+                  {totalRev > 0 && (
+                    <span className="font-body text-[0.7rem] md:text-xs uppercase tracking-[0.14em] text-brand-black/55">
+                      {textReviews.length} of{" "}
+                      {totalRev.toLocaleString()} reviews
+                    </span>
+                  )}
+                </div>
                 {textReviews.length === 0 ? (
                   <p className="font-body text-sm text-brand-black/70">
                     Review text not yet indexed for this business.
                   </p>
                 ) : (
-                  <ul className="space-y-6">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                     {textReviews.map((text, i) => (
                       <li
                         key={i}
-                        className="border-l-2 border-brand-black/15 pl-4 md:pl-5"
+                        className="group relative border border-brand-black/15 bg-white/60 p-4 md:p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-black hover:shadow-[3px_3px_0_0_var(--color-brand-lime)] motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                       >
+                        <span
+                          aria-hidden="true"
+                          className="absolute -top-2 left-4 bg-brand-newsprint px-1.5 font-display text-[0.58rem] font-semibold uppercase tracking-[0.2em] text-brand-purple"
+                        >
+                          ★★★★★
+                        </span>
                         <p className="font-body text-sm md:text-base text-brand-black/85 leading-relaxed">
-                          {text}
+                          &ldquo;{text}&rdquo;
                         </p>
                       </li>
                     ))}
                   </ul>
                 )}
                 {totalRev > 0 && pct !== null && (
-                  <p className="mt-6 font-body text-xs text-brand-black/50">
+                  <p className="mt-5 font-body text-xs text-brand-black/55">
                     {totalRev.toLocaleString()} total reviews ·{" "}
-                    {pct}% five-star.
+                    <span className="text-brand-black/80 font-medium">
+                      {pct}% five-star
+                    </span>
+                    . Review text rescrape in flight for next issue.
                   </p>
                 )}
               </section>

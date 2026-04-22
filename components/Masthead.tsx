@@ -1,11 +1,15 @@
 import Link from "next/link";
 
 /**
- * Editorial masthead — the publication nameplate at the top of every page.
+ * Editorial masthead — dark band at the very top of every page.
+ *
+ * Aesthetic pulled from the Pittsburgh Social Scorecard HTML reference:
+ * solid black band, lime wordmark, Unbounded 800. Reads like the
+ * nameplate of a printed quarterly, not a web app header.
  *
  * Variants:
- *  - "home":    large, with tagline. Only rendered on the homepage.
- *  - "compact": smaller wordmark only, for interior pages (business pages, etc.).
+ *  - "home":    adds the tagline under the wordmark (homepage only).
+ *  - "compact": wordmark + issue stamp for interior pages.
  *
  * Per D-007: Relay is NOT named here. Relay lives in the Colophon + the
  * claimed-page sidebar CTA only.
@@ -18,23 +22,41 @@ type MastheadProps = {
   variant?: "home" | "compact";
 };
 
+function Wordmark({ size }: { size: "home" | "compact" }) {
+  const className =
+    size === "home"
+      ? "font-display font-black uppercase leading-[0.88] tracking-[-0.02em] text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-brand-lime"
+      : "font-display font-black uppercase tracking-[-0.01em] text-lg sm:text-xl text-brand-lime";
+  return (
+    <span className={className}>
+      The Burgh <span className="text-brand-off-white">Quarterly</span>
+    </span>
+  );
+}
+
 export function Masthead({ variant = "compact" }: MastheadProps) {
   if (variant === "home") {
     return (
-      <header className="w-full border-b border-brand-black/10 bg-brand-off-white">
-        <div className="mx-auto max-w-5xl px-6 pt-14 pb-8 md:pt-20 md:pb-10">
+      <header className="w-full bg-brand-black text-brand-off-white">
+        {/* Narrow rule strip (publication plate) */}
+        <div className="mx-auto max-w-7xl px-6 pt-3 pb-2 flex items-center justify-between border-b border-brand-off-white/10">
+          <span className="font-display text-[0.62rem] sm:text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-brand-lime">
+            PGH · Signal Index
+          </span>
+          <span className="font-body text-[0.62rem] sm:text-[0.68rem] uppercase tracking-[0.22em] text-brand-off-white/55">
+            Spring 2026
+          </span>
+        </div>
+        <div className="mx-auto max-w-7xl px-6 pt-10 pb-10 md:pt-14 md:pb-14">
           <Link
             href="/"
-            className="block text-brand-black no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+            className="block no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"
           >
-            <h1 className="font-display font-black uppercase leading-[0.88] tracking-[-0.02em] text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] break-words">
-              The Burgh{" "}
-              <span className="bg-brand-lime px-2 box-decoration-clone">
-                Quarterly
-              </span>
+            <h1>
+              <Wordmark size="home" />
             </h1>
           </Link>
-          <p className="font-body mt-5 max-w-xl text-base md:text-lg text-brand-black/75">
+          <p className="font-body mt-5 max-w-xl text-base md:text-lg text-brand-off-white/75">
             The businesses Pittsburgh is talking about, ranked every quarter.
           </p>
         </div>
@@ -43,21 +65,22 @@ export function Masthead({ variant = "compact" }: MastheadProps) {
   }
 
   return (
-    <header className="w-full border-b border-brand-black/10 bg-brand-off-white">
-      <div className="mx-auto max-w-5xl px-6 py-5 flex items-center justify-between">
+    <header className="w-full bg-brand-black text-brand-off-white">
+      <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         <Link
           href="/"
-          className="text-brand-black no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+          className="no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"
         >
-          <span className="font-display font-black uppercase tracking-[-0.01em] text-xl sm:text-2xl">
-            The Burgh{" "}
-            <span className="bg-brand-lime px-1.5 box-decoration-clone">
-              Quarterly
-            </span>
-          </span>
+          <Wordmark size="compact" />
         </Link>
-        <nav className="hidden sm:block font-body text-[0.7rem] tracking-wide text-brand-black/45">
-          Updated Spring 2026
+        <nav
+          aria-label="Issue"
+          className="flex items-center gap-4 font-display text-[0.62rem] sm:text-[0.68rem] font-semibold uppercase tracking-[0.22em]"
+        >
+          <span className="hidden sm:inline text-brand-lime">
+            PGH · Signal Index
+          </span>
+          <span className="text-brand-off-white/55">Spring 2026</span>
         </nav>
       </div>
     </header>
