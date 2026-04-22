@@ -1,0 +1,87 @@
+{
+  "slug": "golden-age-beer-company",
+  "name": "Golden Age Beer Company",
+  "category": "restaurant",
+  "neighborhood": "Pittsburgh",
+  "address": "337 E 8th Ave, Homestead, PA 15120",
+  "website": "http://www.goldenagebeer.com/",
+  "google_rating": 4.8,
+  "google_review_count": 195,
+  "review_freshness_days": 2,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHWDRFhLmgKqS6K2DwC_wG7N6TJ-GzSLC9d6FZHdfy_rfz9GvQs4wcD9IcfjADF1BK6k13yWvxlScNVTcaZFQT4xxoGXkYZJGL6YXMbuoAfZGUQnbKQz_qFX7ngkjur9uOhSPRh=w408-h541-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHWDRFhLmgKqS6K2DwC_wG7N6TJ-GzSLC9d6FZHdfy_rfz9GvQs4wcD9IcfjADF1BK6k13yWvxlScNVTcaZFQT4xxoGXkYZJGL6YXMbuoAfZGUQnbKQz_qFX7ngkjur9uOhSPRh=w408-h541-k-no",
+  "review_keywords": [],
+  "created_at": "2026-04-22T14:51:45.636Z",
+  "updated_at": "2026-04-22T14:51:45.636Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJcWwrW9HvNIgRFgA1SWgYVj4",
+    "categoryName": "Brewery",
+    "imagesCount": 298,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Pub",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 205-3635",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 5,
+      "threeStar": 6,
+      "fourStar": 17,
+      "fiveStar": 166
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "The beers are excellent.",
+      "The beer is very good and the food is delicious. The Chef is a wonderful person!! Bartenders are all great !!! Wonderful cocktails",
+      "Half of your food is “Meh”, the other half is absolutely terrible - especially for the price. Seriously. The seitan bites are so over fried, over seasoned and over cooked you can take out a truck window with them. Had a burger there you could use as a hockey puck. Fries are good - don’t change that. Pierogis have potential - just stop trying to be fancy. Butter and onions, keep it simple. You guys need to stop overcooking everything.",
+      "Food and service was great. We had shrimp, pierogies and the kids had pizza. We will definitely go back",
+      "Food on point, especially the chicken bacon ranch wrap. Chicken cooked to perfection. Liters of beer $10, super deal. Place is great and always has events going on.",
+      "So yummy and a fun, cozy, unpretentious space.",
+      "We love it here. Wine, great beers, great food. Special for the weekend were shepherd pie pierogis.. omg. Sorry if you didn't get them. Worth the trip out of the \"city\" but so lucky bc we live up the street 😋",
+      "Great pilsners!"
+    ],
+    "keywordPhrases": []
+  },
+  "_score": {
+    "business_slug": "golden-age-beer-company",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 52,
+      "community_spark": 49,
+      "conversion_path": 100,
+      "momentum": 60,
+      "collab_fit": 69
+    },
+    "composite": 65,
+    "tier": "ones_to_watch",
+    "rank_category": 2,
+    "rank_neighborhood": 1,
+    "rank_overall": 29,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "conversion path clarity",
+      "evidence": "Every conversion-path signal present: website, phone, hours, claimed profile."
+    },
+    "scored_at": "2026-04-22T14:51:49.945Z",
+    "momentum_source": "stub_pending_instagram_data"
+  }
+}

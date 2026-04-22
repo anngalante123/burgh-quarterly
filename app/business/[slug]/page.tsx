@@ -1,5 +1,4 @@
-import fs from "node:fs";
-import path from "node:path";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
@@ -7,10 +6,25 @@ import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
 import { ScoreCard } from "@/components/ScoreCard";
 import { UnfairAdvantage } from "@/components/UnfairAdvantage";
-import { ClaimAffordance } from "@/components/ClaimAffordance";
-import { SidebarCTA } from "@/components/SidebarCTA";
 import { OwnerFirstVisit } from "@/components/OwnerFirstVisit";
-import type { RawApifyBusiness } from "@/lib/data/raw-apify";
+import { PeerPulse, type PeerRow } from "@/components/insights/PeerPulse";
+import { ReviewVoice } from "@/components/insights/ReviewVoice";
+import { SignalOfQuarter } from "@/components/insights/SignalOfQuarter";
+import { SocialState } from "@/components/insights/SocialState";
+import { SocialTrend } from "@/components/insights/SocialTrend";
+
+import {
+  ClaimAffordanceUnlessClaimed,
+  ClaimedHeaderBadge,
+  SidebarCTAIfClaimed,
+} from "./claimed-client";
+
+import {
+  listAllBusinessSlugs,
+  loadAllBusinesses,
+  loadBusinessBySlug,
+  type BusinessArtifact,
+} from "@/lib/data/load-business";
 
 /**
  * Business page — the QUIET RECORD zone (EDITORIAL_VOICE.md § loud-quiet asymmetry).
@@ -18,89 +32,154 @@ import type { RawApifyBusiness } from "@/lib/data/raw-apify";
  * Voice: Wikipedia-neutral. Factual. No editorializing on the page body.
  * The loud voice lives on /issue/* editorial pages, not here.
  *
- * Pilot: this route reads directly from the raw Apify JSON for
- * `la-gourmandine-lawrenceville`. Other slugs currently 404.
+ * Data: every slug in content/businesses/*.json pre-renders via
+ *   generateStaticParams(). Missing slugs 404.
  *
- * HARDCODED PLACEHOLDERS (flagged — remove once scoring pipeline runs):
- *   - Tier: "icons" (pending calibration per SCORING_RUBRIC.md § Calibration protocol)
- *   - Rank category: #1 in Pittsburgh Bakeries
- *   - Rank neighborhood: #1 in Lawrenceville
- *   - Movement: "Debut" (first issue)
- *   - Gap-to-next-tier: null (already top tier)
- *
- * ?claimed=true toggles:
- *   - SidebarCTA renders (the one Relay placement permitted on a business page)
- *   - ClaimAffordance hides (already claimed)
- *   - "Claimed" badge appears in the header area
- *
- * Reviews: filtered to reviews with non-null `text`, sliced to 3.
- * Photos: uses `imageUrl` if present; uses `imageUrls[]` for grid; pads with
- *   subtle placeholder cards (no synthetic photos, no stock imagery) when
- *   the raw record doesn't include a gallery.
+ * ?claimed=true handling is isolated to `claimed-client.tsx` (client
+ * components) so the server component can pre-render statically. Next 16
+ * marks any server page that reads searchParams as dynamic; we avoid
+ * that by keeping the toggle entirely client-side.
  */
-
-// --- Pilot-only slug → file mapping ---------------------------------------
-// When content/businesses/*.json lands, this becomes a generic loader.
-const PILOT_SLUG = "la-gourmandine-lawrenceville";
-const RAW_PATH = path.join(
-  process.cwd(),
-  "content",
-  "raw",
-  "apify",
-  "la-gourmandine-raw.json",
-);
-
-function loadPilot(): RawApifyBusiness {
-  const raw = fs.readFileSync(RAW_PATH, "utf8");
-  return JSON.parse(raw) as RawApifyBusiness;
-}
-
-// Sanity-check the hardcoded unfair advantage math: 1138 / 1294 = 87.9% → 88%.
-function fiveStarPercent(
-  dist: RawApifyBusiness["reviewsDistribution"],
-  total: number | null,
-): number | null {
-  if (!dist || !total || total === 0) return null;
-  return Math.round((dist.fiveStar / total) * 100);
-}
 
 type PageProps = {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ claimed?: string }>;
 };
 
-export default async function BusinessPage({ params, searchParams }: PageProps) {
+export function generateStaticParams(): { slug: string }[] {
+  return listAllBusinessSlugs().map((slug) => ({ slug }));
+}
+
+/* ----------------------------- category label helpers ------------------ */
+
+function pluralizeCategoryLabel(categoryName: string): string {
+  // Category label for ScoreCard, e.g. "Bakery" → "Pittsburgh Bakeries",
+  // "Coffee shop" → "Pittsburgh Coffee Shops".
+  const trimmed = categoryName.trim();
+  if (!trimmed) return "Pittsburgh Businesses";
+  // Heuristic pluralization: y→ies, s already, else +s.
+  const lastWord = trimmed.split(/\s+/).pop()!;
+  const rest = trimmed.slice(0, trimmed.length - lastWord.length);
+  let plural: string;
+  if (/s$/i.test(lastWord)) plural = lastWord;
+  else if (/y$/i.test(lastWord)) plural = lastWord.replace(/y$/i, "ies");
+  else plural = `${lastWord}s`;
+  return `Pittsburgh ${rest}${plural}`;
+}
+
+/* ----------------------------- peer lookup ---------------------------- */
+
+function buildPeers(
+  current: BusinessArtifact,
+  all: BusinessArtifact[],
+): PeerRow[] {
+  // Same neighborhood, ordered by rank_neighborhood ascending. Cap at 5.
+  const sameHood = all.filter(
+    (b) => b.business.neighborhood === current.business.neighborhood,
+  );
+  const sorted = sameHood
+    .slice()
+    .sort((a, b) => a.score.rank_neighborhood - b.score.rank_neighborhood);
+
+  // If there are fewer than 4 in the same neighborhood, pad with same-category
+  // businesses from elsewhere to give the block enough rows.
+  const peers = sorted.slice(0, 5);
+  if (peers.length < 4) {
+    const extras = all
+      .filter(
+        (b) =>
+          b.business.slug !== current.business.slug &&
+          b.business.category === current.business.category &&
+          !peers.some((p) => p.business.slug === b.business.slug),
+      )
+      .sort((a, b) => a.score.rank_category - b.score.rank_category)
+      .slice(0, 5 - peers.length);
+    peers.push(...extras);
+  }
+
+  return peers.map((b) => ({
+    name: b.business.name,
+    slug: b.business.slug,
+    rank: b.score.rank_neighborhood,
+    tier: b.score.tier,
+    distinguishingSignal: b.score.unfair_advantage.label,
+  }));
+}
+
+/* ----------------------------- signal of quarter ---------------------- */
+
+function buildSignal(art: BusinessArtifact): {
+  signal: string;
+  evidence: string;
+  direction: "up" | "flat" | "down";
+} {
+  const fresh = art.business.review_freshness_days;
+  if (fresh !== undefined && fresh <= 14) {
+    return {
+      signal: "Review activity is current",
+      evidence: `Most recent review landed ${
+        fresh === 0 ? "today" : fresh === 1 ? "yesterday" : `${fresh} days ago`
+      } — customers are still posting.`,
+      direction: "up",
+    };
+  }
+  if (fresh !== undefined && fresh <= 60) {
+    return {
+      signal: "Steady review cadence",
+      evidence: `Most recent review landed ${fresh} days ago.`,
+      direction: "flat",
+    };
+  }
+  return {
+    signal: "Review text catches up next issue",
+    evidence:
+      "Review-text rescrape is in flight — the full voice-miner will run before the next issue drops.",
+    direction: "flat",
+  };
+}
+
+/* ----------------------------- component ------------------------------ */
+
+export default async function BusinessPage({ params }: PageProps) {
   const { slug } = await params;
-  const sp = await searchParams;
 
-  if (slug !== PILOT_SLUG) {
-    notFound();
-  }
+  const art = loadBusinessBySlug(slug);
+  if (!art) notFound();
 
-  const biz = loadPilot();
-  const claimed = sp.claimed === "true";
+  const { business: biz, score, meta } = art;
 
-  // Reviews with text, top 3 (filter per brief).
-  const textReviews = (biz.reviews ?? [])
-    .filter((r) => typeof r.text === "string" && r.text.trim().length > 0)
-    .slice(0, 3);
+  // Five-star percent math for the review footer.
+  const totalRev = biz.google_review_count ?? 0;
+  const fiveStar = meta.reviewsDistribution?.fiveStar ?? 0;
+  const pct = totalRev > 0 ? Math.round((fiveStar / totalRev) * 100) : null;
 
-  // Photo grid: the one imageUrl we have. Pad to 6 slots. Placeholders are
-  // styled tiles, not fake photos. (Per project voice: honest record.)
-  const heroImages: string[] = [];
-  if (biz.imageUrl) heroImages.push(biz.imageUrl);
-  if (Array.isArray(biz.imageUrls)) {
-    for (const u of biz.imageUrls) {
-      if (heroImages.length >= 6) break;
-      if (!heroImages.includes(u)) heroImages.push(u);
-    }
-  }
+  // Photo grid.
+  const heroImages = biz.photos.map((p) => p.url).slice(0, 6);
   const photoSlots = 6;
 
-  // Verify the "88%" math matches the raw distribution.
-  const pct = fiveStarPercent(biz.reviewsDistribution, biz.reviewsCount);
-  // If the math ever drifts, this comment will be the breadcrumb:
-  // 1138 / 1294 = 87.9 → 88%. Confirmed at build time above.
+  // Reviews with text, top 3.
+  const textReviews = meta.reviewTexts.slice(0, 3);
+
+  // Insight-block data feeds.
+  const all = loadAllBusinesses();
+  const peers = buildPeers(art, all);
+  const signal = buildSignal(art);
+  const reviewPhrases = meta.keywordPhrases.slice(0, 5);
+
+  // Social state — stubbed handle, component renders a preview badge.
+  const socialHandle = biz.instagram ?? biz.slug.replace(/-/g, "");
+
+  // Single-point history for SocialTrend (no prior issues yet).
+  const history = [
+    {
+      quarter: "Sp26",
+      reviewCount: biz.google_review_count ?? 0,
+      rating: biz.google_rating ?? 0,
+    },
+  ];
+
+  // Labels for the ScoreCard.
+  const categoryLabel = pluralizeCategoryLabel(meta.categoryName);
+  const neighborhoodLabel = biz.neighborhood;
 
   return (
     <>
@@ -108,7 +187,7 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
 
       <main className="flex-1 bg-brand-off-white">
         <article className="mx-auto max-w-5xl px-6 py-10 md:py-14">
-          {/* Breadcrumb — geography-first (web-native), not issue-first */}
+          {/* Breadcrumb — geography-first */}
           <nav
             aria-label="Breadcrumb"
             className="font-body text-xs md:text-sm text-brand-black/60"
@@ -121,11 +200,13 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
               </li>
               <li aria-hidden="true">›</li>
               <li>
-                <span className="hover:text-brand-purple">Bakeries</span>
+                <span className="hover:text-brand-purple">
+                  {categoryLabel.replace(/^Pittsburgh\s+/, "")}
+                </span>
               </li>
               <li aria-hidden="true">›</li>
               <li>
-                <span>{biz.neighborhood ?? "Lawrenceville"}</span>
+                <span>{neighborhoodLabel}</span>
               </li>
             </ol>
           </nav>
@@ -133,10 +214,10 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
           {/* Name + locality */}
           <header className="mt-5 md:mt-7">
             <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.9] tracking-[-0.02em] text-brand-black break-words hyphens-auto">
-              {biz.title}
+              {biz.name}
             </h1>
             <p className="mt-4 font-body text-sm md:text-base text-brand-black/70">
-              {biz.categoryName}
+              {meta.categoryName}
               {biz.neighborhood ? ` · ${biz.neighborhood}` : ""}
               {" · "}
               {biz.address}
@@ -144,20 +225,14 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
             <p className="mt-2 font-body text-xs text-brand-black/45">
               Updated Spring 2026
             </p>
-            {claimed && (
-              <p className="mt-3 inline-flex items-center gap-2 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
-                <span
-                  aria-hidden="true"
-                  className="inline-block w-1.5 h-1.5 rounded-full bg-brand-purple"
-                />
-                Claimed by owner
-              </p>
-            )}
+            <Suspense fallback={null}>
+              <ClaimedHeaderBadge />
+            </Suspense>
           </header>
 
           {/* Owner first-visit block */}
           <div className="mt-8 md:mt-10">
-            <OwnerFirstVisit businessName={biz.title} />
+            <OwnerFirstVisit businessName={biz.name} />
           </div>
 
           {/* Main two-column layout on larger screens */}
@@ -165,21 +240,48 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
             <div className="space-y-10 md:space-y-12">
               {/* ScoreCard (public view — no raw composite, ever). */}
               <ScoreCard
-                tier="icons"
-                categoryLabel="Pittsburgh Bakeries"
-                neighborhoodLabel="Lawrenceville"
-                rankCategory={1}
-                rankNeighborhood={1}
-                movement="Debut"
-                claimed={claimed}
+                tier={score.tier}
+                categoryLabel={categoryLabel}
+                neighborhoodLabel={neighborhoodLabel}
+                rankCategory={score.rank_category}
+                rankNeighborhood={score.rank_neighborhood}
+                movement={score.movement.overall ?? "Debut"}
+                claimed={false}
                 gapToNextTier={null}
               />
 
               {/* Unfair advantage */}
               <UnfairAdvantage
-                label="Five-star reviews"
-                evidence="1,138 of 1,294 reviews — 88% — the highest concentration of five-star reviews among Lawrenceville bakeries."
+                label={score.unfair_advantage.label}
+                evidence={score.unfair_advantage.evidence}
               />
+
+              {/* Signal of the quarter */}
+              <SignalOfQuarter
+                signal={signal.signal}
+                evidence={signal.evidence}
+                direction={signal.direction}
+              />
+
+              {/* Review voice — phrases mined from reviews */}
+              {reviewPhrases.length >= 2 ? (
+                <ReviewVoice phrases={reviewPhrases} />
+              ) : (
+                <ReviewVoice />
+              )}
+
+              {/* Peer pulse */}
+              <PeerPulse
+                businessSlug={biz.slug}
+                neighborhood={biz.neighborhood}
+                peers={peers}
+              />
+
+              {/* Social snapshot (stub — pending Instagram ingest) */}
+              <SocialState handle={socialHandle} />
+
+              {/* Social trend (single-point first-issue state) */}
+              <SocialTrend history={history} />
 
               {/* Photo grid */}
               <section aria-label="Photos">
@@ -195,7 +297,7 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
                         <img
                           key={i}
                           src={src}
-                          alt={`${biz.title} — photo ${i + 1}`}
+                          alt={`${biz.name} — photo ${i + 1}`}
                           className="aspect-[4/3] w-full object-cover bg-brand-cream border border-brand-black/10"
                           loading={i === 0 ? "eager" : "lazy"}
                         />
@@ -214,9 +316,9 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
                     );
                   })}
                 </div>
-                {typeof biz.imagesCount === "number" && biz.imagesCount > 0 && (
+                {meta.imagesCount > 0 && (
                   <p className="mt-3 font-body text-xs text-brand-black/50">
-                    {biz.imagesCount.toLocaleString()} photos on Google.
+                    {meta.imagesCount.toLocaleString()} photos on Google.
                   </p>
                 )}
               </section>
@@ -232,55 +334,37 @@ export default async function BusinessPage({ params, searchParams }: PageProps) 
                   </p>
                 ) : (
                   <ul className="space-y-6">
-                    {textReviews.map((r) => (
+                    {textReviews.map((text, i) => (
                       <li
-                        key={r.reviewerId}
+                        key={i}
                         className="border-l-2 border-brand-black/15 pl-4 md:pl-5"
                       >
-                        <div className="flex items-center gap-2 font-body text-xs text-brand-black/55">
-                          <span aria-label={`${r.stars} stars`}>
-                            {"★".repeat(Math.max(0, Math.min(5, r.stars)))}
-                            <span className="text-brand-black/20">
-                              {"★".repeat(5 - Math.max(0, Math.min(5, r.stars)))}
-                            </span>
-                          </span>
-                          <span aria-hidden="true">·</span>
-                          <span className="font-medium text-brand-black/75">
-                            {r.name}
-                          </span>
-                          {r.publishAt && (
-                            <>
-                              <span aria-hidden="true">·</span>
-                              <span>{r.publishAt}</span>
-                            </>
-                          )}
-                        </div>
-                        <p className="mt-2 font-body text-sm md:text-base text-brand-black/85 leading-relaxed">
-                          {r.text}
+                        <p className="font-body text-sm md:text-base text-brand-black/85 leading-relaxed">
+                          {text}
                         </p>
                       </li>
                     ))}
                   </ul>
                 )}
-                {typeof biz.reviewsCount === "number" && pct !== null && (
+                {totalRev > 0 && pct !== null && (
                   <p className="mt-6 font-body text-xs text-brand-black/50">
-                    {biz.reviewsCount.toLocaleString()} total reviews ·{" "}
+                    {totalRev.toLocaleString()} total reviews ·{" "}
                     {pct}% five-star.
                   </p>
                 )}
               </section>
 
-              {/* Claim affordance (unclaimed state) */}
-              {!claimed && (
-                <div className="pt-2">
-                  <ClaimAffordance slug={PILOT_SLUG} />
-                </div>
-              )}
+              {/* Claim affordance (hides when ?claimed=true) */}
+              <Suspense fallback={null}>
+                <ClaimAffordanceUnlessClaimed slug={biz.slug} />
+              </Suspense>
             </div>
 
-            {/* Sidebar: only the Relay CTA, and only when claimed=true */}
+            {/* Sidebar: Relay CTA only when claimed=true */}
             <aside className="space-y-6">
-              <SidebarCTA visible={claimed} />
+              <Suspense fallback={null}>
+                <SidebarCTAIfClaimed />
+              </Suspense>
             </aside>
           </div>
         </article>

@@ -1,0 +1,97 @@
+{
+  "slug": "hop-farm-brewing-company",
+  "name": "Hop Farm Brewing Company",
+  "category": "restaurant",
+  "neighborhood": "Lawrenceville",
+  "address": "5601 Butler St, Pittsburgh, PA 15201",
+  "website": "http://hopfarmbrewingco.com/",
+  "google_rating": 4.6,
+  "google_review_count": 298,
+  "review_freshness_days": 0,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2HOylYG7VxrftIna-HG7yBxV_mzMY992ReLUCMt87NoY_GAlkVltv8L1HxfTEahz6HA8tGb3k_-xJg8VNQuKf2PUWbc-jCUA0EaSxOJrKwLV_sJZ1wCDRv2ia8bq0NfQJL28kgUm3JhyR=w408-h408-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2HOylYG7VxrftIna-HG7yBxV_mzMY992ReLUCMt87NoY_GAlkVltv8L1HxfTEahz6HA8tGb3k_-xJg8VNQuKf2PUWbc-jCUA0EaSxOJrKwLV_sJZ1wCDRv2ia8bq0NfQJL28kgUm3JhyR=w408-h408-k-no",
+  "review_keywords": [
+    "customer service"
+  ],
+  "created_at": "2026-04-22T14:51:45.621Z",
+  "updated_at": "2026-04-22T14:51:45.621Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJo5vWsfbyNIgREEFv8eWTR9A",
+    "categoryName": "Brewery",
+    "imagesCount": 364,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Beer",
+      "Pub",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 408-3248",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 11,
+      "twoStar": 5,
+      "threeStar": 9,
+      "fourStar": 34,
+      "fiveStar": 239
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "What a great place!  Fantastic food and a great front of house!  Bradley is the man!  Let’s GO FLYERS!!!!!!!",
+      "My manager arranged to have my retirement party at Hop Farm Brewing Company. We had a great time in the party room right in front of the open garage door on a pleasant weekend afternoon. At first I thought there’d be too much noise from Butler Street, but it wasn’t a problem at all.  The food was good, as was the serve, and Bradley, the manager, was great.  I’ll definitely go back!  I know all my friends from work really liked it too!  👍👍",
+      "Beer is delicious.   So many great choices. Fun. staff  if so friendly and funny.   And the food... So good! Shout out to Bradley for the fun introduction to the brewery.    He was pretty cool for a Penguins fan 😂\nWill def be back. Go Flyers !",
+      "This space is great and the folks working here are wonderful. Shout out to Bradley who made it so easy for me to schedule our upcoming Pretty Good Harmonies pop-up choir event for April 19th. We're all really excited!",
+      "Great spot! Very welcoming, incredible customer service and amazing beer and food. Definitely recommend if you are in the area!",
+      "I used to love coming here for the convenience—ordering with a QR code made everything easy, and I really enjoyed the beer selection. But the constant changes to the ordering process have made it frustrating to even bother coming back.\n\nIt’s been QR codes, then table service, and now suddenly you have to order at the bar—with no clear communication. On my last visit, we sat down and were completely ignored. No greeting, no explanation, nothing. After waiting around, we just left.\n\nIf customer service isn’t a priority, at least pick a system and stick to it. Or better yet, bring back QR ordering so customers don’t have to guess how things work every time they walk in",
+      "Beautiful area. absolutely love the lights and the live edge tables.\nthe 4 stars is because I really wanted to play darts but they have the old school dart boards. I cant drink some brews AND do math!\nThe pool tables were beautiful too. gorgeous old wood.\nThis place is a nice quiet vibe on a Thursday!",
+      "Let me say that this brewery has a lot of IPAs: that is a positive for me. They let us taste around 5 different beers before we made a decision. We got a few beers and started with nachos. The nachos were good, a bit pricey, but good. We didn’t love the beer cheese so I wouldn’t start with this again. Their menu has a lot so no concerns.\n\nWe decided to get their Yinser Cheesesteak and I would get it again. It was big, the cheesesteak was very good (slightly on the sweet side). The only way to improve this meal is grill the bun but that is preference.\n\nWe got here and no one was here but by the time we left there was 20 or more. The bartender was great: super friendly and he was a great guide. The place was slightly loud in the main room but they have a lot of space to spread out; there are other areas you can go to for large groups or groups that want a quieter environment.\n\nThe key…I WILL BE HERE AGAIN.",
+      "Kid friendly, good food, diverse tap list, tons of large tables, pool and darts."
+    ],
+    "keywordPhrases": [
+      {
+        "text": "customer service",
+        "count": 2,
+        "exampleQuote": "Very welcoming, incredible customer service and amazing beer and food."
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "hop-farm-brewing-company",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 64,
+      "community_spark": 58,
+      "conversion_path": 100,
+      "momentum": 60,
+      "collab_fit": 78
+    },
+    "composite": 71,
+    "tier": "ones_to_watch",
+    "rank_category": 1,
+    "rank_neighborhood": 4,
+    "rank_overall": 25,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "conversion path clarity",
+      "evidence": "Every conversion-path signal present: website, phone, hours, claimed profile."
+    },
+    "scored_at": "2026-04-22T14:51:49.945Z",
+    "momentum_source": "stub_pending_instagram_data"
+  }
+}

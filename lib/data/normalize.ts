@@ -4,6 +4,7 @@ import {
   type Business,
   type Category,
 } from "./schemas";
+import { extractKeywordPhrases, type KeywordPhrase } from "./keywords";
 
 /**
  * Loose schema for the raw Apify Google Maps record shape.
@@ -21,21 +22,22 @@ export const ApifyGoogleMapsRecordSchema = z
     categories: z.array(z.string()).optional(),
 
     // Location
-    neighborhood: z.string().optional(),
-    address: z.string().optional(),
-    street: z.string().optional(),
-    city: z.string().optional(),
-    state: z.string().optional(),
+    neighborhood: z.string().nullable().optional(),
+    address: z.string().nullable().optional(),
+    street: z.string().nullable().optional(),
+    city: z.string().nullable().optional(),
+    state: z.string().nullable().optional(),
     location: z
       .object({
         lat: z.number().optional(),
         lng: z.number().optional(),
       })
+      .nullable()
       .optional(),
 
     // Web presence
-    website: z.string().optional(),
-    phone: z.string().optional(),
+    website: z.string().nullable().optional(),
+    phone: z.string().nullable().optional(),
 
     // Reviews
     totalScore: z.number().optional(),
@@ -55,11 +57,19 @@ export const ApifyGoogleMapsRecordSchema = z
     imagesCount: z.number().optional(),
     imageUrl: z.string().optional(),
     imageUrls: z.array(z.string()).optional(),
+    imageCategories: z.array(z.string()).optional(),
 
     // Status flags
     temporarilyClosed: z.boolean().optional(),
     permanentlyClosed: z.boolean().optional(),
     claimThisBusiness: z.boolean().optional(),
+
+    // Hours — Apify returns an ARRAY of per-day entries OR a numeric count
+    // depending on the task. Accept both shapes defensively.
+    openingHours: z.unknown().optional(),
+
+    // Reviews (when rescrape includes text)
+    reviews: z.array(z.unknown()).optional(),
 
     // Meta (ownership, attributes)
     additionalInfo: z.unknown().optional(),
@@ -139,6 +149,38 @@ export interface NormalizeOptions {
 }
 
 /**
+ * Extended artifact: the Business record plus ancillary data the scoring /
+ * insight layers need but can't live on the schema (raw review text, phrase
+ * quotes, attribute flags). Stored alongside the business.json as
+ * `_meta` for the business page to consume.
+ */
+export interface NormalizedArtifact {
+  business: Business;
+  meta: {
+    placeId: string;
+    phone: string | null;
+    hasWebsite: boolean;
+    hasPhone: boolean;
+    hasOpeningHours: boolean;
+    claimThisBusiness: boolean | null;
+    imageCategories: string[];
+    fromTheBusinessFlags: string[];
+    reviewTexts: string[];
+    keywordPhrases: KeywordPhrase[];
+    rawReviewsCount: number;
+    reviewsDistribution: {
+      oneStar: number;
+      twoStar: number;
+      threeStar: number;
+      fourStar: number;
+      fiveStar: number;
+    } | null;
+    imagesCount: number;
+    categoryName: string;
+  };
+}
+
+/**
  * Normalize one Apify Google Maps record into our `Business` schema.
  *
  * Returns `null` if:
@@ -185,13 +227,42 @@ export function normalizeApifyRecord(
   slugCollisions.set(slug, rec.placeId);
 
   const photos: Business["photos"] = [];
-  if (rec.imageUrl) {
+  if (rec.imageUrl && /^https?:\/\//.test(rec.imageUrl)) {
     photos.push({ url: rec.imageUrl, source: "google-maps" });
   }
   for (const url of rec.imageUrls ?? []) {
-    if (typeof url === "string" && url.startsWith("http")) {
+    if (typeof url === "string" && /^https?:\/\//.test(url)) {
+      if (photos.some((p) => p.url === url)) continue;
       photos.push({ url, source: "google-maps" });
     }
+  }
+
+  // Review text mining — only if rescrape surfaced actual text.
+  const rawReviews = Array.isArray(rec.reviews) ? rec.reviews : [];
+  const reviewTexts: string[] = [];
+  const reviewDates: Date[] = [];
+  for (const r of rawReviews) {
+    if (!r || typeof r !== "object") continue;
+    const obj = r as Record<string, unknown>;
+    const text = typeof obj.text === "string" ? obj.text : null;
+    if (text && text.trim().length > 0) reviewTexts.push(text);
+    const pad = obj.publishedAtDate;
+    if (typeof pad === "string") {
+      const d = new Date(pad);
+      if (!Number.isNaN(d.getTime())) reviewDates.push(d);
+    }
+  }
+
+  const phrases = extractKeywordPhrases(reviewTexts);
+
+  // Days since most recent review.
+  let reviewFreshnessDays: number | undefined;
+  if (reviewDates.length > 0) {
+    const mostRecent = reviewDates.reduce((a, b) =>
+      a.getTime() > b.getTime() ? a : b
+    );
+    const diff = Date.now() - mostRecent.getTime();
+    reviewFreshnessDays = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
   }
 
   const now = new Date().toISOString();
@@ -211,9 +282,10 @@ export function normalizeApifyRecord(
     google_review_count: typeof rec.reviewsCount === "number"
       ? rec.reviewsCount
       : undefined,
+    review_freshness_days: reviewFreshnessDays,
     photos,
     hero_photo: photos[0]?.url,
-    review_keywords: [], // backfilled by the scoring pipeline once review text exists
+    review_keywords: phrases.map((p) => p.text),
     created_at: now,
     updated_at: now,
     claimed: false,
@@ -229,4 +301,96 @@ export function normalizeApifyRecord(
     return null;
   }
   return out.data;
+}
+
+/**
+ * Pulls the "From the business" attribute flags out of Apify's nested
+ * additionalInfo structure. Each entry looks like
+ *   { "Identifies as Asian-owned": true }
+ * and we flatten to labels for entries whose value is truthy.
+ */
+function extractFromTheBusinessFlags(additionalInfo: unknown): string[] {
+  if (!additionalInfo || typeof additionalInfo !== "object") return [];
+  const obj = additionalInfo as Record<string, unknown>;
+  const section = obj["From the business"];
+  if (!Array.isArray(section)) return [];
+  const out: string[] = [];
+  for (const row of section) {
+    if (!row || typeof row !== "object") continue;
+    for (const [label, val] of Object.entries(row as Record<string, unknown>)) {
+      if (val === true) out.push(label);
+    }
+  }
+  return out;
+}
+
+/**
+ * Normalize and also return the ancillary scoring/insight metadata.
+ * Returns null under the same conditions as `normalizeApifyRecord`.
+ */
+export function normalizeApifyRecordWithMeta(
+  raw: unknown,
+  opts: NormalizeOptions = {},
+): NormalizedArtifact | null {
+  const business = normalizeApifyRecord(raw, opts);
+  if (!business) return null;
+
+  const parsed = ApifyGoogleMapsRecordSchema.safeParse(raw);
+  if (!parsed.success) return null;
+  const rec = parsed.data;
+
+  const rawReviews = Array.isArray(rec.reviews) ? rec.reviews : [];
+  const reviewTexts: string[] = [];
+  for (const r of rawReviews) {
+    if (!r || typeof r !== "object") continue;
+    const obj = r as Record<string, unknown>;
+    const text = typeof obj.text === "string" ? obj.text : null;
+    if (text && text.trim().length > 0) reviewTexts.push(text);
+  }
+
+  // openingHours may be an array of { day, hours } objects, a number, or
+  // missing. We only need to know presence.
+  const hasOpeningHours = Array.isArray(rec.openingHours)
+    ? rec.openingHours.length > 0
+    : typeof rec.openingHours === "number"
+    ? rec.openingHours > 0
+    : false;
+
+  const phone = typeof rec.phone === "string" && rec.phone.trim().length > 0
+    ? rec.phone
+    : null;
+
+  const reviewsDistribution = rec.reviewsDistribution
+    ? {
+      oneStar: rec.reviewsDistribution.oneStar ?? 0,
+      twoStar: rec.reviewsDistribution.twoStar ?? 0,
+      threeStar: rec.reviewsDistribution.threeStar ?? 0,
+      fourStar: rec.reviewsDistribution.fourStar ?? 0,
+      fiveStar: rec.reviewsDistribution.fiveStar ?? 0,
+    }
+    : null;
+
+  return {
+    business,
+    meta: {
+      placeId: rec.placeId!,
+      phone,
+      hasWebsite: !!business.website,
+      hasPhone: phone !== null,
+      hasOpeningHours,
+      claimThisBusiness: typeof rec.claimThisBusiness === "boolean"
+        ? rec.claimThisBusiness
+        : null,
+      imageCategories: Array.isArray(rec.imageCategories)
+        ? rec.imageCategories.filter((c): c is string => typeof c === "string")
+        : [],
+      fromTheBusinessFlags: extractFromTheBusinessFlags(rec.additionalInfo),
+      reviewTexts,
+      keywordPhrases: extractKeywordPhrases(reviewTexts),
+      rawReviewsCount: rawReviews.length,
+      reviewsDistribution,
+      imagesCount: typeof rec.imagesCount === "number" ? rec.imagesCount : 0,
+      categoryName: rec.categoryName ?? "",
+    },
+  };
 }

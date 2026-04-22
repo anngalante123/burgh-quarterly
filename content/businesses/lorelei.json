@@ -1,0 +1,85 @@
+{
+  "slug": "lorelei",
+  "name": "Lorelei",
+  "category": "restaurant",
+  "neighborhood": "East Liberty",
+  "address": "124 S Highland Ave, Pittsburgh, PA 15206",
+  "website": "https://www.loreleipgh.com/",
+  "google_rating": 4.5,
+  "google_review_count": 392,
+  "review_freshness_days": 12,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFCxlpoB6Mg2lT-O3NITmlfzi6u7160oTlOnyd7y-rRv6jJvRSvAQCeRpc3ZIbxvH-k1GQDX2H2L5z_ERb-O0EDafDbBINAjBM1OQ0zBE_9p4vNcwaxDOSKgdTmQiwF1ktYHSlP=w408-h330-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFCxlpoB6Mg2lT-O3NITmlfzi6u7160oTlOnyd7y-rRv6jJvRSvAQCeRpc3ZIbxvH-k1GQDX2H2L5z_ERb-O0EDafDbBINAjBM1OQ0zBE_9p4vNcwaxDOSKgdTmQiwF1ktYHSlP=w408-h330-k-no",
+  "review_keywords": [],
+  "created_at": "2026-04-22T14:51:45.620Z",
+  "updated_at": "2026-04-22T14:51:45.620Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJBcn2m7LzNIgR9TG_cGShmus",
+    "categoryName": "Restaurant",
+    "imagesCount": 291,
+    "imageCategories": [
+      "All",
+      "Menu",
+      "Videos",
+      "Food & drink",
+      "Vibe",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 214-6926",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 11,
+      "twoStar": 11,
+      "threeStar": 17,
+      "fourStar": 69,
+      "fiveStar": 284
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Awesome, creative drinks. Bartender was excellent and friendly.",
+      "Trans folks beware, the staff didn’t ask my friend’s name, and instead used the deadname on their credit card to identify their order. My friend was down the hallway when their order became ready but it’s definitely possible their deadname was called out to the entire restaurant, as that’s what staff was doing with all the other orders. Not a good look.",
+      "waited 10minutes for a sip of jeger and whiskey",
+      "This place is absolutely wonderful.  Aside from the cocktails being utter delights, the bartenders are top class.  The bar staff are friendly, knowledgeable about the cocktails, and they seem to project this vibe that makes me want to come back time and time again.  Statistically, I'm bound to have less than a perfect experience here, but it hasn't happened.  Maybe it's dumb luck, maybe this place is the bee's knees?  Try the Bassett Hound and leave these folks a good tip.  Also, Commerce bar around the corner can suck eggs.",
+      "the best lowkey date night place or hangout place with friends. the cacio e pepe pizza is a must.\n여기 카치오페페 피자 쏘굿.. 먹다보면 물릴수있으니 시져샐러드 필수! 피자들은 다 굿인디 그 핫도그 머시기 절대 시키지마세요.. 돈아까움ㅎ"
+    ],
+    "keywordPhrases": []
+  },
+  "_score": {
+    "business_slug": "lorelei",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 56,
+      "community_spark": 59,
+      "conversion_path": 100,
+      "momentum": 60,
+      "collab_fit": 78
+    },
+    "composite": 70,
+    "tier": "ones_to_watch",
+    "rank_category": 2,
+    "rank_neighborhood": 5,
+    "rank_overall": 28,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "conversion path clarity",
+      "evidence": "Every conversion-path signal present: website, phone, hours, claimed profile."
+    },
+    "scored_at": "2026-04-22T14:51:49.945Z",
+    "momentum_source": "stub_pending_instagram_data"
+  }
+}

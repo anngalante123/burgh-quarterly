@@ -1,0 +1,103 @@
+{
+  "slug": "margaux",
+  "name": "Margaux",
+  "category": "boutique",
+  "neighborhood": "East Liberty",
+  "address": "5947 Penn Ave, Pittsburgh, PA 15206",
+  "website": "https://margauxpgh.com/",
+  "google_rating": 4.5,
+  "google_review_count": 386,
+  "review_freshness_days": 0,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF3RojfxQGN6dNy5l2eHf4RewH0mUSNpRFCvHleqGHEj8Tux0-tY6rQCUUZU8tqeG9crQaJzEaUZM_3f-qRKnG1-K_hZETl50ADBK-C9C5FIbMo-iKqFahgsVdlBxQ3cSS-dr7RIg=w408-h544-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF3RojfxQGN6dNy5l2eHf4RewH0mUSNpRFCvHleqGHEj8Tux0-tY6rQCUUZU8tqeG9crQaJzEaUZM_3f-qRKnG1-K_hZETl50ADBK-C9C5FIbMo-iKqFahgsVdlBxQ3cSS-dr7RIg=w408-h544-k-no",
+  "review_keywords": [
+    "great cocktails"
+  ],
+  "created_at": "2026-04-22T14:51:45.619Z",
+  "updated_at": "2026-04-22T14:51:45.619Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJ_xbBinPyNIgR5I6bKzW6Xc4",
+    "categoryName": "Coffee shop",
+    "imagesCount": 530,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Cappuccino",
+      "Coffee",
+      "Croissant",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [
+      "Small business"
+    ],
+    "hasWebsite": true,
+    "hasPhone": false,
+    "phone": null,
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 25,
+      "twoStar": 11,
+      "threeStar": 18,
+      "fourStar": 43,
+      "fiveStar": 289
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Their coffee is really good, and the atmosphere of the place is wonderful.",
+      "Gf and I came in to celebrate some good news in our personal lives. After ordering a single drink all 3 bartenders ignored us. The drink was good but idk if I’ll be back after that experience.",
+      "Drinks were delicious but the service was abysmal. After waiting at the bar for about 10 minutes we finally were able to order a round. Shortly after we were asked if we needed anything else, and I asked for another minute to overlook the menu. We were then ignored for the next 30 minutes. The bartenders chose to chat with other patrons extensively or stand around and chat with each other than check on us. It wasn’t until my boyfriend stood up and put his coat on that they finally came over and asked if we needed anything else. I’d understand a wait if they were busy, but the bar was only half full and they only had 1 other table.\n\nMaybe we’ll be back if the staff learn how to actually function in the service industry. I understand wanting to chat with other patrons, I know that’s part of the job, but ignoring your other customers entirely, even after being waved down, is ridiculous.",
+      "Great spot",
+      "Great cocktails, good beer selection, and incredibly friendly staff. There are always regulars at the bar, and it's clear why.\n\nThere's also lots of cozy seating around the room, and it's a great place to chill and work.\n\nThe food is also good, but I've honestly only been in once for breakfast!",
+      "Our service was awesome!! Very great cocktails/seasonal drinks",
+      "You should go for yourself!",
+      "Went there last night. Homeless dude got into altercation with manager, and guests (myself included). I helped usher the homeless dude out, and we went about our night. It’s not so much the homeless dude lamping on their couch why I’m giving a bad review (it was 5 degrees out, and my man wanted to stay warm, totally fine). It was the fact that the manager didn’t come over to say “sorry about that, thanks for your help.”",
+      "Refill for black coffee is over three dollars; srsly? Edit post-business reply:  Thanks for the response, could consider limiting to 1 free refill; over three dollars is well beyond \"part of a healthy business model\".  It's not \"free coffee\"; its another cup after one has already been paid for and enjoyed."
+    ],
+    "keywordPhrases": [
+      {
+        "text": "great cocktails",
+        "count": 2,
+        "exampleQuote": "Great cocktails, good beer selection, and incredibly friendly staff."
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "margaux",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 87,
+      "community_spark": 80,
+      "conversion_path": 75,
+      "momentum": 60,
+      "collab_fit": 96
+    },
+    "composite": 79,
+    "tier": "ones_to_watch",
+    "rank_category": 2,
+    "rank_neighborhood": 3,
+    "rank_overall": 18,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "creator collaboration fit",
+      "evidence": "Clear neighborhood identity in East Liberty (Small business) — a natural match for local creator audiences."
+    },
+    "scored_at": "2026-04-22T14:51:49.945Z",
+    "momentum_source": "stub_pending_instagram_data"
+  }
+}

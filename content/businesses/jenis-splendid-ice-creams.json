@@ -1,0 +1,103 @@
+{
+  "slug": "jenis-splendid-ice-creams",
+  "name": "Jeni's Splendid Ice Creams",
+  "category": "boutique",
+  "neighborhood": "Larimer",
+  "address": "173 Bakery Square Blvd, Pittsburgh, PA 15206",
+  "website": "https://jenis.com/blogs/scoop-shops/pittsburgh-pa",
+  "google_rating": 4.5,
+  "google_review_count": 251,
+  "review_freshness_days": 2,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGzg-i4U22IcRV8m2q0DL8yzJyGDYqjnP_2ChPQJ-YYA9IKP4NzQF20O_LSfnCatyUqroNi1ae7SYh_7FsWgFE7WQ8SfRb2z7UT927IGj-LYmnkLxb3aDpHfcorzw3DwAVk7JyJ0-HhCW7_=w408-h306-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGzg-i4U22IcRV8m2q0DL8yzJyGDYqjnP_2ChPQJ-YYA9IKP4NzQF20O_LSfnCatyUqroNi1ae7SYh_7FsWgFE7WQ8SfRb2z7UT927IGj-LYmnkLxb3aDpHfcorzw3DwAVk7JyJ0-HhCW7_=w408-h306-k-no",
+  "review_keywords": [
+    "ice cream",
+    "love jenis"
+  ],
+  "created_at": "2026-04-22T14:51:45.597Z",
+  "updated_at": "2026-04-22T14:51:45.597Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJoa7at8HtNIgRL6xegBlfhJ0",
+    "categoryName": "Ice cream shop",
+    "imagesCount": 450,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Gelato",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 407-4401",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 10,
+      "twoStar": 7,
+      "threeStar": 12,
+      "fourStar": 31,
+      "fiveStar": 191
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Me and my dog’s favorite spot, I always order him a small scoop of vanilla with waffle wedge.\nI like all of their flavors, but I always make sure to try their new flavors - because it always surprises me!!!!!",
+      "Well howdy there, peers! I have got a tale for you.\nMe and my precious furbaby, Sadie, were moseying around that Bakery Square place earlier today. Now, with a name like that, I was fully expecting to find some good old-fashioned square dancing, but wouldn't you know it? We stumbled right onto a shop called Jeni’s Splendid Ice Creams. I started wondering just who this Jeni gal was and what kind of magic she was churning up. Well, curiosity killed the cat, but it sent this mama straight into the longest line I’ve seen since the Great State Fair! It was stretched out further than a Utah wild wild west, but we stuck it out. I didn't see the lady herself, but the folks behind the counter were sweet as pie. They let me try a lick of that Birthday Cake flavor. It didn't taste much like a cake I’d bake, but it sure was life changing. I settled on a scoop of Mint Chocolate Chip—a total classic. Lord have mercy, that ice cream was so fresh I’d bet my bottom dollar they have a prize-winning cow tucked away in the back room! One bite and I felt my old joints just snap, crackle, and pop right back into place. But let me tell you the real gospel truth: I’ve been struggling with my memory and that awful Alzheimer’s for a good while now, but after one taste of Jeni's, it was like the clouds parted and my mind cleared right up! I walked in there forgetful as a June bug, and I walked out feeling brand new. If you're looking for a cure for what ails your memory, forget the doctor—just go find Jeni!",
+      "Pretty delicious just super expensive.",
+      "Love the ice cream! Plus the unique flavors and great variety.",
+      "I could not leave a 5 star review.... I do love Jeni's but the portion of these two \"standards\" (2 1/2 scoops) is mind boggling. I've been to several locations in DC, MD & VA and never received a portion so small for $7! I normally get the pints for $12. These portions definitely need to be reevaluated! This is at Bakery Sq in Pittsburgh, PA.",
+      "Great ice cream at Jeni’s. All the flavors tasted fresh and have robust flavors. They allow you to try any flavor before you pick one out. I loved the waffle cones which they make fresh throughout the day.",
+      "We love Jeni's ice cream. This location is so convenient!",
+      "I love their Butter Cake ice cream! So good!"
+    ],
+    "keywordPhrases": [
+      {
+        "text": "ice cream",
+        "count": 5,
+        "exampleQuote": "We stumbled right onto a shop called Jeni’s Splendid Ice Creams."
+      },
+      {
+        "text": "love jenis",
+        "count": 2,
+        "exampleQuote": "I do love Jeni's but the portion of these two \"standards\" (2 1/2 scoops) is mind boggling."
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "jenis-splendid-ice-creams",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 84,
+      "community_spark": 77,
+      "conversion_path": 100,
+      "momentum": 60,
+      "collab_fit": 84
+    },
+    "composite": 81,
+    "tier": "icons",
+    "rank_category": 3,
+    "rank_neighborhood": 1,
+    "rank_overall": 13,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "visual storytelling",
+      "evidence": "450 photos across 8 Google-indexed categories — a visual catalog creators can pull from."
+    },
+    "scored_at": "2026-04-22T14:51:49.945Z",
+    "momentum_source": "stub_pending_instagram_data"
+  }
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Unbounded, DM_Sans } from "next/font/google";
+import { PageTransition } from "@/components/motion/PageTransition";
 import "./globals.css";
 
 const unbounded = Unbounded({
@@ -30,7 +31,9 @@ export default function RootLayout({
       lang="en"
       className={`${unbounded.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body">{children}</body>
+      <body className="min-h-full flex flex-col font-body bg-brand-off-white paper-grain">
+        <PageTransition>{children}</PageTransition>
+      </body>
     </html>
   );
 }

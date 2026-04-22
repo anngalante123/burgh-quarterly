@@ -1,0 +1,105 @@
+{
+  "slug": "nan-xiang-soup-dumplings-pittsburgh",
+  "name": "Nan Xiang Soup Dumplings - Pittsburgh",
+  "category": "restaurant",
+  "neighborhood": "South Side Flats",
+  "address": "2773 Sidney St, Pittsburgh, PA 15203",
+  "website": "https://nanxiangxiaolongbao.com/?utm_source=gbp&utm_medium=organic&utm_campaign=pittsburgh",
+  "google_rating": 4.8,
+  "google_review_count": 1212,
+  "review_freshness_days": 2,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxkr91R4DGJnSgLs9d_JA9IcrrZTC8J2xqVvEbhxZ45I46rykt7NfZy0mniS5S7WcniPlEcWxjbImmPA5skmXLoOcQR9NSMDYzganmK4cMcGIYJRwGMrDIi3hLfY9g8BFxZUROr8a7Ap4=w408-h306-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxkr91R4DGJnSgLs9d_JA9IcrrZTC8J2xqVvEbhxZ45I46rykt7NfZy0mniS5S7WcniPlEcWxjbImmPA5skmXLoOcQR9NSMDYzganmK4cMcGIYJRwGMrDIi3hLfY9g8BFxZUROr8a7Ap4=w408-h306-k-no",
+  "review_keywords": [
+    "great service"
+  ],
+  "created_at": "2026-04-22T14:51:45.635Z",
+  "updated_at": "2026-04-22T14:51:45.635Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJHdQeTnzxNIgRMG7Df7vNwmQ",
+    "categoryName": "Restaurant",
+    "imagesCount": 1349,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Shumai",
+      "Steamed dumplings",
+      "Fried noodles",
+      "Wonton",
+      "Beef soup",
+      "Mochi",
+      "Fried rice",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 707-8888",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 19,
+      "twoStar": 17,
+      "threeStar": 33,
+      "fourStar": 77,
+      "fiveStar": 1066
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Delicious soup dumplings, great mixed variety. Service was very pleasant and super quick. Great first experience....\nDidi the robot was fun to watch.",
+      "Amazing four happiness kao fu. Just the right food post bike ride",
+      "These beef and pepper noodles are legit.  Dumplings sampler was a hit as well.  This is going to be a repeat when we come back to town for sure.",
+      "Shout out Galilea!",
+      "Galilea was our server and she was the best !",
+      "Everything was great, but the Bathroom was not clean.",
+      "Great service, thanks Morgan! Excellent main course and appetizers, clean, and friendly!",
+      "Great food and great service, our server was Chavely",
+      "Our server Morgan had an amazing smile and great customer service! She was quick, efficient, and always had refills ready when she came around. She held amazing conversation and made the experience very welcoming and rememberable. The food was amazing as always and we tried the new spicy beef dumplings and sweet and sour soup - both were incredible! We'll definitely be back again and hopefully we get Morgan for another great experience!"
+    ],
+    "keywordPhrases": [
+      {
+        "text": "great service",
+        "count": 2,
+        "exampleQuote": "Great service, thanks Morgan!"
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "nan-xiang-soup-dumplings-pittsburgh",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 87,
+      "community_spark": 82,
+      "conversion_path": 100,
+      "momentum": 60,
+      "collab_fit": 78
+    },
+    "composite": 82,
+    "tier": "icons",
+    "rank_category": 1,
+    "rank_neighborhood": 1,
+    "rank_overall": 11,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "visual storytelling",
+      "evidence": "1,349 photos across 15 Google-indexed categories — a visual catalog creators can pull from."
+    },
+    "scored_at": "2026-04-22T14:51:49.945Z",
+    "momentum_source": "stub_pending_instagram_data"
+  }
+}

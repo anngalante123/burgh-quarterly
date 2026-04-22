@@ -1,0 +1,118 @@
+{
+  "slug": "spot-of-coffee",
+  "name": "Spot of Coffee",
+  "category": "boutique",
+  "neighborhood": "Shadyside",
+  "address": "6015 Stevenson Pl, Pittsburgh, PA 15206",
+  "google_rating": 4.8,
+  "google_review_count": 173,
+  "review_freshness_days": 2,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE6iQxRXzoMXRDZHlD7Gl0y5m99ozEx0dlzq3N9uwInUy0r3p9d25qRq79j_eyemBmvo3Jk46AwDoBFtawrdK4cXBgKIoVUZRgnSuFkVjAFHJvLu0vu6sT9azkcwPdBTmmudHPfNw=w425-h240-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE6iQxRXzoMXRDZHlD7Gl0y5m99ozEx0dlzq3N9uwInUy0r3p9d25qRq79j_eyemBmvo3Jk46AwDoBFtawrdK4cXBgKIoVUZRgnSuFkVjAFHJvLu0vu6sT9azkcwPdBTmmudHPfNw=w425-h240-k-no",
+  "review_keywords": [
+    "spot of coffee",
+    "best coffee",
+    "coffee shops",
+    "highly recommend"
+  ],
+  "created_at": "2026-04-22T14:51:45.637Z",
+  "updated_at": "2026-04-22T14:51:45.637Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJDdvhpVLzNIgRwPMmw4xWKps",
+    "categoryName": "Coffee shop",
+    "imagesCount": 126,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Iced coffee",
+      "Latte",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": false,
+    "hasPhone": true,
+    "phone": "(412) 255-9565",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 4,
+      "twoStar": 2,
+      "threeStar": 0,
+      "fourStar": 5,
+      "fiveStar": 162
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Great spot with great drinks!",
+      "10/10",
+      "I’ve worked at a number of independent coffee shops. I’m at a very popular, very viral, very delicious one now! I still come to Spot of Coffee as often as possible. Their drinks are very differently delicious from the syrup-based lattes you’ll find elsewhere. Trust me, there’s room for both. Come to Spot of Coffee for impeccably made lattes with all natural ingredients, like housemade cashew milk and real bananas. Come to Spot of Coffee for excellent conscientious neighborhood vibes at a time when finding your community matters. Come to Spot of Coffee for a toasted miso latte that will change your life. Parking is easier than you think. Don’t miss this East Liberty gem, tucked behind the traffic of Centre Ave. And if lattes aren’t your thing? The cold brew is fantastic. Thanks for being awesome, Spot of Coffee. See you soon!",
+      "One of my favorite coffee shops in Pittsburgh! Their chocolate banana bread latte is such a classic and tastes amazing. They homemake all of their syrups which makes it worth it and so much tastier! I definitely recommend checking out Spot of Coffee",
+      "Best Coffee shop in the city!",
+      "Tried the carrot cake latte iced! It’s topped with cream cheese cold foam. Tasty and it looks like they use beans from Redstart Roasters which are very local. Excited to come back and try more. The man who took my order and made my drink was very friendly and nice as well.\nUpdate: strawberry matcha was also great!",
+      "The best coffee spot in Pittsburgh let alone in the east side. Ma’sha’Allah TabarakAllah no other coffee place has fresh made with love coffee daily! The workers are always sweet and go above and beyond.",
+      "After reading the reviews of this place I was excited to give it a try. I was highly disappointed. My coffee tasted so burnt with a horrible aftertaste! I took a sip in the shop as I was leaving and almost threw it out on my way out of the door. Needless to say, I did not take another sip.",
+      "My friend won a giveaway for free drinks here and it definitely convinced me to keep coming back! I had the vanilla honey matcha and it was AMAZING! A perfect sweet matcha blend. I then got the special strawberry cheesecake matcha and it was again delicious! I am not much of a coffee drinker, but I highly recommend their matcha!!!",
+      "I had the date coffee!! It was super smooth, not bitter at all, and super strong! I highly recommend and I would definitely get it again."
+    ],
+    "keywordPhrases": [
+      {
+        "text": "spot of coffee",
+        "count": 6,
+        "exampleQuote": "I still come to Spot of Coffee as often as possible."
+      },
+      {
+        "text": "best coffee",
+        "count": 2,
+        "exampleQuote": "Best Coffee shop in the city!"
+      },
+      {
+        "text": "coffee shops",
+        "count": 2,
+        "exampleQuote": "I’ve worked at a number of independent coffee shops."
+      },
+      {
+        "text": "highly recommend",
+        "count": 2,
+        "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha!!!"
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "spot-of-coffee",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 78,
+      "community_spark": 70,
+      "conversion_path": 75,
+      "momentum": 60,
+      "collab_fit": 84
+    },
+    "composite": 73,
+    "tier": "ones_to_watch",
+    "rank_category": 4,
+    "rank_neighborhood": 4,
+    "rank_overall": 24,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "social momentum",
+      "evidence": "Social momentum is the standout here — awaiting Instagram data in the next scrape to show the exact margin."
+    },
+    "scored_at": "2026-04-22T14:51:49.945Z",
+    "momentum_source": "stub_pending_instagram_data"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "oishii-donburi",
+  "name": "Oishii Donburi",
+  "category": "restaurant",
+  "neighborhood": "Lawrenceville",
+  "address": "5227 Butler St, Pittsburgh, PA 15201",
+  "website": "https://www.oishiidonburi.com/",
+  "google_rating": 4.6,
+  "google_review_count": 385,
+  "review_freshness_days": 6,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvgOkiYpc-wPX8SFsgQ2r04ew6vI3bLIbomuvIkyfhWeprQN005XWqqLf4juayoDVdj45E2BieRM_82OaO5508UEhn6NqFiHZ5D5xStlxcBRP28oGuCpDctkQWOFLCDos5qEh17w=w408-h544-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvgOkiYpc-wPX8SFsgQ2r04ew6vI3bLIbomuvIkyfhWeprQN005XWqqLf4juayoDVdj45E2BieRM_82OaO5508UEhn6NqFiHZ5D5xStlxcBRP28oGuCpDctkQWOFLCDos5qEh17w=w408-h544-k-no",
+  "review_keywords": [],
+  "created_at": "2026-04-22T14:51:45.602Z",
+  "updated_at": "2026-04-22T14:51:45.602Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJYYWWt3HzNIgRdbh0dC_GfCA",
+    "categoryName": "Japanese restaurant",
+    "imagesCount": 342,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Katsudon",
+      "Bibimbap",
+      "Chicken katsu",
+      "Donburi",
+      "Takoyaki",
+      "Tempura",
+      "Bulgogi",
+      "Noodle",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 408-2298",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 20,
+      "twoStar": 5,
+      "threeStar": 6,
+      "fourStar": 30,
+      "fiveStar": 324
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Easy fast hole in the wall with delicious food. We had the katsudon and bulgogi bibimbap and it was perfect for lunch with enough for a snack later that night.",
+      "It is very difficult to eat in the restaurant out of these high-sided paper containers I was served with.  For two dishes, I was given 4 little circle containers of unusual sauces and not told what any of them were, which dish they matched with. I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron.",
+      "Awesome, always reliable for chicken katsu or beef bulgogi bowls",
+      "Great Asian restaurant!",
+      "Very delicious quiet spot for Korean style bowls"
+    ],
+    "keywordPhrases": []
+  },
+  "_score": {
+    "business_slug": "oishii-donburi",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 62,
+      "community_spark": 58,
+      "conversion_path": 100,
+      "momentum": 60,
+      "collab_fit": 78
+    },
+    "composite": 71,
+    "tier": "ones_to_watch",
+    "rank_category": 1,
+    "rank_neighborhood": 5,
+    "rank_overall": 27,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "conversion path clarity",
+      "evidence": "Every conversion-path signal present: website, phone, hours, claimed profile."
+    },
+    "scored_at": "2026-04-22T14:51:49.945Z",
+    "momentum_source": "stub_pending_instagram_data"
+  }
+}

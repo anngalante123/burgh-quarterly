@@ -28,10 +28,11 @@ Neighborhood Staples     (<60)
 ### Owner first-visit (top of business page, claimed or unclaimed)
 ```
 We built this page about [Business Name] from public data.
-Nothing to claim, nothing to buy.
-If you want to edit it, you can. If you just want to see where
-you rank, that's the whole point.
+Here's your rank, your strongest signals, and what customers
+say most. Claim the page to see the deeper view — what's holding
+you back from the top, and what changed this quarter.
 ```
+**Revised 2026-04-22** — the prior version invited editing ("If you want to edit it, you can"), which framed the page as a wiki. Owners don't want to edit; they want insights. New copy leads with value delivery + teases what's behind the claim.
 
 ### Sidebar CTA (one per CLAIMED business page only, in the quiet record zone)
 ```

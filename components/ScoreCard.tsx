@@ -1,5 +1,6 @@
 import type { Tier } from "@/lib/data/schemas";
 import { TierBadge } from "./TierBadge";
+import { AnimatedRank } from "./motion/AnimatedRank";
 import { cn } from "@/lib/utils";
 
 /**
@@ -13,6 +14,11 @@ import { cn } from "@/lib/utils";
  *
  * Movement strings are intentionally short:
  *   "+3" (climbed), "-1" (dropped), "=" (held), "Debut" (first issue).
+ *
+ * Motion (modernization pass):
+ *   - Category rank number counts up from 0 to final value over ~1s on mount.
+ *     Triggers ONCE per page load. Reduced-motion users see the final value.
+ *   - Neighborhood rank is not animated (kept quiet — secondary datapoint).
  */
 
 type Movement = number | "Debut" | null;
@@ -76,7 +82,7 @@ export function ScoreCard({
           <TierBadge tier={tier} />
           <div className="space-y-1">
             <p className="font-display text-3xl md:text-4xl font-black tracking-[-0.01em] text-brand-black">
-              #{rankCategory}{" "}
+              <AnimatedRank value={rankCategory} prefix="#" />{" "}
               <span className="font-body font-medium text-base md:text-lg text-brand-black/70 normal-case">
                 in {categoryLabel}
               </span>
