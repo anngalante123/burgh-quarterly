@@ -56,6 +56,7 @@ export const UNDERRATED_CATEGORIES: Readonly<
       "Pastry shop",
       "Dessert shop",
       "Dessert restaurant",
+      "Ice cream shop",
     ],
   },
 };

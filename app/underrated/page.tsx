@@ -1,0 +1,119 @@
+import Link from "next/link";
+import { Masthead } from "@/components/Masthead";
+import { Colophon } from "@/components/Colophon";
+import { Reveal } from "@/components/motion/Reveal";
+import {
+  UNDERRATED_CATEGORIES,
+  type UnderratedCategorySlug,
+} from "@/lib/data/underrated";
+
+/**
+ * /underrated — index page listing every available Underrated List.
+ *
+ * v1 ships bakeries only. Adds happen in UNDERRATED_CATEGORIES + a new
+ * ENTRY_COPY clause in app/underrated/[category]/page.tsx.
+ */
+
+export const metadata = {
+  title: "The Underrated List — The Burgh Quarterly",
+  description:
+    "Pittsburgh's small businesses the city hasn't caught up to yet.",
+};
+
+export default function UnderratedIndexPage() {
+  const slugs = Object.keys(UNDERRATED_CATEGORIES) as UnderratedCategorySlug[];
+
+  return (
+    <>
+      <Masthead variant="compact" />
+
+      <div className="w-full bg-brand-black">
+        <div className="mx-auto max-w-7xl px-6 py-3">
+          <p className="font-display text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-lime">
+            PGH · Signal Index · The Underrated List
+          </p>
+        </div>
+      </div>
+
+      <main className="flex-1 text-brand-black">
+        <article className="mx-auto max-w-7xl px-6 pt-10 pb-14 md:pt-16 md:pb-20">
+          <Reveal as="header">
+            <nav
+              aria-label="Breadcrumb"
+              className="font-display text-[0.62rem] md:text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55"
+            >
+              <span>The Burgh Quarterly</span>
+              <span className="mx-2 text-brand-black/30">›</span>
+              <span className="text-brand-black">The Underrated List</span>
+            </nav>
+
+            <h1 className="mt-8 font-display font-black uppercase tracking-[-0.02em] text-brand-black [text-wrap:balance] text-[clamp(2.25rem,7.5vw,6rem)] leading-[0.92]">
+              The{" "}
+              <span className="bg-brand-lime px-2 box-decoration-clone">
+                Underrated
+              </span>{" "}
+              List
+            </h1>
+
+            <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
+              Every quarter, we cover the businesses the city hasn&apos;t
+              caught up to yet — low on the index, high on potential, and
+              worth a visit this weekend.
+            </p>
+          </Reveal>
+
+          <Reveal as="section" className="mt-12 md:mt-16">
+            <div className="border-b-2 border-brand-black pb-3 mb-8">
+              <h2 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
+                Live lists
+              </h2>
+            </div>
+
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {slugs.map((slug) => {
+                const spec = UNDERRATED_CATEGORIES[slug];
+                return (
+                  <li key={slug}>
+                    <Link
+                      href={`/underrated/${slug}`}
+                      className="group block border border-brand-black/15 bg-white/70 p-6 md:p-8 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-purple)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                    >
+                      <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
+                        The Underrated List · Spring 2026
+                      </p>
+                      <h3 className="mt-3 font-display font-black uppercase tracking-[-0.01em] text-brand-black [word-break:break-word] text-[clamp(1.5rem,4vw,2.5rem)] leading-[1.05]">
+                        Pittsburgh&apos;s Most Underrated {spec.label}
+                      </h3>
+                      <p className="mt-3 font-body text-sm md:text-base text-brand-black/70 leading-snug">
+                        The {spec.pluralLower} whose rank we expect to move
+                        most — and soonest.
+                      </p>
+                      <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-black group-hover:text-brand-purple">
+                        Read the list
+                        <span
+                          aria-hidden="true"
+                          className="transition-transform group-hover:translate-x-1 motion-reduce:group-hover:translate-x-0"
+                        >
+                          →
+                        </span>
+                      </p>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+
+            <p className="mt-10 font-body text-sm text-brand-black/55">
+              More categories coming next issue. See also{" "}
+              <Link href="/top" className="text-brand-purple hover:underline">
+                The Icons →
+              </Link>
+            </p>
+          </Reveal>
+        </article>
+      </main>
+
+      <Colophon />
+    </>
+  );
+}

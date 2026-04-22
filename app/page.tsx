@@ -1,94 +1,44 @@
 import Link from "next/link";
 import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
-import { TierBadge } from "@/components/TierBadge";
 import { SubscribeInline } from "@/components/SubscribeInline";
 import { Reveal } from "@/components/motion/Reveal";
-import { SignalStrip } from "@/components/SignalStrip";
-import { HowWeRank } from "@/components/HowWeRank";
 import { loadAllBusinesses } from "@/lib/data/load-business";
-import {
-  computeCategoryBreakdown,
-  computeTierCounts,
-  computeTopNeighborhood,
-} from "@/lib/data/stats";
+import { computeTierCounts } from "@/lib/data/stats";
 
 /**
- * Homepage — the loud editorial zone (EDITORIAL_VOICE.md § loud-quiet asymmetry).
+ * Homepage — editorial table of contents for the quarterly issue.
  *
- * Framing: web-native publication (Infatuation / Eater / Grub Street), not a
- * printed issue's table of contents. "The Burgh Quarterly" is the publication
- * name; the cadence is quarterly; the format is a living website. We keep
- * "Updated Spring 2026" as a quiet metadata line, not a hero-prominent label.
+ * Rebuilt 2026-04-22 per /ui-ux-pro-max audit (primary-action + content-priority
+ * violations in the prior layout). Changes:
+ *   - Killed the full Signal Strip block (tier donut + stat cards + category
+ *     bar). Replaced with a single compact "This Quarter" stat line
+ *     integrated into the hero.
+ *   - Moved the full How We Rank methodology to /about. Homepage keeps a
+ *     one-line teaser with a link so readers can get to content faster.
+ *   - Collapsed Read + Featured + Underrated into ONE "This Issue" section
+ *     with three equal-weight editorial entries: The Icons, The Underrated
+ *     List, and a Featured business page. Each links to real content.
+ *   - Removed placeholder teasers that linked to dead routes.
  *
- * Modernization pass (2026-04-21):
- *   - Bolder hero with a display-scale coverline and a lime "dateline"
- *     accent strip so the homepage loudness is immediately legible.
- *   - Asymmetric teaser grid: first teaser spans 2 columns on desktop so
- *     the reading eye lands somewhere specific instead of a flat 3-up.
- *   - Scroll-revealed sections via the Reveal primitive (fade + translate
- *     up, ~0.6s, respects prefers-reduced-motion).
- *   - Teaser card hover: card lifts 4px and the border shifts to lime.
- *   - Featured block: keeps its editorial weight, adds a number-stat rail.
- *
- * Structure:
- *   1. Masthead (with tagline — homepage only)
- *   2. Hero coverline + dateline strip + "Updated Spring 2026" metadata
- *   3. Three editorial teasers under "Read" (asymmetric 2+1 grid)
- *   4. Featured block with a lime stat rail
- *   5. SubscribeInline (with confetti on success)
- *   6. Colophon
- *
- * Editorial voice notes:
- *   - Teaser headlines avoid every forbidden phrase (EDITORIAL_VOICE.md § traps).
- *   - Specificity > dialect: "Lawrenceville", not "Lahrnceville" or yinzer-isms.
- *   - No raw scores. No Relay mentions in editorial body. Relay lives in the
- *     Colophon only (and in the sidebar on claimed business pages elsewhere).
+ * Structure (4 sections instead of 8):
+ *   1. Masthead + Hero + compact this-quarter stat line
+ *   2. This Issue — 3 editorial entries
+ *   3. How we rank — one-line teaser linking to /about
+ *   4. Subscribe + Colophon
  */
-
-type Teaser = {
-  kicker: string;
-  headline: string;
-  dek?: string;
-  href: string;
-};
-
-// Placeholder teasers — headlines only, no body. Copy per brief's examples.
-// Links route to the one real page (La Gourmandine) for now; will scaffold
-// /issue/2026-spring/... routes in a later task.
-const TEASERS: Teaser[] = [
-  {
-    kicker: "The climb",
-    headline: "Who climbed fastest this spring",
-    dek:
-      "Six businesses moved into Icons this quarter. One did it in a single month.",
-    href: "/business/la-gourmandine-lawrenceville",
-  },
-  {
-    kicker: "Underrated list",
-    headline: "Pittsburgh's most underrated bakeries",
-    href: "/business/la-gourmandine-lawrenceville",
-  },
-  {
-    kicker: "Neighborhood",
-    headline: "The Lawrenceville index",
-    href: "/business/la-gourmandine-lawrenceville",
-  },
-];
 
 export default function Home() {
   const all = loadAllBusinesses();
-  const tierCounts = computeTierCounts(all);
-  const topNeighborhood = computeTopNeighborhood(all);
-  const categoryBreakdown = computeCategoryBreakdown(all, 5);
+  const tc = computeTierCounts(all);
 
   return (
     <>
       <Masthead variant="home" />
 
       <main className="flex-1">
-        {/* Hero coverline — web-native, no issue-number framing */}
-        <section className="mx-auto max-w-7xl px-6 pt-10 pb-10 md:pt-16 md:pb-14">
+        {/* ── HERO ─────────────────────────────────────────────── */}
+        <section className="mx-auto max-w-7xl px-6 pt-10 pb-14 md:pt-16 md:pb-20">
           <Reveal delay={0.05}>
             <h2 className="font-display font-black uppercase tracking-[-0.02em] text-brand-black max-w-4xl [text-wrap:balance] [word-break:break-word] text-[clamp(2.25rem,7.5vw,5.5rem)] leading-[0.9]">
               Ranked, reviewed,
@@ -104,190 +54,154 @@ export default function Home() {
               How Pittsburgh&apos;s small businesses show up — in{" "}
               <span className="font-semibold text-brand-black">reviews</span>,
               on{" "}
-              <span className="font-semibold text-brand-black">Instagram</span>
-              , in the neighborhood conversation. Ranked every quarter on{" "}
+              <span className="font-semibold text-brand-black">Instagram</span>,
+              in the neighborhood conversation. Ranked every quarter on{" "}
               <span className="font-semibold text-brand-black">
                 reputation, presence, and momentum.
               </span>{" "}
               We don&apos;t rank taste.
             </p>
           </Reveal>
-          <Reveal delay={0.18}>
-            <p className="mt-5 font-body text-xs tracking-wide text-brand-black/45">
-              Updated Spring 2026
-            </p>
+
+          {/* Compact this-quarter stat line — one row, no donut, no bar chart */}
+          <Reveal delay={0.2}>
+            <dl className="mt-10 flex flex-wrap items-baseline gap-x-8 gap-y-3 border-y border-brand-black/15 py-4">
+              <div className="flex items-baseline gap-2">
+                <dt className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55">
+                  Spring 2026
+                </dt>
+              </div>
+              <StatPair
+                label="Scored"
+                value={all.length.toString()}
+              />
+              <StatPair
+                label="Icons"
+                value={tc.icons.toString()}
+                accent="bg-brand-lime"
+              />
+              <StatPair
+                label="Ones to Watch"
+                value={tc.watch.toString()}
+                accent="bg-brand-purple"
+              />
+              <StatPair
+                label="Staples"
+                value={tc.staples.toString()}
+                accent="bg-brand-cream ring-1 ring-brand-black/40"
+              />
+            </dl>
           </Reveal>
         </section>
 
-        {/* Signal strip — tier donut + stat cards + category bar */}
-        <SignalStrip
-          totalScored={all.length}
-          tierCounts={tierCounts}
-          biggestClimber={null}
-          topNeighborhood={topNeighborhood}
-          categoryBreakdown={categoryBreakdown}
-        />
-
-        {/* How we rank — methodology stance so readers know we rank
-            social signal, not taste. */}
-        <HowWeRank />
-
-        {/* Editorial teasers — asymmetric 2+1 on desktop */}
+        {/* ── THIS ISSUE ───────────────────────────────────────── */}
         <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
           <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-8">
             <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
-              Read
+              This issue
             </h3>
-            <span className="font-body text-xs text-brand-black/50">
-              {TEASERS.length} features
+            <span className="font-body text-[0.7rem] md:text-xs uppercase tracking-[0.14em] text-brand-black/50">
+              Three lists · Spring 2026
             </span>
           </div>
+
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {TEASERS.map((t, i) => {
-              // First teaser spans 2 columns on md+ for asymmetric weight.
-              const feature = i === 0;
-              return (
-                <li
-                  key={t.headline}
-                  className={feature ? "md:col-span-2" : "md:col-span-1"}
-                >
-                  <Link
-                    href={t.href}
-                    className="group block h-full border border-brand-black/15 bg-white/70 p-5 md:p-6 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+            {/* The Icons */}
+            <li>
+              <Link
+                href="/top/bakeries"
+                className="group block h-full border border-brand-black/15 bg-white/70 p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+              >
+                <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
+                  The Icons
+                </p>
+                <h4 className="mt-3 font-display font-black uppercase tracking-[-0.015em] text-brand-black text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05]">
+                  Pittsburgh&apos;s top bakeries, this quarter
+                </h4>
+                <p className="mt-3 font-body text-sm text-brand-black/70 leading-snug">
+                  Reviews stacking. Photos documenting. Lines around the
+                  block. Five places firing on every signal.
+                </p>
+                <CardCta label="Read the list" accent="text-brand-black" />
+              </Link>
+            </li>
+
+            {/* The Underrated List */}
+            <li>
+              <Link
+                href="/underrated/bakeries"
+                className="group block h-full border border-brand-black/15 bg-white/70 p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-purple)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+              >
+                <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
+                  The Underrated List
+                </p>
+                <h4 className="mt-3 font-display font-black uppercase tracking-[-0.015em] text-brand-black text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05]">
+                  The bakeries the city hasn&apos;t caught up to yet
+                </h4>
+                <p className="mt-3 font-body text-sm text-brand-black/70 leading-snug">
+                  Low on the index, high on potential. Go this weekend.
+                </p>
+                <CardCta label="Read the list" accent="text-brand-black" />
+              </Link>
+            </li>
+
+            {/* Featured business */}
+            <li>
+              <Link
+                href="/business/la-gourmandine-lawrenceville"
+                className="group block h-full border border-brand-black bg-brand-black text-brand-off-white p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+              >
+                <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-lime">
+                  The record · Featured
+                </p>
+                <h4 className="mt-3 font-display font-black uppercase tracking-[-0.015em] text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05] text-brand-off-white">
+                  La Gourmandine,
+                  <br />
+                  Lawrenceville
+                </h4>
+                <p className="mt-3 font-body text-sm text-brand-off-white/70 leading-snug">
+                  1,138 five-star reviews. 779 photos on Google. Zero
+                  Instagram posts in thirty days.
+                </p>
+                <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-lime">
+                  Read the record
+                  <span
+                    aria-hidden="true"
+                    className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
                   >
-                    <p className="font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
-                      {t.kicker}
-                    </p>
-                    <h4
-                      className={
-                        feature
-                          ? "mt-3 font-display text-2xl md:text-4xl font-black uppercase tracking-[-0.015em] leading-[1.02] text-brand-black"
-                          : "mt-3 font-display text-xl md:text-2xl font-black tracking-[-0.01em] leading-tight text-brand-black"
-                      }
-                    >
-                      {t.headline}
-                    </h4>
-                    {t.dek && feature && (
-                      <p className="mt-3 font-body text-sm md:text-base text-brand-black/70 leading-relaxed max-w-md">
-                        {t.dek}
-                      </p>
-                    )}
-                    <p className="mt-5 font-display text-xs font-semibold uppercase tracking-[0.14em] text-brand-black/60 inline-flex items-center gap-1">
-                      <span>Read</span>
-                      <span
-                        aria-hidden="true"
-                        className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
-                      >
-                        →
-                      </span>
-                    </p>
-                  </Link>
-                </li>
-              );
-            })}
+                    →
+                  </span>
+                </p>
+              </Link>
+            </li>
           </ul>
         </Reveal>
 
-        {/* Featured — La Gourmandine (with stat rail) */}
+        {/* ── HOW WE RANK — one-line teaser linking to /about ────── */}
         <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
-          <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-8">
-            <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
-              Featured
-            </h3>
-          </div>
-          <Link
-            href="/business/la-gourmandine-lawrenceville"
-            className="group block border border-brand-black bg-white/70 p-6 md:p-10 transition-all duration-200 hover:-translate-y-1 hover:shadow-[6px_6px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-          >
-            <div className="flex flex-wrap items-start justify-between gap-5">
-              <div className="min-w-0">
-                <p className="font-body text-xs uppercase tracking-[0.18em] text-brand-black/60">
-                  Lawrenceville · Bakery
-                </p>
-                <h4 className="mt-2 font-display font-black uppercase tracking-[-0.015em] text-brand-black [word-break:break-word] text-[clamp(1.75rem,5.5vw,4rem)] leading-[0.95] group-hover:underline decoration-brand-lime decoration-[6px] underline-offset-[8px]">
-                  La Gourmandine
-                </h4>
-              </div>
-              <TierBadge tier="ones_to_watch" />
-            </div>
-            <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
-              1,138 five-star reviews out of 1,294 — the highest concentration
-              of five-star reviews among Lawrenceville bakeries this issue.
-            </p>
-
-            {/* Stat rail — three numbers that pay off the claim above */}
-            <dl className="mt-8 grid grid-cols-3 gap-4 border-t border-brand-black/15 pt-6">
-              <div>
-                <dt className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-brand-black/55">
-                  Reviews
-                </dt>
-                <dd className="mt-1 font-display text-2xl md:text-3xl font-black tabular-nums text-brand-black">
-                  1,294
-                </dd>
-              </div>
-              <div>
-                <dt className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-brand-black/55">
-                  Five-star
-                </dt>
-                <dd className="mt-1 font-display text-2xl md:text-3xl font-black tabular-nums text-brand-black">
-                  88%
-                </dd>
-              </div>
-              <div>
-                <dt className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-brand-black/55">
-                  Photos
-                </dt>
-                <dd className="mt-1 font-display text-2xl md:text-3xl font-black tabular-nums text-brand-black">
-                  779
-                </dd>
-              </div>
-            </dl>
-
-            <p className="mt-7 font-display text-sm font-semibold uppercase tracking-[0.14em] text-brand-purple inline-flex items-center gap-1.5">
-              <span>Read the page</span>
-              <span
-                aria-hidden="true"
-                className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
-              >
-                →
+          <div className="border-y-2 border-brand-black py-7 md:py-9 flex flex-wrap items-baseline justify-between gap-4">
+            <p className="font-display font-black uppercase tracking-[-0.01em] text-brand-black text-[clamp(1.25rem,3vw,2rem)] leading-[1.05]">
+              We don&apos;t rank{" "}
+              <span className="line-through decoration-brand-purple decoration-4">
+                taste
               </span>
+              . We rank the{" "}
+              <span className="bg-brand-lime px-2 box-decoration-clone">
+                conversation
+              </span>
+              .
             </p>
-          </Link>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-1 font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-black/70 hover:text-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+            >
+              How we rank
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </Reveal>
 
-        {/* Underrated — editorial entry point into the conversion list */}
-        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
-          <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-8">
-            <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
-              Underrated
-            </h3>
-          </div>
-          <Link
-            href="/underrated/bakeries"
-            className="group block border border-brand-black/15 bg-white/60 p-6 md:p-8 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-purple)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-          >
-            <p className="font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
-              The list
-            </p>
-            <h4 className="mt-3 font-display text-2xl md:text-4xl font-black uppercase leading-[1.02] tracking-[-0.015em] text-brand-black">
-              Pittsburgh&apos;s most underrated bakeries
-            </h4>
-            <p className="mt-3 font-body text-sm md:text-base text-brand-black/70 leading-relaxed max-w-xl">
-              Five places the city hasn&apos;t caught up to yet.
-            </p>
-            <p className="mt-5 font-display text-xs font-semibold uppercase tracking-[0.14em] text-brand-black/60 inline-flex items-center gap-1">
-              <span>Read the list</span>
-              <span
-                aria-hidden="true"
-                className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
-              >
-                →
-              </span>
-            </p>
-          </Link>
-        </Reveal>
-
-        {/* Subscribe */}
+        {/* ── SUBSCRIBE ──────────────────────────────────────────── */}
         <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-20">
           <SubscribeInline />
         </Reveal>
@@ -295,5 +209,56 @@ export default function Home() {
 
       <Colophon />
     </>
+  );
+}
+
+/* ----- tiny inline subcomponents ------------------------------------ */
+
+function StatPair({
+  label,
+  value,
+  accent,
+}: {
+  label: string;
+  value: string;
+  accent?: string;
+}) {
+  return (
+    <div className="flex items-center gap-2">
+      {accent ? (
+        <span
+          aria-hidden="true"
+          className={`inline-block h-2 w-2 rounded-full ${accent}`}
+        />
+      ) : null}
+      <dt className="font-display text-[0.58rem] font-semibold uppercase tracking-[0.2em] text-brand-black/55">
+        {label}
+      </dt>
+      <dd className="font-display text-base md:text-lg font-black tabular-nums text-brand-black">
+        {value}
+      </dd>
+    </div>
+  );
+}
+
+function CardCta({
+  label,
+  accent,
+}: {
+  label: string;
+  accent: string;
+}) {
+  return (
+    <p
+      className={`mt-5 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] ${accent} inline-flex items-center gap-1`}
+    >
+      <span>{label}</span>
+      <span
+        aria-hidden="true"
+        className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+      >
+        →
+      </span>
+    </p>
   );
 }
