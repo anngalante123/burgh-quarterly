@@ -1,0 +1,40 @@
+{
+  "slug": "kyo-matcha",
+  "themes": [
+    {
+      "phrase": "Japanese cakes and desserts",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Their cakes are awesome — if you are a fan of not overly sweet cakes, this place is a must try."
+    },
+    {
+      "phrase": "matcha drinks and ice cream",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The matcha latte was rich and creamy and sweet — the best matcha I've had in a long time."
+    },
+    {
+      "phrase": "cozy work-friendly seating",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Tons of wall plugs and comfortable seating, making it a great spot to get some work done."
+    },
+    {
+      "phrase": "crowded and loud at times",
+      "frequency": 3,
+      "sentiment": "neutral",
+      "exampleQuote": "Can get crowded and a bit loud at times, but that's a testament to how much people love this place!"
+    },
+    {
+      "phrase": "inconsistent portions and early closing",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "Sometimes my ice cream size varies too much — especially when it's like $8 I expect a decent portion."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about Kyo Matcha's not-too-sweet Japanese cakes, rich matcha drinks, and cozy work-friendly atmosphere, while nitpicking inconsistent ice cream portions, limited parking, and at least one instance of closing before the posted time.",
+  "notable_quote": "Pittsburgh needs more cozy coffee shops with this sort of vibe!",
+  "review_count": 8,
+  "analyzed_at": "2026-04-22T22:11:35.547Z",
+  "model": "claude-sonnet-4-6"
+}

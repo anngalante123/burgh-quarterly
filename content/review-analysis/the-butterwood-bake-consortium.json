@@ -1,0 +1,46 @@
+{
+  "slug": "the-butterwood-bake-consortium",
+  "themes": [
+    {
+      "phrase": "elevated baked goods and cakes",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Not just your normal sugary affair but elevated with unique flavor and texture."
+    },
+    {
+      "phrase": "coffee quality and execution",
+      "frequency": 4,
+      "sentiment": "negative",
+      "exampleQuote": "awesome baked goods but really needs a quality/service check on coffee"
+    },
+    {
+      "phrase": "cozy date night atmosphere",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Amazing stop for a date night or after dinner."
+    },
+    {
+      "phrase": "slow moving lines",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The lines are long and do not move."
+    },
+    {
+      "phrase": "dietary-friendly options",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Gluten and nut free options are 🔥"
+    },
+    {
+      "phrase": "friendly but inexperienced staff",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "The young woman working the register seemed well-intentioned but clueless."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the inventive, high-quality baked goods and the warm, date-worthy atmosphere, but repeatedly flag inconsistent coffee execution and frustratingly slow service as the cafe's weak spots.",
+  "notable_quote": "You can tell a lot of time and love went into crafting those recipes. They should be proud.",
+  "review_count": 7,
+  "analyzed_at": "2026-04-22T22:13:10.461Z",
+  "model": "claude-sonnet-4-6"
+}

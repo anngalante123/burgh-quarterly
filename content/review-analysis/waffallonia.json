@@ -1,0 +1,46 @@
+{
+  "slug": "waffallonia",
+  "themes": [
+    {
+      "phrase": "exceptional waffles quality",
+      "frequency": 7,
+      "sentiment": "positive",
+      "exampleQuote": "The waffles here are not the typical soggy grocery store ones — they are made in house and are liege waffles."
+    },
+    {
+      "phrase": "ice cream praise",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "best ice cream in the city. they sell by the pint if you order ahead."
+    },
+    {
+      "phrase": "friendly family atmosphere",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "super friendly staff and family friendly environment."
+    },
+    {
+      "phrase": "Nutella topping combination",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "waffle with chocolate ice cream and nutella is the best."
+    },
+    {
+      "phrase": "liege waffle texture",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "more chewy and sugary with bits of crunch at the edges."
+    },
+    {
+      "phrase": "walkable casual visit",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "we can pop in, grab a sugar waffle and eat it piping hot while walking."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the house-made Liège waffles, creamy ice cream, and warm family-friendly vibe, with the only mild nitpick being a wish for slightly stronger Nutella flavor in the ice cream.",
+  "notable_quote": "These were honestly, unexpectedly amazing... When the two are paired together, it's just exquisite.",
+  "review_count": 7,
+  "analyzed_at": "2026-04-22T22:13:22.322Z",
+  "model": "claude-sonnet-4-6"
+}

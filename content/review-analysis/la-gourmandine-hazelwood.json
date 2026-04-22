@@ -1,0 +1,40 @@
+{
+  "slug": "la-gourmandine-hazelwood",
+  "themes": [
+    {
+      "phrase": "exceptional overall quality",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Simply amazing"
+    },
+    {
+      "phrase": "Paris-worthy bakery",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed."
+    },
+    {
+      "phrase": "raspberry lychee macaron",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Make sure you get the raspberry lychee macaroon, it is the best thing I've ever put in my mouth hands down."
+    },
+    {
+      "phrase": "gluten-free almond flour option",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "It is gluten free made with almond flour."
+    },
+    {
+      "phrase": "hidden gem multiple locations",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Please do not miss this hidden gem in Pittsburgh — actually there are multiple locations."
+    }
+  ],
+  "sentiment_summary": "Reviewers are unanimously enthusiastic about the pastry quality, with standout praise for the raspberry lychee macaron and the shop's Parisian-caliber baking, and no notable criticisms across any review.",
+  "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
+  "review_count": 4,
+  "analyzed_at": "2026-04-22T22:11:40.810Z",
+  "model": "claude-sonnet-4-6"
+}

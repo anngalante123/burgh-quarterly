@@ -1,0 +1,40 @@
+{
+  "slug": "la-gourmandine-lawrenceville",
+  "themes": [
+    {
+      "phrase": "French-style pastries and croissants",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Mostly great French pastries — a little bit of Paris in Pittsburgh."
+    },
+    {
+      "phrase": "breakfast and lunch destination",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "This place was the find of Pittsburgh! Breakfast and lunch!"
+    },
+    {
+      "phrase": "standout seasonal desserts",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had."
+    },
+    {
+      "phrase": "busy on weekends",
+      "frequency": 1,
+      "sentiment": "neutral",
+      "exampleQuote": "You can call ahead if you know what you want. It is busy on weekends."
+    },
+    {
+      "phrase": "specific menu item availability",
+      "frequency": 1,
+      "sentiment": "neutral",
+      "exampleQuote": "Are you still selling deluxe de pistache?"
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the authentic French pastries and standout seasonal desserts that make La Gourmandine feel like a slice of Paris in Pittsburgh, with minor friction around weekend crowds and menu availability.",
+  "notable_quote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had.",
+  "review_count": 6,
+  "analyzed_at": "2026-04-22T22:11:46.227Z",
+  "model": "claude-sonnet-4-6"
+}

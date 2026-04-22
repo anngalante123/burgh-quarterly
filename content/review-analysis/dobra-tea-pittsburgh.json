@@ -1,0 +1,46 @@
+{
+  "slug": "dobra-tea-pittsburgh",
+  "themes": [
+    {
+      "phrase": "extensive tea selection",
+      "frequency": 7,
+      "sentiment": "positive",
+      "exampleQuote": "One of the widest tea selections I have ever seen."
+    },
+    {
+      "phrase": "relaxing welcoming atmosphere",
+      "frequency": 7,
+      "sentiment": "positive",
+      "exampleQuote": "A wonderfully large selection of teas from around the world, served in an intimate and quiet setting."
+    },
+    {
+      "phrase": "knowledgeable friendly staff",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Staff is extremely friendly and knowledgeable about tea."
+    },
+    {
+      "phrase": "third-space for work and socializing",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "A wonderful pseudo-'third space' where you can sip tea, relax, play a board game, study, and talk to other patrons."
+    },
+    {
+      "phrase": "good food and snacks",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The babaganoush is delicious!"
+    },
+    {
+      "phrase": "crowded hard to seat",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "It's hard to get a seat sometimes because it's crowded."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the vast, worldly tea selection and cozy welcoming atmosphere that invites lingering, with the only consistent nitpick being that it can get crowded and seats are hard to come by.",
+  "notable_quote": "If I could live there, I would!",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:10:53.842Z",
+  "model": "claude-sonnet-4-6"
+}

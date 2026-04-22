@@ -1,0 +1,40 @@
+{
+  "slug": "ka-fair-coffee-and-cakery",
+  "themes": [
+    {
+      "phrase": "exceptional coffee quality",
+      "frequency": 7,
+      "sentiment": "positive",
+      "exampleQuote": "Coffee that is NEVER bitter. And this place is so cute."
+    },
+    {
+      "phrase": "standout baked goods",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "My favorite spot now. Banoffee is top notch."
+    },
+    {
+      "phrase": "welcoming local atmosphere",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "The locals clearly love it. We enjoyed chatting with the regulars."
+    },
+    {
+      "phrase": "pre-zoo destination stop",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Came here with some friends before the zoo for a light breakfast and coffee."
+    },
+    {
+      "phrase": "tiramisu latte execution",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I kind of wish the cake was included on the side though, it got a little soggy in the coffee."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the coffee's rich, never-bitter quality and standout pastries like banoffee and crepe cake, with minor nitpicks around the tiramisu latte's sweetness and soggy cake garnish.",
+  "notable_quote": "The coffee here is so good it taught my boyfriend how to whistle — he has never been able to whistle in his life, but after a sip he let out a perfect one.",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:11:29.376Z",
+  "model": "claude-sonnet-4-6"
+}

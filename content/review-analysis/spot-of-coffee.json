@@ -1,0 +1,46 @@
+{
+  "slug": "spot-of-coffee",
+  "themes": [
+    {
+      "phrase": "housemade natural ingredients",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "They homemake all of their syrups which makes it worth it and so much tastier!"
+    },
+    {
+      "phrase": "unique creative latte flavors",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "Come to Spot of Coffee for a toasted miso latte that will change your life."
+    },
+    {
+      "phrase": "matcha drinks standout",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha!!!"
+    },
+    {
+      "phrase": "warm friendly staff",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "The man who took my order and made my drink was very friendly and nice as well."
+    },
+    {
+      "phrase": "neighborhood community feel",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Come to Spot of Coffee for excellent conscientious neighborhood vibes at a time when finding your community matters."
+    },
+    {
+      "phrase": "burnt coffee taste",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste!"
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about Spot of Coffee's inventive, housemade-ingredient lattes and matcha drinks, while one outlier flagged a badly burnt cup as a quality-control concern.",
+  "notable_quote": "Their drinks are very differently delicious from the syrup-based lattes you'll find elsewhere.",
+  "review_count": 10,
+  "analyzed_at": "2026-04-22T22:12:53.484Z",
+  "model": "claude-sonnet-4-6"
+}

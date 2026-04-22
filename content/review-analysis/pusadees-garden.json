@@ -1,0 +1,46 @@
+{
+  "slug": "pusadees-garden",
+  "themes": [
+    {
+      "phrase": "beautiful atmosphere and ambiance",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "Very unassuming from the outside, but absolutely beautiful."
+    },
+    {
+      "phrase": "standout Thai dishes",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The biggest standout was the shrimp tom yum, I've never had anything like it."
+    },
+    {
+      "phrase": "high price for value",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "You can get the same meal at a different place for less."
+    },
+    {
+      "phrase": "difficult reservation process",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Getting a reservation can be quite challenging."
+    },
+    {
+      "phrase": "inconsistent front-of-house service",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The host stand staff seemed more engaged in conversation with each other than in helping make our wait more comfortable."
+    },
+    {
+      "phrase": "curries and signature dishes",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Their curries are ridiculously tasty too!"
+    }
+  ],
+  "sentiment_summary": "Reviewers consistently rave about Pusadee's Garden's stunning atmosphere and standout dishes like the shrimp tom yum and 17-ingredient salad, but frequently nitpick the difficult reservation system, inconsistent front-of-house communication, and whether the flavors and portion sizes justify the price.",
+  "notable_quote": "This place is the love of my life.",
+  "review_count": 8,
+  "analyzed_at": "2026-04-22T22:12:40.623Z",
+  "model": "claude-sonnet-4-6"
+}

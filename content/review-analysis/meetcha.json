@@ -1,0 +1,40 @@
+{
+  "slug": "meetcha",
+  "themes": [
+    {
+      "phrase": "boba tea quality",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "I had a milk tea and it is wonderful!!! Recommend everyone to come here and try!!"
+    },
+    {
+      "phrase": "cozy welcoming atmosphere",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "It's so comfortable and relaxing and the staff is super friendly"
+    },
+    {
+      "phrase": "friendly helpful staff",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Staff was VERY helpful and kind."
+    },
+    {
+      "phrase": "cute aesthetic interior",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "literally such a cute place"
+    },
+    {
+      "phrase": "study-friendly hangout spot",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Would recommend as a go to study spot!"
+    }
+  ],
+  "sentiment_summary": "Reviewers consistently rave about MeetCha's boba and milk teas, cozy atmosphere, and kind staff, with no notable complaints surfacing across any of the nine reviews.",
+  "notable_quote": "Always such a good experience!! It's so comfortable and relaxing and the staff is super friendly",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:12:03.289Z",
+  "model": "claude-sonnet-4-6"
+}

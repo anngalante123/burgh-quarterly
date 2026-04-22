@@ -1,0 +1,46 @@
+{
+  "slug": "reva-modern-indian-cuisine",
+  "themes": [
+    {
+      "phrase": "food quality and flavor",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "The food taste is the best you can find in Pittsburgh and no other Indian restaurant can match the level."
+    },
+    {
+      "phrase": "staff rudeness and attitude",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "The person taking the order had the audacity to ask if it was my first time in the US."
+    },
+    {
+      "phrase": "excellent friendly service",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "The service is excellent every single time we visit."
+    },
+    {
+      "phrase": "Sahil standout employee",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Sahil provided outstanding service — he was so attentive and did everything perfectly."
+    },
+    {
+      "phrase": "custom order accommodation",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Sahil has been very kind and helpful with accepting custom orders whenever I come with my friends."
+    },
+    {
+      "phrase": "unwelcoming dismissive atmosphere",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The staff were extremely rude and dismissive, which made the atmosphere feel unwelcoming."
+    }
+  ],
+  "sentiment_summary": "Reviewers consistently rave about Reva's delicious, authentic Indian food and frequently single out Sahil for exceptional service, but a notable minority report jarring experiences with rude, dismissive staff that undercut the restaurant's otherwise strong reputation.",
+  "notable_quote": "Reva Modern Indian Cuisine is hands down our number one restaurant in Pittsburgh.",
+  "review_count": 8,
+  "analyzed_at": "2026-04-22T22:12:47.220Z",
+  "model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "tazza-doro",
+  "themes": [
+    {
+      "phrase": "coffee quality and drinks",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "The Barista featured drink (Amaretto & Brown Sugar Latte) might be thee best cup of coffee I've ever had."
+    },
+    {
+      "phrase": "friendly welcoming staff",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Everyone is always so nice when I go here."
+    },
+    {
+      "phrase": "baked goods and food options",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Wish they had the zucchini muffins year-round, but there are lots of other great baked goods."
+    },
+    {
+      "phrase": "cozy vibey atmosphere",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Very cute, vibey spot."
+    },
+    {
+      "phrase": "specialty tea selection",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Loved the cinnamon plum tea and was impressed by the number of tasty food options."
+    },
+    {
+      "phrase": "price versus experience",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The interior leaves something to be desired for the price of the coffee."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the creative specialty drinks, warm staff, and eclectic baked goods, with the only gripe being that the interior ambiance doesn't quite justify the coffee prices.",
+  "notable_quote": "One of my fave coffee shops in Pittsburgh. Fabulous staff and consistent drinks.",
+  "review_count": 8,
+  "analyzed_at": "2026-04-22T22:13:04.721Z",
+  "model": "claude-sonnet-4-6"
+}

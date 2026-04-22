@@ -1,0 +1,46 @@
+{
+  "slug": "delanies-coffee-shadyside",
+  "themes": [
+    {
+      "phrase": "specialty drink quality",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "The strawberry matcha here might be the best I've ever had."
+    },
+    {
+      "phrase": "small, crowded space",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "I just wish this place was bigger, gets packed quickly!"
+    },
+    {
+      "phrase": "friendly staff",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The workers are so nice every time I visit!"
+    },
+    {
+      "phrase": "broad food and drink menu",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "They have sandwiches, bagels, waffles, and assorted fresh baked goods."
+    },
+    {
+      "phrase": "order accuracy issues",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin, and had to pay for a new one."
+    },
+    {
+      "phrase": "poor wifi for working",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The wi-fi isn't good enough to work from here so I wouldn't come back for that."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about standout specialty drinks like the strawberry matcha and iced tiramisu latte, but consistently flag the cramped space, and a few note operational friction like weak wifi and a mishandled food order.",
+  "notable_quote": "The strawberry matcha here might be the best I've ever had.",
+  "review_count": 7,
+  "analyzed_at": "2026-04-22T22:10:48.703Z",
+  "model": "claude-sonnet-4-6"
+}

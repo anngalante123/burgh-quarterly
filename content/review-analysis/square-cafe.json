@@ -1,0 +1,46 @@
+{
+  "slug": "square-cafe",
+  "themes": [
+    {
+      "phrase": "food quality and taste",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "The food is amazing, and the staff are super nice."
+    },
+    {
+      "phrase": "vegan-friendly menu options",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for."
+    },
+    {
+      "phrase": "weekend wait and crowds",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "Usually, there's a wait list, since the food is so good."
+    },
+    {
+      "phrase": "friendly attentive staff",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Great service! Great food!"
+    },
+    {
+      "phrase": "price versus portion size",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The portion to price ratio is not the best."
+    },
+    {
+      "phrase": "relaxed no-rush atmosphere",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "No pressure to eat up and go."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about Square Cafe's standout dishes, vegan options, and warm staff, but a few note that portions feel small for the price and the men's restroom needs maintenance attention.",
+  "notable_quote": "It's no wonder this place gets slammed with customers.",
+  "review_count": 7,
+  "analyzed_at": "2026-04-22T22:12:58.769Z",
+  "model": "claude-sonnet-4-6"
+}

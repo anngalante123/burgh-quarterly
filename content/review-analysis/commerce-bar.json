@@ -1,0 +1,46 @@
+{
+  "slug": "commerce-bar",
+  "themes": [
+    {
+      "phrase": "creative craft cocktails",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "The drinks were amazing, the atmosphere was elegant, and the service was top notch."
+    },
+    {
+      "phrase": "speakeasy atmosphere and aesthetic",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "The aesthetic is moody, vintage, and botanical, and the food and drinks are designed with so much creativity."
+    },
+    {
+      "phrase": "friendly engaging staff",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "The servers and bar tenders were engaging and helpful, and it made the place feel hospitable and homey."
+    },
+    {
+      "phrase": "hard to get a table",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "I have tried to get in a few times but it is always super packed!"
+    },
+    {
+      "phrase": "90-minute time limit policy",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "After we ordered a third round of drinks, we were informed that we had to leave because there is a 90-minute time limit."
+    },
+    {
+      "phrase": "premium pricing",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "The price reflects the quality, atmosphere and overall experience you're going to have."
+    }
+  ],
+  "sentiment_summary": "Reviewers consistently rave about the inventive cocktails, moody speakeasy ambiance, and standout staff — but a poorly communicated 90-minute table limit and difficulty getting a seat are real friction points.",
+  "notable_quote": "Commerce Bar is an entire experience - not just a bar.",
+  "review_count": 7,
+  "analyzed_at": "2026-04-22T22:10:43.007Z",
+  "model": "claude-sonnet-4-6"
+}

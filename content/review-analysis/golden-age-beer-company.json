@@ -1,0 +1,46 @@
+{
+  "slug": "golden-age-beer-company",
+  "themes": [
+    {
+      "phrase": "beer quality and value",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "Liters of beer $10, super deal."
+    },
+    {
+      "phrase": "food quality mixed",
+      "frequency": 4,
+      "sentiment": "neutral",
+      "exampleQuote": "Half of your food is 'Meh', the other half is absolutely terrible."
+    },
+    {
+      "phrase": "pierogi dishes",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Special for the weekend were shepherd pie pierogis.. omg."
+    },
+    {
+      "phrase": "cozy welcoming atmosphere",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "So yummy and a fun, cozy, unpretentious space."
+    },
+    {
+      "phrase": "overcooking food issues",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "You guys need to stop overcooking everything."
+    },
+    {
+      "phrase": "events and repeat visits",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Place is great and always has events going on."
+    }
+  ],
+  "sentiment_summary": "Reviewers consistently rave about the beer selection and value, love the cozy vibe and standout dishes like pierogis, but a vocal critic flags overcooking and overpriced food as real concerns.",
+  "notable_quote": "Worth the trip out of the 'city' but so lucky bc we live up the street.",
+  "review_count": 8,
+  "analyzed_at": "2026-04-22T22:11:04.775Z",
+  "model": "claude-sonnet-4-6"
+}

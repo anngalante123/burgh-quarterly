@@ -1,0 +1,46 @@
+{
+  "slug": "hop-farm-brewing-company",
+  "themes": [
+    {
+      "phrase": "standout staff and Bradley",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "Shout out to Bradley for the fun introduction to the brewery. He was pretty cool for a Penguins fan."
+    },
+    {
+      "phrase": "beer selection quality",
+      "frequency": 7,
+      "sentiment": "positive",
+      "exampleQuote": "They let us taste around 5 different beers before we made a decision... this brewery has a lot of IPAs: that is a positive for me."
+    },
+    {
+      "phrase": "food quality and variety",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "The Yinser Cheesesteak was big, the cheesesteak was very good. The key…I WILL BE HERE AGAIN."
+    },
+    {
+      "phrase": "event and party hosting",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Bradley made it so easy for me to schedule our upcoming pop-up choir event."
+    },
+    {
+      "phrase": "atmosphere and interior decor",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Absolutely love the lights and the live edge tables... this place is a nice quiet vibe on a Thursday!"
+    },
+    {
+      "phrase": "inconsistent ordering system",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "It's been QR codes, then table service, and now suddenly you have to order at the bar—with no clear communication."
+    }
+  ],
+  "sentiment_summary": "Reviewers consistently rave about the knowledgeable and personable staff (especially Bradley), the wide beer selection, and the food, while the one notable complaint centers on confusing and inconsistent ordering processes that left a customer feeling ignored.",
+  "notable_quote": "The key…I WILL BE HERE AGAIN.",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:11:17.595Z",
+  "model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "pages",
+  "themes": [
+    {
+      "phrase": "long but fast-moving line",
+      "frequency": 7,
+      "sentiment": "neutral",
+      "exampleQuote": "Line will be long but moves quickly."
+    },
+    {
+      "phrase": "best ice cream in Pittsburgh",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Best ice cream in the burgh, thick and creamy, always delicious and they never miss."
+    },
+    {
+      "phrase": "friendly and efficient staff",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Shout out to the friendly and professional staff!"
+    },
+    {
+      "phrase": "generous portions for price",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "They gave me WAY too much ice cream, the price was RIDICULOUSLY affordable."
+    },
+    {
+      "phrase": "wide dessert selection",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "They have so many choices of desserts, and it can be a challenge to make a decision on what to order."
+    },
+    {
+      "phrase": "coconut soft serve standout",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "I had coconut soft serve dipped in a cherry shell and it was incredible — you could really taste the homemade coconut."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about Page's thick, homemade-quality ice cream and outsize portions at affordable prices, with the long lines being the only consistent friction — softened by the fact that the line moves fast.",
+  "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype!",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:12:34.716Z",
+  "model": "claude-sonnet-4-6"
+}

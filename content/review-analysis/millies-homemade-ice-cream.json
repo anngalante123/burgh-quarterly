@@ -1,0 +1,46 @@
+{
+  "slug": "millies-homemade-ice-cream",
+  "themes": [
+    {
+      "phrase": "friendly enthusiastic staff",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Gibson was very enthusiastic, boosted my mood up real quick, makes you really get in the mood for some good ice cream."
+    },
+    {
+      "phrase": "ice cream flavor quality",
+      "frequency": 4,
+      "sentiment": "neutral",
+      "exampleQuote": "Buckeye had no flavor, the s'mores had no marshmallow, no Graham cracker — all of it was basically flavorless."
+    },
+    {
+      "phrase": "pricing feels high",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Pricey, very good, good service."
+    },
+    {
+      "phrase": "non-dairy options available",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "It was nice to stop in for non-dairy options."
+    },
+    {
+      "phrase": "cash not accepted",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I had $100 cash on me and the girl said she's not allowed to take it — that's a very interesting policy."
+    },
+    {
+      "phrase": "dirty bathroom",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Each step across the bathroom floor my feet stuck — looks like it hasn't been cleaned in a month."
+    }
+  ],
+  "sentiment_summary": "Reviewers frequently praise individual staff members by name for their warmth and energy, but opinions on the ice cream itself are polarized — standout flavors like cranberry crumble impress some while others find the homemade offerings bland and overpriced, with cleanliness and a no-cash policy adding friction.",
+  "notable_quote": "Loved the cranberry crumble and the strawberry jam flavors. Waffle cone was amazing too.",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:12:10.510Z",
+  "model": "claude-sonnet-4-6"
+}

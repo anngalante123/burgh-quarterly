@@ -1,0 +1,46 @@
+{
+  "slug": "treat-ice-cream-and-liege-waffles",
+  "themes": [
+    {
+      "phrase": "ice cream quality",
+      "frequency": 7,
+      "sentiment": "positive",
+      "exampleQuote": "The ice cream is extremely high quality and can be delicious by itself."
+    },
+    {
+      "phrase": "Liège waffle praise",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "This place has waffles that are just as good as what you could get in Liège!"
+    },
+    {
+      "phrase": "ice cream and waffle combo",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Add that delicious waffle to it and you go into a brand new realm of delicious."
+    },
+    {
+      "phrase": "rude staff interaction",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "A comment along the lines of 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone."
+    },
+    {
+      "phrase": "generous sampling experience",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "We got to try a ton of extra samples, the waffle along with ice cream was absolutely incredible."
+    },
+    {
+      "phrase": "friendly owner presence",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The owner is extremely friendly and nice and helped make the experience that much better."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the exceptional ice cream quality and authentic Liège waffles, but a recurring pattern of rude staff behavior around sampling has left some loyal customers feeling unwelcome.",
+  "notable_quote": "Im an ice cream snob and this is some of the best ice cream Ive ever had.",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:13:15.851Z",
+  "model": "claude-sonnet-4-6"
+}

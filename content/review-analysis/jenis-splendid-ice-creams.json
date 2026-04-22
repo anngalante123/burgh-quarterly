@@ -1,0 +1,46 @@
+{
+  "slug": "jenis-splendid-ice-creams",
+  "themes": [
+    {
+      "phrase": "unique and creative flavors",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "I like all of their flavors, but I always make sure to try their new flavors - because it always surprises me!"
+    },
+    {
+      "phrase": "fresh high-quality ice cream",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "All the flavors tasted fresh and have robust flavors."
+    },
+    {
+      "phrase": "small portions for price",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "Never received a portion so small for $7 — these portions definitely need to be reevaluated!"
+    },
+    {
+      "phrase": "high prices",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "Pretty delicious just super expensive."
+    },
+    {
+      "phrase": "fresh waffle cones",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "I loved the waffle cones which they make fresh throughout the day."
+    },
+    {
+      "phrase": "long wait in line",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "It was stretched out further than a Utah wild wild west, but we stuck it out."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about Jeni's creative, fresh-tasting flavors and fresh-made waffle cones, but frequently nitpick the high prices and inconsistently small portion sizes.",
+  "notable_quote": "I've been to several locations in DC, MD & VA and never received a portion so small for $7 — these portions definitely need to be reevaluated!",
+  "review_count": 8,
+  "analyzed_at": "2026-04-22T22:11:22.331Z",
+  "model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "hidden-harbor",
+  "themes": [
+    {
+      "phrase": "creative tiki drinks",
+      "frequency": 7,
+      "sentiment": "positive",
+      "exampleQuote": "Some of the best tiki drinks in the U.S."
+    },
+    {
+      "phrase": "attentive friendly staff",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "The staff is super excited to give recommendations, which are needed with how many options they have!"
+    },
+    {
+      "phrase": "immersive tiki atmosphere",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Tiki isn't just a theme, it's a movement."
+    },
+    {
+      "phrase": "auto 20% gratuity",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Auto 20% tip that is hidden — no one tells you, all you see is a receipt that says total."
+    },
+    {
+      "phrase": "unique drink vessels",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Each drink has its own unique glass/mug, some of which you can buy to take home."
+    },
+    {
+      "phrase": "high prices and value concerns",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "I got a 'very strong' tiki drink at around $20, but it only had 1.5 shots of liquor — do not advertise like it's alcohol-packed."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about Hidden Harbor's immersive tiki atmosphere, inventive cocktails, and enthusiastic staff, but a vocal minority resents the undisclosed 20% auto-gratuity and questions whether the premium pricing reflects genuine value.",
+  "notable_quote": "Tiki isn't just a theme, it's a movement.",
+  "review_count": 7,
+  "analyzed_at": "2026-04-22T22:11:12.042Z",
+  "model": "claude-sonnet-4-6"
+}

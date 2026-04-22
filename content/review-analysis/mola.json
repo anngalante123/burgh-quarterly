@@ -1,0 +1,46 @@
+{
+  "slug": "mola",
+  "themes": [
+    {
+      "phrase": "exceptional sushi quality",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "The best sushi I have tried in Pittsburgh. One of the best sushi experiences I have ever had overall."
+    },
+    {
+      "phrase": "higher-end pricing",
+      "frequency": 3,
+      "sentiment": "neutral",
+      "exampleQuote": "The price is on the higher end, but is justified by the quality of the food."
+    },
+    {
+      "phrase": "busy evenings and crowds",
+      "frequency": 3,
+      "sentiment": "neutral",
+      "exampleQuote": "Can get busy in the evenings."
+    },
+    {
+      "phrase": "expert chef and modern style",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "A wonderful sushi place with a clearly expert chef. Classic sushi done with a modern style."
+    },
+    {
+      "phrase": "inconsistent or poor service",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "For the service, I cannot give a positive review."
+    },
+    {
+      "phrase": "drinks and dessert standouts",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Really amazing drinks and dessert as well."
+    }
+  ],
+  "sentiment_summary": "Reviewers consistently rave about Mola's top-tier sushi quality and skilled chef, while flagging high prices and occasional service issues as areas that temper an otherwise outstanding experience.",
+  "notable_quote": "The best sushi I have tried in Pittsburgh. One of the best sushi experiences I have ever had overall.",
+  "review_count": 7,
+  "analyzed_at": "2026-04-22T22:12:16.296Z",
+  "model": "claude-sonnet-4-6"
+}

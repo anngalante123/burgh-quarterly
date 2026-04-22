@@ -1,0 +1,40 @@
+{
+  "slug": "24-carrot-juice",
+  "themes": [
+    {
+      "phrase": "delicious smoothies",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Got the green machine, one of the best smoothies I've ever had."
+    },
+    {
+      "phrase": "friendly owner and staff",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The owner is super nice and cool!"
+    },
+    {
+      "phrase": "standout açaí bowl",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good."
+    },
+    {
+      "phrase": "clean and affordable",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Good price for a delicious smoothie — the place is very clean."
+    },
+    {
+      "phrase": "convenient Bloomfield location",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Located right across from Children's Hospital, very convenient."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the quality of smoothies and açaí bowls and consistently praise the friendly owner, with virtually no complaints — the only gaps are a lack of detail suggesting some visits were brief or casual stops.",
+  "notable_quote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good.",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:10:31.935Z",
+  "model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "oishii-donburi",
+  "themes": [
+    {
+      "phrase": "chicken katsu and bulgogi bowls",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls."
+    },
+    {
+      "phrase": "quick casual dining experience",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Easy fast hole in the wall with delicious food."
+    },
+    {
+      "phrase": "generous portion size",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Perfect for lunch with enough for a snack later that night."
+    },
+    {
+      "phrase": "unlabeled sauce containers",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I was given 4 little circle containers of unusual sauces and not told what any of them were."
+    },
+    {
+      "phrase": "staff attitude and rudeness",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron."
+    },
+    {
+      "phrase": "awkward paper container dining",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "It is very difficult to eat in the restaurant out of these high-sided paper containers."
+    }
+  ],
+  "sentiment_summary": "Reviewers consistently praise Oishii Donburi's reliable katsu and bulgogi bowls in a relaxed, casual setting, but one reviewer flagged notably poor staff attitude and impractical dine-in packaging as real deterrents.",
+  "notable_quote": "Always reliable for chicken katsu or beef bulgogi bowls.",
+  "review_count": 5,
+  "analyzed_at": "2026-04-22T22:12:28.326Z",
+  "model": "claude-sonnet-4-6"
+}

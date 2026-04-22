@@ -1,0 +1,46 @@
+{
+  "slug": "nan-xiang-soup-dumplings-pittsburgh",
+  "themes": [
+    {
+      "phrase": "standout server experiences",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "Our server Morgan had an amazing smile and great customer service — quick, efficient, and always had refills ready."
+    },
+    {
+      "phrase": "dumplings and noodle dishes",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "These beef and pepper noodles are legit. Dumplings sampler was a hit as well."
+    },
+    {
+      "phrase": "quick and friendly service",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Service was very pleasant and super quick."
+    },
+    {
+      "phrase": "repeat visit intentions",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "This is going to be a repeat when we come back to town for sure."
+    },
+    {
+      "phrase": "Didi robot novelty",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Didi the robot was fun to watch."
+    },
+    {
+      "phrase": "unclean bathroom",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Everything was great, but the bathroom was not clean."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about specific servers by name, standout dumplings and noodle dishes, and a fun robot server, with the only real complaint being an unclean bathroom.",
+  "notable_quote": "She held amazing conversation and made the experience very welcoming and rememberable.",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:12:22.034Z",
+  "model": "claude-sonnet-4-6"
+}

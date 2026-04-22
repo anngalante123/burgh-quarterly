@@ -1,0 +1,46 @@
+{
+  "slug": "lorelei",
+  "themes": [
+    {
+      "phrase": "bartender quality and friendliness",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "The bar staff are friendly, knowledgeable about the cocktails, and they seem to project this vibe that makes me want to come back time and time again."
+    },
+    {
+      "phrase": "creative cocktails",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Aside from the cocktails being utter delights, the bartenders are top class."
+    },
+    {
+      "phrase": "trans-inclusive name practices",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The staff didn't ask my friend's name, and instead used the deadname on their credit card to identify their order."
+    },
+    {
+      "phrase": "cacio e pepe pizza",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "The cacio e pepe pizza is a must."
+    },
+    {
+      "phrase": "slow drink service",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Waited 10 minutes for a sip of Jager and whiskey."
+    },
+    {
+      "phrase": "date night or hangout vibe",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "The best lowkey date night place or hangout place with friends."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the knowledgeable, friendly bartenders and inventive cocktails, but flag a meaningful inclusivity misstep around deadnaming and occasional slow service.",
+  "notable_quote": "Maybe it's dumb luck, maybe this place is the bee's knees? Try the Bassett Hound and leave these folks a good tip.",
+  "review_count": 5,
+  "analyzed_at": "2026-04-22T22:11:52.670Z",
+  "model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "margaux",
+  "themes": [
+    {
+      "phrase": "cocktails and drink quality",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Great cocktails, good beer selection, and incredibly friendly staff."
+    },
+    {
+      "phrase": "inconsistent bar service",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Even after being waved down, is ridiculous — the bartenders chose to chat with other patrons or stand around."
+    },
+    {
+      "phrase": "cozy welcoming atmosphere",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Their coffee is really good, and the atmosphere of the place is wonderful."
+    },
+    {
+      "phrase": "black coffee refill pricing",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Refill for black coffee is over three dollars; srsly?"
+    },
+    {
+      "phrase": "management incident response",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The manager didn't come over to say 'sorry about that, thanks for your help.'"
+    },
+    {
+      "phrase": "cozy work-friendly seating",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "There's lots of cozy seating around the room, and it's a great place to chill and work."
+    }
+  ],
+  "sentiment_summary": "Reviewers consistently praise Margaux's cocktails and cozy atmosphere, but a recurring thread of bartenders ignoring customers and a couple of management missteps undercut what could otherwise be a standout neighborhood bar.",
+  "notable_quote": "There are always regulars at the bar, and it's clear why.",
+  "review_count": 9,
+  "analyzed_at": "2026-04-22T22:11:57.964Z",
+  "model": "claude-sonnet-4-6"
+}

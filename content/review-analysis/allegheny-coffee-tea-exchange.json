@@ -1,0 +1,46 @@
+{
+  "slug": "allegheny-coffee-tea-exchange",
+  "themes": [
+    {
+      "phrase": "fresh coffee bean aroma",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "As soon as you open the door, you're hit with that amazing fresh coffee bean smell."
+    },
+    {
+      "phrase": "friendly helpful staff",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting."
+    },
+    {
+      "phrase": "self-serve bean scooping",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "You can smell each one and even bag your own beans, which is a really unique touch."
+    },
+    {
+      "phrase": "multiple cold brew taps",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "They have multiple taps with different varieties, which makes it fun to mix things up."
+    },
+    {
+      "phrase": "quality espresso and house blend",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Their espresso blend is hands down one of the best beans I've put through my espresso maker."
+    },
+    {
+      "phrase": "reasonable prices for quality",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Prices are very reasonable, especially for the quality and experience you're getting."
+    }
+  ],
+  "sentiment_summary": "Reviewers rave about the immersive bean-shop atmosphere, standout coffee quality, and staff who go out of their way to help — with virtually no nitpicks surfacing across the reviews.",
+  "notable_quote": "Most coffee gives me a terrible aftertaste and I had coffee at work and it turns out to be Allegheny coffee's house blend. It was the best I've ever had!",
+  "review_count": 8,
+  "analyzed_at": "2026-04-22T22:10:36.915Z",
+  "model": "claude-sonnet-4-6"
+}
