@@ -197,12 +197,18 @@ Return ONLY a valid JSON object with this exact shape (no markdown, no prose out
 
   "tldr_meaning": "One sentence describing what the data says about the business's trajectory. NOT a call to action. Write in data terms. Example: 'The climb to Icons depends on the Instagram signal restarting, the other axes are already there.' Adapt to this business.",
 
+  "diagnosis_pullquote": {
+    "line": "ONE display-scale sentence that captures the whole quarter. Pattern: '[STRENGTH 1] AND [STRENGTH 2], UNDERCUT BY [WEAKNESS] [SHORT QUALIFIER].' Or for a strong quarter: '[STRENGTH] WITH [STRENGTH 2], [POSITION DESCRIPTOR].' Write it in title case (we render uppercase). 12-22 words. The line must read aloud as a real headline a journalist would write, not a stat dump. The 'highlight' phrase below must appear verbatim in this sentence.",
+    "highlight": "The 2-4 word phrase from the line that should be visually highlighted in lime/purple. This is the focus metric, the part the reader's eye should lock onto. Examples: 'review sentiment', 'dormant Instagram', '26 creators on TikTok', 'no creator coverage', 'social momentum'. Must appear word-for-word inside the line."
+  },
+
   "playbook": [
     {
       "headline": "5-8 words, action-oriented",
       "action": "10-18 words, specific to this business, cite the actual number or gap when you can",
       "signal": "momentum" | "content_canvas" | "community_spark" | "conversion_path" | "collab_fit",
-      "priority": "high" | "medium" | "low"
+      "priority": "high" | "medium" | "low",
+      "impact_label": "1-3 words: the projected outcome of this move as a tight pill label. Examples: '+8 SENTIMENT PTS', '+1 VISUAL RANK', 'UNLOCK 30 CREATORS', 'STOP THE DROP', 'REOPEN SIGNAL'. Always a concrete delta or unlock. Caps."
     }
   ]
 }

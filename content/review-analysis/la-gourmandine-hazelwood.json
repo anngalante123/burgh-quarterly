@@ -5,59 +5,66 @@
       "phrase": "hidden gem worth finding",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Please do not miss this hidden gem in Pittsburgh"
+      "exampleQuote": "Please do not miss this hidden gem in Pittsburgh."
     },
     {
-      "phrase": "Paris-caliber pastry",
+      "phrase": "Paris-quality pastry",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed"
+      "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed."
     },
     {
       "phrase": "raspberry lychee macaron",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "make sure you get the raspberry lychee macaroon, it is gluten free made with almond flour"
+      "exampleQuote": "Make sure you get the raspberry lychee macaroon, it is gluten free made with almond flour."
     },
     {
-      "phrase": "multi-location discovery",
+      "phrase": "delicious across the board",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Todo es delicioso."
+    },
+    {
+      "phrase": "multiple locations noted",
       "frequency": 1,
-      "sentiment": "positive",
-      "exampleQuote": "there are multiple locations so please make sure you check it out"
-    },
-    {
-      "phrase": "everything is delicious",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Excelente panadería, todo es delicioso"
+      "sentiment": "neutral",
+      "exampleQuote": "There are multiple locations so please make sure you check it out."
     }
   ],
-  "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed — I'm telling you this from experience.",
-  "sentiment_summary": "Reviewers reach for superlatives — Paris comparisons, best-thing-I've-ever-eaten declarations, a specific callout for the gluten-free raspberry lychee macaron — with virtually no public criticism surfacing across 525 reviews.",
-  "quarter_narrative": "La Gourmandine Hazelwood enters Spring 2026 as the most-reviewed pastry shop in Pittsburgh with sentiment that almost never breaks. The problem is the camera: the account hasn't posted in over 40 days, has run zero Reels in the last month, and there is no indexed TikTok creator coverage to carry the weight in its absence. In the Pittsburgh Sweets family, that contrast is sharp — Page's is leading the issue specifically on social momentum, a signal where La Gourmandine sits at the bottom of the family. The path to climbing out of Ones to Watch and threatening the top of the broader Sweets ranking runs directly through closing that gap; the reviews are already doing their job.",
-  "tldr_read": "525 reviews with near-perfect sentiment and a flawless conversion path, paired with a dormant Instagram and zero TikTok presence. Ones to Watch, #1 in Pittsburgh Pastry Shops.",
-  "tldr_meaning": "Every trust signal a customer needs at the point of decision is in place; the ceiling on rank is now set almost entirely by whether the social momentum signal comes back to life.",
+  "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
+  "sentiment_summary": "Reviewers reach for superlatives — Paris comparisons, best-thing-ever claims about the raspberry lychee macaron — and nitpick nothing; the criticism gap is conspicuous in 525 reviews, which itself signals how narrow the dissatisfied slice is.",
+  "quarter_narrative": "Thirty Pittsburgh creators filmed La Gourmandine Hazelwood this quarter and collectively pulled over a million plays on TikTok — the bakery posted nothing back. The top video alone, from @ms__lesh, ran 719,500 plays on a caption that barely mentioned the food; the shop was background to the moment and still drew a crowd. Meanwhile Page's holds the Pittsburgh Sweets family lead this issue specifically on social momentum, the one axis where La Gourmandine is effectively absent despite being the most creator-filmed pastry shop in the city. The rank climbs when the business stops being a subject and starts being a participant.",
+  "tldr_read": "Over a million TikTok plays from 30 outside creators, zero posts from the bakery itself in 40 days — dominant review sentiment, dormant owned social; Ones to Watch, #1 in Pittsburgh Pastry Shops.",
+  "tldr_meaning": "Every other signal axis is at or above family median; the Instagram momentum reading is the single variable separating this business from the Icons tier.",
+  "diagnosis_pullquote": {
+    "line": "A Million Plays From Other People's Phones, And A Dormant Instagram Holding The Rank Down.",
+    "highlight": "dormant Instagram"
+  },
   "playbook": [
     {
-      "headline": "Restart the feed, then hold the cadence",
-      "action": "The account has posted nothing in 40-plus days and has zero Reels in the last 30; even two posts a week featuring the macaron case or the croissant stack would move the momentum signal off the floor.",
+      "headline": "End the 40-day Instagram silence",
+      "action": "Post within this week — one photo of the raspberry lychee macaron or the morning pastry case — to reopen the Instagram momentum signal that has gone dark for 40 days.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Give TikTok creators something specific to film",
-      "action": "There is no indexed TikTok coverage for this location; a visible, photogenic moment — a macaron tower, a laminated dough pull — gives visiting creators a natural subject and seeds the coverage that doesn't yet exist.",
+      "headline": "Turn 30 creators into a feedback loop",
+      "action": "Repost or story-share the 30 TikTok creators already filming here; @ms__lesh's 719,500-play video is sitting unused as a conversion asset.",
+      "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "UNLOCK 30 CREATORS"
+    },
+    {
+      "headline": "Fill the Google photo category gaps",
+      "action": "Google shows 304 photos but only six tagged categories — Staff and Outside are missing entirely; adding business-submitted images in those slots raises visual catalog completeness.",
       "signal": "content_canvas",
-      "priority": "medium"
-    },
-    {
-      "headline": "Verify the Instagram account",
-      "action": "The business account is unverified; verification signals authority on a profile that already has the bio, contact info, and review volume to support the credential.",
-      "signal": "conversion_path",
-      "priority": "low"
+      "priority": "low",
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 4,
-  "analyzed_at": "2026-04-25T15:39:16.339Z",
+  "analyzed_at": "2026-04-25T16:18:16.576Z",
   "model": "claude-sonnet-4-6"
 }

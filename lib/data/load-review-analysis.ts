@@ -31,6 +31,15 @@ export type AnalysisPlaybookItem = {
     | "conversion_path"
     | "collab_fit";
   priority: "high" | "medium" | "low";
+  /** Tight pill label for projected impact, e.g. "+8 SENTIMENT PTS" */
+  impact_label?: string;
+};
+
+export type DiagnosisPullquote = {
+  /** Display-scale single sentence for the hero zone. */
+  line: string;
+  /** The phrase from `line` to highlight. Must appear verbatim in `line`. */
+  highlight: string;
 };
 
 export type ReviewAnalysis = {
@@ -57,6 +66,8 @@ export type ReviewAnalysis = {
   tldr_meaning?: string;
   /** Three data-derived recommendations, sorted by priority. */
   playbook?: AnalysisPlaybookItem[];
+  /** Display-scale diagnosis sentence for the new hero zone. */
+  diagnosis_pullquote?: DiagnosisPullquote;
 };
 
 const ANALYSIS_DIR = path.join(process.cwd(), "content", "review-analysis");

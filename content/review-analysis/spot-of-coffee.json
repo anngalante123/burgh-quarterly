@@ -2,13 +2,13 @@
   "slug": "spot-of-coffee",
   "themes": [
     {
-      "phrase": "housemade syrups and ingredients",
+      "phrase": "housemade ingredients",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "They homemake all of their syrups which makes it worth it and so much tastier."
     },
     {
-      "phrase": "signature latte flavors",
+      "phrase": "signature specialty lattes",
       "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "Come to Spot of Coffee for a toasted miso latte that will change your life."
@@ -23,41 +23,48 @@
       "phrase": "matcha as a draw",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha."
+      "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha!!!"
     },
     {
-      "phrase": "burnt or bitter coffee",
+      "phrase": "bitter or burnt cup",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste."
     }
   ],
   "notable_quote": "I've worked at a very popular, very viral, very delicious coffee shop — I still come to Spot of Coffee as often as possible.",
-  "sentiment_summary": "Reviewers return for the specificity of the menu — the toasted miso latte, the carrot cake cold foam, the cashew milk — while the rare critic lands on execution consistency, not concept.",
-  "quarter_narrative": "No Pittsburgh TikTok creators have indexed Spot of Coffee yet, which is a notable gap for a shop whose Instagram engagement rate of 15.19% is more than double what most cafes in this family are pulling. The city isn't filming this place at scale — but the people who do find it are loudly loyal, and that loyalty is translating into real platform momentum rather than staying buried in a review thread. Allegheny Coffee & Tea Exchange leads the Pittsburgh Cafes family on social momentum this issue, but Spot of Coffee is the one posting Reels, holding a 15% engagement rate, and sitting on a menu narrative — cashew milk, Redstart beans, carrot cake cold foam — that creators typically can't resist once they encounter it. The missing piece is a Google profile with no website link, a friction point that stands between strong discovery intent and a completed visit; close that gap, and the #2 rank becomes a real conversation about #1.",
-  "tldr_read": "An exceptional Instagram signal and intensely specific menu drive Spot of Coffee to Icons of the Burgh #2, but no website on Google and zero TikTok creator coverage leave clear headroom on the table.",
-  "tldr_meaning": "The Instagram axis is already outperforming the family by a wide margin; the ceiling now is conversion infrastructure — specifically, the missing website on Google — and whether TikTok creators eventually find a shop that reviewers describe as life-changing.",
+  "sentiment_summary": "Reviewers keep returning to the housemade components — cashew milk, real bananas, natural syrups — as the thing that separates Spot from every syrup-pump competitor, with an occasional sharp dissent about inconsistent roast execution.",
+  "quarter_narrative": "Twenty-three Pittsburgh creators filmed Spot of Coffee this quarter and didn't wait for an invitation — 372,723 TikTok plays accumulated while the business sat off that platform entirely. @mayavalletta's 87,100-play video alone outpaced what most cafes produce in a year of self-posting, and her caption — 'There's so many more, what did I miss? Might have to do a pt. 2?' — reads less like content and more like a dispatch from a place that earns repeat visits. Against that backdrop, Spot's own Instagram is the counterweight: a 15.19% engagement rate that is extraordinary, six posts and three Reels in 30 days, verified and active. The family leader this issue is Allegheny Coffee & Tea Exchange, whose edge is social momentum; Spot matches or exceeds them on creator magnetism but doesn't yet have a home for all that footage. Closing the TikTok gap and adding a website to Google — currently absent — are the two moves that could push this ranking from a firm #2 to a conversation about #1.",
+  "tldr_read": "Dominant TikTok creator coverage and a standout Instagram engagement rate, undercut by no website on Google and review sentiment slightly below the family median. Icons of the Burgh, #2 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The data shows a business the city has already decided it loves — the ceiling question is whether Spot captures any of the creator energy it didn't generate and converts it through a digital front door that doesn't yet exist.",
+  "diagnosis_pullquote": {
+    "line": "Twenty-Three Creators Are Filming This Place, And The Place Has No TikTok To Show For It.",
+    "highlight": "23 creators filming"
+  },
   "playbook": [
     {
-      "headline": "Add a website link to Google Business",
-      "action": "The Google profile has no website listed — that single missing field is the only conversion path gap in an otherwise well-maintained presence.",
-      "signal": "conversion_path",
-      "priority": "high"
-    },
-    {
-      "headline": "Put the toasted miso latte on TikTok",
-      "action": "Zero Pittsburgh TikToks are indexed for this shop; the miso latte, carrot cake cold foam, and cashew milk are exactly the kind of specific, visual menu items that drive unsolicited creator coverage.",
-      "signal": "content_canvas",
-      "priority": "medium"
-    },
-    {
-      "headline": "Sustain the Reels cadence through summer",
-      "action": "Three Reels in 30 days is driving a 15.19% engagement rate — nearly 3.5 times the family median; maintaining that output protects the momentum signal that currently separates this shop from the rest of the family.",
+      "headline": "Open a TikTok account this quarter",
+      "action": "23 creators have already built 372,723 plays of free coverage — a TikTok presence lets Spot own that conversation instead of watching it from the sideline.",
       "signal": "momentum",
-      "priority": "low"
+      "priority": "high",
+      "impact_label": "CAPTURE 370K PLAYS"
+    },
+    {
+      "headline": "Add a website link to Google profile",
+      "action": "Spot's Google listing has no website, pulling conversion path below the family median of 100 — even a simple landing page URL closes that gap immediately.",
+      "signal": "conversion_path",
+      "priority": "medium",
+      "impact_label": "CLOSE CONVERSION GAP"
+    },
+    {
+      "headline": "Recruit top creators for a collab post",
+      "action": "Five named creators — @mayavalletta, @imaxchung, @lyssad16, @juliasgoodeatsss, @aubreyclaree_ — already have proven reach here; a direct invite or hosted tasting sharpens the editorial narrative around the housemade ingredient story.",
+      "signal": "collab_fit",
+      "priority": "low",
+      "impact_label": "+CREATOR DEPTH"
     }
   ],
   "review_count": 10,
-  "analyzed_at": "2026-04-25T15:43:19.790Z",
+  "analyzed_at": "2026-04-25T16:22:40.603Z",
   "model": "claude-sonnet-4-6"
 }

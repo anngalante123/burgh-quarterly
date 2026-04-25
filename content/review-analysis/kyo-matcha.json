@@ -8,62 +8,69 @@
       "exampleQuote": "If you are a fan of not overly sweet cakes, this place is a must try."
     },
     {
-      "phrase": "matcha latte richness",
-      "frequency": 2,
+      "phrase": "cozy seating and vibe",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time."
+      "exampleQuote": "Tons of wall plugs and comfortable seating, making it a great spot to get some work done."
     },
     {
-      "phrase": "crowded seating and noise",
+      "phrase": "crowded and parking scarce",
       "frequency": 3,
       "sentiment": "neutral",
-      "exampleQuote": "Can get crowded and a bit loud at times, but that's a testament to how much people love this place."
+      "exampleQuote": "You might not be able to find a seat when it's crowded. Parking is difficult."
     },
     {
-      "phrase": "inconsistent soft serve portions",
+      "phrase": "inconsistent portion sizes",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "Sometimes my ice cream sizes varies too much especially when it's like $8 I expect a decent portion."
     },
     {
-      "phrase": "early closing enforcement",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "Closing five minutes early while customers are still actively trying to order feels inconsistent and unprofessional."
+      "phrase": "matcha latte quality",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time."
     },
     {
-      "phrase": "cozy work-friendly vibe",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Tons of wall plugs and comfortable seating, making it a great spot to get some work done."
+      "phrase": "early closing frustration",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "We walked in at 9:55 PM—only to be told by staff that they were already closed."
     }
   ],
   "notable_quote": "The matcha latte was rich and creamy and sweet — the best matcha I've had in a long time.",
-  "sentiment_summary": "Reviewers consistently celebrate the restrained sweetness of the cakes and the depth of the matcha program, but return with complaints about portion inconsistency on an $8 soft serve and a closing-time enforcement incident that exposed a gap between posted hours and staff behavior.",
-  "quarter_narrative": "Kyo Matcha enters Spring 2026 as the city's second-ranked dessert shop and sits squarely in Icons territory on nearly every axis — a 47.87% Instagram engagement rate, a creator fit signal that leads its entire family, and a conversion path that is fully built out on Google. What it doesn't have is TikTok presence: no Pittsburgh-indexed videos, no creator trail, no short-form record of the sakura rain cake or the matcha parfait that reviewers keep mentioning in shorthand, as if everyone already knows. In the Pittsburgh Sweets family, Page's holds the top position this issue on the back of social momentum; Kyo's momentum is real but still concentrated on a single platform. The rank moves when the creator signal — which is clearly there in potential, given a 96 creator-fit reading — converts into actual indexed coverage, and when the review sentiment, currently the weakest axis in the portfolio, gets the same attention the Instagram account does.",
-  "tldr_read": "Exceptional Instagram engagement and creator appeal, but review sentiment trails the family median by a meaningful margin and TikTok coverage is nonexistent — Icons of the Burgh, #2 in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "The platform signals point upward and the conversion infrastructure is solid, but closing-time complaints and portion inconsistency are quietly pulling the sentiment axis below where a business at this visibility level should be.",
+  "sentiment_summary": "Reviewers consistently praise the restrained sweetness of the cakes and the quality of the matcha latte, while a pair of operational complaints — inconsistent soft serve portions and a staff that closes the doors before the posted hour — pull the sentiment signal noticeably below the family median.",
+  "quarter_narrative": "Twenty-eight Pittsburgh creators walked into Kyo Matcha this quarter with their phones out, and the resulting 30-plus TikToks racked up 353,000 plays without the business posting a single frame of its own. The top video alone — @xo.derleethao announcing it as her new weekly spot — drew 78,100 views on a caption that did more brand work than anything in Kyo Matcha's own feed. Meanwhile, this issue's Pittsburgh Sweets leader, Page's, holds the top spot largely on social momentum the business itself is generating. Kyo Matcha's path from #4 in the family to contender runs directly through that gap: the city is already filming this place, and the moment the business starts filming back, the rank moves.",
+  "tldr_read": "Dominant TikTok creator coverage and a near-perfect conversion path, held back by review sentiment sitting well below the family median — Icons of the Burgh, #2 in Pittsburgh Dessert Shops.",
+  "tldr_meaning": "The creator signal is already doing the heavy lifting at scale, but the sentiment drag from portion inconsistency and closing-time complaints is the one axis keeping Kyo Matcha from pressing Page's for the family lead.",
+  "diagnosis_pullquote": {
+    "line": "28 Creators Filming This Place, And The Place Is Filming None Of It Back.",
+    "highlight": "28 creators filming"
+  },
   "playbook": [
     {
-      "headline": "Close the gap between hours posted and doors open",
-      "action": "Two negative reviews cite staff behavior at closing; a written closing protocol eliminates the sentiment drag that review sentiment data is already showing.",
+      "headline": "Fix the ops complaints before they compound",
+      "action": "Inconsistent soft serve portions and a 9:55 PM lockout are appearing in written reviews now — address staff closing protocol and portion standards before the next quarter's sentiment reading drops further from the family median of 83.",
       "signal": "community_spark",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "+SENTIMENT FLOOR"
     },
     {
-      "headline": "Get the matcha parfait on TikTok, now",
-      "action": "Zero Pittsburgh TikToks indexed despite a creator-fit signal that leads the family; one invited creator visit with the sakura rain cake or matcha parfait changes that number.",
-      "signal": "collab_fit",
-      "priority": "medium"
-    },
-    {
-      "headline": "Close the 8-day gap between Instagram posts",
-      "action": "Five Reels in 30 days is a strong pace but the last post was 8 days ago; the 47.87% engagement rate means the audience is ready, the feed just needs to stay live.",
+      "headline": "Claim your own presence on TikTok",
+      "action": "28 creators generated 353,000 plays this quarter with zero contribution from a Kyo Matcha account — opening a business TikTok and reposting even two of those videos per month begins converting that borrowed reach into owned signal.",
       "signal": "momentum",
-      "priority": "low"
+      "priority": "medium",
+      "impact_label": "CAPTURE OWNED REACH"
+    },
+    {
+      "headline": "Convert the Instagram personal account to business",
+      "action": "The Instagram account is not registered as a business account, meaning post-level analytics, contact buttons, and boosting tools are all unavailable — switching costs nothing and immediately unlocks the data layer behind a 47.87% engagement rate.",
+      "signal": "conversion_path",
+      "priority": "low",
+      "impact_label": "UNLOCK ANALYTICS"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-25T15:39:00.830Z",
+  "analyzed_at": "2026-04-25T16:17:59.516Z",
   "model": "claude-sonnet-4-6"
 }

@@ -32,38 +32,45 @@
       "exampleQuote": "the workers are so nice every time I visit!"
     },
     {
-      "phrase": "wifi and workspace",
+      "phrase": "wifi and workspace limits",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "The wi-fi isn't good enough to work from here so I wouldn't come back for that."
     }
   ],
   "notable_quote": "The strawberry matcha here might be the best I've ever had — the coffee, food, and overall cafe vibe is fantastic.",
-  "sentiment_summary": "Reviewers rally around two specific drinks — the strawberry matcha and the iced tiramisu latte — and consistently mention warm staff, but the small footprint and unreliable wifi draw real friction from anyone hoping to settle in for more than a cup.",
-  "quarter_narrative": "Twenty-six creators filmed Delanie's Coffee Shadyside this past quarter; Delanie's filmed essentially none of it back. Those 30-plus TikToks accumulated 176,000 plays without a single post from the business's own account, making Delanie's one of the most-documented unstaffed stories in Pittsburgh coffee right now. The tiramisu latte alone traveled far enough to put @tessadecario over 37,000 plays on a single video. Meanwhile, in the broader Pittsburgh Cafes family, Allegheny Coffee & Tea Exchange is leading this issue on social momentum — a signal Delanie's is generating for other people but not yet converting into its own standing. The rank climbs when the business starts showing up in the conversation it's already starring in.",
-  "tldr_read": "Creator-driven TikTok reach in the tens of thousands, Instagram nearly dormant at 3 posts in 30 days and zero reels — Ones to Watch, #4 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The external filming signal is unusually strong for a business at this rank, but Instagram momentum sits just at the family median and TikTok presence is nonexistent on the business side, meaning the current trajectory depends entirely on creators continuing to show up.",
+  "sentiment_summary": "Reviewers consistently return for the specialty drinks — the strawberry matcha and tiramisu latte pull most of the enthusiasm — while a small number flag the cramped footprint, inconsistent order accuracy, and weak wifi as reasons not to make it a work-from-cafe habit.",
+  "quarter_narrative": "Twenty-six Pittsburgh creators filed into Delanie's Coffee Shadyside this quarter and posted 30-plus TikToks; Delanie's itself posted three times in the last month and filmed none of it back. The city is doing the storytelling, and the business is mostly a spectator — @tessadecario's tiramisu latte clip alone drew 37,200 plays from a caption that could have lived on Delanie's own feed. Meanwhile, Allegheny Coffee & Tea Exchange holds the Cafes category on the strength of its social momentum, a signal Delanie's has already been handed by its creators but hasn't picked up. The rank moves if the business starts showing up in the same places its customers already are.",
+  "tldr_read": "26 creators filming, 3 posts in 30 days, one of the strongest creator-fit readings in the family — Ones to Watch, #4 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The creator coverage is already there; the gap closing between what Pittsburgh is posting about Delanie's and what Delanie's posts about itself is what separates this ranking from the tier above it.",
+  "diagnosis_pullquote": {
+    "line": "26 Creators Are Filming This Place, And The Place Is Filming None Of It Back",
+    "highlight": "26 creators are filming"
+  },
   "playbook": [
     {
-      "headline": "Claim the TikTok account before someone else defines it",
-      "action": "26 creators have already done the work — one business-side account with reposted creator videos stops the signal leak immediately.",
+      "headline": "Post what creators are already making",
+      "action": "Repost or recreate the tiramisu latte and strawberry matcha content that 26 creators have already validated — the menu and the audience are proven, the account just needs to show up.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "CAPTURE 176K PLAYS"
     },
     {
-      "headline": "Turn the tiramisu latte into a repeating visual",
-      "action": "Instagram sits at 3 posts in 30 days and zero reels; a weekly reel built around the drink that already has 37,200 organic plays is the lowest-effort path to closing that gap.",
+      "headline": "Build the visual catalog past its floor",
+      "action": "With 96 photos spread thin across only 6 active Google categories, adding 15-20 dedicated interior and drink photos would bring the visual catalog closer to the family median and give new customers something to land on before visiting.",
       "signal": "content_canvas",
-      "priority": "medium"
+      "priority": "medium",
+      "impact_label": "+1 VISUAL RANK"
     },
     {
-      "headline": "Tag the creators who are already regulars",
-      "action": "With 26 unique creators on file this quarter, a simple story reshare or comment acknowledgment builds the kind of repeat coverage that compounds rank quarter over quarter.",
-      "signal": "collab_fit",
-      "priority": "low"
+      "headline": "Turn the order-error review into a policy signal",
+      "action": "The three-star review about a wrong muffin and being charged for a replacement is the single clearest drag on an otherwise warm sentiment picture — a public owner response acknowledges it without burying it.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T15:49:00.538Z",
+  "analyzed_at": "2026-04-25T16:15:01.866Z",
   "model": "claude-sonnet-4-6"
 }

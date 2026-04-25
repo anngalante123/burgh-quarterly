@@ -2,16 +2,22 @@
   "slug": "nan-xiang-soup-dumplings-pittsburgh",
   "themes": [
     {
-      "phrase": "soup dumplings worth repeating",
+      "phrase": "soup dumplings",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "This is going to be a repeat when we come back to town for sure."
+      "exampleQuote": "Delicious soup dumplings, great mixed variety. Great first experience."
     },
     {
       "phrase": "server by name",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Our server Morgan had an amazing smile and great customer service."
+      "exampleQuote": "Our server Morgan had an amazing smile and great customer service — she made the experience very welcoming and rememberable."
+    },
+    {
+      "phrase": "beef and pepper noodles",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "These beef and pepper noodles are legit. Dumplings sampler was a hit as well."
     },
     {
       "phrase": "Didi the robot",
@@ -20,50 +26,51 @@
       "exampleQuote": "Didi the robot was fun to watch."
     },
     {
-      "phrase": "beef and pepper noodles",
-      "frequency": 1,
-      "sentiment": "positive",
-      "exampleQuote": "These beef and pepper noodles are legit."
-    },
-    {
       "phrase": "bathroom not clean",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Everything was great, but the bathroom was not clean."
+      "exampleQuote": "Everything was great, but the Bathroom was not clean."
     },
     {
-      "phrase": "spicy new menu items",
-      "frequency": 1,
+      "phrase": "repeat visit intent",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "We tried the new spicy beef dumplings and sweet and sour soup — both were incredible."
+      "exampleQuote": "This is going to be a repeat when we come back to town for sure."
     }
   ],
-  "notable_quote": "Our server Morgan had an amazing smile and great customer service — she held amazing conversation and made the experience very welcoming and rememberable.",
-  "sentiment_summary": "Reviewers keep coming back for the dumplings and noodles and leave talking about their servers by name — Galilea, Morgan, Chavely each get called out individually — with the only consistent friction being an unclean bathroom.",
-  "quarter_narrative": "Nan Xiang Soup Dumplings heads into Spring 2026 as the undisputed signal leader in Pittsburgh — #1 in restaurants, #1 across all Pittsburgh businesses in this issue — built on a review base of 1,212 ratings that skews almost entirely positive and a visual catalog of nearly 1,350 photos that gives the city's curious diners something concrete to act on. The family's standout signal is social momentum, and the Pittsburgh location is carrying that: 11 Instagram posts in 30 days and four reels is a real publishing cadence, not a dormant account. What holds the ceiling in place is TikTok — there is no indexed creator coverage for this location, which means a restaurant with a delivery-robot, a rotating cast of named servers, and a visually distinct product is not yet getting the short-form treatment that has launched comparable concepts in other markets. If even a handful of Pittsburgh food creators walk through that door with a phone, the already-strong momentum signal has room to climb sharply.",
-  "tldr_read": "Near-perfect conversion path, 1,212 reviews at 88% five-star, and an active Instagram — but zero TikTok creator coverage is the one gap keeping this Icons of the Burgh #1 from feeling truly untouchable.",
-  "tldr_meaning": "Every structural signal — discovery, sentiment, visual volume, conversion — is already at or near ceiling; the trajectory from here runs entirely through short-form video, and right now that channel is empty.",
+  "notable_quote": "Our server Morgan had an amazing smile and great customer service — she was quick, efficient, and always had refills ready, and she held amazing conversation that made the experience very welcoming and rememberable.",
+  "sentiment_summary": "Reviewers consistently name their servers — Morgan, Galilea, Chavely — which signals a front-of-house culture strong enough to break through the noise of a food review; the one recurring nitpick is bathroom cleanliness, a small operational note against an otherwise spotless 88% five-star record.",
+  "quarter_narrative": "Twenty-nine Pittsburgh creators filmed Nan Xiang Soup Dumplings this quarter, generating 615,199 TikTok plays — and the restaurant posted none of it back, because it has no TikTok account. That gap is the defining editorial fact of their Spring 2026: the city is doing the broadcasting, the business is watching from the sideline. As the lead business across the entire Pittsburgh family this issue, with the strongest social momentum signal in the cohort, that contrast is worth sitting with — the rank is built on other people's output, not its own. The question for next quarter is whether 1,212 Google reviews and a creator army that keeps showing up can carry the number-one position without the business ever entering the conversation directly.",
+  "tldr_read": "Dominant TikTok creator coverage and near-perfect review sentiment, undercut by zero owned TikTok presence; Icons of the Burgh, #1 in Pittsburgh Restaurants.",
+  "tldr_meaning": "The signals that earned the top rank — creator volume, review depth, conversion path — are externally powered; the business's own publishing output is the one axis that hasn't caught up to where the city has already placed it.",
+  "diagnosis_pullquote": {
+    "line": "Twenty-Nine Creators Are Filing Dispatches, And Nan Xiang Is Broadcasting None Of It Back.",
+    "highlight": "twenty-nine creators"
+  },
   "playbook": [
     {
-      "headline": "Get one Pittsburgh creator through the door",
-      "action": "Zero TikTok videos are indexed for this location; one creator capturing Didi the robot or a xiao long bao pour could change that overnight.",
-      "signal": "collab_fit",
-      "priority": "high"
-    },
-    {
-      "headline": "Push reels frequency past four per month",
-      "action": "Four reels in 30 days with a 0.21% engagement rate suggests the format is working but the volume is not yet high enough to compound reach.",
+      "headline": "Claim the TikTok ground already yours",
+      "action": "Open a business TikTok account — 29 creators and 615K plays exist with no owned channel to anchor them or capture the follow.",
       "signal": "momentum",
-      "priority": "medium"
+      "priority": "high",
+      "impact_label": "CAPTURE 615K PLAYS"
     },
     {
-      "headline": "Address the bathroom — one review costs real signal",
-      "action": "A single cleanliness complaint in a near-perfect review set is a small but real drag on sentiment score; resolve it before it becomes a pattern reviewers echo.",
+      "headline": "Turn Instagram reels into a real signal",
+      "action": "Four reels in 30 days against a 0.21% engagement rate suggests posting volume isn't the issue — reel format or hook quality is; test creator-style first-person POV on the dumplings and the robot.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+ENGAGEMENT RATE"
+    },
+    {
+      "headline": "Address the one crease in a clean record",
+      "action": "One bathroom complaint in nine pulled reviews is a small signal, but at 1,212 reviews it surfaces in aggregate; a visible ops response on that review stops the sentiment drift before it compounds.",
       "signal": "community_spark",
-      "priority": "low"
+      "priority": "low",
+      "impact_label": "PROTECT 88% STAR RATE"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T15:41:35.394Z",
+  "analyzed_at": "2026-04-25T16:20:52.475Z",
   "model": "claude-sonnet-4-6"
 }

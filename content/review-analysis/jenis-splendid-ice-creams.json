@@ -2,22 +2,10 @@
   "slug": "jenis-splendid-ice-creams",
   "themes": [
     {
-      "phrase": "unusual rotating flavors",
+      "phrase": "unique rotating flavors",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "I always make sure to try their new flavors—it always surprises me."
-    },
-    {
-      "phrase": "gooey butter cake",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "That gooey butter cake ice cream has me in a chokehold."
-    },
-    {
-      "phrase": "portion size and price",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "Super expensive... and the portion of these two standards is mind boggling."
+      "exampleQuote": "I always make sure to try their new flavors—because it always surprises me!"
     },
     {
       "phrase": "fresh waffle cones",
@@ -26,38 +14,63 @@
       "exampleQuote": "I loved the waffle cones which they make fresh throughout the day."
     },
     {
-      "phrase": "dog-friendly stop",
+      "phrase": "small portion sizes",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The portion of these two 'standards' is mind boggling—never received a portion so small for $7."
+    },
+    {
+      "phrase": "premium price point",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "Pretty delicious, just super expensive."
+    },
+    {
+      "phrase": "dog-friendly visits",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Me and my dog's favorite spot—I always order him a small scoop of vanilla with waffle wedge."
+    },
+    {
+      "phrase": "gooey butter cake flavor",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "That gooey butter cake ice cream has me in a chokehold."
     }
   ],
-  "notable_quote": "That gooey butter cake ice cream has me in a chokehold.",
-  "sentiment_summary": "Reviewers consistently come back for the rotating seasonal flavors and the freshness of both the ice cream and the waffle cones, while the most persistent friction is a feeling that portion sizes don't justify the price at this specific Pittsburgh location.",
-  "quarter_narrative": "Twenty-nine Pittsburgh creators filmed Jeni's this quarter. Jeni's filmed none of it back. The business has no TikTok presence of its own, yet 30-plus videos tagged to the Larimer location have stacked up 147,000 plays, with @justapittsburghgirl's gooey butter cake reel alone pulling 48,400—a number Jeni's own Instagram hasn't come close to touching this month. That Instagram, posting 12 times in 30 days at a 0.49 percent engagement rate, is active but largely invisible against the creator noise already being made on its behalf. In the Pittsburgh Sweets family, Page's holds the lead this issue on social momentum; Jeni's holds the stronger creator ecosystem and the better-documented visual catalog, but those advantages aren't fully expressing themselves in the rankings yet. If that TikTok groundswell ever connects to Jeni's own channels—or if engagement on existing posts begins to reflect the actual foot traffic the creator videos are driving—the gap between #3 and first narrows fast.",
-  "tldr_read": "147,000 TikTok plays from other people's accounts, no TikTok of its own, and a Google conversion path that is flawless—Icons of the Burgh, #2 in Pittsburgh Ice Cream.",
-  "tldr_meaning": "The creator signal is already doing heavy lifting; the business's own channels are not keeping pace, and that asymmetry is the single variable holding this ranking where it is rather than higher.",
+  "notable_quote": "I loved the waffle cones which they make fresh throughout the day.",
+  "sentiment_summary": "Reviewers keep coming back for the rotating flavor program and freshly made waffle cones, but a recurring complaint about portion size relative to price—specifically the $7 two-scoop standard—chips away at an otherwise warm reception.",
+  "quarter_narrative": "Twenty-nine Pittsburgh creators filmed inside Jeni's this quarter and walked out with 147,000 plays; Jeni's itself posted none of it back. The top video—@justapittsburghgirl's gooey butter cake reel with 48,400 views—is doing promotional work the brand isn't doing for itself, and that gap is the defining story of Jeni's Spring 2026. In the Pittsburgh Sweets family, Page's holds the top signal position on the back of social momentum Jeni's currently can't match, despite sitting on a creator network most shops in this city would trade everything for. The rank moves when the business stops being a subject and starts being a participant.",
+  "tldr_read": "Twenty-nine creators are filming this place; the place has no TikTok of its own—Icons tier, #2 Pittsburgh Ice Cream.",
+  "tldr_meaning": "The conversion path and creator ecosystem are fully intact; the only axis dragging rank is the absence of the business's own voice on the platform where the city is already talking about it.",
+  "diagnosis_pullquote": {
+    "line": "Twenty-Nine Creators Filming, Zero TikToks Back—The City Sees Jeni's Clearer Than Jeni's Sees Itself.",
+    "highlight": "Twenty-Nine Creators Filming"
+  },
   "playbook": [
     {
-      "headline": "Claim the TikTok ground already yours",
-      "action": "29 creators have done the work—launching even a minimal account to stitch or repost the 48K-play gooey butter cake video stops ceding that traffic entirely.",
+      "headline": "Claim the TikTok the city built you",
+      "action": "Open a business TikTok account and repost the 30+ creator videos already tagged to this location—starting with @justapittsburghgirl's 48,400-play gooey butter cake reel.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "UNLOCK 30 CREATORS"
     },
     {
-      "headline": "Convert Instagram activity into actual engagement",
-      "action": "12 posts in 30 days is consistent, but 0.49% engagement suggests the content isn't landing—tighter creative focus on the flavor-specific moments driving TikTok views would close that gap.",
-      "signal": "content_canvas",
-      "priority": "medium"
-    },
-    {
-      "headline": "Address the portion-value conversation directly",
-      "action": "At least two reviews independently flag the price-to-portion ratio at this location; acknowledging or adjusting it removes the only recurring friction pulling Review Sentiment below the family median.",
+      "headline": "Address the portion complaint directly",
+      "action": "Review sentiment sits below the family median of 83; the $7 two-scoop portion complaint appears across multiple reviews and is the single most consistent drag on star distribution.",
       "signal": "community_spark",
-      "priority": "low"
+      "priority": "medium",
+      "impact_label": "+6 SENTIMENT PTS"
+    },
+    {
+      "headline": "Turn the flavor calendar into a visual asset",
+      "action": "Instagram is posting 12 times a month but engagement sits at 0.49%; flavor drops and rotating seasonal specials are the obvious recurring visual hook that's currently underleveraged in the feed.",
+      "signal": "content_canvas",
+      "priority": "low",
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-25T15:51:07.129Z",
+  "analyzed_at": "2026-04-25T16:17:12.675Z",
   "model": "claude-sonnet-4-6"
 }

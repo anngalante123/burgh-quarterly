@@ -3,13 +3,13 @@
   "themes": [
     {
       "phrase": "Liège waffle quality",
-      "frequency": 4,
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in liège."
+      "exampleQuote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in Liège."
     },
     {
-      "phrase": "ice cream on its own",
-      "frequency": 3,
+      "phrase": "ice cream by itself",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "I'm an ice cream snob and this is some of the best ice cream I've ever had."
     },
@@ -17,47 +17,54 @@
       "phrase": "owner and staff warmth",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The owner is extremely friendly and nice and helped make the experience that much better."
+      "exampleQuote": "The owner is extremely friendly and helped make the experience that much better."
     },
     {
-      "phrase": "sample limit friction",
+      "phrase": "sample policy friction",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "The comment along the lines of 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone, made us feel uncomfortable."
+      "exampleQuote": "The comment 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone, made us feel uncomfortable."
     },
     {
-      "phrase": "specific flavor memory",
+      "phrase": "specific flavor callouts",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "The sage salted almond on a waffle was so good."
     }
   ],
-  "notable_quote": "Add that delicious waffle to it and you go into a brand new realm of delicious.",
-  "sentiment_summary": "Reviewers consistently reach for superlatives on both the ice cream and the Liège waffles, with specific flavors like sage salted almond earning their own callouts, but a recurring undercurrent around sample-tasting interactions has drawn two pointed critical reviews that both describe the same staff dynamic.",
-  "quarter_narrative": "Treat enters Spring 2026 with 623 Google reviews sitting at 98% five stars and zero Instagram posts in the last 199 days — a business that Pittsburgh clearly loves and is largely documenting for itself. No Pittsburgh TikTok videos are indexed for the shop either, which means the city's appetite for exactly this kind of photogenic, concept-forward dessert experience is not yet finding Treat as its subject. That contrast matters in a family where Page's is running away with the conversation on the strength of social momentum alone. For Treat to move off the Ones to Watch tier, the rank math is straightforward: the product signal and the review signal are already there; the missing variable is any evidence that the city is talking about it somewhere other than Google.",
-  "tldr_read": "Near-perfect reviews and a fully built conversion path, but the Instagram has been dark for 199 days and no TikTok presence exists — Ones to Watch, #3 in Pittsburgh Ice Cream Shops.",
-  "tldr_meaning": "Every signal axis is at or above the family median except Instagram momentum, which is effectively flatlined, and that single gap is the difference between this rank and the top of the family.",
+  "notable_quote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in Liège.",
+  "sentiment_summary": "Reviewers are emphatic about the ice cream quality and the Liège waffles, often calling both out separately before noting how good they are together; the one recurring friction point is a sample-limit policy that has landed as rude on at least two visits.",
+  "quarter_narrative": "Twenty-nine Pittsburgh creators filmed Treat this quarter — 1.3 million TikTok plays, zero posts from the business itself in the last 199 days. The city is doing the storytelling; Treat is watching from the counter. That gap is the whole story of Spring 2026 for this shop: a nearly perfect review record, a creator community that has genuinely adopted the place, and an Instagram that has been dark since last fall. Family leader Page's is running away with the Pittsburgh Sweets conversation on social momentum, which is exactly the axis Treat has abandoned. The rank climbs when Treat starts showing up in its own story — the raw material is already there, flavor names like sage salted almond and a waffle that passes the Belgium test are exactly the kind of specificity that moves a feed.",
+  "tldr_read": "Thirty creators, 1.3M TikTok plays, 199 days without an Instagram post — Ones to Watch, #3 in Pittsburgh Ice Cream.",
+  "tldr_meaning": "Every signal axis is at or above the family median except Instagram momentum, which is near zero — the ceiling here is much higher than the current rank reflects, and it hinges entirely on whether the account goes active again.",
+  "diagnosis_pullquote": {
+    "line": "A Million TikTok Plays And Counting, Built On A Dormant Instagram",
+    "highlight": "dormant Instagram"
+  },
   "playbook": [
     {
       "headline": "End the 199-day Instagram silence",
-      "action": "One post per week featuring named flavors — sage salted almond has a ready-made audience and zero current documentation.",
+      "action": "Post once a week to @treat_pgh — a waffle close-up, a flavor name on a chalkboard, anything — to reactivate a feed sitting on 7.65% engagement.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Make the sample policy visible before it's verbal",
-      "action": "A simple posted limit prevents the recurring negative interaction that has now appeared in two separate reviews and drawn a public owner response.",
+      "headline": "Redirect creator energy back to your account",
+      "action": "Tag the 29 creators already filming here in Instagram Stories; 1.3M plays of existing TikTok content is a ready-made reason to re-engage that audience without starting from zero.",
+      "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "UNLOCK 29 CREATORS"
+    },
+    {
+      "headline": "Post a visible sample-limit policy",
+      "action": "A small counter sign clarifying the sample limit would address the two negative reviews directly and remove the ambiguity that has cost the shop otherwise five-star visits.",
       "signal": "community_spark",
-      "priority": "medium"
-    },
-    {
-      "headline": "Give the 7.65% engagement rate somewhere to land",
-      "action": "With an engagement rate nearly double the family median, any resumed posting will find an audience that is already listening — link the menu and a booking or order path in the bio.",
-      "signal": "conversion_path",
-      "priority": "low"
+      "priority": "low",
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T15:44:35.246Z",
+  "analyzed_at": "2026-04-25T16:24:07.838Z",
   "model": "claude-sonnet-4-6"
 }

@@ -2,62 +2,69 @@
   "slug": "ka-fair-coffee-and-cakery",
   "themes": [
     {
-      "phrase": "never bitter coffee",
-      "frequency": 4,
+      "phrase": "coffee that converts skeptics",
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Coffee that is NEVER bitter. And this place is so cute."
+      "exampleQuote": "The coffee here is so good it taught my boyfriend how to whistle"
     },
     {
-      "phrase": "pre-zoo breakfast stop",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Came here with some friends before the zoo for a light breakfast and coffee."
-    },
-    {
-      "phrase": "signature cakes and pastries",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "My favorite spot now. Banoffee is top notch."
-    },
-    {
-      "phrase": "owner and regulars warmth",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "The owner was very nice and the locals clearly love it."
-    },
-    {
-      "phrase": "tiramisu latte execution",
+      "phrase": "tiramisu latte texture issues",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "The cake got a little soggy in the coffee. I kind of wish it was included on the side."
+      "exampleQuote": "The actual piece of tiramisu cake on top got a little soggy in the coffee"
+    },
+    {
+      "phrase": "charming neighborhood stop",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Charming place and the locals clearly love it"
+    },
+    {
+      "phrase": "standout pastry program",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Banoffee is top notch"
+    },
+    {
+      "phrase": "zoo-adjacent destination",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Stopped here before going to the zoo — everything was DELICIOUS"
     }
   ],
   "notable_quote": "The coffee here is so good it taught my boyfriend how to whistle — he has never been able to whistle in his life, but after a sip he let out a perfect one.",
-  "sentiment_summary": "Reviewers keep returning to the same two things — coffee that reads as genuinely non-bitter and a room that feels lived-in and local — with the only real nitpick being the tiramisu latte's construction, where the cake-on-top concept drowns before you finish the drink.",
-  "quarter_narrative": "Ka-Fair Coffee and Cakery enters Spring 2026 as the kind of Morningside neighborhood spot that out-of-towners discover on their way to the zoo and immediately wish they lived near. The reviews are warm and specific — banoffee cake, quiche, a latte so good it gets cited as a life-changing event — but the Instagram account posted three times in 30 days and has put up zero Reels, leaving a 1.74% engagement rate that reflects a loyal but small audience that isn't growing. There's no indexed TikTok creator coverage either, which means the city's most powerful discovery channel hasn't found this place yet, or hasn't found a reason to film it. Allegheny Coffee & Tea Exchange holds the family lead this issue on social momentum; Ka-Fair's path upward from #3 runs directly through closing that gap — the visual and creator-fit signals suggest the room and the product are ready, the distribution isn't.",
-  "tldr_read": "235 Google reviews at 85% five-star, zero TikTok presence, three Instagram posts in 30 days — strong conviction from the people who find it, almost no mechanism to make that happen at scale. Ones to Watch, #3 in Pittsburgh Cafes.",
-  "tldr_meaning": "The review foundation and creator-fit signal are already in the upper tier of this family; the rank ceiling is set almost entirely by an Instagram channel that is barely active and a TikTok footprint that doesn't exist yet.",
+  "sentiment_summary": "Reviewers are almost uniformly won over by the coffee and baked goods — the banoffee, quiche, and matcha draw specific praise — with the only real friction being the tiramisu latte's soggy cake-on-top execution.",
+  "quarter_narrative": "Thirty Pittsburgh creators filmed Ka-Fair Coffee and Cakery this quarter. Ka-Fair filmed essentially none of it back. Those 30 accounts generated over 11 million TikTok plays — @slidecoffeeph alone pulled 9.5 million on a single tiramisu latte video — while the café's own Instagram averaged fewer than one post per week and produced zero Reels. The city has already written Ka-Fair's viral moment; the business just isn't in the room when it happens. This issue's family leader, Allegheny Coffee & Tea Exchange, built its position on social momentum; Ka-Fair's creator coverage already rivals that kind of pull, but the signal is entirely externally held. Closing that gap — even partially — is what moves this entry off the Ones to Watch tier and into a legitimate climb.",
+  "tldr_read": "Thirty creators, 11 million TikTok plays, three Instagram posts last month — Ka-Fair has the city's attention but almost none of its own. Ones to Watch, #3 in Pittsburgh Cafes.",
+  "tldr_meaning": "The creator coverage is already doing heavy lifting; the remaining climb depends on whether the business begins capturing even a fraction of that momentum in its own voice before another café in the family absorbs the narrative.",
+  "diagnosis_pullquote": {
+    "line": "Thirty Creators Are Filming This Place, And The Place Is Filming None Of It Back.",
+    "highlight": "thirty creators"
+  },
   "playbook": [
     {
-      "headline": "Get Ka-Fair onto Pittsburgh TikTok feeds",
-      "action": "Zero creator videos are indexed for this business; one invited filmmaker shooting the banoffee cake or the tiramisu latte build changes that immediately.",
+      "headline": "Start posting Reels before creators stop showing up",
+      "action": "Ka-Fair has 30 creators and 11M TikTok plays this quarter but zero Reels in 30 days — one Reel per week of the tiramisu latte or banoffee build reclaims some of that signal.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "RECLAIM MOMENTUM"
     },
     {
-      "headline": "Turn Reels off zero, starting with the coffee",
-      "action": "The account has posted 3 times in 30 days and zero Reels; a single short video of the latte pour or cake slice would address the weakest axis in the family.",
+      "headline": "Fill the visual catalog gaps on Google",
+      "action": "146 Google photos across only 6 active categories leaves the interior, pastry case, and menu board underdocumented — 10 targeted uploads would close the gap to the family median.",
       "signal": "content_canvas",
-      "priority": "medium"
+      "priority": "medium",
+      "impact_label": "+VISUAL RANK"
     },
     {
-      "headline": "Build the zoo-day visitor into a return customer",
-      "action": "Three of nine reviewed visits mention the zoo as context; a Google post or seasonal menu push timed to zoo hours captures an already-primed walk-in audience.",
+      "headline": "Convert the tiramisu latte friction into a fix",
+      "action": "The soggy cake complaint is the one consistent nitpick in 235 reviews — a documented plating tweak or menu note acknowledging it would lift sentiment and show responsiveness.",
       "signal": "community_spark",
-      "priority": "low"
+      "priority": "low",
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T15:38:38.759Z",
+  "analyzed_at": "2026-04-25T16:17:35.134Z",
   "model": "claude-sonnet-4-6"
 }

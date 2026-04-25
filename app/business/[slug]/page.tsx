@@ -4,21 +4,16 @@ import Link from "next/link";
 
 import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
-import { UnfairAdvantage } from "@/components/UnfairAdvantage";
-import { PeerPulse, type PeerRow } from "@/components/insights/PeerPulse";
 import { ReviewVoice } from "@/components/insights/ReviewVoice";
-import { SignalOfQuarter } from "@/components/insights/SignalOfQuarter";
-import { SocialState } from "@/components/insights/SocialState";
-import { SocialTrend } from "@/components/insights/SocialTrend";
 import { PhotoHero } from "@/components/insights/PhotoHero";
-import { ScoreHero } from "@/components/insights/ScoreHero";
-import { BusinessTldr } from "@/components/insights/BusinessTldr";
 import { RelayWhisper } from "@/components/RelayWhisper";
-import { QuarterNarrative } from "@/components/insights/QuarterNarrative";
 import { Playbook } from "@/components/insights/Playbook";
 import { CreatorReadyAudit } from "@/components/insights/CreatorReadyAudit";
+import { DiagnosisPullquote } from "@/components/insights/DiagnosisPullquote";
+import { AtAGlance, type GlanceRow } from "@/components/insights/AtAGlance";
+import { YourClimb, type ClimbStat } from "@/components/insights/YourClimb";
+import { BusinessPageTabs } from "@/components/insights/BusinessPageTabs";
 import { buildBusinessTldr } from "@/lib/editorial/business-tldr";
-import { buildQuarterNarrative } from "@/lib/editorial/quarter-narrative";
 import { buildPlaybook } from "@/lib/editorial/playbook";
 import { buildCreatorAudit } from "@/lib/editorial/creator-audit";
 import { loadReviewAnalysis } from "@/lib/data/load-review-analysis";
@@ -88,10 +83,17 @@ function pluralizeCategoryLabel(categoryName: string): string {
 
 /* ----------------------------- peer lookup ---------------------------- */
 
-function buildPeers(
+// PeerPulse (neighborhood) was removed in the 2026-04-25 restructure;
+// peer comparison now lives in the "How you compare" tab via SubscoreBars
+// + PeerDotPlot scoped to the editorial family. Killing buildPeers
+// removed the last consumer of PeerRow.
+//
+// (function deliberately left as a marker; if a future feature wants
+// neighborhood-scoped peers again, this is where to rebuild it.)
+function _unused_buildPeers(
   current: BusinessArtifact,
   all: BusinessArtifact[],
-): PeerRow[] {
+): unknown[] {
   // Same neighborhood, ordered by rank_neighborhood ascending. Cap at 5.
   const sameHood = all.filter(
     (b) => b.business.neighborhood === current.business.neighborhood,
@@ -100,8 +102,6 @@ function buildPeers(
     .slice()
     .sort((a, b) => a.score.rank_neighborhood - b.score.rank_neighborhood);
 
-  // If there are fewer than 4 in the same neighborhood, pad with same-category
-  // businesses from elsewhere to give the block enough rows.
   const peers = sorted.slice(0, 5);
   if (peers.length < 4) {
     const extras = all
@@ -260,8 +260,6 @@ export default async function BusinessPage({ params }: PageProps) {
 
   // Insight-block data feeds.
   const all = loadAllBusinesses();
-  const peers = buildPeers(art, all);
-  const signal = buildSignal(art);
   const reviewPhrases = meta.keywordPhrases.slice(0, 5);
 
   // Subscore bars: peer median per subscore across same-category businesses.
@@ -403,39 +401,137 @@ export default async function BusinessPage({ params }: PageProps) {
   const neighborhoodLabel = biz.neighborhood;
 
   // Optional Claude-mined business analysis (cached at content/review-analysis/).
-  // When present, it supplies narrative + TL;DR + playbook + review voice.
-  // Deterministic helpers act as fallbacks when a cache file is missing.
   const reviewAnalysis = loadReviewAnalysis(biz.slug);
 
-  // TL;DR, executive preview at the top of the page (the read + what it means).
-  const tldr =
-    reviewAnalysis?.tldr_read && reviewAnalysis.tldr_meaning
-      ? {
-          read: reviewAnalysis.tldr_read,
-          meaning: reviewAnalysis.tldr_meaning,
-        }
-      : buildBusinessTldr(art, social, categoryLabel);
-
-  // Narrative paragraph, the story of this quarter for this business.
-  const narrative = reviewAnalysis?.quarter_narrative
-    ? { body: reviewAnalysis.quarter_narrative, issue: "Spring 2026" }
-    : buildQuarterNarrative(art, social, all, "Spring 2026");
+  // Diagnosis pull-quote for the new hero zone. Falls back to the old
+  // tldr_read sentence if a pre-restructure analysis hasn't been
+  // regenerated yet.
+  const diagnosis = reviewAnalysis?.diagnosis_pullquote ?? {
+    line: reviewAnalysis?.tldr_read ??
+      buildBusinessTldr(art, social, categoryLabel).read,
+    highlight: "",
+  };
 
   // Playbook, 3 data-derived recommendations sorted by leverage.
   const playbook = reviewAnalysis?.playbook?.length
     ? { items: reviewAnalysis.playbook }
     : buildPlaybook(art, social);
 
-  // Creator-ready audit, 10 boolean checks with one-line fixes (stays
-  // deterministic; it's a diagnostic, not an editorial block).
+  // Creator-ready audit, 10 boolean checks with one-line fixes.
   const creatorAudit = buildCreatorAudit(art, social);
 
-  // Fallback pullquote, picked from actual review texts on file.
-  // Used by the non-AI Review Voice display.
+  // Fallback pullquote for Review Voice when no AI analysis exists.
   const reviewPullquote = pickPullquote(meta.reviewTexts);
 
-  // Whisper variant near Momentum: editorial when IG is dormant, whisper otherwise.
+  // Whisper variant near Momentum: editorial when IG is dormant.
   const momentumIsDormant = !!social.ig && social.ig.posts_30d === 0;
+
+  // === At-a-glance rows ================================================
+  // 5 rows: rating, reviews, TikTok creators, IG cadence, family rank.
+  // Mark the row that maps to the weakest subscore as the FOCUS row so
+  // the reader's eye lands on the leverage point.
+  const subs = score.subscores;
+  const weakestKey = (Object.entries(subs) as Array<[SubscoreKey, number]>)
+    .reduce((a, b) => (a[1] <= b[1] ? a : b))[0];
+
+  const familyShort = familyLabel.replace(/^Pittsburgh\s+/, "");
+  const rankFamilyPos =
+    categoryPeerDots.find((p) => p.slug === biz.slug)?.rank ?? null;
+
+  const tt = social.tiktok_mentions;
+  const ttPlaysFmt = tt
+    ? tt.total_plays >= 1_000_000
+      ? `${(tt.total_plays / 1_000_000).toFixed(1)}M plays`
+      : tt.total_plays >= 1_000
+        ? `${Math.round(tt.total_plays / 1_000)}K plays`
+        : `${tt.total_plays.toLocaleString()} plays`
+    : null;
+
+  const glanceRows: GlanceRow[] = [];
+  if (biz.google_rating !== undefined) {
+    const ratingDelta = social.growth?.rating?.delta;
+    glanceRows.push({
+      label: "Google rating",
+      value: `${biz.google_rating}★`,
+      delta:
+        ratingDelta !== undefined && ratingDelta !== null
+          ? `${ratingDelta >= 0 ? "+" : ""}${ratingDelta.toFixed(1)} since Dec`
+          : undefined,
+      focus: weakestKey === "community_spark",
+    });
+  }
+  if (biz.google_review_count !== undefined) {
+    const reviewDelta = social.growth?.review_count?.delta;
+    glanceRows.push({
+      label: "Review volume",
+      value: biz.google_review_count.toLocaleString(),
+      delta:
+        reviewDelta !== undefined && reviewDelta !== null
+          ? `+${reviewDelta} in 90d`
+          : undefined,
+      focus: false,
+    });
+  }
+  if (tt && tt.video_count > 0) {
+    glanceRows.push({
+      label: "TikTok creators filming",
+      value: tt.unique_creators.toString(),
+      delta: ttPlaysFmt ?? undefined,
+      focus: false,
+    });
+  }
+  if (social.ig) {
+    glanceRows.push({
+      label: "Instagram cadence",
+      value: `${social.ig.posts_30d} / 30d`,
+      delta: social.ig.posts_30d === 0 ? "Dormant" : "Active",
+      focus: weakestKey === "momentum",
+    });
+  }
+  if (rankFamilyPos !== null) {
+    glanceRows.push({
+      label: `Rank in ${familyShort}`,
+      value: `#${rankFamilyPos}`,
+      delta: `of ${categoryPeerDots.length}`,
+      focus: false,
+    });
+  }
+  // Failsafe: ensure exactly one row is focused.
+  if (!glanceRows.some((r) => r.focus) && glanceRows.length > 0) {
+    glanceRows[0].focus = true;
+  }
+
+  // === Your Climb stats ================================================
+  // For Issue 01 we don't have rank trajectory yet. Use what we have:
+  // family rank ("Debut"), review delta (from growth), TikTok reach.
+  const climbStats: ClimbStat[] = [
+    {
+      label: "Rank",
+      value: rankFamilyPos !== null ? `#${rankFamilyPos}` : "—",
+      sub: `In ${familyShort} · Issue 01 debut`,
+      direction: "debut",
+    },
+    {
+      label: "Reviews",
+      value: (biz.google_review_count ?? 0).toLocaleString(),
+      sub: social.growth?.review_count?.delta
+        ? `+${social.growth.review_count.delta} since Dec`
+        : "First issue tracked",
+      direction: social.growth?.review_count?.delta ? "up" : "debut",
+    },
+    {
+      label: "Creator reach",
+      value: tt && tt.total_plays > 0
+        ? ttPlaysFmt ?? "—"
+        : social.ig
+          ? `${social.ig.posts_30d}/30d`
+          : "—",
+      sub: tt && tt.unique_creators > 0
+        ? `${tt.unique_creators} creators on TikTok`
+        : "Tracked from this issue",
+      direction: tt && tt.unique_creators > 5 ? "up" : "debut",
+    },
+  ];
 
   return (
     <>
@@ -486,129 +582,100 @@ export default async function BusinessPage({ params }: PageProps) {
             </Suspense>
           </header>
 
-          {/* Quarter narrative, auto-generated editorial paragraph. */}
+          {/* ── HERO ZONE ────────────────────────────────────────────
+              Restructured 2026-04-25 per Anna's feedback: page was too
+              dense. Replaced {QuarterNarrative + BusinessTldr + ScoreHero}
+              stack with a single DiagnosisPullquote, plus a YourClimb
+              strip and an AtAGlance card. Below this hero, three tabs
+              (Playbook · Compare · Voice) carry the depth. */}
           <div className="mt-8 md:mt-10">
-            <QuarterNarrative body={narrative.body} issue={narrative.issue} />
+            <DiagnosisPullquote
+              line={diagnosis.line}
+              highlight={diagnosis.highlight}
+            />
           </div>
 
-          {/* TL;DR, executive preview. Sits above ScoreHero so the reader
-              gets the diagnosis + so-what in 2 lines before the full page. */}
           <div className="mt-6 md:mt-8">
-            <BusinessTldr read={tldr.read} meaning={tldr.meaning} />
+            <YourClimb framing="Issue 01 · Spring 2026" stats={climbStats} />
           </div>
 
-          {/* Main two-column layout on larger screens */}
-          <div className="mt-10 md:mt-12 grid grid-cols-1 lg:grid-cols-[1fr_18rem] gap-8 lg:gap-10">
-            <div className="space-y-8 md:space-y-10">
-              {/* ScoreHero, the big visual anchor (no raw composite, ever). */}
-              <ScoreHero
-                tier={score.tier}
-                categoryLabel={categoryLabel}
-                neighborhoodLabel={neighborhoodLabel}
-                rankCategory={score.rank_category}
-                rankNeighborhood={score.rank_neighborhood}
-                movement={score.movement.overall ?? "Debut"}
-                claimed={false}
-                gapToNextTier={null}
+          <div className="mt-6 md:mt-8">
+            <AtAGlance rows={glanceRows} />
+          </div>
+
+          {/* ── TABS ─────────────────────────────────────────────────
+              Three tabs collapse the prior 16-block stack into focused
+              panels. Each panel is rendered server-side and passed in as
+              children to the client tab shell. */}
+          <div className="mt-10 md:mt-14 grid grid-cols-1 lg:grid-cols-[1fr_18rem] gap-8 lg:gap-10">
+            <div>
+              <BusinessPageTabs
+                playbook={
+                  <div className="space-y-8 md:space-y-10">
+                    <Playbook playbook={playbook} />
+                    <CreatorReadyAudit audit={creatorAudit} />
+                  </div>
+                }
+                compare={
+                  <div className="space-y-8 md:space-y-10">
+                    <SubscoreBars
+                      subscores={score.subscores}
+                      peerMedians={peerMedians}
+                      peerFamilyLabel={familyLabel}
+                      details={subscoreDetails}
+                    />
+                    <PeerDotPlot
+                      currentSlug={biz.slug}
+                      category={familyLabel}
+                      peers={categoryPeerDots}
+                    />
+                  </div>
+                }
+                voice={
+                  <ReviewVoice
+                    analysis={reviewAnalysis}
+                    phrases={
+                      reviewPhrases.length >= 2 ? reviewPhrases : undefined
+                    }
+                    pullquote={reviewPullquote}
+                    totalReviews={totalRev}
+                  />
+                }
               />
 
-              {/* Subscore bars, click a row to expand marginalia. */}
-              <SubscoreBars
-                subscores={score.subscores}
-                peerMedians={peerMedians}
-                peerFamilyLabel={familyLabel}
-                details={subscoreDetails}
-              />
-
-              {/* Peer dot plot, this business vs editorial-family peers. */}
-              <PeerDotPlot
-                currentSlug={biz.slug}
-                category={familyLabel}
-                peers={categoryPeerDots}
-              />
-
-              {/* Momentum sparkline, 30-day IG cadence. */}
-              <div>
-                <MomentumSparkline
-                  posts30d={social.ig?.posts_30d ?? 0}
-                  reels30d={social.ig?.reels_30d ?? 0}
-                  handle={social.ig?.handle ?? null}
-                  hasRealData={!!social.ig}
-                  seed={biz.slug}
+              {/* ── BELOW TABS (secondary detail) ──────────────────── */}
+              <div className="mt-12 md:mt-16 space-y-10 md:space-y-12">
+                {/* TikTok creator coverage stays prominent: it's the
+                    most distinct signal we surface. */}
+                <TikTokMentions
+                  data={social.tiktok_mentions}
+                  businessName={biz.name}
                 />
-                {/* Relay whisper, editorial callout when IG is dormant,
-                    whisper chip otherwise. Earned-in-context. */}
-                {momentumIsDormant ? (
-                  <RelayWhisper variant="editorial" />
-                ) : (
-                  <RelayWhisper variant="whisper" />
-                )}
-              </div>
 
-              {/* TikTok creator coverage, what the city is filming about
-                  this business (regardless of whether they have an account). */}
-              <TikTokMentions
-                data={social.tiktok_mentions}
-                businessName={biz.name}
-              />
+                {/* IG 30-day cadence + Relay whisper. */}
+                <div>
+                  <MomentumSparkline
+                    posts30d={social.ig?.posts_30d ?? 0}
+                    reels30d={social.ig?.reels_30d ?? 0}
+                    handle={social.ig?.handle ?? null}
+                    hasRealData={!!social.ig}
+                    seed={biz.slug}
+                  />
+                  {momentumIsDormant ? (
+                    <RelayWhisper variant="editorial" />
+                  ) : (
+                    <RelayWhisper variant="whisper" />
+                  )}
+                </div>
 
-              {/* The Playbook, 3 data-derived recommendations */}
-              <Playbook playbook={playbook} />
+                {/* Photos */}
+                <PhotoHero
+                  photos={heroImages}
+                  googleImagesCount={meta.imagesCount}
+                  businessName={biz.name}
+                />
 
-              {/* Creator-ready audit, pass/fail checklist */}
-              <CreatorReadyAudit audit={creatorAudit} />
-
-              {/* Unfair advantage */}
-              <UnfairAdvantage
-                label={score.unfair_advantage.label}
-                evidence={score.unfair_advantage.evidence}
-              />
-
-              {/* Signal of the quarter */}
-              <SignalOfQuarter
-                signal={signal.signal}
-                evidence={signal.evidence}
-                direction={signal.direction}
-              />
-
-              {/* Review voice, prefers Claude analysis when cached, falls
-                  back to regex phrases + a data-picked pullquote otherwise. */}
-              <ReviewVoice
-                analysis={reviewAnalysis}
-                phrases={reviewPhrases.length >= 2 ? reviewPhrases : undefined}
-                pullquote={reviewPullquote}
-                totalReviews={totalRev}
-              />
-
-              {/* Peer pulse */}
-              <PeerPulse
-                businessSlug={biz.slug}
-                neighborhood={biz.neighborhood}
-                peers={peers}
-              />
-
-              {/* Social snapshot, real IG data when present, empty state otherwise. */}
-              <SocialState
-                handle={social.ig ? social.ig.handle : null}
-                posts30d={social.ig?.posts_30d ?? 0}
-                reels30d={social.ig?.reels_30d ?? 0}
-                engagementRate={social.ig?.avg_engagement_rate ?? 0}
-                verified={social.ig?.verified ?? false}
-                private={social.ig?.private ?? false}
-                hasRealData={!!social.ig}
-              />
-
-              {/* Social trend, 2-point Dec→Apr line if growth data exists. */}
-              <SocialTrend history={history} hasRealData={!!social.growth} />
-
-              {/* Photo hero, single big image + click-to-enlarge lightbox */}
-              <PhotoHero
-                photos={heroImages}
-                googleImagesCount={meta.imagesCount}
-                businessName={biz.name}
-              />
-
-              {/* Reviewers say */}
+                {/* Reviewers say */}
               <section aria-label="Reviewers say">
                 <div className="border-b border-brand-black/15 pb-3 mb-5 flex flex-wrap items-baseline justify-between gap-2">
                   <h2 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-brand-black">
@@ -656,10 +723,11 @@ export default async function BusinessPage({ params }: PageProps) {
                 )}
               </section>
 
-              {/* Claim affordance (hides when ?claimed=true) */}
-              <Suspense fallback={null}>
-                <ClaimAffordanceUnlessClaimed slug={biz.slug} />
-              </Suspense>
+                {/* Claim affordance (hides when ?claimed=true) */}
+                <Suspense fallback={null}>
+                  <ClaimAffordanceUnlessClaimed slug={biz.slug} />
+                </Suspense>
+              </div>
             </div>
 
             {/* Sidebar: Relay CTA only when claimed=true */}

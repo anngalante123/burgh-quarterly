@@ -11,19 +11,19 @@
       "phrase": "creative cocktail program",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "The drinks were amazing, the atmosphere was elegant, and the service was top notch."
+      "exampleQuote": "The drink pictured is the 'absinthe makes the heart grow fonder' and is a superb riff on a Sazerac/Manhattan/old fashioned."
     },
     {
-      "phrase": "bartender hospitality",
+      "phrase": "bartender recognition",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Alicia was one of the best bartenders I've had — definitely deserves the bar manager position."
     },
     {
       "phrase": "90-minute time limit",
-      "frequency": 1,
+      "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "We were informed that we had to leave because there is a 90-minute time limit. This policy is only mentioned in the menu in very small print."
+      "exampleQuote": "After we ordered a third round of drinks, we were informed that we had to leave because there is a 90-minute time limit."
     },
     {
       "phrase": "hard to get in",
@@ -33,31 +33,38 @@
     }
   ],
   "notable_quote": "I will be making the drive from Cleveland JUST for this bar in the near future.",
-  "sentiment_summary": "Reviewers are consistent about the moody botanical aesthetic, the inventive cocktails, and individual bartenders by name — the one sustained grievance is a 90-minute seating limit that isn't communicated until it's too late.",
-  "quarter_narrative": "Twenty-eight creators filmed Commerce Bar this quarter, generating 1.6 million TikTok plays — Commerce Bar posted none of it back. That gap is the editorial story of Spring 2026 for this East Liberty speakeasy: the city has effectively turned the place into a word-of-mouth engine, and the bar itself is running at near-zero on the channels that would let it capture any of that momentum. @andrewgardone's clip alone — captioned 'Best place in Pittsburgh it's slept on' — pulled 443,400 plays without a single owned asset to funnel the traffic anywhere useful, a problem compounded by the absence of a website or phone number on Google. Hidden Harbor holds the family lead this issue on social momentum, and the distance between them and Commerce Bar is almost entirely a distribution question, not a quality one. Closing that gap — even partially — is what moves this rank.",
-  "tldr_read": "Massive TikTok creator footprint, almost no owned presence to catch it; Neighborhood Staples, #2 in Pittsburgh Bars.",
-  "tldr_meaning": "1.6 million external plays with no website, no TikTok account, and one Instagram post in 30 days means the ceiling on this rank is low until the business controls at least one outbound channel.",
+  "sentiment_summary": "Reviewers keep coming back to the moody atmosphere, specific named bartenders, and cocktails inventive enough to be described in full — the one friction point is a 90-minute seating limit that surfaces with no warning until the check drops.",
+  "quarter_narrative": "Twenty-eight creators filmed Commerce Bar this quarter. The bar filmed almost none of it back. That gap — 1.6 million TikTok plays generated entirely by other people's phones, while the bar's own Instagram posted once in 30 days and has no TikTok presence at all — is the defining story of Commerce Bar's Spring 2026. @andrewgardone's single video, captioned 'Best place in Pittsburgh it's slept on,' pulled 443,400 plays and did more for the bar's visibility than anything the bar published itself. Meanwhile, Hidden Harbor leads the Pittsburgh Bars family on social momentum, which is exactly the axis Commerce Bar is leaving on the table. The rank holds at #2 for now, but the ceiling is creator-driven and the bar isn't in the room when it happens.",
+  "tldr_read": "Strong creator coverage and loyal reviews, near-invisible on its own social channels — Neighborhood Staples, #2 in Pittsburgh Bars.",
+  "tldr_meaning": "The gap between 1.6 million earned TikTok plays and a single Instagram post in 30 days is the widest divergence in this family, and it's what separates Commerce Bar from the top spot.",
+  "diagnosis_pullquote": {
+    "line": "1.6 Million TikTok Plays, One Instagram Post, and a Bar That Isn't Filming Back.",
+    "highlight": "1.6 Million TikTok Plays"
+  },
   "playbook": [
     {
-      "headline": "Claim the TikTok the city already built",
-      "action": "28 creators posted 30+ videos generating 1.6M plays this quarter — create an owned TikTok account to anchor that traffic somewhere.",
+      "headline": "Claim a TikTok presence before someone else does",
+      "action": "28 creators filmed here this quarter with zero reciprocal posts — open a business TikTok and repost the top-performing creator videos within this issue cycle.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "CAPTURE 1.6M PLAYS"
     },
     {
-      "headline": "Put a website and phone on Google",
-      "action": "The Google Business profile has hours but no website and no phone number, cutting off the conversion path entirely for anyone landing there after a TikTok view.",
+      "headline": "Fix the Google listing's missing contact floor",
+      "action": "Commerce Bar has no website and no phone number on Google — two missing fields that break the path from a TikTok view to a reservation attempt.",
       "signal": "conversion_path",
-      "priority": "medium"
+      "priority": "medium",
+      "impact_label": "CLOSE CONVERSION GAP"
     },
     {
-      "headline": "Post more than once a month on Instagram",
-      "action": "One post in 30 days and a 0.72% engagement rate on a business account with clear visual material — the speakeasy aesthetic photographs itself, use it.",
-      "signal": "content_canvas",
-      "priority": "low"
+      "headline": "Address the 90-minute policy in public responses",
+      "action": "The seating limit is the only recurring negative theme across 106 reviews — one pinned response acknowledging it and explaining the format would neutralize the friction before it compounds.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T15:48:40.743Z",
+  "analyzed_at": "2026-04-25T16:14:43.480Z",
   "model": "claude-sonnet-4-6"
 }

@@ -2,68 +2,75 @@
   "slug": "hidden-harbor",
   "themes": [
     {
-      "phrase": "tiki atmosphere and curation",
+      "phrase": "tiki drinks and glassware",
       "frequency": 5,
-      "sentiment": "positive",
-      "exampleQuote": "Tiki isn't just a theme, it's a movement."
-    },
-    {
-      "phrase": "creative unique glassware",
-      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Each drink has its own unique glass/mug, some of which you can buy to take home."
     },
     {
-      "phrase": "attentive knowledgeable staff",
+      "phrase": "creative cocktail craftsmanship",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "The drinks are creative and artistic. You can tell that people who came up with them are very knowledgeable and playful."
+    },
+    {
+      "phrase": "attentive and enthusiastic staff",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The staff are super excited to give recommendations, which are needed with how many options they have."
+      "exampleQuote": "The staff is super excited to give recommendations, which are needed with how many options they have."
     },
     {
       "phrase": "forced 20% gratuity",
       "frequency": 3,
       "sentiment": "negative",
-      "exampleQuote": "Auto 20% tip that is hidden — all you see is a receipt that says total, no mention of 20%, which is buried under three other pieces of paper."
+      "exampleQuote": "Auto 20% tip that is hidden. No one tells you. All you see is a receipt that says total."
     },
     {
-      "phrase": "drink pricing and value",
-      "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "Drinks were a bit pricey but they go all out with these things."
-    },
-    {
-      "phrase": "mocktails and non-alcoholic options",
+      "phrase": "price-to-strength ratio",
       "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "I got a 'very strong' tiki drink at a price of around $20, but it only had 1.5 shots of liquor."
+    },
+    {
+      "phrase": "immersive tiki atmosphere",
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "There's a wide variety of options for everybody, including a couple mocktails for those who don't drink."
+      "exampleQuote": "Tiki isn't just a theme, it's a movement."
     }
   ],
-  "notable_quote": "Some of the best tiki drinks in the U.S. — staff is always very helpful and friendly.",
-  "sentiment_summary": "Reviewers are consistently arrested by the immersive tiki environment and the craft behind the drink program, but a recurring undercurrent around the automatic 20% gratuity — and how transparently it's disclosed — keeps a meaningful slice of visitors walking out with a complicated feeling rather than a clean one.",
-  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed Hidden Harbor this quarter and collectively pulled 2.46 million TikTok plays — and Hidden Harbor itself has no TikTok account to catch a single one of those eyeballs. The bar leads the Pittsburgh Bars category this issue on the strength of a visual catalog that outpaces the family median by more than 20 points, 765 Google reviews running 77% five-star, and creator coverage so concentrated that a single @pennsylvania_core video crested 986,000 plays on its own. What's notable is that all of this is happening without the bar feeding the machine: no Reels in the last 30 days, an Instagram engagement rate sitting below one percent, and zero owned TikTok presence. As the category leader, Hidden Harbor's rank is defensible right now on sheer inertia and third-party enthusiasm — the question going into summer is whether it can convert that external energy into owned momentum before a challenger with a more active hand does.",
-  "tldr_read": "Massive creator-driven TikTok footprint and a strong visual catalog, but Hidden Harbor owns none of that reach — no TikTok account, flat Instagram engagement. Ones to Watch, #1 in Pittsburgh Bars.",
-  "tldr_meaning": "The gap between 2.46 million third-party TikTok plays and zero owned TikTok presence is the single biggest variable in whether this rank hardens into something durable or stays contingent on what creators decide to film next.",
+  "notable_quote": "Some of the best tiki drinks in the U.S., staff is always very helpful and friendly.",
+  "sentiment_summary": "Reviewers consistently fall for the immersive tiki environment and handcrafted cocktails served in collectible glassware, but a recurring friction point — the mandatory 20% gratuity and its inconsistent disclosure — has cost Hidden Harbor goodwill it didn't need to lose.",
+  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed Hidden Harbor this quarter. The bar filmed none of it back. That gap is the dominant story of Spring 2026: 2.46 million TikTok plays, zero of them originating from the business's own account, which doesn't appear to exist on the platform. A single video by @pennsylvania_core pulled nearly a million plays on a caption that barely mentioned the bar by name, which makes the ceiling here feel almost absurdly high. Hidden Harbor leads the Pittsburgh Bars family this issue on the strength of its visual catalog and its review sentiment, both well above the family median, and its conversion path is airtight — hours, phone, website, all present. The rank holds as long as those 28 creators keep showing up, but the first bar that decides to meet them halfway will be the one that's hardest to displace.",
+  "tldr_read": "Nearly 2.5 million TikTok plays from 28 creators, zero posts from the bar itself — strong visual catalog and review sentiment carry the quarter, but the Instagram signal is the thinnest thing keeping this from being a runaway. Ones to Watch, #1 in Pittsburgh Bars.",
+  "tldr_meaning": "The gap between creator-generated TikTok reach and Hidden Harbor's own output is the defining tension in the data — the reviews and photos are already there, and the moment the bar starts capturing even a fraction of the attention creators are already delivering, the momentum axis moves decisively.",
+  "diagnosis_pullquote": {
+    "line": "Twenty-Eight Creators Are Filming This Bar, And The Bar Is Filming None Of It Back.",
+    "highlight": "28 creators filming"
+  },
   "playbook": [
     {
-      "headline": "Claim the TikTok account someone else is building",
-      "action": "28 creators posted 30-plus videos to 2.46M plays this quarter; Hidden Harbor has no account to redirect that traffic or own the search result.",
+      "headline": "Get on TikTok before a competitor does",
+      "action": "28 creators have already done the work — claim a TikTok account, repost the top-performing videos, and post one original reel this month before another Squirrel Hill bar captures this creator base.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "UNLOCK 2.4M REACH"
     },
     {
-      "headline": "Turn Reels into the drink reveal format",
-      "action": "Zero Reels posted in the last 30 days despite a menu built for video — unique glassware, elaborate presentation, and a strength-rating system are all native hooks.",
+      "headline": "Address the gratuity friction publicly",
+      "action": "The 20% auto-gratuity appears in at least 3 of 7 sampled reviews with negative framing — a pinned Google post or menu note explaining the policy upfront would neutralize the most predictable one-star trigger in the review set.",
+      "signal": "community_spark",
+      "priority": "medium",
+      "impact_label": "+SENTIMENT FLOOR"
+    },
+    {
+      "headline": "Push Instagram Reels to match post cadence",
+      "action": "Hidden Harbor posted 12 times in 30 days but published zero Reels — with an engagement rate sitting at 0.79%, static posts are underperforming; a single Reel per week would test whether the visual catalog translates to feed reach.",
       "signal": "content_canvas",
-      "priority": "medium"
-    },
-    {
-      "headline": "Address the gratuity disclosure on the menu page",
-      "action": "The 20% auto-gratuity appears in at least three reviews as a trust issue; a single plain-language line on the Google menu listing or website absorbs the friction before it hits the room.",
-      "signal": "conversion_path",
-      "priority": "low"
+      "priority": "low",
+      "impact_label": "REOPEN SIGNAL"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T15:50:23.307Z",
+  "analyzed_at": "2026-04-25T16:16:26.709Z",
   "model": "claude-sonnet-4-6"
 }

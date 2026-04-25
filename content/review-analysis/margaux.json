@@ -2,68 +2,69 @@
   "slug": "margaux",
   "themes": [
     {
-      "phrase": "drink quality stands out",
-      "frequency": 5,
+      "phrase": "cocktails and seasonal drinks",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Great cocktails, good beer selection, and incredibly friendly staff."
     },
     {
-      "phrase": "bartenders ignoring customers",
+      "phrase": "staff ignoring customers",
       "frequency": 3,
       "sentiment": "negative",
-      "exampleQuote": "We were then ignored for the next 30 minutes."
+      "exampleQuote": "The bartenders chose to chat with other patrons extensively or stand around and chat with each other than check on us."
     },
     {
       "phrase": "cozy atmosphere for working",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "There's lots of cozy seating around the room, and it's a great place to chill and work."
+      "exampleQuote": "Lots of cozy seating around the room, and it's a great place to chill and work."
     },
     {
-      "phrase": "regulars anchor the room",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "There are always regulars at the bar, and it's clear why."
-    },
-    {
-      "phrase": "pricing friction on coffee",
+      "phrase": "coffee pricing friction",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Refill for black coffee is over three dollars; srsly?"
     },
     {
-      "phrase": "management handling gaps",
+      "phrase": "regulars at the bar",
       "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "The manager didn't come over to say 'sorry about that, thanks for your help.'"
+      "sentiment": "positive",
+      "exampleQuote": "There are always regulars at the bar, and it's clear why."
     }
   ],
-  "notable_quote": "Great cocktails, good beer selection, and incredibly friendly staff — there are always regulars at the bar, and it's clear why.",
-  "sentiment_summary": "Reviewers consistently praise the drinks and the room's atmosphere, but a recurring thread of staff inattentiveness — bartenders chatting among themselves, customers waiting 30 minutes unacknowledged — keeps the sentiment from reaching the ceiling its visual presence suggests.",
-  "quarter_narrative": "Margaux's visual footprint is the clearest story of its Spring 2026: 530 photos across multiple categories on Google alone, a creator-fit signal that leads the entire café family by a significant margin, and a physical space East Liberty residents clearly want to document. The catch is that no Pittsburgh TikTok creators have indexed the business yet — a gap that reads less as indifference and more as an opportunity sitting unclaimed while Allegheny Coffee & Tea Exchange, this issue's family leader, has built its position almost entirely on social momentum. Margaux's path upward from Ones to Watch into the upper tier runs directly through closing the distance between how photogenic this place obviously is and how little of that energy is circulating on the platforms where discovery actually happens.",
-  "tldr_read": "Exceptional visual catalog and the highest creator-fit signal in the family, but zero TikTok presence and a phone number missing from Google. Ones to Watch, #3 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The visual infrastructure for a breakout is already in place; the rank climbs when creator discovery catches up to what the room is already offering.",
+  "notable_quote": "There are always regulars at the bar, and it's clear why.",
+  "sentiment_summary": "Reviewers consistently love the cocktail program, the cozy room, and the sense that this is a place with real regulars — but a recurring thread of bartenders visibly ignoring seated customers has cost Margaux real goodwill with first-timers who didn't make it back.",
+  "quarter_narrative": "Twenty-nine TikTok creators filmed Margaux this quarter, generating nearly 385,000 plays — the city is clearly building a visual identity for this place whether Margaux participates or not. The top video, a @heinz_us post framing Pittsburgh's sauce loyalties, pulled 124,700 plays with Margaux as the backdrop. Meanwhile, the family leader this issue is Allegheny Coffee & Tea Exchange, whose climb to the top was driven almost entirely by social momentum — the exact axis where Margaux currently sits flattest. Closing the gap between what creators are producing and what Margaux is publishing under its own name is the clearest path from Ones to Watch into the top tier.",
+  "tldr_read": "Creator coverage is enormous and the visual catalog is strong, but Instagram engagement sits near the floor and there's no phone number on Google. Ones to Watch, #3 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The ceiling is real — 29 creators and 385K plays confirm the city is invested — but without an owned Instagram presence matching that energy, the momentum signal stays borrowed rather than built.",
+  "diagnosis_pullquote": {
+    "line": "Thirty Creators Are Filming This Place, And Its Own Instagram Barely Blinks Back",
+    "highlight": "thirty creators are filming"
+  },
   "playbook": [
     {
-      "headline": "Put a phone number on Google today",
-      "action": "Conversion path sits well below the family median of 100 — a missing phone number is the single easiest fix on the profile.",
-      "signal": "conversion_path",
-      "priority": "high"
-    },
-    {
-      "headline": "Turn the room into TikTok inventory",
-      "action": "Zero Pittsburgh TikToks indexed despite a creator-fit signal that tops the family — one hosted creator evening could break that open.",
-      "signal": "collab_fit",
-      "priority": "medium"
-    },
-    {
-      "headline": "Shift some Instagram posts to Reels",
-      "action": "Nine posts in 30 days but zero Reels; the account is active but formatted for an audience that's already there, not one that's searching.",
+      "headline": "Close the gap your creators already opened",
+      "action": "Post at least 3 Reels this month — Margaux had zero in the last 30 days while 29 outside creators racked up 385K plays.",
       "signal": "momentum",
-      "priority": "low"
+      "priority": "high",
+      "impact_label": "OWN THE WAVE"
+    },
+    {
+      "headline": "Put a phone number on Google",
+      "action": "Google Business shows no phone number — a missing field that quietly drops Margaux's conversion path well below the family median of 100.",
+      "signal": "conversion_path",
+      "priority": "medium",
+      "impact_label": "+CONVERSION RANK"
+    },
+    {
+      "headline": "Address the service pattern publicly",
+      "action": "Two separate reviews describe extended waits after seating; a brief, specific owner response to both would signal the issue is seen — not managed away.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T15:40:14.124Z",
+  "analyzed_at": "2026-04-25T16:19:19.440Z",
   "model": "claude-sonnet-4-6"
 }

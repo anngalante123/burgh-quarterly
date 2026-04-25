@@ -8,22 +8,22 @@
       "exampleQuote": "Contender for best noodle soup in Pittsburgh"
     },
     {
-      "phrase": "handmade noodles visible",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Fun to watch them make noodles, potstickers, and wontons"
-    },
-    {
-      "phrase": "dim sum and dumplings",
+      "phrase": "handmade dumplings and wontons",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Can never go wrong with the soup dumplings"
     },
     {
-      "phrase": "server conduct complaints",
+      "phrase": "open kitchen spectacle",
       "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Fun to watch them make noodles, potstickers, and wontons"
+    },
+    {
+      "phrase": "service complaints",
+      "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "Server deliberately overcharged card for tip after receiving cash tip"
+      "exampleQuote": "Server was incompetent and kept bringing out food that was not ordered"
     },
     {
       "phrase": "menu gaps",
@@ -33,31 +33,38 @@
     }
   ],
   "notable_quote": "Contender for best noodle soup in Pittsburgh.",
-  "sentiment_summary": "Reviewers keep coming back for the handmade noodles, soup dumplings, and the visible production theater of watching food made in front of them; the minority of complaints cluster around service conduct and missing menu items rather than the food itself.",
-  "quarter_narrative": "Twenty-four Pittsburgh creators filmed Everyday Noodles this quarter. The business filmed none of it back. That asymmetry is the defining story of Spring 2026 for Squirrel Hill's most-reviewed noodle shop: 29 million TikTok plays, zero of them published from the restaurant's own account, which doesn't appear to exist. The top video alone — @xiaobin.wu7 pulling 28.4 million plays — generated more reach than most local restaurants see in a year, and Everyday Noodles has no mechanism to acknowledge, redirect, or build on any of it. Meanwhile, at the top of the Pittsburgh Asian Kitchens family, Mola is leading the issue precisely on creator collaboration fit — the signal where Everyday Noodles has real raw material and no infrastructure. With 2,216 Google reviews, a perfect conversion path, and creator interest this concentrated, the rank ceiling is not the food or the foot traffic; it's whether the business ever starts showing up in the spaces where the city is already talking about it.",
-  "tldr_read": "Massive TikTok creator footprint the business isn't capturing, perfect conversion path on Google, no indexed Instagram. Ones to Watch, #1 in Pittsburgh Noodle Shops.",
-  "tldr_meaning": "Every signal axis except Instagram momentum is at or above the family median — the gap between current rank and the top of the Asian Kitchens family is almost entirely an owned-channel problem, not a perception problem.",
+  "sentiment_summary": "Reviewers come back for the handmade dumplings, wonton soup, and the theater of watching noodles being pulled in-house, but a minority of reviews flag real service inconsistencies—overcharging, wrong orders—that prevent the sentiment from being unanimous.",
+  "quarter_narrative": "Twenty-four creators filmed Everyday Noodles this quarter; Everyday Noodles filmed none of it back. The shop has no indexed Instagram and no TikTok account, yet 30-plus creator posts racked up north of 29 million plays—a number that dwarfs almost every business in this issue. The caveat is that the single video responsible for most of that reach, @xiaobin.wu7's 28.4-million-play clip, is a nutrition explainer that uses the restaurant as a prop rather than a destination, which means the conversion signal inside that number is softer than it looks. Still, 23 other creators filmed here organically, which places creator fit well above the Asian Kitchens family median and keeps Everyday Noodles in real contention behind Mola, this issue's family leader and the benchmark for what intentional creator collaboration looks like in this category. The rank holds at #1 in Pittsburgh Noodle Shops for now, but moving deeper into the Asian Kitchens top tier requires the shop to start capturing the audience that is already finding it.",
+  "tldr_read": "Dominant TikTok creator coverage and 2,216 Google reviews with no Instagram presence to show for any of it. Ones to Watch, #1 in Pittsburgh Noodle Shops.",
+  "tldr_meaning": "The conversion path and review volume are already at the ceiling; the only axis with room to move the rank is Instagram momentum, which is currently registering as nearly absent.",
+  "diagnosis_pullquote": {
+    "line": "Twenty-Four Creators Filming, Zero Posts Back—Dormant Instagram Holding a Strong Business Still",
+    "highlight": "dormant Instagram"
+  },
   "playbook": [
     {
-      "headline": "Get an indexed Instagram account live",
-      "action": "With 24 creators already filming and 29M TikTok plays this quarter, an Instagram presence gives this audience somewhere to land.",
+      "headline": "Open an Instagram account and post weekly",
+      "action": "The shop has no indexed Instagram despite 24 creators filming it this quarter; a single active account would begin capturing that existing audience.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Connect with the creators already filming here",
-      "action": "Top five creators — including @xiaobin.wu7 whose single video hit 28.4M plays — filmed here with no apparent coordination from the business.",
+      "headline": "Turn the open kitchen into a recurring visual",
+      "action": "Reviewers specifically call out watching noodles, potstickers, and wontons being made; that's a repeatable photo and video subject that deepens the visual catalog beyond its current 1,873-photo baseline.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+1 VISUAL RANK"
+    },
+    {
+      "headline": "Brief the top five creators directly",
+      "action": "Creators @xiaobin.wu7, @xchromehearts_, @ana.eats.pgh, @cheflinny1, and @joya.rose already filmed here; a direct outreach converts passive coverage into destination-specific content and closes the gap on Mola's creator collaboration advantage.",
       "signal": "collab_fit",
-      "priority": "medium"
-    },
-    {
-      "headline": "Address the service-conduct review pattern",
-      "action": "One detailed negative review citing deliberate overcharging is the primary drag on an otherwise 75% five-star sentiment pool of 2,216 reviews.",
-      "signal": "community_spark",
-      "priority": "low"
+      "priority": "low",
+      "impact_label": "UNLOCK COLLAB"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T15:49:37.487Z",
+  "analyzed_at": "2026-04-25T16:15:41.122Z",
   "model": "claude-sonnet-4-6"
 }

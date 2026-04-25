@@ -2,62 +2,69 @@
   "slug": "oishii-donburi",
   "themes": [
     {
-      "phrase": "reliable bowl staples",
-      "frequency": 3,
+      "phrase": "katsudon and rice bowls",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls"
     },
     {
-      "phrase": "generous portion size",
+      "phrase": "hole in the wall",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Enough for a snack later that night"
+      "exampleQuote": "Easy fast hole in the wall with delicious food"
     },
     {
-      "phrase": "quiet hole-in-the-wall",
-      "frequency": 2,
+      "phrase": "quiet reliable lunch",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Very delicious quiet spot for Korean style bowls"
     },
     {
-      "phrase": "confusing sauce presentation",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "Given 4 little circle containers of unusual sauces and not told what any of them were"
-    },
-    {
-      "phrase": "unwelcoming front-of-house",
+      "phrase": "rude staff experience",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron"
+    },
+    {
+      "phrase": "unlabeled sauces confusion",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Given 4 little circle containers of unusual sauces and not told what any of them were"
     }
   ],
   "notable_quote": "Easy fast hole in the wall with delicious food — we had the katsudon and bulgogi bibimbap and it was perfect for lunch with enough for a snack later that night.",
-  "sentiment_summary": "Reviewers keep coming back for the katsudon and beef bulgogi bowls and leave satisfied by the portions and simplicity; the recurring friction is a front-of-house attitude problem and a condiment presentation that leaves first-timers guessing.",
-  "quarter_narrative": "Oishii Donburi enters Spring 2026 holding the top rank in Pittsburgh Japanese restaurants on the strength of 385 Google reviews skewing heavily positive — yet its Instagram has been silent for 71 days, and no Pittsburgh TikTok creator has filed a single indexed video from the restaurant. That's the tension: a Lawrenceville spot with a devoted repeat-customer base and a visually straightforward product — glossy katsudon, stacked bibimbap bowls — that has generated zero public creator documentation. Meanwhile, Mola leads the Pittsburgh Asian Kitchens family this issue precisely because it cracked creator collaboration; Oishii holds comparable Creator Fit numbers but hasn't seen that potential convert into coverage. The rank holds at number one in its category for now, but without visual momentum entering the feed — either through its own posts or through the creators the food clearly merits — the gap between where it sits and where it could sit stays exactly that: a gap.",
-  "tldr_read": "Solid Google review base, completely dormant Instagram, zero TikTok creator footprint. Ones to Watch, #1 in Pittsburgh Japanese Restaurants.",
-  "tldr_meaning": "The review foundation is credible and the conversion path is fully built out, but the visual and social signals are too quiet to push this out of Ones to Watch without either the account restarting or a creator breaking through first.",
+  "sentiment_summary": "Reviewers consistently land on the same two words — reliable and delicious — with the katsudon and beef bulgogi bowls doing most of the heavy lifting, while a handful of visits surface friction around unexplained condiments and front-of-house attitude.",
+  "quarter_narrative": "Twenty-nine creators filmed Oishii Donburi this quarter; Oishii Donburi filmed none of it back. The business sits at the center of 1.7 million TikTok plays, including a single @kayylou52 video that pulled 852,600 views on a caption that barely mentions the food — and it has posted nothing to Instagram in over 70 days. That gap, the city narrating your restaurant while you stay silent, defines the Spring 2026 story here. Across the Pittsburgh Asian Kitchens family, Mola leads this issue on creator collaboration fit, the exact signal Oishii already has handed to it for free by outside creators. The rank climbs when the business starts meeting that attention halfway — not to manufacture something new, but to hold onto what 29 people are already building.",
+  "tldr_read": "Nearly two million TikTok plays from outside creators, a dormant Instagram, and a Google presence that closes every loop — Ones to Watch, #1 in Pittsburgh Japanese Restaurants.",
+  "tldr_meaning": "The TikTok signal is already one of the strongest in the family; the trajectory question is whether review sentiment and owned social can catch up before that creator wave moves on to somewhere newer.",
+  "diagnosis_pullquote": {
+    "line": "Thirty Creators Are Filming This Place, And The Place Is Filming None Of It Back",
+    "highlight": "thirty creators are filming"
+  },
   "playbook": [
     {
-      "headline": "Break 71 days of Instagram silence",
-      "action": "Post three times in the next two weeks — katsudon close-up, bowl build, portion payoff — before the feed reads abandoned to any creator scouting the account.",
+      "headline": "Break the 71-day Instagram silence",
+      "action": "Post one video this week — a bowl being assembled, a lunch rush — to signal the account is still alive to 29 creators already tagging the business.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Get a Pittsburgh creator into the restaurant",
-      "action": "Creator Fit is already at the family median; the missing piece is zero indexed TikTok videos — one local food creator filming the katsudon could close that gap entirely.",
-      "signal": "collab_fit",
-      "priority": "medium"
-    },
-    {
-      "headline": "Label the sauces, protect the five-star rate",
-      "action": "The condiment confusion and attitude complaints appear in the minority of reviews but consistently anchor the negative ones; a small card naming each sauce removes the most cited friction point.",
+      "headline": "Surface the sauce context on every tray",
+      "action": "A small handwritten or printed card naming each condiment and its dish would directly address the one recurring service complaint visible in reviews.",
       "signal": "community_spark",
-      "priority": "low"
+      "priority": "medium",
+      "impact_label": "+6 SENTIMENT PTS"
+    },
+    {
+      "headline": "Claim the Katsudon category on Google",
+      "action": "With 342 photos already uploaded and a dedicated Katsudon category forming organically, owner-submitted hero shots of that dish can anchor the visual catalog and close the gap against the family median.",
+      "signal": "content_canvas",
+      "priority": "low",
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-25T15:41:55.670Z",
+  "analyzed_at": "2026-04-25T16:21:10.322Z",
   "model": "claude-sonnet-4-6"
 }

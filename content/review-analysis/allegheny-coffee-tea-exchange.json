@@ -5,59 +5,66 @@
       "phrase": "whole bean selection and scooping",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "in the back, where they have a huge selection of whole beans from all over the world. You can smell each one and even bag your own beans"
+      "exampleQuote": "You can smell each one and even bag your own beans, which is a really unique touch."
     },
     {
       "phrase": "cold brew on tap",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "they have multiple taps with different varieties, which makes it fun to mix things up instead of getting the same coffee every time"
+      "exampleQuote": "They have multiple taps with different varieties, which makes it fun to mix things up instead of getting the same coffee every time."
     },
     {
-      "phrase": "staff going out of their way",
+      "phrase": "staff knowledge and helpfulness",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting."
+    },
+    {
+      "phrase": "first-step-in aroma",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "As soon as you open the door, you're hit with that amazing fresh coffee bean smell."
+    },
+    {
+      "phrase": "worth the return trip",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting"
-    },
-    {
-      "phrase": "the smell when you walk in",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "As soon as you open the door, you're hit with that amazing fresh coffee bean smell"
-    },
-    {
-      "phrase": "Strip District destination stop",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "It's a place we make a point to stop at every time we're in Pittsburgh"
+      "exampleQuote": "This is a place we make a point to stop at every time we're in Pittsburgh."
     }
   ],
   "notable_quote": "This place has been around since the 1980s and has built a reputation as one of the city's go-to specialty coffee shops, and you can feel that history the second you walk in.",
-  "sentiment_summary": "Reviewers are emphatic about three things: the sensory ritual of smelling and scooping whole beans, the warmth of named staff members like Eric and Cameron, and the cold brew tap variety — with almost nothing negative surfacing across 924 reviews, the only absence is any real criticism at all, which is its own kind of signal.",
-  "quarter_narrative": "Allegheny Coffee & Tea Exchange leads the Pittsburgh Cafes family this issue, and its dominance isn't accidental — 29 independent TikTok creators filmed here in the last quarter, generating over 1.5 million plays, a number that dwarfs almost every other café in this ranking. The business has its own TikTok account under @adventureallegheny and is active on Instagram with 12 posts and 5 reels in the last 30 days, so this isn't a story about a dormant business being discovered against its will — it's a story about a place that has genuinely earned its Icons of the Burgh status across every axis simultaneously. Where the rank goes from here depends on whether the Instagram engagement rate, currently sitting well below what the TikTok footprint would suggest is possible, starts to reflect the city's actual appetite for this place.",
-  "tldr_read": "Nearly a thousand reviews trending hard positive, 29 creators and 1.5 million TikTok plays last quarter, Instagram active but engagement lagging behind the street-level heat — Icons of the Burgh, #1 in Pittsburgh Coffee Shops and #1 in Pittsburgh Cafes.",
-  "tldr_meaning": "Every structural signal — reviews, visual catalog, creator coverage, conversion path — is locked in at the top of the family; the one axis with room to move is Instagram engagement, which hasn't yet caught up to the volume of attention the city is already paying.",
+  "sentiment_summary": "Reviewers consistently single out the bag-your-own-beans ritual, the cold brew tap variety, and staff who know the product; the 924-review sample has almost no meaningful friction — weak reviews are sparse and generic rather than damning.",
+  "quarter_narrative": "Twenty-nine creators filed into Allegheny Coffee & Tea Exchange this quarter and left with 1.58 million plays on TikTok — a number that dwarfs the shop's own social output and makes it one of the most-filmed coffee destinations in the city right now. The shop's own Instagram is active enough (12 posts, five Reels in 30 days) but the gap between what the city is generating and what the business is capturing is real. In the Pittsburgh Cafes family, Allegheny Coffee leads the issue on social momentum, which is the right signal to hold when you're sitting at number one — momentum rankings reward businesses that are still accelerating, not just the ones that got there first. The rank holds as long as the creator pipeline stays warm and the in-house Instagram keeps pace with the ambient hype the city is already producing.",
+  "tldr_read": "Nearly a thousand reviews running 81% five-star, 29 creators generating 1.58 million TikTok plays, Instagram engagement trailing the energy the city is already putting in — Icons of the Burgh, #1 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The signals are already elite across the board; the only trajectory risk is that creator attention is a borrowed asset, and the business's own posting cadence is not yet converting that borrowed attention into owned audience.",
+  "diagnosis_pullquote": {
+    "line": "29 Creators Filming This Place, The Social Momentum Is Running Far Ahead Of The Account Behind It.",
+    "highlight": "social momentum"
+  },
   "playbook": [
     {
-      "headline": "Close the gap between TikTok heat and Instagram returns",
-      "action": "29 creators generated 1.5M TikTok plays last quarter; Instagram engagement sits at 1.23% — reposting creator content to Instagram Reels is the most direct way to close that distance",
-      "signal": "momentum",
-      "priority": "high"
+      "headline": "Turn 1.58M TikTok plays into followers",
+      "action": "Add a visible TikTok handle (@adventureallegheny) to the Google profile and link-in-bio so the 29 creators already sending traffic have somewhere to send it.",
+      "signal": "conversion_path",
+      "priority": "high",
+      "impact_label": "CAPTURE CREATOR LIFT"
     },
     {
-      "headline": "Put the bean-scooping ritual on camera",
-      "action": "The whole-bean selection and smell-and-scoop experience appears in multiple top reviews but is underrepresented in the 589 Google photos — a dedicated photo category or short-form video would surface the most distinctive in-store moment",
+      "headline": "Post the bean-scooping ritual on Reels",
+      "action": "The bag-your-own-beans experience appears in multiple reviews and is exactly the 15-second sensory hook that drives saves and shares — it has not appeared in the last 30 days of Instagram posts.",
       "signal": "content_canvas",
-      "priority": "medium"
+      "priority": "medium",
+      "impact_label": "+REEL REACH"
     },
     {
-      "headline": "Name the staff who are already named in reviews",
-      "action": "Eric and Cameron are cited by name in reviews; a recurring staff-spotlight format on Instagram or Google posts turns an existing brand asset into a repeatable signal",
-      "signal": "community_spark",
-      "priority": "low"
+      "headline": "Formalize the top-creator relationship",
+      "action": "With 29 unique creators already filming, one structured invite per quarter — early access to a new seasonal cold brew tap — keeps the pipeline from cooling without chasing every video.",
+      "signal": "collab_fit",
+      "priority": "low",
+      "impact_label": "SUSTAIN CREATOR FLOW"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-25T15:48:20.937Z",
+  "analyzed_at": "2026-04-25T16:14:20.246Z",
   "model": "claude-sonnet-4-6"
 }

@@ -8,56 +8,63 @@
       "exampleQuote": "They are made in house and are liege waffles. So, more chewy and sugary with bits of crunch at the edges."
     },
     {
-      "phrase": "waffle and ice cream pairing",
-      "frequency": 4,
+      "phrase": "Nutella pairing",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "When the two are paired together, it's just exquisite."
+      "exampleQuote": "waffle with chocolate ice cream and nutella is the best."
     },
     {
-      "phrase": "friendly family environment",
-      "frequency": 3,
+      "phrase": "family-friendly stop",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Awesome neighborhood place to take the kids. Consistently great waffles!"
     },
     {
-      "phrase": "trust the process philosophy",
+      "phrase": "ice cream quality",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "best waffles ive ever had and the best ice cream in the city."
+    },
+    {
+      "phrase": "walking date visit",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "I really enjoy the philosophy 'trust the process', its simple and elegant."
-    },
-    {
-      "phrase": "Nutella flavor intensity",
-      "frequency": 1,
-      "sentiment": "neutral",
-      "exampleQuote": "A pretty nice amount of Nutella flavor (could always be stronger though)."
+      "exampleQuote": "a great walking date stop on a cold day. we can pop in, grab a sugar waffle and eat it piping hot while walking."
     }
   ],
-  "notable_quote": "The waffles here are not the typical soggy grocery store ones — they are made in house and are liege waffles, so more chewy and sugary with bits of crunch at the edges.",
-  "sentiment_summary": "Reviewers are consistent on two things: the Liège waffle construction is a genuine departure from what most Pittsburghers expect, and the ice cream earns its own praise; the only friction that surfaces, even gently, is that flavors like Nutella could push harder.",
-  "quarter_narrative": "Waffallonia holds the top dessert rank in Pittsburgh with 605 reviews, 76 percent of them five stars, and a review posted as recently as six days ago — the floor is solid. But the ceiling conversation is happening somewhere the business isn't: no Pittsburgh TikTok coverage is indexed, Instagram appears dormant with no posts or reels tracked in the last 30 days and no confirmed business account, and the Instagram signal sits measurably below the family median in a category where Page's is leading the entire Pittsburgh Sweets family specifically on social momentum. For a shop that reviewers describe as a walking-date destination and a place where a hot sugar waffle eaten on the street is the whole point, the visual case is writing itself without any help from the business. Holding the Icons tier at rank one in dessert is defensible on review volume alone for now, but the gap between what the city wants to film and what the business is putting back into circulation is where the rank gets tested in future issues.",
-  "tldr_read": "Near-perfect reviews and a complete Google presence, but a dormant Instagram and no tracked TikTok footprint — Icons of the Burgh, #1 in Pittsburgh Dessert restaurants.",
-  "tldr_meaning": "The review and conversion signals are already at ceiling; what determines whether Waffallonia stays at rank one or gets overtaken by a momentum-driven challenger is entirely a social visibility question.",
+  "notable_quote": "When the two are paired together, it's just exquisite.",
+  "sentiment_summary": "Reviewers are consistently floored by the Liège waffle's chew and caramelized edges, and they single out the ice cream as a genuine standout; the one recurring note is that Nutella flavor in the ice cream could hit harder.",
+  "quarter_narrative": "Twenty-eight creators filmed Waffallonia this quarter and collectively pulled nearly seven million TikTok plays. Waffallonia posted none of it back — no TikTok account, an Instagram that went dark at an unknown point, and a profile that isn't even registered as a business account. The city is doing the work; the shop is watching from the sidewalk. Meanwhile, Page's is leading the Pittsburgh Sweets family on social momentum, which is exactly the axis where Waffallonia is bleeding rank despite holding the strongest review signal and a perfect conversion path in its class. What keeps Waffallonia at #1 in Dessert restaurants is a 605-review foundation and creator goodwill it has not yet had to earn — what moves it up the Sweets family ranking is whether it eventually shows up in its own feed.",
+  "tldr_read": "Nearly seven million TikTok plays from 28 creators, a dormant Instagram, and zero presence on its own social channels — Icons of the Burgh, #1 in Pittsburgh Dessert restaurants.",
+  "tldr_meaning": "The review and discovery signals are already at the top of the family; the only axis suppressing the overall rank is an Instagram momentum reading well below the family median, and that gap widens every week the account stays quiet.",
+  "diagnosis_pullquote": {
+    "line": "Seven Million TikTok Plays, One Business Not Watching Its Own Feed.",
+    "highlight": "Seven Million TikTok Plays"
+  },
   "playbook": [
     {
-      "headline": "Restart Instagram with a business account",
-      "action": "Convert from personal to business account, add a bio, and post — the last confirmed activity is unknown, a gap that's costing measurable signal against a family median that's already 11 points higher.",
+      "headline": "Restart the Instagram account, register it properly",
+      "action": "Convert @waffallonia to a business account, add a bio, and post once — the account has no bio, no business registration, and an unknown last post date.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Make the street-waffle moment findable on TikTok",
-      "action": "Zero Pittsburgh TikToks are indexed for Waffallonia; one creator-facing moment — a fresh Liège waffle pulled from the iron, eaten outside on Murray Avenue — is the exact format that indexes and travels.",
+      "headline": "Claim the TikTok footage already in the wild",
+      "action": "Open a business TikTok and repost or stitch the 28 creators who drove 6.9M plays this quarter — starting with @katelynnsnuggle's 2.1M-play video.",
       "signal": "collab_fit",
-      "priority": "medium"
+      "priority": "medium",
+      "impact_label": "UNLOCK 28 CREATORS"
     },
     {
-      "headline": "Tag the pint pre-order path on Google",
-      "action": "Reviewers mention ordering ice cream by the pint ahead of time, but that purchase path has no visible Google callout — surfacing it in the business description costs nothing and closes a conversion gap.",
-      "signal": "conversion_path",
-      "priority": "low"
+      "headline": "Expand Google photo categories with video",
+      "action": "Add short in-house video clips to Google — the 291 existing photos are strong but the Videos category is underpopulated relative to the Food & drink and Vibe sets.",
+      "signal": "content_canvas",
+      "priority": "low",
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T15:44:57.531Z",
+  "analyzed_at": "2026-04-25T16:24:31.456Z",
   "model": "claude-sonnet-4-6"
 }

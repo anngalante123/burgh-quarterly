@@ -85,9 +85,19 @@ export function Playbook({ playbook }: PlaybookProps) {
               <p className="font-body text-sm md:text-base text-brand-black/80 leading-snug">
                 {item.action}
               </p>
-              <p className="mt-auto pt-2 border-t border-brand-black/10 font-display text-[0.58rem] font-semibold uppercase tracking-[0.18em] text-brand-black/50">
-                Signal · {SIGNAL_LABEL[item.signal]}
-              </p>
+              {/* Impact pill, bottom-of-card. From Claude when present;
+                  falls back to the signal label when an older analysis
+                  hasn't been regenerated yet. */}
+              <div className="mt-auto pt-2 border-t border-brand-black/10 flex items-center justify-between gap-2 flex-wrap">
+                <p className="font-display text-[0.58rem] font-semibold uppercase tracking-[0.18em] text-brand-black/50">
+                  Signal · {SIGNAL_LABEL[item.signal]}
+                </p>
+                {(item as { impact_label?: string }).impact_label ? (
+                  <span className="inline-flex items-center bg-brand-lime text-brand-black font-display text-[0.58rem] font-semibold uppercase tracking-[0.14em] px-2 py-0.5">
+                    {(item as { impact_label?: string }).impact_label}
+                  </span>
+                ) : null}
+              </div>
             </li>
           ))}
         </ol>

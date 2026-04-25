@@ -2,68 +2,75 @@
   "slug": "pages",
   "themes": [
     {
-      "phrase": "long line moves fast",
-      "frequency": 5,
+      "phrase": "line moves quickly",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Line will be long but moves quickly"
+      "exampleQuote": "Line will be long but moves quickly. Takes cash and cards."
     },
     {
-      "phrase": "generous portions, low price",
+      "phrase": "portion size and value",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "That gave me WAY too much ice cream, the price was RIDICULOUSLY affordable"
+      "exampleQuote": "That gave me WAY too much ice cream, the price was RIDICULOUSLY affordable."
     },
     {
-      "phrase": "coconut soft serve standout",
-      "frequency": 1,
+      "phrase": "thick creamy soft serve",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "I had coconut soft serve dipped in a cherry shell and it was incredible — you could really taste the homemade coconut"
+      "exampleQuote": "Thick and creamy, always delicious and they never miss."
     },
     {
-      "phrase": "specific menu calls",
+      "phrase": "wait in line",
+      "frequency": 5,
+      "sentiment": "neutral",
+      "exampleQuote": "Great just be prepared to wait in line for an hour."
+    },
+    {
+      "phrase": "friendly professional staff",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Shout out to the friendly and professional staff!"
+    },
+    {
+      "phrase": "homemade flavors",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Get the Nancy B sundae!"
-    },
-    {
-      "phrase": "seasonal, opens in spring",
-      "frequency": 1,
-      "sentiment": "neutral",
-      "exampleQuote": "End of the season October 24. See you in the spring."
-    },
-    {
-      "phrase": "flavor balance issues",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "The pretzels made it too salty by the end"
+      "exampleQuote": "You could really taste the homemade coconut. Texture and taste were perfect."
     }
   ],
   "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype.",
-  "sentiment_summary": "Reviewers consistently praise the value, the speed of a line that looks punishing but isn't, and the quality of specific items like the Nancy B sundae and coconut soft serve — the lone criticism is about flavor construction on one build-your-own format, not the core product.",
-  "quarter_narrative": "Page's enters Spring 2026 as the undisputed leader of Pittsburgh Sweets — 3,145 Google reviews at 87% five-star, 1,454 photos across a full visual catalog, and a conversion path that is structurally perfect. The social momentum signal is the headline this issue: nine Instagram posts and three Reels in the last 30 days put it ahead of nearly every peer in its family, and the account is verified, active, and bio-complete. What's conspicuously absent is TikTok creator coverage — no indexed Pittsburgh videos means the line of customers stretching out of Arlington hasn't translated into the kind of short-form creator ecosystem that keeps a seasonal business in conversation between visits. Page's holds the top rank because every other axis is built correctly; sustaining it through the off-season depends on whether creator culture finds its way to the South Side slopes.",
-  "tldr_read": "Near-flawless reviews, strong Instagram activity, and a perfect conversion path — but zero indexed TikTok creator coverage for Pittsburgh's top-ranked dessert shop. Icons of the Burgh, #1 in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "Every structural signal is at or above family median; the only measurable gap is TikTok creator presence, which, for a seasonal business with a built-in waiting-line spectacle, represents the single largest untapped source of between-season momentum.",
+  "sentiment_summary": "Reviewers overwhelmingly praise the thick, homemade-quality soft serve, generous portions, and fast-moving staff; the only consistent friction is the wait, which most reviewers immediately forgive.",
+  "quarter_narrative": "Page's didn't need to do much this quarter — Pittsburgh did it for them. Twenty-five creators posted more than 30 TikToks at this Arlington dairy mart, pulling over a million plays, with the shop's own account contributing the top video: 231,700 plays on a banana split that made the format look easy. Unlike most businesses in the Pittsburgh Sweets family, Page's is actually in the room on TikTok, posting under @pagesicecream and watching the views land. That self-possession, combined with a visual catalog that runs well above the family median and an Instagram that has posted nine times in the last 30 days, is exactly why Page's leads the Pittsburgh Sweets ranking this issue with social momentum as its defining signal. What keeps the rank from being untouchable is engagement rate: at 1.29%, Instagram is converting reach into interaction below what the volume of creator activity around this place would predict, and that gap is the one axis worth watching heading into summer.",
+  "tldr_read": "Over a million TikTok plays, 3,145 Google reviews at 87% five-star, and an Instagram that's actually posting — Icons of the Burgh, #1 in Pittsburgh Dessert Shops.",
+  "tldr_meaning": "The foundation is locked — conversion path, visual catalog, and creator coverage are all running at or above family ceiling — but Instagram engagement sits below what the surrounding TikTok energy implies, and closing that gap is what separates a strong rank from an uncontested one.",
+  "diagnosis_pullquote": {
+    "line": "A Million TikTok Plays and Growing, With Social Momentum Nobody In This Family Can Touch.",
+    "highlight": "social momentum"
+  },
   "playbook": [
     {
-      "headline": "Get Arlington on TikTok's map",
-      "action": "Zero Pittsburgh TikToks are indexed for Page's — one creator visit during peak evening line could change that before summer.",
+      "headline": "Convert TikTok energy into Instagram interaction",
+      "action": "Repost or remix top-performing creator TikToks to Instagram Reels to close the gap between 1.08M external plays and 1.29% engagement rate.",
       "signal": "momentum",
-      "priority": "high"
+      "priority": "high",
+      "impact_label": "CLOSE ENGAGEMENT GAP"
     },
     {
-      "headline": "Turn specific menu names into content anchors",
-      "action": "The Nancy B sundae and coconut soft serve are named in reviews but absent from the 9 recent Instagram posts — each named item is a repeatable post format.",
+      "headline": "Name-drop the menu items reviewers keep citing",
+      "action": "The Nancy B sundae and coconut soft serve appear by name in reviews; a dedicated post or Reel for each turns existing word-of-mouth into searchable visual content.",
       "signal": "content_canvas",
-      "priority": "medium"
+      "priority": "medium",
+      "impact_label": "+VISUAL DEPTH"
     },
     {
-      "headline": "Build the off-season presence before closing day",
-      "action": "A seasonal shop that closes in late October loses search and social relevance fast — pre-close content that teases spring reopening keeps the 3,145-review base engaged through winter.",
-      "signal": "community_spark",
-      "priority": "low"
+      "headline": "Activate the 25 creators already filming here",
+      "action": "With 25 unique TikTok creators already shooting at this location, a loose creator night or early-access invite costs little and keeps the quarterly play count above seven figures.",
+      "signal": "collab_fit",
+      "priority": "low",
+      "impact_label": "SUSTAIN 1M PLAYS"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T15:42:13.728Z",
+  "analyzed_at": "2026-04-25T16:21:31.048Z",
   "model": "claude-sonnet-4-6"
 }
