@@ -2,75 +2,75 @@
   "slug": "millies-homemade-ice-cream",
   "themes": [
     {
-      "phrase": "standout staff interactions",
-      "frequency": 5,
+      "phrase": "standout staff names",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Gibson was very enthusiastic, boosted my mood up real quick"
     },
     {
-      "phrase": "specific flavor praise",
-      "frequency": 3,
+      "phrase": "creative seasonal flavors",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Loved the cranberry crumble and the strawberry jam flavors"
     },
     {
-      "phrase": "flavorless scoops",
+      "phrase": "flavorless scoops disappointment",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Buckeye had no flavor, the s'mores had no marshmallow, no Graham cracker"
     },
     {
-      "phrase": "pricing versus value",
+      "phrase": "non-dairy options available",
+      "frequency": 1,
+      "sentiment": "neutral",
+      "exampleQuote": "Nice to stop in for non-dairy options"
+    },
+    {
+      "phrase": "cash payment refused",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I had $100 cash on me — she said she's not allowed to take it"
+    },
+    {
+      "phrase": "pricey but worth it",
       "frequency": 2,
       "sentiment": "neutral",
       "exampleQuote": "Pricey, very good, good service"
-    },
-    {
-      "phrase": "bathroom and cleanliness",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "Looks like it hasn't been cleaned in a month. Each step my feet stuck"
-    },
-    {
-      "phrase": "non-dairy options available",
-      "frequency": 1,
-      "sentiment": "positive",
-      "exampleQuote": "Nice to stop in for non-dairy options"
     }
   ],
-  "notable_quote": "the Pittsburgh nostalgia is real with this flavor of ice cream from Millie's — and this wasn't even an ad.",
-  "sentiment_summary": "Reviewers consistently celebrate individual staff members by name and fall hard for seasonal and specialty flavors, while a minority flag inconsistent execution on classic scoops and a bathroom that undercuts an otherwise warm in-store experience.",
-  "quarter_narrative": "Twenty-six creators filmed Millie's this quarter and racked up 180,000 plays without the business needing to lift a camera — @kimberlyrhoades112 alone pulled 53,500 on a single nostalgia-flavored clip she explicitly flagged as unpaid. That kind of third-party conviction is the signal that moves rankings, and Millie's is sitting inside it without fully inhabiting it. The business does post its own content — 12 Instagram posts and 7 Reels in the last 30 days — but its 0.34% engagement rate suggests the audience the city built around this place hasn't been fully folded into its own channels. In the Pittsburgh Sweets family, Page's holds the top slot this issue on social momentum; for Millie's to close that gap and defend the #1 ice cream rank, the question isn't whether the city wants to talk about it — clearly it does — but whether Millie's can convert 26 cameras pointed at it into a signal it actually owns.",
-  "tldr_read": "Dominant TikTok creator coverage and a locked conversion path hold Millie's at #1 in Pittsburgh Ice Cream, but a 0.34% Instagram engagement rate is the one number that keeps it from running away with Pittsburgh Sweets.",
-  "tldr_meaning": "The creator ecosystem around this business is already doing the heavy lifting on reach; the rank ceiling is determined by whether owned Instagram engagement climbs to match the volume of attention the city is already generating for it.",
+  "notable_quote": "Loved the cranberry crumble and the strawberry jam flavors — waffle cone was amazing too.",
+  "sentiment_summary": "Reviewers consistently rally around specific staff members and inventive seasonal flavors, but a recurring undercurrent of inconsistency — flat-tasting core scoops, a no-cash policy that baffles people, and at least one report of a neglected bathroom — chips at what is otherwise a warm, nostalgic reputation.",
+  "quarter_narrative": "Millie's spent Spring 2026 being one of the most filmed ice cream shops in Pittsburgh without necessarily being the one holding the camera. Twenty-six TikTok creators posted more than 30 videos tagging the Shadyside location this quarter, accumulating 180,000-plus plays, led by a single organic post from @kimberlyrhoades112 that opened on pure Pittsburgh nostalgia and cleared 53,500 views on its own. The business does have its own TikTok account and is active on Instagram — 12 posts and 7 Reels in 30 days — but with an engagement rate sitting at 0.34 percent, its owned channels are not yet converting that creator energy into a self-sustaining signal. In the Pittsburgh Sweets family, Page's holds the social momentum title this issue; for Millie's to close that gap and defend the #1 ice cream rank, the question is whether its Instagram cadence can translate into the kind of engagement its creator community is already proving is possible.",
+  "tldr_read": "TikTok creator reach is enormous, Instagram engagement hasn't caught up yet — Icons of the Burgh, #1 in Pittsburgh Ice Cream.",
+  "tldr_meaning": "The rank is secure for now on the strength of review volume and creator coverage, but the Instagram engagement rate is the one axis that could quietly erode momentum before the next issue.",
   "diagnosis_pullquote": {
-    "line": "26 Creators Are Filming This Place, and Its Own Instagram Hasn't Caught Up Yet",
-    "highlight": "26 creators are filming"
+    "line": "Pittsburgh Nostalgia Is Real — Twenty-Six Creators Proved It, The Engagement Rate Has Not Yet",
+    "highlight": "The Engagement Rate"
   },
   "playbook": [
     {
-      "headline": "Close the gap between creator reach and owned engagement",
-      "action": "With 26 creators generating 180K plays this quarter, repost or stitch the top-performing clips natively to Millie's own TikTok and Instagram to recapture attention the city is already handing over.",
+      "headline": "Turn 0.34% engagement into a real number",
+      "action": "With 12 posts in 30 days, the posting cadence is not the problem — response strategy is. Reply to every comment for 30 days and test one direct question per caption to move a 0.34% rate meaningfully.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "RECLAIM 180K PLAYS"
+      "impact_label": "+ENGAGEMENT RATE"
     },
     {
-      "headline": "Surface the staff by name in content",
-      "action": "Three reviewers name specific employees — Sara, Evan, Gibson — by name with outsized warmth; a short staff-spotlight Reel series would directly feed the sentiment signal where it's already strongest.",
-      "signal": "community_spark",
+      "headline": "Let the top creator video do the recruiting",
+      "action": "@kimberlyrhoades112's 53,500-play nostalgia video is the strongest proof-of-concept Millie's has this quarter — resharing it to Stories and crediting the creator costs nothing and signals to 25 other filming creators that this business is paying attention.",
+      "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+SENTIMENT DEPTH"
+      "impact_label": "ACTIVATE 26 CREATORS"
     },
     {
-      "headline": "Address the cleanliness flag before it compounds",
-      "action": "One detailed negative review flags the bathroom as visibly dirty with sticky floors; at 1,150 reviews and climbing, a single recurring cleanliness complaint can anchor a sentiment ceiling — a posted cleaning schedule addresses it before it replicates.",
-      "signal": "conversion_path",
+      "headline": "Address the operational friction reviews flag",
+      "action": "Two review threads — the no-cash policy and the bathroom condition — are low-frequency but high-specificity complaints that disproportionately drag sentiment; a posted policy note and a visible cleaning log are the kind of operational fixes that show up in review language within one quarter.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "PROTECT 82 SENTIMENT"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:20:09.916Z",
+  "analyzed_at": "2026-04-25T16:40:02.231Z",
   "model": "claude-sonnet-4-6"
 }

@@ -198,8 +198,8 @@ Return ONLY a valid JSON object with this exact shape (no markdown, no prose out
   "tldr_meaning": "One sentence describing what the data says about the business's trajectory. NOT a call to action. Write in data terms. Example: 'The climb to Icons depends on the Instagram signal restarting, the other axes are already there.' Adapt to this business.",
 
   "diagnosis_pullquote": {
-    "line": "ONE display-scale sentence that captures the whole quarter. Pattern: '[STRENGTH 1] AND [STRENGTH 2], UNDERCUT BY [WEAKNESS] [SHORT QUALIFIER].' Or for a strong quarter: '[STRENGTH] WITH [STRENGTH 2], [POSITION DESCRIPTOR].' Write it in title case (we render uppercase). 12-22 words. The line must read aloud as a real headline a journalist would write, not a stat dump. The 'highlight' phrase below must appear verbatim in this sentence.",
-    "highlight": "The 2-4 word phrase from the line that should be visually highlighted in lime/purple. This is the focus metric, the part the reader's eye should lock onto. Examples: 'review sentiment', 'dormant Instagram', '26 creators on TikTok', 'no creator coverage', 'social momentum'. Must appear word-for-word inside the line."
+    "line": "ONE display-scale headline sentence that captures THIS business specifically. Title case. 10-20 words. CRITICAL DIVERSITY RULES: (1) Do NOT use the construction 'N Creators Are Filming This Place, And [X] Is Filming None Of It Back' or any close variant — that phrasing has been overused. (2) Do NOT default to leading with a creator count unless that count is genuinely the most interesting fact. (3) Lead with whatever is most distinctive about THIS specific business, not the category. Could be the review pull-quote, the tier ranking, a specific menu item from reviews, the Instagram cadence, the photo gap, a sentiment contrast, etc. (4) Vary syntactic structure across businesses — questions, contrasts ('X but Y'), declaratives, fragments, 'The thing about X is Y' patterns. Use whatever fits. The line should read aloud as a real headline a journalist would write — surprising, specific, and unmistakably about THIS business. If you used the same opening pattern on a previous business, pick a different angle.",
+    "highlight": "EXACTLY 2-4 consecutive words copy-pasted character-for-character from the 'line' above. Do NOT paraphrase. Do NOT translate digits to words or vice versa. If 'line' says 'Twenty-Six Creators', highlight must be a substring like 'Twenty-Six Creators' — NOT '26 creators'. If 'line' says '1.6 Million', the highlight must contain '1.6 Million' verbatim. To verify before returning: search for the highlight string inside the line string — it must be found. Pick the most provocative 2-4 word phrase in the line as the highlight."
   },
 
   "playbook": [
@@ -243,6 +243,42 @@ Themes rules:
     BusinessAnalysis,
     "slug" | "analyzed_at" | "model" | "review_count"
   >;
+
+  // Defensive repair: the highlight phrase MUST be a literal substring of the
+  // line, otherwise the DiagnosisPullquote component renders the line without
+  // any lime highlight (the focus point of the entire hero). Claude sometimes
+  // writes the line in title-case-with-words and the highlight in digits, which
+  // fails the substring check. One repair call fixes it.
+  const dp = (parsed as { diagnosis_pullquote?: { line: string; highlight: string } }).diagnosis_pullquote;
+  if (dp && !dp.line.toLowerCase().includes(dp.highlight.toLowerCase())) {
+    console.warn(
+      `[analyze-business] ${input.name}: highlight "${dp.highlight}" not found in line, requesting repair`,
+    );
+    const repair = await client.messages.create({
+      model: MODEL,
+      max_tokens: 256,
+      messages: [
+        {
+          role: "user",
+          content: `You wrote this diagnosis pull-quote, but the highlight is not a literal substring of the line:
+
+LINE: "${dp.line}"
+HIGHLIGHT: "${dp.highlight}"
+
+Pick a 2-4 word phrase that already appears VERBATIM (character-for-character) inside the line. Do NOT change the line. Return ONLY the new highlight phrase as plain text, no quotes, no JSON, nothing else.`,
+        },
+      ],
+    });
+    const repairBlock = repair.content.find((b) => b.type === "text");
+    if (repairBlock && repairBlock.type === "text") {
+      const fixed = repairBlock.text.trim().replace(/^["']|["']$/g, "");
+      if (dp.line.toLowerCase().includes(fixed.toLowerCase())) {
+        dp.highlight = fixed;
+        console.warn(`[analyze-business] ${input.name}: repaired highlight to "${fixed}"`);
+      }
+    }
+  }
+
   return {
     ...parsed,
     review_count: input.reviews.length,

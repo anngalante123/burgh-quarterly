@@ -8,10 +8,16 @@
       "exampleQuote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in Liège."
     },
     {
-      "phrase": "ice cream by itself",
-      "frequency": 4,
+      "phrase": "ice cream quality",
+      "frequency": 6,
       "sentiment": "positive",
       "exampleQuote": "I'm an ice cream snob and this is some of the best ice cream I've ever had."
+    },
+    {
+      "phrase": "sampling limit tension",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The comment along the lines of 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone, made us feel uncomfortable."
     },
     {
       "phrase": "owner and staff warmth",
@@ -20,51 +26,45 @@
       "exampleQuote": "The owner is extremely friendly and helped make the experience that much better."
     },
     {
-      "phrase": "sample policy friction",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "The comment 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone, made us feel uncomfortable."
-    },
-    {
-      "phrase": "specific flavor callouts",
-      "frequency": 2,
+      "phrase": "waffle and ice cream combo",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The sage salted almond on a waffle was so good."
+      "exampleQuote": "Add that delicious waffle to it and you go into a brand new realm of delicious."
     }
   ],
   "notable_quote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in Liège.",
-  "sentiment_summary": "Reviewers are emphatic about the ice cream quality and the Liège waffles, often calling both out separately before noting how good they are together; the one recurring friction point is a sample-limit policy that has landed as rude on at least two visits.",
-  "quarter_narrative": "Twenty-nine Pittsburgh creators filmed Treat this quarter — 1.3 million TikTok plays, zero posts from the business itself in the last 199 days. The city is doing the storytelling; Treat is watching from the counter. That gap is the whole story of Spring 2026 for this shop: a nearly perfect review record, a creator community that has genuinely adopted the place, and an Instagram that has been dark since last fall. Family leader Page's is running away with the Pittsburgh Sweets conversation on social momentum, which is exactly the axis Treat has abandoned. The rank climbs when Treat starts showing up in its own story — the raw material is already there, flavor names like sage salted almond and a waffle that passes the Belgium test are exactly the kind of specificity that moves a feed.",
-  "tldr_read": "Thirty creators, 1.3M TikTok plays, 199 days without an Instagram post — Ones to Watch, #3 in Pittsburgh Ice Cream.",
-  "tldr_meaning": "Every signal axis is at or above the family median except Instagram momentum, which is near zero — the ceiling here is much higher than the current rank reflects, and it hinges entirely on whether the account goes active again.",
+  "sentiment_summary": "Reviewers are consistent and emphatic about the product — the ice cream and Liège waffles are genuinely exceptional — but a recurring thread around sample-tasting interactions introduces a service friction that surfaces across more than one visit.",
+  "quarter_narrative": "Twenty-nine Pittsburgh creators filmed Treat this quarter and racked up 1.3 million plays on TikTok — and Treat itself has been silent on Instagram for 199 days, posting nothing while the city shoots content inside its shop. That gap defines the Spring 2026 story here: a product compelling enough to drive unsolicited six-figure video coverage, paired with an owned channel that has gone completely dark. The Pittsburgh Sweets leader this issue is Page's, whose momentum is being driven by sustained social output; Treat sits at seventh in that family despite a stronger-than-median creator signal and 623 Google reviews at 98% five-star. Closing the Instagram gap — and resolving the service-consistency thread before it compounds — is what moves this business out of the Ones to Watch tier.",
+  "tldr_read": "A million TikTok plays with zero posts in six months, a stellar product signal, and one recurring service friction: Ones to Watch, #3 in Pittsburgh Ice Cream.",
+  "tldr_meaning": "The TikTok and review axes are already performing at or above family medians; the Instagram dormancy is the single variable suppressing the overall signal, and the service sentiment thread is the only review axis with downward pressure.",
   "diagnosis_pullquote": {
-    "line": "A Million TikTok Plays And Counting, Built On A Dormant Instagram",
-    "highlight": "dormant Instagram"
+    "line": "The City Has Watched 1.3 Million TikTok Plays Here — The Shop Has Posted Nothing In Six Months",
+    "highlight": "Posted Nothing In Six Months"
   },
   "playbook": [
     {
-      "headline": "End the 199-day Instagram silence",
-      "action": "Post once a week to @treat_pgh — a waffle close-up, a flavor name on a chalkboard, anything — to reactivate a feed sitting on 7.65% engagement.",
+      "headline": "Restart Instagram before the gap compounds",
+      "action": "Account has been silent 199 days; one post per week featuring the waffle-and-ice-cream combo stops the signal erosion immediately.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Redirect creator energy back to your account",
-      "action": "Tag the 29 creators already filming here in Instagram Stories; 1.3M plays of existing TikTok content is a ready-made reason to re-engage that audience without starting from zero.",
-      "signal": "collab_fit",
+      "headline": "Post a visible sample policy at the counter",
+      "action": "Two reviews cite the same tasting-limit friction; a clear posted limit removes ambiguity and eliminates the recurring negative thread before it becomes a pattern in the star rating.",
+      "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "UNLOCK 29 CREATORS"
+      "impact_label": "+SENTIMENT FLOOR"
     },
     {
-      "headline": "Post a visible sample-limit policy",
-      "action": "A small counter sign clarifying the sample limit would address the two negative reviews directly and remove the ambiguity that has cost the shop otherwise five-star visits.",
-      "signal": "community_spark",
+      "headline": "Pull the 29 creators into the feed",
+      "action": "Twenty-nine creators filmed here this quarter for 1.3M plays; reposting one creator video monthly converts passive TikTok reach into owned Instagram content with no production cost.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "CAPTURE REACH"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:24:07.838Z",
+  "analyzed_at": "2026-04-25T16:44:13.624Z",
   "model": "claude-sonnet-4-6"
 }

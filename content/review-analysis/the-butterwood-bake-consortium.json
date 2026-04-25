@@ -14,57 +14,57 @@
       "exampleQuote": "Amazing stop for a date night or after dinner."
     },
     {
-      "phrase": "vegan and allergy options",
-      "frequency": 2,
+      "phrase": "vegan and dietary options",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Gluten and nut free options are fire. Also, a great option if you're looking for a bakery with tasty vegan options."
+      "exampleQuote": "Gluten and nut free options are 🔥"
     },
     {
-      "phrase": "slow service lines",
+      "phrase": "slow service, long waits",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "The lines are long and do not move. We wound up leaving both times."
+      "exampleQuote": "The lines are long and do not move."
     },
     {
-      "phrase": "coffee execution gaps",
+      "phrase": "coffee program inconsistency",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "Awesome baked goods but really needs a quality and service check on coffee."
+      "exampleQuote": "Awesome baked goods but really needs a quality/service check on coffee."
     }
   ],
   "notable_quote": "You can tell a lot of time and love went into crafting those recipes — they should be proud.",
-  "sentiment_summary": "Reviewers are consistent on the baked goods — the cakes, blondies, and specialty vegan options generate real enthusiasm — but coffee service draws repeated criticism, both for execution quality and operational gaps that leave customers confused or empty-handed.",
-  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed The Butterwood Bake Consortium this quarter. The business posted nothing back. That gap — 527,441 TikTok plays, zero Instagram posts in 514 days — is the defining story of Butterwood's Spring 2026: the city has decided this place matters, and the place has gone quiet while it's happening. The top video alone, from @thepittstopp, cleared 165,600 plays on the strength of a chocolate cake and a caption that did Butterwood's marketing for it. Meanwhile, Allegheny Coffee & Tea Exchange leads the Pittsburgh Cafes family this issue specifically on social momentum — the signal where Butterwood is most exposed. With a creator ecosystem already this engaged and a visual catalog and review floor that rank above family median, the path from Ones to Watch to a higher tier runs directly through whether Butterwood decides to show up in its own feed.",
-  "tldr_read": "Twenty-eight creators, 527K TikTok plays, and a dormant Instagram that hasn't posted in 514 days — Ones to Watch, #2 in Pittsburgh Cafes.",
-  "tldr_meaning": "Every other signal axis is either at or above the family median; Instagram Momentum is the single variable holding this business out of the tier above.",
+  "sentiment_summary": "Reviewers are consistently won over by the baked goods — the lavender cake, the brown butter blondie, the vegan options — but the coffee program draws real skepticism, with two independent reviewers flagging execution gaps ranging from missing ingredients to a macchiato served in an espresso cup.",
+  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed Butterwood this quarter. Butterwood filmed none of it back. With 527,000 TikTok plays driven entirely by outside voices — including a 165,600-play video from @thepittstopp calling it among the very best bakeries in the city — Butterwood sits at an unusual intersection: a place the city is actively evangelizing while the business's own Instagram has been dark for 514 days. That gap is what holds it at #2 in its family tier, trailing Allegheny Coffee & Tea Exchange, whose social momentum is the signal of the issue. The rank climbs when Butterwood starts claiming even a fraction of the creator energy already circling it.",
+  "tldr_read": "527,000 TikTok plays from other people's accounts, zero Instagram posts in 514 days — strong visual catalog and creator fit, dormant owned social. Ones to Watch, #2 in Pittsburgh Cafes.",
+  "tldr_meaning": "The creator coverage is already doing the work of a much more active business; the ceiling here is determined by whether Butterwood ever steps into the signal that's already been built around it.",
   "diagnosis_pullquote": {
-    "line": "28 Creators Are Filming This Place, And Butterwood Is Filming None Of It Back.",
-    "highlight": "28 creators are filming"
+    "line": "The City Has Been Selling Butterwood For 514 Days. Butterwood Has Said Nothing.",
+    "highlight": "Said Nothing"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram clock, now",
-      "action": "514 days without a post while creators are generating half a million plays is the clearest gap in the portfolio — one post per week, even just plating shots, breaks the drought.",
+      "headline": "Restart Instagram after 514 dormant days",
+      "action": "Post once a week for four weeks — cakes only, no captions needed to start — to reactivate the account's distribution signal.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Turn creator volume into a repost pipeline",
-      "action": "28 creators have already done the filming — reposting even 4-5 of those TikToks to Instagram Stories costs nothing and reconnects the account to active buzz.",
-      "signal": "collab_fit",
+      "headline": "Address the coffee program publicly",
+      "action": "Two reviewers flagged coffee execution independently; one review cited no ice, no chai, and a mislabeled macchiato — acknowledging the standard resets reviewer trust.",
+      "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "UNLOCK 28 CREATORS"
+      "impact_label": "+8 SENTIMENT PTS"
     },
     {
-      "headline": "Address the coffee service narrative directly",
-      "action": "Two distinct review threads — slow lines and inconsistent coffee execution — are consistent enough to drag sentiment; a visible operational fix or staff training moment is the quietest way to lift the 79 review floor.",
-      "signal": "community_spark",
+      "headline": "Formalize creator relationships already filming",
+      "action": "28 unique creators posted 30+ TikToks this quarter without any apparent coordination — a simple in-store signal or creator contact point could channel that into recurring coverage.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "UNLOCK REPEAT COVERAGE"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T16:23:48.821Z",
+  "analyzed_at": "2026-04-25T16:43:54.421Z",
   "model": "claude-sonnet-4-6"
 }

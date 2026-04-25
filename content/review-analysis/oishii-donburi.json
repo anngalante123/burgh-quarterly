@@ -2,69 +2,69 @@
   "slug": "oishii-donburi",
   "themes": [
     {
-      "phrase": "katsudon and rice bowls",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls"
-    },
-    {
-      "phrase": "hole in the wall",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Easy fast hole in the wall with delicious food"
-    },
-    {
-      "phrase": "quiet reliable lunch",
+      "phrase": "fast hole-in-the-wall",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Very delicious quiet spot for Korean style bowls"
+      "exampleQuote": "Easy fast hole in the wall with delicious food."
     },
     {
-      "phrase": "rude staff experience",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron"
+      "phrase": "katsudon and bulgogi bowls",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls."
     },
     {
-      "phrase": "unlabeled sauces confusion",
+      "phrase": "quiet reliable lunch spot",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Very delicious quiet spot for Korean style bowls."
+    },
+    {
+      "phrase": "rude staff attitude",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Given 4 little circle containers of unusual sauces and not told what any of them were"
+      "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron."
+    },
+    {
+      "phrase": "unclear sauce presentation",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Four little circle containers of unusual sauces and not told what any of them were."
     }
   ],
-  "notable_quote": "Easy fast hole in the wall with delicious food — we had the katsudon and bulgogi bibimbap and it was perfect for lunch with enough for a snack later that night.",
-  "sentiment_summary": "Reviewers consistently land on the same two words — reliable and delicious — with the katsudon and beef bulgogi bowls doing most of the heavy lifting, while a handful of visits surface friction around unexplained condiments and front-of-house attitude.",
-  "quarter_narrative": "Twenty-nine creators filmed Oishii Donburi this quarter; Oishii Donburi filmed none of it back. The business sits at the center of 1.7 million TikTok plays, including a single @kayylou52 video that pulled 852,600 views on a caption that barely mentions the food — and it has posted nothing to Instagram in over 70 days. That gap, the city narrating your restaurant while you stay silent, defines the Spring 2026 story here. Across the Pittsburgh Asian Kitchens family, Mola leads this issue on creator collaboration fit, the exact signal Oishii already has handed to it for free by outside creators. The rank climbs when the business starts meeting that attention halfway — not to manufacture something new, but to hold onto what 29 people are already building.",
-  "tldr_read": "Nearly two million TikTok plays from outside creators, a dormant Instagram, and a Google presence that closes every loop — Ones to Watch, #1 in Pittsburgh Japanese Restaurants.",
-  "tldr_meaning": "The TikTok signal is already one of the strongest in the family; the trajectory question is whether review sentiment and owned social can catch up before that creator wave moves on to somewhere newer.",
+  "notable_quote": "Easy fast hole in the wall with delicious food — perfect for lunch with enough for a snack later that night.",
+  "sentiment_summary": "Reviewers keep coming back for the katsudon and bulgogi bowls and value the no-fuss pace, but a recurring note about cold service and unexplained accompaniments suggests the in-room experience doesn't always match the food.",
+  "quarter_narrative": "Twenty-nine creators filmed Oishii Donburi this quarter and the place filmed none of it back. Those 30-plus TikToks cleared 1.7 million plays — headlined by a single @kayylou52 video that cracked 852,000 — while the restaurant's own Instagram posted nothing for 71 days and its TikTok presence is nonexistent. That gap is the whole story of Spring 2026: a Lawrenceville bowl spot that the city has essentially decided to make famous on its behalf. Mola leads the Pittsburgh Asian Kitchens family this issue partly because creator collaboration fit is a measurable, active signal there; at Oishii, the creator signal is even louder in raw volume but entirely external, which caps how far the momentum translates into rank. Closing that gap — not in output volume but in any consistent presence that converts 1.7 million impressions into a recognizable account — is the single variable that would move this listing from Ones to Watch into a higher tier.",
+  "tldr_read": "1.7 million TikTok plays from outside creators, zero posts in 71 days from the business itself — Ones to Watch, #1 in Pittsburgh Japanese Restaurants.",
+  "tldr_meaning": "The review floor is solid and the conversion path is complete, but rank progression stalls until the business captures even a fraction of the creator energy already surrounding it.",
   "diagnosis_pullquote": {
-    "line": "Thirty Creators Are Filming This Place, And The Place Is Filming None Of It Back",
-    "highlight": "thirty creators are filming"
+    "line": "1.7 Million Plays, Zero Posts: Pittsburgh Already Made Oishii Famous",
+    "highlight": "Zero Posts"
   },
   "playbook": [
     {
-      "headline": "Break the 71-day Instagram silence",
-      "action": "Post one video this week — a bowl being assembled, a lunch rush — to signal the account is still alive to 29 creators already tagging the business.",
+      "headline": "Claim the TikTok that already exists",
+      "action": "Open a business TikTok account and repost or stitch the top creator videos — 29 creators have done the work, the account just needs to exist.",
       "signal": "momentum",
       "priority": "high",
+      "impact_label": "CAPTURE 1.7M"
+    },
+    {
+      "headline": "Restart Instagram before the signal flatlines",
+      "action": "Account has been silent 71 days; one post per week of a katsudon or bulgogi bowl — the two menu items reviewers name most — would restart an 0.40% engagement rate before it erodes further.",
+      "signal": "content_canvas",
+      "priority": "medium",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Surface the sauce context on every tray",
-      "action": "A small handwritten or printed card naming each condiment and its dish would directly address the one recurring service complaint visible in reviews.",
+      "headline": "Address the sauce and service friction",
+      "action": "Label the four condiment containers at service — a small printed card costs nothing and directly answers the single most specific negative review pattern before it recurs.",
       "signal": "community_spark",
-      "priority": "medium",
-      "impact_label": "+6 SENTIMENT PTS"
-    },
-    {
-      "headline": "Claim the Katsudon category on Google",
-      "action": "With 342 photos already uploaded and a dedicated Katsudon category forming organically, owner-submitted hero shots of that dish can anchor the visual catalog and close the gap against the family median.",
-      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-25T16:21:10.322Z",
+  "analyzed_at": "2026-04-25T16:41:10.310Z",
   "model": "claude-sonnet-4-6"
 }

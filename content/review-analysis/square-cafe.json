@@ -2,75 +2,69 @@
   "slug": "square-cafe",
   "themes": [
     {
-      "phrase": "vegan-friendly menu",
+      "phrase": "vegan-friendly menu options",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for."
+      "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for"
     },
     {
-      "phrase": "weekend wait list",
+      "phrase": "weekend wait times",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Usually, there's a wait list, since the food is so good. Weekdays, you might get right in."
+      "exampleQuote": "Usually there's a wait list, since the food is so good. They do a good job of quickly and efficiently clearing tables."
     },
     {
-      "phrase": "standout hash and benedicts",
+      "phrase": "price-to-portion ratio",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The food is excellent here. However the portion to price ratio is not the best."
+    },
+    {
+      "phrase": "standout individual dishes",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The Brussels sprout hash was amazing and unique. Would go back."
+    },
+    {
+      "phrase": "relaxed unhurried atmosphere",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The Brussels sprout hash was amazing and unique."
-    },
-    {
-      "phrase": "price-to-portion gap",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "The portion to price ratio is not the best. The home fries are just small cubed fries."
-    },
-    {
-      "phrase": "lingering coffee atmosphere",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "I stayed longer talking and drinking lattes. No pressure to eat up and go."
-    },
-    {
-      "phrase": "maintenance details overlooked",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "The bathroom sink faucet was broke, and the paper towel dispenser was empty."
+      "exampleQuote": "No pressure to eat up and go."
     }
   ],
   "notable_quote": "It's no wonder this place gets slammed with customers.",
-  "sentiment_summary": "Reviewers come back for the Brussels sprout hash, the vegan biscuit sandwich, and a room that doesn't rush them out — the friction is almost entirely structural: wait times, portion sizing relative to price, and minor maintenance details that undercut an otherwise polished operation.",
-  "quarter_narrative": "Thirty TikTok creators filmed Square Cafe this quarter; Square Cafe filmed essentially none of it back. Those 30 creators generated 489,171 plays — led by @mayavalletta's 191,000-play brunch video — while the restaurant's own Instagram logged an engagement rate of 0.19% across 11 posts. The city is actively vouching for this place at scale, and the business is watching from the sideline. Meanwhile, the Pittsburgh Businesses family leader this issue is Nan Xiang Soup Dumplings, whose position at the top turns entirely on social momentum — the exact axis where Square Cafe is leaving the most on the table. Holding the Icons of the Burgh rank at #1 in Pittsburgh Brunch is defensible right now on the strength of 1,839 reviews and elite creator fit, but that cushion gets thinner each quarter the TikTok signal runs one direction.",
-  "tldr_read": "Dominant reviews and 30 TikTok creators filming the room, undercut by a 0.19% Instagram engagement rate the business doesn't seem to notice. Icons of the Burgh, #1 in Pittsburgh Brunch.",
-  "tldr_meaning": "The rank holds on review volume and creator activity the business didn't initiate — the signal becomes fragile the moment creator attention drifts and there's no owned channel with enough momentum to compensate.",
+  "sentiment_summary": "Reviewers keep returning to specific dishes — Brussels sprout hash, vegan biscuit sandwich, eggs benedict — and consistently praise the unhurried, welcoming atmosphere; the recurring friction is value perception, with a handful of guests feeling the portion sizes don't justify the price point.",
+  "quarter_narrative": "Thirty Pittsburgh creators posted TikToks tagged at Square Cafe this quarter, pulling 489,171 plays without the restaurant filming a single second of its own. That gap is the defining story of Spring 2026 for this East Liberty institution: it sits at number one in Pittsburgh brunch and holds the Icons of the Burgh tier largely on the strength of 1,839 Google reviews and a creator ecosystem it had nothing to do with building. Meanwhile, the family leader this issue is Nan Xiang Soup Dumplings, whose rank is driven by social momentum — the kind Square Cafe currently outsources entirely to strangers. The rank holds for now, but holding number one in a category where TikTok discovery is accelerating means the distance between iconic and invisible can close faster than the weekend waitlist.",
+  "tldr_read": "Near-perfect conversion path, 490K TikTok plays from creators it didn't invite, and an Instagram engagement rate that flatlines at 0.19% — Icons of the Burgh, #1 in Pittsburgh Brunch.",
+  "tldr_meaning": "The review foundation and creator pull are strong enough to defend the rank short-term, but Instagram momentum is the one axis where this business is measurably losing ground to the category it leads.",
   "diagnosis_pullquote": {
-    "line": "Thirty Creators Are Filming This Place, And The Place Is Filming None Of It Back.",
-    "highlight": "thirty creators"
+    "line": "The City Keeps Showing Up. Square Cafe Has Stopped Showing Itself.",
+    "highlight": "Stopped Showing Itself"
   },
   "playbook": [
     {
-      "headline": "Turn 30 creators into owned content",
-      "action": "Repost or stitch the 30 TikToks already tagged to this business — starting with @mayavalletta's 191,000-play video — before that momentum belongs entirely to someone else's channel.",
+      "headline": "Turn 0.19% engagement into something real",
+      "action": "Post 4 Reels per month minimum — Square Cafe posted only 2 in 30 days while 30 creators posted 30+ times for them.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE 489K PLAYS"
-    },
-    {
-      "headline": "Fix the Instagram engagement floor",
-      "action": "At 0.19% engagement across 11 posts in 30 days, the posting cadence isn't the problem — the content format is. Shift at least 4 of those monthly posts to Reels; the account currently runs 2.",
-      "signal": "content_canvas",
-      "priority": "medium",
       "impact_label": "+INSTAGRAM SIGNAL"
     },
     {
-      "headline": "Address the recurring price-value critique",
-      "action": "Two independent reviewers flagged portion sizing and bathroom upkeep in the same quarter — small fixes, but they're showing up in written reviews and will compound in sentiment over time.",
+      "headline": "Claim the TikTok territory already yours",
+      "action": "Open a business TikTok account and repost the top 5 creator videos — @mayavalletta alone delivered 191,000 plays with zero coordination.",
+      "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "CAPTURE 489K PLAYS"
+    },
+    {
+      "headline": "Address the value narrative before it compounds",
+      "action": "Portion and price complaints appear in roughly 15% of critical reviews — a menu callout or portion transparency on the website could blunt the recurring friction before it pulls sentiment below 83.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "PROTECT SENTIMENT"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T16:23:05.137Z",
+  "analyzed_at": "2026-04-25T16:43:13.620Z",
   "model": "claude-sonnet-4-6"
 }

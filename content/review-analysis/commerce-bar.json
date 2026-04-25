@@ -11,60 +11,60 @@
       "phrase": "creative cocktail program",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "The drink pictured is the 'absinthe makes the heart grow fonder' and is a superb riff on a Sazerac/Manhattan/old fashioned."
+      "exampleQuote": "The drinks are designed with so much creativity."
     },
     {
-      "phrase": "bartender recognition",
-      "frequency": 3,
+      "phrase": "Alicia and Addie bartenders",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Alicia was one of the best bartenders I've had — definitely deserves the bar manager position."
     },
     {
       "phrase": "90-minute time limit",
-      "frequency": 2,
+      "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "After we ordered a third round of drinks, we were informed that we had to leave because there is a 90-minute time limit."
+      "exampleQuote": "We were informed that we had to leave because there is a 90-minute time limit — mentioned only in very small print."
     },
     {
-      "phrase": "hard to get in",
+      "phrase": "hard to get a table",
       "frequency": 2,
       "sentiment": "neutral",
       "exampleQuote": "I have tried to get in a few times but it is always super packed."
     }
   ],
-  "notable_quote": "I will be making the drive from Cleveland JUST for this bar in the near future.",
-  "sentiment_summary": "Reviewers keep coming back to the moody atmosphere, specific named bartenders, and cocktails inventive enough to be described in full — the one friction point is a 90-minute seating limit that surfaces with no warning until the check drops.",
-  "quarter_narrative": "Twenty-eight creators filmed Commerce Bar this quarter. The bar filmed almost none of it back. That gap — 1.6 million TikTok plays generated entirely by other people's phones, while the bar's own Instagram posted once in 30 days and has no TikTok presence at all — is the defining story of Commerce Bar's Spring 2026. @andrewgardone's single video, captioned 'Best place in Pittsburgh it's slept on,' pulled 443,400 plays and did more for the bar's visibility than anything the bar published itself. Meanwhile, Hidden Harbor leads the Pittsburgh Bars family on social momentum, which is exactly the axis Commerce Bar is leaving on the table. The rank holds at #2 for now, but the ceiling is creator-driven and the bar isn't in the room when it happens.",
-  "tldr_read": "Strong creator coverage and loyal reviews, near-invisible on its own social channels — Neighborhood Staples, #2 in Pittsburgh Bars.",
-  "tldr_meaning": "The gap between 1.6 million earned TikTok plays and a single Instagram post in 30 days is the widest divergence in this family, and it's what separates Commerce Bar from the top spot.",
+  "notable_quote": "I will be making the drive from Cleveland just for this bar in the near future.",
+  "sentiment_summary": "Reviewers are consistently seduced by the moody botanical aesthetic and bartenders who treat the craft seriously, but the 90-minute turnover policy — buried in fine print and enforced mid-round — has generated the loudest complaints and the bar's only real trust deficit.",
+  "quarter_narrative": "Commerce Bar spent Spring 2026 as one of Pittsburgh's worst-kept secrets: 28 creators filed into its candlelit East Liberty room this quarter and produced more than 1.6 million TikTok plays without the bar posting a single Reel or claiming a TikTok account of its own. The top video alone — @andrewgardone's 443,400-play 'Best place in Pittsburgh it's slept on' — did more for Commerce's reputation than anything the business published itself, a gap that defines the quarter as much as the moody reviews do. Family leader Hidden Harbor owns this tier on social momentum, and Commerce is ceding that ground by default, not by choice. Closing the gap between what the city is filming and what the business is willing to show about itself is the single axis that moves this rank.",
+  "tldr_read": "1.6 million TikTok plays this quarter, zero Reels posted and no website on Google — strong creator pull, near-invisible owner presence; Neighborhood Staples, #2 in Pittsburgh Bars.",
+  "tldr_meaning": "The TikTok signal is already doing the work of a far more active business, which means this rank holds for now — but without the bar converting that earned attention into any owned channel, the ceiling stays exactly where it is.",
   "diagnosis_pullquote": {
-    "line": "1.6 Million TikTok Plays, One Instagram Post, and a Bar That Isn't Filming Back.",
-    "highlight": "1.6 Million TikTok Plays"
+    "line": "The City Keeps Showing Up On TikTok; Commerce Bar Has Yet To Introduce Itself.",
+    "highlight": "Introduce Itself"
   },
   "playbook": [
     {
-      "headline": "Claim a TikTok presence before someone else does",
-      "action": "28 creators filmed here this quarter with zero reciprocal posts — open a business TikTok and repost the top-performing creator videos within this issue cycle.",
+      "headline": "Claim a TikTok account and post once",
+      "action": "28 creators filmed here this quarter and drove 1.6M plays — a single owner-posted TikTok would begin converting that attention into a followed account.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE 1.6M PLAYS"
+      "impact_label": "UNLOCK OWNED REACH"
     },
     {
-      "headline": "Fix the Google listing's missing contact floor",
-      "action": "Commerce Bar has no website and no phone number on Google — two missing fields that break the path from a TikTok view to a reservation attempt.",
+      "headline": "Add website and phone to Google profile",
+      "action": "Commerce Bar has no website and no phone number listed on Google — two missing fields that drop every visitor who wants to book or confirm hours before driving over.",
       "signal": "conversion_path",
       "priority": "medium",
-      "impact_label": "CLOSE CONVERSION GAP"
+      "impact_label": "+CONVERSION FLOOR"
     },
     {
-      "headline": "Address the 90-minute policy in public responses",
-      "action": "The seating limit is the only recurring negative theme across 106 reviews — one pinned response acknowledging it and explaining the format would neutralize the friction before it compounds.",
+      "headline": "Address the 90-minute policy publicly",
+      "action": "One review specifically called the small-print time limit unprofessional; a clear, upfront mention in the Google description would neutralize the only recurring trust complaint in the review set.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "STOP SENTIMENT DROP"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T16:14:43.480Z",
+  "analyzed_at": "2026-04-25T16:34:28.841Z",
   "model": "claude-sonnet-4-6"
 }

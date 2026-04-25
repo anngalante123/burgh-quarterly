@@ -20,57 +20,57 @@
       "exampleQuote": "I just wish this place was bigger, gets packed quickly!"
     },
     {
-      "phrase": "sweet drink profile",
+      "phrase": "sweet drinks",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "mine was definitely on the sweet side"
+      "exampleQuote": "We liked all the drinks we ordered though mine was definitely on the sweet side."
     },
     {
-      "phrase": "staff warmth",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "the workers are so nice every time I visit!"
-    },
-    {
-      "phrase": "wifi and workspace limits",
+      "phrase": "order mix-up",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "The wi-fi isn't good enough to work from here so I wouldn't come back for that."
+      "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin, let them know, I had to pay for a new muffin."
+    },
+    {
+      "phrase": "nice workers",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The workers are so nice every time I visit!"
     }
   ],
   "notable_quote": "The strawberry matcha here might be the best I've ever had — the coffee, food, and overall cafe vibe is fantastic.",
-  "sentiment_summary": "Reviewers consistently return for the specialty drinks — the strawberry matcha and tiramisu latte pull most of the enthusiasm — while a small number flag the cramped footprint, inconsistent order accuracy, and weak wifi as reasons not to make it a work-from-cafe habit.",
-  "quarter_narrative": "Twenty-six Pittsburgh creators filed into Delanie's Coffee Shadyside this quarter and posted 30-plus TikToks; Delanie's itself posted three times in the last month and filmed none of it back. The city is doing the storytelling, and the business is mostly a spectator — @tessadecario's tiramisu latte clip alone drew 37,200 plays from a caption that could have lived on Delanie's own feed. Meanwhile, Allegheny Coffee & Tea Exchange holds the Cafes category on the strength of its social momentum, a signal Delanie's has already been handed by its creators but hasn't picked up. The rank moves if the business starts showing up in the same places its customers already are.",
-  "tldr_read": "26 creators filming, 3 posts in 30 days, one of the strongest creator-fit readings in the family — Ones to Watch, #4 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The creator coverage is already there; the gap closing between what Pittsburgh is posting about Delanie's and what Delanie's posts about itself is what separates this ranking from the tier above it.",
+  "sentiment_summary": "Reviewers keep coming back for the strawberry matcha and tiramisu latte specifically, but the space's size, inconsistent order accuracy, and weak Wi-Fi are the recurring friction points.",
+  "quarter_narrative": "Twenty-six Pittsburgh creators filmed Delanie's Coffee Shadyside this quarter, generating 176,000 plays on TikTok — and the shop posted three times on Instagram, none of it video. The tiramisu and strawberry matcha have become a minor TikTok genre in their own right, with @tessadecario alone pulling 37,200 plays off a single caption. Meanwhile, the family leader this issue, Allegheny Coffee & Tea Exchange, holds its position on social momentum — the exact axis where Delanie's has the most ground to close. The rank moves when the shop starts treating its own feed with a fraction of the urgency the city is already showing it.",
+  "tldr_read": "Twenty-six creators are filming the tiramisu latte; Delanie's is posting once every two weeks and has no TikTok presence at all. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The creator signal is already doing the work of a marketing department; the gap between what the city is producing and what the business is publishing is the single variable separating this rank from the next tier.",
   "diagnosis_pullquote": {
-    "line": "26 Creators Are Filming This Place, And The Place Is Filming None Of It Back",
-    "highlight": "26 creators are filming"
+    "line": "The Tiramisu Has 176,000 TikTok Plays. The Shop Has No TikTok Account.",
+    "highlight": "176,000 TikTok Plays"
   },
   "playbook": [
     {
-      "headline": "Post what creators are already making",
-      "action": "Repost or recreate the tiramisu latte and strawberry matcha content that 26 creators have already validated — the menu and the audience are proven, the account just needs to show up.",
+      "headline": "Get on TikTok before the creators move on",
+      "action": "Claim a TikTok account now — 26 creators have already written the brief; the shop just needs to show up in the same conversation.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE 176K PLAYS"
+      "impact_label": "UNLOCK OWNED REACH"
     },
     {
-      "headline": "Build the visual catalog past its floor",
-      "action": "With 96 photos spread thin across only 6 active Google categories, adding 15-20 dedicated interior and drink photos would bring the visual catalog closer to the family median and give new customers something to land on before visiting.",
+      "headline": "Turn Instagram Reels gap into a visual asset",
+      "action": "Zero Reels posted in 30 days; one 15-second pour video of the strawberry matcha or tiramisu latte would directly address the Instagram Momentum signal sitting below the family median.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+MOMENTUM SIGNAL"
     },
     {
-      "headline": "Turn the order-error review into a policy signal",
-      "action": "The three-star review about a wrong muffin and being charged for a replacement is the single clearest drag on an otherwise warm sentiment picture — a public owner response acknowledges it without burying it.",
+      "headline": "Resolve the order accuracy friction publicly",
+      "action": "Review sentiment sits well below the family median at 60; one pointed response to the muffin-charge complaint would signal accountability and protect the 82% five-star rate from erosion.",
       "signal": "community_spark",
       "priority": "low",
       "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T16:15:01.866Z",
+  "analyzed_at": "2026-04-25T16:34:47.389Z",
   "model": "claude-sonnet-4-6"
 }

@@ -2,7 +2,7 @@
   "slug": "lorelei",
   "themes": [
     {
-      "phrase": "bartender craft and warmth",
+      "phrase": "bartender personality and craft",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "The bar staff are friendly, knowledgeable about the cocktails, and they seem to project this vibe that makes me want to come back time and time again."
@@ -11,60 +11,60 @@
       "phrase": "cacio e pepe pizza",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The cacio e pepe pizza is a must."
+      "exampleQuote": "the cacio e pepe pizza is a must"
     },
     {
-      "phrase": "creative cocktail program",
+      "phrase": "date night low-key vibe",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Awesome, creative drinks. Bartender was excellent and friendly."
+      "exampleQuote": "the best lowkey date night place or hangout place with friends"
     },
     {
-      "phrase": "staff inclusivity failure",
+      "phrase": "slow service on drinks",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "The staff didn't ask my friend's name, and instead used the deadname on their credit card to identify their order."
+      "exampleQuote": "waited 10 minutes for a sip of jager and whiskey"
     },
     {
-      "phrase": "slow service at the bar",
+      "phrase": "staff deadnaming incident",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Waited 10 minutes for a sip of Jäger and whiskey."
+      "exampleQuote": "Trans folks beware, the staff didn't ask my friend's name, and instead used the deadname on their credit card"
     }
   ],
-  "notable_quote": "Statistically, I'm bound to have less than a perfect experience here, but it hasn't happened — maybe this place is the bee's knees.",
-  "sentiment_summary": "Reviewers are drawn in by confident bartenders and a cocktail list that earns genuine loyalty, but service pacing and one pointed inclusivity complaint pull the sentiment ceiling down from where the drinks alone would take it.",
-  "quarter_narrative": "Twenty-nine creators filmed Lorelei this quarter and collectively put 19 million TikTok plays on the board — the business posted four times to Instagram and zero Reels. That gap is the whole story. The city is doing the promotional work; Lorelei is mostly watching. Across the Signal Pittsburgh family this issue, Nan Xiang Soup Dumplings holds the top spot precisely because of social momentum it's generating itself, not just momentum generated for it. For Lorelei, the conversion infrastructure is already airtight — hours, phone, website, all present — so the rank ceiling isn't a discovery problem, it's a capture problem: all that TikTok energy lands nowhere the business controls.",
-  "tldr_read": "Nineteen million TikTok plays from outside creators, four Instagram posts in thirty days, and a review base that loves the bartenders but carries one unresolved inclusivity incident — Ones to Watch, #2 in Pittsburgh Restaurants.",
-  "tldr_meaning": "The TikTok signal is enormous and entirely creator-dependent; until Lorelei's own channels reflect even a fraction of that energy, the rank is being held up by other people's cameras.",
+  "notable_quote": "Statistically, I'm bound to have less than a perfect experience here, but it hasn't happened — maybe it's dumb luck, maybe this place is the bee's knees.",
+  "sentiment_summary": "Reviewers are consistently won over by the bartenders and the cocktail program, with the cacio e pepe pizza pulling its own weight on the food side — but a specific and serious complaint about a trans guest being deadnamed by staff, and scattered notes about slow drink service, keep the sentiment ceiling lower than the 72% five-star headline suggests.",
+  "quarter_narrative": "Lorelei's Spring 2026 is a study in disconnected attention: 29 creators posted TikToks tagged at this East Liberty bar this quarter, those videos accumulated over 19 million plays, and the business spent the season posting four times on Instagram with zero Reels and a 0.79% engagement rate. The city is watching; Lorelei is mostly quiet. That contrast is especially sharp against Nan Xiang Soup Dumplings, the Pittsburgh Businesses leader this issue, whose own social momentum is the driving force behind its first-place position — the lesson being that visibility earned by others has a shorter shelf life than visibility owned. Lorelei holds the #2 restaurant slot on the strength of its Conversion Path and Creator Fit signals, but closing the gap between the city's enthusiasm and the business's own voice on social is the move that decides whether it rises or stalls.",
+  "tldr_read": "Nineteen million TikTok plays, four Instagram posts last month, zero Reels — Ones to Watch, #2 in Pittsburgh Restaurants.",
+  "tldr_meaning": "The creator ecosystem has already done the hard work of building awareness; whether that awareness compounds or dissipates depends almost entirely on whether Lorelei starts converting it into its own Instagram signal.",
   "diagnosis_pullquote": {
-    "line": "Nineteen Million TikTok Plays, Four Instagram Posts, And The City Is Doing The Work For Them.",
-    "highlight": "nineteen million TikTok plays"
+    "line": "Nineteen Million Plays, And The Bar Hasn't Picked Up The Camera Once.",
+    "highlight": "Nineteen Million Plays"
   },
   "playbook": [
     {
-      "headline": "Turn TikTok views into owned content",
-      "action": "Post one Reel per week sourced from the 29 creators already filming here — reposts take minutes and close a gap that cost nothing to open.",
+      "headline": "Start posting Reels before the quarter ends",
+      "action": "Zero Reels in 30 days against 19M TikTok plays is the sharpest gap in this profile — one Reels series built around the cocktail program closes it.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE THE SIGNAL"
+      "impact_label": "RESTART SIGNAL"
     },
     {
-      "headline": "Address the inclusivity incident directly",
-      "action": "A visible, specific response to the deadname review — and a named policy change on order pickup — moves sentiment and demonstrates the bar staff warmth reviewers already praise extends to policy.",
-      "signal": "community_spark",
-      "priority": "medium",
-      "impact_label": "+SENTIMENT FLOOR"
-    },
-    {
-      "headline": "Fill the visual catalog gap",
-      "action": "At 291 photos across six categories, Lorelei sits well below the family median — ten owner-submitted photos targeting the cocktail and pizza menu could shift the visual signal meaningfully before next issue.",
+      "headline": "Expand the Google photo catalog beyond six categories",
+      "action": "291 photos across only six tagged categories leaves the visual catalog well below the family median — interior and bar-action shots from owners would move it.",
       "signal": "content_canvas",
-      "priority": "low",
+      "priority": "medium",
       "impact_label": "+VISUAL RANK"
+    },
+    {
+      "headline": "Address the deadnaming review publicly and specifically",
+      "action": "One unaddressed negative review on a trans-inclusion complaint carries outsized weight on sentiment — a direct, policy-specific response is the honest fix.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-25T16:19:02.751Z",
+  "analyzed_at": "2026-04-25T16:38:53.979Z",
   "model": "claude-sonnet-4-6"
 }

@@ -2,75 +2,69 @@
   "slug": "hidden-harbor",
   "themes": [
     {
-      "phrase": "tiki drinks and glassware",
-      "frequency": 5,
+      "phrase": "creative tiki drinks",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "Tiki isn't just a theme, it's a movement."
+    },
+    {
+      "phrase": "unique glassware and cups",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Each drink has its own unique glass/mug, some of which you can buy to take home."
     },
     {
-      "phrase": "creative cocktail craftsmanship",
-      "frequency": 5,
-      "sentiment": "positive",
-      "exampleQuote": "The drinks are creative and artistic. You can tell that people who came up with them are very knowledgeable and playful."
-    },
-    {
-      "phrase": "attentive and enthusiastic staff",
+      "phrase": "attentive knowledgeable staff",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The staff is super excited to give recommendations, which are needed with how many options they have."
+      "exampleQuote": "The staff are super excited to give recommendations, which are needed with how many options they have."
     },
     {
       "phrase": "forced 20% gratuity",
       "frequency": 3,
       "sentiment": "negative",
-      "exampleQuote": "Auto 20% tip that is hidden. No one tells you. All you see is a receipt that says total."
+      "exampleQuote": "Auto 20% tip that is hidden — all you see is a receipt that says total, plus tip line."
     },
     {
-      "phrase": "price-to-strength ratio",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "I got a 'very strong' tiki drink at a price of around $20, but it only had 1.5 shots of liquor."
-    },
-    {
-      "phrase": "immersive tiki atmosphere",
-      "frequency": 5,
-      "sentiment": "positive",
-      "exampleQuote": "Tiki isn't just a theme, it's a movement."
+      "phrase": "drink pricing and value",
+      "frequency": 3,
+      "sentiment": "neutral",
+      "exampleQuote": "Drinks were a bit pricey but they go all out with these things."
     }
   ],
-  "notable_quote": "Some of the best tiki drinks in the U.S., staff is always very helpful and friendly.",
-  "sentiment_summary": "Reviewers consistently fall for the immersive tiki environment and handcrafted cocktails served in collectible glassware, but a recurring friction point — the mandatory 20% gratuity and its inconsistent disclosure — has cost Hidden Harbor goodwill it didn't need to lose.",
-  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed Hidden Harbor this quarter. The bar filmed none of it back. That gap is the dominant story of Spring 2026: 2.46 million TikTok plays, zero of them originating from the business's own account, which doesn't appear to exist on the platform. A single video by @pennsylvania_core pulled nearly a million plays on a caption that barely mentioned the bar by name, which makes the ceiling here feel almost absurdly high. Hidden Harbor leads the Pittsburgh Bars family this issue on the strength of its visual catalog and its review sentiment, both well above the family median, and its conversion path is airtight — hours, phone, website, all present. The rank holds as long as those 28 creators keep showing up, but the first bar that decides to meet them halfway will be the one that's hardest to displace.",
-  "tldr_read": "Nearly 2.5 million TikTok plays from 28 creators, zero posts from the bar itself — strong visual catalog and review sentiment carry the quarter, but the Instagram signal is the thinnest thing keeping this from being a runaway. Ones to Watch, #1 in Pittsburgh Bars.",
-  "tldr_meaning": "The gap between creator-generated TikTok reach and Hidden Harbor's own output is the defining tension in the data — the reviews and photos are already there, and the moment the bar starts capturing even a fraction of the attention creators are already delivering, the momentum axis moves decisively.",
+  "notable_quote": "Some of the best tiki drinks in the U.S., and the staff is always very helpful and friendly.",
+  "sentiment_summary": "Reviewers are overwhelmingly sold on the atmosphere, the inventive cocktail program, and the staff's enthusiasm — the recurring friction point is the 20% automatic gratuity, which multiple guests felt was obscured rather than disclosed upfront.",
+  "quarter_narrative": "Twenty-eight Pittsburgh creators posted at least 30 TikToks at Hidden Harbor this past quarter, generating 2.46 million plays while the bar itself has no presence on the platform to receive any of it. That asymmetry is the defining signal of Hidden Harbor's Spring 2026: the city has already decided this place is worth filming, and the business is effectively absent from the conversation it's generating. Hidden Harbor leads the Pittsburgh Bars family this issue on the strength of a visual catalog well above the family median and review sentiment that holds firm despite a vocal thread of complaints about the gratuity policy. Holding the top rank through the next issue depends on whether the Instagram signal — technically active but underperforming on engagement — can convert any fraction of that TikTok audience into a following the bar actually owns.",
+  "tldr_read": "2.46 million TikTok plays with no bar-owned account to capture them, reviews strong and active, Instagram engagement soft. Ones to Watch, #1 in Pittsburgh Bars.",
+  "tldr_meaning": "The visual and review axes are already carrying this ranking; the ceiling is an Icons conversation, but it stays out of reach until the bar exists on the platform where the city is already watching it.",
   "diagnosis_pullquote": {
-    "line": "Twenty-Eight Creators Are Filming This Bar, And The Bar Is Filming None Of It Back.",
-    "highlight": "28 creators filming"
+    "line": "The City Is Watching 2.46 Million Times, And The Bar Has No Account To Answer.",
+    "highlight": "2.46 Million Times"
   },
   "playbook": [
     {
-      "headline": "Get on TikTok before a competitor does",
-      "action": "28 creators have already done the work — claim a TikTok account, repost the top-performing videos, and post one original reel this month before another Squirrel Hill bar captures this creator base.",
+      "headline": "Claim the TikTok audience already watching",
+      "action": "Open a Hidden Harbor TikTok account — 28 creators have already done the work of proving the format fits, pulling 2.46M plays with zero bar participation.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "UNLOCK 2.4M REACH"
+      "impact_label": "CAPTURE 2.4M REACH"
     },
     {
-      "headline": "Address the gratuity friction publicly",
-      "action": "The 20% auto-gratuity appears in at least 3 of 7 sampled reviews with negative framing — a pinned Google post or menu note explaining the policy upfront would neutralize the most predictable one-star trigger in the review set.",
+      "headline": "Turn gratuity friction into a trust signal",
+      "action": "Address the recurring 20% gratuity complaint — three reviewers flagged it — by making disclosure the first thing servers say, not the last thing guests discover.",
       "signal": "community_spark",
       "priority": "medium",
       "impact_label": "+SENTIMENT FLOOR"
     },
     {
-      "headline": "Push Instagram Reels to match post cadence",
-      "action": "Hidden Harbor posted 12 times in 30 days but published zero Reels — with an engagement rate sitting at 0.79%, static posts are underperforming; a single Reel per week would test whether the visual catalog translates to feed reach.",
+      "headline": "Push Instagram engagement past the median",
+      "action": "Twelve posts in 30 days is solid cadence, but a 0.79% engagement rate trails the family median of 55 on Instagram momentum — Reels are at zero and that gap is direct.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "+ENGAGEMENT RANK"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T16:16:26.709Z",
+  "analyzed_at": "2026-04-25T16:36:12.633Z",
   "model": "claude-sonnet-4-6"
 }

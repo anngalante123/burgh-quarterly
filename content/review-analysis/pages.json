@@ -2,75 +2,69 @@
   "slug": "pages",
   "themes": [
     {
-      "phrase": "line moves quickly",
-      "frequency": 4,
+      "phrase": "long line moves quickly",
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Line will be long but moves quickly. Takes cash and cards."
+      "exampleQuote": "Line will be long but moves quickly."
     },
     {
-      "phrase": "portion size and value",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "That gave me WAY too much ice cream, the price was RIDICULOUSLY affordable."
-    },
-    {
-      "phrase": "thick creamy soft serve",
+      "phrase": "thick and creamy soft serve",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Thick and creamy, always delicious and they never miss."
     },
     {
-      "phrase": "wait in line",
-      "frequency": 5,
-      "sentiment": "neutral",
-      "exampleQuote": "Great just be prepared to wait in line for an hour."
+      "phrase": "too much ice cream",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "That gave me WAY too much ice cream, the price was RIDICULOUSLY affordable."
     },
     {
-      "phrase": "friendly professional staff",
+      "phrase": "specific menu items",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Shout out to the friendly and professional staff!"
+      "exampleQuote": "Get the Nancy B sundae!"
     },
     {
-      "phrase": "homemade flavors",
+      "phrase": "seasonal closing window",
       "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "You could really taste the homemade coconut. Texture and taste were perfect."
+      "sentiment": "neutral",
+      "exampleQuote": "End of the season October 24, 2019. See you in the spring."
     }
   ],
-  "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype.",
-  "sentiment_summary": "Reviewers overwhelmingly praise the thick, homemade-quality soft serve, generous portions, and fast-moving staff; the only consistent friction is the wait, which most reviewers immediately forgive.",
-  "quarter_narrative": "Page's didn't need to do much this quarter — Pittsburgh did it for them. Twenty-five creators posted more than 30 TikToks at this Arlington dairy mart, pulling over a million plays, with the shop's own account contributing the top video: 231,700 plays on a banana split that made the format look easy. Unlike most businesses in the Pittsburgh Sweets family, Page's is actually in the room on TikTok, posting under @pagesicecream and watching the views land. That self-possession, combined with a visual catalog that runs well above the family median and an Instagram that has posted nine times in the last 30 days, is exactly why Page's leads the Pittsburgh Sweets ranking this issue with social momentum as its defining signal. What keeps the rank from being untouchable is engagement rate: at 1.29%, Instagram is converting reach into interaction below what the volume of creator activity around this place would predict, and that gap is the one axis worth watching heading into summer.",
-  "tldr_read": "Over a million TikTok plays, 3,145 Google reviews at 87% five-star, and an Instagram that's actually posting — Icons of the Burgh, #1 in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "The foundation is locked — conversion path, visual catalog, and creator coverage are all running at or above family ceiling — but Instagram engagement sits below what the surrounding TikTok energy implies, and closing that gap is what separates a strong rank from an uncontested one.",
+  "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype — coconut soft serve dipped in a cherry shell, texture and taste were perfect and you could really taste the homemade coconut.",
+  "sentiment_summary": "Reviewers love the sheer volume of ice cream for the price, the speed of a line that looks punishing but isn't, and the specificity of house items like the Nancy B sundae and coconut soft serve; the only real nitpick is portion management — the pretzels in the Arctic Swirl go salty by the end, and the soft serve starts melting before you reach your car.",
+  "quarter_narrative": "Page's came into Spring 2026 as Pittsburgh's loudest dessert signal, and the numbers support that without hesitation: 25 creators posted 30-plus TikToks at this Arlington shop in a single quarter, accumulating just over a million plays, with the shop's own account pulling 231,700 on a banana split video alone. That's not a discovery story — that's a city that has already decided. Page's leads the Pittsburgh Sweets family of eight this issue, and the margin isn't close; its Instagram momentum index clears the family median by ten points, and its visual catalog on Google, 1,454 photos across multiple categories, gives every incoming visitor a confident preview before they ever join the line. The rank holds at the top as long as the TikTok pipeline keeps producing and the Google review velocity — currently zero days since the last post — stays that sharp into summer.",
+  "tldr_read": "Over a million TikTok plays, 3,145 Google reviews at 87% five-star, and an Instagram momentum index that leads the family — Icons of the Burgh, #1 in Pittsburgh Dessert Shops.",
+  "tldr_meaning": "The data shows a business that has already crossed into self-sustaining visibility — creator coverage is generating more reach than the shop's own posting schedule could manufacture alone, and the review engine hasn't slowed in years.",
   "diagnosis_pullquote": {
-    "line": "A Million TikTok Plays and Growing, With Social Momentum Nobody In This Family Can Touch.",
-    "highlight": "social momentum"
+    "line": "Pittsburgh Has Already Decided: A Million Plays, 3,145 Reviews, Zero Argument.",
+    "highlight": "Zero Argument"
   },
   "playbook": [
     {
-      "headline": "Convert TikTok energy into Instagram interaction",
-      "action": "Repost or remix top-performing creator TikToks to Instagram Reels to close the gap between 1.08M external plays and 1.29% engagement rate.",
-      "signal": "momentum",
+      "headline": "Convert creator reach into owned followers",
+      "action": "With 25 creators and 1M+ plays pointing back at the account, the Instagram engagement rate of 1.29% is the one number that hasn't caught up — pinning a creator collab reel as the profile's lead post could close that gap.",
+      "signal": "collab_fit",
       "priority": "high",
-      "impact_label": "CLOSE ENGAGEMENT GAP"
+      "impact_label": "+ENGAGEMENT FLOOR"
     },
     {
-      "headline": "Name-drop the menu items reviewers keep citing",
-      "action": "The Nancy B sundae and coconut soft serve appear by name in reviews; a dedicated post or Reel for each turns existing word-of-mouth into searchable visual content.",
+      "headline": "Build a named-item visual series on Reels",
+      "action": "The Nancy B sundae and coconut soft serve are mentioned by name in reviews but don't have dedicated Reels; three posts in the last 30 days is the floor — a weekly named-item format would anchor the 9-post monthly cadence with a repeatable structure.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+VISUAL DEPTH"
     },
     {
-      "headline": "Activate the 25 creators already filming here",
-      "action": "With 25 unique TikTok creators already shooting at this location, a loose creator night or early-access invite costs little and keeps the quarterly play count above seven figures.",
-      "signal": "collab_fit",
+      "headline": "Protect the review recency streak",
+      "action": "Zero days since the last Google review is a rare signal — the current review velocity is what keeps the conversion path index at its ceiling; any friction in the ordering flow risks breaking a streak that took 3,145 reviews to build.",
+      "signal": "conversion_path",
       "priority": "low",
-      "impact_label": "SUSTAIN 1M PLAYS"
+      "impact_label": "HOLD #1 RANK"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:21:31.048Z",
+  "analyzed_at": "2026-04-25T16:41:37.530Z",
   "model": "claude-sonnet-4-6"
 }

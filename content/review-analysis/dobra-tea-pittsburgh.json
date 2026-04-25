@@ -3,68 +3,68 @@
   "themes": [
     {
       "phrase": "extensive tea selection",
-      "frequency": 6,
+      "frequency": 7,
       "sentiment": "positive",
-      "exampleQuote": "One of the widest tea selections I have ever seen."
+      "exampleQuote": "One of the widest tea selections I have ever seen"
     },
     {
       "phrase": "third space atmosphere",
-      "frequency": 5,
+      "frequency": 6,
       "sentiment": "positive",
-      "exampleQuote": "A wonderful pseudo-'third space' where you can sip tea, relax, play a board game, study, and talk to other patrons."
+      "exampleQuote": "a wonderful pseudo-'third space' where you can sip tea, relax, play a board game, study, and talk to other patrons"
     },
     {
       "phrase": "knowledgeable friendly staff",
-      "frequency": 4,
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Staff is extremely friendly and knowledgeable about tea."
+      "exampleQuote": "Staff is extremely friendly and knowledgeable about tea"
     },
     {
       "phrase": "hard to get a seat",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "It's hard to get a seat sometimes because it's crowded."
+      "exampleQuote": "It's hard to get a seat sometimes because it's crowded"
     },
     {
-      "phrase": "food worth trying",
-      "frequency": 3,
+      "phrase": "food worth ordering",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "I went back and tried some food. The babaganoush is delicious!"
+      "exampleQuote": "The babaganoush is delicious — I have been back and tried some food"
     }
   ],
   "notable_quote": "One of my favorite places on Earth — a wonderfully large selection of teas from around the world, served in an intimate and quiet setting.",
-  "sentiment_summary": "Reviewers are consistently effusive about the tea range, the unhurried atmosphere, and a staff that can actually talk about what they're serving; the only friction that surfaces is seating scarcity during busy hours.",
-  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed Dobrá Tea this quarter, generating more than 2.6 million TikTok plays — the place is a full-blown shoot location for the city, and it is posting none of it back. One video alone, from @memoirs.of.a.ginga, pulled 1.8 million plays. Meanwhile the business's own Instagram averaged roughly one post per month and has gone dark for stretches longer than two weeks. That gap is the whole story of Spring 2026 for Dobrá: a review signal that ranks first in Pittsburgh tea houses, a conversion path that is airtight, and a social presence that is borrowing other people's momentum without compounding any of its own. The family leader this issue is Allegheny Coffee & Tea Exchange, whose standout signal is social momentum — precisely the axis where Dobrá is bleeding ground. Closing that gap, not perfecting anything else, is what moves this rank.",
-  "tldr_read": "Dominant reviews and 2.6 million TikTok plays from 28 creators, undercut by a near-dormant Instagram that captures none of it. Ones to Watch, #1 in Pittsburgh Tea Houses.",
-  "tldr_meaning": "The review ceiling is already high and the TikTok footprint is enormous by proxy; the trajectory stalls unless the business begins converting that creator attention into a signal it actually owns.",
+  "sentiment_summary": "Reviewers consistently praise the breadth of the tea menu, the unhurried atmosphere, and staff who can actually talk about what they're serving — the only friction that surfaces is seating scarcity during busy hours, which reads more as a demand problem than a quality one.",
+  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed Dobrá Tea this quarter, generating over 2.6 million TikTok plays — and Dobrá posted once to Instagram in the past thirty days. The city is building a visual record of this place; the place is not adding a single frame to its own. That gap is the defining tension of Dobrá's Spring 2026: review sentiment is among the strongest in the Pittsburgh Cafes family, the conversion path is fully intact, and TikTok creators are doing the discovery work without any coordination from the business. The family leader this issue, Allegheny Coffee & Tea Exchange, holds its position on social momentum — the exact axis where Dobrá, currently ranked sixth in Pittsburgh Cafes, has the most room to move.",
+  "tldr_read": "Review sentiment that leads the tea category by a wide margin, Instagram that has gone nearly silent, and a TikTok audience the business didn't build and isn't capturing — Ones to Watch, #1 in Pittsburgh Tea Houses.",
+  "tldr_meaning": "The review floor is solid and the discovery engine is running on borrowed creator energy; whether Dobrá climbs in the broader Cafes family next issue depends almost entirely on whether its own channels start reflecting what 28 creators already see in it.",
   "diagnosis_pullquote": {
-    "line": "2.6 Million TikTok Plays, Dormant Instagram — The City Is Filming, Dobrá Is Not.",
-    "highlight": "dormant Instagram"
+    "line": "The City Has Seen 2.6 Million Plays Of This Tea House. The Tea House Has Seen None Of Them.",
+    "highlight": "2.6 Million Plays"
   },
   "playbook": [
     {
-      "headline": "Post to Instagram before the creators stop",
-      "action": "With 28 creators filming and 2.6M plays already logged, one post in 30 days is leaving the city's attention unacknowledged — commit to a minimum of three posts per week to begin owning what others are building.",
+      "headline": "Wake the Instagram account back up",
+      "action": "With 18 days between posts and a 2.76% engagement rate still holding, a consistent two-posts-per-week cadence would immediately move the momentum signal off its current floor.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "RECLAIM SIGNAL"
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Repost creator TikToks to close the loop",
-      "action": "Dobrá has no TikTok account; reposting or resharing the 28 creators already filming here — starting with the 1.8M-play @memoirs.of.a.ginga video — requires zero original production and immediately enters the algorithm.",
+      "headline": "Acknowledge the creators already filming here",
+      "action": "Twenty-eight creators have posted 30-plus TikToks tagging this location — reposting even one per week on Instagram Stories converts existing reach into owned visibility without requiring original production.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "UNLOCK 28 CREATORS"
+      "impact_label": "CAPTURE 2.6M REACH"
     },
     {
-      "headline": "Surface the food and ritual on camera",
-      "action": "Multiple reviewers mention the sesame cookie, babaganoush, and table bell ritual as standout details — these are ready-made visual hooks that no current photo category on Google or Instagram is exploiting yet.",
+      "headline": "Expand the Google photo categories",
+      "action": "690 photos across 11 categories is a strong catalog, but adding staff-sourced images to underrepresented tags — particularly the board games, the table bell, and the snack platters reviewers keep naming — would deepen the visual argument for first-time visitors.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:15:21.987Z",
+  "analyzed_at": "2026-04-25T16:35:08.236Z",
   "model": "claude-sonnet-4-6"
 }

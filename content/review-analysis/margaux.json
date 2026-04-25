@@ -8,16 +8,16 @@
       "exampleQuote": "Great cocktails, good beer selection, and incredibly friendly staff."
     },
     {
-      "phrase": "staff ignoring customers",
+      "phrase": "cozy atmosphere and seating",
       "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "The bartenders chose to chat with other patrons extensively or stand around and chat with each other than check on us."
+      "sentiment": "positive",
+      "exampleQuote": "There's also lots of cozy seating around the room, and it's a great place to chill and work."
     },
     {
-      "phrase": "cozy atmosphere for working",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Lots of cozy seating around the room, and it's a great place to chill and work."
+      "phrase": "bartenders ignoring customers",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "We were then ignored for the next 30 minutes. The bartenders chose to chat with other patrons extensively."
     },
     {
       "phrase": "coffee pricing friction",
@@ -33,38 +33,38 @@
     }
   ],
   "notable_quote": "There are always regulars at the bar, and it's clear why.",
-  "sentiment_summary": "Reviewers consistently love the cocktail program, the cozy room, and the sense that this is a place with real regulars — but a recurring thread of bartenders visibly ignoring seated customers has cost Margaux real goodwill with first-timers who didn't make it back.",
-  "quarter_narrative": "Twenty-nine TikTok creators filmed Margaux this quarter, generating nearly 385,000 plays — the city is clearly building a visual identity for this place whether Margaux participates or not. The top video, a @heinz_us post framing Pittsburgh's sauce loyalties, pulled 124,700 plays with Margaux as the backdrop. Meanwhile, the family leader this issue is Allegheny Coffee & Tea Exchange, whose climb to the top was driven almost entirely by social momentum — the exact axis where Margaux currently sits flattest. Closing the gap between what creators are producing and what Margaux is publishing under its own name is the clearest path from Ones to Watch into the top tier.",
-  "tldr_read": "Creator coverage is enormous and the visual catalog is strong, but Instagram engagement sits near the floor and there's no phone number on Google. Ones to Watch, #3 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The ceiling is real — 29 creators and 385K plays confirm the city is invested — but without an owned Instagram presence matching that energy, the momentum signal stays borrowed rather than built.",
+  "sentiment_summary": "Reviewers consistently praise the cocktails, seasonal drinks, and the kind of lived-in atmosphere that earns regulars — but a recurring pattern of bartenders chatting among themselves while tables go unattended keeps the sentiment ceiling lower than the vibe deserves.",
+  "quarter_narrative": "Margaux had a legitimately viral quarter and mostly watched it happen from the sidelines. Twenty-nine Pittsburgh creators posted more than 30 TikToks there, racking up nearly 385,000 plays — the top video alone, a Heinz sauce draft pick bit from @heinz_us, pulled 124,700. That's not background noise; that's the city deciding this place is worth filming. Meanwhile, Margaux's own accounts posted nine Instagram photos in 30 days, zero Reels, and no TikTok presence that matched the moment. The family leader this issue, Allegheny Coffee & Tea Exchange, built its top ranking largely on social momentum — the exact axis where Margaux is leaving the most on the table. Closing the gap between what creators are already producing and what Margaux publishes for itself is the clearest path from Ones to Watch into the upper tier.",
+  "tldr_read": "Nearly 385,000 TikTok plays from outside creators, no phone number on Google, and an Instagram engagement rate that barely registers — Ones to Watch, #3 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The creator signal is already doing the work the business's own accounts aren't; if the conversion path tightens and Instagram momentum catches up, the ranking math changes fast.",
   "diagnosis_pullquote": {
-    "line": "Thirty Creators Are Filming This Place, And Its Own Instagram Barely Blinks Back",
-    "highlight": "thirty creators are filming"
+    "line": "The City Has Filmed Margaux 384,916 Times — The Bar Still Has No Phone Number Listed",
+    "highlight": "Still Has No Phone Number"
   },
   "playbook": [
     {
-      "headline": "Close the gap your creators already opened",
-      "action": "Post at least 3 Reels this month — Margaux had zero in the last 30 days while 29 outside creators racked up 385K plays.",
-      "signal": "momentum",
-      "priority": "high",
-      "impact_label": "OWN THE WAVE"
-    },
-    {
-      "headline": "Put a phone number on Google",
-      "action": "Google Business shows no phone number — a missing field that quietly drops Margaux's conversion path well below the family median of 100.",
+      "headline": "Put a phone number on Google right now",
+      "action": "Margaux has no phone listed on Google — a direct break in the path between 385K TikTok plays and an actual reservation or visit.",
       "signal": "conversion_path",
-      "priority": "medium",
-      "impact_label": "+CONVERSION RANK"
+      "priority": "high",
+      "impact_label": "CLOSE THE GAP"
     },
     {
-      "headline": "Address the service pattern publicly",
-      "action": "Two separate reviews describe extended waits after seating; a brief, specific owner response to both would signal the issue is seen — not managed away.",
+      "headline": "Turn one creator clip into a Reel this week",
+      "action": "Zero Reels posted in 30 days while 29 creators are already filming the space — reposting or recutting existing creator footage costs nothing and feeds the dormant momentum signal.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "+REEL VELOCITY"
+    },
+    {
+      "headline": "Address the service pattern in public replies",
+      "action": "At least three recent reviews cite being ignored at the bar — a direct, specific public response to those threads would signal accountability to the 386-review audience still reading.",
       "signal": "community_spark",
       "priority": "low",
       "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:19:19.440Z",
+  "analyzed_at": "2026-04-25T16:39:12.980Z",
   "model": "claude-sonnet-4-6"
 }

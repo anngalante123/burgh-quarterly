@@ -3,14 +3,14 @@
   "themes": [
     {
       "phrase": "beer quality",
-      "frequency": 4,
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Great pilsners! The beers are excellent."
+      "exampleQuote": "The beers are excellent."
     },
     {
-      "phrase": "food execution inconsistency",
-      "frequency": 2,
-      "sentiment": "negative",
+      "phrase": "food hits and misses",
+      "frequency": 3,
+      "sentiment": "neutral",
       "exampleQuote": "Half of your food is 'Meh', the other half is absolutely terrible — especially for the price."
     },
     {
@@ -20,57 +20,51 @@
       "exampleQuote": "So yummy and a fun, cozy, unpretentious space."
     },
     {
-      "phrase": "weekend specials",
+      "phrase": "pierogi specials",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Special for the weekend were shepherd pie pierogis.. omg. Worth the trip out of the city."
     },
     {
-      "phrase": "liter beer value",
-      "frequency": 1,
+      "phrase": "value and events",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Liters of beer $10, super deal. Place is great and always has events going on."
-    },
-    {
-      "phrase": "overcooked food",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "You guys need to stop overcooking everything — seitan bites so over fried you could take out a truck window with them."
     }
   ],
-  "notable_quote": "Special for the weekend were shepherd pie pierogis — worth the trip out of the city.",
-  "sentiment_summary": "Reviewers are consistent on the beer — pilsners and value liters get repeated praise — but a vocal minority flags the kitchen as uneven, with overcooked proteins and overly ambitious bar food that doesn't always land.",
-  "quarter_narrative": "Golden Age Beer Company heads into Spring 2026 with a solid Google foundation — 195 reviews, 85% five-star, and a listing that's fully built out — but the conversation around it stays quieter than that foundation deserves. TikTok coverage is essentially nonexistent: one tagged video, no measurable plays, no identifiable creator presence. Meanwhile Hidden Harbor, the Pittsburgh Bars leader this issue, built its ranking on social momentum — exactly the axis Golden Age is leaving untouched. The brewery posts to Instagram consistently enough (12 posts in 30 days) but leans on static content with zero Reels, and its creator fit signal trails the family median by a meaningful margin. The rank climbs if the kitchen tightens up its execution — review sentiment is the softest axis — and if even a handful of creators start filming the taproom rather than scrolling past it.",
-  "tldr_read": "Strong beer reviews and a complete Google listing, undercut by absent TikTok presence and inconsistent food sentiment. Ones to Watch, #2 in Pittsburgh Breweries.",
-  "tldr_meaning": "The trajectory holds steady at Ones to Watch until review sentiment stops splitting on the kitchen and creator coverage — currently near zero — starts registering.",
+  "notable_quote": "Special for the weekend were shepherd pie pierogis.. omg. Worth the trip out of the city.",
+  "sentiment_summary": "Reviewers are enthusiastic about the beer program and weekend specials — the pierogi riffs in particular generate real word-of-mouth — but a persistent thread questions the kitchen's consistency, with overcooked proteins and pricing drawing pointed criticism.",
+  "quarter_narrative": "Golden Age Beer Company spent Spring 2026 accumulating quiet goodwill: 195 Google reviews sitting at 85% five-star, a kitchen that can clearly produce a memorable shepherd pie pierogi, and an Instagram account posting twelve times in thirty days. The problem is that none of that activity is breaking into the wider city conversation. TikTok creator presence is effectively zero — one tagged video, no recorded plays, no creator names attached — while the family leader in Pittsburgh Bars, Hidden Harbor, is riding a social momentum wave that Golden Age hasn't found an on-ramp to. The rank climbs when the beer and the specials that reviewers are already evangelizing start showing up in formats the city actually shares.",
+  "tldr_read": "Pilsners and pierogi specials have real fans, but creator coverage is nearly nonexistent and review sentiment trails the family median — Ones to Watch, #2 in Pittsburgh Breweries.",
+  "tldr_meaning": "The review base is healthy but not accelerating, and without any TikTok footprint to mirror the Instagram activity, the gap between Golden Age and Hidden Harbor's momentum signal is likely to widen before it narrows.",
   "diagnosis_pullquote": {
-    "line": "Solid Beer Reputation And Full Google Presence, Undercut By No Creator Coverage On TikTok",
-    "highlight": "no creator coverage"
+    "line": "The Shepherd Pie Pierogi Has Fans. The City Just Hasn't Filmed It Yet.",
+    "highlight": "Hasn't Filmed It Yet"
   },
   "playbook": [
     {
-      "headline": "Get one creator through the door",
-      "action": "Zero TikTok plays this quarter from zero filming creators — one hosted tasting or media invite changes that number from nothing.",
-      "signal": "collab_fit",
+      "headline": "Get the kitchen on camera this weekend",
+      "action": "Zero TikTok creator videos have landed with any plays — film the weekend pierogi special yourself before waiting for the city to discover it.",
+      "signal": "content_canvas",
       "priority": "high",
-      "impact_label": "UNLOCK CREATORS"
+      "impact_label": "UNLOCK CREATOR PULL"
     },
     {
-      "headline": "Fix the kitchen's loudest complaint",
-      "action": "Two reviewers specifically called out overcooked proteins and mispriced bar food — one menu edit or public acknowledgment moves review sentiment off its floor.",
+      "headline": "Turn food criticism into a public response",
+      "action": "Review sentiment sits below the family median; the overcooked-proteins critique appears more than once — a public reply or a visible menu note signals the kitchen is listening.",
       "signal": "community_spark",
       "priority": "medium",
       "impact_label": "+SENTIMENT FLOOR"
     },
     {
-      "headline": "Turn posts into Reels before next issue",
-      "action": "12 posts in 30 days with zero Reels — converting even three of those into short video clips closes the gap with the family Instagram median.",
+      "headline": "Push Reels to match the post cadence",
+      "action": "Twelve posts in thirty days but zero Reels — converting even two of those posts to short video would push Instagram momentum above the family median of 55.",
       "signal": "momentum",
       "priority": "low",
-      "impact_label": "+VISUAL REACH"
+      "impact_label": "+REACH CEILING"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-25T16:15:59.453Z",
+  "analyzed_at": "2026-04-25T16:35:48.634Z",
   "model": "claude-sonnet-4-6"
 }

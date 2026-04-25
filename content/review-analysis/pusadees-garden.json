@@ -2,75 +2,75 @@
   "slug": "pusadees-garden",
   "themes": [
     {
-      "phrase": "reservation difficulty",
+      "phrase": "reservation access pain",
       "frequency": 4,
       "sentiment": "negative",
       "exampleQuote": "Getting a reservation can be quite challenging."
     },
     {
-      "phrase": "atmosphere and setting",
-      "frequency": 5,
+      "phrase": "17 ingredient salad",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Standouts were the 17 ingredient salad and the yellow roti."
+    },
+    {
+      "phrase": "beautiful interior surprise",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Very unassuming from the outside, but absolutely beautiful."
     },
     {
-      "phrase": "standout dishes",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "The shrimp tom yum — I've never had anything like it."
-    },
-    {
-      "phrase": "value versus price",
+      "phrase": "price-to-portion friction",
       "frequency": 3,
       "sentiment": "negative",
       "exampleQuote": "You can get the same meal at a different place for less."
     },
     {
-      "phrase": "front-of-house communication",
+      "phrase": "front-of-house communication gaps",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "A little more proactive communication from the front-of-house team would make the experience even better."
+      "exampleQuote": "The host stand staff seemed more engaged in conversation with each other than in helping."
     },
     {
-      "phrase": "food living up to hype",
-      "frequency": 3,
+      "phrase": "shrimp tom yum standout",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "It lived up to the hype for us!"
+      "exampleQuote": "I've never had anything like it."
     }
   ],
   "notable_quote": "This place is the love of my life.",
-  "sentiment_summary": "Reviewers consistently praise the space, the 17-ingredient salad, the yellow roti, and the shrimp tom yum, while the friction points cluster around a punishing reservation system, inconsistent front-of-house communication, and portions that don't always justify the price.",
-  "quarter_narrative": "Thirty creators filmed Pusadee's Garden this quarter. The restaurant filmed essentially none of it back. With 182,811 TikTok plays and a top video — @amandavtyson describing a Resy-stalking habit like a religious practice — running to 48,200 views, Pusadee's is the most creator-documented Thai restaurant in the city, and it has no TikTok account to show for any of it. Its own Instagram posted twice in thirty days, has no bio, and clocked an engagement rate under one percent. The contrast is not subtle: the city is building this restaurant's story, the restaurant is watching from the garden. Within the Pittsburgh Asian Kitchens family, Mola holds the top spot this issue on the strength of creator collaboration fit; Pusadee's trails in that same category despite generating more raw TikTok volume than most businesses in the entire ranking. The path from Ones to Watch to the top of the family runs directly through capturing the audience that is already showing up.",
-  "tldr_read": "Thirty TikTok creators, 1,224 Google reviews, and a perfect conversion path — paired with a dormant Instagram and no TikTok presence of its own. Ones to Watch, #1 in Pittsburgh Thai.",
-  "tldr_meaning": "The TikTok signal is already enormous and entirely externally generated; whether Pusadee's closes the gap between what the city is saying about it and what it says about itself will determine whether it holds this rank or gets overtaken by a restaurant that shows up for its own audience.",
+  "sentiment_summary": "Reviewers consistently fall for the room, the 17-ingredient salad, and specific dishes like the shrimp tom yum and yellow roti — but the reservation system's quirks, small portions relative to price, and front-of-house communication keep a measurable slice from returning.",
+  "quarter_narrative": "Thirty creators filed into Pusadee's Garden this quarter and collectively pulled 182,811 TikTok plays — @amandavtyson alone ran 48,200 off a caption about Resy-refreshing at 7am. That framing, the restaurant as coveted reservation object rather than just a meal, is doing more positioning work than anything the business posted itself. In the Pittsburgh Asian Kitchens family, Mola currently leads on creator collaboration fit, but Pusadee's raw creator volume this quarter rivals that distinction on pure numbers. What keeps Pusadee's at Ones to Watch rather than climbing toward Icons is a self-publishing signal that's nearly flat: two Instagram posts in 30 days, no Reels, no TikTok presence of its own, and an Instagram bio that's blank — the city is doing the storytelling, and the restaurant isn't catching any of the current.",
+  "tldr_read": "1,224 reviews averaging 86% five-star, 30 creators filming it, and a conversion path that's fully dialed in — but Instagram is nearly dormant and the business has no TikTok account. Ones to Watch, #1 in Pittsburgh Thai.",
+  "tldr_meaning": "The creator volume and review sentiment are already Icon-tier inputs; the rank ceiling holds because the business's own publishing cadence is too thin to sustain momentum between surges of outside coverage.",
   "diagnosis_pullquote": {
-    "line": "Thirty Creators Are Filming This Place, And It's Filming None Of It Back.",
-    "highlight": "30 creators filming"
+    "line": "Thirty Creators Checked Resy For This Place. The Place Hasn't Posted A Reel.",
+    "highlight": "Checked Resy For"
   },
   "playbook": [
     {
-      "headline": "Claim the TikTok story already being told",
-      "action": "Create a TikTok account and repost the 30 existing creator videos — 182,811 plays of content already exists, none of it is currently on owned channels.",
+      "headline": "Claim the TikTok story being told for you",
+      "action": "Open a TikTok account and repost or stitch the top creator content — 30 creators, 182,811 plays, zero owned by the restaurant.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "CAPTURE 182K PLAYS"
     },
     {
-      "headline": "Write an Instagram bio before next post",
-      "action": "The account has no bio and posted twice in 30 days; a single bio line and a consistent weekly cadence would restore a signal that has nearly gone flat at 0.83% engagement.",
-      "signal": "collab_fit",
+      "headline": "Write the Instagram bio that should exist",
+      "action": "The Instagram account has no bio at all — a single line naming the neighborhood, cuisine, and reservation link closes the biggest free conversion gap on the profile.",
+      "signal": "conversion_path",
       "priority": "medium",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "CLOSE BIO GAP"
     },
     {
-      "headline": "Address the reservation friction publicly",
-      "action": "The Resy glitch complaint and front-of-house wait confusion each surfaced in reviews this quarter; a pinned response or updated Google post on bar walk-in availability could convert frustrated bookers into seated guests.",
-      "signal": "conversion_path",
+      "headline": "Turn the reservation frustration into visible content",
+      "action": "Three of eight sampled reviews flag the Resy experience; a Reel walking through exactly how to book (and surfacing the no-reservation bar option) addresses the friction publicly and fills the Reels count, which sits at zero for the past 30 days.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "+SENTIMENT BUFFER"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-25T16:21:51.720Z",
+  "analyzed_at": "2026-04-25T16:42:04.293Z",
   "model": "claude-sonnet-4-6"
 }
