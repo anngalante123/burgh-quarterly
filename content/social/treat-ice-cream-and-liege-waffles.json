@@ -34,5 +34,111 @@
       "end": 202,
       "delta": 1
     }
+  },
+  "tiktok_mentions": {
+    "query": "treat - ice cream and liege waffles pittsburgh",
+    "video_count": 30,
+    "total_plays": 1322240,
+    "total_likes": 84906,
+    "unique_creators": 29,
+    "top_creators": [
+      {
+        "handle": "mr.chimetime",
+        "fans": 2400000,
+        "verified": false,
+        "videos": 1,
+        "plays": 354600,
+        "likes": 49600
+      },
+      {
+        "handle": "snackeatingsnacks",
+        "fans": 463200,
+        "verified": true,
+        "videos": 1,
+        "plays": 170400,
+        "likes": 9853
+      },
+      {
+        "handle": "the412franimal",
+        "fans": 1366,
+        "verified": false,
+        "videos": 1,
+        "plays": 156800,
+        "likes": 176
+      },
+      {
+        "handle": "stufftodoinpgh",
+        "fans": 30700,
+        "verified": false,
+        "videos": 1,
+        "plays": 112300,
+        "likes": 2348
+      },
+      {
+        "handle": "kylie.belli",
+        "fans": 12100,
+        "verified": false,
+        "videos": 1,
+        "plays": 90700,
+        "likes": 4289
+      },
+      {
+        "handle": "singaporefoodie",
+        "fans": 164300,
+        "verified": false,
+        "videos": 1,
+        "plays": 60000,
+        "likes": 1349
+      },
+      {
+        "handle": "thepittsburghweb",
+        "fans": 3034,
+        "verified": false,
+        "videos": 1,
+        "plays": 58500,
+        "likes": 3514
+      },
+      {
+        "handle": "spikedrich",
+        "fans": 101300,
+        "verified": false,
+        "videos": 1,
+        "plays": 43500,
+        "likes": 721
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7603148680597687582",
+        "url": "https://www.tiktok.com/@mr.chimetime/video/7603148680597687582",
+        "text": "I’ll NEVER forget this restaurant… @Buddy Scoops Ice Cream . #foodreview #winstonsalem #foodcritic #fyp ",
+        "author": "mr.chimetime",
+        "plays": 354600,
+        "likes": 49600,
+        "posted": "2026-02-04T23:00:15.000Z"
+      },
+      {
+        "id": "7500993915399523615",
+        "url": "https://www.tiktok.com/@snackeatingsnacks/video/7500993915399523615",
+        "text": "My first day eating in PITTSBURGH! Crepe pancakes, pierogi, deep fried cheese ball & more! #pittsburgh #pittsburghfood #whatieatinaday #pitt",
+        "author": "snackeatingsnacks",
+        "plays": 170400,
+        "likes": 9853,
+        "posted": "2025-05-05T16:08:01.000Z"
+      },
+      {
+        "id": "7615752857433787678",
+        "url": "https://www.tiktok.com/@the412franimal/video/7615752857433787678",
+        "text": "No matter the weather, we #RitasIce together 🫡🍧 Pittsburgh weather is insanely unpredictable, but one thing that remains constant is that anytime I pass a Rita’s - I’m stopping for a lil treat. & that’s exactly what we did on a rainy day ",
+        "author": "the412franimal",
+        "plays": 156800,
+        "likes": 176,
+        "posted": "2026-03-10T22:10:59.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-21T16:12:56.000Z",
+    "median_plays": 21300,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:30:48.195Z"
   }
 }

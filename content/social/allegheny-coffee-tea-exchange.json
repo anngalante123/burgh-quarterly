@@ -34,5 +34,111 @@
       "end": 589,
       "delta": 15
     }
+  },
+  "tiktok_mentions": {
+    "query": "allegheny coffee and tea exchange pittsburgh",
+    "video_count": 30,
+    "total_plays": 1586583,
+    "total_likes": 67943,
+    "unique_creators": 29,
+    "top_creators": [
+      {
+        "handle": "monmon.eats",
+        "fans": 48600,
+        "verified": false,
+        "videos": 1,
+        "plays": 807100,
+        "likes": 28300
+      },
+      {
+        "handle": "kennelly_michelle",
+        "fans": 7300000,
+        "verified": true,
+        "videos": 1,
+        "plays": 308900,
+        "likes": 16400
+      },
+      {
+        "handle": "aubreyclaree_",
+        "fans": 70000,
+        "verified": false,
+        "videos": 1,
+        "plays": 100900,
+        "likes": 6583
+      },
+      {
+        "handle": "just.a.taste.pgh",
+        "fans": 813,
+        "verified": false,
+        "videos": 1,
+        "plays": 64800,
+        "likes": 4208
+      },
+      {
+        "handle": "katechalater",
+        "fans": 3354,
+        "verified": false,
+        "videos": 1,
+        "plays": 60600,
+        "likes": 4002
+      },
+      {
+        "handle": "explore.with.chrissy",
+        "fans": 214,
+        "verified": false,
+        "videos": 1,
+        "plays": 60100,
+        "likes": 2202
+      },
+      {
+        "handle": "emmajanemooney",
+        "fans": 17200,
+        "verified": false,
+        "videos": 1,
+        "plays": 44800,
+        "likes": 1436
+      },
+      {
+        "handle": "pattichristina",
+        "fans": 1305,
+        "verified": false,
+        "videos": 1,
+        "plays": 40500,
+        "likes": 863
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7052855906073267503",
+        "url": "https://www.tiktok.com/@monmon.eats/video/7052855906073267503",
+        "text": "My current favorite Seattle brunch spots! 💖  #seattlefood #seattlefoodie",
+        "author": "monmon.eats",
+        "plays": 807100,
+        "likes": 28300,
+        "posted": "2022-01-14T00:43:03.000Z"
+      },
+      {
+        "id": "7594878466185579789",
+        "url": "https://www.tiktok.com/@kennelly_michelle/video/7594878466185579789",
+        "text": "italian coffee is always a good idea 🇮🇹♥️ @Gianni Cures \n#europe #italy #coffee #couple #milan ",
+        "author": "kennelly_michelle",
+        "plays": 308900,
+        "likes": 16400,
+        "posted": "2026-01-13T16:08:16.000Z"
+      },
+      {
+        "id": "7567445771088448799",
+        "url": "https://www.tiktok.com/@aubreyclaree_/video/7567445771088448799",
+        "text": "I think I might’ve found the best smoothie in Pittsburgh 💙🤍Mics Market here in Sewickley it’s a little bit of a drive but having this after a workout was perfect! #micsmarket #pittsburgh #thingstodoinpgh #CapCut ",
+        "author": "aubreyclaree_",
+        "plays": 100900,
+        "likes": 6583,
+        "posted": "2025-10-31T17:54:48.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-24T17:03:01.000Z",
+    "median_plays": 4237,
+    "detected_own_handle": "adventureallegheny",
+    "scraped_at": "2026-04-25T15:23:33.058Z"
   }
 }

@@ -14,5 +14,111 @@
   "full_name": "Pusadee’s Garden",
   "last_post_at": "2026-04-13T13:45:13.000Z",
   "scraped_at": "2026-04-22T15:26:15.591Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "pusadee's garden pittsburgh",
+    "video_count": 30,
+    "total_plays": 182811,
+    "total_likes": 7289,
+    "unique_creators": 30,
+    "top_creators": [
+      {
+        "handle": "amandavtyson",
+        "fans": 84200,
+        "verified": false,
+        "videos": 1,
+        "plays": 48200,
+        "likes": 2708
+      },
+      {
+        "handle": "bsilky_smooth",
+        "fans": 1634,
+        "verified": false,
+        "videos": 1,
+        "plays": 31900,
+        "likes": 1680
+      },
+      {
+        "handle": "courtneyncamp",
+        "fans": 2171,
+        "verified": false,
+        "videos": 1,
+        "plays": 20100,
+        "likes": 745
+      },
+      {
+        "handle": "calsipos",
+        "fans": 73000,
+        "verified": false,
+        "videos": 1,
+        "plays": 11400,
+        "likes": 394
+      },
+      {
+        "handle": "officialchasedreamz",
+        "fans": 1061,
+        "verified": false,
+        "videos": 1,
+        "plays": 9420,
+        "likes": 476
+      },
+      {
+        "handle": "happysifresh",
+        "fans": 8434,
+        "verified": false,
+        "videos": 1,
+        "plays": 7079,
+        "likes": 143
+      },
+      {
+        "handle": "mad_i_libs",
+        "fans": 1340,
+        "verified": false,
+        "videos": 1,
+        "plays": 6581,
+        "likes": 49
+      },
+      {
+        "handle": "lauren.d.l.green",
+        "fans": 1286,
+        "verified": false,
+        "videos": 1,
+        "plays": 5327,
+        "likes": 45
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7524429695929175309",
+        "url": "https://www.tiktok.com/@amandavtyson/video/7524429695929175309",
+        "text": "religiously checked @Resy for this one 🤌🏼",
+        "author": "amandavtyson",
+        "plays": 48200,
+        "likes": 2708,
+        "posted": "2025-07-07T19:51:03.000Z"
+      },
+      {
+        "id": "7497286366024273198",
+        "url": "https://www.tiktok.com/@bsilky_smooth/video/7497286366024273198",
+        "text": "Pittsburgh’s Thai restaurant scene is honestly iconic!! 😍✨🍜These are just a few of my personal faves!!! #fypシ #fyp #pittsburgh #pitt #foodie #foodtiktok #thaifood #noodles #viral #iykyk #love #yummy ",
+        "author": "bsilky_smooth",
+        "plays": 31900,
+        "likes": 1680,
+        "posted": "2025-04-25T16:20:28.000Z"
+      },
+      {
+        "id": "7538183194667928845",
+        "url": "https://www.tiktok.com/@courtneyncamp/video/7538183194667928845",
+        "text": "one of my biggest summer bucket list items!!! the garden was magical 🤍\n•\n•\n•\n#pusadeesgarden #pittsburgh #pittsburghdinner ",
+        "author": "courtneyncamp",
+        "plays": 20100,
+        "likes": 745,
+        "posted": "2025-08-13T21:21:19.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-22T13:57:25.000Z",
+    "median_plays": 2392,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:29:17.656Z"
+  }
 }

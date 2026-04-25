@@ -2,62 +2,68 @@
   "slug": "lorelei",
   "themes": [
     {
-      "phrase": "bar staff personality",
+      "phrase": "bar staff knowledge and warmth",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The bartenders are top class, friendly, knowledgeable about the cocktails, and they project this vibe that makes me want to come back."
+      "exampleQuote": "The bartenders are top class — friendly, knowledgeable about the cocktails, and they seem to project this vibe that makes me want to come back."
     },
     {
       "phrase": "creative cocktail program",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Awesome, creative drinks."
+      "exampleQuote": "Awesome, creative drinks. Bartender was excellent and friendly."
     },
     {
       "phrase": "cacio e pepe pizza",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "The cacio e pepe pizza is a must."
+      "exampleQuote": "The cacio e pepe pizza is a must —먹다보면 물릴수있으니 시져샐러드 필수!"
     },
     {
-      "phrase": "slow service gaps",
+      "phrase": "low-key date night spot",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The best lowkey date night place or hangout place with friends."
+    },
+    {
+      "phrase": "service missteps on inclusivity",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The staff didn't ask my friend's name and instead used the deadname on their credit card to identify their order."
+    },
+    {
+      "phrase": "slow drink turnaround",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Waited 10 minutes for a sip of Jäger and whiskey."
-    },
-    {
-      "phrase": "staff inclusivity failure",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "Trans folks beware, the staff didn't ask my friend's name and instead used the deadname on their credit card."
     }
   ],
-  "notable_quote": "Statistically, I'm bound to have less than a perfect experience here, but it hasn't happened, maybe this place is the bee's knees.",
-  "sentiment_summary": "Reviewers consistently praise the bartenders' warmth and cocktail knowledge, with specific dishes like the cacio e pepe pizza earning repeat mentions; the friction points are operational, a slow drink on one visit and a significant staff inclusivity misstep that surfaced in the review record.",
-  "quarter_narrative": "Lorelei entered Spring 2026 with 392 Google reviews, a 72% five-star share, and a last review just twelve days out, a steady cadence that holds its rank without drama. The conversion path is airtight: hours, phone, and website all present on Google, which is the one axis where the entire Signal Pittsburgh family is already maxed out. What Lorelei can't claim this quarter is Instagram momentum, four posts in 30 days, zero Reels, and a 0.79% engagement rate put it well behind the family median and nowhere near Nan Xiang Soup Dumplings, which is running away with the Pittsburgh Businesses lead on social signal alone. The path from Ones to Watch to a higher tier runs directly through the Instagram gap; the cocktail credibility and staff charisma already in the review record give it real material to work with.",
-  "tldr_read": "Airtight conversion path and loyal reviewers, near-silent Instagram with zero Reels in the last 30 days, Ones to Watch, #2 in Pittsburgh Restaurants.",
-  "tldr_meaning": "The review floor is stable and the conversion infrastructure is complete; the ceiling is capped by an Instagram signal that is producing at roughly a third of the family median, with Reels entirely absent from the recent record.",
+  "notable_quote": "Statistically, I'm bound to have less than a perfect experience here, but it hasn't happened — maybe this place is the bee's knees.",
+  "sentiment_summary": "Reviewers are reliably won over by the bartenders' warmth and command of the cocktail menu, with the cacio e pepe pizza pulling its weight as a food anchor; the friction points are slow service on simple orders and at least one incident that raised a meaningful inclusivity flag.",
+  "quarter_narrative": "No Pittsburgh TikTok creators have indexed Lorelei yet — which is the stranger story, given that a candlelit East Liberty cocktail bar with a devoted following and a standout pizza is exactly the kind of place that films well. The city's conversation is happening in Google reviews, not reels, and even there the volume is modest relative to the family's other locations. Meanwhile, the family leader this issue is Nan Xiang Soup Dumplings, riding a social momentum wave that Lorelei currently can't touch — the gap between the two is less about what Lorelei is and more about how little of it is being shown. If a single creator finds this room and the cacio e pepe pizza, the rank picture shifts fast.",
+  "tldr_read": "Conversion path is locked in, Instagram is nearly silent, and TikTok hasn't found this bar yet — Ones to Watch, #2 in Pittsburgh Restaurants.",
+  "tldr_meaning": "The review base is warm but shallow at 392 total, Instagram engagement sits at 0.79% with no Reels in the last 30 days, and zero TikTok indexing means the visual discovery layer is entirely absent — the rank holds on bartender reputation alone for now.",
   "playbook": [
     {
-      "headline": "Start Reels before the next issue",
-      "action": "Zero Reels in 30 days against a family median that favors video, one behind-the-bar Reel per week closes the gap fast.",
-      "signal": "momentum",
+      "headline": "Get one creator inside this room",
+      "action": "Zero Pittsburgh TikToks exist for Lorelei — one well-framed reel of the Bassett Hound and the cacio e pepe changes that number.",
+      "signal": "collab_fit",
       "priority": "high"
     },
     {
-      "headline": "Put the cocktail catalog on Google",
-      "action": "291 photos across 7 categories but the visual signal sits 28 points below the family median, owner-submitted cocktail and pizza close-ups are the fastest fix.",
-      "signal": "content_canvas",
+      "headline": "Turn four posts into weekly Reels",
+      "action": "Four posts and zero Reels in 30 days at 0.79% engagement — short video of the bartender narrating a cocktail build costs nothing and indexes differently.",
+      "signal": "momentum",
       "priority": "medium"
     },
     {
-      "headline": "Address the inclusivity review publicly",
-      "action": "A single unaddressed negative review about deadnaming is visible in the five most recent, a direct, specific owner response signals accountability to future reviewers.",
-      "signal": "community_spark",
+      "headline": "Fill the photo gaps on Google",
+      "action": "291 photos across 7 categories but the 'Vibe' and 'By owner' buckets are thin — owner-uploaded interior and bar-top shots directly influence click-through from Maps.",
+      "signal": "content_canvas",
       "priority": "low"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-22T22:23:23.728Z",
+  "analyzed_at": "2026-04-25T15:39:54.475Z",
   "model": "claude-sonnet-4-6"
 }

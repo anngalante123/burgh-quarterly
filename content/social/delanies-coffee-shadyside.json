@@ -34,5 +34,111 @@
       "end": 96,
       "delta": -2
     }
+  },
+  "tiktok_mentions": {
+    "query": "delanie's coffee shadyside pittsburgh",
+    "video_count": 30,
+    "total_plays": 176214,
+    "total_likes": 9433,
+    "unique_creators": 26,
+    "top_creators": [
+      {
+        "handle": "tessadecario",
+        "fans": 26400,
+        "verified": false,
+        "videos": 2,
+        "plays": 47600,
+        "likes": 3088
+      },
+      {
+        "handle": "kirsten333",
+        "fans": 442,
+        "verified": false,
+        "videos": 1,
+        "plays": 32100,
+        "likes": 940
+      },
+      {
+        "handle": "calsipos",
+        "fans": 73000,
+        "verified": false,
+        "videos": 3,
+        "plays": 27317,
+        "likes": 1943
+      },
+      {
+        "handle": "courtneyncamp",
+        "fans": 2171,
+        "verified": false,
+        "videos": 1,
+        "plays": 14000,
+        "likes": 590
+      },
+      {
+        "handle": "medikate_8",
+        "fans": 2116,
+        "verified": false,
+        "videos": 1,
+        "plays": 9392,
+        "likes": 987
+      },
+      {
+        "handle": "bridgetwal70",
+        "fans": 512,
+        "verified": false,
+        "videos": 1,
+        "plays": 7969,
+        "likes": 67
+      },
+      {
+        "handle": "ninabrenna.vlogs",
+        "fans": 552,
+        "verified": false,
+        "videos": 1,
+        "plays": 7229,
+        "likes": 428
+      },
+      {
+        "handle": "justapittsburghgirl",
+        "fans": 6563,
+        "verified": false,
+        "videos": 1,
+        "plays": 4923,
+        "likes": 163
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7523666331875462430",
+        "url": "https://www.tiktok.com/@tessadecario/video/7523666331875462430",
+        "text": "A good coffee treat for the soul 💓\n\n#tiramisu #coffeetok #pittsburgh ",
+        "author": "tessadecario",
+        "plays": 37200,
+        "likes": 2667,
+        "posted": "2025-07-05T18:28:16.000Z"
+      },
+      {
+        "id": "7529167992207265054",
+        "url": "https://www.tiktok.com/@kirsten333/video/7529167992207265054",
+        "text": "their honey vanilla oat latte is a 12/10😮 if you are in the pittsburgh area, go try Delanie’s coffee!!\n\n#fyp #pgh #pittsburgh #coffeetok #foodtok ",
+        "author": "kirsten333",
+        "plays": 32100,
+        "likes": 940,
+        "posted": "2025-07-20T14:17:44.000Z"
+      },
+      {
+        "id": "7543665189523098911",
+        "url": "https://www.tiktok.com/@calsipos/video/7543665189523098911",
+        "text": "We are trying one of the coffee spots I’ve been wanting to check out in Pittsburgh for a while!!! I’ve been to the location in south side but never Shadyside and I will absolutely be back. The cookie butter latte is 😮‍💨 #pittsburgh #shopl",
+        "author": "calsipos",
+        "plays": 14000,
+        "likes": 886,
+        "posted": "2025-08-28T15:53:56.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-13T23:40:59.000Z",
+    "median_plays": 1896,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:24:19.374Z"
   }
 }

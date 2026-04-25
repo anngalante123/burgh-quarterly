@@ -34,5 +34,111 @@
       "end": 450,
       "delta": 60
     }
+  },
+  "tiktok_mentions": {
+    "query": "jeni's splendid ice creams pittsburgh",
+    "video_count": 30,
+    "total_plays": 147532,
+    "total_likes": 5564,
+    "unique_creators": 29,
+    "top_creators": [
+      {
+        "handle": "justapittsburghgirl",
+        "fans": 6564,
+        "verified": false,
+        "videos": 1,
+        "plays": 48400,
+        "likes": 1042
+      },
+      {
+        "handle": "khoodlum",
+        "fans": 19900,
+        "verified": false,
+        "videos": 1,
+        "plays": 42800,
+        "likes": 2287
+      },
+      {
+        "handle": "liv.your.best",
+        "fans": 22300,
+        "verified": false,
+        "videos": 2,
+        "plays": 11354,
+        "likes": 314
+      },
+      {
+        "handle": "meetneatpgh",
+        "fans": 10100,
+        "verified": false,
+        "videos": 1,
+        "plays": 5937,
+        "likes": 54
+      },
+      {
+        "handle": "courtneyncamp",
+        "fans": 2172,
+        "verified": false,
+        "videos": 1,
+        "plays": 4451,
+        "likes": 136
+      },
+      {
+        "handle": "gracemousty",
+        "fans": 11800,
+        "verified": false,
+        "videos": 1,
+        "plays": 4093,
+        "likes": 159
+      },
+      {
+        "handle": "burghbitesduo",
+        "fans": 2941,
+        "verified": false,
+        "videos": 1,
+        "plays": 3557,
+        "likes": 278
+      },
+      {
+        "handle": "moonmootch",
+        "fans": 1487,
+        "verified": false,
+        "videos": 1,
+        "plays": 3544,
+        "likes": 46
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7502168218123996446",
+        "url": "https://www.tiktok.com/@justapittsburghgirl/video/7502168218123996446",
+        "text": "That gooey butter cake ice cream has me in a chokehold 😋\n\n📍Jeni’s Ice Cream 🍨 - 447 Cinema Dr\n.\n.\n.\n.\n.\n.\n##pittsburgh##pittsburgheats ##placestoeatinpittsburgh ##pittsburghthingstodo##dessertsinpittsburgh",
+        "author": "justapittsburghgirl",
+        "plays": 48400,
+        "likes": 1042,
+        "posted": "2025-05-08T20:04:27.000Z"
+      },
+      {
+        "id": "7438751874594917675",
+        "url": "https://www.tiktok.com/@khoodlum/video/7438751874594917675",
+        "text": "Thanks for coming to my lecture 🤍\n\n@Jeni’s Splendid Ice Creams \n\n#reviews #review #icecream #icecreamreview #jenis #jenisicecream #jenissplendidicecream #jenisicecreams #jenissplendidicecreams #greenscreen ",
+        "author": "khoodlum",
+        "plays": 42800,
+        "likes": 2287,
+        "posted": "2024-11-18T22:36:30.000Z"
+      },
+      {
+        "id": "7569800694169963807",
+        "url": "https://www.tiktok.com/@liv.your.best/video/7569800694169963807",
+        "text": "white chocolate peppermint always has my heart🫶🏼🤭 @Jeni’s Splendid Ice Creams #jenissplendidicecream #jenisicecreams ",
+        "author": "liv.your.best",
+        "plays": 9654,
+        "likes": 245,
+        "posted": "2025-11-07T02:13:04.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-22T12:53:23.000Z",
+    "median_plays": 1559,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:26:04.952Z"
   }
 }

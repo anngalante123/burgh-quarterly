@@ -2,62 +2,62 @@
   "slug": "square-cafe",
   "themes": [
     {
-      "phrase": "vegan-friendly menu depth",
+      "phrase": "vegan-friendly options",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for."
+      "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for"
     },
     {
-      "phrase": "weekend wait and table pace",
+      "phrase": "weekend wait and turnover",
       "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "They do a good job of quickly and efficiently clearing tables to keep the wait as short as possible."
+      "sentiment": "neutral",
+      "exampleQuote": "They do a good job of quickly and efficiently clearing tables to keep the wait as short as possible"
     },
     {
-      "phrase": "price-to-portion tension",
+      "phrase": "standout specific dishes",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "The Brussels sprout hash was amazing and unique"
+    },
+    {
+      "phrase": "portion-to-price ratio",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "The food is excellent here. However the portion to price ratio is not the best."
+      "exampleQuote": "The portion to price ratio is not the best for a bit of a higher price"
     },
     {
-      "phrase": "unhurried linger culture",
+      "phrase": "unhurried cafe atmosphere",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "I enjoyed being there and stayed longer talking and drinking lattes. No pressure to eat up and go."
-    },
-    {
-      "phrase": "specific dish recall",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "The Brussels sprout hash was amazing and unique. Would go back."
+      "exampleQuote": "No pressure to eat up and go"
     }
   ],
   "notable_quote": "It's no wonder this place gets slammed with customers.",
-  "sentiment_summary": "Reviewers consistently call out specific dishes, Brussels sprout hash, vegan biscuit sandwich, eggs Benedict, and praise a staff that keeps the room moving without rushing anyone out; the recurring friction is a perceived value gap on portions and, in one review, a bathroom that needed maintenance attention.",
-  "quarter_narrative": "Square Cafe entered Spring 2026 holding the strongest conversion infrastructure in its family, every contact point on Google is complete and functional, while stacking nearly 1,900 reviews at a 72% five-star rate on a review posted just four days ago. The visual catalog, spread across seventeen photo categories, is one of the largest of any brunch restaurant in the city. Nan Xiang Soup Dumplings leads the Pittsburgh Businesses family this issue on social momentum, a signal where Square Cafe is notably quieter, eleven posts and two Reels in thirty days is activity without acceleration. The rank holds at #1 in Pittsburgh Brunch because the review engine and creator fit are exceptional; moving the overall family position means closing the gap that Nan Xiang has opened on Instagram.",
-  "tldr_read": "Dominant reviews and a perfect conversion path, flat Instagram momentum, Icons of the Burgh, #1 in Pittsburgh Brunch.",
-  "tldr_meaning": "The review axis and discoverability infrastructure are as strong as they get at this tier; the only variable that could shift the family rank is whether Instagram engagement rate, currently at 0.19%, begins to reflect the room-filling demand the reviews describe.",
+  "sentiment_summary": "Reviewers consistently celebrate the kitchen's creativity — the Brussels sprout hash, the vegan biscuit sandwich, the eggs Benedict — while a quieter thread flags that portion sizes don't always justify the price point, and maintenance details in the men's room got noticed.",
+  "quarter_narrative": "Square Cafe enters Spring 2026 holding the top spot in Pittsburgh brunch with nearly 1,900 Google reviews, 72 percent of them five-star, and a conversion profile that leaves nothing on the table — hours, phone, website, all present. The tension is on social: zero Pittsburgh TikTok creator coverage is indexed for this business, which for a place that regularly has a line out the door is a structural gap, not a random one. No one is filming the Brussels sprout hash going to the table, the packed dining room on a Saturday, the moment a server drops the vegan biscuit sandwich. Meanwhile, within its own family of businesses, Nan Xiang Soup Dumplings holds the overall Pittsburgh Business lead on social momentum — a reminder that review authority and search readiness, however strong, don't automatically translate to the kind of visual circulation that moves a rank in the next cycle. For Square Cafe to hold its position against rising challengers, the city needs to start filming it.",
+  "tldr_read": "Near-perfect conversion path, deep review equity, and strong creator fit — but Instagram engagement is thin and TikTok creator coverage is zero; Icons of the Burgh, #1 in Pittsburgh Brunch.",
+  "tldr_meaning": "The review foundation and discovery infrastructure are already at ceiling; the rank's durability now depends entirely on whether visual momentum — from creators, from the account itself, or both — develops before a newer brunch contender builds it first.",
   "playbook": [
     {
-      "headline": "Turn 11 posts into reachable ones",
-      "action": "With only 2 Reels in the last 30 days, shifting even half of static posts to short video would directly address a 0.19% engagement rate.",
+      "headline": "Give creators something to film inside",
+      "action": "Zero Pittsburgh TikToks are indexed for this business; a place with a line at 10am and a Brussels sprout hash on the menu should be generating creator footage without any effort.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Match the creator fit signal to real outreach",
-      "action": "Creator fit is the strongest differentiator in the family, identify the food creators already tagging the Brussels sprout hash and eggs Benedict and formalize those relationships.",
-      "signal": "collab_fit",
+      "headline": "Double the Reels output this quarter",
+      "action": "Eleven posts in 30 days is active, but only 2 were Reels, and a 0.19% engagement rate signals the static format is not reaching beyond existing followers.",
+      "signal": "content_canvas",
       "priority": "medium"
     },
     {
-      "headline": "Protect the 17-category photo catalog",
-      "action": "The 1,386-photo Google library is a competitive asset; continuing to seed new uploads across existing categories, especially Vibe and Videos, sustains ranking visibility as newer competitors build their own catalogs.",
-      "signal": "content_canvas",
+      "headline": "Flag the vegan menu explicitly on Google",
+      "action": "Three separate reviewers mentioned vegan options as a reason they returned or brought others; that word does not appear to be surfaced as a Google attribute, which leaves a search signal dormant.",
+      "signal": "conversion_path",
       "priority": "low"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-22T22:26:58.696Z",
+  "analyzed_at": "2026-04-25T15:43:38.949Z",
   "model": "claude-sonnet-4-6"
 }

@@ -2,62 +2,62 @@
   "slug": "commerce-bar",
   "themes": [
     {
-      "phrase": "speakeasy atmosphere and aesthetic",
+      "phrase": "speakeasy atmosphere",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The aesthetic is moody, vintage, and botanical, and the food and drinks are designed with so much creativity."
+      "exampleQuote": "A perfect speakeasy vibe with the best cocktails I've had in Pittsburgh."
     },
     {
-      "phrase": "standout cocktail creativity",
+      "phrase": "creative cocktail program",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "A superb riff on a Sazerac/Manhattan/old fashioned, slightly sweet, little liquorice flavor, booze heavy."
+      "exampleQuote": "The drinks were amazing, the atmosphere was elegant, and the service was top notch."
     },
     {
-      "phrase": "named bartender praise",
+      "phrase": "bartender hospitality",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Alicia was one of the best bartenders I've had, definitely deserves the bar manager position."
+      "exampleQuote": "Alicia was one of the best bartenders I've had — definitely deserves the bar manager position."
     },
     {
-      "phrase": "90-minute time limit policy",
-      "frequency": 2,
+      "phrase": "90-minute time limit",
+      "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "After we ordered a third round of drinks, we were informed that we had to leave because there is a 90-minute time limit."
+      "exampleQuote": "We were informed that we had to leave because there is a 90-minute time limit. This policy is only mentioned in the menu in very small print."
     },
     {
-      "phrase": "hard to get a table",
+      "phrase": "hard to get in",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "I have tried to get in a few times but it is always super packed, it is definitely worth the try."
+      "exampleQuote": "I have tried to get in a few times but it is always super packed."
     }
   ],
-  "notable_quote": "I will be making the drive from Cleveland just for this bar in the near future.",
-  "sentiment_summary": "Reviewers are loud about the cocktail program and the room, the botanical candlelit room draws real reverence, but the 90-minute turnover policy, when it surfaces without a heads-up from staff, converts a great night into a grievance.",
-  "quarter_narrative": "Commerce Bar held an 83% five-star rate across 106 reviews this spring, a rating that signals a room people want to evangelize, the problem is the room is barely speaking back. One post in the last 30 days and an engagement rate that sits below one percent means the Instagram presence offers almost nothing for the surge of interest a place like this could be generating. Hidden Harbor leads the Pittsburgh Bars family this issue on social momentum, and the gap between their feed and Commerce's is the clearest illustration of why rank and reputation don't always match. Until Commerce closes that loop, specifically on Google discoverability, where there's no website, no phone number, and no clear path from search to reservation, the ceiling on its rank is structural, not reputational.",
-  "tldr_read": "Exceptional review sentiment and strong creator fit undercut by a near-dormant Instagram and a Google listing missing both a website and a phone number, Neighborhood Staple, #2 in Pittsburgh Bars.",
-  "tldr_meaning": "The review signal is already doing the work a much larger account would envy; the constraint on rank movement is a conversion path that essentially doesn't exist and an Instagram channel operating at a fraction of its potential reach.",
+  "notable_quote": "I will be making the drive from Cleveland JUST for this bar in the near future.",
+  "sentiment_summary": "Reviewers are consistent about the moody botanical aesthetic, the inventive cocktails, and individual bartenders by name — the one sustained grievance is a 90-minute seating limit that isn't communicated until it's too late.",
+  "quarter_narrative": "Twenty-eight creators filmed Commerce Bar this quarter, generating 1.6 million TikTok plays — Commerce Bar posted none of it back. That gap is the editorial story of Spring 2026 for this East Liberty speakeasy: the city has effectively turned the place into a word-of-mouth engine, and the bar itself is running at near-zero on the channels that would let it capture any of that momentum. @andrewgardone's clip alone — captioned 'Best place in Pittsburgh it's slept on' — pulled 443,400 plays without a single owned asset to funnel the traffic anywhere useful, a problem compounded by the absence of a website or phone number on Google. Hidden Harbor holds the family lead this issue on social momentum, and the distance between them and Commerce Bar is almost entirely a distribution question, not a quality one. Closing that gap — even partially — is what moves this rank.",
+  "tldr_read": "Massive TikTok creator footprint, almost no owned presence to catch it; Neighborhood Staples, #2 in Pittsburgh Bars.",
+  "tldr_meaning": "1.6 million external plays with no website, no TikTok account, and one Instagram post in 30 days means the ceiling on this rank is low until the business controls at least one outbound channel.",
   "playbook": [
     {
-      "headline": "Add a website and phone number to Google",
-      "action": "The Google listing has hours but no website and no phone, two fields that directly determine whether search traffic converts to a visit.",
-      "signal": "conversion_path",
+      "headline": "Claim the TikTok the city already built",
+      "action": "28 creators posted 30+ videos generating 1.6M plays this quarter — create an owned TikTok account to anchor that traffic somewhere.",
+      "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Post reels of the room, not stills",
-      "action": "Zero reels in the last 30 days and a 0.72% engagement rate, the candlelit, botanical interior is exactly the kind of visual that performs on short-form video without a large following.",
-      "signal": "momentum",
+      "headline": "Put a website and phone on Google",
+      "action": "The Google Business profile has hours but no website and no phone number, cutting off the conversion path entirely for anyone landing there after a TikTok view.",
+      "signal": "conversion_path",
       "priority": "medium"
     },
     {
-      "headline": "Let bartenders claim their moment on camera",
-      "action": "Alicia and Addie are named in multiple reviews, short bartender-led cocktail videos would activate creator fit that already ranks at the family median without requiring outside collaborators.",
-      "signal": "collab_fit",
+      "headline": "Post more than once a month on Instagram",
+      "action": "One post in 30 days and a 0.72% engagement rate on a business account with clear visual material — the speakeasy aesthetic photographs itself, use it.",
+      "signal": "content_canvas",
       "priority": "low"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-22T22:19:32.334Z",
+  "analyzed_at": "2026-04-25T15:48:40.743Z",
   "model": "claude-sonnet-4-6"
 }

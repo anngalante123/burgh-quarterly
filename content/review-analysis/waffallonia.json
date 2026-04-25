@@ -5,7 +5,7 @@
       "phrase": "Liège waffle texture",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "They are made in house and are liege waffles, more chewy and sugary with bits of crunch at the edges."
+      "exampleQuote": "They are made in house and are liege waffles. So, more chewy and sugary with bits of crunch at the edges."
     },
     {
       "phrase": "waffle and ice cream pairing",
@@ -20,44 +20,44 @@
       "exampleQuote": "Awesome neighborhood place to take the kids. Consistently great waffles!"
     },
     {
-      "phrase": "Nutella as flavor anchor",
-      "frequency": 2,
+      "phrase": "trust the process philosophy",
+      "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "Waffle with chocolate ice cream and Nutella is the best."
+      "exampleQuote": "I really enjoy the philosophy 'trust the process', its simple and elegant."
     },
     {
-      "phrase": "unexpected quality discovery",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "These were honestly, unexpectedly amazing."
+      "phrase": "Nutella flavor intensity",
+      "frequency": 1,
+      "sentiment": "neutral",
+      "exampleQuote": "A pretty nice amount of Nutella flavor (could always be stronger though)."
     }
   ],
-  "notable_quote": "The waffles here are not the typical soggy grocery store ones, they are made in house and are liege waffles, more chewy and sugary with bits of crunch at the edges.",
-  "sentiment_summary": "Reviewers consistently single out the Liège waffle itself, the chew, the caramelized crust, the in-house ice cream, as the reason to return; the only friction in the record is a passing wish that the Nutella flavor read a little stronger.",
-  "quarter_narrative": "Waffallonia entered Spring 2026 with its strongest structural position in the family: 605 Google reviews averaging well above four stars, a review posted six days ago, and 291 photos spread across a well-tagged catalog that outpaces the family median. The gap is Instagram, which has gone functionally dark, no recent posts, no bio, no business account designation, and an engagement signal that trails every peer in the Pittsburgh Sweets family, including Page's, whose social momentum is what vaulted them to the family lead this issue. Holding the #1 dessert rank while running a dormant Instagram is a defensible position as long as the review engine keeps turning; the moment that slows, the gap Page's has opened on social becomes a ranking vulnerability.",
-  "tldr_read": "Dominant reviews and a complete conversion path, but Instagram has gone dark, Icons of the Burgh, #1 in Pittsburgh Dessert restaurants.",
-  "tldr_meaning": "Every signal that depends on in-person word-of-mouth is at or near the ceiling; the only axis with meaningful downside risk is Instagram, which is currently contributing almost nothing to the overall signal picture.",
+  "notable_quote": "The waffles here are not the typical soggy grocery store ones — they are made in house and are liege waffles, so more chewy and sugary with bits of crunch at the edges.",
+  "sentiment_summary": "Reviewers are consistent on two things: the Liège waffle construction is a genuine departure from what most Pittsburghers expect, and the ice cream earns its own praise; the only friction that surfaces, even gently, is that flavors like Nutella could push harder.",
+  "quarter_narrative": "Waffallonia holds the top dessert rank in Pittsburgh with 605 reviews, 76 percent of them five stars, and a review posted as recently as six days ago — the floor is solid. But the ceiling conversation is happening somewhere the business isn't: no Pittsburgh TikTok coverage is indexed, Instagram appears dormant with no posts or reels tracked in the last 30 days and no confirmed business account, and the Instagram signal sits measurably below the family median in a category where Page's is leading the entire Pittsburgh Sweets family specifically on social momentum. For a shop that reviewers describe as a walking-date destination and a place where a hot sugar waffle eaten on the street is the whole point, the visual case is writing itself without any help from the business. Holding the Icons tier at rank one in dessert is defensible on review volume alone for now, but the gap between what the city wants to film and what the business is putting back into circulation is where the rank gets tested in future issues.",
+  "tldr_read": "Near-perfect reviews and a complete Google presence, but a dormant Instagram and no tracked TikTok footprint — Icons of the Burgh, #1 in Pittsburgh Dessert restaurants.",
+  "tldr_meaning": "The review and conversion signals are already at ceiling; what determines whether Waffallonia stays at rank one or gets overtaken by a momentum-driven challenger is entirely a social visibility question.",
   "playbook": [
     {
-      "headline": "Restart Instagram before the rank gap widens",
-      "action": "The account has no bio, no recent posts, and isn't designated as a business profile, three fixable gaps before a single photo is posted.",
+      "headline": "Restart Instagram with a business account",
+      "action": "Convert from personal to business account, add a bio, and post — the last confirmed activity is unknown, a gap that's costing measurable signal against a family median that's already 11 points higher.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Turn the waffle-making process into a visual series",
-      "action": "The 291 Google photos prove customers want to shoot this product, a recurring behind-the-counter Reels format around the Liège process costs nothing to produce.",
-      "signal": "content_canvas",
+      "headline": "Make the street-waffle moment findable on TikTok",
+      "action": "Zero Pittsburgh TikToks are indexed for Waffallonia; one creator-facing moment — a fresh Liège waffle pulled from the iron, eaten outside on Murray Avenue — is the exact format that indexes and travels.",
+      "signal": "collab_fit",
       "priority": "medium"
     },
     {
-      "headline": "Promote the pint pre-order as a distinct offering",
-      "action": "One reviewer flagged that ice cream is available by the pint on advance order, a detail that appears nowhere in the current Google business listing and represents an easy conversion-path addition.",
+      "headline": "Tag the pint pre-order path on Google",
+      "action": "Reviewers mention ordering ice cream by the pint ahead of time, but that purchase path has no visible Google callout — surfacing it in the business description costs nothing and closes a conversion gap.",
       "signal": "conversion_path",
       "priority": "low"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-22T22:28:14.678Z",
+  "analyzed_at": "2026-04-25T15:44:57.531Z",
   "model": "claude-sonnet-4-6"
 }

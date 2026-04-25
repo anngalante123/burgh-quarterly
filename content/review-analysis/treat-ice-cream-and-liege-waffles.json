@@ -5,59 +5,59 @@
       "phrase": "Liège waffle quality",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in Liège."
+      "exampleQuote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in liège."
     },
     {
-      "phrase": "ice cream on a waffle",
-      "frequency": 5,
+      "phrase": "ice cream on its own",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Add that delicious waffle to it and you go into a brand new realm of delicious."
+      "exampleQuote": "I'm an ice cream snob and this is some of the best ice cream I've ever had."
     },
     {
-      "phrase": "owner and staff experience",
-      "frequency": 5,
-      "sentiment": "neutral",
+      "phrase": "owner and staff warmth",
+      "frequency": 3,
+      "sentiment": "positive",
       "exampleQuote": "The owner is extremely friendly and nice and helped make the experience that much better."
     },
     {
-      "phrase": "sample limit tension",
+      "phrase": "sample limit friction",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "The comment along the lines of 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone, made us feel uncomfortable."
     },
     {
-      "phrase": "specific flavor callouts",
-      "frequency": 3,
+      "phrase": "specific flavor memory",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The sage salted almond on a waffle was so good!"
+      "exampleQuote": "The sage salted almond on a waffle was so good."
     }
   ],
-  "notable_quote": "I'm an ice cream snob and this is some of the best ice cream I've ever had.",
-  "sentiment_summary": "Reviewers are emphatic about the product, the Liège waffle format and unusual flavors like sage salted almond earn repeated superlatives, but a recurring friction around sampling limits and staff tone has surfaced in at least two reviews with enough specificity to be taken seriously.",
-  "quarter_narrative": "Treat entered Spring 2026 with a 623-review foundation and a 98% five-star hold that most Shadyside shops would envy, and its visual catalog, 202 photos spread across a full Google category set, keeps the listing competitive in search. What it didn't do was post to Instagram: zero posts, zero reels, and 196 days of silence from an account with a 7.65% engagement rate that suggests a genuinely warm audience waiting to be used. That gap is the story, because the Pittsburgh Sweets category is being paced right now by Page's, whose defining signal this issue is social momentum, the exact axis where Treat has gone completely dark. Moving from Ones to Watch requires more than a stable rating; it requires the city to keep encountering the business in new contexts.",
-  "tldr_read": "623 reviews at 98% five-star and a maxed-out Google presence, but the Instagram account has been silent for 196 days, Ones to Watch, #3 in Pittsburgh Ice Cream Shops.",
-  "tldr_meaning": "Every signal axis but one is at or near the family median; the Instagram dormancy is the single variable separating Treat's current rank from a legitimate push toward the top of the category.",
+  "notable_quote": "Add that delicious waffle to it and you go into a brand new realm of delicious.",
+  "sentiment_summary": "Reviewers consistently reach for superlatives on both the ice cream and the Liège waffles, with specific flavors like sage salted almond earning their own callouts, but a recurring undercurrent around sample-tasting interactions has drawn two pointed critical reviews that both describe the same staff dynamic.",
+  "quarter_narrative": "Treat enters Spring 2026 with 623 Google reviews sitting at 98% five stars and zero Instagram posts in the last 199 days — a business that Pittsburgh clearly loves and is largely documenting for itself. No Pittsburgh TikTok videos are indexed for the shop either, which means the city's appetite for exactly this kind of photogenic, concept-forward dessert experience is not yet finding Treat as its subject. That contrast matters in a family where Page's is running away with the conversation on the strength of social momentum alone. For Treat to move off the Ones to Watch tier, the rank math is straightforward: the product signal and the review signal are already there; the missing variable is any evidence that the city is talking about it somewhere other than Google.",
+  "tldr_read": "Near-perfect reviews and a fully built conversion path, but the Instagram has been dark for 199 days and no TikTok presence exists — Ones to Watch, #3 in Pittsburgh Ice Cream Shops.",
+  "tldr_meaning": "Every signal axis is at or above the family median except Instagram momentum, which is effectively flatlined, and that single gap is the difference between this rank and the top of the family.",
   "playbook": [
     {
-      "headline": "Restart the Instagram account immediately",
-      "action": "196 days of silence on a 7.65%-engagement account is a direct cost, post the waffle and a named flavor within this week.",
+      "headline": "End the 199-day Instagram silence",
+      "action": "One post per week featuring named flavors — sage salted almond has a ready-made audience and zero current documentation.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Post a visible sample policy at the counter",
-      "action": "Two reviews cite the same staff friction around sample limits; a simple posted guideline removes ambiguity and protects the 98% rating.",
+      "headline": "Make the sample policy visible before it's verbal",
+      "action": "A simple posted limit prevents the recurring negative interaction that has now appeared in two separate reviews and drawn a public owner response.",
       "signal": "community_spark",
       "priority": "medium"
     },
     {
-      "headline": "Tag specific flavors in photo uploads",
-      "action": "The visual catalog is strong at 202 photos, but named flavors like sage salted almond give search and creator context that generic food shots don't.",
-      "signal": "content_canvas",
+      "headline": "Give the 7.65% engagement rate somewhere to land",
+      "action": "With an engagement rate nearly double the family median, any resumed posting will find an audience that is already listening — link the menu and a booking or order path in the bio.",
+      "signal": "conversion_path",
       "priority": "low"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:27:57.195Z",
+  "analyzed_at": "2026-04-25T15:44:35.246Z",
   "model": "claude-sonnet-4-6"
 }

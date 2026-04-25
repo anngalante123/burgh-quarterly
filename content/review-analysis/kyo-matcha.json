@@ -14,50 +14,56 @@
       "exampleQuote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time."
     },
     {
-      "phrase": "cozy work-friendly seating",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Tons of wall plugs and comfortable seating, making it a great spot to get some work done."
+      "phrase": "crowded seating and noise",
+      "frequency": 3,
+      "sentiment": "neutral",
+      "exampleQuote": "Can get crowded and a bit loud at times, but that's a testament to how much people love this place."
     },
     {
-      "phrase": "inconsistent portion sizes",
+      "phrase": "inconsistent soft serve portions",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "Sometimes my ice cream sizes varies too much especially when it's like $8 I expect a decent portion."
     },
     {
-      "phrase": "early closing and staffing friction",
+      "phrase": "early closing enforcement",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Closing five minutes early while customers are still actively trying to order feels inconsistent and unprofessional."
+    },
+    {
+      "phrase": "cozy work-friendly vibe",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Tons of wall plugs and comfortable seating, making it a great spot to get some work done."
     }
   ],
-  "notable_quote": "The matcha latte was rich and creamy and sweet, the best matcha I've had in a long time.",
-  "sentiment_summary": "Reviewers come back for the restrained sweetness of the cakes and a matcha latte that earns genuine superlatives, but they ding the shop on inconsistent soft-serve portions and at least one closing-time enforcement that left a customer locked out five minutes early.",
-  "quarter_narrative": "Kyo Matcha entered Spring 2026 holding 314 Google reviews at 86% five-star and a review posted just two days ago, the kind of active review cadence that most dessert shops in this family would envy. Where it distinguishes itself even further is on Instagram: a 47.87% engagement rate and five Reels in the last 30 days put it well ahead of the family median and make it the most creator-compatible business in the Pittsburgh Sweets tier, even without a verified account. Page's leads the family this issue on social momentum, but Kyo's creator-fit signal suggests the gap is closeable, the posts are landing, they're just not quite accumulating at Page's volume. The rank moves on one thing: whether sentiment catches up to the visual and social strength, which means the portion-consistency and closing-procedure complaints need to stop showing up in new reviews.",
-  "tldr_read": "Dominant Instagram engagement and near-perfect creator fit, undercut by review sentiment sitting below the family median, Icons of the Burgh, #2 in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "The visual and social signals are already at the top of the family; the ceiling on this rank is now set entirely by whether operational friction, portions, closing consistency, stops generating the negative reviews that are pulling sentiment below the median.",
+  "notable_quote": "The matcha latte was rich and creamy and sweet — the best matcha I've had in a long time.",
+  "sentiment_summary": "Reviewers consistently celebrate the restrained sweetness of the cakes and the depth of the matcha program, but return with complaints about portion inconsistency on an $8 soft serve and a closing-time enforcement incident that exposed a gap between posted hours and staff behavior.",
+  "quarter_narrative": "Kyo Matcha enters Spring 2026 as the city's second-ranked dessert shop and sits squarely in Icons territory on nearly every axis — a 47.87% Instagram engagement rate, a creator fit signal that leads its entire family, and a conversion path that is fully built out on Google. What it doesn't have is TikTok presence: no Pittsburgh-indexed videos, no creator trail, no short-form record of the sakura rain cake or the matcha parfait that reviewers keep mentioning in shorthand, as if everyone already knows. In the Pittsburgh Sweets family, Page's holds the top position this issue on the back of social momentum; Kyo's momentum is real but still concentrated on a single platform. The rank moves when the creator signal — which is clearly there in potential, given a 96 creator-fit reading — converts into actual indexed coverage, and when the review sentiment, currently the weakest axis in the portfolio, gets the same attention the Instagram account does.",
+  "tldr_read": "Exceptional Instagram engagement and creator appeal, but review sentiment trails the family median by a meaningful margin and TikTok coverage is nonexistent — Icons of the Burgh, #2 in Pittsburgh Dessert Shops.",
+  "tldr_meaning": "The platform signals point upward and the conversion infrastructure is solid, but closing-time complaints and portion inconsistency are quietly pulling the sentiment axis below where a business at this visibility level should be.",
   "playbook": [
     {
-      "headline": "Close the sentiment gap before it widens",
-      "action": "Review sentiment sits below the family median of 83, portion inconsistency and a closing-time complaint are the two recurring drags; address both operationally.",
+      "headline": "Close the gap between hours posted and doors open",
+      "action": "Two negative reviews cite staff behavior at closing; a written closing protocol eliminates the sentiment drag that review sentiment data is already showing.",
       "signal": "community_spark",
       "priority": "high"
     },
     {
-      "headline": "Convert the Instagram account to business status",
-      "action": "The account is running as a personal profile despite 47.87% engagement, switching to a business account unlocks audience analytics without changing what's already working.",
-      "signal": "momentum",
+      "headline": "Get the matcha parfait on TikTok, now",
+      "action": "Zero Pittsburgh TikToks indexed despite a creator-fit signal that leads the family; one invited creator visit with the sakura rain cake or matcha parfait changes that number.",
+      "signal": "collab_fit",
       "priority": "medium"
     },
     {
-      "headline": "Expand the Google photo catalog beyond six active categories",
-      "action": "405 photos across 13 listed categories is strong, but the visual catalog signal trails the family median by one point, seating and behind-the-counter shots are the thinnest categories in the current set.",
-      "signal": "content_canvas",
+      "headline": "Close the 8-day gap between Instagram posts",
+      "action": "Five Reels in 30 days is a strong pace but the last post was 8 days ago; the 47.87% engagement rate means the audience is ready, the feed just needs to stay live.",
+      "signal": "momentum",
       "priority": "low"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-22T22:22:27.582Z",
+  "analyzed_at": "2026-04-25T15:39:00.830Z",
   "model": "claude-sonnet-4-6"
 }

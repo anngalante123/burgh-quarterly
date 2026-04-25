@@ -106,6 +106,13 @@ async function analyzeOne(
     igIsBusiness: boolean;
     igVerified: boolean;
     igHasBio: boolean;
+    tiktokVideoCount: number;
+    tiktokTotalPlays: number;
+    tiktokUniqueCreators: number;
+    tiktokTopCreators: string[];
+    tiktokTopVideo: { author: string; plays: number; text: string } | null;
+    tiktokDetectedOwnHandle: string | null;
+    tiktokMostRecentDaysAgo: number | null;
   },
 ): Promise<Omit<BusinessAnalysis, "slug" | "analyzed_at" | "model">> {
   const tierLabel = {
@@ -157,6 +164,20 @@ Instagram has bio: ${input.igHasBio}`
     : ""
 }
 
+=== TIKTOK CREATOR COVERAGE ===
+${input.tiktokVideoCount > 0
+  ? `Pittsburgh creators have posted ${input.tiktokVideoCount}${input.tiktokVideoCount >= 30 ? "+" : ""} TikToks tagged with this business in the last quarter.
+Total plays: ${input.tiktokTotalPlays.toLocaleString()}
+Unique creators filming: ${input.tiktokUniqueCreators}
+Top creators by reach: ${input.tiktokTopCreators.slice(0, 5).map((h) => "@" + h).join(", ")}
+Most recent TikTok: ${input.tiktokMostRecentDaysAgo !== null ? input.tiktokMostRecentDaysAgo + " days ago" : "unknown"}
+${input.tiktokDetectedOwnHandle ? `Business has its own TikTok account: @${input.tiktokDetectedOwnHandle}` : "Business does NOT appear to have its own TikTok account."}
+${input.tiktokTopVideo ? `Top video this issue: @${input.tiktokTopVideo.author} pulled ${input.tiktokTopVideo.plays.toLocaleString()} plays. Caption: "${input.tiktokTopVideo.text.slice(0, 200)}"` : ""}`
+  : "No Pittsburgh TikToks indexed for this business."
+}
+
+EDITORIAL ANGLE NOTE: TikTok coverage is the most important hidden signal for many of these businesses. A bakery can be dormant on its own Instagram and still have 30 creators filming there with hundreds of thousands of plays. That gap (the city is filming you, you're not capturing any of it) is an honest editorial story AND a natural Relay opening. When the data supports this framing, lead with it. Don't force the angle when the business actually has its own TikTok and is posting.
+
 === REVIEW TEXTS (${input.reviews.length} available) ===
 ${input.reviews.map((r, i) => `${i + 1}. "${r}"`).join("\n")}
 
@@ -170,7 +191,7 @@ Return ONLY a valid JSON object with this exact shape (no markdown, no prose out
   "notable_quote": "the strongest pull-quote from the reviews, one sentence, captures the appeal",
   "sentiment_summary": "one sentence: what reviewers love + what they nitpick, specific not generic",
 
-  "quarter_narrative": "2-3 sentence editorial paragraph describing what this business's Spring 2026 looked like. Lead with what the signal did (stacked reviews / held a rating / built a catalog / went dormant on Instagram). Include the family-leader context in a compressed form. End with a forward-looking sentence about what moves the rank. Write like a journalist, not a marketer.",
+  "quarter_narrative": "2-3 sentence editorial paragraph describing what this business's Spring 2026 looked like. Where TikTok creator coverage is high (many videos, many plays, many creators) but the business itself isn't posting much, lead with that contrast: 'X creators are filming this place, the place is filming none of it back.' Include the family-leader context. End with a forward-looking sentence about what moves the rank. Write like a journalist, not a marketer.",
 
   "tldr_read": "One sentence: strongest signal in plain language + weakest signal + tier and rank. Example template: 'Strong reviews, dormant Instagram. Ones to Watch, #1 in Pittsburgh Bakeries.' Adapt wording to this business.",
 
@@ -316,8 +337,11 @@ async function main() {
       continue;
     }
 
-    // Load social
-    let social: {
+    // Load social. The on-disk shape is "flat" (IG fields at the top
+    // level + `tiktok_mentions` and `growth` as siblings). We promote the
+    // IG fields into a nested `ig` object for the rest of the script
+    // while preserving siblings like `tiktok_mentions`.
+    type SocialShape = {
       ig?: {
         handle: string;
         posts_30d: number;
@@ -328,13 +352,24 @@ async function main() {
         biography?: string;
         last_post_at: string | null;
       };
-    } = {};
+      tiktok_mentions?: unknown;
+    };
+    let social: SocialShape = {};
     try {
       const socialRaw = await readFile(join(SOCIAL_DIR, `${slug}.json`), "utf-8");
-      social = JSON.parse(socialRaw);
-      // Handle flat IG shape
-      if (!social.ig && (social as Record<string, unknown>).handle) {
-        social = { ig: social as unknown as typeof social.ig };
+      const raw = JSON.parse(socialRaw) as Record<string, unknown>;
+      const tiktok_mentions = raw.tiktok_mentions;
+      const hasFlatIg = !raw.ig && raw.handle;
+      if (hasFlatIg) {
+        social = {
+          ig: raw as unknown as SocialShape["ig"],
+          tiktok_mentions,
+        };
+      } else {
+        social = {
+          ig: raw.ig as SocialShape["ig"],
+          tiktok_mentions,
+        };
       }
     } catch {}
 
@@ -358,6 +393,29 @@ async function main() {
     if (social.ig?.last_post_at) {
       const last = new Date(social.ig.last_post_at);
       igLastPostDaysAgo = Math.round(
+        (Date.now() - last.getTime()) / 86_400_000,
+      );
+    }
+
+    // TikTok mentions are loaded directly off the social JSON (the
+    // SocialRecord in load-social.ts now exposes tiktok_mentions; this
+    // script reads the raw file so we look for the same field).
+    type TtMentions = {
+      video_count: number;
+      total_plays: number;
+      unique_creators: number;
+      top_creators: Array<{ handle: string }>;
+      top_videos: Array<{ author: string; plays: number; text: string }>;
+      detected_own_handle: string | null;
+      most_recent_post_at: string | null;
+    };
+    const tt: TtMentions | null =
+      ((social as Record<string, unknown>).tiktok_mentions as TtMentions) ??
+      null;
+    let ttMostRecentDaysAgo: number | null = null;
+    if (tt?.most_recent_post_at) {
+      const last = new Date(tt.most_recent_post_at);
+      ttMostRecentDaysAgo = Math.round(
         (Date.now() - last.getTime()) / 86_400_000,
       );
     }
@@ -421,6 +479,20 @@ async function main() {
         igIsBusiness: !!social.ig?.is_business_account,
         igVerified: !!social.ig?.verified,
         igHasBio: !!social.ig?.biography,
+        tiktokVideoCount: tt?.video_count ?? 0,
+        tiktokTotalPlays: tt?.total_plays ?? 0,
+        tiktokUniqueCreators: tt?.unique_creators ?? 0,
+        tiktokTopCreators: tt?.top_creators?.map((c) => c.handle) ?? [],
+        tiktokTopVideo:
+          tt?.top_videos && tt.top_videos[0]
+            ? {
+                author: tt.top_videos[0].author,
+                plays: tt.top_videos[0].plays,
+                text: tt.top_videos[0].text,
+              }
+            : null,
+        tiktokDetectedOwnHandle: tt?.detected_own_handle ?? null,
+        tiktokMostRecentDaysAgo: ttMostRecentDaysAgo,
       });
 
       const full: BusinessAnalysis = {

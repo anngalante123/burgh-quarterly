@@ -2,62 +2,62 @@
   "slug": "24-carrot-juice",
   "themes": [
     {
-      "phrase": "owner warmth and personality",
-      "frequency": 3,
+      "phrase": "owner warmth and character",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The owner is super nice and cool!"
+      "exampleQuote": "Really nice owner. Will be back!"
     },
     {
       "phrase": "açaí bowl quality",
-      "frequency": 2,
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good."
     },
     {
-      "phrase": "cleanliness and atmosphere",
-      "frequency": 2,
+      "phrase": "cleanliness and affordability",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Easy parking, very clean, good price for a delicious smoothie."
     },
     {
       "phrase": "Children's Hospital proximity",
-      "frequency": 1,
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Located right across from Children's Hospital, very convenient."
+      "exampleQuote": "Located right across from Children's hospital, very convenient."
     },
     {
-      "phrase": "smoothie flavor and value",
+      "phrase": "smoothie standout moments",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Got the green machine, one of the best smoothies I've ever had."
     }
   ],
   "notable_quote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good.",
-  "sentiment_summary": "Reviewers are consistent on three things, the owner's warmth, the quality of the açaí bowls and smoothies, and the cleanliness of the space, with no notable nitpicks surfacing across 519 reviews.",
-  "quarter_narrative": "24 Carrot Juice entered Spring 2026 with one of the most stable review floors in the Pittsburgh Cafes family: 519 ratings, 99% five-star, and a review posted as recently as three days ago. That volume of nearly unbroken positive sentiment is rare at this tier. While Allegheny Coffee & Tea Exchange is leading the Cafes family on social momentum, 24 Carrot is holding a different kind of authority, deep community trust built in a high-foot-traffic Bloomfield corridor steps from Children's Hospital. The path from Ones to Watch toward contention in the broader Cafes ranking runs directly through Instagram, where the account has posted three times in 30 days and published zero Reels, leaving the visual energy of a genuinely photogenic product largely undeployed.",
-  "tldr_read": "Near-perfect review sentiment and a strong creator fit signal, but Instagram momentum is the quietest axis in an otherwise compelling picture, Ones to Watch, #1 in Pittsburgh Juice Shops.",
-  "tldr_meaning": "The review foundation is already built; the ceiling on this ranking is now set almost entirely by whether the Instagram signal catches up to the sentiment signal.",
+  "sentiment_summary": "Reviewers are consistent on three things — the owner's presence, the quality of the açaí bowls and smoothies, and the cleanliness of the space — with almost no criticism surfacing across 519 reviews, though the brevity of most responses suggests a customer base that feels strongly but doesn't say much.",
+  "quarter_narrative": "Twenty creators filmed 24 Carrot Juice this quarter. The business posted three times on Instagram. That gap is the whole story of Spring 2026 for this Bloomfield juice shop: 219,000 TikTok plays earned entirely by other people's phones, zero of them the shop's own. @goofysid's birthday video alone crossed 40,900 plays on a caption that barely mentioned the menu. Meanwhile, the family leader this issue — Allegheny Coffee & Tea Exchange — built its top-eight standing on social momentum it controls. 24 Carrot Juice holds the #1 juice shop rank and a review sentiment that outpaces the family median, but the ceiling on this rank is real: without a presence on the platform where Pittsburgh is already watching, the business stays a subject rather than a voice.",
+  "tldr_read": "Dominant review sentiment, 20 creators filming it, zero TikTok presence of its own — Ones to Watch, #1 in Pittsburgh Juice Shops.",
+  "tldr_meaning": "The TikTok signal is already there and already performing; the rank moves when the business stops being a passive subject of that coverage and starts existing on the platform itself.",
   "playbook": [
     {
-      "headline": "Get one Reel into the feed",
-      "action": "Zero Reels in 30 days is the single gap holding back an account with a 2.53% engagement rate and visually strong product.",
+      "headline": "Claim a presence where 219K plays already live",
+      "action": "Open a business TikTok account — 20 creators have already done the proof-of-concept with 219,129 plays this quarter.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Add a phone number to Google",
-      "action": "The Google profile is missing a phone number, a one-field fix that closes a gap against a family median Conversion Path of 100.",
+      "headline": "Put a phone number on Google",
+      "action": "The Google Business Profile has no phone listed — a direct friction point on a profile that otherwise has hours, a website, and 519 reviews.",
       "signal": "conversion_path",
       "priority": "medium"
     },
     {
-      "headline": "Push photo categories beyond six",
-      "action": "177 Google photos across only 6 active categories leaves the Visual Catalog just below the family median of 77, tagging more staff and interior shots closes it.",
+      "headline": "Post Instagram Reels, not just stills",
+      "action": "Zero Reels in the last 30 days against a 2.53% engagement rate — short video of the açaí bowl build or a smoothie pour would extend reach without adding volume.",
       "signal": "content_canvas",
       "priority": "low"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:18:49.565Z",
+  "analyzed_at": "2026-04-25T15:47:58.308Z",
   "model": "claude-sonnet-4-6"
 }

@@ -34,5 +34,111 @@
       "end": 690,
       "delta": 1
     }
+  },
+  "tiktok_mentions": {
+    "query": "dobrá tea pittsburgh pittsburgh",
+    "video_count": 30,
+    "total_plays": 2604795,
+    "total_likes": 211753,
+    "unique_creators": 28,
+    "top_creators": [
+      {
+        "handle": "memoirs.of.a.ginga",
+        "fans": 728,
+        "verified": false,
+        "videos": 1,
+        "plays": 1800000,
+        "likes": 173600
+      },
+      {
+        "handle": "movies000018",
+        "fans": 281,
+        "verified": false,
+        "videos": 1,
+        "plays": 503400,
+        "likes": 20800
+      },
+      {
+        "handle": "calsipos",
+        "fans": 73000,
+        "verified": false,
+        "videos": 2,
+        "plays": 140400,
+        "likes": 6199
+      },
+      {
+        "handle": "vividlyaria",
+        "fans": 913,
+        "verified": false,
+        "videos": 1,
+        "plays": 48400,
+        "likes": 3038
+      },
+      {
+        "handle": "littlegirlsoph",
+        "fans": 1881,
+        "verified": false,
+        "videos": 1,
+        "plays": 27500,
+        "likes": 3195
+      },
+      {
+        "handle": "br_openice",
+        "fans": 583400,
+        "verified": true,
+        "videos": 1,
+        "plays": 23200,
+        "likes": 1850
+      },
+      {
+        "handle": "katelynsoldit",
+        "fans": 605,
+        "verified": false,
+        "videos": 1,
+        "plays": 19000,
+        "likes": 950
+      },
+      {
+        "handle": "avarash",
+        "fans": 1946,
+        "verified": false,
+        "videos": 1,
+        "plays": 10200,
+        "likes": 527
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7623491990398782733",
+        "url": "https://www.tiktok.com/@memoirs.of.a.ginga/video/7623491990398782733",
+        "text": "#pittsburgh #pittsburghzoo",
+        "author": "memoirs.of.a.ginga",
+        "plays": 1800000,
+        "likes": 173600,
+        "posted": "2026-03-31T18:43:09.000Z"
+      },
+      {
+        "id": "7435477324604263722",
+        "url": "https://www.tiktok.com/@movies000018/video/7435477324604263722",
+        "text": "The Pradeeps of Pittsburgh part 1 #movie #thepradeepsofpittsburgh #india #hollywood #bollywoodsong #pittsburgh ##prime ",
+        "author": "movies000018",
+        "plays": 503400,
+        "likes": 20800,
+        "posted": "2024-11-10T02:49:36.000Z"
+      },
+      {
+        "id": "7534731262238412062",
+        "url": "https://www.tiktok.com/@calsipos/video/7534731262238412062",
+        "text": "Churro latte for the win today 😎 this shop is so so cute and I love their wallpaper so much. The coffee and bakery items were great!!!! #pittsburgh #trending #shoplocal #tastetest #vlog ",
+        "author": "calsipos",
+        "plays": 104500,
+        "likes": 4035,
+        "posted": "2025-08-04T14:06:00.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-25T10:59:15.000Z",
+    "median_plays": 1288,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:24:33.457Z"
   }
 }

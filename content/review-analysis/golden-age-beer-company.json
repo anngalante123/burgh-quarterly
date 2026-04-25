@@ -2,22 +2,16 @@
   "slug": "golden-age-beer-company",
   "themes": [
     {
-      "phrase": "pilsners and liter deals",
+      "phrase": "beer quality and variety",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Great pilsners! The beers are excellent."
+    },
+    {
+      "phrase": "food hits and misses",
       "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Liters of beer $10, super deal."
-    },
-    {
-      "phrase": "weekend specials worth the trip",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Special for the weekend were shepherd pie pierogis.. omg. Worth the trip out of the city."
-    },
-    {
-      "phrase": "pierogis with potential",
-      "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Pierogis have potential - just stop trying to be fancy. Butter and onions, keep it simple."
+      "exampleQuote": "Half of your food is 'Meh', the other half is absolutely terrible — especially for the price."
     },
     {
       "phrase": "cozy unpretentious space",
@@ -26,38 +20,50 @@
       "exampleQuote": "So yummy and a fun, cozy, unpretentious space."
     },
     {
-      "phrase": "overcooked overpriced food",
+      "phrase": "weekend specials worth the trip",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Special for the weekend were shepherd pie pierogis.. omg. Worth the trip out of the city."
+    },
+    {
+      "phrase": "value on beer",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Liters of beer $10, super deal."
+    },
+    {
+      "phrase": "overcooking everything",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Half of your food is 'Meh', the other half is absolutely terrible - especially for the price."
+      "exampleQuote": "You guys need to stop overcooking everything."
     }
   ],
   "notable_quote": "Special for the weekend were shepherd pie pierogis.. omg. Worth the trip out of the city.",
-  "sentiment_summary": "Reviewers are consistent on the beer, pilsners, liters, the value, and warm on the atmosphere, but the kitchen gets called out specifically on execution: overfried seitan, a burger with no give, and a general pattern of overcooking that one reviewer detailed at length.",
-  "quarter_narrative": "Golden Age Beer Company entered Spring 2026 with a tightly held rating, 85 percent five-star across 195 Google reviews, and posted twelve times to Instagram in thirty days, more frequently than most of its peer set. That activity translated to an Instagram momentum signal that clears the family median, which is something Hidden Harbor, the current Pittsburgh Bars leader, has built its standout signal around. What Golden Age hasn't done is convert that posting frequency into reel-driven reach: zero reels in the past month means the feed is active but not expanding. The rank moves when the visual catalog deepens and the short-form video gap closes, two things the existing post cadence suggests are within reach.",
-  "tldr_read": "Solid review volume and a conversion path that leaves nothing on the table, but the visual catalog sits below the family median and reels are absent entirely, Ones to Watch, #2 in Pittsburgh Breweries.",
-  "tldr_meaning": "The review foundation is stable and the posting cadence is real, but without reels and a stronger photo catalog, the Instagram momentum signal plateaus before it pulls the rank upward.",
+  "sentiment_summary": "Reviewers are consistent and enthusiastic about the beer — pilsners in particular — and the $10 liter deal drives loyalty, but a vocal minority lands hard on the kitchen, calling out overcooked proteins and pricing that doesn't match execution.",
+  "quarter_narrative": "Golden Age Beer Company spent Spring 2026 as a reliable neighborhood anchor with a Google profile that's essentially airtight — hours, phone, website, 195 reviews at 85% five-star, and a review as recent as two days ago. The beer story is settled and good. The TikTok story is nearly nonexistent: one tagged video, zero documented plays, zero unique creators filming the space this quarter. That's not a gap between what the city is saying and what the business is capturing — it's closer to silence on both ends. Twelve Instagram posts in 30 days shows the account is alive, but zero Reels and a 2.05% engagement rate means the content isn't traveling. Elsewhere in Pittsburgh Bars, Hidden Harbor is leading the family on social momentum, demonstrating what this tier looks like when the Instagram signal actually converts to reach. For Golden Age, moving up from #2 in Pittsburgh Breweries requires the food narrative to tighten and a video presence — anywhere — to give the beer the stage it's already earned in the room.",
+  "tldr_read": "Rock-solid Google presence and loyal beer following, but no TikTok footprint and Instagram Reels completely absent. Ones to Watch, #2 in Pittsburgh Breweries.",
+  "tldr_meaning": "The Google foundation is already there; the ceiling is determined entirely by whether video content — particularly short-form — starts moving the beer and the space beyond the neighborhood's existing regulars.",
   "playbook": [
     {
-      "headline": "Turn twelve posts into reel reach",
-      "action": "Post frequency is there, twelve posts in thirty days, but zero reels means the algorithm isn't distributing that effort beyond existing followers.",
+      "headline": "Put a beer pour on camera, now",
+      "action": "Zero Reels in the last 30 days and zero TikTok presence means the $10 liter deal and the pilsner program have never traveled beyond the room.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Fill the photo catalog's empty categories",
-      "action": "298 photos exist but cluster in default categories; food-specific tagging is thin for a kitchen running weekend specials like shepherd pie pierogis.",
-      "signal": "content_canvas",
+      "headline": "Let creators film the weekend specials",
+      "action": "Shepherd pie pierogis already earned the strongest pull-quote this issue; one creator in the taproom on a special-release weekend would generate what 12 static posts haven't.",
+      "signal": "collab_fit",
       "priority": "medium"
     },
     {
-      "headline": "Match creator fit to the beer-forward positioning",
-      "action": "Creator fit trails the family median, pairing with Pittsburgh beer or food creators would put the liter-deal value proposition in front of audiences already primed for it.",
-      "signal": "collab_fit",
+      "headline": "Anchor the food story around what works",
+      "action": "Review sentiment sits below the family median, almost entirely due to kitchen inconsistency; the wrap, the pierogis, and the fries have defenders — the menu doesn't need to grow, it needs editing.",
+      "signal": "content_canvas",
       "priority": "low"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-22T22:20:43.775Z",
+  "analyzed_at": "2026-04-25T15:49:58.667Z",
   "model": "claude-sonnet-4-6"
 }

@@ -34,5 +34,111 @@
       "end": 1454,
       "delta": 29
     }
+  },
+  "tiktok_mentions": {
+    "query": "page's pittsburgh",
+    "video_count": 30,
+    "total_plays": 1080303,
+    "total_likes": 55319,
+    "unique_creators": 25,
+    "top_creators": [
+      {
+        "handle": "pagesicecream",
+        "fans": 47500,
+        "verified": false,
+        "videos": 6,
+        "plays": 562700,
+        "likes": 24445
+      },
+      {
+        "handle": "bsilky_smooth",
+        "fans": 1634,
+        "verified": false,
+        "videos": 1,
+        "plays": 125200,
+        "likes": 8987
+      },
+      {
+        "handle": "pgh.date.spotters",
+        "fans": 18100,
+        "verified": false,
+        "videos": 1,
+        "plays": 89500,
+        "likes": 7078
+      },
+      {
+        "handle": "bhphotographypa",
+        "fans": 30500,
+        "verified": false,
+        "videos": 1,
+        "plays": 62600,
+        "likes": 3871
+      },
+      {
+        "handle": "reviews_by_cha_and_joe",
+        "fans": 168,
+        "verified": false,
+        "videos": 1,
+        "plays": 41900,
+        "likes": 2357
+      },
+      {
+        "handle": "caitlindestefano",
+        "fans": 944,
+        "verified": false,
+        "videos": 1,
+        "plays": 33800,
+        "likes": 1494
+      },
+      {
+        "handle": "pittsburghdatedayzzz",
+        "fans": 667,
+        "verified": false,
+        "videos": 1,
+        "plays": 25800,
+        "likes": 424
+      },
+      {
+        "handle": "lilbigbackz",
+        "fans": 18600,
+        "verified": false,
+        "videos": 1,
+        "plays": 22200,
+        "likes": 1604
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7555639219490655501",
+        "url": "https://www.tiktok.com/@pagesicecream/video/7555639219490655501",
+        "text": "Not your average banana split. 🍌🍫\n\n#bananasplit #brownie #dessert #icecream #pittsburgh ",
+        "author": "pagesicecream",
+        "plays": 231700,
+        "likes": 17800,
+        "posted": "2025-09-29T22:19:31.000Z"
+      },
+      {
+        "id": "7495545201256074538",
+        "url": "https://www.tiktok.com/@bsilky_smooth/video/7495545201256074538",
+        "text": "PAGES = LIFE!! I swear I’m here once a week 🤪 !! These are some of my favorite things to get!!! #fyp #viral #pittsburgh #foodtiktok #pitt #foodies #icecream #icecreamlover #dessert ",
+        "author": "bsilky_smooth",
+        "plays": 125200,
+        "likes": 8987,
+        "posted": "2025-04-20T23:44:10.000Z"
+      },
+      {
+        "id": "7520011442217651470",
+        "url": "https://www.tiktok.com/@pagesicecream/video/7520011442217651470",
+        "text": "Malt milkshakes are underrated. 🤷 Chocolate is classic, but you can add malt powder to any of our milkshakes! 🍫\n\n#malt #milkshake #icecream #pgh #pittsburgh ",
+        "author": "pagesicecream",
+        "plays": 122400,
+        "likes": 2248,
+        "posted": "2025-06-25T22:05:41.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-03-31T22:45:50.000Z",
+    "median_plays": 17800,
+    "detected_own_handle": "pagesicecream",
+    "scraped_at": "2026-04-25T15:29:03.586Z"
   }
 }

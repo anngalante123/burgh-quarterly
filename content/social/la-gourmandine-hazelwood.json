@@ -34,5 +34,111 @@
       "end": 304,
       "delta": 3
     }
+  },
+  "tiktok_mentions": {
+    "query": "la gourmandine hazelwood pittsburgh",
+    "video_count": 30,
+    "total_plays": 1091425,
+    "total_likes": 50671,
+    "unique_creators": 30,
+    "top_creators": [
+      {
+        "handle": "ms__lesh",
+        "fans": 1921,
+        "verified": false,
+        "videos": 1,
+        "plays": 719500,
+        "likes": 35300
+      },
+      {
+        "handle": "the_terrible1",
+        "fans": 77700,
+        "verified": false,
+        "videos": 1,
+        "plays": 256100,
+        "likes": 11500
+      },
+      {
+        "handle": "claracarral",
+        "fans": 489300,
+        "verified": false,
+        "videos": 1,
+        "plays": 25300,
+        "likes": 976
+      },
+      {
+        "handle": "lilbigbackz",
+        "fans": 18600,
+        "verified": false,
+        "videos": 1,
+        "plays": 23700,
+        "likes": 649
+      },
+      {
+        "handle": "valeska_nel",
+        "fans": 52800,
+        "verified": false,
+        "videos": 1,
+        "plays": 18900,
+        "likes": 401
+      },
+      {
+        "handle": "mae.the.horgi",
+        "fans": 4830,
+        "verified": false,
+        "videos": 1,
+        "plays": 10400,
+        "likes": 427
+      },
+      {
+        "handle": "pitsburgh.eats",
+        "fans": 6360,
+        "verified": false,
+        "videos": 1,
+        "plays": 8014,
+        "likes": 199
+      },
+      {
+        "handle": "kstravelviews",
+        "fans": 108,
+        "verified": false,
+        "videos": 1,
+        "plays": 3409,
+        "likes": 58
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7429958759117524230",
+        "url": "https://www.tiktok.com/@ms__lesh/video/7429958759117524230",
+        "text": "Theres nothing as beautiful as this.When a man is so gentle in public #hazelwoodpretoria #SAMA28 ",
+        "author": "ms__lesh",
+        "plays": 719500,
+        "likes": 35300,
+        "posted": "2024-10-26T05:54:56.000Z"
+      },
+      {
+        "id": "7548850020615785748",
+        "url": "https://www.tiktok.com/@the_terrible1/video/7548850020615785748",
+        "text": "#greenscreen #fyp #viral #trendingvideo #breakingnews ",
+        "author": "the_terrible1",
+        "plays": 256100,
+        "likes": 11500,
+        "posted": "2025-09-11T15:13:37.000Z"
+      },
+      {
+        "id": "7555648842692168978",
+        "url": "https://www.tiktok.com/@claracarral/video/7555648842692168978",
+        "text": "Chai épice de @lemondegourmand ",
+        "author": "claracarral",
+        "plays": 25300,
+        "likes": 976,
+        "posted": "2025-09-29T22:56:36.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-15T20:30:00.000Z",
+    "median_plays": 1661,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:26:50.902Z"
   }
 }

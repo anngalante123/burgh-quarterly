@@ -2,22 +2,22 @@
   "slug": "la-gourmandine-lawrenceville",
   "themes": [
     {
-      "phrase": "a little bit of Paris",
+      "phrase": "little bit of Paris",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "A little bit of Paris in Pittsburgh."
     },
     {
-      "phrase": "seasonal specialty standout",
+      "phrase": "seasonal specialty desserts",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The seasonal La Ruche might be the best dessert I have ever had."
+      "exampleQuote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had."
     },
     {
-      "phrase": "cream puffs and croissants",
+      "phrase": "croissants and cream puffs",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Nut and chocolate croissants that were all fantastic, and the cream puff was delicious."
+      "exampleQuote": "Nut and chocolate croissants that were all fantastic... the cream puff was delicious."
     },
     {
       "phrase": "busy on weekends",
@@ -33,31 +33,31 @@
     }
   ],
   "notable_quote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had.",
-  "sentiment_summary": "Reviewers reach for superlatives, comparisons to Paris, declarations of discovery, repeat-visit questions about specific items like the délice de pistache, with the rare friction being weekend crowds that prompt regulars to call ahead.",
-  "quarter_narrative": "La Gourmandine Lawrenceville entered Spring 2026 with the most-reviewed bakery profile in Pittsburgh, 1,294 ratings stacked at 88% five-star, and a visual catalog of 779 photos that gives any browser a vivid, credible first impression. The conversion path is airtight, hours, phone, and website all present on Google, and creator interest in the brand remains strong relative to the family median. What went dormant was Instagram: zero posts and zero reels in 30 days, with the last update landing 37 days ago, while Page's held the Pittsburgh Sweets family lead largely on social momentum that La Gourmandine is currently not generating. Holding the bakery rank at number one is defensible on review depth alone, but closing the gap on the sweets side, and defending against any bakery challenger with an active feed, depends almost entirely on whether the Instagram account wakes up.",
-  "tldr_read": "Bulletproof reviews and a complete Google presence, offset by a completely dormant Instagram, Ones to Watch, #1 in Pittsburgh Bakeries.",
-  "tldr_meaning": "Every signal axis is at or above the family median except Instagram momentum, which sits far below it, the ceiling here is higher than the current rank reflects, and it hinges on one variable.",
+  "sentiment_summary": "Reviewers reach for superlatives around the pastry case—specifically the seasonal specials, croissants, and cream puffs—with the Paris-in-Pittsburgh frame appearing repeatedly; the only friction is weekend crowds and occasional questions about whether specific items are still available.",
+  "quarter_narrative": "Twenty-six Pittsburgh creators filmed La Gourmandine Lawrenceville this quarter and posted none of it back at them—109,000 TikTok plays generated entirely without the business lifting a finger on its own account, which last posted to Instagram 40 days ago and has put nothing on the feed in the past month. That gap is the defining story of their Spring 2026: the city is actively narrating this place, and the place is silent. Meanwhile, Page's holds the Pittsburgh Sweets family lead on social momentum, the exact signal where La Gourmandine—#1 in Pittsburgh Bakeries with 1,294 Google reviews and a conversion path that couldn't be cleaner—scores lowest. The rank climbs when the business starts talking back to the city that's already talking about it.",
+  "tldr_read": "Twenty-six creators, 109K TikTok plays, zero Instagram posts in 30 days—dominant reviews and a perfect conversion path, but the social signal has gone quiet. Ones to Watch, #1 in Pittsburgh Bakeries.",
+  "tldr_meaning": "Every structural signal is in place—reviews, photos, discoverability, creator attention—and the only axis suppressing the rank is the business's own posting cadence, which has flatlined while external momentum continues to build.",
   "playbook": [
     {
-      "headline": "End the 37-day Instagram silence now",
-      "action": "Zero posts in 30 days against a family median that expects consistent output; one reel of the La Ruche or the pastry case at open would restart the signal.",
+      "headline": "Restart the Instagram feed, now",
+      "action": "Zero posts in 30 days while 26 creators are actively filming the shop—one weekly post closes that gap faster than anything else.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Turn seasonal items into recurring content hooks",
-      "action": "Reviewers are already asking about specific items like the délice de pistache by name, naming and dating seasonal drops publicly gives creators and regulars a reason to post.",
-      "signal": "community_spark",
+      "headline": "Turn creator TikToks into owned content",
+      "action": "Repost or respond to the 30+ tagged TikToks on @lagourmandine—@lilbigbackz's 23,700-play video is a free content asset sitting unused.",
+      "signal": "collab_fit",
       "priority": "medium"
     },
     {
-      "headline": "Push the visual catalog into underrepresented categories",
-      "action": "779 photos across 13 categories is strong, but weekend crowd and call-ahead context from reviews suggests the 'Vibe' and 'Latest' buckets could absorb more documented activity.",
-      "signal": "content_canvas",
+      "headline": "Surface seasonal specials before they sell out",
+      "action": "The La Ruche and deluxe de pistache appear in reviews as items people hunt for—naming them on the profile before weekends reduces the 'is this still available' review pattern.",
+      "signal": "conversion_path",
       "priority": "low"
     }
   ],
   "review_count": 6,
-  "analyzed_at": "2026-04-22T22:23:04.914Z",
+  "analyzed_at": "2026-04-25T15:46:48.905Z",
   "model": "claude-sonnet-4-6"
 }

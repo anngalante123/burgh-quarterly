@@ -14,5 +14,111 @@
   "full_name": "Oishiidonburi",
   "last_post_at": "2026-02-13T15:59:34.000Z",
   "scraped_at": "2026-04-22T15:26:15.591Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "oishii donburi pittsburgh",
+    "video_count": 30,
+    "total_plays": 1715660,
+    "total_likes": 174603,
+    "unique_creators": 29,
+    "top_creators": [
+      {
+        "handle": "kayylou52",
+        "fans": 1430,
+        "verified": false,
+        "videos": 1,
+        "plays": 852600,
+        "likes": 99600
+      },
+      {
+        "handle": "llchung35",
+        "fans": 5506,
+        "verified": false,
+        "videos": 1,
+        "plays": 215400,
+        "likes": 17400
+      },
+      {
+        "handle": "isabellagerasole",
+        "fans": 2429,
+        "verified": false,
+        "videos": 1,
+        "plays": 142600,
+        "likes": 25600
+      },
+      {
+        "handle": "capitals",
+        "fans": 531700,
+        "verified": true,
+        "videos": 1,
+        "plays": 131400,
+        "likes": 12600
+      },
+      {
+        "handle": "food4paulrus",
+        "fans": 9704,
+        "verified": false,
+        "videos": 2,
+        "plays": 92500,
+        "likes": 5947
+      },
+      {
+        "handle": "412.micdup",
+        "fans": 8085,
+        "verified": false,
+        "videos": 1,
+        "plays": 43800,
+        "likes": 3104
+      },
+      {
+        "handle": "nfl",
+        "fans": 20500000,
+        "verified": true,
+        "videos": 1,
+        "plays": 35900,
+        "likes": 2508
+      },
+      {
+        "handle": "eli.tbd",
+        "fans": 783,
+        "verified": false,
+        "videos": 1,
+        "plays": 34400,
+        "likes": 867
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7326820321384860970",
+        "url": "https://www.tiktok.com/@kayylou52/video/7326820321384860970",
+        "text": "If yinz know, you know #412 #pittsburgh #jacobelordi ",
+        "author": "kayylou52",
+        "plays": 852600,
+        "likes": 99600,
+        "posted": "2024-01-22T07:26:19.000Z"
+      },
+      {
+        "id": "7537425709325733175",
+        "url": "https://www.tiktok.com/@llchung35/video/7537425709325733175",
+        "text": "Not to crazy 😂 #llchung #pennsylvania #pittsburgh #412 #publicinterview ",
+        "author": "llchung35",
+        "plays": 215400,
+        "likes": 17400,
+        "posted": "2025-08-11T20:22:01.000Z"
+      },
+      {
+        "id": "7564567265589431607",
+        "url": "https://www.tiktok.com/@isabellagerasole/video/7564567265589431607",
+        "text": "HEYYYYY STELLA!!!!!\n#pittsburgh #steelers #heinz #theatre ",
+        "author": "isabellagerasole",
+        "plays": 142600,
+        "likes": 25600,
+        "posted": "2025-10-23T23:44:40.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-25T14:08:33.000Z",
+    "median_plays": 7524,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:28:49.523Z"
+  }
 }

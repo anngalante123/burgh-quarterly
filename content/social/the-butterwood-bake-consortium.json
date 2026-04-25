@@ -14,5 +14,111 @@
   "full_name": "THE BUTTERWOOD",
   "last_post_at": "2024-11-27T16:58:45.000Z",
   "scraped_at": "2026-04-22T15:26:15.591Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "butterwood bake consortium pittsburgh",
+    "video_count": 30,
+    "total_plays": 527441,
+    "total_likes": 22334,
+    "unique_creators": 28,
+    "top_creators": [
+      {
+        "handle": "thepittstopp",
+        "fans": 731,
+        "verified": false,
+        "videos": 1,
+        "plays": 165600,
+        "likes": 7032
+      },
+      {
+        "handle": "kylie.belli",
+        "fans": 12100,
+        "verified": false,
+        "videos": 1,
+        "plays": 90000,
+        "likes": 4267
+      },
+      {
+        "handle": "sofiyafashion_lifestyle",
+        "fans": 1011,
+        "verified": false,
+        "videos": 1,
+        "plays": 54200,
+        "likes": 1788
+      },
+      {
+        "handle": "gabriael.onthego",
+        "fans": 1656,
+        "verified": false,
+        "videos": 1,
+        "plays": 49000,
+        "likes": 1765
+      },
+      {
+        "handle": "brandywinevalley",
+        "fans": 20000,
+        "verified": false,
+        "videos": 1,
+        "plays": 33100,
+        "likes": 804
+      },
+      {
+        "handle": "keepingup_.withkaeee",
+        "fans": 2188,
+        "verified": false,
+        "videos": 1,
+        "plays": 30100,
+        "likes": 2101
+      },
+      {
+        "handle": "lilbigbackz",
+        "fans": 18600,
+        "verified": false,
+        "videos": 1,
+        "plays": 27100,
+        "likes": 1685
+      },
+      {
+        "handle": "melissasadhdlife",
+        "fans": 4361,
+        "verified": false,
+        "videos": 2,
+        "plays": 21296,
+        "likes": 953
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7507342633593818399",
+        "url": "https://www.tiktok.com/@thepittstopp/video/7507342633593818399",
+        "text": "One of the best (if not the very best) bakeries in Pittsburgh! Also, a great option if you’re looking for a bakery with tasty vegan options!! 😇\n\nPictured (in order):\n\nChocolate Cake — Probably my favorite one in the whole city; especially ",
+        "author": "thepittstopp",
+        "plays": 165600,
+        "likes": 7032,
+        "posted": "2025-05-22T18:43:49.000Z"
+      },
+      {
+        "id": "7594251121577725215",
+        "url": "https://www.tiktok.com/@kylie.belli/video/7594251121577725215",
+        "text": "The Butterwood Bake Consortium is such a sweet little spot & open until 11pm on weekends! 🎂 \n\nWould recommend! \n\n#pittsburgh #cake ",
+        "author": "kylie.belli",
+        "plays": 90000,
+        "likes": 4267,
+        "posted": "2026-01-11T23:33:19.000Z"
+      },
+      {
+        "id": "7592291197004172557",
+        "url": "https://www.tiktok.com/@sofiyafashion_lifestyle/video/7592291197004172557",
+        "text": "🍰 Viral fruit pastries in Pittsburgh?! I stopped by Gaby et Jules in Squirrel Hill to try their beautiful, fruit-shaped pastries everyone’s been talking about — and they are just as stunning in person as they are online.\nFrom the detailed ",
+        "author": "sofiyafashion_lifestyle",
+        "plays": 54200,
+        "likes": 1788,
+        "posted": "2026-01-06T16:48:22.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-19T02:08:20.000Z",
+    "median_plays": 2759,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:30:28.013Z"
+  }
 }

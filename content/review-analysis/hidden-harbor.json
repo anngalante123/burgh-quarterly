@@ -8,62 +8,62 @@
       "exampleQuote": "Tiki isn't just a theme, it's a movement."
     },
     {
-      "phrase": "creative drink presentation",
-      "frequency": 5,
+      "phrase": "creative unique glassware",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Each drink has its own unique glass/mug, some of which you can buy to take home."
     },
     {
-      "phrase": "staff attentiveness and recommendations",
+      "phrase": "attentive knowledgeable staff",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "The staff are super excited to give recommendations, which are needed with how many options they have."
     },
     {
-      "phrase": "automatic gratuity policy",
+      "phrase": "forced 20% gratuity",
       "frequency": 3,
       "sentiment": "negative",
-      "exampleQuote": "There is a 20% forced gratuity, I personally dislike these forced costs."
+      "exampleQuote": "Auto 20% tip that is hidden — all you see is a receipt that says total, no mention of 20%, which is buried under three other pieces of paper."
     },
     {
       "phrase": "drink pricing and value",
       "frequency": 3,
       "sentiment": "negative",
-      "exampleQuote": "Do not advertise like it's alcohol-packed for what you are paying."
+      "exampleQuote": "Drinks were a bit pricey but they go all out with these things."
     },
     {
-      "phrase": "mocktail and non-alcoholic options",
+      "phrase": "mocktails and non-alcoholic options",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "There's a wide variety of options for everybody, including a couple mocktails for those who don't drink."
     }
   ],
-  "notable_quote": "Some of the best tiki drinks in the U.S., staff is always very helpful and friendly.",
-  "sentiment_summary": "Reviewers are reliably won over by the immersive tiki environment and the craftsmanship of individual drinks, while a recurring friction point, the mandatory 20% gratuity and its disclosure, surfaces enough times to register as a structural complaint rather than a one-off.",
-  "quarter_narrative": "Hidden Harbor entered Spring 2026 with one of the deepest visual catalogs in the Pittsburgh bar category, 1,086 photos across a well-tagged Google presence, and a review pool of 765 that skews sharply positive and was refreshed as recently as six days ago. As the family leader across four bars, it carries the banner on the strength of its conversion infrastructure, which is airtight, and a sentiment signal that sits well above the family median. The one place it gives ground is Instagram: posting daily in static images but running zero Reels in the past 30 days, the account's 0.79% engagement rate trails the platform's appetite for motion, and that gap is what separates a Ones to Watch ceiling from an Icons floor.",
-  "tldr_read": "Deep review catalog and a locked-down conversion path, but Instagram momentum is trailing on zero Reels, Ones to Watch, #1 in Pittsburgh Bars.",
-  "tldr_meaning": "The review and visual signals are already pulling toward Icons territory; the Instagram engagement rate suggests the account is broadcasting rather than circulating, and Reels are the clearest single variable left to move.",
+  "notable_quote": "Some of the best tiki drinks in the U.S. — staff is always very helpful and friendly.",
+  "sentiment_summary": "Reviewers are consistently arrested by the immersive tiki environment and the craft behind the drink program, but a recurring undercurrent around the automatic 20% gratuity — and how transparently it's disclosed — keeps a meaningful slice of visitors walking out with a complicated feeling rather than a clean one.",
+  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed Hidden Harbor this quarter and collectively pulled 2.46 million TikTok plays — and Hidden Harbor itself has no TikTok account to catch a single one of those eyeballs. The bar leads the Pittsburgh Bars category this issue on the strength of a visual catalog that outpaces the family median by more than 20 points, 765 Google reviews running 77% five-star, and creator coverage so concentrated that a single @pennsylvania_core video crested 986,000 plays on its own. What's notable is that all of this is happening without the bar feeding the machine: no Reels in the last 30 days, an Instagram engagement rate sitting below one percent, and zero owned TikTok presence. As the category leader, Hidden Harbor's rank is defensible right now on sheer inertia and third-party enthusiasm — the question going into summer is whether it can convert that external energy into owned momentum before a challenger with a more active hand does.",
+  "tldr_read": "Massive creator-driven TikTok footprint and a strong visual catalog, but Hidden Harbor owns none of that reach — no TikTok account, flat Instagram engagement. Ones to Watch, #1 in Pittsburgh Bars.",
+  "tldr_meaning": "The gap between 2.46 million third-party TikTok plays and zero owned TikTok presence is the single biggest variable in whether this rank hardens into something durable or stays contingent on what creators decide to film next.",
   "playbook": [
     {
-      "headline": "Shoot one Reel per week, consistently",
-      "action": "Zero Reels in the last 30 days is the clearest drag on a 0.79% engagement rate, a single weekly pour or prep clip changes the algorithm surface area immediately.",
+      "headline": "Claim the TikTok account someone else is building",
+      "action": "28 creators posted 30-plus videos to 2.46M plays this quarter; Hidden Harbor has no account to redirect that traffic or own the search result.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Tag the auto-gratuity proactively in digital touchpoints",
-      "action": "The 20% gratuity complaint appears in at least three of seven sampled reviews; a single menu-page line item or Google Q&A response neutralizes the surprise and trims the sentiment gap.",
-      "signal": "community_spark",
+      "headline": "Turn Reels into the drink reveal format",
+      "action": "Zero Reels posted in the last 30 days despite a menu built for video — unique glassware, elaborate presentation, and a strength-rating system are all native hooks.",
+      "signal": "content_canvas",
       "priority": "medium"
     },
     {
-      "headline": "Push the drink vessel purchase moment to creators",
-      "action": "The take-home glassware detail surfaces in reviews but not visibly in the Instagram feed, seeding that angle to the 78-percentile creator pool gives a natural gifting and unboxing hook.",
-      "signal": "collab_fit",
+      "headline": "Address the gratuity disclosure on the menu page",
+      "action": "The 20% auto-gratuity appears in at least three reviews as a trust issue; a single plain-language line on the Google menu listing or website absorbs the friction before it hits the room.",
+      "signal": "conversion_path",
       "priority": "low"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-22T22:21:05.816Z",
+  "analyzed_at": "2026-04-25T15:50:23.307Z",
   "model": "claude-sonnet-4-6"
 }

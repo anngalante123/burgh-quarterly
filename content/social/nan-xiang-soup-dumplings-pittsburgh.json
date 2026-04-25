@@ -14,5 +14,111 @@
   "full_name": "Nan Xiang Soup Dumplings | Pittsburgh",
   "last_post_at": "2026-04-22T14:01:26.000Z",
   "scraped_at": "2026-04-22T15:26:15.591Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "nan xiang soup dumplings - pittsburgh pittsburgh",
+    "video_count": 30,
+    "total_plays": 615199,
+    "total_likes": 30999,
+    "unique_creators": 29,
+    "top_creators": [
+      {
+        "handle": "lilianwesthafer",
+        "fans": 24700,
+        "verified": false,
+        "videos": 1,
+        "plays": 116900,
+        "likes": 9249
+      },
+      {
+        "handle": "dope.eats.pgh",
+        "fans": 11300,
+        "verified": false,
+        "videos": 1,
+        "plays": 97400,
+        "likes": 3814
+      },
+      {
+        "handle": "calsipos",
+        "fans": 73000,
+        "verified": false,
+        "videos": 1,
+        "plays": 75300,
+        "likes": 5139
+      },
+      {
+        "handle": "lilbigbackz",
+        "fans": 18600,
+        "verified": false,
+        "videos": 1,
+        "plays": 53200,
+        "likes": 2921
+      },
+      {
+        "handle": "hatteats",
+        "fans": 501,
+        "verified": false,
+        "videos": 2,
+        "plays": 52400,
+        "likes": 742
+      },
+      {
+        "handle": "hanadaisy",
+        "fans": 72400,
+        "verified": false,
+        "videos": 1,
+        "plays": 47900,
+        "likes": 3890
+      },
+      {
+        "handle": "scarletfaeriequeen",
+        "fans": 164500,
+        "verified": false,
+        "videos": 1,
+        "plays": 31100,
+        "likes": 1387
+      },
+      {
+        "handle": "food4paulrus",
+        "fans": 9704,
+        "verified": false,
+        "videos": 1,
+        "plays": 25800,
+        "likes": 848
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7620849459718524173",
+        "url": "https://www.tiktok.com/@lilianwesthafer/video/7620849459718524173",
+        "text": "need more recs🍸 #pittsburgh #pgh #pittsburghfoodie #pghrestaurants ",
+        "author": "lilianwesthafer",
+        "plays": 116900,
+        "likes": 9249,
+        "posted": "2026-03-24T15:48:40.000Z"
+      },
+      {
+        "id": "7550732115378310431",
+        "url": "https://www.tiktok.com/@dope.eats.pgh/video/7550732115378310431",
+        "text": "@nanxiangxiaolongbao ⭐️ Have you tried this spot yet? 👀 This soup dumpling house opened in the spring, and on my second visit I’m just as thrilled to be back!\n\nThe space is spotless and modern, with a full glass kitchen where you can watch",
+        "author": "dope.eats.pgh",
+        "plays": 97400,
+        "likes": 3814,
+        "posted": "2025-09-16T16:57:29.000Z"
+      },
+      {
+        "id": "7546347903028120862",
+        "url": "https://www.tiktok.com/@calsipos/video/7546347903028120862",
+        "text": "a huge thank you to @nanxiangxiaolongbao for having us & treating us to this DELICIOUS dinner! My favorites were for sure the fried pork chop, the udon and the bok choy 🤌🏼 I can’t wait to come back to this spot in Pittsburgh it was so so ",
+        "author": "calsipos",
+        "plays": 75300,
+        "likes": 5139,
+        "posted": "2025-09-04T21:24:10.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-25T02:08:55.000Z",
+    "median_plays": 7197,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:28:35.456Z"
+  }
 }

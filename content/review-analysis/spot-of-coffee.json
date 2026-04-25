@@ -2,14 +2,14 @@
   "slug": "spot-of-coffee",
   "themes": [
     {
-      "phrase": "housemade natural ingredients",
-      "frequency": 5,
+      "phrase": "housemade syrups and ingredients",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Their drinks are very differently delicious from the syrup-based lattes you'll find elsewhere, housemade cashew milk and real bananas."
+      "exampleQuote": "They homemake all of their syrups which makes it worth it and so much tastier."
     },
     {
       "phrase": "signature latte flavors",
-      "frequency": 6,
+      "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "Come to Spot of Coffee for a toasted miso latte that will change your life."
     },
@@ -20,44 +20,44 @@
       "exampleQuote": "Excellent conscientious neighborhood vibes at a time when finding your community matters."
     },
     {
-      "phrase": "matcha program strength",
+      "phrase": "matcha as a draw",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha!!!"
+      "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha."
     },
     {
-      "phrase": "bitter or burnt coffee",
+      "phrase": "burnt or bitter coffee",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste, I almost threw it out on my way out of the door."
+      "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste."
     }
   ],
-  "notable_quote": "I've worked at a number of independent coffee shops, I'm at a very popular, very viral, very delicious one now, and I still come to Spot of Coffee as often as possible.",
-  "sentiment_summary": "Reviewers keep coming back for the housemade syrups, unconventional latte builds, and a shop personality that feels genuinely rooted in its neighborhood; the rare dissent centers on execution inconsistency, specifically one report of burnt coffee, rather than any structural flaw.",
-  "quarter_narrative": "Spot of Coffee entered Spring 2026 as Pittsburgh's most Instagram-active café, logging six posts and three Reels in a single month at an engagement rate that sits more than double the family median, a signal strong enough to pull it to #2 in both the Coffee and Cafes rankings. Allegheny Coffee & Tea Exchange holds the Cafes lead on social momentum broadly, but Spot of Coffee's Instagram numbers are the sharpest in the cohort; what keeps it from first is the absence of a linked website on Google and review sentiment that trails the family median, suggesting the discovery experience outperforms the conversion path. The gap to #1 closes if the Google Business listing gets a website attached and the review base deepens past 173, the creative energy is already there.",
-  "tldr_read": "Dominant Instagram momentum and a devoted housemade-ingredient narrative, undercut by no website on Google and review sentiment below the family median, Icons of the Burgh, #2 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The Instagram signal is already exceptional; the rank ceiling is now determined by the conversion path gap, specifically the missing website, and whether a 173-review base grows fast enough to close the sentiment distance on the family leader.",
+  "notable_quote": "I've worked at a very popular, very viral, very delicious coffee shop — I still come to Spot of Coffee as often as possible.",
+  "sentiment_summary": "Reviewers return for the specificity of the menu — the toasted miso latte, the carrot cake cold foam, the cashew milk — while the rare critic lands on execution consistency, not concept.",
+  "quarter_narrative": "No Pittsburgh TikTok creators have indexed Spot of Coffee yet, which is a notable gap for a shop whose Instagram engagement rate of 15.19% is more than double what most cafes in this family are pulling. The city isn't filming this place at scale — but the people who do find it are loudly loyal, and that loyalty is translating into real platform momentum rather than staying buried in a review thread. Allegheny Coffee & Tea Exchange leads the Pittsburgh Cafes family on social momentum this issue, but Spot of Coffee is the one posting Reels, holding a 15% engagement rate, and sitting on a menu narrative — cashew milk, Redstart beans, carrot cake cold foam — that creators typically can't resist once they encounter it. The missing piece is a Google profile with no website link, a friction point that stands between strong discovery intent and a completed visit; close that gap, and the #2 rank becomes a real conversation about #1.",
+  "tldr_read": "An exceptional Instagram signal and intensely specific menu drive Spot of Coffee to Icons of the Burgh #2, but no website on Google and zero TikTok creator coverage leave clear headroom on the table.",
+  "tldr_meaning": "The Instagram axis is already outperforming the family by a wide margin; the ceiling now is conversion infrastructure — specifically, the missing website on Google — and whether TikTok creators eventually find a shop that reviewers describe as life-changing.",
   "playbook": [
     {
-      "headline": "Add a website link to Google Business now",
-      "action": "Spot of Coffee has no website listed on Google, the single missing field on an otherwise complete profile, costing direct conversion from every search impression.",
+      "headline": "Add a website link to Google Business",
+      "action": "The Google profile has no website listed — that single missing field is the only conversion path gap in an otherwise well-maintained presence.",
       "signal": "conversion_path",
       "priority": "high"
     },
     {
-      "headline": "Turn Instagram reach into review volume",
-      "action": "With a 15% engagement rate across 6 recent posts, a Story-based review prompt tied to a seasonal drink would move 173 reviews toward the 250-plus range where sentiment averages stabilize.",
-      "signal": "community_spark",
+      "headline": "Put the toasted miso latte on TikTok",
+      "action": "Zero Pittsburgh TikToks are indexed for this shop; the miso latte, carrot cake cold foam, and cashew milk are exactly the kind of specific, visual menu items that drive unsolicited creator coverage.",
+      "signal": "content_canvas",
       "priority": "medium"
     },
     {
-      "headline": "Build the Google photo catalog beyond six categories",
-      "action": "126 photos across only 6 labeled categories leaves interior, staff, and sourcing stories unrepresented, the Reels already being made are raw material for static Google uploads.",
-      "signal": "content_canvas",
+      "headline": "Sustain the Reels cadence through summer",
+      "action": "Three Reels in 30 days is driving a 15.19% engagement rate — nearly 3.5 times the family median; maintaining that output protects the momentum signal that currently separates this shop from the rest of the family.",
+      "signal": "momentum",
       "priority": "low"
     }
   ],
   "review_count": 10,
-  "analyzed_at": "2026-04-22T22:26:38.216Z",
+  "analyzed_at": "2026-04-25T15:43:19.790Z",
   "model": "claude-sonnet-4-6"
 }

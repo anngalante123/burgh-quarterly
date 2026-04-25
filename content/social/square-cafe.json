@@ -34,5 +34,111 @@
       "end": 1386,
       "delta": 28
     }
+  },
+  "tiktok_mentions": {
+    "query": "square cafe pittsburgh",
+    "video_count": 30,
+    "total_plays": 489171,
+    "total_likes": 41803,
+    "unique_creators": 30,
+    "top_creators": [
+      {
+        "handle": "mayavalletta",
+        "fans": 5296,
+        "verified": false,
+        "videos": 1,
+        "plays": 191000,
+        "likes": 17300
+      },
+      {
+        "handle": "arjunmanjunath_",
+        "fans": 57700,
+        "verified": false,
+        "videos": 1,
+        "plays": 126700,
+        "likes": 13100
+      },
+      {
+        "handle": "laurelkate_",
+        "fans": 1290,
+        "verified": false,
+        "videos": 1,
+        "plays": 27000,
+        "likes": 2283
+      },
+      {
+        "handle": "thembseries",
+        "fans": 1035,
+        "verified": false,
+        "videos": 1,
+        "plays": 23900,
+        "likes": 1665
+      },
+      {
+        "handle": "food4paulrus",
+        "fans": 9702,
+        "verified": false,
+        "videos": 1,
+        "plays": 21300,
+        "likes": 2081
+      },
+      {
+        "handle": "cafezarapgh",
+        "fans": 1102,
+        "verified": false,
+        "videos": 1,
+        "plays": 20500,
+        "likes": 1673
+      },
+      {
+        "handle": "afterscafe",
+        "fans": 1993,
+        "verified": false,
+        "videos": 1,
+        "plays": 16400,
+        "likes": 1125
+      },
+      {
+        "handle": "iamshadyhendrix",
+        "fans": 3203,
+        "verified": false,
+        "videos": 1,
+        "plays": 13400,
+        "likes": 631
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7485541392232549675",
+        "url": "https://www.tiktok.com/@mayavalletta/video/7485541392232549675",
+        "text": "Big breakfast/brunch girl \n#pitt #pittsburgh #breakfast #placestoeat #foodie #brunch #creatorsearchinsights ",
+        "author": "mayavalletta",
+        "plays": 191000,
+        "likes": 17300,
+        "posted": "2025-03-25T00:44:03.000Z"
+      },
+      {
+        "id": "7476150767913667870",
+        "url": "https://www.tiktok.com/@arjunmanjunath_/video/7476150767913667870",
+        "text": "📍 Shibam Coffee in North Oakland #romanticizepittsburgh #pittsburgh #college #coffeetiktok #pitt #matcha ",
+        "author": "arjunmanjunath_",
+        "plays": 126700,
+        "likes": 13100,
+        "posted": "2025-02-27T17:23:32.000Z"
+      },
+      {
+        "id": "7629830351937867039",
+        "url": "https://www.tiktok.com/@laurelkate_/video/7629830351937867039",
+        "text": "trying a magical fairycore coffee shop in regent square: biddle’s escape\n\nordered their cinnamon roll latte! 9.1/10\n\n#pghcoffee #pittsburghfood #pittsburghcoffee #coffeetok #coffeefinds ",
+        "author": "laurelkate_",
+        "plays": 27000,
+        "likes": 2283,
+        "posted": "2026-04-17T20:38:51.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-23T20:22:08.000Z",
+    "median_plays": 1926,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:29:56.808Z"
   }
 }

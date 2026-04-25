@@ -34,5 +34,111 @@
       "end": 177,
       "delta": 2
     }
+  },
+  "tiktok_mentions": {
+    "query": "24 carrot juice pittsburgh",
+    "video_count": 30,
+    "total_plays": 219129,
+    "total_likes": 7857,
+    "unique_creators": 20,
+    "top_creators": [
+      {
+        "handle": "24carrrrot",
+        "fans": 2347,
+        "verified": false,
+        "videos": 11,
+        "plays": 80547,
+        "likes": 569
+      },
+      {
+        "handle": "goofysid",
+        "fans": 1100000,
+        "verified": false,
+        "videos": 1,
+        "plays": 40900,
+        "likes": 4676
+      },
+      {
+        "handle": "_prettyras",
+        "fans": 18800,
+        "verified": false,
+        "videos": 1,
+        "plays": 39300,
+        "likes": 572
+      },
+      {
+        "handle": "nafasman10",
+        "fans": 2787,
+        "verified": false,
+        "videos": 1,
+        "plays": 11300,
+        "likes": 133
+      },
+      {
+        "handle": "kbagnell",
+        "fans": 2507,
+        "verified": false,
+        "videos": 1,
+        "plays": 9214,
+        "likes": 99
+      },
+      {
+        "handle": "bkm740",
+        "fans": 52500,
+        "verified": false,
+        "videos": 1,
+        "plays": 8067,
+        "likes": 568
+      },
+      {
+        "handle": "parisrowden",
+        "fans": 9490,
+        "verified": false,
+        "videos": 1,
+        "plays": 4836,
+        "likes": 86
+      },
+      {
+        "handle": "iandoesthings0",
+        "fans": 57,
+        "verified": false,
+        "videos": 1,
+        "plays": 4596,
+        "likes": 108
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7562690059409935671",
+        "url": "https://www.tiktok.com/@goofysid/video/7562690059409935671",
+        "text": "24 carat magic year #24 #birthday #transition ",
+        "author": "goofysid",
+        "plays": 40900,
+        "likes": 4676,
+        "posted": "2025-10-18T22:20:26.000Z"
+      },
+      {
+        "id": "7202056264573111595",
+        "url": "https://www.tiktok.com/@_prettyras/video/7202056264573111595",
+        "text": "🥕🇯🇲 Carrot Juice #carrotjuice #jamaicancarrotjuice #jamaicatiktok #fyp #trending #viral #fypシ゚viral ",
+        "author": "_prettyras",
+        "plays": 39300,
+        "likes": 572,
+        "posted": "2023-02-20T02:16:45.000Z"
+      },
+      {
+        "id": "7580605766789303583",
+        "url": "https://www.tiktok.com/@24carrrrot/video/7580605766789303583",
+        "text": "200 days in a row 🤯 #24carrrrot #carrotjuice #juicingtiktok #skincareroutine #skincarehack ",
+        "author": "24carrrrot",
+        "plays": 36400,
+        "likes": 212,
+        "posted": "2025-12-06T05:02:18.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-24T19:25:44.000Z",
+    "median_plays": 3738,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:23:15.913Z"
   }
 }

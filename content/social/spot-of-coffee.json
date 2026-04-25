@@ -34,5 +34,111 @@
       "end": 126,
       "delta": -1
     }
+  },
+  "tiktok_mentions": {
+    "query": "spot of coffee pittsburgh",
+    "video_count": 30,
+    "total_plays": 372723,
+    "total_likes": 23268,
+    "unique_creators": 23,
+    "top_creators": [
+      {
+        "handle": "mayavalletta",
+        "fans": 5296,
+        "verified": false,
+        "videos": 1,
+        "plays": 87100,
+        "likes": 8127
+      },
+      {
+        "handle": "imaxchung",
+        "fans": 9914,
+        "verified": false,
+        "videos": 1,
+        "plays": 56000,
+        "likes": 4620
+      },
+      {
+        "handle": "lyssad16",
+        "fans": 400,
+        "verified": false,
+        "videos": 1,
+        "plays": 44000,
+        "likes": 1920
+      },
+      {
+        "handle": "juliasgoodeatsss",
+        "fans": 2184,
+        "verified": false,
+        "videos": 5,
+        "plays": 36980,
+        "likes": 1546
+      },
+      {
+        "handle": "aubreyclaree_",
+        "fans": 70000,
+        "verified": false,
+        "videos": 3,
+        "plays": 23675,
+        "likes": 937
+      },
+      {
+        "handle": "laurelkate_",
+        "fans": 1290,
+        "verified": false,
+        "videos": 1,
+        "plays": 14200,
+        "likes": 345
+      },
+      {
+        "handle": "mcmonaglle",
+        "fans": 4724,
+        "verified": false,
+        "videos": 1,
+        "plays": 14000,
+        "likes": 851
+      },
+      {
+        "handle": "hannahmanheimer",
+        "fans": 834,
+        "verified": false,
+        "videos": 1,
+        "plays": 12300,
+        "likes": 800
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7525475693631786254",
+        "url": "https://www.tiktok.com/@mayavalletta/video/7525475693631786254",
+        "text": "There’s so many more, what did I miss? Might have to do a pt. 2? #coffee #cafe #pittsburgh #pgh ",
+        "author": "mayavalletta",
+        "plays": 87100,
+        "likes": 8127,
+        "posted": "2025-07-10T15:29:29.000Z"
+      },
+      {
+        "id": "7571595973143711031",
+        "url": "https://www.tiktok.com/@imaxchung/video/7571595973143711031",
+        "text": "Sorry @Spot Of Coffee can’t showcase the drink I drank it too fast haha #spotofcoffee #coffee #pittsburgh #cafe ",
+        "author": "imaxchung",
+        "plays": 56000,
+        "likes": 4620,
+        "posted": "2025-11-11T22:20:02.000Z"
+      },
+      {
+        "id": "7617949708450876685",
+        "url": "https://www.tiktok.com/@lyssad16/video/7617949708450876685",
+        "text": "neeeeedddd to try more tho! #coffee #pittsburgh #trending ",
+        "author": "lyssad16",
+        "plays": 44000,
+        "likes": 1920,
+        "posted": "2026-03-16T20:15:46.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-24T19:18:10.000Z",
+    "median_plays": 7158,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:29:42.760Z"
   }
 }

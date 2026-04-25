@@ -8,10 +8,10 @@
       "exampleQuote": "The strawberry matcha here might be the best I've ever had."
     },
     {
-      "phrase": "specialty drink menu",
-      "frequency": 3,
+      "phrase": "tiramisu latte",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "there were a lot of good options for drinks! both drinks my sister and I tried were delicious."
+      "exampleQuote": "Iced tiramisu latte was delicious!"
     },
     {
       "phrase": "gets packed quickly",
@@ -20,50 +20,50 @@
       "exampleQuote": "I just wish this place was bigger, gets packed quickly!"
     },
     {
-      "phrase": "warm staff",
+      "phrase": "sweet drink profile",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "mine was definitely on the sweet side"
+    },
+    {
+      "phrase": "staff warmth",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "the workers are so nice every time I visit!"
     },
     {
-      "phrase": "order mix-up cost me",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin, I had to pay for a new muffin."
-    },
-    {
-      "phrase": "not a work café",
+      "phrase": "wifi and workspace",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "The wi-fi isn't good enough to work from here so I wouldn't come back for that."
     }
   ],
-  "notable_quote": "The strawberry matcha here might be the best I've ever had.",
-  "sentiment_summary": "Reviewers consistently single out the specialty drinks, the strawberry matcha and iced tiramisu latte in particular, and the warmth of the staff, while the most pointed criticism comes from a single service error that cost a customer money and a finding that the wi-fi can't support remote work.",
-  "quarter_narrative": "Delanie's Coffee Shadyside held an 82% five-star rate across 104 Google reviews and drew a fresh review as recently as two days ago, signaling a loyal, returning customer base and a room that stays busy enough to keep generating opinions. Where it lags is in the channels that build discovery beyond the immediate neighborhood: Instagram produced three posts and zero reels in the last 30 days, with the account going quiet for nearly two weeks, a thin output for a shop whose specialty drinks are the kind of visually arresting thing that circulates. In the Pittsburgh Cafes family, Allegheny Coffee & Tea Exchange leads this issue largely on social momentum, a signal Delanie's hasn't yet turned on. The path upward in the rankings runs directly through Instagram frequency; the review foundation and the creator-fit signal suggest the raw material is already there.",
-  "tldr_read": "Exceptional creator fit and a locked conversion path, undercut by a dormant Instagram, Ones to Watch, #4 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The review engine is running and the profile infrastructure is complete; the rank ceiling is currently set by an Instagram cadence that produced three posts and no reels in the past 30 days.",
+  "notable_quote": "The strawberry matcha here might be the best I've ever had — the coffee, food, and overall cafe vibe is fantastic.",
+  "sentiment_summary": "Reviewers rally around two specific drinks — the strawberry matcha and the iced tiramisu latte — and consistently mention warm staff, but the small footprint and unreliable wifi draw real friction from anyone hoping to settle in for more than a cup.",
+  "quarter_narrative": "Twenty-six creators filmed Delanie's Coffee Shadyside this past quarter; Delanie's filmed essentially none of it back. Those 30-plus TikToks accumulated 176,000 plays without a single post from the business's own account, making Delanie's one of the most-documented unstaffed stories in Pittsburgh coffee right now. The tiramisu latte alone traveled far enough to put @tessadecario over 37,000 plays on a single video. Meanwhile, in the broader Pittsburgh Cafes family, Allegheny Coffee & Tea Exchange is leading this issue on social momentum — a signal Delanie's is generating for other people but not yet converting into its own standing. The rank climbs when the business starts showing up in the conversation it's already starring in.",
+  "tldr_read": "Creator-driven TikTok reach in the tens of thousands, Instagram nearly dormant at 3 posts in 30 days and zero reels — Ones to Watch, #4 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The external filming signal is unusually strong for a business at this rank, but Instagram momentum sits just at the family median and TikTok presence is nonexistent on the business side, meaning the current trajectory depends entirely on creators continuing to show up.",
   "playbook": [
     {
-      "headline": "Post reels around your signature drinks",
-      "action": "Zero reels in 30 days is the single gap between a 96 creator-fit score and actual discovery, start with the strawberry matcha.",
+      "headline": "Claim the TikTok account before someone else defines it",
+      "action": "26 creators have already done the work — one business-side account with reposted creator videos stops the signal leak immediately.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Build out the Google photo catalog",
-      "action": "96 photos across 10 categories sits below the family median of 77 visual score, add dedicated shots of the seasonal menu board and baked goods case.",
+      "headline": "Turn the tiramisu latte into a repeating visual",
+      "action": "Instagram sits at 3 posts in 30 days and zero reels; a weekly reel built around the drink that already has 37,200 organic plays is the lowest-effort path to closing that gap.",
       "signal": "content_canvas",
       "priority": "medium"
     },
     {
-      "headline": "Tighten the order-correction policy",
-      "action": "One documented case of charging a customer for a staff error is the most concrete service complaint in the review set, a clear remake protocol removes it as a recurring risk.",
-      "signal": "community_spark",
+      "headline": "Tag the creators who are already regulars",
+      "action": "With 26 unique creators on file this quarter, a simple story reshare or comment acknowledgment builds the kind of repeat coverage that compounds rank quarter over quarter.",
+      "signal": "collab_fit",
       "priority": "low"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-22T22:19:48.628Z",
+  "analyzed_at": "2026-04-25T15:49:00.538Z",
   "model": "claude-sonnet-4-6"
 }

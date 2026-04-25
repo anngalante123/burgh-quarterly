@@ -14,5 +14,111 @@
   "full_name": "Reva - Modern Indian Cusine",
   "last_post_at": "2026-02-14T00:17:44.000Z",
   "scraped_at": "2026-04-22T15:26:15.591Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "reva modern indian cuisine pittsburgh",
+    "video_count": 30,
+    "total_plays": 161371554,
+    "total_likes": 5350635,
+    "unique_creators": 30,
+    "top_creators": [
+      {
+        "handle": "travelicious88",
+        "fans": 3200000,
+        "verified": false,
+        "videos": 1,
+        "plays": 154500000,
+        "likes": 5100000
+      },
+      {
+        "handle": "moodyygoodyy",
+        "fans": 101300,
+        "verified": false,
+        "videos": 1,
+        "plays": 5200000,
+        "likes": 182900
+      },
+      {
+        "handle": "noorbaqtiar",
+        "fans": 14100,
+        "verified": false,
+        "videos": 1,
+        "plays": 625100,
+        "likes": 31700
+      },
+      {
+        "handle": "thetandooriparlour",
+        "fans": 4715,
+        "verified": false,
+        "videos": 1,
+        "plays": 409400,
+        "likes": 6073
+      },
+      {
+        "handle": "goodeatswithjaspreet",
+        "fans": 13000,
+        "verified": false,
+        "videos": 1,
+        "plays": 123200,
+        "likes": 1293
+      },
+      {
+        "handle": "maharajaindianrestaurant",
+        "fans": 5184,
+        "verified": false,
+        "videos": 1,
+        "plays": 106200,
+        "likes": 2136
+      },
+      {
+        "handle": "gabs_joella",
+        "fans": 449,
+        "verified": false,
+        "videos": 1,
+        "plays": 65600,
+        "likes": 8647
+      },
+      {
+        "handle": "slee.gl",
+        "fans": 438,
+        "verified": false,
+        "videos": 1,
+        "plays": 49500,
+        "likes": 2583
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7582149345844268308",
+        "url": "https://www.tiktok.com/@travelicious88/video/7582149345844268308",
+        "text": "India’s Street Food Queen Making Rocket Lemon Soda!\n\n📍Location\nKolkata in India\n\n💰Price\n USD 0.34 / INR 30 / KRW 480\n\n#lemon #soda #viral ",
+        "author": "travelicious88",
+        "plays": 154500000,
+        "likes": 5100000,
+        "posted": "2025-12-10T08:52:03.000Z"
+      },
+      {
+        "id": "7529665801918434582",
+        "url": "https://www.tiktok.com/@moodyygoodyy/video/7529665801918434582",
+        "text": "Discover this breathtaking outdoor kitchen with rustic stone walls, natural wood cabinetry, and matte stone countertops. The copper faucet and pendant lighting add warm, earthy elegance—perfect for cabin-style homes or outdoor entertaining ",
+        "author": "moodyygoodyy",
+        "plays": 5200000,
+        "likes": 182900,
+        "posted": "2025-07-21T22:29:52.000Z"
+      },
+      {
+        "id": "7620212427476569375",
+        "url": "https://www.tiktok.com/@noorbaqtiar/video/7620212427476569375",
+        "text": "hyderabadi shadi-wala red chicken\n\n \nmade this in the most gorgeous cookware from @P•TAL ♡ traditional brass cookware that’s been used in our kitchens forever.\n\nlink in the bio for the cookware used. \n\nuse my code NOORSPECIAL for 15% off yo",
+        "author": "noorbaqtiar",
+        "plays": 625100,
+        "likes": 31700,
+        "posted": "2026-03-22T22:36:27.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-22T16:03:33.000Z",
+    "median_plays": 19600,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:29:31.754Z"
+  }
 }

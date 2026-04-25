@@ -2,13 +2,13 @@
   "slug": "allegheny-coffee-tea-exchange",
   "themes": [
     {
-      "phrase": "whole bean selection",
+      "phrase": "whole bean selection and scooping",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "they have a huge selection of whole beans from all over the world, you can smell each one and even bag your own beans"
+      "exampleQuote": "in the back, where they have a huge selection of whole beans from all over the world. You can smell each one and even bag your own beans"
     },
     {
-      "phrase": "cold brew taps",
+      "phrase": "cold brew on tap",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "they have multiple taps with different varieties, which makes it fun to mix things up instead of getting the same coffee every time"
@@ -20,44 +20,44 @@
       "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting"
     },
     {
-      "phrase": "aroma on arrival",
+      "phrase": "the smell when you walk in",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "as soon as you open the door, you're hit with that amazing fresh coffee bean smell"
+      "exampleQuote": "As soon as you open the door, you're hit with that amazing fresh coffee bean smell"
     },
     {
-      "phrase": "ritual return visit",
-      "frequency": 2,
+      "phrase": "Strip District destination stop",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "this is a place we make a point to stop at every time we're in Pittsburgh"
+      "exampleQuote": "It's a place we make a point to stop at every time we're in Pittsburgh"
     }
   ],
   "notable_quote": "This place has been around since the 1980s and has built a reputation as one of the city's go-to specialty coffee shops, and you can feel that history the second you walk in.",
-  "sentiment_summary": "Reviewers consistently land on three things, the sensory hit of the bean room, staff who know the product cold, and prices that don't punish curiosity, with almost no friction points surfacing across nearly a thousand reviews.",
-  "quarter_narrative": "Spring 2026 was a stacking quarter for Allegheny Coffee & Tea Exchange: 924 Google reviews sitting at 81% five-star, a review posted three days before publication, and an Instagram account that posted twelve times in thirty days including five Reels, a cadence that put them well above the family median and earned them the social momentum flag that defines Pittsburgh Cafes leadership this issue. Their visual catalog, with 589 photos spread across multiple Google categories, gives the business a depth of presence that most Strip District competitors can't match. The rank holds as long as the Instagram momentum doesn't slip, that signal is the one variable separating a defended position from a challenged one.",
-  "tldr_read": "Near-perfect review sentiment, a visual catalog that outpaces the family, and an Instagram running at genuine volume, offset only by an engagement rate that suggests the audience is growing faster than it's interacting. Icons of the Burgh, #1 in Pittsburgh Coffee Shops and #1 in Pittsburgh Cafes.",
-  "tldr_meaning": "The foundation signals are locked in; the next movement in rank depends on whether the Instagram audience converts from passive followers into active engagers, the post frequency is already there, the response rate isn't.",
+  "sentiment_summary": "Reviewers are emphatic about three things: the sensory ritual of smelling and scooping whole beans, the warmth of named staff members like Eric and Cameron, and the cold brew tap variety — with almost nothing negative surfacing across 924 reviews, the only absence is any real criticism at all, which is its own kind of signal.",
+  "quarter_narrative": "Allegheny Coffee & Tea Exchange leads the Pittsburgh Cafes family this issue, and its dominance isn't accidental — 29 independent TikTok creators filmed here in the last quarter, generating over 1.5 million plays, a number that dwarfs almost every other café in this ranking. The business has its own TikTok account under @adventureallegheny and is active on Instagram with 12 posts and 5 reels in the last 30 days, so this isn't a story about a dormant business being discovered against its will — it's a story about a place that has genuinely earned its Icons of the Burgh status across every axis simultaneously. Where the rank goes from here depends on whether the Instagram engagement rate, currently sitting well below what the TikTok footprint would suggest is possible, starts to reflect the city's actual appetite for this place.",
+  "tldr_read": "Nearly a thousand reviews trending hard positive, 29 creators and 1.5 million TikTok plays last quarter, Instagram active but engagement lagging behind the street-level heat — Icons of the Burgh, #1 in Pittsburgh Coffee Shops and #1 in Pittsburgh Cafes.",
+  "tldr_meaning": "Every structural signal — reviews, visual catalog, creator coverage, conversion path — is locked in at the top of the family; the one axis with room to move is Instagram engagement, which hasn't yet caught up to the volume of attention the city is already paying.",
   "playbook": [
     {
-      "headline": "Convert followers into a responding audience",
-      "action": "With 12 posts and 5 Reels in 30 days but only a 1.23% engagement rate, the content volume isn't the problem, post formats that invite a reply (bean origin questions, cold brew tap rotations, grind setting polls) are.",
+      "headline": "Close the gap between TikTok heat and Instagram returns",
+      "action": "29 creators generated 1.5M TikTok plays last quarter; Instagram engagement sits at 1.23% — reposting creator content to Instagram Reels is the most direct way to close that distance",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Put the bean room on camera, specifically",
-      "action": "The bag-your-own-beans experience and the multi-tap cold brew setup are cited in reviews but underrepresented visually, 589 Google photos exist, but no category called 'Experience' or 'Behind the Counter' is tagged.",
+      "headline": "Put the bean-scooping ritual on camera",
+      "action": "The whole-bean selection and smell-and-scoop experience appears in multiple top reviews but is underrepresented in the 589 Google photos — a dedicated photo category or short-form video would surface the most distinctive in-store moment",
       "signal": "content_canvas",
       "priority": "medium"
     },
     {
-      "headline": "Name the staff in the visual record",
-      "action": "Reviewers already name Eric and Cameron by name; Instagram and Google photo captions that put staff faces to those names close the loop between review credibility and social presence.",
+      "headline": "Name the staff who are already named in reviews",
+      "action": "Eric and Cameron are cited by name in reviews; a recurring staff-spotlight format on Instagram or Google posts turns an existing brand asset into a repeatable signal",
       "signal": "community_spark",
       "priority": "low"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-22T22:19:10.634Z",
+  "analyzed_at": "2026-04-25T15:48:20.937Z",
   "model": "claude-sonnet-4-6"
 }

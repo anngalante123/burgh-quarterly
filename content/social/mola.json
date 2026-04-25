@@ -34,5 +34,111 @@
       "end": 935,
       "delta": 10
     }
+  },
+  "tiktok_mentions": {
+    "query": "mola pittsburgh",
+    "video_count": 30,
+    "total_plays": 2730767,
+    "total_likes": 85289,
+    "unique_creators": 25,
+    "top_creators": [
+      {
+        "handle": "reareesmom",
+        "fans": 10900,
+        "verified": false,
+        "videos": 1,
+        "plays": 2100000,
+        "likes": 45300
+      },
+      {
+        "handle": "nfl",
+        "fans": 20500000,
+        "verified": true,
+        "videos": 1,
+        "plays": 175300,
+        "likes": 9010
+      },
+      {
+        "handle": "espn",
+        "fans": 57400000,
+        "verified": true,
+        "videos": 1,
+        "plays": 159200,
+        "likes": 12900
+      },
+      {
+        "handle": "neiswongerconstruction",
+        "fans": 1407,
+        "verified": false,
+        "videos": 1,
+        "plays": 78800,
+        "likes": 4791
+      },
+      {
+        "handle": "zoetaylorrrfit",
+        "fans": 1095,
+        "verified": false,
+        "videos": 5,
+        "plays": 66522,
+        "likes": 5961
+      },
+      {
+        "handle": "lilbigbackz",
+        "fans": 18600,
+        "verified": false,
+        "videos": 1,
+        "plays": 31200,
+        "likes": 1817
+      },
+      {
+        "handle": "pittsburgh_dad",
+        "fans": 107600,
+        "verified": false,
+        "videos": 1,
+        "plays": 23000,
+        "likes": 1829
+      },
+      {
+        "handle": "itscadendavis",
+        "fans": 323900,
+        "verified": false,
+        "videos": 1,
+        "plays": 14100,
+        "likes": 950
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7521152147736612151",
+        "url": "https://www.tiktok.com/@reareesmom/video/7521152147736612151",
+        "text": "She’s the chaos. I’m the calm. Just kidding — we’re both the chaos 😈👯‍♀️ @mrscjhernandez #momtok #momsoftiktok #humor #bestfriend #casino #summervibes #summer #momsnightout ",
+        "author": "reareesmom",
+        "plays": 2100000,
+        "likes": 45300,
+        "posted": "2025-06-28T23:52:19.000Z"
+      },
+      {
+        "id": "7632513414073470222",
+        "url": "https://www.tiktok.com/@nfl/video/7632513414073470222",
+        "text": "from #pennstate to the #pittsburghsteelers 🤝 #drewallar #nfl #nfldraft ",
+        "author": "nfl",
+        "plays": 175300,
+        "likes": 9010,
+        "posted": "2026-04-25T02:10:33.000Z"
+      },
+      {
+        "id": "7632412203446062366",
+        "url": "https://www.tiktok.com/@espn/video/7632412203446062366",
+        "text": "Awesome 👏 (via @Pittsburgh Marathon) #espnsocial #marathon #running ",
+        "author": "espn",
+        "plays": 159200,
+        "likes": 12900,
+        "posted": "2026-04-24T19:37:54.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-25T13:35:57.000Z",
+    "median_plays": 5971,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:28:24.498Z"
   }
 }

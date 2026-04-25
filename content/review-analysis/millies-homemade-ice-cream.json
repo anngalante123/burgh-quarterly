@@ -2,68 +2,68 @@
   "slug": "millies-homemade-ice-cream",
   "themes": [
     {
-      "phrase": "standout staff moments",
-      "frequency": 4,
+      "phrase": "staff name-dropped by customers",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Gibson was very enthusiastic, boosted my mood up real quick"
     },
     {
-      "phrase": "seasonal and specialty flavors",
-      "frequency": 3,
+      "phrase": "non-dairy and specialty flavors",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Loved the cranberry crumble and the strawberry jam flavors"
     },
     {
-      "phrase": "non-dairy options noted",
-      "frequency": 2,
-      "sentiment": "neutral",
-      "exampleQuote": "Nice to stop in for non-dairy options"
-    },
-    {
-      "phrase": "price-to-value tension",
-      "frequency": 3,
-      "sentiment": "neutral",
-      "exampleQuote": "Pricey, very good, good service"
-    },
-    {
-      "phrase": "flavor execution doubts",
+      "phrase": "flavor execution misses",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "Buckeye had no flavor, the s'mores had no marshmallow, no Graham cracker"
     },
     {
-      "phrase": "bathroom and cleanliness",
+      "phrase": "pricing relative to expectation",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "Pricey, very good, good service"
+    },
+    {
+      "phrase": "facility cleanliness concerns",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Looks like it hasn't been cleaned in a month, each step my feet stuck"
+      "exampleQuote": "Each step across the bathroom floor my feet stuck"
+    },
+    {
+      "phrase": "waffle cone and texture details",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Waffle cone was amazing too"
     }
   ],
-  "notable_quote": "Loved the cranberry crumble and the strawberry jam flavors, the waffle cone was amazing too.",
-  "sentiment_summary": "Reviewers consistently praise individual staff members by name and highlight rotating specialty flavors as the draw, but a recurring undercurrent questions whether the base flavors justify the price, and one detailed negative review raises cleanliness concerns that the rating volume has so far absorbed.",
-  "quarter_narrative": "Millie's Shadyside entered Spring 2026 with the deepest review base in Pittsburgh's Sweets family, 1,150 Google reviews at 76% five-star, with the most recent landing just seven days ago, and a visual catalog of 482 photos that keeps the profile active without the shop having to do much. Instagram told a different story: 12 posts and 7 reels in 30 days is genuine volume, but a 0.34% engagement rate means most of it is disappearing into the feed. Page's holds the Pittsburgh Sweets lead on social momentum, and that gap is the only real distance between Millie's #2 ranking in Sweets and the top slot. Closing it doesn't require more posts, it requires posts that pull people back into conversation.",
-  "tldr_read": "Dominant review base and a flawless conversion path, but Instagram engagement is running well below what the posting volume should produce, Icons of the Burgh, #1 in Pittsburgh Ice Cream, #2 in Pittsburgh Sweets.",
-  "tldr_meaning": "The review foundation and discoverability infrastructure are fully built; the signal ceiling now sits entirely on whether Instagram engagement catches up to posting frequency.",
+  "notable_quote": "Delicious ice cream — loved the cranberry crumble and the strawberry jam flavors, waffle cone was amazing too.",
+  "sentiment_summary": "Reviewers reliably praise specific staff members by name and point to seasonal or creative flavors as the real draw, while the recurring friction lives in inconsistent flavor depth on core offerings and at least one facilities complaint serious enough to anchor an otherwise detailed review.",
+  "quarter_narrative": "Millie's Homemade Ice Cream enters Spring 2026 as Pittsburgh's most-reviewed ice cream shop — 1,150 Google reviews, three-quarters of them five stars — and the undisputed rank-one in its category. What's quieter is the TikTok signal: there are no indexed Pittsburgh creator videos for this location, which for a photogenic, neighborhood-anchor scoop shop with a verified Instagram handle and 12 posts in the last 30 days is a real gap between what the city could be saying and what it actually is. In the Pittsburgh Sweets family, Page's holds the social momentum story this issue on the strength of creator activity; Millie's counters with a conversion path that is fully built out and an Instagram cadence that outpaces most of its peers, but neither axis is loud enough yet to close the distance. The rank stays at one in ice cream so long as the review volume keeps compounding — the question for next quarter is whether any creator picks up the waffle cone and films it.",
+  "tldr_read": "Dominant review volume and a clean conversion path, but zero TikTok creator coverage and a below-median engagement rate on an otherwise active Instagram. Icons of the Burgh, #1 in Pittsburgh Ice Cream Shops.",
+  "tldr_meaning": "The review foundation is strong enough to hold the rank for now, but the absence of any creator-generated video content is the single gap that keeps the social momentum signal from matching the sentiment signal.",
   "playbook": [
     {
-      "headline": "Convert reels frequency into actual engagement",
-      "action": "Seven reels in 30 days at 0.34% engagement means the format isn't landing, test named-staff features and in-process flavor shots to invite response.",
+      "headline": "Get one creator filming the waffle cone",
+      "action": "Zero Pittsburgh TikToks are indexed for this location — one creator video on a signature flavor could open a channel that posts alone cannot.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Surface the rotating flavors as a recurring hook",
-      "action": "Specialty callouts like cranberry crumble appear in reviews but not as a consistent visual thread, a weekly rotating-flavor post could anchor repeat visits to the profile.",
-      "signal": "content_canvas",
+      "headline": "Turn staff shout-outs into recurring content",
+      "action": "At least three recent reviews name specific employees; a regular behind-the-counter format would channel that loyalty into the 7 reels already being posted monthly.",
+      "signal": "community_spark",
       "priority": "medium"
     },
     {
-      "headline": "Address the cleanliness signal before it compounds",
-      "action": "One detailed negative review citing bathroom condition has not yet damaged the 76% five-star share, but a second would move the sentiment needle, a visible ops response in the review thread would contain it.",
-      "signal": "community_spark",
+      "headline": "Close the flavor-consistency feedback loop",
+      "action": "Two independent reviewers flagged flat flavor on core scoops — a posted seasonal menu that signals what's house-made and rotating gives that criticism less room to compound.",
+      "signal": "content_canvas",
       "priority": "low"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:24:19.416Z",
+  "analyzed_at": "2026-04-25T15:40:54.739Z",
   "model": "claude-sonnet-4-6"
 }

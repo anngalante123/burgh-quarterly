@@ -14,5 +14,111 @@
   "full_name": "La Gourmandine Bakery",
   "last_post_at": "2026-03-16T12:38:49.000Z",
   "scraped_at": "2026-04-22T15:26:15.591Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "la gourmandine lawrenceville pittsburgh",
+    "video_count": 30,
+    "total_plays": 109267,
+    "total_likes": 4244,
+    "unique_creators": 26,
+    "top_creators": [
+      {
+        "handle": "lilbigbackz",
+        "fans": 18600,
+        "verified": false,
+        "videos": 1,
+        "plays": 23700,
+        "likes": 649
+      },
+      {
+        "handle": "melissasadhdlife",
+        "fans": 4361,
+        "verified": false,
+        "videos": 4,
+        "plays": 23079,
+        "likes": 1625
+      },
+      {
+        "handle": "mae.the.horgi",
+        "fans": 4836,
+        "verified": false,
+        "videos": 1,
+        "plays": 10400,
+        "likes": 427
+      },
+      {
+        "handle": "pitsburgh.eats",
+        "fans": 6360,
+        "verified": false,
+        "videos": 1,
+        "plays": 8014,
+        "likes": 199
+      },
+      {
+        "handle": "cigrons_viatgers",
+        "fans": 80,
+        "verified": false,
+        "videos": 1,
+        "plays": 6772,
+        "likes": 248
+      },
+      {
+        "handle": "matcha_melodi",
+        "fans": 42700,
+        "verified": false,
+        "videos": 1,
+        "plays": 5517,
+        "likes": 74
+      },
+      {
+        "handle": "sweetlyfiction",
+        "fans": 271,
+        "verified": false,
+        "videos": 1,
+        "plays": 5140,
+        "likes": 72
+      },
+      {
+        "handle": "kstravelviews",
+        "fans": 108,
+        "verified": false,
+        "videos": 1,
+        "plays": 3409,
+        "likes": 58
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7548503381564869918",
+        "url": "https://www.tiktok.com/@lilbigbackz/video/7548503381564869918",
+        "text": "La Gourmandine located right in the heart of Lawrenceville 🔥 there’s numerous locations around Pittsburgh 👀 #lagourmandine #lawrenceville #foodies #pittsburgh #frenchbakery @La Gourmandine Bakery ",
+        "author": "lilbigbackz",
+        "plays": 23700,
+        "likes": 649,
+        "posted": "2025-09-10T16:48:50.000Z"
+      },
+      {
+        "id": "7570794545026305311",
+        "url": "https://www.tiktok.com/@mae.the.horgi/video/7570794545026305311",
+        "text": "come with us to la gourmandine on this fall sunday morning 🍂🥖☕️ la gourmandine is a french bakery with delicious pastries and sandwiches. we got the campagnard sandwich, a baguette with smoked turkey, and the gourmandise, a flaky pastry w",
+        "author": "mae.the.horgi",
+        "plays": 10400,
+        "likes": 427,
+        "posted": "2025-11-09T18:29:50.000Z"
+      },
+      {
+        "id": "7448293573893803310",
+        "url": "https://www.tiktok.com/@pitsburgh.eats/video/7448293573893803310",
+        "text": "One of my favorite bakeries in the city @La Gourmandine Bakery . The flakey, buttery croissants and the incredible pastries taste very authentic. This place has been one of my go tos for years and for good reason. My favorites to get are th",
+        "author": "pitsburgh.eats",
+        "plays": 8014,
+        "likes": 199,
+        "posted": "2024-12-14T15:43:13.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-15T20:30:00.000Z",
+    "median_plays": 2211,
+    "detected_own_handle": "lagourmandine",
+    "scraped_at": "2026-04-25T15:27:14.308Z"
+  }
 }

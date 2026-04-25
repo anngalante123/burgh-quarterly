@@ -2,62 +2,62 @@
   "slug": "tazza-doro",
   "themes": [
     {
-      "phrase": "staff warmth and consistency",
-      "frequency": 4,
+      "phrase": "staff warmth and service",
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Everyone is always so nice when I go here. Their food and coffee are amazing."
+      "exampleQuote": "Everyone is always so nice when I go here."
     },
     {
-      "phrase": "seasonal and rotating drinks",
-      "frequency": 2,
+      "phrase": "standout specialty drinks",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had."
+      "exampleQuote": "The Barista featured drink on MLK Day might be thee best cup of coffee I've ever had."
     },
     {
-      "phrase": "baked goods availability",
+      "phrase": "coffee quality vs. price",
       "frequency": 2,
-      "sentiment": "neutral",
+      "sentiment": "negative",
+      "exampleQuote": "Coffee itself is just okay for the price."
+    },
+    {
+      "phrase": "seasonal baked goods",
+      "frequency": 2,
+      "sentiment": "positive",
       "exampleQuote": "Wish they had the zucchini muffins year-round, but there are lots of other great baked goods."
     },
     {
-      "phrase": "interior vs. price tension",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "The interior leaves something to be desired for the price of the coffee."
-    },
-    {
-      "phrase": "tea program depth",
+      "phrase": "matcha and tea selection",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Loved the cinnamon plum tea and was impressed by the number of tasty food options."
     }
   ],
   "notable_quote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had.",
-  "sentiment_summary": "Reviewers return for the staff and the drink consistency, and the tea and specialty latte programs draw specific, enthusiastic praise, the recurring friction point is whether the interior justifies the price point.",
-  "quarter_narrative": "Tazza D'Oro came into Spring 2026 sitting on 573 Google reviews at 74% five-star, still publishing to Instagram eleven times in the last thirty days, and holding a conversion path that leaves nothing on the table. The catalog of 244 photos across eleven Google categories is solid, but it trails the family median slightly, and zero Reels in the last thirty days is the clearest explanation for an Instagram engagement rate, 0.79%, that lags the energy the café projects in person. Allegheny Coffee & Tea Exchange holds the category lead on social momentum; for Tazza D'Oro to close that gap, the Instagram signal has to graduate from still-images into motion.",
-  "tldr_read": "Complete conversion path, active Instagram presence, but no Reels and below-median engagement, Ones to Watch, #1 in Pittsburgh Cafes.",
-  "tldr_meaning": "The review foundation is deep and the posting cadence is there; the rank ceiling is set by whether short-form video can lift a 0.79% engagement rate closer to what the café's word-of-mouth already suggests it deserves.",
+  "sentiment_summary": "Reviewers are consistently won over by the staff and the rotating specialty drinks, but a recurring undercurrent questions whether the interior and base coffee program fully justify the price point.",
+  "quarter_narrative": "Tazza D'Oro enters Spring 2026 as the most conversion-ready café in Pittsburgh — every contact point a customer would use to find, trust, and walk through the door is fully built out — but the signal generating the loudest noise citywide belongs to Allegheny Coffee & Tea Exchange, whose social momentum is pulling the family's attention northward. Tazza's Instagram is alive in the technical sense: 11 posts in the last 30 days, a handle, a bio. But zero Reels, a 0.79% engagement rate, and no TikTok creator coverage indexed at all means the café is effectively invisible in the formats where Pittsburgh's café conversation is actually happening right now. The rank climbs when the specialty-drink program — the kind of thing that turns a one-off MLK Day latte into a recurring seasonal event — starts showing up on video, not just in passing Google reviews.",
+  "tldr_read": "Flawless conversion path, no TikTok presence and flat Instagram engagement. Ones to Watch, #1 in Pittsburgh Cafes.",
+  "tldr_meaning": "Every structural signal that drives a first visit is maxed out; the ceiling now is whether the drink program can generate the kind of video documentation that moves a café from neighborhood favorite to city-wide conversation.",
   "playbook": [
     {
-      "headline": "Turn eleven posts into one Reel",
-      "action": "Zero Reels in the last 30 days, film one fifteen-second clip of a barista-featured drink build to test whether video moves the 0.79% engagement rate.",
+      "headline": "Turn the Barista Special Into a Reels Series",
+      "action": "Zero Reels posted in the last 30 days; one 15-second drink-build video per barista feature would directly address the weakest signal.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Make the rotating menu a documented catalog",
-      "action": "The MLK Day Amaretto Latte and seasonal zucchini muffin both surfaced in reviews; tag those items as named Google photo categories before they disappear from the menu.",
-      "signal": "content_canvas",
+      "headline": "Get Any Pittsburgh Creator Into the Shop",
+      "action": "No TikTok videos are indexed for this business citywide; a single creator visit costs nothing and fills a complete blind spot.",
+      "signal": "collab_fit",
       "priority": "medium"
     },
     {
-      "headline": "Surface the tea program explicitly",
-      "action": "Two reviewers called out the cinnamon plum tea and matcha by name, but neither Google nor Instagram reflects a tea-forward identity, a dedicated highlight or photo set closes that gap.",
-      "signal": "collab_fit",
+      "headline": "Photograph the Seasonal Pastry Case Consistently",
+      "action": "The visual catalog sits just below the family median with 244 photos; reviewers mention zucchini muffins and baked goods but no pastry-case category exists in the photo library.",
+      "signal": "content_canvas",
       "priority": "low"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-22T22:27:18.564Z",
+  "analyzed_at": "2026-04-25T15:43:55.433Z",
   "model": "claude-sonnet-4-6"
 }

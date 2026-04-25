@@ -34,5 +34,111 @@
       "end": 482,
       "delta": 3
     }
+  },
+  "tiktok_mentions": {
+    "query": "millie's homemade ice cream pittsburgh",
+    "video_count": 30,
+    "total_plays": 180530,
+    "total_likes": 12334,
+    "unique_creators": 26,
+    "top_creators": [
+      {
+        "handle": "kimberlyrhoades112",
+        "fans": 3100000,
+        "verified": true,
+        "videos": 1,
+        "plays": 53500,
+        "likes": 3654
+      },
+      {
+        "handle": "lubbockcre",
+        "fans": 2012,
+        "verified": false,
+        "videos": 1,
+        "plays": 28600,
+        "likes": 1956
+      },
+      {
+        "handle": "official_difiores",
+        "fans": 116,
+        "verified": false,
+        "videos": 1,
+        "plays": 23400,
+        "likes": 911
+      },
+      {
+        "handle": "landon.gore7",
+        "fans": 1699,
+        "verified": false,
+        "videos": 1,
+        "plays": 18000,
+        "likes": 1218
+      },
+      {
+        "handle": "indulge.in.pgh",
+        "fans": 1784,
+        "verified": false,
+        "videos": 1,
+        "plays": 16400,
+        "likes": 579
+      },
+      {
+        "handle": "ajpgh412",
+        "fans": 188000,
+        "verified": false,
+        "videos": 3,
+        "plays": 12906,
+        "likes": 2954
+      },
+      {
+        "handle": "munchermatt",
+        "fans": 30700,
+        "verified": false,
+        "videos": 1,
+        "plays": 8320,
+        "likes": 246
+      },
+      {
+        "handle": "downtownpittsburgh",
+        "fans": 5891,
+        "verified": false,
+        "videos": 1,
+        "plays": 4324,
+        "likes": 271
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7451405659830095135",
+        "url": "https://www.tiktok.com/@kimberlyrhoades112/video/7451405659830095135",
+        "text": "the Pittsburgh nostalgia is real with this flavor of ice cream from Millie’s! 😮‍💨🤤 \n\n(not an ad, just really love it) 🤪 ",
+        "author": "kimberlyrhoades112",
+        "plays": 53500,
+        "likes": 3654,
+        "posted": "2024-12-23T00:59:51.000Z"
+      },
+      {
+        "id": "7593118706826349879",
+        "url": "https://www.tiktok.com/@lubbockcre/video/7593118706826349879",
+        "text": "The news is out about the new Millie’s Homemade Ice Cream that’s coming to town. It will be located at 114th & Slide Rd. #lubbock #lubbocktexas #icecreamshop #hubcity @Millie’s Homemade Ice Cream ",
+        "author": "lubbockcre",
+        "plays": 28600,
+        "likes": 1956,
+        "posted": "2026-01-08T22:18:50.000Z"
+      },
+      {
+        "id": "7626435362834992397",
+        "url": "https://www.tiktok.com/@official_difiores/video/7626435362834992397",
+        "text": "BEST IN THE BURGH🍦#icecream #nfldraft #pittsburgh #pittsburghfoodie #mountwashington ",
+        "author": "official_difiores",
+        "plays": 23400,
+        "likes": 911,
+        "posted": "2026-04-08T17:04:48.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-22T00:10:42.000Z",
+    "median_plays": 1126,
+    "detected_own_handle": "millies.homemade",
+    "scraped_at": "2026-04-25T15:28:10.481Z"
   }
 }

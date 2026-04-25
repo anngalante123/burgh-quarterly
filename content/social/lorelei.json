@@ -34,5 +34,111 @@
       "end": 291,
       "delta": 0
     }
+  },
+  "tiktok_mentions": {
+    "query": "lorelei pittsburgh",
+    "video_count": 30,
+    "total_plays": 19155304,
+    "total_likes": 1455330,
+    "unique_creators": 29,
+    "top_creators": [
+      {
+        "handle": "loreleirayne",
+        "fans": 153800,
+        "verified": false,
+        "videos": 1,
+        "plays": 10000000,
+        "likes": 341200
+      },
+      {
+        "handle": "sabrinanextdooor",
+        "fans": 2354,
+        "verified": false,
+        "videos": 1,
+        "plays": 4500000,
+        "likes": 445900
+      },
+      {
+        "handle": "reiyumie",
+        "fans": 8090,
+        "verified": false,
+        "videos": 1,
+        "plays": 2300000,
+        "likes": 218000
+      },
+      {
+        "handle": "1nesgllt8",
+        "fans": 937,
+        "verified": false,
+        "videos": 1,
+        "plays": 1800000,
+        "likes": 407300
+      },
+      {
+        "handle": "daydaytalks2",
+        "fans": 12200,
+        "verified": false,
+        "videos": 1,
+        "plays": 380800,
+        "likes": 33100
+      },
+      {
+        "handle": "pittsburghpg",
+        "fans": 10200,
+        "verified": false,
+        "videos": 1,
+        "plays": 62400,
+        "likes": 3269
+      },
+      {
+        "handle": "pitt.vb.fan",
+        "fans": 120,
+        "verified": false,
+        "videos": 1,
+        "plays": 27000,
+        "likes": 3073
+      },
+      {
+        "handle": "loreleisecrett",
+        "fans": 41000,
+        "verified": false,
+        "videos": 1,
+        "plays": 20900,
+        "likes": 233
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7519960007216057655",
+        "url": "https://www.tiktok.com/@loreleirayne/video/7519960007216057655",
+        "text": "Replying to @j.sullycc  and did. 💁🏼‍♀️ #loreleikate #dentist #braces #teeth ",
+        "author": "loreleirayne",
+        "plays": 10000000,
+        "likes": 341200,
+        "posted": "2025-06-25T18:45:45.000Z"
+      },
+      {
+        "id": "7625794047117970701",
+        "url": "https://www.tiktok.com/@sabrinanextdooor/video/7625794047117970701",
+        "text": "obviously im leaning more towards sabrina but i love both i need last minute opinions! (no i didnt get inspo from gilmore girls)  #fyp #name #xyzbca #help ",
+        "author": "sabrinanextdooor",
+        "plays": 4500000,
+        "likes": 445900,
+        "posted": "2026-04-06T23:36:07.000Z"
+      },
+      {
+        "id": "7401133738605710600",
+        "url": "https://www.tiktok.com/@reiyumie/video/7401133738605710600",
+        "text": "Context: King Roland wishes for a kids but the wishing well had a consequences so that Queen Lorelei died #lore #sofiathefirst #stf #edit #amber #sofia #roland #cat #tiktok #blowthisup #armydreamers #fyp #foryou #foryoupage #fyppppppppppppp",
+        "author": "reiyumie",
+        "plays": 2300000,
+        "likes": 218000,
+        "posted": "2024-08-09T13:38:54.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-25T14:52:02.000Z",
+    "median_plays": 3955,
+    "detected_own_handle": "loreleisecrett",
+    "scraped_at": "2026-04-25T15:27:28.334Z"
   }
 }

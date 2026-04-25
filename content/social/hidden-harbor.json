@@ -14,5 +14,111 @@
   "full_name": "Hidden Harbor",
   "last_post_at": "2026-04-21T13:06:56.000Z",
   "scraped_at": "2026-04-22T15:26:15.591Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "hidden harbor pittsburgh",
+    "video_count": 30,
+    "total_plays": 2464293,
+    "total_likes": 277117,
+    "unique_creators": 28,
+    "top_creators": [
+      {
+        "handle": "pennsylvania_core",
+        "fans": 1779,
+        "verified": false,
+        "videos": 1,
+        "plays": 986400,
+        "likes": 165000
+      },
+      {
+        "handle": "tryquinn",
+        "fans": 889000,
+        "verified": false,
+        "videos": 1,
+        "plays": 649100,
+        "likes": 44000
+      },
+      {
+        "handle": "gloriaschafer",
+        "fans": 565,
+        "verified": false,
+        "videos": 1,
+        "plays": 261100,
+        "likes": 32700
+      },
+      {
+        "handle": "irene99rv",
+        "fans": 475,
+        "verified": false,
+        "videos": 1,
+        "plays": 103700,
+        "likes": 2788
+      },
+      {
+        "handle": "ellathestylist",
+        "fans": 4812,
+        "verified": false,
+        "videos": 1,
+        "plays": 73200,
+        "likes": 3038
+      },
+      {
+        "handle": "justmostie",
+        "fans": 5949,
+        "verified": false,
+        "videos": 1,
+        "plays": 72600,
+        "likes": 4747
+      },
+      {
+        "handle": "onlyinyourstate",
+        "fans": 7158,
+        "verified": false,
+        "videos": 1,
+        "plays": 54800,
+        "likes": 4283
+      },
+      {
+        "handle": "axiospittsburgh",
+        "fans": 5860,
+        "verified": false,
+        "videos": 1,
+        "plays": 41700,
+        "likes": 3470
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7623034107403963662",
+        "url": "https://www.tiktok.com/@pennsylvania_core/video/7623034107403963662",
+        "text": "city of bridges, city of hills #flatearth #pittsburgh #pgh ",
+        "author": "pennsylvania_core",
+        "plays": 986400,
+        "likes": 165000,
+        "posted": "2026-03-30T13:06:22.000Z"
+      },
+      {
+        "id": "7551781029376216375",
+        "url": "https://www.tiktok.com/@tryquinn/video/7551781029376216375",
+        "text": "If there are infinite worlds, every version of me is listening to this in every one of them. \n\nHidden Harbor is now live. ",
+        "author": "tryquinn",
+        "plays": 649100,
+        "likes": 44000,
+        "posted": "2025-09-19T12:47:30.000Z"
+      },
+      {
+        "id": "7604546258472078622",
+        "url": "https://www.tiktok.com/@gloriaschafer/video/7604546258472078622",
+        "text": "Lawerenceville is the place for foodies. Can’t convince me otherwise. \n\n#pittsburgh #fyp ",
+        "author": "gloriaschafer",
+        "plays": 261100,
+        "likes": 32700,
+        "posted": "2026-02-08T17:23:43.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-22T04:47:35.000Z",
+    "median_plays": 15950,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-25T15:25:33.874Z"
+  }
 }

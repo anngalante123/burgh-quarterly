@@ -2,62 +2,68 @@
   "slug": "pages",
   "themes": [
     {
-      "phrase": "line moves quickly",
-      "frequency": 4,
+      "phrase": "long line moves fast",
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Line will be long but moves quickly."
+      "exampleQuote": "Line will be long but moves quickly"
     },
     {
-      "phrase": "soft serve portions and texture",
+      "phrase": "generous portions, low price",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Thick and creamy, always delicious and they never miss."
+      "exampleQuote": "That gave me WAY too much ice cream, the price was RIDICULOUSLY affordable"
     },
     {
-      "phrase": "crowded evening wait",
-      "frequency": 5,
-      "sentiment": "neutral",
-      "exampleQuote": "Great just be prepared to wait in line for an hour."
-    },
-    {
-      "phrase": "friendly and professional staff",
-      "frequency": 4,
+      "phrase": "coconut soft serve standout",
+      "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "Shout out to the friendly and professional staff!"
+      "exampleQuote": "I had coconut soft serve dipped in a cherry shell and it was incredible — you could really taste the homemade coconut"
     },
     {
-      "phrase": "ridiculously affordable price",
+      "phrase": "specific menu calls",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The price was RIDICULOUSLY affordable."
+      "exampleQuote": "Get the Nancy B sundae!"
+    },
+    {
+      "phrase": "seasonal, opens in spring",
+      "frequency": 1,
+      "sentiment": "neutral",
+      "exampleQuote": "End of the season October 24. See you in the spring."
+    },
+    {
+      "phrase": "flavor balance issues",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The pretzels made it too salty by the end"
     }
   ],
-  "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype, coconut soft serve dipped in a cherry shell, texture and taste were perfect, and you could really taste the homemade coconut.",
-  "sentiment_summary": "Reviewers consistently celebrate the housemade soft serve quality, generous portions, and a staff that keeps the line, reliably long, especially evenings, moving at a clip that disarms the wait; the one recurring friction is flavoring fatigue on larger format items like the Arctic Swirl, where salty mix-ins can overwhelm by the halfway point.",
-  "quarter_narrative": "Spring 2026, Page's did what Icons do: it held. With 3,145 Google reviews at 87% five-star and a review posted as recently as today, the signal never went cold, the ratings stack here isn't a relic, it's actively refreshed. As the Pittsburgh Sweets family leader on social momentum, Page's is posting nine times a month to a verified Instagram account with a 1.29% engagement rate that sits a full ten points above the family median, and a 1,454-photo catalog on Google that outpaces every comparable shop in the category. The rank is safe for now, but holding the top position in a family of eight means any competitor who tightens the Instagram gap, reels are the current soft spot, at three per month, has a clear line of attack.",
-  "tldr_read": "A near-perfect conversion path, the deepest photo catalog in its family, and reviews arriving daily, offset by an Instagram engagement rate that's healthy but not dominant for a shop at this tier. Icons of the Burgh, #1 in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "The foundational signals, review volume, recency, visual catalog, and discoverability infrastructure, are locked in at the top of the family; the only variable that could compress the gap between Page's and a challenger is Reels output, where three per month leaves room for a competitor to close on momentum alone.",
+  "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype.",
+  "sentiment_summary": "Reviewers consistently praise the value, the speed of a line that looks punishing but isn't, and the quality of specific items like the Nancy B sundae and coconut soft serve — the lone criticism is about flavor construction on one build-your-own format, not the core product.",
+  "quarter_narrative": "Page's enters Spring 2026 as the undisputed leader of Pittsburgh Sweets — 3,145 Google reviews at 87% five-star, 1,454 photos across a full visual catalog, and a conversion path that is structurally perfect. The social momentum signal is the headline this issue: nine Instagram posts and three Reels in the last 30 days put it ahead of nearly every peer in its family, and the account is verified, active, and bio-complete. What's conspicuously absent is TikTok creator coverage — no indexed Pittsburgh videos means the line of customers stretching out of Arlington hasn't translated into the kind of short-form creator ecosystem that keeps a seasonal business in conversation between visits. Page's holds the top rank because every other axis is built correctly; sustaining it through the off-season depends on whether creator culture finds its way to the South Side slopes.",
+  "tldr_read": "Near-flawless reviews, strong Instagram activity, and a perfect conversion path — but zero indexed TikTok creator coverage for Pittsburgh's top-ranked dessert shop. Icons of the Burgh, #1 in Pittsburgh Dessert Shops.",
+  "tldr_meaning": "Every structural signal is at or above family median; the only measurable gap is TikTok creator presence, which, for a seasonal business with a built-in waiting-line spectacle, represents the single largest untapped source of between-season momentum.",
   "playbook": [
     {
-      "headline": "Turn three Reels a month into six",
-      "action": "Reels are the weakest output format at 3 per month, doubling cadence is the single fastest path to widening the momentum lead over the eight-shop family.",
+      "headline": "Get Arlington on TikTok's map",
+      "action": "Zero Pittsburgh TikToks are indexed for Page's — one creator visit during peak evening line could change that before summer.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Get the Nancy B sundae its own frame",
-      "action": "Reviewers name specific items, the Nancy B sundae, coconut soft serve, Big Back Arctic Swirl, but the 1,454 Google photos lack named-item anchors that could pull search traffic to those menu moments.",
+      "headline": "Turn specific menu names into content anchors",
+      "action": "The Nancy B sundae and coconut soft serve are named in reviews but absent from the 9 recent Instagram posts — each named item is a repeatable post format.",
       "signal": "content_canvas",
       "priority": "medium"
     },
     {
-      "headline": "Make the wait part of the story",
-      "action": "The line is the most-mentioned feature in reviews; a creator walkthrough of the queue-to-cone experience would channel that friction into shareable, relatable content that fits the 1.29% engagement baseline.",
-      "signal": "collab_fit",
+      "headline": "Build the off-season presence before closing day",
+      "action": "A seasonal shop that closes in late October loses search and social relevance fast — pre-close content that teases spring reopening keeps the 3,145-review base engaged through winter.",
+      "signal": "community_spark",
       "priority": "low"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:25:37.378Z",
+  "analyzed_at": "2026-04-25T15:42:13.728Z",
   "model": "claude-sonnet-4-6"
 }

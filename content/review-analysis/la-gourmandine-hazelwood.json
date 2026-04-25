@@ -8,7 +8,7 @@
       "exampleQuote": "Please do not miss this hidden gem in Pittsburgh"
     },
     {
-      "phrase": "Paris-quality pastry",
+      "phrase": "Paris-caliber pastry",
       "frequency": 1,
       "sentiment": "positive",
       "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed"
@@ -17,47 +17,47 @@
       "phrase": "raspberry lychee macaron",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "make sure you get the raspberry lychee macaroon, it is the best thing I've ever put in my mouth"
+      "exampleQuote": "make sure you get the raspberry lychee macaroon, it is gluten free made with almond flour"
     },
     {
-      "phrase": "multiple locations, one reputation",
+      "phrase": "multi-location discovery",
       "frequency": 1,
       "sentiment": "positive",
       "exampleQuote": "there are multiple locations so please make sure you check it out"
     },
     {
-      "phrase": "simply delicious baked goods",
+      "phrase": "everything is delicious",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Excelente panadería, todo es delicioso"
     }
   ],
-  "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
-  "sentiment_summary": "Reviewers reach for superlatives, Paris comparisons, best-thing-I've-ever-eaten declarations, with the raspberry lychee macaron named specifically; nitpicks are essentially absent across 525 reviews, though the praise skews brief and experience-based rather than descriptive.",
-  "quarter_narrative": "La Gourmandine Hazelwood entered Spring 2026 with a full deck on every signal except one: 525 Google reviews at 88% five-star, 304 photos spanning multiple categories, a conversion path (hours, phone, website) that leaves nothing to chance, and a creator-fit profile that should be drawing food photographers through the door, yet the Instagram account posted nothing in the past 37 days and logged zero Reels in the past month. Meanwhile, Page's holds the Pittsburgh Sweets family lead on the back of social momentum, the one axis where La Gourmandine is genuinely dormant. The Hazelwood location sits at the top of its pastry category for now, but that position gets harder to defend if the city's visual conversation moves on without it.",
-  "tldr_read": "Ironclad reviews and a perfect conversion path, zero Instagram activity in 37 days, Ones to Watch, #1 in Pittsburgh Pastry Shops.",
-  "tldr_meaning": "Every axis that depends on the business itself is at or near ceiling; the only ceiling left to raise is the one controlled entirely by how often the account posts.",
+  "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed — I'm telling you this from experience.",
+  "sentiment_summary": "Reviewers reach for superlatives — Paris comparisons, best-thing-I've-ever-eaten declarations, a specific callout for the gluten-free raspberry lychee macaron — with virtually no public criticism surfacing across 525 reviews.",
+  "quarter_narrative": "La Gourmandine Hazelwood enters Spring 2026 as the most-reviewed pastry shop in Pittsburgh with sentiment that almost never breaks. The problem is the camera: the account hasn't posted in over 40 days, has run zero Reels in the last month, and there is no indexed TikTok creator coverage to carry the weight in its absence. In the Pittsburgh Sweets family, that contrast is sharp — Page's is leading the issue specifically on social momentum, a signal where La Gourmandine sits at the bottom of the family. The path to climbing out of Ones to Watch and threatening the top of the broader Sweets ranking runs directly through closing that gap; the reviews are already doing their job.",
+  "tldr_read": "525 reviews with near-perfect sentiment and a flawless conversion path, paired with a dormant Instagram and zero TikTok presence. Ones to Watch, #1 in Pittsburgh Pastry Shops.",
+  "tldr_meaning": "Every trust signal a customer needs at the point of decision is in place; the ceiling on rank is now set almost entirely by whether the social momentum signal comes back to life.",
   "playbook": [
     {
-      "headline": "Break the 37-day Instagram silence now",
-      "action": "Resume posting immediately, even one Reel of the macaron case restarts an engagement rate that's currently meaningless at 2.29% with no new posts.",
+      "headline": "Restart the feed, then hold the cadence",
+      "action": "The account has posted nothing in 40-plus days and has zero Reels in the last 30; even two posts a week featuring the macaron case or the croissant stack would move the momentum signal off the floor.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Put the raspberry lychee macaron on camera",
-      "action": "The most-cited specific product in the reviews has no dedicated visual presence; a single well-lit photo or short video of that macaron is the lowest-effort, highest-return content this shop can produce.",
+      "headline": "Give TikTok creators something specific to film",
+      "action": "There is no indexed TikTok coverage for this location; a visible, photogenic moment — a macaron tower, a laminated dough pull — gives visiting creators a natural subject and seeds the coverage that doesn't yet exist.",
       "signal": "content_canvas",
       "priority": "medium"
     },
     {
-      "headline": "Formalize the creator pipeline",
-      "action": "With a creator-fit profile at the family median and 304 Google photos already uploaded by visitors, the audience for food-focused creators exists, a standing open-kitchen or product-access invite turns passive visitors into repeat visual contributors.",
-      "signal": "collab_fit",
+      "headline": "Verify the Instagram account",
+      "action": "The business account is unverified; verification signals authority on a profile that already has the bio, contact info, and review volume to support the credential.",
+      "signal": "conversion_path",
       "priority": "low"
     }
   ],
   "review_count": 4,
-  "analyzed_at": "2026-04-22T22:22:46.278Z",
+  "analyzed_at": "2026-04-25T15:39:16.339Z",
   "model": "claude-sonnet-4-6"
 }

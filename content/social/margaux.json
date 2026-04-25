@@ -34,5 +34,111 @@
       "end": 530,
       "delta": 4
     }
+  },
+  "tiktok_mentions": {
+    "query": "margaux pittsburgh",
+    "video_count": 30,
+    "total_plays": 384916,
+    "total_likes": 13721,
+    "unique_creators": 29,
+    "top_creators": [
+      {
+        "handle": "heinz_us",
+        "fans": 172000,
+        "verified": true,
+        "videos": 1,
+        "plays": 124700,
+        "likes": 574
+      },
+      {
+        "handle": "cooking_comedy_chaos",
+        "fans": 750700,
+        "verified": false,
+        "videos": 1,
+        "plays": 52200,
+        "likes": 2497
+      },
+      {
+        "handle": "thesportingnews",
+        "fans": 120300,
+        "verified": false,
+        "videos": 1,
+        "plays": 51400,
+        "likes": 1173
+      },
+      {
+        "handle": "anjalipll",
+        "fans": 256,
+        "verified": false,
+        "videos": 1,
+        "plays": 50000,
+        "likes": 2376
+      },
+      {
+        "handle": "deluludayss",
+        "fans": 1289,
+        "verified": false,
+        "videos": 1,
+        "plays": 21400,
+        "likes": 2544
+      },
+      {
+        "handle": "toricreates222",
+        "fans": 7834,
+        "verified": false,
+        "videos": 1,
+        "plays": 14500,
+        "likes": 1009
+      },
+      {
+        "handle": "lattebrothers",
+        "fans": 4331,
+        "verified": false,
+        "videos": 1,
+        "plays": 10700,
+        "likes": 447
+      },
+      {
+        "handle": "theurbandarling",
+        "fans": 51800,
+        "verified": false,
+        "videos": 1,
+        "plays": 8097,
+        "likes": 180
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7632454197534821646",
+        "url": "https://www.tiktok.com/@heinz_us/video/7632454197534821646",
+        "text": "what is Pittsburgh's #1 sauce draft pick?",
+        "author": "heinz_us",
+        "plays": 124700,
+        "likes": 574,
+        "posted": "2026-04-24T23:00:00.000Z"
+      },
+      {
+        "id": "7571887344110882061",
+        "url": "https://www.tiktok.com/@cooking_comedy_chaos/video/7571887344110882061",
+        "text": "The best pizza in Pittsburgh is at Fiori’s! Crispy undercarriage, chewy crust, flavorful sauce and gooey cheese! Definitely go check this famous pizza shop out! #pittsburgh #famous #pizza ",
+        "author": "cooking_comedy_chaos",
+        "plays": 52200,
+        "likes": 2497,
+        "posted": "2025-11-12T20:01:00.000Z"
+      },
+      {
+        "id": "7632512009124252941",
+        "url": "https://www.tiktok.com/@thesportingnews/video/7632512009124252941",
+        "text": "Steelers fans are excited about Penn State QB Drew Allar #nfl #pittsburghsteelers #pennstate ",
+        "author": "thesportingnews",
+        "plays": 51400,
+        "likes": 1173,
+        "posted": "2026-04-25T02:05:09.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-25T14:08:33.000Z",
+    "median_plays": 3035,
+    "detected_own_handle": "margauxpgh",
+    "scraped_at": "2026-04-25T15:27:45.518Z"
   }
 }

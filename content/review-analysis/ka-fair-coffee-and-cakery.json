@@ -2,62 +2,62 @@
   "slug": "ka-fair-coffee-and-cakery",
   "themes": [
     {
-      "phrase": "coffee quality reverence",
-      "frequency": 7,
+      "phrase": "never bitter coffee",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Coffee that is NEVER bitter. And this place is so cute."
     },
     {
-      "phrase": "zoo-adjacent discovery",
+      "phrase": "pre-zoo breakfast stop",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Stopped here before going to the zoo, everything was DELICIOUS and the owner was very nice."
+      "exampleQuote": "Came here with some friends before the zoo for a light breakfast and coffee."
     },
     {
-      "phrase": "signature cake drinks",
+      "phrase": "signature cakes and pastries",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "My favorite spot now. Banoffee is top notch."
+    },
+    {
+      "phrase": "owner and regulars warmth",
       "frequency": 2,
-      "sentiment": "neutral",
-      "exampleQuote": "The actual piece of tiramisu cake on top of the coffee was a nice touch, though it got a little soggy."
+      "sentiment": "positive",
+      "exampleQuote": "The owner was very nice and the locals clearly love it."
     },
     {
-      "phrase": "standout single items",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Best matcha I ever had. My favorite spot now. Banoffee is top notch."
-    },
-    {
-      "phrase": "charming local atmosphere",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Charming place and the locals clearly love it, we enjoyed chatting with the regulars."
+      "phrase": "tiramisu latte execution",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The cake got a little soggy in the coffee. I kind of wish it was included on the side."
     }
   ],
-  "notable_quote": "The coffee here is so good it taught my boyfriend how to whistle, he has never been able to whistle in his life, but after a sip he let out a perfect one.",
-  "sentiment_summary": "Reviewers stack superlatives on the coffee and individual menu standouts, the banoffee, the quiche, the matcha, while the one critical note is textural and specific: a tiramisu latte where the cake topping turned soggy before it could be enjoyed.",
-  "quarter_narrative": "Ka-Fair Coffee and Cakery entered Spring 2026 with a quietly stacked review record, 235 Google reviews at 85% five-star, the most recent posted two days ago, and a Creator Fit signal that matches the family median, suggesting the space and the menu are already photographable enough to attract the right voices. What the quarter didn't produce was Instagram velocity: three posts and zero Reels in 30 days puts Ka-Fair well below a family where Allegheny Coffee & Tea Exchange is setting the pace on social momentum. The visual catalog on Google, while covering nine categories, sits below the family median, which means the platform that's actively driving foot traffic from zoo-bound visitors isn't being fed. A sustained run of Reels, even one per week anchored to the banoffee or the tiramisu latte, is the single clearest path toward closing the gap between this business's review strength and its rank.",
-  "tldr_read": "Exceptional review sentiment and a perfect conversion path, undercut by near-dormant Instagram and a below-median photo catalog, Ones to Watch, #3 in Pittsburgh Cafes.",
-  "tldr_meaning": "The review foundation is stable and the discovery funnel from Google is fully built; the distance between this rank and the top of the family now lives almost entirely in the Instagram signal.",
+  "notable_quote": "The coffee here is so good it taught my boyfriend how to whistle — he has never been able to whistle in his life, but after a sip he let out a perfect one.",
+  "sentiment_summary": "Reviewers keep returning to the same two things — coffee that reads as genuinely non-bitter and a room that feels lived-in and local — with the only real nitpick being the tiramisu latte's construction, where the cake-on-top concept drowns before you finish the drink.",
+  "quarter_narrative": "Ka-Fair Coffee and Cakery enters Spring 2026 as the kind of Morningside neighborhood spot that out-of-towners discover on their way to the zoo and immediately wish they lived near. The reviews are warm and specific — banoffee cake, quiche, a latte so good it gets cited as a life-changing event — but the Instagram account posted three times in 30 days and has put up zero Reels, leaving a 1.74% engagement rate that reflects a loyal but small audience that isn't growing. There's no indexed TikTok creator coverage either, which means the city's most powerful discovery channel hasn't found this place yet, or hasn't found a reason to film it. Allegheny Coffee & Tea Exchange holds the family lead this issue on social momentum; Ka-Fair's path upward from #3 runs directly through closing that gap — the visual and creator-fit signals suggest the room and the product are ready, the distribution isn't.",
+  "tldr_read": "235 Google reviews at 85% five-star, zero TikTok presence, three Instagram posts in 30 days — strong conviction from the people who find it, almost no mechanism to make that happen at scale. Ones to Watch, #3 in Pittsburgh Cafes.",
+  "tldr_meaning": "The review foundation and creator-fit signal are already in the upper tier of this family; the rank ceiling is set almost entirely by an Instagram channel that is barely active and a TikTok footprint that doesn't exist yet.",
   "playbook": [
     {
-      "headline": "Post Reels before the rank resets",
-      "action": "Zero Reels in 30 days against a family median that rewards video, one weekly Reel of the banoffee or tiramisu latte construction would double current momentum signal.",
+      "headline": "Get Ka-Fair onto Pittsburgh TikTok feeds",
+      "action": "Zero creator videos are indexed for this business; one invited filmmaker shooting the banoffee cake or the tiramisu latte build changes that immediately.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Fill the Google photo gaps now",
-      "action": "146 photos across 9 categories sounds robust, but the visual catalog sits 15 points below the family median, adding tagged exterior, interior, and pastry case shots directly in Google Maps closes that deficit faster than any other single action.",
+      "headline": "Turn Reels off zero, starting with the coffee",
+      "action": "The account has posted 3 times in 30 days and zero Reels; a single short video of the latte pour or cake slice would address the weakest axis in the family.",
       "signal": "content_canvas",
       "priority": "medium"
     },
     {
-      "headline": "Route the zoo crowd into the review funnel",
-      "action": "Three separate reviews cite the Pittsburgh Zoo visit as the reason they found Ka-Fair, a small table card or receipt note acknowledging that moment converts first-time visitors into the 236th and 237th five-star reviews.",
+      "headline": "Build the zoo-day visitor into a return customer",
+      "action": "Three of nine reviewed visits mention the zoo as context; a Google post or seasonal menu push timed to zoo hours captures an already-primed walk-in audience.",
       "signal": "community_spark",
       "priority": "low"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-22T22:22:09.330Z",
+  "analyzed_at": "2026-04-25T15:38:38.759Z",
   "model": "claude-sonnet-4-6"
 }

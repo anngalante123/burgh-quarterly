@@ -2,62 +2,68 @@
   "slug": "the-butterwood-bake-consortium",
   "themes": [
     {
-      "phrase": "elevated flavor and texture",
+      "phrase": "late-night dessert destination",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Amazing stop for a date night or after dinner."
+    },
+    {
+      "phrase": "distinctive flavor combinations",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Not just your normal sugary affair but elevated with unique flavor and texture, you can tell a lot of time and love went into crafting those recipes."
+      "exampleQuote": "Not just your normal sugary affair but elevated with unique flavor and texture."
     },
     {
-      "phrase": "cozy date-night atmosphere",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Amazing stop for a date night or after dinner. We tried the Lavender cake with honey buttercream, dark chocolate cake, and brown butter blondie with peanut butter icing."
-    },
-    {
-      "phrase": "slow-moving service line",
+      "phrase": "slow service, long lines",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "They've always had issues regarding speed of service, we wound up leaving both times. The lines are long and do not move."
+      "exampleQuote": "The lines are long and do not move."
     },
     {
-      "phrase": "coffee execution falling short",
-      "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "Awesome baked goods but really needs a quality and service check on coffee."
-    },
-    {
-      "phrase": "vegan and gluten-free options",
+      "phrase": "dietary inclusion",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Gluten and nut free options are fire. Went here around 9 PM or so. Staff friendly."
+      "exampleQuote": "Gluten and nut free options are 🔥"
+    },
+    {
+      "phrase": "coffee execution inconsistency",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Really needs a quality/service check on coffee."
+    },
+    {
+      "phrase": "cozy atmosphere for gathering",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "A great place to meet up with a friend, have a specialty coffee, and talk for hours."
     }
   ],
-  "notable_quote": "Not just your normal sugary affair but elevated with unique flavor and texture, you can tell a lot of time and love went into crafting those recipes.",
-  "sentiment_summary": "Reviewers arrive for the pastry work, the lavender cakes, brown butter blondies, and vegan options earn genuine loyalty, but the coffee program, from slow service lines to a macchiato served in an espresso cup with no lid, keeps pulling the ceiling down.",
-  "quarter_narrative": "Spring 2026 found Butterwood stacking reviews at a steady clip, 736 on Google with 79% at five stars, a photo catalog pushing nearly a thousand images across a well-organized set of categories, and a conversion path that runs clean from search to visit. What it didn't do was post a single thing on Instagram for the second consecutive year; the account has been silent for 511 days while the family leader, Allegheny Coffee & Tea Exchange, rode social momentum to the top of the rankings. Butterwood holds the #2 cafe slot on the strength of its visual catalog and the sheer volume of creator-driven content it inspires, a Creator Fit signal that sits notably above the family median, but closing the gap with Allegheny depends almost entirely on whether the Instagram account comes back to life.",
-  "tldr_read": "Near-perfect conversion path and a visually rich Google presence undercut by 511 days of Instagram silence. Ones to Watch, #2 in Pittsburgh Cafes.",
-  "tldr_meaning": "Every signal except Instagram is at or above the family median; the rank ceiling is not a product problem or a discovery problem, it is a single dormant account holding a well-regarded business below where the rest of its data would otherwise place it.",
+  "notable_quote": "You can tell a lot of time and love went into crafting those recipes — they should be proud.",
+  "sentiment_summary": "Reviewers keep coming back for the distinctive pastry work — lavender-honey cakes, brown butter blondies, late-night hours that nothing else in the neighborhood matches — but a consistent undercurrent of complaints about slow lines and uneven coffee service is slowly accumulating weight in the review pool.",
+  "quarter_narrative": "Butterwood enters Spring 2026 with 984 Google photos, 736 reviews, and a visual catalog that outpaces nearly every cafe in this family — yet its Instagram has been silent for over 500 days, and there are no indexed TikTok videos to fill that void. This is not a case where the city is filming a place that isn't filming back; this is a place the city clearly loves and is largely not filming at all, which is a different and more urgent problem. The family leader this issue, Allegheny Coffee & Tea Exchange, built its position on social momentum — exactly the axis where Butterwood is most exposed. The rank holds at #2 for now on the strength of a deep review base and a photo catalog that keeps the profile alive, but without new signal entering the system, the gap between Butterwood and the top spot stays structural rather than closeable.",
+  "tldr_read": "984 Google photos and strong review sentiment, but the Instagram has been dark for 514 days and TikTok has no footprint — Ones to Watch, #2 in Pittsburgh Cafes.",
+  "tldr_meaning": "Every high-performing axis here is static — the review base, the photo library, the conversion path are all strong but self-sustaining at a plateau, and without any momentum signal restarting, this ranking reflects reputation more than trajectory.",
   "playbook": [
     {
-      "headline": "End the 511-day Instagram blackout now",
-      "action": "One post per week of the actual pastry work, lavender cakes, blondies, the late-night vegan case, would restart the momentum signal that is currently the only axis below the family median.",
+      "headline": "Break 514 days of Instagram silence",
+      "action": "A single post of the lavender-honey cake or brown butter blondie restarts the engagement clock on a 3.92% rate that still has real reach behind it.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Address the coffee program publicly and directly",
-      "action": "At least three of seven available reviews flag coffee execution, cup size confusion, missing chai, no ice at 4pm, and each one represents a repeat-visit risk worth resolving on the record.",
+      "headline": "Turn regulars into the TikTok crew",
+      "action": "No Pittsburgh TikToks are indexed for this business — a shelf card or counter prompt inviting late-night visitors to post could seed the first wave of creator coverage.",
       "signal": "community_spark",
       "priority": "medium"
     },
     {
-      "headline": "Channel the creator pull into tagged photo categories",
-      "action": "With a Creator Fit signal already well above the family median, nudging in-store signage toward specific Google photo categories, Vibe, Menu, Food & drink, would deepen a catalog already at 984 images.",
-      "signal": "content_canvas",
+      "headline": "Address the coffee service gap publicly",
+      "action": "Three of seven sampled reviews flag coffee inconsistency or service failures; a direct response pattern on Google would protect the 79% five-star ratio before it drifts.",
+      "signal": "conversion_path",
       "priority": "low"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-22T22:27:37.455Z",
+  "analyzed_at": "2026-04-25T15:44:15.528Z",
   "model": "claude-sonnet-4-6"
 }

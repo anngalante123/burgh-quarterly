@@ -29,6 +29,7 @@ import {
 } from "@/components/insights/SubscoreBars";
 import { PeerDotPlot } from "@/components/insights/PeerDotPlot";
 import { MomentumSparkline } from "@/components/insights/MomentumSparkline";
+import { TikTokMentions } from "@/components/insights/TikTokMentions";
 
 import {
   ClaimAffordanceUnlessClaimed,
@@ -543,6 +544,13 @@ export default async function BusinessPage({ params }: PageProps) {
                   <RelayWhisper variant="whisper" />
                 )}
               </div>
+
+              {/* TikTok creator coverage, what the city is filming about
+                  this business (regardless of whether they have an account). */}
+              <TikTokMentions
+                data={social.tiktok_mentions}
+                businessName={biz.name}
+              />
 
               {/* The Playbook, 3 data-derived recommendations */}
               <Playbook playbook={playbook} />

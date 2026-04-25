@@ -8,56 +8,56 @@
       "exampleQuote": "The best sushi I have tried in Pittsburgh. One of the best sushi experiences I have ever had overall."
     },
     {
-      "phrase": "higher-end pricing",
-      "frequency": 2,
-      "sentiment": "neutral",
-      "exampleQuote": "The price is on the higher end, but is justified by the quality of the food."
-    },
-    {
       "phrase": "expert chef, modern style",
       "frequency": 1,
       "sentiment": "positive",
       "exampleQuote": "A clearly expert chef. Classic sushi done with a modern style and everything is good to be honest."
     },
     {
-      "phrase": "busy evenings",
+      "phrase": "price justified by quality",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Busy, but that is to be expected."
+      "exampleQuote": "The price is on the higher end, but is justified by the quality of the food."
     },
     {
-      "phrase": "service inconsistency",
+      "phrase": "gets crowded evenings",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "Busy, but that is to be expected. Can get busy in the evenings."
+    },
+    {
+      "phrase": "service falls short",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "For the service, I cannot give a positive review."
     }
   ],
-  "notable_quote": "One of the best sushi experiences I have ever had overall, the quality of the food is excellent.",
-  "sentiment_summary": "Reviewers keep returning to the same word, 'best', applied not just to Pittsburgh but to their broader dining lives, with the chef's technical range and ingredient quality doing the heavy lifting; the friction points are predictable: price ceiling and weekend crowding, with one isolated service complaint breaking an otherwise warm consensus.",
-  "quarter_narrative": "Mola closed out Spring 2026 stacking reviews at a rate most East Liberty restaurants would envy, 767 on Google, 80 percent at five stars, with the newest arriving a day before publication. Its photo catalog, nearly a thousand images spread across fourteen categories, is the most complete visual record in the Pittsburgh Asian Kitchens family, and Mola leads that family this issue on the strength of creator collaboration fit, the single signal where it most clearly outpaces its peers. The one conspicuous gap is Instagram: two posts in the last thirty days, no reels, and a 1.42 percent engagement rate on an account that has otherwise done the foundational work of having a bio, a handle, and a business profile. Rank defense at number one in both Pittsburgh Sushi and the Asian Kitchens family depends on closing the distance between its off-platform reputation and what it's actually publishing.",
-  "tldr_read": "Near-perfect conversion path and a creator-fit signal that leads the Asian Kitchens family, hobbled by an Instagram account posting twice a month with no reels. Ones to Watch, #1 in Pittsburgh Sushi Restaurants.",
-  "tldr_meaning": "Every structural axis, reviews, visual catalog, discoverability, creator appeal, is already built; the only thing keeping Mola from Icons territory is an Instagram cadence that currently runs at about one post per two weeks.",
+  "notable_quote": "One of the best sushi experiences I have ever had overall.",
+  "sentiment_summary": "Reviewers keep reaching for superlatives about the fish and the chef's technique, but the price point draws consistent notice and service has surfaced as a friction point that the food alone doesn't fully paper over.",
+  "quarter_narrative": "No Pittsburgh creators have brought Mola to TikTok yet — which is the most interesting thing about its profile right now. A restaurant sitting at number one in its category, with 935 photos logged across Google and a creator collaboration signal that outpaces every Asian kitchen in the family, has not yet found its way onto the platform where a single well-placed video could permanently reset its reach. Its own Instagram posted twice in the last thirty days and hasn't touched Reels at all, leaving a gap between what the room clearly delivers and what anyone outside of East Liberty's dinner reservation circuit actually sees. Mola leads the Pittsburgh Asian Kitchens family this issue on the strength of that creator fit signal — the aesthetic, the food, the setting are all already there. Whether it holds the top position next quarter will depend less on the kitchen and more on whether the camera finds it.",
+  "tldr_read": "Dominant visual catalog and near-perfect conversion path, but Instagram is nearly dormant and TikTok coverage is zero — Ones to Watch, number one in Pittsburgh Sushi.",
+  "tldr_meaning": "Every foundational axis — reviews, photos, findability — is already at or above family median; the only path to Icons runs directly through video momentum and the creator ecosystem that hasn't filmed here yet.",
   "playbook": [
     {
-      "headline": "Restart Instagram with weekly reels",
-      "action": "Zero reels posted in the last 30 days; one short-form video per week of plating or omakase prep would directly address the lowest signal in the set.",
+      "headline": "Get Mola onto TikTok before someone else does",
+      "action": "Zero indexed TikToks exist for this restaurant; one creator video of the Hokkaido Uni Chirashi or omakase service could define the search result for months.",
       "signal": "momentum",
       "priority": "high"
     },
     {
-      "headline": "Open the door to creator visits",
-      "action": "Creator fit is already the family's highest at 90, formalizing a standing invite for food photographers or video creators converts latent fit into actual posts and reach.",
-      "signal": "collab_fit",
+      "headline": "Turn the Reels gap into a weekly habit",
+      "action": "Two posts and zero Reels in the last thirty days at 1.42% engagement — a single behind-the-counter Reel of fish prep or plating would immediately outperform the current feed.",
+      "signal": "content_canvas",
       "priority": "medium"
     },
     {
-      "headline": "Surface the Hokkaido Uni Chirashi specifically",
-      "action": "It's the only dish named by name in the available reviews; anchoring one photo series or menu highlight around a signature item gives the 935-photo catalog a narrative spine.",
-      "signal": "content_canvas",
+      "headline": "Invite the creators already primed to film here",
+      "action": "Creator fit sits at the top of the family; proactively seating food-focused Pittsburgh creators converts a latent signal into documented coverage without waiting for organic discovery.",
+      "signal": "collab_fit",
       "priority": "low"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-22T22:24:39.753Z",
+  "analyzed_at": "2026-04-25T15:41:14.299Z",
   "model": "claude-sonnet-4-6"
 }

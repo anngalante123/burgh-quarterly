@@ -11,7 +11,8 @@
     "ingest30": "tsx scripts/ingest-30.ts",
     "rank": "tsx scripts/compute-ranks.ts",
     "analyze:reviews": "tsx scripts/analyze-reviews.ts",
-    "analyze:business": "tsx scripts/analyze-business.ts"
+    "analyze:business": "tsx scripts/analyze-business.ts",
+    "scrape:tiktok": "tsx scripts/scrape-tiktok-mentions.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.90.0",
