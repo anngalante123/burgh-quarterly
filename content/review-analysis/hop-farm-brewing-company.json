@@ -2,75 +2,69 @@
   "slug": "hop-farm-brewing-company",
   "themes": [
     {
-      "phrase": "Bradley by name",
+      "phrase": "Bradley the manager",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Shout out to Bradley who made it so easy for me to schedule our upcoming event."
+      "exampleQuote": "Bradley, the manager, was great and made it so easy to schedule our upcoming event."
     },
     {
-      "phrase": "ordering system confusion",
+      "phrase": "diverse tap list",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Let me say that this brewery has a lot of IPAs: that is a positive for me."
+    },
+    {
+      "phrase": "confusing ordering system",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "QR codes, then table service, and now suddenly you have to order at the bar—with no clear communication."
-    },
-    {
-      "phrase": "IPA-forward tap list",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "This brewery has a lot of IPAs: that is a positive for me."
+      "exampleQuote": "QR codes, then table service, and now suddenly you have to order at the bar with no clear communication."
     },
     {
       "phrase": "event and party hosting",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "We had a great time in the party room right in front of the open garage door."
+      "exampleQuote": "We had a great time in the party room right in front of the open garage door on a pleasant weekend afternoon."
     },
     {
       "phrase": "space and atmosphere",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Beautiful area. Absolutely love the lights and the live edge tables."
-    },
-    {
-      "phrase": "food worth returning for",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Their Yinser Cheesesteak was big, very good—the key, I will be here again."
+      "exampleQuote": "Beautiful area, absolutely love the lights and the live edge tables."
     }
   ],
-  "notable_quote": "The key… I WILL BE HERE AGAIN.",
-  "sentiment_summary": "Reviewers rally around the staff—one floor manager named Bradley appears in four separate reviews by name—and the beer selection and food draw people back, while one recurring friction point, an inconsistent and uncommunicated ordering system, has cost at least one regular customer.",
-  "quarter_narrative": "Twenty-three Pittsburgh creators filmed Hop Farm Brewing this quarter, generating over 200,000 TikTok plays, and Hop Farm itself has no TikTok presence to absorb any of it. That is the defining tension of Spring 2026 for this brewery: the city is walking in, filming, and posting, while the business watches from the outside. On Instagram, the cadence is healthier than most—twelve posts and four reels in thirty days—but an engagement rate under half a percent suggests the account is broadcasting rather than pulling people in. In the Pittsburgh Bars family, Hidden Harbor holds the top spot on the back of social momentum; Hop Farm's path to closing that gap runs directly through the platform where it currently doesn't exist at all.",
-  "tldr_read": "Dominant TikTok creator footprint, no TikTok account of its own, and Instagram engagement that hasn't caught up to the posting volume—Ones to Watch, #1 in Pittsburgh Breweries.",
-  "tldr_meaning": "The creator infrastructure is already built around this place; whether Hop Farm moves up the board depends on whether it starts showing up in the conversation it's already the subject of.",
+  "notable_quote": "Kid friendly, good food, diverse tap list, tons of large tables, pool and darts.",
+  "sentiment_summary": "Reviewers consistently praise the staff, especially one front-of-house manager by name, and point to the beer variety and physical space as strengths; the one persistent friction is an inconsistent ordering system that left at least one regular walking out.",
+  "quarter_narrative": "Twenty-three Pittsburgh creators filmed Hop Farm Brewing this quarter, generating over 200,000 TikTok plays, and the brewery posted none of it back. That gap is the defining story of their Spring 2026: a physical space and a staff charismatic enough to pull repeat creator visits, operating with no TikTok presence of its own to catch the current. Instagram is more active, twelve posts and four reels in thirty days, but a 0.47 percent engagement rate suggests the feed is outpacing the audience's ability to care. In the Bars family, Hidden Harbor holds the top position on the strength of social momentum; Hop Farm leads Breweries and sits one slot behind in Bars, a gap that closes if the creator traffic gets reflected in the brewery's own output.",
+  "tldr_read": "Strong TikTok creator coverage and a perfect conversion path, undercut by low engagement on its own feed. Ones to Watch, #1 in Pittsburgh Breweries.",
+  "tldr_meaning": "The rank holds because the city is filming this place at volume; if the brewery begins reflecting that coverage back through its own channels, the engagement signal catches up and the Bars gap to Hidden Harbor narrows.",
   "diagnosis_pullquote": {
-    "line": "The City Is Already Here—Hop Farm Just Hasn't Walked In Yet",
-    "highlight": "Hasn't Walked In Yet"
+    "line": "Number One In Breweries, Built On Other People's Footage. The Feed Has Room To Catch Up.",
+    "highlight": "Other People's Footage"
   },
   "playbook": [
     {
-      "headline": "Claim the TikTok real estate you already own",
-      "action": "Twenty-three creators have built 200K+ plays around this address with zero reciprocation; a business account costs nothing and a single stitch or duet captures the signal.",
+      "headline": "Claim the TikTok coverage already happening",
+      "action": "Twenty-three creators have filed 30-plus videos here this quarter. Launch a TikTok account and repost the top-performing ones before that momentum cycles to a competitor.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "CAPTURE 200K PLAYS"
     },
     {
-      "headline": "Turn the ordering friction into a public fix",
-      "action": "One detailed negative review about the inconsistent ordering system pulls the 80% five-star average toward 58 sentiment—a single post clarifying the current system stops the bleed.",
+      "headline": "Turn the ordering friction into a fixed post",
+      "action": "One review explicitly walked out over the system change. A single pinned Google post clarifying current ordering reduces churn and lifts a review sentiment sitting below the family median.",
       "signal": "community_spark",
       "priority": "medium",
       "impact_label": "+SENTIMENT FLOOR"
     },
     {
-      "headline": "Push Instagram engagement past the broadcast ceiling",
-      "action": "Twelve posts in thirty days with a 0.47% engagement rate signals distribution without conversation; tagging the 23 creators already filming here starts a reply loop.",
+      "headline": "Expand the photo catalog beyond six categories",
+      "action": "364 Google photos is solid but the visual catalog trails conversion path strength. Owner-submitted photos of the event room, live-edge tables, and dart area add depth to the 364 already indexed.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "DOUBLE ENGAGE RATE"
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:36:36.917Z",
+  "analyzed_at": "2026-04-25T19:16:17.876Z",
   "model": "claude-sonnet-4-6"
 }

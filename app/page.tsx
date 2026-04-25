@@ -67,7 +67,7 @@ export default function Home() {
               How Pittsburgh&apos;s small businesses show up, in{" "}
               <span className="font-semibold text-brand-black">reviews</span>,
               on{" "}
-              <span className="font-semibold text-brand-black">Instagram</span>,
+              <span className="font-semibold text-brand-black">social</span>,
               in the neighborhood conversation. Ranked every quarter on{" "}
               <span className="font-semibold text-brand-black">
                 reputation, presence, and momentum.
@@ -173,8 +173,8 @@ export default function Home() {
                   Lawrenceville
                 </h4>
                 <p className="mt-3 font-body text-sm text-brand-off-white/70 leading-snug">
-                  1,138 five-star reviews. 779 photos on Google. Zero
-                  Instagram posts in thirty days.
+                  1,138 five-star reviews. 779 photos on Google. Twenty-six
+                  creators filming. Zero posts back.
                 </p>
                 <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-lime">
                   Read the record

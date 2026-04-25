@@ -8,63 +8,69 @@
       "exampleQuote": "The bar staff are friendly, knowledgeable about the cocktails, and they seem to project this vibe that makes me want to come back time and time again."
     },
     {
+      "phrase": "cocktail quality",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Awesome, creative drinks."
+    },
+    {
       "phrase": "cacio e pepe pizza",
-      "frequency": 2,
+      "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "the cacio e pepe pizza is a must"
+      "exampleQuote": "The cacio e pepe pizza is a must."
     },
     {
-      "phrase": "date night low-key vibe",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "the best lowkey date night place or hangout place with friends"
-    },
-    {
-      "phrase": "slow service on drinks",
+      "phrase": "slow service wait",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "waited 10 minutes for a sip of jager and whiskey"
+      "exampleQuote": "Waited 10 minutes for a sip of Jager and whiskey."
     },
     {
-      "phrase": "staff deadnaming incident",
+      "phrase": "staff name handling",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Trans folks beware, the staff didn't ask my friend's name, and instead used the deadname on their credit card"
+      "exampleQuote": "Trans folks beware, the staff didn't ask my friend's name, and instead used the deadname on their credit card to identify their order."
+    },
+    {
+      "phrase": "date night or hangout",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The best lowkey date night place or hangout place with friends."
     }
   ],
-  "notable_quote": "Statistically, I'm bound to have less than a perfect experience here, but it hasn't happened — maybe it's dumb luck, maybe this place is the bee's knees.",
-  "sentiment_summary": "Reviewers are consistently won over by the bartenders and the cocktail program, with the cacio e pepe pizza pulling its own weight on the food side — but a specific and serious complaint about a trans guest being deadnamed by staff, and scattered notes about slow drink service, keep the sentiment ceiling lower than the 72% five-star headline suggests.",
-  "quarter_narrative": "Lorelei's Spring 2026 is a study in disconnected attention: 29 creators posted TikToks tagged at this East Liberty bar this quarter, those videos accumulated over 19 million plays, and the business spent the season posting four times on Instagram with zero Reels and a 0.79% engagement rate. The city is watching; Lorelei is mostly quiet. That contrast is especially sharp against Nan Xiang Soup Dumplings, the Pittsburgh Businesses leader this issue, whose own social momentum is the driving force behind its first-place position — the lesson being that visibility earned by others has a shorter shelf life than visibility owned. Lorelei holds the #2 restaurant slot on the strength of its Conversion Path and Creator Fit signals, but closing the gap between the city's enthusiasm and the business's own voice on social is the move that decides whether it rises or stalls.",
-  "tldr_read": "Nineteen million TikTok plays, four Instagram posts last month, zero Reels — Ones to Watch, #2 in Pittsburgh Restaurants.",
-  "tldr_meaning": "The creator ecosystem has already done the hard work of building awareness; whether that awareness compounds or dissipates depends almost entirely on whether Lorelei starts converting it into its own Instagram signal.",
+  "notable_quote": "The bar staff are friendly, knowledgeable about the cocktails, and they seem to project this vibe that makes me want to come back time and time again.",
+  "sentiment_summary": "Reviewers are nearly unanimous about the bartenders, creative cocktails, and the cacio e pepe pizza pulling them back, but slow drink delivery and a pointed incident involving a trans guest's deadname are the sharpest friction points in the record.",
+  "quarter_narrative": "Lorelei came into Spring 2026 with something most East Liberty bars would envy: 29 independent creators posted more than 30 TikToks there this quarter, pulling 19 million combined plays while the bar's own Instagram managed four posts and zero Reels in 30 days. The city is telling this story; the bar is largely watching it happen. That gap is the whole editorial tension here, because on conversion, Lorelei is airtight, phone, hours, website, all present, and Creator Fit signals that when the right collaborator films here, it lands. The family leader this issue, Nan Xiang Soup Dumplings, is riding social momentum as its defining signal; Lorelei's path to closing that gap runs directly through the Reels tab it has not touched. The rank climbs when the bar stops ceding its own narrative to people who may or may not be filming cacio e pepe.",
+  "tldr_read": "Nineteen million TikTok plays from outside creators, four Instagram posts from the bar itself. Ones to Watch, #2 in Pittsburgh Restaurants.",
+  "tldr_meaning": "The TikTok audience already exists at scale; what holds this rank in place is the near-total absence of the bar's own video presence on Instagram, where its engagement rate sits below 1 percent.",
   "diagnosis_pullquote": {
-    "line": "Nineteen Million Plays, And The Bar Hasn't Picked Up The Camera Once.",
-    "highlight": "Nineteen Million Plays"
+    "line": "Second In Pittsburgh Restaurants, Built On Other People's TikToks. The Bar Owns None Of That Story.",
+    "highlight": "Other People's TikToks"
   },
   "playbook": [
     {
-      "headline": "Start posting Reels before the quarter ends",
-      "action": "Zero Reels in 30 days against 19M TikTok plays is the sharpest gap in this profile — one Reels series built around the cocktail program closes it.",
+      "headline": "Post one Reels per week, minimum",
+      "action": "Zero Reels in the last 30 days against a 0.79 percent engagement rate; one cocktail Reel weekly would directly address the weakest signal axis.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "RESTART SIGNAL"
     },
     {
-      "headline": "Expand the Google photo catalog beyond six categories",
-      "action": "291 photos across only six tagged categories leaves the visual catalog well below the family median — interior and bar-action shots from owners would move it.",
+      "headline": "Build the Google photo catalog past 300",
+      "action": "291 photos across only six tagged categories and no dedicated Interior or Team category; adding 20 owner-uploaded images closes the gap to the family median of 84 on Visual Catalog.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+VISUAL RANK"
     },
     {
-      "headline": "Address the deadnaming review publicly and specifically",
-      "action": "One unaddressed negative review on a trans-inclusion complaint carries outsized weight on sentiment — a direct, policy-specific response is the honest fix.",
+      "headline": "Introduce a name-at-order protocol publicly",
+      "action": "The deadname review is the most consequential negative signal in 392 reviews; a visible policy change, stated plainly in bio or response, directly protects the 59-point sentiment score from further erosion.",
       "signal": "community_spark",
       "priority": "low",
       "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-25T16:38:53.979Z",
+  "analyzed_at": "2026-04-25T19:18:20.724Z",
   "model": "claude-sonnet-4-6"
 }

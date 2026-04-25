@@ -2,7 +2,7 @@
   "slug": "allegheny-coffee-tea-exchange",
   "themes": [
     {
-      "phrase": "smell when you walk in",
+      "phrase": "fresh coffee bean smell",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "As soon as you open the door, you're hit with that amazing fresh coffee bean smell."
@@ -14,57 +14,57 @@
       "exampleQuote": "You can smell each one and even bag your own beans, which is a really unique touch."
     },
     {
-      "phrase": "cold brew on tap",
+      "phrase": "cold brew taps",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "They have multiple taps with different varieties, which makes it fun to mix things up."
     },
     {
-      "phrase": "staff going out of their way",
-      "frequency": 3,
+      "phrase": "friendly accommodating staff",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting."
     },
     {
-      "phrase": "every visit to Pittsburgh",
+      "phrase": "reasonable prices for quality",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "This is a place we make a point to stop at every time we're in Pittsburgh."
+      "exampleQuote": "Prices are very reasonable, especially for the quality and experience you're getting."
     }
   ],
   "notable_quote": "This place has been around since the 1980s and has built a reputation as one of the city's go-to specialty coffee shops, and you can feel that history the second you walk in.",
-  "sentiment_summary": "Reviewers consistently cite the sensory ritual of the shop — the smell, the bean wall, the cold brew taps — and name staff members by name; there is almost no criticism in the sample, which is either a testament to consistency or a sign that dissatisfied customers aren't bothering to write.",
-  "quarter_narrative": "Allegheny Coffee & Tea Exchange heads into Spring 2026 as Pittsburgh's most-filmed independent coffee shop, with 29 creators generating more than 1.5 million TikTok plays in a single quarter — a creator footprint that most Pittsburgh businesses would require years to accumulate. The shop's own Instagram is doing its part: 12 posts and 5 Reels in 30 days puts it well above the family median, and 924 Google reviews at 81% five-star establishes a floor that competitors in the Cafes category aren't close to touching. As the family leader in both Coffee Shops and Cafes, the number that will determine whether this rank holds heading into summer is Instagram engagement — 1.23% is active but not dominant, and the gap between how much the city is talking about this place and how much that conversation is being pulled back into the shop's own feed is the one story worth watching.",
-  "tldr_read": "Dominant review base, strong Instagram cadence, and 1.5 million creator plays this quarter — engagement rate is the only signal not yet matching the noise around it. Icons of the Burgh, #1 in Pittsburgh Coffee Shops and Cafes.",
-  "tldr_meaning": "The rank is secure for now, but 1.23% engagement against 1.5 million earned plays suggests the audience the city is building around this shop is not yet converting into the shop's own following at the rate the volume warrants.",
+  "sentiment_summary": "Reviewers consistently land on the sensory experience, the bean smell, the self-serve scooping, the cold brew taps, and the staff by name; the only thing absent from the reviews is any meaningful friction, which at 81 percent five-star and 924 total reviews starts to read as a consensus rather than a gap.",
+  "quarter_narrative": "Allegheny Coffee and Tea Exchange holds both the top coffee shop and top cafe position in Pittsburgh this issue, and the signal driving that double rank is not its own content but the city's. Twenty-nine TikTok creators filed 30-plus videos here this quarter, accumulating more than 1.5 million plays, while the shop's own Instagram posted 12 times in 30 days at a 1.23 percent engagement rate, a solid cadence that still sits well below the attention the city is already volunteering. The review base, 924 ratings at 81 percent five-star, is one of the most stable floors in the entire Pittsburgh Cafes family, and the Instagram Momentum signal sits nearly double the family median. What keeps the rank at number one next issue is whether the shop begins to match the creative intensity that 29 outside voices are already bringing to its counters.",
+  "tldr_read": "Nearly 1.6 million TikTok plays and the strongest review floor in the family. Icons of the Burgh, number one in Pittsburgh Coffee Shops and Pittsburgh Cafes.",
+  "tldr_meaning": "The rank is justified on nearly every axis; the only ceiling is an Instagram engagement rate that trails the creator attention the business already receives by a wide margin.",
   "diagnosis_pullquote": {
-    "line": "The City Has Been Smelling This Place Since The 1980s — Now It's Filming It Too",
-    "highlight": "Filming It Too"
+    "line": "Number One On Both Lists, Carried By A City That Won't Stop Filming It.",
+    "highlight": "Won't Stop Filming"
   },
   "playbook": [
     {
-      "headline": "Turn creator plays into followers",
-      "action": "With 1.5M TikTok plays this quarter and 1.23% Instagram engagement, there is a documented audience arriving and not staying — pinned Instagram content that mirrors what creators are filming (the bean wall, the taps) gives that traffic somewhere to land.",
+      "headline": "Close the gap between plays and posts",
+      "action": "Repost or respond to the top creator videos driving 1.5 million plays; the shop's own account is not capturing that audience.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "+ENGAGEMENT FLOOR"
     },
     {
-      "headline": "Fill the visual gap in Menu photos",
-      "action": "589 Google photos across 9 categories is strong overall, but the Menu category is under-documented relative to Food & Drink — given the named drinks appearing in reviews (Laura Palmer, house blend), a short series of menu-specific images closes the most visible shelf gap.",
+      "headline": "Expand the visual catalog beyond six categories",
+      "action": "589 photos exist but the tagged categories skip behind-the-counter and bean-scooping content, the two most-cited sensory moments in reviews.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+VISUAL CATALOG PTS"
+      "impact_label": "+1 VISUAL RANK"
     },
     {
-      "headline": "Bring named staff moments into posts",
-      "action": "Reviews specifically name Eric and Cameron with warmth — three reviewers credited individual staff by name, which is rare; a recurring staff-spotlight post format would reinforce the sentiment signal that's already driving the 86 review score.",
+      "headline": "Name-check staff in response to reviews",
+      "action": "Reviewers already call out Eric and Cameron by name; responding to those reviews by name reinforces the staff-forward reputation that drives repeat visits.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "DEEPEN SENTIMENT"
+      "impact_label": "+SENTIMENT DEPTH"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-25T16:34:04.751Z",
+  "analyzed_at": "2026-04-25T19:13:52.553Z",
   "model": "claude-sonnet-4-6"
 }

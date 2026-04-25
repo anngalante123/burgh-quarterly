@@ -88,7 +88,7 @@ export function TikTokMentions({ data, businessName }: Props) {
           <Stat label="Creators" value={data.unique_creators.toString()} accent="purple" />
         </div>
 
-        {/* Editorial line — the framing */}
+        {/* Editorial line, the framing */}
         <p className="font-body text-sm md:text-base text-brand-black/80 leading-relaxed mb-6">
           {data.detected_own_handle ? (
             <>

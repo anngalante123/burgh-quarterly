@@ -3,12 +3,12 @@
   "themes": [
     {
       "phrase": "noodle soup quality",
-      "frequency": 3,
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Contender for best noodle soup in Pittsburgh"
     },
     {
-      "phrase": "handmade noodle theater",
+      "phrase": "live noodle making",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Fun to watch them make noodles, potstickers, and wontons"
@@ -20,7 +20,7 @@
       "exampleQuote": "Can never go wrong with the soup dumplings. And of course some Boba."
     },
     {
-      "phrase": "service inconsistency",
+      "phrase": "server conduct complaints",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "Server was incompetent and kept bringing out food that was not ordered"
@@ -33,38 +33,38 @@
     }
   ],
   "notable_quote": "Contender for best noodle soup in Pittsburgh.",
-  "sentiment_summary": "Reviewers consistently praise the handmade noodles, soup dumplings, and the live prep theater, while a small but pointed cluster of complaints targets server reliability and at least one billing incident serious enough to detail in writing.",
-  "quarter_narrative": "Twenty-four creators filed into Everyday Noodles this quarter and produced 30-plus TikToks that collectively drew over 29 million plays — and Everyday Noodles posted none of it back, because the business has no indexed Instagram and no apparent TikTok presence of its own. The city is treating this Squirrel Hill spot as a set; the kitchen is treating social media as someone else's problem. Meanwhile, family leader Mola holds the top slot in Pittsburgh Asian Kitchens precisely because of its creator collaboration fit — a signal Everyday Noodles already earns in the wild, unrecognized and uncaptured. Closing the gap between what Pittsburgh is already filming and what the business can actually claim is the single move that separates a sustained #1 noodle ranking from a temporary one.",
-  "tldr_read": "29 million TikTok plays and no owned social presence — strong reviews, invisible Instagram. Ones to Watch, #1 in Pittsburgh Noodle Shops.",
-  "tldr_meaning": "Every signal axis except Instagram momentum is at or above the family median, which means the ceiling here is genuinely high — but the rank holds only as long as no noodle competitor activates the creator pipeline Everyday Noodles is currently leaving open.",
+  "sentiment_summary": "Reviewers consistently praise the noodle soup, soup dumplings, and the theater of watching noodles made fresh, while a handful of pointed complaints about server errors and billing conduct keep the sentiment from being clean.",
+  "quarter_narrative": "Twenty-four Pittsburgh creators posted over 30 TikToks at Everyday Noodles this quarter, generating 29 million plays, a number that would make most local restaurants reconsider their entire week. The shop itself has no indexed Instagram and no apparent TikTok presence, meaning every one of those views was built on someone else's credit. That gap is the defining story of Spring 2026 for this business: a visual catalog strong enough to anchor the top of the Pittsburgh Noodle Shops ranking, review sentiment above the Asian Kitchens family median, and a creator-fit signal that matches Mola, the family leader, yet the business captures none of the downstream audience those creators are already delivering. If Everyday Noodles closes the distance between its TikTok footprint and its own social presence, the rank holds; if Mola's creator collaboration deepens while Everyday Noodles stays dormant, the gap at #3 in the Asian Kitchens family widens fast.",
+  "tldr_read": "Twenty-nine million TikTok plays, no Instagram, no TikTok account of its own. Ones to Watch, #1 in Pittsburgh Noodle Shops.",
+  "tldr_meaning": "The visual and review signals are already performing at or above the family median; the Instagram momentum reading is the single axis holding this business below the Icons tier.",
   "diagnosis_pullquote": {
-    "line": "Twenty-Nine Million TikTok Plays, Zero Posts Back — That's the Whole Story",
-    "highlight": "Zero Posts Back"
+    "line": "First In Noodle Shops, Powered By 29 Million Plays It Did Not Make.",
+    "highlight": "29 Million Plays"
   },
   "playbook": [
     {
-      "headline": "Claim a social presence before someone else defines you",
-      "action": "Open an Instagram account and link it on Google — 29 million TikTok plays have no owned destination to land on right now.",
+      "headline": "Claim an Instagram presence, start posting",
+      "action": "The business has no indexed Instagram account while 24 creators are already producing scroll-stopping footage there; even a minimal, consistent feed reactivates the momentum signal.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Turn the noodle-pull window into a content anchor",
-      "action": "The live prep theater is already the top-cited visual in reviews; a fixed camera angle on the noodle-making station gives 24 active creators a consistent hero shot to return to.",
-      "signal": "content_canvas",
+      "headline": "Redirect creator energy into owned content",
+      "action": "With 24 unique TikTok creators already filming and 29 million plays on the board, a single repost strategy or creator tag policy would begin converting that audience into followers the business actually retains.",
+      "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+VISUAL DEPTH"
+      "impact_label": "CAPTURE REACH"
     },
     {
-      "headline": "Address the service pattern before it compounds",
-      "action": "Two negative reviews cite specific, detailed service failures — billing disputes and wrong-order runs — which sit inside an 84-point sentiment score that has room to slip.",
+      "headline": "Address the service complaints publicly",
+      "action": "Two of nine available reviews raise specific server conduct and billing concerns; a visible, calm response on Google lifts sentiment perception and signals accountability to the 2,216-review audience reading along.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "PROTECT SENTIMENT"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:35:29.578Z",
+  "analyzed_at": "2026-04-25T19:15:16.137Z",
   "model": "claude-sonnet-4-6"
 }

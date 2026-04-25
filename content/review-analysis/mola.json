@@ -2,25 +2,25 @@
   "slug": "mola",
   "themes": [
     {
-      "phrase": "expert sushi quality",
-      "frequency": 4,
+      "phrase": "quality justifies the price",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "The price is on the higher end, but is justified by the quality of the food."
+    },
+    {
+      "phrase": "expert chef, modern style",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "A clearly expert chef. Classic sushi done with a modern style."
     },
     {
-      "phrase": "higher-end pricing",
-      "frequency": 3,
-      "sentiment": "neutral",
-      "exampleQuote": "The price is on the higher end, but is justified by the quality of the food."
-    },
-    {
-      "phrase": "crowded evenings",
+      "phrase": "busy evening crowds",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Busy, but that is to be expected."
+      "exampleQuote": "Busy, but that is to be expected. Can get busy in the evenings."
     },
     {
-      "phrase": "service inconsistency",
+      "phrase": "uneven service experience",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "For the service, I cannot give a positive review."
@@ -32,39 +32,39 @@
       "exampleQuote": "Really amazing drinks and dessert as well."
     }
   ],
-  "notable_quote": "One of the best sushi experiences I have ever had overall — the quality of the food is excellent.",
-  "sentiment_summary": "Reviewers reliably call out the kitchen's technical precision and ingredient quality, particularly the Hokkaido Uni Chirashi; the consistent friction points are pricing for casual visits and uneven front-of-house service on busy nights.",
-  "quarter_narrative": "Mola spent Spring 2026 quietly becoming one of Pittsburgh's most-filmed restaurants — by everyone except itself. Twenty-five TikTok creators posted 30-plus videos tagged to the East Liberty spot this quarter, generating over 2.7 million plays while Mola's own Instagram posted twice in 30 days and published zero Reels. The restaurant leads the Pittsburgh Asian Kitchens family this issue on creator collaboration fit, the highest mark in that category across the group, which makes the gap between outside attention and in-house output the defining editorial fact of this cycle. Whether Mola consolidates that external energy or lets it keep cycling through other people's feeds will determine whether the #1 Sushi rank in Pittsburgh holds when the next issue closes.",
-  "tldr_read": "Dominant creator coverage and a near-perfect conversion path, paired with a near-dormant Instagram the restaurant controls. Ones to Watch, #1 in Pittsburgh Sushi.",
-  "tldr_meaning": "The external signal is already doing the work of a much larger operation; the trajectory stalls if the business's own channels remain too quiet to catch any of it.",
+  "notable_quote": "One of the best sushi experiences I have ever had overall.",
+  "sentiment_summary": "Reviewers consistently praise the precision of the fish and the overall experience, with several calling it the best sushi in Pittsburgh; the recurring friction is price sensitivity and sporadic service complaints, particularly on busy evenings.",
+  "quarter_narrative": "Twenty-five creators filmed Mola this quarter, generating over 2.7 million TikTok plays, and Mola posted none of it back. The restaurant's own Instagram sits at two posts in thirty days, no reels, and a 1.42 percent engagement rate that reflects an audience largely waiting for something to respond to. That gap between what the city is producing about this place and what the place is producing about itself is the defining tension of Mola's Spring 2026. Still, the foundation is hard to argue with: 767 Google reviews at 80 percent five-star, 935 photos across a well-documented catalog, and a creator fit that leads the Pittsburgh Asian Kitchens family by a significant margin, enough to claim the top rank in both sushi and the broader category. The rank holds as long as that creator energy keeps arriving uninvited; the question for next quarter is whether Mola decides to meet it.",
+  "tldr_read": "City-wide creator attention, near-silent Instagram. Ones to Watch, #1 in Pittsburgh Sushi and Pittsburgh Asian Kitchens.",
+  "tldr_meaning": "The TikTok signal is carrying the momentum axis almost entirely on its own; if creator volume softens before Mola's own content presence grows, the gap between perceived buzz and owned signal becomes a vulnerability.",
   "diagnosis_pullquote": {
-    "line": "Pittsburgh Gave Mola 2.7 Million TikTok Plays. Mola Posted Twice.",
-    "highlight": "2.7 Million TikTok Plays"
+    "line": "Pittsburgh's Most Filmed Sushi Counter, With Almost Nothing Posted In Return.",
+    "highlight": "Most Filmed Sushi"
   },
   "playbook": [
     {
-      "headline": "Post one Reel before this quarter closes",
-      "action": "Instagram Momentum is the single weakest signal; zero Reels in 30 days and a 1.42% engagement rate are both recoverable with one well-framed kitchen or nigiri video.",
+      "headline": "Post reels before creators outpace you",
+      "action": "Mola has posted zero reels in 30 days while 25 outside creators generated 2.7 million plays; one weekly reel of kitchen prep or nigiri plating would begin closing that gap.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "RECLAIM FEED"
     },
     {
-      "headline": "Tag back the creators already filming here",
-      "action": "With 25 unique TikTok creators and 2.7 million plays this quarter, a simple reshare or story acknowledgment converts outside reach into a relationship the business actually owns.",
+      "headline": "Turn creator volume into a collab pipeline",
+      "action": "With 25 unique creators already filming unprompted, a standing invitation or tasting seat for returning creators formalizes what is currently accidental and builds repeat coverage.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "LOCK 25 CREATORS"
+      "impact_label": "+CREATOR DEPTH"
     },
     {
-      "headline": "Address service friction in public responses",
-      "action": "Review sentiment sits at 78 with a recurring service note — one consistent, specific public response to those reviews closes the gap that keeps an 80% five-star rating from reading as cleaner.",
+      "headline": "Address service consistency publicly",
+      "action": "Sentiment sits at a solid 78 but service complaints are the only recurring negative theme; a direct owner response pattern on Google reviews would protect the 80 percent five-star ratio as review volume grows past 767.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "PROTECT 80PCT"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T16:40:24.835Z",
+  "analyzed_at": "2026-04-25T19:19:57.592Z",
   "model": "claude-sonnet-4-6"
 }

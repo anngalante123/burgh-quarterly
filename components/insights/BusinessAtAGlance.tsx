@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 import { Reveal } from "@/components/motion/Reveal";
+import { SocialTrendPill } from "@/components/insights/SocialTrendPill";
+import type { SocialTrend } from "@/lib/editorial/compute-trend";
 
 /**
  * BusinessAtAGlance, the interactive data card that replaces the prior
@@ -11,6 +13,9 @@ import { Reveal } from "@/components/motion/Reveal";
  * accessible by default, and degrades gracefully. The `focus` row opens
  * by default so the reader's first interaction lands on the leverage
  * point (the weakest subscore).
+ *
+ * The header carries a SocialTrendPill, the answer to "how is this
+ * business doing on social this quarter" without needing a click.
  */
 
 export type AtAGlanceRow = {
@@ -28,9 +33,10 @@ export type AtAGlanceRow = {
 type Props = {
   businessName: string;
   rows: AtAGlanceRow[];
+  trend: SocialTrend;
 };
 
-export function BusinessAtAGlance({ businessName, rows }: Props) {
+export function BusinessAtAGlance({ businessName, rows, trend }: Props) {
   return (
     <Reveal as="section" className="block">
       <div className="bg-white/70 border border-brand-black/15">
@@ -42,7 +48,10 @@ export function BusinessAtAGlance({ businessName, rows }: Props) {
             {businessName}{" "}
             <span className="text-brand-black/40">at a glance.</span>
           </h2>
-          <p className="mt-2 font-body text-xs text-brand-black/55">
+          <div className="mt-4">
+            <SocialTrendPill trend={trend} />
+          </div>
+          <p className="mt-4 font-body text-xs text-brand-black/55">
             Tap any row to expand.
           </p>
         </div>

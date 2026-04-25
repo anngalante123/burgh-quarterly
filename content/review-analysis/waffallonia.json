@@ -11,60 +11,60 @@
       "phrase": "ice cream pairing",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The best ice cream in the city. They sell by the pint if you order ahead."
+      "exampleQuote": "Best waffles ive ever had and the best ice cream in the city. they sell by the pint if you order ahead."
     },
     {
-      "phrase": "Nutella combination",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Waffle with chocolate ice cream and Nutella is the best."
-    },
-    {
-      "phrase": "family-friendly neighborhood stop",
+      "phrase": "friendly family environment",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Awesome neighborhood place to take the kids. Consistently great waffles!"
     },
     {
-      "phrase": "flavor intensity ceiling",
-      "frequency": 1,
+      "phrase": "Nutella flavor depth",
+      "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "A pretty nice amount of Nutella flavor — could always be stronger though."
+      "exampleQuote": "A pretty nice amount of Nutella flavor. Could always be stronger though."
+    },
+    {
+      "phrase": "walkable cold-weather stop",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "We can pop in, grab a sugar waffle and eat it piping hot while walking."
     }
   ],
-  "notable_quote": "We can pop in, grab a sugar waffle and eat it piping hot while walking — a great walking date stop on a cold day.",
-  "sentiment_summary": "Reviewers fixate on the specific texture of the Liège waffle — chewy, sugary, crisp at the edges — and pair it against the house ice cream as a unified experience worth repeating; the only friction is a recurring wish that certain flavors, particularly Nutella, pushed harder.",
-  "quarter_narrative": "Nearly seven million TikTok plays tagged to a business with no TikTok account of its own, no active Instagram, and an Instagram profile that isn't even set to business mode — that is Waffallonia's Spring 2026 in a sentence. Twenty-eight creators shot here this quarter, led by a single @katelynnsnuggle video that cleared two million plays, and the shop captured none of the downstream traffic those posts generated. Meanwhile, across the Pittsburgh Sweets family, Page's is running away with the Instagram momentum signal, the exact axis where Waffallonia is most exposed despite holding the dessert category's top rank. The #1 position is defensible — review sentiment and visual catalog are both above family median — but a business that generates this much creator attention without any owned channel to redirect it is one algorithm shift away from watching that attention dissolve.",
-  "tldr_read": "Nearly 7M TikTok plays from other people's accounts, zero owned posts this quarter, and a dormant Instagram with no bio — Icons of the Burgh, #1 in Pittsburgh Dessert.",
-  "tldr_meaning": "The review signal and creator reach confirm the rank; the owned social void means the business is entirely dependent on stranger goodwill to sustain the visibility that put it there.",
+  "notable_quote": "When the two are paired together, it's just exquisite.",
+  "sentiment_summary": "Reviewers consistently single out the chew and caramelized crust of the Liège waffle as a genuine departure from what they expected, with the ice cream pairings drawing nearly equal praise; the only recurring note of friction is that Nutella-forward flavors could push harder.",
+  "quarter_narrative": "Twenty-eight creators filed into Waffallonia this quarter and produced more than 6.9 million plays on TikTok. The business posted none of it back. That gap is the defining editorial fact of its Spring 2026: a dessert shop sitting at the top of its family on the strength of 605 Google reviews and a flawless conversion path, while the largest wave of unsolicited video coverage in the Pittsburgh Sweets family goes entirely uncaptured on its own channels. Page's holds the family lead this issue on social momentum, a signal Waffallonia has the raw material to contest given the creator volume already pointing at it. Closing the Instagram gap, not building a new audience from scratch but simply meeting the one that already exists, is the clearest path to moving the rank.",
+  "tldr_read": "Nearly seven million TikTok plays from outside creators, a dormant Instagram with no bio, no recent posts, and no business account status. Icons of the Burgh, number one in Pittsburgh Dessert.",
+  "tldr_meaning": "Every structural signal except Instagram momentum is at or above the family median, meaning the rank ceiling is an Instagram problem, not a product or reputation problem.",
   "diagnosis_pullquote": {
-    "line": "Seven Million Plays, Zero Posts: Pittsburgh's Most Filmed Dessert Shop Isn't Watching",
-    "highlight": "Zero Posts"
+    "line": "Number One In Dessert, Built On Other People's Cameras. The Account Hasn't Answered.",
+    "highlight": "Other People's Cameras"
   },
   "playbook": [
     {
-      "headline": "Convert the Instagram account to business mode now",
-      "action": "The current Instagram is a personal account with no bio — switching to a business profile unlocks analytics, contact buttons, and search categorization that 28 active creators currently have no destination to tag properly.",
+      "headline": "Activate the Instagram account before posting",
+      "action": "Convert to a business account, add a bio, and link hours before the next post; the profile is currently unverified, has no bio, and is a personal account despite 6.9M TikTok plays pointed at the brand.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Post one Liège waffle video per week",
-      "action": "With 2.1M plays on a single third-party TikTok about homemade waffles, there is demonstrated demand for this specific product filmed in motion — owned short-form video of the waffle press closing or the sugar caramelizing is the most direct path to closing the gap with Page's on Instagram momentum.",
-      "signal": "content_canvas",
+      "headline": "Pull the top creator into a collab post",
+      "action": "@katelynnsnuggle drove 2.1 million plays on a Waffallonia-tagged video; a single repost or duet surfaces that reach to the business's own followers for the first time.",
+      "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "CLOSE MOMENTUM GAP"
+      "impact_label": "UNLOCK 2.1M REACH"
     },
     {
-      "headline": "Add the pint pre-order detail to Google profile",
-      "action": "One of the seven reviews specifically calls out pint pre-orders as a differentiator; that detail does not appear surfaced in the Google listing, and it is exactly the kind of high-intent conversion hook that distinguishes a visit from a purchase.",
-      "signal": "conversion_path",
+      "headline": "Document the waffle-making process on Google photos",
+      "action": "291 photos span only six visible categories; a short video in the Food and Drink or Vibe category showing the Liège waffle coming off the iron would address the one texture detail reviewers keep reaching for words to describe.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+INTENT DEPTH"
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T16:44:35.606Z",
+  "analyzed_at": "2026-04-25T19:23:58.522Z",
   "model": "claude-sonnet-4-6"
 }

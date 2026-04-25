@@ -3,15 +3,15 @@
   "themes": [
     {
       "phrase": "housemade ingredients and syrups",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "They homemake all of their syrups which makes it worth it and so much tastier."
-    },
-    {
-      "phrase": "distinctive latte menu",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Come for a toasted miso latte that will change your life."
+      "exampleQuote": "They homemake all of their syrups which makes it worth it and so much tastier!"
+    },
+    {
+      "phrase": "signature latte lineup",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "Come to Spot of Coffee for a toasted miso latte that will change your life."
     },
     {
       "phrase": "neighborhood community feel",
@@ -20,10 +20,10 @@
       "exampleQuote": "Excellent conscientious neighborhood vibes at a time when finding your community matters."
     },
     {
-      "phrase": "matcha options",
+      "phrase": "matcha as a draw",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha."
+      "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha!"
     },
     {
       "phrase": "burnt or off coffee",
@@ -32,39 +32,39 @@
       "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste."
     }
   ],
-  "notable_quote": "I've worked at a number of independent coffee shops — I still come to Spot of Coffee as often as possible; their drinks are very differently delicious from the syrup-based lattes you'll find elsewhere.",
-  "sentiment_summary": "Reviewers keep returning for the housemade cashew milk, natural ingredient lattes, and a menu that reads nothing like a standard café board — the one dissenter flagged a bitter, burnt cup that stood out precisely because the bar is usually so high.",
-  "quarter_narrative": "Twenty-three Pittsburgh creators filed into Spot of Coffee this quarter and left with 372,000 plays to show for it. The shop itself posted six times on Instagram and nothing on TikTok. That gap is the whole story of Spring 2026 for this business: a room that the city has already decided is worth filming, run by a team that hasn't fully noticed it's on camera. Allegheny Coffee & Tea Exchange leads the Pittsburgh Cafes family this issue on social momentum, a category where Spot of Coffee's Instagram engagement rate — 15.19 percent — is genuinely exceptional, yet the TikTok signal is entirely borrowed from other people's accounts. Closing that distance, even partially, is what separates a #2 that holds from one that drifts.",
-  "tldr_read": "Exceptional Instagram engagement and a TikTok presence built entirely by other people's cameras — no website on Google, sitting at #2 in Pittsburgh Coffee Shops, Icons of the Burgh.",
-  "tldr_meaning": "The floor here is high and the ceiling is visible: a missing website link and an unclaimed TikTok channel are the two structural gaps keeping a shop the city is already filming from converting that attention into something it controls.",
+  "notable_quote": "I've worked at a number of independent coffee shops; I'm at a very popular, very viral, very delicious one now; I still come to Spot of Coffee as often as possible.",
+  "sentiment_summary": "Reviewers circle back repeatedly to the housemade milks, real-fruit lattes, and the toasted miso drink as category-defining differentiators, with one outlier citing a badly burnt pour that landed well below the shop's usual standard.",
+  "quarter_narrative": "Twenty-three Pittsburgh creators posted more than 30 TikToks at Spot of Coffee this quarter, pulling 372,723 plays with no TikTok account of its own in the frame. The city is doing the storytelling; the shop is not yet in the room where it happens. That gap is the defining tension of its Spring 2026 standing, because every other axis is performing: Instagram engagement sits at 15.19 percent, nearly four times the family median, and a verified account with six posts and three reels in the last 30 days shows real editorial intention. Allegheny Coffee and Tea Exchange holds the Pittsburgh Cafes lead on social momentum this issue, and closing that gap is a matter of one channel, not a full rebuild.",
+  "tldr_read": "Instagram engagement is elite and creator coverage is massive, but no website on Google and a review sentiment that trails the family median are the two numbers keeping Spot of Coffee at Icons rank two rather than one.",
+  "tldr_meaning": "The TikTok volume and Instagram rate confirm cultural relevance is not in question; the missing website link and a review base of 173 are the measurable gaps between here and the family lead.",
   "diagnosis_pullquote": {
-    "line": "The City Decided This Was Worth Filming. Spot of Coffee Hasn't Replied Yet.",
-    "highlight": "Worth Filming"
+    "line": "Second In Pittsburgh Cafes, Powered By Creator Momentum The Shop Itself Has Not Claimed.",
+    "highlight": "Creator Momentum The"
   },
   "playbook": [
     {
-      "headline": "Add a website link to Google profile",
-      "action": "Google listing currently shows no website — a single link fixes a broken conversion path for every visitor who finds it via search.",
+      "headline": "Put a website URL on Google",
+      "action": "Conversion path is the only signal below family median; adding even a simple menu URL to the Google profile closes that gap immediately.",
       "signal": "conversion_path",
       "priority": "high",
-      "impact_label": "CLOSE RANKING GAP"
+      "impact_label": "CLOSE GAP TO MEDIAN"
     },
     {
-      "headline": "Claim the TikTok signal already earned",
-      "action": "23 creators have posted 30-plus tagged TikToks with 372,000 plays this quarter — opening a business account and reposting one top clip starts the feedback loop.",
-      "signal": "momentum",
+      "headline": "Repost one creator video per week",
+      "action": "With 23 unique creators and 372,723 TikTok plays already generated, sharing that footage on Instagram Stories costs nothing and ties existing reach back to the business account.",
+      "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "CAPTURE OWNED REACH"
+      "impact_label": "CAPTURE EARNED REACH"
     },
     {
-      "headline": "Document the housemade ingredient process",
-      "action": "The cashew milk and banana latte build are cited in multiple reviews as the differentiator — six behind-the-bar photos or reels adds to the 126-image visual catalog and fills an underrepresented category.",
+      "headline": "Build the Google photo archive past 150",
+      "action": "126 photos across only six tagged categories leaves the Visual Catalog just above family median; adding interior and staff shots to the underrepresented categories pushes it clearly ahead.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+VISUAL DEPTH"
+      "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 10,
-  "analyzed_at": "2026-04-25T16:42:48.803Z",
+  "analyzed_at": "2026-04-25T19:22:06.869Z",
   "model": "claude-sonnet-4-6"
 }

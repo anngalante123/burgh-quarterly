@@ -8,63 +8,63 @@
       "exampleQuote": "Really nice owner. Will be back!"
     },
     {
-      "phrase": "açaí bowl quality",
+      "phrase": "acai bowl quality",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good."
     },
     {
-      "phrase": "clean and affordable",
+      "phrase": "clean affordable space",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Easy parking, very clean, good price for a delicious smoothie."
+    },
+    {
+      "phrase": "smoothie standout",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Got the green machine, one of the best smoothies I've ever had."
     },
     {
       "phrase": "Children's Hospital proximity",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Located right across from Children's Hospital, very convenient."
-    },
-    {
-      "phrase": "smoothie variety",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Lots of options and affordable. Perfect place to stop by and grab something delicious."
     }
   ],
   "notable_quote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good.",
-  "sentiment_summary": "Reviewers are consistent on three things — the owner's personality, the açaí bowls, and the cleanliness — and almost no one has anything to nitpick, which at 519 reviews is either a sign of genuine excellence or a signal base that hasn't been stress-tested yet.",
-  "quarter_narrative": "Twenty creators posted 30-plus TikToks about 24 Carrot Juice this quarter, pulling 219,000 plays, and the shop posted zero TikToks of its own. That gap is the whole story of Spring 2026: Pittsburgh is finding this place, filming it, and sharing it without any push from the business itself. Meanwhile, Allegheny Coffee & Tea Exchange leads the Cafes family on social momentum — a category where 24 Carrot is invisible by its own hand despite sitting on the kind of raw creator energy most shops would pay to manufacture. The phone number is still missing from Google, which means some fraction of those 219,000 curious viewers who searched afterward hit a dead end. The rank climbs when the conversion path closes and the Instagram cadence becomes something more than three posts a month.",
-  "tldr_read": "Overwhelming review sentiment and a quarter-million TikTok plays from other people's cameras, but no phone number on Google, no Reels, and three Instagram posts in 30 days — Ones to Watch, #1 in Pittsburgh Juice Shops.",
-  "tldr_meaning": "The TikTok signal and review sentiment have already built the case; what stalls the climb is a conversion path that drops the handoff and an owned social presence that isn't keeping pace with the city's interest.",
+  "sentiment_summary": "Reviewers are consistent on three things: the owner's personality, the acai bowl, and the value; there is almost no friction surfaced across 519 reviews, which is remarkable and a little unusual for a shop this young.",
+  "quarter_narrative": "Twenty creators filmed 24 Carrot Juice this quarter, generating more than 219,000 plays on TikTok while the shop itself posted three times to Instagram and has no TikTok presence of its own. The city is narrating this place; 24 Carrot is watching from the sideline. That gap is the defining story of its Spring 2026, a shop sitting at the top of the juice family not because of its own broadcast but because Pittsburgh decided it was worth filming. Over in the broader cafe family, Allegheny Coffee and Tea Exchange holds the top spot on social momentum, the kind of signal 24 Carrot is generating in earned TikTok reach but not yet capturing as its own. Closing that gap, by building even a minimal presence on the platform where its audience already lives, is the single move that could lift this shop from Ones to Watch into genuine icon territory.",
+  "tldr_read": "Exceptional review sentiment and massive TikTok creator coverage, no phone number on Google and almost no owned social posting. Ones to Watch, #1 in Pittsburgh Juice Shops.",
+  "tldr_meaning": "The creator signal is already doing the work that most shops spend years trying to manufacture; what's missing is the infrastructure to convert that attention into a durable, owned presence.",
   "diagnosis_pullquote": {
-    "line": "Pittsburgh Keeps Filming This Açaí Bowl. The Shop Has Yet To Film Itself.",
-    "highlight": "Film Itself"
+    "line": "First In Juice On Borrowed Momentum. Twenty Creators Are Posting; The Shop Is Not.",
+    "highlight": "Borrowed Momentum"
   },
   "playbook": [
     {
-      "headline": "Add the phone number to Google today",
-      "action": "The phone number is missing from the Google Business profile — close the gap that 219,000 TikTok viewers hit when they search after watching.",
-      "signal": "conversion_path",
-      "priority": "high",
-      "impact_label": "CLOSE THE DROP"
-    },
-    {
-      "headline": "Turn creator TikToks into Reels this month",
-      "action": "Zero Reels posted in 30 days; reshare the top creator clips — @goofysid's 40,900-play video alone is a ready-made post — to restart the Instagram momentum signal.",
+      "headline": "Claim a TikTok account today",
+      "action": "Twenty creators have posted 30-plus videos with 219,129 total plays; the shop has no TikTok account to stitch, reply, or repost any of it.",
       "signal": "momentum",
-      "priority": "medium",
-      "impact_label": "+REEL SIGNAL"
+      "priority": "high",
+      "impact_label": "CAPTURE OWNED REACH"
     },
     {
-      "headline": "Build a creator acknowledgment ritual",
-      "action": "With 20 unique creators already filming, a standing story feature or repost cadence turns passive coverage into a loop that invites the next wave of creators back.",
-      "signal": "collab_fit",
+      "headline": "Add a phone number to Google",
+      "action": "The Google Business Profile has no phone number listed; that single missing field is the clearest friction point on the conversion path for a shop with 519 reviews.",
+      "signal": "conversion_path",
+      "priority": "medium",
+      "impact_label": "+CONVERSION FIT"
+    },
+    {
+      "headline": "Post one Reel per week minimum",
+      "action": "Instagram logged zero Reels in the last 30 days and only three posts total; the 2.53 percent engagement rate holds, but it has nothing new to compound on.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "LOCK CREATORS IN"
+      "impact_label": "SUSTAIN SIGNAL"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:33:43.111Z",
+  "analyzed_at": "2026-04-25T19:13:33.309Z",
   "model": "claude-sonnet-4-6"
 }

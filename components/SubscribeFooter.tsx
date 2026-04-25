@@ -7,7 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
  * SubscribeFooter, the single CTA that closes every business page.
  *
  * Editorial framing: "see if [Business] climbs in Issue 02". Magazine-
- * subscribe model, not a sales funnel — captures emails for the next
+ * subscribe model, not a sales funnel, captures emails for the next
  * issue and creates a return loop without pitching Relay. This is the
  * only CTA on the page; the prior {ClaimAffordance, RelayWhisper,
  * sidebar} stack was removed in the 2026-04-25 simplification pass.

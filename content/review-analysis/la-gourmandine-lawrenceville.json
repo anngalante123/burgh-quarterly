@@ -2,14 +2,14 @@
   "slug": "la-gourmandine-lawrenceville",
   "themes": [
     {
-      "phrase": "French pastry authenticity",
-      "frequency": 3,
+      "phrase": "French pastry quality",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "A little bit of Paris in Pittsburgh."
     },
     {
-      "phrase": "standout seasonal desserts",
-      "frequency": 2,
+      "phrase": "standout single item",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "The seasonal La Ruche might be the best dessert I have ever had."
     },
@@ -17,54 +17,54 @@
       "phrase": "busy on weekends",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "You can call ahead if you know what you want. It is busy on weekends."
+      "exampleQuote": "It is busy on weekends. You can call ahead if you know what you want."
     },
     {
       "phrase": "breakfast and lunch find",
-      "frequency": 2,
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Travel everywhere, eat anything. This place was the find of Pittsburgh!"
+      "exampleQuote": "This place was the find of Pittsburgh. Breakfast and lunch!"
     },
     {
-      "phrase": "croissants and cream puffs",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Nut and chocolate croissants that were all fantastic. The cream puff was delicious."
+      "phrase": "specific item availability",
+      "frequency": 1,
+      "sentiment": "neutral",
+      "exampleQuote": "Are you still selling deluxe de pistache?"
     }
   ],
   "notable_quote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had.",
-  "sentiment_summary": "Reviewers fixate on specific pastries — the La Ruche, the croissants, the cream puffs — and invoke Paris without irony; the only friction is weekend crowding, which reads more as proof of demand than a complaint.",
-  "quarter_narrative": "La Gourmandine Lawrenceville spent Spring 2026 as one of the most-filmed bakeries in the city — 26 creators posted more than 30 TikToks there, totaling over 109,000 plays — while its own Instagram sat quiet for 40 days straight. The gap is not subtle. @lilbigbackz alone pulled 23,700 plays on a single clip framing the Lawrenceville location as a city essential, and the business captured none of that momentum into its own feed. Meanwhile, over in Pittsburgh Sweets, Page's is leading the family on social momentum — the exact signal where La Gourmandine is losing ground despite holding the top spot in Pittsburgh Bakeries. The rank stays at #1 here, but the distance between this business and the Sweets leader is a function of one dormant account, not anything happening inside the bakery itself.",
-  "tldr_read": "1,294 reviews at 88% five-star, a conversion path that's fully built out, and 26 creators filming the place — but the business's own Instagram has been silent for 40 days. Ones to Watch, #1 in Pittsburgh Bakeries.",
-  "tldr_meaning": "Every signal axis is at or above family median except Instagram momentum, which is near-zero — the climb toward Icons is functionally a single-variable problem.",
+  "sentiment_summary": "Reviewers consistently single out specific pastries, the La Ruche, the croissants, the cream puffs, as genuinely French in a way that holds up to comparison; the mild friction is crowd management on weekends and occasional uncertainty about what is still on the menu.",
+  "quarter_narrative": "Twenty-six Pittsburgh creators have walked into La Gourmandine Lawrenceville this quarter and filmed what they found, 30-plus TikToks, 109,000 plays, and a lead video from @lilbigbackz that cleared 23,700 views just describing the address. The bakery's own Instagram has been quiet for 40 days, no posts, no reels, the account present but not moving. That gap is the defining story of its Spring 2026: a city actively producing its visual catalog for it, while the business sits still. In the Pittsburgh Sweets family, Page's holds the momentum position this issue on the strength of its social signal; La Gourmandine holds the bakery rank on review volume and creator pull, but closing the distance on Page's means converting some of that outside attention into a signal the bakery controls.",
+  "tldr_read": "Dominant review volume, a TikTok footprint built almost entirely by outside creators, and a dormant Instagram. Ones to Watch, #1 in Pittsburgh Bakeries.",
+  "tldr_meaning": "The review foundation and creator reach are already Icon-level inputs; the Instagram silence is the single variable keeping this ranking from reflecting that.",
   "diagnosis_pullquote": {
-    "line": "Paris in Pittsburgh, Twenty-Six Creators Agree — The Bakery Just Isn't Watching.",
-    "highlight": "Twenty-Six Creators Agree"
+    "line": "First In Bakeries On Borrowed Momentum. The Bakery's Own Feed Has Gone Quiet.",
+    "highlight": "Borrowed Momentum"
   },
   "playbook": [
     {
-      "headline": "Break the 40-day Instagram silence now",
-      "action": "Post one reel per week minimum — the creator content already exists and proves what resonates; the La Ruche alone is a ready subject.",
+      "headline": "Restart the Instagram feed this week",
+      "action": "The account has been silent for 40 days; even two posts per week showing a specific pastry or the morning case would restart the momentum signal.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "RESTART SIGNAL"
     },
     {
-      "headline": "Pull the creator content into your own orbit",
-      "action": "Repost or respond to the 26 TikTok creators who generated 109,267 plays this quarter — @lilbigbackz's 23,700-play clip is an obvious starting point.",
+      "headline": "Repost the creators already filming you",
+      "action": "Twenty-six creators have produced 30-plus TikToks totaling 109,000 plays; resharing even five of those to the business Instagram costs nothing and converts external reach into owned audience.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "CAPTURE 109K PLAYS"
+      "impact_label": "+OWNED REACH"
     },
     {
-      "headline": "Document the seasonal menu before it rotates",
-      "action": "The La Ruche and délice de pistache appear in reviews and comments — photograph and name them explicitly across Google photo categories to close the gap between word-of-mouth and searchable visual record.",
-      "signal": "content_canvas",
+      "headline": "Anchor the seasonal menu online",
+      "action": "Reviewers ask specifically about items like the deluxe de pistache; a pinned post or updated menu link on Google reduces confusion and captures demand already there.",
+      "signal": "conversion_path",
       "priority": "low",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+CONVERSION"
     }
   ],
   "review_count": 6,
-  "analyzed_at": "2026-04-25T16:38:29.429Z",
+  "analyzed_at": "2026-04-25T19:17:59.322Z",
   "model": "claude-sonnet-4-6"
 }

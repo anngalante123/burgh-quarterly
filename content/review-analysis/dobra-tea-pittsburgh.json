@@ -11,7 +11,7 @@
       "phrase": "third space atmosphere",
       "frequency": 6,
       "sentiment": "positive",
-      "exampleQuote": "a wonderful pseudo-'third space' where you can sip tea, relax, play a board game, study, and talk to other patrons"
+      "exampleQuote": "a wonderful pseudo-third space where you can sip tea, relax, play a board game, study, and talk to other patrons"
     },
     {
       "phrase": "knowledgeable friendly staff",
@@ -27,44 +27,44 @@
     },
     {
       "phrase": "food worth ordering",
-      "frequency": 4,
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The babaganoush is delicious — I have been back and tried some food"
+      "exampleQuote": "The babaganoush is delicious"
     }
   ],
-  "notable_quote": "One of my favorite places on Earth — a wonderfully large selection of teas from around the world, served in an intimate and quiet setting.",
-  "sentiment_summary": "Reviewers consistently praise the breadth of the tea menu, the unhurried atmosphere, and staff who can actually talk about what they're serving — the only friction that surfaces is seating scarcity during busy hours, which reads more as a demand problem than a quality one.",
-  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed Dobrá Tea this quarter, generating over 2.6 million TikTok plays — and Dobrá posted once to Instagram in the past thirty days. The city is building a visual record of this place; the place is not adding a single frame to its own. That gap is the defining tension of Dobrá's Spring 2026: review sentiment is among the strongest in the Pittsburgh Cafes family, the conversion path is fully intact, and TikTok creators are doing the discovery work without any coordination from the business. The family leader this issue, Allegheny Coffee & Tea Exchange, holds its position on social momentum — the exact axis where Dobrá, currently ranked sixth in Pittsburgh Cafes, has the most room to move.",
-  "tldr_read": "Review sentiment that leads the tea category by a wide margin, Instagram that has gone nearly silent, and a TikTok audience the business didn't build and isn't capturing — Ones to Watch, #1 in Pittsburgh Tea Houses.",
-  "tldr_meaning": "The review floor is solid and the discovery engine is running on borrowed creator energy; whether Dobrá climbs in the broader Cafes family next issue depends almost entirely on whether its own channels start reflecting what 28 creators already see in it.",
+  "notable_quote": "One of my favorite places on Earth: a wonderfully large selection of teas from around the world, served in an intimate and quiet setting.",
+  "sentiment_summary": "Reviewers consistently praise the depth of the tea menu, the unhurried atmosphere, and a staff that can actually explain what they're serving; the only recurring friction is seating availability during peak hours.",
+  "quarter_narrative": "Twenty-eight Pittsburgh creators filmed Dobra Tea this quarter, generating more than 2.6 million TikTok plays, while the business posted once to Instagram in the same thirty days and has no TikTok presence of its own. The gap is stark: the city has decided this place is worth showing to millions of people, and Dobra is watching from the sidelines. In the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange leads the issue on social momentum, a signal Dobra could realistically contest given the creator heat already surrounding it. Closing the distance to that top spot in the broader café ranking depends almost entirely on whether the Instagram account wakes up and whether Dobra finds a way to meet the creators who are already doing the work.",
+  "tldr_read": "Dominant review sentiment and 2.6 million TikTok plays from other people's cameras, one Instagram post in thirty days. Ones to Watch, #1 in Pittsburgh Tea Houses.",
+  "tldr_meaning": "The review floor is exceptionally high and creator interest is not a question, the rank ceiling is determined entirely by how quickly the Instagram signal recovers and whether the business establishes any owned presence on the platform driving all those views.",
   "diagnosis_pullquote": {
-    "line": "The City Has Seen 2.6 Million Plays Of This Tea House. The Tea House Has Seen None Of Them.",
-    "highlight": "2.6 Million Plays"
+    "line": "First In Tea, Built On 1,107 Reviews. The Camera Belongs To Everyone Else.",
+    "highlight": "Camera Belongs To Everyone"
   },
   "playbook": [
     {
-      "headline": "Wake the Instagram account back up",
-      "action": "With 18 days between posts and a 2.76% engagement rate still holding, a consistent two-posts-per-week cadence would immediately move the momentum signal off its current floor.",
+      "headline": "Post to Instagram before the week ends",
+      "action": "The account went 18 days between posts this period; one post per week is the minimum to hold algorithmic distribution at a 2.76% engagement rate.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Acknowledge the creators already filming here",
-      "action": "Twenty-eight creators have posted 30-plus TikToks tagging this location — reposting even one per week on Instagram Stories converts existing reach into owned visibility without requiring original production.",
+      "headline": "Acknowledge the 28 creators already filming",
+      "action": "Twenty-eight creators drove 2.6 million plays this quarter with zero coordination; a simple repost or story reshare starts building a feedback loop Dobra currently has no part in.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "CAPTURE 2.6M REACH"
+      "impact_label": "CAPTURE REACH"
     },
     {
-      "headline": "Expand the Google photo categories",
-      "action": "690 photos across 11 categories is a strong catalog, but adding staff-sourced images to underrepresented tags — particularly the board games, the table bell, and the snack platters reviewers keep naming — would deepen the visual argument for first-time visitors.",
+      "headline": "Tag food categories consistently in new photos",
+      "action": "With 690 Google photos across only six categories, dedicated tagging of the snack platters, sesame cookies, and baba ganoush reviewers name specifically would deepen the visual catalog beyond its current above-median position.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:35:08.236Z",
+  "analyzed_at": "2026-04-25T19:14:54.178Z",
   "model": "claude-sonnet-4-6"
 }

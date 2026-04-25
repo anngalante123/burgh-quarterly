@@ -2,69 +2,69 @@
   "slug": "oishii-donburi",
   "themes": [
     {
-      "phrase": "fast hole-in-the-wall",
+      "phrase": "hole in the wall lunch",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Easy fast hole in the wall with delicious food."
     },
     {
-      "phrase": "katsudon and bulgogi bowls",
+      "phrase": "katsudon and bibimbap",
       "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "We had the katsudon and bulgogi bibimbap and it was perfect for lunch."
+    },
+    {
+      "phrase": "reliable bowls",
+      "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls."
     },
     {
-      "phrase": "quiet reliable lunch spot",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Very delicious quiet spot for Korean style bowls."
-    },
-    {
-      "phrase": "rude staff attitude",
-      "frequency": 1,
+      "phrase": "unclear sauces, rude service",
+      "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron."
     },
     {
-      "phrase": "unclear sauce presentation",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "Four little circle containers of unusual sauces and not told what any of them were."
+      "phrase": "quiet spot",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Very delicious quiet spot for Korean style bowls."
     }
   ],
-  "notable_quote": "Easy fast hole in the wall with delicious food — perfect for lunch with enough for a snack later that night.",
-  "sentiment_summary": "Reviewers keep coming back for the katsudon and bulgogi bowls and value the no-fuss pace, but a recurring note about cold service and unexplained accompaniments suggests the in-room experience doesn't always match the food.",
-  "quarter_narrative": "Twenty-nine creators filmed Oishii Donburi this quarter and the place filmed none of it back. Those 30-plus TikToks cleared 1.7 million plays — headlined by a single @kayylou52 video that cracked 852,000 — while the restaurant's own Instagram posted nothing for 71 days and its TikTok presence is nonexistent. That gap is the whole story of Spring 2026: a Lawrenceville bowl spot that the city has essentially decided to make famous on its behalf. Mola leads the Pittsburgh Asian Kitchens family this issue partly because creator collaboration fit is a measurable, active signal there; at Oishii, the creator signal is even louder in raw volume but entirely external, which caps how far the momentum translates into rank. Closing that gap — not in output volume but in any consistent presence that converts 1.7 million impressions into a recognizable account — is the single variable that would move this listing from Ones to Watch into a higher tier.",
-  "tldr_read": "1.7 million TikTok plays from outside creators, zero posts in 71 days from the business itself — Ones to Watch, #1 in Pittsburgh Japanese Restaurants.",
-  "tldr_meaning": "The review floor is solid and the conversion path is complete, but rank progression stalls until the business captures even a fraction of the creator energy already surrounding it.",
+  "notable_quote": "Always reliable for chicken katsu or beef bulgogi bowls.",
+  "sentiment_summary": "Reviewers consistently praise the food's quality and value, especially the katsudon and bulgogi bowls, but a handful flag confusing sauce presentation and at least one pointed service incident that left a lasting impression.",
+  "quarter_narrative": "Twenty-nine Pittsburgh creators posted more than 30 TikToks at Oishii Donburi this quarter, pulling over 1.7 million plays, and the restaurant posted nothing back. The top video alone, @kayylou52 tying the restaurant to Jacob Elordi in a single caption, drove 852,600 views without a single frame of official content to catch the overflow. The family leader this issue is Mola, whose edge is creator collaboration fit, a signal Oishii actually matches on paper, but squanders by sitting silent on Instagram for 71 days and holding no TikTok presence at all. The rank climbs when the business starts treating the city's cameras as a signal worth meeting.",
+  "tldr_read": "The city is filming Oishii Donburi at scale, but the restaurant has posted nothing in over two months. Number one in Pittsburgh Japanese restaurants, Ones to Watch.",
+  "tldr_meaning": "The TikTok flywheel is already spinning without the business touching it; the rank ceiling is set by Instagram dormancy and a review sentiment that has room to recover from the service friction.",
   "diagnosis_pullquote": {
-    "line": "1.7 Million Plays, Zero Posts: Pittsburgh Already Made Oishii Famous",
-    "highlight": "Zero Posts"
+    "line": "Number One In Japanese, Built By The City. The Restaurant Has Not Posted In Seventy-One Days.",
+    "highlight": "Not Posted In Seventy-One Days"
   },
   "playbook": [
     {
-      "headline": "Claim the TikTok that already exists",
-      "action": "Open a business TikTok account and repost or stitch the top creator videos — 29 creators have done the work, the account just needs to exist.",
+      "headline": "Break the 71-day Instagram silence now",
+      "action": "Post at minimum twice a week; the account has been dark 71 days while 29 creators actively film the space.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE 1.7M"
-    },
-    {
-      "headline": "Restart Instagram before the signal flatlines",
-      "action": "Account has been silent 71 days; one post per week of a katsudon or bulgogi bowl — the two menu items reviewers name most — would restart an 0.40% engagement rate before it erodes further.",
-      "signal": "content_canvas",
-      "priority": "medium",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Address the sauce and service friction",
-      "action": "Label the four condiment containers at service — a small printed card costs nothing and directly answers the single most specific negative review pattern before it recurs.",
+      "headline": "Repost creator TikToks to close the loop",
+      "action": "With 1.7 million plays already generated by 29 creators, reposting top videos to Instagram Stories costs nothing and captures existing reach.",
+      "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "UNLOCK 29 CREATORS"
+    },
+    {
+      "headline": "Address the sauce and service friction publicly",
+      "action": "Review sentiment sits below the family median; one recurring complaint is unexplained sauces, a fixable detail worth naming on the menu or Google Q&A.",
       "signal": "community_spark",
       "priority": "low",
       "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-25T16:41:10.310Z",
+  "analyzed_at": "2026-04-25T19:20:34.074Z",
   "model": "claude-sonnet-4-6"
 }

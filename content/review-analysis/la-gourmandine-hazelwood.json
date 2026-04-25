@@ -2,69 +2,69 @@
   "slug": "la-gourmandine-hazelwood",
   "themes": [
     {
-      "phrase": "hidden gem in Pittsburgh",
+      "phrase": "raspberry lychee macaron",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Please do not miss this hidden gem in Pittsburgh."
-    },
-    {
-      "phrase": "raspberry lychee macaron",
-      "frequency": 1,
-      "sentiment": "positive",
-      "exampleQuote": "make sure you get the raspberry lychee macaroon, it is gluten free made with almond flour and it is the best thing I've ever put in my mouth hands down"
+      "exampleQuote": "get the raspberry lychee macaroon, it is gluten free made with almond flour and it is the best thing I've ever put in my mouth"
     },
     {
       "phrase": "Paris-quality pastry",
-      "frequency": 1,
-      "sentiment": "positive",
-      "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed."
-    },
-    {
-      "phrase": "multiple locations worth visiting",
-      "frequency": 1,
-      "sentiment": "positive",
-      "exampleQuote": "there are multiple locations so please make sure you check it out"
-    },
-    {
-      "phrase": "consistently delicious baked goods",
       "frequency": 3,
       "sentiment": "positive",
+      "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed"
+    },
+    {
+      "phrase": "hidden gem Hazelwood",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Please do not miss this hidden gem in Pittsburgh"
+    },
+    {
+      "phrase": "delicious everything",
+      "frequency": 5,
+      "sentiment": "positive",
       "exampleQuote": "Excelente panadería, todo es delicioso"
+    },
+    {
+      "phrase": "multiple locations",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "there are multiple locations so please make sure you check it out"
     }
   ],
-  "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed — I'm telling you this from experience.",
-  "sentiment_summary": "Reviewers land overwhelmingly on reverence — Paris comparisons, superlatives about specific items like the raspberry lychee macaron — with almost no friction surfaced; nitpicks are absent entirely from the available sample, which itself is notable for a shop at 525 reviews.",
-  "quarter_narrative": "Thirty independent Pittsburgh creators filmed La Gourmandine Hazelwood this quarter and generated over 1.09 million TikTok plays; the shop posted nothing to Instagram during that same window, going 40 days dark as of print. The city is making content about this place at a scale that most Pittsburgh businesses would architect a whole campaign to achieve, and La Gourmandine is capturing none of the downstream attention — no repost, no redirect, no trail back to the account. That gap is the whole story of Spring 2026 here. Meanwhile, Page's holds the Pittsburgh Sweets family lead on social momentum, a signal category where La Gourmandine ranks last in the family despite sitting at the top of the pastry-shop tier. Closing the distance between #6 in the family and #1 in Pittsburgh Sweets runs directly through the Instagram account that already exists and already has an audience — the question is whether it wakes up.",
-  "tldr_read": "Paris-level review sentiment, a conversion path that works perfectly, and 1.09 million TikTok plays the business didn't generate itself — but a dormant Instagram drags the family rank to sixth; Ones to Watch, #1 in Pittsburgh Pastry Shops.",
-  "tldr_meaning": "Every signal axis except Instagram momentum is at or above family median, meaning the ceiling is already visible — the trajectory stalls until the account that has the audience starts using it.",
+  "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
+  "sentiment_summary": "Reviewers consistently reach for superlatives about the pastry quality, especially the raspberry lychee macaron, with no recurring nitpicks surfacing across 525 reviews.",
+  "quarter_narrative": "Thirty creators filmed La Gourmandine Hazelwood this quarter and collectively pulled over a million plays on TikTok. The bakery posted nothing to Instagram for the last 40 days of the period. That gap is the defining fact of its Spring 2026: a shop with 88 percent five-star reviews and a visual catalog strong enough to sit at the family median is essentially invisible on its own social channels while the city builds its feed for it. Page's holds the Pittsburgh Sweets lead this issue on the back of social momentum, exactly the axis where La Gourmandine is dormant. The path to closing that gap runs through one channel the business already has and one it hasn't touched.",
+  "tldr_read": "Over a million TikTok plays from 30 creators, zero Instagram posts in 40 days. Ones to Watch, #1 in Pittsburgh Pastry Shops.",
+  "tldr_meaning": "Every signal axis except Instagram momentum is at or above the family median, so the rank ceiling is a posting cadence problem, not a quality or discovery problem.",
   "diagnosis_pullquote": {
-    "line": "Pittsburgh Put It On Paris-Level Footing. The Business Hasn't Posted In Forty Days.",
-    "highlight": "Paris-Level Footing"
+    "line": "First In Pastry, Built By 30 Creators. The Bakery's Own Feed Is Quiet.",
+    "highlight": "Built By 30 Creators"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram account now",
-      "action": "The account has been silent for 40 days while 30 creators generated 1.09M TikTok plays; one weekly post reactivates the lowest-scoring signal in the family.",
+      "headline": "Restart Instagram before next issue",
+      "action": "The account has been silent 40 days. Even two posts per week would move the Instagram momentum signal off its current floor.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Pull the TikTok wave into your own feed",
-      "action": "Repost or story-share from the 30 creators already filming this shop — @ms__lesh alone has 719,500 plays — to redirect existing reach to a channel the business controls.",
+      "headline": "Claim the TikTok presence creators built",
+      "action": "30 creators have logged 1,091,425 plays on this location. An owned account that reposts even one top video captures an audience already primed.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "CAPTURE REACH"
+      "impact_label": "CAPTURE 1M REACH"
     },
     {
-      "headline": "Surface the raspberry lychee macaron visually",
-      "action": "The most specific and emotionally charged item in the review record has no dedicated photo category on Google; a single tagged shoot adds to the 304-photo catalog and anchors the menu signal.",
+      "headline": "Add video to the Google photo catalog",
+      "action": "304 photos across 11 categories is strong, but the Videos category is listed without depth. A short reel-length clip posted to Google would push the visual catalog above the family median.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 4,
-  "analyzed_at": "2026-04-25T16:38:06.377Z",
+  "analyzed_at": "2026-04-25T19:17:40.516Z",
   "model": "claude-sonnet-4-6"
 }

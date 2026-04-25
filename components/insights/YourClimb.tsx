@@ -29,7 +29,7 @@ type Props = {
 const ARROW: Record<NonNullable<ClimbStat["direction"]>, string> = {
   up: "▲",
   down: "▼",
-  flat: "—",
+  flat: "·",
   debut: "★",
 };
 

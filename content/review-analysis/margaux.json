@@ -2,69 +2,69 @@
   "slug": "margaux",
   "themes": [
     {
-      "phrase": "cocktails and seasonal drinks",
+      "phrase": "cocktail quality",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Great cocktails, good beer selection, and incredibly friendly staff."
     },
     {
-      "phrase": "cozy atmosphere and seating",
+      "phrase": "cozy atmosphere",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "There's also lots of cozy seating around the room, and it's a great place to chill and work."
+      "exampleQuote": "The atmosphere of the place is wonderful."
     },
     {
-      "phrase": "bartenders ignoring customers",
+      "phrase": "bartender inattention",
       "frequency": 3,
       "sentiment": "negative",
-      "exampleQuote": "We were then ignored for the next 30 minutes. The bartenders chose to chat with other patrons extensively."
+      "exampleQuote": "We were then ignored for the next 30 minutes."
     },
     {
-      "phrase": "coffee pricing friction",
+      "phrase": "pricing friction",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Refill for black coffee is over three dollars; srsly?"
     },
     {
-      "phrase": "regulars at the bar",
-      "frequency": 2,
+      "phrase": "good place to work",
+      "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "There are always regulars at the bar, and it's clear why."
+      "exampleQuote": "It's a great place to chill and work."
     }
   ],
   "notable_quote": "There are always regulars at the bar, and it's clear why.",
-  "sentiment_summary": "Reviewers consistently praise the cocktails, seasonal drinks, and the kind of lived-in atmosphere that earns regulars — but a recurring pattern of bartenders chatting among themselves while tables go unattended keeps the sentiment ceiling lower than the vibe deserves.",
-  "quarter_narrative": "Margaux had a legitimately viral quarter and mostly watched it happen from the sidelines. Twenty-nine Pittsburgh creators posted more than 30 TikToks there, racking up nearly 385,000 plays — the top video alone, a Heinz sauce draft pick bit from @heinz_us, pulled 124,700. That's not background noise; that's the city deciding this place is worth filming. Meanwhile, Margaux's own accounts posted nine Instagram photos in 30 days, zero Reels, and no TikTok presence that matched the moment. The family leader this issue, Allegheny Coffee & Tea Exchange, built its top ranking largely on social momentum — the exact axis where Margaux is leaving the most on the table. Closing the gap between what creators are already producing and what Margaux publishes for itself is the clearest path from Ones to Watch into the upper tier.",
-  "tldr_read": "Nearly 385,000 TikTok plays from outside creators, no phone number on Google, and an Instagram engagement rate that barely registers — Ones to Watch, #3 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The creator signal is already doing the work the business's own accounts aren't; if the conversion path tightens and Instagram momentum catches up, the ranking math changes fast.",
+  "sentiment_summary": "Reviewers consistently praise the drinks and the room itself, but a recurring thread of bartender inattention, and one incident involving an unaddressed confrontation, suggests the floor experience doesn't always match what the space promises.",
+  "quarter_narrative": "Margaux is sitting on something. Twenty-nine Pittsburgh TikTok creators filmed there this past quarter, generating nearly 385,000 plays, including a 124,700-play video from @heinz_us that had nothing to do with Margaux's own posting calendar. The business has its own TikTok account and is active on Instagram, which is the right posture, but with nine Instagram posts in thirty days and zero Reels, it is not converting that creator energy into forward momentum the way the family leader, Allegheny Coffee and Tea Exchange, is riding its social signal to the top. Margaux's visual catalog is the strongest in the family by a meaningful margin, 530 photos across multiple Google categories, and its Creator Fit is the highest number in this cohort by a wide gap. The rank climbs when the Reels start appearing and when the phone number gets added to the Google profile, two small corrections with outsized reach implications.",
+  "tldr_read": "Exceptional creator attention and the family's strongest visual catalog, undercut by a missing phone number on Google and an Instagram account that posts but doesn't move. Ones to Watch, #3 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The ceiling is clearly higher than third: the creator signal and the visual catalog are both there, but the conversion path is incomplete and the Instagram engagement rate of 0.26% suggests the account is broadcasting to an audience that isn't responding yet.",
   "diagnosis_pullquote": {
-    "line": "The City Has Filmed Margaux 384,916 Times — The Bar Still Has No Phone Number Listed",
-    "highlight": "Still Has No Phone Number"
+    "line": "Third In Cafes, Carried By Creators. The Business Itself Has More To Say.",
+    "highlight": "Carried By Creators"
   },
   "playbook": [
     {
-      "headline": "Put a phone number on Google right now",
-      "action": "Margaux has no phone listed on Google — a direct break in the path between 385K TikTok plays and an actual reservation or visit.",
+      "headline": "Add a phone number to Google now",
+      "action": "The Google profile lists no phone number, a basic gap that breaks the conversion path for every customer who finds Margaux in search before visiting.",
       "signal": "conversion_path",
       "priority": "high",
       "impact_label": "CLOSE THE GAP"
     },
     {
-      "headline": "Turn one creator clip into a Reel this week",
-      "action": "Zero Reels posted in 30 days while 29 creators are already filming the space — reposting or recutting existing creator footage costs nothing and feeds the dormant momentum signal.",
+      "headline": "Turn still posts into Reels",
+      "action": "Nine Instagram posts in thirty days with zero Reels and a 0.26% engagement rate signals a feed that isn't pulling anyone in; one short Reels clip per week would change that math.",
       "signal": "momentum",
       "priority": "medium",
-      "impact_label": "+REEL VELOCITY"
+      "impact_label": "+ENGAGEMENT RATE"
     },
     {
-      "headline": "Address the service pattern in public replies",
-      "action": "At least three recent reviews cite being ignored at the bar — a direct, specific public response to those threads would signal accountability to the 386-review audience still reading.",
+      "headline": "Address the service pattern publicly",
+      "action": "Three of nine available reviews cite bartender inattention specifically; a consistent owner response acknowledging the pattern would shift sentiment without waiting for new reviews to arrive.",
       "signal": "community_spark",
       "priority": "low",
       "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:39:12.980Z",
+  "analyzed_at": "2026-04-25T19:18:43.258Z",
   "model": "claude-sonnet-4-6"
 }

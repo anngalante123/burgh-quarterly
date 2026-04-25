@@ -13,6 +13,7 @@ import {
 import { SubscribeFooter } from "@/components/SubscribeFooter";
 import { buildBusinessTldr } from "@/lib/editorial/business-tldr";
 import { buildPlaybook } from "@/lib/editorial/playbook";
+import { computeSocialTrend } from "@/lib/editorial/compute-trend";
 import { loadReviewAnalysis } from "@/lib/data/load-review-analysis";
 import { pickPullquote } from "@/lib/editorial/pick-pullquote";
 import {
@@ -287,6 +288,16 @@ export default async function BusinessPage({ params }: PageProps) {
   const glanceRows: AtAGlanceRow[] = [];
 
   if (rankFamilyPos !== null) {
+    // Build "how to climb" copy: which peers are above, and what specific
+    // move (from the Playbook) would close the gap.
+    const peersAbove = categoryPeerDots
+      .filter((p) => p.rank < rankFamilyPos)
+      .slice(-2); // Last 2 ranked above (closest competitors)
+    const peersBelow = categoryPeerDots
+      .filter((p) => p.rank > rankFamilyPos)
+      .slice(0, 2); // First 2 ranked below
+    const topPlaybookMove = playbook.items[0];
+
     glanceRows.push({
       key: "rank",
       label: `Rank in ${familyShort}`,
@@ -300,6 +311,37 @@ export default async function BusinessPage({ params }: PageProps) {
             category={familyLabel}
             peers={categoryPeerDots}
           />
+
+          {/* How to climb, prescriptive cross-reference to the Playbook */}
+          {(peersAbove.length > 0 || peersBelow.length > 0) && (
+            <div className="border border-brand-black/15 bg-white/60 p-5 md:p-6">
+              <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-brand-purple mb-3">
+                How {biz.name.split(",")[0]} climbs
+              </p>
+              {peersAbove.length > 0 && (
+                <p className="font-body text-sm md:text-base text-brand-black/85 leading-relaxed mb-2">
+                  <span className="font-semibold">Above:</span>{" "}
+                  {peersAbove
+                    .map((p) => `#${p.rank} ${p.name} (${p.distinguishingSignal})`)
+                    .join(", ")}
+                  .
+                </p>
+              )}
+              {topPlaybookMove && (
+                <p className="font-body text-sm md:text-base text-brand-black/85 leading-relaxed mb-2">
+                  <span className="font-semibold">The move:</span>{" "}
+                  {topPlaybookMove.headline}. {topPlaybookMove.action}
+                </p>
+              )}
+              {peersBelow.length > 0 && (
+                <p className="font-body text-xs text-brand-black/55 leading-relaxed mt-3">
+                  Holding off:{" "}
+                  {peersBelow.map((p) => `#${p.rank} ${p.name}`).join(", ")}.
+                </p>
+              )}
+            </div>
+          )}
+
           <SubscoreBars
             subscores={score.subscores}
             peerMedians={peerMedians}
@@ -378,6 +420,16 @@ export default async function BusinessPage({ params }: PageProps) {
     glanceRows[0].focus = true;
   }
 
+  // Compute the social trend pill, "how is this business doing on social
+  // this quarter" without needing a click.
+  const socialTrend = computeSocialTrend({
+    igPosts30d: social.ig?.posts_30d ?? null,
+    igLastPostDaysAgo: daysSinceLastPost,
+    tiktokUniqueCreators: tt?.unique_creators ?? 0,
+    tiktokTotalPlays: tt?.total_plays ?? 0,
+    reviewDelta90d: social.growth?.review_count?.delta ?? null,
+  });
+
   return (
     <>
       <Masthead variant="compact" />
@@ -434,7 +486,11 @@ export default async function BusinessPage({ params }: PageProps) {
 
           {/* 2. At a glance accordion, the interactive data */}
           <div className="mt-6 md:mt-8">
-            <BusinessAtAGlance businessName={biz.name} rows={glanceRows} />
+            <BusinessAtAGlance
+              businessName={biz.name}
+              rows={glanceRows}
+              trend={socialTrend}
+            />
           </div>
 
           {/* 3. The Playbook, prescriptive moves (always visible) */}

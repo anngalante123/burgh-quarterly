@@ -2,69 +2,69 @@
   "slug": "meetcha",
   "themes": [
     {
+      "phrase": "study spot atmosphere",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "such an amazing environment... would recommend as a go to study spot"
+    },
+    {
       "phrase": "boba and milk tea",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "I had a milk tea and it is wonderful!!! Recommend everyone to come here and try!!"
+      "exampleQuote": "I had a milk tea and it is wonderful!!! Recommend everyone to come here"
     },
     {
-      "phrase": "cute cozy atmosphere",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "loved it!!! literally such a cute place"
-    },
-    {
-      "phrase": "friendly helpful staff",
+      "phrase": "comfortable and relaxing",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Staff was VERY helpful and kind."
+      "exampleQuote": "It's so comfortable and relaxing and the staff is super friendly"
     },
     {
-      "phrase": "study spot comfort",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Meetcha has such an amazing environment and yummy food! Would recommend as a go to study spot!"
-    },
-    {
-      "phrase": "go-to favorite",
+      "phrase": "friendly staff",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "One of our Favorite boba spot!"
+      "exampleQuote": "Staff was VERY helpful and kind"
+    },
+    {
+      "phrase": "cute space",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "literally such a cute place"
     }
   ],
-  "notable_quote": "It's so comfortable and relaxing and the staff is super friendly.",
-  "sentiment_summary": "Reviewers consistently praise the atmosphere as study-friendly and cozy, the boba and milk tea as the clear draw, and the staff as warm — no recurring criticism surfaces in the available reviews, but with only 134 total reviews the sample is thin for a neighborhood café with this level of creator visibility.",
-  "quarter_narrative": "Twenty-four Pittsburgh TikTok creators filmed MeetCha this quarter. MeetCha filmed zero of it back. The café in Squirrel Hill South generated nearly 188,000 plays across 30-plus TikToks — @maddie_gera's casual matcha roundup alone pulled 22,200 — while the business's own Instagram has been quiet for over 90 days and its TikTok presence is nonexistent. That gap is the whole story of MeetCha's Spring 2026: the city decided this place matters before the place decided to say anything. Meanwhile, Allegheny Coffee & Tea Exchange holds the family lead on social momentum, a signal MeetCha demonstrably has in raw creator volume but hasn't converted into owned presence. The rank climbs — and the tier changes — the moment MeetCha starts showing up in the same feeds where its customers are already talking about it.",
-  "tldr_read": "Nearly 188K TikTok plays from other people's accounts, zero posts from its own. Ones to Watch, #4 in Pittsburgh Cafes.",
-  "tldr_meaning": "The creator signal is already doing the work that an owned account hasn't started — if Instagram restarts and a TikTok account opens, the visibility infrastructure is already in place to push this out of Ones to Watch.",
+  "notable_quote": "Always such a good experience!! It's so comfortable and relaxing and the staff is super friendly.",
+  "sentiment_summary": "Reviewers are consistent on three things: the boba and milk tea are good, the room feels calm enough to linger in, and the staff makes it easy to come back. There is no notable criticism in the available sample, which flatters the atmosphere but leaves the review signal thin on specificity.",
+  "quarter_narrative": "Twenty-four Pittsburgh creators filmed MeetCha this quarter and the business posted nothing back. The 30-plus TikToks, 187,837 combined plays, and a top video at 22,200 from @maddie_gera built a version of MeetCha's brand entirely on other people's phones. Meanwhile the @meetcha_pgh Instagram account has been quiet for 91 days, is not set up as a business account, and posted zero reels in the last 30 days. That gap between city-generated attention and owner-generated presence is the defining story of MeetCha's Spring 2026. Allegheny Coffee and Tea Exchange leads the Pittsburgh Cafes family on social momentum; MeetCha sits fourth overall despite running one of the strongest creator pipelines in the entire family, which means the rank climbs fast if the account catches up with the audience already there.",
+  "tldr_read": "Creator coverage is loud, the business's own Instagram is silent, and review sentiment trails the family median by a wide margin. Ones to Watch, #4 in Pittsburgh Cafes.",
+  "tldr_meaning": "MeetCha's trajectory depends on two things closing: the 91-day Instagram silence and the gap between its 48 review sentiment score and a family median that sits nearly 30 points higher.",
   "diagnosis_pullquote": {
-    "line": "The City Is Posting About MeetCha's Matcha. MeetCha Has Been Quiet For 91 Days.",
-    "highlight": "Quiet For 91 Days"
+    "line": "Fourth In Pittsburgh Cafes, Carried By Creators. The Account Behind The Counter Has Gone Quiet.",
+    "highlight": "Carried By Creators"
   },
   "playbook": [
     {
-      "headline": "Open a TikTok account and post once",
-      "action": "24 creators have already built the template — claim the handle and drop one matcha or boba video to join a conversation generating 187,837 plays.",
+      "headline": "Restart the Instagram account with purpose",
+      "action": "Convert @meetcha_pgh to a business account and post at least once per week; the account has been silent for 91 days while 24 creators actively film the space.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE OWNED REACH"
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Restart Instagram with a single weekly post",
-      "action": "The account has been dark for 91 days; one post per week against a 15.33% engagement rate is a stronger return than most Pittsburgh cafés ever see.",
-      "signal": "content_canvas",
-      "priority": "medium",
-      "impact_label": "+INSTAGRAM SIGNAL"
-    },
-    {
-      "headline": "Push Google review volume past 200",
-      "action": "134 reviews with 93% five-star is a strong ratio but a thin sample; closing the gap to 200 reviews anchors the sentiment signal before the next issue.",
+      "headline": "Pull specific language from happy regulars",
+      "action": "Review sentiment sits well below the family median; a structured ask for detail-rich reviews on Google, mentioning specific drinks or the study-spot vibe, closes that gap faster than volume alone.",
       "signal": "community_spark",
+      "priority": "medium",
+      "impact_label": "+15 SENTIMENT PTS"
+    },
+    {
+      "headline": "Fill the visual catalog gaps on Google",
+      "action": "115 photos across 11 categories is a reasonable base, but the visual score trails the family median by 17 points; adding staff-shot interior and behind-the-counter images in underrepresented categories would address that directly.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+SENTIMENT DEPTH"
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T16:39:31.598Z",
+  "analyzed_at": "2026-04-25T19:19:06.364Z",
   "model": "claude-sonnet-4-6"
 }

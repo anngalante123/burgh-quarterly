@@ -127,6 +127,8 @@ Your job is to produce a full editorial analysis for ONE business, returning a s
 
 Never use these phrases: "leverage", "amplify", "organic growth", "content strategy", "authentic engagement", "best bakery", "top-rated", "grade", "score of". Never cite a raw 0-100 composite score.
 
+NEVER USE EM DASHES (the long dash, U+2014). Use a comma, a period, a semicolon, or a colon instead. This applies to every text field in your output. We will reject any output that contains em dashes.
+
 === BUSINESS ===
 Name: ${input.name}
 Neighborhood: ${input.neighborhood}
@@ -198,8 +200,8 @@ Return ONLY a valid JSON object with this exact shape (no markdown, no prose out
   "tldr_meaning": "One sentence describing what the data says about the business's trajectory. NOT a call to action. Write in data terms. Example: 'The climb to Icons depends on the Instagram signal restarting, the other axes are already there.' Adapt to this business.",
 
   "diagnosis_pullquote": {
-    "line": "ONE display-scale headline sentence that captures THIS business specifically. Title case. 10-20 words. CRITICAL DIVERSITY RULES: (1) Do NOT use the construction 'N Creators Are Filming This Place, And [X] Is Filming None Of It Back' or any close variant — that phrasing has been overused. (2) Do NOT default to leading with a creator count unless that count is genuinely the most interesting fact. (3) Lead with whatever is most distinctive about THIS specific business, not the category. Could be the review pull-quote, the tier ranking, a specific menu item from reviews, the Instagram cadence, the photo gap, a sentiment contrast, etc. (4) Vary syntactic structure across businesses — questions, contrasts ('X but Y'), declaratives, fragments, 'The thing about X is Y' patterns. Use whatever fits. The line should read aloud as a real headline a journalist would write — surprising, specific, and unmistakably about THIS business. If you used the same opening pattern on a previous business, pick a different angle.",
-    "highlight": "EXACTLY 2-4 consecutive words copy-pasted character-for-character from the 'line' above. Do NOT paraphrase. Do NOT translate digits to words or vice versa. If 'line' says 'Twenty-Six Creators', highlight must be a substring like 'Twenty-Six Creators' — NOT '26 creators'. If 'line' says '1.6 Million', the highlight must contain '1.6 Million' verbatim. To verify before returning: search for the highlight string inside the line string — it must be found. Pick the most provocative 2-4 word phrase in the line as the highlight."
+    "line": "ONE display-scale headline sentence that EXPLAINS THIS BUSINESS'S RANK. Title case. 10-18 words. The reader should finish reading and understand (a) where this business sits and (b) why. REQUIRED SHAPE: reference the rank or tier explicitly OR reference the dominant signal that drove the rank, then add the qualifier (the friction, the gap, the asterisk, or the next move). Examples of the shape we want: 'First In Sweets, Driven By 3,145 Reviews. The Feed Hasn't Joined In Yet.' / 'Eighth In Sweets Despite Twenty-Six Creators Filming. The Bakery Hasn't Posted Back.' / 'Top Of The Bars Family On The Strength Of The Patio. The Reviews Followed.' DIVERSITY RULES: (1) NEVER use the construction 'N Creators Are Filming This Place, And [X] Is Filming None Of It Back' or any close variant. That phrasing has been overused. (2) Do NOT lead with creator count unless that count is genuinely the rank-driver for THIS business. (3) Vary syntactic structure across businesses, contrasts, fragments, two-clause patterns, declaratives. (4) NO EM DASHES anywhere in the line, ever. Use commas, periods, or colons. The line must read aloud as a punchy real headline a journalist would write, not a stat dump.",
+    "highlight": "EXACTLY 2-4 consecutive words copy-pasted character-for-character from the 'line' above. Do NOT paraphrase. Do NOT translate digits to words or vice versa. If 'line' says 'Twenty-Six Creators', highlight must be a substring like 'Twenty-Six Creators', NOT '26 creators'. If 'line' says '1.6 Million', the highlight must contain '1.6 Million' verbatim. To verify before returning, search for the highlight string inside the line string, it must be found. Pick the most provocative 2-4 word phrase in the line as the highlight."
   },
 
   "playbook": [
@@ -244,6 +246,12 @@ Themes rules:
     "slug" | "analyzed_at" | "model" | "review_count"
   >;
 
+  // Em-dash scrub: Anna's editorial rule, no em dashes anywhere. Even with
+  // the prompt rule, Claude leaks them in occasionally. Replace every U+2014
+  // with a comma at the source so the data layer is clean by construction.
+  // Also normalize en dash (U+2013) to a hyphen for consistency.
+  scrubEmDashes(parsed as Record<string, unknown>);
+
   // Defensive repair: the highlight phrase MUST be a literal substring of the
   // line, otherwise the DiagnosisPullquote component renders the line without
   // any lime highlight (the focus point of the entire hero). Claude sometimes
@@ -283,6 +291,36 @@ Pick a 2-4 word phrase that already appears VERBATIM (character-for-character) i
     ...parsed,
     review_count: input.reviews.length,
   };
+}
+
+/**
+ * Recursively replace em dashes (U+2014) with commas, en dashes (U+2013) with
+ * hyphens, in every string field of the parsed object. Editorial rule, applied
+ * at the data layer so downstream renderers don't need to think about it.
+ */
+function scrubEmDashes(obj: Record<string, unknown> | unknown): void {
+  if (Array.isArray(obj)) {
+    for (let i = 0; i < obj.length; i++) {
+      const v = obj[i];
+      if (typeof v === "string") {
+        obj[i] = v.replace(/\s*—\s*/g, ", ").replace(/\s*–\s*/g, "-");
+      } else if (v && typeof v === "object") {
+        scrubEmDashes(v);
+      }
+    }
+    return;
+  }
+  if (obj && typeof obj === "object") {
+    const o = obj as Record<string, unknown>;
+    for (const k of Object.keys(o)) {
+      const v = o[k];
+      if (typeof v === "string") {
+        o[k] = v.replace(/\s*—\s*/g, ", ").replace(/\s*–\s*/g, "-");
+      } else if (v && typeof v === "object") {
+        scrubEmDashes(v);
+      }
+    }
+  }
 }
 
 async function main() {

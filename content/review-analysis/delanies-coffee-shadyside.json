@@ -23,54 +23,54 @@
       "phrase": "sweet drinks",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "We liked all the drinks we ordered though mine was definitely on the sweet side."
+      "exampleQuote": "mine was definitely on the sweet side"
+    },
+    {
+      "phrase": "staff kindness",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "the workers are so nice every time I visit!"
     },
     {
       "phrase": "order mix-up",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin, let them know, I had to pay for a new muffin."
-    },
-    {
-      "phrase": "nice workers",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "The workers are so nice every time I visit!"
     }
   ],
-  "notable_quote": "The strawberry matcha here might be the best I've ever had — the coffee, food, and overall cafe vibe is fantastic.",
-  "sentiment_summary": "Reviewers keep coming back for the strawberry matcha and tiramisu latte specifically, but the space's size, inconsistent order accuracy, and weak Wi-Fi are the recurring friction points.",
-  "quarter_narrative": "Twenty-six Pittsburgh creators filmed Delanie's Coffee Shadyside this quarter, generating 176,000 plays on TikTok — and the shop posted three times on Instagram, none of it video. The tiramisu and strawberry matcha have become a minor TikTok genre in their own right, with @tessadecario alone pulling 37,200 plays off a single caption. Meanwhile, the family leader this issue, Allegheny Coffee & Tea Exchange, holds its position on social momentum — the exact axis where Delanie's has the most ground to close. The rank moves when the shop starts treating its own feed with a fraction of the urgency the city is already showing it.",
-  "tldr_read": "Twenty-six creators are filming the tiramisu latte; Delanie's is posting once every two weeks and has no TikTok presence at all. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The creator signal is already doing the work of a marketing department; the gap between what the city is producing and what the business is publishing is the single variable separating this rank from the next tier.",
+  "notable_quote": "The strawberry matcha here might be the best I've ever had.",
+  "sentiment_summary": "Reviewers are drawn in by the signature drinks, particularly the strawberry matcha and tiramisu latte, and consistently praise the staff; the recurring friction points are the small footprint that fills up fast and an occasional order error that the shop handled poorly.",
+  "quarter_narrative": "Twenty-six Pittsburgh creators filed into Delanie's Coffee Shadyside this quarter and posted more than 30 TikToks totaling 176,000 plays. The shop itself posted three times on Instagram, zero times on TikTok, and has no presence on the platform that is doing the most work for it. That gap is the defining story of its Spring 2026: a tiramisu latte built for the camera, a camera-ready city audience showing up, and the business largely watching from the sidelines. Allegheny Coffee and Tea Exchange leads the Pittsburgh Cafes family this issue on the back of social momentum, the kind of compound signal Delanie's has not yet converted its creator attention into. Closing the distance between seventh in cafes and the top of the family runs through one question: does the shop start telling its own story, or does it keep borrowing the one creators are already writing for it.",
+  "tldr_read": "The city's creators are doing the heavy lifting on TikTok, the shop's own Instagram is nearly quiet, and a strong conversion path keeps it visible. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "Creator reach is already performing at a level most shops in this family cannot match; the rank climbs when that external energy finds a first-party signal to attach to.",
   "diagnosis_pullquote": {
-    "line": "The Tiramisu Has 176,000 TikTok Plays. The Shop Has No TikTok Account.",
-    "highlight": "176,000 TikTok Plays"
+    "line": "Fourth In Coffee, Powered By Other People's TikToks. The Shop Has Yet To Post Its Own.",
+    "highlight": "Other People's TikToks"
   },
   "playbook": [
     {
-      "headline": "Get on TikTok before the creators move on",
-      "action": "Claim a TikTok account now — 26 creators have already written the brief; the shop just needs to show up in the same conversation.",
+      "headline": "Start a TikTok account this week",
+      "action": "26 creators have already built the audience; a single account with the tiramisu latte as the first post enters a warm room.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "UNLOCK OWNED REACH"
+      "impact_label": "CAPTURE 176K REACH"
     },
     {
-      "headline": "Turn Instagram Reels gap into a visual asset",
-      "action": "Zero Reels posted in 30 days; one 15-second pour video of the strawberry matcha or tiramisu latte would directly address the Instagram Momentum signal sitting below the family median.",
+      "headline": "Post to Instagram at least twice weekly",
+      "action": "Three posts in the last 30 days and no reels leave a 4.67 percent engagement rate with nowhere to go; the strawberry matcha and tiramisu latte are two ready-made weekly subjects.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+MOMENTUM SIGNAL"
+      "impact_label": "+VISUAL SIGNAL"
     },
     {
-      "headline": "Resolve the order accuracy friction publicly",
-      "action": "Review sentiment sits well below the family median at 60; one pointed response to the muffin-charge complaint would signal accountability and protect the 82% five-star rate from erosion.",
+      "headline": "Address the order-error policy publicly",
+      "action": "One three-star review citing a charged replacement for a mis-pulled muffin is sitting in a thin review pool of 104; a visible response or updated policy protects an 82 percent five-star rate.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "PROTECT SENTIMENT"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T16:34:47.389Z",
+  "analyzed_at": "2026-04-25T19:14:31.095Z",
   "model": "claude-sonnet-4-6"
 }
