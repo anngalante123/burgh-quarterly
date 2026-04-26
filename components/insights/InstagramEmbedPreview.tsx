@@ -47,6 +47,12 @@ export function InstagramEmbedPreview({
     );
   }
 
+  // We deliberately skip the Apify-served thumbnail URL because IG's CDN
+  // URLs are short-lived and block cross-origin hot-linking. Showing a
+  // broken-image icon would be worse than a clean placeholder; clicking
+  // loads the iframe which renders the actual post reliably.
+  void thumbnailUrl;
+
   return (
     <button
       type="button"
@@ -60,27 +66,15 @@ export function InstagramEmbedPreview({
       className="group relative w-full max-w-[280px] aspect-[4/5] overflow-hidden bg-brand-black/85 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
       aria-label={`Open Instagram post: ${caption.slice(0, 60)}`}
     >
-      {thumbnailUrl ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={thumbnailUrl}
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-[1.02] motion-reduce:group-hover:scale-100"
-        />
-      ) : (
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-brand-black to-brand-purple/30">
-          <span className="font-display text-xs uppercase tracking-[0.18em] text-brand-off-white/55">
-            Tap to load
-          </span>
-        </div>
-      )}
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-brand-black via-brand-purple/40 to-brand-black">
+        <span className="font-display text-[0.6rem] uppercase tracking-[0.22em] text-brand-lime">
+          Instagram
+        </span>
+      </div>
       <span
         aria-hidden="true"
         className={cn(
-          "absolute inset-0 flex items-center justify-center transition-colors",
-          thumbnailUrl ? "bg-black/15 group-hover:bg-black/30" : "",
+          "absolute inset-0 flex items-center justify-center transition-colors group-hover:bg-black/15",
         )}
       >
         <span className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-brand-lime text-brand-black shadow-[3px_3px_0_0_var(--color-brand-purple)] group-hover:scale-105 transition-transform motion-reduce:group-hover:scale-100">
