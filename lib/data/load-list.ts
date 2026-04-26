@@ -29,6 +29,8 @@ export type PostArticleItem = {
   rank: number;
   kind: "post";
   video_url: string;
+  video_id?: string | null;
+  thumbnail_url?: string | null;
   plays: number;
   likes: number;
   posted: string;

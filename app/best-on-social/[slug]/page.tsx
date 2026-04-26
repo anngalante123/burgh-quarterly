@@ -12,6 +12,7 @@ import {
   type ListArticleItem,
   type PostArticleItem,
 } from "@/lib/data/load-list";
+import { TikTokEmbedPreview } from "@/components/insights/TikTokEmbedPreview";
 
 /**
  * /best-on-social/[slug], the renderer for ranked-list articles
@@ -78,72 +79,79 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
             {String(item.rank).padStart(2, "0")}
           </span>
         </div>
-        <div className="min-w-0">
-          <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
-            About{" "}
-            <Link
-              href={`/business/${item.business_slug}`}
-              className="text-brand-black hover:text-brand-purple"
-            >
-              {item.business_name}
-            </Link>
-            <span className="text-brand-black/45">
-              {" "}
-              · {item.neighborhood}
-            </span>
-          </p>
+        <div className="min-w-0 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-5 md:gap-7 items-start">
+          <div className="min-w-0">
+            <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
+              About{" "}
+              <Link
+                href={`/business/${item.business_slug}`}
+                className="text-brand-black hover:text-brand-purple"
+              >
+                {item.business_name}
+              </Link>
+              <span className="text-brand-black/45"> · {item.neighborhood}</span>
+            </p>
 
-          <h3 className="mt-3 font-display font-black uppercase tracking-[-0.01em] text-brand-black text-lg md:text-xl leading-[1.15]">
-            <a
-              href={item.video_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-brand-purple transition-colors"
-            >
-              @{item.creator_handle}
-            </a>
-          </h3>
+            <h3 className="mt-3 font-display font-black uppercase tracking-[-0.01em] text-brand-black text-lg md:text-xl leading-[1.15]">
+              <a
+                href={item.video_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-purple transition-colors"
+              >
+                @{item.creator_handle}
+              </a>
+            </h3>
 
-          <p className="mt-3 font-body text-sm md:text-base text-brand-black/85 leading-relaxed [overflow-wrap:anywhere]">
-            &ldquo;{item.caption}&rdquo;
-          </p>
+            <p className="mt-3 font-body text-sm md:text-base text-brand-black/85 leading-relaxed [overflow-wrap:anywhere]">
+              &ldquo;{item.caption}&rdquo;
+            </p>
 
-          <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
-            <span className="font-display text-base md:text-lg font-black tabular-nums text-brand-black">
-              {item.plays.toLocaleString()}{" "}
-              <span className="font-body font-normal text-xs uppercase tracking-[0.14em] text-brand-black/55">
-                plays
+            <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
+              <span className="font-display text-base md:text-lg font-black tabular-nums text-brand-black">
+                {item.plays.toLocaleString()}{" "}
+                <span className="font-body font-normal text-xs uppercase tracking-[0.14em] text-brand-black/55">
+                  plays
+                </span>
               </span>
-            </span>
-            {item.likes > 0 ? (
-              <span className="font-body text-xs text-brand-black/55 tabular-nums">
-                {item.likes.toLocaleString()} likes
-              </span>
-            ) : null}
-            {dateLabel ? (
-              <span className="font-body text-xs text-brand-black/45">
-                Posted {dateLabel}
-              </span>
-            ) : null}
+              {item.likes > 0 ? (
+                <span className="font-body text-xs text-brand-black/55 tabular-nums">
+                  {item.likes.toLocaleString()} likes
+                </span>
+              ) : null}
+              {dateLabel ? (
+                <span className="font-body text-xs text-brand-black/45">
+                  Posted {dateLabel}
+                </span>
+              ) : null}
+            </div>
+
+            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1">
+              <a
+                href={item.video_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-purple hover:text-brand-black transition-colors"
+              >
+                Watch on TikTok
+                <span aria-hidden="true">↗</span>
+              </a>
+              <Link
+                href={`/business/${item.business_slug}`}
+                className="inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-black hover:text-brand-purple transition-colors"
+              >
+                See {item.business_name}&apos;s record
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
-
-          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1">
-            <a
-              href={item.video_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-purple hover:text-brand-black transition-colors"
-            >
-              Watch on TikTok
-              <span aria-hidden="true">↗</span>
-            </a>
-            <Link
-              href={`/business/${item.business_slug}`}
-              className="inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-black hover:text-brand-purple transition-colors"
-            >
-              See {item.business_name}&apos;s record
-              <span aria-hidden="true">→</span>
-            </Link>
+          <div className="md:order-last w-40 sm:w-48 md:w-[180px] shrink-0">
+            <TikTokEmbedPreview
+              videoUrl={item.video_url}
+              videoId={item.video_id}
+              thumbnailUrl={item.thumbnail_url}
+              caption={item.caption}
+            />
           </div>
         </div>
       </div>

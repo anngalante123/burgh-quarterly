@@ -31,12 +31,41 @@ loadEnv();
 const RAW_DIR = join(process.cwd(), "content/raw/tiktok");
 
 /**
- * Family-specific context keywords. A video is counted only if its
- * caption / hashtags / author handle mention BOTH a token from the
- * business name AND at least one of these context words. This is the
- * fix for the loose-filter false positives ("Lorelei" the song,
- * "Pusadee's Garden" the Roblox game, "La Gourmandine Hazelwood"
- * tagged with #fireroomhazelwood for a different venue).
+ * Pittsburgh-area markers. A video must contain at least one of these
+ * (in caption, hashtags, author handle, or author nickname) to count.
+ * This is the geographic filter that kills out-of-state false positives
+ * (Powell OH, Galveston TX, Tupelo MS, Mechanicsburg PA, Pretoria SA).
+ *
+ * Includes generic city markers + every Pittsburgh neighborhood we've
+ * indexed in this issue. Normalized to lowercase + alphanumeric so it
+ * matches "412onthemove", "pghfoodie", "squirrelhill", "stripdistrict".
+ */
+const PITTSBURGH_MARKERS = [
+  "pittsburgh",
+  "pgh",
+  "412",
+  "steelcity",
+  "yinz",
+  // Indexed neighborhoods, see content/businesses/*.json:
+  "arlington",
+  "bloomfield",
+  "eastliberty",
+  "hazelwood",
+  "highlandpark",
+  "larimer",
+  "lawrenceville",
+  "morningside",
+  "shadyside",
+  "southside",
+  "southsideflats",
+  "squirrelhill",
+  "stripdistrict",
+];
+
+/**
+ * Family-specific context keywords. Used as a secondary requirement
+ * for businesses with single distinguishing tokens (Pages, Lorelei,
+ * Margaux, Mola), where the token alone is too generic.
  */
 const FAMILY_CONTEXT: Record<string, string[]> = {
   sweets: [
@@ -72,12 +101,139 @@ const STOP_TOKENS = new Set([
   "restaurant", "kitchen", "company", "house",
 ]);
 
+/**
+ * Extract a TikTok video ID from a webVideoUrl. Format is typically
+ * https://www.tiktok.com/@username/video/1234567890123456789
+ * Returns null if the URL doesn't match the expected pattern.
+ */
+function extractVideoId(url: string): string | null {
+  const m = url.match(/\/video\/(\d+)/);
+  return m ? m[1] : null;
+}
+
+/**
+ * Fetch TikTok's oEmbed metadata for a video. Returns a stable
+ * thumbnail URL (the first frame TikTok serves for previews) and
+ * other metadata. Returns null on any error so the generator can
+ * proceed without thumbnails for unreachable videos.
+ *
+ * Endpoint: https://www.tiktok.com/oembed?url=<video_url>
+ * No auth required, but may rate-limit at scale.
+ */
+async function fetchOEmbed(videoUrl: string): Promise<{
+  thumbnail_url: string;
+} | null> {
+  try {
+    const res = await fetch(
+      `https://www.tiktok.com/oembed?url=${encodeURIComponent(videoUrl)}`,
+      {
+        headers: { "user-agent": "Signal-Pittsburgh/1.0" },
+      },
+    );
+    if (!res.ok) return null;
+    const data = (await res.json()) as { thumbnail_url?: string };
+    if (!data.thumbnail_url) return null;
+    return { thumbnail_url: data.thumbnail_url };
+  } catch {
+    return null;
+  }
+}
+
 function nameTokens(name: string): string[] {
   return name
     .toLowerCase()
     .replace(/[^a-z0-9 ]/g, " ")
     .split(/\s+/)
     .filter((t) => t.length >= 3 && !STOP_TOKENS.has(t));
+}
+
+/**
+ * The "core" business name, normalized for substring matching against
+ * haystack.alphanum. Strips:
+ *   - non-alphanumerics ("Page's" -> "pages")
+ *   - Pittsburgh neighborhood suffixes ("La Gourmandine Lawrenceville"
+ *     -> "lagourmandine") so creators referencing just the brand match
+ *   - leading "the"/"a" articles ("The Butterwood Bake Consortium"
+ *     -> "butterwoodbakeconsortium")
+ *
+ * Used by the strict matcher to require the business name as a
+ * contiguous string ("squarecafe" not "square ... cafe").
+ */
+function coreBusinessName(name: string): string {
+  let s = name.toLowerCase();
+  // Strip neighborhoods that appear as suffixes
+  for (const m of PITTSBURGH_MARKERS) {
+    if (m.length < 6) continue; // skip "pgh", "412", "yinz" etc.
+    s = s.replace(new RegExp(`\\b${m}\\b`, "gi"), "");
+  }
+  // Drop articles
+  s = s.replace(/^\s*(the|a)\s+/, "");
+  // Normalize to alphanumeric
+  return s.replace(/[^a-z0-9]/g, "");
+}
+
+/**
+ * Normalized haystack: caption + hashtags + author handle + nickname,
+ * lowercased and stripped of non-alphanumerics. Lets us match
+ * "stripdistrict" against a hashtag like "#StripDistrict" and
+ * "pages" against "@pagesicecream".
+ */
+function buildHaystack(v: {
+  text?: string;
+  authorMeta?: { name?: string; nickName?: string };
+  hashtags?: Array<{ name?: string }>;
+}): { full: string; alphanum: string } {
+  const parts = [
+    v.text ?? "",
+    v.authorMeta?.name ?? "",
+    v.authorMeta?.nickName ?? "",
+    ...(v.hashtags ?? []).map((h) => h.name ?? ""),
+  ];
+  const full = parts.join(" ").toLowerCase();
+  const alphanum = full.replace(/[^a-z0-9]/g, "");
+  return { full, alphanum };
+}
+
+function hasPittsburghMarker(haystack: { full: string; alphanum: string }): boolean {
+  return PITTSBURGH_MARKERS.some((m) => haystack.alphanum.includes(m));
+}
+
+/**
+ * The strict business-name match. Two paths based on how distinctive
+ * the core name is:
+ *
+ *   (a) Long core (>=8 chars after normalization, e.g. "everydaynoodles",
+ *       "squarecafe", "lagourmandine"): require the core string as a
+ *       contiguous substring of the haystack. Solves the "regent square
+ *       coffee shop" false-match for Square Cafe, since "regentsquarecoffee"
+ *       does not contain "squarecafe".
+ *
+ *   (b) Short core (<8 chars, e.g. "pages", "mola", "lorelei"): too
+ *       generic alone, also require a family-context word in the
+ *       haystack.
+ *
+ * Either path additionally accepts the case where the haystack contains
+ * "@<core>" or "#<core>" as an explicit handle/hashtag tag.
+ */
+function nameMatches(
+  haystack: { full: string; alphanum: string },
+  core: string,
+  familyKey: string,
+): boolean {
+  if (!core) return false;
+  const tagged =
+    haystack.full.includes(`@${core}`) || haystack.full.includes(`#${core}`);
+
+  if (core.length >= 8) {
+    return haystack.alphanum.includes(core);
+  }
+
+  // Short core: require the core token AND a family context word
+  if (!haystack.alphanum.includes(core)) return false;
+  if (tagged) return true;
+  const ctx = FAMILY_CONTEXT[familyKey] ?? [];
+  if (ctx.length === 0) return true;
+  return ctx.some((c) => haystack.full.includes(c));
 }
 
 const MODEL = "claude-sonnet-4-6";
@@ -91,6 +247,11 @@ type PostItem = {
   kind: "post";
   /** Direct link to the TikTok video. */
   video_url: string;
+  /** TikTok video ID (extracted from URL), used for the embed iframe. */
+  video_id: string | null;
+  /** Stable thumbnail URL via TikTok's oEmbed endpoint, null if oEmbed
+   *  fetch failed (deleted video, rate limit, etc.). */
+  thumbnail_url: string | null;
   plays: number;
   likes: number;
   /** Posted date ISO. */
@@ -202,6 +363,7 @@ async function main() {
   for (const rb of all) {
     const biz = rb.artifact.business;
     const tokens = nameTokens(biz.name);
+    const core = coreBusinessName(biz.name);
     const family = familyForCategory(rb.artifact.meta.categoryName).key;
     const contextWords = FAMILY_CONTEXT[family] ?? [];
     const rawPath = join(RAW_DIR, `${biz.slug}.json`);
@@ -219,35 +381,25 @@ async function main() {
     };
 
     for (const v of raw.items) {
-      // Recency
+      // (a) Recency
       const posted = v.createTimeISO ? Date.parse(v.createTimeISO) : NaN;
       if (Number.isNaN(posted) || posted < cutoff) {
         droppedOther++;
         continue;
       }
 
-      const haystack = [
-        (v.text ?? "").toLowerCase(),
-        (v.authorMeta?.name ?? "").toLowerCase(),
-        (v.authorMeta?.nickName ?? "").toLowerCase(),
-        ...(v.hashtags ?? []).map((h) => (h.name ?? "").toLowerCase()),
-      ].join(" ");
+      const haystack = buildHaystack(v);
 
-      // Business name token must appear
-      const hasBusinessToken = tokens.some((t) => haystack.includes(t));
-      if (!hasBusinessToken) {
-        droppedOther++;
+      // (b) Strict business name match (substring of core name, or @/# tag)
+      if (!nameMatches(haystack, core, family)) {
+        droppedNoContext++;
         continue;
       }
 
-      // Family context word must appear (skip this requirement only for
-      // "other" family which has no defined context words)
-      if (contextWords.length > 0) {
-        const hasContext = contextWords.some((c) => haystack.includes(c));
-        if (!hasContext) {
-          droppedNoContext++;
-          continue;
-        }
+      // (c) Pittsburgh area marker required
+      if (!hasPittsburghMarker(haystack)) {
+        droppedOther++;
+        continue;
       }
 
       const plays = v.playCount ?? 0;
@@ -264,18 +416,33 @@ async function main() {
     }
   }
   console.log(
-    `[generate-posts] ${candidates.length} candidates kept (dropped ${droppedNoContext} for missing family context, ${droppedOther} for other reasons)`,
+    `[generate-posts] ${candidates.length} candidates kept (dropped ${droppedNoContext} for name mismatch, ${droppedOther} for recency or no Pittsburgh marker)`,
   );
 
-  // Sort by plays descending, take top N.
+  // Dedupe by video URL: same TikTok can match multiple businesses
+  // (e.g. "I love La Gourmandine" matches both Lawrenceville and
+  // Hazelwood locations). Keep the highest-plays attribution, which
+  // because we sort first below is also the first one we see.
   candidates.sort((a, b) => b.plays - a.plays);
-  const top = candidates.slice(0, TOP_N);
+  const seen = new Set<string>();
+  const unique: typeof candidates = [];
+  for (const c of candidates) {
+    if (seen.has(c.url)) continue;
+    seen.add(c.url);
+    unique.push(c);
+  }
+  console.log(
+    `[generate-posts] ${unique.length} unique videos after dedup (was ${candidates.length})`,
+  );
+  const top = unique.slice(0, TOP_N);
   console.log(`[generate-posts] keeping top ${top.length}`);
 
   const items: PostItem[] = top.map((c, i) => ({
     rank: i + 1,
     kind: "post",
     video_url: c.url,
+    video_id: extractVideoId(c.url),
+    thumbnail_url: null, // filled in below via oEmbed
     plays: c.plays,
     likes: c.likes,
     posted: c.posted,
@@ -296,6 +463,19 @@ async function main() {
     }
     return;
   }
+
+  // Fetch TikTok oEmbed thumbnails in parallel (rate-limit safe at 50,
+  // TikTok's public oEmbed handles small bursts fine). Failed fetches
+  // become null and the renderer falls back to a play-icon placeholder.
+  console.log(`[generate-posts] fetching ${items.length} oEmbed thumbnails...`);
+  await Promise.all(
+    items.map(async (item) => {
+      const o = await fetchOEmbed(item.video_url);
+      if (o) item.thumbnail_url = o.thumbnail_url;
+    }),
+  );
+  const withThumbs = items.filter((i) => i.thumbnail_url).length;
+  console.log(`[generate-posts] got thumbnails for ${withThumbs}/${items.length}`);
 
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
   const intro = await generateIntro(client, items);
