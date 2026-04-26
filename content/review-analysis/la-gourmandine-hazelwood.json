@@ -2,69 +2,69 @@
   "slug": "la-gourmandine-hazelwood",
   "themes": [
     {
-      "phrase": "Paris-quality pastry",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Put it on any corner in Paris France and it would be packed."
-    },
-    {
       "phrase": "raspberry lychee macaron",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "The best thing I've ever put in my mouth hands down."
-    },
-    {
-      "phrase": "hidden gem Hazelwood",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Please do not miss this hidden gem in Pittsburgh."
-    },
-    {
-      "phrase": "gluten-free options",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "Gluten free made with almond flour."
+      "exampleQuote": "get the raspberry lychee macaroon, it is gluten free made with almond flour and it is the best thing I've ever put in my mouth hands down"
     },
     {
-      "phrase": "deliciously consistent",
+      "phrase": "Paris-level quality",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed"
+    },
+    {
+      "phrase": "hidden gem",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "Please do not miss this hidden gem in Pittsburgh"
+    },
+    {
+      "phrase": "multiple locations",
+      "frequency": 1,
+      "sentiment": "neutral",
+      "exampleQuote": "there are multiple locations so please make sure you check it out"
+    },
+    {
+      "phrase": "delicious baked goods",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Everything is delicious."
+      "exampleQuote": "todo es delicioso"
     }
   ],
   "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
-  "sentiment_summary": "Reviewers arrive looking for a neighborhood bakery and leave writing about Paris; the raspberry lychee macaron is the specific product pulling the most passionate language, and at 525 reviews with an 88% five-star rate, there is almost no visible friction in the record.",
-  "quarter_narrative": "Thirteen Pittsburgh creators posted 15 TikToks at La Gourmandine Hazelwood this quarter, generating nearly 737,000 plays, and the bakery posted nothing back. The account has been quiet for over 40 days while @lesegotamar alone pulled 459,100 plays in a single visit. That gap is the defining editorial fact of this ranking cycle: La Gourmandine sits first among Pittsburgh pastry shops on the strength of its reviews and a city that will not stop filming it, while the Pittsburgh Sweets family leader, Page's, holds the top of the broader category on social momentum the bakery isn't currently matching. A return to consistent posting, even modest, would close the distance between where this business ranks and where the data says it could go.",
-  "tldr_read": "Near-perfect reviews, 737K TikTok plays from other people's accounts, and a feed that has been quiet for 41 days: Ones to Watch, #1 in Pittsburgh Pastry Shops.",
-  "tldr_meaning": "The review and creator signals are already operating at a high level; the rank climbs when the bakery's own Instagram reactivates and begins capturing an audience that is clearly ready to follow.",
+  "sentiment_summary": "Reviewers stack superlatives on the pastry quality, especially the raspberry lychee macaron, with almost no documented complaints across 525 reviews, though the written reviews that exist are brief and surface-level, leaving menu depth and experience mostly undescribed.",
+  "quarter_narrative": "Thirteen Pittsburgh creators posted 15 TikToks tagged at La Gourmandine Hazelwood this quarter, pulling 736,954 plays while the bakery itself posted zero times to Instagram in the last 41 days and holds no TikTok account of its own. The city is filming the croissants; the bakery is not filming back. That gap is the whole story of this ranking: a near-perfect review signal, a full conversion path, a creator community already doing the heavy lifting, and a social presence that has gone quiet at exactly the moment the audience is largest. In the Pittsburgh Sweets family, Page's leads this issue on social momentum; La Gourmandine Hazelwood leads on review sentiment and creator-generated reach, and closing the Instagram gap is the clearest path to moving off the Ones to Watch tier.",
+  "tldr_read": "Exceptional reviews and creator-generated TikTok reach, but the bakery's own Instagram has been silent for 41 days. Ones to Watch, #1 in Pittsburgh Pastry Shops.",
+  "tldr_meaning": "Every signal axis except Instagram Momentum is at or above the family median; restarting the feed is the one remaining variable separating this business from the Icons tier.",
   "diagnosis_pullquote": {
-    "line": "First In Pastry, Carried By 737K Plays It Did Not Post.",
-    "highlight": "737K Plays It"
+    "line": "First In Pittsburgh Pastry, Built On 736,000 Creator Plays. The Bakery's Own Feed Has Gone Quiet.",
+    "highlight": "736,000 Creator Plays"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram before the next weekend",
-      "action": "The account has been silent for 41 days; even one post per week of the pastry case would reopen the momentum signal.",
+      "headline": "Break the 41-day Instagram silence now",
+      "action": "Post at least twice a week to Instagram; the account has been dark since before the top TikTok pulled 459,100 plays.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "RESTART SIGNAL"
     },
     {
-      "headline": "Repost one of the 13 creator videos",
-      "action": "Thirteen creators produced 737K plays this quarter; sharing even one to Stories costs nothing and captures documented reach.",
+      "headline": "Claim a TikTok account before creators define you",
+      "action": "Thirteen creators have filmed 15 videos here with no account to tag; a single owned TikTok presence captures that existing reach.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+CREATOR LOOP"
+      "impact_label": "CAPTURE REACH"
     },
     {
-      "headline": "Name the raspberry lychee macaron in photos",
-      "action": "It is the most cited product by name in reviews; a labeled photo pinned to the top of the feed converts curiosity into a trip.",
+      "headline": "Turn the macaron into a visual anchor",
+      "action": "The raspberry lychee macaron is the one specific product in 525 reviews; dedicated photos and short clips can deepen a thin written-review catalog.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+CONVERSION"
+      "impact_label": "+REVIEW DEPTH"
     }
   ],
   "review_count": 4,
-  "analyzed_at": "2026-04-26T22:27:40.468Z",
+  "analyzed_at": "2026-04-26T23:15:42.241Z",
   "model": "claude-sonnet-4-6"
 }

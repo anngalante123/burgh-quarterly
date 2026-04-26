@@ -8,63 +8,63 @@
       "exampleQuote": "Great cocktails, good beer selection, and incredibly friendly staff."
     },
     {
-      "phrase": "atmosphere and vibe",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "The atmosphere of the place is wonderful."
-    },
-    {
-      "phrase": "bartender inattention",
+      "phrase": "staff ignoring customers",
       "frequency": 3,
       "sentiment": "negative",
-      "exampleQuote": "After waiting at the bar for about 10 minutes we finally were able to order a round."
+      "exampleQuote": "We were then ignored for the next 30 minutes. The bartenders chose to chat with other patrons."
     },
     {
-      "phrase": "cozy seating and workspace",
-      "frequency": 2,
+      "phrase": "cozy atmosphere",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "There are always regulars at the bar, and it's clear why."
+      "exampleQuote": "There are always regulars at the bar, and it's clear why. There's also lots of cozy seating around the room."
     },
     {
-      "phrase": "pricing friction",
+      "phrase": "pricing complaints",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Refill for black coffee is over three dollars; srsly?"
+    },
+    {
+      "phrase": "great place to work",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "It's a great place to chill and work."
     }
   ],
   "notable_quote": "There are always regulars at the bar, and it's clear why.",
-  "sentiment_summary": "Reviewers consistently praise the drinks and the room's warmth, but a recurring thread of bartender inattention, ignored waves, coats-on-before-service moments, pulls the sentiment ceiling down noticeably.",
-  "quarter_narrative": "Seven Pittsburgh TikTok creators filmed Margaux this quarter, generating over 43,000 plays, and the top video alone, @deluludayss tagging it inside an 'aesthetic places to visit in Pittsburgh' roundup, pulled 21,400 views. The business has its own TikTok under @margauxxgriffon, so this isn't a case of the city filming a place that has no idea it's being watched; it's a case of creator energy outrunning the account's own output while Instagram engagement sits at 0.26 percent on nine posts in thirty days. In the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange holds the top rank on social momentum; Margaux's Creator Fit signal is the strongest in the family, which means the visual infrastructure is already there. What moves the rank is converting that outside creator heat into engagement that lands on Margaux's own channels.",
-  "tldr_read": "Strong visual catalog and the family's highest creator fit, undercut by low Instagram engagement and a missing phone number on Google. Ones to Watch, #3 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The creator layer is already active and the review base is solid; the gap between outside reach and on-profile engagement is the single axis preventing a move toward the top of this family.",
+  "sentiment_summary": "Reviewers consistently praise the drinks, the cozy room, and the lived-in regulars energy; the recurring friction is uneven table service, with multiple accounts of bartenders chatting with favorites while other guests wait to be seen.",
+  "quarter_narrative": "Seven Pittsburgh TikTok creators filmed Margaux this quarter, generating over 43,000 plays without any coordinated push from the business itself. The top video, from @deluludayss, pulled 21,400 plays under an aesthetic Pittsburgh travel frame, essentially positioning a bar in East Liberty as a destination for visitors who haven't found it yet. Margaux holds its own Instagram at nine posts in the last month, so the feed is alive, but with zero reels and an engagement rate of 0.26%, the account is not converting that creator heat into followers or return visits. This issue's cafe family leader, Allegheny Coffee and Tea Exchange, built its top rank on social momentum; Margaux has the visual catalog and the creator attention to compete on that same axis, but the account's format and engagement depth need to close the gap before the next ranking cycle.",
+  "tldr_read": "Exceptional creator coverage and a strong visual catalog, undercut by thin Instagram engagement and a missing phone number on Google. Ones to Watch, #3 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The rank holds at three because the visual and creator signals are genuinely strong; moving toward the top of the family depends on whether the Instagram account starts converting at a rate closer to what seven outside creators are already demonstrating is possible.",
   "diagnosis_pullquote": {
-    "line": "Third In Coffee On The Strength Of Creator Heat. The Profile Hasn't Caught Up.",
-    "highlight": "Creator Heat"
+    "line": "Third In The Cafe Family, Carried By Seven Creators. The Business's Own Feed Hasn't Matched That Energy.",
+    "highlight": "Carried By Seven Creators"
   },
   "playbook": [
     {
-      "headline": "Add a phone number to Google Business",
-      "action": "The Conversion Path signal is below every other axis; a missing phone number is the fastest single fix on the profile.",
+      "headline": "Add a phone number to Google",
+      "action": "The Google Business Profile is missing a phone number, one of the highest-friction gaps in the conversion path for a business with 386 reviews.",
       "signal": "conversion_path",
       "priority": "high",
-      "impact_label": "CLOSE PROFILE GAP"
+      "impact_label": "CLOSE CONVERSION GAP"
     },
     {
-      "headline": "Turn creator plays into profile follows",
-      "action": "Seven creators drove 43,606 TikTok plays this quarter; a pinned reel or story series pulling that audience back to @margauxpgh could lift the 0.26 percent engagement rate meaningfully.",
+      "headline": "Turn creator footage into reels",
+      "action": "Zero reels posted in 30 days while seven creators generated 43,606 TikTok plays; resharing or replicating that format would feed the 0.26% engagement rate directly.",
       "signal": "momentum",
       "priority": "medium",
       "impact_label": "+ENGAGEMENT RATE"
     },
     {
       "headline": "Address the service pattern publicly",
-      "action": "Three of nine recent reviews cite bartender inattention by name; a brief, specific owner response to each flags accountability and lifts sentiment perception for future readers.",
+      "action": "Three of nine sampled reviews name the same table-service gap; a single owner response acknowledging it would stop sentiment erosion before it pulls the 80-point review signal down.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "PROTECT SENTIMENT"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T22:28:46.624Z",
+  "analyzed_at": "2026-04-26T23:16:44.993Z",
   "model": "claude-sonnet-4-6"
 }

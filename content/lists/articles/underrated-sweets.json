@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Sweets",
   "subtitle": "Bakeries, dessert spots, and ice cream shops the city should be talking about.",
   "angle": "the dessert shops Pittsburgh customers love but creators haven't fully caught onto. High ratings, real review depth, lower social signal. The places worth a Sunday morning detour.",
-  "intro": "The best dessert shops in Pittsburgh right now share an odd problem: their customers are doing the work their social presence is not. This quarter's sweets rankings surfaced a pattern worth paying attention to, where review depth and rating strength are running well ahead of creator activity, sometimes by months.\n\nPage's in Arlington built the top ranking in Pittsburgh sweets on 3,145 reviews while fourteen creators posted about it without any signal coming back from the shop itself. La Gourmandine's Hazelwood location landed first in pastry on the back of 737,000 video plays it never generated. Treat in Shadyside holds third in ice cream despite going silent for more than 200 days, running on momentum from content it no longer produces.\n\nThe easy observation is that these businesses already have the customer love. The cheaper second move is asking the creators who already showed up to come back with intention. Pittsburgh has more creators actively looking for places to feature than most owners seem to know, and the infrastructure connecting them tends to work quietly, because it does not need to pitch.\n\nIssue 02 arrives in summer 2026, when ice cream lines form and patio season turns casual foot traffic into something worth mapping.",
+  "intro": "The best dessert spots in Pittsburgh right now share a specific problem: their customers are doing the work their social feeds are not. This list is built on review depth and creator activity, not follower counts, and what it surfaces is a group of businesses that have earned serious loyalty without quite catching the attention of the people who turn loyalty into reach.\n\nLa Gourmandine's Lawrenceville location leads Pittsburgh bakeries on the strength of 1,294 reviews, a number that reflects years of consistent mornings and real repeat visitors. Its own feed has gone quiet. Page's in Arlington sits at the top of Pittsburgh sweets overall, carried by 3,145 reviews and fourteen TikTok creators who found it without any invitation, posting to audiences Page's has never had to build because the shop still has no account at all. Waffallonia in Squirrel Hill holds the number one spot in Pittsburgh desserts on reviews alone, and its social signal has gone quiet the same way.\n\nThe businesses on this list already have the harder thing: customers who come back and say something about it. The straightforward next move is asking the creators who already showed up to come back with a reason. Pittsburgh has more creators actively looking for places to feature than most owners realize, and the tools that connect them tend to work without any noise.\n\nIssue 02 covers summer 2026, when foot traffic shifts and the spots that built quietly through winter tend to find out whether the loyalty was seasonal or real.",
   "items": [
     {
       "rank": 1,
@@ -11,8 +11,8 @@
       "name": "La Gourmandine Lawrenceville",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First In Bakeries On The Strength Of 1,294 Reviews. The Instagram Feed Went Quiet.",
-      "descriptor_highlight": "Instagram Feed Went Quiet",
+      "descriptor": "First In Pittsburgh Bakeries, Carried By 1,294 Reviews. The Feed Has Gone Quiet.",
+      "descriptor_highlight": "Gone Quiet",
       "stat_line": "1,294 reviews · 4.8★ · 9 creators · 32K plays",
       "featured_tiktok": {
         "author": "mattdinguspgh",
@@ -20,7 +20,7 @@
         "url": "https://www.tiktok.com/@mattdinguspgh/video/7609890059071933726",
         "caption": "Welcome to 337 Fisk Street in Lawrenceville, Pittsburgh. This iconic 1900 residence spans nearly 4,000 square feet, blending historic soul with modern luxury. \n\nhttps://www.zillow.com/homedetails/337-Fisk-St-Pittsburgh-PA-15201/11514118_zpi"
       },
-      "playbook_top_move": "Restart Instagram before the quarter closes. The account has been silent for 41 days; even two posts a week would reactivate the momentum signal and capture the creator traffic already arriving."
+      "playbook_top_move": "Restart Instagram before another week passes. The account has been dark for 41 days; one post per week featuring a named seasonal item closes the gap against the family median."
     },
     {
       "rank": 2,
@@ -28,8 +28,8 @@
       "name": "Treat - Ice Cream and Liege Waffles",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Shadyside",
-      "descriptor": "Third In Ice Cream On Borrowed Momentum. The Shop Has Not Posted In 200 Days.",
-      "descriptor_highlight": "Borrowed Momentum",
+      "descriptor": "Third In Ice Cream, Carried By 32 Creators. Its Own Feed Has Been Quiet For 200 Days.",
+      "descriptor_highlight": "Quiet For 200 Days",
       "stat_line": "623 reviews · 5★ · 32 creators · 1.1M plays",
       "featured_tiktok": {
         "author": "dipitcafe",
@@ -37,7 +37,7 @@
         "url": "https://www.tiktok.com/@dipitcafe/video/7626609541450321183",
         "caption": "Waffle with ice cream #icecream #TikTok #viral #viralvideo #Dessert "
       },
-      "playbook_top_move": "Restart Instagram before the signal expires. The account has been silent for 200 days yet still holds a 7.65 percent engagement rate; one post per week recaptures that stored attention before it erodes further."
+      "playbook_top_move": "Restart the Instagram feed, now. The account has not posted in 200 days despite a 7.65% engagement rate; one post per week would re-anchor an audience already proven to care."
     },
     {
       "rank": 3,
@@ -45,8 +45,8 @@
       "name": "La Gourmandine Hazelwood",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Hazelwood",
-      "descriptor": "First In Pastry, Carried By 737K Plays It Did Not Post.",
-      "descriptor_highlight": "737K Plays It",
+      "descriptor": "First In Pittsburgh Pastry, Built On 736,000 Creator Plays. The Bakery's Own Feed Has Gone Quiet.",
+      "descriptor_highlight": "736,000 Creator Plays",
       "stat_line": "525 reviews · 4.8★ · 13 creators · 737K plays",
       "featured_tiktok": {
         "author": "lesegotamar",
@@ -54,7 +54,7 @@
         "url": "https://www.tiktok.com/@lesegotamar/video/7610166891629333781",
         "caption": "Ate and left no crumbs 🥹❤️#dinnerdate #burgandydress #fireroomhazelwood #fyppppppppppppppppppppppp "
       },
-      "playbook_top_move": "Restart Instagram before the next weekend. The account has been silent for 41 days; even one post per week of the pastry case would reopen the momentum signal."
+      "playbook_top_move": "Break the 41-day Instagram silence now. Post at least twice a week to Instagram; the account has been dark since before the top TikTok pulled 459,100 plays."
     },
     {
       "rank": 4,
@@ -62,10 +62,10 @@
       "name": "Waffallonia",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "First In Dessert, Fifth In The Family. The Reviews Are There; The Feed Is Not.",
-      "descriptor_highlight": "The Feed Is Not",
+      "descriptor": "Number One In Pittsburgh Desserts On Reviews Alone. The Social Signal Has Gone Quiet.",
+      "descriptor_highlight": "Reviews Alone",
       "stat_line": "605 reviews · 4.6★",
-      "playbook_top_move": "Activate the Instagram account now. Convert to a business account, add a bio, and post: the dormant profile is actively suppressing the 60-point Instagram Momentum signal."
+      "playbook_top_move": "Restart Instagram as a real account. Convert to a business profile, post at least once a week, the account currently has no bio, no recent posts, and no business classification"
     },
     {
       "rank": 5,
@@ -73,8 +73,8 @@
       "name": "Page's",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Arlington",
-      "descriptor": "First In Pittsburgh Sweets, Built On 3,145 Reviews. Fourteen Creators Are Posting; Page's Is Not.",
-      "descriptor_highlight": "Fourteen Creators Are Posting",
+      "descriptor": "Number One In Pittsburgh Sweets, Carried By 3,145 Reviews. Fourteen TikTok Creators Are Posting, Where Page's Still Has No Account.",
+      "descriptor_highlight": "Still Has No Account",
       "stat_line": "3,145 reviews · 4.8★ · 13 creators · 177K plays · 9 IG posts/30d",
       "featured_tiktok": {
         "author": "bhphotographypa",
@@ -82,7 +82,7 @@
         "url": "https://www.tiktok.com/@bhphotographypa/video/7615450580697337119",
         "caption": "Who Wants Ice Cream? 🍦 @Page's  #pagesdairymart #bhphotographypa #pittsburgh #southside #icecream"
       },
-      "playbook_top_move": "Claim the TikTok channel now. Fourteen creators have generated 177,416 plays this quarter with no account to tag; a verified TikTok profile captures that traffic before a competitor does."
+      "playbook_top_move": "Claim the TikTok account now. Fourteen creators have posted 177K plays this quarter to an audience Page's cannot follow back or convert; a basic account fixes that immediately."
     }
   ],
   "query": {
@@ -92,6 +92,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-26T22:36:39.216Z",
+  "generated_at": "2026-04-26T23:23:20.796Z",
   "model": "claude-sonnet-4-6"
 }

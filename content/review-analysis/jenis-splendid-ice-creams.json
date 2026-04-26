@@ -2,69 +2,75 @@
   "slug": "jenis-splendid-ice-creams",
   "themes": [
     {
-      "phrase": "unique rotating flavors",
-      "frequency": 4,
+      "phrase": "rotating seasonal flavors",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "I always make sure to try their new flavors because it always surprises me"
+    },
+    {
+      "phrase": "portion size concerns",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "never received a portion so small for $7 at several other locations"
     },
     {
       "phrase": "fresh waffle cones",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "I loved the waffle cones which they make fresh throughout the day"
+      "exampleQuote": "the waffle cones which they make fresh throughout the day"
     },
     {
-      "phrase": "portion size frustration",
+      "phrase": "price relative to portions",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "The portion of these two standards is mind boggling. I've been to several locations and never received a portion so small for $7"
+      "exampleQuote": "pretty delicious just super expensive"
     },
     {
-      "phrase": "price sensitivity",
-      "frequency": 2,
-      "sentiment": "neutral",
-      "exampleQuote": "Pretty delicious just super expensive"
-    },
-    {
-      "phrase": "dog-friendly outing",
+      "phrase": "dog-friendly spot",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Me and my dog's favorite spot, I always order him a small scoop of vanilla with waffle wedge"
+      "exampleQuote": "me and my dog's favorite spot, I always order him a small scoop of vanilla with waffle wedge"
+    },
+    {
+      "phrase": "sample before you commit",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "they allow you to try any flavor before you pick one out"
     }
   ],
   "notable_quote": "All the flavors tasted fresh and have robust flavors, and they allow you to try any flavor before you pick one out.",
-  "sentiment_summary": "Reviewers reliably praise the flavor creativity, the freshness of waffle cones made in-house, and the try-before-you-commit policy; the consistent friction point is portion size relative to price, with at least one loyal customer comparing this Pittsburgh location unfavorably to other markets.",
-  "quarter_narrative": "Thirty-five Pittsburgh creators filmed Jeni's this quarter and posted 37 videos that accumulated over 1.1 million TikTok plays, including a single clip from @morganchompz that hit one million plays on its own by showcasing the spring flavor lineup. Jeni's has no TikTok presence of its own, so every one of those views landed in someone else's ecosystem. Meanwhile, the family leader in Pittsburgh Sweets this issue is Page's, riding social momentum; Jeni's sits at number two in ice cream and number three in Sweets despite a creator footprint that dwarfs most businesses in this entire publication. Converting even a fraction of that external TikTok energy into owned channels, or into a review-volume push that closes the gap between 251 Google reviews and the upper tier, is what moves this rank.",
-  "tldr_read": "Massive TikTok creator footprint, no TikTok account to catch any of it, Icons of the Burgh, number two in Pittsburgh Ice Cream.",
-  "tldr_meaning": "The signal infrastructure is largely built: conversion path is airtight, Instagram is active and verified, and creators are filing in without being asked; the ceiling is the review volume, which at 251 lags what an Icons-tier business typically commands, and the absence of any owned TikTok presence means the brand's loudest current moment is entirely in other people's hands.",
+  "sentiment_summary": "Reviewers reliably praise the rotating flavor lineup, fresh waffle cones, and the try-before-you-buy culture, while a recurring friction point centers on portion size at this specific Bakery Square location relative to other Jeni's outposts and the price paid.",
+  "quarter_narrative": "Thirty-five Pittsburgh creators filed 37-plus TikToks at Jeni's Splendid Ice Creams this quarter, pulling over 1.15 million plays while the business itself has no TikTok account of its own. The signal is landing entirely through other people's phones: @morganchompz alone drove a million plays on a spring flavor lineup post, yet Jeni's captured none of that audience directly. Over in the Pittsburgh Sweets family, Page's holds the top spot on the strength of social momentum, a gap Jeni's could close not by posting more on Instagram, where its 12 posts and four reels in 30 days are already respectable, but by planting a flag on the platform where the city is already filming it. A TikTok presence of its own, even a minimal one, would be the fastest path from second in ice cream to first in Sweets.",
+  "tldr_read": "Dominant TikTok creator volume and a perfect conversion path, but no TikTok account to catch the traffic; Icons of the Burgh, #2 in Pittsburgh Ice Cream.",
+  "tldr_meaning": "The creator energy is already here at scale; the rank ceiling is determined by whether the business claims a presence on the platform generating over a million plays in its name.",
   "diagnosis_pullquote": {
-    "line": "A Million TikTok Plays This Quarter, Every Single One in Someone Else's Account.",
-    "highlight": "Someone Else's Account"
+    "line": "Second In Ice Cream, Built On 1.15 Million Plays It Doesn't Own.",
+    "highlight": "1.15 Million Plays"
   },
   "playbook": [
     {
-      "headline": "Claim a TikTok presence before spring ends",
-      "action": "With 37 creator videos and 1.15 million plays already logged this quarter, a verified account captures future tags and lets the brand respond to @morganchompz's million-play clip directly.",
+      "headline": "Open a Jeni's TikTok account now",
+      "action": "Thirty-five creators posted 37-plus videos pulling 1.15 million plays this quarter; a verified account lets the business tag back, capture followers, and redirect that traffic.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "OWN THE SIGNAL"
+      "impact_label": "CAPTURE 1M+ REACH"
     },
     {
-      "headline": "Address the portion-price gap publicly",
-      "action": "Two of eight sampled reviews name portion size as the friction point; a direct response to the Pittsburgh-specific complaint, or a transparent sizing guide on Google, limits the sentiment drag on a 77 review score.",
+      "headline": "Address the portion narrative directly",
+      "action": "Multiple reviews flag the Pittsburgh location's scoop size against other Jeni's locations; one transparent post or updated menu note on Google could neutralize a recurring two-star trigger.",
       "signal": "community_spark",
       "priority": "medium",
       "impact_label": "+6 SENTIMENT PTS"
     },
     {
-      "headline": "Push review volume toward Icons-tier depth",
-      "action": "At 251 Google reviews, Jeni's lags the visibility ceiling for an Icons-ranked business; seasonal flavor launches, already a proven draw per multiple reviews, are the clearest prompt to convert visits into written reviews.",
-      "signal": "conversion_path",
+      "headline": "Expand the Google photo catalog",
+      "action": "With 450 photos across six categories, the Vibe and Video buckets are thin; four to six short clips of the cone-rolling process would fill the gap and index well in local search.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+40 REVIEW DEPTH"
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T22:26:30.685Z",
+  "analyzed_at": "2026-04-26T23:14:34.989Z",
   "model": "claude-sonnet-4-6"
 }

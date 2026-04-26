@@ -3,68 +3,68 @@
   "themes": [
     {
       "phrase": "extensive tea selection",
-      "frequency": 7,
+      "frequency": 6,
       "sentiment": "positive",
-      "exampleQuote": "One of the widest tea selections I have ever seen"
+      "exampleQuote": "One of the widest tea selections I have ever seen."
     },
     {
       "phrase": "third space atmosphere",
-      "frequency": 6,
+      "frequency": 7,
       "sentiment": "positive",
-      "exampleQuote": "a wonderful pseudo-'third space' where you can sip tea, relax, play a board game, study, and talk to other patrons"
+      "exampleQuote": "A wonderful pseudo-third space where you can sip tea, relax, play a board game, study, and talk to other patrons."
     },
     {
       "phrase": "knowledgeable friendly staff",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Staff is extremely friendly and knowledgeable about tea"
+      "exampleQuote": "Staff is extremely friendly and knowledgeable about tea."
     },
     {
       "phrase": "hard to get a seat",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "It's hard to get a seat sometimes because it's crowded"
+      "exampleQuote": "It's hard to get a seat sometimes because it's crowded."
     },
     {
-      "phrase": "food worth ordering",
+      "phrase": "food worth trying",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The babaganoush is delicious"
+      "exampleQuote": "The babaganoush is delicious!"
     }
   ],
   "notable_quote": "One of my favorite places on Earth: a wonderfully large selection of teas from around the world, served in an intimate and quiet setting.",
-  "sentiment_summary": "Reviewers consistently praise the depth of the tea menu, the board-game-and-booth atmosphere, and staff who can actually explain what they're serving; the one recurring friction is seating availability during busy periods.",
-  "quarter_narrative": "Ten Pittsburgh creators posted eleven TikToks at Dobrá Tea this quarter, pulling nearly 10,000 plays on content the business itself had no hand in shaping. The top video, a Bombay chai recommendation from @alexgdeckerr, generated 2,589 plays from a single caption. Meanwhile, Dobrá's own Instagram produced one post in thirty days and zero reels, leaving the city's enthusiasm to circulate entirely outside the brand's orbit. In the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange holds the top spot on the strength of social momentum, the precise axis where Dobrá is softest. Closing that gap, not on review quality or conversion clarity, both of which are already strong, is what determines whether this business moves up the family rankings by fall.",
-  "tldr_read": "Review sentiment is the strongest signal in the cafe family, Instagram is nearly quiet, and ten outside creators are doing the posting for it. Ones to Watch, #1 in Pittsburgh Tea Houses.",
-  "tldr_meaning": "The review foundation and conversion path are already ceiling-level; the trajectory now depends entirely on whether the Instagram cadence restarts and the business begins recapturing the creator attention already flowing toward it.",
+  "sentiment_summary": "Reviewers consistently praise the depth of the tea menu, the unhurried atmosphere, and a staff that actually knows the product; the one recurring friction is seating scarcity during busy hours.",
+  "quarter_narrative": "Ten Pittsburgh creators filed TikToks at Dobrá Tea this quarter, racking up nearly 10,000 plays on 11 videos, with the Bombay chai pulling the sharpest individual clip. The tea house itself posted once to Instagram in the last 30 days and has no TikTok account, so every frame of that creator footage exists entirely outside its control. Sitting at number one in Pittsburgh tea houses and sixth in the broader cafe family, Dobrá already holds the strongest review sentiment in the tier; the rank that matters next, cracking the top three in cafes behind family leader Allegheny Coffee and Tea Exchange, whose social momentum is the benchmark, depends almost entirely on whether Pittsburgh stops discovering Dobrá through other people's phones.",
+  "tldr_read": "Review sentiment near the top of the family, Instagram nearly quiet, and ten creators filming without a single reel in return. Ones to Watch, #1 in Pittsburgh Tea Houses.",
+  "tldr_meaning": "The review foundation is already there; the gap between creator-generated reach and the business's own output is the variable that will determine whether this rank holds or climbs.",
   "diagnosis_pullquote": {
-    "line": "First In Tea On 1,107 Reviews. Ten Creators Are Posting, The Account Posted Once.",
-    "highlight": "Ten Creators Are Posting"
+    "line": "Ten Creators Filmed The Bombay Chai. Dobrá Tea Has No TikTok Account.",
+    "highlight": "No TikTok Account"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram posting cadence",
-      "action": "One post in the last 30 days and zero reels puts Dobrá well below the family median of 44 on Instagram momentum; a twice-weekly cadence with one reel per week would close that gap measurably.",
+      "headline": "Claim a TikTok presence before momentum fades",
+      "action": "Ten creators have already built the visual template; a business account lets Dobrá redirect that 9,656-play body of work toward a profile it owns.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+MOMENTUM RANK"
+      "impact_label": "UNLOCK CREATOR LOOP"
     },
     {
-      "headline": "Repost and tag the creators already filming",
-      "action": "Ten unique creators produced 11 TikToks and 9,656 plays this quarter; acknowledging that coverage on Instagram Stories converts passive creator energy into a visible feedback loop.",
-      "signal": "collab_fit",
-      "priority": "medium",
-      "impact_label": "CAPTURE CREATOR LIFT"
-    },
-    {
-      "headline": "Expand photo categories on Google",
-      "action": "690 photos across 11 categories is above the family median visually, but adding staff-submitted shots of the bell-service ritual and board game setup would sharpen the third-space story for first-time visitors.",
+      "headline": "Restart Instagram with a weekly reel minimum",
+      "action": "One post in 30 days and zero reels leaves a 2.76% engagement rate with nothing to compound; a single weekly short video of a tea preparation or menu walkthrough changes that math.",
       "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+15 IG MOMENTUM"
+    },
+    {
+      "headline": "Tag creators who already filmed here",
+      "action": "Accounts like @alexgdeckerr and @kyuramen.pittsburgh posted without any documented response; a reshare or reply converts existing reach into a repeating relationship.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "+1 VISUAL DEPTH"
+      "impact_label": "+CREATOR RETENTION"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T22:24:31.224Z",
+  "analyzed_at": "2026-04-26T23:12:45.055Z",
   "model": "claude-sonnet-4-6"
 }

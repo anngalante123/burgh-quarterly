@@ -2,69 +2,69 @@
   "slug": "meetcha",
   "themes": [
     {
-      "phrase": "study spot comfort",
-      "frequency": 3,
+      "phrase": "comfortable study spot",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "such an amazing environment... would recommend as a go to study spot"
+      "exampleQuote": "Would recommend as a go to study spot!"
     },
     {
-      "phrase": "boba milk tea",
-      "frequency": 4,
+      "phrase": "milk tea and boba",
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Delicious boba and great atmosphere!"
+      "exampleQuote": "I had a milk tea and it is wonderful!!! Recommend everyone to come here and try!!"
     },
     {
       "phrase": "cute atmosphere",
-      "frequency": 3,
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "literally such a cute place"
     },
     {
-      "phrase": "friendly staff",
+      "phrase": "friendly helpful staff",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Staff was VERY helpful and kind"
+      "exampleQuote": "Staff was VERY helpful and kind."
     },
     {
-      "phrase": "comfortable and relaxing",
+      "phrase": "relaxing comfortable vibe",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "It's so comfortable and relaxing and the staff is super friendly"
     }
   ],
   "notable_quote": "Always such a good experience!! It's so comfortable and relaxing and the staff is super friendly.",
-  "sentiment_summary": "Reviewers consistently praise the atmosphere, the friendliness of staff, and the boba specifically; no one surfaces a complaint, though 134 reviews over the cafe's lifespan is a thin base for a business with this much apparent warmth.",
-  "quarter_narrative": "MeetCha had a quiet Spring 2026 by almost every measurable social signal. Its Instagram has been dormant for 92 days, with zero posts or reels in the last 30, and no TikTok creator has filed a video from Squirrel Hill South's most visually obvious boba spot. That is a notable gap for a cafe whose own reviewers reach for words like 'cute' and 'comfortable,' the exact language that typically precedes a creator moment. Meanwhile, Allegheny Coffee and Tea Exchange is leading the Pittsburgh Cafes family on social momentum, a signal MeetCha has essentially ceded this quarter. The rank moves when the feed restarts and a creator finally walks through the door with a phone.",
-  "tldr_read": "A 93% five-star rating and a dormant Instagram. Ones to Watch, #4 in Pittsburgh Cafes.",
-  "tldr_meaning": "The sentiment floor is solid and the conversion path is complete, but the rank stalls without a social signal to carry the word-of-mouth that is clearly already happening in person.",
+  "sentiment_summary": "Reviewers consistently land on the same three things: the boba and milk tea, the atmosphere as a place to linger, and staff warmth; what the reviews lack is any specificity about menu items, seasonal offerings, or anything that would signal depth beyond a pleasant first visit.",
+  "quarter_narrative": "MeetCha spent Spring 2026 earning goodwill quietly, 134 Google reviews at 93% five-star is a real number, not an inflated one, and Squirrel Hill regulars have clearly made it a genuine habit. But the social picture is a different story. The Instagram account has gone 92 days without a post, and there is no TikTok creator footprint to fill that gap. In a cafe category where Allegheny Coffee and Tea Exchange is setting the pace on social momentum, MeetCha is sitting on a visually strong, emotionally warm product that the city's content ecosystem has not yet discovered. The rank climbs from here if the shop gives the city something to film.",
+  "tldr_read": "Loyal Google reviews and a perfect conversion path, but Instagram has been silent for over three months and no TikTok creators have found it yet. Ones to Watch, #4 in Pittsburgh Cafes.",
+  "tldr_meaning": "The review floor is solid and the in-person product clearly converts, but without an Instagram restart or any TikTok presence, the signals that move a cafe up the family ranking are simply not accumulating.",
   "diagnosis_pullquote": {
-    "line": "Fourth In Pittsburgh Cafes, Held There By Word Of Mouth Alone. The Feed Has Gone Silent.",
-    "highlight": "Word Of Mouth Alone"
+    "line": "Fourth In Pittsburgh Cafes On Goodwill Alone. The Feed Has Been Quiet For Three Months.",
+    "highlight": "Goodwill Alone"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram feed this week",
-      "action": "The account has been silent for 92 days; one post per week featuring the milk tea would reopen the momentum signal.",
+      "headline": "Restart Instagram before summer ends",
+      "action": "The account has posted nothing in 92 days; one post per week of the actual drinks would restart the signal immediately.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Build the photo catalog past 115 images",
-      "action": "Visual Catalog sits below the family median of 77; adding tagged interior and drink-prep photos closes that gap directly.",
+      "headline": "Build out the Google photo catalog",
+      "action": "115 photos across 11 categories sounds sufficient, but the visual catalog sits well below the family median; adding 30 staff-shot menu photos in underrepresented categories closes that gap.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+1 VISUAL RANK"
     },
     {
-      "headline": "Convert the Instagram to a business account",
-      "action": "The account is currently personal, which blocks analytics and discoverability tools that could surface the 15% engagement rate to new visitors.",
-      "signal": "conversion_path",
+      "headline": "Give reviewers something specific to say",
+      "action": "Current reviews describe vibes, not drinks; a named seasonal boba or rotating special gives repeat visitors a concrete reason to write a second review.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "UNLOCK ANALYTICS"
+      "impact_label": "+REVIEW DEPTH"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T22:29:06.860Z",
+  "analyzed_at": "2026-04-26T23:17:06.874Z",
   "model": "claude-sonnet-4-6"
 }

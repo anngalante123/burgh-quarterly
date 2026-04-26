@@ -8,63 +8,63 @@
       "exampleQuote": "They are made in house and are liege waffles. So, more chewy and sugary with bits of crunch at the edges."
     },
     {
-      "phrase": "ice cream quality",
+      "phrase": "ice cream pairing",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "best waffles ive ever had and the best ice cream in the city"
+    },
+    {
+      "phrase": "Nutella combinations",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "waffle with chocolate ice cream and nutella is the best"
+    },
+    {
+      "phrase": "family-friendly neighborhood stop",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The best ice cream in the city. They sell by the pint if you order ahead."
+      "exampleQuote": "Awesome neighborhood place to take the kids. Consistently great waffles!"
     },
     {
-      "phrase": "Nutella pairing",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Waffle with chocolate ice cream and Nutella is the best."
-    },
-    {
-      "phrase": "family-friendly environment",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Awesome neighborhood place to take the kids. Consistently great waffles."
-    },
-    {
-      "phrase": "walking-date stop",
+      "phrase": "flavor intensity could go deeper",
       "frequency": 1,
-      "sentiment": "positive",
-      "exampleQuote": "A great walking date stop on a cold day. We can pop in, grab a sugar waffle and eat it piping hot while walking."
+      "sentiment": "neutral",
+      "exampleQuote": "A pretty nice amount of Nutella flavor (could always be stronger though)"
     }
   ],
   "notable_quote": "When the two are paired together, it's just exquisite.",
-  "sentiment_summary": "Reviewers consistently celebrate the chew and caramelized edge of the Liège waffle and the creaminess of the house ice cream, with the only real nitpick being a desire for stronger Nutella flavor in the ice cream.",
-  "quarter_narrative": "Waffallonia sits at the top of Pittsburgh's dessert rankings on the back of 605 reviews, a 76 percent five-star rate, and a product that reviewers describe with unusual specificity: the waffle texture, the cookie butter milkshake by name, the pint-to-go option. That is a neighborhood institution talking, not a trending moment. The problem is that the conversation is happening almost entirely on Google and in person. The Instagram account has posted nothing in a measurable window, carries no bio, and is not registered as a business account, meaning the platform offers no signal back to the city at all. Pittsburgh Sweets leader Page's is running on social momentum this issue; Waffallonia is running on reputation and goodwill, which has been enough for the dessert category crown but leaves it fourth in the family. Closing that gap means one thing: the city already loves this place, it just has no feed to follow.",
-  "tldr_read": "Dominant review signal and a perfect conversion path, but a fully dormant Instagram and zero creator coverage put the family rank in tension with the category rank. Icons of the Burgh, #1 in Pittsburgh Dessert Restaurants.",
-  "tldr_meaning": "Every signal rooted in the physical experience is already strong; the entire ceiling question is whether a social presence ever activates to match what 605 reviewers have already said.",
+  "sentiment_summary": "Reviewers keep returning to the Liège waffle format and the house ice cream as a genuinely differentiated pairing; the one recurring note is that certain flavors, particularly Nutella, could push harder.",
+  "quarter_narrative": "Waffallonia enters Spring 2026 as the top-ranked dessert restaurant in Pittsburgh, sitting on 605 Google reviews with a 76 percent five-star rate and a visual catalog that outpaces its family median. What the numbers don't show is any active social signal from the business itself: Instagram activity is effectively dark, no recent posts are indexed, the account isn't even configured as a business profile, and TikTok has produced no indexed creator coverage at all. The Pittsburgh Sweets family leader this issue is Page's, whose rank is driven by social momentum, exactly the axis where Waffallonia is flattest. Holding the top dessert spot through the summer depends less on what reviewers already believe and more on whether the city starts seeing this place in motion, not just in memory.",
+  "tldr_read": "Best-in-class reviews and a complete conversion path, paired with a dormant Instagram and zero TikTok presence. Icons of the Burgh, number one in Pittsburgh Dessert restaurants.",
+  "tldr_meaning": "The review foundation is secure enough to hold the rank short-term, but the Instagram signal is offline and no creator layer exists yet, which leaves the momentum axis exposed heading into peak season.",
   "diagnosis_pullquote": {
-    "line": "First In Dessert, Fifth In The Family. The Reviews Are There; The Feed Is Not.",
-    "highlight": "The Feed Is Not"
+    "line": "Number One In Pittsburgh Desserts On Reviews Alone. The Social Signal Has Gone Quiet.",
+    "highlight": "Reviews Alone"
   },
   "playbook": [
     {
-      "headline": "Activate the Instagram account now",
-      "action": "Convert to a business account, add a bio, and post: the dormant profile is actively suppressing the 60-point Instagram Momentum signal.",
+      "headline": "Restart Instagram as a real account",
+      "action": "Convert to a business profile, post at least once a week, the account currently has no bio, no recent posts, and no business classification",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+FAMILY RANK"
+      "impact_label": "RESTART SIGNAL"
     },
     {
-      "headline": "Give creators something to film",
-      "action": "No Pittsburgh TikToks are indexed for Waffallonia; a waffle being pulled from the iron is a natural clip, and none exist publicly yet.",
+      "headline": "Build a TikTok presence from scratch",
+      "action": "No Pittsburgh TikTok coverage is indexed for Waffallonia; a single waffle pull video in the right format could seed the creator layer that doesn't exist yet",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "UNLOCK CREATORS"
     },
     {
-      "headline": "Surface the pint-to-go offer online",
-      "action": "Reviewers mention ordering ice cream by the pint ahead of time, but nothing on the public profile promotes it; one post or menu note closes that gap.",
+      "headline": "Tag and expand photo categories on Google",
+      "action": "291 photos across only six active categories is a strong base; pushing into interior, team, and seasonal menu categories would lift the visual catalog above the 87 mark it currently holds",
       "signal": "conversion_path",
       "priority": "low",
-      "impact_label": "+BASKET SIZE"
+      "impact_label": "+VISUAL DEPTH"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T22:34:07.078Z",
+  "analyzed_at": "2026-04-26T23:21:54.551Z",
   "model": "claude-sonnet-4-6"
 }

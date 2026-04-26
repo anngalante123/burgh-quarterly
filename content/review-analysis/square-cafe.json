@@ -2,69 +2,69 @@
   "slug": "square-cafe",
   "themes": [
     {
-      "phrase": "vegan-friendly menu",
+      "phrase": "vegan menu options",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for"
     },
     {
-      "phrase": "weekend wait list",
+      "phrase": "wait times, efficient turnover",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Usually, there's a wait list, since the food is so good. They do a good job of quickly and efficiently clearing tables."
+      "exampleQuote": "They do a good job of quickly and efficiently clearing tables to keep the wait as short as possible"
     },
     {
-      "phrase": "price-to-portion concern",
+      "phrase": "portion-to-price ratio",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "The food is excellent here. However the portion to price ratio is not the best."
+      "exampleQuote": "The portion to price ratio is not the best"
     },
     {
       "phrase": "relaxed, no-pressure atmosphere",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "No pressure to eat up and go."
+      "exampleQuote": "No pressure to eat up and go"
     },
     {
-      "phrase": "standout specific dishes",
+      "phrase": "standout individual dishes",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "The Brussels sprout hash was amazing and unique. Would go back."
     }
   ],
-  "notable_quote": "The Brussels sprout hash was amazing and unique. Would go back.",
-  "sentiment_summary": "Reviewers consistently praise specific dishes, a welcoming vegan-inclusive menu, and a staff that keeps wait times honest, while the recurring friction is portion size relative to price and, in at least one case, a bathroom that needed attention.",
-  "quarter_narrative": "Square Cafe enters Spring 2026 as the clear number one in Pittsburgh brunch, and 1,839 Google reviews at 72% five-star is not a reputation anyone stumbled into. Thirteen TikTok creators filmed the place this quarter, generating over 317,000 plays, with the top video from @cbspittsburgh alone pulling nearly 99,000 views. The business holds its own TikTok handle and is posting on Instagram at a reasonable clip, so this is not a story about a dormant account missing its moment; it is a story about engagement rates that have not yet caught up to the reach the city is already generating for it. The family leader this issue is Nan Xiang Soup Dumplings, riding social momentum as its defining signal, and if Square Cafe can tighten the connection between the creator traffic flowing through its profile and its own feed output, the gap between first in brunch and first overall gets a lot smaller.",
-  "tldr_read": "Dominant review base, thirteen outside creators generating real TikTok reach, and an Instagram engagement rate that has not caught up to either. Icons of the Burgh, number one in Pittsburgh Brunch.",
-  "tldr_meaning": "The review foundation and creator fit are already at the top of the family; the trajectory now depends entirely on whether Instagram engagement converts any of that external attention into a return signal.",
+  "notable_quote": "Their vegan breakfast, especially the biscuit sandwich, is to die for.",
+  "sentiment_summary": "Reviewers consistently praise specific dishes, a welcoming staff, and a no-rush dining pace; the recurring friction is a perceived gap between portion size and price, surfaced across multiple visits.",
+  "quarter_narrative": "Square Cafe enters Spring 2026 as the top-ranked brunch restaurant in Pittsburgh, built on nearly 1,900 Google reviews, 72 percent of them five stars, and a conversion path that is effectively complete: hours, phone, website, and a photo library of 1,386 images across 17 categories. Fourteen TikTok creators posted this business in the last quarter, generating more than 317,000 plays across 13 unique voices, while the cafe's own Instagram sits at a 0.19 percent engagement rate despite 11 posts in 30 days, a signal gap that explains exactly why Nan Xiang Soup Dumplings, this issue's Pittsburgh Businesses leader, is ahead on raw social momentum. The rank at #1 in brunch is already secured; what closes the gap to the family's top spot is converting that creator energy into a feed people actually follow.",
+  "tldr_read": "Dominant reviews, nearly complete conversion path, but a 0.19 percent Instagram engagement rate and no TikTok presence of its own keep the momentum signal below what the reputation deserves. Icons of the Burgh, #1 in Pittsburgh Brunch.",
+  "tldr_meaning": "The review and creator-coverage axes are mature; the ceiling on this rank belongs entirely to Instagram engagement depth and whether the business builds a native TikTok presence to match the 317,000 plays already circulating without it.",
   "diagnosis_pullquote": {
-    "line": "Number One In Pittsburgh Brunch, Built On Reviews. The Engagement Rate Is The Outstanding Bill.",
-    "highlight": "Outstanding Bill."
+    "line": "Pittsburgh's Top Brunch Spot, Backed By 317K Creator Plays, Still Without Its Own TikTok Voice.",
+    "highlight": "317K Creator Plays"
   },
   "playbook": [
     {
-      "headline": "Close the Instagram engagement gap",
-      "action": "At 0.19% engagement, 11 posts in 30 days are not converting the audience; shift two of those monthly posts to direct reply prompts tied to specific menu items like the Brussels sprout hash.",
+      "headline": "Build a native TikTok presence now",
+      "action": "Thirteen creators have already generated 317,083 plays; a first-party account captures that search traffic before the next wave posts without you.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+ENGAGE SIGNAL"
+      "impact_label": "UNLOCK NATIVE REACH"
     },
     {
-      "headline": "Double the reels output this quarter",
-      "action": "Two reels in the last 30 days is the floor, not the ceiling; 13 outside creators are already producing TikTok footage, and mirroring that format on Reels is the fastest path to closing the engagement gap.",
+      "headline": "Convert Instagram posts into engagement",
+      "action": "Eleven posts in 30 days at 0.19 percent engagement means content is landing without sticking; shift at least 2 posts per month to Reels to test algorithmic reach.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+REEL REACH"
+      "impact_label": "+IG ENGAGEMENT RATE"
     },
     {
-      "headline": "Address the price-perception narrative directly",
-      "action": "Three of seven sampled reviews surface portion-to-price friction; a brief menu annotation explaining sourcing or preparation on flagged items like home fries can shift that neutral sentiment before it becomes a pattern.",
+      "headline": "Address the portion-price perception publicly",
+      "action": "The value critique appears across multiple reviews; a menu note or a seasonal value plate gives existing fans a direct counter-narrative to share.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+2 SENTIMENT PTS"
+      "impact_label": "+SENTIMENT DEPTH"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T22:32:38.367Z",
+  "analyzed_at": "2026-04-26T23:20:25.690Z",
   "model": "claude-sonnet-4-6"
 }

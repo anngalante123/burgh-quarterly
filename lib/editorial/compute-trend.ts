@@ -35,12 +35,20 @@ export function computeSocialTrend(inputs: Inputs): SocialTrend {
   const reviewsGrowing = (inputs.reviewDelta90d ?? 0) >= 20;
   const reviewsFlat = (inputs.reviewDelta90d ?? 0) < 5;
 
-  // 1. ON A TEAR, business is doing the work and the city is responding.
-  if (igActive && reviewsGrowing) {
+  // 1. ON A TEAR, business is doing the work and either the reviews
+  // OR the creator coverage is responding. The OR is the calibration:
+  // a high-baseline business (Pages, Jeni's) won't easily get +20 reviews
+  // in 90 days because they're already saturated; their "on a tear" signal
+  // is creator pickup instead.
+  if (igActive && (reviewsGrowing || tiktokHot)) {
     return {
       bucket: "on_a_tear",
       label: "On a tear",
-      reason: "Posting consistently and the reviews are following.",
+      reason: tiktokHot && reviewsGrowing
+        ? "Posting consistently, reviews growing, creators filming."
+        : tiktokHot
+          ? `Posting consistently, ${inputs.tiktokUniqueCreators} creators filming alongside.`
+          : "Posting consistently and the reviews are following.",
     };
   }
 
