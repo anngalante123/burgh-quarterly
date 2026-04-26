@@ -17,6 +17,7 @@
     "generate:lists": "tsx scripts/generate-list.ts",
     "generate:posts": "tsx scripts/generate-creator-posts.ts",
     "generate:by-posts": "tsx scripts/generate-by-posts.ts",
+    "generate:outreach": "tsx scripts/generate-owner-outreach.ts",
     "snapshot:issue": "tsx scripts/snapshot-issue.ts"
   },
   "dependencies": {

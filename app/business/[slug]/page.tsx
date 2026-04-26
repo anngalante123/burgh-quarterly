@@ -14,6 +14,15 @@ import { SubscribeFooter } from "@/components/SubscribeFooter";
 import { buildBusinessTldr } from "@/lib/editorial/business-tldr";
 import { buildPlaybook } from "@/lib/editorial/playbook";
 import { computeSocialTrend } from "@/lib/editorial/compute-trend";
+import {
+  computeFamilyMetricStats,
+  pickStrengthsAndGaps,
+} from "@/lib/editorial/family-stats";
+import { StrengthsAndGaps } from "@/components/insights/StrengthsAndGaps";
+import {
+  RowPeerStat,
+  fmtStatValue,
+} from "@/components/insights/RowPeerStat";
 import { loadReviewAnalysis } from "@/lib/data/load-review-analysis";
 import { pickPullquote } from "@/lib/editorial/pick-pullquote";
 import {
@@ -282,6 +291,22 @@ export default async function BusinessPage({ params }: PageProps) {
         : `${tt.total_plays.toLocaleString()} plays`
     : null;
 
+  // Family stats: peer medians for every raw metric (review count,
+  // ratings, IG cadence, followers, engagement, TikTok creators, plays).
+  // Powers the per-row peer comparison strings AND the Strengths-and-Gaps
+  // summary card above AtAGlance. Computed before the row builders so
+  // each row's expanded content can pull peer-comparison stats.
+  const richBusinesses = all.map((artifact) => ({
+    artifact,
+    social: loadSocialBySlug(artifact.business.slug),
+  }));
+  const currentRich = {
+    artifact: art,
+    social,
+  };
+  const familyStats = computeFamilyMetricStats(currentRich, richBusinesses);
+  const { strengths, gaps } = pickStrengthsAndGaps(familyStats);
+
   // === At-a-glance accordion rows ======================================
   // Order: Rank → Reviews → Creator reach → Instagram cadence. Each row
   // expands into its full editorial detail. Default-open the row that
@@ -308,6 +333,21 @@ export default async function BusinessPage({ params }: PageProps) {
       expanded: (
         <Gated label="rank" businessName={biz.name} source={`rank:${biz.slug}`}>
         <div className="space-y-8">
+          <RowPeerStat
+            label="Composite rank"
+            thisValue={`#${rankFamilyPos} of ${categoryPeerDots.length}`}
+            familyMedian={`#${Math.ceil(categoryPeerDots.length / 2)}`}
+            rankLabel={
+              rankFamilyPos === 1
+                ? `Top of ${familyStats.familyShort}`
+                : rankFamilyPos === categoryPeerDots.length
+                  ? `Bottom of ${familyStats.familyShort}`
+                  : rankFamilyPos <= Math.ceil(categoryPeerDots.length / 2)
+                    ? `Above ${familyStats.familyShort} median`
+                    : `Below ${familyStats.familyShort} median`
+            }
+            familyShort={familyStats.familyShort}
+          />
           <PeerDotPlot
             currentSlug={biz.slug}
             category={familyLabel}
@@ -372,6 +412,14 @@ export default async function BusinessPage({ params }: PageProps) {
       focus: weakestKey === "community_spark",
       expanded: (
         <Gated label="review voice" businessName={biz.name} source={`reviews:${biz.slug}`}>
+          <RowPeerStat
+            label="Review depth"
+            thisValue={fmtStatValue(familyStats.reviewCount.value, "reviewCount")}
+            familyMedian={fmtStatValue(familyStats.reviewCount.median, "reviewCount")}
+            rankLabel={familyStats.reviewCount.label}
+            pctVsMedian={familyStats.reviewCount.pctVsMedian}
+            familyShort={familyStats.familyShort}
+          />
           <ReviewVoice
             analysis={reviewAnalysis}
             phrases={reviewPhrases.length >= 2 ? reviewPhrases : undefined}
@@ -392,7 +440,17 @@ export default async function BusinessPage({ params }: PageProps) {
       focus: false,
       expanded: (
         <Gated label="creator coverage" businessName={biz.name} source={`tiktok:${biz.slug}`}>
-          <TikTokMentions data={social.tiktok_mentions} businessName={biz.name} />
+          <div className="space-y-6">
+            <RowPeerStat
+              label="Creators filming"
+              thisValue={fmtStatValue(familyStats.tiktokCreators.value, "tiktokCreators")}
+              familyMedian={fmtStatValue(familyStats.tiktokCreators.median, "tiktokCreators")}
+              rankLabel={familyStats.tiktokCreators.label}
+              pctVsMedian={familyStats.tiktokCreators.pctVsMedian}
+              familyShort={familyStats.familyShort}
+            />
+            <TikTokMentions data={social.tiktok_mentions} businessName={biz.name} />
+          </div>
         </Gated>
       ),
     });
@@ -412,6 +470,14 @@ export default async function BusinessPage({ params }: PageProps) {
       focus: weakestKey === "momentum",
       expanded: (
         <Gated label="Instagram cadence" businessName={biz.name} source={`ig:${biz.slug}`}>
+          <RowPeerStat
+            label="Instagram cadence"
+            thisValue={fmtStatValue(familyStats.igPosts30d.value, "igPosts30d")}
+            familyMedian={fmtStatValue(familyStats.igPosts30d.median, "igPosts30d")}
+            rankLabel={familyStats.igPosts30d.label}
+            pctVsMedian={familyStats.igPosts30d.pctVsMedian}
+            familyShort={familyStats.familyShort}
+          />
           <MomentumSparkline
             posts30d={social.ig?.posts_30d ?? 0}
             reels30d={social.ig?.reels_30d ?? 0}
@@ -508,7 +574,18 @@ export default async function BusinessPage({ params }: PageProps) {
             />
           </div>
 
-          {/* 2. At a glance accordion, the interactive data */}
+          {/* 2a. Strengths & Gaps card, peer comparisons against family */}
+          {(strengths.length > 0 || gaps.length > 0) && (
+            <div className="mt-6 md:mt-8">
+              <StrengthsAndGaps
+                strengths={strengths}
+                gaps={gaps}
+                familyShort={familyStats.familyShort}
+              />
+            </div>
+          )}
+
+          {/* 2b. At a glance accordion, the interactive data */}
           <div className="mt-6 md:mt-8">
             <BusinessAtAGlance
               businessName={biz.name}
