@@ -139,9 +139,14 @@ export function TikTokMentions({ data, businessName }: Props) {
                 </span>
                 <div className="min-w-0 flex-1">
                   <a
-                    href={`https://www.tiktok.com/@${c.handle}`}
+                    href={c.top_video_url ?? `https://www.tiktok.com/@${c.handle}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    title={
+                      c.top_video_url
+                        ? `Watch @${c.handle}'s top video about this business`
+                        : `Open @${c.handle} on TikTok`
+                    }
                     className="font-display font-semibold text-sm md:text-base text-brand-black hover:text-brand-purple"
                   >
                     @{c.handle}

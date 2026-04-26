@@ -48,7 +48,8 @@
         "verified": false,
         "videos": 1,
         "plays": 1000000,
-        "likes": 94800
+        "likes": 94800,
+        "top_video_url": "https://www.tiktok.com/@morganchompz/video/7622351776439667981"
       },
       {
         "handle": "mommys.eats",
@@ -56,7 +57,8 @@
         "verified": false,
         "videos": 1,
         "plays": 48400,
-        "likes": 3684
+        "likes": 3684,
+        "top_video_url": "https://www.tiktok.com/@mommys.eats/video/7622414512913763598"
       },
       {
         "handle": "olivia.radz",
@@ -64,7 +66,8 @@
         "verified": false,
         "videos": 1,
         "plays": 22600,
-        "likes": 1132
+        "likes": 1132,
+        "top_video_url": "https://www.tiktok.com/@olivia.radz/video/7625836867405024542"
       },
       {
         "handle": "getfatwithben",
@@ -72,7 +75,8 @@
         "verified": false,
         "videos": 1,
         "plays": 14600,
-        "likes": 283
+        "likes": 283,
+        "top_video_url": "https://www.tiktok.com/@getfatwithben/video/7604319242732703007"
       },
       {
         "handle": "therealkevinup",
@@ -80,7 +84,8 @@
         "verified": false,
         "videos": 1,
         "plays": 13700,
-        "likes": 696
+        "likes": 696,
+        "top_video_url": "https://www.tiktok.com/@therealkevinup/video/7627264678825102605"
       },
       {
         "handle": "thecitymenus",
@@ -88,7 +93,8 @@
         "verified": false,
         "videos": 1,
         "plays": 12700,
-        "likes": 437
+        "likes": 437,
+        "top_video_url": "https://www.tiktok.com/@thecitymenus/video/7621275611222330637"
       },
       {
         "handle": "khoodlum",
@@ -96,7 +102,8 @@
         "verified": false,
         "videos": 1,
         "plays": 10900,
-        "likes": 613
+        "likes": 613,
+        "top_video_url": "https://www.tiktok.com/@khoodlum/video/7616443038864346398"
       },
       {
         "handle": "soysauceyybae",
@@ -104,7 +111,8 @@
         "verified": false,
         "videos": 1,
         "plays": 3338,
-        "likes": 285
+        "likes": 285,
+        "top_video_url": "https://www.tiktok.com/@soysauceyybae/video/7629810523340606751"
       }
     ],
     "top_videos": [

@@ -524,13 +524,15 @@ export default async function BusinessPage({ params }: PageProps) {
               </li>
               <li aria-hidden="true">›</li>
               <li>
-                <span className="hover:text-brand-purple">
+                <Link href="/#search" className="hover:text-brand-purple">
                   {categoryLabel.replace(/^Pittsburgh\s+/, "")}
-                </span>
+                </Link>
               </li>
               <li aria-hidden="true">›</li>
               <li>
-                <span>{neighborhoodLabel}</span>
+                <Link href="/#search" className="hover:text-brand-purple">
+                  {neighborhoodLabel}
+                </Link>
               </li>
             </ol>
           </nav>

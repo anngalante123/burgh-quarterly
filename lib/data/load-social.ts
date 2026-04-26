@@ -46,6 +46,11 @@ export interface TikTokCreator {
   videos: number;
   plays: number;
   likes: number;
+  /** URL of this creator's most-viewed video about this business, computed
+   *  during aggregation. Lets the UI link the creator handle directly to
+   *  the video rather than their profile. Optional for back-compat with
+   *  social records scraped before this field existed. */
+  top_video_url?: string;
 }
 
 export interface TikTokTopVideo {
