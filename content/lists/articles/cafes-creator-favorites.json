@@ -1,0 +1,155 @@
+{
+  "slug": "cafes-creator-favorites",
+  "title": "The Pittsburgh Cafes Creators Won't Stop Filming",
+  "subtitle": "Coffee, tea, juice, ranked by creator pickup",
+  "angle": "Pittsburgh's coffee, tea, and juice scene through the lens of TikTok creator coverage. The cafes the city keeps posting about, even when the cafes themselves aren't.",
+  "intro": "Pittsburgh's cafe scene has a visibility problem, and it's not what you'd expect. The city's most-filmed coffee and tea spots aren't running campaigns. They're not hiring social teams. Some of them aren't posting at all. Tazza D'Oro in Highland Park accumulated 633,000 creator plays on content the cafe itself never produced. The Butterwood Bake Consortium's own feed has been dark for 514 days, while 28 separate creators kept filming the place anyway.\n\nWhat this quarter's data actually shows is a market where creator attention has fully decoupled from brand participation. Allegheny Coffee and Tea Exchange in the Strip District landed at the top of both the cafe ranking and the creator index, a double signal that's rare. Ka-Fair Coffee and Cakery in Morningside sits third overall despite having posted nothing back to the conversation building around it.\n\nThe question Signal will be tracking into summer is whether any of these businesses choose to meet the moment or continue to let other people's phones do the work. Issue 02 takes that tension further, looking at which Pittsburgh food businesses converted passive creator attention into something they actually own.",
+  "items": [
+    {
+      "rank": 1,
+      "business_slug": "ka-fair-coffee-and-cakery",
+      "name": "Ka-Fair Coffee and Cakery",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Morningside",
+      "descriptor": "Third In Cafes, Carried By Creators. The Business Hasn't Posted Back.",
+      "descriptor_highlight": "Carried By Creators",
+      "stat_line": "235 reviews · 4.8★ · 30 creators · 11.2M plays · 3 IG posts/30d",
+      "featured_tiktok": {
+        "author": "slidecoffeeph",
+        "plays": 9500000,
+        "url": "https://www.tiktok.com/@slidecoffeeph/video/7557553576667598087",
+        "caption": "lucky to live in a world with tiramisu latte 😩🤧\n\n#slide #tiramisulatte #tiramisu #latte #fyp "
+      },
+      "playbook_top_move": "Build a TikTok presence from existing footage. Launch a TikTok account and repost creator content; 30 creators have already done the filming across 11 million plays this quarter."
+    },
+    {
+      "rank": 2,
+      "business_slug": "allegheny-coffee-tea-exchange",
+      "name": "Allegheny Coffee & Tea Exchange",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Strip District",
+      "descriptor": "Number One On Both Lists, Carried By A City That Won't Stop Filming It.",
+      "descriptor_highlight": "Won't Stop Filming",
+      "stat_line": "924 reviews · 4.8★ · 29 creators · 1.6M plays · 12 IG posts/30d",
+      "featured_tiktok": {
+        "author": "monmon.eats",
+        "plays": 807100,
+        "url": "https://www.tiktok.com/@monmon.eats/video/7052855906073267503",
+        "caption": "My current favorite Seattle brunch spots! 💖  #seattlefood #seattlefoodie"
+      },
+      "playbook_top_move": "Close the gap between plays and posts. Repost or respond to the top creator videos driving 1.5 million plays; the shop's own account is not capturing that audience."
+    },
+    {
+      "rank": 3,
+      "business_slug": "dobra-tea-pittsburgh",
+      "name": "Dobrá Tea Pittsburgh",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Squirrel Hill South",
+      "descriptor": "First In Tea, Built On 1,107 Reviews. The Camera Belongs To Everyone Else.",
+      "descriptor_highlight": "Camera Belongs To Everyone",
+      "stat_line": "1,107 reviews · 4.7★ · 28 creators · 2.6M plays · 1 IG posts/30d",
+      "featured_tiktok": {
+        "author": "memoirs.of.a.ginga",
+        "plays": 1800000,
+        "url": "https://www.tiktok.com/@memoirs.of.a.ginga/video/7623491990398782733",
+        "caption": "#pittsburgh #pittsburghzoo"
+      },
+      "playbook_top_move": "Post to Instagram before the week ends. The account went 18 days between posts this period; one post per week is the minimum to hold algorithmic distribution at a 2.76% engagement rate."
+    },
+    {
+      "rank": 4,
+      "business_slug": "tazza-doro",
+      "name": "Tazza D'Oro",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Highland Park",
+      "descriptor": "Ranked First In Pittsburgh Cafes, Carried By 633K Creator Plays The Cafe Itself Never Made.",
+      "descriptor_highlight": "633K Creator Plays",
+      "stat_line": "573 reviews · 4.6★ · 30 creators · 633K plays · 11 IG posts/30d",
+      "featured_tiktok": {
+        "author": "bhphotographypa",
+        "plays": 189100,
+        "url": "https://www.tiktok.com/@bhphotographypa/video/7586329971283463454",
+        "caption": "On the 4th day of Yinzmas… GameDay 🏈 @Pittsburgh Steelers #bhphotographypa #PittsburghVideographer #pittsburgh #12daysofyinzmas #steelers"
+      },
+      "playbook_top_move": "Start Posting Reels, Even Simple Ones. Zero Reels in 30 days against 632,950 TikTok plays from others is the sharpest gap in the entire signal profile."
+    },
+    {
+      "rank": 5,
+      "business_slug": "margaux",
+      "name": "Margaux",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "East Liberty",
+      "descriptor": "Third In Cafes, Carried By Creators. The Business Itself Has More To Say.",
+      "descriptor_highlight": "Carried By Creators",
+      "stat_line": "386 reviews · 4.5★ · 29 creators · 385K plays · 9 IG posts/30d",
+      "featured_tiktok": {
+        "author": "heinz_us",
+        "plays": 124700,
+        "url": "https://www.tiktok.com/@heinz_us/video/7632454197534821646",
+        "caption": "what is Pittsburgh's #1 sauce draft pick?"
+      },
+      "playbook_top_move": "Add a phone number to Google now. The Google profile lists no phone number, a basic gap that breaks the conversion path for every customer who finds Margaux in search before visiting."
+    },
+    {
+      "rank": 6,
+      "business_slug": "the-butterwood-bake-consortium",
+      "name": "The Butterwood Bake Consortium",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Lawrenceville",
+      "descriptor": "Second In Cafes, Carried By 28 Creators. The Bakery's Own Feed Went Dark 514 Days Ago.",
+      "descriptor_highlight": "Went Dark 514 Days Ago",
+      "stat_line": "736 reviews · 4.6★ · 28 creators · 527K plays",
+      "featured_tiktok": {
+        "author": "thepittstopp",
+        "plays": 165600,
+        "url": "https://www.tiktok.com/@thepittstopp/video/7507342633593818399",
+        "caption": "One of the best (if not the very best) bakeries in Pittsburgh! Also, a great option if you’re looking for a bakery with tasty vegan options!! 😇\n\nPictured (in order):\n\nChocolate Cake, Probably my favorite one in the whole city; especially "
+      },
+      "playbook_top_move": "Break the 514-day Instagram silence. Post a minimum of four times in the next 30 days; the account has a 3.92% engagement rate sitting idle and an audience ready to respond."
+    },
+    {
+      "rank": 7,
+      "business_slug": "delanies-coffee-shadyside",
+      "name": "Delanie's Coffee Shadyside",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Shadyside",
+      "descriptor": "Fourth In Coffee, Powered By Other People's TikToks. The Shop Has Yet To Post Its Own.",
+      "descriptor_highlight": "Other People's TikToks",
+      "stat_line": "104 reviews · 4.6★ · 26 creators · 176K plays · 3 IG posts/30d",
+      "featured_tiktok": {
+        "author": "tessadecario",
+        "plays": 37200,
+        "url": "https://www.tiktok.com/@tessadecario/video/7523666331875462430",
+        "caption": "A good coffee treat for the soul 💓\n\n#tiramisu #coffeetok #pittsburgh "
+      },
+      "playbook_top_move": "Start a TikTok account this week. 26 creators have already built the audience; a single account with the tiramisu latte as the first post enters a warm room."
+    },
+    {
+      "rank": 8,
+      "business_slug": "spot-of-coffee",
+      "name": "Spot of Coffee",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Shadyside",
+      "descriptor": "Second In Pittsburgh Cafes, Powered By Creator Momentum The Shop Itself Has Not Claimed.",
+      "descriptor_highlight": "Creator Momentum The",
+      "stat_line": "173 reviews · 4.8★ · 23 creators · 373K plays · 6 IG posts/30d",
+      "featured_tiktok": {
+        "author": "mayavalletta",
+        "plays": 87100,
+        "url": "https://www.tiktok.com/@mayavalletta/video/7525475693631786254",
+        "caption": "There’s so many more, what did I miss? Might have to do a pt. 2? #coffee #cafe #pittsburgh #pgh "
+      },
+      "playbook_top_move": "Put a website URL on Google. Conversion path is the only signal below family median; adding even a simple menu URL to the Google profile closes that gap immediately."
+    }
+  ],
+  "query": {
+    "filter": {
+      "family": "cafes",
+      "hasTiktokCoverage": true
+    },
+    "ranking": "creator_pickup",
+    "limit": 8
+  },
+  "generated_at": "2026-04-26T14:43:28.177Z",
+  "model": "claude-sonnet-4-6"
+}
