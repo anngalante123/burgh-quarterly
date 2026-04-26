@@ -9,6 +9,7 @@ import {
   BusinessSearch,
   type SearchableBusiness,
 } from "@/components/BusinessSearch";
+import { loadAllListArticles } from "@/lib/data/load-list";
 
 /**
  * Homepage, editorial table of contents for the quarterly issue.
@@ -45,6 +46,17 @@ export default function Home() {
     tier: a.score.tier,
   }));
 
+  // Best on Social series, three featured articles + the rest.
+  const allArticles = loadAllListArticles();
+  const FEATURED_SLUGS = [
+    "icons-of-spring-2026",
+    "sweets-top-10",
+    "active-posters",
+  ];
+  const featuredArticles = FEATURED_SLUGS
+    .map((s) => allArticles.find((a) => a.slug === s))
+    .filter((a): a is NonNullable<typeof a> => !!a);
+
   return (
     <>
       <Masthead variant="home" />
@@ -53,26 +65,28 @@ export default function Home() {
         {/* ── HERO ─────────────────────────────────────────────── */}
         <section className="mx-auto max-w-7xl px-6 pt-10 pb-14 md:pt-16 md:pb-20">
           <Reveal delay={0.05}>
-            <h2 className="font-display font-black uppercase tracking-[-0.02em] text-brand-black max-w-4xl [text-wrap:balance] [word-break:break-word] text-[clamp(2.25rem,7.5vw,5.5rem)] leading-[0.9]">
-              Ranked, reviewed,
-              <br className="hidden sm:block" /> and{" "}
+            <h2 className="font-display font-black uppercase tracking-[-0.02em] text-brand-black max-w-5xl [text-wrap:balance] [word-break:break-word] text-[clamp(2.25rem,7.5vw,5.5rem)] leading-[0.9]">
+              The city is{" "}
               <span className="bg-brand-lime px-2 box-decoration-clone">
-                covered
+                filming
               </span>
               .
+              <br className="hidden sm:block" />
+              The businesses aren&apos;t.
             </h2>
           </Reveal>
           <Reveal delay={0.12}>
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
-              How Pittsburgh&apos;s small businesses show up, in{" "}
-              <span className="font-semibold text-brand-black">reviews</span>,
-              on{" "}
-              <span className="font-semibold text-brand-black">social</span>,
-              in the neighborhood conversation. Ranked every quarter on{" "}
+              Twenty-six creators filmed La Gourmandine last quarter. The
+              bakery hasn&apos;t posted in 40 days. Signal Pittsburgh ranks{" "}
               <span className="font-semibold text-brand-black">
-                reputation, presence, and momentum.
+                30 small businesses
               </span>{" "}
-              We don&apos;t rank taste.
+              by what creators are filming, what customers are reviewing,
+              and who&apos;s actually showing up on their own feed.{" "}
+              <span className="font-semibold text-brand-black">
+                We don&apos;t rank taste. We rank the conversation.
+              </span>
             </p>
           </Reveal>
 
@@ -107,87 +121,127 @@ export default function Home() {
           </Reveal>
         </section>
 
-        {/* ── THIS ISSUE ───────────────────────────────────────── */}
+        {/* ── BEST ON SOCIAL SERIES ─────────────────────────────
+            Replaces the prior "This issue" section that pointed to
+            stub /top and /underrated routes. Surfaces three featured
+            list articles from the new lists registry, with a link to
+            the full series index. */}
         <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
-          <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-8">
+          <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-8 flex-wrap gap-3">
             <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
-              This issue
+              The Series · Spring 2026
             </h3>
-            <span className="font-body text-[0.7rem] md:text-xs uppercase tracking-[0.14em] text-brand-black/50">
-              Three lists · Spring 2026
-            </span>
+            <Link
+              href="/best-on-social"
+              className="font-display text-[0.7rem] md:text-xs font-semibold uppercase tracking-[0.18em] text-brand-purple hover:text-brand-black"
+            >
+              See every list →
+            </Link>
           </div>
 
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {/* The Icons */}
-            <li>
-              <Link
-                href="/top/bakeries"
-                className="group block h-full border border-brand-black/15 bg-white/70 p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-              >
-                <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
-                  The Icons
-                </p>
-                <h4 className="mt-3 font-display font-black uppercase tracking-[-0.015em] text-brand-black text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05]">
-                  Pittsburgh&apos;s top bakeries, this quarter
-                </h4>
-                <p className="mt-3 font-body text-sm text-brand-black/70 leading-snug">
-                  Reviews stacking. Photos documenting. Lines around the
-                  block. Five places firing on every signal.
-                </p>
-                <CardCta label="Read the list" accent="text-brand-black" />
-              </Link>
-            </li>
-
-            {/* The Underrated List */}
-            <li>
-              <Link
-                href="/underrated/bakeries"
-                className="group block h-full border border-brand-black/15 bg-white/70 p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-purple)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-              >
-                <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
-                  The Underrated List
-                </p>
-                <h4 className="mt-3 font-display font-black uppercase tracking-[-0.015em] text-brand-black text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05]">
-                  The bakeries the city hasn&apos;t caught up to yet
-                </h4>
-                <p className="mt-3 font-body text-sm text-brand-black/70 leading-snug">
-                  Low on the index, high on potential. Go this weekend.
-                </p>
-                <CardCta label="Read the list" accent="text-brand-black" />
-              </Link>
-            </li>
-
-            {/* Featured business */}
-            <li>
-              <Link
-                href="/business/la-gourmandine-lawrenceville"
-                className="group block h-full border border-brand-black bg-brand-black text-brand-off-white p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-              >
-                <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-lime">
-                  The record · Featured
-                </p>
-                <h4 className="mt-3 font-display font-black uppercase tracking-[-0.015em] text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05] text-brand-off-white">
-                  La Gourmandine,
-                  <br />
-                  Lawrenceville
-                </h4>
-                <p className="mt-3 font-body text-sm text-brand-off-white/70 leading-snug">
-                  1,138 five-star reviews. 779 photos on Google. Twenty-six
-                  creators filming. Zero posts back.
-                </p>
-                <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-lime">
-                  Read the record
-                  <span
-                    aria-hidden="true"
-                    className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+            {featuredArticles.map((a, i) => (
+              <li key={a.slug}>
+                <Link
+                  href={`/best-on-social/${a.slug}`}
+                  className={
+                    i === 0
+                      ? "group block h-full border border-brand-black bg-brand-black text-brand-off-white p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                      : "group block h-full border border-brand-black/15 bg-white/70 p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                  }
+                >
+                  <p
+                    className={
+                      i === 0
+                        ? "font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-lime"
+                        : "font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple"
+                    }
                   >
-                    →
-                  </span>
-                </p>
-              </Link>
-            </li>
+                    {i === 0 ? "Issue 01 · Featured" : `${a.items.length} businesses · Spring 2026`}
+                  </p>
+                  <h4
+                    className={
+                      i === 0
+                        ? "mt-3 font-display font-black uppercase tracking-[-0.015em] text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05] text-brand-off-white [text-wrap:balance]"
+                        : "mt-3 font-display font-black uppercase tracking-[-0.015em] text-brand-black text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05] [text-wrap:balance]"
+                    }
+                  >
+                    {a.title}
+                  </h4>
+                  <p
+                    className={
+                      i === 0
+                        ? "mt-3 font-body text-sm text-brand-off-white/70 leading-snug"
+                        : "mt-3 font-body text-sm text-brand-black/70 leading-snug"
+                    }
+                  >
+                    {a.subtitle}
+                  </p>
+                  <p
+                    className={
+                      i === 0
+                        ? "mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-lime"
+                        : "mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-black"
+                    }
+                  >
+                    Read the list
+                    <span
+                      aria-hidden="true"
+                      className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+                    >
+                      →
+                    </span>
+                  </p>
+                </Link>
+              </li>
+            ))}
           </ul>
+        </Reveal>
+
+        {/* ── FEATURED RECORD ────────────────────────────────────
+            One business page surfaced as the editorial pick of the
+            issue, deep below the series so readers who want to
+            understand the layer of detail behind the lists can drop
+            into a single record. */}
+        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
+          <div className="flex items-baseline justify-between border-b border-brand-black/30 pb-3 mb-6 flex-wrap gap-3">
+            <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
+              The Record · Featured
+            </h3>
+            <span className="font-body text-[0.7rem] md:text-xs uppercase tracking-[0.14em] text-brand-black/50">
+              Issue 01 deep dive
+            </span>
+          </div>
+          <Link
+            href="/business/la-gourmandine-lawrenceville"
+            className="group block border border-brand-black/15 bg-white/70 p-6 md:p-8 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-purple)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+          >
+            <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
+              Bakery · Lawrenceville · #8 in Sweets
+            </p>
+            <h4 className="mt-3 font-display font-black uppercase tracking-[-0.02em] text-brand-black text-[clamp(1.5rem,4vw,2.5rem)] leading-[1] [text-wrap:balance]">
+              La Gourmandine,
+              <br />
+              Lawrenceville
+            </h4>
+            <p className="mt-4 max-w-2xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
+              1,294 five-star reviews. 779 photos on Google.{" "}
+              <span className="font-semibold text-brand-black">
+                Twenty-six creators filming on TikTok.
+              </span>{" "}
+              Zero posts back from the bakery in 40 days. The full
+              scorecard, ranked.
+            </p>
+            <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
+              Read the record
+              <span
+                aria-hidden="true"
+                className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </p>
+          </Link>
         </Reveal>
 
         {/* ── SEARCH / BROWSE ─────────────────────────────────────
