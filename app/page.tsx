@@ -57,6 +57,23 @@ export default function Home() {
     .map((s) => allArticles.find((a) => a.slug === s))
     .filter((a): a is NonNullable<typeof a> => !!a);
 
+  // Top 5 leaderboard preview, the visual anchor right below the hero
+  // stats line. Sorted by composite score descending. Surfaces what the
+  // publication actually IS (a ranking) instead of asking the reader
+  // to scroll to find rank #1.
+  const top5 = all
+    .slice()
+    .sort((a, b) => b.score.composite - a.score.composite)
+    .slice(0, 5)
+    .map((b) => ({
+      slug: b.business.slug,
+      name: b.business.name,
+      neighborhood: b.business.neighborhood,
+      categoryName: b.meta.categoryName ?? b.business.category,
+      tier: b.score.tier,
+      composite: b.score.composite,
+    }));
+
   return (
     <>
       <Masthead variant="home" />
@@ -65,32 +82,31 @@ export default function Home() {
         {/* ── HERO ─────────────────────────────────────────────── */}
         <section className="mx-auto max-w-7xl px-6 pt-10 pb-14 md:pt-16 md:pb-20">
           <Reveal delay={0.05}>
+            <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple mb-4">
+              Issue 01 · Spring 2026
+            </p>
             <h2 className="font-display font-black uppercase tracking-[-0.02em] text-brand-black max-w-5xl [text-wrap:balance] [word-break:break-word] text-[clamp(2.25rem,7.5vw,5.5rem)] leading-[0.9]">
-              The city is{" "}
+              Pittsburgh small businesses,
+              <br className="hidden sm:block" /> ranked on{" "}
               <span className="bg-brand-lime px-2 box-decoration-clone">
-                filming
+                social
               </span>
               .
-              <br className="hidden sm:block" />
-              The businesses aren&apos;t.
             </h2>
           </Reveal>
           <Reveal delay={0.12}>
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
+              Every quarter, Signal Pittsburgh scores{" "}
               <span className="font-semibold text-brand-black">
-                Twenty-nine creators
+                30 local small businesses
               </span>{" "}
-              made TikToks about Pittsburgh small businesses this quarter,
-              every single one mentioning the city or a neighborhood.{" "}
+              on creator coverage, customer reviews, and posting cadence.
+              We don&apos;t rank taste,{" "}
               <span className="font-semibold text-brand-black">
-                None came from the businesses themselves.
-              </span>{" "}
-              Signal Pittsburgh ranks 30 small businesses by what creators
-              are filming, what customers are reviewing, and who&apos;s
-              actually showing up on their own feed.{" "}
-              <span className="font-semibold text-brand-black">
-                We don&apos;t rank taste. We rank the conversation.
+                we rank the conversation
               </span>
+              . Read the index, see who&apos;s climbing, and watch your
+              own block in real time.
             </p>
           </Reveal>
 
@@ -124,6 +140,80 @@ export default function Home() {
             </dl>
           </Reveal>
         </section>
+
+        {/* ── TOP 5 INDEX PREVIEW ───────────────────────────────
+            Surfaces the actual ranking right under the hero so the
+            page's primary asset (the index itself) is visible, not just
+            announced in copy. Links into each business page. */}
+        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
+          <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-6 flex-wrap gap-3">
+            <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
+              The Index · Top 5
+            </h3>
+            <Link
+              href="#search"
+              className="font-display text-[0.7rem] md:text-xs font-semibold uppercase tracking-[0.18em] text-brand-purple hover:text-brand-black"
+            >
+              See the full 30 →
+            </Link>
+          </div>
+          <ol className="border border-brand-black/15 bg-white/60">
+            {top5.map((b, i) => {
+              const tierAccent =
+                b.tier === "icons"
+                  ? "bg-brand-lime"
+                  : b.tier === "ones_to_watch"
+                    ? "bg-brand-purple"
+                    : "bg-brand-cream ring-1 ring-brand-black/40";
+              const tierLabel =
+                b.tier === "icons"
+                  ? "Icon"
+                  : b.tier === "ones_to_watch"
+                    ? "Ones to Watch"
+                    : "Staple";
+              return (
+                <li
+                  key={b.slug}
+                  className={
+                    i > 0 ? "border-t border-brand-black/10" : ""
+                  }
+                >
+                  <Link
+                    href={`/business/${b.slug}`}
+                    className="group grid grid-cols-[3rem_1fr_auto] md:grid-cols-[5rem_1fr_auto_auto] items-center gap-4 md:gap-6 px-4 md:px-6 py-4 md:py-5 hover:bg-brand-cream/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple transition-colors"
+                  >
+                    <span className="font-display text-2xl md:text-4xl font-black tabular-nums tracking-[-0.02em] text-brand-purple">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="min-w-0">
+                      <span className="block font-display font-black uppercase tracking-[-0.01em] text-brand-black text-base md:text-xl leading-[1.1] [text-wrap:balance] group-hover:text-brand-purple transition-colors">
+                        {b.name}
+                      </span>
+                      <span className="mt-1 block font-body text-xs md:text-sm text-brand-black/55">
+                        {b.neighborhood} · {b.categoryName}
+                      </span>
+                    </span>
+                    <span className="hidden md:flex items-center gap-2">
+                      <span
+                        aria-hidden="true"
+                        className={`inline-block h-2 w-2 rounded-full ${tierAccent}`}
+                      />
+                      <span className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-brand-black/65">
+                        {tierLabel}
+                      </span>
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      className="font-display text-base md:text-lg text-brand-black/40 group-hover:text-brand-purple group-hover:translate-x-1 transition-all"
+                    >
+                      →
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ol>
+        </Reveal>
 
         {/* ── BEST ON SOCIAL SERIES ─────────────────────────────
             Replaces the prior "This issue" section that pointed to
@@ -252,7 +342,7 @@ export default function Home() {
             Readers who didn't find the business they came for in the
             three lists above can search the full index by name,
             neighborhood, or category. */}
-        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
+        <Reveal as="section" id="search" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20 scroll-mt-24">
           <BusinessSearch businesses={searchable} />
         </Reveal>
 
