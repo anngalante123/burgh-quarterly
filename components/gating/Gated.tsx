@@ -62,18 +62,21 @@ export function Gated({ label, businessName, source, children }: Props) {
   }
 
   return (
-    <div className="relative">
-      {/* Blurred preview of the underlying content, just enough to hint
-          at depth without giving it away. */}
+    <div className="relative isolate">
+      {/* Blurred preview of the underlying content. Absolute so it
+          doesn't dictate the height of the row, the gate card does.
+          On mobile the gate card is taller than 260px so this prevents
+          the absolute child from overflowing visually into adjacent
+          rows. */}
       <div
         aria-hidden="true"
-        className="select-none pointer-events-none [filter:blur(10px)] opacity-50 max-h-[260px] overflow-hidden"
+        className="absolute inset-0 select-none pointer-events-none [filter:blur(10px)] opacity-40 overflow-hidden"
       >
         {children}
       </div>
 
-      {/* Email gate, sits over the blur */}
-      <div className="absolute inset-0 flex items-center justify-center px-4">
+      {/* Email gate, in normal flow so its size dictates the row height */}
+      <div className="relative flex items-center justify-center px-2 py-6 md:py-10">
         <div className="w-full max-w-md bg-brand-black text-brand-off-white p-5 md:p-6 shadow-[6px_6px_0_0_var(--color-brand-purple)]">
           <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-lime mb-2">
             Subscribers only
