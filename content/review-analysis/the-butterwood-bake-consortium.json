@@ -2,7 +2,7 @@
   "slug": "the-butterwood-bake-consortium",
   "themes": [
     {
-      "phrase": "elevated flavor and texture",
+      "phrase": "elevated flavors and textures",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Not just your normal sugary affair but elevated with unique flavor and texture."
@@ -17,60 +17,60 @@
       "phrase": "slow service, long lines",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "They've always had issues regarding speed of service. We wound up leaving both times."
+      "exampleQuote": "They've always had issues regarding speed of service... we wound up leaving both times."
     },
     {
-      "phrase": "gluten-free and vegan options",
+      "phrase": "coffee execution inconsistencies",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Awesome baked goods but really needs a quality/service check on coffee."
+    },
+    {
+      "phrase": "dietary-inclusive options",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Gluten and nut free options are fire."
     },
     {
-      "phrase": "coffee execution problems",
+      "phrase": "late-night cafe appeal",
       "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "Awesome baked goods but really needs a quality and service check on coffee."
-    },
-    {
-      "phrase": "cozy, lingering atmosphere",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "A great place to meet up with a friend, have a specialty coffee, and talk for hours."
+      "sentiment": "neutral",
+      "exampleQuote": "Butterwood was open until 11pm so we thought we'd give it a try."
     }
   ],
   "notable_quote": "You can tell a lot of time and love went into crafting those recipes. They should be proud.",
-  "sentiment_summary": "Reviewers consistently praise the inventive baked goods and warm atmosphere, but a recurring friction around coffee quality and slow service lines keeps the sentiment from climbing higher.",
-  "quarter_narrative": "Twenty Pittsburgh creators posted TikToks tagged at Butterwood this quarter, generating nearly 600,000 plays, while the business itself has not posted on Instagram in over 500 days. The pastries are moving through feeds city-wide without the kitchen saying a word. Meanwhile, Allegheny Coffee and Tea Exchange holds the family lead on the back of social momentum, a signal Butterwood demonstrably has the product to compete on but is not converting into its own presence. A return to posting, even sporadically, would be enough to move this rank; the creator infrastructure is already in place.",
-  "tldr_read": "Nearly 600,000 TikTok plays from 20 creators, zero posts of its own in 515 days. Ones to Watch, #2 in Pittsburgh Cafes.",
-  "tldr_meaning": "The Instagram dormancy is the only axis holding this business out of the Icons conversation; every other signal, visual catalog, creator fit, conversion path, review volume, points upward.",
+  "sentiment_summary": "Reviewers consistently praise the pastry craft, the distinctive flavor combinations, and the warm atmosphere, while a recurring thread of complaints targets slow service lines and uneven coffee execution that undercuts an otherwise strong impression.",
+  "quarter_narrative": "Twenty Pittsburgh creators posted to TikTok about Butterwood this quarter, pulling nearly 600,000 combined plays, while the business itself has not published a single Instagram post in over 500 days. The city is doing the work; Butterwood is not collecting any of it. That gap is the defining story of its Spring 2026: a visual catalog and creator fit that rank near the top of the Pittsburgh Cafes family, running entirely on other people's momentum. Allegheny Coffee and Tea Exchange holds the family lead this issue on the strength of its social momentum, a signal where Butterwood currently reads as absent. Closing the distance means one thing above all others: the business has to show up in its own feed before the creator wave it is riding recedes.",
+  "tldr_read": "Nearly 600,000 TikTok plays from 20 outside creators, zero Instagram posts in 515 days. Ones to Watch, #2 in Pittsburgh Cafes, #5 in the family.",
+  "tldr_meaning": "The creator fit and visual catalog axes are already family-leading, but Instagram momentum is the single suppressed signal keeping Butterwood from a genuine run at the top of the Pittsburgh Cafes family.",
   "diagnosis_pullquote": {
-    "line": "Twenty Creators, Six Hundred Thousand Plays, And Butterwood Has Not Posted In 515 Days.",
-    "highlight": "Not Posted In 515 Days"
+    "line": "Second In Pittsburgh Cafes, Carried By 20 Outside Voices. The Business's Own Feed Has Gone Silent.",
+    "highlight": "20 Outside Voices"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram account now",
-      "action": "A single post showing the current pastry case would end a 515-day silence and reactivate a 3.92% engagement rate that still exists.",
+      "headline": "Restart the Instagram feed immediately",
+      "action": "515 days without a post is the clearest suppressor of family rank; one weekly photo of the pastry case closes the gap faster than any other single move.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Fix the coffee service narrative",
-      "action": "Two separate reviews flag coffee quality and one details a genuinely bad macchiato experience; addressing staff training on espresso builds and menu communication closes the sentiment gap.",
+      "headline": "Address the coffee execution gap publicly",
+      "action": "Three separate reviews flag coffee quality and service speed; one visible response or a posted menu update acknowledging the issue shifts the 79 sentiment score upward.",
       "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "+6 SENTIMENT PTS"
+      "impact_label": "+5 SENTIMENT PTS"
     },
     {
-      "headline": "Tag creators who are already filming",
-      "action": "Twenty unique creators posted this quarter with no apparent coordination from the business; acknowledging even one reshare would open a direct line to the 598,874 people who already watched.",
+      "headline": "Capture the creator wave before it moves on",
+      "action": "20 creators filmed here this quarter for 598,874 plays; reposting even two of those TikToks to Instagram Stories converts outside reach into owned visibility at zero production cost.",
       "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "UNLOCK REPEAT COVERAGE"
+      "impact_label": "UNLOCK OWNED REACH"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T23:21:10.405Z",
+  "analyzed_at": "2026-04-26T23:40:53.236Z",
   "model": "claude-sonnet-4-6"
 }

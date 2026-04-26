@@ -2,14 +2,14 @@
   "slug": "pages",
   "themes": [
     {
-      "phrase": "long line moves quickly",
-      "frequency": 5,
+      "phrase": "line moves quickly",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Line will be long but moves quickly."
+      "exampleQuote": "Line will be long but moves quickly. Takes cash and cards."
     },
     {
-      "phrase": "thick creamy soft serve",
-      "frequency": 4,
+      "phrase": "thick and creamy soft serve",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Thick and creamy, always delicious and they never miss."
     },
@@ -17,60 +17,60 @@
       "phrase": "ridiculously affordable portions",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The price was RIDICULOUSLY affordable and they gave me WAY too much ice cream."
+      "exampleQuote": "The price was RIDICULOUSLY affordable, and the long line moved EXTREMELY quickly."
     },
     {
-      "phrase": "Nancy B sundae",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Get the Nancy B sundae!"
-    },
-    {
-      "phrase": "seasonal closing window",
-      "frequency": 2,
+      "phrase": "long wait expected",
+      "frequency": 5,
       "sentiment": "neutral",
-      "exampleQuote": "End of the season October 24. See you in the spring."
+      "exampleQuote": "Great just be prepared to wait in line for an hour."
     },
     {
       "phrase": "friendly professional staff",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Shout out to the friendly and professional staff!"
+      "exampleQuote": "Shout out to the friendly and professional staff."
+    },
+    {
+      "phrase": "seasonal operation window",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "End of the season October 24, 2019. See you in the spring."
     }
   ],
   "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype.",
-  "sentiment_summary": "Reviewers consistently land on the soft serve quality, the value-to-portion ratio, and a staff that keeps a long line from feeling like a punishment; the only real friction is the wait itself, which most reviewers immediately walk back by noting how fast it moves.",
-  "quarter_narrative": "Thirteen Pittsburgh creators posted 14 TikToks about Page's this quarter, pulling 177,416 plays with no TikTok account of their own to catch a single view. The city is doing the filming. Page's is doing the ice cream. That split defines their Spring 2026 position: dominant in every foundational signal, 3,145 Google reviews at 87 percent five-star, nine Instagram posts in 30 days, a verified account, and the family leader title in Pittsburgh Sweets, yet the fastest-growing discovery channel in the city is a one-way mirror. Closing that gap, specifically by claiming a TikTok presence before another quarter's worth of creator plays dissolve into the algorithm without a follow button to catch them, is the clearest path to holding the top rank when competitors find their own creators.",
-  "tldr_read": "Massive review depth, active Instagram, and 177K TikTok plays from creators, but no TikTok account to capture any of it. Icons of the Burgh, number one in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "Every foundational signal is already at or above the family median; the only axis with real upside is TikTok, where 13 creators are generating reach that Page's currently has no mechanism to convert into followers.",
+  "sentiment_summary": "Reviewers are consistent on two things: the ice cream is legitimately excellent and the portions are enormous for the price; the nitpick is the wait, which almost every reviewer mentions before immediately walking it back because the line moves faster than it looks.",
+  "quarter_narrative": "Thirteen creators filed into Arlington this quarter and pointed their phones at Page's, generating 177,416 TikTok plays without a single one coming from a Page's-owned account, because Page's has no TikTok presence at all. The shop leads the Pittsburgh Sweets family at number one, and its social momentum signal is the reason: nine Instagram posts in thirty days, a verified account, 3,145 Google reviews sitting at 87 percent five-star, and a creator ecosystem doing work the business itself hasn't had to touch. What shifts the rank from this point is not volume, it is capture. The creator energy is already here; whether Page's claims any of it on its own channel will determine whether this position holds or widens.",
+  "tldr_read": "Dominant reviews, strong Instagram cadence, and 177K TikTok plays from creators, all without a TikTok account of its own. Icons of the Burgh, number one in Pittsburgh Sweets.",
+  "tldr_meaning": "Page's already holds the ceiling position in the family; the data suggests the rank is stable so long as Instagram cadence holds and the TikTok creator wave, currently running entirely through other people's accounts, does not migrate somewhere the business cannot be found.",
   "diagnosis_pullquote": {
-    "line": "Number One In Pittsburgh Sweets, Carried By 3,145 Reviews. Fourteen TikTok Creators Are Posting, Where Page's Still Has No Account.",
-    "highlight": "Still Has No Account"
+    "line": "First In Pittsburgh Sweets, Carried By 3,145 Reviews And Thirteen Creators Filming On TikTok Where Page's Has No Account.",
+    "highlight": "No Account."
   },
   "playbook": [
     {
-      "headline": "Claim the TikTok account now",
-      "action": "Fourteen creators have posted 177K plays this quarter to an audience Page's cannot follow back or convert; a basic account fixes that immediately.",
+      "headline": "Claim the TikTok presence creators built",
+      "action": "Open a Page's TikTok account and repost the top-performing creator videos, starting with the 62,800-play clip from @bhphotographypa, to anchor an audience that already exists.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE 177K REACH"
+      "impact_label": "CAPTURE 177K PLAYS"
     },
     {
-      "headline": "Turn reels into a seasonal countdown",
-      "action": "With 3 reels posted in 30 days and a seasonal closing window every October, a closing-week reel series historically spikes engagement on food accounts by surfacing urgency.",
+      "headline": "Convert reels from three to six monthly",
+      "action": "Page's posted 3 reels in the last 30 days against 9 total posts; doubling the reels share is the fastest way to push the 1.29 percent Instagram engagement rate upward.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+REEL REACH"
+      "impact_label": "+ENGAGEMENT RATE"
     },
     {
-      "headline": "Pin the Nancy B sundae on Google",
-      "action": "The Nancy B sundae appears by name in reviews but has no dedicated photo category on Google; adding tagged photos to a named item pins the menu signal reviewers are already surfacing.",
+      "headline": "Tag specific menu items in Google photos",
+      "action": "With 1,454 photos across only 6 active categories, there is no dedicated sundae or specialty-item category; adding menu-tagged photo pushes to the underused slots lifts the visual catalog above the family median.",
       "signal": "conversion_path",
       "priority": "low",
-      "impact_label": "+MENU VISIBILITY"
+      "impact_label": "+VISUAL CATALOG"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T23:18:53.708Z",
+  "analyzed_at": "2026-04-26T23:38:36.530Z",
   "model": "claude-sonnet-4-6"
 }

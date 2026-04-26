@@ -8,7 +8,7 @@
       "exampleQuote": "They homemake all of their syrups which makes it worth it and so much tastier!"
     },
     {
-      "phrase": "toasted miso and specialty lattes",
+      "phrase": "miso and specialty lattes",
       "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "Come to Spot of Coffee for a toasted miso latte that will change your life."
@@ -20,51 +20,51 @@
       "exampleQuote": "Excellent conscientious neighborhood vibes at a time when finding your community matters."
     },
     {
-      "phrase": "matcha as a standout",
+      "phrase": "matcha drinks",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha!!!"
+      "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha!"
     },
     {
-      "phrase": "burnt or off-tasting coffee",
+      "phrase": "burnt coffee, one visit",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste!"
+      "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste."
     }
   ],
-  "notable_quote": "Their drinks are very differently delicious from the syrup-based lattes you'll find elsewhere, with all natural ingredients like housemade cashew milk and real bananas.",
-  "sentiment_summary": "Reviewers keep returning to the specificity of the menu, housemade milks, real fruit, single-origin beans from Redstart Roasters, and a handful of signature drinks that reviewers name by name; the one sour note is a lone report of a burnt shot, which stands out precisely because the rest of the praise is so consistent.",
-  "quarter_narrative": "Twenty-four Pittsburgh creators filed 31-plus TikToks at Spot of Coffee this quarter, collecting 278,472 plays, and the shop itself has no TikTok account to catch any of that current. The business is genuinely active on Instagram, six posts and three Reels in 30 days at a 15.19 percent engagement rate that towers over the family median, but that activity exists in a separate channel from where the city is loudly talking about it. Allegheny Coffee and Tea Exchange leads the Pittsburgh Cafes family this issue on social momentum, a signal Spot of Coffee could contest if its Instagram energy and the existing TikTok creator wave ever point in the same direction. Closing the gap to the top rank depends less on doing more and more on showing up on the platform where 24 creators are already doing the work.",
-  "tldr_read": "Instagram engagement is the strongest individual signal in the family, TikTok creator volume is enormous but uncaptured, and no website is linked on Google. Icons of the Burgh, number two in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The data shows a business with real social traction on one platform and 278,000 TikTok plays generated entirely by other people, the rank ceiling is the gap between those two realities.",
+  "notable_quote": "Come to Spot of Coffee for a toasted miso latte that will change your life.",
+  "sentiment_summary": "Reviewers return specifically for the housemade cashew milk, banana bread lattes, and miso preparations, and almost universally praise the staff; the one recurring friction is a single mention of inconsistent roast execution.",
+  "quarter_narrative": "Twenty-four creators filmed Spot of Coffee in the last quarter, logging 278,472 TikTok plays across 31 videos, with a post landing just one day ago and the top clip alone pulling 44,300 views. The shop itself has no TikTok account, so every one of those plays belongs to someone else's channel. That contrast sits at the center of this business's Spring 2026 story: a neighborhood coffee bar with a 15 percent Instagram engagement rate, a verified account, and real posting cadence, yet completely absent from the platform where the city is already talking about it loudest. Allegheny Coffee and Tea Exchange holds the Pittsburgh Cafes lead this issue on the strength of its social momentum; Spot of Coffee has the creator energy to close that gap, but only if it steps onto the platform where that energy already lives. Claiming a TikTok presence and converting even a fraction of those 278,000 plays into a owned audience is the clearest path to the number-one position.",
+  "tldr_read": "Instagram is active and converting at 15 percent engagement, TikTok has 278K plays and the shop isn't on it, and no website is linked on Google. Icons of the Burgh, number two in Pittsburgh Cafes.",
+  "tldr_meaning": "The creator signal is already there at scale; the rank ceiling is a missing TikTok account and an absent Google website, not a quality problem.",
   "diagnosis_pullquote": {
-    "line": "Number Two In Coffee, Powered By 24 Creators. Spot Of Coffee Isn't On TikTok.",
-    "highlight": "24 Creators"
+    "line": "Second In Pittsburgh Cafes, Riding 278K TikTok Plays It Doesn't Own Yet.",
+    "highlight": "278K TikTok Plays"
   },
   "playbook": [
     {
-      "headline": "Put a website on your Google listing",
-      "action": "Conversion Path is the only signal below the family median; a linked website is the fastest fix and costs nothing.",
+      "headline": "Add a website to Google Business",
+      "action": "Conversion path sits well below the family median of 100; a linked website is the fastest single fix available right now.",
       "signal": "conversion_path",
       "priority": "high",
       "impact_label": "CLOSE CONVERSION GAP"
     },
     {
-      "headline": "Claim the TikTok attention you already earned",
-      "action": "24 creators posted 31-plus videos with 278,472 plays this quarter; a business TikTok account lets Spot of Coffee reshare that content and anchor the search results it already dominates.",
+      "headline": "Open a TikTok account this week",
+      "action": "24 creators have already produced 31 videos with 278,472 plays; a shop account can stitch, repost, and redirect that audience immediately.",
       "signal": "momentum",
       "priority": "medium",
-      "impact_label": "+RANK DEFENSE"
+      "impact_label": "OWN 278K PLAYS"
     },
     {
-      "headline": "Turn named drinks into visual catalog anchors",
-      "action": "Google Photos has 126 images but reviewers name the toasted miso latte, carrot cake latte, and chocolate banana bread latte specifically; tagging those drinks in photos pushes the visual catalog past the family median of 77.",
+      "headline": "Expand Google photo categories",
+      "action": "126 photos across 10 categories is solid, but the menu and interior categories are thin; five new tagged uploads per week closes the gap on the family visual median.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+VISUAL CATALOG"
     }
   ],
   "review_count": 10,
-  "analyzed_at": "2026-04-26T23:20:05.147Z",
+  "analyzed_at": "2026-04-26T23:39:44.188Z",
   "model": "claude-sonnet-4-6"
 }
