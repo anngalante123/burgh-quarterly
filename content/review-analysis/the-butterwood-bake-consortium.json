@@ -2,69 +2,75 @@
   "slug": "the-butterwood-bake-consortium",
   "themes": [
     {
-      "phrase": "elevated flavor combinations",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "Lavender cake with honey buttercream, dark chocolate cake, and brown butter blondie with peanut butter icing. All were excellent and rich!"
-    },
-    {
-      "phrase": "cozy date night atmosphere",
+      "phrase": "date night destination",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Amazing stop for a date night or after dinner."
     },
     {
-      "phrase": "slow service line",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "They've always had issues regarding speed of service. We wound up leaving both times."
+      "phrase": "distinctive flavor combinations",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Not just your normal sugary affair but elevated with unique flavor and texture."
     },
     {
-      "phrase": "gluten and vegan options",
+      "phrase": "slow service and long lines",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The lines are long and do not move."
+    },
+    {
+      "phrase": "coffee execution problems",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "Awesome baked goods but really needs a quality check on coffee."
+    },
+    {
+      "phrase": "late-night hours",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "Went here around 9 PM or so. Staff friendly."
+    },
+    {
+      "phrase": "vegan and gluten-free options",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Gluten and nut free options are on fire."
-    },
-    {
-      "phrase": "coffee execution inconsistency",
-      "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "Awesome baked goods but really needs a quality/service check on coffee."
+      "exampleQuote": "Gluten and nut free options are fire."
     }
   ],
-  "notable_quote": "Not just your normal sugary affair but elevated with unique flavor and texture. You can tell a lot of time and love went into crafting those recipes.",
-  "sentiment_summary": "Reviewers consistently celebrate the inventive cake flavors and the late-night, date-friendly atmosphere, but a recurring thread around coffee service, from preparation gaps to unexpectedly small pours, keeps the sentiment ceiling lower than the baked goods alone would justify.",
-  "quarter_narrative": "Twenty creators filmed Butterwood this quarter without any help from Butterwood itself. The account has been dark for 515 days, yet those 20 TikToks accumulated nearly 600,000 plays, a number the business had no hand in shaping or capturing. The family leader this issue is Allegheny Coffee and Tea Exchange, whose rank is driven by social momentum, the precise axis where Butterwood sits weakest despite having a creator footprint that most cafes in this city would trade for. The rank climbs when Butterwood stops being a subject and starts being a narrator.",
-  "tldr_read": "Nearly 600,000 TikTok plays from creators, 515 days since the last Instagram post, strong visual catalog, and a coffee service thread that keeps showing up in reviews. Ones to Watch, #2 in Pittsburgh Cafes.",
-  "tldr_meaning": "The creator coverage is already doing the heavy lifting; the signal that determines whether this place reaches Icons is whether Instagram restarts and whether the coffee consistency complaints stop compounding in the review thread.",
+  "notable_quote": "You can tell a lot of time and love went into crafting those recipes.",
+  "sentiment_summary": "Reviewers consistently praise the pastry craft and the late-night, date-friendly atmosphere, but a recurring friction point around slow service lines and inconsistent coffee execution keeps the sentiment ceiling from climbing higher.",
+  "quarter_narrative": "Twenty Pittsburgh TikTok creators posted about Butterwood this quarter, generating nearly 600,000 plays on videos tagged to the business, while Butterwood's own Instagram has been silent for 515 days. The city is doing the marketing; the business has stepped away from the conversation entirely. Allegheny Coffee and Tea Exchange leads the Cafes family this issue on the strength of social momentum, which is exactly the signal Butterwood is leaving on the table. Closing that 515-day gap and converting even a fraction of that creator energy into a recoverable Instagram presence would put Butterwood in genuine contention for the family lead.",
+  "tldr_read": "Nearly 600,000 TikTok plays from outside creators, a dormant Instagram, and a coffee program that reviewers keep flagging. Ones to Watch, number two in Pittsburgh Cafes.",
+  "tldr_meaning": "The creator signal is running well ahead of the business's own output, and the rank climbs to the top of the family the moment the Instagram restarts and the coffee complaints stop compounding.",
   "diagnosis_pullquote": {
-    "line": "Second In Cafes, Carried By Creators. The Business Itself Has Not Posted In 515 Days.",
-    "highlight": "Not Posted In 515 Days"
+    "line": "Second In Cafes, Carried By 600K Plays The Business Never Made.",
+    "highlight": "600K Plays The"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram with one weekly post",
-      "action": "The account has been silent for 515 days. One post per week showing the actual cake case would reopen the momentum signal immediately.",
+      "headline": "Restart Instagram after 515 idle days",
+      "action": "Post twice a week minimum; the visual catalog already has 984 Google photos to draw from as proof of concept.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Address coffee service gaps publicly",
-      "action": "Three of seven sampled reviews flag coffee prep failures. A visible response pattern in reviews and a staff retrain on macchiato sizing and no-ice situations would move sentiment.",
+      "headline": "Address the coffee program publicly",
+      "action": "Respond to the two visible coffee complaints on Google and detail any menu or training changes made since those visits.",
       "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "+6 SENTIMENT PTS"
+      "impact_label": "+5 SENTIMENT PTS"
     },
     {
-      "headline": "Claim the TikTok creator wave",
-      "action": "Twenty creators posted 598,874 plays this quarter with no owned TikTok account in the mix. Even a single pinned repost or creator acknowledgment on Instagram captures some of that reach.",
+      "headline": "Convert creator traffic into a TikTok presence",
+      "action": "Claim or create a TikTok account while 20 creators are actively tagging the business; the audience is already assembled.",
       "signal": "collab_fit",
       "priority": "low",
       "impact_label": "UNLOCK OWNED REACH"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T19:51:35.117Z",
+  "analyzed_at": "2026-04-26T22:33:21.326Z",
   "model": "claude-sonnet-4-6"
 }

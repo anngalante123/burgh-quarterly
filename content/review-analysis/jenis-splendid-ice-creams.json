@@ -2,69 +2,69 @@
   "slug": "jenis-splendid-ice-creams",
   "themes": [
     {
-      "phrase": "rotating seasonal flavors",
-      "frequency": 3,
+      "phrase": "unique rotating flavors",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "I always make sure to try their new flavors, because it always surprises me!"
-    },
-    {
-      "phrase": "portion size complaint",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "The portion of these two 'standards' is mind boggling. I've been to several locations and never received a portion so small for $7."
+      "exampleQuote": "I always make sure to try their new flavors because it always surprises me"
     },
     {
       "phrase": "fresh waffle cones",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "I loved the waffle cones which they make fresh throughout the day."
+      "exampleQuote": "I loved the waffle cones which they make fresh throughout the day"
     },
     {
-      "phrase": "price vs. value tension",
+      "phrase": "portion size frustration",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The portion of these two standards is mind boggling. I've been to several locations and never received a portion so small for $7"
+    },
+    {
+      "phrase": "price sensitivity",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Pretty delicious, just super expensive."
+      "exampleQuote": "Pretty delicious just super expensive"
     },
     {
-      "phrase": "sampling before buying",
+      "phrase": "dog-friendly outing",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "They allow you to try any flavor before you pick one out."
+      "exampleQuote": "Me and my dog's favorite spot, I always order him a small scoop of vanilla with waffle wedge"
     }
   ],
-  "notable_quote": "They allow you to try any flavor before you pick one out, and I loved the waffle cones which they make fresh throughout the day.",
-  "sentiment_summary": "Reviewers are sold on the rotating flavor program and fresh-made waffle cones, but a persistent thread of complaints about small portions at a premium price point keeps the sentiment signal below the family median.",
-  "quarter_narrative": "Thirty-five Pittsburgh creators posted 37-plus TikToks at Jeni's this quarter, generating over 1.1 million plays, and Jeni's itself has no TikTok presence to capture a frame of it. A single video from @morganchompz pulled a million plays alone on the spring flavor lineup, turning the Bakery Square location into one of the most-filmed ice cream stops in the city without the brand lifting a finger or claiming a clip. Jeni's sits at number two in Pittsburgh Ice Cream and number three in Pittsburgh Sweets, trailing Page's whose social momentum is the dominant story in the family this issue. Closing that gap requires converting the TikTok attention already happening into something the brand can actually build on, because the Instagram signal at 12 posts and 4 reels in 30 days is present but the engagement rate of 0.49 percent suggests the content isn't yet catching with the audience the creators are already delivering.",
-  "tldr_read": "A TikTok phenomenon the brand isn't capturing, solid Instagram activity with thin engagement, and a portion-size complaint thread holding sentiment below the family median. Icons of the Burgh, number two in Pittsburgh Ice Cream.",
-  "tldr_meaning": "The creator signal is doing the heavy lifting on visibility, but until Jeni's Pittsburgh translates that into owned engagement and quiets the portion-value complaint, the number-two position holds rather than climbs.",
+  "notable_quote": "All the flavors tasted fresh and have robust flavors, and they allow you to try any flavor before you pick one out.",
+  "sentiment_summary": "Reviewers reliably praise the flavor creativity, the freshness of waffle cones made in-house, and the try-before-you-commit policy; the consistent friction point is portion size relative to price, with at least one loyal customer comparing this Pittsburgh location unfavorably to other markets.",
+  "quarter_narrative": "Thirty-five Pittsburgh creators filmed Jeni's this quarter and posted 37 videos that accumulated over 1.1 million TikTok plays, including a single clip from @morganchompz that hit one million plays on its own by showcasing the spring flavor lineup. Jeni's has no TikTok presence of its own, so every one of those views landed in someone else's ecosystem. Meanwhile, the family leader in Pittsburgh Sweets this issue is Page's, riding social momentum; Jeni's sits at number two in ice cream and number three in Sweets despite a creator footprint that dwarfs most businesses in this entire publication. Converting even a fraction of that external TikTok energy into owned channels, or into a review-volume push that closes the gap between 251 Google reviews and the upper tier, is what moves this rank.",
+  "tldr_read": "Massive TikTok creator footprint, no TikTok account to catch any of it, Icons of the Burgh, number two in Pittsburgh Ice Cream.",
+  "tldr_meaning": "The signal infrastructure is largely built: conversion path is airtight, Instagram is active and verified, and creators are filing in without being asked; the ceiling is the review volume, which at 251 lags what an Icons-tier business typically commands, and the absence of any owned TikTok presence means the brand's loudest current moment is entirely in other people's hands.",
   "diagnosis_pullquote": {
-    "line": "Second In Ice Cream, Carried By Creators. The 0.49% Engagement Rate Is The Real Story.",
-    "highlight": "0.49% Engagement Rate"
+    "line": "A Million TikTok Plays This Quarter, Every Single One in Someone Else's Account.",
+    "highlight": "Someone Else's Account"
   },
   "playbook": [
     {
-      "headline": "Address the portion-price complaint directly",
-      "action": "Portion size criticism appears in at least 2 of 8 sampled reviews and is the clearest drag on sentiment below the family median of 83.",
-      "signal": "community_spark",
+      "headline": "Claim a TikTok presence before spring ends",
+      "action": "With 37 creator videos and 1.15 million plays already logged this quarter, a verified account captures future tags and lets the brand respond to @morganchompz's million-play clip directly.",
+      "signal": "momentum",
       "priority": "high",
+      "impact_label": "OWN THE SIGNAL"
+    },
+    {
+      "headline": "Address the portion-price gap publicly",
+      "action": "Two of eight sampled reviews name portion size as the friction point; a direct response to the Pittsburgh-specific complaint, or a transparent sizing guide on Google, limits the sentiment drag on a 77 review score.",
+      "signal": "community_spark",
+      "priority": "medium",
       "impact_label": "+6 SENTIMENT PTS"
     },
     {
-      "headline": "Convert TikTok reach into owned content",
-      "action": "35 creators posted 37-plus videos with 1.15 million plays this quarter; a brand TikTok account would let Jeni's Pittsburgh claim, repost, and redirect that traffic.",
-      "signal": "momentum",
-      "priority": "medium",
-      "impact_label": "UNLOCK OWNED REACH"
-    },
-    {
-      "headline": "Lift Instagram engagement off posting cadence",
-      "action": "12 posts and 4 reels in 30 days is active, but 0.49 percent engagement suggests content format or timing needs adjustment to match the Instagram momentum signal of 83.",
-      "signal": "collab_fit",
+      "headline": "Push review volume toward Icons-tier depth",
+      "action": "At 251 Google reviews, Jeni's lags the visibility ceiling for an Icons-ranked business; seasonal flavor launches, already a proven draw per multiple reviews, are the clearest prompt to convert visits into written reviews.",
+      "signal": "conversion_path",
       "priority": "low",
-      "impact_label": "+ENGAGEMENT RATE"
+      "impact_label": "+40 REVIEW DEPTH"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T19:44:37.665Z",
+  "analyzed_at": "2026-04-26T22:26:30.685Z",
   "model": "claude-sonnet-4-6"
 }

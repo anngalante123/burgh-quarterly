@@ -8,63 +8,63 @@
       "exampleQuote": "A perfect speakeasy vibe with the best cocktails I've had in Pittsburgh."
     },
     {
-      "phrase": "bartender standouts",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Alicia was one of the best bartenders I've had, definitely deserves the bar manager position."
-    },
-    {
       "phrase": "creative cocktail menu",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "A superb riff on a Sazerac/Manhattan/old fashioned, slightly sweet, little liquorice flavor, booze heavy."
+      "exampleQuote": "A superb riff on a Sazerac/Manhattan/old fashioned. Slightly sweet, little liquorice flavor, booze heavy."
+    },
+    {
+      "phrase": "bartender recognition",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Alicia was one of the best bartenders I've had and definitely deserves the bar manager position."
     },
     {
       "phrase": "90-minute time limit",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "After we ordered a third round, we were informed we had to leave because there is a 90-minute time limit, only mentioned in the menu in very small print."
+      "exampleQuote": "We were informed that we had to leave because there is a 90-minute time limit, only mentioned in the menu in very small print."
     },
     {
-      "phrase": "hard to get in",
+      "phrase": "hard to get a table",
       "frequency": 2,
       "sentiment": "neutral",
       "exampleQuote": "I have tried to get in a few times but it is always super packed."
     }
   ],
-  "notable_quote": "I will be making the drive from Cleveland just for this bar in the near future.",
-  "sentiment_summary": "Reviewers consistently praise the moody botanical aesthetic, named bartenders, and inventive cocktails, but a poorly communicated 90-minute table-turn policy has produced the sharpest negative feedback Commerce Bar has on the books.",
-  "quarter_narrative": "Commerce Bar spent Spring 2026 doing what a lot of quietly beloved East Liberty spots do: filling up early, turning tables on a timer, and generating real word of mouth without doing much to capture it. The Instagram account posted once in thirty days and published zero Reels, which means the bar's strongest visual asset, a candlelit, chandelier-hung room that reviewers keep calling 'moody,' 'vintage,' and 'botanical,' exists almost entirely in other people's camera rolls. No Pittsburgh TikTok coverage has been indexed for the business at all, so that entire discovery channel is currently closed. Across the Pittsburgh Bars family, Hidden Harbor holds the top rank on the strength of social momentum, the precise signal Commerce Bar is weakest on. Closing that gap starts with the room itself: it photographs well, the reviews confirm it, and nothing is stopping someone from pointing a phone at it consistently.",
-  "tldr_read": "Strong reviews and a room that earns destination trips from Cleveland, but near-zero Instagram activity and no TikTok footprint keep Commerce Bar at Neighborhood Staple, ranked second in Pittsburgh Bars.",
-  "tldr_meaning": "The sentiment floor is solid and creator fit is already at the family median, so the rank ceiling lifts the moment the bar's own feed starts reflecting what its regulars are already saying.",
+  "notable_quote": "I will be making the drive from Cleveland JUST for this bar in the near future.",
+  "sentiment_summary": "Reviewers consistently praise the moody botanical aesthetic, named bartenders, and cocktails built around specific flavor profiles; the recurring friction is a 90-minute table limit that feels punishing when guests discover it mid-round rather than on arrival.",
+  "quarter_narrative": "Commerce Bar enters Spring 2026 as a genuinely word-of-mouth-driven room: 83 percent of its 106 Google reviews are five stars, and the most detailed ones read like cocktail notes rather than casual check-ins. That depth of customer feeling is real and earned. The gap is in how little of it circulates beyond Google: one Instagram post in the last 30 days, no reels, a 0.72 percent engagement rate, no website or phone number on its Google listing, and zero indexed TikTok coverage from outside creators. Family leader Hidden Harbor is pulling ahead specifically on social momentum, which is the axis where Commerce is most exposed. The path to closing that gap runs through its own listing hygiene first, then through the social record that matches what its most loyal customers are already saying out loud.",
+  "tldr_read": "Deep review warmth, nearly invisible social presence. Neighborhood Staples, #2 in Pittsburgh Bars.",
+  "tldr_meaning": "The review signal is already there; the rank ceiling is set by a Google listing missing basic contact information and an Instagram that is not keeping pace with the bar's actual reputation.",
   "diagnosis_pullquote": {
-    "line": "Second In Pittsburgh Bars, Built On Word Of Mouth. The Feed Has Not Caught Up.",
-    "highlight": "Word Of Mouth"
+    "line": "Second In Pittsburgh Bars On Review Depth Alone. The Listing Has No Website, No Phone.",
+    "highlight": "No Website, No Phone"
   },
   "playbook": [
     {
-      "headline": "Post one Reel before next weekend",
-      "action": "Zero Reels in 30 days while the room is visually strong enough to draw out-of-state visitors; one atmospheric Reel changes the discovery calculus immediately.",
-      "signal": "momentum",
-      "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
-    },
-    {
-      "headline": "Add phone and website to Google profile",
-      "action": "Commerce Bar has no phone number and no website listed on Google, leaving the conversion path at half the family median and cutting off a basic decision-making step for new visitors.",
+      "headline": "Complete the Google Business listing today",
+      "action": "Add a website URL and phone number to the Google listing, which currently shows neither, closing the most direct path visitors use to confirm hours and book.",
       "signal": "conversion_path",
-      "priority": "medium",
-      "impact_label": "+CONVERSION RANK"
+      "priority": "high",
+      "impact_label": "UNLOCK CONVERSION"
     },
     {
-      "headline": "Address the time-limit policy publicly",
-      "action": "One review specifically describes being blindsided by the 90-minute policy after ordering a third round; a single owner response and a clearer front-of-house disclosure would stop that thread from becoming a recurring sentiment drag.",
+      "headline": "Post one reel per week for six weeks",
+      "action": "Commerce has posted one time in 30 days with zero reels; a candlelit cocktail pour or a close-up of the cheese board jam would cost nothing and directly address the 0.72 percent engagement rate.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "+SOCIAL SIGNAL"
+    },
+    {
+      "headline": "Surface the 90-minute policy clearly",
+      "action": "The single harshest review hinges entirely on a policy surprise at the table; moving that disclosure to a verbal mention at seating would neutralize the most predictable source of negative sentiment.",
       "signal": "community_spark",
       "priority": "low",
       "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T19:41:59.822Z",
+  "analyzed_at": "2026-04-26T22:23:42.082Z",
   "model": "claude-sonnet-4-6"
 }

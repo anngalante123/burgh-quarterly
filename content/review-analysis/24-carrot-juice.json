@@ -3,7 +3,7 @@
   "themes": [
     {
       "phrase": "owner warmth",
-      "frequency": 4,
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "The owner is super nice and cool!"
     },
@@ -15,56 +15,56 @@
     },
     {
       "phrase": "clean affordable space",
-      "frequency": 3,
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Easy parking, very clean, good price for a delicious smoothie."
-    },
-    {
-      "phrase": "smoothie standout",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Got the green machine, one of the best smoothies I've ever had."
     },
     {
       "phrase": "Children's Hospital proximity",
       "frequency": 1,
       "sentiment": "positive",
       "exampleQuote": "Located right across from Children's Hospital, very convenient."
+    },
+    {
+      "phrase": "smoothie variety",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Got the green machine, one of the best smoothies I've ever had."
     }
   ],
   "notable_quote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good.",
-  "sentiment_summary": "Reviewers are consistent on three things: the owner, the cleanliness, and the price-to-quality ratio on smoothies and acai bowls. There is no meaningful nitpicking in 519 reviews, which is either a testament to the operation or a sign the written feedback skews toward regulars.",
-  "quarter_narrative": "Thirty creators posted TikToks tagging 24 Carrot Juice this quarter, generating over 1.4 million plays, and the shop has no TikTok account of its own to meet any of that traffic. The business's Instagram posted three times in 30 days with zero reels, while the city's creator community produced content that reached audiences far beyond anything the account has captured. Within the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange is running away with the social momentum signal; 24 Carrot holds the top juice rank on the strength of review volume and creator pull alone. If the shop finds a way to receive that creator energy rather than simply benefit from it passively, the jump from Ones to Watch to a higher tier becomes a straightforward question of consistency.",
-  "tldr_read": "Over 1.4 million TikTok plays from 30 creators, zero reels from the shop itself. Ones to Watch, #1 in Pittsburgh Juice Shops.",
-  "tldr_meaning": "The review signal and creator fit are already performing at or above family median; the Instagram momentum and the absence of any owned TikTok presence are the only axes keeping this business from a materially stronger rank.",
+  "sentiment_summary": "Reviewers consistently praise the owner's warmth, the acai bowls, and a clean, affordable setup; the only thing conspicuously absent from the reviews is any criticism at all, which makes the 99 percent five-star spread feel genuinely earned rather than curated.",
+  "quarter_narrative": "Thirty creators posted 33-plus TikToks about 24 Carrot Juice this quarter, pulling 1.45 million plays, and the shop itself has no TikTok account to receive any of it. That gap is the defining story of Spring 2026 for this Bloomfield juice bar: a city-wide wave of creator attention breaking on a shore that isn't set up to catch it. On its own Instagram, the business posted three times in 30 days and logged zero Reels, while the Cafes family leader, Allegheny Coffee and Tea Exchange, is setting the pace precisely on social momentum. Closing even half that creator distance, whether through a TikTok presence or Reels that redirect the existing audience, is the clearest single move between 24 Carrot Juice's current rank and the tier above it.",
+  "tldr_read": "Carried by 519 near-perfect reviews and 1.45 million TikTok plays from creators it never captures, 24 Carrot Juice holds the top spot in Pittsburgh Juice with a social presence that doesn't match the attention it's already getting. Ones to Watch, #1 in Pittsburgh Juice.",
+  "tldr_meaning": "The review signal and creator fit are already there; the rank climb depends on whether the business builds a social presence proportional to the attention the city is already paying it.",
   "diagnosis_pullquote": {
-    "line": "First In Juice On Creator Energy Alone. The Shop Has Not Posted A Single Reel.",
-    "highlight": "Not Posted A Single Reel"
+    "line": "Number One In Juice, Carried By 1.45 Million Creator Plays It Has No Account To Receive.",
+    "highlight": "1.45 Million Creator Plays"
   },
   "playbook": [
     {
-      "headline": "Start reels before the creators move on",
-      "action": "Zero reels in 30 days while 30 external creators generated 1.4 million plays; one reel per week showing a pour, a build, or the owner would begin capturing that existing audience.",
+      "headline": "Open a TikTok account this quarter",
+      "action": "Thirty creators posted 33-plus videos with 1.45 million plays; a business account exists nowhere to redirect that traffic.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE CREATOR LIFT"
+      "impact_label": "CAPTURE 1.4M PLAYS"
     },
     {
-      "headline": "Add a phone number to the Google listing",
-      "action": "The Google Business profile has no phone number listed, a direct friction point on the conversion path that sits below the family median of 100.",
+      "headline": "Add a phone number to Google",
+      "action": "The Google Business profile lists no phone number, creating a dead end for first-time customers ready to order or ask hours.",
       "signal": "conversion_path",
       "priority": "medium",
       "impact_label": "+CONVERSION PATH"
     },
     {
-      "headline": "Invite the top five creators back intentionally",
-      "action": "Creators like @amalkzad and @gracemayofficial have already filed 671K-play videos; a direct invitation for a behind-the-counter collab would deepen the creator fit signal already near family median.",
-      "signal": "collab_fit",
+      "headline": "Push Reels featuring the acai bowl",
+      "action": "Zero Reels in 30 days while the acai bowl is the most visceral product mentioned; one Reel per week closes the gap with Allegheny Coffee and Tea Exchange's social momentum lead.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "SUSTAIN CREATOR PULL"
+      "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T19:41:12.961Z",
+  "analyzed_at": "2026-04-26T22:22:59.590Z",
   "model": "claude-sonnet-4-6"
 }

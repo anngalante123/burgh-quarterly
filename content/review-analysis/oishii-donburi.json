@@ -2,69 +2,69 @@
   "slug": "oishii-donburi",
   "themes": [
     {
-      "phrase": "katsu and bulgogi bowls",
+      "phrase": "katsudon and bulgogi bowls",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls"
     },
     {
-      "phrase": "quick hole-in-the-wall lunch",
+      "phrase": "hole in the wall",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Easy fast hole in the wall with delicious food"
     },
     {
-      "phrase": "quiet, reliable spot",
+      "phrase": "quiet reliable spot",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Very delicious quiet spot for Korean style bowls"
     },
     {
-      "phrase": "sauce confusion, no explanation",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "Given 4 little circle containers of unusual sauces and not told what any of them were"
-    },
-    {
-      "phrase": "unwelcoming staff attitude",
+      "phrase": "rude staff attitude",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron"
+    },
+    {
+      "phrase": "unexplained sauces",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I was given 4 little circle containers of unusual sauces and not told what any of them were"
     }
   ],
-  "notable_quote": "Easy fast hole in the wall with delicious food, perfect for lunch with enough for a snack later that night.",
-  "sentiment_summary": "Reviewers consistently come back for the katsudon and bulgogi bowls and appreciate the no-fuss pace, but a recurring friction point around unexplained sauces and one documented service incident keeps the sentiment signal measurably below the family median.",
-  "quarter_narrative": "Oishii Donburi spent Spring 2026 being someone else's content. Five Pittsburgh-area TikTok creators posted about the business this quarter, generating nearly 27,000 plays, while the restaurant's own Instagram sat quiet for 72 days and its account posted nothing in the last 30. The irony is sharper when you note that the top video in that creator cluster, nearly 10,000 plays, was actually filmed at a different Oishii location in Delaware, meaning some of that reach is misdirected entirely. Family leader Mola took the top spot in Pittsburgh Asian Kitchens this issue on the strength of creator collaboration fit; Oishii Donburi matches Mola on that axis but hasn't yet converted the external attention into a visible signal of its own. The rank climbs if the visual catalog catches up and the Instagram signal restarts before the creator window closes.",
-  "tldr_read": "Strong repeat-customer reviews and real creator traffic, but a dormant Instagram and a below-median visual catalog hold it at Ones to Watch, #1 in Pittsburgh Japanese restaurants.",
-  "tldr_meaning": "The review floor is solid and the creator interest is real, but the Instagram flatline and thin photo catalog are the two axes keeping this from a more permanent position at the top of the family.",
+  "notable_quote": "Easy fast hole in the wall with delicious food, we had the katsudon and bulgogi bibimbap and it was perfect for lunch with enough for a snack later that night.",
+  "sentiment_summary": "Reviewers keep coming back for the katsudon and beef bulgogi bowls and praise the spot's low-key, reliable quality; the friction surfaces in occasional reports of an unwelcoming front-of-house attitude and unexplained condiments that leave first-timers confused.",
+  "quarter_narrative": "Five Pittsburgh-area creators posted Oishii Donburi to TikTok this quarter and pulled nearly 27,000 plays without a single post from the restaurant itself, which has been quiet on Instagram for 72 days. The top video in that batch, nearly 10,000 plays from @missrichauntie, was actually filmed at a different Oishii-branded location in Delaware, which means the real Lawrenceville shop is capturing even less of that attention than the raw numbers suggest. Mola leads the Pittsburgh Asian Kitchens family this issue on the strength of creator collaboration, a lane Oishii Donburi has the reputation and the menu specificity to enter. Closing the gap between what creators are already doing and what this restaurant posts for itself is the clearest path from Ones to Watch toward the upper tier.",
+  "tldr_read": "Strong customer loyalty and a perfect conversion path, but a dormant Instagram and thin visual catalog are keeping Oishii Donburi at Ones to Watch, ranked first in Pittsburgh Japanese restaurants.",
+  "tldr_meaning": "The review floor is solid and the Google profile converts cleanly; the ceiling is determined by whether the visual and social signals catch up to the word-of-mouth that is already circulating without the restaurant's participation.",
   "diagnosis_pullquote": {
-    "line": "First In Japanese, Carried By Loyal Regulars. The Visual Story Is Still Being Written By Others.",
-    "highlight": "Being Written By Others"
+    "line": "First In Pittsburgh Japanese, Built On Word Of Mouth. The Camera Never Turned Around.",
+    "highlight": "Camera Never Turned Around"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram signal now",
-      "action": "The account has posted zero times in 30 days and nothing in 72; even two posts a week changes the momentum axis measurably.",
+      "headline": "Restart Instagram before the quarter ends",
+      "action": "The account has been silent for 72 days; even four posts showing the katsudon and bulgogi bowls would lift the momentum signal off its current floor.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Fill the visual catalog gaps",
-      "action": "342 Google photos across 15 categories sounds healthy, but the visual catalog signal sits well below the family median of 84; targeted photo uploads in underrepresented categories close that gap.",
+      "headline": "Build out the Google photo catalog",
+      "action": "342 photos across 15 categories sounds deep, but the visual signal trails the family median by a wide margin; adding tagged shots across underrepresented categories closes that gap fast.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+VISUAL RANK"
     },
     {
-      "headline": "Brief servers on the sauce lineup",
-      "action": "Two of five available reviews mention confusion or unwelcoming service; a simple verbal rundown of the sauces at drop-off is the lowest-effort sentiment repair available.",
-      "signal": "community_spark",
+      "headline": "Give creators something to tag correctly",
+      "action": "The top TikTok this quarter tagged a Delaware location by mistake; a pinned location, a clear handle in-store, and direct outreach to the five creators who already filmed here would redirect that attention where it belongs.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "+SENTIMENT PTS"
+      "impact_label": "CAPTURE REACH"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-26T19:48:49.839Z",
+  "analyzed_at": "2026-04-26T22:30:36.003Z",
   "model": "claude-sonnet-4-6"
 }

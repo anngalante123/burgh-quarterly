@@ -2,16 +2,16 @@
   "slug": "mola",
   "themes": [
     {
-      "phrase": "quality justifies price",
+      "phrase": "best sushi in Pittsburgh",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The price is on the higher end, but is justified by the quality of the food."
+      "exampleQuote": "The best sushi I have tried in Pittsburgh. One of the best sushi experiences I have ever had overall."
     },
     {
-      "phrase": "expert chef, classic execution",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "A clearly expert chef. Classic sushi done with a modern style."
+      "phrase": "higher-end pricing",
+      "frequency": 3,
+      "sentiment": "neutral",
+      "exampleQuote": "The price is on the higher end, but is justified by the quality of the food."
     },
     {
       "phrase": "gets busy evenings",
@@ -20,51 +20,51 @@
       "exampleQuote": "Busy, but that is to be expected."
     },
     {
+      "phrase": "expert, modern technique",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "A clearly expert chef. Classic sushi done with a modern style."
+    },
+    {
       "phrase": "service inconsistency",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "For the service, I cannot give a positive review."
-    },
-    {
-      "phrase": "best sushi in Pittsburgh",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "One of the best sushi experiences I have ever had overall."
     }
   ],
-  "notable_quote": "One of the best sushi experiences I have ever had overall.",
-  "sentiment_summary": "Reviewers consistently land on the food quality and chef credibility as non-negotiable strengths; the friction points are predictable, crowded evenings and at least one service complaint that stands out precisely because the food sets a high bar.",
-  "quarter_narrative": "Mola heads the Pittsburgh Asian Kitchens family this issue on the back of a creator fit signal that sits well above the family median, a distinction that makes sense when you look at the TikTok data: three independent creators filmed there this quarter, and one of them turned a five-dollar onigiri into nearly 3,000 plays on a single video. The business itself posted twice to Instagram in the last 30 days and has gone 17 days without an update, which means the city's word-of-mouth engine is running faster than the house's own feed. Holding the top sushi rank with 767 reviews and 935 Google photos is not in question; the open variable is whether Mola starts capturing the creator momentum that is already circling it, because that gap is where the next tier lives.",
-  "tldr_read": "Creator fit leads the family, Instagram trails badly. Ones to Watch, #1 in Pittsburgh Sushi.",
-  "tldr_meaning": "The path to Icons runs through Instagram consistency and reels output, because every other signal, reviews, photos, conversion path, creator fit, is already performing at or above the family median.",
+  "notable_quote": "One of the best sushi experiences I have ever had overall, the quality of the food is excellent.",
+  "sentiment_summary": "Reviewers keep landing on superlatives for the food, specifically the craft and ingredient quality, while a recurring undercurrent flags price sensitivity and uneven front-of-house service.",
+  "quarter_narrative": "Three Pittsburgh TikTok creators filmed Mola this quarter without any apparent coordination with the restaurant, pulling 6,590 plays on content the business had no hand in making. The top video, a creator pointing at a five-dollar onigiri and tagging East Liberty, is doing more to drive lunch traffic than anything Mola posted itself in the same window. That gap is the defining story of their Spring 2026: 767 Google reviews averaging 80 percent five stars, a conversion path that is fully built out, and a creator ecosystem already treating the place as a shortcut for cheap, quality bites. What happens next depends almost entirely on whether Mola starts capturing what the city is already generating around it.",
+  "tldr_read": "Dominant reviews and full conversion infrastructure, near-dormant own social presence. Ones to Watch, #1 in Pittsburgh Sushi and #1 in Pittsburgh Asian Kitchens.",
+  "tldr_meaning": "The path from Ones to Watch to Icons runs directly through Instagram momentum and owned TikTok presence; every other axis is already performing at or above the family median.",
   "diagnosis_pullquote": {
-    "line": "Pittsburgh's Top Sushi Seat, Backed By Creator Buzz The Feed Has Not Caught Up To.",
-    "highlight": "Creator Buzz The Feed"
+    "line": "Number One In Asian Kitchens, Built On Reviews. The Feed Has Not Kept Pace.",
+    "highlight": "Built On Reviews"
   },
   "playbook": [
     {
-      "headline": "Turn reels dormancy into a posting habit",
-      "action": "Zero reels posted in 30 days while creators are already filming the $5 onigiri; one behind-the-counter reel per week closes that gap directly.",
+      "headline": "Post consistently before the algorithm forgets you",
+      "action": "Two posts in 30 days and zero Reels is well below the threshold that keeps Instagram distributing a restaurant account; one short-form video per week, focused on prep or plating, would restart the signal.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REACTIVATE FEED"
+      "impact_label": "RESTART FEED SIGNAL"
     },
     {
-      "headline": "Acknowledge the three creators filming you",
-      "action": "Repost or respond to the three TikTok creators who drove 6,590 plays this quarter; that loop costs nothing and expands reach without cold outreach.",
+      "headline": "Turn creator content into owned inventory",
+      "action": "Three external creators already filmed Mola and generated 6,590 plays this quarter; reposting or resharing that content, with credit, costs nothing and fills the posting gap immediately.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "UNLOCK CREATOR LOOP"
+      "impact_label": "+CREATOR REACH"
     },
     {
-      "headline": "Address the one service complaint pattern",
-      "action": "With 80 percent five-star reviews out of 767, the single service flag is an outlier but visible; a public owner response sets the record straight and protects sentiment.",
+      "headline": "Address service notes before they compound",
+      "action": "With 767 reviews at 80 percent five stars, a single consistent service complaint thread is enough to pull sentiment down at scale; a visible owner response to the service critique already posted would stabilize that signal.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "PROTECT SENTIMENT"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T19:48:02.679Z",
+  "analyzed_at": "2026-04-26T22:29:51.799Z",
   "model": "claude-sonnet-4-6"
 }

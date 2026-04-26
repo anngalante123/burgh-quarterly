@@ -2,69 +2,69 @@
   "slug": "lorelei",
   "themes": [
     {
-      "phrase": "bar staff warmth",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "The bartenders are top class, friendly, knowledgeable about the cocktails."
-    },
-    {
-      "phrase": "creative cocktails",
+      "phrase": "creative cocktails, bartender craft",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Awesome, creative drinks. Bartender was excellent and friendly."
     },
     {
+      "phrase": "bar staff warmth",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The bar staff are friendly, knowledgeable about the cocktails, and they seem to project this vibe that makes me want to come back time and time again."
+    },
+    {
       "phrase": "cacio e pepe pizza",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "The cacio e pepe pizza is a must."
+      "exampleQuote": "the cacio e pepe pizza is a must"
     },
     {
-      "phrase": "slow service moments",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "Waited 10 minutes for a sip of Jager and whiskey."
+      "phrase": "low-key date night",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "the best lowkey date night place or hangout place with friends"
     },
     {
-      "phrase": "inclusive service concerns",
+      "phrase": "deadname incident, staff misstep",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Trans folks beware, the staff didn't ask my friend's name, and instead used the deadname on their credit card."
+      "exampleQuote": "Trans folks beware, the staff didn't ask my friend's name, and instead used the deadname on their credit card"
     }
   ],
   "notable_quote": "Statistically, I'm bound to have less than a perfect experience here, but it hasn't happened.",
-  "sentiment_summary": "Reviewers reliably praise the bartenders by name and return for the cocktail program, but service blind spots, one serious and one mundane, pull the sentiment ceiling down from where the drinks alone could take it.",
-  "quarter_narrative": "Eighteen Pittsburgh TikTok creators filmed Lorelei this quarter without any coordination from the restaurant itself, and that footage ran up 1.23 million plays. @ernest alone pulled 569,300 of them on a video that never even made the food the point. The business's own TikTok account, @loreleishae3, sits in the background while the city does the work. Meanwhile Nan Xiang Soup Dumplings leads the Pittsburgh Business family this issue on the strength of social momentum, a signal Lorelei has in abundance from outside its walls but not yet from within them. The rank climbs when Lorelei's own feed starts meeting the creators already in the room.",
-  "tldr_read": "Creator coverage in the millions, Instagram engagement below one percent, and a review sentiment gap the cocktail program hasn't fully closed. Ones to Watch, #2 in Pittsburgh Restaurants.",
-  "tldr_meaning": "The city is already filming Lorelei at scale; the signal ceiling rises when the business's own output converts that external attention into a durable, measurable presence.",
+  "sentiment_summary": "Reviewers keep coming back for the cocktail program and the specific warmth of the bar staff, with the cacio e pepe pizza emerging as a food anchor; one incident involving a trans guest and a deadname has drawn sharp criticism that sits unaddressed in the public record.",
+  "quarter_narrative": "Eighteen Pittsburgh creators filmed Lorelei this quarter and produced over 1.2 million TikTok plays without any coordination from the business itself. The top video, from @ernest, pulled 569,300 plays on a caption that barely named the place, which means the city's attention is landing on Lorelei almost by accident. Meanwhile, Nan Xiang Soup Dumplings leads the Pittsburgh Businesses family this issue on the strength of deliberate social momentum, a contrast that makes Lorelei's passive position harder to ignore. The rank climbs when the review sentiment signal gets repaired and the Instagram engagement rate, currently under one percent, starts moving in proportion to the creator attention already circling the building.",
+  "tldr_read": "Creator-driven plays in the millions, Instagram engagement under one percent, review sentiment undercut by one unresolved incident. Ones to Watch, #2 in Pittsburgh Restaurants.",
+  "tldr_meaning": "The TikTok ceiling is already broken open by outside creators; the rank stalls until review sentiment stabilizes and Instagram engagement catches up to the attention the city is already delivering.",
   "diagnosis_pullquote": {
-    "line": "Second In Pittsburgh Restaurants, Carried By Creators. The Business's Own Feed Has Not Caught Up.",
-    "highlight": "Carried By Creators"
+    "line": "Ones to Watch at Number Two, Carried by Outside Creators. The Engagement Rate Tells a Different Story.",
+    "highlight": "Outside Creators. The"
   },
   "playbook": [
     {
-      "headline": "Post one Reel this week, then repeat",
-      "action": "Zero Reels in the last 30 days at 0.79% engagement means static posts are not moving the needle; one Reel of the cacio e pepe pizza or a bartender building a Bassett Hound changes the format entirely.",
-      "signal": "momentum",
-      "priority": "high",
-      "impact_label": "ACTIVATE FEED"
-    },
-    {
-      "headline": "Address the name-call policy publicly",
-      "action": "One review about deadnaming on a credit card is sitting in a 392-review pool and pulling down sentiment; a posted policy on how orders are called closes the loop for wary diners before they read that review.",
+      "headline": "Address the deadname review publicly",
+      "action": "Post a specific, policy-level response to the negative review; 392 reviews means one incident carries outsized weight on sentiment.",
       "signal": "community_spark",
-      "priority": "medium",
-      "impact_label": "+SENTIMENT FLOOR"
+      "priority": "high",
+      "impact_label": "+SENTIMENT REPAIR"
     },
     {
-      "headline": "Tag the creators who are already filming",
-      "action": "Eighteen creators produced 1.23 million plays this quarter without a single tag or acknowledgment from @loreleipgh; a repost or story mention converts that external reach into a two-way relationship.",
-      "signal": "collab_fit",
+      "headline": "Convert TikTok attention into owned reels",
+      "action": "Zero reels posted in 30 days while 18 creators produced 1.2 million plays; one bartender-focused reel per week directly addresses the 0.79% engagement gap.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "+ENGAGEMENT RATE"
+    },
+    {
+      "headline": "Expand the Google photo catalog",
+      "action": "291 photos across 7 categories is below the family median visual signal; owner-submitted shots of the cacio e pepe and cocktail program fill the gap reviewers are already describing.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "RETAIN CREATOR PULL"
+      "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-26T19:46:36.075Z",
+  "analyzed_at": "2026-04-26T22:28:26.144Z",
   "model": "claude-sonnet-4-6"
 }
