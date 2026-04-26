@@ -42,11 +42,22 @@ export function StrengthsAndGaps({ strengths, gaps, familyShort }: Props) {
   if (strengths.length === 0 && gaps.length === 0) return null;
   return (
     <Reveal as="section" className="block">
+      {/* Section header treats Strengths/Gaps as the editorial verdict,
+          not as connective tissue. Per visual-storytelling-coach review,
+          elevates this card from footnote to peer-of-the-AtAGlance card. */}
+      <div className="border-b-2 border-brand-black pb-3 mb-5 flex flex-wrap items-baseline justify-between gap-3">
+        <h2 className="font-display text-xs font-semibold uppercase tracking-[0.22em] text-brand-black">
+          The Verdict, vs Pittsburgh {familyShort}
+        </h2>
+        <span className="font-body text-[0.7rem] uppercase tracking-[0.14em] text-brand-black/50">
+          What is and isn&apos;t working
+        </span>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
         {strengths.length > 0 && (
-          <div className="bg-brand-lime/30 border border-brand-black/15 px-5 py-4 md:px-6 md:py-5">
-            <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-brand-black/70 mb-3">
-              Doing well · vs {familyShort}
+          <div className="bg-brand-lime/40 border-t-4 border-brand-black border-l border-r border-b border-brand-black/15 px-5 py-5 md:px-6 md:py-6">
+            <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-brand-black mb-4">
+              ▲ Doing well
             </p>
             <ul className="space-y-2.5">
               {strengths.map((h) => (
@@ -75,9 +86,9 @@ export function StrengthsAndGaps({ strengths, gaps, familyShort }: Props) {
         )}
 
         {gaps.length > 0 && (
-          <div className="bg-brand-purple/15 border border-brand-purple/40 px-5 py-4 md:px-6 md:py-5">
-            <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-brand-purple mb-3">
-              Room to run · vs {familyShort}
+          <div className="bg-brand-purple/20 border-t-4 border-brand-purple border-l border-r border-b border-brand-purple/40 px-5 py-5 md:px-6 md:py-6">
+            <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-brand-purple mb-4">
+              ▼ Room to run
             </p>
             <ul className="space-y-2.5">
               {gaps.map((h) => (

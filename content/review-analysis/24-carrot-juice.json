@@ -2,69 +2,69 @@
   "slug": "24-carrot-juice",
   "themes": [
     {
-      "phrase": "owner warmth",
+      "phrase": "owner is genuinely welcoming",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Really nice owner. Will be back!"
+      "exampleQuote": "The owner is super nice and cool!"
     },
     {
-      "phrase": "açaí bowl quality",
+      "phrase": "acai bowl quality",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good."
     },
     {
-      "phrase": "clean affordable spot",
-      "frequency": 2,
+      "phrase": "clean affordable neighborhood stop",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Easy parking, very clean, good price for a delicious smoothie."
-    },
-    {
-      "phrase": "smoothie variety",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Lots of options and affordable."
     },
     {
       "phrase": "Children's Hospital proximity",
       "frequency": 1,
       "sentiment": "positive",
       "exampleQuote": "Located right across from Children's Hospital, very convenient."
+    },
+    {
+      "phrase": "smoothie standout",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Got the green machine, one of the best smoothies I've ever had."
     }
   ],
   "notable_quote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good.",
-  "sentiment_summary": "Reviewers consistently name the owner, the cleanliness, and the açaí bowl as the reasons they come back; at 519 reviews running 99% five-star, there is almost nothing to nitpick in the public record.",
-  "quarter_narrative": "Thirty creators filmed 24 Carrot Juice this quarter, generating more than 1.4 million TikTok plays while the shop itself posted three times on Instagram and has no TikTok account of its own. The gap is not a crisis, it is a map: Pittsburgh already knows where this place is, and the reviews prove it, but the business has no seat at the table where the audience is actually gathering. In the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange leads the issue on social momentum, a signal 24 Carrot has the raw material to chase, given the creator interest already circling it. Closing the phone number gap on Google and converting even a fraction of that TikTok traffic into a returning customer loop are the two moves that push this rank higher next quarter.",
-  "tldr_read": "Dominant creator coverage and near-perfect review sentiment, no TikTok account and no phone number listed on Google. Ones to Watch, #1 in Pittsburgh Juice Shops.",
-  "tldr_meaning": "The ceiling is set by whether 24 Carrot captures any of the 1.4 million plays already circling it; the review signal and creator fit are already there, the owned channels are not keeping pace.",
+  "sentiment_summary": "Reviewers consistently praise the owner's warmth, the cleanliness of the space, and standout items like the acai bowl and green machine smoothie; nitpicks are nearly absent across 519 reviews, which is notable if slightly opaque as a signal.",
+  "quarter_narrative": "Thirty creators filed into 24 Carrot Juice this quarter and filmed it. The shop did not return the favor. Those 30 voices pulled 1.45 million TikTok plays, with a single video from @amalkzad generating more than 671,000 of them, and the business has no TikTok account of its own to show for any of it. Meanwhile, in the Pittsburgh Cafes family, 24 Carrot holds the eighth slot out of ten, behind a leader in Allegheny Coffee and Tea Exchange whose defining signal is social momentum, the exact axis where 24 Carrot is most exposed. The juice shop's review floor is nearly immaculate, 519 reviews at 99 percent five stars, and its Creator Fit signal is strong, meaning the visual product and the room are doing the work of attracting cameras. Whether the rank climbs inside the Cafes family depends on whether that creator energy gets a destination to land.",
+  "tldr_read": "Enormous TikTok creator footprint, no TikTok presence of its own, and a near-perfect review record. Ones to Watch, #1 in Pittsburgh Juice Shops, #8 in Pittsburgh Cafes.",
+  "tldr_meaning": "The TikTok signal is already there in volume; what is missing is the business's own account to absorb it, and that single gap is the primary barrier to moving up inside a Cafes family where social momentum is the benchmark.",
   "diagnosis_pullquote": {
-    "line": "Thirty Creators, 1.4 Million Plays. The Juice Shop Isn't On TikTok Yet.",
-    "highlight": "1.4 Million Plays"
+    "line": "Eighth In Pittsburgh Cafes, Powered By 1.45 Million Creator Plays On A Platform Where It Has No Account.",
+    "highlight": "1.45 Million Creator Plays"
   },
   "playbook": [
     {
-      "headline": "Claim a TikTok account now",
-      "action": "30 creators have already done the work; a verified account lets 24 Carrot capture that audience directly instead of watching 1.4 million plays pass by.",
+      "headline": "Claim the TikTok audience that already exists",
+      "action": "Open a TikTok business account and post one short video per week; 30 creators have already seeded 1.45 million plays with no account to absorb them.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "CAPTURE 1.4M PLAYS"
     },
     {
       "headline": "Add a phone number to Google",
-      "action": "The Google Business profile is missing a phone number, a direct friction point for anyone trying to call ahead from Children's Hospital across the street.",
+      "action": "The Google Business profile has no phone number listed, a missing field that suppresses conversion path signal relative to a family median that sits at full strength.",
       "signal": "conversion_path",
       "priority": "medium",
-      "impact_label": "CLOSE CONVERSION GAP"
+      "impact_label": "+CONVERSION SIGNAL"
     },
     {
-      "headline": "Post one Reel per week",
-      "action": "Zero Reels in the last 30 days on an account with a 2.53% engagement rate; a single weekly Reel would build the visual catalog past the family median of 77.",
+      "headline": "Push Instagram to at least two posts per week",
+      "action": "Three posts in the last 30 days keeps the account alive but trails the engagement potential of a 2.53 percent rate; doubling cadence with reels costs nothing and closes the gap to the Cafes family leader.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+VISUAL RANK"
+      "impact_label": "+REEL REACH"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T23:11:13.470Z",
+  "analyzed_at": "2026-04-26T23:30:25.163Z",
   "model": "claude-sonnet-4-6"
 }

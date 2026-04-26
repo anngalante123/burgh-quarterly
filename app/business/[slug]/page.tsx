@@ -553,6 +553,42 @@ export default async function BusinessPage({ params }: PageProps) {
             </p>
           </header>
 
+          {/* Tier + rank stamp, asserts "this is a ranked editorial
+              artifact" between the title and the hero photo so a reader
+              landing cold knows the publication's job in the first 2
+              seconds. Per visual-storytelling-coach review, fixes the
+              pre-fold dead zone. */}
+          {rankFamilyPos !== null && (
+            <div className="mt-5 md:mt-6 border-t border-b border-brand-black/15 py-3">
+              <p className="font-display text-[0.6rem] md:text-[0.65rem] font-semibold uppercase tracking-[0.22em] flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <span
+                  className={
+                    score.tier === "icons"
+                      ? "bg-brand-lime text-brand-black px-2 py-0.5"
+                      : score.tier === "ones_to_watch"
+                        ? "bg-brand-purple text-brand-off-white px-2 py-0.5"
+                        : "bg-brand-cream text-brand-black border border-brand-black/30 px-2 py-0.5"
+                  }
+                >
+                  {score.tier === "icons"
+                    ? "Icons"
+                    : score.tier === "ones_to_watch"
+                      ? "Ones to Watch"
+                      : "Neighborhood Staple"}
+                </span>
+                <span className="text-brand-black/55">
+                  #{rankFamilyPos} in Pittsburgh {familyShort}
+                </span>
+                {score.rank_category && score.rank_category !== rankFamilyPos ? (
+                  <span className="text-brand-black/35">
+                    · #{score.rank_category} in{" "}
+                    {meta.categoryName.toLowerCase()}s
+                  </span>
+                ) : null}
+              </p>
+            </div>
+          )}
+
           {/* Hero photo banner. Visual anchor so a cold reader knows what
               the place looks like before the editorial diagnosis lands.
               Falls back gracefully when no photo, just no banner. */}

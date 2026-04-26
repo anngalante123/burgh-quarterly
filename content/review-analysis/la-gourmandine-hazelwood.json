@@ -3,68 +3,68 @@
   "themes": [
     {
       "phrase": "raspberry lychee macaron",
-      "frequency": 1,
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "get the raspberry lychee macaroon, it is gluten free made with almond flour and it is the best thing I've ever put in my mouth hands down"
+      "exampleQuote": "the raspberry lychee macaroon is the best thing I've ever put in my mouth hands down"
     },
     {
-      "phrase": "Paris-level quality",
-      "frequency": 1,
+      "phrase": "Paris-worthy quality",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed"
     },
     {
-      "phrase": "hidden gem",
-      "frequency": 1,
+      "phrase": "hidden gem status",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Please do not miss this hidden gem in Pittsburgh"
     },
     {
-      "phrase": "multiple locations",
+      "phrase": "gluten-free options",
       "frequency": 1,
-      "sentiment": "neutral",
-      "exampleQuote": "there are multiple locations so please make sure you check it out"
+      "sentiment": "positive",
+      "exampleQuote": "it is gluten free made with almond flour"
     },
     {
-      "phrase": "delicious baked goods",
+      "phrase": "everything is delicious",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "todo es delicioso"
+      "exampleQuote": "Excelente panadería, todo es delicioso"
     }
   ],
   "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
-  "sentiment_summary": "Reviewers stack superlatives on the pastry quality, especially the raspberry lychee macaron, with almost no documented complaints across 525 reviews, though the written reviews that exist are brief and surface-level, leaving menu depth and experience mostly undescribed.",
-  "quarter_narrative": "Thirteen Pittsburgh creators posted 15 TikToks tagged at La Gourmandine Hazelwood this quarter, pulling 736,954 plays while the bakery itself posted zero times to Instagram in the last 41 days and holds no TikTok account of its own. The city is filming the croissants; the bakery is not filming back. That gap is the whole story of this ranking: a near-perfect review signal, a full conversion path, a creator community already doing the heavy lifting, and a social presence that has gone quiet at exactly the moment the audience is largest. In the Pittsburgh Sweets family, Page's leads this issue on social momentum; La Gourmandine Hazelwood leads on review sentiment and creator-generated reach, and closing the Instagram gap is the clearest path to moving off the Ones to Watch tier.",
-  "tldr_read": "Exceptional reviews and creator-generated TikTok reach, but the bakery's own Instagram has been silent for 41 days. Ones to Watch, #1 in Pittsburgh Pastry Shops.",
-  "tldr_meaning": "Every signal axis except Instagram Momentum is at or above the family median; restarting the feed is the one remaining variable separating this business from the Icons tier.",
+  "sentiment_summary": "Reviewers consistently praise the caliber of the pastry work, singling out specific items like the raspberry lychee macaron, with 88 percent of 525 reviews at five stars and no meaningful pattern of complaints in the available sample.",
+  "quarter_narrative": "Thirteen Pittsburgh creators posted 15 TikToks tagged at La Gourmandine Hazelwood this quarter, pulling nearly 737,000 plays, and the shop posted nothing to its own Instagram in that same stretch. The most recent creator video landed two days ago; the bakery's own last post was 41 days before that. In the Pittsburgh Sweets family, where Page's currently leads on social momentum, La Gourmandine holds the strongest review sentiment and a perfect conversion path setup, but the gap between what the city is making about this place and what the place is making about itself is the clearest variable separating it from a higher family rank. A single consistent posting cadence, pointed at the same product moments those 13 creators are already finding, is the most direct path up the board.",
+  "tldr_read": "Dominant review sentiment, a perfect conversion path, and 737,000 TikTok plays from other people's accounts. Ones to Watch, first in Pittsburgh Pastry, sixth in Pittsburgh Sweets.",
+  "tldr_meaning": "The review axis and discoverability infrastructure are already performing at or above family median; the remaining gap is entirely a social output problem, specifically a dormant Instagram and no owned TikTok presence in a quarter when 13 creators were actively filming the shop.",
   "diagnosis_pullquote": {
-    "line": "First In Pittsburgh Pastry, Built On 736,000 Creator Plays. The Bakery's Own Feed Has Gone Quiet.",
-    "highlight": "736,000 Creator Plays"
+    "line": "Sixth In Sweets, First In Pastry. The City Films It; The Bakery Has Gone Quiet.",
+    "highlight": "The City Films It"
   },
   "playbook": [
     {
-      "headline": "Break the 41-day Instagram silence now",
-      "action": "Post at least twice a week to Instagram; the account has been dark since before the top TikTok pulled 459,100 plays.",
+      "headline": "Restart Instagram before next week",
+      "action": "The account has been silent for 41 days while 13 outside creators kept the shop visible; one post per week reactivates the momentum signal.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "RESTART SIGNAL"
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Claim a TikTok account before creators define you",
-      "action": "Thirteen creators have filmed 15 videos here with no account to tag; a single owned TikTok presence captures that existing reach.",
-      "signal": "collab_fit",
-      "priority": "medium",
-      "impact_label": "CAPTURE REACH"
-    },
-    {
-      "headline": "Turn the macaron into a visual anchor",
-      "action": "The raspberry lychee macaron is the one specific product in 525 reviews; dedicated photos and short clips can deepen a thin written-review catalog.",
+      "headline": "Build a TikTok account around the macaron",
+      "action": "The raspberry lychee macaron is the most-cited specific product; a short TikTok series on its production has a natural hook the 736,954 existing plays already proved out.",
       "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+OWNED REACH"
+    },
+    {
+      "headline": "Tag and respond to the 13 creators filming you",
+      "action": "Acknowledging the creators who have already generated 737,000 plays deepens the collab relationship and increases the probability of repeat coverage without any production cost.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "+REVIEW DEPTH"
+      "impact_label": "RETAIN CREATORS"
     }
   ],
   "review_count": 4,
-  "analyzed_at": "2026-04-26T23:15:42.241Z",
+  "analyzed_at": "2026-04-26T23:35:13.720Z",
   "model": "claude-sonnet-4-6"
 }

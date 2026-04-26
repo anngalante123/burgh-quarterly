@@ -2,75 +2,75 @@
   "slug": "nan-xiang-soup-dumplings-pittsburgh",
   "themes": [
     {
-      "phrase": "soup dumpling quality",
+      "phrase": "soup dumplings worth returning for",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Delicious soup dumplings, great mixed variety."
+      "exampleQuote": "These beef and pepper noodles are legit. Dumplings sampler was a hit as well. This is going to be a repeat when we come back to town for sure."
     },
     {
-      "phrase": "named server praise",
-      "frequency": 5,
+      "phrase": "server named by name",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Our server Morgan had an amazing smile and great customer service."
+      "exampleQuote": "Our server Morgan had an amazing smile and great customer service. She held amazing conversation and made the experience very welcoming and rememberable."
     },
     {
-      "phrase": "noodles and dumplings sampler",
-      "frequency": 2,
+      "phrase": "quick, pleasant service",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "These beef and pepper noodles are legit. Dumplings sampler was a hit as well."
+      "exampleQuote": "Service was very pleasant and super quick. Great first experience."
     },
     {
-      "phrase": "Didi robot novelty",
+      "phrase": "Didi the robot",
       "frequency": 1,
       "sentiment": "positive",
       "exampleQuote": "Didi the robot was fun to watch."
     },
     {
-      "phrase": "bathroom cleanliness",
+      "phrase": "bathroom not clean",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Everything was great, but the bathroom was not clean."
+      "exampleQuote": "Everything was great, but the Bathroom was not clean."
     },
     {
-      "phrase": "repeat visit intent",
-      "frequency": 3,
+      "phrase": "new menu items tried",
+      "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "This is going to be a repeat when we come back to town for sure."
+      "exampleQuote": "We tried the new spicy beef dumplings and sweet and sour soup, both were incredible!"
     }
   ],
-  "notable_quote": "Our server Morgan had an amazing smile and great customer service; she was quick, efficient, and always had refills ready, and the new spicy beef dumplings and sweet and sour soup were both incredible.",
-  "sentiment_summary": "Reviewers are consistent on two things: the dumplings and the staff, with servers Galilea, Morgan, and Chavely called out by name across multiple reviews, while a single note about bathroom upkeep is the only friction in an otherwise clean sentiment picture.",
-  "quarter_narrative": "Thirteen Pittsburgh TikTok creators filmed Nan Xiang Soup Dumplings this quarter, generating nearly 36,000 plays across 13 videos, with the most recent posted just one day ago. The restaurant itself has no TikTok account, so every frame of that reach belongs to someone else's channel. Meanwhile, on Instagram, the account is actively posting, eleven times in the last 30 days, but the engagement rate sits at 0.21 percent, suggesting the follower base isn't converting the volume of posts into conversation. As the top-ranked restaurant and top-ranked business in its family this issue, the signal that moved Nan Xiang to the front of the list is social momentum, specifically the creator activity it didn't have to initiate. Whether it holds that position next issue will depend on whether the engagement gap on Instagram closes, or whether the restaurant finds a way to capture some of the TikTok energy currently flowing entirely through other people's accounts.",
-  "tldr_read": "Dominant review depth, 1,212 reviews at 88 percent five-star, strong creator coverage it doesn't own, and an Instagram posting cadence that hasn't yet converted into engagement. Icons of the Burgh, number one in Pittsburgh Restaurants.",
-  "tldr_meaning": "The rank is secure for now on the strength of review volume and creator activity, but the engagement rate on an eleven-post-per-month Instagram account and the complete absence of a TikTok presence are the two numbers most likely to reshape this standing by next issue.",
+  "notable_quote": "Our server Morgan had an amazing smile and great customer service; she was quick, efficient, and always had refills ready, held amazing conversation, and made the experience very welcoming and rememberable.",
+  "sentiment_summary": "Reviewers come for the soup dumplings and noodles, stay loyal because of specific servers they name by first name, and almost never leave without calling it a repeat visit; the one consistent friction point is bathroom upkeep.",
+  "quarter_narrative": "Thirteen Pittsburgh TikTok creators filmed Nan Xiang this quarter and the restaurant filmed none of it back. Those 13 videos pulled nearly 36,000 plays across creators like @bitesbymorgan and @412foodgirl, building a word-of-mouth radius that extends well past South Side Flats, while Nan Xiang itself has no TikTok presence to capture or redirect any of that attention. On Instagram the account is active, with 11 posts and 4 reels in the last 30 days, but an engagement rate of 0.21 percent suggests the audience isn't converting at the pace the posting volume deserves. As the top-ranked business across the entire Pittsburgh Businesses family this issue, the signal driving that position is social momentum, specifically the creator layer the city has built around the restaurant without any coordination. Holding that rank through the next quarter will depend on whether Nan Xiang can get into the conversation those creators are already having.",
+  "tldr_read": "Dominant reviews, strong creator coverage, active Instagram with weak engagement, and no TikTok account of its own. Icons of the Burgh, ranked first in Pittsburgh Restaurants and first across Pittsburgh Businesses.",
+  "tldr_meaning": "The review and conversion signals are effectively maxed out; the ceiling on rank is now set by how much of the existing TikTok energy the restaurant can absorb and redirect through its own channels.",
   "diagnosis_pullquote": {
-    "line": "Thirteen Creators Are Posting On TikTok; Nan Xiang Isn't, And That Gap Is Why The Rank Stays Interesting.",
-    "highlight": "Gap Is Why"
+    "line": "First Across Pittsburgh Businesses, Carried By Creators It Has Never Spoken Back To.",
+    "highlight": "Never Spoken Back To"
   },
   "playbook": [
     {
-      "headline": "Build a TikTok presence from scratch",
-      "action": "Thirteen creators have posted 13 videos totaling 35,914 plays this quarter; claim that platform before the next creator cycle resets.",
+      "headline": "Open a TikTok account this week",
+      "action": "Thirteen creators posted 35,914 plays this quarter tagging Nan Xiang; a business account would let the restaurant stitch, duet, and redirect that traffic directly.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "OWN THE REACH"
+      "impact_label": "CAPTURE CREATOR REACH"
     },
     {
-      "headline": "Convert Instagram posts into conversations",
-      "action": "Eleven posts in 30 days at 0.21 percent engagement suggests content volume without response strategy; shift at least two posts per month toward reply-driving formats.",
+      "headline": "Convert Instagram reels into real engagement",
+      "action": "Four reels posted in 30 days at 0.21 percent engagement; test reels under 30 seconds showing dumpling folds or the Didi robot to find the format that breaks the ceiling.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+ENGAGEMENT RATE"
     },
     {
-      "headline": "Close the bathroom gap before it compounds",
-      "action": "One negative review in the current sample targets bathroom cleanliness specifically; at 88 percent five-star across 1,212 reviews, a second wave of that note would move the sentiment needle visibly.",
+      "headline": "Fix the one recurring nitpick",
+      "action": "A single bathroom complaint in a near-perfect sentiment set is a manageable signal; one visible, recurring check keeps the 88 percent five-star rate from developing a crack.",
       "signal": "community_spark",
       "priority": "low",
       "impact_label": "PROTECT SENTIMENT"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T23:18:09.786Z",
+  "analyzed_at": "2026-04-26T23:37:51.189Z",
   "model": "claude-sonnet-4-6"
 }

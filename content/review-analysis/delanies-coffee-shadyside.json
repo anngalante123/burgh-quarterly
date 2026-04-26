@@ -8,63 +8,63 @@
       "exampleQuote": "The strawberry matcha here might be the best I've ever had."
     },
     {
-      "phrase": "specialty drink quality",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "Iced tiramisu latte was delicious!"
-    },
-    {
-      "phrase": "gets packed quickly",
+      "phrase": "cozy but crowded",
       "frequency": 2,
       "sentiment": "neutral",
       "exampleQuote": "I just wish this place was bigger, gets packed quickly!"
     },
     {
-      "phrase": "staff warmth",
+      "phrase": "seasonal specialty drinks",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "There were a lot of good options for drinks!"
+    },
+    {
+      "phrase": "friendly staff",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "The workers are so nice every time I visit!"
     },
     {
-      "phrase": "order accuracy and wifi",
+      "phrase": "order mix-up, no remedy",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin, let them know, I had to pay for a new muffin."
     }
   ],
   "notable_quote": "The strawberry matcha here might be the best I've ever had.",
-  "sentiment_summary": "Reviewers keep returning to the specialty drinks, particularly the strawberry matcha and tiramisu latte, while the recurring friction points are tight square footage, inconsistent order accuracy, and wifi too weak for remote workers.",
-  "quarter_narrative": "Sixteen Pittsburgh creators filmed Delanie's Coffee Shadyside this quarter and posted 17 TikToks that pulled 66,299 plays, with @stephr0se8 alone accounting for 31,200 of them on a video that framed Delanie's as a can't-miss local stop. Meanwhile, the shop posted three times to Instagram in 30 days, has no TikTok account of its own, and reels output sits at zero. The city is doing the storytelling; Delanie's is largely watching. That gap is exactly what separates a Ones to Watch placement from a higher-tier one, especially in a family led this issue by Allegheny Coffee and Tea Exchange, whose social momentum is the signal that put them at the top. Closing the distance means converting third-party enthusiasm into owned presence, because the demand signal from creators is already there and the review base, at 82 percent five-star across 104 reviews, supports the climb.",
-  "tldr_read": "Creator coverage is strong and the conversion path is airtight, but Instagram posts have slowed to a trickle and the shop has no TikTok account of its own. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The trajectory stalls here unless the owned social output catches up to the third-party coverage, because the product signal and creator fit are already pointing upward.",
+  "sentiment_summary": "Reviewers keep coming back for specialty drinks, especially the strawberry matcha and tiramisu latte, but a small cluster of complaints about a cramped footprint, weak WiFi, and at least one botched order point to operational friction that pulls the sentiment signal below the family median.",
+  "quarter_narrative": "Sixteen Pittsburgh creators filmed Delanie's Coffee Shadyside this quarter, generating 66,299 TikTok plays without any apparent coordination from the shop itself, which has no TikTok account of its own. The top video, a local coffee shop roundup from @stephr0se8, cleared 31,200 plays on a caption that wasn't even written specifically about Delanie's. Meanwhile, the business posted three times on Instagram in the last 30 days and went 16 days without touching its feed, leaving a gap between what the city is saying and what the shop is saying back. Allegheny Coffee and Tea Exchange leads the Pittsburgh Cafes family this issue on social momentum, a signal Delanie's has in raw form thanks to those creators but hasn't translated into its own voice yet. Closing that gap, specifically by establishing a TikTok presence that meets the creators already showing up, is the clearest path toward a mid-family rank becoming a top-three one.",
+  "tldr_read": "Creator coverage is strong and the conversion path is airtight, but review sentiment sits below the family median and the shop has no TikTok account to meet the 16 creators already filming it. Ones to Watch, #7 in Pittsburgh Cafes.",
+  "tldr_meaning": "The trajectory is upward if the shop converts its outsized creator attention into a TikTok presence and addresses the service consistency issues suppressing an otherwise warm review base.",
   "diagnosis_pullquote": {
-    "line": "Sixteen Creators Filmed It This Quarter. Delanie's Has No TikTok To Show For It.",
-    "highlight": "No TikTok To Show"
+    "line": "Seventh In Pittsburgh Cafes, Carried By Other People's TikToks And Held Back By Its Own.",
+    "highlight": "Other People's TikToks"
   },
   "playbook": [
     {
-      "headline": "Claim a TikTok presence before momentum shifts",
-      "action": "Sixteen unique creators posted 17 videos to TikTok this quarter; the shop has no account to collect that attention or redirect it.",
+      "headline": "Build a TikTok presence from existing footage",
+      "action": "Sixteen creators have already filmed 17 videos here; claim the business page and repost the best-performing ones to start building a native presence.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE CREATOR LIFT"
+      "impact_label": "CAPTURE CREATOR REACH"
     },
     {
-      "headline": "Post reels, not just still frames",
-      "action": "Three Instagram posts and zero reels in 30 days leaves a 4.67 percent engagement rate with nowhere to grow against a family median that rewards video.",
-      "signal": "content_canvas",
-      "priority": "medium",
-      "impact_label": "+VISUAL RANK"
-    },
-    {
-      "headline": "Address the order and wifi complaints publicly",
-      "action": "Review sentiment sits ten points below the family median; a direct owner response to the muffin-swap and wifi complaints would signal accountability and lift that number.",
+      "headline": "Close the review sentiment gap",
+      "action": "Review sentiment sits below the family median of 79; a direct response to the order-error complaint and a clearer staff protocol for fulfillment mistakes would signal accountability publicly.",
       "signal": "community_spark",
+      "priority": "medium",
+      "impact_label": "+SENTIMENT RECOVERY"
+    },
+    {
+      "headline": "Expand the visual catalog with drink close-ups",
+      "action": "With 96 photos across 10 categories, the visual catalog trails the family median of 77 in signal weight; the strawberry matcha and tiramisu latte have the most review mentions and no dedicated photo content from the business itself.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+SENTIMENT PTS"
+      "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T23:12:24.328Z",
+  "analyzed_at": "2026-04-26T23:31:39.801Z",
   "model": "claude-sonnet-4-6"
 }

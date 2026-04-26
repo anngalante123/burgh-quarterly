@@ -9,7 +9,7 @@
     },
     {
       "phrase": "bag your own beans",
-      "frequency": 2,
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "You can smell each one and even bag your own beans, which is a really unique touch."
     },
@@ -20,51 +20,51 @@
       "exampleQuote": "They have multiple taps with different varieties, which makes it fun to mix things up."
     },
     {
-      "phrase": "staff went out of their way",
+      "phrase": "staff going out of their way",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting."
     },
     {
-      "phrase": "repeat visit destination",
+      "phrase": "Strip District ritual stop",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "This is a place we make a point to stop at every time we're in Pittsburgh."
     }
   ],
   "notable_quote": "This place has been around since the 1980s and has built a reputation as one of the city's go-to specialty coffee shops, and you can feel that history the second you walk in.",
-  "sentiment_summary": "Reviewers consistently land on three things: the sensory immediacy of the space, the hands-on bean experience in the back, and staff who treat questions about grind settings as part of the job rather than an inconvenience. Nitpicks are essentially absent from the sample, which is notable at 924 reviews.",
-  "quarter_narrative": "Thirty-one Pittsburgh creators posted more than 36 TikToks at or about Allegheny Coffee this quarter, generating 607,052 plays, a figure that would be the envy of most Strip District businesses. The top video alone, from @pittsburghpg, cleared 127,500 plays by threading the shop into the city's identity around the HBO series 'The Pitt,' a cultural moment the business itself did not have to manufacture. Meanwhile, Allegheny Coffee holds its own on Instagram, posting 12 times in the last 30 days with five reels, which puts it well above the family median on momentum. Leading the Pittsburgh Cafes family for the second consecutive issue, the shop's rank is stabilized by a near-perfect conversion path and review sentiment that is 7 points above its peers. The ceiling from here is an engagement rate that currently sits at 1.23 percent; if the reels start pulling the interaction that the TikTok creators are already demonstrating is possible, this ranking becomes very difficult to challenge.",
-  "tldr_read": "Nine hundred and twenty-four reviews, strong creator coverage, and an Instagram feed that is actually active. Icons of the Burgh, number one in Pittsburgh Coffee Shops and Pittsburgh Cafes.",
-  "tldr_meaning": "The data shows a business whose public floor is already high and whose ceiling is determined by whether its own reels can capture even a fraction of the engagement that 31 outside creators are already proving exists.",
+  "sentiment_summary": "Reviewers consistently highlight the sensory ritual: the smell, the bean-scooping, the cold brew taps. Staff by name (Eric, Cameron) pull real praise. No meaningful nitpicks surface across 924 reviews, which either means the experience is genuinely tight or that dissatisfied customers simply leave without writing.",
+  "quarter_narrative": "Thirty-one Pittsburgh creators filed into Allegheny Coffee and Tea Exchange this quarter and produced 36 TikToks that collectively drew more than 607,000 plays, the biggest single driver being a @pittsburghpg post connecting the shop's neighborhood to HBO's 'The Pitt,' which alone cleared 127,500 views. The business has its own TikTok account at @adventureallegheny, and its Instagram at @alleghenycoffee posted 12 times in 30 days including 5 Reels, a posting cadence that outpaces most of its family. That combination of owned posting and substantial creator attention is exactly what locked in the family-leader position in Pittsburgh Cafes this issue. Sustaining that lead depends on whether the Instagram engagement rate, currently sitting at 1.23 percent, starts reflecting the volume and quality of content that the platform's activity would suggest is possible.",
+  "tldr_read": "924 reviews trending deeply positive, 31 creators generating 607K TikTok plays, and an Instagram cadence that actually keeps pace. Icons of the Burgh, #1 in Pittsburgh Cafes.",
+  "tldr_meaning": "The signals that built this rank are stable and mutually reinforcing. The one axis that hasn't caught up to the rest is Instagram engagement relative to posting frequency, and closing that gap is the difference between holding first and extending it.",
   "diagnosis_pullquote": {
-    "line": "Number One In Both Coffee Families, Carried By 607,052 Creator Plays The Shop Did Not Have To Earn.",
-    "highlight": "607,052 Creator Plays"
+    "line": "First In Pittsburgh Cafes, Carried By Creator Volume And A History The City Keeps Rediscovering.",
+    "highlight": "City Keeps Rediscovering"
   },
   "playbook": [
     {
-      "headline": "Convert creator energy into reel reach",
-      "action": "With 5 reels posted this month and a 1.23 percent engagement rate, the gap is not volume but pull; study the framing and pacing of the top @pittsburghpg cut for format cues.",
+      "headline": "Convert creator plays into owned engagement",
+      "action": "With 607K TikTok plays across 31 creators this quarter, repost or stitch the top-performing creator videos directly to @alleghenycoffee Reels to redirect that external reach back toward a 1.23% engagement rate that hasn't caught up to posting volume.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "+ENGAGEMENT RATE"
     },
     {
-      "headline": "Expand the visual catalog beyond 6 categories",
-      "action": "At 589 photos across 6 tagged Google categories, the back-of-house bean wall and cold brew tap array are underrepresented; both are cited in reviews as conversion moments.",
-      "signal": "content_canvas",
+      "headline": "Put staff by name in the frame",
+      "action": "Eric and Cameron are already being called out by name in reviews. A short Reel format introducing the people behind the counter would directly reflect the most repeated review theme and give creators a human subject to tag.",
+      "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+SENTIMENT DEPTH"
     },
     {
-      "headline": "Formalize the creator pipeline on TikTok",
-      "action": "Thirty-one creators are already filming here; the business account @adventureallegheny exists but is not the destination those creators are tagging, a pinned response strategy closes that loop.",
-      "signal": "collab_fit",
+      "headline": "Document the bean wall and tap lineup visually",
+      "action": "589 Google photos across only 6 categories suggests the cold brew tap setup and the self-scoop bean wall, two of the most-mentioned experiential details, are underrepresented in the visual catalog relative to what drives reviews.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "CAPTURE CREATOR LIFT"
+      "impact_label": "+VISUAL CATALOG"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T23:11:40.990Z",
+  "analyzed_at": "2026-04-26T23:30:52.709Z",
   "model": "claude-sonnet-4-6"
 }

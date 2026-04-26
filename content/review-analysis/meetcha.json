@@ -2,69 +2,69 @@
   "slug": "meetcha",
   "themes": [
     {
-      "phrase": "comfortable study spot",
-      "frequency": 2,
+      "phrase": "study spot atmosphere",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Would recommend as a go to study spot!"
+      "exampleQuote": "such an amazing environment... would recommend as a go to study spot"
     },
     {
-      "phrase": "milk tea and boba",
-      "frequency": 5,
-      "sentiment": "positive",
-      "exampleQuote": "I had a milk tea and it is wonderful!!! Recommend everyone to come here and try!!"
-    },
-    {
-      "phrase": "cute atmosphere",
+      "phrase": "boba and milk tea",
       "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Delicious boba and great atmosphere!"
+    },
+    {
+      "phrase": "cute and comfortable",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "literally such a cute place"
     },
     {
-      "phrase": "friendly helpful staff",
+      "phrase": "friendly staff",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Staff was VERY helpful and kind."
+      "exampleQuote": "Staff was VERY helpful and kind"
     },
     {
-      "phrase": "relaxing comfortable vibe",
+      "phrase": "relaxing experience",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "It's so comfortable and relaxing and the staff is super friendly"
     }
   ],
-  "notable_quote": "Always such a good experience!! It's so comfortable and relaxing and the staff is super friendly.",
-  "sentiment_summary": "Reviewers consistently land on the same three things: the boba and milk tea, the atmosphere as a place to linger, and staff warmth; what the reviews lack is any specificity about menu items, seasonal offerings, or anything that would signal depth beyond a pleasant first visit.",
-  "quarter_narrative": "MeetCha spent Spring 2026 earning goodwill quietly, 134 Google reviews at 93% five-star is a real number, not an inflated one, and Squirrel Hill regulars have clearly made it a genuine habit. But the social picture is a different story. The Instagram account has gone 92 days without a post, and there is no TikTok creator footprint to fill that gap. In a cafe category where Allegheny Coffee and Tea Exchange is setting the pace on social momentum, MeetCha is sitting on a visually strong, emotionally warm product that the city's content ecosystem has not yet discovered. The rank climbs from here if the shop gives the city something to film.",
-  "tldr_read": "Loyal Google reviews and a perfect conversion path, but Instagram has been silent for over three months and no TikTok creators have found it yet. Ones to Watch, #4 in Pittsburgh Cafes.",
-  "tldr_meaning": "The review floor is solid and the in-person product clearly converts, but without an Instagram restart or any TikTok presence, the signals that move a cafe up the family ranking are simply not accumulating.",
+  "notable_quote": "Always such a good experience: it's so comfortable and relaxing and the staff is super friendly.",
+  "sentiment_summary": "Reviewers are consistently enthusiastic about the vibe and boba quality, and almost never nitpick; the 134 reviews skew extremely positive, but the absence of critical feedback suggests a shallow reviewer pool rather than a flawless operation.",
+  "quarter_narrative": "MeetCha spent Spring 2026 quietly building a loyal Squirrel Hill South following without doing much to be found beyond it. The 93-percent five-star rating is real, but 134 total reviews and a last post 92 days ago tells a story of a place that earns genuine affection and then goes quiet. No Pittsburgh TikTok content is indexed for the shop, which is a gap worth naming plainly: a boba and milk tea cafe with a photogenic interior is exactly the kind of place creators film, and none have surfaced here yet. Allegheny Coffee and Tea Exchange is running away with the Pittsburgh Cafes family this issue on the strength of social momentum, the signal MeetCha most conspicuously lacks. The rank climbs when the review volume grows and when even one creator discovers the space.",
+  "tldr_read": "Exceptional customer affection and a perfect conversion path, but dormant Instagram and zero TikTok presence leave MeetCha at Ones to Watch, fourth in Pittsburgh Cafes.",
+  "tldr_meaning": "The sentiment ceiling is high and the infrastructure is sound; the rank stalls until review volume deepens and a social presence, on any platform, picks back up.",
   "diagnosis_pullquote": {
-    "line": "Fourth In Pittsburgh Cafes On Goodwill Alone. The Feed Has Been Quiet For Three Months.",
-    "highlight": "Goodwill Alone"
+    "line": "Fourth In Pittsburgh Cafes On Genuine Affection, Stalled By 92 Days Of Silence.",
+    "highlight": "92 Days Of Silence"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram before summer ends",
-      "action": "The account has posted nothing in 92 days; one post per week of the actual drinks would restart the signal immediately.",
+      "headline": "Break the 92-day Instagram silence now",
+      "action": "MeetCha's Instagram has been dark for 92 days; a single weekly post restarts the momentum signal and surfaces the 15% engagement rate it already earns.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "RESTART SIGNAL"
     },
     {
-      "headline": "Build out the Google photo catalog",
-      "action": "115 photos across 11 categories sounds sufficient, but the visual catalog sits well below the family median; adding 30 staff-shot menu photos in underrepresented categories closes that gap.",
-      "signal": "content_canvas",
-      "priority": "medium",
-      "impact_label": "+1 VISUAL RANK"
-    },
-    {
-      "headline": "Give reviewers something specific to say",
-      "action": "Current reviews describe vibes, not drinks; a named seasonal boba or rotating special gives repeat visitors a concrete reason to write a second review.",
+      "headline": "Push review volume past 200 this quarter",
+      "action": "With only 134 reviews, a table card or receipt prompt asking regulars to post could close the gap to family-median review depth within one season.",
       "signal": "community_spark",
+      "priority": "medium",
+      "impact_label": "+SENTIMENT RANK"
+    },
+    {
+      "headline": "Expand photo catalog beyond six categories",
+      "action": "MeetCha's 115 Google photos cluster in six categories; staff-submitted shots of the study seating and seasonal drinks could close the gap to the family visual median.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+REVIEW DEPTH"
+      "impact_label": "+VISUAL DEPTH"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T23:17:06.874Z",
+  "analyzed_at": "2026-04-26T23:36:38.515Z",
   "model": "claude-sonnet-4-6"
 }

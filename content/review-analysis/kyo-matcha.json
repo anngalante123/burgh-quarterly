@@ -8,63 +8,69 @@
       "exampleQuote": "If you are a fan of not overly sweet cakes, this place is a must try."
     },
     {
-      "phrase": "matcha latte richness",
-      "frequency": 3,
+      "phrase": "matcha latte quality",
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time."
     },
     {
       "phrase": "cozy work-friendly seating",
-      "frequency": 2,
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Tons of wall plugs and comfortable seating, making it a great spot to get some work done."
     },
     {
-      "phrase": "inconsistent portion sizes",
+      "phrase": "inconsistent portion sizing",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "Sometimes my ice cream sizes varies too much especially when it's like $8 I expect a decent portion."
     },
     {
-      "phrase": "early closing frustration",
+      "phrase": "closing time disputes",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "We walked in at 9:55 PM and were told by staff that they were already closed, despite a posted closing time of 10:00 PM."
+      "exampleQuote": "We walked in at 9:55 PM and were told by staff that they were already closed, five minutes before the posted time."
+    },
+    {
+      "phrase": "Sakura seasonal cakes",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Got the Sakura cheesecake, Sakura rain cake, and matcha latte. The cakes were good, not too strong Sakura flavor."
     }
   ],
-  "notable_quote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time.",
-  "sentiment_summary": "Reviewers return for the restrained sweetness of the cakes and the depth of the matcha drinks, but they flag inconsistent soft-serve portions and a closing-time enforcement episode that left at least one customer without a corporate escalation path.",
-  "quarter_narrative": "Thirty-nine Pittsburgh creators filed into Kyo Matcha this quarter and left with 1.79 million TikTok plays between them. The shop's own TikTok account, @kyomatcha.columbia, exists but the real action belongs to the city: @andremelendez alone pulled 1.4 million plays off a single video captioned with the phrase 'deserves more hype,' which is both a compliment and an accurate description of the gap. Meanwhile, the business's Instagram ran six posts and five reels in thirty days, a cadence that keeps it alive but doesn't close the distance to Page's, the Pittsburgh Sweets family leader this issue on the strength of social momentum. Kyo Matcha's rank climbs when its own TikTok starts harvesting what the creator community is already delivering for free, and when the review sentiment, currently sitting below the family median, gets pulled up by the operational consistency that the cakes and the drinks clearly deserve.",
-  "tldr_read": "Creator coverage at 1.79 million plays and an Instagram engagement rate near 48 percent, but review sentiment trails the family median and the business's own TikTok presence barely registers. Icons of the Burgh, number 2 in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "The visual and creator axes are already top-of-family; the rank ceiling is set by a review sentiment score sitting 16 points below the family median and a TikTok account that hasn't yet captured the wave of creator attention already pointed at the shop.",
+  "notable_quote": "The best matcha I've had in a long time.",
+  "sentiment_summary": "Reviewers consistently praise the restrained sweetness of the cakes and the quality of the matcha latte, while nitpicking inconsistent soft serve portion sizes and a closing-time incident that left at least one customer without recourse.",
+  "quarter_narrative": "Thirty-nine Pittsburgh creators filmed Kyo Matcha this quarter, generating 1.79 million TikTok plays, including a single video from @andremelendez that pulled 1.4 million views on its own. The business has a TikTok account under @kyomatcha.columbia but the overwhelming volume of the city's attention is arriving through other people's phones, not its own. Meanwhile, Instagram momentum is genuinely strong at six posts and five reels in the last 30 days, and a 47.87 percent engagement rate that sits well above the family median. The family leader this issue is Page's, whose edge is social momentum. Kyo Matcha's climb from fourth to second in the Pittsburgh Sweets family depends on closing the gap between the city's enthusiasm for this place and the review sentiment signal, which trails the family median by a meaningful margin.",
+  "tldr_read": "Creator-driven TikTok reach of 1.79 million plays and a 96 creator fit, but review sentiment is the weakest axis in an otherwise Icons-tier profile. Icons of the Burgh, #4 in Pittsburgh Sweets.",
+  "tldr_meaning": "The TikTok volume and Instagram engagement are already punching at the top of the family; the sentiment signal at 67, against a family median of 83, is the single axis holding the rank at fourth rather than first.",
   "diagnosis_pullquote": {
-    "line": "Thirty-Nine Creators Are Handing Kyo Matcha 1.79 Million Plays. The Shop's Own TikTok Hasn't Answered.",
-    "highlight": "1.79 Million Plays"
+    "line": "Fourth In Pittsburgh Sweets, Carried By 1.79 Million TikTok Plays. The Reviews Have Not Caught Up.",
+    "highlight": "1.79 Million TikTok Plays"
   },
   "playbook": [
     {
-      "headline": "Close the review sentiment gap now",
-      "action": "Sentiment sits 16 points below the family median; address portion consistency on soft serve and close-time enforcement before the next review cycle compounds the gap.",
+      "headline": "Close the review sentiment gap directly",
+      "action": "Review sentiment sits 16 points below the family median; a structured response to the two negative reviews on record, plus a visible correction on portion consistency and closing-time policy, signals to future reviewers that the business is paying attention.",
       "signal": "community_spark",
       "priority": "high",
-      "impact_label": "+12 SENTIMENT PTS"
+      "impact_label": "+SENTIMENT SIGNAL"
     },
     {
-      "headline": "Activate the existing TikTok account",
-      "action": "Thirty-nine creators generated 1.79 million plays this quarter while @kyomatcha.columbia posted almost nothing; even five original TikToks this month starts closing that gap.",
-      "signal": "momentum",
-      "priority": "medium",
-      "impact_label": "CAPTURE CREATOR WAVE"
-    },
-    {
-      "headline": "Expand the Google photo catalog",
-      "action": "405 photos across only six active categories puts the visual catalog just below the family median of 84; seating, seasonal specials, and the sakura cakes are underrepresented and shootable today.",
+      "headline": "Convert TikTok plays into Google photo depth",
+      "action": "1.79 million TikTok plays exist but the visual catalog sits just below the family median at 83; cross-posting the five reels from Instagram into Google Business photos, specifically tagging Sakura cakes and the matcha parfait, fills the thinnest photo categories.",
       "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+VISUAL RANK"
+    },
+    {
+      "headline": "Pull the top creator clip into owned channels",
+      "action": "The @andremelendez video at 1.4 million plays is the single biggest reach event this quarter; reposting or formally crediting that clip on Instagram stories while the momentum is live converts passive TikTok discovery into Instagram followers who can be retained.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "RETAIN REACH"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T23:15:20.047Z",
+  "analyzed_at": "2026-04-26T23:34:51.499Z",
   "model": "claude-sonnet-4-6"
 }

@@ -2,13 +2,13 @@
   "slug": "golden-age-beer-company",
   "themes": [
     {
-      "phrase": "beer quality praised",
+      "phrase": "excellent beer selection",
       "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "Great pilsners! The beers are excellent."
     },
     {
-      "phrase": "food execution uneven",
+      "phrase": "food quality inconsistent",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "Half of your food is 'Meh', the other half is absolutely terrible."
@@ -17,54 +17,54 @@
       "phrase": "pierogi specials",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Special for the weekend were shepherd pie pierogis.. omg."
+      "exampleQuote": "Special for the weekend were shepherd pie pierogis.. omg. Sorry if you didn't get them."
     },
     {
-      "phrase": "unpretentious cozy space",
+      "phrase": "cozy unpretentious space",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "So yummy and a fun, cozy, unpretentious space."
     },
     {
-      "phrase": "liter deals and events",
+      "phrase": "liter beer value",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "Liters of beer $10, super deal. Place is great and always has events going on."
+      "exampleQuote": "Liters of beer $10, super deal."
     }
   ],
-  "notable_quote": "So yummy and a fun, cozy, unpretentious space.",
-  "sentiment_summary": "Reviewers reliably praise the beer selection and the relaxed atmosphere, but a persistent thread of food criticism, overcooking, over-seasoning, and price-value mismatches, keeps sentiment from climbing to where the beer signal alone would put it.",
-  "quarter_narrative": "Spring 2026 looked like quiet consistency for Golden Age Beer Company: 12 Instagram posts in the last 30 days, a steady trickle of Google reviews, and a customer base that clearly knows where to find it. There are no Pittsburgh TikTok videos indexed for this place, which is the gap the rank reflects most honestly. Hidden Harbor leads the bars family on social momentum, a signal Golden Age has not yet entered. If the food execution tightens and a single creator-driven moment breaks through on TikTok, the review base here is deep enough to carry a ranking jump.",
-  "tldr_read": "Strong beer reputation, 195 reviews at 85% five-star, no TikTok presence at all, and food criticism anchoring sentiment just below the family median. Ones to Watch, #2 in Pittsburgh Breweries.",
-  "tldr_meaning": "The data shows a business with a loyal local floor but no external amplification layer; sentiment and visual signals both sit below their family medians, and the TikTok absence is the single cleanest explanation for why.",
+  "notable_quote": "Special for the weekend were shepherd pie pierogis.. omg. Sorry if you didn't get them. Worth the trip out of the 'city'.",
+  "sentiment_summary": "Reviewers are consistent on the beer, pilsners and rotating specials get repeated praise, but the food draws genuine friction, with one reviewer detailing overcooked seitan, a hockey-puck burger, and execution problems that undercut an otherwise enthusiastic room.",
+  "quarter_narrative": "Golden Age Beer Company comes into Spring 2026 sitting second in Pittsburgh Breweries and third across the Pittsburgh Bars family, a strong footing built almost entirely on beer reputation and a room people clearly like being in. No TikTok creators have indexed this place yet, which means the shepherd pie pierogi moment, the $10 liter deal, the cozy-neighborhood vibe that reviewers keep reaching for, none of it has found a wider audience beyond Google. Family leader Hidden Harbor is pulling ahead on social momentum; Golden Age's path into that conversation runs directly through the visual and creator layers it hasn't touched. The rank holds as long as the beer signal holds, but closing the gap with Hidden Harbor requires the city to start filming what regulars already know.",
+  "tldr_read": "Strong beer reviews and a perfect conversion path, but below-median sentiment and no TikTok footprint. Ones to Watch, #3 in Pittsburgh Bars.",
+  "tldr_meaning": "The trajectory stays flat until the food-execution critiques stop softening the sentiment ceiling and until creator coverage starts converting the room's obvious warmth into discoverable content.",
   "diagnosis_pullquote": {
-    "line": "Second In Breweries On Word Of Mouth Alone, TikTok Has Not Entered The Picture.",
-    "highlight": "TikTok Has Not"
+    "line": "Third In Pittsburgh Bars On Beer Alone. The Food Ceiling And Missing TikTok Presence Keep The Rank There.",
+    "highlight": "Missing TikTok Presence"
   },
   "playbook": [
     {
-      "headline": "Address the food consistency problem publicly",
-      "action": "The negative reviews all name the same issues: overcooking, over-seasoning, price-value on specific dishes. Acknowledge the gap and show the kitchen fixing it.",
+      "headline": "Fix the food execution gap now",
+      "action": "Two of eight sampled reviews cite specific overcooked dishes; resolving those complaints directly raises sentiment off its below-median floor.",
       "signal": "community_spark",
       "priority": "high",
-      "impact_label": "+6 SENTIMENT PTS"
+      "impact_label": "+SENTIMENT FLOOR"
     },
     {
-      "headline": "Add reels to the existing post cadence",
-      "action": "12 posts in 30 days with zero reels means the account is active but not reaching beyond its current followers; one reel per week changes that distribution.",
-      "signal": "momentum",
-      "priority": "medium",
-      "impact_label": "+REACH UNLOCK"
-    },
-    {
-      "headline": "Get indexed on TikTok for the first time",
-      "action": "Zero Pittsburgh TikToks exist for this business; a single video from a creator or the account itself would be the first data point in a signal that currently reads empty.",
+      "headline": "Build a TikTok presence from scratch",
+      "action": "Zero creators have indexed this business on TikTok; the shepherd pie pierogi special and $10 liter pours are exactly the format that travels.",
       "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "UNLOCK CREATORS"
+    },
+    {
+      "headline": "Add Reels to an active Instagram",
+      "action": "Twelve posts in 30 days with zero Reels and a 2.05% engagement rate; short video would widen reach without changing the posting cadence.",
+      "signal": "momentum",
       "priority": "low",
-      "impact_label": "OPEN NEW SIGNAL"
+      "impact_label": "+REACH SURFACE"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T23:13:22.043Z",
+  "analyzed_at": "2026-04-26T23:32:50.301Z",
   "model": "claude-sonnet-4-6"
 }

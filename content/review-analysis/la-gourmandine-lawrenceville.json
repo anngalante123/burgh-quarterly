@@ -8,63 +8,63 @@
       "exampleQuote": "A little bit of Paris in Pittsburgh."
     },
     {
-      "phrase": "seasonal specialties",
+      "phrase": "seasonal desserts",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "The seasonal La Ruche might be the best dessert I have ever had."
     },
     {
-      "phrase": "busy on weekends",
-      "frequency": 2,
+      "phrase": "busy weekends",
+      "frequency": 1,
       "sentiment": "neutral",
-      "exampleQuote": "You can call ahead if you know what you want. It is busy on weekends."
+      "exampleQuote": "It is busy on weekends; you can call ahead if you know what you want."
     },
     {
       "phrase": "breakfast and lunch find",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "This place was the find of Pittsburgh. Breakfast and lunch!"
-    },
-    {
-      "phrase": "croissants and cream puffs",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Nut and chocolate croissants that were all fantastic, and a cream puff that was delicious."
+      "exampleQuote": "Travel everywhere, eat anything. This place was the find of Pittsburgh."
+    },
+    {
+      "phrase": "specific pastry callouts",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Nut and chocolate croissants, a cream puff for later, all fantastic."
     }
   ],
   "notable_quote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had.",
-  "sentiment_summary": "Reviewers keep coming back to the Frenchness of it, specifically the laminated doughs and seasonal specials, while the only friction is weekend crowding and occasional uncertainty about whether specific items are still on the menu.",
-  "quarter_narrative": "Nine creators filmed La Gourmandine in Lawrenceville this quarter and the bakery posted nothing back. Thirty-one thousand TikTok plays moved through the neighborhood and the business's own Instagram sat quiet for more than forty days, a gap that is increasingly hard to explain given 1,294 Google reviews and a conversion path that is fully built out. Across the Pittsburgh Sweets family, Page's holds the social momentum signal; La Gourmandine holds the review depth, the visual catalog, and the creator attention, but none of that translates to rank movement until the feed restarts. The climb from Ones to Watch into Icons territory is already funded by the city's attention; it is waiting on the business to collect it.",
-  "tldr_read": "Nearly 1,300 reviews, nine creators filming, Instagram dormant for over forty days. Ones to Watch, number one in Pittsburgh Bakeries.",
-  "tldr_meaning": "The review and creator signals are strong enough to push this into Icons; the Instagram silence is the only axis pulling the composite down.",
+  "sentiment_summary": "Reviewers return for specific items, the La Ruche, nut croissants, cream puffs, and frame the shop as a genuine Parisian outpost; the only friction surfaces around weekend crowds and uncertainty about whether certain menu items are still available.",
+  "quarter_narrative": "Nine Pittsburgh creators posted eleven TikToks tagging La Gourmandine this quarter, pulling nearly 32,000 plays without a single post from the bakery itself in the last 41 days. The city is filming the croissant case; the bakery is not filming anything back. Meanwhile, in the broader Pittsburgh Sweets family, Page's holds the top spot this issue on the strength of social momentum, which is exactly the signal La Gourmandine is leaving on the table. The rank climbs when the bakery's own voice reappears, because the review depth and creator magnetism are already doing the structural work.",
+  "tldr_read": "Dominant review volume, nine creators filming this quarter, and a completely dormant Instagram. Ones to Watch, #1 in Pittsburgh Bakeries, #8 in Pittsburgh Sweets.",
+  "tldr_meaning": "The review foundation and creator attention are strong enough to hold the bakery rank, but the family rank stays at the floor until Instagram restarts and the bakery begins capturing the attention already circling it.",
   "diagnosis_pullquote": {
-    "line": "First In Pittsburgh Bakeries, Carried By 1,294 Reviews. The Feed Has Gone Quiet.",
-    "highlight": "Gone Quiet"
+    "line": "Eighth In Sweets, First In Bakeries. Nine Creators Are Filming; The Feed Went Quiet.",
+    "highlight": "Feed Went Quiet"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram before another week passes",
-      "action": "The account has been dark for 41 days; one post per week featuring a named seasonal item closes the gap against the family median.",
+      "headline": "Restart Instagram before the next weekend",
+      "action": "The account has been silent for 41 days; one post per week of whatever is in the case that morning closes the momentum gap fast.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "RESTART SIGNAL"
     },
     {
-      "headline": "Tag creators already filming the bakery",
-      "action": "Nine creators produced 31,960 TikTok plays this quarter; acknowledging them on Instagram converts existing reach into follower growth at no cost.",
+      "headline": "Claim the creator attention already there",
+      "action": "Nine creators filmed 11 TikToks this quarter totaling 32,000 plays; reposting one on Instagram Stories each week turns their reach into the bakery's own feed.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+CREATOR LOOP"
+      "impact_label": "+FAMILY RANK"
     },
     {
-      "headline": "Surface seasonal menu items explicitly online",
-      "action": "One reviewer is asking publicly about the délice de pistache; a pinned Google post or bio update confirming current specials removes friction at the point of search.",
-      "signal": "conversion_path",
+      "headline": "Surface the seasonal menu in photos",
+      "action": "The La Ruche prompted the strongest review language this period; a dedicated photo post each time a seasonal item arrives adds to the 779 Google photos already driving discovery.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+MENU CLARITY"
+      "impact_label": "+VISUAL DEPTH"
     }
   ],
   "review_count": 6,
-  "analyzed_at": "2026-04-26T23:15:59.315Z",
+  "analyzed_at": "2026-04-26T23:35:31.744Z",
   "model": "claude-sonnet-4-6"
 }
