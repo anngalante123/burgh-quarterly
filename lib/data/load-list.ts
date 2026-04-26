@@ -24,15 +24,22 @@ export type ListArticleItem = {
   playbook_top_move?: string;
 };
 
-/** Item shape for "creator post" list articles (kind: "posts"). */
+/** Item shape for "creator post" list articles (kind: "posts").
+ *  Used by both the TikTok ABOUT list and the Instagram BY list. The
+ *  `platform` field defaults to "tiktok" when absent (back-compat). */
 export type PostArticleItem = {
   rank: number;
   kind: "post";
+  /** "tiktok" for the ABOUT list, "instagram" for the BY list. Optional
+   *  for back-compat with articles generated before this field existed. */
+  platform?: "tiktok" | "instagram";
   video_url: string;
   video_id?: string | null;
   thumbnail_url?: string | null;
   plays: number;
   likes: number;
+  /** Comments count, only set for IG posts in practice. */
+  comments?: number;
   posted: string;
   caption: string;
   creator_handle: string;
@@ -40,6 +47,8 @@ export type PostArticleItem = {
   business_name: string;
   family_label: string;
   neighborhood: string;
+  /** "Image" | "Sidecar" | "Video" for IG posts, undefined for TikTok. */
+  ig_type?: string;
 };
 
 export type ListArticle = {

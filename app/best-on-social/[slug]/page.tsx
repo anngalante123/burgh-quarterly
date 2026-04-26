@@ -13,6 +13,7 @@ import {
   type PostArticleItem,
 } from "@/lib/data/load-list";
 import { TikTokEmbedPreview } from "@/components/insights/TikTokEmbedPreview";
+import { InstagramEmbedPreview } from "@/components/insights/InstagramEmbedPreview";
 
 /**
  * /best-on-social/[slug], the renderer for ranked-list articles
@@ -82,7 +83,7 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
         <div className="min-w-0 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-5 md:gap-7 items-start">
           <div className="min-w-0">
             <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
-              About{" "}
+              {item.platform === "instagram" ? "By " : "About "}
               <Link
                 href={`/business/${item.business_slug}`}
                 className="text-brand-black hover:text-brand-purple"
@@ -108,15 +109,34 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
             </p>
 
             <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
-              <span className="font-display text-base md:text-lg font-black tabular-nums text-brand-black">
-                {item.plays.toLocaleString()}{" "}
-                <span className="font-body font-normal text-xs uppercase tracking-[0.14em] text-brand-black/55">
-                  plays
+              {item.platform === "instagram" ? (
+                <span className="font-display text-base md:text-lg font-black tabular-nums text-brand-black">
+                  {item.likes.toLocaleString()}{" "}
+                  <span className="font-body font-normal text-xs uppercase tracking-[0.14em] text-brand-black/55">
+                    likes
+                  </span>
                 </span>
-              </span>
-              {item.likes > 0 ? (
+              ) : (
+                <span className="font-display text-base md:text-lg font-black tabular-nums text-brand-black">
+                  {item.plays.toLocaleString()}{" "}
+                  <span className="font-body font-normal text-xs uppercase tracking-[0.14em] text-brand-black/55">
+                    plays
+                  </span>
+                </span>
+              )}
+              {item.platform === "instagram" && item.plays > 0 ? (
+                <span className="font-body text-xs text-brand-black/55 tabular-nums">
+                  {item.plays.toLocaleString()} plays
+                </span>
+              ) : null}
+              {item.platform !== "instagram" && item.likes > 0 ? (
                 <span className="font-body text-xs text-brand-black/55 tabular-nums">
                   {item.likes.toLocaleString()} likes
+                </span>
+              ) : null}
+              {item.comments && item.comments > 0 ? (
+                <span className="font-body text-xs text-brand-black/55 tabular-nums">
+                  {item.comments.toLocaleString()} comments
                 </span>
               ) : null}
               {dateLabel ? (
@@ -133,7 +153,9 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-purple hover:text-brand-black transition-colors"
               >
-                Watch on TikTok
+                {item.platform === "instagram"
+                  ? "View on Instagram"
+                  : "Watch on TikTok"}
                 <span aria-hidden="true">↗</span>
               </a>
               <Link
@@ -145,13 +167,22 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
               </Link>
             </div>
           </div>
-          <div className="md:order-last w-40 sm:w-48 md:w-[180px] shrink-0">
-            <TikTokEmbedPreview
-              videoUrl={item.video_url}
-              videoId={item.video_id}
-              thumbnailUrl={item.thumbnail_url}
-              caption={item.caption}
-            />
+          <div className="md:order-last w-40 sm:w-48 md:w-[200px] shrink-0">
+            {item.platform === "instagram" ? (
+              <InstagramEmbedPreview
+                postUrl={item.video_url}
+                shortcode={item.video_id}
+                thumbnailUrl={item.thumbnail_url}
+                caption={item.caption}
+              />
+            ) : (
+              <TikTokEmbedPreview
+                videoUrl={item.video_url}
+                videoId={item.video_id}
+                thumbnailUrl={item.thumbnail_url}
+                caption={item.caption}
+              />
+            )}
           </div>
         </div>
       </div>

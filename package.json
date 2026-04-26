@@ -13,8 +13,10 @@
     "analyze:reviews": "tsx scripts/analyze-reviews.ts",
     "analyze:business": "tsx scripts/analyze-business.ts",
     "scrape:tiktok": "tsx scripts/scrape-tiktok-mentions.ts",
+    "scrape:own-posts": "tsx scripts/scrape-business-own-posts.ts",
     "generate:lists": "tsx scripts/generate-list.ts",
-    "generate:posts": "tsx scripts/generate-creator-posts.ts"
+    "generate:posts": "tsx scripts/generate-creator-posts.ts",
+    "generate:by-posts": "tsx scripts/generate-by-posts.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.90.0",
