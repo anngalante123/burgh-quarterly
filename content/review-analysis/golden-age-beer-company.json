@@ -8,69 +8,69 @@
       "exampleQuote": "The beers are excellent."
     },
     {
-      "phrase": "food hit or miss",
+      "phrase": "food hits and misses",
       "frequency": 3,
-      "sentiment": "negative",
+      "sentiment": "neutral",
       "exampleQuote": "Half of your food is 'Meh', the other half is absolutely terrible."
     },
     {
-      "phrase": "cozy unpretentious space",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Fun, cozy, unpretentious space."
-    },
-    {
-      "phrase": "pierogie specials",
+      "phrase": "pierogies on the menu",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Special for the weekend were shepherd pie pierogis.. omg."
     },
     {
-      "phrase": "liter deal value",
+      "phrase": "cozy unpretentious space",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "So yummy and a fun, cozy, unpretentious space."
+    },
+    {
+      "phrase": "liter beer value",
       "frequency": 1,
       "sentiment": "positive",
       "exampleQuote": "Liters of beer $10, super deal."
     },
     {
-      "phrase": "overcooking execution",
-      "frequency": 2,
+      "phrase": "overcooking execution issues",
+      "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "You guys need to stop overcooking everything."
     }
   ],
-  "notable_quote": "Fun, cozy, unpretentious space.",
-  "sentiment_summary": "Reviewers are reliably enthusiastic about the beer and the value, but a vocal minority flags inconsistent kitchen execution, specifically overcooked proteins and over-seasoned bar bites at prices that make the misses sting.",
-  "quarter_narrative": "Golden Age Beer Company enters Spring 2026 sitting second in Pittsburgh Breweries with a review base that is overwhelmingly positive but thin on specifics, 195 reviews is solid, though the review texts that exist read more like toasts than testimony. There is no TikTok footprint indexed for this business, no creators pulling the room onto short-form video, which matters because Hidden Harbor, the Pittsburgh Bars family leader this issue, built its rank on exactly that social momentum signal. Golden Age has the beer, the weekend specials, and a room people describe as genuinely low-key; the rank climbs when the city starts filming that room and the kitchen tightens the execution that reviewers keep flagging.",
-  "tldr_read": "Strong conversion path and above-median Instagram momentum, but review sentiment and visual catalog both trail the family, and TikTok has zero indexed coverage. Ones to Watch, #2 in Pittsburgh Breweries.",
-  "tldr_meaning": "The ceiling here is higher than the rank suggests, but closing the gap on Hidden Harbor depends on whether short-form creator coverage materializes and whether the kitchen stops producing the mixed-signal reviews that are keeping sentiment below the family median.",
+  "notable_quote": "Food on point, especially the chicken bacon ranch wrap. Chicken cooked to perfection. Liters of beer $10, super deal. Place is great and always has events going on.",
+  "sentiment_summary": "Reviewers are largely sold on the beer and the value, especially the liter deals, but a vocal minority finds the kitchen execution inconsistent, citing overcooked proteins and overworked seasoning on dishes that could be simpler.",
+  "quarter_narrative": "Golden Age Beer Company came into Spring 2026 as one of the stronger-reviewed breweries in the city, 195 Google reviews at 85% five-star, an Instagram account posting 12 times in 30 days, and a conversion path that is fully buttoned up online. The gap is not silence; it is reach. No Pittsburgh TikTok creator coverage is indexed for this business, which means the city's most mobile discovery layer has not yet found its way through the door, or has not felt compelled to film it. That is a meaningful ceiling for a bar family competing against Hidden Harbor, whose social momentum is the signal driving the category leader's rank this issue. For Golden Age to move from Ones to Watch toward the top of either the Brewery or Bar family, the question is whether creator discovery catches up to what the review base already knows.",
+  "tldr_read": "Conversion path is airtight and Instagram is active, but no TikTok creator coverage and below-median visual catalog are keeping it at Ones to Watch, #2 in Pittsburgh Breweries.",
+  "tldr_meaning": "The review foundation is solid and the posting cadence is real, but without TikTok creator presence the discovery ceiling stays low and the gap to the family leaders does not close.",
   "diagnosis_pullquote": {
-    "line": "Second In Breweries On The Beer Alone. The Kitchen And The Camera Have Not Caught Up.",
-    "highlight": "The Kitchen And"
+    "line": "Second In Breweries On Honest Reviews. The TikTok Layer Has Not Arrived Yet.",
+    "highlight": "TikTok Layer Has"
   },
   "playbook": [
     {
-      "headline": "Fix the review narrative on food",
-      "action": "The kitchen critique appears in roughly a third of the available review texts; address execution consistency publicly in owner responses to move sentiment above the current family median.",
-      "signal": "community_spark",
-      "priority": "high",
-      "impact_label": "+6 SENTIMENT PTS"
-    },
-    {
-      "headline": "Build a visual catalog worth scrolling",
-      "action": "298 photos across 6 Google categories sounds substantial, but the absence of any Reels in the last 30 days means the visual record is static; one weekly video of the tap list or weekend specials closes that gap fast.",
+      "headline": "Make the taproom easy to film",
+      "action": "Zero Pittsburgh TikTok creators are indexed here; create one visually distinct, repeatable moment inside the bar that gives a first-time creator an obvious subject.",
       "signal": "content_canvas",
-      "priority": "medium",
-      "impact_label": "+1 VISUAL RANK"
+      "priority": "high",
+      "impact_label": "UNLOCK CREATOR TIER"
     },
     {
-      "headline": "Open the door to TikTok creators",
-      "action": "Zero indexed TikToks for this business is a signal absence, not a neutral; a room described as cozy and unpretentious with a ten-dollar liter deal is exactly the kind of environment creators film when they know they are welcome.",
-      "signal": "collab_fit",
+      "headline": "Convert static posts into reels",
+      "action": "12 posts went up in 30 days but zero were reels; even converting two or three posts per month into short-form video would push the Instagram momentum signal above the family median of 55.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "+REEL REACH"
+    },
+    {
+      "headline": "Expand the Google photo catalog",
+      "action": "298 photos spread across only two content-rich categories; seeding 15 to 20 owner-submitted food and interior shots would close the gap to the family median visual catalog of 58.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "UNLOCK CREATORS"
+      "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T16:18:04.517Z",
+  "analyzed_at": "2026-04-26T19:43:27.885Z",
   "model": "claude-sonnet-4-6"
 }

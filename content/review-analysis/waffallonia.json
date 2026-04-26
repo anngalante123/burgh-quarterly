@@ -8,63 +8,69 @@
       "exampleQuote": "They are made in house and are liege waffles. So, more chewy and sugary with bits of crunch at the edges."
     },
     {
-      "phrase": "waffle and ice cream pairing",
+      "phrase": "ice cream pairing",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "When the two are paired together, it's just exquisite."
+      "exampleQuote": "best waffles ive ever had and the best ice cream in the city"
     },
     {
-      "phrase": "friendly family environment",
+      "phrase": "family-friendly atmosphere",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Super friendly staff and family friendly environment."
+      "exampleQuote": "Awesome neighborhood place to take the kids. Consistently great waffles!"
+    },
+    {
+      "phrase": "Nutella combinations",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "waffle with chocolate icecream and nutella is the best"
+    },
+    {
+      "phrase": "Nutella flavor strength",
+      "frequency": 1,
+      "sentiment": "neutral",
+      "exampleQuote": "A pretty nice amount of Nutella flavor (could always be stronger though)"
     },
     {
       "phrase": "walking date stop",
-      "frequency": 1,
-      "sentiment": "positive",
-      "exampleQuote": "We can pop in, grab a sugar waffle and eat it piping hot while walking."
-    },
-    {
-      "phrase": "Nutella flavor balance",
       "frequency": 2,
-      "sentiment": "neutral",
-      "exampleQuote": "A pretty nice amount of Nutella flavor, could always be stronger though."
+      "sentiment": "positive",
+      "exampleQuote": "a great walking date stop on a cold day. we can pop in, grab a sugar waffle and eat it piping hot while walking"
     }
   ],
-  "notable_quote": "These were honestly, unexpectedly amazing. The waffles here are not the typical soggy grocery store ones; they are made in house and are liege waffles, more chewy and sugary with bits of crunch at the edges.",
-  "sentiment_summary": "Reviewers consistently single out the housemade Liège waffles and the ice cream pairings as genuinely distinctive, with the cookie butter milkshake and Nutella combinations drawing repeat visits; the only real nitpick in the sample is that the Nutella flavor could land harder.",
-  "quarter_narrative": "Waffallonia enters Spring 2026 as the undisputed top-ranked dessert restaurant in Pittsburgh, sitting on 605 Google reviews that skew heavily positive and a visual catalog deep enough to anchor its presence in search. The friction is almost entirely on one axis: the Instagram account has gone quiet, with no recent posts, no bio, and a personal rather than business profile, while Page's, the Pittsburgh Sweets family leader this issue, built its top-five standing largely on social momentum. Waffallonia holds its rank on the weight of review volume and conversion completeness; keeping it requires the feed to catch up with what the city already believes about the place.",
-  "tldr_read": "Rock-solid reviews and a complete conversion path, dormant Instagram. Icons of the Burgh, number one in Pittsburgh Dessert Restaurants.",
-  "tldr_meaning": "The rank is defended by review depth and a fully built Google presence, but Instagram momentum is the one axis below the family median and the clearest path to widening the gap on the Sweets leaderboard.",
+  "notable_quote": "When the two are paired together, it's just exquisite.",
+  "sentiment_summary": "Reviewers are sold on the Liège waffle itself, the chew, the caramelized edges, and the house ice cream alongside it; the one recurring soft note is that the Nutella flavor, while good, could push harder.",
+  "quarter_narrative": "Waffallonia holds the top spot among Pittsburgh dessert restaurants on the back of a tight, well-maintained profile: 605 Google reviews with a 76-percent five-star rate, a visual catalog that outpaces the family median, and a conversion path that leaves nothing missing for a first-time visitor. The gap is Instagram, where the account sits unactivated as a personal profile with no recent posts, no bio, and no measurable engagement, while Page's leads the Pittsburgh Sweets family this issue specifically on social momentum. For a business this well-regarded in Squirrel Hill South, that gap between street-level reputation and online presence is the single thing most likely to shift the rank in a coming issue.",
+  "tldr_read": "Dominant reviews and a perfect conversion path, but a dormant Instagram with no bio, no post cadence, and no creator coverage indexed. Icons of the Burgh, #1 in Pittsburgh Dessert Restaurants.",
+  "tldr_meaning": "Every signal tied to the physical visit is already at or above family median; the rank holds until a competitor builds a content record that Waffallonia currently has no answer for.",
   "diagnosis_pullquote": {
-    "line": "First In Pittsburgh Dessert On Review Depth Alone. The Instagram Has Gone Quiet.",
-    "highlight": "Review Depth Alone"
+    "line": "First In Dessert On The Waffles Alone. The Instagram Has Not Shown Up Yet.",
+    "highlight": "Instagram Has Not Shown Up"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram with a business account",
-      "action": "Convert from personal to business profile, add a bio, and post consistently; the account currently has no bio and unknown last post date.",
+      "headline": "Convert the Instagram to a business account",
+      "action": "The account has no bio, no post cadence, and is not flagged as a business, fixing all three is a single afternoon of work that unlocks analytics and creator tagging.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "UNLOCK MOMENTUM"
     },
     {
-      "headline": "Invite creators to document the Liège process",
-      "action": "No Pittsburgh TikToks are indexed for Waffallonia; the housemade waffle iron process and sugar pearl texture are exactly the kind of visual hook that drives creator coverage in this category.",
-      "signal": "collab_fit",
-      "priority": "medium",
-      "impact_label": "UNLOCK CREATORS"
-    },
-    {
-      "headline": "Build out photo categories on Google",
-      "action": "With 291 photos across only six visible categories, adding tagged shots for interior, team, and seasonal specials closes the gap between visual catalog strength and its ceiling.",
+      "headline": "Document the waffle-making process on Reels",
+      "action": "The Liège waffle process, the pearl sugar, the caramelized press, is the most described detail in reviews and currently appears in zero indexed video content.",
       "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+VISUAL DEPTH"
+    },
+    {
+      "headline": "Invite a local creator to film the pint pickup order",
+      "action": "Reviewers already mention ordering ice cream by the pint ahead of time; that ritual has no video footprint and is a natural short-form hook for a Pittsburgh food creator.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "OPEN CREATOR SIGNAL"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T16:26:17.291Z",
+  "analyzed_at": "2026-04-26T19:52:18.047Z",
   "model": "claude-sonnet-4-6"
 }

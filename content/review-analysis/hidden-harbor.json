@@ -5,66 +5,72 @@
       "phrase": "creative tiki drinks",
       "frequency": 6,
       "sentiment": "positive",
-      "exampleQuote": "Some of the best tiki drinks in the U.S., staff is always very helpful and friendly"
+      "exampleQuote": "Some of the best tiki drinks in the U.S., staff is always very helpful and friendly."
     },
     {
       "phrase": "unique glassware and cups",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Each drink has its own unique glass/mug, some of which you can buy to take home"
-    },
-    {
-      "phrase": "forced 20% gratuity",
-      "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "Auto 20% tip that is hidden, no one tells you"
+      "exampleQuote": "Each drink has its own unique glass/mug, some of which you can buy to take home."
     },
     {
       "phrase": "immersive tiki atmosphere",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Tiki isn't just a theme, it's a movement"
+      "exampleQuote": "Tiki isn't just a theme, it's a movement."
     },
     {
-      "phrase": "strong helpful staff",
+      "phrase": "forced 20% gratuity",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Auto 20% tip that is hidden, no one tells you, all you see is a receipt that says total."
+    },
+    {
+      "phrase": "attentive and knowledgeable staff",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The staff were attentive, super fun for a novel night out"
+      "exampleQuote": "The staff were attentive, super fun to give recommendations, which are needed with how many options they have."
+    },
+    {
+      "phrase": "drink pricing and value",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "Drinks were a bit pricey but they go all out with these things."
     }
   ],
   "notable_quote": "Tiki isn't just a theme, it's a movement.",
-  "sentiment_summary": "Reviewers are sold on the atmosphere and drink craft, and the glassware ritual keeps people talking; the recurring friction point is the automatic 20% gratuity, which a meaningful minority feel is disclosed too late or not at all.",
-  "quarter_narrative": "Ten Pittsburgh TikTok creators filmed Hidden Harbor this quarter and drew 425,844 plays without the bar posting a single Reel or TikTok of its own. The top video alone pulled 204,400 plays, meaning a substantial share of the city's current awareness of this place was produced entirely by people who just showed up. Hidden Harbor enters Spring 2026 as the Pittsburgh Bars family leader, sitting above three sibling concepts on the strength of a visual catalog nearly 25 points above the family median and a review base of 765 ratings that skews heavily positive. The rank holds as long as that creator attention keeps arriving uninvited; the question for next issue is whether the bar does anything to meet it.",
-  "tldr_read": "Strong visual catalog and review sentiment, minimal owned video presence. Ones to Watch, #1 in Pittsburgh Bars.",
-  "tldr_meaning": "The path to Icons runs through closing the gap between the creator attention this bar already commands and the near-zero owned video signal it is currently returning.",
+  "sentiment_summary": "Reviewers consistently praise the immersive atmosphere, inventive drink menus, and collectible glassware, while a recurring friction point circles around the undisclosed 20% auto-gratuity and questions about whether drink pricing honestly reflects alcohol content.",
+  "quarter_narrative": "Ten Pittsburgh creators filmed Hidden Harbor this quarter and their videos pulled 425,844 TikTok plays, a number that puts this Squirrel Hill bar in a different conversation than almost any other bar in the city. Hidden Harbor is posting to its own Instagram, twelve times in the last thirty days, but has no TikTok presence of its own, so every one of those nearly half-million plays lands in someone else's feed, with no owned channel to catch the traffic. As the top-ranked bar in a four-business family whose standout signal is social momentum, the rank holds as long as Google reviews and creator interest stay warm, but the ceiling rises only when the bar starts showing up in the same feeds where creators are already doing its marketing.",
+  "tldr_read": "Strong review volume, strong creator interest, zero owned TikTok. Ones to Watch, number one in Pittsburgh Bars.",
+  "tldr_meaning": "The path to Icons runs through a TikTok account that doesn't exist yet; the review sentiment, visual catalog, and creator coverage are already performing above the family median.",
   "diagnosis_pullquote": {
-    "line": "First In Pittsburgh Bars On Atmosphere Alone. The Video Signal Is Entirely Borrowed.",
-    "highlight": "Entirely Borrowed"
+    "line": "First In Pittsburgh Bars, Carried By Half A Million Creator Plays With No TikTok To Catch Them.",
+    "highlight": "No TikTok To Catch Them"
   },
   "playbook": [
     {
-      "headline": "Start publishing short-form video now",
-      "action": "With zero Reels and no TikTok account, Hidden Harbor is ceding 425,844 quarterly plays entirely to outside creators; one weekly behind-the-bar clip would begin recapturing that reach.",
+      "headline": "Claim the TikTok ground creators already own",
+      "action": "Ten creators generated 425,844 plays this quarter on a channel Hidden Harbor doesn't have. Opening an account converts that existing interest into a followed audience.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "RECLAIM REACH"
+      "impact_label": "CAPTURE OWNED REACH"
     },
     {
-      "headline": "Address the gratuity disclosure head-on",
-      "action": "Three of seven sampled reviews cite the automatic 20% gratuity as a trust issue; a single clear line on the menu or a verbal heads-up at ordering would likely lift sentiment meaningfully.",
+      "headline": "Turn the gratuity friction into a trust signal",
+      "action": "The 20% auto-gratuity appears in three of seven sampled reviews as a negative surprise; a single clear menu line or staff acknowledgment at order would blunt the recurring one-star sentiment drag.",
       "signal": "community_spark",
       "priority": "medium",
       "impact_label": "+6 SENTIMENT PTS"
     },
     {
-      "headline": "Tag and organize the photo catalog by drink",
-      "action": "1,086 Google photos exist across six categories, but none are drink-specific subfolders; organizing by signature cocktail name gives searchers a stronger conversion path and raises visual rank.",
+      "headline": "Add Reels to the existing Instagram cadence",
+      "action": "Twelve posts in thirty days but zero Reels; short video of drink preparation or glassware reveals would push engagement above the current 0.79% rate without changing the posting frequency.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+REEL REACH"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T16:18:25.671Z",
+  "analyzed_at": "2026-04-26T19:43:49.598Z",
   "model": "claude-sonnet-4-6"
 }

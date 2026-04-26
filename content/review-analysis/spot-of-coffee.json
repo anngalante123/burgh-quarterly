@@ -5,66 +5,66 @@
       "phrase": "housemade natural ingredients",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "They homemake all of their syrups which makes it worth it and so much tastier!"
+      "exampleQuote": "Their drinks are very differently delicious from the syrup-based lattes you'll find elsewhere. Trust me, there's room for both."
     },
     {
-      "phrase": "signature latte flavors",
+      "phrase": "signature latte menu",
       "frequency": 6,
       "sentiment": "positive",
       "exampleQuote": "Come to Spot of Coffee for a toasted miso latte that will change your life."
     },
     {
       "phrase": "neighborhood community feel",
-      "frequency": 3,
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Excellent conscientious neighborhood vibes at a time when finding your community matters."
     },
     {
-      "phrase": "matcha options standout",
+      "phrase": "matcha drinks standout",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "I am not much of a coffee drinker, but I highly recommend their matcha!!!"
     },
     {
-      "phrase": "occasional bitter execution",
+      "phrase": "burnt coffee complaint",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "My coffee tasted so burnt with a horrible aftertaste."
     }
   ],
-  "notable_quote": "Come to Spot of Coffee for impeccably made lattes with all natural ingredients, like housemade cashew milk and real bananas, come for a toasted miso latte that will change your life.",
-  "sentiment_summary": "Reviewers are consistently won over by the housemade syrups, inventive seasonal flavors, and a warmth of service that reads as genuinely personal; the one persistent friction point is inconsistency, a rare but pointed complaint about bitter or scorched shots that breaks the otherwise near-unanimous praise.",
-  "quarter_narrative": "Twenty-four Pittsburgh creators filmed Spot of Coffee this quarter, generating 278,472 TikTok plays, and the shop posted none of it back. That gap is the defining story of its Spring 2026: a Shadyside coffee shop with a toasted miso latte and housemade cashew milk has become a genuine TikTok destination, the kind of place @lyssad16 pulls 44,300 plays just by saying she needs to try more. Meanwhile the family leader this issue, Allegheny Coffee and Tea Exchange, holds the top spot on the strength of social momentum, exactly the axis where Spot of Coffee is leaving the most on the table. Closing the distance at number two means one thing: the city is already doing the filming, and whether that energy converts into a durable rank depends on whether the business starts meeting it.",
-  "tldr_read": "Instagram momentum is the strongest signal in the family, TikTok creator reach is enormous, but no website on Google and below-median review sentiment keep this at Icons number two rather than number one.",
-  "tldr_meaning": "The creator coverage and Instagram engagement are already Icon-tier; the rank climbs when the conversion path tightens and review volume catches up to the enthusiasm the city is already expressing on camera.",
+  "notable_quote": "Come to Spot of Coffee for a toasted miso latte that will change your life.",
+  "sentiment_summary": "Reviewers keep returning for the housemade syrups, cashew milk, and genuinely unusual latte menu; the lone recurring friction is inconsistency on espresso execution, with one review calling out a burnt aftertaste that undercuts an otherwise exceptional reputation.",
+  "quarter_narrative": "Twenty-four Pittsburgh creators filed 31-plus TikToks at Spot of Coffee this quarter, generating over 278,000 plays, while the shop itself has no TikTok account to claim any of that attention. The leading signal this issue belongs to Allegheny Coffee and Tea Exchange on social momentum, and Spot of Coffee is sitting at number two with a 15.19 percent Instagram engagement rate and three Reels in the last 30 days, which is competitive but not yet the kind of output that closes the gap. The rank rises or falls on two things: converting that enormous third-party TikTok volume into a direct channel the business controls, and shoring up the Conversion Path signal, which is the only axis currently sitting below the family median.",
+  "tldr_read": "Instagram engagement is genuinely strong at 15 percent, but 278,000 TikTok plays are running through other people's accounts. Icons of the Burgh, number two in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The ceiling is number one, and the gap is not effort but platform: the TikTok signal belongs entirely to 24 outside creators, and the Google profile is missing a website link that every competitor above the median has.",
   "diagnosis_pullquote": {
-    "line": "Icons Tier, Number Two. The City Is Filming; The Google Profile Is Not Keeping Up.",
-    "highlight": "The City Is Filming"
+    "line": "Second In Pittsburgh Coffee, Powered By Creators. The Business Has No TikTok To Catch Them.",
+    "highlight": "No TikTok To Catch"
   },
   "playbook": [
     {
-      "headline": "Put a website on Google immediately",
-      "action": "Spot of Coffee has no website linked on Google, the only business in its family at zero on conversion path; even a single-page site with the menu closes this gap.",
+      "headline": "Add the missing website to Google profile",
+      "action": "The Google listing has no website linked; every competitor at or above the family median of 100 on Conversion Path has one. Fix this first.",
       "signal": "conversion_path",
       "priority": "high",
-      "impact_label": "CLOSE CONV GAP"
+      "impact_label": "CLOSE PATH GAP"
     },
     {
-      "headline": "Repost one creator video per week",
-      "action": "24 creators have already filmed here with 278,472 plays this quarter; reposting even four of those clips to the business Instagram costs nothing and feeds the 15.19% engagement rate already in place.",
-      "signal": "content_canvas",
+      "headline": "Open a TikTok account and claim the conversation",
+      "action": "24 creators have posted 31-plus videos with 278,472 plays this quarter; a shop account costs nothing and starts redirecting that existing audience.",
+      "signal": "momentum",
       "priority": "medium",
-      "impact_label": "+VISUAL DEPTH"
+      "impact_label": "+OWNED REACH"
     },
     {
-      "headline": "Respond publicly to the one-star review",
-      "action": "A single detailed negative review about burnt shots sits unaddressed; a specific, non-defensive public reply lifts perceived accountability and pulls sentiment above the current below-median position.",
-      "signal": "community_spark",
+      "headline": "Push photo categories beyond the current six",
+      "action": "Google shows 126 photos across only six tagged categories; adding staff, interior process, and behind-the-counter shots fills the gaps and lifts Visual Catalog above the family median.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 10,
-  "analyzed_at": "2026-04-26T16:24:40.481Z",
+  "analyzed_at": "2026-04-26T19:50:22.291Z",
   "model": "claude-sonnet-4-6"
 }

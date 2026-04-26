@@ -2,69 +2,69 @@
   "slug": "oishii-donburi",
   "themes": [
     {
-      "phrase": "fast hole in the wall",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Easy fast hole in the wall with delicious food."
-    },
-    {
-      "phrase": "chicken katsu and bulgogi bowls",
+      "phrase": "katsu and bulgogi bowls",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls."
+      "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls"
     },
     {
-      "phrase": "quiet spot for bowls",
+      "phrase": "quick hole-in-the-wall lunch",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Very delicious quiet spot for Korean style bowls."
+      "exampleQuote": "Easy fast hole in the wall with delicious food"
     },
     {
-      "phrase": "confusing sauce situation",
+      "phrase": "quiet, reliable spot",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Very delicious quiet spot for Korean style bowls"
+    },
+    {
+      "phrase": "sauce confusion, no explanation",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "I was given 4 little circle containers of unusual sauces and not told what any of them were."
+      "exampleQuote": "Given 4 little circle containers of unusual sauces and not told what any of them were"
     },
     {
       "phrase": "unwelcoming staff attitude",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron."
+      "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron"
     }
   ],
-  "notable_quote": "Always reliable for chicken katsu or beef bulgogi bowls.",
-  "sentiment_summary": "Reviewers reliably return for the katsudon and bulgogi bowls at a price and pace that works for lunch, but a handful flag cold service and unclear sauce pairings as friction points that chip at an otherwise solid 84 percent five-star run.",
-  "quarter_narrative": "Five Pittsburgh creators posted TikToks tied to Oishii Donburi this quarter, pulling nearly 27,000 combined plays, while the restaurant's own Instagram has sat quiet for 72 days and counting. The city is doing the promotion; the business is not picking up the phone. That gap is especially visible against the family backdrop: Mola leads Pittsburgh Asian Kitchens this issue on creator collaboration fit, a signal built on exactly the kind of reciprocal energy Oishii currently leaves on the table. Closing even a fraction of the Instagram silence, or acknowledging the creator traffic that is already arriving, would be enough to push this #1 Japanese ranking into genuine contention for the broader family top spot.",
-  "tldr_read": "Creator-driven TikTok attention and a perfect conversion path, but a dormant Instagram and middling sentiment keep the ceiling low. Ones to Watch, #1 in Pittsburgh Japanese restaurants.",
-  "tldr_meaning": "The ranking holds on conversion infrastructure and inbound creator traffic, but the climb stalls unless Instagram restarts and the one-star service friction gets addressed at the counter.",
+  "notable_quote": "Easy fast hole in the wall with delicious food, perfect for lunch with enough for a snack later that night.",
+  "sentiment_summary": "Reviewers consistently come back for the katsudon and bulgogi bowls and appreciate the no-fuss pace, but a recurring friction point around unexplained sauces and one documented service incident keeps the sentiment signal measurably below the family median.",
+  "quarter_narrative": "Oishii Donburi spent Spring 2026 being someone else's content. Five Pittsburgh-area TikTok creators posted about the business this quarter, generating nearly 27,000 plays, while the restaurant's own Instagram sat quiet for 72 days and its account posted nothing in the last 30. The irony is sharper when you note that the top video in that creator cluster, nearly 10,000 plays, was actually filmed at a different Oishii location in Delaware, meaning some of that reach is misdirected entirely. Family leader Mola took the top spot in Pittsburgh Asian Kitchens this issue on the strength of creator collaboration fit; Oishii Donburi matches Mola on that axis but hasn't yet converted the external attention into a visible signal of its own. The rank climbs if the visual catalog catches up and the Instagram signal restarts before the creator window closes.",
+  "tldr_read": "Strong repeat-customer reviews and real creator traffic, but a dormant Instagram and a below-median visual catalog hold it at Ones to Watch, #1 in Pittsburgh Japanese restaurants.",
+  "tldr_meaning": "The review floor is solid and the creator interest is real, but the Instagram flatline and thin photo catalog are the two axes keeping this from a more permanent position at the top of the family.",
   "diagnosis_pullquote": {
-    "line": "Number One In Japanese, Carried By Creators. The Restaurant Has Not Posted In Ten Weeks.",
-    "highlight": "Carried By Creators"
+    "line": "First In Japanese, Carried By Loyal Regulars. The Visual Story Is Still Being Written By Others.",
+    "highlight": "Being Written By Others"
   },
   "playbook": [
     {
-      "headline": "Break the 72-day Instagram silence",
-      "action": "Post one photo or reel per week; the account has been dark since before the five most recent TikTok visits happened.",
+      "headline": "Restart the Instagram signal now",
+      "action": "The account has posted zero times in 30 days and nothing in 72; even two posts a week changes the momentum axis measurably.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Address the sauce and service gap",
-      "action": "A brief verbal guide to condiment pairings and a consistent front-of-house tone would directly counter the two recurring negative review themes pulling sentiment below the family median.",
-      "signal": "community_spark",
+      "headline": "Fill the visual catalog gaps",
+      "action": "342 Google photos across 15 categories sounds healthy, but the visual catalog signal sits well below the family median of 84; targeted photo uploads in underrepresented categories close that gap.",
+      "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+8 SENTIMENT PTS"
+      "impact_label": "+VISUAL RANK"
     },
     {
-      "headline": "Tag back the creators already filming here",
-      "action": "Five unique creators posted this quarter with 26,872 combined plays; a single repost or story mention converts that reach into followers the business actually keeps.",
-      "signal": "collab_fit",
+      "headline": "Brief servers on the sauce lineup",
+      "action": "Two of five available reviews mention confusion or unwelcoming service; a simple verbal rundown of the sauces at drop-off is the lowest-effort sentiment repair available.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "CAPTURE REACH"
+      "impact_label": "+SENTIMENT PTS"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-26T16:23:13.986Z",
+  "analyzed_at": "2026-04-26T19:48:49.839Z",
   "model": "claude-sonnet-4-6"
 }

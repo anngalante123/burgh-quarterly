@@ -20,51 +20,57 @@
       "exampleQuote": "Tons of wall plugs and comfortable seating, making it a great spot to get some work done."
     },
     {
-      "phrase": "inconsistent portions and hours",
+      "phrase": "inconsistent portion sizes",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "Sometimes my ice cream sizes varies too much especially when it's like $8 I expect a decent portion."
     },
     {
-      "phrase": "parking and crowding friction",
+      "phrase": "closing time friction",
       "frequency": 2,
-      "sentiment": "neutral",
-      "exampleQuote": "You might not be able to find a seat when it's crowded. Parking is difficult."
+      "sentiment": "negative",
+      "exampleQuote": "We walked in at 9:55 PM and were told by staff that they were already closed."
+    },
+    {
+      "phrase": "Forbes Avenue foot traffic",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "One of our favorites on Forbes."
     }
   ],
-  "notable_quote": "The matcha latte was rich and creamy and sweet: the best matcha I've had in a long time.",
-  "sentiment_summary": "Reviewers consistently return for cakes that aren't cloying and a matcha program they treat as a benchmark, but portion inconsistency on the soft serve and a reported early-closure incident are the friction points that keep sentiment from matching the visual enthusiasm.",
-  "quarter_narrative": "Thirty-nine Pittsburgh creators posted Kyo Matcha to TikTok this quarter and pulled 1.79 million plays, including a single video by @andremelendez that crossed 1.4 million alone, a number that would be newsworthy for a regional chain, let alone a Squirrel Hill dessert shop. The business's own TikTok account exists under a separate handle, @kyomatcha.columbia, but the posting cadence there and on @kyomatchausa hasn't come close to meeting what the city is already producing on its behalf. That gap is where the rank stalls: Creator Fit is the highest in the Pittsburgh Sweets family, Instagram momentum is well above the family median, yet Review Sentiment sits materially below it, weighed down by portion and operations complaints that are fixable. Page's holds the family lead this issue on social momentum; closing the distance means Kyo Matcha's operational reliability has to start showing up in the reviews the way its visuals already show up in everyone's camera roll.",
-  "tldr_read": "Creator reach that rivals regional chains, review sentiment that doesn't yet reflect it, Icons of the Burgh, #2 in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "The TikTok ceiling is effectively unlimited right now, but the review floor needs shoring up before the rank moves.",
+  "notable_quote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time.",
+  "sentiment_summary": "Reviewers reliably praise the restrained sweetness of the cakes and the depth of the matcha drinks, but a minority of complaints cluster around uneven soft serve portions and a closing-time enforcement gap that reads as operational inconsistency.",
+  "quarter_narrative": "This spring, Kyo Matcha became one of the most-filmed dessert spots in Pittsburgh without lifting a camera itself. Thirty-nine TikTok creators produced content there this quarter, totaling nearly 1.8 million plays, led by a single video from @andremelendez that cleared 1.4 million on its own. The business's own TikTok account, @kyomatcha.columbia, sits separate from the Pittsburgh conversation, and its Instagram, while posting six times in the last 30 days, has not yet closed the loop with the creator wave already running in its favor. Page's leads the Pittsburgh Sweets family this issue on social momentum, a signal Kyo Matcha has the raw material to contest, if the review sentiment, currently sitting well below the family median, starts tracking the enthusiasm the city's creators are clearly expressing. Closing that sentiment gap while the TikTok tide is still rising is what moves this ranking.",
+  "tldr_read": "Creator reach is extraordinary and Instagram is active, but review sentiment trails the family median by a meaningful margin. Icons of the Burgh, #2 in Pittsburgh Dessert Shops.",
+  "tldr_meaning": "The ceiling here is the #1 slot, and the floor is held by 1.8 million TikTok plays this quarter, but the sentiment signal needs to climb toward the family median before this business can make a credible case for the top position.",
   "diagnosis_pullquote": {
-    "line": "Icons Tier, Built on 1.79 Million TikTok Plays. The Reviews Have Not Caught Up Yet.",
-    "highlight": "1.79 Million TikTok Plays"
+    "line": "Second In Desserts, Powered By 1.8 Million Creator Plays. Sentiment Is The Gap.",
+    "highlight": "1.8 Million Creator Plays"
   },
   "playbook": [
     {
-      "headline": "Fix the ops complaints before they compound",
-      "action": "Portion standards for soft serve and a firm 10 PM close policy would directly address the two recurring negatives pulling sentiment below the 83 family median.",
+      "headline": "Close the review sentiment gap now",
+      "action": "At 67 against a family median of 83, sentiment is the single axis holding this ranking down; address the portion consistency and closing-time complaints explicitly in responses to flag those patterns to future reviewers.",
       "signal": "community_spark",
       "priority": "high",
       "impact_label": "+12 SENTIMENT PTS"
     },
     {
-      "headline": "Post back to the 39 creators filming you",
-      "action": "With 39 creators and 1.79M plays already generated, even reposting top community videos to @kyomatchausa closes the gap between what Pittsburgh sees and what the account shows.",
-      "signal": "momentum",
+      "headline": "Connect the Pittsburgh TikTok wave",
+      "action": "Thirty-nine local creators posted 1.8 million plays this quarter from inside your shop; reposting the top three on your own channels converts that borrowed reach into a documented signal on your own accounts.",
+      "signal": "collab_fit",
       "priority": "medium",
       "impact_label": "CAPTURE CREATOR LIFT"
     },
     {
-      "headline": "Consolidate the TikTok presence under one handle",
-      "action": "Two separate TikTok accounts, @kyomatchausa and @kyomatcha.columbia, split follower signal; a single Pittsburgh-facing account would concentrate momentum the creators are already building.",
-      "signal": "conversion_path",
+      "headline": "Deepen the photo catalog on Google",
+      "action": "With 405 photos spread thin across only six active categories and a visual score just below the family median, seating, cakes, and the kiosk experience are underrepresented and worth a focused push.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "UNIFY SIGNAL"
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T16:19:56.933Z",
+  "analyzed_at": "2026-04-26T19:45:27.074Z",
   "model": "claude-sonnet-4-6"
 }

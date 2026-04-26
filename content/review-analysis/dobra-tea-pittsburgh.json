@@ -2,16 +2,22 @@
   "slug": "dobra-tea-pittsburgh",
   "themes": [
     {
-      "phrase": "vast tea selection",
-      "frequency": 6,
+      "phrase": "extensive tea selection",
+      "frequency": 7,
       "sentiment": "positive",
       "exampleQuote": "One of the widest tea selections I have ever seen"
     },
     {
       "phrase": "third-space atmosphere",
-      "frequency": 7,
+      "frequency": 6,
       "sentiment": "positive",
-      "exampleQuote": "a wonderful pseudo-third space where you can sip tea, relax, play a board game, study, and talk to other patrons"
+      "exampleQuote": "a wonderful pseudo-'third space' where you can sip tea, relax, play a board game, study, and talk to other patrons"
+    },
+    {
+      "phrase": "hard to get a seat",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "It's hard to get a seat sometimes because it's crowded"
     },
     {
       "phrase": "knowledgeable, friendly staff",
@@ -20,51 +26,45 @@
       "exampleQuote": "Staff is extremely friendly and knowledgeable about tea"
     },
     {
-      "phrase": "crowded, hard to seat",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "It's hard to get a seat sometimes because it's crowded"
-    },
-    {
-      "phrase": "food worth trying",
+      "phrase": "food worth ordering",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The babaganoush is delicious and do try their snack platters, I love the sesame cookie"
+      "exampleQuote": "The babaganoush is delicious! I have been back and tried some food"
     }
   ],
   "notable_quote": "One of my favorite places on Earth: a wonderfully large selection of teas from around the world, served in an intimate and quiet setting.",
-  "sentiment_summary": "Reviewers return again and again for the depth of the tea menu, the unhurried atmosphere, and staff who can actually explain what they're serving; the only friction is seating, when the room fills up, finding a spot becomes a real obstacle.",
-  "quarter_narrative": "Ten Pittsburgh creators filed TikToks at Dobrá Tea this quarter, logging nearly 10,000 plays across 11 videos, and the business posted once to Instagram in the same window. The gap is not catastrophic, the review signal is among the strongest in the Pittsburgh Cafes family, 1,107 reviews at 82 percent five-star, but while the city's Cafes leader, Allegheny Coffee and Tea Exchange, is building rank on social momentum, Dobrá's own feed has gone nearly dormant. Holding the top spot in the tea house family at #6 in Cafes overall is a defensible position right now; what decides whether that holds next issue is whether the Instagram signal wakes up before a competitor absorbs the creator attention Dobrá is currently collecting by reputation alone.",
-  "tldr_read": "Review sentiment near the top of the family, Instagram nearly silent for a month, Ones to Watch and #1 in Pittsburgh Tea Houses.",
-  "tldr_meaning": "The review foundation is strong enough to sustain the current rank, but the Instagram momentum gap is the single axis keeping Dobrá out of Icons territory.",
+  "sentiment_summary": "Reviewers return obsessively for the tea depth, the bell-on-the-table service ritual, and a room that accommodates first dates and solo study sessions equally; the only consistent friction is seating scarcity during peak hours.",
+  "quarter_narrative": "Ten separate Pittsburgh creators posted to TikTok about Dobra Tea this quarter, generating nearly 10,000 plays with zero posts from the business itself on that platform. The Bombay chai alone pulled 2,589 plays in a single video. Meanwhile, on Instagram, one post went up in 30 days and no reels were published, leaving the business well below the family median for Instagram momentum at a moment when Allegheny Coffee and Tea Exchange, the Pittsburgh Cafes family leader this issue, built its top ranking largely on social momentum. Dobra's review signal is the strongest anchor it has, 1,107 Google reviews at 82 percent five-star, and that foundation keeps it at number one in the tea house category. Moving up in the broader Cafes family ranking depends on whether the visual and social signals can close the gap that the review sentiment has already opened.",
+  "tldr_read": "Dominant review sentiment, nearly dormant social output. Ones to Watch, #1 in Pittsburgh Tea Houses.",
+  "tldr_meaning": "The review ceiling has been reached; the remaining climb inside the Cafes family is a function of Instagram momentum and creator signal conversion, two axes that are currently well below the family median.",
   "diagnosis_pullquote": {
-    "line": "Ranked First In Tea Houses On The Strength Of Reviews. The Instagram Signal Has Gone Quiet.",
-    "highlight": "Gone Quiet"
+    "line": "First In Tea On The Strength Of 1,107 Reviews. The Social Signal Has Not Kept Pace.",
+    "highlight": "1,107 Reviews"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram before the gap widens",
-      "action": "One post every five days is enough to recover momentum; the account has been silent for 19 days with zero reels this month",
+      "headline": "Restart Instagram with weekly reels",
+      "action": "Zero reels published in 30 days; one short-form video per week tied to a specific tea, the Bombay chai is already proven bait, closes the gap to the family median momentum signal.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "+MOMENTUM SIGNAL"
     },
     {
-      "headline": "Convert TikTok creators into tagged content",
-      "action": "Ten unique creators posted this quarter with no business TikTok to redirect to; a handle and a single pinned response reshapes that loop",
+      "headline": "Capture the creators already filming",
+      "action": "Ten creators posted 11 TikToks this quarter without any outreach from the business; a simple repost or story share of the top-performing videos converts existing coverage into owned reach.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+15 CREATOR PLAYS"
+      "impact_label": "UNLOCK REACH"
     },
     {
-      "headline": "Surface the food menu visually",
-      "action": "Baba ganoush, sesame cookies, and snack platters appear in reviews but are underrepresented across 690 Google photos; one dedicated food shoot fills that gap",
+      "headline": "Expand tagged photo categories on Google",
+      "action": "With 690 photos across only six labeled categories, adding staff-submitted images to underrepresented sections, particularly food and drink close-ups, pushes the visual catalog above the family median of 77.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T16:17:20.974Z",
+  "analyzed_at": "2026-04-26T19:42:46.547Z",
   "model": "claude-sonnet-4-6"
 }

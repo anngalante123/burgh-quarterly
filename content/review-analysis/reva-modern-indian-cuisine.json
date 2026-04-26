@@ -2,10 +2,10 @@
   "slug": "reva-modern-indian-cuisine",
   "themes": [
     {
-      "phrase": "friendly attentive service",
+      "phrase": "friendly, attentive service",
       "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Sahil has been very kind and helpful with accepting custom orders whenever I come with my friends."
+      "exampleQuote": "Sahil has been very kind & helpful with accepting custom orders whenever I come with my friends."
     },
     {
       "phrase": "authentic Indian flavors",
@@ -14,57 +14,57 @@
       "exampleQuote": "Delicious food! Authentic flavors! Must visit place."
     },
     {
-      "phrase": "rude dismissive staff",
+      "phrase": "rude, dismissive staff",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "The staff were extremely rude and dismissive, which made the atmosphere feel unwelcoming."
+      "exampleQuote": "The person taking the order has the audacity to ask if it was my first time in the US."
+    },
+    {
+      "phrase": "number one Pittsburgh restaurant",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Reva Modern Indian Cuisine is hands down our number one restaurant in Pittsburgh."
     },
     {
       "phrase": "custom order flexibility",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Sahil has been very kind and helpful with accepting custom orders."
-    },
-    {
-      "phrase": "arrogant cashier interaction",
       "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "The cashier/manager failed to hide his arrogance and said it was the policy of the restaurant."
+      "sentiment": "positive",
+      "exampleQuote": "Sahil has been very kind & helpful with accepting custom orders."
     }
   ],
-  "notable_quote": "Reva first opened in June 2024 and I have been a regular customer ever since; the food taste is the best you can find in Pittsburgh and no other Indian restaurant can match the level.",
-  "sentiment_summary": "Reviewers rally around the food quality and a standout server named Sahil, but a specific and recurring service inconsistency, staff who swing from gracious to dismissive depending on who is working, surfaces just enough to keep sentiment below where the food alone would put it.",
-  "quarter_narrative": "Thirty-three Pittsburgh creators posted TikToks at Reva this quarter, logging 373,000-plus plays without a single post from the restaurant itself in the last 72 days. The most telling video came from @gabs_joella, who filmed a family visit to her mother's restaurant and pulled 66,300 plays on a caption about helping promote the family business. Reva holds the top spot in Pittsburgh Indian restaurants and sits fourth in the broader Asian Kitchens family, where Mola leads this issue on the strength of its own creator collaboration. The gap between Reva's creator footprint and its own silence on social is the clearest story here; closing it is also the most direct path toward that family lead.",
-  "tldr_read": "Thirty-three creators filming, zero posts in 72 days, and the city's strongest Indian restaurant signal. Ones to Watch, #1 in Pittsburgh Indian restaurants.",
-  "tldr_meaning": "The review volume and creator coverage are already doing heavy lifting; the Instagram signal going dark is the one variable holding Reva at fourth in the family instead of threatening Mola at the top.",
+  "notable_quote": "Reva first opened in June 2024 and I have been a regular customer ever since, the food taste is the best you can find in Pittsburgh and no other Indian restaurant can match the level.",
+  "sentiment_summary": "Reviewers consistently praise the food's authenticity and single out Sahil by name for attentive, flexible service, but a pattern of staff rudeness complaints, including one incident involving a condescending remark to a customer about the roti, pulls the sentiment signal below where the raw star count suggests it should be.",
+  "quarter_narrative": "Thirty-three independent creators filmed Reva this quarter, generating 373,326 TikTok plays without a single post from the restaurant itself. The most-viewed clip, @gabs_joella's 66,300-play video, was made by a daughter promoting her mother's restaurant, a detail that tells you everything about where the energy around this place is coming from and who is doing the work of spreading it. In the Pittsburgh Asian Kitchens family, Mola leads on creator collaboration fit; Reva leads on Indian-specific ranking and sits fourth overall, a position that reflects real momentum rather than a finished climb. Closing the gap with Mola depends less on the food, which reviewers defend without hesitation, and more on whether Reva starts meeting its creators where they already are.",
+  "tldr_read": "City creators are driving hundreds of thousands of views while Reva's own Instagram has been silent for 72 days. Ones to Watch, #1 in Pittsburgh Indian restaurants.",
+  "tldr_meaning": "The conversion path is fully built and creator interest is unusually high, but the Instagram signal going dark for over two months means the business is not compounding any of that outside attention into its own audience.",
   "diagnosis_pullquote": {
-    "line": "Number One In Indian, Carried By Creators. The Restaurant Has Gone Quiet.",
-    "highlight": "Carried By Creators"
+    "line": "First In Indian, Powered By 33 Creators. The Restaurant's Own Feed Has Gone Quiet.",
+    "highlight": "33 Creators"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram before the signal fades",
-      "action": "The account has been dark for 72 days with a 37.85% engagement rate sitting idle; one post resets the momentum clock.",
+      "headline": "Restart Instagram before the signal flatlines",
+      "action": "The account has been dark for 72 days with a 37.85% engagement rate waiting to activate, one post restarts the clock.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Claim the creator wave with reposts",
-      "action": "Thirty-three creators have posted 373,326 plays this quarter; reposting even five of those videos costs nothing and fills the feed immediately.",
+      "headline": "Turn creator videos into owned content",
+      "action": "Thirty-three creators have already shot footage here this quarter; reposting even five of those clips closes the gap between outside reach and the restaurant's own feed.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+FAMILY RANK"
+      "impact_label": "+OWNED REACH"
     },
     {
       "headline": "Address the service inconsistency publicly",
-      "action": "Two negative reviews cite specific staff rudeness; a visible owner response pattern on Google lifts sentiment scores faster than new five-stars alone.",
+      "action": "Two negative reviews cite specific staff interactions by detail; a direct, non-defensive response on each lifts sentiment visibility for the 80% of reviewers who praise the experience.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+SENTIMENT PTS"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T16:24:14.652Z",
+  "analyzed_at": "2026-04-26T19:49:59.170Z",
   "model": "claude-sonnet-4-6"
 }

@@ -2,69 +2,69 @@
   "slug": "tazza-doro",
   "themes": [
     {
-      "phrase": "consistent drinks and staff",
+      "phrase": "staff warmth and service",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Fabulous staff and consistent drinks."
+      "exampleQuote": "Everyone is always so nice when I go here."
     },
     {
-      "phrase": "seasonal baked goods",
-      "frequency": 2,
+      "phrase": "coffee quality and drinks",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "The Barista featured drink on MLK Day might be thee best cup of coffee I've ever had."
+    },
+    {
+      "phrase": "baked goods and food options",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Wish they had the zucchini muffins year-round, but there are lots of other great baked goods."
     },
     {
-      "phrase": "barista featured drinks",
-      "frequency": 2,
+      "phrase": "atmosphere and vibe",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had."
+      "exampleQuote": "Very cute, vibey spot. Good portion sizes and great coffee."
     },
     {
-      "phrase": "interior versus price",
-      "frequency": 2,
+      "phrase": "price-to-experience tension",
+      "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "The interior leaves something to be desired for the price of the coffee."
-    },
-    {
-      "phrase": "tea program depth",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Loved the cinnamon plum tea and was impressed by the number of tasty food options."
     }
   ],
-  "notable_quote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had.",
-  "sentiment_summary": "Reviewers come back for the staff warmth, rotating specialty drinks, and a tea program that consistently surprises, but a recurring thread questions whether the interior justifies the price point.",
-  "quarter_narrative": "Tazza D'Oro holds the top spot in Pittsburgh Cafes this issue, and the foundation for that rank is real: 573 Google reviews at 74 percent five-star, a conversion path that is fully built out, and a Creator Fit signal that sits at the family ceiling. The gap is motion. Instagram sits at 11 posts over the last 30 days and zero Reels, and TikTok presence amounts to a single creator video pulled in as a political-petition backdrop, not a coffee destination moment. The family leader this issue, Allegheny Coffee and Tea Exchange, got there on social momentum. Tazza D'Oro defends first place with review depth; the question next quarter is whether it can close that momentum gap before another cafe in the family does it first.",
-  "tldr_read": "Deep review base and a complete conversion path, but Instagram Reels are absent and TikTok coverage is one video from a single creator. Ones to Watch, #1 in Pittsburgh Cafes.",
-  "tldr_meaning": "The review axis is nearly maxed, so the next rank movement depends entirely on whether visual and short-form video signals close toward the family median.",
+  "notable_quote": "The Barista featured drink on MLK Day might be thee best cup of coffee I've ever had.",
+  "sentiment_summary": "Reviewers consistently return for the staff and the drinks, including standout specials like the Amaretto Brown Sugar Latte and seasonal baked goods like the zucchini muffin, but at least one dissenting voice finds the interior underwhelming relative to the price point.",
+  "quarter_narrative": "Tazza D'Oro's Spring 2026 looked like a comfortable hold: 573 Google reviews at a strong sentiment rate, a staff people mention by name in spirit if not by name on the page, and a rotation of seasonal specials that keep regulars talking. The one TikTok tagged to the cafe this quarter came from a political canvasser using the space as a campaign base, not a food creator, which tells you something about the city's relationship with this place: it's a fixture, a backdrop, a neighborhood anchor rather than a destination people are racing to film. The family leader this issue is Allegheny Coffee and Tea Exchange, whose rank is built on social momentum. Tazza D'Oro's path forward runs through the same channel: the conversion infrastructure is airtight, the sentiment is real, and the Instagram cadence at 11 posts in 30 days is actually respectable, so the question is whether the content is pulling new discovery or just serving regulars who already know the address.",
+  "tldr_read": "Solid reviews and a complete Google profile, but TikTok presence is nearly nonexistent and Instagram engagement is thin. Ones to Watch, #1 in Pittsburgh Cafes.",
+  "tldr_meaning": "The conversion path and review sentiment are already at the level of a stronger tier; closing the gap to Icons depends on whether the Instagram signal starts driving discovery, not just retention.",
   "diagnosis_pullquote": {
-    "line": "First In Pittsburgh Cafes On Reviews Alone. The Video Signal Has Not Arrived Yet.",
-    "highlight": "Video Signal Has Not"
+    "line": "Ranked First In Pittsburgh Cafes, Built On Reviews. The Discovery Signal Has More Room To Run.",
+    "highlight": "More Room To Run"
   },
   "playbook": [
     {
-      "headline": "Shoot one Reel this week",
-      "action": "Tazza D'Oro posted 11 Instagram photos last month and zero Reels. One short video of a barista pulling a cortado or building a seasonal drink would move the momentum signal off its current floor.",
+      "headline": "Turn seasonal specials into short video",
+      "action": "Zero reels posted in 30 days despite 11 feed posts; one reels series around rotating specials like the MLK latte could pull new followers beyond the Highland Park regulars.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CLOSE REEL GAP"
+      "impact_label": "+DISCOVERY REACH"
     },
     {
-      "headline": "Fill the visual catalog gaps",
-      "action": "Google Photos shows 244 images across 11 categories, but the Visual Catalog signal sits below the family median. Submitting owner photos specifically for the interior and baked goods categories would address the price-versus-space friction reviewers mention.",
+      "headline": "Deepen the visual catalog on Google",
+      "action": "244 photos across 11 categories is decent, but the Cortado category sitting as its own tab signals a gap in broader food and interior coverage that new visitors use to decide.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+VISUAL RANK"
+      "impact_label": "+1 VISUAL RANK"
     },
     {
-      "headline": "Connect to the creator already filming",
-      "action": "Only one TikTok creator tagged Tazza D'Oro this quarter, and that video ran as a political canvassing post, not a coffee feature. Acknowledging or reposting that creator and inviting others creates a path toward the TikTok presence the business currently lacks entirely.",
+      "headline": "Invite the one active TikTok creator back",
+      "action": "Only one creator filmed here this quarter and it was a political event post, not a coffee feature; a direct invitation to a Highland Park food creator could seed the first real TikTok food moment for the cafe.",
       "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "SEED TIKTOK PRESENCE"
+      "impact_label": "UNLOCK CREATOR SIGNAL"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T16:25:18.883Z",
+  "analyzed_at": "2026-04-26T19:51:11.248Z",
   "model": "claude-sonnet-4-6"
 }

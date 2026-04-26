@@ -2,26 +2,26 @@
   "slug": "nan-xiang-soup-dumplings-pittsburgh",
   "themes": [
     {
-      "phrase": "soup dumplings worth repeating",
+      "phrase": "soup dumplings worth returning for",
       "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "This is going to be a repeat when we come back to town for sure."
     },
     {
       "phrase": "standout server by name",
-      "frequency": 4,
+      "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "Our server Morgan had an amazing smile and great customer service."
     },
     {
-      "phrase": "beef and pepper noodles",
-      "frequency": 2,
+      "phrase": "noodles and dumplings sampler",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "These beef and pepper noodles are legit."
+      "exampleQuote": "These beef and pepper noodles are legit. Dumplings sampler was a hit as well."
     },
     {
       "phrase": "Didi the robot",
-      "frequency": 1,
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Didi the robot was fun to watch."
     },
@@ -29,42 +29,42 @@
       "phrase": "bathroom cleanliness",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "Everything was great, but the bathroom was not clean."
+      "exampleQuote": "Everything was great, but the Bathroom was not clean."
     }
   ],
-  "notable_quote": "Our server Morgan had an amazing smile and great customer service; she was quick, efficient, and always had refills ready, and the new spicy beef dumplings and sweet and sour soup were both incredible.",
-  "sentiment_summary": "Reviewers show up for the soup dumplings and the noodles, then stay for the servers, with Galilea, Morgan, and Chavely named directly in multiple reviews; the only recurring complaint is a single note about bathroom upkeep.",
-  "quarter_narrative": "Thirteen Pittsburgh TikTok creators filmed Nan Xiang Soup Dumplings this quarter, generating nearly 36,000 plays across 13 videos, and the restaurant posted none of it back. That gap is the editorial story of Spring 2026 for Pittsburgh's top-ranked business: the city is doing the distribution work, and the South Side Flats kitchen is quietly collecting the reward without fully claiming it. Nan Xiang leads all Pittsburgh Businesses this issue on the strength of social momentum, sitting at number one in both the restaurant and the citywide rankings, driven by a conversion path that leaves nothing broken and a review count that crossed 1,200 with an 88 percent five-star rate. The rank holds as long as the TikTok wave keeps arriving; the question for next issue is whether Nan Xiang builds a platform that can catch it.",
-  "tldr_read": "Thirteen creators filmed here this quarter; the restaurant has no TikTok presence to show for it. Icons of the Burgh, number one in Pittsburgh Restaurants and Pittsburgh Businesses.",
-  "tldr_meaning": "The citywide lead is real and data-supported, but it rests almost entirely on creator activity the business does not control and an Instagram engagement rate sitting below a quarter of a percent.",
+  "notable_quote": "Our server Morgan had an amazing smile and great customer service; she held amazing conversation and made the experience very welcoming and rememberable, and we tried the new spicy beef dumplings and sweet and sour soup, both were incredible.",
+  "sentiment_summary": "Reviewers are loyal to specific dishes, especially the soup dumplings, beef and pepper noodles, and the kao fu, and they name their servers by name at a rate that signals something unusually warm about the floor staff; the only consistent friction point is bathroom upkeep.",
+  "quarter_narrative": "Thirteen Pittsburgh TikTok creators filmed Nan Xiang Soup Dumplings this quarter, generating nearly 36,000 plays without the restaurant posting a single video of its own. The business holds the top rank across all Pittsburgh restaurants and leads its own three-location family on the strength of social momentum, a signal built almost entirely by other people's phones. That asymmetry, a place this visible on creator feeds with no TikTok presence of its own, is the defining tension of its Spring 2026 position. Holding the top rank from here depends on whether the restaurant begins to shape the story creators are already telling.",
+  "tldr_read": "Dominant reviews, a creator-built TikTok footprint, and a perfect conversion path signal, with no owned TikTok account to collect any of it. Icons of the Burgh, number one in Pittsburgh Restaurants.",
+  "tldr_meaning": "The rank is fully earned on external signals; the ceiling rises the moment the restaurant stops being a subject in other people's videos and starts becoming a publisher in its own right.",
   "diagnosis_pullquote": {
-    "line": "First In Pittsburgh On Creator Energy It Did Not Generate Itself.",
-    "highlight": "Did Not Generate"
+    "line": "Number One In Pittsburgh, Built On Thirteen Creators' Phones. The Restaurant Has No TikTok To Show For It.",
+    "highlight": "Thirteen Creators' Phones"
   },
   "playbook": [
     {
-      "headline": "Build a TikTok presence before the wave recedes",
-      "action": "Thirteen creators posted 35,914 plays this quarter; a business account captures that traffic and gives the rank a foundation it actually owns.",
+      "headline": "Claim a TikTok presence before someone else defines it",
+      "action": "Thirteen creators have posted 35,914 plays this quarter; opening an owned account captures that search equity and stops ceding narrative control entirely.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "OWN THE SIGNAL"
+      "impact_label": "CAPTURE CREATOR REACH"
     },
     {
-      "headline": "Close the Instagram engagement gap",
-      "action": "Eleven posts in 30 days is a real posting rate, but a 0.21 percent engagement rate means the content is not landing; shift at least two of the four monthly reels to the server shoutout format that reviewers are already writing unprompted.",
-      "signal": "community_spark",
+      "headline": "Convert Instagram reels into a consistent weekly format",
+      "action": "Four reels in 30 days is a foundation, but a 0.21 percent engagement rate suggests the format or cadence needs sharpening to pull followers into saves and shares.",
+      "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+ENGAGEMENT RATE"
     },
     {
-      "headline": "Address the one recurring cleanliness note",
-      "action": "A single bathroom complaint in 1,212 reviews is a small share, but at the number-one rank it is the only friction point reviewers name; a visible maintenance routine closes that gap before it compounds.",
-      "signal": "conversion_path",
+      "headline": "Surface the floor staff publicly",
+      "action": "Morgan, Galilea, and Chavely each earned named reviews; posting short staff spotlights ties the warmth that reviewers already feel to a shareable face for the restaurant.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "PROTECT 88% FIVE-STAR"
+      "impact_label": "+SENTIMENT DEPTH"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T16:22:52.411Z",
+  "analyzed_at": "2026-04-26T19:48:26.594Z",
   "model": "claude-sonnet-4-6"
 }

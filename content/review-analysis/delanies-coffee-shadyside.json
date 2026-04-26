@@ -8,10 +8,10 @@
       "exampleQuote": "The strawberry matcha here might be the best I've ever had."
     },
     {
-      "phrase": "specialty drink options",
-      "frequency": 3,
+      "phrase": "signature specialty drinks",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "There were a lot of good options for drinks! Both drinks my sister and I tried were delicious."
+      "exampleQuote": "there were a lot of good options for drinks! both drinks my sister and I tried were delicious."
     },
     {
       "phrase": "gets packed quickly",
@@ -23,54 +23,48 @@
       "phrase": "friendly staff",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The workers are so nice every time I visit!"
+      "exampleQuote": "the workers are so nice every time I visit!"
     },
     {
-      "phrase": "order mix-up, no remedy",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin, let them know, I had to pay for a new muffin."
-    },
-    {
-      "phrase": "wifi not work-friendly",
+      "phrase": "poor wifi for working",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "The wi-fi isn't good enough to work from here so I wouldn't come back for that."
     }
   ],
   "notable_quote": "The strawberry matcha here might be the best I've ever had.",
-  "sentiment_summary": "Reviewers keep coming back to the specialty drinks, particularly the strawberry matcha and iced tiramisu latte, while the small footprint, unreliable wifi, and an order-correction policy that cost a customer money are the recurring friction points.",
-  "quarter_narrative": "Sixteen Pittsburgh creators posted 17 TikToks about Delanie's Coffee Shadyside this quarter, generating over 66,000 plays, and the shop's own account did not post a single one in return. That gap is the defining story of its Spring 2026. The family leader this issue, Allegheny Coffee and Tea Exchange, built its top position on social momentum it controlled; Delanie's is sitting on borrowed momentum it cannot yet convert. The rank climbs when the shop turns creator energy into a signal it owns, because the drink lineup and the Creator Fit reading are already doing the heavy lifting.",
-  "tldr_read": "Creator coverage is outpacing the shop's own output by a wide margin, with review sentiment below the family median. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The Creator Fit reading is the strongest in the family, but without the shop's own posting activity to capture it, that signal dissipates before it compounds into a rank move.",
+  "sentiment_summary": "Reviewers keep circling back to a handful of standout drinks, the strawberry matcha and tiramisu latte in particular, while the consistent friction points are capacity and wifi reliability rather than anything about the coffee itself.",
+  "quarter_narrative": "Sixteen Pittsburgh creators posted 17 TikToks featuring Delanie's Coffee Shadyside this quarter, generating 66,299 plays without a single frame coming from the business itself. That ratio is the story of Spring 2026 here: a cafe with a genuinely photogenic product and a cult following among local coffee TikTokers, sitting on the sideline of its own conversation. Against that backdrop, the family leader this issue is Allegheny Coffee and Tea Exchange, a business that has converted social momentum into a commanding rank. Delanie's has the creator fit to close that gap faster than most; the question is whether it acts on it before the next quarterly cycle.",
+  "tldr_read": "Sixteen creators filming, zero TikTok presence from the business itself, and an Instagram that posted three times in thirty days. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The Creator Fit signal is already near the top of the family, but without the business feeding that momentum on its own channels, the review volume stays thin and the visual catalog stays below the family median.",
   "diagnosis_pullquote": {
-    "line": "Sixteen Creators Are Shouting. Delanie's Has Not Shouted Back Yet.",
-    "highlight": "Shouting. Delanie's Has"
+    "line": "Ones to Watch, Fourth in Coffee. Sixteen Creators Are Doing the Talking.",
+    "highlight": "Sixteen Creators Are"
   },
   "playbook": [
     {
-      "headline": "Claim the TikTok moment creators built",
-      "action": "Open a TikTok account and post one video per week reposting or responding to the 17 creator videos already in circulation.",
+      "headline": "Claim space in the TikTok moment",
+      "action": "Open a TikTok account and post one video per week reacting to or resharing the 17 creator clips already in circulation.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE 66K PLAYS"
+      "impact_label": "+CREATOR REACH"
     },
     {
-      "headline": "Lift review sentiment with one policy fix",
-      "action": "Address the order-correction policy that charged a customer for a shop error; one visible response and a corrected standard closes the gap between 60 and the family median of 79.",
+      "headline": "Thin review volume needs reinforcing",
+      "action": "With only 104 Google reviews at 82% five-star, a simple in-store QR card at checkout could meaningfully move the review count closer to the family median.",
       "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "+REVIEW DEPTH"
     },
     {
-      "headline": "Post more than three times a month",
-      "action": "Instagram sat at 3 posts and 0 Reels in 30 days with a 16-day gap before last post; two Reels per month of the strawberry matcha build the visual catalog above the family median of 77.",
+      "headline": "Fill the visual catalog gaps",
+      "action": "Google Photos sits at 96 images across six active categories; adding dedicated interior and food-close-up shots would push the visual catalog toward the family median of 77.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+VISUAL CATALOG"
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T16:17:02.283Z",
+  "analyzed_at": "2026-04-26T19:42:22.239Z",
   "model": "claude-sonnet-4-6"
 }

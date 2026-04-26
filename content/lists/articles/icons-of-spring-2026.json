@@ -3,7 +3,7 @@
   "title": "The 10 Pittsburgh Businesses Defining Social This Quarter",
   "subtitle": "Spring 2026, across every family",
   "angle": "the businesses winning the conversation this quarter, regardless of category. We're surfacing who creators are filming, who customers are reviewing, and who is actually showing up on their own feeds.",
-  "intro": "Every quarter, Pittsburgh's food and retail conversation reorganizes itself without asking permission. The businesses at the top of this list did not all earn their position the same way: some built it, some inherited it, and some are watching it happen from the sidelines.\n\nKyo Matcha in Squirrel Hill South sits at the top with 1.79 million TikTok plays and a review count that hasn't come close to catching up, a gap that tells you exactly how fast creator momentum can outrun a business's own infrastructure. Everyday Noodles made number one in its category without posting a single frame itself, a position built entirely on other people's phones. Millie's Homemade Ice Cream landed the top ice cream spot on the strength of its reviews while TikTok energy swirled around it with nowhere to land.\n\nWhat this quarter clarifies is that winning the conversation and owning it are two different things. Several businesses here are doing one without the other. Issue 02, covering Summer 2026, will track whether that gap closes, widens, or gets inherited by someone newer.",
+  "intro": "The businesses on this quarter's list did not win by posting the most. Several of them barely posted at all. What they did was become material: the kind of places creators return to, reviewers argue over, and customers feel compelled to document before they even sit down. That's the pattern Signal tracks, and Spring 2026 made it unusually legible.\n\nA few cases are worth calling out before you get to the rankings. Everyday Noodles in Squirrel Hill North generated 19 million creator plays and holds the top spot in its category. The restaurant has no account to receive any of that. Kyo Matcha pulled 1.8 million plays and finished second in desserts, which sounds like a miss until you read the sentiment data and understand why the gap exists. Reva Modern Indian Cuisine in East Liberty built its number-one ranking on the backs of 33 individual creators, then let its own feed go quiet while the conversation kept moving.\n\nThe through line this quarter: Pittsburgh's most-talked-about businesses are largely watching their own momentum from the sidelines. Whether that changes will be the first question Summer 2026 tries to answer.",
   "items": [
     {
       "rank": 1,
@@ -11,8 +11,8 @@
       "name": "Kyo Matcha",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "Icons Tier, Built on 1.79 Million TikTok Plays. The Reviews Have Not Caught Up Yet.",
-      "descriptor_highlight": "1.79 Million TikTok Plays",
+      "descriptor": "Second In Desserts, Powered By 1.8 Million Creator Plays. Sentiment Is The Gap.",
+      "descriptor_highlight": "1.8 Million Creator Plays",
       "stat_line": "314 reviews · 4.7★ · 39 creators · 1.8M plays · 6 IG posts/30d",
       "featured_tiktok": {
         "author": "andremelendez",
@@ -20,7 +20,7 @@
         "url": "https://www.tiktok.com/@andremelendez/video/7616424534505229582",
         "caption": "this matcha place deserves more hype👀 #matchalover #fluffiestmatcha #matchaspot "
       },
-      "playbook_top_move": "Fix the ops complaints before they compound. Portion standards for soft serve and a firm 10 PM close policy would directly address the two recurring negatives pulling sentiment below the 83 family median."
+      "playbook_top_move": "Close the review sentiment gap now. At 67 against a family median of 83, sentiment is the single axis holding this ranking down; address the portion consistency and closing-time complaints explicitly in responses to flag those patterns to future reviewers."
     },
     {
       "rank": 2,
@@ -28,8 +28,8 @@
       "name": "Jeni's Splendid Ice Creams",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Larimer",
-      "descriptor": "Second In Ice Cream On Creator Fuel Alone. The Business Has No Tank Of Its Own.",
-      "descriptor_highlight": "No Tank Of Its Own",
+      "descriptor": "Second In Ice Cream, Carried By Creators. The 0.49% Engagement Rate Is The Real Story.",
+      "descriptor_highlight": "0.49% Engagement Rate",
       "stat_line": "251 reviews · 4.5★ · 35 creators · 1.2M plays · 12 IG posts/30d",
       "featured_tiktok": {
         "author": "morganchompz",
@@ -37,7 +37,7 @@
         "url": "https://www.tiktok.com/@morganchompz/video/7622351776439667981",
         "caption": "Trying Jeni’s spring ice cream flavor lineup! 🍦💐 Have you tried any of these? @Jeni’s Splendid Ice Creams #icecream #dessert #newfood #foodreview #snacks "
       },
-      "playbook_top_move": "Claim the TikTok ground creators built. Launch a Jeni's TikTok account and repost the top-performing creator content; 35 creators and 1.15 million plays already exist as a runway."
+      "playbook_top_move": "Address the portion-price complaint directly. Portion size criticism appears in at least 2 of 8 sampled reviews and is the clearest drag on sentiment below the family median of 83."
     },
     {
       "rank": 3,
@@ -45,8 +45,8 @@
       "name": "Treat - Ice Cream and Liege Waffles",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Shadyside",
-      "descriptor": "Third In Ice Cream, Fueled By A City Filming It. The Shop Has Not Filmed Back.",
-      "descriptor_highlight": "A City Filming It",
+      "descriptor": "Third In Ice Cream, Built On Creator Attention. The Business Has Yet To Meet It.",
+      "descriptor_highlight": "Built On Creator Attention",
       "stat_line": "623 reviews · 5★ · 32 creators · 1.1M plays",
       "featured_tiktok": {
         "author": "dipitcafe",
@@ -54,7 +54,7 @@
         "url": "https://www.tiktok.com/@dipitcafe/video/7626609541450321183",
         "caption": "Waffle with ice cream #icecream #TikTok #viral #viralvideo #Dessert "
       },
-      "playbook_top_move": "Restart the Instagram feed this week. The account has been dark for 200 days despite a 7.65% engagement rate sitting idle; one waffle post reactivates that audience immediately."
+      "playbook_top_move": "Claim a TikTok presence now. Thirty-two creators generated 1.1 million plays this quarter with no account to land on; creating a profile captures that traffic before it dissolves."
     },
     {
       "rank": 4,
@@ -62,8 +62,8 @@
       "name": "Everyday Noodles",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Squirrel Hill North",
-      "descriptor": "Number One In Noodles, Built Entirely By Other People's Cameras.",
-      "descriptor_highlight": "Other People's Cameras",
+      "descriptor": "First In Noodles, Backed By 19 Million Plays. No Account To Catch Them.",
+      "descriptor_highlight": "19 Million Plays",
       "stat_line": "2,216 reviews · 4.6★ · 26 creators · 19.1M plays",
       "featured_tiktok": {
         "author": "joshua.guitar",
@@ -71,7 +71,7 @@
         "url": "https://www.tiktok.com/@joshua.guitar/video/7603185879934340365",
         "caption": "Good noodles everyday 🤤 #trending #noodles #meme #fyp #guitar "
       },
-      "playbook_top_move": "Claim an Instagram presence immediately. Open and verify an Instagram account; 19 million TikTok plays exist with no owned channel to absorb any of it"
+      "playbook_top_move": "Build a home for 19 million plays. Open a TikTok account and claim the coverage already generated by 26 creators this quarter before that traffic dissipates."
     },
     {
       "rank": 5,
@@ -79,8 +79,8 @@
       "name": "24 Carrot Juice",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Bloomfield",
-      "descriptor": "Number One In Juice, Built On Other People's Cameras. The Shop Hasn't Picked Up Its Own.",
-      "descriptor_highlight": "Other People's Cameras",
+      "descriptor": "First In Juice On Creator Energy Alone. The Shop Has Not Posted A Single Reel.",
+      "descriptor_highlight": "Not Posted A Single Reel",
       "stat_line": "519 reviews · 5★ · 30 creators · 1.5M plays · 3 IG posts/30d",
       "featured_tiktok": {
         "author": "amalkzad",
@@ -88,7 +88,7 @@
         "url": "https://www.tiktok.com/@amalkzad/video/7625691066913656078",
         "caption": "Carrot juice glow up ✨ @Ninja Kitchen \n\n•8 carrots\n• 1 piece of beet\n• Ginger (to taste)\n• Turmeric (to taste)\n• 1 apple\n• 1 orange\n• 1 lemon\n• Coconut water 500 ml\n• Water\n• Optional: a pinch of black pepper"
       },
-      "playbook_top_move": "Get a TikTok account live now. 30 creators have posted 33 tagged videos with 1.45 million plays. The business has no TikTok presence to capture any of it."
+      "playbook_top_move": "Start reels before the creators move on. Zero reels in 30 days while 30 external creators generated 1.4 million plays; one reel per week showing a pour, a build, or the owner would begin capturing that existing audience."
     },
     {
       "rank": 6,
@@ -96,8 +96,8 @@
       "name": "Reva Modern Indian Cuisine",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "East Liberty",
-      "descriptor": "Number One In Indian, Carried By Creators. The Restaurant Has Gone Quiet.",
-      "descriptor_highlight": "Carried By Creators",
+      "descriptor": "First In Indian, Powered By 33 Creators. The Restaurant's Own Feed Has Gone Quiet.",
+      "descriptor_highlight": "33 Creators",
       "stat_line": "527 reviews · 4.6★ · 33 creators · 373K plays",
       "featured_tiktok": {
         "author": "gabs_joella",
@@ -105,7 +105,7 @@
         "url": "https://www.tiktok.com/@gabs_joella/video/7627972466371022111",
         "caption": "My mom didn’t have to ask me twice to make this video for her to help promote the family’s restaurant. I got to eat bomb, authentic Indian food and see my mom smile! It would mean a lot her and the fam if you checked out this wonderful smal"
       },
-      "playbook_top_move": "Restart Instagram before the signal fades. The account has been dark for 72 days with a 37.85% engagement rate sitting idle; one post resets the momentum clock."
+      "playbook_top_move": "Restart Instagram before the signal flatlines. The account has been dark for 72 days with a 37.85% engagement rate waiting to activate, one post restarts the clock."
     },
     {
       "rank": 7,
@@ -113,8 +113,8 @@
       "name": "Allegheny Coffee & Tea Exchange",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Strip District",
-      "descriptor": "Number One On Creator Energy Alone. The Shop Has Not Claimed Its Own Wave Yet.",
-      "descriptor_highlight": "Not Claimed Its Own Wave",
+      "descriptor": "Number One In Cafes, Built On Creator Momentum. The Shop's Own Feed Hasn't Caught The Wave.",
+      "descriptor_highlight": "Built On Creator Momentum",
       "stat_line": "924 reviews · 4.8★ · 31 creators · 607K plays · 12 IG posts/30d",
       "featured_tiktok": {
         "author": "pittsburghpg",
@@ -122,7 +122,7 @@
         "url": "https://www.tiktok.com/@pittsburghpg/video/7607959834289343757",
         "caption": "HBO Max's award-winning medical drama “The Pitt” does a lot of things to ground itself in Pittsburgh.\nIts emergency room is based on that of Allegheny General Hospital on the North Side. There are a variety of local references, including on"
       },
-      "playbook_top_move": "Repost the 607K plays you didn't make. Systematically reshare top creator TikToks to @adventureallegheny; 31 creators already handed over the raw material."
+      "playbook_top_move": "Convert creator plays into owned engagement. Repost or respond to the top TikTok creators filming here; 31 unique creators, 607K plays is a referral engine sitting unused on your own channels."
     },
     {
       "rank": 8,
@@ -130,8 +130,8 @@
       "name": "Ka-Fair Coffee and Cakery",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Morningside",
-      "descriptor": "Third In Cafes On Borrowed Momentum, A Million TikTok Plays The Business Never Claimed.",
-      "descriptor_highlight": "Borrowed Momentum",
+      "descriptor": "Third In Pittsburgh Cafes, Carried By Creators. The Business Has Yet To Film Back.",
+      "descriptor_highlight": "Carried By Creators",
       "stat_line": "235 reviews · 4.8★ · 28 creators · 1.0M plays · 3 IG posts/30d",
       "featured_tiktok": {
         "author": "dailysipclub8",
@@ -139,7 +139,7 @@
         "url": "https://www.tiktok.com/@dailysipclub8/video/7625180370853530902",
         "caption": "ube vanilla velvet matcha latte.\n.\n.\nrecipe \n250ml milk \n50ml matcha \n2 pumps vanilla syrup \n\nube cold foam \n3 tbsp double cream \n2 tbsp milk \n1 tsp ube powder \nmix until thick pour \n\n#matcha #matchapowder #coffee #morningroutine "
       },
-      "playbook_top_move": "Turn the reels signal on. Post at least two reels per week; the ube matcha and banoffee alone are ready-made subjects with proven creator demand."
+      "playbook_top_move": "Claim the platform already filming you. Open a Ka-Fair TikTok account and repost the 28 creator videos that have already generated 1,049,142 plays this quarter."
     },
     {
       "rank": 9,
@@ -147,8 +147,8 @@
       "name": "Millie's Homemade Ice Cream",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Shadyside",
-      "descriptor": "Number One In Ice Cream, Built On Reviews. The City's TikTok Energy Has No Home Base.",
-      "descriptor_highlight": "No Home Base",
+      "descriptor": "Number One In Ice Cream, Built On Reviews. Half A Million TikTok Plays Ran Without Them.",
+      "descriptor_highlight": "Half A Million TikTok",
       "stat_line": "1,150 reviews · 4.6★ · 25 creators · 579K plays · 12 IG posts/30d",
       "featured_tiktok": {
         "author": "nonazgonenutz",
@@ -156,7 +156,7 @@
         "url": "https://www.tiktok.com/@nonazgonenutz/video/7620920784357248287",
         "caption": "#Mandelaeffect #Dreyers #edys #wtf Messing with my ice-cream is a No NO"
       },
-      "playbook_top_move": "Claim the TikTok real estate already yours. Launch a Millie's TikTok account and repost or stitch the 26 existing creator videos that have already generated 578,817 plays this quarter."
+      "playbook_top_move": "Claim the TikTok presence creators already built. Launch a Millie's TikTok account to capture the 578,817 plays and 25 creators already filming the shop each quarter."
     },
     {
       "rank": 10,
@@ -164,8 +164,8 @@
       "name": "Spot of Coffee",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Icons Tier, Number Two. The City Is Filming; The Google Profile Is Not Keeping Up.",
-      "descriptor_highlight": "The City Is Filming",
+      "descriptor": "Second In Pittsburgh Coffee, Powered By Creators. The Business Has No TikTok To Catch Them.",
+      "descriptor_highlight": "No TikTok To Catch",
       "stat_line": "173 reviews · 4.8★ · 24 creators · 278K plays · 6 IG posts/30d",
       "featured_tiktok": {
         "author": "lyssad16",
@@ -173,7 +173,7 @@
         "url": "https://www.tiktok.com/@lyssad16/video/7617949708450876685",
         "caption": "neeeeedddd to try more tho! #coffee #pittsburgh #trending "
       },
-      "playbook_top_move": "Put a website on Google immediately. Spot of Coffee has no website linked on Google, the only business in its family at zero on conversion path; even a single-page site with the menu closes this gap."
+      "playbook_top_move": "Add the missing website to Google profile. The Google listing has no website linked; every competitor at or above the family median of 100 on Conversion Path has one. Fix this first."
     }
   ],
   "query": {
@@ -183,6 +183,6 @@
     "ranking": "creator_pickup",
     "limit": 10
   },
-  "generated_at": "2026-04-26T18:43:10.361Z",
+  "generated_at": "2026-04-26T19:52:55.085Z",
   "model": "claude-sonnet-4-6"
 }

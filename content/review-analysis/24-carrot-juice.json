@@ -5,7 +5,7 @@
       "phrase": "owner warmth",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Really nice owner. Will be back!"
+      "exampleQuote": "The owner is super nice and cool!"
     },
     {
       "phrase": "acai bowl quality",
@@ -20,7 +20,7 @@
       "exampleQuote": "Easy parking, very clean, good price for a delicious smoothie."
     },
     {
-      "phrase": "smoothie freshness",
+      "phrase": "smoothie standout",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Got the green machine, one of the best smoothies I've ever had."
@@ -29,42 +29,42 @@
       "phrase": "Children's Hospital proximity",
       "frequency": 1,
       "sentiment": "positive",
-      "exampleQuote": "Located right across from Children's hospital, very convenient."
+      "exampleQuote": "Located right across from Children's Hospital, very convenient."
     }
   ],
   "notable_quote": "Stopped in the middle of my açaí bowl to give this five stars. It's that good.",
-  "sentiment_summary": "Reviewers reliably flag three things: the owner's demeanor, the cleanliness of the space, and the quality of the acai bowls and smoothies. Nobody nitpicks, which is notable across 519 reviews, though the brevity of most responses suggests the experience is satisfying rather than story-generating.",
-  "quarter_narrative": "Thirty creators filmed 24 Carrot Juice this quarter and generated 1.45 million TikTok plays. The shop posted three times on Instagram and zero times on TikTok. That gap is the whole story of Spring 2026 for this Bloomfield juice bar: the city decided it was worth filming, and the business watched from the sidelines. Meanwhile, Allegheny Coffee and Tea Exchange holds the family lead in Pittsburgh Cafes on the strength of social momentum, the exact signal 24 Carrot has handed to creators rather than building itself. The rank climbs if the business starts meeting its audience where they already are.",
-  "tldr_read": "Dominant TikTok creator coverage, nearly silent on its own channels, number one in Pittsburgh juice shops and eighth in Pittsburgh cafes.",
-  "tldr_meaning": "The creator signal is doing work the business is not doing for itself, and that asymmetry is what keeps the rank from going higher in the broader cafe family.",
+  "sentiment_summary": "Reviewers are consistent on three things: the owner, the cleanliness, and the price-to-quality ratio on smoothies and acai bowls. There is no meaningful nitpicking in 519 reviews, which is either a testament to the operation or a sign the written feedback skews toward regulars.",
+  "quarter_narrative": "Thirty creators posted TikToks tagging 24 Carrot Juice this quarter, generating over 1.4 million plays, and the shop has no TikTok account of its own to meet any of that traffic. The business's Instagram posted three times in 30 days with zero reels, while the city's creator community produced content that reached audiences far beyond anything the account has captured. Within the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange is running away with the social momentum signal; 24 Carrot holds the top juice rank on the strength of review volume and creator pull alone. If the shop finds a way to receive that creator energy rather than simply benefit from it passively, the jump from Ones to Watch to a higher tier becomes a straightforward question of consistency.",
+  "tldr_read": "Over 1.4 million TikTok plays from 30 creators, zero reels from the shop itself. Ones to Watch, #1 in Pittsburgh Juice Shops.",
+  "tldr_meaning": "The review signal and creator fit are already performing at or above family median; the Instagram momentum and the absence of any owned TikTok presence are the only axes keeping this business from a materially stronger rank.",
   "diagnosis_pullquote": {
-    "line": "Number One In Juice, Built On Other People's Cameras. The Shop Hasn't Picked Up Its Own.",
-    "highlight": "Other People's Cameras"
+    "line": "First In Juice On Creator Energy Alone. The Shop Has Not Posted A Single Reel.",
+    "highlight": "Not Posted A Single Reel"
   },
   "playbook": [
     {
-      "headline": "Get a TikTok account live now",
-      "action": "30 creators have posted 33 tagged videos with 1.45 million plays. The business has no TikTok presence to capture any of it.",
+      "headline": "Start reels before the creators move on",
+      "action": "Zero reels in 30 days while 30 external creators generated 1.4 million plays; one reel per week showing a pour, a build, or the owner would begin capturing that existing audience.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE 1.4M PLAYS"
+      "impact_label": "CAPTURE CREATOR LIFT"
     },
     {
-      "headline": "Add a phone number to Google",
-      "action": "The Google profile is missing a phone number entirely, a direct friction point on a profile that otherwise has hours, a website, and 177 photos.",
+      "headline": "Add a phone number to the Google listing",
+      "action": "The Google Business profile has no phone number listed, a direct friction point on the conversion path that sits below the family median of 100.",
       "signal": "conversion_path",
       "priority": "medium",
       "impact_label": "+CONVERSION PATH"
     },
     {
-      "headline": "Post more than three times a month",
-      "action": "Instagram engagement sits at 2.53 percent with only 3 posts and zero reels in the last 30 days. The audience is there; the feed is not feeding it.",
-      "signal": "content_canvas",
+      "headline": "Invite the top five creators back intentionally",
+      "action": "Creators like @amalkzad and @gracemayofficial have already filed 671K-play videos; a direct invitation for a behind-the-counter collab would deepen the creator fit signal already near family median.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "SUSTAIN CREATOR PULL"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T16:15:52.104Z",
+  "analyzed_at": "2026-04-26T19:41:12.961Z",
   "model": "claude-sonnet-4-6"
 }

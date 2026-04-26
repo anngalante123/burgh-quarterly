@@ -2,75 +2,75 @@
   "slug": "pusadees-garden",
   "themes": [
     {
-      "phrase": "reservation friction",
+      "phrase": "reservation difficulty",
       "frequency": 3,
       "sentiment": "negative",
       "exampleQuote": "getting a reservation can be quite challenging"
     },
     {
-      "phrase": "stunning interior atmosphere",
+      "phrase": "17 ingredient salad",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "standouts were the 17 ingredient salad and the yellow roti"
+    },
+    {
+      "phrase": "atmosphere and interior beauty",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "very unassuming from the outside, but absolutely beautiful"
     },
     {
-      "phrase": "standout individual dishes",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "the shrimp tom yum, I've never had anything like it"
-    },
-    {
-      "phrase": "price-to-portion concern",
+      "phrase": "price-to-portion value",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "you can get the same meal at a different place for less"
     },
     {
-      "phrase": "front-of-house communication gaps",
+      "phrase": "shrimp tom yum",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "the shrimp tom yum, I've never had anything like it"
+    },
+    {
+      "phrase": "front-of-house communication",
       "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "a little more proactive communication from the front-of-house team would make the experience even better"
-    },
-    {
-      "phrase": "food lives up to hype",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "it lived up to the hype for us"
     }
   ],
-  "notable_quote": "The shrimp tom yum, I've never had anything like it.",
-  "sentiment_summary": "Reviewers consistently praise the beauty of the space, the quality of individual dishes like the tom yum and yellow roti, and the calm atmosphere; the persistent friction points are reservation difficulty, front-of-house communication, and a price-to-portion ratio that some find hard to justify.",
-  "quarter_narrative": "Sixteen Pittsburgh creators posted 17 TikToks tied to Pusadee's Garden this quarter, generating over 3.4 million plays, while the restaurant's own Instagram produced two posts and zero reels in the same window. The gap is wide and measurable: the city is treating this place as a visual destination, and the restaurant's own feed is largely silent about it. That contrast keeps Pusadee's at the top of the Pittsburgh Thai family but below Mola in the broader Asian Kitchens ranking, where Mola's creator collaboration signal is the current differentiator. Closing the Instagram momentum gap, specifically by converting even a fraction of that creator energy into owned content, is the clearest path toward the Icons tier.",
-  "tldr_read": "Dominant TikTok creator coverage and 1,224 reviews at 86% five-star, undercut by a near-dormant Instagram at 0.83% engagement. Ones to Watch, #1 in Pittsburgh Thai.",
-  "tldr_meaning": "The review foundation and creator-driven visibility are already at or above family medians on nearly every axis; the Instagram momentum signal is the one number keeping this business outside the Icons conversation.",
+  "notable_quote": "The shrimp tom yum: I've never had anything like it.",
+  "sentiment_summary": "Reviewers consistently praise the room, the garden atmosphere, and standout dishes like the tom yum and yellow roti, while returning friction points cluster around reservation logistics, front-of-house communication gaps, and a price-to-portion equation that leaves some tables unconvinced.",
+  "quarter_narrative": "Sixteen TikTok creators filmed Pusadee's Garden this past quarter and generated 3.4 million plays. The restaurant posted twice to Instagram in the same window, no reels, no TikTok presence of its own. The city is building this place's visual identity without any input from the restaurant itself, which is a remarkable position to be in and a fragile one. Inside the Pittsburgh Asian Kitchens family, Mola holds the top spot this issue largely on creator collaboration signal; Pusadee's Garden leads the Thai category with a stronger review base and a more developed photo catalog, but its social inertia keeps it one tier below where its reputation might otherwise place it. Closing the gap between what 16 creators are already documenting and what the restaurant chooses to show about itself is the clearest path toward a higher rank next issue.",
+  "tldr_read": "Dominant TikTok presence it didn't build, thin Instagram output it hasn't used. Ones to Watch, #1 in Pittsburgh Thai.",
+  "tldr_meaning": "The review base and visual catalog are already at family-median strength; the rank ceiling is now set almost entirely by Instagram momentum, which is the one axis sitting well below everything else.",
   "diagnosis_pullquote": {
-    "line": "Number One In Thai, Carried By Creator Reach. The Restaurant's Own Feed Is Barely Whispering.",
-    "highlight": "Carried By Creator Reach"
+    "line": "First In Pittsburgh Thai On Review Depth. The Feed Is Barely Keeping Up.",
+    "highlight": "Barely Keeping Up"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram with weekly reels",
-      "action": "Zero reels posted in 30 days and a 0.83% engagement rate; one behind-the-scenes kitchen reel per week would reopen the momentum signal meaningfully.",
+      "headline": "Restart Instagram with reels, not posts",
+      "action": "Zero reels in the last 30 days is the specific gap; a single weekly reel of the garden space or a dish in motion would move the momentum signal faster than static posts.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "+MOMENTUM SIGNAL"
     },
     {
-      "headline": "Claim and build a TikTok presence",
-      "action": "Sixteen creators drove 3.4 million plays this quarter with no business account in the mix; a single owned TikTok channel would let the restaurant meet that audience directly.",
+      "headline": "Claim the creator footage already circulating",
+      "action": "16 creators generated 3.4 million plays this quarter; reposting or responding to even the top three would connect that existing reach back to a channel the restaurant controls.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "UNLOCK OWNED REACH"
+      "impact_label": "CAPTURE EXISTING REACH"
     },
     {
-      "headline": "Add an Instagram bio immediately",
-      "action": "The business account has no bio, which cuts conversion from profile visits; a single line with hours, reservation link, and neighborhood would close that gap today.",
+      "headline": "Add a bio to the Instagram account",
+      "action": "The business Instagram has no bio at all; a single line with hours, neighborhood, and reservation link converts the profile from a dead end into an entry point for the 3.4 million people already seeing this restaurant on TikTok.",
       "signal": "conversion_path",
       "priority": "low",
-      "impact_label": "+PROFILE CONVERSION"
+      "impact_label": "CLOSE CONVERSION GAP"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T16:23:56.525Z",
+  "analyzed_at": "2026-04-26T19:49:34.491Z",
   "model": "claude-sonnet-4-6"
 }

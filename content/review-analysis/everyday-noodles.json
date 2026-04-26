@@ -3,68 +3,68 @@
   "themes": [
     {
       "phrase": "noodle soup quality",
-      "frequency": 3,
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Contender for best noodle soup in Pittsburgh"
     },
     {
-      "phrase": "open kitchen experience",
-      "frequency": 2,
+      "phrase": "handmade noodles and dumplings",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Fun to watch them make noodles, potstickers, and wontons"
     },
     {
-      "phrase": "dim sum and dumplings",
-      "frequency": 3,
+      "phrase": "dim sum and boba",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Can never go wrong with the soup dumplings"
+      "exampleQuote": "Can never go wrong with the soup dumplings. And of course some Boba."
     },
     {
-      "phrase": "server conduct complaints",
+      "phrase": "staff and service complaints",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "Server also deliberately overcharged card for tip after receiving cash tip"
+      "exampleQuote": "Server was incompetent and kept bringing out food that was not ordered."
     },
     {
-      "phrase": "missing menu items",
+      "phrase": "menu item availability",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Where is my beef noodle? Really disappointed"
     }
   ],
   "notable_quote": "Contender for best noodle soup in Pittsburgh.",
-  "sentiment_summary": "Reviewers keep coming back for the handmade noodles, soup dumplings, and the visible open-kitchen production; the minority complaints cluster around one specific service incident involving tip handling and a missing menu item.",
-  "quarter_narrative": "Twenty-six Pittsburgh creators filed into Everyday Noodles this quarter and produced nearly 19.1 million TikTok plays, including a single video from @joshua.guitar that crossed 11.4 million views. The shop itself has no indexed Instagram and no known TikTok account, which means every frame of that visibility was authored by someone else, on someone else's terms. That gap is the defining story of Everyday Noodles right now: a place the city has decided to film, without any reciprocal signal coming from the business. Across the Pittsburgh Asian Kitchens family, Mola holds the top position this issue largely on creator collaboration fit; Everyday Noodles has the raw creator attention Mola would envy, but no infrastructure to convert it into a sustained presence. Whether this shop holds the top noodle rank or climbs the broader Asian Kitchens table next issue depends almost entirely on whether it starts showing up in its own story.",
-  "tldr_read": "Nineteen million TikTok plays and 2,216 strong reviews, no Instagram signal whatsoever. Ones to Watch, #1 in Pittsburgh Noodle Shops.",
-  "tldr_meaning": "The creator attention is already category-leading; the only axis preventing a move toward Icons is the complete absence of any owned social presence to compound it.",
+  "sentiment_summary": "Reviewers keep coming back for the handmade noodles, soup dumplings, and the live prep theater behind the counter; the friction sits almost entirely in isolated but sharp service complaints, including one account of a tip dispute on Chinese New Year.",
+  "quarter_narrative": "Twenty-six Pittsburgh creators filmed Everyday Noodles this quarter. The business filmed none of it back. Those 26 TikToks accumulated just over 19 million plays, led by a single @joshua.guitar video that cleared 11.4 million on its own, and the shop has no TikTok account and no indexed Instagram to receive any of that momentum. In the Asian Kitchens family, Mola holds the top position partly because its creator collaboration signal is clean and two-directional; Everyday Noodles sits at third in the family despite owning the number-one noodle shop rank, which tells you how much signal is being left on the table. The path upward in the family standings runs directly through closing that gap between what the city is posting and what the business is capturing.",
+  "tldr_read": "Nineteen million TikTok plays with no account to receive them, and a review base of 2,216 sitting at 75 percent five-star. Ones to Watch, #1 in Pittsburgh Noodle Shops.",
+  "tldr_meaning": "The review signal and visual catalog are already at or above family median; the ceiling on rank movement is set almost entirely by whether the business builds any presence to meet the creator coverage already surrounding it.",
   "diagnosis_pullquote": {
-    "line": "Number One In Noodles, Built Entirely By Other People's Cameras.",
-    "highlight": "Other People's Cameras"
+    "line": "First In Noodles, Backed By 19 Million Plays. No Account To Catch Them.",
+    "highlight": "19 Million Plays"
   },
   "playbook": [
     {
-      "headline": "Claim an Instagram presence immediately",
-      "action": "Open and verify an Instagram account; 19 million TikTok plays exist with no owned channel to absorb any of it",
+      "headline": "Build a home for 19 million plays",
+      "action": "Open a TikTok account and claim the coverage already generated by 26 creators this quarter before that traffic dissipates.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "CAPTURE LIVE TRAFFIC"
     },
     {
-      "headline": "Engage the creators already filming here",
-      "action": "Reach out to the 26 TikTok creators who posted this quarter; @joshua.guitar alone drove 11.4 million plays with no apparent coordination",
-      "signal": "collab_fit",
+      "headline": "Index an Instagram handle on Google",
+      "action": "The Instagram handle is not indexed anywhere in the public signal; linking it to the Google Business profile connects the visual catalog to social proof directly.",
+      "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "LOCK IN REACH"
+      "impact_label": "+SOCIAL SIGNAL"
     },
     {
-      "headline": "Address the tip incident publicly",
-      "action": "Respond directly to the detailed tip-overcharge review; at 75 percent five-star across 2,216 reviews, one unaddressed conduct complaint carries outsized weight on sentiment",
+      "headline": "Respond publicly to the service outliers",
+      "action": "Two negative reviews, including the Chinese New Year tip dispute, sit unaddressed; a direct public response protects the 75 percent five-star average from sentiment drift.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "PROTECT SENTIMENT"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T16:17:41.853Z",
+  "analyzed_at": "2026-04-26T19:43:08.742Z",
   "model": "claude-sonnet-4-6"
 }

@@ -5,66 +5,66 @@
       "phrase": "raspberry lychee macaron",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "get the raspberry lychee macaroon, it is gluten free made with almond flour and it is the best thing I've ever put in my mouth"
+      "exampleQuote": "get the raspberry lychee macaroon, it is the best thing I've ever put in my mouth hands down"
     },
     {
-      "phrase": "Paris-quality pastries",
+      "phrase": "Paris-quality pastry",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed"
     },
     {
-      "phrase": "hidden gem in Pittsburgh",
+      "phrase": "hidden gem status",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Please do not miss this hidden gem in Pittsburgh"
     },
     {
-      "phrase": "delicious baked goods",
-      "frequency": 6,
+      "phrase": "gluten-free options",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Excelente panadería, todo es delicioso"
+      "exampleQuote": "it is gluten free made with almond flour"
     },
     {
-      "phrase": "multiple locations",
+      "phrase": "multi-location awareness",
       "frequency": 2,
       "sentiment": "neutral",
       "exampleQuote": "there are multiple locations so please make sure you check it out"
     }
   ],
   "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
-  "sentiment_summary": "Reviewers are practically evangelical about the macarons and the overall caliber of the pastry work, with 88 percent of 525 reviews landing at five stars; nitpicks are nearly nonexistent in the sample, suggesting any friction lives in discovery rather than experience.",
-  "quarter_narrative": "Thirteen Pittsburgh creators posted 15 TikToks tagged at La Gourmandine Hazelwood this quarter, generating nearly 737,000 plays, while the bakery itself has posted nothing on Instagram in over 40 days and holds no TikTok presence of its own. The city is documenting this place at a serious clip; the place is not documenting itself at all. That gap is the defining tension of its Spring 2026 signal: a near-perfect review floor, a maxed-out conversion path, and a visual catalog that sits right at the family median, all propped up by an audience the bakery did not build and cannot yet claim. Page's leads the Pittsburgh Sweets family this issue on social momentum, exactly the axis where La Gourmandine Hazelwood scores lowest. Closing that distance, not the review count, not the photos, is what separates a sustained hold at the top of the Pastry category from a slow slide as creator attention moves on.",
-  "tldr_read": "The reviews and the city's creators are doing heavy lifting; the bakery's own Instagram has gone quiet for over 40 days. Ones to Watch, number one in Pittsburgh Pastry shops.",
-  "tldr_meaning": "The rank is stable on borrowed momentum: creator coverage and review sentiment are carrying what a dormant owned social presence cannot, and that equation only holds as long as creators keep showing up.",
+  "sentiment_summary": "Reviewers reach for superlatives, crediting specific pastries like the raspberry lychee macaron and framing the shop as a European standard-bearer hiding in Hazelwood; the thin review text available offers no consistent nitpick, but the word 'hidden' surfaces repeatedly, suggesting discovery remains the friction point.",
+  "quarter_narrative": "Thirteen Pittsburgh creators posted 15 TikToks tagged at La Gourmandine Hazelwood this quarter, pulling nearly 737,000 plays, and the bakery posted nothing back. The shop's own Instagram has been quiet for 41 days, while @lesegotamar's single video logged 459,100 plays on its own. Meanwhile, La Gourmandine Hazelwood sits at the top of the Pastry family despite that silence, held there by a review base that converts at a near-perfect rate and a visual catalog that matches the family median. The family leader in Sweets this issue is Page's, whose edge is social momentum, exactly the axis La Gourmandine is leaving untouched. Closing even a fraction of that gap would move this rank from the edge of Ones to Watch toward something harder to challenge.",
+  "tldr_read": "Nearly 737,000 TikTok plays from outside creators, zero posts from the bakery itself in 41 days. Ones to Watch, #1 in Pittsburgh Pastry Shops.",
+  "tldr_meaning": "The review and conversion signals are already at ceiling; the only axis with real room to move this rank is Instagram momentum, which has gone dark at the precise moment the city is most actively filming the place.",
   "diagnosis_pullquote": {
-    "line": "First In Pastry On Creator Fuel. The Bakery's Own Feed Has Been Silent For Forty Days.",
-    "highlight": "Silent For Forty Days"
+    "line": "First In Pastry, Carried By Creators. The Bakery's Own Feed Has Gone Quiet.",
+    "highlight": "Gone Quiet"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram feed immediately",
-      "action": "Post at least twice a week on @lagourmandinebakery; the account has been silent for 41 days while 13 creators are actively driving traffic there.",
+      "headline": "Restart the Instagram feed now",
+      "action": "The account has posted zero times in 41 days; one post per week featuring a specific pastry by name would reopen the momentum signal immediately.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "RECLAIM SIGNAL"
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Claim a TikTok presence before creators define you",
-      "action": "Open a business TikTok account and repost or respond to the 15 existing tagged videos that have already generated 736,954 plays this quarter.",
+      "headline": "Repost the 737K plays the city made",
+      "action": "Thirteen creators generated nearly 737,000 TikTok plays this quarter; resharing even three of those to Instagram Stories converts outside reach into owned audience without a single new shoot.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "UNLOCK REACH"
+      "impact_label": "+CREATOR REACH"
     },
     {
-      "headline": "Expand Google photo categories",
-      "action": "Current photos span only 6 of 11 possible category tags; adding staff, interior details, and process shots would push the visual catalog above the family median of 84.",
+      "headline": "Surface the macaron in Google photos",
+      "action": "The raspberry lychee macaron is the most cited specific product in reviews, but photo categories are clustered under broad tags; a dedicated labeled image set would strengthen the visual catalog against a rising family median.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 4,
-  "analyzed_at": "2026-04-26T16:20:20.694Z",
+  "analyzed_at": "2026-04-26T19:45:50.264Z",
   "model": "claude-sonnet-4-6"
 }

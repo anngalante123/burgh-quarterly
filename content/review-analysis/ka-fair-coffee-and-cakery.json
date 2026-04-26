@@ -2,75 +2,69 @@
   "slug": "ka-fair-coffee-and-cakery",
   "themes": [
     {
-      "phrase": "coffee quality and clarity",
+      "phrase": "coffee quality and craft",
       "frequency": 7,
       "sentiment": "positive",
       "exampleQuote": "Coffee that is NEVER bitter."
     },
     {
-      "phrase": "specialty latte builds",
-      "frequency": 3,
+      "phrase": "charming neighborhood stop",
+      "frequency": 5,
       "sentiment": "positive",
-      "exampleQuote": "Best matcha I ever had!"
+      "exampleQuote": "Charming place and the locals clearly love it."
     },
     {
-      "phrase": "baked goods and cake",
+      "phrase": "baked goods presentation",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "My favorite spot now. Banoffee is top notch"
-    },
-    {
-      "phrase": "pre-zoo morning stop",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Came here with some friends before the zoo for a light breakfast and coffee"
+      "exampleQuote": "The crepe cake was delicious and beautiful presentation!"
     },
     {
       "phrase": "tiramisu latte execution",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "The cake got a little soggy in the coffee"
+      "exampleQuote": "The cake got a little soggy in the coffee."
     },
     {
-      "phrase": "owner and local warmth",
-      "frequency": 3,
+      "phrase": "pre-zoo destination",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The owner was very nice. The locals clearly love it."
+      "exampleQuote": "Stopped here before going to the zoo. Everything was DELICIOUS."
     }
   ],
   "notable_quote": "The coffee here is so good it taught my boyfriend how to whistle (he has never been able to whistle in his life, but after a sip he let out a perfect one).",
-  "sentiment_summary": "Reviewers consistently single out the coffee as uncommonly smooth and the baked goods as a genuine draw, with the banoffee and crepe cake earning specific praise; the one real critique is textural, a tiramisu latte cake topping that turns soggy before it can be eaten.",
-  "quarter_narrative": "Ka-Fair Coffee and Cakery had one of the stranger Spring 2026 stories in the Cafes family: 28 Pittsburgh creators posted more than 30 TikToks at this Morningside spot this quarter, pulling over a million plays, and the business spent that entire period posting three times to its own Instagram and shooting zero reels. The ube vanilla velvet matcha latte video from @dailysipclub8 alone pulled 617,500 plays, more reach in a single clip than most cafes in this family will see all year, while Ka-Fair's own feed stayed quiet. Family leader Allegheny Coffee and Tea Exchange built its position on social momentum; Ka-Fair is sitting on comparable raw material and has not yet entered that conversation. The rank climbs when the Instagram signal catches up to what the city is already doing on its behalf.",
-  "tldr_read": "Creator-driven TikTok reach above one million plays, Instagram nearly dormant. Ones to Watch, #3 in Pittsburgh Cafes.",
-  "tldr_meaning": "The TikTok signal is already doing heavy lifting, but without the business reinforcing it through its own visual output, the review and social scores will plateau before the rank can move.",
+  "sentiment_summary": "Reviewers consistently land on the coffee's smoothness and the warmth of the owner as the two reasons they return or wish they could; the one recurring friction is the tiramisu latte, where the cake topping turns soggy before it reaches the table.",
+  "quarter_narrative": "Twenty-eight Pittsburgh creators filed into Ka-Fair Coffee and Cakery this quarter and left with over a million TikTok plays between them, the ube vanilla velvet matcha latte alone pulled 617,500 plays through a single @dailysipclub8 video. Ka-Fair posted three times to Instagram in the same window and launched zero reels. The business sitting at the center of that much creator activity, without a TikTok account and with a 1.74 percent Instagram engagement rate, is the clearest gap in this quarter's cafe family. Allegheny Coffee and Tea Exchange leads the family on social momentum; Ka-Fair's path to that tier runs directly through the platform already doing its marketing for free.",
+  "tldr_read": "Creator coverage is enormous, its own Instagram is a quiet background hum. Ones to Watch, #3 in Pittsburgh Cafes.",
+  "tldr_meaning": "The visual catalog and Instagram momentum are the two axes holding this business below the threshold where the TikTok signal and the review floor would otherwise carry it.",
   "diagnosis_pullquote": {
-    "line": "Third In Cafes On Borrowed Momentum, A Million TikTok Plays The Business Never Claimed.",
-    "highlight": "Borrowed Momentum"
+    "line": "Third In Pittsburgh Cafes, Carried By Creators. The Business Has Yet To Film Back.",
+    "highlight": "Carried By Creators"
   },
   "playbook": [
     {
-      "headline": "Turn the reels signal on",
-      "action": "Post at least two reels per week; the ube matcha and banoffee alone are ready-made subjects with proven creator demand.",
+      "headline": "Claim the platform already filming you",
+      "action": "Open a Ka-Fair TikTok account and repost the 28 creator videos that have already generated 1,049,142 plays this quarter.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+MOMENTUM SIGNAL"
+      "impact_label": "+INSTAGRAM MOMENTUM RANK"
     },
     {
-      "headline": "Fill the visual catalog gaps",
-      "action": "Google Photos sits at 146 images across only 9 categories; interior, counter detail, and cake cross-section shots would close the gap to the family median.",
+      "headline": "Build the visual catalog to median",
+      "action": "Ka-Fair's 146 Google photos sit 15 points below the family median; add dedicated shots of the crepe cake, banoffee, and the ube cold foam before next quarter closes.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+VISUAL RANK"
+      "impact_label": "+VISUAL CATALOG"
     },
     {
-      "headline": "Respond to the tiramisu latte feedback",
-      "action": "One negative theme (soggy cake topper) recurs in reviews; a public response or a reformulated presentation would raise the 69 sentiment ceiling noticeably.",
+      "headline": "Solve the tiramisu latte before it scales",
+      "action": "The soggy-cake complaint is minor now at one mention, but TikTok reach at this volume will surface product flaws fast; test a cake-on-the-side default before the next viral cycle.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+SENTIMENT PTS"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T16:19:31.916Z",
+  "analyzed_at": "2026-04-26T19:45:00.665Z",
   "model": "claude-sonnet-4-6"
 }

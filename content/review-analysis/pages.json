@@ -17,10 +17,10 @@
       "phrase": "ridiculously affordable portions",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The price was RIDICULOUSLY affordable, and the long line moved EXTREMELY quickly."
+      "exampleQuote": "The price was RIDICULOUSLY affordable and the long line moved EXTREMELY quickly."
     },
     {
-      "phrase": "crowded evening wait",
+      "phrase": "long wait expected",
       "frequency": 5,
       "sentiment": "neutral",
       "exampleQuote": "Great, just be prepared to wait in line for an hour."
@@ -32,45 +32,45 @@
       "exampleQuote": "Shout out to the friendly and professional staff."
     },
     {
-      "phrase": "seasonal closing cycle",
+      "phrase": "seasonal closing schedule",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "End of the season October 24, 2019. See you in the spring."
+      "exampleQuote": "End of the season October 24. See you in the spring."
     }
   ],
   "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype.",
-  "sentiment_summary": "Reviewers consistently celebrate the portion size, price-to-quality ratio, and staff speed; the only friction is the wait, which most reviewers immediately forgive because the line moves.",
-  "quarter_narrative": "Thirteen Pittsburgh creators posted 14 TikToks about Page's this quarter, pulling 177,416 plays, and Page's itself has no TikTok account to absorb any of that attention. The top video alone, a 62,800-play clip from @bhphotographypa, generated more reach than most dessert shops see in a year, all of it flowing to the creator's page rather than the business's own presence. Page's leads the Pittsburgh Sweets family this issue on social momentum, driven by Instagram activity that outpaces the category median, but the TikTok gap means the rank is being held up by other people's enthusiasm rather than the shop's own publishing. Closing that gap, without abandoning what's already working on Instagram, is the clearest path to widening the lead next issue.",
-  "tldr_read": "A 3,145-review foundation and 13 outside creators driving six-figure TikTok plays; Icons of the Burgh, number one in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "The visibility ceiling right now is set by creators, not the business; the rank holds at the top so long as that outside energy stays active, but the signal is borrowed.",
+  "sentiment_summary": "Reviewers are consistent on three things: the soft serve is exceptional, the portions are absurdly generous for the price, and the line, while long, moves fast enough that it becomes part of the ritual rather than a deterrent.",
+  "quarter_narrative": "Thirteen Pittsburgh creators posted 14 TikToks about Page's this quarter, pulling 177,416 plays, and the business has no TikTok account of its own. That gap is the defining story of Arlington's most-talked-about dessert shop right now: the city is producing its content for it, and Page's is collecting none of the follow-back. On Instagram, the account is active with nine posts in the last 30 days and a verified presence, but a 1.29 percent engagement rate on a shop with this much street-level heat suggests the feed is not yet converting the audience the creators are building. Page's leads the Pittsburgh Sweets family this issue on social momentum, and its 3,145 Google reviews at 87 percent five-star make the foundation as solid as any shop in the city. Holding the top rank depends on whether that Instagram signal tightens and whether the TikTok energy ever gets a home address.",
+  "tldr_read": "Dominant reviews, surging creator coverage, and a verified Instagram that hasn't fully caught up to the buzz it's generating. Icons of the Burgh, ranked first in Pittsburgh Dessert shops.",
+  "tldr_meaning": "The rank is secure on review volume and creator momentum alone, but the engagement gap between an active Instagram and 177,000 TikTok plays not anchored anywhere owned is the signal most likely to shift the ceiling.",
   "diagnosis_pullquote": {
-    "line": "First In Sweets, Powered By Creators. The Shop Itself Has No TikTok To Show For It.",
-    "highlight": "No TikTok To Show"
+    "line": "First In Sweets, Backed By 3,145 Reviews. Thirteen Creators Are Producing Content Page's Hasn't Claimed.",
+    "highlight": "Thirteen Creators Are Producing"
   },
   "playbook": [
     {
-      "headline": "Claim the TikTok ground creators built",
-      "action": "Open a Page's TikTok account and post even two videos this month; 177,416 plays exist with nowhere to land.",
+      "headline": "Build a TikTok home for existing buzz",
+      "action": "Thirteen creators have posted 177,416 plays this quarter with no owned account to land on. Claim the handle and repost the top-performing creator content.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE OWNED REACH"
+      "impact_label": "CAPTURE 177K PLAYS"
     },
     {
-      "headline": "Turn the wait into a visual moment",
-      "action": "The line is mentioned in nearly every review; one short Reel showing the line moving fast reframes the top complaint into proof of demand.",
-      "signal": "content_canvas",
+      "headline": "Convert Instagram posts into engagement",
+      "action": "Nine posts in 30 days is solid cadence, but 1.29 percent engagement is below what this review volume should produce. Shift at least two posts per month toward reply-driving formats.",
+      "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "+SENTIMENT SHIELD"
+      "impact_label": "+ENGAGEMENT RATE"
     },
     {
-      "headline": "Name the menu items that already have pull",
-      "action": "The Nancy B sundae and Arctic Swirl are cited by name in reviews; featuring them explicitly on Google photo categories currently missing a dedicated menu visual would strengthen conversion.",
-      "signal": "conversion_path",
+      "headline": "Anchor the Nancy B sundae visually",
+      "action": "Reviewers name-drop the Nancy B sundae and the coconut soft serve by name, but no single hero photo has broken through. A dedicated visual for the two signature items would sharpen the visual catalog's lead over the family median.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+MENU DISCOVERY"
+      "impact_label": "+VISUAL CATALOG"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T16:23:37.299Z",
+  "analyzed_at": "2026-04-26T19:49:10.735Z",
   "model": "claude-sonnet-4-6"
 }

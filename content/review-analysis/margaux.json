@@ -8,63 +8,63 @@
       "exampleQuote": "Great cocktails, good beer selection, and incredibly friendly staff."
     },
     {
-      "phrase": "bartender inattentiveness",
-      "frequency": 3,
-      "sentiment": "negative",
-      "exampleQuote": "The bartenders chose to chat with other patrons extensively or stand around and chat with each other than check on us."
-    },
-    {
       "phrase": "cozy atmosphere and seating",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "There's also lots of cozy seating around the room, and it's a great place to chill and work."
+      "exampleQuote": "The atmosphere of the place is wonderful, and it's a great place to chill and work."
     },
     {
-      "phrase": "coffee pricing friction",
-      "frequency": 1,
+      "phrase": "bartenders ignoring customers",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "After waiting at the bar for about 10 minutes we finally were able to order a round, then were ignored for the next 30 minutes."
+    },
+    {
+      "phrase": "pricing friction",
+      "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "Refill for black coffee is over three dollars; srsly?"
     },
     {
-      "phrase": "good food once visited",
+      "phrase": "regulars and community feel",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The food is also good, but I've honestly only been in once for breakfast!"
+      "exampleQuote": "There are always regulars at the bar, and it's clear why."
     }
   ],
-  "notable_quote": "Great cocktails, good beer selection, and incredibly friendly staff; there are always regulars at the bar, and it's clear why.",
-  "sentiment_summary": "Reviewers consistently praise the drinks, the room, and the atmosphere, but a recurring service complaint, bartenders ignoring seated guests while chatting with regulars, keeps the sentiment from being a clean story.",
-  "quarter_narrative": "Seven Pittsburgh creators posted Margaux to TikTok this quarter, pulling 43,606 plays across seven unique accounts, led by a 21,400-play video from @deluludayss tagging it as one of Pittsburgh's most aesthetic stops. The business has its own TikTok presence under @margauxxgriffon, so this isn't a case of a place being filmed while looking the other way; the creator community and the business are, at minimum, in the same room. What keeps Margaux at third rather than pushing toward the family leader, Allegheny Coffee and Tea Exchange, whose social momentum is the signal defining that top spot, is a stalled Instagram: nine posts in thirty days but zero Reels and a 0.26 percent engagement rate that suggests the feed is active without being watched. The phone number gap on Google is a small but real conversion leak. Closing that friction, and converting some of the TikTok aesthetic energy into Reel-format repetition on Instagram, is the clearest path up the ranks.",
-  "tldr_read": "Creator-driven visual heat and a strong photo catalog, undercut by flat Instagram engagement and a missing phone number on Google. Ones to Watch, third in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The TikTok signal and the visual catalog are already punching above the family median; the Instagram engagement rate and the conversion path are the two axes holding the rank from moving.",
+  "notable_quote": "There are always regulars at the bar, and it's clear why.",
+  "sentiment_summary": "Reviewers consistently praise the drinks and the room's atmosphere, but a recurring thread of inattentive bar service, visible enough to cost otherwise strong visits, keeps the sentiment ceiling from climbing higher.",
+  "quarter_narrative": "Margaux came into Spring 2026 as one of the most visually catalogued coffee-and-cocktail rooms in the city, 530 photos across multiple Google categories and a creator footprint that put it in front of roughly 43,600 TikTok viewers this quarter through seven different creators. The family leader this issue is Allegheny Coffee and Tea Exchange, whose rank rests almost entirely on social momentum; Margaux's gap is not the visual product but the engagement mechanics, a 0.26 percent Instagram rate and zero Reels in thirty days while creators like @deluludayss are already packaging the space for a combined audience the business itself hasn't reached. The rank moves if the Instagram account starts converting the creator attention that already exists into followers who show up.",
+  "tldr_read": "Creator coverage and visual catalog are both above the family median, but Instagram engagement is near-flat and the Google listing has no phone number. Ones to Watch, #3 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The visual and creator signals are already doing the work; the gap that separates Margaux from the Icons tier is an Instagram account that isn't yet converting that outside attention into measurable on-platform momentum.",
   "diagnosis_pullquote": {
-    "line": "Third In Coffee On Visual Strength Alone. The Instagram Feed Is Running On Empty.",
-    "highlight": "Running On Empty"
+    "line": "Third In Coffee On A Strong Visual Catalog. The Instagram Feed Has Not Caught Fire Yet.",
+    "highlight": "Strong Visual Catalog"
   },
   "playbook": [
     {
-      "headline": "Convert posts to Reels before next issue",
-      "action": "Nine recent posts, zero Reels; even one Reel per week could quadruple the current 0.26 percent engagement rate given the existing creator interest.",
+      "headline": "Convert creator plays into followers",
+      "action": "Post at least one Reels response to existing TikTok coverage this quarter; Margaux has zero Reels in 30 days while seven creators generated 43,606 plays.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "+ENGAGEMENT SIGNAL"
     },
     {
-      "headline": "Add the phone number to Google",
-      "action": "Margaux has no phone number listed on Google despite having a website, hours, and 386 reviews; that single field is the only missing conversion path piece.",
+      "headline": "Close the phone number gap on Google",
+      "action": "Add a phone number to the Google Business listing; it is currently missing, and the conversion path signal sits below the family median of 100.",
       "signal": "conversion_path",
       "priority": "medium",
-      "impact_label": "CLOSE CONVERSION GAP"
+      "impact_label": "CLOSE LISTING GAP"
     },
     {
-      "headline": "Tag creators in response posts",
-      "action": "Seven creators filmed Margaux this quarter; acknowledging even one or two by name on the business Instagram turns passive filming into a visible feedback loop.",
-      "signal": "collab_fit",
+      "headline": "Address the service pattern publicly",
+      "action": "Respond directly to the two detailed service-complaint reviews; unaddressed negative service threads are visible to every new customer reading before they book.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "EXTEND CREATOR REACH"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T16:21:27.723Z",
+  "analyzed_at": "2026-04-26T19:46:55.246Z",
   "model": "claude-sonnet-4-6"
 }

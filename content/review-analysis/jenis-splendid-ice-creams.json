@@ -2,69 +2,69 @@
   "slug": "jenis-splendid-ice-creams",
   "themes": [
     {
-      "phrase": "surprising seasonal flavors",
+      "phrase": "rotating seasonal flavors",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "I always make sure to try their new flavors because it always surprises me"
+      "exampleQuote": "I always make sure to try their new flavors, because it always surprises me!"
+    },
+    {
+      "phrase": "portion size complaint",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The portion of these two 'standards' is mind boggling. I've been to several locations and never received a portion so small for $7."
     },
     {
       "phrase": "fresh waffle cones",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "I loved the waffle cones which they make fresh throughout the day"
+      "exampleQuote": "I loved the waffle cones which they make fresh throughout the day."
     },
     {
-      "phrase": "portion size complaints",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "the portion of these two standards is mind boggling... never received a portion so small for $7"
-    },
-    {
-      "phrase": "price versus value",
+      "phrase": "price vs. value tension",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Pretty delicious just super expensive"
+      "exampleQuote": "Pretty delicious, just super expensive."
     },
     {
-      "phrase": "dog-friendly visit",
+      "phrase": "sampling before buying",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Me and my dog's favorite spot, I always order him a small scoop of vanilla with waffle wedge"
+      "exampleQuote": "They allow you to try any flavor before you pick one out."
     }
   ],
-  "notable_quote": "All the flavors tasted fresh and have robust flavors, and they allow you to try any flavor before you pick one out.",
-  "sentiment_summary": "Reviewers consistently praise the freshness and adventurousness of the flavor rotation and love the try-before-you-buy policy, but a meaningful cluster of complaints zeroes in on portion sizes feeling stingy relative to the price point at this specific Bakery Square location.",
-  "quarter_narrative": "Thirty-five Pittsburgh creators posted Jeni's to TikTok this quarter and pulled over a million plays, nearly all of them from a single @morganchompz spring-lineup video that ran away from the pack. Jeni's itself has no TikTok presence, so every one of those plays is audience the brand did not capture or redirect. In the Pittsburgh Sweets family, Jeni's sits at third behind Page's, whose social momentum is the current leader signal; closing that gap means converting external creator energy into a platform the business actually owns. The rank climbs if the Instagram posting pace tightens up and the portion-size feedback gets addressed visibly enough to lift a review sentiment that is already slightly below the family median.",
-  "tldr_read": "A million TikTok plays with no business account to catch them, review sentiment just under the family median, but a perfect conversion path and strong creator fit keep Jeni's at Icons tier, ranked second in Pittsburgh ice cream.",
-  "tldr_meaning": "The TikTok ceiling is high and already being tested by outside creators; the rank holds or rises if Instagram momentum closes the gap with Page's and the portion-value criticism stops pulling the sentiment number down.",
+  "notable_quote": "They allow you to try any flavor before you pick one out, and I loved the waffle cones which they make fresh throughout the day.",
+  "sentiment_summary": "Reviewers are sold on the rotating flavor program and fresh-made waffle cones, but a persistent thread of complaints about small portions at a premium price point keeps the sentiment signal below the family median.",
+  "quarter_narrative": "Thirty-five Pittsburgh creators posted 37-plus TikToks at Jeni's this quarter, generating over 1.1 million plays, and Jeni's itself has no TikTok presence to capture a frame of it. A single video from @morganchompz pulled a million plays alone on the spring flavor lineup, turning the Bakery Square location into one of the most-filmed ice cream stops in the city without the brand lifting a finger or claiming a clip. Jeni's sits at number two in Pittsburgh Ice Cream and number three in Pittsburgh Sweets, trailing Page's whose social momentum is the dominant story in the family this issue. Closing that gap requires converting the TikTok attention already happening into something the brand can actually build on, because the Instagram signal at 12 posts and 4 reels in 30 days is present but the engagement rate of 0.49 percent suggests the content isn't yet catching with the audience the creators are already delivering.",
+  "tldr_read": "A TikTok phenomenon the brand isn't capturing, solid Instagram activity with thin engagement, and a portion-size complaint thread holding sentiment below the family median. Icons of the Burgh, number two in Pittsburgh Ice Cream.",
+  "tldr_meaning": "The creator signal is doing the heavy lifting on visibility, but until Jeni's Pittsburgh translates that into owned engagement and quiets the portion-value complaint, the number-two position holds rather than climbs.",
   "diagnosis_pullquote": {
-    "line": "Second In Ice Cream On Creator Fuel Alone. The Business Has No Tank Of Its Own.",
-    "highlight": "No Tank Of Its Own"
+    "line": "Second In Ice Cream, Carried By Creators. The 0.49% Engagement Rate Is The Real Story.",
+    "highlight": "0.49% Engagement Rate"
   },
   "playbook": [
     {
-      "headline": "Claim the TikTok ground creators built",
-      "action": "Launch a Jeni's TikTok account and repost the top-performing creator content; 35 creators and 1.15 million plays already exist as a runway.",
-      "signal": "momentum",
-      "priority": "high",
-      "impact_label": "CAPTURE 1M PLAYS"
-    },
-    {
-      "headline": "Address the portion complaint directly",
-      "action": "Standardize scoop sizing visibly at the Pittsburgh location; the sub-family-median sentiment score of 77 versus 83 is traceable to this recurring complaint in reviews.",
+      "headline": "Address the portion-price complaint directly",
+      "action": "Portion size criticism appears in at least 2 of 8 sampled reviews and is the clearest drag on sentiment below the family median of 83.",
       "signal": "community_spark",
-      "priority": "medium",
+      "priority": "high",
       "impact_label": "+6 SENTIMENT PTS"
     },
     {
-      "headline": "Close the Instagram posting gap",
-      "action": "The last post was 9 days ago against a 12-post month; consistent weekly reels featuring the seasonal flavor drops would match the cadence that earned an above-median Instagram momentum score.",
-      "signal": "content_canvas",
+      "headline": "Convert TikTok reach into owned content",
+      "action": "35 creators posted 37-plus videos with 1.15 million plays this quarter; a brand TikTok account would let Jeni's Pittsburgh claim, repost, and redirect that traffic.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "UNLOCK OWNED REACH"
+    },
+    {
+      "headline": "Lift Instagram engagement off posting cadence",
+      "action": "12 posts and 4 reels in 30 days is active, but 0.49 percent engagement suggests content format or timing needs adjustment to match the Instagram momentum signal of 83.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "HOLD MOMENTUM RANK"
+      "impact_label": "+ENGAGEMENT RATE"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T16:19:08.434Z",
+  "analyzed_at": "2026-04-26T19:44:37.665Z",
   "model": "claude-sonnet-4-6"
 }

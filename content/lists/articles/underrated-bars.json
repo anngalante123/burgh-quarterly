@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Bars",
   "subtitle": "Bars and breweries the regulars treat as their own.",
   "angle": "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
-  "intro": "The bars that show up on this list earned their spots the same way most Pittsburgh institutions do: slowly, through other people's mouths. No launch campaigns, no influencer seeding, no branded content. Just the kind of review language that sounds like a text to a friend, accumulated over time until the signal becomes impossible to ignore.\n\nCommerce Bar in East Liberty is carrying a reputation that has outrun its digital footprint by a significant margin. Its review velocity this quarter puts it second among Pittsburgh bars on reputation alone, yet its social presence reads like a place that doesn't know it's being talked about. Golden Age Beer Company lands in the same position for breweries: the beer is clearly doing the work, but the kitchen and the camera haven't caught up to what the regulars already know. Hop Farm Brewing in Lawrenceville sits at number one among breweries this quarter, built almost entirely by creator content the brewery itself has never once reposted.\n\nThe businesses on this list already have the harder thing, which is genuine customer love. The straightforward next move is that the creators who already love these places could come back with a reason, and Pittsburgh has more of those creators looking for somewhere worth covering than most owners have realized. The platforms doing that matching tend to work quietly, because they don't need to pitch.\n\nIssue 02 arrives in summer 2026, when outdoor patios, festival season, and warm-weather foot traffic will almost certainly shuffle the rankings.",
+  "intro": "The bars and breweries on this list are not hidden. Their regulars just haven't been loud about it online, at least not yet. That gap between customer loyalty and social presence is what Signal Pittsburgh tracks, and this quarter's rankings surface a specific kind of disconnect: places where the reviews read like someone pulling you aside at a party, but the follower counts and content libraries haven't kept pace.\n\nHidden Harbor in Squirrel Hill South sits first among Pittsburgh bars this quarter, carried by roughly half a million creator plays with no TikTok account to catch any of it. That is an unusual position, significant reach with no owned channel to convert it. Commerce Bar in East Liberty ranks second among Pittsburgh bars on the strength of reviews that read almost entirely like word of mouth. Golden Age Beer Company holds second in breweries on honest customer reviews alone, with no meaningful TikTok layer built yet.\n\nThe shorter observation is this: businesses with existing customer love are one deliberate conversation away from a content strategy, because the creators who already like them are looking for reasons to come back on purpose, and Pittsburgh has more of those creators than most owners recognize.\n\nIssue 02 arrives in Summer 2026, with full rankings across new categories.",
   "items": [
     {
       "rank": 1,
@@ -11,10 +11,10 @@
       "name": "Commerce Bar",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "East Liberty",
-      "descriptor": "Second In Pittsburgh Bars On Reputation Alone. The Digital Profile Has Not Arrived Yet.",
-      "descriptor_highlight": "On Reputation Alone",
+      "descriptor": "Second In Pittsburgh Bars, Built On Word Of Mouth. The Feed Has Not Caught Up.",
+      "descriptor_highlight": "Word Of Mouth",
       "stat_line": "106 reviews · 4.7★ · 1 IG posts/30d",
-      "playbook_top_move": "Complete the Google Business profile now. Add a website URL and phone number to Google; Commerce Bar is currently missing both, which breaks the most basic conversion path for anyone who finds it in search."
+      "playbook_top_move": "Post one Reel before next weekend. Zero Reels in 30 days while the room is visually strong enough to draw out-of-state visitors; one atmospheric Reel changes the discovery calculus immediately."
     },
     {
       "rank": 2,
@@ -22,10 +22,10 @@
       "name": "Golden Age Beer Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Second In Breweries On The Beer Alone. The Kitchen And The Camera Have Not Caught Up.",
-      "descriptor_highlight": "The Kitchen And",
+      "descriptor": "Second In Breweries On Honest Reviews. The TikTok Layer Has Not Arrived Yet.",
+      "descriptor_highlight": "TikTok Layer Has",
       "stat_line": "195 reviews · 4.8★ · 12 IG posts/30d",
-      "playbook_top_move": "Fix the review narrative on food. The kitchen critique appears in roughly a third of the available review texts; address execution consistency publicly in owner responses to move sentiment above the current family median."
+      "playbook_top_move": "Make the taproom easy to film. Zero Pittsburgh TikTok creators are indexed here; create one visually distinct, repeatable moment inside the bar that gives a first-time creator an obvious subject."
     },
     {
       "rank": 3,
@@ -33,8 +33,8 @@
       "name": "Hidden Harbor",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "First In Pittsburgh Bars On Atmosphere Alone. The Video Signal Is Entirely Borrowed.",
-      "descriptor_highlight": "Entirely Borrowed",
+      "descriptor": "First In Pittsburgh Bars, Carried By Half A Million Creator Plays With No TikTok To Catch Them.",
+      "descriptor_highlight": "No TikTok To Catch Them",
       "stat_line": "765 reviews · 4.6★ · 10 creators · 426K plays · 12 IG posts/30d",
       "featured_tiktok": {
         "author": "messihasaura7689",
@@ -42,7 +42,7 @@
         "url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527",
         "caption": "Pearl Harbor #usa #japan #pearlharbor #edit #darktriad "
       },
-      "playbook_top_move": "Start publishing short-form video now. With zero Reels and no TikTok account, Hidden Harbor is ceding 425,844 quarterly plays entirely to outside creators; one weekly behind-the-bar clip would begin recapturing that reach."
+      "playbook_top_move": "Claim the TikTok ground creators already own. Ten creators generated 425,844 plays this quarter on a channel Hidden Harbor doesn't have. Opening an account converts that existing interest into a followed audience."
     },
     {
       "rank": 4,
@@ -50,8 +50,8 @@
       "name": "Hop Farm Brewing Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Number One Brewery, Fueled By Creators. The Brewery Has Never Posted Back.",
-      "descriptor_highlight": "Never Posted Back",
+      "descriptor": "Number One in Breweries, But 170,828 TikTok Plays Have Nowhere to Land.",
+      "descriptor_highlight": "170,828 TikTok Plays",
       "stat_line": "298 reviews · 4.6★ · 21 creators · 171K plays · 12 IG posts/30d",
       "featured_tiktok": {
         "author": "stevenjamesyuhasz",
@@ -59,7 +59,7 @@
         "url": "https://www.tiktok.com/@stevenjamesyuhasz/video/7610945922725465374",
         "caption": "The staff and customer service here was unbelievable. Definitely the type of place I want to support. @B&K Farm Market #warren #youngstown #cortland #ohio "
       },
-      "playbook_top_move": "Claim the TikTok ground already yours. Open a business TikTok account and repost the 21 creator videos that generated 170,828 plays this quarter before that momentum cools."
+      "playbook_top_move": "Give the TikTok wave a shore to hit. Claim a TikTok account and repost the top creator clips; 21 creators and 170,828 plays are already in the pipeline waiting for a destination."
     }
   ],
   "query": {
@@ -69,6 +69,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-26T19:01:40.655Z",
+  "generated_at": "2026-04-26T19:54:01.827Z",
   "model": "claude-sonnet-4-6"
 }

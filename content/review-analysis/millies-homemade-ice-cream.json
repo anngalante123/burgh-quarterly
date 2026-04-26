@@ -2,75 +2,75 @@
   "slug": "millies-homemade-ice-cream",
   "themes": [
     {
-      "phrase": "staff energy lifts mood",
+      "phrase": "staff energy and mood",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Gibson was very enthusiastic, boosted my mood up real quick"
     },
     {
-      "phrase": "non-dairy options available",
-      "frequency": 2,
-      "sentiment": "neutral",
+      "phrase": "non-dairy options",
+      "frequency": 1,
+      "sentiment": "positive",
       "exampleQuote": "Nice to stop in for non-dairy options"
     },
     {
-      "phrase": "flavors lack intensity",
-      "frequency": 2,
+      "phrase": "flavor execution inconsistent",
+      "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Buckeye had no flavor, the s'mores had no marshmallow, no Graham cracker"
     },
     {
-      "phrase": "waffle cone and specialty flavors",
-      "frequency": 3,
+      "phrase": "waffle cone and seasonal flavors",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Loved the cranberry crumble and the strawberry jam flavors, waffle cone was amazing too"
     },
     {
-      "phrase": "price-to-portion tension",
+      "phrase": "pricing versus value",
       "frequency": 2,
       "sentiment": "neutral",
       "exampleQuote": "Pricey, very good, good service"
     },
     {
-      "phrase": "bathroom cleanliness concern",
+      "phrase": "cleanliness concerns",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "Each step across the bathroom floor my feet stuck, looks like it hasn't been cleaned in a month"
     }
   ],
   "notable_quote": "Loved the cranberry crumble and the strawberry jam flavors, waffle cone was amazing too.",
-  "sentiment_summary": "Reviewers consistently praise specific staff members by name and celebrate seasonal, inventive flavors like cranberry crumble, but a recurring minority pushes back on inconsistent flavor intensity and one isolated bathroom complaint has real sticking power in the written record.",
-  "quarter_narrative": "Twenty-five Pittsburgh creators posted 26 TikToks about Millie's this quarter, generating 578,817 plays, and Millie's own TikTok account does not exist. The top video alone, a Mandela-effect riff on Dreyer's ice cream that pulled 278,300 plays, named Millie's without Millie's touching a single frame of it. That is the dominant story of Spring 2026 for this business: enormous earned reach, zero owned capture. Meanwhile, in the Pittsburgh Sweets family, Page's holds the top spot on the strength of social momentum, the exact signal where Millie's has the most room and the least presence. The rank holds at number one in ice cream on the depth of 1,150 reviews and a conversion path that is fully built out, but closing the gap on Page's in the broader Sweets category depends on whether Millie's starts showing up in the feeds it is already starring in.",
-  "tldr_read": "Creator-driven TikTok reach is enormous and entirely uncaptured by the business itself; Instagram engagement is soft despite active posting. Icons of the Burgh, number one in Pittsburgh ice cream shops.",
-  "tldr_meaning": "The review base and conversion infrastructure are as strong as they get; the gap between what the city is producing about this business and what the business produces about itself is the only thing keeping the Sweets family rank from moving.",
+  "sentiment_summary": "Reviewers consistently praise specific staff by name and seasonal flavor creativity, while a small but pointed minority flags inconsistent flavor intensity and bathroom upkeep as the gaps between the reputation and the in-store reality.",
+  "quarter_narrative": "Twenty-five Pittsburgh creators posted 26 TikToks about Millie's this quarter, generating 578,817 plays, and Millie's itself has no TikTok account to show for any of it. The top video alone, a Mandela Effect riff on Dreyer's pulling 278,300 plays, used Millie's as the punchline to a national ice cream controversy, and the shop was not in the room for that conversation. Meanwhile, in the Pittsburgh Sweets family, Page's holds the top spot on social momentum, a signal Millie's is clearly capable of owning given its Instagram activity and creator magnetism. Holding the number one ice cream rank while sitting out the platform driving the most discovery is the central tension: the reviews and the visual catalog are already there, the question is whether Millie's starts showing up on the platform where the city is clearly already showing up for it.",
+  "tldr_read": "Verified Instagram presence and dominant TikTok creator coverage anchor the top ice cream rank, but zero TikTok presence means 578,817 plays happened without the business in the frame. Icons of the Burgh, number one in Pittsburgh Ice Cream.",
+  "tldr_meaning": "The rank is secure for now on the strength of review volume, Instagram cadence, and creator spillover, but the gap between what creators are generating and what the business is capturing widens each quarter Millie's stays off TikTok.",
   "diagnosis_pullquote": {
-    "line": "Number One In Ice Cream, Built On Reviews. The City's TikTok Energy Has No Home Base.",
-    "highlight": "No Home Base"
+    "line": "Number One In Ice Cream, Built On Reviews. Half A Million TikTok Plays Ran Without Them.",
+    "highlight": "Half A Million TikTok"
   },
   "playbook": [
     {
-      "headline": "Claim the TikTok real estate already yours",
-      "action": "Launch a Millie's TikTok account and repost or stitch the 26 existing creator videos that have already generated 578,817 plays this quarter.",
+      "headline": "Claim the TikTok presence creators already built",
+      "action": "Launch a Millie's TikTok account to capture the 578,817 plays and 25 creators already filming the shop each quarter.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "CAPTURE 578K PLAYS"
     },
     {
-      "headline": "Turn Instagram reach into actual engagement",
-      "action": "At 12 posts and 7 reels in 30 days, the posting cadence is strong but the 0.34% engagement rate signals the content is not landing; shift toward staff spotlights and flavor-reveal formats that reviewers already respond to by name.",
-      "signal": "content_canvas",
+      "headline": "Address the in-store friction reviews name",
+      "action": "Two reviews this quarter cited cleanliness and a cash refusal policy; resolving both removes the primary drag on an 82-point sentiment signal.",
+      "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "+ENGAGEMENT RATE"
+      "impact_label": "+SENTIMENT FLOOR"
     },
     {
-      "headline": "Address the bathroom complaint on record",
-      "action": "One detailed negative review cites a sticky floor and an uncleaned sink explicitly; a brief, specific owner response on Google acknowledging the standard and the fix stops that review from anchoring the sentiment read.",
-      "signal": "community_spark",
+      "headline": "Convert Instagram reels into creator collabs",
+      "action": "With 7 reels posted in 30 days and 25 active local creators, a structured creator invite program ties the existing IG cadence to the TikTok talent pool already on site.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "PROTECT SENTIMENT"
+      "impact_label": "LOCK CREATOR PIPELINE"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T16:22:10.006Z",
+  "analyzed_at": "2026-04-26T19:47:44.509Z",
   "model": "claude-sonnet-4-6"
 }
