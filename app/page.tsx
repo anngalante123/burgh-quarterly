@@ -72,7 +72,16 @@ export default function Home() {
       categoryName: b.meta.categoryName ?? b.business.category,
       tier: b.score.tier,
       composite: b.score.composite,
+      photo: b.business.hero_photo ?? b.business.photos[0]?.url ?? null,
     }));
+
+  // Featured record's hero photo, pulled from the live business artifact
+  // so it stays in sync with the index. La Gourmandine Lawrenceville
+  // for Issue 01.
+  const featuredSlug = "la-gourmandine-lawrenceville";
+  const featured = all.find((b) => b.business.slug === featuredSlug);
+  const featuredPhoto =
+    featured?.business.hero_photo ?? featured?.business.photos[0]?.url ?? null;
 
   return (
     <>
@@ -180,10 +189,22 @@ export default function Home() {
                 >
                   <Link
                     href={`/business/${b.slug}`}
-                    className="group grid grid-cols-[3rem_1fr_auto] md:grid-cols-[5rem_1fr_auto_auto] items-center gap-4 md:gap-6 px-4 md:px-6 py-4 md:py-5 hover:bg-brand-cream/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple transition-colors"
+                    className="group grid grid-cols-[2.5rem_3rem_1fr_auto] md:grid-cols-[3.5rem_4rem_1fr_auto_auto] items-center gap-3 md:gap-5 px-4 md:px-6 py-3 md:py-4 hover:bg-brand-cream/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple transition-colors"
                   >
                     <span className="font-display text-2xl md:text-4xl font-black tabular-nums tracking-[-0.02em] text-brand-purple">
                       {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="relative w-12 h-12 md:w-16 md:h-16 overflow-hidden bg-brand-black/10 shrink-0">
+                      {b.photo ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={b.photo}
+                          alt=""
+                          aria-hidden="true"
+                          loading="lazy"
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                      ) : null}
                     </span>
                     <span className="min-w-0">
                       <span className="block font-display font-black uppercase tracking-[-0.01em] text-brand-black text-base md:text-xl leading-[1.1] [text-wrap:balance] group-hover:text-brand-purple transition-colors">
@@ -308,33 +329,46 @@ export default function Home() {
           </div>
           <Link
             href="/business/la-gourmandine-lawrenceville"
-            className="group block border border-brand-black/15 bg-white/70 p-6 md:p-8 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-purple)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+            className="group block border border-brand-black/15 bg-white/70 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-purple)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple overflow-hidden"
           >
-            <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
-              Bakery · Lawrenceville · #8 in Sweets
-            </p>
-            <h4 className="mt-3 font-display font-black uppercase tracking-[-0.02em] text-brand-black text-[clamp(1.5rem,4vw,2.5rem)] leading-[1] [text-wrap:balance]">
-              La Gourmandine,
-              <br />
-              Lawrenceville
-            </h4>
-            <p className="mt-4 max-w-2xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
-              1,294 five-star reviews. 779 photos on Google.{" "}
-              <span className="font-semibold text-brand-black">
-                Nine creators filmed it on TikTok in the last 90 days.
-              </span>{" "}
-              The bakery itself hasn&apos;t posted in 40 days. The full
-              scorecard, ranked.
-            </p>
-            <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
-              Read the record
-              <span
-                aria-hidden="true"
-                className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1"
-              >
-                →
-              </span>
-            </p>
+            {featuredPhoto && (
+              <div className="relative w-full aspect-[16/7] md:aspect-[16/6] overflow-hidden bg-brand-black/5">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={featuredPhoto}
+                  alt="La Gourmandine, Lawrenceville exterior"
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02] motion-reduce:group-hover:scale-100"
+                />
+              </div>
+            )}
+            <div className="p-6 md:p-8">
+              <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
+                Bakery · Lawrenceville · #8 in Sweets
+              </p>
+              <h4 className="mt-3 font-display font-black uppercase tracking-[-0.02em] text-brand-black text-[clamp(1.5rem,4vw,2.5rem)] leading-[1] [text-wrap:balance]">
+                La Gourmandine,
+                <br />
+                Lawrenceville
+              </h4>
+              <p className="mt-4 max-w-2xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
+                1,294 five-star reviews. 779 photos on Google.{" "}
+                <span className="font-semibold text-brand-black">
+                  Nine creators filmed it on TikTok in the last 90 days.
+                </span>{" "}
+                The bakery itself hasn&apos;t posted in 40 days. The full
+                scorecard, ranked.
+              </p>
+              <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
+                Read the record
+                <span
+                  aria-hidden="true"
+                  className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1"
+                >
+                  →
+                </span>
+              </p>
+            </div>
           </Link>
         </Reveal>
 

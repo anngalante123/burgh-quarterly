@@ -485,8 +485,23 @@ export default async function BusinessPage({ params }: PageProps) {
             </p>
           </header>
 
+          {/* Hero photo banner. Visual anchor so a cold reader knows what
+              the place looks like before the editorial diagnosis lands.
+              Falls back gracefully when no photo, just no banner. */}
+          {(biz.hero_photo || biz.photos[0]?.url) && (
+            <div className="mt-6 md:mt-8 relative w-full aspect-[16/7] md:aspect-[16/6] overflow-hidden bg-brand-black/5">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={biz.hero_photo || biz.photos[0]!.url}
+                alt={`${biz.name} storefront / interior photo from Google Maps`}
+                loading="eager"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+          )}
+
           {/* 1. Diagnosis pull-quote, the editorial headline */}
-          <div className="mt-8 md:mt-10">
+          <div className="mt-6 md:mt-8">
             <DiagnosisPullquote
               line={diagnosis.line}
               highlight={diagnosis.highlight}
