@@ -1,0 +1,70 @@
+{
+  "slug": "margaux",
+  "themes": [
+    {
+      "phrase": "drinks and cocktails",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Great cocktails, good beer selection, and incredibly friendly staff."
+    },
+    {
+      "phrase": "atmosphere and vibe",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The atmosphere of the place is wonderful."
+    },
+    {
+      "phrase": "bartender inattention",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "After waiting at the bar for about 10 minutes we finally were able to order a round."
+    },
+    {
+      "phrase": "cozy seating and workspace",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "There are always regulars at the bar, and it's clear why."
+    },
+    {
+      "phrase": "pricing friction",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Refill for black coffee is over three dollars; srsly?"
+    }
+  ],
+  "notable_quote": "There are always regulars at the bar, and it's clear why.",
+  "sentiment_summary": "Reviewers consistently praise the drinks and the room's warmth, but a recurring thread of bartender inattention, ignored waves, coats-on-before-service moments, pulls the sentiment ceiling down noticeably.",
+  "quarter_narrative": "Seven Pittsburgh TikTok creators filmed Margaux this quarter, generating over 43,000 plays, and the top video alone, @deluludayss tagging it inside an 'aesthetic places to visit in Pittsburgh' roundup, pulled 21,400 views. The business has its own TikTok under @margauxxgriffon, so this isn't a case of the city filming a place that has no idea it's being watched; it's a case of creator energy outrunning the account's own output while Instagram engagement sits at 0.26 percent on nine posts in thirty days. In the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange holds the top rank on social momentum; Margaux's Creator Fit signal is the strongest in the family, which means the visual infrastructure is already there. What moves the rank is converting that outside creator heat into engagement that lands on Margaux's own channels.",
+  "tldr_read": "Strong visual catalog and the family's highest creator fit, undercut by low Instagram engagement and a missing phone number on Google. Ones to Watch, #3 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The creator layer is already active and the review base is solid; the gap between outside reach and on-profile engagement is the single axis preventing a move toward the top of this family.",
+  "diagnosis_pullquote": {
+    "line": "Third In Coffee On The Strength Of Creator Heat. The Profile Hasn't Caught Up.",
+    "highlight": "Creator Heat"
+  },
+  "playbook": [
+    {
+      "headline": "Add a phone number to Google Business",
+      "action": "The Conversion Path signal is below every other axis; a missing phone number is the fastest single fix on the profile.",
+      "signal": "conversion_path",
+      "priority": "high",
+      "impact_label": "CLOSE PROFILE GAP"
+    },
+    {
+      "headline": "Turn creator plays into profile follows",
+      "action": "Seven creators drove 43,606 TikTok plays this quarter; a pinned reel or story series pulling that audience back to @margauxpgh could lift the 0.26 percent engagement rate meaningfully.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "+ENGAGEMENT RATE"
+    },
+    {
+      "headline": "Address the service pattern publicly",
+      "action": "Three of nine recent reviews cite bartender inattention by name; a brief, specific owner response to each flags accountability and lifts sentiment perception for future readers.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+SENTIMENT FLOOR"
+    }
+  ],
+  "review_count": 9,
+  "analyzed_at": "2026-04-26T22:28:46.624Z",
+  "model": "claude-sonnet-4-6"
+}

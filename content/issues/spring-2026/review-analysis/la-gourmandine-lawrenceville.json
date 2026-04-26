@@ -1,0 +1,70 @@
+{
+  "slug": "la-gourmandine-lawrenceville",
+  "themes": [
+    {
+      "phrase": "little bit of Paris",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "A little bit of Paris in Pittsburgh."
+    },
+    {
+      "phrase": "seasonal French pastries",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had."
+    },
+    {
+      "phrase": "busy on weekends",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "It is busy on weekends. You can call ahead if you know what you want."
+    },
+    {
+      "phrase": "breakfast and lunch find",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Travel everywhere, eat anything. This place was the find of Pittsburgh."
+    },
+    {
+      "phrase": "nut and chocolate croissants",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Nut and chocolate croissants that were all fantastic."
+    }
+  ],
+  "notable_quote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had.",
+  "sentiment_summary": "Reviewers consistently reach for Paris comparisons and superlatives around specific pastries, the La Ruche, the croissants, the cream puff; the only friction that surfaces is weekend crowding, which reads more as proof of demand than a complaint.",
+  "quarter_narrative": "Nine Pittsburgh creators posted eleven TikToks about La Gourmandine this quarter, pulling nearly 32,000 plays, and the bakery itself posted nothing to Instagram for 41 days. The city is doing the work; the Lawrenceville kitchen is not meeting it halfway. In the Pittsburgh Sweets family, Page's holds the top signal on social momentum, which is exactly the axis where La Gourmandine, ranked first in Bakeries with 1,294 Google reviews and 88 percent five-star, leaves the most on the table. Closing that Instagram gap while the creator current is already running would be the fastest path toward a stronger overall position.",
+  "tldr_read": "Dominant reviews and airtight conversion path, but the Instagram feed has gone quiet for six weeks. Ones to Watch, #1 in Pittsburgh Bakeries.",
+  "tldr_meaning": "The review foundation and creator interest are already pulling in the same direction; the Instagram dormancy is the single variable holding the momentum signal back.",
+  "diagnosis_pullquote": {
+    "line": "First In Bakeries On The Strength Of 1,294 Reviews. The Instagram Feed Went Quiet.",
+    "highlight": "Instagram Feed Went Quiet"
+  },
+  "playbook": [
+    {
+      "headline": "Restart Instagram before the quarter closes",
+      "action": "The account has been silent for 41 days; even two posts a week would reactivate the momentum signal and capture the creator traffic already arriving.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "REOPEN SIGNAL"
+    },
+    {
+      "headline": "Turn the nine creators into a visual archive",
+      "action": "Repost or story-share the 11 existing TikToks; nine Pittsburgh creators filmed here this quarter and the bakery has not acknowledged a single one.",
+      "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "+12 MOMENTUM PTS"
+    },
+    {
+      "headline": "Expand the Google photo categories",
+      "action": "779 photos are strong, but tagging is concentrated in a few categories; pushing staff-submitted shots into underrepresented sections like Inside and Menu lifts visual catalog ranking within the Sweets family.",
+      "signal": "content_canvas",
+      "priority": "low",
+      "impact_label": "+1 VISUAL RANK"
+    }
+  ],
+  "review_count": 6,
+  "analyzed_at": "2026-04-26T22:28:02.569Z",
+  "model": "claude-sonnet-4-6"
+}

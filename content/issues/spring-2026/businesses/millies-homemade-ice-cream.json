@@ -1,0 +1,100 @@
+{
+  "slug": "millies-homemade-ice-cream",
+  "name": "Millie's Homemade Ice Cream",
+  "category": "boutique",
+  "neighborhood": "Shadyside",
+  "address": "232 S Highland Ave, Pittsburgh, PA 15206",
+  "website": "http://millieshomemade.com/",
+  "google_rating": 4.6,
+  "google_review_count": 1150,
+  "review_freshness_days": 7,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEfo8vkq6CPGW-YNM0-WDlKdTdaT-rKKK_PmNx5hLaI5ctrjusX5aVN8AMb6XntB29HibfRJDdWbHTE7aolnilWMz48TGqzcYnTtSkgbdxvJ4L6i6Ay9ttiyQBGFlqCnJ-gfdrqRQ=w408-h544-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEfo8vkq6CPGW-YNM0-WDlKdTdaT-rKKK_PmNx5hLaI5ctrjusX5aVN8AMb6XntB29HibfRJDdWbHTE7aolnilWMz48TGqzcYnTtSkgbdxvJ4L6i6Ay9ttiyQBGFlqCnJ-gfdrqRQ=w408-h544-k-no",
+  "review_keywords": [
+    "ice cream"
+  ],
+  "created_at": "2026-04-22T14:51:45.593Z",
+  "updated_at": "2026-04-22T14:51:45.593Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJUxWUrAzyNIgRM-9w8eYxT6Y",
+    "categoryName": "Ice cream shop",
+    "imagesCount": 482,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Gelato",
+      "Ice cream",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 404-8853",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 26,
+      "twoStar": 28,
+      "threeStar": 54,
+      "fourStar": 168,
+      "fiveStar": 874
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Sara and Evan were fantastic to us and deserve a big raise. The only Millies I will go to from now on!!!",
+      "Incredible service",
+      "Good. It was nice to stop in for non-dairy options.",
+      "Went in today and there was a new face Gibson was very enthusiastic boosted my mood up real quick makes you really get in the mood for some good ice cream\namazing service 10/10",
+      "I wanted to buy a pint of ice cream and had 100$ cash on me. The girl said she's not allowed to take it - that's a very interesting policy.",
+      "Pricey, very good, good service",
+      "Seeing that it was homemade ice cream, I was pretty excited to get some. I got a three scoop combo to try different flavors. Buckeye, cookie dough, and smores. The only good thing about it was the cookie dough pieces. Buckeye had no flavor, the s'mores had no marshmallow, no Graham cracker. All of it was basically flavorless. Save your money and go get like two cartons of Edy's or any other ice cream. I don't know how this place has a high rating. That was some sad ice cream. Wish I could get a refund. Anyone who says its good is full of it.\n\nGirl behind the counter, wasn't rude, nor kind, just kinda there. Weird interaction. But long days can do that.\n\nFriend got a milkshake and she said it was even worse, she tossed hers half way through drinking it, I at least finished mine.\n\nBathroom was grimy as heck. Made my skin crawl. Not hard to wipe the sink down once a day or week. Looks like it hasn't been cleaned in a month. Each step across the bathroom floor my feet stuck. Hover if you can.",
+      "Pretty good but basic",
+      "Delicious ice cream. Loved the cranberry crumble and the strawberry jam flavors. Waffle cone was amazing too"
+    ],
+    "keywordPhrases": [
+      {
+        "text": "ice cream",
+        "count": 6,
+        "exampleQuote": "Went in today and there was a new face Gibson was very enthusiastic boosted my mood up real quick makes you really get in the mood for some good ice cream"
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "millies-homemade-ice-cream",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 87,
+      "community_spark": 82,
+      "conversion_path": 100,
+      "momentum": 82,
+      "collab_fit": 84
+    },
+    "composite": 87,
+    "tier": "icons",
+    "rank_category": 1,
+    "rank_neighborhood": 1,
+    "rank_overall": 3,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "social momentum",
+      "evidence": "Social momentum is the standout here — awaiting Instagram data in the next scrape to show the exact margin."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "slug": "reva-modern-indian-cuisine",
+  "name": "Reva Modern Indian Cuisine",
+  "category": "restaurant",
+  "neighborhood": "East Liberty",
+  "address": "220 N Highland Ave, Pittsburgh, PA 15206",
+  "website": "https://revapgh.com/?utm_source=google",
+  "google_rating": 4.6,
+  "google_review_count": 527,
+  "review_freshness_days": 0,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHSXKtBLF9EfVlxtUKh98LrdqEn60teGxPdUJqb-RVo5fLfV-BMg2lcpOEiQGHUNMdeF9KpkNf95J_1HS2HTnH3EmXGPEB6IUM3dcEcVBe_i0H82zIZUixQty5w2FfeINkLWGKF=w408-h306-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHSXKtBLF9EfVlxtUKh98LrdqEn60teGxPdUJqb-RVo5fLfV-BMg2lcpOEiQGHUNMdeF9KpkNf95J_1HS2HTnH3EmXGPEB6IUM3dcEcVBe_i0H82zIZUixQty5w2FfeINkLWGKF=w408-h306-k-no",
+  "review_keywords": [
+    "delicious food",
+    "excellent service",
+    "first time",
+    "highly recommend",
+    "indian food"
+  ],
+  "created_at": "2026-04-22T14:51:45.612Z",
+  "updated_at": "2026-04-22T14:51:45.612Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJwU6FLvLzNIgRD4-prrBmsKY",
+    "categoryName": "Indian restaurant",
+    "imagesCount": 443,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Paneer tikka",
+      "Curry",
+      "Tandoori chicken",
+      "Avocado toast",
+      "Chaat",
+      "Butter chicken",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 952-9558",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 32,
+      "twoStar": 6,
+      "threeStar": 13,
+      "fourStar": 55,
+      "fiveStar": 421
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Reva first opened in June 2024 and I have been a regular customer ever since. The food taste is the best you can find in Pittsburgh and no other Indian restaurant can match the level.\n\nThe service is very friendly and fulfilling. Sahil has been very kind & helpful with accepting custom orders whenever I come with my friends.\n\nThis place is a must visit and I highly recommend everyone to try the food out.",
+      "Tried Indian food for the first time and i loved it. Excellent service!",
+      "Delicious food! Authentic flavors! Must visit place",
+      "Delicious food, excellent service!!",
+      "Reva Modern Indian Cuisine is hands down our number one restaurant in Pittsburgh. The food is absolutely delicious and the service is excellent every single time we visit.\nHighly recommend this place to anyone looking for amazing Indian food and top-notch service",
+      "I had a very disappointing experience here. The staff were extremely rude and dismissive, which made the atmosphere feel unwelcoming. I wouldn’t recommend this restaurant to anyone.",
+      "Let’s start with the service, while placing the order I politely asked if the roti comes with butter as it wasn’t mentioned and the person taking the order has the audacity to ask if it was my first time in the US. From that point on it was just downhill for the place and the servers. We were refused extra cutlery despite request as apparently per the cashier/manager who failed to hide his arrogance said it was the policy of the restaurant.\n\nAbsolutely unprofessional rude arrogant and untrained staff with zero accountability.",
+      "I absolutely loved this restaurant, the atmosphere was really nice. Also, the employee there, Sahil, provided outstanding service. He was so attentive and did everything perfectly."
+    ],
+    "keywordPhrases": [
+      {
+        "text": "delicious food",
+        "count": 2,
+        "exampleQuote": "Delicious food!"
+      },
+      {
+        "text": "excellent service",
+        "count": 2,
+        "exampleQuote": "Excellent service!"
+      },
+      {
+        "text": "first time",
+        "count": 2,
+        "exampleQuote": "Tried Indian food for the first time and i loved it."
+      },
+      {
+        "text": "highly recommend",
+        "count": 2,
+        "exampleQuote": "This place is a must visit and I highly recommend everyone to try the food out."
+      },
+      {
+        "text": "indian food",
+        "count": 2,
+        "exampleQuote": "Tried Indian food for the first time and i loved it."
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "reva-modern-indian-cuisine",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 78,
+      "community_spark": 69,
+      "conversion_path": 100,
+      "momentum": 25,
+      "collab_fit": 78
+    },
+    "composite": 70,
+    "tier": "ones_to_watch",
+    "rank_category": 1,
+    "rank_neighborhood": 4,
+    "rank_overall": 24,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "conversion path clarity",
+      "evidence": "Every conversion-path signal present: website, phone, hours, claimed profile."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

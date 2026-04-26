@@ -1,0 +1,70 @@
+{
+  "slug": "lorelei",
+  "themes": [
+    {
+      "phrase": "creative cocktails, bartender craft",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Awesome, creative drinks. Bartender was excellent and friendly."
+    },
+    {
+      "phrase": "bar staff warmth",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The bar staff are friendly, knowledgeable about the cocktails, and they seem to project this vibe that makes me want to come back time and time again."
+    },
+    {
+      "phrase": "cacio e pepe pizza",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "the cacio e pepe pizza is a must"
+    },
+    {
+      "phrase": "low-key date night",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "the best lowkey date night place or hangout place with friends"
+    },
+    {
+      "phrase": "deadname incident, staff misstep",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Trans folks beware, the staff didn't ask my friend's name, and instead used the deadname on their credit card"
+    }
+  ],
+  "notable_quote": "Statistically, I'm bound to have less than a perfect experience here, but it hasn't happened.",
+  "sentiment_summary": "Reviewers keep coming back for the cocktail program and the specific warmth of the bar staff, with the cacio e pepe pizza emerging as a food anchor; one incident involving a trans guest and a deadname has drawn sharp criticism that sits unaddressed in the public record.",
+  "quarter_narrative": "Eighteen Pittsburgh creators filmed Lorelei this quarter and produced over 1.2 million TikTok plays without any coordination from the business itself. The top video, from @ernest, pulled 569,300 plays on a caption that barely named the place, which means the city's attention is landing on Lorelei almost by accident. Meanwhile, Nan Xiang Soup Dumplings leads the Pittsburgh Businesses family this issue on the strength of deliberate social momentum, a contrast that makes Lorelei's passive position harder to ignore. The rank climbs when the review sentiment signal gets repaired and the Instagram engagement rate, currently under one percent, starts moving in proportion to the creator attention already circling the building.",
+  "tldr_read": "Creator-driven plays in the millions, Instagram engagement under one percent, review sentiment undercut by one unresolved incident. Ones to Watch, #2 in Pittsburgh Restaurants.",
+  "tldr_meaning": "The TikTok ceiling is already broken open by outside creators; the rank stalls until review sentiment stabilizes and Instagram engagement catches up to the attention the city is already delivering.",
+  "diagnosis_pullquote": {
+    "line": "Ones to Watch at Number Two, Carried by Outside Creators. The Engagement Rate Tells a Different Story.",
+    "highlight": "Outside Creators. The"
+  },
+  "playbook": [
+    {
+      "headline": "Address the deadname review publicly",
+      "action": "Post a specific, policy-level response to the negative review; 392 reviews means one incident carries outsized weight on sentiment.",
+      "signal": "community_spark",
+      "priority": "high",
+      "impact_label": "+SENTIMENT REPAIR"
+    },
+    {
+      "headline": "Convert TikTok attention into owned reels",
+      "action": "Zero reels posted in 30 days while 18 creators produced 1.2 million plays; one bartender-focused reel per week directly addresses the 0.79% engagement gap.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "+ENGAGEMENT RATE"
+    },
+    {
+      "headline": "Expand the Google photo catalog",
+      "action": "291 photos across 7 categories is below the family median visual signal; owner-submitted shots of the cacio e pepe and cocktail program fill the gap reviewers are already describing.",
+      "signal": "content_canvas",
+      "priority": "low",
+      "impact_label": "+VISUAL RANK"
+    }
+  ],
+  "review_count": 5,
+  "analyzed_at": "2026-04-26T22:28:26.144Z",
+  "model": "claude-sonnet-4-6"
+}

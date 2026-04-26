@@ -1,0 +1,76 @@
+{
+  "slug": "delanies-coffee-shadyside",
+  "themes": [
+    {
+      "phrase": "strawberry matcha",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The strawberry matcha here might be the best I've ever had."
+    },
+    {
+      "phrase": "specialty drink options",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "There were a lot of good options for drinks! Both drinks my sister and I tried were delicious."
+    },
+    {
+      "phrase": "gets packed quickly",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "I just wish this place was bigger, gets packed quickly!"
+    },
+    {
+      "phrase": "staff friendliness",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "The workers are so nice every time I visit!"
+    },
+    {
+      "phrase": "wi-fi and workspace limits",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The wi-fi isn't good enough to work from here so I wouldn't come back for that."
+    },
+    {
+      "phrase": "order accuracy issues",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin, let them know, I had to pay for a new muffin."
+    }
+  ],
+  "notable_quote": "The strawberry matcha here might be the best I've ever had.",
+  "sentiment_summary": "Reviewers come back for the specialty drinks, especially the strawberry matcha and tiramisu latte, and consistently praise the staff; the friction points are tight square footage, unreliable wi-fi, and at least one order-fulfillment misstep that cost a customer money.",
+  "quarter_narrative": "Sixteen Pittsburgh creators posted 17 TikToks featuring Delanie's Coffee Shadyside this quarter, generating 66,299 plays without a single frame shot by the business itself. The shop has no TikTok account, and its Instagram produced three posts in the last 30 days, the most recent sitting 16 days old with zero Reels in the window. That gap is the story of Spring 2026 for Delanie's: a Shadyside cafe that the city has decided to film, repeatedly, while the cafe watches from the sideline. Allegheny Coffee and Tea Exchange holds the family lead this issue on social momentum, a signal Delanie's has the raw material to challenge if the visual and posting cadence catches up to the creator attention already surrounding it.",
+  "tldr_read": "Sixteen creators filming, three Instagram posts in a month, and a creator-fit signal that tops the family median. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The creator layer is already activated from the outside; the rank moves when the business converts that external attention into its own consistent posting presence and addresses the review sentiment gap sitting below the family median.",
+  "diagnosis_pullquote": {
+    "line": "Sixteen Creators Have Filed Their Reports. Delanie's Coffee Has Not Filed Its Own.",
+    "highlight": "Have Filed Their Reports"
+  },
+  "playbook": [
+    {
+      "headline": "Close the TikTok gap before it widens",
+      "action": "Claim a TikTok account and post one video weekly; 16 outside creators have already scripted the brief for you.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "CAPTURE 66K PLAYS"
+    },
+    {
+      "headline": "Turn the strawberry matcha into a visual anchor",
+      "action": "Review sentiment sits below the family median; a consistent photo series on the two most-cited drinks can close that perception gap across 96 existing Google photos.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+SENTIMENT SIGNAL"
+    },
+    {
+      "headline": "Respond publicly to the order-error review",
+      "action": "One three-star review citing a muffin swap and a second charge has no public response; a direct, specific reply protects the 82 percent five-star floor.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "PROTECT STAR FLOOR"
+    }
+  ],
+  "review_count": 7,
+  "analyzed_at": "2026-04-26T22:24:06.658Z",
+  "model": "claude-sonnet-4-6"
+}

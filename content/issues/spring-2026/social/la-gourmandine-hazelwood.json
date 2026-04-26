@@ -1,0 +1,144 @@
+{
+  "slug": "la-gourmandine-hazelwood",
+  "handle": "lagourmandinebakery",
+  "followers": 14478,
+  "follows": 189,
+  "posts_total": 284,
+  "posts_30d": 0,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.02288,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "A Taste of France in Pittsburgh 🇫🇷\nLawrenceville | Mt. Lebanon | Hazelwood | Downtown | Oakland\nlagourmandinebakery.com\n📩Online Ordering Now Available",
+  "full_name": "La Gourmandine Bakery",
+  "last_post_at": "2026-03-16T12:38:49.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 522,
+      "end": 525,
+      "delta": 3,
+      "per_month": 3.61
+    },
+    "rating": {
+      "start": 4.8,
+      "end": 4.8,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 301,
+      "end": 304,
+      "delta": 3
+    }
+  },
+  "tiktok_mentions": {
+    "query": "la gourmandine hazelwood pittsburgh",
+    "video_count": 15,
+    "total_plays": 736954,
+    "total_likes": 65118,
+    "unique_creators": 13,
+    "top_creators": [
+      {
+        "handle": "lesegotamar",
+        "fans": 7333,
+        "verified": false,
+        "videos": 1,
+        "plays": 459100,
+        "likes": 37800
+      },
+      {
+        "handle": "katieemilyreads",
+        "fans": 13600,
+        "verified": false,
+        "videos": 1,
+        "plays": 210800,
+        "likes": 24000
+      },
+      {
+        "handle": "inkhearted.books",
+        "fans": 2192,
+        "verified": false,
+        "videos": 1,
+        "plays": 31300,
+        "likes": 630
+      },
+      {
+        "handle": "melissasadhdlife",
+        "fans": 4364,
+        "verified": false,
+        "videos": 3,
+        "plays": 11664,
+        "likes": 868
+      },
+      {
+        "handle": "albalahoz",
+        "fans": 14400,
+        "verified": false,
+        "videos": 1,
+        "plays": 5622,
+        "likes": 361
+      },
+      {
+        "handle": "byjohi",
+        "fans": 4682,
+        "verified": false,
+        "videos": 1,
+        "plays": 5569,
+        "likes": 236
+      },
+      {
+        "handle": "f4iry.008",
+        "fans": 300,
+        "verified": false,
+        "videos": 1,
+        "plays": 2834,
+        "likes": 530
+      },
+      {
+        "handle": "abbeykugel",
+        "fans": 1737,
+        "verified": false,
+        "videos": 1,
+        "plays": 2453,
+        "likes": 148
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7610166891629333781",
+        "url": "https://www.tiktok.com/@lesegotamar/video/7610166891629333781",
+        "text": "Ate and left no crumbs 🥹❤️#dinnerdate #burgandydress #fireroomhazelwood #fyppppppppppppppppppppppp ",
+        "author": "lesegotamar",
+        "plays": 459100,
+        "likes": 37800,
+        "posted": "2026-02-23T20:54:31.000Z"
+      },
+      {
+        "id": "7610915482677366038",
+        "url": "https://www.tiktok.com/@katieemilyreads/video/7610915482677366038",
+        "text": "Teddy Hamilton audiobook recommendations part 3 🎧 \n\n• Kiss The Villain - @Rina Kent \n• Haunting Adeline - H.D. Carlton\n• Mate - @Ali Hazelwood  \n• Over The Moon - @Laura Pavlov Author \n• Hockey Boy - @Brittanee Nicole \n• Bring Down The Sta",
+        "author": "katieemilyreads",
+        "plays": 210800,
+        "likes": 24000,
+        "posted": "2026-02-25T21:19:15.000Z"
+      },
+      {
+        "id": "7599739349718060310",
+        "url": "https://www.tiktok.com/@inkhearted.books/video/7599739349718060310",
+        "text": "DEEP END 🏊‍♀️🩱~ Scarlett&Lukas\n#deepend #alihazelwood #booktok #bookshelf #book ",
+        "author": "inkhearted.books",
+        "plays": 31300,
+        "likes": 630,
+        "posted": "2026-01-26T18:30:09.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-24T14:31:03.000Z",
+    "median_plays": 2834,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T16:01:06.032Z"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "everyday-noodles",
+  "name": "Everyday Noodles",
+  "category": "boutique",
+  "neighborhood": "Squirrel Hill North",
+  "address": "5875 Forbes Ave, Pittsburgh, PA 15217",
+  "website": "https://www.everydaynoodles.net/?lk=classic",
+  "google_rating": 4.6,
+  "google_review_count": 2216,
+  "review_freshness_days": 2,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEmaO8a3o2NvQ-geWqgz_tkWcMWNOogmdgXkd3SYeTIL_n6F8wQfFHeg8Mqfa4BuAGzgDi4AQOfxLTkOJ5aKcFI47SJNMNduKMIsTQ6eTP-gePYl50CQDtNP5YRQROqE5ziCrzW=w426-h240-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEmaO8a3o2NvQ-geWqgz_tkWcMWNOogmdgXkd3SYeTIL_n6F8wQfFHeg8Mqfa4BuAGzgDi4AQOfxLTkOJ5aKcFI47SJNMNduKMIsTQ6eTP-gePYl50CQDtNP5YRQROqE5ziCrzW=w426-h240-k-no",
+  "review_keywords": [],
+  "created_at": "2026-04-22T14:51:45.639Z",
+  "updated_at": "2026-04-22T14:51:45.639Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJY7-zEQDyNIgRnr2vhjLZ77w",
+    "categoryName": "Noodle shop",
+    "imagesCount": 1873,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Dim sum",
+      "Wonton",
+      "Beef soup",
+      "Soup",
+      "Bok choy",
+      "Sesame",
+      "Koah-pau",
+      "Noodle",
+      "Xiaolongbao",
+      "Bubble tea",
+      "Drunken chicken",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 421-6668",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 79,
+      "twoStar": 54,
+      "threeStar": 96,
+      "fourStar": 320,
+      "fiveStar": 1667
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Fun to watch them make noodles, potstickers, and wontons",
+      "Great noodles!  I had the sesame noodles with chicken and it was excellent.  I've also had dim sum there in the past and that is also good",
+      "Excellent noodle soup, I loved it. Contender for best noodle soup in Pittsburgh",
+      "It's definitely worth a visit!",
+      "Wonton soup was delicious. Can never go wrong with the soup dumplings. And of course some Boba. Definitely a stop when visiting the area.",
+      "Where is my beef noodle? Really disappointed",
+      "Server was incompetent and kept bringing out food that was not ordered. Server also deliberately overcharged card for tip after receiving cash tip on top of demanding more tip on Chinese New Year out of all days. Also gave bill to nonpaying party to approve after taking additional cash tip. Horrible and sneaky behavior.",
+      "Wonderful service, delicious food, kind and welcoming staff. Clean environment as well! We had a great time, thank you for the great food & service!",
+      "Love it! one of my favorites!"
+    ],
+    "keywordPhrases": []
+  },
+  "_score": {
+    "business_slug": "everyday-noodles",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 84,
+      "community_spark": 84,
+      "conversion_path": 100,
+      "momentum": 5,
+      "collab_fit": 84
+    },
+    "composite": 71,
+    "tier": "ones_to_watch",
+    "rank_category": 1,
+    "rank_neighborhood": 1,
+    "rank_overall": 23,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "community affection",
+      "evidence": "2,216 Google reviews with a review in the last 2 days — the highest community-spark reading in this issue's set."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

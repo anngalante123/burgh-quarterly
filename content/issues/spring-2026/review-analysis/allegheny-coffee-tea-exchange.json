@@ -1,0 +1,70 @@
+{
+  "slug": "allegheny-coffee-tea-exchange",
+  "themes": [
+    {
+      "phrase": "fresh coffee bean smell",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "As soon as you open the door, you're hit with that amazing fresh coffee bean smell."
+    },
+    {
+      "phrase": "bag your own beans",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "You can smell each one and even bag your own beans, which is a really unique touch."
+    },
+    {
+      "phrase": "cold brew on tap",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "They have multiple taps with different varieties, which makes it fun to mix things up."
+    },
+    {
+      "phrase": "staff goes out of their way",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting."
+    },
+    {
+      "phrase": "must-stop in Pittsburgh",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Allegheny Coffee and Tea Exchange is a MUST-stop in Pittsburgh if you're even remotely into coffee."
+    }
+  ],
+  "notable_quote": "This is a place we make a point to stop at every time we're in Pittsburgh, grab a coffee and then walk around the city.",
+  "sentiment_summary": "Reviewers return repeatedly for the sensory ritual of the shop, the bean-smelling wall, the multi-tap cold brew, the staff by name, with almost nothing surfacing as a complaint across 924 reviews.",
+  "quarter_narrative": "Spring 2026 looks like this for Allegheny Coffee and Tea Exchange: 31 creators posted 36-plus TikToks inside or about the shop this quarter, pulling 607,052 plays, and the top video alone, keyed to HBO's 'The Pitt' and its Allegheny General Hospital setting, drew 127,500 views without the shop lifting a finger. That wave of creator attention lands on top of 924 Google reviews running 81 percent five-star, a conversion path with no gaps, and Instagram momentum that sits nearly double the family median. Allegheny Coffee holds the top rank in both the Pittsburgh Coffee Shops and Pittsburgh Cafes families, and the forward question is whether the shop's own TikTok presence, currently under @adventureallegheny, develops enough cadence to meet the creator conversation already happening around it.",
+  "tldr_read": "Dominant reviews, surging Instagram, and 607,000 TikTok plays driven largely by outside creators. Icons of the Burgh, number one in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "Every core signal is at or above family median and the TikTok creator layer is already activating at scale; the variable is whether the business's own posting cadence consolidates that attention before it cycles to the next Strip District story.",
+  "diagnosis_pullquote": {
+    "line": "Number One In Coffee, Built On Smell And Ritual. Thirty-One Creators Confirm It.",
+    "highlight": "Thirty-One Creators Confirm"
+  },
+  "playbook": [
+    {
+      "headline": "Close the gap on your own TikTok",
+      "action": "Post 3 short-form videos per week on @adventureallegheny showing the bean wall and cold brew taps, the two scenes creators keep filming anyway.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "CAPTURE CREATOR WAVE"
+    },
+    {
+      "headline": "Expand the photo catalog on Google",
+      "action": "589 photos across 9 categories is strong, but the 'Vibe' and 'Latest' buckets thin out fast; prompt staff to upload weekly to keep the visual catalog fresh for new visitors.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+VISUAL DEPTH"
+    },
+    {
+      "headline": "Name the staff in your own posts",
+      "action": "Reviewers already cite Eric and Cameron by name; a recurring 'meet the team' format on Instagram would reinforce the personal-service signal that distinguishes this shop from chain competitors.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+SENTIMENT DEPTH"
+    }
+  ],
+  "review_count": 8,
+  "analyzed_at": "2026-04-26T22:23:20.141Z",
+  "model": "claude-sonnet-4-6"
+}

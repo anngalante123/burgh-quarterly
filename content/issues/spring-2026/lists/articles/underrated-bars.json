@@ -1,0 +1,74 @@
+{
+  "slug": "underrated-bars",
+  "title": "Pittsburgh's Most Underrated Bars",
+  "subtitle": "Bars and breweries the regulars treat as their own.",
+  "angle": "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
+  "intro": "The bars and breweries on this list did not underperform. Their customers just kept the secret better than the algorithm noticed.\n\nPittsburgh's most interesting drinking institutions this quarter share a specific pattern: the reviews read like regulars writing letters, not tourists logging check-ins. Commerce Bar in East Liberty ranked second among Pittsburgh bars on review depth alone, with no website and no listed phone number to help it along. Hidden Harbor in Squirrel Hill South ranked first in its category on borrowed reach, meaning creators have already done the work the bar itself has not claimed. Hop Farm Brewing in Lawrenceville sits at the top of the brewery rankings, carried by 21 individual creators whose content the business has not once amplified or returned.\n\nThe customer love is already documented. The cheaper second move, for most of these owners, is simply asking the people who already showed up on camera to come back with some intention. Pittsburgh has more creators actively looking for places to feature than most bar owners realize, and the infrastructure that connects them tends to work quietly, because it does not need to pitch.\n\nIssue 02 will return in summer 2026 with the full warm-weather audit, covering patios, seasonal openings, and whether any of these regulars finally brought their bars into the conversation they started.",
+  "items": [
+    {
+      "rank": 1,
+      "business_slug": "commerce-bar",
+      "name": "Commerce Bar",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "East Liberty",
+      "descriptor": "Second In Pittsburgh Bars On Review Depth Alone. The Listing Has No Website, No Phone.",
+      "descriptor_highlight": "No Website, No Phone",
+      "stat_line": "106 reviews · 4.7★ · 1 IG posts/30d",
+      "playbook_top_move": "Complete the Google Business listing today. Add a website URL and phone number to the Google listing, which currently shows neither, closing the most direct path visitors use to confirm hours and book."
+    },
+    {
+      "rank": 2,
+      "business_slug": "golden-age-beer-company",
+      "name": "Golden Age Beer Company",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "Pittsburgh",
+      "descriptor": "Second In Breweries, Carried By Reviews. The Taproom Has No TikTok Footprint Yet.",
+      "descriptor_highlight": "No TikTok Footprint",
+      "stat_line": "195 reviews · 4.8★ · 12 IG posts/30d",
+      "playbook_top_move": "Address the kitchen critique directly. One negative review thread on overcooked food is enough to suppress a sentiment signal sitting two points below the family median; a menu edit or staff calibration on bar bites is the fastest path to closing that gap."
+    },
+    {
+      "rank": 3,
+      "business_slug": "hidden-harbor",
+      "name": "Hidden Harbor",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "Squirrel Hill South",
+      "descriptor": "First In Pittsburgh Bars On Borrowed Reach. The Bar Hasn't Claimed Its Own TikTok Story.",
+      "descriptor_highlight": "Borrowed Reach",
+      "stat_line": "765 reviews · 4.6★ · 10 creators · 426K plays · 12 IG posts/30d",
+      "featured_tiktok": {
+        "author": "messihasaura7689",
+        "plays": 204400,
+        "url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527",
+        "caption": "Pearl Harbor #usa #japan #pearlharbor #edit #darktriad "
+      },
+      "playbook_top_move": "Build a TikTok presence before creators define you. Ten creators posted 425,844 plays this quarter with zero input from Hidden Harbor. Claim the account and post even two videos a month to own the narrative."
+    },
+    {
+      "rank": 4,
+      "business_slug": "hop-farm-brewing-company",
+      "name": "Hop Farm Brewing Company",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "Lawrenceville",
+      "descriptor": "Number One In Breweries, Powered By 21 Creators. The Business Captures None Of That Signal.",
+      "descriptor_highlight": "21 Creators",
+      "stat_line": "298 reviews · 4.6★ · 21 creators · 171K plays · 12 IG posts/30d",
+      "featured_tiktok": {
+        "author": "stevenjamesyuhasz",
+        "plays": 51500,
+        "url": "https://www.tiktok.com/@stevenjamesyuhasz/video/7610945922725465374",
+        "caption": "The staff and customer service here was unbelievable. Definitely the type of place I want to support. @B&K Farm Market #warren #youngstown #cortland #ohio "
+      },
+      "playbook_top_move": "Start a TikTok account this week. Twenty-one creators generated 170,828 plays tagging Hop Farm this quarter; a business account captures future tags, replies, and discovery that currently go nowhere."
+    }
+  ],
+  "query": {
+    "filter": {
+      "family": "bars"
+    },
+    "ranking": "underrated",
+    "limit": 5
+  },
+  "generated_at": "2026-04-26T22:36:54.411Z",
+  "model": "claude-sonnet-4-6"
+}

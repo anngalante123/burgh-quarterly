@@ -1,0 +1,101 @@
+{
+  "slug": "dobra-tea-pittsburgh",
+  "name": "Dobrá Tea Pittsburgh",
+  "category": "restaurant",
+  "neighborhood": "Squirrel Hill South",
+  "address": "1937 Murray Ave, Pittsburgh, PA 15217",
+  "website": "http://dobrateapgh.com/",
+  "google_rating": 4.7,
+  "google_review_count": 1107,
+  "review_freshness_days": 5,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHuqeaB5ASr4yydDOXFy3rechsVnWzl5Ka4Fi0G8Lp1SbyPfatup957KU2iXBJDl-SiNSqXIxAzIuacBEqk0s2WnWFDxnitkdFGh_JEPAlDfpvaCsiTIRnOJBuEZJM0y-LHd0FUhA=w408-h306-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHuqeaB5ASr4yydDOXFy3rechsVnWzl5Ka4Fi0G8Lp1SbyPfatup957KU2iXBJDl-SiNSqXIxAzIuacBEqk0s2WnWFDxnitkdFGh_JEPAlDfpvaCsiTIRnOJBuEZJM0y-LHd0FUhA=w408-h306-k-no",
+  "review_keywords": [
+    "wonderful experience"
+  ],
+  "created_at": "2026-04-22T14:51:45.631Z",
+  "updated_at": "2026-04-22T14:51:45.631Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJxYa44v7xNIgRM0tbj-YIWG4",
+    "categoryName": "Tea house",
+    "imagesCount": 690,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Green tea",
+      "Beer",
+      "Hummus",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 449-9833",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 23,
+      "twoStar": 8,
+      "threeStar": 30,
+      "fourStar": 140,
+      "fiveStar": 906
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Really nice spot to get some work done. Don't expect it to be quiet, since there will be ambient noise from people chatting. But a pair of headphones and you're golden. A lot of first dates here, a fun ambience, and an extensive menu of teas.",
+      "One of the widest tea selections I have ever seen, nice ambience with lots of different types of sitting options. Its a quaint kind of a place, you ring a bell thats one on table to call for servers to put your order. Generally a quiet place but certainly conducive to fun and conversations. Do try their snack platters, I love the sesame cookie.",
+      "Love coming here it’s a go to when I’m in Pittsburgh and love they have more gluten free labeling! Their chai and boba tea is the best!!",
+      "One of my favorite places on Earth. A wonderfully large selection of teas from around the world, served in an intimate and quiet setting. A great place to hang out with friends or enjoy a quiet booth or table. This location offers a wonderful selection  of food as well. If I could live there, I would! Staff wonderful too. Plenty of parking in area.",
+      "such a wonderful tea shop and wonderful experience! very casual, relaxing environment. Staff is extremely friendly and knowledgeable about tea. Large array of unique teas. Food is very good as well! a wonderful pseudo- \"third space\"  where you can sip tea, relax, play a board game, study, and talk to other patrons.",
+      "The ambient is so whimsy. Vanilla tea is one of my favorites. It's hard to get a seat sometimes because it's crowded. It's a place for study, craft, read and chat with friends.",
+      "I live really close to here and make this my meeting point with all my friends who never tried it before. It is always a wonderful experience with nice employees, delicious food and smooth drinks!",
+      "I really love this place. The staff is kind & knowledgeable, the tea is delicious, the atmosphere is welcoming to spend some time chatting or enjoying a book. I havent tried the food here. I typically get their tulsi chai which I LOVE.\n\nUpdating to add: i have been back and tried some food. The babaganoush is delicious!",
+      "Fantastic atmosphere, excellent tea, and great food. I spent hours here hanging out with my friends and I will be back soon."
+    ],
+    "keywordPhrases": [
+      {
+        "text": "wonderful experience",
+        "count": 2,
+        "exampleQuote": "such a wonderful tea shop and wonderful experience!"
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "dobra-tea-pittsburgh",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 80,
+      "community_spark": 90,
+      "conversion_path": 100,
+      "momentum": 27,
+      "collab_fit": 78
+    },
+    "composite": 75,
+    "tier": "ones_to_watch",
+    "rank_category": 1,
+    "rank_neighborhood": 4,
+    "rank_overall": 14,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "community affection",
+      "evidence": "1,107 Google reviews with a review in the last 5 days — the highest community-spark reading in this issue's set."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

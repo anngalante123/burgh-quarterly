@@ -1,0 +1,144 @@
+{
+  "slug": "treat-ice-cream-and-liege-waffles",
+  "handle": "treat_pgh",
+  "followers": 1758,
+  "follows": 90,
+  "posts_total": 24,
+  "posts_30d": 0,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.07651,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Authentic Liege waffles and locally-made ice cream in the heart of Pittsburgh 🧇🍨",
+  "full_name": "Treat in Shadyside",
+  "last_post_at": "2025-10-09T01:16:09.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 615,
+      "end": 623,
+      "delta": 8,
+      "per_month": 9.62
+    },
+    "rating": {
+      "start": 5,
+      "end": 5,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 201,
+      "end": 202,
+      "delta": 1
+    }
+  },
+  "tiktok_mentions": {
+    "query": "treat - ice cream and liege waffles pittsburgh",
+    "video_count": 32,
+    "total_plays": 1122935,
+    "total_likes": 49558,
+    "unique_creators": 32,
+    "top_creators": [
+      {
+        "handle": "dipitcafe",
+        "fans": 1220,
+        "verified": false,
+        "videos": 1,
+        "plays": 296900,
+        "likes": 6930
+      },
+      {
+        "handle": "the412franimal",
+        "fans": 1366,
+        "verified": false,
+        "videos": 1,
+        "plays": 156900,
+        "likes": 176
+      },
+      {
+        "handle": "_fruitastik",
+        "fans": 5414,
+        "verified": false,
+        "videos": 1,
+        "plays": 76900,
+        "likes": 7746
+      },
+      {
+        "handle": "ashleyvivian_",
+        "fans": 2299,
+        "verified": false,
+        "videos": 1,
+        "plays": 70800,
+        "likes": 4576
+      },
+      {
+        "handle": "wanderingpassports",
+        "fans": 72400,
+        "verified": false,
+        "videos": 1,
+        "plays": 68400,
+        "likes": 4258
+      },
+      {
+        "handle": "beingmikii",
+        "fans": 5045,
+        "verified": false,
+        "videos": 1,
+        "plays": 61000,
+        "likes": 4768
+      },
+      {
+        "handle": "taylorhoffman80",
+        "fans": 4979,
+        "verified": false,
+        "videos": 1,
+        "plays": 59300,
+        "likes": 5128
+      },
+      {
+        "handle": "columbuscoffeeshops",
+        "fans": 5745,
+        "verified": false,
+        "videos": 1,
+        "plays": 49300,
+        "likes": 2743
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7626609541450321183",
+        "url": "https://www.tiktok.com/@dipitcafe/video/7626609541450321183",
+        "text": "Waffle with ice cream #icecream #TikTok #viral #viralvideo #Dessert ",
+        "author": "dipitcafe",
+        "plays": 296900,
+        "likes": 6930,
+        "posted": "2026-04-09T04:20:29.000Z"
+      },
+      {
+        "id": "7615752857433787678",
+        "url": "https://www.tiktok.com/@the412franimal/video/7615752857433787678",
+        "text": "No matter the weather, we #RitasIce together 🫡🍧 Pittsburgh weather is insanely unpredictable, but one thing that remains constant is that anytime I pass a Rita’s - I’m stopping for a lil treat. & that’s exactly what we did on a rainy day ",
+        "author": "the412franimal",
+        "plays": 156900,
+        "likes": 176,
+        "posted": "2026-03-10T22:10:59.000Z"
+      },
+      {
+        "id": "7626835594492120350",
+        "url": "https://www.tiktok.com/@_fruitastik/video/7626835594492120350",
+        "text": "Viral Korean Ice Crean in FruiTastik in Pittsburgh \n\n#fyp #fruitastik #pittsburgh #viralkoreanicecream #mangoicecream ",
+        "author": "_fruitastik",
+        "plays": 76900,
+        "likes": 7746,
+        "posted": "2026-04-09T18:57:33.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-22T18:27:05.000Z",
+    "median_plays": 13600,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T16:14:04.900Z"
+  }
+}

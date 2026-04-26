@@ -1,0 +1,31 @@
+{
+  "slug": "commerce-bar",
+  "handle": "commercebarpgh",
+  "followers": 14467,
+  "follows": 125,
+  "posts_total": 129,
+  "posts_30d": 1,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.0072,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Hidden cocktail bar in East Liberty\nWed-Sat: 6pm-1am \nSun: 6pm-12am\nNo reservations \nPrivate events: commercepgh@gmail.com",
+  "full_name": "Commerce Bar",
+  "last_post_at": "2026-04-15T20:17:52.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "commerce bar pittsburgh",
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T15:54:52.222Z"
+  }
+}

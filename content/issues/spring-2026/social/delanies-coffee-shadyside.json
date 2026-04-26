@@ -1,0 +1,144 @@
+{
+  "slug": "delanies-coffee-shadyside",
+  "handle": "delaniescoffee",
+  "followers": 22684,
+  "follows": 5434,
+  "posts_total": 982,
+  "posts_30d": 3,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.04674,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "specialty coffee shop in Pittsburgh serving - @onyxcoffeelab & @partnerscoffee \nLocations ⤵️\n•1737 E Carson, SouthSide \n•200 S Highland Ave, Shadyside",
+  "full_name": "Delanie’s Coffee",
+  "last_post_at": "2026-04-10T16:35:53.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 101,
+      "end": 104,
+      "delta": 3,
+      "per_month": 3.61
+    },
+    "rating": {
+      "start": 4.6,
+      "end": 4.6,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 98,
+      "end": 96,
+      "delta": -2
+    }
+  },
+  "tiktok_mentions": {
+    "query": "delanie's coffee shadyside pittsburgh",
+    "video_count": 17,
+    "total_plays": 66299,
+    "total_likes": 3995,
+    "unique_creators": 16,
+    "top_creators": [
+      {
+        "handle": "stephr0se8",
+        "fans": 122,
+        "verified": false,
+        "videos": 1,
+        "plays": 31200,
+        "likes": 1946
+      },
+      {
+        "handle": "calsipos",
+        "fans": 73000,
+        "verified": false,
+        "videos": 2,
+        "plays": 13384,
+        "likes": 1061
+      },
+      {
+        "handle": "carlys_coffee",
+        "fans": 159,
+        "verified": false,
+        "videos": 1,
+        "plays": 4220,
+        "likes": 223
+      },
+      {
+        "handle": "sara.mackenzie03",
+        "fans": 183,
+        "verified": false,
+        "videos": 1,
+        "plays": 4169,
+        "likes": 175
+      },
+      {
+        "handle": "natalieinpittsburgh",
+        "fans": 1505,
+        "verified": false,
+        "videos": 1,
+        "plays": 3775,
+        "likes": 111
+      },
+      {
+        "handle": "madisonrockk",
+        "fans": 2958,
+        "verified": false,
+        "videos": 1,
+        "plays": 2190,
+        "likes": 102
+      },
+      {
+        "handle": "nicoleputignano11",
+        "fans": 511,
+        "verified": false,
+        "videos": 1,
+        "plays": 1185,
+        "likes": 43
+      },
+      {
+        "handle": "mcmonaglle",
+        "fans": 4736,
+        "verified": false,
+        "videos": 1,
+        "plays": 939,
+        "likes": 36
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7613871282186177805",
+        "url": "https://www.tiktok.com/@stephr0se8/video/7613871282186177805",
+        "text": "Some of my fave local coffee shops! Drop some more reccs for me to try 👇🏼\n#localcoffeeshop #pittsburgh #coffeetok #supportsmallbusiness #fyp ",
+        "author": "stephr0se8",
+        "plays": 31200,
+        "likes": 1946,
+        "posted": "2026-03-05T20:29:55.000Z"
+      },
+      {
+        "id": "7611305504937233694",
+        "url": "https://www.tiktok.com/@calsipos/video/7611305504937233694",
+        "text": "A fun Thursday afternoon filled with coffee & thrifting 😎 these spots are like 2 blocks away from each other and perfect for a day with your friends in Pittsburgh! Both are located in south side but delanies has another location in Shadysi",
+        "author": "calsipos",
+        "plays": 6891,
+        "likes": 495,
+        "posted": "2026-02-26T22:32:52.000Z"
+      },
+      {
+        "id": "7628392942868253982",
+        "url": "https://www.tiktok.com/@calsipos/video/7628392942868253982",
+        "text": "Delanie’s I will always love you! The cookie butter latte is so amazing, a little sweet but still very balanced. I love the cinnamon on top! The baked goods are also always a great add on with selections from places across the city. Definit",
+        "author": "calsipos",
+        "plays": 6493,
+        "likes": 566,
+        "posted": "2026-04-13T23:40:59.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-13T23:40:59.000Z",
+    "median_plays": 939,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T15:55:27.597Z"
+  }
+}

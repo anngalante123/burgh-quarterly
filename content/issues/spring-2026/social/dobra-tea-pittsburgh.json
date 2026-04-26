@@ -1,0 +1,144 @@
+{
+  "slug": "dobra-tea-pittsburgh",
+  "handle": "dobrateapgh",
+  "followers": 2421,
+  "follows": 63,
+  "posts_total": 289,
+  "posts_30d": 1,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.02759,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Drink Good Tea \n✧ Hours ✧\nM-Th  11-10   ||  F+Sat 11-11   ||  Sun 10-8\n✧Last Call 30 Min. Before Close✧",
+  "full_name": "Dobra Tea Pittsburgh",
+  "last_post_at": "2026-04-07T22:35:12.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 1103,
+      "end": 1107,
+      "delta": 4,
+      "per_month": 4.81
+    },
+    "rating": {
+      "start": 4.7,
+      "end": 4.7,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 689,
+      "end": 690,
+      "delta": 1
+    }
+  },
+  "tiktok_mentions": {
+    "query": "dobrá tea pittsburgh pittsburgh",
+    "video_count": 11,
+    "total_plays": 9656,
+    "total_likes": 466,
+    "unique_creators": 10,
+    "top_creators": [
+      {
+        "handle": "alexgdeckerr",
+        "fans": 1111,
+        "verified": false,
+        "videos": 1,
+        "plays": 2589,
+        "likes": 105
+      },
+      {
+        "handle": "kyuramen.pittsburgh",
+        "fans": 876,
+        "verified": false,
+        "videos": 1,
+        "plays": 1384,
+        "likes": 58
+      },
+      {
+        "handle": "lovestoresco",
+        "fans": 1018,
+        "verified": false,
+        "videos": 2,
+        "plays": 1293,
+        "likes": 78
+      },
+      {
+        "handle": "bradentomalson",
+        "fans": 3216,
+        "verified": false,
+        "videos": 1,
+        "plays": 1200,
+        "likes": 42
+      },
+      {
+        "handle": "sarahzwithanh",
+        "fans": 1094,
+        "verified": false,
+        "videos": 1,
+        "plays": 784,
+        "likes": 45
+      },
+      {
+        "handle": "dyhwrl6u90ec",
+        "fans": 144,
+        "verified": false,
+        "videos": 1,
+        "plays": 651,
+        "likes": 18
+      },
+      {
+        "handle": "morgmoneyyyy",
+        "fans": 1282,
+        "verified": false,
+        "videos": 1,
+        "plays": 621,
+        "likes": 69
+      },
+      {
+        "handle": "christinaclothesncoffee",
+        "fans": 7266,
+        "verified": false,
+        "videos": 1,
+        "plays": 578,
+        "likes": 29
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7600517334402452767",
+        "url": "https://www.tiktok.com/@alexgdeckerr/video/7600517334402452767",
+        "text": "The Bombay chai is a MUST TRY at Dobrah tea in Squirrel Hill Pittsburgh!! Follow for more Pittsburgh content💓 #pittsburgh #pittsburghpa #pittsburghcheck #pittsburghrestaurants #pittsburghdatenight ",
+        "author": "alexgdeckerr",
+        "plays": 2589,
+        "likes": 105,
+        "posted": "2026-01-28T20:49:23.000Z"
+      },
+      {
+        "id": "7611652457084538142",
+        "url": "https://www.tiktok.com/@kyuramen.pittsburgh/video/7611652457084538142",
+        "text": "When the \"YOU TOO\" actually works!! 😂​🧋​#TBaar​ #bubblemilktea #pittsburghfoodie #KyuramenPittsburgh #boba ",
+        "author": "kyuramen.pittsburgh",
+        "plays": 1384,
+        "likes": 58,
+        "posted": "2026-02-27T20:59:18.000Z"
+      },
+      {
+        "id": "7613049265237151006",
+        "url": "https://www.tiktok.com/@bradentomalson/video/7613049265237151006",
+        "text": "Bubble Tea & Ramen at Teachana in Novo Asisn Food Hall in the Strip District! @Jennifer Maze \n#pittsburgh #pgh #pittsburghfoodie #ramen #bubbletea ",
+        "author": "bradentomalson",
+        "plays": 1200,
+        "likes": 42,
+        "posted": "2026-03-03T15:19:45.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-14T10:47:21.000Z",
+    "median_plays": 651,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T15:56:00.138Z"
+  }
+}

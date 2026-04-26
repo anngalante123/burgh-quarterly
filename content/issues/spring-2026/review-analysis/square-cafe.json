@@ -1,0 +1,70 @@
+{
+  "slug": "square-cafe",
+  "themes": [
+    {
+      "phrase": "vegan-friendly menu",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for"
+    },
+    {
+      "phrase": "weekend wait list",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "Usually, there's a wait list, since the food is so good. They do a good job of quickly and efficiently clearing tables."
+    },
+    {
+      "phrase": "price-to-portion concern",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The food is excellent here. However the portion to price ratio is not the best."
+    },
+    {
+      "phrase": "relaxed, no-pressure atmosphere",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "No pressure to eat up and go."
+    },
+    {
+      "phrase": "standout specific dishes",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The Brussels sprout hash was amazing and unique. Would go back."
+    }
+  ],
+  "notable_quote": "The Brussels sprout hash was amazing and unique. Would go back.",
+  "sentiment_summary": "Reviewers consistently praise specific dishes, a welcoming vegan-inclusive menu, and a staff that keeps wait times honest, while the recurring friction is portion size relative to price and, in at least one case, a bathroom that needed attention.",
+  "quarter_narrative": "Square Cafe enters Spring 2026 as the clear number one in Pittsburgh brunch, and 1,839 Google reviews at 72% five-star is not a reputation anyone stumbled into. Thirteen TikTok creators filmed the place this quarter, generating over 317,000 plays, with the top video from @cbspittsburgh alone pulling nearly 99,000 views. The business holds its own TikTok handle and is posting on Instagram at a reasonable clip, so this is not a story about a dormant account missing its moment; it is a story about engagement rates that have not yet caught up to the reach the city is already generating for it. The family leader this issue is Nan Xiang Soup Dumplings, riding social momentum as its defining signal, and if Square Cafe can tighten the connection between the creator traffic flowing through its profile and its own feed output, the gap between first in brunch and first overall gets a lot smaller.",
+  "tldr_read": "Dominant review base, thirteen outside creators generating real TikTok reach, and an Instagram engagement rate that has not caught up to either. Icons of the Burgh, number one in Pittsburgh Brunch.",
+  "tldr_meaning": "The review foundation and creator fit are already at the top of the family; the trajectory now depends entirely on whether Instagram engagement converts any of that external attention into a return signal.",
+  "diagnosis_pullquote": {
+    "line": "Number One In Pittsburgh Brunch, Built On Reviews. The Engagement Rate Is The Outstanding Bill.",
+    "highlight": "Outstanding Bill."
+  },
+  "playbook": [
+    {
+      "headline": "Close the Instagram engagement gap",
+      "action": "At 0.19% engagement, 11 posts in 30 days are not converting the audience; shift two of those monthly posts to direct reply prompts tied to specific menu items like the Brussels sprout hash.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "+ENGAGE SIGNAL"
+    },
+    {
+      "headline": "Double the reels output this quarter",
+      "action": "Two reels in the last 30 days is the floor, not the ceiling; 13 outside creators are already producing TikTok footage, and mirroring that format on Reels is the fastest path to closing the engagement gap.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+REEL REACH"
+    },
+    {
+      "headline": "Address the price-perception narrative directly",
+      "action": "Three of seven sampled reviews surface portion-to-price friction; a brief menu annotation explaining sourcing or preparation on flagged items like home fries can shift that neutral sentiment before it becomes a pattern.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+2 SENTIMENT PTS"
+    }
+  ],
+  "review_count": 7,
+  "analyzed_at": "2026-04-26T22:32:38.367Z",
+  "model": "claude-sonnet-4-6"
+}

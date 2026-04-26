@@ -1,0 +1,70 @@
+{
+  "slug": "dobra-tea-pittsburgh",
+  "themes": [
+    {
+      "phrase": "extensive tea selection",
+      "frequency": 7,
+      "sentiment": "positive",
+      "exampleQuote": "One of the widest tea selections I have ever seen"
+    },
+    {
+      "phrase": "third space atmosphere",
+      "frequency": 6,
+      "sentiment": "positive",
+      "exampleQuote": "a wonderful pseudo-'third space' where you can sip tea, relax, play a board game, study, and talk to other patrons"
+    },
+    {
+      "phrase": "knowledgeable friendly staff",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Staff is extremely friendly and knowledgeable about tea"
+    },
+    {
+      "phrase": "hard to get a seat",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "It's hard to get a seat sometimes because it's crowded"
+    },
+    {
+      "phrase": "food worth ordering",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The babaganoush is delicious"
+    }
+  ],
+  "notable_quote": "One of my favorite places on Earth: a wonderfully large selection of teas from around the world, served in an intimate and quiet setting.",
+  "sentiment_summary": "Reviewers consistently praise the depth of the tea menu, the board-game-and-booth atmosphere, and staff who can actually explain what they're serving; the one recurring friction is seating availability during busy periods.",
+  "quarter_narrative": "Ten Pittsburgh creators posted eleven TikToks at Dobrá Tea this quarter, pulling nearly 10,000 plays on content the business itself had no hand in shaping. The top video, a Bombay chai recommendation from @alexgdeckerr, generated 2,589 plays from a single caption. Meanwhile, Dobrá's own Instagram produced one post in thirty days and zero reels, leaving the city's enthusiasm to circulate entirely outside the brand's orbit. In the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange holds the top spot on the strength of social momentum, the precise axis where Dobrá is softest. Closing that gap, not on review quality or conversion clarity, both of which are already strong, is what determines whether this business moves up the family rankings by fall.",
+  "tldr_read": "Review sentiment is the strongest signal in the cafe family, Instagram is nearly quiet, and ten outside creators are doing the posting for it. Ones to Watch, #1 in Pittsburgh Tea Houses.",
+  "tldr_meaning": "The review foundation and conversion path are already ceiling-level; the trajectory now depends entirely on whether the Instagram cadence restarts and the business begins recapturing the creator attention already flowing toward it.",
+  "diagnosis_pullquote": {
+    "line": "First In Tea On 1,107 Reviews. Ten Creators Are Posting, The Account Posted Once.",
+    "highlight": "Ten Creators Are Posting"
+  },
+  "playbook": [
+    {
+      "headline": "Restart the Instagram posting cadence",
+      "action": "One post in the last 30 days and zero reels puts Dobrá well below the family median of 44 on Instagram momentum; a twice-weekly cadence with one reel per week would close that gap measurably.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "+MOMENTUM RANK"
+    },
+    {
+      "headline": "Repost and tag the creators already filming",
+      "action": "Ten unique creators produced 11 TikToks and 9,656 plays this quarter; acknowledging that coverage on Instagram Stories converts passive creator energy into a visible feedback loop.",
+      "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "CAPTURE CREATOR LIFT"
+    },
+    {
+      "headline": "Expand photo categories on Google",
+      "action": "690 photos across 11 categories is above the family median visually, but adding staff-submitted shots of the bell-service ritual and board game setup would sharpen the third-space story for first-time visitors.",
+      "signal": "content_canvas",
+      "priority": "low",
+      "impact_label": "+1 VISUAL DEPTH"
+    }
+  ],
+  "review_count": 9,
+  "analyzed_at": "2026-04-26T22:24:31.224Z",
+  "model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,144 @@
+{
+  "slug": "jenis-splendid-ice-creams",
+  "handle": "jenisicecreams",
+  "followers": 522411,
+  "follows": 963,
+  "posts_total": 4121,
+  "posts_30d": 12,
+  "reels_30d": 4,
+  "avg_engagement_rate": 0.00492,
+  "verified": true,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Often imitated. Never duplicated. Always splendid.",
+  "full_name": "Jeni's Splendid Ice Creams",
+  "last_post_at": "2026-04-17T13:51:06.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 245,
+      "end": 251,
+      "delta": 6,
+      "per_month": 7.22
+    },
+    "rating": {
+      "start": 4.5,
+      "end": 4.5,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 390,
+      "end": 450,
+      "delta": 60
+    }
+  },
+  "tiktok_mentions": {
+    "query": "jeni's splendid ice creams pittsburgh",
+    "video_count": 37,
+    "total_plays": 1150851,
+    "total_likes": 103076,
+    "unique_creators": 35,
+    "top_creators": [
+      {
+        "handle": "morganchompz",
+        "fans": 423400,
+        "verified": false,
+        "videos": 1,
+        "plays": 1000000,
+        "likes": 94800
+      },
+      {
+        "handle": "mommys.eats",
+        "fans": 29900,
+        "verified": false,
+        "videos": 1,
+        "plays": 48400,
+        "likes": 3684
+      },
+      {
+        "handle": "olivia.radz",
+        "fans": 15600,
+        "verified": false,
+        "videos": 1,
+        "plays": 22600,
+        "likes": 1132
+      },
+      {
+        "handle": "getfatwithben",
+        "fans": 10900,
+        "verified": false,
+        "videos": 1,
+        "plays": 14600,
+        "likes": 283
+      },
+      {
+        "handle": "therealkevinup",
+        "fans": 8600,
+        "verified": false,
+        "videos": 1,
+        "plays": 13700,
+        "likes": 696
+      },
+      {
+        "handle": "thecitymenus",
+        "fans": 10600,
+        "verified": false,
+        "videos": 1,
+        "plays": 12700,
+        "likes": 437
+      },
+      {
+        "handle": "khoodlum",
+        "fans": 19900,
+        "verified": false,
+        "videos": 1,
+        "plays": 10900,
+        "likes": 613
+      },
+      {
+        "handle": "soysauceyybae",
+        "fans": 18800,
+        "verified": false,
+        "videos": 1,
+        "plays": 3338,
+        "likes": 285
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7622351776439667981",
+        "url": "https://www.tiktok.com/@morganchompz/video/7622351776439667981",
+        "text": "Trying Jeni’s spring ice cream flavor lineup! 🍦💐 Have you tried any of these? @Jeni’s Splendid Ice Creams #icecream #dessert #newfood #foodreview #snacks ",
+        "author": "morganchompz",
+        "plays": 1000000,
+        "likes": 94800,
+        "posted": "2026-03-28T16:58:14.000Z"
+      },
+      {
+        "id": "7622414512913763598",
+        "url": "https://www.tiktok.com/@mommys.eats/video/7622414512913763598",
+        "text": "Trying @Jeni’s Splendid Ice Creams NEW spring line up inspired by @Bridgerton !!! 🌷🌸🌼 thank you Jeni for sending me your 6 new flavors to try !!! This is part 1 of 2 !!! I tried in order, frosted sugar cookie, sweet cream biscuits with p",
+        "author": "mommys.eats",
+        "plays": 48400,
+        "likes": 3684,
+        "posted": "2026-03-28T21:01:46.000Z"
+      },
+      {
+        "id": "7625836867405024542",
+        "url": "https://www.tiktok.com/@olivia.radz/video/7625836867405024542",
+        "text": "My new favorite ice cream flavor 😋🍦 @Jeni’s Splendid Ice Creams \n\n#jenisicecream #icecream #newflavor #sweettreats #dessert ",
+        "author": "olivia.radz",
+        "plays": 22600,
+        "likes": 1132,
+        "posted": "2026-04-07T02:22:02.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-25T16:27:16.000Z",
+    "median_plays": 1001,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T15:59:00.243Z"
+  }
+}

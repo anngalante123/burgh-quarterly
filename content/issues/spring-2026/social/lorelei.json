@@ -1,0 +1,144 @@
+{
+  "slug": "lorelei",
+  "handle": "loreleipgh",
+  "followers": 13091,
+  "follows": 45,
+  "posts_total": 1116,
+  "posts_30d": 4,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.00794,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Alpine-inspired cocktail bar, beer hall, and wine shop, with pizzas from @woodfiredpgh. Wed-Thu 5-10p (kitchen 5-9p) | Fri-Sat 3p-12a (kitchen 5-10p)",
+  "full_name": "Lorelei",
+  "last_post_at": "2026-04-13T21:48:15.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 391,
+      "end": 392,
+      "delta": 1,
+      "per_month": 1.2
+    },
+    "rating": {
+      "start": 4.5,
+      "end": 4.5,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 291,
+      "end": 291,
+      "delta": 0
+    }
+  },
+  "tiktok_mentions": {
+    "query": "lorelei pittsburgh",
+    "video_count": 18,
+    "total_plays": 1230257,
+    "total_likes": 99934,
+    "unique_creators": 18,
+    "top_creators": [
+      {
+        "handle": "ernest",
+        "fans": 355700,
+        "verified": true,
+        "videos": 1,
+        "plays": 569300,
+        "likes": 24100
+      },
+      {
+        "handle": "rankoganei797",
+        "fans": 52100,
+        "verified": false,
+        "videos": 1,
+        "plays": 318400,
+        "likes": 20700
+      },
+      {
+        "handle": "dylanmenor",
+        "fans": 726800,
+        "verified": false,
+        "videos": 1,
+        "plays": 188200,
+        "likes": 21500
+      },
+      {
+        "handle": "l0velyd3vis",
+        "fans": 137,
+        "verified": false,
+        "videos": 1,
+        "plays": 125800,
+        "likes": 30000
+      },
+      {
+        "handle": "serafica._",
+        "fans": 49,
+        "verified": false,
+        "videos": 1,
+        "plays": 8493,
+        "likes": 691
+      },
+      {
+        "handle": "madilorelei",
+        "fans": 1327,
+        "verified": false,
+        "videos": 1,
+        "plays": 5987,
+        "likes": 1221
+      },
+      {
+        "handle": "lorerei.love.life",
+        "fans": 162,
+        "verified": false,
+        "videos": 1,
+        "plays": 5473,
+        "likes": 903
+      },
+      {
+        "handle": "fender",
+        "fans": 3900000,
+        "verified": true,
+        "videos": 1,
+        "plays": 2927,
+        "likes": 165
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7607938994898291981",
+        "url": "https://www.tiktok.com/@ernest/video/7607938994898291981",
+        "text": "Lorelei. She’ll pull you down if you let her.\n\n#newmusic #lorelei ",
+        "author": "ernest",
+        "plays": 569300,
+        "likes": 24100,
+        "posted": "2026-02-17T20:49:29.000Z"
+      },
+      {
+        "id": "7624185629600992530",
+        "url": "https://www.tiktok.com/@rankoganei797/video/7624185629600992530",
+        "text": "REINA LORELEI 👑 \n#princesitasofia #serie #edit #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii ",
+        "author": "rankoganei797",
+        "plays": 318400,
+        "likes": 20700,
+        "posted": "2026-04-02T15:34:11.000Z"
+      },
+      {
+        "id": "7626283101961964821",
+        "url": "https://www.tiktok.com/@dylanmenor/video/7626283101961964821",
+        "text": "well, thanks for the lock pick, Lorelei 🔐 #ProjectLoki @Jayda ",
+        "author": "dylanmenor",
+        "plays": 188200,
+        "likes": 21500,
+        "posted": "2026-04-08T07:13:31.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-26T13:58:24.000Z",
+    "median_plays": 1556,
+    "detected_own_handle": "loreleishae3",
+    "scraped_at": "2026-04-26T16:02:33.217Z"
+  }
+}

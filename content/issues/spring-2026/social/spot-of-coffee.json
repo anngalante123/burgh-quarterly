@@ -1,0 +1,144 @@
+{
+  "slug": "spot-of-coffee",
+  "handle": "spot.of.coffee",
+  "followers": 2816,
+  "follows": 197,
+  "posts_total": 75,
+  "posts_30d": 6,
+  "reels_30d": 3,
+  "avg_engagement_rate": 0.15185,
+  "verified": true,
+  "private": false,
+  "is_business_account": true,
+  "biography": "☕️ Single Origin Organic Coffee\n🍯Naturally Sweetened!\n📍Shadyside, Pittsburgh\nNow open - Daily 8am-4pm",
+  "full_name": "Spot of Coffee",
+  "last_post_at": "2026-04-19T16:20:00.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 156,
+      "end": 173,
+      "delta": 17,
+      "per_month": 20.44
+    },
+    "rating": {
+      "start": 4.9,
+      "end": 4.8,
+      "delta": -0.1
+    },
+    "photo_count": {
+      "start": 127,
+      "end": 126,
+      "delta": -1
+    }
+  },
+  "tiktok_mentions": {
+    "query": "spot of coffee pittsburgh",
+    "video_count": 31,
+    "total_plays": 278472,
+    "total_likes": 17344,
+    "unique_creators": 24,
+    "top_creators": [
+      {
+        "handle": "lyssad16",
+        "fans": 401,
+        "verified": false,
+        "videos": 1,
+        "plays": 44300,
+        "likes": 1933
+      },
+      {
+        "handle": "stephr0se8",
+        "fans": 122,
+        "verified": false,
+        "videos": 1,
+        "plays": 31200,
+        "likes": 1946
+      },
+      {
+        "handle": "socotracafe.pgh",
+        "fans": 544,
+        "verified": false,
+        "videos": 1,
+        "plays": 27700,
+        "likes": 2287
+      },
+      {
+        "handle": "laurelkate_",
+        "fans": 1292,
+        "verified": false,
+        "videos": 1,
+        "plays": 27600,
+        "likes": 2351
+      },
+      {
+        "handle": "calsipos",
+        "fans": 73000,
+        "verified": false,
+        "videos": 3,
+        "plays": 21569,
+        "likes": 1647
+      },
+      {
+        "handle": "deluludayss",
+        "fans": 1290,
+        "verified": false,
+        "videos": 1,
+        "plays": 21400,
+        "likes": 2544
+      },
+      {
+        "handle": "alexgdeckerr",
+        "fans": 1111,
+        "verified": false,
+        "videos": 1,
+        "plays": 16400,
+        "likes": 934
+      },
+      {
+        "handle": "kellyroxyay",
+        "fans": 538,
+        "verified": false,
+        "videos": 2,
+        "plays": 16296,
+        "likes": 785
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7617949708450876685",
+        "url": "https://www.tiktok.com/@lyssad16/video/7617949708450876685",
+        "text": "neeeeedddd to try more tho! #coffee #pittsburgh #trending ",
+        "author": "lyssad16",
+        "plays": 44300,
+        "likes": 1933,
+        "posted": "2026-03-16T20:15:46.000Z"
+      },
+      {
+        "id": "7613871282186177805",
+        "url": "https://www.tiktok.com/@stephr0se8/video/7613871282186177805",
+        "text": "Some of my fave local coffee shops! Drop some more reccs for me to try 👇🏼\n#localcoffeeshop #pittsburgh #coffeetok #supportsmallbusiness #fyp ",
+        "author": "stephr0se8",
+        "plays": 31200,
+        "likes": 1946,
+        "posted": "2026-03-05T20:29:55.000Z"
+      },
+      {
+        "id": "7620574127971126542",
+        "url": "https://www.tiktok.com/@socotracafe.pgh/video/7620574127971126542",
+        "text": "New spot in Pittsburgh 🤎\nServing warm vibes, top-quality drinks, and fresh pastries 🥐☕️\nCome experience it for yourself ✨ #pittsburgh #412 #pgheats #yemenicoffee #socotracafepgh ",
+        "author": "socotracafe.pgh",
+        "plays": 27700,
+        "likes": 2287,
+        "posted": "2026-03-23T22:00:03.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-25T16:13:48.000Z",
+    "median_plays": 4509,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T16:11:12.981Z"
+  }
+}

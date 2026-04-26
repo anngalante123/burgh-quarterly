@@ -1,0 +1,250 @@
+[
+  {
+    "slug": "24-carrot-juice",
+    "name": "24 Carrot Juice",
+    "website": "https://www.twentyfourcarrotjuice.com/",
+    "instagram_handle": "twentyfourcarrotjuice",
+    "discovery_method": "search_match",
+    "confidence": "low",
+    "notes": "apify search; score=45; fullName=24 Carrot Juice"
+  },
+  {
+    "slug": "allegheny-coffee-tea-exchange",
+    "name": "Allegheny Coffee & Tea Exchange",
+    "website": "http://www.alleghenycoffee.com/",
+    "instagram_handle": "alleghenycoffee",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "commerce-bar",
+    "name": "Commerce Bar",
+    "website": null,
+    "instagram_handle": "commercebarpgh",
+    "discovery_method": "search_match",
+    "confidence": "high",
+    "notes": "apify search; score=100; fullName=Commerce Bar"
+  },
+  {
+    "slug": "delanies-coffee-shadyside",
+    "name": "Delanie's Coffee Shadyside",
+    "website": "https://delanies.coffee/",
+    "instagram_handle": "delaniescoffee",
+    "discovery_method": "manual",
+    "confidence": "high",
+    "notes": "manual (web search confirmed @delaniescoffee is the shared account across both Delanie's locations incl. Shadyside)"
+  },
+  {
+    "slug": "dobra-tea-pittsburgh",
+    "name": "Dobrá Tea Pittsburgh",
+    "website": "http://dobrateapgh.com/",
+    "instagram_handle": "dobrateapgh",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "everyday-noodles",
+    "name": "Everyday Noodles",
+    "website": "https://www.everydaynoodles.net/?lk=classic",
+    "instagram_handle": null,
+    "discovery_method": "none",
+    "confidence": null
+  },
+  {
+    "slug": "golden-age-beer-company",
+    "name": "Golden Age Beer Company",
+    "website": "http://www.goldenagebeer.com/",
+    "instagram_handle": "goldenagebeer",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "hidden-harbor",
+    "name": "Hidden Harbor",
+    "website": "http://www.hiddenharborpgh.com/",
+    "instagram_handle": "hiddenharborpgh",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "hop-farm-brewing-company",
+    "name": "Hop Farm Brewing Company",
+    "website": "http://hopfarmbrewingco.com/",
+    "instagram_handle": "hopfarmbrewing",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "jenis-splendid-ice-creams",
+    "name": "Jeni's Splendid Ice Creams",
+    "website": "https://jenis.com/blogs/scoop-shops/pittsburgh-pa",
+    "instagram_handle": "jenisicecreams",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "ka-fair-coffee-and-cakery",
+    "name": "Ka-Fair Coffee and Cakery",
+    "website": "https://kafaircakery.wixsite.com/kafair",
+    "instagram_handle": "kafair_cafe",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "kyo-matcha",
+    "name": "Kyo Matcha",
+    "website": "https://www.kyotomatcha.us/",
+    "instagram_handle": "kyomatchausa",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "la-gourmandine-hazelwood",
+    "name": "La Gourmandine Hazelwood",
+    "website": "https://lagourmandinebakery.com/",
+    "instagram_handle": "lagourmandinebakery",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "la-gourmandine-lawrenceville",
+    "name": "La Gourmandine Lawrenceville",
+    "website": "https://lagourmandinebakery.com/",
+    "instagram_handle": "lagourmandinebakery",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "lorelei",
+    "name": "Lorelei",
+    "website": "https://www.loreleipgh.com/",
+    "instagram_handle": "loreleipgh",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "margaux",
+    "name": "Margaux",
+    "website": "https://margauxpgh.com/",
+    "instagram_handle": "margauxpgh",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "meetcha",
+    "name": "MeetCha",
+    "website": "https://www.meetchapa.com/",
+    "instagram_handle": "meetcha_pgh",
+    "discovery_method": "manual",
+    "confidence": "high",
+    "notes": "manual (web search confirmed @meetcha_pgh matches meetchapa.com)"
+  },
+  {
+    "slug": "millies-homemade-ice-cream",
+    "name": "Millie's Homemade Ice Cream",
+    "website": "http://millieshomemade.com/",
+    "instagram_handle": "millies",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "mola",
+    "name": "Mola",
+    "website": "http://www.themolafish.com/",
+    "instagram_handle": "mola.pgh",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "nan-xiang-soup-dumplings-pittsburgh",
+    "name": "Nan Xiang Soup Dumplings - Pittsburgh",
+    "website": "https://nanxiangxiaolongbao.com/?utm_source=gbp&utm_medium=organic&utm_campaign=pittsburgh",
+    "instagram_handle": "nanxiangdumplings.pgh",
+    "discovery_method": "search_match",
+    "confidence": "medium",
+    "notes": "apify search; score=63; fullName=Nan Xiang Soup Dumplings | Pittsburgh"
+  },
+  {
+    "slug": "oishii-donburi",
+    "name": "Oishii Donburi",
+    "website": "https://www.oishiidonburi.com/",
+    "instagram_handle": "oishiidonburi",
+    "discovery_method": "search_match",
+    "confidence": "high",
+    "notes": "apify search; score=125; fullName=Oishiidonburi"
+  },
+  {
+    "slug": "pages",
+    "name": "Page's",
+    "website": "http://pagedairymart.com/",
+    "instagram_handle": "pagesdairymart",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "pusadees-garden",
+    "name": "Pusadee's Garden",
+    "website": "http://www.pusadeesgarden.com/",
+    "instagram_handle": "pusadeesgarden",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "reva-modern-indian-cuisine",
+    "name": "Reva Modern Indian Cuisine",
+    "website": "https://revapgh.com/?utm_source=google",
+    "instagram_handle": "reva_pgh",
+    "discovery_method": "manual",
+    "confidence": "high",
+    "notes": "manual (web search confirmed @reva_pgh is Reva Modern Indian Cuisine)"
+  },
+  {
+    "slug": "spot-of-coffee",
+    "name": "Spot of Coffee",
+    "website": null,
+    "instagram_handle": "spot.of.coffee",
+    "discovery_method": "search_match",
+    "confidence": "high",
+    "notes": "apify search; score=130; fullName=Spot of Coffee"
+  },
+  {
+    "slug": "square-cafe",
+    "name": "Square Cafe",
+    "website": "http://square-cafe.com/",
+    "instagram_handle": "squarecafepgh",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "tazza-doro",
+    "name": "Tazza D'Oro",
+    "website": "http://www.tazzadoro.net/",
+    "instagram_handle": "tazzadoro",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "the-butterwood-bake-consortium",
+    "name": "The Butterwood Bake Consortium",
+    "website": "http://www.thebutterwoodbakeconsortium.com/",
+    "instagram_handle": "thebutterwoodbakeconsortium",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "treat-ice-cream-and-liege-waffles",
+    "name": "Treat - Ice Cream and Liege Waffles",
+    "website": "http://www.treatpittsburgh.com/",
+    "instagram_handle": "treat_pgh",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  },
+  {
+    "slug": "waffallonia",
+    "name": "Waffallonia",
+    "website": "http://www.waffallonia.com/",
+    "instagram_handle": "waffallonia",
+    "discovery_method": "website_link",
+    "confidence": "high"
+  }
+]

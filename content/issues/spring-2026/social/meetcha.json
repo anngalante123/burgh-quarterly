@@ -1,0 +1,51 @@
+{
+  "slug": "meetcha",
+  "handle": "meetcha_pgh",
+  "followers": 366,
+  "follows": 7,
+  "posts_total": 36,
+  "posts_30d": 0,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.15328,
+  "verified": false,
+  "private": false,
+  "is_business_account": false,
+  "biography": "✨🧋Specialty Boba Cafe🧋✨",
+  "full_name": "MeetCha",
+  "last_post_at": "2026-01-24T19:26:06.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 134,
+      "end": 134,
+      "delta": 0,
+      "per_month": 0
+    },
+    "rating": {
+      "start": 4.8,
+      "end": 4.8,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 114,
+      "end": 115,
+      "delta": 1
+    }
+  },
+  "tiktok_mentions": {
+    "query": "meetcha pittsburgh",
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T16:04:38.961Z"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "everyday-noodles",
+  "themes": [
+    {
+      "phrase": "noodle soup quality",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Contender for best noodle soup in Pittsburgh"
+    },
+    {
+      "phrase": "handmade dim sum",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Fun to watch them make noodles, potstickers, and wontons"
+    },
+    {
+      "phrase": "soup dumplings and boba",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Can never go wrong with the soup dumplings. And of course some Boba."
+    },
+    {
+      "phrase": "server conduct",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "Server was incompetent and kept bringing out food that was not ordered"
+    },
+    {
+      "phrase": "welcoming staff",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Wonderful service, delicious food, kind and welcoming staff"
+    }
+  ],
+  "notable_quote": "Contender for best noodle soup in Pittsburgh.",
+  "sentiment_summary": "Reviewers rally around the handmade noodles, soup dumplings, and the open-kitchen theater, while a small cluster of service complaints, one involving a tip dispute on Chinese New Year, dents an otherwise strong sentiment floor.",
+  "quarter_narrative": "Twenty-six Pittsburgh creators filmed Everyday Noodles this quarter and generated just over 19 million TikTok plays, including a single video from @joshua.guitar that cleared 11.4 million on its own. The business has no indexed Instagram and no TikTok account of its own, so every one of those views landed somewhere other than a profile it controls. That gap is the defining story of its Spring 2026: the city is deeply curious about this place, and the place has no channel to receive that curiosity. Within the Pittsburgh Asian Kitchens family, Everyday Noodles ranks third behind Mola, whose lead is built on creator collaboration fit, a signal Everyday Noodles is uniquely positioned to close given the volume of unsolicited creator attention it already draws. Moving from Ones to Watch toward a higher tier runs through one thing: building a social presence that catches what the city is already throwing.",
+  "tldr_read": "Nineteen million TikTok plays with no account to show for it, and 2,216 Google reviews anchoring a strong floor. Ones to Watch, #1 in Pittsburgh Noodle Shops.",
+  "tldr_meaning": "The creator signal is already enormous and the review base is deep; the rank ceiling is held down entirely by the absence of any owned social presence to consolidate that attention.",
+  "diagnosis_pullquote": {
+    "line": "First In Noodles On 19 Million Plays It Never Captured.",
+    "highlight": "19 Million Plays"
+  },
+  "playbook": [
+    {
+      "headline": "Claim the TikTok account now",
+      "action": "26 creators have already done the work; an owned account turns 19 million plays into a followable destination instead of a dead end.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "CAPTURE THE SIGNAL"
+    },
+    {
+      "headline": "Open an indexed Instagram presence",
+      "action": "No Instagram handle is indexed anywhere; 1,873 Google photos prove the visual material already exists to populate a feed immediately.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+15 IG MOMENTUM"
+    },
+    {
+      "headline": "Address the service pattern publicly",
+      "action": "Two service complaints, including a specific tip-dispute allegation, are sitting unaddressed; a direct owner response raises sentiment ceiling and signals accountability.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+SENTIMENT FLOOR"
+    }
+  ],
+  "review_count": 9,
+  "analyzed_at": "2026-04-26T22:24:51.313Z",
+  "model": "claude-sonnet-4-6"
+}

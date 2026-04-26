@@ -1,0 +1,88 @@
+{
+  "slug": "la-gourmandine-hazelwood",
+  "name": "La Gourmandine Hazelwood",
+  "category": "bakery",
+  "neighborhood": "Hazelwood",
+  "address": "5013 Second Ave, Pittsburgh, PA 15207",
+  "website": "https://lagourmandinebakery.com/",
+  "google_rating": 4.8,
+  "google_review_count": 525,
+  "review_freshness_days": 3,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHlgLyG8MItvtV2OyXBpfVfioMTlxhRLjRSuPSwJy49o9X_FoZ6yqbZAnBAjSWUio6DHEHKZUW7Y8y9Y3uRxMefEI4dmDQjw4iFNQN8Vz63SxnpR9AAl9GjZRWScYMT4d7H-avN=w408-h544-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHlgLyG8MItvtV2OyXBpfVfioMTlxhRLjRSuPSwJy49o9X_FoZ6yqbZAnBAjSWUio6DHEHKZUW7Y8y9Y3uRxMefEI4dmDQjw4iFNQN8Vz63SxnpR9AAl9GjZRWScYMT4d7H-avN=w408-h544-k-no",
+  "review_keywords": [],
+  "created_at": "2026-04-22T14:51:45.632Z",
+  "updated_at": "2026-04-22T14:51:45.632Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJaZlklLfxNIgRgfeD2AfwL94",
+    "categoryName": "Pastry shop",
+    "imagesCount": 304,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Baking",
+      "Croissant",
+      "Cake",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 291-8146",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 7,
+      "twoStar": 6,
+      "threeStar": 12,
+      "fourStar": 38,
+      "fiveStar": 462
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Excelente panadería, todo es 😋 delicioso",
+      "Le Gourmandine can be put on any corner in Paris France and it would be packed. I'm telling you this from experience. Please do not miss this Hidden gem in Pittsburgh. Actually there are multiple locations so please make sure you check it out and make sure you get the raspberry lychee macaroon, it is gluten free made with almond flour and it is the best thing I've ever put in my mouth hands down",
+      "Simply amazing",
+      "Great baked goods"
+    ],
+    "keywordPhrases": []
+  },
+  "_score": {
+    "business_slug": "la-gourmandine-hazelwood",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 84,
+      "community_spark": 86,
+      "conversion_path": 100,
+      "momentum": 20,
+      "collab_fit": 84
+    },
+    "composite": 75,
+    "tier": "ones_to_watch",
+    "rank_category": 1,
+    "rank_neighborhood": 1,
+    "rank_overall": 16,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "community affection",
+      "evidence": "525 Google reviews with a review in the last 3 days — the highest community-spark reading in this issue's set."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

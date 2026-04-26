@@ -1,0 +1,144 @@
+{
+  "slug": "square-cafe",
+  "handle": "squarecafepgh",
+  "followers": 7252,
+  "follows": 440,
+  "posts_total": 1896,
+  "posts_30d": 11,
+  "reels_30d": 2,
+  "avg_engagement_rate": 0.00188,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Specializing in fresh breakfast & lunch foods made with local ingredients and lots of love.\n134 S Highland Ave Pittsburgh, PA 15206",
+  "full_name": "Square Cafe",
+  "last_post_at": "2026-04-22T12:37:24.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 1833,
+      "end": 1839,
+      "delta": 6,
+      "per_month": 7.21
+    },
+    "rating": {
+      "start": 4.5,
+      "end": 4.5,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 1358,
+      "end": 1386,
+      "delta": 28
+    }
+  },
+  "tiktok_mentions": {
+    "query": "square cafe pittsburgh",
+    "video_count": 14,
+    "total_plays": 317083,
+    "total_likes": 16073,
+    "unique_creators": 13,
+    "top_creators": [
+      {
+        "handle": "cbspittsburgh",
+        "fans": 87300,
+        "verified": true,
+        "videos": 1,
+        "plays": 98700,
+        "likes": 6944
+      },
+      {
+        "handle": "sfax_planner",
+        "fans": 91500,
+        "verified": false,
+        "videos": 1,
+        "plays": 70900,
+        "likes": 2548
+      },
+      {
+        "handle": "squarecafe.lb",
+        "fans": 9926,
+        "verified": false,
+        "videos": 1,
+        "plays": 61500,
+        "likes": 1079
+      },
+      {
+        "handle": "arjunmanjunath_",
+        "fans": 57700,
+        "verified": false,
+        "videos": 1,
+        "plays": 31800,
+        "likes": 1995
+      },
+      {
+        "handle": "laurelkate_",
+        "fans": 1292,
+        "verified": false,
+        "videos": 1,
+        "plays": 27600,
+        "likes": 2351
+      },
+      {
+        "handle": "iamshadyhendrix",
+        "fans": 3214,
+        "verified": false,
+        "videos": 1,
+        "plays": 13500,
+        "likes": 633
+      },
+      {
+        "handle": "squarecafe.1",
+        "fans": 1240,
+        "verified": false,
+        "videos": 1,
+        "plays": 8002,
+        "likes": 314
+      },
+      {
+        "handle": "square_coffee_shop",
+        "fans": 188,
+        "verified": false,
+        "videos": 1,
+        "plays": 1509,
+        "likes": 28
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7620457050283363615",
+        "url": "https://www.tiktok.com/@cbspittsburgh/video/7620457050283363615",
+        "text": "A large gathering of young people in Pittsburgh's Market Square got out of control and ended with three people taken into custody.\n\nAccording to Pittsburgh Public Safety, the incident happened around 5:30 p.m. Sunday when a fight broke out ",
+        "author": "cbspittsburgh",
+        "plays": 98700,
+        "likes": 6944,
+        "posted": "2026-03-23T14:26:05.000Z"
+      },
+      {
+        "id": "7629057936995683591",
+        "url": "https://www.tiktok.com/@sfax_planner/video/7629057936995683591",
+        "text": "Adresse جديدة في صفاقس 🎉🎉🎉\n@square_coffee_shop 🔥\n📍 Ceinture Bourguiba Manzel cheker vers el Ain \n\n#sfaxplanner #sfax #ɪɴsᴛᴀʀᴇᴇʟs #tunisie🇹🇳 #صفاقس ",
+        "author": "sfax_planner",
+        "plays": 70900,
+        "likes": 2548,
+        "posted": "2026-04-15T18:41:16.000Z"
+      },
+      {
+        "id": "7609336189098806546",
+        "url": "https://www.tiktok.com/@squarecafe.lb/video/7609336189098806546",
+        "text": "After Iftar at Square Café 🌙✨\nThe table is full, the vibes are warm, and the night is just getting started 🤍\nFrom fresh desserts to late-night coffee, every moment tastes better after Iftar.\nRamadan nights hit different here… ✨\n\n#RamadanN",
+        "author": "squarecafe.lb",
+        "plays": 61500,
+        "likes": 1079,
+        "posted": "2026-02-21T15:10:50.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-22T23:41:05.000Z",
+    "median_plays": 4756,
+    "detected_own_handle": "squarecafe.lb",
+    "scraped_at": "2026-04-26T16:12:03.559Z"
+  }
+}

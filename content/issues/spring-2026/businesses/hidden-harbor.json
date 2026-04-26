@@ -1,0 +1,89 @@
+{
+  "slug": "hidden-harbor",
+  "name": "Hidden Harbor",
+  "category": "restaurant",
+  "neighborhood": "Squirrel Hill South",
+  "address": "1708 Shady Ave, Pittsburgh, PA 15217",
+  "website": "http://www.hiddenharborpgh.com/",
+  "google_rating": 4.6,
+  "google_review_count": 765,
+  "review_freshness_days": 6,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGQKiPFr7p37oxYB0WnEtcEZDnrumhStziNaCJ9AQpyAxqfRCpL4LHfrXgSHT4KdU5zspu4a35VqQWwRRnbuJ_UBd1tVjo0-BLGbsYBlkEcvukDx0l4eQHC2-YUWTlvH_71qIQyWg=w408-h311-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGQKiPFr7p37oxYB0WnEtcEZDnrumhStziNaCJ9AQpyAxqfRCpL4LHfrXgSHT4KdU5zspu4a35VqQWwRRnbuJ_UBd1tVjo0-BLGbsYBlkEcvukDx0l4eQHC2-YUWTlvH_71qIQyWg=w408-h311-k-no",
+  "review_keywords": [],
+  "created_at": "2026-04-22T14:51:45.641Z",
+  "updated_at": "2026-04-22T14:51:45.641Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJLZHGBgDyNIgR_loKsLl7JI4",
+    "categoryName": "Bar",
+    "imagesCount": 1086,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Mai Tai",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 422-5040",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 26,
+      "twoStar": 13,
+      "threeStar": 26,
+      "fourStar": 111,
+      "fiveStar": 589
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Stopped in for a couple of drinks with the wife. We were able to sit, not quite at the bar per se, but at a cute two person teak counter with a lamp in the second room that faces towards the bar with bar service. Anyway, drinks were a bit pricey but they go all out with these things. Each drink has its own unique glass/mug, some of which you can buy to take home. The menu has a rating system to let you know how strong each drink is and they have a few non-alcoholic drinks as well.\n\nWe didn’t have any food, but the menu looked enticing, so when we come back I’m sure we’ll sample some items.",
+      "Came here for our 5 year anniversary. The drinks were incredible and the staff were attentive. My favorite was the odyssey. The vegan rangoons had a great texture and flavor.",
+      "This is officially my favorite bar. Tiki isn’t just a theme, it’s a movement.",
+      "Really fun atmosphere with great drinks, a full tiki tropical experience! Any of the drinks are amazing, with fun unique flavors and cups too! Plus the staff is super excited to give recommendations (which are needed with how many options they have!), super fun for a novel night out!",
+      "Some of the best tiki drinks in the U.S. staff is always very helpful and friendly",
+      "The drinks are delicious, but what really keeps me coming back is the impeccable service. Heads up - there is a 20% auto gratuity, but the bartender let us know beforehand and I tipped him extra on top of that anyways because he deserved it. If you’re looking for a good spot for a drink in Pittsburgh, I could not recommend this place more. There’s a wide variety of options for everybody, including a couple mocktails on the menu for those who don’t drink/play designated driver.",
+      "I am mixed.  It’s a great atmosphere - and the drinks are creative and thoughtful - but this is a cash grab kind of place- they’ll take from you whatever they can.\n\nFirst, the vibe is what hits you immediately.  It’s well done and thoughtfully curated - all in a relaxed yet festive way.  I like it a lot.\n\nThe drinks are also creative and artistic.  You can tell that people who came up w\nthem are very knowledgeable and playful. The drinks all tend to taste great and hit you in a very positive way.\n\nHowever there are couple things I don’t love - and at times truly resent.  First is the value incl the way they are misleading.  I got a ‘very strong’ (called out on the menu) tiki drink at a price of around $20.  But after talking to the server, it only had I think 1.5 shots of liquor.  Like, fine, 1.5 shots, but do not advertise like it’s alcohol-packed for what you are paying.\n\nThe staff was also a little weird.  The server did not pick up on subtle clues that we didn’t want to have an extended conversation with them.  Fine, nbd.\n\nAlso, As stated before, there is a 20% forced gratuity.  I personally dislike these ‘forced costs’ as my original review mentions.  They of course yet again don’t mention that it’s included, but at least this time they didn’t hide it from the bill, like they did when I first came.\n\nAt the end I feel mixed about this place - just like its sister restaurant next door.  They do  ambiance and taste/creativity well. But, at the end, they are more about extracting money from you than they are about creative food done w respect.  It’s almost like they don’t have pgh values at their core, and perhaps why places like this bother me so much.\n\n——-original review from 2022-ish\n\ngreat artisan drinks, but the tipping thing is annoying, borderline on manipulative\n\nauto 20% tip that is hidden.  no one tells you. all you see is a receipt that says total, plus tip line and a place to sign, no mention of 20%, which is buried under 3 other pieces of paper\n\nof course the server doesn't mention included gratuity\n\nbut also, when you're buying 17 dollar drinks, can't the owners pay the servers enough so they don't have to add another 4 dollars to each drink?  come on"
+    ],
+    "keywordPhrases": []
+  },
+  "_score": {
+    "business_slug": "hidden-harbor",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 81,
+      "community_spark": 76,
+      "conversion_path": 100,
+      "momentum": 50,
+      "collab_fit": 78
+    },
+    "composite": 77,
+    "tier": "ones_to_watch",
+    "rank_category": 1,
+    "rank_neighborhood": 3,
+    "rank_overall": 10,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "social momentum",
+      "evidence": "Social momentum is the standout here — awaiting Instagram data in the next scrape to show the exact margin."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

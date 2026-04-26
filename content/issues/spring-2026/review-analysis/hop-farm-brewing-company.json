@@ -1,0 +1,76 @@
+{
+  "slug": "hop-farm-brewing-company",
+  "themes": [
+    {
+      "phrase": "Bradley and front of house",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Bradley, the manager, was great. I'll definitely go back!"
+    },
+    {
+      "phrase": "IPA and tap list",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "This brewery has a lot of IPAs: that is a positive for me. They let us taste around 5 different beers before we made a decision."
+    },
+    {
+      "phrase": "Yinser Cheesesteak and food",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "I would get it again. It was big, the cheesesteak was very good."
+    },
+    {
+      "phrase": "event and party room",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "We had a great time in the party room right in front of the open garage door on a pleasant weekend afternoon."
+    },
+    {
+      "phrase": "ordering system confusion",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "It's been QR codes, then table service, and now suddenly you have to order at the bar, with no clear communication."
+    },
+    {
+      "phrase": "space and atmosphere",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Beautiful area. Absolutely love the lights and the live edge tables."
+    }
+  ],
+  "notable_quote": "The key, I WILL BE HERE AGAIN.",
+  "sentiment_summary": "Reviewers keep coming back for the tap list depth, the Yinser Cheesesteak, and a front-of-house staff anchored by a manager named Bradley who shows up by name in at least four separate reviews; the one consistent friction point is an ordering system that has cycled through enough formats to leave guests genuinely confused about how to get a beer.",
+  "quarter_narrative": "Twenty-one Pittsburgh creators posted about Hop Farm this quarter, generating nearly 171,000 TikTok plays across the full spread of the platform, while the brewery itself has no TikTok presence to collect any of it. That gap is the defining tension of its Spring 2026. On its own Instagram, Hop Farm has been active, 12 posts and 4 reels in 30 days, but a 0.47 percent engagement rate suggests the content isn't translating into the kind of feed momentum that pulls new visitors in. In the Bars family, Hidden Harbor holds the top spot specifically on social momentum; Hop Farm's path to that position runs through converting its substantial creator heat into something the business owns and builds on.",
+  "tldr_read": "Dominant TikTok creator coverage and a deep review base, but near-zero engagement on its own Instagram and no TikTok account to capture 170,000-plus plays already out there. Ones to Watch, #1 in Pittsburgh Breweries.",
+  "tldr_meaning": "The creator signal is already firing at scale without the business; the rank ceiling lifts when Hop Farm's own channels start intercepting the energy the city is generating around it.",
+  "diagnosis_pullquote": {
+    "line": "Number One In Breweries, Powered By 21 Creators. The Business Captures None Of That Signal.",
+    "highlight": "21 Creators"
+  },
+  "playbook": [
+    {
+      "headline": "Start a TikTok account this week",
+      "action": "Twenty-one creators generated 170,828 plays tagging Hop Farm this quarter; a business account captures future tags, replies, and discovery that currently go nowhere.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "CAPTURE 170K PLAYS"
+    },
+    {
+      "headline": "Turn reels into review moments",
+      "action": "Four reels in 30 days is a workable pace, but 0.47 percent engagement suggests content is not prompting saves or shares; build each reel around a specific product, the Yinser Cheesesteak or a featured IPA, to sharpen the conversion signal.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+ENGAGEMENT RATE"
+    },
+    {
+      "headline": "Pin the ordering system and communicate it",
+      "action": "One reviewer left without ordering after sitting ignored; a single clear sign at entry stating the current service model costs nothing and protects the 80 percent five-star review rate.",
+      "signal": "conversion_path",
+      "priority": "low",
+      "impact_label": "PROTECT 5-STAR RATE"
+    }
+  ],
+  "review_count": 9,
+  "analyzed_at": "2026-04-26T22:26:04.581Z",
+  "model": "claude-sonnet-4-6"
+}

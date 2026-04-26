@@ -16,7 +16,8 @@
     "scrape:own-posts": "tsx scripts/scrape-business-own-posts.ts",
     "generate:lists": "tsx scripts/generate-list.ts",
     "generate:posts": "tsx scripts/generate-creator-posts.ts",
-    "generate:by-posts": "tsx scripts/generate-by-posts.ts"
+    "generate:by-posts": "tsx scripts/generate-by-posts.ts",
+    "snapshot:issue": "tsx scripts/snapshot-issue.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.90.0",

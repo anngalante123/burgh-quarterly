@@ -1,0 +1,97 @@
+{
+  "slug": "underrated-cafes",
+  "title": "Pittsburgh's Most Underrated Cafes",
+  "subtitle": "Coffee, tea, juice. Loved locally, not yet viral.",
+  "angle": "the cafes that Pittsburgh regulars rave about in reviews but the broader internet hasn't caught up to. Quietly excellent, quietly under-followed.",
+  "intro": "Pittsburgh's best cafes have a reputation problem, and it runs in one direction only. The regulars know. The reviews reflect it. The internet just hasn't caught up yet. This quarter's underrated list is defined less by quality gaps than by attention gaps: places the city has quietly decided are essential, while the broader conversation moves on to whatever opened last week with a better content strategy.\n\nThe signals are specific enough to be worth naming. Dobrá Tea in Squirrel Hill South sits first in Pittsburgh tea on 1,107 reviews, with ten creators already posting unprompted, while the account itself has posted once. 24 Carrot Juice in Bloomfield has accumulated 1.45 million plays from creators it has no account to receive. These are not businesses that need discovery. They need the gap between what the city is already saying and what the business is doing closed.\n\nWhat's worth noting: the infrastructure for that closure already exists. Creators are looking for places to feature, and the platforms that connect them to businesses like these work without anyone having to pitch cold. The owners who move first on this tend to move cheap.\n\nIssue 02, out Summer 2026, tracks whether any of this quarter's five have closed the distance.",
+  "items": [
+    {
+      "rank": 1,
+      "business_slug": "24-carrot-juice",
+      "name": "24 Carrot Juice",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Bloomfield",
+      "descriptor": "Number One In Juice, Carried By 1.45 Million Creator Plays It Has No Account To Receive.",
+      "descriptor_highlight": "1.45 Million Creator Plays",
+      "stat_line": "519 reviews · 5★ · 30 creators · 1.5M plays · 3 IG posts/30d",
+      "featured_tiktok": {
+        "author": "amalkzad",
+        "plays": 671100,
+        "url": "https://www.tiktok.com/@amalkzad/video/7625691066913656078",
+        "caption": "Carrot juice glow up ✨ @Ninja Kitchen \n\n•8 carrots\n• 1 piece of beet\n• Ginger (to taste)\n• Turmeric (to taste)\n• 1 apple\n• 1 orange\n• 1 lemon\n• Coconut water 500 ml\n• Water\n• Optional: a pinch of black pepper"
+      },
+      "playbook_top_move": "Open a TikTok account this quarter. Thirty creators posted 33-plus videos with 1.45 million plays; a business account exists nowhere to redirect that traffic."
+    },
+    {
+      "rank": 2,
+      "business_slug": "meetcha",
+      "name": "MeetCha",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Squirrel Hill South",
+      "descriptor": "Fourth In Pittsburgh Cafes, Held There By Word Of Mouth Alone. The Feed Has Gone Silent.",
+      "descriptor_highlight": "Word Of Mouth Alone",
+      "stat_line": "134 reviews · 4.8★",
+      "playbook_top_move": "Restart the Instagram feed this week. The account has been silent for 92 days; one post per week featuring the milk tea would reopen the momentum signal."
+    },
+    {
+      "rank": 3,
+      "business_slug": "ka-fair-coffee-and-cakery",
+      "name": "Ka-Fair Coffee and Cakery",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Morningside",
+      "descriptor": "Third In Cafes, Carried By A City That Posts More Than The Cafe Does.",
+      "descriptor_highlight": "City That Posts More",
+      "stat_line": "235 reviews · 4.8★ · 28 creators · 1.0M plays · 3 IG posts/30d",
+      "featured_tiktok": {
+        "author": "dailysipclub8",
+        "plays": 617500,
+        "url": "https://www.tiktok.com/@dailysipclub8/video/7625180370853530902",
+        "caption": "ube vanilla velvet matcha latte.\n.\n.\nrecipe \n250ml milk \n50ml matcha \n2 pumps vanilla syrup \n\nube cold foam \n3 tbsp double cream \n2 tbsp milk \n1 tsp ube powder \nmix until thick pour \n\n#matcha #matchapowder #coffee #morningroutine "
+      },
+      "playbook_top_move": "Start a TikTok account this week. Twenty-eight creators have already built the visual vocabulary; a Ka-Fair account can inherit that audience immediately by stitching or reposting the top-performing videos."
+    },
+    {
+      "rank": 4,
+      "business_slug": "dobra-tea-pittsburgh",
+      "name": "Dobrá Tea Pittsburgh",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Squirrel Hill South",
+      "descriptor": "First In Tea On 1,107 Reviews. Ten Creators Are Posting, The Account Posted Once.",
+      "descriptor_highlight": "Ten Creators Are Posting",
+      "stat_line": "1,107 reviews · 4.7★ · 10 creators · 10K plays · 1 IG posts/30d",
+      "featured_tiktok": {
+        "author": "alexgdeckerr",
+        "plays": 2589,
+        "url": "https://www.tiktok.com/@alexgdeckerr/video/7600517334402452767",
+        "caption": "The Bombay chai is a MUST TRY at Dobrah tea in Squirrel Hill Pittsburgh!! Follow for more Pittsburgh content💓 #pittsburgh #pittsburghpa #pittsburghcheck #pittsburghrestaurants #pittsburghdatenight "
+      },
+      "playbook_top_move": "Restart the Instagram posting cadence. One post in the last 30 days and zero reels puts Dobrá well below the family median of 44 on Instagram momentum; a twice-weekly cadence with one reel per week would close that gap measurably."
+    },
+    {
+      "rank": 5,
+      "business_slug": "the-butterwood-bake-consortium",
+      "name": "The Butterwood Bake Consortium",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Lawrenceville",
+      "descriptor": "Second In Cafes, Carried By 600K Plays The Business Never Made.",
+      "descriptor_highlight": "600K Plays The",
+      "stat_line": "736 reviews · 4.6★ · 20 creators · 599K plays",
+      "featured_tiktok": {
+        "author": "easternpanhandlefoodie",
+        "plays": 190300,
+        "url": "https://www.tiktok.com/@easternpanhandlefoodie/video/7622415816557956365",
+        "caption": "This isn’t fruit… and it actually tastes like it is 🤯🍓\n\nThis new spot Layers Bakery & Café in Martinsburg is doing those viral fruit desserts, and yeah… they’re legit.\n\nThey’re made of mousse, but somehow taste exactly like the fruit the"
+      },
+      "playbook_top_move": "Restart Instagram after 515 idle days. Post twice a week minimum; the visual catalog already has 984 Google photos to draw from as proof of concept."
+    }
+  ],
+  "query": {
+    "filter": {
+      "family": "cafes"
+    },
+    "ranking": "underrated",
+    "limit": 5
+  },
+  "generated_at": "2026-04-26T22:36:47.081Z",
+  "model": "claude-sonnet-4-6"
+}

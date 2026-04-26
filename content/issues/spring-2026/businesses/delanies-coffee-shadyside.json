@@ -1,0 +1,101 @@
+{
+  "slug": "delanies-coffee-shadyside",
+  "name": "Delanie's Coffee Shadyside",
+  "category": "boutique",
+  "neighborhood": "Shadyside",
+  "address": "200 S Highland Ave, Pittsburgh, PA 15206",
+  "website": "https://delanies.coffee/",
+  "google_rating": 4.6,
+  "google_review_count": 104,
+  "review_freshness_days": 2,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG8-ptsLB8l_Cy25dYOxrUM_3cK2zv6smvKx8IML3DLFgrLsTxtem9RGPt5FTrPSRSbtQ3YNMhvU0GZFRr3FyBygOVSYAXypgefONsK-xZRYTsUcxEqXjrDg8rG7qvdgMNfe3Zkqw=w408-h544-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG8-ptsLB8l_Cy25dYOxrUM_3cK2zv6smvKx8IML3DLFgrLsTxtem9RGPt5FTrPSRSbtQ3YNMhvU0GZFRr3FyBygOVSYAXypgefONsK-xZRYTsUcxEqXjrDg8rG7qvdgMNfe3Zkqw=w408-h544-k-no",
+  "review_keywords": [
+    "strawberry matcha"
+  ],
+  "created_at": "2026-04-22T14:51:45.639Z",
+  "updated_at": "2026-04-22T14:51:45.639Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJ50W4oq_zNIgRjzb26pH9LAk",
+    "categoryName": "Coffee shop",
+    "imagesCount": 96,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Iced coffee",
+      "Coffee",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [
+      "Identifies as women-owned",
+      "Small business"
+    ],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(717) 431-2247",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 4,
+      "twoStar": 2,
+      "threeStar": 3,
+      "fourStar": 10,
+      "fiveStar": 85
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Iced tiramisu latte was delicious!",
+      "The strawberry matcha here might be the best I’ve ever had. The coffee, food, and overall cafe vibe is fantastic. I just wish this place was bigger, gets packed quickly!",
+      "best coffee around",
+      "there were a lot of good options for drinks! both drinks my sister and I tried were delicious.",
+      "I love their strawberry matcha!! Just the right touch of sweetness to brighten my day!! Also the workers are so nice every time I visit!",
+      "2 reasons for the 3 stars:\n1. I asked for a blueberry muffin, received a raisin/walnut muffin, let them know, I had to pay for a new muffin.\n2. The wi-fi isn’t good enough to work from here so I wouldn’t come back for that.",
+      "Cozy little coffee shop with tasty drinks. We liked all the drinks we ordered though mine was definitely on the sweet side. Service was great and it is pretty busy with not much staff but they get the job done.\nThe menu options are standard coffee shop drinks as well as seasonal/ specialties. For food they have sandwiches, bagels, waffles, and assorted fresh baked goods. There are also some prepackaged snacks and drinks. Non food items include candles, mugs, cards, etc. No parking lot so you have to park on the street."
+    ],
+    "keywordPhrases": [
+      {
+        "text": "strawberry matcha",
+        "count": 2,
+        "exampleQuote": "The strawberry matcha here might be the best I’ve ever had."
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "delanies-coffee-shadyside",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 68,
+      "community_spark": 60,
+      "conversion_path": 100,
+      "momentum": 45,
+      "collab_fit": 96
+    },
+    "composite": 72,
+    "tier": "ones_to_watch",
+    "rank_category": 4,
+    "rank_neighborhood": 4,
+    "rank_overall": 21,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "creator collaboration fit",
+      "evidence": "Clear neighborhood identity in Shadyside (Identifies as women-owned, Small business) — a natural match for local creator audiences."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

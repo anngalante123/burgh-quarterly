@@ -1,0 +1,70 @@
+{
+  "slug": "ka-fair-coffee-and-cakery",
+  "themes": [
+    {
+      "phrase": "coffee never bitter",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Coffee that is NEVER bitter. And this place is so cute."
+    },
+    {
+      "phrase": "baked goods standout",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "The crepe cake was delicious and beautiful presentation!"
+    },
+    {
+      "phrase": "zoo-day breakfast stop",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Came here with some friends before the zoo for a light breakfast and coffee."
+    },
+    {
+      "phrase": "tiramisu latte texture issue",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The cake got a little soggy in the coffee. I kind of wish it was included on the side."
+    },
+    {
+      "phrase": "charming neighborhood feel",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Charming place and the locals clearly love it. We enjoyed chatting with the regulars."
+    }
+  ],
+  "notable_quote": "The coffee here is so good it taught my boyfriend how to whistle, he has never been able to whistle in his life, but after a sip he let out a perfect one.",
+  "sentiment_summary": "Reviewers rally around the coffee's lack of bitterness and the standout baked goods, particularly the quiche, banoffee, and crepe cake; the one recurring nitpick is textural, specifically the tiramisu cake topping going soggy when placed directly in the latte.",
+  "quarter_narrative": "Twenty-eight Pittsburgh creators have filmed inside Ka-Fair Coffee and Cakery this quarter, generating over a million TikTok plays, and the business has posted three times to Instagram in the last thirty days and has no TikTok presence of its own. The top video alone, a recipe-style reel from @dailysipclub8 featuring an ube vanilla velvet matcha latte, pulled 617,500 plays without a single frame of it coming from the cafe's own account. That gap, the city treating Ka-Fair as a backdrop while the cafe sits quietly in Morningside, is the clearest editorial story of this issue's cafe family; the leader, Allegheny Coffee and Tea Exchange, got to the top on social momentum, and Ka-Fair's own momentum axis is the thinnest number on its sheet. A TikTok account and a consistent reels cadence are the two moves that would make the creator energy already in market work for the rank instead of around it.",
+  "tldr_read": "A million TikTok plays from creators, three Instagram posts this month, and no TikTok account of its own. Ones to Watch, #3 in Pittsburgh Cafes.",
+  "tldr_meaning": "The creator layer is already producing at scale; if Ka-Fair enters TikTok and raises its Instagram posting cadence, the social signals that are currently missing from its own channels would close fast.",
+  "diagnosis_pullquote": {
+    "line": "Third In Cafes, Carried By A City That Posts More Than The Cafe Does.",
+    "highlight": "City That Posts More"
+  },
+  "playbook": [
+    {
+      "headline": "Start a TikTok account this week",
+      "action": "Twenty-eight creators have already built the visual vocabulary; a Ka-Fair account can inherit that audience immediately by stitching or reposting the top-performing videos.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "CAPTURE 1M PLAYS"
+    },
+    {
+      "headline": "Post to Instagram at least three times weekly",
+      "action": "Three posts in thirty days puts the Instagram engagement rate at 1.74 percent; doubling cadence with reels, not static images, is the fastest path to closing the gap with the family median.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+VISUAL RANK"
+    },
+    {
+      "headline": "Photograph every menu category on Google",
+      "action": "146 photos across 9 categories is a reasonable base, but the visual catalog sits below the family median of 77; targeted shots of the banoffee, crepe cake, and quiche would fill the most-searched food categories.",
+      "signal": "conversion_path",
+      "priority": "low",
+      "impact_label": "+VISUAL SIGNAL"
+    }
+  ],
+  "review_count": 9,
+  "analyzed_at": "2026-04-26T22:26:56.846Z",
+  "model": "claude-sonnet-4-6"
+}

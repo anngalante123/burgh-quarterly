@@ -1,0 +1,76 @@
+{
+  "slug": "pusadees-garden",
+  "themes": [
+    {
+      "phrase": "reservation difficulty",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "getting a reservation can be quite challenging"
+    },
+    {
+      "phrase": "beautiful interior atmosphere",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "very unassuming from the outside, but absolutely beautiful"
+    },
+    {
+      "phrase": "17 ingredient salad",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "standouts were the 17 ingredient salad and the yellow roti"
+    },
+    {
+      "phrase": "price-to-portion value",
+      "frequency": 3,
+      "sentiment": "negative",
+      "exampleQuote": "you can get the same meal at a different place for less"
+    },
+    {
+      "phrase": "shrimp tom yum standout",
+      "frequency": 1,
+      "sentiment": "positive",
+      "exampleQuote": "the shrimp tom yum, I've never had anything like it"
+    },
+    {
+      "phrase": "front-of-house communication",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "a little more proactive communication from the front-of-house team would make the experience even better"
+    }
+  ],
+  "notable_quote": "This place is the love of my life.",
+  "sentiment_summary": "Reviewers consistently praise the room, the curries, and specific menu items like the 17-ingredient salad and shrimp tom yum, but a recurring undercurrent of frustration around reservation logistics, portion sizing relative to price, and front-of-house attentiveness keeps the ceiling from being higher.",
+  "quarter_narrative": "Sixteen creators filmed Pusadee's Garden on TikTok this quarter, generating 3.4 million plays across 17 videos, none of which the restaurant had any hand in creating. The business posted twice to Instagram in the past 30 days, has no bio on its profile, and has no TikTok presence of its own. The city is effectively producing its promotional content for free, and the restaurant is not in the conversation. That contrast is the defining story of its Spring 2026. In the Pittsburgh Asian Kitchens family, Mola holds the top position this issue on the strength of creator collaboration fit, a signal Pusadee's Garden has the raw material to compete on given its room, its plating, and 1,892 Google photos already in circulation. Closing the gap between what creators are producing about this place and what the business says about itself is the clearest path toward the Icons tier.",
+  "tldr_read": "Dominant review depth, 3.4 million TikTok plays it did not generate, and an Instagram presence that is effectively on standby. Ones to Watch, #1 in Pittsburgh Thai Restaurants.",
+  "tldr_meaning": "The review foundation and creator attention are already there; the trajectory toward Icons stalls until the business builds a social presence capable of catching what the city is already throwing at it.",
+  "diagnosis_pullquote": {
+    "line": "First In Pittsburgh Thai On Review Depth Alone. The City Is Posting, The Garden Is Not.",
+    "highlight": "The City Is Posting"
+  },
+  "playbook": [
+    {
+      "headline": "Build an Instagram presence that actually exists",
+      "action": "Add a bio, establish a posting cadence above two posts per month, and publish at least two Reels before next quarter to lift an engagement rate sitting at 0.83 percent.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "REOPEN SIGNAL"
+    },
+    {
+      "headline": "Capture the creator wave already filming you",
+      "action": "Sixteen unique creators produced 3.4 million TikTok plays this quarter without any coordination from the restaurant; a single owned TikTok account would begin converting that reach into a followable brand.",
+      "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "UNLOCK REACH"
+    },
+    {
+      "headline": "Address the reservation friction publicly",
+      "action": "Two reviews this quarter cite the booking system as broken or confusing; a pinned response policy and clearer walk-in bar communication could shift the 14 percent of reviews that are not five-star.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+4 SENTIMENT PTS"
+    }
+  ],
+  "review_count": 8,
+  "analyzed_at": "2026-04-26T22:31:29.547Z",
+  "model": "claude-sonnet-4-6"
+}

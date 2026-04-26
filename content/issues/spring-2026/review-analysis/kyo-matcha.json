@@ -1,0 +1,76 @@
+{
+  "slug": "kyo-matcha",
+  "themes": [
+    {
+      "phrase": "not overly sweet cakes",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "If you are a fan of not overly sweet cakes, this place is a must try."
+    },
+    {
+      "phrase": "matcha latte richness",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time."
+    },
+    {
+      "phrase": "cozy work-friendly seating",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Tons of wall plugs and comfortable seating, making it a great spot to get some work done."
+    },
+    {
+      "phrase": "inconsistent portion sizes",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "Sometimes my ice cream sizes vary too much especially when it's like $8."
+    },
+    {
+      "phrase": "early closing friction",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "Closing five minutes early while customers are still actively trying to order feels inconsistent and unprofessional."
+    },
+    {
+      "phrase": "Sakura seasonal menu",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Got the Sakura cheesecake, Sakura rain cake, and matcha latte. The cakes were good, not too strong Sakura flavor."
+    }
+  ],
+  "notable_quote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time.",
+  "sentiment_summary": "Reviewers consistently praise the restrained sweetness of the cakes and the depth of the matcha drinks, while a meaningful minority flags uneven soft-serve portions and closing-time enforcement that doesn't match what's posted on the door.",
+  "quarter_narrative": "Thirty-nine Pittsburgh creators posted Kyo Matcha to TikTok this quarter, generating just under 1.8 million plays, led by a single @andremelendez video that pulled 1.4 million on its own. The shop's own TikTok account, @kyomatcha.columbia, exists but is not the engine here: the city is producing the content, and Kyo Matcha is largely a subject rather than a participant in its own story. That asymmetry keeps it at #2 in Dessert shops and #4 in Pittsburgh Sweets, behind Page's, whose social momentum is the signal that earned the family lead this issue. Review sentiment sits below the family median, dragged by operational complaints that are fixable, and closing that gap is the clearest path toward the top slot.",
+  "tldr_read": "Creator-driven TikTok reach near two million plays, review sentiment below the family median, Icons of the Burgh, #2 in Pittsburgh Dessert shops.",
+  "tldr_meaning": "The rank holds on extraordinary creator volume and a nearly perfect conversion path, but sentiment trending below the family median means the ceiling stays visible without being reached.",
+  "diagnosis_pullquote": {
+    "line": "Second In Desserts On The Strength Of 1.8 Million TikTok Plays. The Reviews Have Not Kept Pace.",
+    "highlight": "1.8 Million TikTok Plays"
+  },
+  "playbook": [
+    {
+      "headline": "Close the review sentiment gap now",
+      "action": "Address the two recurring operational complaints, portion consistency and closing-time enforcement, before next quarter's review cycle closes.",
+      "signal": "community_spark",
+      "priority": "high",
+      "impact_label": "+12 SENTIMENT PTS"
+    },
+    {
+      "headline": "Turn creator plays into owned reach",
+      "action": "Repost or stitch the top creator videos from the 39 TikToks already filmed here; 1.4 million plays from @andremelendez alone represent unrecaptured audience.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "CAPTURE SPILLOVER"
+    },
+    {
+      "headline": "Push the visual catalog past the median",
+      "action": "Visual catalog sits just below the family median at 83; a focused photo push across the underrepresented menu and vibe categories on Google could close that gap.",
+      "signal": "content_canvas",
+      "priority": "low",
+      "impact_label": "+1 VISUAL RANK"
+    }
+  ],
+  "review_count": 8,
+  "analyzed_at": "2026-04-26T22:27:22.552Z",
+  "model": "claude-sonnet-4-6"
+}

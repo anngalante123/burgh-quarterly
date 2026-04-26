@@ -1,0 +1,104 @@
+{
+  "slug": "mola",
+  "handle": "mola.pgh",
+  "followers": 6074,
+  "follows": 109,
+  "posts_total": 226,
+  "posts_30d": 2,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.01416,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "open for dine-in, take-out, & delivery 🐠🧋 \nwe’ve got sushi, rice bowls, baos, bubble teas, and more!\n☎️ call to reserve a table!",
+  "full_name": "Mola",
+  "last_post_at": "2026-04-09T16:37:38.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 756,
+      "end": 767,
+      "delta": 11,
+      "per_month": 13.23
+    },
+    "rating": {
+      "start": 4.6,
+      "end": 4.6,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 925,
+      "end": 935,
+      "delta": 10
+    }
+  },
+  "tiktok_mentions": {
+    "query": "mola pittsburgh",
+    "video_count": 3,
+    "total_plays": 6590,
+    "total_likes": 231,
+    "unique_creators": 3,
+    "top_creators": [
+      {
+        "handle": "kylie.belli",
+        "fans": 12100,
+        "verified": false,
+        "videos": 1,
+        "plays": 2907,
+        "likes": 88
+      },
+      {
+        "handle": "zoetaylorrrfit",
+        "fans": 1098,
+        "verified": false,
+        "videos": 1,
+        "plays": 2849,
+        "likes": 129
+      },
+      {
+        "handle": "molapeluqueria",
+        "fans": 281,
+        "verified": false,
+        "videos": 1,
+        "plays": 834,
+        "likes": 14
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7615827032286432542",
+        "url": "https://www.tiktok.com/@kylie.belli/video/7615827032286432542",
+        "text": "Need a cheap eat in pittsburgh grab an #onigiri at Mola in the strip! \n\n$5 for select Onigiri🍙 \n\n#pittsburgh ",
+        "author": "kylie.belli",
+        "plays": 2907,
+        "likes": 88,
+        "posted": "2026-03-11T02:58:37.000Z"
+      },
+      {
+        "id": "7605020364741135630",
+        "url": "https://www.tiktok.com/@zoetaylorrrfit/video/7605020364741135630",
+        "text": "You already know .. do I even need to say anymore about how much I love Mola🍣🥢 my favorite sushi in Pittsburgh \n\n#pittsburghrestaurants #pgh #sushipittsburgh #fyp #sushilover ",
+        "author": "zoetaylorrrfit",
+        "plays": 2849,
+        "likes": 129,
+        "posted": "2026-02-10T00:03:38.000Z"
+      },
+      {
+        "id": "7620921533241822486",
+        "url": "https://www.tiktok.com/@molapeluqueria/video/7620921533241822486",
+        "text": "#CapCut ",
+        "author": "molapeluqueria",
+        "plays": 834,
+        "likes": 14,
+        "posted": "2026-03-24T20:27:51.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-03-24T20:27:51.000Z",
+    "median_plays": 2849,
+    "detected_own_handle": "molapeluqueria",
+    "scraped_at": "2026-04-26T16:06:20.580Z"
+  }
+}

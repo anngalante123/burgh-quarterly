@@ -1,0 +1,70 @@
+{
+  "slug": "reva-modern-indian-cuisine",
+  "themes": [
+    {
+      "phrase": "friendly attentive service",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "Sahil has been very kind and helpful with accepting custom orders whenever I come with my friends."
+    },
+    {
+      "phrase": "authentic Indian flavors",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Delicious food! Authentic flavors! Must visit place."
+    },
+    {
+      "phrase": "rude dismissive staff",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The staff were extremely rude and dismissive, which made the atmosphere feel unwelcoming."
+    },
+    {
+      "phrase": "custom order flexibility",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Sahil has been very kind and helpful with accepting custom orders whenever I come with my friends."
+    },
+    {
+      "phrase": "first Indian food experience",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Tried Indian food for the first time and I loved it."
+    }
+  ],
+  "notable_quote": "Reva first opened in June 2024 and I have been a regular customer ever since; the food taste is the best you can find in Pittsburgh and no other Indian restaurant can match the level.",
+  "sentiment_summary": "Reviewers consistently praise the food's authenticity and specific staff like Sahil for personalized service, but a recurring thread of complaints about arrogant and dismissive interactions is pulling the sentiment ceiling down from what the food alone might earn.",
+  "quarter_narrative": "Thirty-three Pittsburgh creators filmed Reva this quarter, generating 373,326 TikTok plays without a single post from the restaurant itself. The most-watched video came from a family member who made the video as a favor to her mother, and it pulled 66,300 plays on its own. That is the story of Reva's spring: the city is doing the storytelling, the restaurant is not participating in it. In the Pittsburgh Asian Kitchens family, Mola holds the top position this issue on the strength of creator collaboration fit; Reva ranks fourth overall in that family but sits at number one among Indian restaurants, a distinction that holds as long as the review momentum, currently a 527-review base with 80 percent five-star ratings, keeps compounding. The rank climbs when Reva's own voice enters the conversation it has already started.",
+  "tldr_read": "Thirty-three creators, 373,000 TikTok plays, and a dormant Instagram with no posts in 72 days. Ones to Watch, number one in Pittsburgh Indian restaurants.",
+  "tldr_meaning": "The creator signal is already doing heavy lifting; the path upward in the family ranking runs directly through Reva's own Instagram reactivating and the service inconsistency in the reviews getting smoothed out.",
+  "diagnosis_pullquote": {
+    "line": "Number One In Indian, Carried By 33 Creators. The Restaurant Has Not Posted In 72 Days.",
+    "highlight": "Not Posted In 72 Days"
+  },
+  "playbook": [
+    {
+      "headline": "Restart Instagram before the quarter ends",
+      "action": "Reva has posted zero times in 72 days; a single weekly post would reactivate a feed sitting on a 37.85 percent engagement rate.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "REOPEN SIGNAL"
+    },
+    {
+      "headline": "Convert creator energy into owned content",
+      "action": "Thirty-three creators have already filmed here; reposting the top-performing TikToks to Instagram Stories costs nothing and extends reach from existing plays.",
+      "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "+CREATOR LAYER"
+    },
+    {
+      "headline": "Address the service gap in public responses",
+      "action": "Two reviews cite specific staff rudeness; a direct, non-defensive owner response to those posts would push the sentiment score closer to the family median of 78.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "+SENTIMENT PTS"
+    }
+  ],
+  "review_count": 8,
+  "analyzed_at": "2026-04-26T22:31:49.229Z",
+  "model": "claude-sonnet-4-6"
+}

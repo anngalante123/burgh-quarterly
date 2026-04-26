@@ -1,0 +1,94 @@
+{
+  "slug": "commerce-bar",
+  "name": "Commerce Bar",
+  "category": "restaurant",
+  "neighborhood": "East Liberty",
+  "address": "128 S Highland Ave rear, Pittsburgh, PA 15206",
+  "google_rating": 4.7,
+  "google_review_count": 106,
+  "review_freshness_days": 20,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFhUi9nOJAOD56cfOCoH824PTxGVRZ_yGh6oAARRBEHP3A9mx0d5p_p8b4wbBeF19Ojt-ePBCzKD_pheWtrXT4p8_o5uurs_bhN9cPBZ-FQH4fr1r6bSzfsi0gIW2ZzKS8FhUW1Xg=w408-h544-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFhUi9nOJAOD56cfOCoH824PTxGVRZ_yGh6oAARRBEHP3A9mx0d5p_p8b4wbBeF19Ojt-ePBCzKD_pheWtrXT4p8_o5uurs_bhN9cPBZ-FQH4fr1r6bSzfsi0gIW2ZzKS8FhUW1Xg=w408-h544-k-no",
+  "review_keywords": [
+    "drinks were amazing"
+  ],
+  "created_at": "2026-04-22T14:51:45.616Z",
+  "updated_at": "2026-04-22T14:51:45.616Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJh7ukP5bzNIgRYH8nf-HUVe0",
+    "categoryName": "Bar",
+    "imagesCount": 138,
+    "imageCategories": [
+      "All",
+      "Menu",
+      "Videos",
+      "Food & drink",
+      "Vibe",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": false,
+    "hasPhone": false,
+    "phone": null,
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 4,
+      "twoStar": 3,
+      "threeStar": 0,
+      "fourStar": 11,
+      "fiveStar": 88
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "The homemade jam on the cheese board was remarkable!  Service was friendly and efficient.  We love this place.",
+      "A hidden gem. A perfect speakeasy vibe with the best cocktails I’ve had in Pittsburgh.\n\nCannot recommend enough. I tried the tempting fate with Espresso Martini styles - and that Tequila drink that cam from the bar was absolutely fire. So much so my friend ordered the exact same one for our seconds 😂",
+      "Absolute 10/10. No notes! Commerce Bar is an entire experience - not just a bar. The aesthetic is moody, vintage, and botanical, and the food and drinks are designed with so much creativity. The servers and bar tenders were engaging and helpful, and it made the place feel hospitable and homey. We can’t wait to go back!",
+      "Come to Pittsburgh all the time, and this is my first time at Commerce. I will be making the drive from Cleveland JUST for this bar in the near future. The drinks were amazing, the atmosphere was elegant, and the service was top notch. Alicia was one of the best bartenders I've had definitely deserves the bar manager position. Addie helped us at the bar, the teamwork was incredible and I wish I worked with these amazing bartenders\n\nThe drink pictured is the \"absinthe makes the heart grow fonder\" and is a superb riff on a Sazerac/Manhatten/old fashioned. Slightly sweet, little liqourice flavor, booze heavy",
+      "Service was great. Staff was incredibly friendly. Drinks were amazing!  You have to come here if you're looking for a very unique experience. The price reflects the quality, atmosphere and overall experience you're going to have. if you're expecting to have a couple of drinks, be prepared to spend a little bit of money, but it's worth every penny. Can't wait to come back. Thanks to Alicia And Addie for a great night.",
+      "The place is very average — not worth the wait at all. The drinks are just okay, nothing special or memorable.\n\nWhat I found extremely poor and unprofessional was that after we ordered a third round of drinks, we were informed that we had to leave because there is a 90-minute time limit. This policy is only mentioned in the menu and in very small print.\n\nThe proper thing to do would have been for the server to let us know that our time was almost up before we ordered more drinks, so we could decide whether or not to order. That didn’t happen. Instead, she brought the drinks and about 10 minutes later came back to tell us we had to leave and dropped the check.\n\nTo make things worse, we waited about 15 minutes just to place our order, on top of the time we already spent waiting to get in.\n\nOverall, it’s not worth the time or the money. Very disappointing experience.",
+      "Awesome little speakeasy in east liberty. I have tried to get in a few times but it is always super packed! They have very few tables but it is definitely worth the try. The atmosphere is fantastic, beautiful chandelier, candlelit tables, very romantic vibes. We got the fig balsamic cocktail and buffalo chicken dip. The cocktail was different than anything I’ve had before. It had a Smokey flavor which I usually do not enjoy but it was delicious. They have a decent sized food menu, mostly dips and small snacks. The buffalo dip was good but very blue cheese heavy."
+    ],
+    "keywordPhrases": [
+      {
+        "text": "drinks were amazing",
+        "count": 2,
+        "exampleQuote": "The drinks were amazing, the atmosphere was elegant, and the service was top notch."
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "commerce-bar",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 46,
+      "community_spark": 48,
+      "conversion_path": 50,
+      "momentum": 14,
+      "collab_fit": 78
+    },
+    "composite": 46,
+    "tier": "neighborhood_staples",
+    "rank_category": 2,
+    "rank_neighborhood": 6,
+    "rank_overall": 30,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "creator collaboration fit",
+      "evidence": "Clear neighborhood identity in East Liberty — a natural match for local creator audiences."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

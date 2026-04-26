@@ -1,0 +1,70 @@
+{
+  "slug": "nan-xiang-soup-dumplings-pittsburgh",
+  "themes": [
+    {
+      "phrase": "soup dumplings worth returning",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "This is going to be a repeat when we come back to town for sure."
+    },
+    {
+      "phrase": "server by name",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Our server Morgan had an amazing smile and great customer service."
+    },
+    {
+      "phrase": "beef and pepper noodles",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "These beef and pepper noodles are legit."
+    },
+    {
+      "phrase": "Didi the robot",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Didi the robot was fun to watch."
+    },
+    {
+      "phrase": "bathroom not clean",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Everything was great, but the Bathroom was not clean."
+    }
+  ],
+  "notable_quote": "Our server Morgan had an amazing smile and great customer service; she was quick, efficient, and always had refills ready, and the new spicy beef dumplings and sweet and sour soup were both incredible.",
+  "sentiment_summary": "Reviewers are specific in their praise, naming dishes like the beef and pepper noodles and four happiness kao fu, calling out servers by first name, and returning because of both, with the only recurring friction being a cleanliness note on the bathroom.",
+  "quarter_narrative": "Thirteen Pittsburgh creators posted about Nan Xiang Soup Dumplings this quarter, logging nearly 36,000 plays across TikTok without a single post coming from the restaurant itself. The most-watched video, from @bitesbymorgan, cleared 8,500 plays on a straightforward visit recap. Meanwhile, the restaurant's own Instagram posted 11 times in 30 days and is holding a 0.21 percent engagement rate, a gap that tells the story plainly: the content exists, the audience is there, the connection between them is not being made. Nan Xiang leads the Pittsburgh Businesses family this issue on the strength of its social momentum, and sustaining that rank through next quarter depends on whether the restaurant starts meeting its creator coverage halfway.",
+  "tldr_read": "Dominant reviews and maximum conversion-path clarity, but a 0.21 percent Instagram engagement rate and no TikTok presence mean the city's excitement is not circling back to the source. Icons of the Burgh, number one in Pittsburgh Restaurants and Pittsburgh Businesses.",
+  "tldr_meaning": "The rank is built on review depth and creator spillover; the ceiling moves when the restaurant's own feed starts converting the attention that thirteen outside creators are already generating.",
+  "diagnosis_pullquote": {
+    "line": "Number One On Creator Energy Alone. The Restaurant's Own Feed Has Not Caught Up.",
+    "highlight": "Creator Energy Alone"
+  },
+  "playbook": [
+    {
+      "headline": "Turn TikTok creator coverage into owned reach",
+      "action": "Repost or respond to the 13 creator videos already live; 35,914 plays are circulating with no signal back from the source account.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "CAPTURE SPILLOVER"
+    },
+    {
+      "headline": "Close the Instagram engagement gap",
+      "action": "11 posts in 30 days is a real posting cadence, but 0.21 percent engagement suggests the content format is not pulling interaction; shift at least two posts per month to Reels using the dumpling-making or Didi the robot footage already on Google.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+IG ENGAGEMENT"
+    },
+    {
+      "headline": "Surface server recognition publicly",
+      "action": "Four reviewers named their server by first name; a recurring staff-spotlight post would feed the community signal and deepen the return-visit cycle already visible in the reviews.",
+      "signal": "community_spark",
+      "priority": "low",
+      "impact_label": "DEEPEN LOYALTY"
+    }
+  ],
+  "review_count": 9,
+  "analyzed_at": "2026-04-26T22:30:11.017Z",
+  "model": "claude-sonnet-4-6"
+}

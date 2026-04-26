@@ -1,0 +1,99 @@
+{
+  "slug": "pusadees-garden",
+  "name": "Pusadee's Garden",
+  "category": "restaurant",
+  "neighborhood": "Lawrenceville",
+  "address": "5319 Butler St, Pittsburgh, PA 15201",
+  "website": "http://www.pusadeesgarden.com/",
+  "google_rating": 4.7,
+  "google_review_count": 1224,
+  "review_freshness_days": 2,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF8MzqAyAeGXKi3duRjHI-fxvYbj5kixwVRj62Ej25zMLq4TqoV3pt1w3e1hpTC5AezWCKY_4_5Vto-OF6KKfqoIc94Ld5YaTB3xRhd6-ZS5Rj7spUJfoqOpV7HmgcxXwgFb1y_8A=w408-h307-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF8MzqAyAeGXKi3duRjHI-fxvYbj5kixwVRj62Ej25zMLq4TqoV3pt1w3e1hpTC5AezWCKY_4_5Vto-OF6KKfqoIc94Ld5YaTB3xRhd6-ZS5Rj7spUJfoqOpV7HmgcxXwgFb1y_8A=w408-h307-k-no",
+  "review_keywords": [],
+  "created_at": "2026-04-22T14:51:45.626Z",
+  "updated_at": "2026-04-22T14:51:45.626Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJ2yPqm_fyNIgRrX4_XAqLAjw",
+    "categoryName": "Thai restaurant",
+    "imagesCount": 1892,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Sticky Rice",
+      "Curry",
+      "Shrimp and grits",
+      "Tom yum",
+      "Soup",
+      "Roti canai",
+      "Noodle",
+      "Steak tartare",
+      "Khao soi",
+      "Sea bass",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 252-2683",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 31,
+      "twoStar": 17,
+      "threeStar": 28,
+      "fourStar": 101,
+      "fiveStar": 1047
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Great atmosphere and a well-designed seating layout, but unfortunately, the food didn't quite live up to the surroundings. The curry soup was indistinguishable from standard Thai takeout, and the portion sizes were quite small for the price. It was an okay experience, but not one we feel the need to repeat.",
+      "Very unassuming from the outside, but absolutely beautiful. The food was great. Don't fret if you can't sit outside - it's lovely inside, too!\n\nWe didn't care much for the whitefish appetizer, but everything else was fantastic.",
+      "I signed on at 7 am today, selected and reserved a reservation for 3 at 5:30 pm on May 16, hit confirm and reserve buttons. By the time I entered my ID and credit info, got a screed telling me only 9:15 is available. This is a ‘gotcha’ apparently the confirmation and reserve buttons are meaningless. Please restore the original time i selected and cancel the 9:15 which we cannot use.",
+      "We made reservations well in advance. Food was delicious. Standouts were the 17 ingredient salad and the yellow roti. Their curries are ridiculously tasty too! I don’t think you could go wrong with this menu. Restaurant is so pretty with a calm atmosphere. Tables are spread out and make it a great place to have a conversation with your table. Service is good. It lived up to the hype for us!",
+      "I had a great overall experience at Pusadee’s Garden, though getting a reservation can be quite challenging.\n\nOur party arrived a little over an hour early for our reservation and were told the hostesses would try to seat us sooner. We ended up waiting outside for about an hour, only to later realize there’s a bar area where guests can dine without a reservation if space is available. We would have happily taken that option earlier had we known.\n\nI don’t usually leave 4-star reviews, but I was a bit frustrated that this wasn’t communicated to us upfront. The host stand staff seemed more engaged in conversation with each other than in helping make our wait more comfortable or offering helpful alternatives.\n\nThat said, once we moved inside, the experience completely turned around. The bartender was fantastic—attentive, friendly, and made the evening enjoyable. The food and overall service inside the restaurant were excellent and absolutely lived up to the hype.\n\nDefinitely worth visiting, but a little more proactive communication from the front-of-house team would make the experience even better.",
+      "It was a great meal. The biggest standout was the shrimp tom yum, I've never had anything like it. The service was also fantastic, some of the best I've seen in recent memory.",
+      "This place is the love of my life",
+      "Ingredients in the food is high quality, service is awesome, atmosphere is nice, yet the flavors were not coming together how I would have hoped - especially with the expense. You can get the same meal at a different place for less."
+    ],
+    "keywordPhrases": []
+  },
+  "_score": {
+    "business_slug": "pusadees-garden",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 84,
+      "community_spark": 80,
+      "conversion_path": 100,
+      "momentum": 19,
+      "collab_fit": 78
+    },
+    "composite": 73,
+    "tier": "ones_to_watch",
+    "rank_category": 1,
+    "rank_neighborhood": 4,
+    "rank_overall": 20,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "community affection",
+      "evidence": "1,224 Google reviews with a review in the last 2 days — the highest community-spark reading in this issue's set."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

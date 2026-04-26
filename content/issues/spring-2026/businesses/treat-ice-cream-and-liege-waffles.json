@@ -1,0 +1,106 @@
+{
+  "slug": "treat-ice-cream-and-liege-waffles",
+  "name": "Treat - Ice Cream and Liege Waffles",
+  "category": "boutique",
+  "neighborhood": "Shadyside",
+  "address": "735 Copeland St #1A, Pittsburgh, PA 15232",
+  "website": "http://www.treatpittsburgh.com/",
+  "google_rating": 5,
+  "google_review_count": 623,
+  "review_freshness_days": 1,
+  "photos": [
+    {
+      "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAELfVE_gvblJGAM_qtDItPjm9xLqXGbl6SnerggfTDbum9genh71YFOICtj30TJtmT9oqPJMyJ4gxJeg1RL17L4qBlmb2v1DyIbgJLw0KXjubj5E0lk1qCiUMY4waX3neEBhbw7=w408-h306-k-no",
+      "source": "google-maps"
+    }
+  ],
+  "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAELfVE_gvblJGAM_qtDItPjm9xLqXGbl6SnerggfTDbum9genh71YFOICtj30TJtmT9oqPJMyJ4gxJeg1RL17L4qBlmb2v1DyIbgJLw0KXjubj5E0lk1qCiUMY4waX3neEBhbw7=w408-h306-k-no",
+  "review_keywords": [
+    "ice cream",
+    "highly recommend"
+  ],
+  "created_at": "2026-04-22T14:51:45.600Z",
+  "updated_at": "2026-04-22T14:51:45.600Z",
+  "claimed": false,
+  "_meta": {
+    "placeId": "ChIJkSfGVAnzNIgReIwifHTJxaE",
+    "categoryName": "Ice cream shop",
+    "imagesCount": 202,
+    "imageCategories": [
+      "All",
+      "Latest",
+      "Videos",
+      "Menu",
+      "Food & drink",
+      "Vibe",
+      "Gelato",
+      "Ice cream",
+      "By owner",
+      "Street View & 360°"
+    ],
+    "fromTheBusinessFlags": [],
+    "hasWebsite": true,
+    "hasPhone": true,
+    "phone": "(412) 445-7500",
+    "hasOpeningHours": true,
+    "claimThisBusiness": false,
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 1,
+      "threeStar": 5,
+      "fourStar": 8,
+      "fiveStar": 608
+    },
+    "rawReviewsCount": 10,
+    "reviewTexts": [
+      "Im an ice cream snob and this is some of these best ice cream Ive ever had",
+      "Such a delightful experience and so tasty. Not only did we get to try a ton of extra samples, the waffle along with ice cream was absolutely incredible. After our first bite we were already excited to plan on coming back again. The owner is extremely friendly and nice and helped make the experience that much better. Highly recommend.",
+      "Fantastic experience owner was great. Ive cream and waffles were incredible. Highly recommend. We will be returning in the future",
+      "Great Liege style waffles!",
+      "First review: I’ve loved this place since moving to Pittsburgh and visit often, usually bringing friends and family—the ice cream is still a 10/10. Unfortunately, my experience today was disappointing. While my friends and I were trying a few samples, the staff member became rude after a couple of tastings and refused to offer more. When my friend asked to try chocolate, he responded sarcastically, which felt unwelcoming. I understand everyone can have off days, but I’ve experienced a similar comment here before and brushed it off. This visit made it clear it wasn’t a one-time issue.\n\nReply to owner's response:\n\nThank you for your response.\n\nFrom our recollection, we did not exceed six samples. We were also mindful not to waste product, so we shared each sample among ourselves. Our intention was to place an additional order, but the comment along the lines of “I’m not going to waste any more ice cream on you all,” delivered in a rude tone, made us feel uncomfortable and discouraged us from ordering further.\n\nWe understand that it was a busy time, and we respect that. At the same time, we waited our turn in line just like other customers. If there is a limit on samples, it would be helpful to have this clearly communicated or displayed so customers are aware in advance.\nThanks.",
+      "Good ice cream, that’s why I give 2 stars. Very poor and aggressive service that felt directed.",
+      "The sage salted almond on a waffle was so good!",
+      "I got a gift card for them so I’ve come twice. This is fantastic stuff! The ice cream is extremely high quality and can be delicious by itself; however, add that delicious waffle to it and you go into a brand new realm of delicious.\n\nI will upload a pic one day with ice cream…I feel bad because by the time I think about it the bowl is empty.\n\nThe gentleman behind the counter is polite, helpful, and puts out an excellent product",
+      "I've been to Belgium several times and this place has waffles that are just as good as what you could get in liège!"
+    ],
+    "keywordPhrases": [
+      {
+        "text": "ice cream",
+        "count": 8,
+        "exampleQuote": "Im an ice cream snob and this is some of these best ice cream Ive ever had"
+      },
+      {
+        "text": "highly recommend",
+        "count": 2,
+        "exampleQuote": "Highly recommend."
+      }
+    ]
+  },
+  "_score": {
+    "business_slug": "treat-ice-cream-and-liege-waffles",
+    "issue_slug": "2026-spring",
+    "subscores": {
+      "content_canvas": 83,
+      "community_spark": 83,
+      "conversion_path": 100,
+      "momentum": 25,
+      "collab_fit": 84
+    },
+    "composite": 75,
+    "tier": "ones_to_watch",
+    "rank_category": 3,
+    "rank_neighborhood": 3,
+    "rank_overall": 18,
+    "movement": {
+      "category": null,
+      "neighborhood": null,
+      "overall": null
+    },
+    "unfair_advantage": {
+      "label": "community affection",
+      "evidence": "623 Google reviews with a review in the last 1 days — the highest community-spark reading in this issue's set."
+    },
+    "scored_at": "2026-04-22T17:19:10.279Z",
+    "momentum_source": "instagram_scrape"
+  }
+}

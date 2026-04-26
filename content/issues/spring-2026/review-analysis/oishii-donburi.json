@@ -1,0 +1,70 @@
+{
+  "slug": "oishii-donburi",
+  "themes": [
+    {
+      "phrase": "katsudon and bulgogi bowls",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls"
+    },
+    {
+      "phrase": "hole in the wall",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Easy fast hole in the wall with delicious food"
+    },
+    {
+      "phrase": "quiet reliable spot",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Very delicious quiet spot for Korean style bowls"
+    },
+    {
+      "phrase": "rude staff attitude",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron"
+    },
+    {
+      "phrase": "unexplained sauces",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I was given 4 little circle containers of unusual sauces and not told what any of them were"
+    }
+  ],
+  "notable_quote": "Easy fast hole in the wall with delicious food, we had the katsudon and bulgogi bibimbap and it was perfect for lunch with enough for a snack later that night.",
+  "sentiment_summary": "Reviewers keep coming back for the katsudon and beef bulgogi bowls and praise the spot's low-key, reliable quality; the friction surfaces in occasional reports of an unwelcoming front-of-house attitude and unexplained condiments that leave first-timers confused.",
+  "quarter_narrative": "Five Pittsburgh-area creators posted Oishii Donburi to TikTok this quarter and pulled nearly 27,000 plays without a single post from the restaurant itself, which has been quiet on Instagram for 72 days. The top video in that batch, nearly 10,000 plays from @missrichauntie, was actually filmed at a different Oishii-branded location in Delaware, which means the real Lawrenceville shop is capturing even less of that attention than the raw numbers suggest. Mola leads the Pittsburgh Asian Kitchens family this issue on the strength of creator collaboration, a lane Oishii Donburi has the reputation and the menu specificity to enter. Closing the gap between what creators are already doing and what this restaurant posts for itself is the clearest path from Ones to Watch toward the upper tier.",
+  "tldr_read": "Strong customer loyalty and a perfect conversion path, but a dormant Instagram and thin visual catalog are keeping Oishii Donburi at Ones to Watch, ranked first in Pittsburgh Japanese restaurants.",
+  "tldr_meaning": "The review floor is solid and the Google profile converts cleanly; the ceiling is determined by whether the visual and social signals catch up to the word-of-mouth that is already circulating without the restaurant's participation.",
+  "diagnosis_pullquote": {
+    "line": "First In Pittsburgh Japanese, Built On Word Of Mouth. The Camera Never Turned Around.",
+    "highlight": "Camera Never Turned Around"
+  },
+  "playbook": [
+    {
+      "headline": "Restart Instagram before the quarter ends",
+      "action": "The account has been silent for 72 days; even four posts showing the katsudon and bulgogi bowls would lift the momentum signal off its current floor.",
+      "signal": "momentum",
+      "priority": "high",
+      "impact_label": "REOPEN SIGNAL"
+    },
+    {
+      "headline": "Build out the Google photo catalog",
+      "action": "342 photos across 15 categories sounds deep, but the visual signal trails the family median by a wide margin; adding tagged shots across underrepresented categories closes that gap fast.",
+      "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+VISUAL RANK"
+    },
+    {
+      "headline": "Give creators something to tag correctly",
+      "action": "The top TikTok this quarter tagged a Delaware location by mistake; a pinned location, a clear handle in-store, and direct outreach to the five creators who already filmed here would redirect that attention where it belongs.",
+      "signal": "collab_fit",
+      "priority": "low",
+      "impact_label": "CAPTURE REACH"
+    }
+  ],
+  "review_count": 5,
+  "analyzed_at": "2026-04-26T22:30:36.003Z",
+  "model": "claude-sonnet-4-6"
+}

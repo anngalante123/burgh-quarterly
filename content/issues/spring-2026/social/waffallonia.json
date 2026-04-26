@@ -1,0 +1,21 @@
+{
+  "slug": "waffallonia",
+  "handle": "waffallonia",
+  "error": "not_found",
+  "errorDescription": "Post does not exist",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "waffallonia pittsburgh",
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T16:14:46.483Z"
+  }
+}

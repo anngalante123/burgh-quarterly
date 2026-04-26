@@ -1,0 +1,124 @@
+{
+  "slug": "hidden-harbor",
+  "handle": "hiddenharborpgh",
+  "followers": 20443,
+  "follows": 236,
+  "posts_total": 2544,
+  "posts_30d": 12,
+  "reels_30d": 0,
+  "avg_engagement_rate": 0.00791,
+  "verified": false,
+  "private": false,
+  "is_business_account": true,
+  "biography": "🌴 Tropical cocktails & island eats 🌴\nTues-Thurs, 5-11 p.m. | Fri-Sat, 5-mid\n🍹 TTM17 “Deep Dives” menu every Tues\n🥃 Dead Wednesday every Wed",
+  "full_name": "Hidden Harbor",
+  "last_post_at": "2026-04-21T13:06:56.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "hidden harbor pittsburgh",
+    "video_count": 10,
+    "total_plays": 425844,
+    "total_likes": 31844,
+    "unique_creators": 10,
+    "top_creators": [
+      {
+        "handle": "messihasaura7689",
+        "fans": 241,
+        "verified": false,
+        "videos": 1,
+        "plays": 204400,
+        "likes": 20800
+      },
+      {
+        "handle": "outspokenexpressions",
+        "fans": 571,
+        "verified": false,
+        "videos": 1,
+        "plays": 172600,
+        "likes": 9680
+      },
+      {
+        "handle": "hiltonheadlivin",
+        "fans": 25500,
+        "verified": false,
+        "videos": 1,
+        "plays": 13200,
+        "likes": 338
+      },
+      {
+        "handle": "redbarnwinerydelmont",
+        "fans": 1009,
+        "verified": false,
+        "videos": 1,
+        "plays": 11300,
+        "likes": 197
+      },
+      {
+        "handle": "sugarrainbowbubbl",
+        "fans": 1485,
+        "verified": false,
+        "videos": 1,
+        "plays": 11200,
+        "likes": 321
+      },
+      {
+        "handle": "412onthemove",
+        "fans": 12700,
+        "verified": false,
+        "videos": 1,
+        "plays": 4759,
+        "likes": 216
+      },
+      {
+        "handle": "daddys_budget_tools",
+        "fans": 1357,
+        "verified": false,
+        "videos": 1,
+        "plays": 4581,
+        "likes": 143
+      },
+      {
+        "handle": "aprilsgeorge",
+        "fans": 13100,
+        "verified": false,
+        "videos": 1,
+        "plays": 2117,
+        "likes": 54
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7621394526262922527",
+        "url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527",
+        "text": "Pearl Harbor #usa #japan #pearlharbor #edit #darktriad ",
+        "author": "messihasaura7689",
+        "plays": 204400,
+        "likes": 20800,
+        "posted": "2026-03-26T03:03:36.000Z"
+      },
+      {
+        "id": "7631288928741444878",
+        "url": "https://www.tiktok.com/@outspokenexpressions/video/7631288928741444878",
+        "text": "👉 “Are you a Harbor Freight mechanic but kind? Got Snap-on friends that always talk? I’ve got a sticker for them.” Order yours today! #harborfreight #snapon #tools #outspokenexpression",
+        "author": "outspokenexpressions",
+        "plays": 172600,
+        "likes": 9680,
+        "posted": "2026-04-21T18:59:20.000Z"
+      },
+      {
+        "id": "7632759846978309389",
+        "url": "https://www.tiktok.com/@hiltonheadlivin/video/7632759846978309389",
+        "text": "Hidden Gem Waterfront Dining on Hilton Head Island ",
+        "author": "hiltonheadlivin",
+        "plays": 13200,
+        "likes": 338,
+        "posted": "2026-04-25T18:06:58.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-25T18:06:58.000Z",
+    "median_plays": 7980,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T15:57:52.446Z"
+  }
+}

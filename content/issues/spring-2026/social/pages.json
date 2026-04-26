@@ -1,0 +1,144 @@
+{
+  "slug": "pages",
+  "handle": "pagesdairymart",
+  "followers": 103944,
+  "follows": 86,
+  "posts_total": 679,
+  "posts_30d": 9,
+  "reels_30d": 3,
+  "avg_engagement_rate": 0.01286,
+  "verified": true,
+  "private": false,
+  "is_business_account": true,
+  "biography": "Pittsburgh’s #1 spot for all things ICE CREAM❗️ Celebrating 7️⃣5️⃣ years in business 🎉 \nTHANK YOU for your support! \n🍦OPEN DAILY 11:30AM — 10:00PM🍦",
+  "full_name": "Page’s",
+  "last_post_at": "2026-04-22T14:40:06.000Z",
+  "scraped_at": "2026-04-22T15:26:15.591Z",
+  "growth": {
+    "period_start": "2026-03-28",
+    "period_end": "2026-04-22",
+    "days": 25,
+    "review_count": {
+      "start": 3114,
+      "end": 3145,
+      "delta": 31,
+      "per_month": 37.28
+    },
+    "rating": {
+      "start": 4.8,
+      "end": 4.8,
+      "delta": 0
+    },
+    "photo_count": {
+      "start": 1425,
+      "end": 1454,
+      "delta": 29
+    }
+  },
+  "tiktok_mentions": {
+    "query": "page's pittsburgh",
+    "video_count": 14,
+    "total_plays": 177416,
+    "total_likes": 14219,
+    "unique_creators": 13,
+    "top_creators": [
+      {
+        "handle": "bhphotographypa",
+        "fans": 30500,
+        "verified": false,
+        "videos": 1,
+        "plays": 62800,
+        "likes": 3878
+      },
+      {
+        "handle": "sarah_cooper08",
+        "fans": 491,
+        "verified": false,
+        "videos": 1,
+        "plays": 45800,
+        "likes": 4131
+      },
+      {
+        "handle": "waggingwithwords",
+        "fans": 12900,
+        "verified": false,
+        "videos": 1,
+        "plays": 36100,
+        "likes": 3927
+      },
+      {
+        "handle": "lilbigbackz",
+        "fans": 18700,
+        "verified": false,
+        "videos": 1,
+        "plays": 22900,
+        "likes": 1663
+      },
+      {
+        "handle": "kailyn_nicole",
+        "fans": 5,
+        "verified": false,
+        "videos": 1,
+        "plays": 2953,
+        "likes": 187
+      },
+      {
+        "handle": "highflyer412",
+        "fans": 4904,
+        "verified": false,
+        "videos": 1,
+        "plays": 2633,
+        "likes": 230
+      },
+      {
+        "handle": "kps_live",
+        "fans": 292,
+        "verified": false,
+        "videos": 2,
+        "plays": 1153,
+        "likes": 47
+      },
+      {
+        "handle": "tierneyanne2313",
+        "fans": 1043,
+        "verified": false,
+        "videos": 1,
+        "plays": 797,
+        "likes": 40
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7615450580697337119",
+        "url": "https://www.tiktok.com/@bhphotographypa/video/7615450580697337119",
+        "text": "Who Wants Ice Cream? 🍦 @Page's  #pagesdairymart #bhphotographypa #pittsburgh #southside #icecream",
+        "author": "bhphotographypa",
+        "plays": 62800,
+        "likes": 3878,
+        "posted": "2026-03-10T02:38:00.000Z"
+      },
+      {
+        "id": "7614542506281159949",
+        "url": "https://www.tiktok.com/@sarah_cooper08/video/7614542506281159949",
+        "text": "Visited Pittsburghs NEW all romance book store; Passonate Pages in Lawrenceville! Super cute vibe, you can tell they are new & building their collection! Definitely recommend supporting #romancebooks #pittsburgh #passionatepages #romanceboo",
+        "author": "sarah_cooper08",
+        "plays": 45800,
+        "likes": 4131,
+        "posted": "2026-03-07T15:54:27.000Z"
+      },
+      {
+        "id": "7612456801354665246",
+        "url": "https://www.tiktok.com/@waggingwithwords/video/7612456801354665246",
+        "text": "The cutest romance bookstore in pittsburgh exists!! @PassionatePages #passionatepages #romancebookstore #bookstore #pittsburgh #romance ",
+        "author": "waggingwithwords",
+        "plays": 36100,
+        "likes": 3927,
+        "posted": "2026-03-02T01:00:35.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-26T13:34:16.000Z",
+    "median_plays": 785,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T16:08:43.613Z"
+  }
+}
