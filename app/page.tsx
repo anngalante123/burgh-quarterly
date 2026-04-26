@@ -78,16 +78,16 @@ export default function Home() {
           <Reveal delay={0.12}>
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
               <span className="font-semibold text-brand-black">
-                49 creators posted 50 videos
+                Twenty-nine creators
               </span>{" "}
-              about Pittsburgh small businesses this quarter, totaling{" "}
+              made TikToks about Pittsburgh small businesses this quarter,
+              every single one mentioning the city or a neighborhood.{" "}
               <span className="font-semibold text-brand-black">
-                24 million plays
-              </span>
-              . None came from the businesses themselves. Signal Pittsburgh
-              ranks 30 small businesses by what creators are filming, what
-              customers are reviewing, and who&apos;s actually showing up
-              on their own feed.{" "}
+                None came from the businesses themselves.
+              </span>{" "}
+              Signal Pittsburgh ranks 30 small businesses by what creators
+              are filming, what customers are reviewing, and who&apos;s
+              actually showing up on their own feed.{" "}
               <span className="font-semibold text-brand-black">
                 We don&apos;t rank taste. We rank the conversation.
               </span>
