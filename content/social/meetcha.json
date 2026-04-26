@@ -37,108 +37,15 @@
   },
   "tiktok_mentions": {
     "query": "meetcha pittsburgh",
-    "video_count": 30,
-    "total_plays": 187837,
-    "total_likes": 12565,
-    "unique_creators": 24,
-    "top_creators": [
-      {
-        "handle": "maddie_gera",
-        "fans": 679,
-        "verified": false,
-        "videos": 1,
-        "plays": 22200,
-        "likes": 1777
-      },
-      {
-        "handle": "isastarrrr",
-        "fans": 3889,
-        "verified": false,
-        "videos": 1,
-        "plays": 20700,
-        "likes": 2131
-      },
-      {
-        "handle": "myrdousbubble",
-        "fans": 2875,
-        "verified": false,
-        "videos": 1,
-        "plays": 20000,
-        "likes": 1331
-      },
-      {
-        "handle": "laurelkate_",
-        "fans": 1290,
-        "verified": false,
-        "videos": 3,
-        "plays": 17400,
-        "likes": 937
-      },
-      {
-        "handle": "mayavalletta",
-        "fans": 5296,
-        "verified": false,
-        "videos": 2,
-        "plays": 14637,
-        "likes": 861
-      },
-      {
-        "handle": "aubreyclaree_",
-        "fans": 70000,
-        "verified": false,
-        "videos": 2,
-        "plays": 14601,
-        "likes": 554
-      },
-      {
-        "handle": "colintorres0",
-        "fans": 1390,
-        "verified": false,
-        "videos": 1,
-        "plays": 11800,
-        "likes": 860
-      },
-      {
-        "handle": "alexgdeckerr",
-        "fans": 1110,
-        "verified": false,
-        "videos": 1,
-        "plays": 11100,
-        "likes": 553
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "7583556243734777102",
-        "url": "https://www.tiktok.com/@maddie_gera/video/7583556243734777102",
-        "text": "My favorites list rn, drop matcha recommendations please. 🥹⬇️\n\n#fyp #pgh #matcha ",
-        "author": "maddie_gera",
-        "plays": 22200,
-        "likes": 1777,
-        "posted": "2025-12-14T03:51:56.000Z"
-      },
-      {
-        "id": "7544107320314236190",
-        "url": "https://www.tiktok.com/@isastarrrr/video/7544107320314236190",
-        "text": "This match is so good you have to try! #fyp #matcha #pgh ",
-        "author": "isastarrrr",
-        "plays": 20700,
-        "likes": 2131,
-        "posted": "2025-08-29T20:29:39.000Z"
-      },
-      {
-        "id": "7539961964194254111",
-        "url": "https://www.tiktok.com/@myrdousbubble/video/7539961964194254111",
-        "text": "Lawrenceville check-in: Mediterra Café. Best matcha in Pittsburgh? Vibe, presentation, taste, and workability scored in the video— where should I go next? Share your neighborhood favorites.\n\n@mediterra \n\n#matchadiaries #pittsburghcreator #p",
-        "author": "myrdousbubble",
-        "plays": 20000,
-        "likes": 1331,
-        "posted": "2025-08-18T16:23:32.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-22T01:58:14.000Z",
-    "median_plays": 4595,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": null,
-    "scraped_at": "2026-04-25T15:27:56.501Z"
+    "scraped_at": "2026-04-26T16:04:38.961Z"
   }
 }

@@ -37,108 +37,108 @@
   },
   "tiktok_mentions": {
     "query": "la gourmandine hazelwood pittsburgh",
-    "video_count": 30,
-    "total_plays": 1091425,
-    "total_likes": 50671,
-    "unique_creators": 30,
+    "video_count": 15,
+    "total_plays": 736954,
+    "total_likes": 65118,
+    "unique_creators": 13,
     "top_creators": [
       {
-        "handle": "ms__lesh",
-        "fans": 1921,
+        "handle": "lesegotamar",
+        "fans": 7333,
         "verified": false,
         "videos": 1,
-        "plays": 719500,
-        "likes": 35300
+        "plays": 459100,
+        "likes": 37800
       },
       {
-        "handle": "the_terrible1",
-        "fans": 77700,
+        "handle": "katieemilyreads",
+        "fans": 13600,
         "verified": false,
         "videos": 1,
-        "plays": 256100,
-        "likes": 11500
+        "plays": 210800,
+        "likes": 24000
       },
       {
-        "handle": "claracarral",
-        "fans": 489300,
+        "handle": "inkhearted.books",
+        "fans": 2192,
         "verified": false,
         "videos": 1,
-        "plays": 25300,
-        "likes": 976
+        "plays": 31300,
+        "likes": 630
       },
       {
-        "handle": "lilbigbackz",
-        "fans": 18600,
+        "handle": "melissasadhdlife",
+        "fans": 4364,
         "verified": false,
-        "videos": 1,
-        "plays": 23700,
-        "likes": 649
+        "videos": 3,
+        "plays": 11664,
+        "likes": 868
       },
       {
-        "handle": "valeska_nel",
-        "fans": 52800,
+        "handle": "albalahoz",
+        "fans": 14400,
         "verified": false,
         "videos": 1,
-        "plays": 18900,
-        "likes": 401
+        "plays": 5622,
+        "likes": 361
       },
       {
-        "handle": "mae.the.horgi",
-        "fans": 4830,
+        "handle": "byjohi",
+        "fans": 4682,
         "verified": false,
         "videos": 1,
-        "plays": 10400,
-        "likes": 427
+        "plays": 5569,
+        "likes": 236
       },
       {
-        "handle": "pitsburgh.eats",
-        "fans": 6360,
+        "handle": "f4iry.008",
+        "fans": 300,
         "verified": false,
         "videos": 1,
-        "plays": 8014,
-        "likes": 199
+        "plays": 2834,
+        "likes": 530
       },
       {
-        "handle": "kstravelviews",
-        "fans": 108,
+        "handle": "abbeykugel",
+        "fans": 1737,
         "verified": false,
         "videos": 1,
-        "plays": 3409,
-        "likes": 58
+        "plays": 2453,
+        "likes": 148
       }
     ],
     "top_videos": [
       {
-        "id": "7429958759117524230",
-        "url": "https://www.tiktok.com/@ms__lesh/video/7429958759117524230",
-        "text": "Theres nothing as beautiful as this.When a man is so gentle in public #hazelwoodpretoria #SAMA28 ",
-        "author": "ms__lesh",
-        "plays": 719500,
-        "likes": 35300,
-        "posted": "2024-10-26T05:54:56.000Z"
+        "id": "7610166891629333781",
+        "url": "https://www.tiktok.com/@lesegotamar/video/7610166891629333781",
+        "text": "Ate and left no crumbs 🥹❤️#dinnerdate #burgandydress #fireroomhazelwood #fyppppppppppppppppppppppp ",
+        "author": "lesegotamar",
+        "plays": 459100,
+        "likes": 37800,
+        "posted": "2026-02-23T20:54:31.000Z"
       },
       {
-        "id": "7548850020615785748",
-        "url": "https://www.tiktok.com/@the_terrible1/video/7548850020615785748",
-        "text": "#greenscreen #fyp #viral #trendingvideo #breakingnews ",
-        "author": "the_terrible1",
-        "plays": 256100,
-        "likes": 11500,
-        "posted": "2025-09-11T15:13:37.000Z"
+        "id": "7610915482677366038",
+        "url": "https://www.tiktok.com/@katieemilyreads/video/7610915482677366038",
+        "text": "Teddy Hamilton audiobook recommendations part 3 🎧 \n\n• Kiss The Villain - @Rina Kent \n• Haunting Adeline - H.D. Carlton\n• Mate - @Ali Hazelwood  \n• Over The Moon - @Laura Pavlov Author \n• Hockey Boy - @Brittanee Nicole \n• Bring Down The Sta",
+        "author": "katieemilyreads",
+        "plays": 210800,
+        "likes": 24000,
+        "posted": "2026-02-25T21:19:15.000Z"
       },
       {
-        "id": "7555648842692168978",
-        "url": "https://www.tiktok.com/@claracarral/video/7555648842692168978",
-        "text": "Chai épice de @lemondegourmand ",
-        "author": "claracarral",
-        "plays": 25300,
-        "likes": 976,
-        "posted": "2025-09-29T22:56:36.000Z"
+        "id": "7599739349718060310",
+        "url": "https://www.tiktok.com/@inkhearted.books/video/7599739349718060310",
+        "text": "DEEP END 🏊‍♀️🩱~ Scarlett&Lukas\n#deepend #alihazelwood #booktok #bookshelf #book ",
+        "author": "inkhearted.books",
+        "plays": 31300,
+        "likes": 630,
+        "posted": "2026-01-26T18:30:09.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-15T20:30:00.000Z",
-    "median_plays": 1661,
+    "most_recent_post_at": "2026-04-24T14:31:03.000Z",
+    "median_plays": 2834,
     "detected_own_handle": null,
-    "scraped_at": "2026-04-25T15:26:50.902Z"
+    "scraped_at": "2026-04-26T16:01:06.032Z"
   }
 }

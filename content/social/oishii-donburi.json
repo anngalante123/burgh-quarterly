@@ -17,108 +17,84 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "oishii donburi pittsburgh",
-    "video_count": 30,
-    "total_plays": 1715660,
-    "total_likes": 174603,
-    "unique_creators": 29,
+    "video_count": 5,
+    "total_plays": 26872,
+    "total_likes": 1059,
+    "unique_creators": 5,
     "top_creators": [
       {
-        "handle": "kayylou52",
-        "fans": 1430,
+        "handle": "missrichauntie",
+        "fans": 937,
         "verified": false,
         "videos": 1,
-        "plays": 852600,
-        "likes": 99600
+        "plays": 9983,
+        "likes": 516
       },
       {
-        "handle": "llchung35",
-        "fans": 5506,
+        "handle": "wassupminnesota",
+        "fans": 17600,
         "verified": false,
         "videos": 1,
-        "plays": 215400,
-        "likes": 17400
+        "plays": 6217,
+        "likes": 133
       },
       {
-        "handle": "isabellagerasole",
-        "fans": 2429,
+        "handle": "oishiideli2",
+        "fans": 2862,
         "verified": false,
         "videos": 1,
-        "plays": 142600,
-        "likes": 25600
+        "plays": 5894,
+        "likes": 107
       },
       {
-        "handle": "capitals",
-        "fans": 531700,
-        "verified": true,
-        "videos": 1,
-        "plays": 131400,
-        "likes": 12600
-      },
-      {
-        "handle": "food4paulrus",
-        "fans": 9704,
-        "verified": false,
-        "videos": 2,
-        "plays": 92500,
-        "likes": 5947
-      },
-      {
-        "handle": "412.micdup",
-        "fans": 8085,
+        "handle": "annniexn",
+        "fans": 1052,
         "verified": false,
         "videos": 1,
-        "plays": 43800,
-        "likes": 3104
+        "plays": 3595,
+        "likes": 283
       },
       {
-        "handle": "nfl",
-        "fans": 20500000,
-        "verified": true,
-        "videos": 1,
-        "plays": 35900,
-        "likes": 2508
-      },
-      {
-        "handle": "eli.tbd",
-        "fans": 783,
+        "handle": "dondonjfb",
+        "fans": 78,
         "verified": false,
         "videos": 1,
-        "plays": 34400,
-        "likes": 867
+        "plays": 1183,
+        "likes": 20
       }
     ],
     "top_videos": [
       {
-        "id": "7326820321384860970",
-        "url": "https://www.tiktok.com/@kayylou52/video/7326820321384860970",
-        "text": "If yinz know, you know #412 #pittsburgh #jacobelordi ",
-        "author": "kayylou52",
-        "plays": 852600,
-        "likes": 99600,
-        "posted": "2024-01-22T07:26:19.000Z"
+        "id": "7622326183576849695",
+        "url": "https://www.tiktok.com/@missrichauntie/video/7622326183576849695",
+        "text": "Things to do in the 302 😗.\nFinally tried this sushi place while I was waiting for my car in the shop for a quick bite. #\nOishii Sushi in Camden, Delaware \n\nJapanese restaurant in delaware\n#sushilover #Foodie #delaware #delawarefood #japane",
+        "author": "missrichauntie",
+        "plays": 9983,
+        "likes": 516,
+        "posted": "2026-03-28T15:18:55.000Z"
       },
       {
-        "id": "7537425709325733175",
-        "url": "https://www.tiktok.com/@llchung35/video/7537425709325733175",
-        "text": "Not to crazy 😂 #llchung #pennsylvania #pittsburgh #412 #publicinterview ",
-        "author": "llchung35",
-        "plays": 215400,
-        "likes": 17400,
-        "posted": "2025-08-11T20:22:01.000Z"
+        "id": "7602793819498630413",
+        "url": "https://www.tiktok.com/@wassupminnesota/video/7602793819498630413",
+        "text": "🚨 MUST TRY RAMEN SPOT IN MINNESOTA TO TRY THIS WINTER! // @oishiiramenmn\n#WassupMinnesota\nIf YOU love ramen and udon, Oishii Japanese Ramen & Donburi in Savage is one you should know about. We just found out they have been open for seven y",
+        "author": "wassupminnesota",
+        "plays": 6217,
+        "likes": 133,
+        "posted": "2026-02-04T00:03:18.000Z"
       },
       {
-        "id": "7564567265589431607",
-        "url": "https://www.tiktok.com/@isabellagerasole/video/7564567265589431607",
-        "text": "HEYYYYY STELLA!!!!!\n#pittsburgh #steelers #heinz #theatre ",
-        "author": "isabellagerasole",
-        "plays": 142600,
-        "likes": 25600,
-        "posted": "2025-10-23T23:44:40.000Z"
+        "id": "7630740368979463445",
+        "url": "https://www.tiktok.com/@oishiideli2/video/7630740368979463445",
+        "text": "Em đã thử rồi, mọi người thử món mới của nhà Oishii chưa ạ - Đồng Giá 59K thôi đó #oishidelivery #comcahoicay #cacuon #sushi #antruavanphong ",
+        "author": "oishiideli2",
+        "plays": 5894,
+        "likes": 107,
+        "posted": "2026-04-20T07:30:05.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-25T14:08:33.000Z",
-    "median_plays": 7524,
+    "most_recent_post_at": "2026-04-20T07:30:05.000Z",
+    "median_plays": 5894,
     "detected_own_handle": null,
-    "scraped_at": "2026-04-25T15:28:49.523Z"
+    "scraped_at": "2026-04-26T16:08:02.153Z"
   }
 }

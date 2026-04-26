@@ -37,108 +37,100 @@
   },
   "tiktok_mentions": {
     "query": "margaux pittsburgh",
-    "video_count": 30,
-    "total_plays": 384916,
-    "total_likes": 13721,
-    "unique_creators": 29,
+    "video_count": 7,
+    "total_plays": 43606,
+    "total_likes": 3939,
+    "unique_creators": 7,
     "top_creators": [
       {
-        "handle": "heinz_us",
-        "fans": 172000,
-        "verified": true,
-        "videos": 1,
-        "plays": 124700,
-        "likes": 574
-      },
-      {
-        "handle": "cooking_comedy_chaos",
-        "fans": 750700,
-        "verified": false,
-        "videos": 1,
-        "plays": 52200,
-        "likes": 2497
-      },
-      {
-        "handle": "thesportingnews",
-        "fans": 120300,
-        "verified": false,
-        "videos": 1,
-        "plays": 51400,
-        "likes": 1173
-      },
-      {
-        "handle": "anjalipll",
-        "fans": 256,
-        "verified": false,
-        "videos": 1,
-        "plays": 50000,
-        "likes": 2376
-      },
-      {
         "handle": "deluludayss",
-        "fans": 1289,
+        "fans": 1290,
         "verified": false,
         "videos": 1,
         "plays": 21400,
         "likes": 2544
       },
       {
-        "handle": "toricreates222",
-        "fans": 7834,
-        "verified": false,
-        "videos": 1,
-        "plays": 14500,
-        "likes": 1009
-      },
-      {
         "handle": "lattebrothers",
-        "fans": 4331,
+        "fans": 4337,
         "verified": false,
         "videos": 1,
         "plays": 10700,
         "likes": 447
       },
       {
-        "handle": "theurbandarling",
-        "fans": 51800,
+        "handle": "pgh.date.spotters",
+        "fans": 18100,
         "verified": false,
         "videos": 1,
-        "plays": 8097,
+        "plays": 3155,
+        "likes": 80
+      },
+      {
+        "handle": "maddielovespittsburgh",
+        "fans": 1047,
+        "verified": false,
+        "videos": 1,
+        "plays": 2925,
         "likes": 180
+      },
+      {
+        "handle": "margauxxgriffon",
+        "fans": 613,
+        "verified": false,
+        "videos": 1,
+        "plays": 2265,
+        "likes": 234
+      },
+      {
+        "handle": "margaux_jacob",
+        "fans": 3061,
+        "verified": false,
+        "videos": 1,
+        "plays": 2163,
+        "likes": 409
+      },
+      {
+        "handle": "carlys_coffee",
+        "fans": 159,
+        "verified": false,
+        "videos": 1,
+        "plays": 998,
+        "likes": 45
       }
     ],
     "top_videos": [
       {
-        "id": "7632454197534821646",
-        "url": "https://www.tiktok.com/@heinz_us/video/7632454197534821646",
-        "text": "what is Pittsburgh's #1 sauce draft pick?",
-        "author": "heinz_us",
-        "plays": 124700,
-        "likes": 574,
-        "posted": "2026-04-24T23:00:00.000Z"
+        "id": "7603414782779067661",
+        "url": "https://www.tiktok.com/@deluludayss/video/7603414782779067661",
+        "text": "aesthetic places to visit in pittsburgh | part 1 #pittsburgh #pgh #aestheticplaces #coffeeaesthetic #aestheticvibes @fieldday.life @margauxpgh ",
+        "author": "deluludayss",
+        "plays": 21400,
+        "likes": 2544,
+        "posted": "2026-02-05T16:12:47.000Z"
       },
       {
-        "id": "7571887344110882061",
-        "url": "https://www.tiktok.com/@cooking_comedy_chaos/video/7571887344110882061",
-        "text": "The best pizza in Pittsburgh is at Fiori’s! Crispy undercarriage, chewy crust, flavorful sauce and gooey cheese! Definitely go check this famous pizza shop out! #pittsburgh #famous #pizza ",
-        "author": "cooking_comedy_chaos",
-        "plays": 52200,
-        "likes": 2497,
-        "posted": "2025-11-12T20:01:00.000Z"
+        "id": "7612279472301018398",
+        "url": "https://www.tiktok.com/@lattebrothers/video/7612279472301018398",
+        "text": "Trying and rating Margaux’s iced vanilla latte. If you are a local coffee shop, we’d love to come see you. Send us a DM! #coffee #pittsburgh #latte #coffeetiktok #lattebrothers ",
+        "author": "lattebrothers",
+        "plays": 10700,
+        "likes": 447,
+        "posted": "2026-03-01T13:32:43.000Z"
       },
       {
-        "id": "7632512009124252941",
-        "url": "https://www.tiktok.com/@thesportingnews/video/7632512009124252941",
-        "text": "Steelers fans are excited about Penn State QB Drew Allar #nfl #pittsburghsteelers #pennstate ",
-        "author": "thesportingnews",
-        "plays": 51400,
-        "likes": 1173,
-        "posted": "2026-04-25T02:05:09.000Z"
+        "id": "7614531929173413151",
+        "url": "https://www.tiktok.com/@pgh.date.spotters/video/7614531929173413151",
+        "text": "VIBEY coffee shop ☕️🍃✨\n\nIf you’re looking for a new coffee date spot, this is your sign to stop by Margaux in East Liberty 🤗\n\n#pittsburghdateideas #eastlibertypgh #pghcoffee #thingstodoinpittsburgh #pittsburghcafe ",
+        "author": "pgh.date.spotters",
+        "plays": 3155,
+        "likes": 80,
+        "posted": "2026-03-07T15:13:04.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-25T14:08:33.000Z",
-    "median_plays": 3035,
-    "detected_own_handle": "margauxpgh",
-    "scraped_at": "2026-04-25T15:27:45.518Z"
+    "most_recent_post_at": "2026-04-24T10:15:26.000Z",
+    "median_plays": 2925,
+    "detected_own_handle": "margauxxgriffon",
+    "scraped_at": "2026-04-26T16:03:57.304Z"
   }
 }

@@ -37,108 +37,108 @@
   },
   "tiktok_mentions": {
     "query": "page's pittsburgh",
-    "video_count": 30,
-    "total_plays": 1080303,
-    "total_likes": 55319,
-    "unique_creators": 25,
+    "video_count": 14,
+    "total_plays": 177416,
+    "total_likes": 14219,
+    "unique_creators": 13,
     "top_creators": [
-      {
-        "handle": "pagesicecream",
-        "fans": 47500,
-        "verified": false,
-        "videos": 6,
-        "plays": 562700,
-        "likes": 24445
-      },
-      {
-        "handle": "bsilky_smooth",
-        "fans": 1634,
-        "verified": false,
-        "videos": 1,
-        "plays": 125200,
-        "likes": 8987
-      },
-      {
-        "handle": "pgh.date.spotters",
-        "fans": 18100,
-        "verified": false,
-        "videos": 1,
-        "plays": 89500,
-        "likes": 7078
-      },
       {
         "handle": "bhphotographypa",
         "fans": 30500,
         "verified": false,
         "videos": 1,
-        "plays": 62600,
-        "likes": 3871
+        "plays": 62800,
+        "likes": 3878
       },
       {
-        "handle": "reviews_by_cha_and_joe",
-        "fans": 168,
+        "handle": "sarah_cooper08",
+        "fans": 491,
         "verified": false,
         "videos": 1,
-        "plays": 41900,
-        "likes": 2357
+        "plays": 45800,
+        "likes": 4131
       },
       {
-        "handle": "caitlindestefano",
-        "fans": 944,
+        "handle": "waggingwithwords",
+        "fans": 12900,
         "verified": false,
         "videos": 1,
-        "plays": 33800,
-        "likes": 1494
-      },
-      {
-        "handle": "pittsburghdatedayzzz",
-        "fans": 667,
-        "verified": false,
-        "videos": 1,
-        "plays": 25800,
-        "likes": 424
+        "plays": 36100,
+        "likes": 3927
       },
       {
         "handle": "lilbigbackz",
-        "fans": 18600,
+        "fans": 18700,
         "verified": false,
         "videos": 1,
-        "plays": 22200,
-        "likes": 1604
+        "plays": 22900,
+        "likes": 1663
+      },
+      {
+        "handle": "kailyn_nicole",
+        "fans": 5,
+        "verified": false,
+        "videos": 1,
+        "plays": 2953,
+        "likes": 187
+      },
+      {
+        "handle": "highflyer412",
+        "fans": 4904,
+        "verified": false,
+        "videos": 1,
+        "plays": 2633,
+        "likes": 230
+      },
+      {
+        "handle": "kps_live",
+        "fans": 292,
+        "verified": false,
+        "videos": 2,
+        "plays": 1153,
+        "likes": 47
+      },
+      {
+        "handle": "tierneyanne2313",
+        "fans": 1043,
+        "verified": false,
+        "videos": 1,
+        "plays": 797,
+        "likes": 40
       }
     ],
     "top_videos": [
       {
-        "id": "7555639219490655501",
-        "url": "https://www.tiktok.com/@pagesicecream/video/7555639219490655501",
-        "text": "Not your average banana split. 🍌🍫\n\n#bananasplit #brownie #dessert #icecream #pittsburgh ",
-        "author": "pagesicecream",
-        "plays": 231700,
-        "likes": 17800,
-        "posted": "2025-09-29T22:19:31.000Z"
+        "id": "7615450580697337119",
+        "url": "https://www.tiktok.com/@bhphotographypa/video/7615450580697337119",
+        "text": "Who Wants Ice Cream? 🍦 @Page's  #pagesdairymart #bhphotographypa #pittsburgh #southside #icecream",
+        "author": "bhphotographypa",
+        "plays": 62800,
+        "likes": 3878,
+        "posted": "2026-03-10T02:38:00.000Z"
       },
       {
-        "id": "7495545201256074538",
-        "url": "https://www.tiktok.com/@bsilky_smooth/video/7495545201256074538",
-        "text": "PAGES = LIFE!! I swear I’m here once a week 🤪 !! These are some of my favorite things to get!!! #fyp #viral #pittsburgh #foodtiktok #pitt #foodies #icecream #icecreamlover #dessert ",
-        "author": "bsilky_smooth",
-        "plays": 125200,
-        "likes": 8987,
-        "posted": "2025-04-20T23:44:10.000Z"
+        "id": "7614542506281159949",
+        "url": "https://www.tiktok.com/@sarah_cooper08/video/7614542506281159949",
+        "text": "Visited Pittsburghs NEW all romance book store; Passonate Pages in Lawrenceville! Super cute vibe, you can tell they are new & building their collection! Definitely recommend supporting #romancebooks #pittsburgh #passionatepages #romanceboo",
+        "author": "sarah_cooper08",
+        "plays": 45800,
+        "likes": 4131,
+        "posted": "2026-03-07T15:54:27.000Z"
       },
       {
-        "id": "7520011442217651470",
-        "url": "https://www.tiktok.com/@pagesicecream/video/7520011442217651470",
-        "text": "Malt milkshakes are underrated. 🤷 Chocolate is classic, but you can add malt powder to any of our milkshakes! 🍫\n\n#malt #milkshake #icecream #pgh #pittsburgh ",
-        "author": "pagesicecream",
-        "plays": 122400,
-        "likes": 2248,
-        "posted": "2025-06-25T22:05:41.000Z"
+        "id": "7612456801354665246",
+        "url": "https://www.tiktok.com/@waggingwithwords/video/7612456801354665246",
+        "text": "The cutest romance bookstore in pittsburgh exists!! @PassionatePages #passionatepages #romancebookstore #bookstore #pittsburgh #romance ",
+        "author": "waggingwithwords",
+        "plays": 36100,
+        "likes": 3927,
+        "posted": "2026-03-02T01:00:35.000Z"
       }
     ],
-    "most_recent_post_at": "2026-03-31T22:45:50.000Z",
-    "median_plays": 17800,
-    "detected_own_handle": "pagesicecream",
-    "scraped_at": "2026-04-25T15:29:03.586Z"
+    "most_recent_post_at": "2026-04-26T13:34:16.000Z",
+    "median_plays": 785,
+    "detected_own_handle": null,
+    "scraped_at": "2026-04-26T16:08:43.613Z"
   }
 }

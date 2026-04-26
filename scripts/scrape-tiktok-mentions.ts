@@ -110,6 +110,72 @@ function buildQuery(name: string, neighborhood: string | undefined): string {
   return `${cleaned} pittsburgh`.toLowerCase().replace(/\s+/g, " ");
 }
 
+/**
+ * Pull the distinguishing tokens from a business name. "Page's Ice Cream"
+ * -> ["pages", "ice", "cream"]. Used by the relevance filter below to
+ * decide whether a TikTok video is actually ABOUT this business.
+ */
+function nameTokens(name: string): string[] {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, " ")
+    .split(/\s+/)
+    .filter((t) => t.length >= 3 && !STOP.has(t));
+}
+const STOP = new Set([
+  "and",
+  "the",
+  "with",
+  "for",
+  "from",
+  "pittsburgh",
+  "shop",
+  "cafe",
+  "bar",
+  "restaurant",
+  "kitchen",
+  "company",
+  "house",
+]);
+
+/**
+ * Filter Apify's raw result list down to videos that are
+ *   (a) posted in the last 90 days, AND
+ *   (b) plausibly about this business (relevance check).
+ *
+ * Relevance: the video's caption, hashtags, OR author handle must
+ * mention at least one of the business's distinguishing tokens. This
+ * kills the false positives where Apify's keyword search returns
+ * unrelated videos that happened to match (e.g., "Margaux pittsburgh"
+ * pulling videos about people named Margaux).
+ *
+ * Conservative by design. We'd rather under-count by a few than
+ * publish editorial claims about creator coverage that don't survive
+ * a skeptic checking the actual videos.
+ */
+function filterRelevant(items: ApifyVideo[], businessName: string): ApifyVideo[] {
+  const tokens = nameTokens(businessName);
+  if (tokens.length === 0) return items;
+  const cutoff = Date.now() - 90 * 24 * 60 * 60 * 1000;
+
+  return items.filter((v) => {
+    // (a) Recency
+    const posted = v.createTimeISO ? Date.parse(v.createTimeISO) : NaN;
+    if (Number.isNaN(posted) || posted < cutoff) return false;
+
+    // (b) Relevance: caption, hashtag, or author handle must contain
+    // at least one distinguishing token from the business name.
+    const haystack = [
+      (v.text ?? "").toLowerCase(),
+      (v.authorMeta?.name ?? "").toLowerCase(),
+      (v.authorMeta?.nickName ?? "").toLowerCase(),
+      ...(v.hashtags ?? []).map((h) => (h.name ?? "").toLowerCase()),
+    ].join(" ");
+
+    return tokens.some((t) => haystack.includes(t));
+  });
+}
+
 async function runActor(query: string): Promise<ApifyVideo[]> {
   const startRes = await fetch(
     `https://api.apify.com/v2/acts/${ACTOR}/runs?token=${TOKEN}`,
@@ -118,7 +184,10 @@ async function runActor(query: string): Promise<ApifyVideo[]> {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         searchQueries: [query],
-        resultsPerPage: 30,
+        // Was 30, that hard-capped every business at ~25-30 unique
+        // creators regardless of actual coverage. Bumped to 100 so
+        // viral businesses can show real differentiation.
+        resultsPerPage: 100,
         shouldDownloadVideos: false,
         shouldDownloadCovers: false,
         shouldDownloadSubtitles: false,
@@ -285,13 +354,29 @@ async function main() {
 
     try {
       console.log(`[query] ${slug} :: "${query}"`);
-      const items = await runActor(query);
+      const rawItems = await runActor(query);
+      const items = filterRelevant(rawItems, record.name);
+      console.log(
+        `[filter] ${slug}, kept ${items.length} of ${rawItems.length} (90-day + relevance)`,
+      );
       const mentions = aggregate(query, items, record.name);
 
-      // Save raw videos for future re-aggregation
+      // Save raw videos for future re-aggregation. Includes both the
+      // pre-filter and post-filter sets so we can tune the filter
+      // without re-scraping.
       await writeFile(
         rawPath,
-        JSON.stringify({ query, scraped_at: mentions.scraped_at, items }, null, 2),
+        JSON.stringify(
+          {
+            query,
+            scraped_at: mentions.scraped_at,
+            raw_count: rawItems.length,
+            kept_count: items.length,
+            items: rawItems,
+          },
+          null,
+          2,
+        ),
       );
 
       // Merge into social file

@@ -17,108 +17,108 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "hidden harbor pittsburgh",
-    "video_count": 30,
-    "total_plays": 2464293,
-    "total_likes": 277117,
-    "unique_creators": 28,
+    "video_count": 10,
+    "total_plays": 425844,
+    "total_likes": 31844,
+    "unique_creators": 10,
     "top_creators": [
       {
-        "handle": "pennsylvania_core",
-        "fans": 1779,
+        "handle": "messihasaura7689",
+        "fans": 241,
         "verified": false,
         "videos": 1,
-        "plays": 986400,
-        "likes": 165000
+        "plays": 204400,
+        "likes": 20800
       },
       {
-        "handle": "tryquinn",
-        "fans": 889000,
+        "handle": "outspokenexpressions",
+        "fans": 571,
         "verified": false,
         "videos": 1,
-        "plays": 649100,
-        "likes": 44000
+        "plays": 172600,
+        "likes": 9680
       },
       {
-        "handle": "gloriaschafer",
-        "fans": 565,
+        "handle": "hiltonheadlivin",
+        "fans": 25500,
         "verified": false,
         "videos": 1,
-        "plays": 261100,
-        "likes": 32700
+        "plays": 13200,
+        "likes": 338
       },
       {
-        "handle": "irene99rv",
-        "fans": 475,
+        "handle": "redbarnwinerydelmont",
+        "fans": 1009,
         "verified": false,
         "videos": 1,
-        "plays": 103700,
-        "likes": 2788
+        "plays": 11300,
+        "likes": 197
       },
       {
-        "handle": "ellathestylist",
-        "fans": 4812,
+        "handle": "sugarrainbowbubbl",
+        "fans": 1485,
         "verified": false,
         "videos": 1,
-        "plays": 73200,
-        "likes": 3038
+        "plays": 11200,
+        "likes": 321
       },
       {
-        "handle": "justmostie",
-        "fans": 5949,
+        "handle": "412onthemove",
+        "fans": 12700,
         "verified": false,
         "videos": 1,
-        "plays": 72600,
-        "likes": 4747
+        "plays": 4759,
+        "likes": 216
       },
       {
-        "handle": "onlyinyourstate",
-        "fans": 7158,
+        "handle": "daddys_budget_tools",
+        "fans": 1357,
         "verified": false,
         "videos": 1,
-        "plays": 54800,
-        "likes": 4283
+        "plays": 4581,
+        "likes": 143
       },
       {
-        "handle": "axiospittsburgh",
-        "fans": 5860,
+        "handle": "aprilsgeorge",
+        "fans": 13100,
         "verified": false,
         "videos": 1,
-        "plays": 41700,
-        "likes": 3470
+        "plays": 2117,
+        "likes": 54
       }
     ],
     "top_videos": [
       {
-        "id": "7623034107403963662",
-        "url": "https://www.tiktok.com/@pennsylvania_core/video/7623034107403963662",
-        "text": "city of bridges, city of hills #flatearth #pittsburgh #pgh ",
-        "author": "pennsylvania_core",
-        "plays": 986400,
-        "likes": 165000,
-        "posted": "2026-03-30T13:06:22.000Z"
+        "id": "7621394526262922527",
+        "url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527",
+        "text": "Pearl Harbor #usa #japan #pearlharbor #edit #darktriad ",
+        "author": "messihasaura7689",
+        "plays": 204400,
+        "likes": 20800,
+        "posted": "2026-03-26T03:03:36.000Z"
       },
       {
-        "id": "7551781029376216375",
-        "url": "https://www.tiktok.com/@tryquinn/video/7551781029376216375",
-        "text": "If there are infinite worlds, every version of me is listening to this in every one of them. \n\nHidden Harbor is now live. ",
-        "author": "tryquinn",
-        "plays": 649100,
-        "likes": 44000,
-        "posted": "2025-09-19T12:47:30.000Z"
+        "id": "7631288928741444878",
+        "url": "https://www.tiktok.com/@outspokenexpressions/video/7631288928741444878",
+        "text": "👉 “Are you a Harbor Freight mechanic but kind? Got Snap-on friends that always talk? I’ve got a sticker for them.” Order yours today! #harborfreight #snapon #tools #outspokenexpression",
+        "author": "outspokenexpressions",
+        "plays": 172600,
+        "likes": 9680,
+        "posted": "2026-04-21T18:59:20.000Z"
       },
       {
-        "id": "7604546258472078622",
-        "url": "https://www.tiktok.com/@gloriaschafer/video/7604546258472078622",
-        "text": "Lawerenceville is the place for foodies. Can’t convince me otherwise. \n\n#pittsburgh #fyp ",
-        "author": "gloriaschafer",
-        "plays": 261100,
-        "likes": 32700,
-        "posted": "2026-02-08T17:23:43.000Z"
+        "id": "7632759846978309389",
+        "url": "https://www.tiktok.com/@hiltonheadlivin/video/7632759846978309389",
+        "text": "Hidden Gem Waterfront Dining on Hilton Head Island ",
+        "author": "hiltonheadlivin",
+        "plays": 13200,
+        "likes": 338,
+        "posted": "2026-04-25T18:06:58.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-22T04:47:35.000Z",
-    "median_plays": 15950,
+    "most_recent_post_at": "2026-04-25T18:06:58.000Z",
+    "median_plays": 7980,
     "detected_own_handle": null,
-    "scraped_at": "2026-04-25T15:25:33.874Z"
+    "scraped_at": "2026-04-26T15:57:52.446Z"
   }
 }

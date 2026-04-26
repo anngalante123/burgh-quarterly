@@ -37,108 +37,108 @@
   },
   "tiktok_mentions": {
     "query": "dobrá tea pittsburgh pittsburgh",
-    "video_count": 30,
-    "total_plays": 2604795,
-    "total_likes": 211753,
-    "unique_creators": 28,
+    "video_count": 11,
+    "total_plays": 9656,
+    "total_likes": 466,
+    "unique_creators": 10,
     "top_creators": [
       {
-        "handle": "memoirs.of.a.ginga",
-        "fans": 728,
+        "handle": "alexgdeckerr",
+        "fans": 1111,
         "verified": false,
         "videos": 1,
-        "plays": 1800000,
-        "likes": 173600
+        "plays": 2589,
+        "likes": 105
       },
       {
-        "handle": "movies000018",
-        "fans": 281,
+        "handle": "kyuramen.pittsburgh",
+        "fans": 876,
         "verified": false,
         "videos": 1,
-        "plays": 503400,
-        "likes": 20800
+        "plays": 1384,
+        "likes": 58
       },
       {
-        "handle": "calsipos",
-        "fans": 73000,
+        "handle": "lovestoresco",
+        "fans": 1018,
         "verified": false,
         "videos": 2,
-        "plays": 140400,
-        "likes": 6199
+        "plays": 1293,
+        "likes": 78
       },
       {
-        "handle": "vividlyaria",
-        "fans": 913,
+        "handle": "bradentomalson",
+        "fans": 3216,
         "verified": false,
         "videos": 1,
-        "plays": 48400,
-        "likes": 3038
+        "plays": 1200,
+        "likes": 42
       },
       {
-        "handle": "littlegirlsoph",
-        "fans": 1881,
+        "handle": "sarahzwithanh",
+        "fans": 1094,
         "verified": false,
         "videos": 1,
-        "plays": 27500,
-        "likes": 3195
+        "plays": 784,
+        "likes": 45
       },
       {
-        "handle": "br_openice",
-        "fans": 583400,
-        "verified": true,
-        "videos": 1,
-        "plays": 23200,
-        "likes": 1850
-      },
-      {
-        "handle": "katelynsoldit",
-        "fans": 605,
+        "handle": "dyhwrl6u90ec",
+        "fans": 144,
         "verified": false,
         "videos": 1,
-        "plays": 19000,
-        "likes": 950
+        "plays": 651,
+        "likes": 18
       },
       {
-        "handle": "avarash",
-        "fans": 1946,
+        "handle": "morgmoneyyyy",
+        "fans": 1282,
         "verified": false,
         "videos": 1,
-        "plays": 10200,
-        "likes": 527
+        "plays": 621,
+        "likes": 69
+      },
+      {
+        "handle": "christinaclothesncoffee",
+        "fans": 7266,
+        "verified": false,
+        "videos": 1,
+        "plays": 578,
+        "likes": 29
       }
     ],
     "top_videos": [
       {
-        "id": "7623491990398782733",
-        "url": "https://www.tiktok.com/@memoirs.of.a.ginga/video/7623491990398782733",
-        "text": "#pittsburgh #pittsburghzoo",
-        "author": "memoirs.of.a.ginga",
-        "plays": 1800000,
-        "likes": 173600,
-        "posted": "2026-03-31T18:43:09.000Z"
+        "id": "7600517334402452767",
+        "url": "https://www.tiktok.com/@alexgdeckerr/video/7600517334402452767",
+        "text": "The Bombay chai is a MUST TRY at Dobrah tea in Squirrel Hill Pittsburgh!! Follow for more Pittsburgh content💓 #pittsburgh #pittsburghpa #pittsburghcheck #pittsburghrestaurants #pittsburghdatenight ",
+        "author": "alexgdeckerr",
+        "plays": 2589,
+        "likes": 105,
+        "posted": "2026-01-28T20:49:23.000Z"
       },
       {
-        "id": "7435477324604263722",
-        "url": "https://www.tiktok.com/@movies000018/video/7435477324604263722",
-        "text": "The Pradeeps of Pittsburgh part 1 #movie #thepradeepsofpittsburgh #india #hollywood #bollywoodsong #pittsburgh ##prime ",
-        "author": "movies000018",
-        "plays": 503400,
-        "likes": 20800,
-        "posted": "2024-11-10T02:49:36.000Z"
+        "id": "7611652457084538142",
+        "url": "https://www.tiktok.com/@kyuramen.pittsburgh/video/7611652457084538142",
+        "text": "When the \"YOU TOO\" actually works!! 😂​🧋​#TBaar​ #bubblemilktea #pittsburghfoodie #KyuramenPittsburgh #boba ",
+        "author": "kyuramen.pittsburgh",
+        "plays": 1384,
+        "likes": 58,
+        "posted": "2026-02-27T20:59:18.000Z"
       },
       {
-        "id": "7534731262238412062",
-        "url": "https://www.tiktok.com/@calsipos/video/7534731262238412062",
-        "text": "Churro latte for the win today 😎 this shop is so so cute and I love their wallpaper so much. The coffee and bakery items were great!!!! #pittsburgh #trending #shoplocal #tastetest #vlog ",
-        "author": "calsipos",
-        "plays": 104500,
-        "likes": 4035,
-        "posted": "2025-08-04T14:06:00.000Z"
+        "id": "7613049265237151006",
+        "url": "https://www.tiktok.com/@bradentomalson/video/7613049265237151006",
+        "text": "Bubble Tea & Ramen at Teachana in Novo Asisn Food Hall in the Strip District! @Jennifer Maze \n#pittsburgh #pgh #pittsburghfoodie #ramen #bubbletea ",
+        "author": "bradentomalson",
+        "plays": 1200,
+        "likes": 42,
+        "posted": "2026-03-03T15:19:45.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-25T10:59:15.000Z",
-    "median_plays": 1288,
+    "most_recent_post_at": "2026-04-14T10:47:21.000Z",
+    "median_plays": 651,
     "detected_own_handle": null,
-    "scraped_at": "2026-04-25T15:24:33.457Z"
+    "scraped_at": "2026-04-26T15:56:00.138Z"
   }
 }

@@ -17,108 +17,15 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "commerce bar pittsburgh",
-    "video_count": 30,
-    "total_plays": 1612745,
-    "total_likes": 111900,
-    "unique_creators": 28,
-    "top_creators": [
-      {
-        "handle": "andrewgardone",
-        "fans": 80600,
-        "verified": false,
-        "videos": 1,
-        "plays": 443400,
-        "likes": 48700
-      },
-      {
-        "handle": "_its_juice_time_",
-        "fans": 324,
-        "verified": false,
-        "videos": 1,
-        "plays": 160400,
-        "likes": 287
-      },
-      {
-        "handle": "shopsociallounge",
-        "fans": 4075,
-        "verified": false,
-        "videos": 1,
-        "plays": 141100,
-        "likes": 5282
-      },
-      {
-        "handle": "nfl",
-        "fans": 20500000,
-        "verified": true,
-        "videos": 1,
-        "plays": 140100,
-        "likes": 17400
-      },
-      {
-        "handle": "10thingstodo",
-        "fans": 14200,
-        "verified": false,
-        "videos": 1,
-        "plays": 129300,
-        "likes": 3345
-      },
-      {
-        "handle": "syddddmorgan",
-        "fans": 122,
-        "verified": false,
-        "videos": 1,
-        "plays": 109800,
-        "likes": 6786
-      },
-      {
-        "handle": "clipguesser",
-        "fans": 113300,
-        "verified": false,
-        "videos": 1,
-        "plays": 103300,
-        "likes": 6561
-      },
-      {
-        "handle": "cateygilliam",
-        "fans": 1125,
-        "verified": false,
-        "videos": 1,
-        "plays": 74100,
-        "likes": 9404
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "6861797728410750213",
-        "url": "https://www.tiktok.com/@andrewgardone/video/6861797728410750213",
-        "text": "Best place in Pittsburgh it’s slept on #pittsburgh #412",
-        "author": "andrewgardone",
-        "plays": 443400,
-        "likes": 48700,
-        "posted": "2020-08-17T03:59:54.000Z"
-      },
-      {
-        "id": "7038224560541535489",
-        "url": "https://www.tiktok.com/@_its_juice_time_/video/7038224560541535489",
-        "text": "Reply to @ademaya..m.m  here you go 🥰 we are located in Mombasa #bondeni burhani mall follow us on insta _its_juice_time_ or contact uson 0791028817😊",
-        "author": "_its_juice_time_",
-        "plays": 160400,
-        "likes": 287,
-        "posted": "2021-12-05T14:25:55.000Z"
-      },
-      {
-        "id": "7603915324005698846",
-        "url": "https://www.tiktok.com/@shopsociallounge/video/7603915324005698846",
-        "text": "",
-        "author": "shopsociallounge",
-        "plays": 141100,
-        "likes": 5282,
-        "posted": "2026-02-07T00:35:22.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-25T13:46:54.000Z",
-    "median_plays": 19600,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": null,
-    "scraped_at": "2026-04-25T15:23:47.052Z"
+    "scraped_at": "2026-04-26T15:54:52.222Z"
   }
 }
