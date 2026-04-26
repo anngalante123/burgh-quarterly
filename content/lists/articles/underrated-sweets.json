@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Sweets",
   "subtitle": "Bakeries, dessert spots, and ice cream shops the city should be talking about.",
   "angle": "the dessert shops Pittsburgh customers love but creators haven't fully caught onto. High ratings, real review depth, lower social signal. The places worth a Sunday morning detour.",
-  "intro": "The dessert spots on this list have something in common: their customers are doing the work. Waffallonia in Squirrel Hill leads Pittsburgh dessert on review depth alone, which is a signal worth paying attention to. Review depth, the kind built from long, specific, return-visit writing, is harder to manufacture than a follower count. La Gourmandine's Lawrenceville location sits first in bakeries by that same measure, with a shop feed that has gone essentially quiet. The reviews kept coming anyway.\n\nTreat in Shadyside tells a slightly different story. It ranks third in ice cream and is being filmed regularly by people who aren't the shop. The shop has not filmed back. Page's in Arlington is winning its category on creator fuel with no TikTok presence of its own to point to. Across the board, the gap between customer enthusiasm and creator output is the story this quarter.\n\nThat gap is also an opportunity, and it won't stay open forever. Issue 02, covering summer 2026, will track whether any of these businesses have closed the distance, and which new names have earned a spot on the list by then.",
+  "intro": "Pittsburgh's dessert conversation this quarter ran almost entirely without the shops themselves. The five businesses on this list share a specific profile: deep review volume, genuine customer enthusiasm, and an almost total absence of the shops posting back. Waffallonia in Squirrel Hill landed first in Pittsburgh dessert on review depth alone, which is a hard thing to do without algorithmic help. La Gourmandine's Lawrenceville location topped the bakery category the same way, on the weight of what customers wrote, not what the bakery published.\n\nTreat in Shadyside tells a slightly different version of the same story. The shop ranked third in ice cream this quarter fueled by a city that kept filming it. The shop has not filmed back. Page's in Arlington has no TikTok presence and still pulled first in sweets on creator output it didn't generate. That gap, between what customers produce and what owners claim, is what this list is actually measuring.\n\nBusinesses with this kind of organic pull already have the hard part. The customers exist, the footage exists, and there are more creators in Pittsburgh actively looking for places to feature than most owners sitting behind a counter would guess. The infrastructure for closing that gap runs quietly, because it doesn't need to advertise.\n\nIssue 02, out this summer, starts tracking whether any of this quarter's honorees have figured that out.",
   "items": [
     {
       "rank": 1,
@@ -92,6 +92,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-26T18:44:01.017Z",
+  "generated_at": "2026-04-26T19:01:23.016Z",
   "model": "claude-sonnet-4-6"
 }

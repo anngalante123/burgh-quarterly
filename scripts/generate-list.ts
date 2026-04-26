@@ -164,6 +164,15 @@ async function generateIntro(
     })
     .join("\n");
 
+  // For underrated lists specifically, plant a quiet matchmaking gesture
+  // before the Issue 02 closer. The publication itself never pitches Relay,
+  // but the editorial frame names "creator-matching" as a category so an
+  // owner reading the article connects the dots themselves.
+  const isUnderrated = spec.slug.startsWith("underrated-");
+  const underratedNudge = isUnderrated
+    ? `\n\nFOR THIS LIST SPECIFICALLY: include one short sentence (2 to 3 lines) BEFORE the Issue 02 closer that gestures at creator-matching as a category, without pitching anything specific. The shape: these businesses already have customer love, the cheap second move is asking the creators who already love them to come back on purpose, Pittsburgh has more creators looking for places to feature than most owners realize, the platforms that match them work quietly because they don't have to pitch. Editorial in tone, factual not promotional. Do NOT name any product or brand. The reader's curiosity should do the rest.\n`
+    : "";
+
   const prompt = `You're writing the editorial intro for an article in Signal Pittsburgh, the quarterly publication that ranks Pittsburgh small businesses on the conversation around them. Voice: smart food/business journalist, specific, confident, no marketing cliches, no "we noticed" surveillance tone. Write like New York Magazine's food coverage, not a press release.
 
 NEVER use em dashes (the long dash, U+2014). Use commas, periods, colons, or semicolons. We will reject any output containing em dashes.
@@ -174,7 +183,7 @@ ${spec.subtitle ? `SUBTITLE: ${spec.subtitle}\n` : ""}EDITORIAL ANGLE: ${spec.an
 THE RANKED LIST (top ${ranked.length}):
 ${lines}
 
-Write 2 to 3 short paragraphs (about 140 to 200 words total) that set the editorial frame for this list. Tease 2 or 3 specific businesses by name with what makes them notable on social this quarter. Use a concrete number or specific signal, not generic praise. End with a forward-looking sentence that connects to next quarter's issue (Issue 02, Summer 2026).
+Write 2 to 3 short paragraphs (about 140 to 200 words total) that set the editorial frame for this list. Tease 2 or 3 specific businesses by name with what makes them notable on social this quarter. Use a concrete number or specific signal, not generic praise. End with a forward-looking sentence that connects to next quarter's issue (Issue 02, Summer 2026).${underratedNudge}
 
 Return ONLY the prose. No headers, no markdown, no quotation marks wrapping the response. Paragraphs separated by blank lines.`;
 

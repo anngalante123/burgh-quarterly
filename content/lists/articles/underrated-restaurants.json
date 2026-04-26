@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Restaurants",
   "subtitle": "Brunch spots, neighborhood restaurants. High ratings, low spotlight.",
   "angle": "Pittsburgh restaurants whose reviews speak for themselves but whose social channels are quieter than they should be. The neighborhood standbys we'd send a visiting friend to.",
-  "intro": "The restaurants that define a neighborhood rarely have the loudest feeds. This quarter's list looks at Pittsburgh small businesses with strong review scores and real customer loyalty, but social presences that haven't kept pace. These are the places a local would take you. They just haven't told Instagram about it yet.\n\nSquare Cafe has held the top brunch conversation spot in the city for months, sitting one position from the overall top across all categories, with the reviews to justify it. The gap is almost entirely on owned channels. Nan Xiang Soup Dumplings on the South Side has the most creator-driven signal of any restaurant we tracked this quarter, which means visitors are doing the work the restaurant itself hasn't. Lorelei lands second among East Liberty restaurants overall, carried almost entirely by outside voices. Its own account has gone quiet at exactly the wrong time.\n\nWhat these three share is a floor, not a ceiling. The reviews are already there. The audience is already there. What happens when a business starts meeting that attention is exactly what we'll be tracking into summer. Issue 02 picks up in June 2026.",
+  "intro": "Some restaurants earn their reputation the slow way, table by table, word of mouth carrying further than any campaign they ran. The places on this list did exactly that, and the reviews show it. What the reviews do not show is how little of the surrounding conversation those restaurants actually started themselves.\n\nSquare Cafe has held the top brunch position in Pittsburgh long enough that the ranking almost feels like infrastructure. Its Instagram, by contrast, reads like an afterthought, a gap that becomes more visible when you look at how much organic content customers are already producing around it. Nan Xiang Soup Dumplings on the South Side landed first among Pittsburgh restaurants for creator-generated energy this quarter, which is notable for a specific reason: nearly none of that content was solicited. Lorelei sits second overall in the restaurant category, carried largely by posts the restaurant itself did not commission and, lately, has not matched with anything on its own channels.\n\nThe common thread here is straightforward. These businesses already have the customer love. The creators who produced that content are, in most cases, still active, still local, still looking for a reason to come back. Pittsburgh has more of those creators than most owners realize, and the platforms that connect them tend to work quietly, because they do not need to oversell what is already working.\n\nIssue 02, out summer 2026, looks at the Pittsburgh restaurants that closed the gap.",
   "items": [
     {
       "rank": 1,
@@ -64,6 +64,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-26T18:44:33.826Z",
+  "generated_at": "2026-04-26T19:01:58.461Z",
   "model": "claude-sonnet-4-6"
 }

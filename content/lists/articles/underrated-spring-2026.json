@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Small Businesses",
   "subtitle": "The places customers love but the algorithm hasn't found yet, across every family.",
   "angle": "businesses with high customer ratings and real review depth that haven't broken through on social yet. The point of this list is celebration, not critique. Pittsburgh's neighborhood spots, the ones worth telling a friend about.",
-  "intro": "The businesses on this list have something in common: their customers are doing the work. Everyday Noodles in Squirrel Hill has climbed to the top of Pittsburgh's noodle conversation on the back of other people's phones, not its own. Pusadee's Garden holds the number one position in Thai almost entirely through creator reach, while the restaurant's own feed has barely stirred. These are not undiscovered places. They are places the neighborhood already knows.\n\nWhat this quarter's data keeps showing is a specific kind of gap: review depth and rating strength that outrun any social presence the business itself has built. Commerce Bar sits second among Pittsburgh bars on reputation alone, without a digital profile that reflects it. That's the pattern. Strong signal, quiet source.\n\nThe point of ranking these ten is simple: some of the best small businesses in this city are being carried by the people who love them. That generosity deserves to be named. Issue 02, out this summer, will track whether any of these places close the gap, and which new neighborhood spots are quietly building the same kind of goodwill before anyone's algorithm notices.",
+  "intro": "The businesses on this list share a specific condition: customers love them, the reviews are deep and specific, and the algorithm has not caught up. That gap is the story. Pittsburgh's neighborhood spots have always run on word of mouth, but word of mouth has a new infrastructure now, and some of these places are benefiting from it without doing much of anything themselves. The question this quarter was which businesses had earned real reputation without building a real profile.\n\nA few signals worth noting. Everyday Noodles in Squirrel Hill holds the top position in its category on review volume and rating depth, built almost entirely by other people's cameras. The restaurant has not had to ask. Commerce Bar in East Liberty ranks second among Pittsburgh bars on reputation metrics alone, with a digital footprint that still hasn't arrived to match it. Oishii Donburi sits at number one in Japanese and hasn't posted in ten weeks; creators have covered the gap without being asked.\n\nWhat connects most of this list is that the customer love already exists. The short next move for many of these owners is obvious: the creators who already filmed them once are often looking for a reason to come back, and Pittsburgh has more of them actively seeking local places to feature than most owners realize. The platforms that facilitate that exchange tend to work quietly, because they do not need to pitch. Issue 02, out Summer 2026, will track which of these businesses closed the gap.",
   "items": [
     {
       "rank": 1,
@@ -165,6 +165,6 @@
     "ranking": "underrated",
     "limit": 10
   },
-  "generated_at": "2026-04-26T18:43:54.121Z",
+  "generated_at": "2026-04-26T19:01:13.868Z",
   "model": "claude-sonnet-4-6"
 }

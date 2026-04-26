@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Bars",
   "subtitle": "Bars and breweries the regulars treat as their own.",
   "angle": "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
-  "intro": "The bars that earn the deepest loyalty rarely broadcast it. This quarter's underrated list is built around a specific gap: places where the review language reads like a tip from a friend, but the follower counts and post frequency haven't caught up to the reputation. Underrated, here, means the signal is ahead of the platform.\n\nTwo businesses illustrate the gap most cleanly. Commerce Bar in East Liberty is ranking second among Pittsburgh bars on reputation alone, with almost no owned digital presence to explain it. The regulars are doing the work. Golden Age Beer Company is in the same position for breweries, where the beer quality is carrying reviews that the kitchen and the camera haven't touched. Meanwhile, Hop Farm Brewing in Lawrenceville sits at number one for breweries largely on creator posts the brewery itself has never answered or amplified, a strange and revealing kind of influence.\n\nThe pattern across this list raises a question worth watching: when organic reputation outruns a business's own voice this consistently, something eventually gives. Issue 02, Summer 2026 will track whether these bars closed the gap, leaned into it, or lost the thread entirely.",
+  "intro": "The bars that show up on this list earned their spots the same way most Pittsburgh institutions do: slowly, through other people's mouths. No launch campaigns, no influencer seeding, no branded content. Just the kind of review language that sounds like a text to a friend, accumulated over time until the signal becomes impossible to ignore.\n\nCommerce Bar in East Liberty is carrying a reputation that has outrun its digital footprint by a significant margin. Its review velocity this quarter puts it second among Pittsburgh bars on reputation alone, yet its social presence reads like a place that doesn't know it's being talked about. Golden Age Beer Company lands in the same position for breweries: the beer is clearly doing the work, but the kitchen and the camera haven't caught up to what the regulars already know. Hop Farm Brewing in Lawrenceville sits at number one among breweries this quarter, built almost entirely by creator content the brewery itself has never once reposted.\n\nThe businesses on this list already have the harder thing, which is genuine customer love. The straightforward next move is that the creators who already love these places could come back with a reason, and Pittsburgh has more of those creators looking for somewhere worth covering than most owners have realized. The platforms doing that matching tend to work quietly, because they don't need to pitch.\n\nIssue 02 arrives in summer 2026, when outdoor patios, festival season, and warm-weather foot traffic will almost certainly shuffle the rankings.",
   "items": [
     {
       "rank": 1,
@@ -69,6 +69,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-26T18:44:19.061Z",
+  "generated_at": "2026-04-26T19:01:40.655Z",
   "model": "claude-sonnet-4-6"
 }

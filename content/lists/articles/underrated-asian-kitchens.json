@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Asian Kitchens",
   "subtitle": "Sushi, Thai, Indian, Japanese, noodles. Loved in person, not yet celebrated online.",
   "angle": "the Asian kitchens earning real love in reviews but flying under the social radar. The spots regulars defend.",
-  "intro": "The best Asian restaurants in Pittsburgh right now share an odd distinction: they are not the ones running the most polished Instagram accounts. They are the ones their regulars will not stop talking about.\n\nEveryday Noodles built its entire digital presence on other people's cameras, not its own, and it still landed at the top of the noodles category this quarter. Oishii Donburi ranks first in Japanese conversation without having posted in ten weeks, carried almost entirely by creator content while its own feed sits dormant. Pusadee's Garden, a Thai institution in Lawrenceville, is doing something rarer still: generating the kind of creator reach that most restaurants spend money to manufacture, while the restaurant's own account barely stirs. These are not overnight discoveries. They are the places regulars have been defending in comment sections and recommending in group chats for years.\n\nWhat this list measures is the gap between a kitchen's actual reputation and its own participation in building one. That gap is closing, slowly, and the restaurants beginning to close it themselves will be the story worth watching. Issue 02, Summer 2026, will track exactly that shift.",
+  "intro": "The best Asian kitchens in Pittsburgh this quarter share a specific problem: the people who love them most are not the people running their accounts. These are restaurants where the review sentiment is strong, the regulars are loyal, and the online signal is arriving almost entirely from customers and creators, not from the restaurants themselves. That gap is the story.\n\nOishii Donburi in Lawrenceville sits at the top of the Japanese category despite not posting in ten weeks. Everyday Noodles in Squirrel Hill has built its entire digital presence on other people's cameras, which is either a strategy or a lucky accident, and at this point it barely matters. Pusadee's Garden is carrying the Thai category on creator reach alone, its own feed whispering while customers do the broadcasting. Mola, ranked first in sushi on food quality signals, has almost no Instagram presence to speak of. The love is real. The platforms just haven't caught up.\n\nWhat's worth noting: these businesses already have the customer proof, and the creators who filmed them once will often come back if someone simply asks. Pittsburgh has more food-focused creators looking for strong material than most owners realize, and the infrastructure connecting them tends to work quietly, because it doesn't need to pitch. Issue 02, out Summer 2026, follows the businesses that close that gap.",
   "items": [
     {
       "rank": 1,
@@ -98,6 +98,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-26T18:44:25.732Z",
+  "generated_at": "2026-04-26T19:01:48.809Z",
   "model": "claude-sonnet-4-6"
 }
