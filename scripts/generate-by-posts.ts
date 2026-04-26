@@ -103,11 +103,11 @@ VOICE: smart food/business journalist, specific, confident, no marketing cliches
 
 EDITORIAL ANGLE: This is the counterpart to our "Best Creator Posts ABOUT Pittsburgh Businesses" list. The thesis we keep tracking is that creators are filming the city while most businesses stay silent. THIS list is who showed up. The businesses that posted, and what worked when they did.
 
-DATA POINTS:
-- Top 50 posts ranked by likes
+DATA POINTS (use these EXACT numbers in your prose):
+- ${items.length} posts ranked by likes
 - Total likes across the list: ${totalLikes.toLocaleString()}
 - Total plays (where applicable): ${totalPlays.toLocaleString()}
-- ${businesses} businesses represented in this top 50
+- ${businesses} businesses represented (capped at 2 posts per business so the list reads as a survey, not a deep dive into one operator)
 
 TOP 10:
 ${lines}
@@ -225,7 +225,9 @@ async function main() {
   // Cap per business so a national chain's corporate account
   // (e.g. @jenisicecreams) doesn't fill 30 slots with non-Pittsburgh
   // content. Editorial story wants diversity across local businesses.
-  const PER_BUSINESS_CAP = 5;
+  // Anna's call: 2 max per business so the list reads as a survey of
+  // who's doing the work, not a deep dive into one or two operators.
+  const PER_BUSINESS_CAP = 2;
   candidates.sort((a, b) => b.likes - a.likes);
   const perBizCount = new Map<string, number>();
   const capped: typeof candidates = [];
@@ -278,9 +280,9 @@ async function main() {
   const article: Article = {
     slug: SLUG,
     kind: "posts",
-    title: "The 50 Best Posts By Pittsburgh Businesses",
+    title: "The Best Posts By Pittsburgh Businesses",
     subtitle:
-      "Instagram posts the businesses themselves made, ranked by likes. The counterpart to the creator-coverage list.",
+      "Instagram posts the businesses themselves made this quarter, ranked by likes. Two per business max. The counterpart to the creator-coverage list.",
     angle:
       "the businesses that showed up on their own feed this quarter. What they posted, what worked.",
     intro,
