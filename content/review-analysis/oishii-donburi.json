@@ -2,69 +2,69 @@
   "slug": "oishii-donburi",
   "themes": [
     {
-      "phrase": "hole in the wall lunch",
-      "frequency": 3,
+      "phrase": "fast hole in the wall",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Easy fast hole in the wall with delicious food."
     },
     {
-      "phrase": "katsudon and bibimbap",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "We had the katsudon and bulgogi bibimbap and it was perfect for lunch."
-    },
-    {
-      "phrase": "reliable bowls",
-      "frequency": 5,
+      "phrase": "chicken katsu and bulgogi bowls",
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls."
     },
     {
-      "phrase": "unclear sauces, rude service",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron."
-    },
-    {
-      "phrase": "quiet spot",
+      "phrase": "quiet spot for bowls",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Very delicious quiet spot for Korean style bowls."
+    },
+    {
+      "phrase": "confusing sauce situation",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I was given 4 little circle containers of unusual sauces and not told what any of them were."
+    },
+    {
+      "phrase": "unwelcoming staff attitude",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron."
     }
   ],
   "notable_quote": "Always reliable for chicken katsu or beef bulgogi bowls.",
-  "sentiment_summary": "Reviewers consistently praise the food's quality and value, especially the katsudon and bulgogi bowls, but a handful flag confusing sauce presentation and at least one pointed service incident that left a lasting impression.",
-  "quarter_narrative": "Twenty-nine Pittsburgh creators posted more than 30 TikToks at Oishii Donburi this quarter, pulling over 1.7 million plays, and the restaurant posted nothing back. The top video alone, @kayylou52 tying the restaurant to Jacob Elordi in a single caption, drove 852,600 views without a single frame of official content to catch the overflow. The family leader this issue is Mola, whose edge is creator collaboration fit, a signal Oishii actually matches on paper, but squanders by sitting silent on Instagram for 71 days and holding no TikTok presence at all. The rank climbs when the business starts treating the city's cameras as a signal worth meeting.",
-  "tldr_read": "The city is filming Oishii Donburi at scale, but the restaurant has posted nothing in over two months. Number one in Pittsburgh Japanese restaurants, Ones to Watch.",
-  "tldr_meaning": "The TikTok flywheel is already spinning without the business touching it; the rank ceiling is set by Instagram dormancy and a review sentiment that has room to recover from the service friction.",
+  "sentiment_summary": "Reviewers reliably return for the katsudon and bulgogi bowls at a price and pace that works for lunch, but a handful flag cold service and unclear sauce pairings as friction points that chip at an otherwise solid 84 percent five-star run.",
+  "quarter_narrative": "Five Pittsburgh creators posted TikToks tied to Oishii Donburi this quarter, pulling nearly 27,000 combined plays, while the restaurant's own Instagram has sat quiet for 72 days and counting. The city is doing the promotion; the business is not picking up the phone. That gap is especially visible against the family backdrop: Mola leads Pittsburgh Asian Kitchens this issue on creator collaboration fit, a signal built on exactly the kind of reciprocal energy Oishii currently leaves on the table. Closing even a fraction of the Instagram silence, or acknowledging the creator traffic that is already arriving, would be enough to push this #1 Japanese ranking into genuine contention for the broader family top spot.",
+  "tldr_read": "Creator-driven TikTok attention and a perfect conversion path, but a dormant Instagram and middling sentiment keep the ceiling low. Ones to Watch, #1 in Pittsburgh Japanese restaurants.",
+  "tldr_meaning": "The ranking holds on conversion infrastructure and inbound creator traffic, but the climb stalls unless Instagram restarts and the one-star service friction gets addressed at the counter.",
   "diagnosis_pullquote": {
-    "line": "Number One In Japanese, Built By The City. The Restaurant Has Not Posted In Seventy-One Days.",
-    "highlight": "Not Posted In Seventy-One Days"
+    "line": "Number One In Japanese, Carried By Creators. The Restaurant Has Not Posted In Ten Weeks.",
+    "highlight": "Carried By Creators"
   },
   "playbook": [
     {
-      "headline": "Break the 71-day Instagram silence now",
-      "action": "Post at minimum twice a week; the account has been dark 71 days while 29 creators actively film the space.",
+      "headline": "Break the 72-day Instagram silence",
+      "action": "Post one photo or reel per week; the account has been dark since before the five most recent TikTok visits happened.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Repost creator TikToks to close the loop",
-      "action": "With 1.7 million plays already generated by 29 creators, reposting top videos to Instagram Stories costs nothing and captures existing reach.",
-      "signal": "collab_fit",
+      "headline": "Address the sauce and service gap",
+      "action": "A brief verbal guide to condiment pairings and a consistent front-of-house tone would directly counter the two recurring negative review themes pulling sentiment below the family median.",
+      "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "UNLOCK 29 CREATORS"
+      "impact_label": "+8 SENTIMENT PTS"
     },
     {
-      "headline": "Address the sauce and service friction publicly",
-      "action": "Review sentiment sits below the family median; one recurring complaint is unexplained sauces, a fixable detail worth naming on the menu or Google Q&A.",
-      "signal": "community_spark",
+      "headline": "Tag back the creators already filming here",
+      "action": "Five unique creators posted this quarter with 26,872 combined plays; a single repost or story mention converts that reach into followers the business actually keeps.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "CAPTURE REACH"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-25T19:20:34.074Z",
+  "analyzed_at": "2026-04-26T16:23:13.986Z",
   "model": "claude-sonnet-4-6"
 }

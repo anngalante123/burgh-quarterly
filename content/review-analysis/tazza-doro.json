@@ -2,22 +2,10 @@
   "slug": "tazza-doro",
   "themes": [
     {
-      "phrase": "staff warmth and consistency",
-      "frequency": 5,
+      "phrase": "consistent drinks and staff",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Everyone is always so nice when I go here. Their food and coffee are amazing."
-    },
-    {
-      "phrase": "standout specialty drinks",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had."
-    },
-    {
-      "phrase": "price-to-quality tension",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "Coffee itself is just okay for the price."
+      "exampleQuote": "Fabulous staff and consistent drinks."
     },
     {
       "phrase": "seasonal baked goods",
@@ -26,45 +14,57 @@
       "exampleQuote": "Wish they had the zucchini muffins year-round, but there are lots of other great baked goods."
     },
     {
-      "phrase": "atmosphere and vibe",
-      "frequency": 4,
+      "phrase": "barista featured drinks",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Very cute, vibey spot. Good portion sizes and great coffee!!"
+      "exampleQuote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had."
+    },
+    {
+      "phrase": "interior versus price",
+      "frequency": 2,
+      "sentiment": "negative",
+      "exampleQuote": "The interior leaves something to be desired for the price of the coffee."
+    },
+    {
+      "phrase": "tea program depth",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Loved the cinnamon plum tea and was impressed by the number of tasty food options."
     }
   ],
   "notable_quote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had.",
-  "sentiment_summary": "Reviewers return for the staff, the specialty lattes, and the rotating baked goods, but a small contingent finds the interior unremarkable relative to what they're paying.",
-  "quarter_narrative": "Thirty creators filmed Tazza D'Oro this quarter and generated nearly 633,000 plays on TikTok, while the cafe itself posted zero Reels and has no TikTok presence to speak of. The city is clearly treating this Highland Park spot as a backdrop worth sharing; Tazza D'Oro has not yet started treating it the same way. That gap is the defining story of this quarter for a business that otherwise has its conversion path fully locked, its Creator Fit signal is strong, and its 573 Google reviews are 74 percent five-star. Allegheny Coffee and Tea Exchange holds the family lead on social momentum, and that is precisely the axis where Tazza D'Oro has room to move. Closing the Reels gap is the clearest path from first in the Ones to Watch tier toward the top of the overall family.",
-  "tldr_read": "Creator coverage is enormous, but the business is not posting into it. Ones to Watch, #1 in Pittsburgh Cafes.",
-  "tldr_meaning": "The conversion path and creator signals are already at the ceiling; the rank climbs when the Instagram momentum signal catches up to what 30 outside creators are already building.",
+  "sentiment_summary": "Reviewers come back for the staff warmth, rotating specialty drinks, and a tea program that consistently surprises, but a recurring thread questions whether the interior justifies the price point.",
+  "quarter_narrative": "Tazza D'Oro holds the top spot in Pittsburgh Cafes this issue, and the foundation for that rank is real: 573 Google reviews at 74 percent five-star, a conversion path that is fully built out, and a Creator Fit signal that sits at the family ceiling. The gap is motion. Instagram sits at 11 posts over the last 30 days and zero Reels, and TikTok presence amounts to a single creator video pulled in as a political-petition backdrop, not a coffee destination moment. The family leader this issue, Allegheny Coffee and Tea Exchange, got there on social momentum. Tazza D'Oro defends first place with review depth; the question next quarter is whether it can close that momentum gap before another cafe in the family does it first.",
+  "tldr_read": "Deep review base and a complete conversion path, but Instagram Reels are absent and TikTok coverage is one video from a single creator. Ones to Watch, #1 in Pittsburgh Cafes.",
+  "tldr_meaning": "The review axis is nearly maxed, so the next rank movement depends entirely on whether visual and short-form video signals close toward the family median.",
   "diagnosis_pullquote": {
-    "line": "Ranked First In Pittsburgh Cafes, Carried By 633K Creator Plays The Cafe Itself Never Made.",
-    "highlight": "633K Creator Plays"
+    "line": "First In Pittsburgh Cafes On Reviews Alone. The Video Signal Has Not Arrived Yet.",
+    "highlight": "Video Signal Has Not"
   },
   "playbook": [
     {
-      "headline": "Start Posting Reels, Even Simple Ones",
-      "action": "Zero Reels in 30 days against 632,950 TikTok plays from others is the sharpest gap in the entire signal profile.",
+      "headline": "Shoot one Reel this week",
+      "action": "Tazza D'Oro posted 11 Instagram photos last month and zero Reels. One short video of a barista pulling a cortado or building a seasonal drink would move the momentum signal off its current floor.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "CLOSE REEL GAP"
     },
     {
-      "headline": "Expand the Google Photo Catalog",
-      "action": "244 photos across 11 categories is solid but the Visual Catalog sits below the family median; adding barista-process and interior shots targets the specific gap.",
+      "headline": "Fill the visual catalog gaps",
+      "action": "Google Photos shows 244 images across 11 categories, but the Visual Catalog signal sits below the family median. Submitting owner photos specifically for the interior and baked goods categories would address the price-versus-space friction reviewers mention.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+VISUAL RANK"
     },
     {
-      "headline": "Acknowledge the Creators Already Filming",
-      "action": "Thirty unique TikTok creators tagged the business this quarter; resharing or thanking the top ones costs nothing and converts existing reach into repeat visits.",
+      "headline": "Connect to the creator already filming",
+      "action": "Only one TikTok creator tagged Tazza D'Oro this quarter, and that video ran as a political canvassing post, not a coffee feature. Acknowledging or reposting that creator and inviting others creates a path toward the TikTok presence the business currently lacks entirely.",
       "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "RETAIN 30 CREATORS"
+      "impact_label": "SEED TIKTOK PRESENCE"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-25T19:22:51.805Z",
+  "analyzed_at": "2026-04-26T16:25:18.883Z",
   "model": "claude-sonnet-4-6"
 }

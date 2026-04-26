@@ -8,20 +8,20 @@
       "exampleQuote": "get the raspberry lychee macaroon, it is gluten free made with almond flour and it is the best thing I've ever put in my mouth"
     },
     {
-      "phrase": "Paris-quality pastry",
+      "phrase": "Paris-quality pastries",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Le Gourmandine can be put on any corner in Paris France and it would be packed"
     },
     {
-      "phrase": "hidden gem Hazelwood",
+      "phrase": "hidden gem in Pittsburgh",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Please do not miss this hidden gem in Pittsburgh"
     },
     {
-      "phrase": "delicious everything",
-      "frequency": 5,
+      "phrase": "delicious baked goods",
+      "frequency": 6,
       "sentiment": "positive",
       "exampleQuote": "Excelente panadería, todo es delicioso"
     },
@@ -33,38 +33,38 @@
     }
   ],
   "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
-  "sentiment_summary": "Reviewers consistently reach for superlatives about the pastry quality, especially the raspberry lychee macaron, with no recurring nitpicks surfacing across 525 reviews.",
-  "quarter_narrative": "Thirty creators filmed La Gourmandine Hazelwood this quarter and collectively pulled over a million plays on TikTok. The bakery posted nothing to Instagram for the last 40 days of the period. That gap is the defining fact of its Spring 2026: a shop with 88 percent five-star reviews and a visual catalog strong enough to sit at the family median is essentially invisible on its own social channels while the city builds its feed for it. Page's holds the Pittsburgh Sweets lead this issue on the back of social momentum, exactly the axis where La Gourmandine is dormant. The path to closing that gap runs through one channel the business already has and one it hasn't touched.",
-  "tldr_read": "Over a million TikTok plays from 30 creators, zero Instagram posts in 40 days. Ones to Watch, #1 in Pittsburgh Pastry Shops.",
-  "tldr_meaning": "Every signal axis except Instagram momentum is at or above the family median, so the rank ceiling is a posting cadence problem, not a quality or discovery problem.",
+  "sentiment_summary": "Reviewers are practically evangelical about the macarons and the overall caliber of the pastry work, with 88 percent of 525 reviews landing at five stars; nitpicks are nearly nonexistent in the sample, suggesting any friction lives in discovery rather than experience.",
+  "quarter_narrative": "Thirteen Pittsburgh creators posted 15 TikToks tagged at La Gourmandine Hazelwood this quarter, generating nearly 737,000 plays, while the bakery itself has posted nothing on Instagram in over 40 days and holds no TikTok presence of its own. The city is documenting this place at a serious clip; the place is not documenting itself at all. That gap is the defining tension of its Spring 2026 signal: a near-perfect review floor, a maxed-out conversion path, and a visual catalog that sits right at the family median, all propped up by an audience the bakery did not build and cannot yet claim. Page's leads the Pittsburgh Sweets family this issue on social momentum, exactly the axis where La Gourmandine Hazelwood scores lowest. Closing that distance, not the review count, not the photos, is what separates a sustained hold at the top of the Pastry category from a slow slide as creator attention moves on.",
+  "tldr_read": "The reviews and the city's creators are doing heavy lifting; the bakery's own Instagram has gone quiet for over 40 days. Ones to Watch, number one in Pittsburgh Pastry shops.",
+  "tldr_meaning": "The rank is stable on borrowed momentum: creator coverage and review sentiment are carrying what a dormant owned social presence cannot, and that equation only holds as long as creators keep showing up.",
   "diagnosis_pullquote": {
-    "line": "First In Pastry, Built By 30 Creators. The Bakery's Own Feed Is Quiet.",
-    "highlight": "Built By 30 Creators"
+    "line": "First In Pastry On Creator Fuel. The Bakery's Own Feed Has Been Silent For Forty Days.",
+    "highlight": "Silent For Forty Days"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram before next issue",
-      "action": "The account has been silent 40 days. Even two posts per week would move the Instagram momentum signal off its current floor.",
+      "headline": "Restart the Instagram feed immediately",
+      "action": "Post at least twice a week on @lagourmandinebakery; the account has been silent for 41 days while 13 creators are actively driving traffic there.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
+      "impact_label": "RECLAIM SIGNAL"
     },
     {
-      "headline": "Claim the TikTok presence creators built",
-      "action": "30 creators have logged 1,091,425 plays on this location. An owned account that reposts even one top video captures an audience already primed.",
+      "headline": "Claim a TikTok presence before creators define you",
+      "action": "Open a business TikTok account and repost or respond to the 15 existing tagged videos that have already generated 736,954 plays this quarter.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "CAPTURE 1M REACH"
+      "impact_label": "UNLOCK REACH"
     },
     {
-      "headline": "Add video to the Google photo catalog",
-      "action": "304 photos across 11 categories is strong, but the Videos category is listed without depth. A short reel-length clip posted to Google would push the visual catalog above the family median.",
+      "headline": "Expand Google photo categories",
+      "action": "Current photos span only 6 of 11 possible category tags; adding staff, interior details, and process shots would push the visual catalog above the family median of 84.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 4,
-  "analyzed_at": "2026-04-25T19:17:40.516Z",
+  "analyzed_at": "2026-04-26T16:20:20.694Z",
   "model": "claude-sonnet-4-6"
 }

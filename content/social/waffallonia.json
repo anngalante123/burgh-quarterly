@@ -7,108 +7,15 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "waffallonia pittsburgh",
-    "video_count": 30,
-    "total_plays": 6947141,
-    "total_likes": 319831,
-    "unique_creators": 28,
-    "top_creators": [
-      {
-        "handle": "katelynnsnuggle",
-        "fans": 2261,
-        "verified": false,
-        "videos": 1,
-        "plays": 2100000,
-        "likes": 25800
-      },
-      {
-        "handle": "basketball.reel",
-        "fans": 33000,
-        "verified": false,
-        "videos": 1,
-        "plays": 1600000,
-        "likes": 134700
-      },
-      {
-        "handle": "abcworldnews",
-        "fans": 3200000,
-        "verified": true,
-        "videos": 1,
-        "plays": 1600000,
-        "likes": 74800
-      },
-      {
-        "handle": "cnn",
-        "fans": 14500000,
-        "verified": true,
-        "videos": 1,
-        "plays": 549200,
-        "likes": 19300
-      },
-      {
-        "handle": "billyexplorespa",
-        "fans": 216200,
-        "verified": false,
-        "videos": 1,
-        "plays": 379300,
-        "likes": 22100
-      },
-      {
-        "handle": "patmcafeeshowofficial",
-        "fans": 2300000,
-        "verified": true,
-        "videos": 1,
-        "plays": 192500,
-        "likes": 15500
-      },
-      {
-        "handle": "shelbyg24442",
-        "fans": 2867,
-        "verified": false,
-        "videos": 1,
-        "plays": 74200,
-        "likes": 7500
-      },
-      {
-        "handle": "lasdoscarass",
-        "fans": 371900,
-        "verified": false,
-        "videos": 2,
-        "plays": 73500,
-        "likes": 1285
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "7165912702404103430",
-        "url": "https://www.tiktok.com/@katelynnsnuggle/video/7165912702404103430",
-        "text": "So easy to make! Hope you enjoyed ☺️ #waffles #homemadefood #homemadewaffles #homemade #wafflemaker #wafflemakerrecipes #sweets #simplerecipe #cooking #breakfast #homemaderecipe #homemadebreakfast #easyrecipe #easycooking #easyrecipes  #bre",
-        "author": "katelynnsnuggle",
-        "plays": 2100000,
-        "likes": 25800,
-        "posted": "2022-11-14T16:41:11.000Z"
-      },
-      {
-        "id": "7629472934633000222",
-        "url": "https://www.tiktok.com/@basketball.reel/video/7629472934633000222",
-        "text": "This was wild 😂 #pittsburghpirates #caughtin4k #mlb #baseball ",
-        "author": "basketball.reel",
-        "plays": 1600000,
-        "likes": 134700,
-        "posted": "2026-04-16T21:31:43.000Z"
-      },
-      {
-        "id": "7607888670141467918",
-        "url": "https://www.tiktok.com/@abcworldnews/video/7607888670141467918",
-        "text": "#Surveillancevideo captured the moment a woman escaped a U-Haul truck outside #Pittsburgh to get away from her ex-boyfriend, who’s been accused of trying to kidnap her. #DavidMuir reports.\n#WorldNewsTonight #News",
-        "author": "abcworldnews",
-        "plays": 1600000,
-        "likes": 74800,
-        "posted": "2026-02-17T17:34:13.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-25T11:20:32.000Z",
-    "median_plays": 30400,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": null,
-    "scraped_at": "2026-04-25T15:31:05.779Z"
+    "scraped_at": "2026-04-26T16:14:46.483Z"
   }
 }

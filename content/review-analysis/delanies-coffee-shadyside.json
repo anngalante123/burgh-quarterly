@@ -8,10 +8,10 @@
       "exampleQuote": "The strawberry matcha here might be the best I've ever had."
     },
     {
-      "phrase": "tiramisu latte",
-      "frequency": 2,
+      "phrase": "specialty drink options",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Iced tiramisu latte was delicious!"
+      "exampleQuote": "There were a lot of good options for drinks! Both drinks my sister and I tried were delicious."
     },
     {
       "phrase": "gets packed quickly",
@@ -20,57 +20,57 @@
       "exampleQuote": "I just wish this place was bigger, gets packed quickly!"
     },
     {
-      "phrase": "sweet drinks",
-      "frequency": 2,
-      "sentiment": "neutral",
-      "exampleQuote": "mine was definitely on the sweet side"
-    },
-    {
-      "phrase": "staff kindness",
+      "phrase": "friendly staff",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "the workers are so nice every time I visit!"
+      "exampleQuote": "The workers are so nice every time I visit!"
     },
     {
-      "phrase": "order mix-up",
+      "phrase": "order mix-up, no remedy",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "I asked for a blueberry muffin, received a raisin/walnut muffin, let them know, I had to pay for a new muffin."
+    },
+    {
+      "phrase": "wifi not work-friendly",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "The wi-fi isn't good enough to work from here so I wouldn't come back for that."
     }
   ],
   "notable_quote": "The strawberry matcha here might be the best I've ever had.",
-  "sentiment_summary": "Reviewers are drawn in by the signature drinks, particularly the strawberry matcha and tiramisu latte, and consistently praise the staff; the recurring friction points are the small footprint that fills up fast and an occasional order error that the shop handled poorly.",
-  "quarter_narrative": "Twenty-six Pittsburgh creators filed into Delanie's Coffee Shadyside this quarter and posted more than 30 TikToks totaling 176,000 plays. The shop itself posted three times on Instagram, zero times on TikTok, and has no presence on the platform that is doing the most work for it. That gap is the defining story of its Spring 2026: a tiramisu latte built for the camera, a camera-ready city audience showing up, and the business largely watching from the sidelines. Allegheny Coffee and Tea Exchange leads the Pittsburgh Cafes family this issue on the back of social momentum, the kind of compound signal Delanie's has not yet converted its creator attention into. Closing the distance between seventh in cafes and the top of the family runs through one question: does the shop start telling its own story, or does it keep borrowing the one creators are already writing for it.",
-  "tldr_read": "The city's creators are doing the heavy lifting on TikTok, the shop's own Instagram is nearly quiet, and a strong conversion path keeps it visible. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "Creator reach is already performing at a level most shops in this family cannot match; the rank climbs when that external energy finds a first-party signal to attach to.",
+  "sentiment_summary": "Reviewers keep coming back to the specialty drinks, particularly the strawberry matcha and iced tiramisu latte, while the small footprint, unreliable wifi, and an order-correction policy that cost a customer money are the recurring friction points.",
+  "quarter_narrative": "Sixteen Pittsburgh creators posted 17 TikToks about Delanie's Coffee Shadyside this quarter, generating over 66,000 plays, and the shop's own account did not post a single one in return. That gap is the defining story of its Spring 2026. The family leader this issue, Allegheny Coffee and Tea Exchange, built its top position on social momentum it controlled; Delanie's is sitting on borrowed momentum it cannot yet convert. The rank climbs when the shop turns creator energy into a signal it owns, because the drink lineup and the Creator Fit reading are already doing the heavy lifting.",
+  "tldr_read": "Creator coverage is outpacing the shop's own output by a wide margin, with review sentiment below the family median. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The Creator Fit reading is the strongest in the family, but without the shop's own posting activity to capture it, that signal dissipates before it compounds into a rank move.",
   "diagnosis_pullquote": {
-    "line": "Fourth In Coffee, Powered By Other People's TikToks. The Shop Has Yet To Post Its Own.",
-    "highlight": "Other People's TikToks"
+    "line": "Sixteen Creators Are Shouting. Delanie's Has Not Shouted Back Yet.",
+    "highlight": "Shouting. Delanie's Has"
   },
   "playbook": [
     {
-      "headline": "Start a TikTok account this week",
-      "action": "26 creators have already built the audience; a single account with the tiramisu latte as the first post enters a warm room.",
+      "headline": "Claim the TikTok moment creators built",
+      "action": "Open a TikTok account and post one video per week reposting or responding to the 17 creator videos already in circulation.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE 176K REACH"
+      "impact_label": "CAPTURE 66K PLAYS"
     },
     {
-      "headline": "Post to Instagram at least twice weekly",
-      "action": "Three posts in the last 30 days and no reels leave a 4.67 percent engagement rate with nowhere to go; the strawberry matcha and tiramisu latte are two ready-made weekly subjects.",
-      "signal": "content_canvas",
-      "priority": "medium",
-      "impact_label": "+VISUAL SIGNAL"
-    },
-    {
-      "headline": "Address the order-error policy publicly",
-      "action": "One three-star review citing a charged replacement for a mis-pulled muffin is sitting in a thin review pool of 104; a visible response or updated policy protects an 82 percent five-star rate.",
+      "headline": "Lift review sentiment with one policy fix",
+      "action": "Address the order-correction policy that charged a customer for a shop error; one visible response and a corrected standard closes the gap between 60 and the family median of 79.",
       "signal": "community_spark",
+      "priority": "medium",
+      "impact_label": "+SENTIMENT FLOOR"
+    },
+    {
+      "headline": "Post more than three times a month",
+      "action": "Instagram sat at 3 posts and 0 Reels in 30 days with a 16-day gap before last post; two Reels per month of the strawberry matcha build the visual catalog above the family median of 77.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "PROTECT SENTIMENT"
+      "impact_label": "+VISUAL CATALOG"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T19:14:31.095Z",
+  "analyzed_at": "2026-04-26T16:17:02.283Z",
   "model": "claude-sonnet-4-6"
 }

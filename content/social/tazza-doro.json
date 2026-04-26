@@ -37,108 +37,34 @@
   },
   "tiktok_mentions": {
     "query": "tazza d'oro pittsburgh",
-    "video_count": 30,
-    "total_plays": 632950,
-    "total_likes": 51141,
-    "unique_creators": 30,
+    "video_count": 1,
+    "total_plays": 1661,
+    "total_likes": 297,
+    "unique_creators": 1,
     "top_creators": [
       {
-        "handle": "bhphotographypa",
-        "fans": 30500,
+        "handle": "latashaforpa",
+        "fans": 1911,
         "verified": false,
         "videos": 1,
-        "plays": 189100,
-        "likes": 24500
-      },
-      {
-        "handle": "thetravelingtherapistt",
-        "fans": 933,
-        "verified": false,
-        "videos": 1,
-        "plays": 116100,
-        "likes": 6259
-      },
-      {
-        "handle": "steelers",
-        "fans": 2600000,
-        "verified": true,
-        "videos": 1,
-        "plays": 114000,
-        "likes": 12300
-      },
-      {
-        "handle": "johnnylovesdivebars",
-        "fans": 23200,
-        "verified": false,
-        "videos": 1,
-        "plays": 61500,
-        "likes": 1455
-      },
-      {
-        "handle": "ana.eats.pgh",
-        "fans": 58300,
-        "verified": false,
-        "videos": 1,
-        "plays": 34700,
-        "likes": 1694
-      },
-      {
-        "handle": "justapittsburghgirl",
-        "fans": 6563,
-        "verified": false,
-        "videos": 1,
-        "plays": 17000,
-        "likes": 840
-      },
-      {
-        "handle": "itsreallylexi",
-        "fans": 128000,
-        "verified": true,
-        "videos": 1,
-        "plays": 14100,
-        "likes": 325
-      },
-      {
-        "handle": "thepittsburghgolfblog",
-        "fans": 1353,
-        "verified": false,
-        "videos": 1,
-        "plays": 13000,
-        "likes": 478
+        "plays": 1661,
+        "likes": 297
       }
     ],
     "top_videos": [
       {
-        "id": "7586329971283463454",
-        "url": "https://www.tiktok.com/@bhphotographypa/video/7586329971283463454",
-        "text": "On the 4th day of Yinzmas… GameDay 🏈 @Pittsburgh Steelers #bhphotographypa #PittsburghVideographer #pittsburgh #12daysofyinzmas #steelers",
-        "author": "bhphotographypa",
-        "plays": 189100,
-        "likes": 24500,
-        "posted": "2025-12-21T15:15:09.000Z"
-      },
-      {
-        "id": "7561533362347756830",
-        "url": "https://www.tiktok.com/@thetravelingtherapistt/video/7561533362347756830",
-        "text": "📍Puttshack Pittsburgh ⛳️\n\n#Pittsburgh #puttshackpittsburgh #Travel #stripdistrictpittsburgh #Puttshack ",
-        "author": "thetravelingtherapistt",
-        "plays": 116100,
-        "likes": 6259,
-        "posted": "2025-10-15T19:31:29.000Z"
-      },
-      {
-        "id": "7632341106243407118",
-        "url": "https://www.tiktok.com/@steelers/video/7632341106243407118",
-        "text": "Touched dahn in the Burgh📍 #steelers #maxiheanachor #nfl ",
-        "author": "steelers",
-        "plays": 114000,
-        "likes": 12300,
-        "posted": "2026-04-24T15:02:13.000Z"
+        "id": "7609504876581719326",
+        "url": "https://www.tiktok.com/@latashaforpa/video/7609504876581719326",
+        "text": "I might even buy you a coffee… ☕️ \n\nStop by Tazza D’oro to pick-up, drop-off or sign my petition to get on the ballot in the May 19 Primary Election!\n\nTeam #Mayes2026 will be there 9A-3P Saturdays and Sundays starting today, February 21!\n\n#",
+        "author": "latashaforpa",
+        "plays": 1661,
+        "likes": 297,
+        "posted": "2026-02-22T02:05:35.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-24T15:02:13.000Z",
-    "median_plays": 3164,
+    "most_recent_post_at": "2026-02-22T02:05:35.000Z",
+    "median_plays": 1661,
     "detected_own_handle": null,
-    "scraped_at": "2026-04-25T15:30:10.897Z"
+    "scraped_at": "2026-04-26T16:12:32.790Z"
   }
 }

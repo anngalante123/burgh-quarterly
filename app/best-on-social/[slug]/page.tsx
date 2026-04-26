@@ -6,9 +6,11 @@ import { Colophon } from "@/components/Colophon";
 import { Reveal } from "@/components/motion/Reveal";
 import { SubscribeFooter } from "@/components/SubscribeFooter";
 import {
+  isPostArticle,
   listAllListSlugs,
   loadListArticleBySlug,
   type ListArticleItem,
+  type PostArticleItem,
 } from "@/lib/data/load-list";
 
 /**
@@ -61,6 +63,92 @@ function splitDescriptor(line: string, highlight: string): {
     match: line.slice(idx, idx + highlight.length),
     after: line.slice(idx + highlight.length),
   };
+}
+
+function PostItemCard({ item }: { item: PostArticleItem }) {
+  const date = item.posted ? new Date(item.posted) : null;
+  const dateLabel = date
+    ? date.toLocaleDateString("en-US", { month: "short", day: "numeric" })
+    : "";
+  return (
+    <Reveal as="article" className="block">
+      <div className="grid grid-cols-[3rem_1fr] md:grid-cols-[5rem_1fr] gap-4 md:gap-6 border-b border-brand-black/15 pb-8 md:pb-10">
+        <div>
+          <span className="font-display text-3xl md:text-5xl font-black tabular-nums tracking-[-0.02em] text-brand-purple">
+            {String(item.rank).padStart(2, "0")}
+          </span>
+        </div>
+        <div className="min-w-0">
+          <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
+            About{" "}
+            <Link
+              href={`/business/${item.business_slug}`}
+              className="text-brand-black hover:text-brand-purple"
+            >
+              {item.business_name}
+            </Link>
+            <span className="text-brand-black/45">
+              {" "}
+              · {item.neighborhood}
+            </span>
+          </p>
+
+          <h3 className="mt-3 font-display font-black uppercase tracking-[-0.01em] text-brand-black text-lg md:text-xl leading-[1.15]">
+            <a
+              href={item.video_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-brand-purple transition-colors"
+            >
+              @{item.creator_handle}
+            </a>
+          </h3>
+
+          <p className="mt-3 font-body text-sm md:text-base text-brand-black/85 leading-relaxed [overflow-wrap:anywhere]">
+            &ldquo;{item.caption}&rdquo;
+          </p>
+
+          <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
+            <span className="font-display text-base md:text-lg font-black tabular-nums text-brand-black">
+              {item.plays.toLocaleString()}{" "}
+              <span className="font-body font-normal text-xs uppercase tracking-[0.14em] text-brand-black/55">
+                plays
+              </span>
+            </span>
+            {item.likes > 0 ? (
+              <span className="font-body text-xs text-brand-black/55 tabular-nums">
+                {item.likes.toLocaleString()} likes
+              </span>
+            ) : null}
+            {dateLabel ? (
+              <span className="font-body text-xs text-brand-black/45">
+                Posted {dateLabel}
+              </span>
+            ) : null}
+          </div>
+
+          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1">
+            <a
+              href={item.video_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-purple hover:text-brand-black transition-colors"
+            >
+              Watch on TikTok
+              <span aria-hidden="true">↗</span>
+            </a>
+            <Link
+              href={`/business/${item.business_slug}`}
+              className="inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-black hover:text-brand-purple transition-colors"
+            >
+              See {item.business_name}&apos;s record
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </Reveal>
+  );
 }
 
 function ItemCard({ item }: { item: ListArticleItem }) {
@@ -218,7 +306,7 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
             </div>
           </Reveal>
 
-          {/* The list */}
+          {/* The list, branches on article kind, business cards or post cards */}
           <section className="mt-12 md:mt-16">
             <div className="border-y-2 border-brand-black py-3 mb-8 md:mb-10 flex flex-wrap items-baseline justify-between gap-3">
               <h2 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-brand-black">
@@ -226,14 +314,31 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
               </h2>
               <span className="font-body text-xs text-brand-black/55 uppercase tracking-[0.14em]">
                 {article.items.length}{" "}
-                {article.items.length === 1 ? "business" : "businesses"} ·
-                ranked by {String(article.query.ranking).replace(/_/g, " ")}
+                {isPostArticle(article)
+                  ? article.items.length === 1
+                    ? "post"
+                    : "posts"
+                  : article.items.length === 1
+                    ? "business"
+                    : "businesses"}
+                {article.query
+                  ? ` · ranked by ${String(article.query.ranking).replace(/_/g, " ")}`
+                  : isPostArticle(article)
+                    ? " · ranked by plays"
+                    : ""}
               </span>
             </div>
             <div className="space-y-8 md:space-y-10">
-              {article.items.map((item) => (
-                <ItemCard key={item.business_slug} item={item} />
-              ))}
+              {isPostArticle(article)
+                ? article.items.map((item) => (
+                    <PostItemCard
+                      key={`${item.creator_handle}-${item.video_url}`}
+                      item={item}
+                    />
+                  ))
+                : (article.items as ListArticleItem[]).map((item) => (
+                    <ItemCard key={item.business_slug} item={item} />
+                  ))}
             </div>
           </section>
 

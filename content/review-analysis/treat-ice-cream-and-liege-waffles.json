@@ -9,62 +9,62 @@
     },
     {
       "phrase": "ice cream craftsmanship",
-      "frequency": 6,
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "I'm an ice cream snob and this is some of the best ice cream I've ever had."
     },
     {
-      "phrase": "owner and staff warmth",
-      "frequency": 4,
+      "phrase": "owner friendliness",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The owner is extremely friendly and helped make the experience that much better."
+      "exampleQuote": "The owner is extremely friendly and nice and helped make the experience that much better."
     },
     {
-      "phrase": "sample policy friction",
+      "phrase": "sample tasting conflict",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "The comment along the lines of 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone, made us feel uncomfortable."
+      "exampleQuote": "A comment along the lines of 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone, made us feel uncomfortable."
     },
     {
-      "phrase": "return visit intent",
+      "phrase": "waffle and ice cream pairing",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "After our first bite we were already excited to plan on coming back again."
+      "exampleQuote": "Add that delicious waffle to it and you go into a brand new realm of delicious."
     }
   ],
   "notable_quote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in Liège.",
-  "sentiment_summary": "Reviewers land hard on two things, the ice cream itself and the Liège waffle, treating both as genuinely rare finds in Pittsburgh; the only consistent friction is a vague, incident-specific concern about how sample requests are handled during busy periods.",
-  "quarter_narrative": "Twenty-nine Pittsburgh creators have filmed Treat in the last quarter, generating over 1.3 million TikTok plays, while the shop's own Instagram has been silent for nearly 200 days. The city is doing the storytelling; Treat is not participating in its own narrative. Page's holds the Sweets family lead this issue on social momentum, which is precisely the axis where Treat is most exposed: the product signal, the reviews, and the creator pull are all there, but the account that should be capturing that energy has posted nothing since last spring. A sustained return to Instagram, or even a claimed TikTok presence, would be the single move most likely to push Treat out of Ones to Watch and into the upper tier of the Sweets family.",
-  "tldr_read": "Over a million TikTok plays from creators, zero posts from the business in six months. Ones to Watch, #3 in Pittsburgh Ice Cream Shops.",
-  "tldr_meaning": "The product reputation is already built; the rank ceiling is Instagram momentum, the one axis where Treat is near the bottom of the Sweets family.",
+  "sentiment_summary": "Reviewers are consistently struck by the legitimacy of the Liège waffle and the quality of small-batch ice cream, with specific flavors like sage salted almond getting named; the recurring friction point is staff handling of the sample process, which has surfaced in multiple reviews as dismissive rather than welcoming.",
+  "quarter_narrative": "Thirty-two Pittsburgh creators have filmed Treat this quarter, generating over 1.1 million TikTok plays from a shop that has posted nothing to Instagram in 200 days. The top video, from @dipitcafe, cleared 296,900 plays on a single waffle-and-ice-cream clip. Meanwhile, Page's holds the Sweets family lead on the back of social momentum, the exact signal Treat is ceding to creators who have no stake in the business. Closing that gap, not the reviews or the visual catalog, which are already competitive, is what moves this ranking.",
+  "tldr_read": "Over a million TikTok plays this quarter from 32 outside creators, zero Instagram posts in 200 days. Ones to Watch, #3 in Pittsburgh Ice Cream.",
+  "tldr_meaning": "The TikTok signal is already there, built entirely by other people; the rank climbs when the business begins capturing any share of it for itself.",
   "diagnosis_pullquote": {
-    "line": "Third In Ice Cream On The Strength Of Others. The Shop Has Not Posted In Six Months.",
-    "highlight": "Not Posted In Six Months"
+    "line": "Third In Ice Cream, Fueled By A City Filming It. The Shop Has Not Filmed Back.",
+    "highlight": "A City Filming It"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram account now",
-      "action": "At 199 days without a post and a 7.65% engagement rate still intact, one post per week would reactivate a warm audience before it fully decays.",
+      "headline": "Restart the Instagram feed this week",
+      "action": "The account has been dark for 200 days despite a 7.65% engagement rate sitting idle; one waffle post reactivates that audience immediately.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Post a sample policy where customers see it",
-      "action": "Two reviews cite the same friction point around sampling; a small counter sign clarifying limits defuses the recurring service narrative before it compounds.",
-      "signal": "community_spark",
+      "headline": "Claim a share of TikTok creator traffic",
+      "action": "Thirty-two creators have posted 1.1 million plays without any reciprocal account; a single owned TikTok presence ties that reach back to the business.",
+      "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+5 SENTIMENT PTS"
+      "impact_label": "CAPTURE REACH"
     },
     {
-      "headline": "Claim the TikTok creator wave",
-      "action": "Twenty-nine creators have posted for Treat with 1.3 million plays; a basic TikTok account with reposts of existing coverage costs nothing and captures search traffic the business currently loses.",
-      "signal": "collab_fit",
+      "headline": "Post a visible sample policy in-store",
+      "action": "Two separate reviews describe the same sample-limit conflict; a clear posted policy removes the ambiguity before it costs another five-star review.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "CAPTURE OWNED REACH"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T19:23:38.168Z",
+  "analyzed_at": "2026-04-26T16:26:00.308Z",
   "model": "claude-sonnet-4-6"
 }

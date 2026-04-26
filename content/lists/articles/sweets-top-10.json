@@ -3,41 +3,41 @@
   "title": "The 10 Pittsburgh Sweets on Social",
   "subtitle": "Bakeries, pastry shops, ice cream, dessert",
   "angle": "which Pittsburgh dessert businesses are showing up online this spring, ranked by creator pickup. Who creators are filming and what those videos reveal.",
-  "intro": "Pittsburgh's dessert scene has a social media problem, and it is not the one you would expect. The shops generating the most creator attention this spring are, in several cases, the ones posting the least. Waffallonia in Squirrel Hill has claimed the top dessert ranking without responding to a single message from this publication. Page's in Arlington crossed a million TikTok plays largely on the strength of other people's phones. The city is filming; the businesses are sometimes barely watching.\n\nWhat the creator footage actually reveals is more interesting than a follower count. Thirty separate creators have documented La Gourmandine's Hazelwood location, making it the most filmed pastry shop in the city this quarter, while the bakery's own feed sits largely untouched. Millie's Homemade Ice Cream holds the top ice cream ranking on borrowed momentum, carried by a city that clearly loves the product and has decided to say so without much help from the brand itself.\n\nThe pattern across this list points toward a question worth asking in summer: when a business's best content is being made by strangers, what happens when those strangers move on? Issue 02 will look at which Pittsburgh food businesses are building something more durable.",
+  "intro": "Pittsburgh's dessert scene is getting filmed whether it wants to be or not. Kyo Matcha in Squirrel Hill South sits at 1.79 million TikTok plays this spring and has almost no review volume to show for it, a gap that says more about how fast creator attention moves than anything the shop did wrong. Meanwhile, Page's in Arlington is leading the entire sweets category on creator pickup alone, without a TikTok account of its own. Somebody else is building that audience.\n\nThe pattern across this quarter's top ten is consistent: the businesses generating the most online conversation are largely passive participants in it. Millie's ranks first in ice cream on the strength of its reviews, but the TikTok energy around the shop has no channel to land in. La Gourmandine's Hazelwood location tops the pastry category on creator fuel while its own feed has sat silent for forty days.\n\nWhat creators film and what owners post are two different maps of the same city right now. In Issue 02, we'll track whether any of these businesses close that gap before summer ends.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "waffallonia",
-      "name": "Waffallonia",
+      "business_slug": "kyo-matcha",
+      "name": "Kyo Matcha",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "Number One In Dessert, Built On Other People's Cameras. The Account Hasn't Answered.",
-      "descriptor_highlight": "Other People's Cameras",
-      "stat_line": "605 reviews · 4.6★ · 28 creators · 6.9M plays",
+      "descriptor": "Icons Tier, Built on 1.79 Million TikTok Plays. The Reviews Have Not Caught Up Yet.",
+      "descriptor_highlight": "1.79 Million TikTok Plays",
+      "stat_line": "314 reviews · 4.7★ · 39 creators · 1.8M plays · 6 IG posts/30d",
       "featured_tiktok": {
-        "author": "katelynnsnuggle",
-        "plays": 2100000,
-        "url": "https://www.tiktok.com/@katelynnsnuggle/video/7165912702404103430",
-        "caption": "So easy to make! Hope you enjoyed ☺️ #waffles #homemadefood #homemadewaffles #homemade #wafflemaker #wafflemakerrecipes #sweets #simplerecipe #cooking #breakfast #homemaderecipe #homemadebreakfast #easyrecipe #easycooking #easyrecipes  #bre"
+        "author": "andremelendez",
+        "plays": 1400000,
+        "url": "https://www.tiktok.com/@andremelendez/video/7616424534505229582",
+        "caption": "this matcha place deserves more hype👀 #matchalover #fluffiestmatcha #matchaspot "
       },
-      "playbook_top_move": "Activate the Instagram account before posting. Convert to a business account, add a bio, and link hours before the next post; the profile is currently unverified, has no bio, and is a personal account despite 6.9M TikTok plays pointed at the brand."
+      "playbook_top_move": "Fix the ops complaints before they compound. Portion standards for soft serve and a firm 10 PM close policy would directly address the two recurring negatives pulling sentiment below the 83 family median."
     },
     {
       "rank": 2,
-      "business_slug": "la-gourmandine-hazelwood",
-      "name": "La Gourmandine Hazelwood",
+      "business_slug": "jenis-splendid-ice-creams",
+      "name": "Jeni's Splendid Ice Creams",
       "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Hazelwood",
-      "descriptor": "First In Pastry, Built By 30 Creators. The Bakery's Own Feed Is Quiet.",
-      "descriptor_highlight": "Built By 30 Creators",
-      "stat_line": "525 reviews · 4.8★ · 30 creators · 1.1M plays",
+      "neighborhood": "Larimer",
+      "descriptor": "Second In Ice Cream On Creator Fuel Alone. The Business Has No Tank Of Its Own.",
+      "descriptor_highlight": "No Tank Of Its Own",
+      "stat_line": "251 reviews · 4.5★ · 35 creators · 1.2M plays · 12 IG posts/30d",
       "featured_tiktok": {
-        "author": "ms__lesh",
-        "plays": 719500,
-        "url": "https://www.tiktok.com/@ms__lesh/video/7429958759117524230",
-        "caption": "Theres nothing as beautiful as this.When a man is so gentle in public #hazelwoodpretoria #SAMA28 "
+        "author": "morganchompz",
+        "plays": 1000000,
+        "url": "https://www.tiktok.com/@morganchompz/video/7622351776439667981",
+        "caption": "Trying Jeni’s spring ice cream flavor lineup! 🍦💐 Have you tried any of these? @Jeni’s Splendid Ice Creams #icecream #dessert #newfood #foodreview #snacks "
       },
-      "playbook_top_move": "Restart Instagram before next issue. The account has been silent 40 days. Even two posts per week would move the Instagram momentum signal off its current floor."
+      "playbook_top_move": "Claim the TikTok ground creators built. Launch a Jeni's TikTok account and repost the top-performing creator content; 35 creators and 1.15 million plays already exist as a runway."
     },
     {
       "rank": 3,
@@ -45,101 +45,95 @@
       "name": "Treat - Ice Cream and Liege Waffles",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Shadyside",
-      "descriptor": "Third In Ice Cream On The Strength Of Others. The Shop Has Not Posted In Six Months.",
-      "descriptor_highlight": "Not Posted In Six Months",
-      "stat_line": "623 reviews · 5★ · 29 creators · 1.3M plays",
+      "descriptor": "Third In Ice Cream, Fueled By A City Filming It. The Shop Has Not Filmed Back.",
+      "descriptor_highlight": "A City Filming It",
+      "stat_line": "623 reviews · 5★ · 32 creators · 1.1M plays",
       "featured_tiktok": {
-        "author": "mr.chimetime",
-        "plays": 354600,
-        "url": "https://www.tiktok.com/@mr.chimetime/video/7603148680597687582",
-        "caption": "I’ll NEVER forget this restaurant… @Buddy Scoops Ice Cream . #foodreview #winstonsalem #foodcritic #fyp "
+        "author": "dipitcafe",
+        "plays": 296900,
+        "url": "https://www.tiktok.com/@dipitcafe/video/7626609541450321183",
+        "caption": "Waffle with ice cream #icecream #TikTok #viral #viralvideo #Dessert "
       },
-      "playbook_top_move": "Restart the Instagram account now. At 199 days without a post and a 7.65% engagement rate still intact, one post per week would reactivate a warm audience before it fully decays."
+      "playbook_top_move": "Restart the Instagram feed this week. The account has been dark for 200 days despite a 7.65% engagement rate sitting idle; one waffle post reactivates that audience immediately."
     },
     {
       "rank": 4,
-      "business_slug": "kyo-matcha",
-      "name": "Kyo Matcha",
-      "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Squirrel Hill South",
-      "descriptor": "Second In Dessert Shops, Powered By Creators. The Shop's Own Feed Is Not A Business Account Yet.",
-      "descriptor_highlight": "Not A Business Account",
-      "stat_line": "314 reviews · 4.7★ · 28 creators · 353K plays · 6 IG posts/30d",
-      "featured_tiktok": {
-        "author": "xo.derleethao",
-        "plays": 78100,
-        "url": "https://www.tiktok.com/@xo.derleethao/video/7548836755898731789",
-        "caption": "So happy a Kyo Matcha opened near us 🍵 Y’all already know this is about to be our weekly spot 😅🫣\n\n#kyomatcha #matcha #drinks #dessert #food "
-      },
-      "playbook_top_move": "Convert Instagram to a business profile. Switch @kyomatchausa from personal to business account to unlock analytics, contact buttons, and searchability for a feed already pulling 47 percent engagement."
-    },
-    {
-      "rank": 5,
-      "business_slug": "pages",
-      "name": "Page's",
-      "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Arlington",
-      "descriptor": "First In Sweets On A Million TikTok Plays. Instagram Still Has Room To Catch Up.",
-      "descriptor_highlight": "Million TikTok Plays",
-      "stat_line": "3,145 reviews · 4.8★ · 25 creators · 1.1M plays · 9 IG posts/30d",
-      "featured_tiktok": {
-        "author": "pagesicecream",
-        "plays": 231700,
-        "url": "https://www.tiktok.com/@pagesicecream/video/7555639219490655501",
-        "caption": "Not your average banana split. 🍌🍫\n\n#bananasplit #brownie #dessert #icecream #pittsburgh "
-      },
-      "playbook_top_move": "Convert TikTok heat into Instagram signal. Repost the top-performing TikTok content natively to Instagram Reels; the 231,700-play banana split video has not appeared there."
-    },
-    {
-      "rank": 6,
-      "business_slug": "jenis-splendid-ice-creams",
-      "name": "Jeni's Splendid Ice Creams",
-      "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Larimer",
-      "descriptor": "Second In Ice Cream, Third In Sweets. The City Is Filming; Jeni's Feed Is Quiet.",
-      "descriptor_highlight": "Jeni's Feed Is Quiet",
-      "stat_line": "251 reviews · 4.5★ · 29 creators · 148K plays · 12 IG posts/30d",
-      "featured_tiktok": {
-        "author": "justapittsburghgirl",
-        "plays": 48400,
-        "url": "https://www.tiktok.com/@justapittsburghgirl/video/7502168218123996446",
-        "caption": "That gooey butter cake ice cream has me in a chokehold 😋\n\n📍Jeni’s Ice Cream 🍨 - 447 Cinema Dr\n.\n.\n.\n.\n.\n.\n##pittsburgh##pittsburgheats ##placestoeatinpittsburgh ##pittsburghthingstodo##dessertsinpittsburgh"
-      },
-      "playbook_top_move": "Close the Instagram engagement gap now. At 0.49 percent engagement on 12 posts last month, the account is publishing but not pulling. Shift toward the flavor-reveal and behind-the-counter formats that the 29 creators already know work here."
-    },
-    {
-      "rank": 7,
       "business_slug": "millies-homemade-ice-cream",
       "name": "Millie's Homemade Ice Cream",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Shadyside",
-      "descriptor": "Number One In Ice Cream, Carried By The City. The Owned Feed Hasn't Caught Up.",
-      "descriptor_highlight": "Carried By The City",
-      "stat_line": "1,150 reviews · 4.6★ · 26 creators · 181K plays · 12 IG posts/30d",
+      "descriptor": "Number One In Ice Cream, Built On Reviews. The City's TikTok Energy Has No Home Base.",
+      "descriptor_highlight": "No Home Base",
+      "stat_line": "1,150 reviews · 4.6★ · 25 creators · 579K plays · 12 IG posts/30d",
       "featured_tiktok": {
-        "author": "kimberlyrhoades112",
-        "plays": 53500,
-        "url": "https://www.tiktok.com/@kimberlyrhoades112/video/7451405659830095135",
-        "caption": "the Pittsburgh nostalgia is real with this flavor of ice cream from Millie’s! 😮‍💨🤤 \n\n(not an ad, just really love it) 🤪 "
+        "author": "nonazgonenutz",
+        "plays": 278300,
+        "url": "https://www.tiktok.com/@nonazgonenutz/video/7620920784357248287",
+        "caption": "#Mandelaeffect #Dreyers #edys #wtf Messing with my ice-cream is a No NO"
       },
-      "playbook_top_move": "Convert creator plays into followers. With 26 creators and 180,530 TikTok plays this quarter, resharing even five of those videos monthly would redirect that proven traffic to the owned account."
+      "playbook_top_move": "Claim the TikTok real estate already yours. Launch a Millie's TikTok account and repost or stitch the 26 existing creator videos that have already generated 578,817 plays this quarter."
     },
     {
-      "rank": 8,
+      "rank": 5,
+      "business_slug": "la-gourmandine-hazelwood",
+      "name": "La Gourmandine Hazelwood",
+      "family_label": "Pittsburgh Sweets",
+      "neighborhood": "Hazelwood",
+      "descriptor": "First In Pastry On Creator Fuel. The Bakery's Own Feed Has Been Silent For Forty Days.",
+      "descriptor_highlight": "Silent For Forty Days",
+      "stat_line": "525 reviews · 4.8★ · 13 creators · 737K plays",
+      "featured_tiktok": {
+        "author": "lesegotamar",
+        "plays": 459100,
+        "url": "https://www.tiktok.com/@lesegotamar/video/7610166891629333781",
+        "caption": "Ate and left no crumbs 🥹❤️#dinnerdate #burgandydress #fireroomhazelwood #fyppppppppppppppppppppppp "
+      },
+      "playbook_top_move": "Restart the Instagram feed immediately. Post at least twice a week on @lagourmandinebakery; the account has been silent for 41 days while 13 creators are actively driving traffic there."
+    },
+    {
+      "rank": 6,
+      "business_slug": "pages",
+      "name": "Page's",
+      "family_label": "Pittsburgh Sweets",
+      "neighborhood": "Arlington",
+      "descriptor": "First In Sweets, Powered By Creators. The Shop Itself Has No TikTok To Show For It.",
+      "descriptor_highlight": "No TikTok To Show",
+      "stat_line": "3,145 reviews · 4.8★ · 13 creators · 177K plays · 9 IG posts/30d",
+      "featured_tiktok": {
+        "author": "bhphotographypa",
+        "plays": 62800,
+        "url": "https://www.tiktok.com/@bhphotographypa/video/7615450580697337119",
+        "caption": "Who Wants Ice Cream? 🍦 @Page's  #pagesdairymart #bhphotographypa #pittsburgh #southside #icecream"
+      },
+      "playbook_top_move": "Claim the TikTok ground creators built. Open a Page's TikTok account and post even two videos this month; 177,416 plays exist with nowhere to land."
+    },
+    {
+      "rank": 7,
       "business_slug": "la-gourmandine-lawrenceville",
       "name": "La Gourmandine Lawrenceville",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First In Bakeries On Borrowed Momentum. The Bakery's Own Feed Has Gone Quiet.",
-      "descriptor_highlight": "Borrowed Momentum",
-      "stat_line": "1,294 reviews · 4.8★ · 26 creators · 109K plays",
+      "descriptor": "First In Bakeries On Review Depth Alone. The Bakery's Own Feed Went Quiet.",
+      "descriptor_highlight": "Review Depth Alone",
+      "stat_line": "1,294 reviews · 4.8★ · 9 creators · 32K plays",
       "featured_tiktok": {
-        "author": "lilbigbackz",
-        "plays": 23700,
-        "url": "https://www.tiktok.com/@lilbigbackz/video/7548503381564869918",
-        "caption": "La Gourmandine located right in the heart of Lawrenceville 🔥 there’s numerous locations around Pittsburgh 👀 #lagourmandine #lawrenceville #foodies #pittsburgh #frenchbakery @La Gourmandine Bakery "
+        "author": "mattdinguspgh",
+        "plays": 11800,
+        "url": "https://www.tiktok.com/@mattdinguspgh/video/7609890059071933726",
+        "caption": "Welcome to 337 Fisk Street in Lawrenceville, Pittsburgh. This iconic 1900 residence spans nearly 4,000 square feet, blending historic soul with modern luxury. \n\nhttps://www.zillow.com/homedetails/337-Fisk-St-Pittsburgh-PA-15201/11514118_zpi"
       },
-      "playbook_top_move": "Restart the Instagram feed this week. The account has been silent for 40 days; even two posts per week showing a specific pastry or the morning case would restart the momentum signal."
+      "playbook_top_move": "Break the 41-day Instagram silence. Post at minimum twice weekly; the seasonal menu alone, La Ruche, pistachio items, supplies a ready visual archive of 779 existing photos to reactivate from."
+    },
+    {
+      "rank": 8,
+      "business_slug": "waffallonia",
+      "name": "Waffallonia",
+      "family_label": "Pittsburgh Sweets",
+      "neighborhood": "Squirrel Hill South",
+      "descriptor": "First In Pittsburgh Dessert On Review Depth Alone. The Instagram Has Gone Quiet.",
+      "descriptor_highlight": "Review Depth Alone",
+      "stat_line": "605 reviews · 4.6★",
+      "playbook_top_move": "Restart Instagram with a business account. Convert from personal to business profile, add a bio, and post consistently; the account currently has no bio and unknown last post date."
     }
   ],
   "query": {
@@ -149,6 +143,6 @@
     "ranking": "creator_pickup",
     "limit": 10
   },
-  "generated_at": "2026-04-26T14:43:20.905Z",
+  "generated_at": "2026-04-26T16:27:32.589Z",
   "model": "claude-sonnet-4-6"
 }

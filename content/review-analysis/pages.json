@@ -3,13 +3,13 @@
   "themes": [
     {
       "phrase": "line moves quickly",
-      "frequency": 5,
+      "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Line will be long but moves quickly."
     },
     {
       "phrase": "thick and creamy soft serve",
-      "frequency": 4,
+      "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Thick and creamy, always delicious and they never miss."
     },
@@ -17,11 +17,11 @@
       "phrase": "ridiculously affordable portions",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The price was RIDICULOUSLY affordable, and they gave me WAY too much ice cream."
+      "exampleQuote": "The price was RIDICULOUSLY affordable, and the long line moved EXTREMELY quickly."
     },
     {
-      "phrase": "long wait to enter",
-      "frequency": 4,
+      "phrase": "crowded evening wait",
+      "frequency": 5,
       "sentiment": "neutral",
       "exampleQuote": "Great, just be prepared to wait in line for an hour."
     },
@@ -29,48 +29,48 @@
       "phrase": "friendly professional staff",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Shout out to the friendly and professional staff!"
+      "exampleQuote": "Shout out to the friendly and professional staff."
     },
     {
-      "phrase": "homemade flavor quality",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "You could really taste the homemade coconut. Texture and taste were perfect."
+      "phrase": "seasonal closing cycle",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "End of the season October 24, 2019. See you in the spring."
     }
   ],
   "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype.",
-  "sentiment_summary": "Reviewers converge on the same three things: the ice cream is genuinely thick and housemade-tasting, the portions are absurdly large for the price, and the line, though always present, moves fast enough that nobody leaves bitter about it.",
-  "quarter_narrative": "Page's enters Spring 2026 as the unambiguous leader of the Pittsburgh Sweets family, and the TikTok data tells the loudest part of the story. Twenty-five creators filed into Arlington, shot their videos, and collectively ran up over a million plays in a single quarter, with the shop's own account, @pagesicecream, pulling 231,700 on a single banana split clip. That is not a sleeper story; Page's is very much awake on TikTok. The question for the next issue is whether Instagram, currently posting nine times a month with a 1.29 percent engagement rate, can close the gap between what creators are building for the brand and what the brand is building for itself. Holding the top rank in this family means keeping that TikTok momentum compounding while pushing the Instagram signal high enough to match it.",
-  "tldr_read": "Over a million TikTok plays, 3,145 Google reviews at 87 percent five-star, and a verified Instagram account that is active but not yet pulling its weight. Icons of the Burgh, number one in Pittsburgh Dessert Shops.",
-  "tldr_meaning": "The TikTok and review axes are already operating at the top of this family; the rank holds as long as Instagram engagement climbs to reflect the scale of attention the business is already receiving everywhere else.",
+  "sentiment_summary": "Reviewers consistently celebrate the portion size, price-to-quality ratio, and staff speed; the only friction is the wait, which most reviewers immediately forgive because the line moves.",
+  "quarter_narrative": "Thirteen Pittsburgh creators posted 14 TikToks about Page's this quarter, pulling 177,416 plays, and Page's itself has no TikTok account to absorb any of that attention. The top video alone, a 62,800-play clip from @bhphotographypa, generated more reach than most dessert shops see in a year, all of it flowing to the creator's page rather than the business's own presence. Page's leads the Pittsburgh Sweets family this issue on social momentum, driven by Instagram activity that outpaces the category median, but the TikTok gap means the rank is being held up by other people's enthusiasm rather than the shop's own publishing. Closing that gap, without abandoning what's already working on Instagram, is the clearest path to widening the lead next issue.",
+  "tldr_read": "A 3,145-review foundation and 13 outside creators driving six-figure TikTok plays; Icons of the Burgh, number one in Pittsburgh Dessert Shops.",
+  "tldr_meaning": "The visibility ceiling right now is set by creators, not the business; the rank holds at the top so long as that outside energy stays active, but the signal is borrowed.",
   "diagnosis_pullquote": {
-    "line": "First In Sweets On A Million TikTok Plays. Instagram Still Has Room To Catch Up.",
-    "highlight": "Million TikTok Plays"
+    "line": "First In Sweets, Powered By Creators. The Shop Itself Has No TikTok To Show For It.",
+    "highlight": "No TikTok To Show"
   },
   "playbook": [
     {
-      "headline": "Convert TikTok heat into Instagram signal",
-      "action": "Repost the top-performing TikTok content natively to Instagram Reels; the 231,700-play banana split video has not appeared there.",
+      "headline": "Claim the TikTok ground creators built",
+      "action": "Open a Page's TikTok account and post even two videos this month; 177,416 plays exist with nowhere to land.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+INSTAGRAM REACH"
+      "impact_label": "CAPTURE OWNED REACH"
     },
     {
-      "headline": "Pull the Nancy B sundae into the visual catalog",
-      "action": "The Nancy B sundae gets a named callout in reviews but has no dedicated photo cluster across 1,454 Google images; one sharp photo push fills that gap.",
+      "headline": "Turn the wait into a visual moment",
+      "action": "The line is mentioned in nearly every review; one short Reel showing the line moving fast reframes the top complaint into proof of demand.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+SENTIMENT SHIELD"
     },
     {
-      "headline": "Engage the 25 creators already filming",
-      "action": "Twenty-five unique TikTok creators shot Page's this quarter; a reply or repost to even five of them compounds creator fit without requiring new production.",
-      "signal": "collab_fit",
+      "headline": "Name the menu items that already have pull",
+      "action": "The Nancy B sundae and Arctic Swirl are cited by name in reviews; featuring them explicitly on Google photo categories currently missing a dedicated menu visual would strengthen conversion.",
+      "signal": "conversion_path",
       "priority": "low",
-      "impact_label": "LOCK CREATOR TIER"
+      "impact_label": "+MENU DISCOVERY"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T19:20:58.008Z",
+  "analyzed_at": "2026-04-26T16:23:37.299Z",
   "model": "claude-sonnet-4-6"
 }

@@ -2,7 +2,7 @@
   "slug": "meetcha",
   "themes": [
     {
-      "phrase": "study spot atmosphere",
+      "phrase": "comfortable study spot",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "such an amazing environment... would recommend as a go to study spot"
@@ -14,57 +14,57 @@
       "exampleQuote": "I had a milk tea and it is wonderful!!! Recommend everyone to come here"
     },
     {
-      "phrase": "comfortable and relaxing",
+      "phrase": "cute atmosphere",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "It's so comfortable and relaxing and the staff is super friendly"
+      "exampleQuote": "literally such a cute place"
     },
     {
       "phrase": "friendly staff",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Staff was VERY helpful and kind"
+      "exampleQuote": "staff was VERY helpful and kind"
     },
     {
-      "phrase": "cute space",
-      "frequency": 3,
+      "phrase": "go-to boba spot",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "literally such a cute place"
+      "exampleQuote": "one of our favorite boba spot!"
     }
   ],
-  "notable_quote": "Always such a good experience!! It's so comfortable and relaxing and the staff is super friendly.",
-  "sentiment_summary": "Reviewers are consistent on three things: the boba and milk tea are good, the room feels calm enough to linger in, and the staff makes it easy to come back. There is no notable criticism in the available sample, which flatters the atmosphere but leaves the review signal thin on specificity.",
-  "quarter_narrative": "Twenty-four Pittsburgh creators filmed MeetCha this quarter and the business posted nothing back. The 30-plus TikToks, 187,837 combined plays, and a top video at 22,200 from @maddie_gera built a version of MeetCha's brand entirely on other people's phones. Meanwhile the @meetcha_pgh Instagram account has been quiet for 91 days, is not set up as a business account, and posted zero reels in the last 30 days. That gap between city-generated attention and owner-generated presence is the defining story of MeetCha's Spring 2026. Allegheny Coffee and Tea Exchange leads the Pittsburgh Cafes family on social momentum; MeetCha sits fourth overall despite running one of the strongest creator pipelines in the entire family, which means the rank climbs fast if the account catches up with the audience already there.",
-  "tldr_read": "Creator coverage is loud, the business's own Instagram is silent, and review sentiment trails the family median by a wide margin. Ones to Watch, #4 in Pittsburgh Cafes.",
-  "tldr_meaning": "MeetCha's trajectory depends on two things closing: the 91-day Instagram silence and the gap between its 48 review sentiment score and a family median that sits nearly 30 points higher.",
+  "notable_quote": "It's so comfortable and relaxing and the staff is super friendly.",
+  "sentiment_summary": "Reviewers consistently praise the atmosphere and staff warmth, and the boba earns real loyalty; no reviewer surfaces a single specific complaint, which reads less like universal perfection and more like a review pool that hasn't been tested by a critical mass of customers yet.",
+  "quarter_narrative": "MeetCha spent Spring 2026 accumulating goodwill it isn't fully cashing in on. The Google profile is clean, the conversion path is airtight, and 93 percent of 134 reviewers left five stars, but the Instagram account has been quiet for three months and no Pittsburgh TikTok creators have put this shop on camera yet. That combination is unusual: high Creator Fit suggests the aesthetic and product are exactly what food creators tend to reach for, but no one has reached yet. Allegheny Coffee and Tea Exchange leads this family on social momentum, and the gap between them and MeetCha is less about the product and more about visibility. The rank climbs when the shop shows up in someone else's frame, or its own.",
+  "tldr_read": "Near-perfect Google sentiment, a frozen Instagram, and zero TikTok presence. Ones to Watch, #4 in Pittsburgh Cafes.",
+  "tldr_meaning": "The review signal is strong but thin at 134 reviews, and without Instagram or creator activity feeding new discovery, the momentum axis stays flat regardless of how good the boba is.",
   "diagnosis_pullquote": {
-    "line": "Fourth In Pittsburgh Cafes, Carried By Creators. The Account Behind The Counter Has Gone Quiet.",
-    "highlight": "Carried By Creators"
+    "line": "Fourth In Pittsburgh Cafes On Goodwill Alone. The Discovery Layer Has Not Arrived Yet.",
+    "highlight": "The Discovery Layer"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram account with purpose",
-      "action": "Convert @meetcha_pgh to a business account and post at least once per week; the account has been silent for 91 days while 24 creators actively film the space.",
+      "headline": "End the 92-day Instagram silence",
+      "action": "The account has been dark since before winter; even two posts per week restarts the momentum signal that is currently the weakest axis in the family.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Pull specific language from happy regulars",
-      "action": "Review sentiment sits well below the family median; a structured ask for detail-rich reviews on Google, mentioning specific drinks or the study-spot vibe, closes that gap faster than volume alone.",
-      "signal": "community_spark",
+      "headline": "Convert the Creator Fit into actual footage",
+      "action": "Creator Fit ranks near the top of the family but zero Pittsburgh TikToks exist for MeetCha; the aesthetic is already there, the invitation is not.",
+      "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+15 SENTIMENT PTS"
+      "impact_label": "UNLOCK CREATORS"
     },
     {
-      "headline": "Fill the visual catalog gaps on Google",
-      "action": "115 photos across 11 categories is a reasonable base, but the visual score trails the family median by 17 points; adding staff-shot interior and behind-the-counter images in underrepresented categories would address that directly.",
+      "headline": "Expand the Google photo catalog",
+      "action": "115 photos across 11 categories is a decent base, but the Visual Catalog sits well below the family median of 77; adding staff, interior detail, and seasonal drinks can close that gap.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-25T19:19:06.364Z",
+  "analyzed_at": "2026-04-26T16:21:48.753Z",
   "model": "claude-sonnet-4-6"
 }

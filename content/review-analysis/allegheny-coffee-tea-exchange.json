@@ -14,13 +14,13 @@
       "exampleQuote": "You can smell each one and even bag your own beans, which is a really unique touch."
     },
     {
-      "phrase": "cold brew taps",
+      "phrase": "cold brew on tap",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "They have multiple taps with different varieties, which makes it fun to mix things up."
     },
     {
-      "phrase": "friendly accommodating staff",
+      "phrase": "friendly knowledgeable staff",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting."
@@ -33,38 +33,38 @@
     }
   ],
   "notable_quote": "This place has been around since the 1980s and has built a reputation as one of the city's go-to specialty coffee shops, and you can feel that history the second you walk in.",
-  "sentiment_summary": "Reviewers consistently land on the sensory experience, the bean smell, the self-serve scooping, the cold brew taps, and the staff by name; the only thing absent from the reviews is any meaningful friction, which at 81 percent five-star and 924 total reviews starts to read as a consensus rather than a gap.",
-  "quarter_narrative": "Allegheny Coffee and Tea Exchange holds both the top coffee shop and top cafe position in Pittsburgh this issue, and the signal driving that double rank is not its own content but the city's. Twenty-nine TikTok creators filed 30-plus videos here this quarter, accumulating more than 1.5 million plays, while the shop's own Instagram posted 12 times in 30 days at a 1.23 percent engagement rate, a solid cadence that still sits well below the attention the city is already volunteering. The review base, 924 ratings at 81 percent five-star, is one of the most stable floors in the entire Pittsburgh Cafes family, and the Instagram Momentum signal sits nearly double the family median. What keeps the rank at number one next issue is whether the shop begins to match the creative intensity that 29 outside voices are already bringing to its counters.",
-  "tldr_read": "Nearly 1.6 million TikTok plays and the strongest review floor in the family. Icons of the Burgh, number one in Pittsburgh Coffee Shops and Pittsburgh Cafes.",
-  "tldr_meaning": "The rank is justified on nearly every axis; the only ceiling is an Instagram engagement rate that trails the creator attention the business already receives by a wide margin.",
+  "sentiment_summary": "Reviewers consistently celebrate the sensory ritual of the place, the bean-smelling wall, the cold brew taps, staff who remember grinder settings, with almost no nitpicks surfacing across 924 reviews.",
+  "quarter_narrative": "Spring 2026 found Allegheny Coffee and Tea Exchange doing something few forty-year-old institutions manage: accelerating. Thirty-one Pittsburgh creators posted 36 TikToks in a single quarter, pulling 607,052 plays, with the top video alone clearing 127,500 by tying the shop to the cultural moment around HBO's 'The Pitt.' The business leads the Pittsburgh Cafes family this issue on the strength of social momentum, a signal that is almost entirely city-generated rather than house-generated. Its own Instagram is active enough, twelve posts and five reels in the last thirty days, but the gap between what creators are producing and what the shop is capturing from that wave is the most interesting editorial fact about this business right now. The rank holds at number one as long as that creator energy keeps arriving; the question for next issue is whether Allegheny Coffee starts meeting those 31 filmmakers halfway.",
+  "tldr_read": "607,000 TikTok plays this quarter, nearly all of them made by other people. Icons of the Burgh, number one in Pittsburgh Coffee Shops and Pittsburgh Cafes.",
+  "tldr_meaning": "The signals that built this rank, sentiment, visual catalog, and creator coverage, are all stable or rising; the only axis with room to move is converting third-party momentum into first-party output.",
   "diagnosis_pullquote": {
-    "line": "Number One On Both Lists, Carried By A City That Won't Stop Filming It.",
-    "highlight": "Won't Stop Filming"
+    "line": "Number One On Creator Energy Alone. The Shop Has Not Claimed Its Own Wave Yet.",
+    "highlight": "Not Claimed Its Own Wave"
   },
   "playbook": [
     {
-      "headline": "Close the gap between plays and posts",
-      "action": "Repost or respond to the top creator videos driving 1.5 million plays; the shop's own account is not capturing that audience.",
+      "headline": "Repost the 607K plays you didn't make",
+      "action": "Systematically reshare top creator TikToks to @adventureallegheny; 31 creators already handed over the raw material.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+ENGAGEMENT FLOOR"
+      "impact_label": "CAPTURE THE WAVE"
     },
     {
-      "headline": "Expand the visual catalog beyond six categories",
-      "action": "589 photos exist but the tagged categories skip behind-the-counter and bean-scooping content, the two most-cited sensory moments in reviews.",
+      "headline": "Turn the bean wall into a visual series",
+      "action": "589 Google photos exist but the bag-your-own-beans ritual, the most cited sensory detail, has no recurring Instagram format built around it.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+6 VISUAL RANK"
     },
     {
-      "headline": "Name-check staff in response to reviews",
-      "action": "Reviewers already call out Eric and Cameron by name; responding to those reviews by name reinforces the staff-forward reputation that drives repeat visits.",
+      "headline": "Name-check staff in responses",
+      "action": "Eric and Cameron appear by name in reviews; acknowledging staff publicly in reply threads reinforces the human-scale reputation that drives repeat visits.",
       "signal": "community_spark",
       "priority": "low",
       "impact_label": "+SENTIMENT DEPTH"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-25T19:13:52.553Z",
+  "analyzed_at": "2026-04-26T16:16:16.767Z",
   "model": "claude-sonnet-4-6"
 }

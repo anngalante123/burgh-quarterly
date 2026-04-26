@@ -49,9 +49,9 @@ export default function Home() {
   // Best on Social series, three featured articles + the rest.
   const allArticles = loadAllListArticles();
   const FEATURED_SLUGS = [
+    "best-creator-posts-about",
     "icons-of-spring-2026",
     "sweets-top-10",
-    "active-posters",
   ];
   const featuredArticles = FEATURED_SLUGS
     .map((s) => allArticles.find((a) => a.slug === s))
@@ -77,13 +77,17 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.12}>
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
-              Twenty-six creators filmed La Gourmandine last quarter. The
-              bakery hasn&apos;t posted in 40 days. Signal Pittsburgh ranks{" "}
               <span className="font-semibold text-brand-black">
-                30 small businesses
+                49 creators posted 50 videos
               </span>{" "}
-              by what creators are filming, what customers are reviewing,
-              and who&apos;s actually showing up on their own feed.{" "}
+              about Pittsburgh small businesses this quarter, totaling{" "}
+              <span className="font-semibold text-brand-black">
+                24 million plays
+              </span>
+              . None came from the businesses themselves. Signal Pittsburgh
+              ranks 30 small businesses by what creators are filming, what
+              customers are reviewing, and who&apos;s actually showing up
+              on their own feed.{" "}
               <span className="font-semibold text-brand-black">
                 We don&apos;t rank taste. We rank the conversation.
               </span>
@@ -227,9 +231,9 @@ export default function Home() {
             <p className="mt-4 max-w-2xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
               1,294 five-star reviews. 779 photos on Google.{" "}
               <span className="font-semibold text-brand-black">
-                Twenty-six creators filming on TikTok.
+                Nine creators filmed it on TikTok in the last 90 days.
               </span>{" "}
-              Zero posts back from the bakery in 40 days. The full
+              The bakery itself hasn&apos;t posted in 40 days. The full
               scorecard, ranked.
             </p>
             <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">

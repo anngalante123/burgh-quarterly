@@ -3,7 +3,7 @@
   "title": "The Pittsburgh Businesses Actually Showing Up On Their Own Feed",
   "subtitle": "The minority that are posting, ranked by Instagram momentum",
   "angle": "most Pittsburgh small businesses on this index are dormant on Instagram. These are the ones that aren't, ranked by 30-day cadence and engagement.",
-  "intro": "Most Pittsburgh small businesses on this index barely exist on Instagram. They have locations, they have customers, they have reputations that predate the app. What they don't have is a posting habit. This list is for the minority that do, ranked by 30-day cadence and engagement against a field where dormancy is the default.\n\nThe stories worth watching this quarter involve a gap that keeps appearing between who owns the conversation and who started it. Tazza D'Oro in Highland Park holds the top cafe ranking on the back of 633,000 creator plays it had no hand in producing. Allegheny Coffee and Tea Exchange in the Strip District sits first on both lists, carried not by its own output but by a city that has apparently decided the place deserves to be documented. Hop Farm Brewing in Lawrenceville leads all breweries, built almost entirely on footage someone else shot.\n\nThe pattern is real and it has a short shelf life. Creator momentum without a brand feeding it back tends to migrate. The businesses that figure that out before the summer rush will have a measurably different story to tell when Issue 02 lands in July.",
+  "intro": "Most Pittsburgh small businesses on this index are invisible on their own feeds. They exist in the conversation, sometimes loudly, entirely because creators decided to show up for them. This list is the exception: the ten businesses that are actually posting, ranked by 30-day cadence and engagement momentum against the broader dormancy of the index.\n\nA few names demand immediate attention. Kyo Matcha in Squirrel Hill South is sitting on 1.79 million TikTok plays and has not yet accumulated the review volume to match it, a gap that will either close fast or represent a real missed window. Allegheny Coffee and Tea Exchange in the Strip District leads its category on creator energy alone, which means the shop is benefiting from a wave it did not paddle into and does not currently own. Hop Farm Brewing in Lawrenceville ranks first among breweries on a feed the brewery has never once posted to.\n\nThe pattern here is not laziness. It is timing, and timing runs out. Issue 02, publishing Summer 2026, will track whether these businesses converted their current momentum into owned presence, or whether the creators moved on first.",
   "items": [
     {
       "rank": 1,
@@ -11,16 +11,16 @@
       "name": "Kyo Matcha",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "Second In Dessert Shops, Powered By Creators. The Shop's Own Feed Is Not A Business Account Yet.",
-      "descriptor_highlight": "Not A Business Account",
-      "stat_line": "314 reviews · 4.7★ · 28 creators · 353K plays · 6 IG posts/30d",
+      "descriptor": "Icons Tier, Built on 1.79 Million TikTok Plays. The Reviews Have Not Caught Up Yet.",
+      "descriptor_highlight": "1.79 Million TikTok Plays",
+      "stat_line": "314 reviews · 4.7★ · 39 creators · 1.8M plays · 6 IG posts/30d",
       "featured_tiktok": {
-        "author": "xo.derleethao",
-        "plays": 78100,
-        "url": "https://www.tiktok.com/@xo.derleethao/video/7548836755898731789",
-        "caption": "So happy a Kyo Matcha opened near us 🍵 Y’all already know this is about to be our weekly spot 😅🫣\n\n#kyomatcha #matcha #drinks #dessert #food "
+        "author": "andremelendez",
+        "plays": 1400000,
+        "url": "https://www.tiktok.com/@andremelendez/video/7616424534505229582",
+        "caption": "this matcha place deserves more hype👀 #matchalover #fluffiestmatcha #matchaspot "
       },
-      "playbook_top_move": "Convert Instagram to a business profile. Switch @kyomatchausa from personal to business account to unlock analytics, contact buttons, and searchability for a feed already pulling 47 percent engagement."
+      "playbook_top_move": "Fix the ops complaints before they compound. Portion standards for soft serve and a firm 10 PM close policy would directly address the two recurring negatives pulling sentiment below the 83 family median."
     },
     {
       "rank": 2,
@@ -28,16 +28,16 @@
       "name": "Spot of Coffee",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Second In Pittsburgh Cafes, Powered By Creator Momentum The Shop Itself Has Not Claimed.",
-      "descriptor_highlight": "Creator Momentum The",
-      "stat_line": "173 reviews · 4.8★ · 23 creators · 373K plays · 6 IG posts/30d",
+      "descriptor": "Icons Tier, Number Two. The City Is Filming; The Google Profile Is Not Keeping Up.",
+      "descriptor_highlight": "The City Is Filming",
+      "stat_line": "173 reviews · 4.8★ · 24 creators · 278K plays · 6 IG posts/30d",
       "featured_tiktok": {
-        "author": "mayavalletta",
-        "plays": 87100,
-        "url": "https://www.tiktok.com/@mayavalletta/video/7525475693631786254",
-        "caption": "There’s so many more, what did I miss? Might have to do a pt. 2? #coffee #cafe #pittsburgh #pgh "
+        "author": "lyssad16",
+        "plays": 44300,
+        "url": "https://www.tiktok.com/@lyssad16/video/7617949708450876685",
+        "caption": "neeeeedddd to try more tho! #coffee #pittsburgh #trending "
       },
-      "playbook_top_move": "Put a website URL on Google. Conversion path is the only signal below family median; adding even a simple menu URL to the Google profile closes that gap immediately."
+      "playbook_top_move": "Put a website on Google immediately. Spot of Coffee has no website linked on Google, the only business in its family at zero on conversion path; even a single-page site with the menu closes this gap."
     },
     {
       "rank": 3,
@@ -45,16 +45,10 @@
       "name": "Golden Age Beer Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Second In Breweries On Beer Alone. The Food Signal Is Pulling The Rank Back.",
-      "descriptor_highlight": "Pulling The Rank Back",
+      "descriptor": "Second In Breweries On The Beer Alone. The Kitchen And The Camera Have Not Caught Up.",
+      "descriptor_highlight": "The Kitchen And",
       "stat_line": "195 reviews · 4.8★ · 12 IG posts/30d",
-      "featured_tiktok": {
-        "author": "",
-        "plays": 0,
-        "url": "",
-        "caption": ""
-      },
-      "playbook_top_move": "Fix the food narrative before it compounds. Three reviews explicitly cite overcooking; one names the seitan bites and burger by dish. Address the consistency issue in the kitchen before the sentiment median dips further from its current 49."
+      "playbook_top_move": "Fix the review narrative on food. The kitchen critique appears in roughly a third of the available review texts; address execution consistency publicly in owner responses to move sentiment above the current family median."
     },
     {
       "rank": 4,
@@ -62,16 +56,16 @@
       "name": "Allegheny Coffee & Tea Exchange",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Strip District",
-      "descriptor": "Number One On Both Lists, Carried By A City That Won't Stop Filming It.",
-      "descriptor_highlight": "Won't Stop Filming",
-      "stat_line": "924 reviews · 4.8★ · 29 creators · 1.6M plays · 12 IG posts/30d",
+      "descriptor": "Number One On Creator Energy Alone. The Shop Has Not Claimed Its Own Wave Yet.",
+      "descriptor_highlight": "Not Claimed Its Own Wave",
+      "stat_line": "924 reviews · 4.8★ · 31 creators · 607K plays · 12 IG posts/30d",
       "featured_tiktok": {
-        "author": "monmon.eats",
-        "plays": 807100,
-        "url": "https://www.tiktok.com/@monmon.eats/video/7052855906073267503",
-        "caption": "My current favorite Seattle brunch spots! 💖  #seattlefood #seattlefoodie"
+        "author": "pittsburghpg",
+        "plays": 127500,
+        "url": "https://www.tiktok.com/@pittsburghpg/video/7607959834289343757",
+        "caption": "HBO Max's award-winning medical drama “The Pitt” does a lot of things to ground itself in Pittsburgh.\nIts emergency room is based on that of Allegheny General Hospital on the North Side. There are a variety of local references, including on"
       },
-      "playbook_top_move": "Close the gap between plays and posts. Repost or respond to the top creator videos driving 1.5 million plays; the shop's own account is not capturing that audience."
+      "playbook_top_move": "Repost the 607K plays you didn't make. Systematically reshare top creator TikToks to @adventureallegheny; 31 creators already handed over the raw material."
     },
     {
       "rank": 5,
@@ -79,16 +73,16 @@
       "name": "Hidden Harbor",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "First In Pittsburgh Bars, Fueled By Creators. The Bar Has Yet To Film Back.",
-      "descriptor_highlight": "Fueled By Creators",
-      "stat_line": "765 reviews · 4.6★ · 28 creators · 2.5M plays · 12 IG posts/30d",
+      "descriptor": "First In Pittsburgh Bars On Atmosphere Alone. The Video Signal Is Entirely Borrowed.",
+      "descriptor_highlight": "Entirely Borrowed",
+      "stat_line": "765 reviews · 4.6★ · 10 creators · 426K plays · 12 IG posts/30d",
       "featured_tiktok": {
-        "author": "pennsylvania_core",
-        "plays": 986400,
-        "url": "https://www.tiktok.com/@pennsylvania_core/video/7623034107403963662",
-        "caption": "city of bridges, city of hills #flatearth #pittsburgh #pgh "
+        "author": "messihasaura7689",
+        "plays": 204400,
+        "url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527",
+        "caption": "Pearl Harbor #usa #japan #pearlharbor #edit #darktriad "
       },
-      "playbook_top_move": "Start posting Reels before momentum stalls. Hidden Harbor has posted zero Reels in 30 days while 28 creators are generating 2.4 million TikTok plays; one weekly Reel captures existing visual energy."
+      "playbook_top_move": "Start publishing short-form video now. With zero Reels and no TikTok account, Hidden Harbor is ceding 425,844 quarterly plays entirely to outside creators; one weekly behind-the-bar clip would begin recapturing that reach."
     },
     {
       "rank": 6,
@@ -96,16 +90,16 @@
       "name": "Page's",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Arlington",
-      "descriptor": "First In Sweets On A Million TikTok Plays. Instagram Still Has Room To Catch Up.",
-      "descriptor_highlight": "Million TikTok Plays",
-      "stat_line": "3,145 reviews · 4.8★ · 25 creators · 1.1M plays · 9 IG posts/30d",
+      "descriptor": "First In Sweets, Powered By Creators. The Shop Itself Has No TikTok To Show For It.",
+      "descriptor_highlight": "No TikTok To Show",
+      "stat_line": "3,145 reviews · 4.8★ · 13 creators · 177K plays · 9 IG posts/30d",
       "featured_tiktok": {
-        "author": "pagesicecream",
-        "plays": 231700,
-        "url": "https://www.tiktok.com/@pagesicecream/video/7555639219490655501",
-        "caption": "Not your average banana split. 🍌🍫\n\n#bananasplit #brownie #dessert #icecream #pittsburgh "
+        "author": "bhphotographypa",
+        "plays": 62800,
+        "url": "https://www.tiktok.com/@bhphotographypa/video/7615450580697337119",
+        "caption": "Who Wants Ice Cream? 🍦 @Page's  #pagesdairymart #bhphotographypa #pittsburgh #southside #icecream"
       },
-      "playbook_top_move": "Convert TikTok heat into Instagram signal. Repost the top-performing TikTok content natively to Instagram Reels; the 231,700-play banana split video has not appeared there."
+      "playbook_top_move": "Claim the TikTok ground creators built. Open a Page's TikTok account and post even two videos this month; 177,416 plays exist with nowhere to land."
     },
     {
       "rank": 7,
@@ -113,16 +107,16 @@
       "name": "Tazza D'Oro",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Highland Park",
-      "descriptor": "Ranked First In Pittsburgh Cafes, Carried By 633K Creator Plays The Cafe Itself Never Made.",
-      "descriptor_highlight": "633K Creator Plays",
-      "stat_line": "573 reviews · 4.6★ · 30 creators · 633K plays · 11 IG posts/30d",
+      "descriptor": "First In Pittsburgh Cafes On Reviews Alone. The Video Signal Has Not Arrived Yet.",
+      "descriptor_highlight": "Video Signal Has Not",
+      "stat_line": "573 reviews · 4.6★ · 1 creators · 2K plays · 11 IG posts/30d",
       "featured_tiktok": {
-        "author": "bhphotographypa",
-        "plays": 189100,
-        "url": "https://www.tiktok.com/@bhphotographypa/video/7586329971283463454",
-        "caption": "On the 4th day of Yinzmas… GameDay 🏈 @Pittsburgh Steelers #bhphotographypa #PittsburghVideographer #pittsburgh #12daysofyinzmas #steelers"
+        "author": "latashaforpa",
+        "plays": 1661,
+        "url": "https://www.tiktok.com/@latashaforpa/video/7609504876581719326",
+        "caption": "I might even buy you a coffee… ☕️ \n\nStop by Tazza D’oro to pick-up, drop-off or sign my petition to get on the ballot in the May 19 Primary Election!\n\nTeam #Mayes2026 will be there 9A-3P Saturdays and Sundays starting today, February 21!\n\n#"
       },
-      "playbook_top_move": "Start Posting Reels, Even Simple Ones. Zero Reels in 30 days against 632,950 TikTok plays from others is the sharpest gap in the entire signal profile."
+      "playbook_top_move": "Shoot one Reel this week. Tazza D'Oro posted 11 Instagram photos last month and zero Reels. One short video of a barista pulling a cortado or building a seasonal drink would move the momentum signal off its current floor."
     },
     {
       "rank": 8,
@@ -130,16 +124,16 @@
       "name": "Jeni's Splendid Ice Creams",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Larimer",
-      "descriptor": "Second In Ice Cream, Third In Sweets. The City Is Filming; Jeni's Feed Is Quiet.",
-      "descriptor_highlight": "Jeni's Feed Is Quiet",
-      "stat_line": "251 reviews · 4.5★ · 29 creators · 148K plays · 12 IG posts/30d",
+      "descriptor": "Second In Ice Cream On Creator Fuel Alone. The Business Has No Tank Of Its Own.",
+      "descriptor_highlight": "No Tank Of Its Own",
+      "stat_line": "251 reviews · 4.5★ · 35 creators · 1.2M plays · 12 IG posts/30d",
       "featured_tiktok": {
-        "author": "justapittsburghgirl",
-        "plays": 48400,
-        "url": "https://www.tiktok.com/@justapittsburghgirl/video/7502168218123996446",
-        "caption": "That gooey butter cake ice cream has me in a chokehold 😋\n\n📍Jeni’s Ice Cream 🍨 - 447 Cinema Dr\n.\n.\n.\n.\n.\n.\n##pittsburgh##pittsburgheats ##placestoeatinpittsburgh ##pittsburghthingstodo##dessertsinpittsburgh"
+        "author": "morganchompz",
+        "plays": 1000000,
+        "url": "https://www.tiktok.com/@morganchompz/video/7622351776439667981",
+        "caption": "Trying Jeni’s spring ice cream flavor lineup! 🍦💐 Have you tried any of these? @Jeni’s Splendid Ice Creams #icecream #dessert #newfood #foodreview #snacks "
       },
-      "playbook_top_move": "Close the Instagram engagement gap now. At 0.49 percent engagement on 12 posts last month, the account is publishing but not pulling. Shift toward the flavor-reveal and behind-the-counter formats that the 29 creators already know work here."
+      "playbook_top_move": "Claim the TikTok ground creators built. Launch a Jeni's TikTok account and repost the top-performing creator content; 35 creators and 1.15 million plays already exist as a runway."
     },
     {
       "rank": 9,
@@ -147,16 +141,16 @@
       "name": "Hop Farm Brewing Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Number One In Breweries, Built On Other People's Footage. The Feed Has Room To Catch Up.",
-      "descriptor_highlight": "Other People's Footage",
-      "stat_line": "298 reviews · 4.6★ · 23 creators · 205K plays · 12 IG posts/30d",
+      "descriptor": "Number One Brewery, Fueled By Creators. The Brewery Has Never Posted Back.",
+      "descriptor_highlight": "Never Posted Back",
+      "stat_line": "298 reviews · 4.6★ · 21 creators · 171K plays · 12 IG posts/30d",
       "featured_tiktok": {
-        "author": "domoniquelisac",
-        "plays": 149800,
-        "url": "https://www.tiktok.com/@domoniquelisac/video/7622863816535067917",
-        "caption": "Quite literally the best day ever meeting Capybaras! Wild World of Animals in Bentleyville, PA was wonderful! 10/10 recommend checking them out and supporting them \n\n#capybara #capybaratiktok #animallover #pittsburgh #vlog "
+        "author": "stevenjamesyuhasz",
+        "plays": 51500,
+        "url": "https://www.tiktok.com/@stevenjamesyuhasz/video/7610945922725465374",
+        "caption": "The staff and customer service here was unbelievable. Definitely the type of place I want to support. @B&K Farm Market #warren #youngstown #cortland #ohio "
       },
-      "playbook_top_move": "Claim the TikTok coverage already happening. Twenty-three creators have filed 30-plus videos here this quarter. Launch a TikTok account and repost the top-performing ones before that momentum cycles to a competitor."
+      "playbook_top_move": "Claim the TikTok ground already yours. Open a business TikTok account and repost the 21 creator videos that generated 170,828 plays this quarter before that momentum cools."
     },
     {
       "rank": 10,
@@ -164,16 +158,16 @@
       "name": "Delanie's Coffee Shadyside",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Fourth In Coffee, Powered By Other People's TikToks. The Shop Has Yet To Post Its Own.",
-      "descriptor_highlight": "Other People's TikToks",
-      "stat_line": "104 reviews · 4.6★ · 26 creators · 176K plays · 3 IG posts/30d",
+      "descriptor": "Sixteen Creators Are Shouting. Delanie's Has Not Shouted Back Yet.",
+      "descriptor_highlight": "Shouting. Delanie's Has",
+      "stat_line": "104 reviews · 4.6★ · 16 creators · 66K plays · 3 IG posts/30d",
       "featured_tiktok": {
-        "author": "tessadecario",
-        "plays": 37200,
-        "url": "https://www.tiktok.com/@tessadecario/video/7523666331875462430",
-        "caption": "A good coffee treat for the soul 💓\n\n#tiramisu #coffeetok #pittsburgh "
+        "author": "stephr0se8",
+        "plays": 31200,
+        "url": "https://www.tiktok.com/@stephr0se8/video/7613871282186177805",
+        "caption": "Some of my fave local coffee shops! Drop some more reccs for me to try 👇🏼\n#localcoffeeshop #pittsburgh #coffeetok #supportsmallbusiness #fyp "
       },
-      "playbook_top_move": "Start a TikTok account this week. 26 creators have already built the audience; a single account with the tiramisu latte as the first post enters a warm room."
+      "playbook_top_move": "Claim the TikTok moment creators built. Open a TikTok account and post one video per week reposting or responding to the 17 creator videos already in circulation."
     }
   ],
   "query": {
@@ -183,6 +177,6 @@
     "ranking": "instagram_momentum",
     "limit": 10
   },
-  "generated_at": "2026-04-26T14:43:49.399Z",
+  "generated_at": "2026-04-26T16:27:59.821Z",
   "model": "claude-sonnet-4-6"
 }

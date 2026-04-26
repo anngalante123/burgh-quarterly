@@ -24,14 +24,32 @@ export type ListArticleItem = {
   playbook_top_move?: string;
 };
 
+/** Item shape for "creator post" list articles (kind: "posts"). */
+export type PostArticleItem = {
+  rank: number;
+  kind: "post";
+  video_url: string;
+  plays: number;
+  likes: number;
+  posted: string;
+  caption: string;
+  creator_handle: string;
+  business_slug: string;
+  business_name: string;
+  family_label: string;
+  neighborhood: string;
+};
+
 export type ListArticle = {
   slug: string;
+  /** Defaults to "businesses" for legacy articles, "posts" for creator-post lists. */
+  kind?: "businesses" | "posts";
   title: string;
   subtitle?: string;
   angle: string;
   intro: string;
-  items: ListArticleItem[];
-  query: {
+  items: ListArticleItem[] | PostArticleItem[];
+  query?: {
     filter?: Record<string, unknown>;
     ranking: string;
     limit: number;
@@ -39,6 +57,12 @@ export type ListArticle = {
   generated_at: string;
   model: string;
 };
+
+export function isPostArticle(
+  a: ListArticle,
+): a is ListArticle & { items: PostArticleItem[] } {
+  return a.kind === "posts";
+}
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "lists", "articles");
 

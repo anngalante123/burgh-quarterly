@@ -5,66 +5,66 @@
       "phrase": "French pastry quality",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "A little bit of Paris in Pittsburgh."
+      "exampleQuote": "a little bit of Paris in Pittsburgh"
     },
     {
-      "phrase": "standout single item",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "The seasonal La Ruche might be the best dessert I have ever had."
-    },
-    {
-      "phrase": "busy on weekends",
+      "phrase": "seasonal and specialty items",
       "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "the seasonal La Ruche might be the best dessert I have ever had"
+    },
+    {
+      "phrase": "busy weekends",
+      "frequency": 1,
       "sentiment": "neutral",
-      "exampleQuote": "It is busy on weekends. You can call ahead if you know what you want."
+      "exampleQuote": "It is busy on weekends"
     },
     {
       "phrase": "breakfast and lunch find",
-      "frequency": 3,
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "This place was the find of Pittsburgh. Breakfast and lunch!"
+      "exampleQuote": "This place was the find of Pittsburgh! Breakfast and lunch!"
     },
     {
-      "phrase": "specific item availability",
-      "frequency": 1,
-      "sentiment": "neutral",
-      "exampleQuote": "Are you still selling deluxe de pistache?"
+      "phrase": "croissants and cream puffs",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "nut and chocolate croissants that were all fantastic"
     }
   ],
   "notable_quote": "The seasonal La Ruche from La Gourmandine might be the best dessert I have ever had.",
-  "sentiment_summary": "Reviewers consistently single out specific pastries, the La Ruche, the croissants, the cream puffs, as genuinely French in a way that holds up to comparison; the mild friction is crowd management on weekends and occasional uncertainty about what is still on the menu.",
-  "quarter_narrative": "Twenty-six Pittsburgh creators have walked into La Gourmandine Lawrenceville this quarter and filmed what they found, 30-plus TikToks, 109,000 plays, and a lead video from @lilbigbackz that cleared 23,700 views just describing the address. The bakery's own Instagram has been quiet for 40 days, no posts, no reels, the account present but not moving. That gap is the defining story of its Spring 2026: a city actively producing its visual catalog for it, while the business sits still. In the Pittsburgh Sweets family, Page's holds the momentum position this issue on the strength of its social signal; La Gourmandine holds the bakery rank on review volume and creator pull, but closing the distance on Page's means converting some of that outside attention into a signal the bakery controls.",
-  "tldr_read": "Dominant review volume, a TikTok footprint built almost entirely by outside creators, and a dormant Instagram. Ones to Watch, #1 in Pittsburgh Bakeries.",
-  "tldr_meaning": "The review foundation and creator reach are already Icon-level inputs; the Instagram silence is the single variable keeping this ranking from reflecting that.",
+  "sentiment_summary": "Reviewers are drawn in by the specificity of the pastry program, citing the La Ruche, cinnamon rolls, and chocolate croissants by name, with the only friction being weekend crowds and occasional questions about whether a specific item is still available.",
+  "quarter_narrative": "Nine Pittsburgh creators filed into La Gourmandine's Lawrenceville location this quarter, generating nearly 32,000 TikTok plays, while the bakery itself went 41 days without posting a single frame of its own product. That gap is not a minor footnote. The business sitting atop the Pittsburgh Bakeries family this issue, with 1,294 Google reviews and 779 tagged photos, is functionally invisible on the platform where its most enthusiastic visitors are spending their time. In the Pittsburgh Sweets family, Page's currently holds the momentum signal that La Gourmandine is leaving on the table. Closing that gap, specifically on Instagram and TikTok, is the clearest path from Ones to Watch toward the upper tiers.",
+  "tldr_read": "Dominant review presence and strong creator attention, but the bakery's own Instagram has been silent for over 40 days. Ones to Watch, #1 in Pittsburgh Bakeries.",
+  "tldr_meaning": "Every signal axis except Instagram momentum is at or above the family median, meaning the rank ceiling is not a product problem but a presence problem on the one channel where this quarter's energy is moving.",
   "diagnosis_pullquote": {
-    "line": "First In Bakeries On Borrowed Momentum. The Bakery's Own Feed Has Gone Quiet.",
-    "highlight": "Borrowed Momentum"
+    "line": "First In Bakeries On Review Depth Alone. The Bakery's Own Feed Went Quiet.",
+    "highlight": "Review Depth Alone"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram feed this week",
-      "action": "The account has been silent for 40 days; even two posts per week showing a specific pastry or the morning case would restart the momentum signal.",
+      "headline": "Break the 41-day Instagram silence",
+      "action": "Post at minimum twice weekly; the seasonal menu alone, La Ruche, pistachio items, supplies a ready visual archive of 779 existing photos to reactivate from.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "RESTART SIGNAL"
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Repost the creators already filming you",
-      "action": "Twenty-six creators have produced 30-plus TikToks totaling 109,000 plays; resharing even five of those to the business Instagram costs nothing and converts external reach into owned audience.",
+      "headline": "Acknowledge the nine creators already filming",
+      "action": "Repost or respond to the 11 TikToks from this quarter; nine unique creators filmed without any prompt, a repost loop could extend that reach without new production.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+OWNED REACH"
+      "impact_label": "UNLOCK REACH"
     },
     {
-      "headline": "Anchor the seasonal menu online",
-      "action": "Reviewers ask specifically about items like the deluxe de pistache; a pinned post or updated menu link on Google reduces confusion and captures demand already there.",
+      "headline": "Surface the seasonal item calendar publicly",
+      "action": "At least two reviewers asked about specific items by name, La Ruche and deluxe de pistache; a posted availability schedule converts that curiosity into foot traffic and reduces lost visits.",
       "signal": "conversion_path",
       "priority": "low",
-      "impact_label": "+CONVERSION"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 6,
-  "analyzed_at": "2026-04-25T19:17:59.322Z",
+  "analyzed_at": "2026-04-26T16:20:42.713Z",
   "model": "claude-sonnet-4-6"
 }

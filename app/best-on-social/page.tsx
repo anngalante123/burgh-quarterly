@@ -81,15 +81,22 @@ export default function BestOnSocialIndex() {
                     </p>
                   ) : null}
                   <div className="mt-5 flex flex-wrap items-baseline gap-2">
-                    {a.items.slice(0, 3).map((it) => (
-                      <span
-                        key={it.business_slug}
-                        className="font-body text-xs text-brand-black/55"
-                      >
-                        {it.name}
-                        {it.rank < Math.min(3, a.items.length) ? "," : ""}
-                      </span>
-                    ))}
+                    {a.items.slice(0, 3).map((it) => {
+                      // Both shapes carry business_slug, but the display
+                      // name differs: business cards have `name`, post
+                      // cards have `business_name` (the business the
+                      // creator filmed).
+                      const display = "name" in it ? it.name : it.business_name;
+                      return (
+                        <span
+                          key={`${it.business_slug}-${it.rank}`}
+                          className="font-body text-xs text-brand-black/55"
+                        >
+                          {display}
+                          {it.rank < Math.min(3, a.items.length) ? "," : ""}
+                        </span>
+                      );
+                    })}
                     {a.items.length > 3 ? (
                       <span className="font-body text-xs text-brand-black/45">
                         + {a.items.length - 3} more

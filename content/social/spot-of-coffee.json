@@ -37,108 +37,108 @@
   },
   "tiktok_mentions": {
     "query": "spot of coffee pittsburgh",
-    "video_count": 30,
-    "total_plays": 372723,
-    "total_likes": 23268,
-    "unique_creators": 23,
+    "video_count": 31,
+    "total_plays": 278472,
+    "total_likes": 17344,
+    "unique_creators": 24,
     "top_creators": [
       {
-        "handle": "mayavalletta",
-        "fans": 5296,
-        "verified": false,
-        "videos": 1,
-        "plays": 87100,
-        "likes": 8127
-      },
-      {
-        "handle": "imaxchung",
-        "fans": 9914,
-        "verified": false,
-        "videos": 1,
-        "plays": 56000,
-        "likes": 4620
-      },
-      {
         "handle": "lyssad16",
-        "fans": 400,
+        "fans": 401,
         "verified": false,
         "videos": 1,
-        "plays": 44000,
-        "likes": 1920
+        "plays": 44300,
+        "likes": 1933
       },
       {
-        "handle": "juliasgoodeatsss",
-        "fans": 2184,
+        "handle": "stephr0se8",
+        "fans": 122,
         "verified": false,
-        "videos": 5,
-        "plays": 36980,
-        "likes": 1546
+        "videos": 1,
+        "plays": 31200,
+        "likes": 1946
       },
       {
-        "handle": "aubreyclaree_",
-        "fans": 70000,
+        "handle": "socotracafe.pgh",
+        "fans": 544,
         "verified": false,
-        "videos": 3,
-        "plays": 23675,
-        "likes": 937
+        "videos": 1,
+        "plays": 27700,
+        "likes": 2287
       },
       {
         "handle": "laurelkate_",
+        "fans": 1292,
+        "verified": false,
+        "videos": 1,
+        "plays": 27600,
+        "likes": 2351
+      },
+      {
+        "handle": "calsipos",
+        "fans": 73000,
+        "verified": false,
+        "videos": 3,
+        "plays": 21569,
+        "likes": 1647
+      },
+      {
+        "handle": "deluludayss",
         "fans": 1290,
         "verified": false,
         "videos": 1,
-        "plays": 14200,
-        "likes": 345
+        "plays": 21400,
+        "likes": 2544
       },
       {
-        "handle": "mcmonaglle",
-        "fans": 4724,
+        "handle": "alexgdeckerr",
+        "fans": 1111,
         "verified": false,
         "videos": 1,
-        "plays": 14000,
-        "likes": 851
+        "plays": 16400,
+        "likes": 934
       },
       {
-        "handle": "hannahmanheimer",
-        "fans": 834,
+        "handle": "kellyroxyay",
+        "fans": 538,
         "verified": false,
-        "videos": 1,
-        "plays": 12300,
-        "likes": 800
+        "videos": 2,
+        "plays": 16296,
+        "likes": 785
       }
     ],
     "top_videos": [
-      {
-        "id": "7525475693631786254",
-        "url": "https://www.tiktok.com/@mayavalletta/video/7525475693631786254",
-        "text": "There’s so many more, what did I miss? Might have to do a pt. 2? #coffee #cafe #pittsburgh #pgh ",
-        "author": "mayavalletta",
-        "plays": 87100,
-        "likes": 8127,
-        "posted": "2025-07-10T15:29:29.000Z"
-      },
-      {
-        "id": "7571595973143711031",
-        "url": "https://www.tiktok.com/@imaxchung/video/7571595973143711031",
-        "text": "Sorry @Spot Of Coffee can’t showcase the drink I drank it too fast haha #spotofcoffee #coffee #pittsburgh #cafe ",
-        "author": "imaxchung",
-        "plays": 56000,
-        "likes": 4620,
-        "posted": "2025-11-11T22:20:02.000Z"
-      },
       {
         "id": "7617949708450876685",
         "url": "https://www.tiktok.com/@lyssad16/video/7617949708450876685",
         "text": "neeeeedddd to try more tho! #coffee #pittsburgh #trending ",
         "author": "lyssad16",
-        "plays": 44000,
-        "likes": 1920,
+        "plays": 44300,
+        "likes": 1933,
         "posted": "2026-03-16T20:15:46.000Z"
+      },
+      {
+        "id": "7613871282186177805",
+        "url": "https://www.tiktok.com/@stephr0se8/video/7613871282186177805",
+        "text": "Some of my fave local coffee shops! Drop some more reccs for me to try 👇🏼\n#localcoffeeshop #pittsburgh #coffeetok #supportsmallbusiness #fyp ",
+        "author": "stephr0se8",
+        "plays": 31200,
+        "likes": 1946,
+        "posted": "2026-03-05T20:29:55.000Z"
+      },
+      {
+        "id": "7620574127971126542",
+        "url": "https://www.tiktok.com/@socotracafe.pgh/video/7620574127971126542",
+        "text": "New spot in Pittsburgh 🤎\nServing warm vibes, top-quality drinks, and fresh pastries 🥐☕️\nCome experience it for yourself ✨ #pittsburgh #412 #pgheats #yemenicoffee #socotracafepgh ",
+        "author": "socotracafe.pgh",
+        "plays": 27700,
+        "likes": 2287,
+        "posted": "2026-03-23T22:00:03.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-24T19:18:10.000Z",
-    "median_plays": 7158,
+    "most_recent_post_at": "2026-04-25T16:13:48.000Z",
+    "median_plays": 4509,
     "detected_own_handle": null,
-    "scraped_at": "2026-04-25T15:29:42.760Z"
+    "scraped_at": "2026-04-26T16:11:12.981Z"
   }
 }

@@ -2,69 +2,69 @@
   "slug": "square-cafe",
   "themes": [
     {
-      "phrase": "vegan-friendly options",
+      "phrase": "vegan-friendly menu options",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for"
     },
     {
-      "phrase": "wait times and crowds",
+      "phrase": "wait times at peak hours",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Usually, there's a wait list, since the food is so good"
+      "exampleQuote": "Usually there's a wait list, since the food is so good. They do a good job of quickly and efficiently clearing tables"
     },
     {
-      "phrase": "friendly staff, relaxed pace",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "No pressure to eat up and go"
-    },
-    {
-      "phrase": "portion size vs. price",
-      "frequency": 1,
+      "phrase": "price-to-portion ratio",
+      "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "The portion to price ratio is not the best"
     },
     {
-      "phrase": "standout individual dishes",
-      "frequency": 3,
+      "phrase": "distinctive egg dishes",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "The Brussels sprout hash was amazing and unique"
+      "exampleQuote": "Grilled cheese and eggs benedict"
+    },
+    {
+      "phrase": "relaxed no-pressure atmosphere",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "I enjoyed being there and stayed longer talking and drinking lattes. No pressure to eat up and go."
     }
   ],
   "notable_quote": "It's no wonder this place gets slammed with customers.",
-  "sentiment_summary": "Reviewers are consistent on the food quality and the staff warmth, with the Brussels sprout hash and vegan biscuit sandwich as recurring favorites; the friction points are the price-to-portion ratio and some maintenance details in the restroom that reviewers noticed.",
-  "quarter_narrative": "Thirty Pittsburgh creators posted Square Cafe to TikTok this quarter, generating nearly 490,000 plays, and Square Cafe's own account does not exist on the platform. The top video, a 191,000-play post from @mayavalletta, was a casual brunch recommendation with no special access or coordination required. The city is building a visual archive of this place and Square Cafe has no presence in the conversation it is anchoring. Meanwhile, in the Pittsburgh Businesses family this issue, Nan Xiang Soup Dumplings holds the top spot on the strength of social momentum, a signal where Square Cafe, despite holding the brunch crown, is running thin. The rank stays at number one in brunch for now, but the gap between creator volume and the business's own output is the variable most likely to shift that standing in the next quarter.",
-  "tldr_read": "Near-perfect conversion path, 490,000 TikTok plays with zero posts of its own, Icons of the Burgh, number one in Pittsburgh Brunch.",
-  "tldr_meaning": "Every structural signal, reviews, discoverability, creator fit, is at or above the family median; the Instagram engagement rate and the absence of a TikTok account are the only axes pulling the overall picture down from an untouchable position.",
+  "sentiment_summary": "Reviewers consistently praise the vegan options, the Brussels sprout hash, the coffee, and a staff that moves efficiently under pressure; the recurring friction point is price relative to portion size, with one reviewer specifically calling out home fries that arrived as small cubed fries and a men's room in visible disrepair.",
+  "quarter_narrative": "Square Cafe enters Spring 2026 as Pittsburgh's undisputed brunch benchmark: 1,839 Google reviews, 72 percent of them five stars, and a creator footprint of 13 individual TikTok voices generating more than 317,000 plays in a single quarter. The business holds its own account on TikTok and posts to Instagram consistently, so this is not a story about a dormant brand being carried by others. It is a story about a restaurant that has earned its rank the slow, durable way, through a nearly perfect conversion path and a creator community that keeps showing up. Holding the #1 brunch slot while sitting just behind Nan Xiang Soup Dumplings for the overall Pittsburgh Businesses crown, Square Cafe's path to the top of that broader list runs directly through Instagram momentum, the one axis where its signal trails the field.",
+  "tldr_read": "Near-perfect conversion path, deep creator coverage, but an Instagram engagement rate that barely registers. Icons of the Burgh, #1 in Pittsburgh Brunch.",
+  "tldr_meaning": "The overall Pittsburgh Businesses rank is one position away, and the gap lives almost entirely in Instagram momentum, every other signal is already performing at or above the family median.",
   "diagnosis_pullquote": {
-    "line": "First In Brunch On The Strength Of 30 Creators. Square Cafe Has Never Posted On TikTok.",
-    "highlight": "Never Posted On TikTok"
+    "line": "Number One In Brunch, One Spot From The Top. Instagram Is The Last Unfinished Business.",
+    "highlight": "Last Unfinished Business"
   },
   "playbook": [
     {
-      "headline": "Claim the TikTok real estate already yours",
-      "action": "Open a Square Cafe TikTok account and repost or stitch from the 30 creators who have already done the work this quarter.",
+      "headline": "Convert 0.19% engagement into real reach",
+      "action": "Post two Reels per week built around the dishes reviewers already name-drop: the Brussels sprout hash, the vegan biscuit sandwich, eggs benedict.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE 490K PLAYS"
+      "impact_label": "+INSTAGRAM RANK"
     },
     {
-      "headline": "Close the Instagram engagement gap",
-      "action": "Eleven posts in 30 days is a solid cadence, but a 0.19% engagement rate signals the content is not converting followers into reactions; shift at least 2 of those posts monthly to the dish-level specificity reviewers already use, Brussels sprout hash, the vegan biscuit sandwich.",
-      "signal": "content_canvas",
+      "headline": "Close the loop on creator videos",
+      "action": "13 creators posted 14 TikToks this quarter totaling 317,083 plays; resharing or responding to even the top five pulls that audience back to the brand's own feed.",
+      "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+ENGAGEMENT RATE"
+      "impact_label": "CAPTURE EARNED REACH"
     },
     {
-      "headline": "Address the price-to-portion narrative before it compounds",
-      "action": "One recurring review thread flags portion size relative to price; a short response pattern on Google, acknowledging the feedback on specific items, keeps the 83 sentiment signal from softening over the next quarter.",
+      "headline": "Address the bathroom, address the review",
+      "action": "One visible maintenance fix, broken faucet, missing fixtures, empty paper towel dispenser, documented and posted, neutralizes the most specific negative review in the set.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "PROTECT SENTIMENT"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-25T19:22:30.198Z",
+  "analyzed_at": "2026-04-26T16:25:00.296Z",
   "model": "claude-sonnet-4-6"
 }
