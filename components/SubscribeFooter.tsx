@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Reveal } from "@/components/motion/Reveal";
+import { dispatchUnlock } from "@/lib/hooks/use-unlocked";
 
 /**
  * SubscribeFooter, the single CTA that closes every business page.
@@ -30,8 +31,18 @@ export function SubscribeFooter({ businessName }: Props) {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, follow: businessName }),
+        body: JSON.stringify({
+          email,
+          follow: businessName,
+          source: "subscribe_footer",
+        }),
       });
+      if (res.ok) {
+        // Tell every Gated region on the page that we just unlocked,
+        // so a footer subscriber doesn't see the gate when they go
+        // back up to expand a row.
+        dispatchUnlock();
+      }
       setState(res.ok ? "ok" : "err");
     } catch {
       setState("err");

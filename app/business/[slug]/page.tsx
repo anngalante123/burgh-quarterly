@@ -23,6 +23,7 @@ import {
 import { PeerDotPlot } from "@/components/insights/PeerDotPlot";
 import { MomentumSparkline } from "@/components/insights/MomentumSparkline";
 import { TikTokMentions } from "@/components/insights/TikTokMentions";
+import { Gated } from "@/components/gating/Gated";
 
 import {
   listAllBusinessSlugs,
@@ -305,6 +306,7 @@ export default async function BusinessPage({ params }: PageProps) {
       delta: `of ${categoryPeerDots.length} · ${score.tier === "icons" ? "Icons" : score.tier === "ones_to_watch" ? "Ones to Watch" : "Neighborhood Staples"}`,
       focus: false,
       expanded: (
+        <Gated label="rank" businessName={biz.name} source={`rank:${biz.slug}`}>
         <div className="space-y-8">
           <PeerDotPlot
             currentSlug={biz.slug}
@@ -349,6 +351,7 @@ export default async function BusinessPage({ params }: PageProps) {
             details={subscoreDetails}
           />
         </div>
+        </Gated>
       ),
     });
   }
@@ -368,12 +371,14 @@ export default async function BusinessPage({ params }: PageProps) {
         .join(" · "),
       focus: weakestKey === "community_spark",
       expanded: (
-        <ReviewVoice
-          analysis={reviewAnalysis}
-          phrases={reviewPhrases.length >= 2 ? reviewPhrases : undefined}
-          pullquote={reviewPullquote}
-          totalReviews={totalRev}
-        />
+        <Gated label="review voice" businessName={biz.name} source={`reviews:${biz.slug}`}>
+          <ReviewVoice
+            analysis={reviewAnalysis}
+            phrases={reviewPhrases.length >= 2 ? reviewPhrases : undefined}
+            pullquote={reviewPullquote}
+            totalReviews={totalRev}
+          />
+        </Gated>
       ),
     });
   }
@@ -386,7 +391,9 @@ export default async function BusinessPage({ params }: PageProps) {
       delta: ttPlaysFmt ?? undefined,
       focus: false,
       expanded: (
-        <TikTokMentions data={social.tiktok_mentions} businessName={biz.name} />
+        <Gated label="creator coverage" businessName={biz.name} source={`tiktok:${biz.slug}`}>
+          <TikTokMentions data={social.tiktok_mentions} businessName={biz.name} />
+        </Gated>
       ),
     });
   }
@@ -404,13 +411,15 @@ export default async function BusinessPage({ params }: PageProps) {
           : `Active · ${social.ig.reels_30d} reels`,
       focus: weakestKey === "momentum",
       expanded: (
-        <MomentumSparkline
-          posts30d={social.ig?.posts_30d ?? 0}
-          reels30d={social.ig?.reels_30d ?? 0}
-          handle={social.ig?.handle ?? null}
-          hasRealData={!!social.ig}
-          seed={biz.slug}
-        />
+        <Gated label="Instagram cadence" businessName={biz.name} source={`ig:${biz.slug}`}>
+          <MomentumSparkline
+            posts30d={social.ig?.posts_30d ?? 0}
+            reels30d={social.ig?.reels_30d ?? 0}
+            handle={social.ig?.handle ?? null}
+            hasRealData={!!social.ig}
+            seed={biz.slug}
+          />
+        </Gated>
       ),
     });
   }
