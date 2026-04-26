@@ -79,7 +79,11 @@ export type RankingKey =
   /** Total review volume (raw count). */
   | "review_volume"
   /** Five-star ratio. */
-  | "review_quality";
+  | "review_quality"
+  /** Underrated: high review quality × log(volume), penalized by composite.
+   *  Surfaces businesses where customers love them but the social signal
+   *  hasn't caught up yet. Used by /underrated lists. */
+  | "underrated";
 
 export type RankedBusiness = {
   rank: number;
@@ -122,6 +126,29 @@ const RANKINGS: Record<RankingKey, (b: RichBusiness) => number> = {
     const total = b.artifact.business.google_review_count ?? 0;
     const five = b.artifact.meta.reviewsDistribution?.fiveStar ?? 0;
     return total > 0 ? five / total : 0;
+  },
+
+  /**
+   * Underrated. High customer love (rating × log volume) GATED by
+   * inverse composite. Businesses that customers rate well and have
+   * meaningful review depth but haven't broken into the top of the
+   * social-signal leaderboard yet. Editorial framing: "you should know
+   * about these."
+   *
+   * The (100 - composite) multiplier is the key: a business with
+   * composite 90 (already an Icon) has its underrated score cut to
+   * 10% of customer-love. A business with composite 40 keeps 60% of
+   * the love score and floats up. Min 30 reviews to filter out
+   * brand-new spots without enough data to call.
+   */
+  underrated: (b) => {
+    const total = b.artifact.business.google_review_count ?? 0;
+    if (total < 30) return -Infinity;
+    const rating = b.artifact.business.google_rating ?? 0;
+    const composite = b.artifact.score.composite;
+    const love = rating * Math.log10(total + 1);
+    const inverseComposite = Math.max(0, 100 - composite) / 100;
+    return love * inverseComposite;
   },
 };
 
@@ -209,4 +236,5 @@ export const ALL_RANKINGS: RankingKey[] = [
   "creator_ready_setup",
   "review_volume",
   "review_quality",
+  "underrated",
 ];

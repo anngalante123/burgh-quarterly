@@ -1,0 +1,74 @@
+{
+  "slug": "underrated-bars",
+  "title": "Pittsburgh's Most Underrated Bars",
+  "subtitle": "Bars and breweries the regulars treat as their own.",
+  "angle": "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
+  "intro": "The bars that earn the deepest loyalty rarely broadcast it. This quarter's underrated list is built around a specific gap: places where the review language reads like a tip from a friend, but the follower counts and post frequency haven't caught up to the reputation. Underrated, here, means the signal is ahead of the platform.\n\nTwo businesses illustrate the gap most cleanly. Commerce Bar in East Liberty is ranking second among Pittsburgh bars on reputation alone, with almost no owned digital presence to explain it. The regulars are doing the work. Golden Age Beer Company is in the same position for breweries, where the beer quality is carrying reviews that the kitchen and the camera haven't touched. Meanwhile, Hop Farm Brewing in Lawrenceville sits at number one for breweries largely on creator posts the brewery itself has never answered or amplified, a strange and revealing kind of influence.\n\nThe pattern across this list raises a question worth watching: when organic reputation outruns a business's own voice this consistently, something eventually gives. Issue 02, Summer 2026 will track whether these bars closed the gap, leaned into it, or lost the thread entirely.",
+  "items": [
+    {
+      "rank": 1,
+      "business_slug": "commerce-bar",
+      "name": "Commerce Bar",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "East Liberty",
+      "descriptor": "Second In Pittsburgh Bars On Reputation Alone. The Digital Profile Has Not Arrived Yet.",
+      "descriptor_highlight": "On Reputation Alone",
+      "stat_line": "106 reviews · 4.7★ · 1 IG posts/30d",
+      "playbook_top_move": "Complete the Google Business profile now. Add a website URL and phone number to Google; Commerce Bar is currently missing both, which breaks the most basic conversion path for anyone who finds it in search."
+    },
+    {
+      "rank": 2,
+      "business_slug": "golden-age-beer-company",
+      "name": "Golden Age Beer Company",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "Pittsburgh",
+      "descriptor": "Second In Breweries On The Beer Alone. The Kitchen And The Camera Have Not Caught Up.",
+      "descriptor_highlight": "The Kitchen And",
+      "stat_line": "195 reviews · 4.8★ · 12 IG posts/30d",
+      "playbook_top_move": "Fix the review narrative on food. The kitchen critique appears in roughly a third of the available review texts; address execution consistency publicly in owner responses to move sentiment above the current family median."
+    },
+    {
+      "rank": 3,
+      "business_slug": "hidden-harbor",
+      "name": "Hidden Harbor",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "Squirrel Hill South",
+      "descriptor": "First In Pittsburgh Bars On Atmosphere Alone. The Video Signal Is Entirely Borrowed.",
+      "descriptor_highlight": "Entirely Borrowed",
+      "stat_line": "765 reviews · 4.6★ · 10 creators · 426K plays · 12 IG posts/30d",
+      "featured_tiktok": {
+        "author": "messihasaura7689",
+        "plays": 204400,
+        "url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527",
+        "caption": "Pearl Harbor #usa #japan #pearlharbor #edit #darktriad "
+      },
+      "playbook_top_move": "Start publishing short-form video now. With zero Reels and no TikTok account, Hidden Harbor is ceding 425,844 quarterly plays entirely to outside creators; one weekly behind-the-bar clip would begin recapturing that reach."
+    },
+    {
+      "rank": 4,
+      "business_slug": "hop-farm-brewing-company",
+      "name": "Hop Farm Brewing Company",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "Lawrenceville",
+      "descriptor": "Number One Brewery, Fueled By Creators. The Brewery Has Never Posted Back.",
+      "descriptor_highlight": "Never Posted Back",
+      "stat_line": "298 reviews · 4.6★ · 21 creators · 171K plays · 12 IG posts/30d",
+      "featured_tiktok": {
+        "author": "stevenjamesyuhasz",
+        "plays": 51500,
+        "url": "https://www.tiktok.com/@stevenjamesyuhasz/video/7610945922725465374",
+        "caption": "The staff and customer service here was unbelievable. Definitely the type of place I want to support. @B&K Farm Market #warren #youngstown #cortland #ohio "
+      },
+      "playbook_top_move": "Claim the TikTok ground already yours. Open a business TikTok account and repost the 21 creator videos that generated 170,828 plays this quarter before that momentum cools."
+    }
+  ],
+  "query": {
+    "filter": {
+      "family": "bars"
+    },
+    "ranking": "underrated",
+    "limit": 5
+  },
+  "generated_at": "2026-04-26T18:44:19.061Z",
+  "model": "claude-sonnet-4-6"
+}

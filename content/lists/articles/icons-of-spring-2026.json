@@ -3,7 +3,7 @@
   "title": "The 10 Pittsburgh Businesses Defining Social This Quarter",
   "subtitle": "Spring 2026, across every family",
   "angle": "the businesses winning the conversation this quarter, regardless of category. We're surfacing who creators are filming, who customers are reviewing, and who is actually showing up on their own feeds.",
-  "intro": "Every quarter, Signal Pittsburgh pulls the conversation data across Pittsburgh's small business landscape: creator plays, review velocity, and what businesses are actually posting themselves. The Spring 2026 list does not sort by category or neighborhood. It sorts by who the city is talking about, and why.\n\nThis quarter, the gaps are the story. Kyo Matcha in Squirrel Hill South sits at 1.79 million TikTok plays with a review count that has not come close to catching up, a sign of a business that went viral faster than its audience converted. Everyday Noodles, ranked first in its category, got there entirely on other people's cameras. The shop has not needed to post. That is either a remarkable position or a fragile one, and next quarter will start to show which.\n\nThe through line across much of this list is borrowed momentum: businesses the city has decided to film before the businesses decided to film themselves. Whether that gap closes, or whether a new set of shops steps into their own conversation, is what Issue 02 will track when Summer 2026 data comes in.",
+  "intro": "Every quarter, Pittsburgh's food and retail conversation reorganizes itself without asking permission. The businesses at the top of this list did not all earn their position the same way: some built it, some inherited it, and some are watching it happen from the sidelines.\n\nKyo Matcha in Squirrel Hill South sits at the top with 1.79 million TikTok plays and a review count that hasn't come close to catching up, a gap that tells you exactly how fast creator momentum can outrun a business's own infrastructure. Everyday Noodles made number one in its category without posting a single frame itself, a position built entirely on other people's phones. Millie's Homemade Ice Cream landed the top ice cream spot on the strength of its reviews while TikTok energy swirled around it with nowhere to land.\n\nWhat this quarter clarifies is that winning the conversation and owning it are two different things. Several businesses here are doing one without the other. Issue 02, covering Summer 2026, will track whether that gap closes, widens, or gets inherited by someone newer.",
   "items": [
     {
       "rank": 1,
@@ -183,6 +183,6 @@
     "ranking": "creator_pickup",
     "limit": 10
   },
-  "generated_at": "2026-04-26T16:27:25.753Z",
+  "generated_at": "2026-04-26T18:43:10.361Z",
   "model": "claude-sonnet-4-6"
 }

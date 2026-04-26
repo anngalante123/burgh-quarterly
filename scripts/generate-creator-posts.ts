@@ -305,11 +305,11 @@ VOICE: smart food/business journalist, specific, confident, no marketing cliches
 
 EDITORIAL ANGLE: This list is the strongest evidence of a thesis we're tracking, the city is filming Pittsburgh businesses, the businesses are not posting back. None of these videos came from the businesses themselves. They came from creators, customers, locals.
 
-DATA POINTS:
-- Top 50 videos by plays
+DATA POINTS (use these EXACT numbers in your prose):
+- ${items.length} videos ranked by plays
 - Total plays across the list: ${totalPlays.toLocaleString()}
 - Unique creators represented: ${uniqueCreators}
-- Unique businesses featured: ${uniqueBusinesses}
+- Unique businesses featured: ${uniqueBusinesses} (capped at 2 per business so the list reads as a survey across the city, not a deep dive into one place)
 
 TOP 10 (for tease material):
 ${lines}
@@ -434,7 +434,25 @@ async function main() {
   console.log(
     `[generate-posts] ${unique.length} unique videos after dedup (was ${candidates.length})`,
   );
-  const top = unique.slice(0, TOP_N);
+
+  // Cap per business at 2, parity with the BY list. So one viral
+  // business doesn't dominate, the list reads as a survey of which
+  // Pittsburgh businesses the city is filming, not a deep dive into
+  // Everyday Noodles or Page's specifically.
+  const PER_BUSINESS_CAP = 2;
+  const perBizCount = new Map<string, number>();
+  const capped: typeof candidates = [];
+  for (const c of unique) {
+    const slug = c.business.artifact.business.slug;
+    const cnt = perBizCount.get(slug) ?? 0;
+    if (cnt >= PER_BUSINESS_CAP) continue;
+    perBizCount.set(slug, cnt + 1);
+    capped.push(c);
+  }
+  console.log(
+    `[generate-posts] ${capped.length} after cap (max ${PER_BUSINESS_CAP} per business)`,
+  );
+  const top = capped.slice(0, TOP_N);
   console.log(`[generate-posts] keeping top ${top.length}`);
 
   const items: PostItem[] = top.map((c, i) => ({
@@ -483,9 +501,9 @@ async function main() {
   const article: PostArticle = {
     slug: SLUG,
     kind: "posts",
-    title: "The 50 Best Creator Posts About Pittsburgh Businesses",
+    title: "The Best Creator Posts About Pittsburgh Businesses",
     subtitle:
-      "TikToks made by Pittsburgh creators, ranked by plays. None of these came from the businesses themselves.",
+      "TikToks made by Pittsburgh creators, ranked by plays. Two per business max. None of these came from the businesses themselves.",
     angle:
       "the city is filming Pittsburgh businesses; the businesses are not posting back. Here's the proof, ranked.",
     intro,

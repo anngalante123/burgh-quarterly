@@ -3,7 +3,7 @@
   "title": "The Pittsburgh Businesses Actually Showing Up On Their Own Feed",
   "subtitle": "The minority that are posting, ranked by Instagram momentum",
   "angle": "most Pittsburgh small businesses on this index are dormant on Instagram. These are the ones that aren't, ranked by 30-day cadence and engagement.",
-  "intro": "Most Pittsburgh small businesses on this index are invisible on their own feeds. They exist in the conversation, sometimes loudly, entirely because creators decided to show up for them. This list is the exception: the ten businesses that are actually posting, ranked by 30-day cadence and engagement momentum against the broader dormancy of the index.\n\nA few names demand immediate attention. Kyo Matcha in Squirrel Hill South is sitting on 1.79 million TikTok plays and has not yet accumulated the review volume to match it, a gap that will either close fast or represent a real missed window. Allegheny Coffee and Tea Exchange in the Strip District leads its category on creator energy alone, which means the shop is benefiting from a wave it did not paddle into and does not currently own. Hop Farm Brewing in Lawrenceville ranks first among breweries on a feed the brewery has never once posted to.\n\nThe pattern here is not laziness. It is timing, and timing runs out. Issue 02, publishing Summer 2026, will track whether these businesses converted their current momentum into owned presence, or whether the creators moved on first.",
+  "intro": "Most Pittsburgh small businesses on this index are functionally invisible on Instagram. They exist, they serve customers, and they do not post. This list is the minority that does, ranked by 30-day cadence and engagement momentum across the quarter.\n\nThe range here is striking. Kyo Matcha in Squirrel Hill South arrives at number one carrying 1.79 million TikTok plays, a number that most local restaurants will never see in their lifetime on the platform. Allegheny Coffee and Tea Exchange lands at four not because the shop is posting aggressively but because creators have decided it is worth filming, a signal the business has not yet moved to capture. Hop Farm Brewing in Lawrenceville tops the brewery category entirely on borrowed momentum: the brewery has never posted back, and it is still winning.\n\nThe pattern across the top ten is consistent enough to name. Creator attention arrives before the business responds, and in several cases the business never responds at all. Whether that changes, or whether these same shops are still coasting on someone else's content by summer, is exactly what Issue 02 will track.",
   "items": [
     {
       "rank": 1,
@@ -177,6 +177,6 @@
     "ranking": "instagram_momentum",
     "limit": 10
   },
-  "generated_at": "2026-04-26T16:27:59.821Z",
+  "generated_at": "2026-04-26T18:43:46.030Z",
   "model": "claude-sonnet-4-6"
 }

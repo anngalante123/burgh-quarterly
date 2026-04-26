@@ -3,7 +3,7 @@
   "title": "The Pittsburgh Cafes Creators Won't Stop Filming",
   "subtitle": "Coffee, tea, juice, ranked by creator pickup",
   "angle": "Pittsburgh's coffee, tea, and juice scene through the lens of TikTok creator coverage. The cafes the city keeps posting about, even when the cafes themselves aren't.",
-  "intro": "Pittsburgh's cafe scene has a visibility problem, and it runs in one direction. Creators are posting; businesses are not. This quarter's rankings track the gap between organic creator coverage and the actual digital presence of the shops generating it, and the results are lopsided in ways that should concern anyone running a counter in this city.\n\n24 Carrot Juice in Bloomfield sits at the top of the juice category without having picked up its own camera. Allegheny Coffee and Tea Exchange leads on creator energy so strong it built a ranking without the shop ever claiming the wave. Ka-Fair Coffee and Cakery in Morningside crossed a million TikTok plays on content the business itself never produced, never responded to, and apparently never noticed.\n\nThe pattern holds across almost every entry on this list: the city is filming, the creators are distributing, and the shops are largely absent from the conversation about themselves. Issue 02, publishing summer 2026, will track whether any of these businesses close the gap, and which new contenders have figured out that showing up online is not optional anymore.",
+  "intro": "Pittsburgh's cafe scene is not being shaped by marketing budgets this quarter. It is being shaped by strangers with phones. The shops topping this list mostly did not ask for the attention, and several have not posted anything in months. 24 Carrot Juice in Bloomfield is the clearest case: the city's most-filmed juice bar has generated consistent creator coverage without picking up its own camera once. Allegheny Coffee and Tea Exchange in the Strip District leads the cafe tier on creator energy alone, a ranking built entirely on other people's content. Meanwhile, The Butterwood Bake Consortium in Lawrenceville sits second in cafes despite 515 days without a single post from the business itself.\n\nThe pattern here is not that these shops are ignoring social media. It is that Pittsburgh creators have decided, independently, that these spaces are worth filming. That is a different kind of signal, and a harder one to manufacture.\n\nIssue 02 arrives in Summer 2026, when we will track whether any of these businesses converted the attention they did not ask for into an audience they actually own.",
   "items": [
     {
       "rank": 1,
@@ -150,6 +150,6 @@
     "ranking": "creator_pickup",
     "limit": 8
   },
-  "generated_at": "2026-04-26T16:27:39.182Z",
+  "generated_at": "2026-04-26T18:43:25.004Z",
   "model": "claude-sonnet-4-6"
 }

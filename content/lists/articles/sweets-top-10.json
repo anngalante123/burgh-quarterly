@@ -3,7 +3,7 @@
   "title": "The 10 Pittsburgh Sweets on Social",
   "subtitle": "Bakeries, pastry shops, ice cream, dessert",
   "angle": "which Pittsburgh dessert businesses are showing up online this spring, ranked by creator pickup. Who creators are filming and what those videos reveal.",
-  "intro": "Pittsburgh's dessert scene is getting filmed whether it wants to be or not. Kyo Matcha in Squirrel Hill South sits at 1.79 million TikTok plays this spring and has almost no review volume to show for it, a gap that says more about how fast creator attention moves than anything the shop did wrong. Meanwhile, Page's in Arlington is leading the entire sweets category on creator pickup alone, without a TikTok account of its own. Somebody else is building that audience.\n\nThe pattern across this quarter's top ten is consistent: the businesses generating the most online conversation are largely passive participants in it. Millie's ranks first in ice cream on the strength of its reviews, but the TikTok energy around the shop has no channel to land in. La Gourmandine's Hazelwood location tops the pastry category on creator fuel while its own feed has sat silent for forty days.\n\nWhat creators film and what owners post are two different maps of the same city right now. In Issue 02, we'll track whether any of these businesses close that gap before summer ends.",
+  "intro": "Pittsburgh's dessert scene is having a creator moment, and the businesses driving it are not always the ones holding the camera. This quarter's rankings surface a persistent split: the shops generating the most online energy and the shops doing the most to sustain it are rarely the same place.\n\nKyo Matcha in Squirrel Hill South sits at the top of this list on the strength of 1.79 million TikTok plays, almost none of them self-generated. Creators found it; the review infrastructure has not caught up. That gap is a story on its own. Meanwhile, Page's in Arlington landed first in sweets overall despite having no TikTok presence at all, which says something specific about how a shop's physical experience can outrun its digital one, at least for a season.\n\nThe ranking method here is creator pickup: how many independent videos, how much third-party reach, how much organic filming without any brand prompting it. What that signals is attention, not loyalty, and the difference matters. Whether these businesses convert this spring's visibility into something durable is the question Issue 02 will answer when the summer numbers come in.",
   "items": [
     {
       "rank": 1,
@@ -143,6 +143,6 @@
     "ranking": "creator_pickup",
     "limit": 10
   },
-  "generated_at": "2026-04-26T16:27:32.589Z",
+  "generated_at": "2026-04-26T18:43:17.796Z",
   "model": "claude-sonnet-4-6"
 }

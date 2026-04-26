@@ -3,7 +3,7 @@
   "title": "The Pittsburgh Bars Most Worth Following",
   "subtitle": "By the numbers, this quarter",
   "angle": "which Pittsburgh bars and breweries are leading the social conversation. Who's getting filmed, who's posting, who's getting talked about.",
-  "intro": "Pittsburgh's bar scene runs on word of mouth, and this quarter, that mouth has a camera. The businesses leading our first Signal rankings got there through very different routes. Hidden Harbor topped Pittsburgh bars without posting a single video of its own: every piece of content driving its signal came from customers filming their drinks, their friends, the room. Hop Farm Brewing in Lawrenceville pulled the same trick at the brewery level, ranking first among breweries on the back of creator visits the brewery hasn't once acknowledged on its own feed.\n\nWhat the numbers reveal is a split between reputation and reach. Golden Age Beer Company landed second among breweries on the strength of its beer alone; the kitchen and the camera have yet to find the story. Commerce Bar carries a genuine East Liberty reputation that simply hasn't translated to a digital footprint yet.\n\nThat gap between what people say in person and what actually travels online is the question Signal exists to track. Issue 02, Summer 2026, will show whether these businesses closed the distance or let someone else take the lead.",
+  "intro": "Pittsburgh's bar and brewery scene does not move as one thing. Some places are getting filmed constantly and posting nothing back. Others have built real followings without ever appearing on a stranger's phone. This quarter's rankings separate those two dynamics, and the gap between them is bigger than expected.\n\nHidden Harbor landed first among bars on atmosphere alone. The tiki room in Squirrel Hill South generates more video content than almost any other bar in the city, none of it from the bar's own accounts. Every clip is borrowed signal, someone else's frame, someone else's caption. Hop Farm Brewing in Lawrenceville sits at the top of the brewery category through a different kind of silence: creators have done the work, and the brewery has not posted back once. That restraint, whether strategic or accidental, has not cost them a ranking yet.\n\nWhat this quarter reveals is that reputation and digital presence are still running on separate tracks in Pittsburgh. Commerce Bar has the name; the profile has not arrived. Golden Age has the beer; the kitchen and the camera have not caught up. Whether those gaps close is the question Issue 02, Summer 2026 will answer.",
   "items": [
     {
       "rank": 1,
@@ -69,6 +69,6 @@
     "ranking": "composite",
     "limit": 5
   },
-  "generated_at": "2026-04-26T16:27:45.819Z",
+  "generated_at": "2026-04-26T18:43:31.908Z",
   "model": "claude-sonnet-4-6"
 }

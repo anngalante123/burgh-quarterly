@@ -107,4 +107,83 @@ export const LISTS: ListSpec[] = [
       limit: 10,
     },
   },
+
+  // ──────── The Underrated List, per editorial brief ────────
+  // Customers rate them well, the social signal hasn't caught up yet.
+  // Celebrated, never shamed. Recurring quarterly feature, one per
+  // family + a flagship.
+
+  {
+    slug: "underrated-spring-2026",
+    title: "Pittsburgh's Most Underrated Small Businesses",
+    subtitle:
+      "The places customers love but the algorithm hasn't found yet, across every family.",
+    angle:
+      "businesses with high customer ratings and real review depth that haven't broken through on social yet. The point of this list is celebration, not critique. Pittsburgh's neighborhood spots, the ones worth telling a friend about.",
+    query: {
+      filter: { family: "all" },
+      ranking: "underrated",
+      limit: 10,
+    },
+  },
+  {
+    slug: "underrated-sweets",
+    title: "Pittsburgh's Most Underrated Sweets",
+    subtitle: "Bakeries, dessert spots, and ice cream shops the city should be talking about.",
+    angle:
+      "the dessert shops Pittsburgh customers love but creators haven't fully caught onto. High ratings, real review depth, lower social signal. The places worth a Sunday morning detour.",
+    query: {
+      filter: { family: "sweets" },
+      ranking: "underrated",
+      limit: 5,
+    },
+  },
+  {
+    slug: "underrated-cafes",
+    title: "Pittsburgh's Most Underrated Cafes",
+    subtitle: "Coffee, tea, juice. Loved locally, not yet viral.",
+    angle:
+      "the cafes that Pittsburgh regulars rave about in reviews but the broader internet hasn't caught up to. Quietly excellent, quietly under-followed.",
+    query: {
+      filter: { family: "cafes" },
+      ranking: "underrated",
+      limit: 5,
+    },
+  },
+  {
+    slug: "underrated-bars",
+    title: "Pittsburgh's Most Underrated Bars",
+    subtitle: "Bars and breweries the regulars treat as their own.",
+    angle:
+      "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
+    query: {
+      filter: { family: "bars" },
+      ranking: "underrated",
+      limit: 5,
+    },
+  },
+  {
+    slug: "underrated-asian-kitchens",
+    title: "Pittsburgh's Most Underrated Asian Kitchens",
+    subtitle: "Sushi, Thai, Indian, Japanese, noodles. Loved in person, not yet celebrated online.",
+    angle:
+      "the Asian kitchens earning real love in reviews but flying under the social radar. The spots regulars defend.",
+    query: {
+      filter: { family: "asian_eats" },
+      ranking: "underrated",
+      limit: 5,
+    },
+  },
+  {
+    slug: "underrated-restaurants",
+    title: "Pittsburgh's Most Underrated Restaurants",
+    subtitle: "Brunch spots, neighborhood restaurants. High ratings, low spotlight.",
+    angle:
+      "Pittsburgh restaurants whose reviews speak for themselves but whose social channels are quieter than they should be. The neighborhood standbys we'd send a visiting friend to.",
+    query: {
+      filter: { family: "restaurants" },
+      ranking: "underrated",
+      limit: 5,
+    },
+  },
 ];

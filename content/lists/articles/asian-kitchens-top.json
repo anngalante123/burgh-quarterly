@@ -3,7 +3,7 @@
   "title": "The Pittsburgh Asian Kitchens Creators Keep Returning To",
   "subtitle": "Sushi, noodles, Thai, Indian, Japanese",
   "angle": "the Asian kitchens generating the most creator coverage this quarter. The dishes the city is filming and the restaurants behind them.",
-  "intro": "Pittsburgh's Asian restaurant scene is generating real creator volume this quarter, and the pattern across the top five is hard to ignore: the kitchens winning the conversation are mostly winning it without lifting a finger. Everyday Noodles in Squirrel Hill has built the strongest noodle signal in the city almost entirely on other people's footage. Pusadee's Garden, Lawrenceville's long-admired Thai institution, is ranking first in its category on creator reach alone while its own feed barely registers. Oishii Donburi has not posted in ten weeks and still landed the top Japanese spot.\n\nThe outlier is Mola in East Liberty, which placed first in sushi on food quality signals rather than Instagram volume. That's a different kind of story, and a rarer one.\n\nWhat this quarter makes clear is that creator coverage has become the de facto marketing infrastructure for a significant slice of Pittsburgh's dining scene, replacing the restaurant's own voice whether the restaurant intends it or not. Issue 02, out Summer 2026, will track whether that dynamic holds through the warmer months, when foot traffic rises and the cameras tend to follow.",
+  "intro": "Five restaurants. Five different relationships with the camera.\n\nThis quarter's Asian kitchen rankings are less a story about food quality and more a story about visibility architecture. Everyday Noodles in Squirrel Hill has built the strongest noodle signal in the city without appearing to try: creators keep returning, the footage keeps circulating, and the restaurant itself has largely stayed out of the way. Pusadee's Garden tells a similar story from Lawrenceville, where decades of reputation have translated into consistent creator coverage despite an Instagram presence that barely registers. Oishii Donburi generated enough organic reach to top the Japanese category this quarter without posting a single piece of content in ten weeks.\n\nWhat the list reveals, collectively, is how little control restaurants have over their own narratives once the city's creator infrastructure decides something is worth filming. Mola's sushi ranks on food quality alone, with almost no social amplification behind it. Reva has creator coverage carrying the signal while the restaurant's own account has gone quiet.\n\nWhether that visibility holds, or whether it requires a restaurant to eventually show up for itself, is the question Issue 02 will start to answer.",
   "items": [
     {
       "rank": 1,
@@ -98,6 +98,6 @@
     "ranking": "creator_pickup",
     "limit": 8
   },
-  "generated_at": "2026-04-26T16:27:52.808Z",
+  "generated_at": "2026-04-26T18:43:39.109Z",
   "model": "claude-sonnet-4-6"
 }

@@ -1,0 +1,69 @@
+{
+  "slug": "underrated-restaurants",
+  "title": "Pittsburgh's Most Underrated Restaurants",
+  "subtitle": "Brunch spots, neighborhood restaurants. High ratings, low spotlight.",
+  "angle": "Pittsburgh restaurants whose reviews speak for themselves but whose social channels are quieter than they should be. The neighborhood standbys we'd send a visiting friend to.",
+  "intro": "The restaurants that define a neighborhood rarely have the loudest feeds. This quarter's list looks at Pittsburgh small businesses with strong review scores and real customer loyalty, but social presences that haven't kept pace. These are the places a local would take you. They just haven't told Instagram about it yet.\n\nSquare Cafe has held the top brunch conversation spot in the city for months, sitting one position from the overall top across all categories, with the reviews to justify it. The gap is almost entirely on owned channels. Nan Xiang Soup Dumplings on the South Side has the most creator-driven signal of any restaurant we tracked this quarter, which means visitors are doing the work the restaurant itself hasn't. Lorelei lands second among East Liberty restaurants overall, carried almost entirely by outside voices. Its own account has gone quiet at exactly the wrong time.\n\nWhat these three share is a floor, not a ceiling. The reviews are already there. The audience is already there. What happens when a business starts meeting that attention is exactly what we'll be tracking into summer. Issue 02 picks up in June 2026.",
+  "items": [
+    {
+      "rank": 1,
+      "business_slug": "lorelei",
+      "name": "Lorelei",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "East Liberty",
+      "descriptor": "Second In Restaurants, Carried By Creators. The Restaurant Itself Has Gone Quiet.",
+      "descriptor_highlight": "Gone Quiet",
+      "stat_line": "392 reviews · 4.5★ · 18 creators · 1.2M plays · 4 IG posts/30d",
+      "featured_tiktok": {
+        "author": "ernest",
+        "plays": 569300,
+        "url": "https://www.tiktok.com/@ernest/video/7607938994898291981",
+        "caption": "Lorelei. She’ll pull you down if you let her.\n\n#newmusic #lorelei "
+      },
+      "playbook_top_move": "Wake up the Instagram Reels slot. Lorelei posted zero Reels in 30 days while 18 creators generated 1.23 million plays nearby; one weekly Reel from behind the bar would reconnect the owned feed to that momentum."
+    },
+    {
+      "rank": 2,
+      "business_slug": "square-cafe",
+      "name": "Square Cafe",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "East Liberty",
+      "descriptor": "Number One In Brunch, One Spot From The Top. Instagram Is The Last Unfinished Business.",
+      "descriptor_highlight": "Last Unfinished Business",
+      "stat_line": "1,839 reviews · 4.5★ · 13 creators · 317K plays · 11 IG posts/30d",
+      "featured_tiktok": {
+        "author": "cbspittsburgh",
+        "plays": 98700,
+        "url": "https://www.tiktok.com/@cbspittsburgh/video/7620457050283363615",
+        "caption": "A large gathering of young people in Pittsburgh's Market Square got out of control and ended with three people taken into custody.\n\nAccording to Pittsburgh Public Safety, the incident happened around 5:30 p.m. Sunday when a fight broke out "
+      },
+      "playbook_top_move": "Convert 0.19% engagement into real reach. Post two Reels per week built around the dishes reviewers already name-drop: the Brussels sprout hash, the vegan biscuit sandwich, eggs benedict."
+    },
+    {
+      "rank": 3,
+      "business_slug": "nan-xiang-soup-dumplings-pittsburgh",
+      "name": "Nan Xiang Soup Dumplings - Pittsburgh",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "South Side Flats",
+      "descriptor": "First In Pittsburgh On Creator Energy It Did Not Generate Itself.",
+      "descriptor_highlight": "Did Not Generate",
+      "stat_line": "1,212 reviews · 4.8★ · 13 creators · 36K plays · 11 IG posts/30d",
+      "featured_tiktok": {
+        "author": "bitesbymorgan",
+        "plays": 8535,
+        "url": "https://www.tiktok.com/@bitesbymorgan/video/7612029218091781407",
+        "caption": "Last weekend, I tried Nan Xiang Soup Dumplings located in the Southside of Pittsburgh. If you love soup dumplings, you should absolutely check this spot out!\n\nMy overall review is:\n\nOverall Rating: 8/10\nFood: 8.5/10\nAtmosphere: 7.5/10\nServi"
+      },
+      "playbook_top_move": "Build a TikTok presence before the wave recedes. Thirteen creators posted 35,914 plays this quarter; a business account captures that traffic and gives the rank a foundation it actually owns."
+    }
+  ],
+  "query": {
+    "filter": {
+      "family": "restaurants"
+    },
+    "ranking": "underrated",
+    "limit": 5
+  },
+  "generated_at": "2026-04-26T18:44:33.826Z",
+  "model": "claude-sonnet-4-6"
+}
