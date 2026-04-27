@@ -85,11 +85,18 @@ export function StrengthsAndGaps({ strengths, gaps, familyShort }: Props) {
           </div>
         )}
 
-        {gaps.length > 0 && (
-          <div className="bg-brand-purple/20 border-t-4 border-brand-purple border-l border-r border-b border-brand-purple/40 px-5 py-5 md:px-6 md:py-6">
+        <div className="bg-brand-purple/20 border-t-4 border-brand-purple border-l border-r border-b border-brand-purple/40 px-5 py-5 md:px-6 md:py-6">
             <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-brand-purple mb-4">
               ▼ Room to run
             </p>
+            {gaps.length === 0 && (
+              <p className="font-body text-sm md:text-base text-brand-black/85 leading-snug">
+                Outperforming Pittsburgh {familyShort} on every metric we
+                track. No gaps flagged this issue.
+              </p>
+            )}
+            {gaps.length > 0 && (
+            <>
             <ul className="space-y-2.5">
               {gaps.map((h) => (
                 <li key={h.metricKey} className="flex items-baseline gap-3">
@@ -115,8 +122,9 @@ export function StrengthsAndGaps({ strengths, gaps, familyShort }: Props) {
                 </li>
               ))}
             </ul>
+            </>
+            )}
           </div>
-        )}
       </div>
     </Reveal>
   );

@@ -45,8 +45,11 @@ type OutreachEmail = {
   family_label: string;
   rank_in_family: number | null;
   scorecard_url: string;
-  subject: string;
-  body: string;
+  /** Initial email, editorial: "you're in Issue 01, here's your record." */
+  email_1: { subject: string; body: string };
+  /** Follow-up email, marketing-leaning: pitches the free Relay creator
+   *  match for verified owners, sent ~3-5 days after email_1 if no reply. */
+  email_2: { subject: string; body: string };
 };
 
 function scrubEmDashes(s: string): string {
@@ -59,7 +62,23 @@ function formatPlays(n: number): string {
   return `${n.toLocaleString()} plays`;
 }
 
-async function generateEmail(
+type EmailPair = {
+  email_1: { subject: string; body: string };
+  email_2: { subject: string; body: string };
+};
+
+async function generateEmailPair(
+  client: Anthropic,
+  business: ReturnType<typeof loadAllRichBusinesses>[number],
+  rankInFamily: number | null,
+  familyLabel: string,
+): Promise<EmailPair> {
+  const e1 = await generateInitialEmail(client, business, rankInFamily, familyLabel);
+  const e2 = await generateFollowupEmail(client, business, rankInFamily, familyLabel);
+  return { email_1: e1, email_2: e2 };
+}
+
+async function generateInitialEmail(
   client: Anthropic,
   business: ReturnType<typeof loadAllRichBusinesses>[number],
   rankInFamily: number | null,
@@ -159,6 +178,91 @@ Return ONLY the SUBJECT/BODY block. No surrounding explanation.`;
   return { subject, body };
 }
 
+/**
+ * Followup email, marketing-leaning. Sent ~3-5 days after the initial
+ * editorial email if the owner hasn't subscribed or responded. Pitches
+ * the Relay free creator-feature offer specifically. More direct CTA,
+ * still owner-relevant data woven in.
+ */
+async function generateFollowupEmail(
+  client: Anthropic,
+  business: ReturnType<typeof loadAllRichBusinesses>[number],
+  rankInFamily: number | null,
+  familyLabel: string,
+): Promise<{ subject: string; body: string }> {
+  const biz = business.artifact.business;
+  const social = business.social;
+  const analysis = business.analysis;
+
+  const tt = social.tiktok_mentions;
+  const reviewCount = biz.google_review_count ?? 0;
+  const igPosts30d = social.ig?.posts_30d ?? 0;
+
+  const factsBlock = [
+    `Name: ${biz.name}`,
+    `Neighborhood: ${biz.neighborhood}`,
+    `Family: ${familyLabel}`,
+    rankInFamily ? `Rank in family: #${rankInFamily}` : "",
+    `Total Google reviews: ${reviewCount.toLocaleString()}`,
+    igPosts30d > 0 ? `IG cadence: ${igPosts30d} posts/30d` : "IG cadence: dormant",
+    tt && tt.video_count > 0
+      ? `TikTok creators filming this quarter: ${tt.unique_creators}, ${tt.total_plays.toLocaleString()} total plays`
+      : "TikTok creator coverage: none yet",
+    analysis?.diagnosis_pullquote?.line
+      ? `Our diagnosis: "${analysis.diagnosis_pullquote.line}"`
+      : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  const prompt = `You're writing a FOLLOWUP marketing email from Signal Pittsburgh, sent ~4 days after an initial editorial email if the owner didn't reply. The TONE is warmer and more sales-leaning than the first email, but still credible. NEVER use em dashes. Use commas, periods, colons.
+
+The sender is the editor on behalf of Relay (the publisher of Signal Pittsburgh). Relay matches Pittsburgh small businesses with vetted local creators, free for verified owners. The pitch in this email is specifically the FREE CREATOR FEATURE OFFER, frame it as a free trial without the words 'free trial' if you can avoid them; 'free for verified owners' or 'no fee for the first match' lands better.
+
+THE BUSINESS:
+${factsBlock}
+
+WRITE:
+1) A short subject line UNDER 60 characters, more action-oriented than the first email. Specific to this business. Examples of the SHAPE we want (do not copy verbatim):
+   "${biz.name}, want a creator to feature your spot? It's free."
+   "Free creator match for ${biz.name}, ready in your inbox."
+   "Following up: a creator could film ${biz.name} this month."
+   "${biz.name}, your free Relay match is one form away."
+
+2) A short email body (about 110-160 words, 3-4 paragraphs). The flow:
+   - Brief reference to the initial email or the data we published.
+   - Cite ONE specific number from the facts above (creator count, review depth, IG cadence, etc.) as the hook.
+   - Make the offer: Pittsburgh creators on Relay's network are looking to feature local businesses. There's no fee for verified owners. The first match is always free.
+   - Clear CTA: a single sentence with the apply URL: https://run-relay.com/apply?business=${biz.slug}
+   - Sign off warm but brief. Don't sign with a name (we'll add).
+
+Marketing-leaning means: more enthusiasm, more direct value framing, a clearer 'here's what you get' beat. Still owner-respectful, no marketing cliches like 'leverage', 'amplify', 'unlock', or 'transform.'
+
+OUTPUT FORMAT (exact):
+SUBJECT: <subject line>
+
+BODY:
+<paragraphs separated by blank lines>
+
+Return ONLY the SUBJECT/BODY block.`;
+
+  const response = await client.messages.create({
+    model: MODEL,
+    max_tokens: 1024,
+    messages: [{ role: "user", content: prompt }],
+  });
+  const block = response.content.find((b) => b.type === "text");
+  if (!block || block.type !== "text") {
+    throw new Error(`No text block in followup response for ${biz.slug}`);
+  }
+  const text = scrubEmDashes(block.text.trim());
+  const subjectMatch = text.match(/^SUBJECT:\s*(.+?)\n/);
+  const bodyMatch = text.match(/BODY:\s*([\s\S]+)$/);
+  const subject = (subjectMatch?.[1] ?? `Free creator match for ${biz.name}.`).trim();
+  const body = (bodyMatch?.[1] ?? text).trim();
+  return { subject, body };
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes("--dry") || args.includes("--dry-run");
@@ -209,7 +313,7 @@ async function main() {
     const rank = rankByslug.get(biz.slug) ?? null;
     process.stdout.write(`[outreach] ${i + 1}/${all.length} ${biz.slug}... `);
     try {
-      const { subject, body } = await generateEmail(client, rb, rank, fam.label);
+      const pair = await generateEmailPair(client, rb, rank, fam.label);
       emails.push({
         business_slug: biz.slug,
         business_name: biz.name,
@@ -217,10 +321,10 @@ async function main() {
         family_label: fam.label,
         rank_in_family: rank,
         scorecard_url: `${SITE_BASE}/business/${biz.slug}`,
-        subject,
-        body,
+        email_1: pair.email_1,
+        email_2: pair.email_2,
       });
-      console.log("ok");
+      console.log("ok (initial + followup)");
     } catch (err) {
       console.error("FAIL", err);
     }
@@ -249,11 +353,11 @@ async function main() {
   md.push(`# Owner Outreach Kit, ${ISSUE_LABEL}`);
   md.push("");
   md.push(
-    `${emails.length} personalized launch emails, generated ${new Date().toISOString().slice(0, 10)} from the live data. Each one references the business's actual rank, diagnosis, and signature stat. Voice: editorial outreach, not sales.`,
+    `${emails.length} businesses, two emails each (${emails.length * 2} total), generated ${new Date().toISOString().slice(0, 10)} from the live data. Email 1 is editorial: 'you're in Issue 01, here's your record.' Email 2 (sent ~4 days later if no reply) is a marketing-leaning pitch for the free Relay creator-feature offer.`,
   );
   md.push("");
   md.push(
-    "Workflow: scan the list, edit any subject/body that doesn't land, paste into your email tool one by one (or import the JSON manifest into a sequencer like Instantly). Each email links to the business's scorecard.",
+    "Workflow: scan the list, edit any subject/body that doesn't land, paste each into your email tool, or import the JSON manifest into a sequencer (Instantly, Mailchimp, etc.) with a 4-day delay between email 1 and email 2 per recipient. Stop the sequence on reply.",
   );
   md.push("");
   md.push("---");
@@ -268,11 +372,23 @@ async function main() {
     );
     md.push(`**Scorecard:** ${e.scorecard_url}`);
     md.push("");
-    md.push(`**Subject:** ${e.subject}`);
+    md.push(`### Email 1, initial editorial (Day 0)`);
+    md.push("");
+    md.push(`**Subject:** ${e.email_1.subject}`);
     md.push("");
     md.push(`**Body:**`);
     md.push("");
-    for (const p of e.body.split(/\n\n+/)) {
+    for (const p of e.email_1.body.split(/\n\n+/)) {
+      md.push(p.trim());
+      md.push("");
+    }
+    md.push(`### Email 2, followup, free Relay match pitch (Day 4-5 if no reply)`);
+    md.push("");
+    md.push(`**Subject:** ${e.email_2.subject}`);
+    md.push("");
+    md.push(`**Body:**`);
+    md.push("");
+    for (const p of e.email_2.body.split(/\n\n+/)) {
       md.push(p.trim());
       md.push("");
     }

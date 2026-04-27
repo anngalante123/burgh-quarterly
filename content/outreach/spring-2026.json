@@ -1,7 +1,7 @@
 {
   "issue_id": "spring-2026",
   "issue_label": "Issue 01, Spring 2026",
-  "generated_at": "2026-04-26T22:56:42.901Z",
+  "generated_at": "2026-04-27T02:25:49.549Z",
   "model": "claude-sonnet-4-6",
   "emails": [
     {
@@ -11,8 +11,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 8,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/24-carrot-juice",
-      "subject": "24 Carrot Juice ranked #8 in Pittsburgh Cafes. Read what we found.",
-      "body": "24 Carrot Juice is in Issue 01 of Signal Pittsburgh, our new quarterly ranking of local small businesses on social media. You're listed at #8 in the Pittsburgh Cafes family, in our Ones to Watch tier.\n\nHere's the line we published in your diagnosis: \"Number One In Juice, Carried By 1.45 Million Creator Plays It Has No Account To Receive.\" Thirty creators posted about you in the last 90 days. That's real momentum, and it's happening entirely outside your control.\n\nYour full record, scorecard, and playbook are live here:\nhttps://burgh-quarterly.vercel.app/business/24-carrot-juice\n\nIssue 02 publishes next quarter. If you want to track how your numbers move, you can subscribe at the site. We'll send it when it drops."
+      "email_1": {
+        "subject": "24 Carrot Juice ranked #8 in Pittsburgh Cafes. Here's what we said.",
+        "body": "Issue 01 of Signal Pittsburgh is live, and 24 Carrot Juice is in it.\n\nYou landed #8 in Pittsburgh Cafes with 519 five-star reviews, which puts you firmly in our Ones to Watch tier. Our published diagnosis reads: \"Eighth In Pittsburgh Cafes On The Back Of Flawless Reviews. The Video Layer Has Not Arrived Yet.\" That second sentence is the whole story right now, and your full record explains exactly what we mean.\n\nhttps://burgh-quarterly.vercel.app/business/24-carrot-juice\n\nIf you want to track your rank when Issue 02 drops, subscribing at that link keeps you in the loop. Feel free to forward this to anyone on your team who handles the account."
+      },
+      "email_2": {
+        "subject": "24 Carrot Juice, your free creator match is still open",
+        "body": "A few days ago we sent a note about where 24 Carrot Juice stands in Pittsburgh's cafe scene. We wanted to follow up because the offer we included has a short window.\n\nHere is the one thing that stood out to us: 519 Google reviews is a genuinely strong foundation. That kind of trust from customers is hard to build. What we have not seen yet is video coverage of your space, and that is exactly where a creator match changes the picture for a place like yours.\n\nThrough Relay, vetted Pittsburgh creators are actively looking for local businesses to feature. There is no fee for verified owners, and your first match costs nothing to start.\n\nClaim your spot here: https://run-relay.com/apply?business=24-carrot-juice\n\nWe hope to see 24 Carrot Juice on someone's feed soon."
+      }
     },
     {
       "business_slug": "allegheny-coffee-tea-exchange",
@@ -21,8 +27,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 1,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/allegheny-coffee-tea-exchange",
-      "subject": "Allegheny Coffee & Tea Exchange ranked #1 in Pittsburgh Cafes.",
-      "body": "Allegheny Coffee & Tea Exchange is in Issue 01 of Signal Pittsburgh. You ranked first in your family, and we wanted you to hear it directly from us before you stumbled across it.\n\nHere is the line we published in your diagnosis: \"Number One In Coffee, Built On Smell And Ritual. Thirty-One Creators Confirm It.\" That number is real. Thirty-one independent TikTok creators filmed inside your shop in the last 90 days, generating 607K plays, and you didn't have to ask any of them.\n\nYour full scorecard, including the one Playbook move we think changes your trajectory in Issue 02, is here:\n\nhttps://burgh-quarterly.vercel.app/business/allegheny-coffee-tea-exchange\n\nIssue 02 tracks movement from this baseline. If you want to see whether that rank holds, a subscription keeps you in the loop each quarter. Forward this to whoever runs your social if it's useful."
+      "email_1": {
+        "subject": "Allegheny Coffee & Tea Exchange is #1 in Pittsburgh Cafes.",
+        "body": "Allegheny Coffee & Tea Exchange is featured in Issue 01 of Signal Pittsburgh. You ranked first in your family, out of every café we tracked across the city.\n\nHere is the line we published in your diagnosis: \"Top Of Pittsburgh Cafes On Review Depth And Instagram. The TikTok Account Is Quiet.\" Nine hundred twenty-four Google reviews at 4.8 stars is a real foundation. The one gap our scorecard flags is TikTok, where creators are already filming your pretzel Nitro Brew and cold brew taps, but your own account hasn't moved yet.\n\nYour full record, tier placement, and playbook are here:\nhttps://burgh-quarterly.vercel.app/business/allegheny-coffee-tea-exchange\n\nIssue 02 tracks movement. If you want to see whether your score shifts next quarter, the subscription link is on the site."
+      },
+      "email_2": {
+        "subject": "Free creator match for Allegheny Coffee & Tea Exchange, ready now.",
+        "body": "I reached out a few days ago about Signal Pittsburgh's coverage of Strip District cafes. Wanted to follow up before the week got away.\n\nHere's what caught our eye: one TikTok creator filmed Allegheny Coffee & Tea Exchange this quarter and pulled 578 plays. That's a real audience, from a single shoot. Your Google review depth and Instagram consistency are already strong, so the gap is just more video presence, and that's exactly what Relay's creator network is built for.\n\nPittsburgh-based creators on Relay are actively looking for local businesses to feature right now. For verified owners, there's no fee, and your first match costs nothing. You get a real creator, filming your actual space, for your actual audience.\n\nIf you want to claim your match, the form takes about two minutes: https://run-relay.com/apply?business=allegheny-coffee-tea-exchange\n\nHope to see the Exchange on more screens soon."
+      }
     },
     {
       "business_slug": "commerce-bar",
@@ -31,8 +43,14 @@
       "family_label": "Pittsburgh Bars",
       "rank_in_family": 4,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/commerce-bar",
-      "subject": "Commerce Bar ranked #4 in Pittsburgh Bars. We noticed something.",
-      "body": "Commerce Bar is in Issue 01 of Signal Pittsburgh. We track Pittsburgh small businesses on social media every quarter, and your bar earned the #4 spot in Pittsburgh Bars, landing in our Neighborhood Staples tier.\n\nHere's what we published in your diagnosis: \"Second In Pittsburgh Bars On Review Depth Alone. The Listing Has No Website, No Phone.\" That 4.7 across 106 reviews is doing real work. The listing gap is the one thing standing between you and more of it.\n\nYour full scorecard, including your rank, tier, and our top recommended move, is here:\nhttps://burgh-quarterly.vercel.app/business/commerce-bar\n\nIssue 02 publishes next quarter. If you want to track how your numbers move, subscribe at the site so we can send it directly to you."
+      "email_1": {
+        "subject": "Commerce Bar ranked #4 in Pittsburgh Bars. Here's what we said.",
+        "body": "Commerce Bar is in Issue 01 of Signal Pittsburgh. We track Pittsburgh small businesses on social media every quarter, and your bar earned a spot in our Neighborhood Staples tier, ranking #4 in the Pittsburgh Bars family.\n\nYour Google presence is genuinely strong: 106 reviews at 4.7 stars puts you second in the family on review depth alone. Our published diagnosis reads: \"Second In Pittsburgh Bars On Review Depth Alone, The Social Signal Has Barely Shown Up.\" That gap is the whole story, and your full scorecard breaks it down.\n\nhttps://burgh-quarterly.vercel.app/business/commerce-bar\n\nIssue 02 publishes next quarter. Rankings shift, and subscribers see movement as it happens. You can subscribe at the link above to stay current on where Commerce Bar stands."
+      },
+      "email_2": {
+        "subject": "Commerce Bar, your free creator match is still open.",
+        "body": "I sent a note a few days ago about Signal Pittsburgh's coverage of East Liberty bars. Commerce Bar ranked fourth overall, with 106 Google reviews putting you solidly in the conversation on depth. But one thing stood out in the data: your Instagram is averaging about one post every 30 days, and there's been no creator coverage on TikTok yet.\n\nThat's a real gap, and it's one Relay can help close without any cost to you.\n\nRelay connects Pittsburgh small businesses with vetted local creators who are actively looking for spots to feature. There's no fee for verified owners, and your first match costs nothing. You get a creator in your space, real content, real reach.\n\nIf you want to claim your match, the form takes two minutes: https://run-relay.com/apply?business=commerce-bar\n\nWould love to see Commerce Bar get the coverage it's already earned."
+      }
     },
     {
       "business_slug": "delanies-coffee-shadyside",
@@ -41,8 +59,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 7,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/delanies-coffee-shadyside",
-      "subject": "16 creators covered Delanie's. You haven't filed your own report.",
-      "body": "Delanie's Coffee Shadyside is in Issue 01 of Signal Pittsburgh. We rank Pittsburgh small businesses on social media each quarter, and you came in at #7 in the Pittsburgh Cafes family, Ones to Watch tier.\n\nHere's the line we published in your diagnosis: \"Sixteen Creators Have Filed Their Reports. Delanie's Coffee Has Not Filed Its Own.\" Sixty-six thousand plays across 17 TikTok videos, none of them yours. That gap is the whole story, and it's still closeable.\n\nYour full scorecard, including your rank, your tier, and the playbook move we recommended, is here:\n\nhttps://burgh-quarterly.vercel.app/business/delanies-coffee-shadyside\n\nIssue 02 tracks movement. If you want to see whether that gap closes or widens for Delanie's, subscribing is how you follow it. Feel free to forward this to anyone on your team who runs your channels."
+      "email_1": {
+        "subject": "Delanie's Coffee landed #7 in Pittsburgh Cafes. Here's what we said.",
+        "body": "Delanie's Coffee Shadyside is in Issue 01 of Signal Pittsburgh. We rank Pittsburgh small businesses on social media every quarter, and your shop earned a spot in the Ones to Watch tier of the Pittsburgh Cafes family.\n\nHere's the line we published in your diagnosis: \"Seventh In Pittsburgh Cafes, Carried By Creators. The Shop Itself Has No TikTok To Show For It.\" Seven creators posted about you in the last 90 days. That's 7,000 plays, and none of it is yours to keep yet.\n\nYour full scorecard, including the data behind the rank and the top move we'd make first, is here:\n\nhttps://burgh-quarterly.vercel.app/business/delanies-coffee-shadyside\n\nIssue 02 publishes next quarter. If you want to watch how your rank moves, you can subscribe at the link above. Forward this to anyone on your team who handles social."
+      },
+      "email_2": {
+        "subject": "Following up: a creator could film Delanie's this month",
+        "body": "I reached out a few days ago about Signal Pittsburgh's coverage of local cafes. I wanted to follow up because the numbers around Delanie's Coffee Shadyside are genuinely interesting, and I think there's something worth acting on here.\n\nSeven TikTok creators filmed your shop this quarter and pulled in nearly 7,000 plays, all without any account of your own to show for it. That audience is real, and it's already finding you.\n\nThrough Relay, Pittsburgh-based creators are actively looking to feature local businesses right now. There's no fee for verified owners, and the first match costs you nothing. You describe what makes Delanie's worth visiting, and we connect you with a creator who can film it.\n\nIf you want to get matched, the form takes about two minutes: https://run-relay.com/apply?business=delanies-coffee-shadyside\n\nHope to hear from you soon."
+      }
     },
     {
       "business_slug": "dobra-tea-pittsburgh",
@@ -51,8 +75,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 6,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/dobra-tea-pittsburgh",
-      "subject": "Dobrá Tea Pittsburgh ranked #6 in Pittsburgh Cafes. Read what we said.",
-      "body": "Dobrá Tea Pittsburgh is in Issue 01 of Signal Pittsburgh. You ranked #6 in the Pittsburgh Cafes family and landed in our Ones to Watch tier.\n\nHere is the line we published in your diagnosis: \"First In Tea On 1,107 Reviews. Ten Creators Are Posting, The Account Posted Once.\" That tension is exactly why you caught our attention. The community loyalty is real. The organic creator activity is real. The Instagram cadence just hasn't kept pace with either.\n\nYour full scorecard, including your ranking, tier, diagnosis, and top playbook move, is live here:\n\nhttps://burgh-quarterly.vercel.app/business/dobra-tea-pittsburgh\n\nIssue 02 publishes next quarter and will track movement across all rankings. If you want to follow how Dobrá Tea Pittsburgh shifts, subscribe at the link above. Feel free to forward this to anyone on your team who handles social."
+      "email_1": {
+        "subject": "Dobrá Tea Pittsburgh ranked #6 in Pittsburgh Cafes. We noticed.",
+        "body": "Dobrá Tea Pittsburgh is in Issue 01 of Signal Pittsburgh. We track social presence across Pittsburgh small businesses every quarter, and your café made our Pittsburgh Cafes family at #6, Ones to Watch tier.\n\nHere's the line we published in your diagnosis: \"First In Tea Houses, Sixth In Pittsburgh Cafes. The Room Is Full; The Feed Is Empty.\" That 1,107-review base at 4.7 stars is doing real work. The Instagram feed is not.\n\nYour full record, scorecard, and playbook are live here:\nhttps://burgh-quarterly.vercel.app/business/dobra-tea-pittsburgh\n\nIssue 02 publishes next quarter and rankings will move. If you want to track where Dobrá Tea lands, subscribe at the link above. And if someone on your team should see this, feel free to forward it along."
+      },
+      "email_2": {
+        "subject": "Dobrá Tea Pittsburgh, your free creator match is still open.",
+        "body": "A few days ago we sent you a note about Signal Pittsburgh's coverage of Squirrel Hill South cafes. We wanted to follow up directly, because the numbers for Dobrá Tea made us think you'd want to hear this part too.\n\nYou're sitting on 1,107 Google reviews. That's real trust, built over years. But one post every 30 days on Instagram means almost no one new is finding you through social, and there's no TikTok creator coverage at all. The room is full. The feed is empty.\n\nRelay connects Pittsburgh small businesses with vetted local creators who want to feature spots exactly like yours. No fee for verified owners. The first match costs you nothing, just a conversation and a visit.\n\nIf you want to see who's available for Dobrá Tea this month, the application takes about two minutes: https://run-relay.com/apply?business=dobra-tea-pittsburgh\n\nGenuinely hope to hear from you."
+      }
     },
     {
       "business_slug": "everyday-noodles",
@@ -61,8 +91,14 @@
       "family_label": "Pittsburgh Asian Kitchens",
       "rank_in_family": 3,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/everyday-noodles",
-      "subject": "19 million plays, and your name isn't on any of them.",
-      "body": "Everyday Noodles is in Issue 01 of Signal Pittsburgh. You ranked #3 in Pittsburgh Asian Kitchens and landed in our Ones to Watch tier, which is where we put businesses with real momentum and a clear next move.\n\nHere is the line we published in your diagnosis: \"First In Noodles On 19 Million Plays It Never Captured.\" Twenty-six creators made videos about your restaurant in the last 90 days. Those videos have 19.1 million plays. There is no TikTok account for any of that traffic to land on.\n\nYour full record, scorecard, and playbook are here:\nhttps://burgh-quarterly.vercel.app/business/everyday-noodles\n\nIssue 02 tracks movement. If you want to see whether your signals shift next quarter, the subscription link is on the site. Feel free to forward this to anyone on your team who handles the social side."
+      "email_1": {
+        "subject": "Everyday Noodles ranked #3 in Pittsburgh Asian Kitchens.",
+        "body": "Everyday Noodles is in Issue 01 of Signal Pittsburgh. We rank local small businesses on their social media footprint each quarter, and your restaurant made the cut for our Pittsburgh Asian Kitchens family, landing at #3 in the Ones to Watch tier.\n\nHere is the line we published in your diagnosis: \"Third In Pittsburgh Asian Kitchens, Backed By 2,216 Reviews. No Social Presence To Show For It.\" That review count is genuinely strong. The gap we flagged is the Instagram handle, and we called out exactly why the open noodle-making kitchen is the place to start.\n\nYour full scorecard, including the ranking, diagnosis, and top playbook move, is here:\nhttps://burgh-quarterly.vercel.app/business/everyday-noodles\n\nIssue 02 publishes next quarter. If you want to track movement in your rank and see how the family shifts, subscribe at the link above."
+      },
+      "email_2": {
+        "subject": "Following up: a creator could film Everyday Noodles this month.",
+        "body": "I sent a note a few days ago about Everyday Noodles' presence in our Signal Pittsburgh coverage. Wanted to follow up before the quarter fills up.\n\nHere's the short version: you have 2,216 Google reviews and zero active social content to point people toward. That's a real gap, and it's one a single good creator video can start to close.\n\nThrough Relay, Pittsburgh-based creators are actively looking to feature local spots right now. There's no fee for verified business owners, and your first match costs nothing. We handle the vetting, you approve the creator, and they film on their own time.\n\nIf you want in, the form takes about two minutes: https://run-relay.com/apply?business=everyday-noodles\n\nHope to see Everyday Noodles on someone's feed soon."
+      }
     },
     {
       "business_slug": "golden-age-beer-company",
@@ -71,8 +107,14 @@
       "family_label": "Pittsburgh Bars",
       "rank_in_family": 3,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/golden-age-beer-company",
-      "subject": "Golden Age Beer Company ranked #3 in Pittsburgh Bars. Here's what we said.",
-      "body": "Golden Age Beer Company is in Issue 01 of Signal Pittsburgh. We track social presence, review velocity, and creator coverage across Pittsburgh small businesses every quarter, and your taproom made the cut in the Pittsburgh Bars family.\n\nYou landed at #3 with a Ones to Watch designation. The diagnosis we published reads: \"Second In Breweries, Carried By Reviews. The Taproom Has No TikTok Footprint Yet.\" Your 195 Google reviews at 4.8 stars are doing real work. The playbook we attached points to one specific friction point worth knowing about.\n\nRead your full record here:\nhttps://burgh-quarterly.vercel.app/business/golden-age-beer-company\n\nIssue 02 tracks movement from these baselines. If you want to see where Golden Age lands next quarter, the subscription link is on the site. Feel free to forward this to anyone on your team who watches your digital presence."
+      "email_1": {
+        "subject": "Golden Age Beer Company ranked #3 in Pittsburgh Bars. Here's what we said.",
+        "body": "Golden Age Beer Company is in Issue 01 of Signal Pittsburgh. We rank Pittsburgh small businesses on social media presence each quarter, and you landed third in the Pittsburgh Bars family, Ones to Watch tier.\n\nHere's the line we published in your diagnosis: \"Third In Pittsburgh Bars On Review Depth Alone, With No TikTok Presence To Build On It.\" 195 reviews at 4.8 stars is a real asset. The Playbook move we flagged: get the food story on video. The shepherd pie pierogi special and the $10 liter pour are two of the most specific, repeatable hooks in your current review record.\n\nYour full scorecard is here:\nhttps://burgh-quarterly.vercel.app/business/golden-age-beer-company\n\nIssue 02 tracks movement from this baseline. If you want to see where you land next quarter, subscribe at the site and we'll send it the day it goes live."
+      },
+      "email_2": {
+        "subject": "Golden Age Beer Company, your free creator match is waiting",
+        "body": "I reached out a few days ago about Signal Pittsburgh's coverage of local bars, and I wanted to follow up before the week gets away from us.\n\nHere's the detail that stood out: Golden Age Beer Company is sitting at #3 in Pittsburgh Bars on review depth alone, with 195 Google reviews and a solid Instagram presence, but zero TikTok creator coverage so far. That's a real gap, and it's the kind of thing a single well-matched creator can start to close.\n\nThrough Relay, Pittsburgh creators are actively looking for local businesses to feature. There's no fee for verified owners, and the first match costs you nothing. You describe your space, we find the right fit, and the creator handles the content.\n\nIf you want to see who's available, the form takes about two minutes: https://run-relay.com/apply?business=golden-age-beer-company\n\nHappy to answer any questions if you want to reply here first."
+      }
     },
     {
       "business_slug": "hidden-harbor",
@@ -81,8 +123,14 @@
       "family_label": "Pittsburgh Bars",
       "rank_in_family": 1,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/hidden-harbor",
-      "subject": "Hidden Harbor is #1 in Pittsburgh Bars. Here's what we found.",
-      "body": "Hidden Harbor is featured in Issue 01 of Signal Pittsburgh. You ranked first in the Pittsburgh Bars family, and we published a full scorecard with diagnosis, data, and a playbook.\n\nOne line from our diagnosis: \"First In Pittsburgh Bars On Borrowed Reach. The Bar Hasn't Claimed Its Own TikTok Story.\" Ten creators posted 426K plays about your bar this quarter with no input from you. That reach is real, and right now someone else is shaping the story.\n\nYour full record is here:\nhttps://burgh-quarterly.vercel.app/business/hidden-harbor\n\nIssue 02 publishes next quarter. Rankings shift. If you want to track where Hidden Harbor moves, you can subscribe at the link above and we'll send it directly when it drops."
+      "email_1": {
+        "subject": "Hidden Harbor ranked #1 in Pittsburgh Bars. Here's what we found.",
+        "body": "Issue 01 of Signal Pittsburgh is live, and Hidden Harbor is in it. You ranked first in Pittsburgh Bars, which put you in our Ones to Watch tier alongside the strongest small businesses we tracked this quarter.\n\nHere is the line we published in your diagnosis: \"First In Pittsburgh Bars On Reviews And Photos, Not Yet On Video.\" Your 765 Google reviews and consistent posting cadence earned that top spot. The gap we flagged is Reels. Twelve posts in 30 days, zero short-form video. One drink-pour or atmosphere Reel per week would directly close that gap before the next ranking cycle.\n\nYour full record, scorecard, and playbook are here:\nhttps://burgh-quarterly.vercel.app/business/hidden-harbor\n\nIssue 02 tracks movement from this baseline. If you want to see whether the needle shifts, a subscription keeps you in the loop."
+      },
+      "email_2": {
+        "subject": "Hidden Harbor, your free creator match is still open.",
+        "body": "I reached out a few days ago with some data we published on Pittsburgh's top-reviewed bars. Hidden Harbor sits at number one in the city with 765 Google reviews, which is a real signal of trust. But we noticed there's no TikTok creator coverage yet, and that gap is worth closing.\n\nRelay connects Pittsburgh small businesses with vetted local creators who want to feature spots like yours. There's no fee for verified owners, and the first match costs you nothing. You describe what you're looking for, we find a creator who fits, and they handle the content.\n\nFor a bar that already earns this kind of word-of-mouth, video is a natural next step. This is a way to get there without a production budget.\n\nIf you're open to it, the application takes about two minutes: https://run-relay.com/apply?business=hidden-harbor\n\nThanks for building something worth featuring."
+      }
     },
     {
       "business_slug": "hop-farm-brewing-company",
@@ -91,8 +139,14 @@
       "family_label": "Pittsburgh Bars",
       "rank_in_family": 2,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/hop-farm-brewing-company",
-      "subject": "21 creators. 171K plays. Hop Farm is ranked #2 in Pittsburgh Bars.",
-      "body": "Hop Farm Brewing Company is in Issue 01 of Signal Pittsburgh, our new quarterly ranking of Pittsburgh small businesses on social media. You came in #2 in Pittsburgh Bars, Ones to Watch tier.\n\nHere's the line we published in your diagnosis: \"Number One In Breweries, Powered By 21 Creators. The Business Captures None Of That Signal.\" That's not a criticism, it's an opening. Twenty-one creators generated over 170,000 plays tagging Hop Farm this quarter, and right now none of that momentum has a home.\n\nYour full record, scorecard, and playbook are live here:\nhttps://burgh-quarterly.vercel.app/business/hop-farm-brewing-company\n\nIssue 02 publishes next quarter, and rankings move. If you want to track where Hop Farm lands, subscribe at the link above. Feel free to forward this to anyone on your team who handles your online presence."
+      "email_1": {
+        "subject": "Hop Farm Brewing came in #2 in Pittsburgh Bars. Here's what we said.",
+        "body": "Hop Farm Brewing Company is in Issue 01 of Signal Pittsburgh. You ranked #2 in Pittsburgh Bars, landing in our Ones to Watch tier.\n\nHere's the line we published in your diagnosis: \"Second In Pittsburgh Bars, Built On Reviews And A Single Manager. TikTok Has Barely Noticed.\" Your 298 Google reviews are doing real work. The short-form video side is wide open.\n\nYour full scorecard is here:\nhttps://burgh-quarterly.vercel.app/business/hop-farm-brewing-company\n\nIssue 02 comes out next quarter. If you want to track how Hop Farm moves in the rankings, including whether TikTok starts catching up, you can subscribe at the link above. Feel free to forward this to anyone on your team who handles social."
+      },
+      "email_2": {
+        "subject": "Hop Farm, your free creator match is still waiting",
+        "body": "Sending a quick follow-up in case my last note got buried. I shared some data on Pittsburgh Bars this week, and Hop Farm came in at number two in the city, which is a real position worth protecting and building on.\n\nHere's what caught my eye: one TikTok creator filmed your space this quarter and pulled 285 plays. That's a start, but it's a thin footprint for a bar with 298 Google reviews and a strong neighborhood presence in Lawrenceville.\n\nRelay connects Pittsburgh small businesses with vetted local creators who are actively looking for spots to feature. There's no fee for verified owners, and your first match costs nothing.\n\nIf you want a creator filming Hop Farm this month, the form takes about two minutes: https://run-relay.com/apply?business=hop-farm-brewing-company\n\nAppreciate your time, and congrats again on the ranking."
+      }
     },
     {
       "business_slug": "jenis-splendid-ice-creams",
@@ -101,8 +155,14 @@
       "family_label": "Pittsburgh Sweets",
       "rank_in_family": 3,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/jenis-splendid-ice-creams",
-      "subject": "Jeni's is #3 in Pittsburgh Sweets. Here's what we said.",
-      "body": "Jeni's Splendid Ice Creams is in Issue 01 of Signal Pittsburgh, ranked #3 in the Pittsburgh Sweets family and placed in our Icons tier.\n\nYour diagnosis line reads: \"A Million TikTok Plays This Quarter, Every Single One in Someone Else's Account.\" Thirty-five creators posted 37 videos about Jeni's this quarter, logging 1.2 million plays, and your brand doesn't have a TikTok account to receive a single tag. That's the story we told.\n\nYour full scorecard, including rankings, data, and the playbook move we flagged, is here:\n\nhttps://burgh-quarterly.vercel.app/business/jenis-splendid-ice-creams\n\nIssue 02 publishes next quarter. If you want to track how Jeni's moves in the rankings, subscribe at the link above. Feel free to forward this to anyone on your team who watches your social presence."
+      "email_1": {
+        "subject": "Jeni's is ranked #3 in Pittsburgh Sweets. Here's what we said.",
+        "body": "Jeni's Splendid Ice Creams is in Issue 01 of Signal Pittsburgh. You landed #3 in the Pittsburgh Sweets family, in our Icons tier, and we had some specific things to say about where things stand.\n\nOur published diagnosis: \"Third In Pittsburgh Sweets, With Creators On TikTok And No Account To Meet Them.\" Three creators posted about you in the last 90 days, six thousand plays, and there's no Jeni's TikTok presence to catch any of it. That gap is the headline.\n\nYour full scorecard, including the one Google move we flagged that could shift your review sentiment before it compounds, is here:\n\nhttps://burgh-quarterly.vercel.app/business/jenis-splendid-ice-creams\n\nIssue 02 publishes next quarter and rankings move. If you want to track Jeni's position over time, you can subscribe at the link above."
+      },
+      "email_2": {
+        "subject": "Jeni's, 3 TikTok creators filmed you with no account to catch it",
+        "body": "I sent a note earlier this week after we published our Pittsburgh Sweets roundup, and wanted to follow up before the week closes out.\n\nHere's the detail that stuck with me: three TikTok creators filmed Jeni's this quarter, pulling over 6,000 plays, and there's no Jeni's account on the other end to meet them. That's real audience attention landing somewhere with nowhere to go.\n\nRelay matches Pittsburgh small businesses with vetted local creators who want to feature spots exactly like yours. There's no fee for verified owners, and your first match costs you nothing. We handle the pairing, you just show up.\n\nIf you want to put a creator in front of your counter this month, this is the link: https://run-relay.com/apply?business=jenis-splendid-ice-creams\n\nHappy to answer any questions if something's unclear. Hope to see Jeni's in the mix."
+      }
     },
     {
       "business_slug": "ka-fair-coffee-and-cakery",
@@ -111,8 +171,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 9,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/ka-fair-coffee-and-cakery",
-      "subject": "28 creators posted Ka-Fair. We ranked it. Here's what we said.",
-      "body": "Ka-Fair Coffee and Cakery is in Issue 01 of Signal Pittsburgh. You landed at #9 in Pittsburgh Cafes, in our Ones to Watch tier, and we wanted you to see exactly what we wrote.\n\nOur published diagnosis: \"Third In Cafes, Carried By A City That Posts More Than The Cafe Does.\" That line is about 28 TikTok creators who generated 30 videos and 1.0 million plays around your shop in the last 90 days. The audience already exists. Your record explains what we think that means for you.\n\nRead your full scorecard here:\nhttps://burgh-quarterly.vercel.app/business/ka-fair-coffee-and-cakery\n\nIssue 02 publishes next quarter, and rankings move. If you want to track where Ka-Fair stands when it drops, subscribe at the link above. Feel free to forward this to anyone on your team who handles your online presence."
+      "email_1": {
+        "subject": "Ka-Fair Coffee ranked #9 in Pittsburgh Cafes. Here's what we said.",
+        "body": "Ka-Fair Coffee and Cakery is in Issue 01 of Signal Pittsburgh. You ranked #9 in the Pittsburgh Cafes family and landed in our Ones to Watch tier, which is where we put businesses with real upward momentum.\n\nHere is the line we published in your diagnosis: \"Third In Pittsburgh Cafe On Word Of Mouth Alone. The Visual Catalog Has Not Caught Up.\" Your 235 Google reviews at 4.8 stars are doing the heavy lifting. The Instagram side has room to move.\n\nYour full scorecard, including your ranking, tier, and the playbook move we flagged around posting cadence and your most-named items, is here:\n\nhttps://burgh-quarterly.vercel.app/business/ka-fair-coffee-and-cakery\n\nIssue 02 publishes next quarter and rankings will shift. If you want to track where Ka-Fair lands, subscribe at the link above. Forward this to anyone who follows the shop closely."
+      },
+      "email_2": {
+        "subject": "Ka-Fair Coffee and Cakery, your free creator match is ready.",
+        "body": "I sent a note earlier this week about Signal Pittsburgh's coverage of local cafes. I wanted to follow up because Ka-Fair Coffee and Cakery landed at #9 in Pittsburgh Cafes with 235 Google reviews and just three Instagram posts in the last 30 days. That gap is the whole story: the word of mouth is real, the visual catalog has not caught up yet.\n\nRelay connects Pittsburgh small businesses with vetted local creators who are actively looking for spots to feature. There is no fee for verified owners, and your first match costs nothing.\n\nA creator could be inside Ka-Fair this month, filming the space, the drinks, the pastry case, the atmosphere, everything that reviews describe but photos have not shown yet.\n\nIf you want to see who is available, the application takes about two minutes: https://run-relay.com/apply?business=ka-fair-coffee-and-cakery\n\nHappy to answer any questions before you apply."
+      }
     },
     {
       "business_slug": "kyo-matcha",
@@ -121,8 +187,14 @@
       "family_label": "Pittsburgh Sweets",
       "rank_in_family": 4,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/kyo-matcha",
-      "subject": "Kyo Matcha ranked in Pittsburgh Sweets. Here's what we found.",
-      "body": "Kyo Matcha is in Issue 01 of Signal Pittsburgh. You ranked #4 in Pittsburgh Sweets and landed in our Icons tier, which covers the businesses driving real cultural weight in their category.\n\nHere is the line we published in your diagnosis: \"Second In Desserts On The Strength Of 1.8 Million TikTok Plays. The Reviews Have Not Kept Pace.\" Thirty-nine creators filmed you in 90 days. That reach is significant. The full record explains where the gap is and what we think closes it.\n\nRead your scorecard here:\nhttps://burgh-quarterly.vercel.app/business/kyo-matcha\n\nIssue 02 publishes next quarter and rankings will move. If you want to track how Kyo Matcha is trending, subscribe at the link above. Feel free to forward this to anyone on your team who watches your presence."
+      "email_1": {
+        "subject": "Kyo Matcha ranked #4 in Pittsburgh Sweets. Here's why.",
+        "body": "Kyo Matcha is in Signal Pittsburgh Issue 01. You landed fourth in the Pittsburgh Sweets family, inside our Icons tier, which puts you among the strongest-performing small businesses we tracked this quarter.\n\nHere's the line we published on your record: \"Fourth In Pittsburgh Sweets, With The Family's Strongest Creator Fit And A Review Sentiment That Hasn't Caught Up.\" That creator fit detail is real. Two creators, four thousand plays on TikTok in 90 days, is the best ratio in your family. The review number is the one thing holding the rank where it is.\n\nYour full scorecard, including the specific friction points we identified, is here:\n\nhttps://burgh-quarterly.vercel.app/business/kyo-matcha\n\nIssue 02 tracks movement from this baseline. If you want to see whether your numbers shift next quarter, subscribe at the link above."
+      },
+      "email_2": {
+        "subject": "Following up: a creator could film Kyo Matcha this month.",
+        "body": "I sent a note earlier this week about Kyo Matcha's place in the Pittsburgh Sweets conversation, and I wanted to follow up before the week closes out.\n\nHere's what caught my attention: two TikTok creators have already filmed at Kyo Matcha this quarter, pulling in over 4,400 plays. That's real traction, and it points to something most spots in this category don't have yet, a genuine fit with the creator community. The reviews haven't fully caught up to that momentum, but they can.\n\nThrough Relay, Pittsburgh creators are actively looking for local businesses to feature. There's no fee for verified owners, and the first match is always free. We handle the vetting, you just say yes.\n\nIf you want to claim your match, the form takes about two minutes: https://run-relay.com/apply?business=kyo-matcha\n\nHope to see Kyo Matcha in the next round."
+      }
     },
     {
       "business_slug": "la-gourmandine-hazelwood",
@@ -131,8 +203,14 @@
       "family_label": "Pittsburgh Sweets",
       "rank_in_family": 6,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/la-gourmandine-hazelwood",
-      "subject": "La Gourmandine Hazelwood is in Issue 01. Here's what we found.",
-      "body": "La Gourmandine Hazelwood is featured in Issue 01 of Signal Pittsburgh, ranked #6 in the Pittsburgh Sweets family under our Ones to Watch tier.\n\nHere is the line we published in your diagnosis: \"First In Pastry, Carried By 737K Plays It Did Not Post.\" Thirteen creators made 15 videos about your shop in the last 90 days. That reach is real, and it is happening without you in the room.\n\nYour full scorecard is live now:\nhttps://burgh-quarterly.vercel.app/business/la-gourmandine-hazelwood\n\nIt includes one prioritized move: restart Instagram before the next weekend. The account has been quiet for 41 days, and even a single weekly photo of the pastry case would reopen the signal.\n\nIssue 02 tracks movement from this baseline. If you want to follow your ranking over time, subscribe at the site so we can notify you when the next issue drops."
+      "email_1": {
+        "subject": "La Gourmandine Hazelwood is ranked in Issue 01. Here's what we said.",
+        "body": "La Gourmandine Hazelwood is featured in Issue 01 of Signal Pittsburgh. You ranked #6 in Pittsburgh Sweets, and we wanted you to see exactly what we published about your business before anyone else does.\n\nHere is the diagnosis line we ran: \"Sixth In Pittsburgh Sweets, Built On 525 Reviews. The Business Hasn't Posted In Six Weeks.\" The 525 reviews are doing serious work for you. The dormant Instagram is the one thing we flagged, especially because five creators filmed your shop in the last 90 days and those videos pulled 18,000 plays.\n\nYour full record, including the scorecard and our recommended next move, is here:\n\nhttps://burgh-quarterly.vercel.app/business/la-gourmandine-hazelwood\n\nIssue 02 publishes next quarter. If you want to track how your rankings move, you can subscribe at the link above. Feel free to forward this to anyone who follows the shop closely."
+      },
+      "email_2": {
+        "subject": "Following up: a creator could film La Gourmandine this month.",
+        "body": "I sent a note earlier this week about how Signal Pittsburgh is covering the sweets scene across the city. I wanted to follow up because your spot stood out in a specific way.\n\nFive TikTok creators have already filmed in Pittsburgh's sweets category this quarter, pulling nearly 18,000 plays combined. La Gourmandine Hazelwood has the reviews and the reputation to be in that conversation. The Instagram side has been quiet, and that's exactly the kind of gap a local creator can fill quickly.\n\nRelay matches Pittsburgh small businesses with vetted local creators who are actively looking for places to feature. There's no fee for verified owners, and the first match costs you nothing.\n\nIf you want to see who's available, the form takes about two minutes: https://run-relay.com/apply?business=la-gourmandine-hazelwood\n\nHappy to answer questions if you want to reach back before applying."
+      }
     },
     {
       "business_slug": "la-gourmandine-lawrenceville",
@@ -141,8 +219,14 @@
       "family_label": "Pittsburgh Sweets",
       "rank_in_family": 8,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/la-gourmandine-lawrenceville",
-      "subject": "La Gourmandine Lawrenceville ranked #8 in Pittsburgh Sweets.",
-      "body": "La Gourmandine Lawrenceville is in Signal Pittsburgh Issue 01. You ranked #8 in the Pittsburgh Sweets family, landing in our Ones to Watch tier, and your 1,294 Google reviews at 4.8 stars put you at the top of that list on review strength alone.\n\nHere's the line we published in your diagnosis: \"First In Bakeries On The Strength Of 1,294 Reviews. The Instagram Feed Went Quiet.\"\n\nYour full scorecard is live now:\nhttps://burgh-quarterly.vercel.app/business/la-gourmandine-lawrenceville\n\nIt includes the complete ranking, the data behind it, and the top move we flagged for the quarter. If you want to track how your position shifts in Issue 02, the subscription link is on the site. We rank every quarter, and movement in either direction gets noted."
+      "email_1": {
+        "subject": "La Gourmandine Lawrenceville is in Issue 01. Here's what we said.",
+        "body": "La Gourmandine Lawrenceville is featured in Issue 01 of Signal Pittsburgh. You ranked #8 in Pittsburgh Sweets, landing in our Ones to Watch tier.\n\nHere is the diagnosis we published: \"Eighth In Sweets Despite A Deep Review Record. The Feed Has Gone Quiet.\" Your 1,294 Google reviews at 4.8 stars are a real asset. The signal we flagged is the Instagram feed, which has been dormant for over 40 days. That gap is the clearest place to recover momentum.\n\nYour full scorecard, including your rank, tier, and the top move we recommended, is here:\n\nhttps://burgh-quarterly.vercel.app/business/la-gourmandine-lawrenceville\n\nIssue 02 publishes next quarter. If you want to track how your signals shift, you can subscribe at the site. We'll note any movement in the rankings."
+      },
+      "email_2": {
+        "subject": "Following up: a creator could film La Gourmandine this month.",
+        "body": "We sent a note a few days ago about Signal Pittsburgh's coverage of the local sweets scene. If it got buried, no problem, that's why we're following up.\n\nHere's what caught our eye: five TikTok creators filmed La Gourmandine content this quarter, pulling nearly 18,000 plays. That's real traction. But your Instagram feed has gone quiet, and on our Pittsburgh Sweets rankings you're sitting at eighth despite one of the deepest review records in the city. More consistent creator coverage could close that gap.\n\nThrough Relay, we match Pittsburgh small businesses with vetted local creators who are actively looking for spots to feature. There's no fee for verified owners, and your first match costs nothing.\n\nIf you'd like to see who's available, you can apply here: https://run-relay.com/apply?business=la-gourmandine-lawrenceville\n\nHappy to answer any questions before you do."
+      }
     },
     {
       "business_slug": "lorelei",
@@ -151,8 +235,14 @@
       "family_label": "Pittsburgh Restaurants",
       "rank_in_family": 3,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/lorelei",
-      "subject": "Lorelei ranked #3 in Pittsburgh Restaurants. Here's what we said.",
-      "body": "Lorelei is in Issue 01 of Signal Pittsburgh. You landed at Number 3 in the Pittsburgh Restaurants family, in our Ones to Watch tier, and we had things to say.\n\nOur published diagnosis: \"Ones to Watch at Number Two, Carried by Outside Creators. The Engagement Rate Tells a Different Story.\" Eighteen creators drove 1.2 million TikTok plays in 90 days. That kind of reach without a corresponding engagement lift on your own channels is the story we're watching.\n\nYour full record is here:\nhttps://burgh-quarterly.vercel.app/business/lorelei\n\nIssue 02 tracks movement. If you want to see where Lorelei lands next quarter, subscribe at the link above and we'll notify you when the next rankings publish.\n\nFeel free to forward this to anyone on your team who manages the channels."
+      "email_1": {
+        "subject": "Lorelei ranked #3 in Pittsburgh Restaurants. Here's what we said.",
+        "body": "Lorelei is in Issue 01 of Signal Pittsburgh. You ranked #3 in the Pittsburgh Restaurants family and landed in our Ones to Watch tier, which is exactly where the interesting movement happens.\n\nHere is the line we published in your diagnosis: \"Second In Pittsburgh Restaurants On Review Depth Alone, Not Yet On TikTok.\" Your 392 Google reviews at 4.5 stars are doing real work. The gap we flagged is Reels. Zero posted in the last 30 days, and one cocktail-process or bar-atmosphere Reel per week would directly address a 0.79 percent engagement rate on an otherwise strong account.\n\nYour full scorecard is live here:\nhttps://burgh-quarterly.vercel.app/business/lorelei\n\nIssue 02 tracks movement between quarters. If you want to see where Lorelei lands next, subscribe at the link above. Feel free to forward this to anyone on your team who runs your social."
+      },
+      "email_2": {
+        "subject": "Following up: a creator could film Lorelei this month.",
+        "body": "I sent a note a few days ago about Signal Pittsburgh's coverage of East Liberty restaurants. Wanted to follow up before the spot fills.\n\nHere's the quick version: Lorelei is sitting at 392 Google reviews, which puts you in rare company for Pittsburgh dining. That kind of review depth tells us guests already love the experience. The gap is TikTok, where Lorelei has no creator coverage yet. That's the opening.\n\nRelay connects Pittsburgh small businesses with vetted local creators who want to feature spots like yours. There's no fee for verified owners, and the first match costs you nothing. A creator comes to you, films the experience, and publishes to their audience. You don't manage the logistics.\n\nIf that sounds worth five minutes, apply here: https://run-relay.com/apply?business=lorelei\n\nGlad to answer any questions before you do."
+      }
     },
     {
       "business_slug": "margaux",
@@ -161,8 +251,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 3,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/margaux",
-      "subject": "Margaux ranked #3 in Pittsburgh Cafes. Here's what we said.",
-      "body": "Margaux is in Issue 01 of Signal Pittsburgh. We track social presence and discovery signals across Pittsburgh small businesses by neighborhood and category, and your café earned a spot in the Ones to Watch tier, ranking third in the Pittsburgh Cafes family.\n\nHere's the line we published on you: \"Third In Coffee On The Strength Of Creator Heat. The Profile Hasn't Caught Up.\" Seven creators posted about Margaux in the last 90 days, pulling 44K plays on TikTok. That's real signal. The scorecard shows exactly where the gap is and what closes it fastest.\n\nYour full record is here:\nhttps://burgh-quarterly.vercel.app/business/margaux\n\nIssue 02 drops next quarter. If you want to track how your numbers move, you can subscribe at the same link. Some owners forward these to their team. Entirely up to you."
+      "email_1": {
+        "subject": "Margaux ranked #3 in Pittsburgh Cafes. Here's what we said.",
+        "body": "Margaux is in Issue 01 of Signal Pittsburgh. We track Pittsburgh small businesses on social media every quarter, and this issue covers the Cafes family across the city. You landed third.\n\nYour record is live now. The diagnosis we published: \"Third In Pittsburgh Cafes, Built On Creator Interest. The Instagram Engagement Hasn't Kept Pace.\" Five creators drove 39,178 TikTok plays in 90 days. That audience exists. The opportunity we flagged is pulling it onto Instagram, where nine posts a month is solid activity but a 0.26 percent engagement rate suggests the content isn't connecting it yet.\n\nRead your full scorecard here:\nhttps://burgh-quarterly.vercel.app/business/margaux\n\nIssue 02 publishes next quarter. Subscribe at the link above if you want to track how the numbers move. And if this is useful to someone else on your team, feel free to forward it along."
+      },
+      "email_2": {
+        "subject": "Margaux, your free creator match is still available.",
+        "body": "I reached out a few days ago about Signal Pittsburgh's data on East Liberty cafes. Didn't want this to get buried before you had a chance to see it.\n\nHere's the part that stood out to us: five TikTok creators have already filmed at Margaux this quarter, pulling in nearly 40,000 plays. That's real organic interest in your space. The gap is on Instagram, where posting is consistent but engagement hasn't caught up to what the foot traffic and creator activity suggest it could be.\n\nThrough Relay, we match Pittsburgh small businesses with vetted local creators at no fee for verified owners. The first match costs you nothing. A creator comes in, films your space, and posts to their audience.\n\nIf you want to move forward, it takes about two minutes: https://run-relay.com/apply?business=margaux\n\nWould love to see Margaux get the visibility it's already earning."
+      }
     },
     {
       "business_slug": "meetcha",
@@ -171,8 +267,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 10,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/meetcha",
-      "subject": "MeetCha ranked #10 in Pittsburgh Cafes. Here's what we found.",
-      "body": "MeetCha is in Issue 01 of Signal Pittsburgh. We rank small businesses across the city on their social presence and word-of-mouth signal, and your café made our Pittsburgh Cafes family at #10, Ones to Watch tier.\n\nHere's the line we published in your diagnosis: \"Fourth In Pittsburgh Cafes, Held There By Word Of Mouth Alone. The Feed Has Gone Silent.\" That 4.8 across 134 reviews is doing real work. The Instagram silence is the one thing holding the signal back.\n\nYour full record, including the playbook move we recommended, is here:\nhttps://burgh-quarterly.vercel.app/business/meetcha\n\nIssue 02 publishes next quarter, and rankings move. If you want to track where MeetCha stands when we run the numbers again, subscribe at the link above."
+      "email_1": {
+        "subject": "MeetCha ranked #10 in Pittsburgh Cafes. Read what we said.",
+        "body": "MeetCha is in Issue 01 of Signal Pittsburgh. We rank Pittsburgh small businesses on their social presence each quarter, and your café made the list in the Pittsburgh Cafes family, landing at #10 in the Ones to Watch tier.\n\nHere is the line we published in your diagnosis: \"Fourth In Pittsburgh Cafes On Goodwill Alone. The Social Signal Has Been Silent For Ninety Days.\" That 4.8-star reputation across 134 reviews is real, and it's doing a lot of heavy lifting right now.\n\nYour full record, scorecard, and playbook are live here:\nhttps://burgh-quarterly.vercel.app/business/meetcha\n\nIssue 02 tracks movement, so owners who subscribe will see whether their rank climbs, holds, or slips. You can subscribe at the site. If this is useful to anyone else on your team, feel free to forward it along."
+      },
+      "email_2": {
+        "subject": "MeetCha, your free creator match is still open.",
+        "body": "I sent a note earlier this week about MeetCha's standing in the Pittsburgh cafe scene. Wanted to follow up before the week closes.\n\nHere's the thing: 134 Google reviews puts MeetCha in genuinely strong company, but the Instagram account has been quiet for over ninety days. That gap matters, because creators and customers alike look there first. A single well-made video can do more for foot traffic than a month of posts you have to write yourself.\n\nThat's exactly what Relay is built for. We connect Pittsburgh small businesses with vetted local creators who are actively looking for spots to feature. There's no fee for verified owners, and the first match costs you nothing.\n\nIf you want to see who's available to cover MeetCha this month, the form takes about two minutes: https://run-relay.com/apply?business=meetcha\n\nHope to see MeetCha on someone's feed soon."
+      }
     },
     {
       "business_slug": "millies-homemade-ice-cream",
@@ -181,8 +283,14 @@
       "family_label": "Pittsburgh Sweets",
       "rank_in_family": 2,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/millies-homemade-ice-cream",
-      "subject": "Millie's is #2 in Pittsburgh Sweets. Here's what we found.",
-      "body": "Millie's Homemade Ice Cream is in Issue 01 of Signal Pittsburgh. You ranked #2 in the Pittsburgh Sweets family and landed in our Icons tier, which covers the businesses with the strongest combined footprint across reviews, content, and community reach.\n\nHere's the line we published in your diagnosis: \"Number One In Ice Cream, Carried By 578,000 Plays It Never Posted.\" Twenty-five creators have posted 26 videos about Millie's in the last 90 days. That audience exists. Your scorecard explains what we think you should do with it.\n\nRead your full record here:\nhttps://burgh-quarterly.vercel.app/business/millies-homemade-ice-cream\n\nIssue 02 publishes next quarter, and rankings move. If you want to track where Millie's stands when it drops, subscribe at the link above. Feel free to forward this to anyone on your team."
+      "email_1": {
+        "subject": "Millie's is #2 in Pittsburgh Sweets. Here's what we said.",
+        "body": "Millie's Homemade Ice Cream is featured in Issue 01 of Signal Pittsburgh. You ranked #2 in the Pittsburgh Sweets family, placed in our Icons tier, and earned that position largely on the strength of 1,150 Google reviews at 4.6 stars.\n\nOur published diagnosis: \"Second In Pittsburgh Sweets On Review Depth Alone. TikTok Has Not Caught Up Yet.\" That last part is the story worth watching. One outside creator posted a video explaining your coffee offering exists and pulled nearly 2,000 plays. Nobody at Millie's posted it.\n\nYour full scorecard, including the ranking breakdown and our recommended next move, is here:\n\nhttps://burgh-quarterly.vercel.app/business/millies-homemade-ice-cream\n\nIssue 02 publishes next quarter and rankings will shift. Subscribe at the site to see where Millie's lands when we run the numbers again."
+      },
+      "email_2": {
+        "subject": "Millie's, your free creator match is still open.",
+        "body": "I reached out a few days ago about Signal Pittsburgh's coverage of the local sweets scene. I wanted to follow up because Millie's stood out in a specific way worth mentioning directly.\n\nWith 1,150 Google reviews, you're sitting at number two in Pittsburgh sweets for review depth. That's a real foundation. What hasn't caught up yet is TikTok, and that's actually the easy part to fix.\n\nThrough Relay, Pittsburgh-based creators are actively looking for local businesses to feature this quarter. There's no fee for verified owners, and the first match costs you nothing. You get a creator who films, posts, and puts your shop in front of an audience that's already looking for exactly what Millie's offers.\n\nOne form gets you matched: https://run-relay.com/apply?business=millies-homemade-ice-cream\n\nHope to see Millie's on more screens soon."
+      }
     },
     {
       "business_slug": "mola",
@@ -191,8 +299,14 @@
       "family_label": "Pittsburgh Asian Kitchens",
       "rank_in_family": 1,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/mola",
-      "subject": "Mola ranked #1 in Pittsburgh Asian Kitchens. Here's what we said.",
-      "body": "Mola is in Issue 01 of Signal Pittsburgh. You came in first in the Asian Kitchens family, and your 767 Google reviews at 4.6 stars are a real foundation. We wanted you to see the record we published.\n\nOur diagnosis line: \"Number One In Asian Kitchens, Built On Reviews. The Feed Has Not Kept Pace.\"\n\nTwo posts in the last 30 days puts Instagram distribution at risk. The full scorecard includes the specific move we flagged to restart the signal.\n\nhttps://burgh-quarterly.vercel.app/business/mola\n\nIssue 02 tracks movement, so rankings can shift. If you want to follow where Mola stands next quarter, subscribe at the link above. Feel free to forward this to anyone on your team who handles the account."
+      "email_1": {
+        "subject": "Mola ranked #1 in Pittsburgh Asian Kitchens. Here's what we said.",
+        "body": "Mola is in Issue 01 of Signal Pittsburgh. You ranked first in Pittsburgh Asian Kitchens, and we wanted you to see exactly what we published before you heard it from someone else.\n\nOur diagnosis line reads: \"Leading Pittsburgh Asian Kitchens On Review Depth, While The City Films What Mola Hasn't Yet.\" That last part is the interesting tension. One creator, three thousand TikTok plays, and none of it came from you. Your 767 Google reviews tell a strong story. The Reels column is still blank.\n\nYour full record is here:\nhttps://burgh-quarterly.vercel.app/business/mola\n\nIssue 02 tracks movement from this baseline. If you want to see where Mola lands next quarter, the subscription link is on the site."
+      },
+      "email_2": {
+        "subject": "Mola, your free creator match is still open.",
+        "body": "I sent a note earlier this week about Mola's standing in Pittsburgh's Asian kitchen scene. Wanted to follow up before the week closed out.\n\nHere's the thing that stuck with me: one TikTok creator has already filmed Mola this quarter, pulling nearly 3,000 plays. That's real traction, and it happened without any formal matchmaking. Imagine what a second creator, or a third, could do with the story Mola already has to tell.\n\nThrough Relay, Pittsburgh creators are actively looking for local spots to feature. There's no fee for verified owners, and your first match costs nothing. We handle the vetting, you just say yes or no to the creator.\n\nIf you want to move forward, the form takes about two minutes: https://run-relay.com/apply?business=mola\n\nHope to see Mola on more screens soon."
+      }
     },
     {
       "business_slug": "nan-xiang-soup-dumplings-pittsburgh",
@@ -201,8 +315,14 @@
       "family_label": "Pittsburgh Restaurants",
       "rank_in_family": 1,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/nan-xiang-soup-dumplings-pittsburgh",
-      "subject": "Nan Xiang landed #1 in Pittsburgh Restaurants. Here's what we said.",
-      "body": "Nan Xiang Soup Dumplings is in Signal Pittsburgh Issue 01, ranked first in the Pittsburgh Restaurants family and placed in our Icons tier.\n\nHere is the line we published in your diagnosis: \"Number One On Creator Energy Alone. The Restaurant's Own Feed Has Not Caught Up.\" Thirteen creators produced 36,000 plays about your food in the last 90 days. Your scorecard breaks down exactly where that attention is going, and what one move could bring it back to you.\n\nRead your full record here:\nhttps://burgh-quarterly.vercel.app/business/nan-xiang-soup-dumplings-pittsburgh\n\nIssue 02 publishes next quarter and will track movement across every ranked business. If you want to follow your position over time, subscribe at the site. Feel free to forward this to anyone on your team who handles your social presence."
+      "email_1": {
+        "subject": "Nan Xiang is #1 in Pittsburgh Restaurants. Here's what we said.",
+        "body": "Nan Xiang Soup Dumplings just landed the top spot in Pittsburgh Restaurants in Signal Pittsburgh Issue 01, ranked Icons tier. Your Google presence is exceptional: 1,212 reviews at 4.8 stars is the foundation that put you first.\n\nThere's one thing we flagged that we think you should see. Our published diagnosis reads: \"First In Pittsburgh Businesses, Powered By Reviews. Seven Creators Are On TikTok; Nan Xiang Is Not.\" Seven creators have already filmed here, generating over 26,000 plays, and none of that reach is currently yours to capture.\n\nYour full record, scorecard, and playbook are live here:\n\nhttps://burgh-quarterly.vercel.app/business/nan-xiang-soup-dumplings-pittsburgh\n\nIssue 02 tracks movement, so if anything shifts for Nan Xiang this quarter, you'll want to be subscribed. The subscribe link is on your record page. Feel free to forward this to anyone on your team."
+      },
+      "email_2": {
+        "subject": "7 creators are filming soup dumplings in Pittsburgh. Not yours.",
+        "body": "I reached out a few days ago about Nan Xiang's spot in our Signal Pittsburgh coverage. Wanted to follow up because the numbers are genuinely hard to ignore.\n\nSeven creators filmed Pittsburgh soup dumplings on TikTok this quarter, totaling over 25,000 plays. Nan Xiang is ranked first in its category on Google and has 1,212 reviews to back it up. The audience is clearly there. The creator attention, so far, is going elsewhere.\n\nThrough Relay, verified Pittsburgh business owners get matched with local creators at no fee. The first match is always free, and creators come ready to film. No chasing, no cold outreach on your end.\n\nIf you want a creator filming Nan Xiang this month, the application takes about two minutes: https://run-relay.com/apply?business=nan-xiang-soup-dumplings-pittsburgh\n\nHope to see Nan Xiang in the next round."
+      }
     },
     {
       "business_slug": "oishii-donburi",
@@ -211,8 +331,14 @@
       "family_label": "Pittsburgh Asian Kitchens",
       "rank_in_family": 5,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/oishii-donburi",
-      "subject": "Oishii Donburi is in Issue 01. Here's what we said.",
-      "body": "Oishii Donburi is featured in Issue 01 of Signal Pittsburgh, ranked #5 in the Pittsburgh Asian Kitchens family and placed in our Ones to Watch tier.\n\nThe line we published in your diagnosis: \"First In Pittsburgh Japanese, Built On Word Of Mouth. The Camera Never Turned Around.\" That tension between what people are saying about you and what your channels are showing is exactly what we track. Five creators posted about you in the last 90 days and pulled 27K plays. Your Instagram has been quiet since February.\n\nYour full record, scorecard, and playbook are live now:\nhttps://burgh-quarterly.vercel.app/business/oishii-donburi\n\nIssue 02 publishes next quarter and will show movement. If you want to track where Oishii Donburi lands, subscribe at the link above."
+      "email_1": {
+        "subject": "Oishii Donburi ranked in Issue 01. Here's what we said.",
+        "body": "Oishii Donburi is in Issue 01 of Signal Pittsburgh, ranked #5 in Pittsburgh Asian Kitchens and placed in our Ones to Watch tier.\n\nHere is the diagnosis we published: \"Fifth In Asian Kitchens On Review Depth Alone, The Visual Layer Has Not Arrived Yet.\" Your 385 Google reviews at 4.6 stars gave you real standing in the family. The scorecard explains exactly where the signal stalls, and what one specific move could change it before summer ends.\n\nRead your full record here:\nhttps://burgh-quarterly.vercel.app/business/oishii-donburi\n\nIssue 02 tracks movement, meaning businesses that acted between issues and shifted their rank. If you want to follow where Oishii Donburi lands next quarter, the subscription link is on the site."
+      },
+      "email_2": {
+        "subject": "Following up: a creator could film Oishii Donburi this month.",
+        "body": "A few days ago we sent over Signal Pittsburgh's breakdown of Asian kitchens in the city. Oishii Donburi ranked fifth in the group, backed by 385 Google reviews. That's a real foundation. The part that isn't there yet is the visual content: no TikTok coverage, an Instagram presence that has gone quiet.\n\nThat's exactly the gap Relay was built for. We match Pittsburgh small businesses with vetted local creators who film, post, and bring their own audiences. There's no fee for verified owners, and your first match through Relay costs nothing.\n\nIf you've been thinking about getting your food in front of more people without running ads or managing a shoot yourself, this is a practical way to start.\n\nClaim your match here: https://run-relay.com/apply?business=oishii-donburi\n\nHappy to answer any questions before you fill anything out."
+      }
     },
     {
       "business_slug": "pages",
@@ -221,8 +347,14 @@
       "family_label": "Pittsburgh Sweets",
       "rank_in_family": 1,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/pages",
-      "subject": "Page's ranked #1 in Pittsburgh Sweets. Here's what we said.",
-      "body": "Page's is in Signal Pittsburgh Issue 01. You came in first in the Pittsburgh Sweets family, landing in our Icons tier, and we wanted you to hear it directly.\n\nHere's the line we published in your diagnosis: \"First In Pittsburgh Sweets, Built On 3,145 Reviews. Fourteen Creators Are Posting; Page's Is Not.\" Fourteen creators generated 177,000 plays on TikTok this quarter with no account to tag. That traffic exists. It just has nowhere to land right now.\n\nYour full scorecard, including the ranking, the diagnosis, and the top playbook move, is here:\n\nhttps://burgh-quarterly.vercel.app/business/pages\n\nIssue 02 drops next quarter, and rankings move. If you want to track where Page's stands, subscribe at the link above. And if someone at Page's should see this, feel free to pass it along."
+      "email_1": {
+        "subject": "Page's ranked #1 in Pittsburgh Sweets. Here's what we said.",
+        "body": "Page's is in Issue 01 of Signal Pittsburgh. You came in first in the Pittsburgh Sweets family, landing in our Icons tier, and we wanted you to hear it directly from us.\n\nThe diagnosis we published: \"First In Pittsburgh Sweets, Carried By 3,145 Reviews. Creators Are On TikTok; Page's Still Is Not.\" Four creators generated 87,000 plays this quarter tagging your business. That audience is already there.\n\nYour full scorecard, including your rank, tier, and the one move we flagged, is here:\nhttps://burgh-quarterly.vercel.app/business/pages\n\nIssue 02 publishes next quarter and will track movement across every ranked business. If you want to follow how the standings shift, including your own, the subscribe link is on the site. Feel free to forward this to anyone who helped build what we ranked."
+      },
+      "email_2": {
+        "subject": "Page's, a creator could be filming you this month.",
+        "body": "I reached out a few days ago about Signal Pittsburgh's data on the local sweets scene. Wanted to follow up in case it got buried.\n\nHere's the piece that stood out to us: four TikTok creators have already filmed Pittsburgh sweets spots this quarter, pulling nearly 87,000 plays combined. Page's is sitting at number one in that category by review count, and none of that creator attention has landed on Arlington yet. That's a real gap, and an easy one to close.\n\nThrough Relay, we match Pittsburgh small businesses with vetted local creators who want to feature spots exactly like yours. There's no fee for verified owners, and your first match costs nothing.\n\nIf you want to see who's available and what a feature looks like, you can apply here: https://run-relay.com/apply?business=pages\n\nAppreciate your time, and congrats on 3,145 reviews. That kind of reputation deserves a bigger stage."
+      }
     },
     {
       "business_slug": "pusadees-garden",
@@ -231,8 +363,14 @@
       "family_label": "Pittsburgh Asian Kitchens",
       "rank_in_family": 2,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/pusadees-garden",
-      "subject": "Pusadee's Garden ranked #2 in Pittsburgh Asian Kitchens.",
-      "body": "Pusadee's Garden is in Signal Pittsburgh Issue 01. You ranked #2 in the Pittsburgh Asian Kitchens family, sitting in our Ones to Watch tier, and we wanted you to see exactly what we found.\n\nThe headline from your diagnosis: \"First In Pittsburgh Thai On Review Depth Alone. The City Is Posting, The Garden Is Not.\" Sixteen TikTok creators published 17 videos about you in the last 90 days, totaling 3.4 million plays. That is real momentum, and it is almost entirely coming from other people.\n\nYour full scorecard is here:\nhttps://burgh-quarterly.vercel.app/business/pusadees-garden\n\nIssue 02 publishes next quarter. If you want to track how your signals move, subscribe at the link above. You are welcome to forward this to anyone on your team who manages your presence."
+      "email_1": {
+        "subject": "Pusadee's Garden ranked #2 in Pittsburgh Asian Kitchens.",
+        "body": "Pusadee's Garden is in Issue 01 of Signal Pittsburgh. We track social momentum for Pittsburgh small businesses each quarter, and your restaurant earned a spot in our Ones to Watch tier, ranked second in the Pittsburgh Asian Kitchens family.\n\nHere's the line we published in your diagnosis: \"Second In Pittsburgh Asian Kitchens, Carried By Creator Videos The Restaurant Itself Isn't Making.\" Eight creators posted about you in the last 90 days. That's real signal, and it's worth understanding what it means for where you sit heading into Issue 02.\n\nYour full record is here:\nhttps://burgh-quarterly.vercel.app/business/pusadees-garden\n\nIssue 02 publishes next quarter. If you want to track how your rankings move, you can subscribe at the site. We'd also love for you to share this with anyone who follows what's happening in Pittsburgh food."
+      },
+      "email_2": {
+        "subject": "Pusadee's Garden, your free creator match is ready.",
+        "body": "We sent a note earlier this week about where Pusadee's Garden sits in Pittsburgh's Asian kitchen scene. If it got buried, here's the short version: 8 creators filmed your restaurant this quarter, pulling in over 19,000 plays on TikTok. That content is working. It's just not coming from you.\n\nRelay connects Pittsburgh small businesses with vetted local creators who want to feature spots like yours. No fee for verified owners. The first match costs you nothing, and you approve everything before it goes anywhere.\n\nIf you've thought about getting more consistent content without managing it yourself, this is a pretty low-stakes way to try it.\n\nClaim your match here, takes about two minutes: https://run-relay.com/apply?business=pusadees-garden\n\nThanks for building something worth filming. Hope to connect soon."
+      }
     },
     {
       "business_slug": "reva-modern-indian-cuisine",
@@ -241,8 +379,14 @@
       "family_label": "Pittsburgh Asian Kitchens",
       "rank_in_family": 4,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/reva-modern-indian-cuisine",
-      "subject": "Reva is #4 in Pittsburgh Asian Kitchens. Here's what we found.",
-      "body": "Reva Modern Indian Cuisine is featured in Issue 01 of Signal Pittsburgh. You're ranked #4 in the Pittsburgh Asian Kitchens family, placed in our Ones to Watch tier, and you earned that spot on the strength of something most restaurants would envy.\n\nHere's the line we published: \"Number One In Indian, Carried By 33 Creators. The Restaurant Has Not Posted In 72 Days.\"\n\nThirty-three TikTok creators generated 373K plays for your food in the last 90 days. That's the city doing the work for you. Your scorecard breaks down exactly where that signal is coming from and what one move could compound it:\n\nhttps://burgh-quarterly.vercel.app/business/reva-modern-indian-cuisine\n\nIssue 02 tracks movement, gains, and drops across every ranked business. If you'd like to follow your record through the next quarter, you can subscribe at the link above."
+      "email_1": {
+        "subject": "Reva landed #4 in Pittsburgh Asian Kitchens. Here's what we said.",
+        "body": "Reva Modern Indian Cuisine is in Issue 01 of Signal Pittsburgh. You ranked #4 in the Pittsburgh Asian Kitchens family, and we published a full diagnosis of where the business stands right now.\n\nHere is the line we ran: \"Fourth In Asian Kitchens, Built On Reviews Alone. The Social Layer Has Not Started.\" Your 527 Google reviews at 4.6 stars gave you a real foundation. The gap we flagged is Instagram, which has been quiet since February 14.\n\nYour full record, tier placement, and playbook are here:\nhttps://burgh-quarterly.vercel.app/business/reva-modern-indian-cuisine\n\nIssue 02 tracks movement from this baseline. If you want to see whether the needle shifts by next quarter, the subscription link is on the site. Feel free to forward this to anyone at Reva who handles the feed."
+      },
+      "email_2": {
+        "subject": "Reva, a creator could be filming your spot this month",
+        "body": "A few days ago we sent you a note about Signal Pittsburgh's East Liberty coverage, and we wanted to follow up with something specific to Reva.\n\nHere's what stood out to us: 527 Google reviews is a real foundation. Diners clearly love the food. But your Instagram has gone quiet, and no local creator has covered you on TikTok yet. That means the people most likely to discover Reva right now are not seeing it.\n\nRelay connects Pittsburgh small businesses with vetted local creators who film, post, and share, no fee for verified owners. The first match costs you nothing, and we handle the pairing.\n\nIf you want to get Reva in front of a new audience this month, you can apply here in under two minutes: https://run-relay.com/apply?business=reva-modern-indian-cuisine\n\nHappy to answer any questions if you want to reply directly."
+      }
     },
     {
       "business_slug": "spot-of-coffee",
@@ -251,8 +395,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 2,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/spot-of-coffee",
-      "subject": "Spot of Coffee ranked #2 in Pittsburgh Cafes. Here's what we said.",
-      "body": "Spot of Coffee is in Issue 01 of Signal Pittsburgh. You came in #2 among Pittsburgh Cafes and landed in our Icons tier, which covers the top performers in each family.\n\nHere is the line we published in your diagnosis: \"Second In Pittsburgh Coffee, Powered By Creator Momentum. The Google Listing Has No Website To Close The Loop.\" Twenty-four creators made 31 videos about your shop in the last 90 days. That drove 278K plays. The one gap we flagged is small, a linked website on your Google profile.\n\nYour full scorecard, including your rank, score breakdown, and the complete playbook, is here:\n\nhttps://burgh-quarterly.vercel.app/business/spot-of-coffee\n\nIssue 02 publishes next quarter. Rankings shift. If you want to track your movement, subscribe at the link above."
+      "email_1": {
+        "subject": "Spot of Coffee ranked #2 in Pittsburgh Cafes. Here's what we said.",
+        "body": "Spot of Coffee is in Issue 01 of Signal Pittsburgh. You ranked #2 in the Pittsburgh Cafes family and landed in our Icons tier, which covers the top performers across the city.\n\nHere's the line we published in your diagnosis: \"Second In Pittsburgh Cafes, Powered By Creator Buzz It Has No TikTok To Catch.\" Seven creators drove 31K plays for you in the last 90 days. That's a real signal, and we wanted you to see how it reads on paper.\n\nYour full scorecard, including your rank, tier, and top playbook move, is here:\nhttps://burgh-quarterly.vercel.app/business/spot-of-coffee\n\nIssue 02 tracks movement, so if anything shifts for Spot of Coffee, you'll see it. Subscribe at the link above to stay in the record."
+      },
+      "email_2": {
+        "subject": "Spot of Coffee, your free creator match is ready.",
+        "body": "I reached out a few days ago about Signal Pittsburgh's ranking data, and I wanted to follow up before the week got away from us.\n\nHere's the detail I keep coming back to: seven TikTok creators filmed Pittsburgh cafes this quarter, pulling in over 30,000 plays combined, and Spot of Coffee isn't in that footage. You're sitting at number two in your category, with real review depth behind you. That's exactly the kind of business creators on Relay's network want to feature.\n\nRelay connects Pittsburgh small businesses with vetted local creators at no fee for verified owners. The first match costs you nothing, and you stay in control of what gets made.\n\nIf you want to see who's available to feature Spot of Coffee this month, the form takes about two minutes: https://run-relay.com/apply?business=spot-of-coffee\n\nThanks for running a place worth talking about."
+      }
     },
     {
       "business_slug": "square-cafe",
@@ -261,8 +411,14 @@
       "family_label": "Pittsburgh Restaurants",
       "rank_in_family": 2,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/square-cafe",
-      "subject": "Square Cafe ranked #2 in Pittsburgh Restaurants. Here's what we said.",
-      "body": "Square Cafe is in Issue 01 of Signal Pittsburgh. You came in #2 among Pittsburgh Restaurants and landed in our Icons tier, which puts you in rare company.\n\nIn our published diagnosis, we wrote: \"Number One In Pittsburgh Brunch, Built On Reviews. The Engagement Rate Is The Outstanding Bill.\" Thirteen TikTok creators covered you in the last 90 days and drove 317K plays. That kind of third-party energy is significant. Your scorecard shows exactly where the gap is, and what we think closes it.\n\nRead your full record here:\nhttps://burgh-quarterly.vercel.app/business/square-cafe\n\nIssue 02 publishes next quarter. Rankings move. If you want to track where Square Cafe stands when it does, you can subscribe at the link above."
+      "email_1": {
+        "subject": "Square Cafe ranked #2 in Pittsburgh Restaurants. Here's what we said.",
+        "body": "Square Cafe is in Issue 01 of Signal Pittsburgh. You ranked #2 in the Pittsburgh Restaurants family and landed in our Icons tier, which puts you among a very short list.\n\nHere's the line we published in your diagnosis: \"Number Two In Pittsburgh Businesses, Built On Review Depth. The Creator Layer Has Barely Shown Up.\" That tension between your review depth and your creator footprint is exactly what the full record gets into.\n\nYour scorecard is live here:\nhttps://burgh-quarterly.vercel.app/business/square-cafe\n\nIssue 02 publishes next quarter, and rankings move. If you want to track where Square Cafe stands when it drops, the subscription link is on the site. We'd also be glad if you passed this along to anyone on your team who watches your channels."
+      },
+      "email_2": {
+        "subject": "Square Cafe, your free creator match is still open",
+        "body": "Circling back on the note we sent a few days ago about Signal Pittsburgh's coverage of East Liberty's restaurant scene. Square Cafe came up because of something pretty hard to ignore: 1,839 Google reviews puts you at number two in Pittsburgh restaurants, which is a real foundation. The question we kept coming back to is whether the creator side has caught up yet.\n\nRight now, one TikTok creator has filmed Square Cafe this quarter. One. For a spot with this much goodwill already built into the community, that feels like a gap worth closing.\n\nThrough Relay, Pittsburgh-based creators are actively looking for local businesses to feature, and there's no fee for verified owners. The first match costs you nothing, and we handle the vetting.\n\nIf you want to see who's available and what a feature would look like: https://run-relay.com/apply?business=square-cafe\n\nThanks for building what you've built. Hope to connect you with someone great."
+      }
     },
     {
       "business_slug": "tazza-doro",
@@ -271,8 +427,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 4,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/tazza-doro",
-      "subject": "Tazza D'Oro just ranked #4 in Pittsburgh Cafes.",
-      "body": "Tazza D'Oro is in Issue 01 of Signal Pittsburgh. We rank Pittsburgh small businesses on social media each quarter, and your cafe landed #4 in Pittsburgh Cafes, Ones to Watch tier.\n\nHere's the line we published in your diagnosis: \"First In Pittsburgh Cafes On Review Depth. The Camera Has Not Followed Yet.\" Your 573 Google reviews put you ahead of nearly everyone in the family. The gap we flagged is on the video side, specifically reels. The Amaretto Latte and your seasonal muffins are already showing up in written reviews. They're ready for the camera.\n\nYour full scorecard is here:\nhttps://burgh-quarterly.vercel.app/business/tazza-doro\n\nIssue 02 publishes next quarter. If you want to track your movement, subscribe at the link above and we'll send it directly to you."
+      "email_1": {
+        "subject": "Tazza D'Oro ranked #4 in Pittsburgh Cafes. Here's what we said.",
+        "body": "Tazza D'Oro is in Issue 01 of Signal Pittsburgh. We track Pittsburgh small businesses on social media every quarter, and your cafe made our Pittsburgh Cafes family rankings for Highland Park.\n\nYour 573 Google reviews put you first in the family on review depth. That's a real signal. Our published diagnosis reads: \"First In Pittsburgh Cafes On Review Depth, But Reels And TikTok Have Yet To Arrive.\" The full scorecard breaks down where that gap is and what would move the number.\n\nhttps://burgh-quarterly.vercel.app/business/tazza-doro\n\nIssue 02 tracks movement from this baseline. If you want to see whether the needle shifts, subscribing keeps your record on your radar each quarter. Forward this to anyone on your team who touches your social presence."
+      },
+      "email_2": {
+        "subject": "Tazza D'Oro, your free creator match is still open.",
+        "body": "I reached out a few days ago about Signal Pittsburgh's coverage of Highland Park cafes. Wanted to follow up before the opportunity moved on.\n\nHere's the one thing that caught my eye: Tazza D'Oro has 573 Google reviews, which puts you at the top of Pittsburgh cafes on review depth. That's real trust built over real time. The gap is on the video side. One TikTok creator filmed your space this quarter, pulling 1,661 plays. There's more room there than that number suggests.\n\nRelay matches Pittsburgh small businesses with vetted local creators who want to film spots worth featuring. There's no fee for verified owners, and your first match costs nothing.\n\nIf you want to see who's available to feature Tazza D'Oro, the form takes about two minutes: https://run-relay.com/apply?business=tazza-doro\n\nThanks for building something worth writing about."
+      }
     },
     {
       "business_slug": "the-butterwood-bake-consortium",
@@ -281,8 +443,14 @@
       "family_label": "Pittsburgh Cafes",
       "rank_in_family": 5,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/the-butterwood-bake-consortium",
-      "subject": "Butterwood ranked #5 in Pittsburgh Cafes. Here's what we found.",
-      "body": "The Butterwood Bake Consortium is in Issue 01 of Signal Pittsburgh. We rank small businesses across the city on social media presence, and you made our Ones to Watch tier in the Pittsburgh Cafes family.\n\nHere's the line we published about you: \"Second In Cafes, Carried By 600K Plays The Business Never Made.\" Twenty creators posted about Butterwood in the last 90 days. That audience exists. It just didn't start with you.\n\nYour full scorecard, including the diagnosis and our top recommended move, is here:\nhttps://burgh-quarterly.vercel.app/business/the-butterwood-bake-consortium\n\nIssue 02 publishes next quarter and rankings will shift. If you want to track where Butterwood stands when it does, you can subscribe at the link above. Feel free to forward this to anyone on your team who handles your online presence."
+      "email_1": {
+        "subject": "Butterwood ranked #5 in Pittsburgh Cafes. Here's what we said.",
+        "body": "The Butterwood Bake Consortium is in Issue 01 of Signal Pittsburgh. We rank Pittsburgh small businesses on their social media presence every quarter, and your café made the Ones to Watch tier in the Pittsburgh Cafes family.\n\nHere's the line we published in your diagnosis: \"The Instagram Has Been Quiet For 515 Days.\" Your Google reputation is genuinely strong, 736 reviews at 4.6 stars, and TikTok creators are still finding you. The pastry work is doing the heavy lifting. The full record is here:\n\nhttps://burgh-quarterly.vercel.app/business/the-butterwood-bake-consortium\n\nIssue 02 publishes next quarter, and rankings move. If you want to track where Butterwood stands when we run the next pull, you can subscribe at the site. Feel free to forward this to anyone on your team who handles the online side."
+      },
+      "email_2": {
+        "subject": "Following up: a creator could film Butterwood this month",
+        "body": "I sent a note about Butterwood Bake Consortium a few days ago and wanted to circle back, because the detail that keeps standing out is this: three TikTok creators filmed your space this quarter without any coordination from you. That's genuine pull.\n\nThe Instagram, though, has been quiet for over 500 days. That gap is exactly where Relay comes in. We connect Pittsburgh small businesses with vetted local creators who are actively looking for spots to feature, and there's no fee for verified owners. The first match is always free.\n\nYou'd be paired with a creator who fits your aesthetic, visits on their own schedule, and produces content you can use. No contracts, no awkward pitching, no cost to get started.\n\nIf you want to see who's available: https://run-relay.com/apply?business=the-butterwood-bake-consortium\n\nGlad to answer any questions before you apply."
+      }
     },
     {
       "business_slug": "treat-ice-cream-and-liege-waffles",
@@ -291,8 +459,14 @@
       "family_label": "Pittsburgh Sweets",
       "rank_in_family": 7,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/treat-ice-cream-and-liege-waffles",
-      "subject": "Treat ranked #7 in Pittsburgh Sweets. Here's what we said.",
-      "body": "Treat is in Issue 01 of Signal Pittsburgh. We cover small businesses across the city by neighborhood and category, and your shop earned a spot in the Pittsburgh Sweets family at #7, Ones to Watch tier.\n\nHere is the line we published in your diagnosis: \"Third In Ice Cream On Borrowed Momentum. The Shop Has Not Posted In 200 Days.\" That tension is real. Thirty-two creators posted about you in the last 90 days, driving 1.1 million TikTok plays, while your own Instagram has been quiet since October. The audience is there. The account just needs to meet it.\n\nYour full scorecard, including your ranking, metrics, and top recommended move, is here:\n\nhttps://burgh-quarterly.vercel.app/business/treat-ice-cream-and-liege-waffles\n\nIssue 02 tracks movement, so if anything shifts before next quarter, your record updates. Subscribe to follow your standing."
+      "email_1": {
+        "subject": "Treat ranked #7 in Pittsburgh Sweets. Here's what we said.",
+        "body": "Treat is in Issue 01 of Signal Pittsburgh. We track social presence and reputation for small businesses across the city, and your shop earned a spot in our Pittsburgh Sweets family ranking this quarter.\n\nHere is the line we published in your diagnosis: \"Seventh In Sweets, Carried By 623 Reviews. The Feed Has Been Quiet For Seven Months.\" Your Google reputation is genuinely strong. The Instagram silence is the one thing holding the score down, and we noted it in the record.\n\nYour full scorecard is live here:\nhttps://burgh-quarterly.vercel.app/business/treat-ice-cream-and-liege-waffles\n\nIssue 02 publishes next quarter, and scores will move. If you want to track where Treat lands, subscribing at the link above keeps you in the loop. Feel free to forward this to anyone on your team who handles the feed."
+      },
+      "email_2": {
+        "subject": "Following up: a creator could film Treat this month, no fee",
+        "body": "I sent a note a few days ago about where Treat lands in Pittsburgh's sweets scene. Wanted to follow up before the week gets away.\n\nHere's the part that stood out to us: 623 Google reviews is a genuinely strong foundation, and your Instagram has been quiet for about seven months. That's a gap worth closing, especially heading into warmer weather when people are actively searching for exactly what you make.\n\nRelay connects Pittsburgh small businesses with vetted local creators who want to film and post about spots like yours. There's no fee for verified owners, and your first creator match costs you nothing.\n\nIf you want to see who's available to feature Treat, the form takes about two minutes: https://run-relay.com/apply?business=treat-ice-cream-and-liege-waffles\n\nHappy to answer any questions before you apply."
+      }
     },
     {
       "business_slug": "waffallonia",
@@ -301,8 +475,14 @@
       "family_label": "Pittsburgh Sweets",
       "rank_in_family": 5,
       "scorecard_url": "https://burgh-quarterly.vercel.app/business/waffallonia",
-      "subject": "Waffallonia is in Issue 01. Here's what we said.",
-      "body": "Waffallonia made it into Issue 01 of Signal Pittsburgh. You ranked #5 in the Pittsburgh Sweets family and landed in the Icons tier, which puts you in the top tier of dessert businesses we tracked across the city.\n\nHere's the line we published in your diagnosis: \"First In Dessert, Fifth In The Family. The Reviews Are There; The Feed Is Not.\" Your 605 Google reviews speak for themselves. The Instagram signal is the one place you have real room to move.\n\nYour full scorecard, including your breakdown and the playbook move we flagged, is here:\n\nhttps://burgh-quarterly.vercel.app/business/waffallonia\n\nIssue 02 publishes next quarter, and rankings shift. If you want to track your movement, subscribe at the site so we can let you know when it drops."
+      "email_1": {
+        "subject": "Waffallonia ranked #5 in Pittsburgh Sweets. Here's what we said.",
+        "body": "Waffallonia is in Issue 01 of Signal Pittsburgh. We rank Pittsburgh small businesses on social media each quarter, and your place landed in the Icons tier of the Pittsburgh Sweets family, driven almost entirely by 605 Google reviews and a 4.6-star average.\n\nOur published diagnosis reads: \"Fifth In Pittsburgh Sweets On Review Depth Alone. The Feed Has Gone Silent.\"\n\nThat second sentence is the reason we're writing. Your scorecard lays out exactly what we noticed, and the one move we think reopens the signal completely:\n\nhttps://burgh-quarterly.vercel.app/business/waffallonia\n\nIssue 02 publishes next quarter, and rankings shift. If you want to track where Waffallonia moves, you can subscribe at the link above and we'll send the update the day it drops."
+      },
+      "email_2": {
+        "subject": "Waffallonia, your free creator match is still waiting.",
+        "body": "I reached out a few days ago about Waffallonia's spot in our Pittsburgh Sweets coverage. Didn't want it to get buried.\n\nHere's the thing: 605 Google reviews puts you fifth in the city for this category, and that's real social proof. But your Instagram has gone quiet, and no TikTok creator has featured you yet. That's a gap worth closing, especially heading into the kind of season when people are actively searching for exactly what you make.\n\nRelay connects Pittsburgh small businesses with vetted local creators who are genuinely looking for spots to feature. There's no fee for verified owners, and your first match costs nothing. A creator comes to you, films your space and your product, and publishes content you don't have to produce yourself.\n\nOne short form is all it takes: https://run-relay.com/apply?business=waffallonia\n\nHope to see Waffallonia back in the feed soon."
+      }
     }
   ]
 }
