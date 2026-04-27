@@ -10,6 +10,7 @@ import {
   type SearchableBusiness,
 } from "@/components/BusinessSearch";
 import { loadAllListArticles } from "@/lib/data/load-list";
+import { GetFeaturedCTA } from "@/components/GetFeaturedCTA";
 
 /**
  * Homepage, editorial table of contents for the quarterly issue.
@@ -234,6 +235,14 @@ export default function Home() {
               );
             })}
           </ol>
+        </Reveal>
+
+        {/* ── GET FEATURED CTA, generic homepage variant ───────
+            Sits between the Top 5 leaderboard and the Series cards
+            so a Pittsburgh business owner arriving via the front door
+            sees the offer without needing to click into a scorecard. */}
+        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
+          <GetFeaturedCTA variant="compact" />
         </Reveal>
 
         {/* ── BEST ON SOCIAL SERIES ─────────────────────────────
