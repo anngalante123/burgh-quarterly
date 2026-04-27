@@ -51,8 +51,8 @@ export default function Home() {
   const allArticles = loadAllListArticles();
   const FEATURED_SLUGS = [
     "best-creator-posts-about",
-    "best-by-posts",
-    "underrated-spring-2026",
+    "most-creative-posts",
+    "highest-engagement-rate-posts",
   ];
   const featuredArticles = FEATURED_SLUGS
     .map((s) => allArticles.find((a) => a.slug === s))

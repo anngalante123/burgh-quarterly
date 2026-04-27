@@ -25,8 +25,10 @@ export type ListArticleItem = {
 };
 
 /** Item shape for "creator post" list articles (kind: "posts").
- *  Used by both the TikTok ABOUT list and the Instagram BY list. The
- *  `platform` field defaults to "tiktok" when absent (back-compat). */
+ *  Used by the TikTok ABOUT list, the IG by-engagement list, and the
+ *  IG most-creative list. Each list adds optional fields it cares about
+ *  (`creativity_score` + `why` for the creative list, `engagement_rate`
+ *  + `followers` for the engagement-rate list). */
 export type PostArticleItem = {
   rank: number;
   kind: "post";
@@ -49,6 +51,24 @@ export type PostArticleItem = {
   neighborhood: string;
   /** "Image" | "Sidecar" | "Video" for IG posts, undefined for TikTok. */
   ig_type?: string;
+  /** Most-creative list only: composite creativity score 1-10. */
+  creativity_score?: number;
+  /** Most-creative list only: per-dimension breakdown. */
+  scores?: {
+    visual_concept: number;
+    caption_craft: number;
+    format_fit: number;
+    surprise: number;
+    why: string;
+  };
+  /** Most-creative list only: editorial commentary on why this scored. */
+  why?: string;
+  /** Engagement-rate list only: total engagement / followers, 0.05 = 5%. */
+  engagement_rate?: number;
+  /** Engagement-rate list only: total engagement signal. */
+  total_engagement?: number;
+  /** Engagement-rate list only: follower count at scrape time. */
+  followers?: number;
 };
 
 export type ListArticle = {
