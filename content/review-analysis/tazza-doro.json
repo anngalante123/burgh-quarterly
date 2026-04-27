@@ -2,10 +2,16 @@
   "slug": "tazza-doro",
   "themes": [
     {
-      "phrase": "consistent drinks and staff",
-      "frequency": 5,
+      "phrase": "staff warmth and consistency",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Fabulous staff and consistent drinks."
+      "exampleQuote": "Everyone is always so nice when I go here."
+    },
+    {
+      "phrase": "standout specialty drinks",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "The Amaretto & Brown Sugar Latte on MLK Day might be thee best cup of coffee I've ever had."
     },
     {
       "phrase": "seasonal baked goods",
@@ -14,57 +20,51 @@
       "exampleQuote": "Wish they had the zucchini muffins year-round, but there are lots of other great baked goods."
     },
     {
-      "phrase": "barista-featured specialty drinks",
+      "phrase": "coffee price versus interior",
       "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had."
-    },
-    {
-      "phrase": "price-to-interior mismatch",
-      "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "The interior leaves something to be desired for the price of the coffee."
     },
     {
-      "phrase": "matcha and tea selection",
+      "phrase": "tea and food range",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Loved the cinnamon plum tea and was impressed by the number of tasty food options."
+      "exampleQuote": "Impressed by the number of tasty food options."
     }
   ],
-  "notable_quote": "The Barista featured drink (Amaretto & Brown Sugar Latte) on MLK Day might be thee best cup of coffee I've ever had.",
-  "sentiment_summary": "Reviewers consistently praise the staff warmth, drink consistency, and specialty rotating offerings, while the occasional dissenter points to a gap between the price point and the physical space.",
-  "quarter_narrative": "Tazza D'Oro opened Spring 2026 sitting atop the Pittsburgh Cafes family rank with 573 Google reviews, 74 percent of them five-star, and a profile complete enough that a customer can find, call, and navigate to the shop without leaving the search results page. The one TikTok filmed here this quarter came not from a coffee creator but from a political campaign using the cafe as a petition stop, which says something about how embedded the shop is in Highland Park daily life, even if the platform coverage remains thin. Allegheny Coffee and Tea Exchange leads the family this issue on social momentum, and that gap is exactly where Tazza D'Oro's rank is most exposed heading into summer.",
-  "tldr_read": "Top-tier review depth and a complete conversion path, but Instagram engagement is soft and TikTok presence is effectively nonexistent. Ones to Watch, #1 in Pittsburgh Cafes.",
-  "tldr_meaning": "The review foundation is solid and the conversion path is already maxed out; the rank ceiling is now determined almost entirely by whether the social signals, Instagram engagement and TikTok creator volume, start moving.",
+  "notable_quote": "The Amaretto & Brown Sugar Latte on MLK Day might be thee best cup of coffee I've ever had.",
+  "sentiment_summary": "Reviewers consistently praise the staff, specialty drink execution, and range of food options; the recurring friction is the interior feeling underbuilt relative to the price point.",
+  "quarter_narrative": "Tazza D'Oro spent Spring 2026 as a genuinely well-reviewed Highland Park institution, 573 Google reviews at 74% five-star, posting eleven times to Instagram in thirty days, and showing up reliably across every conversion signal a customer needs to find and visit a cafe. The one TikTok tagged to the business this quarter, a campaign stop video by a local political candidate, pulled 1,661 plays and illustrates the gap plainly: the city's creator layer hasn't arrived here yet, and the cafe's own content, active on Instagram but producing zero Reels in thirty days, isn't pulling them in. Allegheny Coffee and Tea Exchange leads this family on social momentum, and the distance between that signal and Tazza D'Oro's is where the rank story lives going into summer.",
+  "tldr_read": "Strong reviews and a perfect conversion setup, but no Reels and near-zero TikTok footprint. Ones to Watch, number one in Pittsburgh Cafes.",
+  "tldr_meaning": "The review and conversion signals are already performing at or near the family ceiling; the rank climbs when the Instagram Reels cadence starts and TikTok creators follow.",
   "diagnosis_pullquote": {
-    "line": "First In Pittsburgh Cafes On Review Depth, Trailing Allegheny On Every Social Signal.",
-    "highlight": "Every Social Signal"
+    "line": "First In Pittsburgh Cafes On Review Depth, But Reels And TikTok Have Yet To Arrive.",
+    "highlight": "Reels And TikTok"
   },
   "playbook": [
     {
-      "headline": "Start posting Reels, not just stills",
-      "action": "Tazza posted 11 times in 30 days but zero Reels; even two short videos per week would directly address the engagement rate sitting at 0.79 percent.",
+      "headline": "Start posting Reels, not just photos",
+      "action": "Zero Reels in the last 30 days leaves the account invisible to Instagram's discovery feed; even two short-form videos per week would change the reach calculation meaningfully.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+ENGAGEMENT LIFT"
+      "impact_label": "+DISCOVERY REACH"
     },
     {
-      "headline": "Build a TikTok presence before creators do it for you",
-      "action": "One creator filmed here this quarter and pulled 1,661 plays without any input from the business; a shop account claiming that audience costs nothing to start.",
+      "headline": "Build a TikTok presence before others define it",
+      "action": "One creator posted one video this quarter, a campaign stop, generating 1,661 plays with no follow-through from the business; a TikTok account would let Tazza D'Oro own that frame.",
       "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "UNLOCK CREATOR TIER"
+      "impact_label": "UNLOCK CREATORS"
     },
     {
-      "headline": "Document the rotating barista specials visually",
-      "action": "The Amaretto Brown Sugar Latte generated the strongest review quote in the set; those drinks disappear without a photo or video record that builds the visual catalog past 244 images.",
+      "headline": "Push seasonal drinks harder on Google photos",
+      "action": "The Amaretto and Brown Sugar Latte already drew the strongest review language this quarter; a dedicated photo push in the Food and Drink category would deepen the visual catalog past its current 244-photo spread.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+VISUAL CATALOG DEPTH"
+      "impact_label": "+VISUAL SIGNAL"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T23:40:31.210Z",
+  "analyzed_at": "2026-04-27T00:53:15.395Z",
   "model": "claude-sonnet-4-6"
 }

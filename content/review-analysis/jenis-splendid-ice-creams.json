@@ -2,69 +2,69 @@
   "slug": "jenis-splendid-ice-creams",
   "themes": [
     {
-      "phrase": "unique seasonal flavors",
+      "phrase": "unique rotating flavors",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "I always make sure to try their new flavors because it always surprises me"
+      "exampleQuote": "I always make sure to try their new flavors, because it always surprises me!"
     },
     {
       "phrase": "fresh waffle cones",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "I loved the waffle cones which they make fresh throughout the day"
+      "exampleQuote": "I loved the waffle cones which they make fresh throughout the day."
     },
     {
       "phrase": "portion size frustration",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "the portion of these two standards is mind boggling... never received a portion so small for $7"
+      "exampleQuote": "These portions definitely need to be reevaluated."
     },
     {
-      "phrase": "price versus value",
+      "phrase": "premium price point",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Pretty delicious just super expensive"
+      "exampleQuote": "Pretty delicious just super expensive."
     },
     {
-      "phrase": "dog-friendly visit",
+      "phrase": "pet-friendly visit",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Me and my dog's favorite spot, I always order him a small scoop of vanilla with waffle wedge"
+      "exampleQuote": "Me and my dog's favorite spot, I always order him a small scoop of vanilla with waffle wedge."
     }
   ],
   "notable_quote": "All the flavors tasted fresh and have robust flavors, and they allow you to try any flavor before you pick one out.",
-  "sentiment_summary": "Reviewers consistently praise the seasonal flavor rotation and made-fresh waffle cones, but a recurring undercurrent questions whether the portion sizes hold up against a $7 price point, particularly for longtime customers who know what the brand delivers elsewhere.",
-  "quarter_narrative": "Thirty-five Pittsburgh creators filmed Jeni's this quarter, and one of them hit a million plays on a single spring flavor-lineup video without any coordination from the business itself. That is the story of Jeni's in Larimer right now: an enormous, unmanaged TikTok footprint generating over 1.15 million views, while the business has no TikTok account of its own to catch any of that attention. On Instagram the account is active and verified, but a 0.49 percent engagement rate on a national brand handle suggests the local Pittsburgh signal is getting lost in the broader corporate feed. In the Pittsburgh Sweets family, Jeni's sits third behind Page's, whose social momentum is the defining story of this issue; the gap between them is less about product and more about where the city's conversation is actually happening.",
-  "tldr_read": "Dominant TikTok creator coverage and a perfect conversion path, but no TikTok account of its own and below-median review sentiment. Icons of the Burgh, third in Pittsburgh Sweets.",
-  "tldr_meaning": "The creator signal is already doing the heavy lifting; the rank climbs if review volume deepens and the business captures even a fraction of the TikTok footprint through its own account.",
+  "sentiment_summary": "Reviewers consistently praise the flavor quality, the rotating seasonal menu, and the made-fresh waffle cones; the recurring friction is value perception, specifically portion sizes that feel too small relative to the price.",
+  "quarter_narrative": "Three Pittsburgh creators put Jeni's on TikTok this quarter with just over 6,000 total plays, and the business has no TikTok account of its own to catch any of that momentum. The Instagram presence is real and active, 12 posts and 4 reels in 30 days, but a 0.49% engagement rate on a verified national brand account is a signal that reach is outpacing connection. In the Pittsburgh Sweets family, Jeni's holds third overall behind Page's, whose social momentum is the story of the issue. The rank climbs if the TikTok gap closes and if the portion-size complaint stops appearing in the top reviews that new customers read first.",
+  "tldr_read": "Active Instagram, no TikTok presence, and a sentiment score that trails the family median; third in Pittsburgh Sweets, Icons of the Burgh tier.",
+  "tldr_meaning": "The conversion path is airtight and Instagram is moving, but sentiment is dragging below the family median and TikTok is entirely creator-dependent with no owned account to hold the ground.",
   "diagnosis_pullquote": {
-    "line": "Third In Sweets, Carried By 35 Creators On A Platform Where Jeni's Has No Account.",
-    "highlight": "Jeni's Has No Account"
+    "line": "Third In Pittsburgh Sweets, With Creators On TikTok And No Account To Meet Them.",
+    "highlight": "No Account To Meet"
   },
   "playbook": [
     {
-      "headline": "Claim a TikTok presence in Pittsburgh",
-      "action": "35 creators have posted 37 videos totaling 1.15 million plays this quarter; a brand account captures that tag traffic rather than losing it entirely.",
-      "signal": "momentum",
-      "priority": "high",
-      "impact_label": "CAPTURE 1.15M VIEWS"
-    },
-    {
-      "headline": "Address the portion-price friction publicly",
-      "action": "Two separate reviewers flagged small scoops at $7 as a sticking point; a clear, posted portioning standard or value bundle closes that negative review loop.",
+      "headline": "Address the portion complaint directly",
+      "action": "The two most visible critical reviews both cite small portions at Bakery Square; one response on Google can shift the sentiment trajectory before it compounds.",
       "signal": "community_spark",
-      "priority": "medium",
+      "priority": "high",
       "impact_label": "+6 SENTIMENT PTS"
     },
     {
-      "headline": "Build out the local photo catalog",
-      "action": "450 Google photos across 6 tagged categories is solid, but Videos and Vibe remain thin; seasonal reels tied to the spring lineup would fill both at once.",
+      "headline": "Claim a TikTok account, even a minimal one",
+      "action": "Three creators have already produced 6,049 plays this quarter with no owned account to link back to; a profile with a bio and location tag captures that traffic.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "UNLOCK CREATOR LOOP"
+    },
+    {
+      "headline": "Convert Instagram reels into engagement signals",
+      "action": "12 posts and 4 reels in 30 days is solid volume, but 0.49% engagement suggests the content isn't prompting replies; flavor-reveal posts with a direct question in the caption are a tested format for this category.",
       "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+1 VISUAL RANK"
+      "impact_label": "+ENGAGEMENT RATE"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T23:34:00.369Z",
+  "analyzed_at": "2026-04-27T00:46:37.021Z",
   "model": "claude-sonnet-4-6"
 }

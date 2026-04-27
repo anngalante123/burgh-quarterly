@@ -3,143 +3,109 @@
   "title": "The Pittsburgh Cafes Creators Won't Stop Filming",
   "subtitle": "Coffee, tea, juice, ranked by creator pickup",
   "angle": "Pittsburgh's coffee, tea, and juice scene through the lens of TikTok creator coverage. The cafes the city keeps posting about, even when the cafes themselves aren't.",
-  "intro": "Pittsburgh's cafe scene has a social media problem, and it cuts both ways. Some of the city's most-filmed spots have no TikTok presence at all. 24 Carrot Juice in Bloomfield pulled 1.45 million creator plays this quarter without posting a single video of its own. Dobrá Tea in Squirrel Hill has ten creators actively documenting the place; the business has no account to receive any of it. The signal is loud. The source isn't broadcasting.\n\nWhat this list measures is appetite, specifically, what creators reach for when they're deciding what to film. Allegheny Coffee and Tea Exchange in the Strip District ranks first on the strength of both creator volume and a history the city keeps rediscovering, a combination that proved more durable than any single viral moment. Ka-Fair Coffee and Cakery in Morningside ranks third on the back of community posting that outpaces the business's own output by a significant margin.\n\nThe pattern running through this quarter's rankings is straightforward: creator attention is not waiting for permission. In Issue 02, we'll track whether any of these businesses close that gap, and what happens to their rankings if they do.",
+  "intro": "The cafes winning Pittsburgh's creator economy right now are not necessarily the ones asking for it. Spot of Coffee in Shadyside has climbed to second in this quarter's rankings without a TikTok account to its name, pulled there entirely by outside creators who keep returning to film it. Tazza D'Oro in Highland Park sits first on review depth across the board, a volume of written opinion that most city cafes would spend years building, yet Reels and TikTok have barely touched it. These are two very different gaps, and both of them say something about where Pittsburgh's cafe culture actually lives versus where the cafes themselves have chosen to show up.\n\nAllegheny Coffee and Tea Exchange leads on the combination of review depth and Instagram presence, which makes it the closest thing this list has to a fully realized signal. Everyone else is leaving something on the table.\n\nWhat changes when warmer weather arrives and foot traffic shifts east and north is the question this ranking will revisit in summer. Issue 02 will track whether the outdoor season closes any of these gaps, or simply hands more real estate to the creators already doing the work.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "24-carrot-juice",
-      "name": "24 Carrot Juice",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Bloomfield",
-      "descriptor": "Eighth In Pittsburgh Cafes, Powered By 1.45 Million Creator Plays On A Platform Where It Has No Account.",
-      "descriptor_highlight": "1.45 Million Creator Plays",
-      "stat_line": "519 reviews · 5★ · 30 creators · 1.5M plays · 3 IG posts/30d",
-      "featured_tiktok": {
-        "author": "amalkzad",
-        "plays": 671100,
-        "url": "https://www.tiktok.com/@amalkzad/video/7625691066913656078",
-        "caption": "Carrot juice glow up ✨ @Ninja Kitchen \n\n•8 carrots\n• 1 piece of beet\n• Ginger (to taste)\n• Turmeric (to taste)\n• 1 apple\n• 1 orange\n• 1 lemon\n• Coconut water 500 ml\n• Water\n• Optional: a pinch of black pepper"
-      },
-      "playbook_top_move": "Claim the TikTok audience that already exists. Open a TikTok business account and post one short video per week; 30 creators have already seeded 1.45 million plays with no account to absorb them."
-    },
-    {
-      "rank": 2,
-      "business_slug": "allegheny-coffee-tea-exchange",
-      "name": "Allegheny Coffee & Tea Exchange",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Strip District",
-      "descriptor": "First In Pittsburgh Cafes, Carried By Creator Volume And A History The City Keeps Rediscovering.",
-      "descriptor_highlight": "City Keeps Rediscovering",
-      "stat_line": "924 reviews · 4.8★ · 31 creators · 607K plays · 12 IG posts/30d",
-      "featured_tiktok": {
-        "author": "pittsburghpg",
-        "plays": 127500,
-        "url": "https://www.tiktok.com/@pittsburghpg/video/7607959834289343757",
-        "caption": "HBO Max's award-winning medical drama “The Pitt” does a lot of things to ground itself in Pittsburgh.\nIts emergency room is based on that of Allegheny General Hospital on the North Side. There are a variety of local references, including on"
-      },
-      "playbook_top_move": "Convert creator plays into owned engagement. With 607K TikTok plays across 31 creators this quarter, repost or stitch the top-performing creator videos directly to @alleghenycoffee Reels to redirect that external reach back toward a 1.23% engagement rate that hasn't caught up to posting volume."
-    },
-    {
-      "rank": 3,
-      "business_slug": "ka-fair-coffee-and-cakery",
-      "name": "Ka-Fair Coffee and Cakery",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Morningside",
-      "descriptor": "Third In Pittsburgh Cafes, Carried By A City That Posts About It More Than It Posts About Itself.",
-      "descriptor_highlight": "More Than It Posts",
-      "stat_line": "235 reviews · 4.8★ · 28 creators · 1.0M plays · 3 IG posts/30d",
-      "featured_tiktok": {
-        "author": "dailysipclub8",
-        "plays": 617500,
-        "url": "https://www.tiktok.com/@dailysipclub8/video/7625180370853530902",
-        "caption": "ube vanilla velvet matcha latte.\n.\n.\nrecipe \n250ml milk \n50ml matcha \n2 pumps vanilla syrup \n\nube cold foam \n3 tbsp double cream \n2 tbsp milk \n1 tsp ube powder \nmix until thick pour \n\n#matcha #matchapowder #coffee #morningroutine "
-      },
-      "playbook_top_move": "Start posting reels before next quarter. Ka-Fair has zero reels in 30 days while 28 creators are building its reputation on TikTok; one weekly reel showing a latte build or cake slice would close the most visible gap in the signal."
-    },
-    {
-      "rank": 4,
       "business_slug": "spot-of-coffee",
       "name": "Spot of Coffee",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Second In Pittsburgh Cafes, Riding 278K TikTok Plays It Doesn't Own Yet.",
-      "descriptor_highlight": "278K TikTok Plays",
-      "stat_line": "173 reviews · 4.8★ · 24 creators · 278K plays · 6 IG posts/30d",
+      "descriptor": "Second In Pittsburgh Cafes, Powered By Creator Buzz It Has No TikTok To Catch.",
+      "descriptor_highlight": "No TikTok To Catch",
+      "stat_line": "173 reviews · 4.8★ · 7 creators · 31K plays · 6 IG posts/30d",
       "featured_tiktok": {
-        "author": "lyssad16",
-        "plays": 44300,
-        "url": "https://www.tiktok.com/@lyssad16/video/7617949708450876685",
-        "caption": "neeeeedddd to try more tho! #coffee #pittsburgh #trending "
+        "author": "asprinkleofjen",
+        "plays": 9337,
+        "url": "https://www.tiktok.com/@asprinkleofjen/video/7620804294987582734",
+        "caption": "Delicious recent food and drinks I’ve got in Pittsburgh when eating out!! All time favs are @Spot Of Coffee & Alta Via!\n#pittsburgh #pittsburghfood #foodie #pitt #thingstodo places to eat in Pittsburgh "
       },
-      "playbook_top_move": "Add a website to Google Business. Conversion path sits well below the family median of 100; a linked website is the fastest single fix available right now."
+      "playbook_top_move": "Add a website link to Google listing. The Google profile has no website attached; 7 creators and 173 reviewers are sending people there with nowhere to land."
     },
     {
-      "rank": 5,
-      "business_slug": "the-butterwood-bake-consortium",
-      "name": "The Butterwood Bake Consortium",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "Second In Pittsburgh Cafes, Carried By 20 Outside Voices. The Business's Own Feed Has Gone Silent.",
-      "descriptor_highlight": "20 Outside Voices",
-      "stat_line": "736 reviews · 4.6★ · 20 creators · 599K plays",
-      "featured_tiktok": {
-        "author": "easternpanhandlefoodie",
-        "plays": 190300,
-        "url": "https://www.tiktok.com/@easternpanhandlefoodie/video/7622415816557956365",
-        "caption": "This isn’t fruit… and it actually tastes like it is 🤯🍓\n\nThis new spot Layers Bakery & Café in Martinsburg is doing those viral fruit desserts, and yeah… they’re legit.\n\nThey’re made of mousse, but somehow taste exactly like the fruit the"
-      },
-      "playbook_top_move": "Restart the Instagram feed immediately. 515 days without a post is the clearest suppressor of family rank; one weekly photo of the pastry case closes the gap faster than any other single move."
-    },
-    {
-      "rank": 6,
+      "rank": 2,
       "business_slug": "delanies-coffee-shadyside",
       "name": "Delanie's Coffee Shadyside",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Seventh In Pittsburgh Cafes, Carried By Other People's TikToks And Held Back By Its Own.",
-      "descriptor_highlight": "Other People's TikToks",
-      "stat_line": "104 reviews · 4.6★ · 16 creators · 66K plays · 3 IG posts/30d",
+      "descriptor": "Seventh In Pittsburgh Cafes, Carried By Creators. The Shop Itself Has No TikTok To Show For It.",
+      "descriptor_highlight": "Has No TikTok",
+      "stat_line": "104 reviews · 4.6★ · 7 creators · 7K plays · 3 IG posts/30d",
       "featured_tiktok": {
-        "author": "stephr0se8",
-        "plays": 31200,
-        "url": "https://www.tiktok.com/@stephr0se8/video/7613871282186177805",
-        "caption": "Some of my fave local coffee shops! Drop some more reccs for me to try 👇🏼\n#localcoffeeshop #pittsburgh #coffeetok #supportsmallbusiness #fyp "
+        "author": "madisonrockk",
+        "plays": 2190,
+        "url": "https://www.tiktok.com/@madisonrockk/video/7605691920609709343",
+        "caption": "Trying cookie butter lattes wherever I go // #fyp #coffeeshop #pittsburgh #cookiebutterlatte #delaniescoffee "
       },
-      "playbook_top_move": "Build a TikTok presence from existing footage. Sixteen creators have already filmed 17 videos here; claim the business page and repost the best-performing ones to start building a native presence."
+      "playbook_top_move": "Claim the TikTok account now. Seven creators have already tagged this business; a TikTok profile lets Delanie's stitch, repost, and meet that audience where it already lives."
     },
     {
-      "rank": 7,
-      "business_slug": "dobra-tea-pittsburgh",
-      "name": "Dobrá Tea Pittsburgh",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Squirrel Hill South",
-      "descriptor": "First In Tea Houses, Sixth In Cafes. Ten Creators Posting, Zero TikTok Account.",
-      "descriptor_highlight": "Zero TikTok Account",
-      "stat_line": "1,107 reviews · 4.7★ · 10 creators · 10K plays · 1 IG posts/30d",
-      "featured_tiktok": {
-        "author": "alexgdeckerr",
-        "plays": 2589,
-        "url": "https://www.tiktok.com/@alexgdeckerr/video/7600517334402452767",
-        "caption": "The Bombay chai is a MUST TRY at Dobrah tea in Squirrel Hill Pittsburgh!! Follow for more Pittsburgh content💓 #pittsburgh #pittsburghpa #pittsburghcheck #pittsburghrestaurants #pittsburghdatenight "
-      },
-      "playbook_top_move": "Claim a TikTok presence before momentum fades. Ten creators have posted 11 TikToks this quarter; a business account captures that search traffic and gives the Bombay chai its own stage."
-    },
-    {
-      "rank": 8,
+      "rank": 3,
       "business_slug": "margaux",
       "name": "Margaux",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "East Liberty",
-      "descriptor": "Third In Pittsburgh Cafes, Carried By A Room Creators Love. The Business Hasn't Matched Their Energy On TikTok.",
-      "descriptor_highlight": "Room Creators Love",
-      "stat_line": "386 reviews · 4.5★ · 7 creators · 44K plays · 9 IG posts/30d",
+      "descriptor": "Third In Pittsburgh Cafes, Built On Creator Interest. The Instagram Engagement Hasn't Kept Pace.",
+      "descriptor_highlight": "Creator Interest. The Instagram",
+      "stat_line": "386 reviews · 4.5★ · 5 creators · 39K plays · 9 IG posts/30d",
       "featured_tiktok": {
         "author": "deluludayss",
         "plays": 21400,
         "url": "https://www.tiktok.com/@deluludayss/video/7603414782779067661",
         "caption": "aesthetic places to visit in pittsburgh | part 1 #pittsburgh #pgh #aestheticplaces #coffeeaesthetic #aestheticvibes @fieldday.life @margauxpgh "
       },
-      "playbook_top_move": "Put a phone number on Google. Margaux's Google listing has no phone number, the only business in the family missing one, a direct hit to conversion path."
+      "playbook_top_move": "Turn TikTok plays into Instagram pull. Repost or reference the 39,178 TikTok plays already in market; nine IG posts in 30 days is active, but a 0.26 percent engagement rate signals the content isn't converting the audience that clearly exists."
+    },
+    {
+      "rank": 4,
+      "business_slug": "the-butterwood-bake-consortium",
+      "name": "The Butterwood Bake Consortium",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Lawrenceville",
+      "descriptor": "Second In Pittsburgh Cafes, Built On Pastry Depth. The Instagram Has Been Quiet For 515 Days.",
+      "descriptor_highlight": "Quiet For 515 Days",
+      "stat_line": "736 reviews · 4.6★ · 3 creators · 4K plays",
+      "featured_tiktok": {
+        "author": "courtneyncamp",
+        "plays": 2918,
+        "url": "https://www.tiktok.com/@courtneyncamp/video/7611749661170224397",
+        "caption": "the banana espresso cake 😍 love a spot in Pittsburgh that has later hours for an amazing post dinner sweet treat! and everything in the shop is vegan!\n•\n•\n•\n#butterwoodbakeconsortium #pittsburgh #pittsburghfood #pittsburghdessert #sweettre"
+      },
+      "playbook_top_move": "Restart the Instagram account now. The account has been dormant for 515 days; one post per week of the pastry case alone would reopen the momentum signal."
+    },
+    {
+      "rank": 5,
+      "business_slug": "tazza-doro",
+      "name": "Tazza D'Oro",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Highland Park",
+      "descriptor": "First In Pittsburgh Cafes On Review Depth, But Reels And TikTok Have Yet To Arrive.",
+      "descriptor_highlight": "Reels And TikTok",
+      "stat_line": "573 reviews · 4.6★ · 1 creators · 2K plays · 11 IG posts/30d",
+      "featured_tiktok": {
+        "author": "latashaforpa",
+        "plays": 1661,
+        "url": "https://www.tiktok.com/@latashaforpa/video/7609504876581719326",
+        "caption": "I might even buy you a coffee… ☕️ \n\nStop by Tazza D’oro to pick-up, drop-off or sign my petition to get on the ballot in the May 19 Primary Election!\n\nTeam #Mayes2026 will be there 9A-3P Saturdays and Sundays starting today, February 21!\n\n#"
+      },
+      "playbook_top_move": "Start posting Reels, not just photos. Zero Reels in the last 30 days leaves the account invisible to Instagram's discovery feed; even two short-form videos per week would change the reach calculation meaningfully."
+    },
+    {
+      "rank": 6,
+      "business_slug": "allegheny-coffee-tea-exchange",
+      "name": "Allegheny Coffee & Tea Exchange",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Strip District",
+      "descriptor": "Top Of Pittsburgh Cafes On Review Depth And Instagram. The TikTok Account Is Quiet.",
+      "descriptor_highlight": "TikTok Account Is Quiet",
+      "stat_line": "924 reviews · 4.8★ · 1 creators · 578 plays · 12 IG posts/30d",
+      "featured_tiktok": {
+        "author": "christinaclothesncoffee",
+        "plays": 578,
+        "url": "https://www.tiktok.com/@christinaclothesncoffee/video/7628564445622504717",
+        "caption": "If you’re visiting the Strip District add the Allegheny Coffee & Tea Exchange to your list! The salty pretzel Nitro Brew is a top favorite of mine!\n\n@VisitPITTSBURGH \n\n#fyp #pittsburgh #nfldraft #412 #coffee"
+      },
+      "playbook_top_move": "Turn the TikTok handle into a real presence. Post 2 TikToks per week from @adventureallegheny showing the pretzel Nitro Brew, the bean wall, and the cold brew taps, the three items creators already film."
     }
   ],
   "query": {
@@ -150,6 +116,6 @@
     "ranking": "creator_pickup",
     "limit": 8
   },
-  "generated_at": "2026-04-26T23:43:03.355Z",
+  "generated_at": "2026-04-27T00:55:52.659Z",
   "model": "claude-sonnet-4-6"
 }

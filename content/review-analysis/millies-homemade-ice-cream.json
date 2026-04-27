@@ -2,75 +2,69 @@
   "slug": "millies-homemade-ice-cream",
   "themes": [
     {
-      "phrase": "staff named by name",
-      "frequency": 3,
+      "phrase": "enthusiastic counter staff",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "Sara and Evan were fantastic to us and deserve a big raise."
+      "exampleQuote": "Gibson was very enthusiastic, boosted my mood up real quick, makes you really get in the mood for some good ice cream"
     },
     {
       "phrase": "non-dairy options available",
-      "frequency": 1,
-      "sentiment": "neutral",
-      "exampleQuote": "Nice to stop in for non-dairy options."
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "Nice to stop in for non-dairy options"
     },
     {
-      "phrase": "flavor execution questioned",
-      "frequency": 1,
+      "phrase": "flavor depth questioned",
+      "frequency": 2,
       "sentiment": "negative",
       "exampleQuote": "Buckeye had no flavor, the s'mores had no marshmallow, no Graham cracker. All of it was basically flavorless."
     },
     {
-      "phrase": "seasonal and specialty flavors",
+      "phrase": "waffle cone and mix-ins",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Loved the cranberry crumble and the strawberry jam flavors."
+      "exampleQuote": "Waffle cone was amazing, loved the cranberry crumble and the strawberry jam flavors"
     },
     {
-      "phrase": "pricing vs. value",
+      "phrase": "pricey for what it is",
       "frequency": 2,
       "sentiment": "neutral",
-      "exampleQuote": "Pricey, very good, good service."
-    },
-    {
-      "phrase": "cleanliness concerns",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "Bathroom was grimy as heck. Looks like it hasn't been cleaned in a month."
+      "exampleQuote": "Pricey, very good, good service"
     }
   ],
   "notable_quote": "Loved the cranberry crumble and the strawberry jam flavors. Waffle cone was amazing too.",
-  "sentiment_summary": "Reviewers light up over specific seasonal flavors and individual staff members by name, but a recurring undercurrent questions whether the execution always matches the homemade promise, with one detailed dissent calling out flat flavors and a neglected bathroom.",
-  "quarter_narrative": "Twenty-five Pittsburgh creators posted 26 TikToks about Millie's this quarter, generating 578,817 plays, and the business filmed none of it back. The top video alone, a Mandela Effect riff from @nonazgonenutz comparing Millie's to Dreyer's, pulled 278,300 plays without a single frame of Millie's own production behind it. Meanwhile, in the Pittsburgh Sweets family, Millie's holds the ice cream crown but sits one step behind Page's overall, where social momentum is driving the leaderboard gap. Closing that gap means converting 25 creators' worth of existing enthusiasm into a platform presence that captures rather than watches.",
-  "tldr_read": "Dominant review volume and a creator community already filming at scale, but no TikTok account to capture any of it. Icons of the Burgh, number one in Pittsburgh ice cream, number two in Pittsburgh Sweets.",
-  "tldr_meaning": "The city's TikTok infrastructure is already built around this business; the signal ceiling right now is determined entirely by whether Millie's enters that space before a competitor absorbs the momentum.",
+  "sentiment_summary": "Reviewers gravitate toward specific staff names and rotating seasonal flavors, while the most pointed criticism lands on inconsistency in flavor intensity and, in at least one location, maintenance of the physical space.",
+  "quarter_narrative": "Millie's enters Spring 2026 as the undisputed top-ranked ice cream shop in Pittsburgh, built on 1,150 Google reviews, a 76 percent five-star rate, and an Instagram cadence of 12 posts and 7 reels in the last 30 days that outpaces nearly every competitor in the Sweets family. The TikTok layer is thin: one creator, one video, 1,831 plays, and a caption that had to explain that a Millie's location inside a Giant Eagle Market District also serves coffee, which suggests the broader public still has real discovery gaps to fill. Page's leads the Pittsburgh Sweets family this issue on social momentum, and closing that gap means Millie's converting its active Instagram audience into a TikTok presence that matches what its review depth already commands.",
+  "tldr_read": "Strong review volume and an active Instagram, but TikTok is nearly a blank slate. Icons of the Burgh, #1 in Pittsburgh Ice Cream, #2 in Pittsburgh Sweets.",
+  "tldr_meaning": "The review foundation and Instagram cadence are both holding, but the TikTok signal is so thin that a single creator had to explain a core menu item to the city.",
   "diagnosis_pullquote": {
-    "line": "Second In Pittsburgh Sweets, With Half A Million TikTok Plays It Didn't Make.",
-    "highlight": "Half A Million TikTok Plays"
+    "line": "Second In Pittsburgh Sweets On Review Depth Alone. TikTok Has Not Caught Up Yet.",
+    "highlight": "Review Depth Alone"
   },
   "playbook": [
     {
-      "headline": "Claim a TikTok account before the quarter turns",
-      "action": "25 unique creators generated 578,817 plays this quarter; a Millie's-owned account could redirect that search traffic to a verified destination.",
+      "headline": "Build a TikTok presence from scratch",
+      "action": "One creator posted 1,831 plays explaining your coffee offering exists. Claim the account and post 3 short videos this month before someone else defines the brand.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE CREATOR SPILL"
+      "impact_label": "UNLOCK TIKTOK SIGNAL"
     },
     {
-      "headline": "Surface seasonal flavors in Reels weekly",
-      "action": "Cranberry crumble and strawberry jam drove the strongest review sentiment; seven Reels in 30 days shows posting discipline, now tie each Reel to a named rotating flavor to convert curiosity into visits.",
-      "signal": "content_canvas",
-      "priority": "medium",
-      "impact_label": "+FLAVOR SIGNAL"
-    },
-    {
-      "headline": "Respond publicly to the one-star outlier",
-      "action": "A single detailed negative review citing flat flavor and a dirty bathroom carries outsized weight among 1,150 reviews; a specific, non-defensive public reply stabilizes the 82-point sentiment read.",
+      "headline": "Turn staff callouts into shareable content",
+      "action": "Reviews naming Sara, Evan, and Gibson are among the warmest in the set. A short staff-forward reel series would direct that word-of-mouth into a repeatable visual format.",
       "signal": "community_spark",
+      "priority": "medium",
+      "impact_label": "+SENTIMENT DEPTH"
+    },
+    {
+      "headline": "Close the flavor education gap on Google photos",
+      "action": "482 photos across 10 categories is strong, but no category surfaces rotating specials. Adding tagged photos of seasonal flavors like cranberry crumble could convert browser visits into foot traffic.",
+      "signal": "conversion_path",
       "priority": "low",
-      "impact_label": "PROTECT SENTIMENT"
+      "impact_label": "+VISUAL SPECIFICITY"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T23:37:02.889Z",
+  "analyzed_at": "2026-04-27T00:49:44.039Z",
   "model": "claude-sonnet-4-6"
 }

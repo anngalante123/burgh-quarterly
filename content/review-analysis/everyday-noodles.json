@@ -2,69 +2,69 @@
   "slug": "everyday-noodles",
   "themes": [
     {
-      "phrase": "hand-made noodles and dumplings",
+      "phrase": "noodle soup quality",
       "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "Contender for best noodle soup in Pittsburgh"
+    },
+    {
+      "phrase": "soup dumplings and dim sum",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Can never go wrong with the soup dumplings"
+    },
+    {
+      "phrase": "watching noodles made",
+      "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "Fun to watch them make noodles, potstickers, and wontons"
     },
     {
-      "phrase": "noodle soup quality",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "Excellent noodle soup, I loved it. Contender for best noodle soup in Pittsburgh"
-    },
-    {
-      "phrase": "soup dumplings and boba",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Can never go wrong with the soup dumplings. And of course some Boba."
-    },
-    {
-      "phrase": "service complaints",
+      "phrase": "service problems",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "Server was incompetent and kept bringing out food that was not ordered."
+      "exampleQuote": "Server was incompetent and kept bringing out food that was not ordered"
     },
     {
-      "phrase": "welcoming and clean",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Wonderful service, delicious food, kind and welcoming staff. Clean environment as well!"
+      "phrase": "missing menu items",
+      "frequency": 1,
+      "sentiment": "negative",
+      "exampleQuote": "Where is my beef noodle? Really disappointed"
     }
   ],
   "notable_quote": "Contender for best noodle soup in Pittsburgh.",
-  "sentiment_summary": "Reviewers keep returning to the theater of hand-pulled noodles and the depth of the soups, with soup dumplings and boba functioning as reliable secondary draws; the friction points cluster around inconsistent service and at least one billing dispute serious enough to name specifically.",
-  "quarter_narrative": "Twenty-six Pittsburgh creators filed into Everyday Noodles this quarter and collectively pulled just over 19 million TikTok plays, the top video alone, from @joshua.guitar, landed 11.4 million. The shop itself has no indexed Instagram presence and no TikTok account, so every one of those views lands somewhere the business cannot follow up on. In the Pittsburgh Asian Kitchens family, Mola currently leads on creator collaboration fit, a signal Everyday Noodles is structurally positioned to compete for given the visual drama of hand-pulled noodles. Closing the gap between what creators are already producing and what the business controls will determine whether it holds this rank or rises into the top tier of the family.",
-  "tldr_read": "Nineteen million TikTok plays this quarter, no business account anywhere to receive them. Ones to Watch, #3 in Pittsburgh Asian Kitchens.",
-  "tldr_meaning": "The review base is deep and the creator interest is documented; what's missing is any owned channel to convert that attention into a durable signal.",
+  "sentiment_summary": "Reviewers keep coming back for the handmade noodles, soup dumplings, and the open-kitchen theater of watching it all get made; the friction is isolated but pointed, a service incident involving tip overcharging on Chinese New Year left a mark that a 75 percent five-star rate cannot fully obscure.",
+  "quarter_narrative": "Two TikTok creators filmed Everyday Noodles this quarter and between them pulled 2,680 plays, modest numbers that still outrun anything the business is generating on its own. Everyday Noodles has no indexed Instagram and no TikTok account, so every frame of xiaolongbao being lifted from the steamer exists only on someone else's feed. That gap is especially visible in the Pittsburgh Asian Kitchens family, where the current leader, Mola, built its position on exactly the kind of creator collaboration fit that Everyday Noodles' own 2,216 Google reviews and handmade-noodle spectacle are quietly primed for. The rank holds at number one in noodle shops and number three in the family for now, but closing the distance to Mola requires the business to have a presence where the city is already showing up to film it.",
+  "tldr_read": "Deep review volume and a perfect conversion path, no Instagram, no TikTok, third in Pittsburgh Asian Kitchens. Ones to Watch, #1 in Pittsburgh Noodle Shops.",
+  "tldr_meaning": "The review foundation and visual catalog are already at or above family median; the climb toward the top of Pittsburgh Asian Kitchens stalls without a social presence to capture the creator attention already arriving at the door.",
   "diagnosis_pullquote": {
-    "line": "Third In Pittsburgh Asian Kitchens, Fueled By 19 Million TikTok Plays It Cannot Claim.",
-    "highlight": "19 Million TikTok Plays"
+    "line": "Third In Pittsburgh Asian Kitchens, Backed By 2,216 Reviews. No Social Presence To Show For It.",
+    "highlight": "No Social Presence"
   },
   "playbook": [
     {
-      "headline": "Get onto TikTok before creators define you",
-      "action": "Open a business TikTok account and post once; 26 creators have already built the template, film the noodle pull and use their format.",
+      "headline": "Start an Instagram account, post the kitchen",
+      "action": "The open noodle-making kitchen is a ready visual; a basic account with weekly posts stops the indexed-handle gap cold.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CLAIM THE SIGNAL"
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Index an Instagram handle on Google",
-      "action": "Link an active Instagram account to the Google Business profile; right now 1,873 Google photos have no social destination to send curious visitors toward.",
-      "signal": "conversion_path",
+      "headline": "Activate the two creators already filming",
+      "action": "Reach out to @sheseatingit and @sarahkib15 directly; 1,811 plays on one video shows the format works, build on existing footage rather than starting from zero.",
+      "signal": "collab_fit",
       "priority": "medium",
-      "impact_label": "+OWNED REACH"
+      "impact_label": "UNLOCK REACH"
     },
     {
-      "headline": "Surface the noodle-making process visually",
-      "action": "The hand-pulled noodle theater already appears in reviews and TikToks; a short behind-the-counter photo series on any owned channel turns that recurring mention into a repeatable content asset.",
-      "signal": "content_canvas",
+      "headline": "Address the service-incident pattern publicly",
+      "action": "Two of nine sampled reviews cite service failures including a tip overcharge; a direct, specific owner response on Google closes the sentiment gap before it compounds.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+VISUAL DEPTH"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T23:32:28.084Z",
+  "analyzed_at": "2026-04-27T00:45:05.329Z",
   "model": "claude-sonnet-4-6"
 }

@@ -2,69 +2,69 @@
   "slug": "allegheny-coffee-tea-exchange",
   "themes": [
     {
-      "phrase": "fresh coffee bean smell",
+      "phrase": "whole bean selection",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "As soon as you open the door, you're hit with that amazing fresh coffee bean smell."
+      "exampleQuote": "they have a huge selection of whole beans from all over the world. You can smell each one and even bag your own beans"
     },
     {
-      "phrase": "bag your own beans",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "You can smell each one and even bag your own beans, which is a really unique touch."
-    },
-    {
-      "phrase": "cold brew on tap",
+      "phrase": "cold brew taps",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "They have multiple taps with different varieties, which makes it fun to mix things up."
+      "exampleQuote": "they have multiple taps with different varieties, which makes it fun to mix things up instead of getting the same coffee every time"
     },
     {
-      "phrase": "staff going out of their way",
-      "frequency": 4,
-      "sentiment": "positive",
-      "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting."
-    },
-    {
-      "phrase": "Strip District ritual stop",
+      "phrase": "staff knowledge and care",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "This is a place we make a point to stop at every time we're in Pittsburgh."
+      "exampleQuote": "Eric helped me out and went out of his way to make sure I had the grinder on the right setting"
+    },
+    {
+      "phrase": "Strip District destination stop",
+      "frequency": 4,
+      "sentiment": "positive",
+      "exampleQuote": "This is a place we make a point to stop at every time we're in Pittsburgh"
+    },
+    {
+      "phrase": "fresh coffee aroma",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "As soon as you open the door, you're hit with that amazing fresh coffee bean smell"
     }
   ],
   "notable_quote": "This place has been around since the 1980s and has built a reputation as one of the city's go-to specialty coffee shops, and you can feel that history the second you walk in.",
-  "sentiment_summary": "Reviewers consistently highlight the sensory ritual: the smell, the bean-scooping, the cold brew taps. Staff by name (Eric, Cameron) pull real praise. No meaningful nitpicks surface across 924 reviews, which either means the experience is genuinely tight or that dissatisfied customers simply leave without writing.",
-  "quarter_narrative": "Thirty-one Pittsburgh creators filed into Allegheny Coffee and Tea Exchange this quarter and produced 36 TikToks that collectively drew more than 607,000 plays, the biggest single driver being a @pittsburghpg post connecting the shop's neighborhood to HBO's 'The Pitt,' which alone cleared 127,500 views. The business has its own TikTok account at @adventureallegheny, and its Instagram at @alleghenycoffee posted 12 times in 30 days including 5 Reels, a posting cadence that outpaces most of its family. That combination of owned posting and substantial creator attention is exactly what locked in the family-leader position in Pittsburgh Cafes this issue. Sustaining that lead depends on whether the Instagram engagement rate, currently sitting at 1.23 percent, starts reflecting the volume and quality of content that the platform's activity would suggest is possible.",
-  "tldr_read": "924 reviews trending deeply positive, 31 creators generating 607K TikTok plays, and an Instagram cadence that actually keeps pace. Icons of the Burgh, #1 in Pittsburgh Cafes.",
-  "tldr_meaning": "The signals that built this rank are stable and mutually reinforcing. The one axis that hasn't caught up to the rest is Instagram engagement relative to posting frequency, and closing that gap is the difference between holding first and extending it.",
+  "sentiment_summary": "Reviewers consistently single out the self-serve bean wall, the multi-tap cold brew setup, and staff who go deep on grind settings and sourcing; nitpicks are essentially absent across 924 reviews, which is itself the story.",
+  "quarter_narrative": "Allegheny Coffee and Tea Exchange spent Spring 2026 doing what it has done for four decades: being the first serious coffee stop visitors put on their Strip District itinerary and the institutional bean source that regulars quietly rely on. The 924 Google reviews trending at 81 percent five-star are not a spike, they are a floor, and the Instagram account posted 12 times in 30 days, including 5 Reels, which is an active cadence by any measure in this family. The one gap is TikTok: a single creator, @christinaclothesncoffee, landed 578 plays on a salty pretzel Nitro Brew clip during NFL Draft weekend, tagging Visit Pittsburgh, and that was it for the quarter. The business holds an @adventureallegheny TikTok handle but is not producing content there at a rate that matches the platform opportunity the menu already creates. Holding the top rank in Pittsburgh Cafes this issue comes down to the depth of review sentiment and an Instagram momentum signal that outpaces the family median by nearly double; what moves the rank upward from here is whether TikTok becomes a second active front or remains a borrowed signal from one creator per quarter.",
+  "tldr_read": "Strong review depth, active Instagram, and a TikTok presence that exists in name only. Icons of the Burgh, #1 in Pittsburgh Cafes.",
+  "tldr_meaning": "The ceiling is set by TikTok output: every other signal is already performing at or above family median, and the menu has more than enough specific, filmable product to build on the one creator clip that surfaced this quarter.",
   "diagnosis_pullquote": {
-    "line": "First In Pittsburgh Cafes, Carried By Creator Volume And A History The City Keeps Rediscovering.",
-    "highlight": "City Keeps Rediscovering"
+    "line": "Top Of Pittsburgh Cafes On Review Depth And Instagram. The TikTok Account Is Quiet.",
+    "highlight": "TikTok Account Is Quiet"
   },
   "playbook": [
     {
-      "headline": "Convert creator plays into owned engagement",
-      "action": "With 607K TikTok plays across 31 creators this quarter, repost or stitch the top-performing creator videos directly to @alleghenycoffee Reels to redirect that external reach back toward a 1.23% engagement rate that hasn't caught up to posting volume.",
+      "headline": "Turn the TikTok handle into a real presence",
+      "action": "Post 2 TikToks per week from @adventureallegheny showing the pretzel Nitro Brew, the bean wall, and the cold brew taps, the three items creators already film.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+ENGAGEMENT RATE"
+      "impact_label": "UNLOCK CREATOR LOOP"
     },
     {
-      "headline": "Put staff by name in the frame",
-      "action": "Eric and Cameron are already being called out by name in reviews. A short Reel format introducing the people behind the counter would directly reflect the most repeated review theme and give creators a human subject to tag.",
-      "signal": "community_spark",
-      "priority": "medium",
-      "impact_label": "+SENTIMENT DEPTH"
-    },
-    {
-      "headline": "Document the bean wall and tap lineup visually",
-      "action": "589 Google photos across only 6 categories suggests the cold brew tap setup and the self-scoop bean wall, two of the most-mentioned experiential details, are underrepresented in the visual catalog relative to what drives reviews.",
+      "headline": "Build the photo catalog past six categories",
+      "action": "589 photos across only 6 tagged Google categories leaves the interior bean wall and cold brew tap station underrepresented; a structured photo push fills that gap.",
       "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+5 VISUAL RANK"
+    },
+    {
+      "headline": "Name and feature staff publicly",
+      "action": "Eric and Cameron already appear by name in reviews; a recurring Instagram or TikTok format built around staff expertise deepens sentiment and repeat-visit intent.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+VISUAL CATALOG"
+      "impact_label": "+SENTIMENT FLOOR"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T23:30:52.709Z",
+  "analyzed_at": "2026-04-27T00:43:30.992Z",
   "model": "claude-sonnet-4-6"
 }

@@ -3,68 +3,68 @@
   "themes": [
     {
       "phrase": "Liège waffle quality",
-      "frequency": 5,
-      "sentiment": "positive",
-      "exampleQuote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in Liège."
-    },
-    {
-      "phrase": "ice cream flavor depth",
       "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The sage salted almond on a waffle was so good."
+      "exampleQuote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in Liège"
+    },
+    {
+      "phrase": "high-quality ice cream",
+      "frequency": 5,
+      "sentiment": "positive",
+      "exampleQuote": "I'm an ice cream snob and this is some of the best ice cream I've ever had"
     },
     {
       "phrase": "owner and staff warmth",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The owner is extremely friendly and nice and helped make the experience that much better."
+      "exampleQuote": "The owner is extremely friendly and nice and helped make the experience that much better"
     },
     {
-      "phrase": "sample limit friction",
+      "phrase": "sample policy friction",
       "frequency": 2,
       "sentiment": "negative",
-      "exampleQuote": "The comment along the lines of 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone, made us feel uncomfortable."
+      "exampleQuote": "The comment along the lines of 'I'm not going to waste any more ice cream on you all,' delivered in a rude tone, made us feel uncomfortable"
     },
     {
       "phrase": "waffle and ice cream pairing",
-      "frequency": 4,
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Add that delicious waffle to it and you go into a brand new realm of delicious."
+      "exampleQuote": "Add that delicious waffle to it and you go into a brand new realm of delicious"
     }
   ],
   "notable_quote": "I've been to Belgium several times and this place has waffles that are just as good as what you could get in Liège.",
-  "sentiment_summary": "Reviewers consistently celebrate the waffle-and-ice-cream combination as something genuinely rare in Pittsburgh, with the Liège format and specific flavors like sage salted almond drawing repeat visits; the friction point is a sampling policy that at least two reviewers found communicated harshly, not as a rule but as a rebuke.",
-  "quarter_narrative": "Thirty-two Pittsburgh creators posted over a million plays of Treat this quarter, and Treat posted nothing back. The gap is not abstract: @dipitcafe alone pulled nearly 297,000 plays on a single waffle-and-ice-cream video, while the shop's Instagram went silent for roughly 200 days. Meanwhile, Page's holds the top spot in the Pittsburgh Sweets family on the strength of its social momentum, the exact signal Treat has handed entirely to outside voices. At #7 in the family, Treat sits on a product that the city clearly wants to watch. What moves the rank is whether the business starts showing up in the same conversation its customers are already having without it.",
-  "tldr_read": "Over a million TikTok plays from 32 creators, a dormant Instagram, and a service note that surfaces twice in the reviews. Ones to Watch, #7 in Pittsburgh Sweets.",
-  "tldr_meaning": "The product signal and conversion path are fully built; the rank ceiling is the Instagram dormancy and the absence of any owned TikTok presence in a category where creator volume is already exceptional.",
+  "sentiment_summary": "Reviewers are overwhelmingly won over by the ice cream quality and the Liège waffle combination, with Belgium comparisons appearing unprompted; the friction, when it surfaces, is specific and consistent: a sample-limit policy that isn't posted anywhere, communicated poorly in the moment.",
+  "quarter_narrative": "Treat spent Spring 2026 doing what it has always done well: earning near-unanimous five-star reviews on the strength of a genuinely specific product, Liège waffles and small-batch ice cream in a Shadyside storefront that photographs well. Six hundred and twenty-three Google reviews at 98 percent five-star is a number that speaks for itself. The Instagram account, though, has been silent for roughly 200 days, and no Pittsburgh TikTok creators have indexed the business yet, which means the visual energy showing up in 202 Google photos has nowhere to travel beyond the platform it lands on. In a Sweets family where Page's is setting the pace on social momentum, Treat's path from Ones to Watch into the upper tier runs directly through restarting that feed and giving creators a reason to walk in with a camera.",
+  "tldr_read": "Six hundred-plus reviews and a perfect conversion path, but a dormant Instagram and zero TikTok presence keep it at Ones to Watch, seventh in Pittsburgh Sweets.",
+  "tldr_meaning": "Every foundational signal is in place; the rank climbs when the social layer, silent for nearly seven months, comes back online and the creator ecosystem discovers the product.",
   "diagnosis_pullquote": {
-    "line": "Seventh In Pittsburgh Sweets, Carried By A Million Plays The Shop Didn't Post.",
-    "highlight": "A Million Plays"
+    "line": "Seventh In Sweets, Carried By 623 Reviews. The Feed Has Been Quiet For Seven Months.",
+    "highlight": "623 Reviews"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram feed, now",
-      "action": "The account has a 7.65% engagement rate and has been silent for 200 days. One post reactivates an audience already primed to respond.",
+      "headline": "Restart the Instagram feed now",
+      "action": "The account has posted zero times in 200 days; even two posts a week would reactivate a 7.65 percent engagement rate that is already well above average.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Claim the TikTok attention on TikTok",
-      "action": "Thirty-two creators generated 1.1 million plays this quarter with no owned account to absorb any of it. A single account with a repost or duet of @dipitcafe's 296,900-play video starts the loop.",
-      "signal": "collab_fit",
+      "headline": "Post the sample policy before a customer does",
+      "action": "Two separate reviews name the same friction point; a small in-store sign and one Instagram post explaining the sample limit removes the recurring one-star risk.",
+      "signal": "community_spark",
       "priority": "medium",
-      "impact_label": "CAPTURE 32 CREATORS"
+      "impact_label": "+SENTIMENT FLOOR"
     },
     {
-      "headline": "Post a clear samples policy in-store",
-      "action": "Two separate reviews name the same friction point around tasting limits. A posted sign removes ambiguity before it becomes a pattern in the 623-review record.",
-      "signal": "community_spark",
+      "headline": "Build a taggable visual moment for creators",
+      "action": "No Pittsburgh TikToks are indexed yet; a waffle-plus-scoop beauty shot at the counter, with a tagged location, gives the first creator a clear entry point.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "UNLOCK CREATORS"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T23:41:16.528Z",
+  "analyzed_at": "2026-04-27T00:54:00.348Z",
   "model": "claude-sonnet-4-6"
 }

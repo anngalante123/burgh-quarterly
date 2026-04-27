@@ -8,7 +8,7 @@
       "exampleQuote": "The bartenders are top class, friendly, knowledgeable about the cocktails."
     },
     {
-      "phrase": "creative cocktail menu",
+      "phrase": "creative cocktails",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Awesome, creative drinks. Bartender was excellent and friendly."
@@ -20,13 +20,13 @@
       "exampleQuote": "The cacio e pepe pizza is a must."
     },
     {
-      "phrase": "date night atmosphere",
+      "phrase": "low-key date night",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "The best lowkey date night place or hangout place with friends."
     },
     {
-      "phrase": "staff inclusivity failure",
+      "phrase": "staff name handling",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "The staff didn't ask my friend's name, and instead used the deadname on their credit card."
@@ -39,38 +39,38 @@
     }
   ],
   "notable_quote": "Statistically, I'm bound to have less than a perfect experience here, but it hasn't happened.",
-  "sentiment_summary": "Reviewers reliably cite the bar staff's warmth and cocktail knowledge as Lorelei's core draw, while a standout negative review about a deadnaming incident and scattered complaints about slow service rounds represent the friction points pulling the sentiment signal below its potential.",
-  "quarter_narrative": "Eighteen Pittsburgh TikTok creators filmed Lorelei this quarter, generating 1.23 million plays without the bar lifting a finger toward the platform. The top video alone, posted by @ernest, drew 569,300 plays on a caption that barely mentions the place. The city is telling a story about Lorelei; Lorelei is not yet telling one back on the platform where that story is spreading fastest. Meanwhile, within the Signal Pittsburgh family, Lorelei sits at third overall, trailing the social momentum of Nan Xiang Soup Dumplings, the family leader this issue. The review volume is real and the cocktail reputation is durable, but closing the gap to second in the family means converting that creator attention into a presence that compounds rather than evaporates after each video cycle.",
-  "tldr_read": "Strong creator coverage and a loyal cocktail following, but Instagram engagement is near-dormant and the TikTok moment is passing without capture. Ones to Watch, #2 in Pittsburgh Restaurants.",
-  "tldr_meaning": "The TikTok signal is already there at scale, pulled by creators rather than the business itself, and until Lorelei's own presence on that platform matches what the city is producing, the rank ceiling stays where it is.",
+  "sentiment_summary": "Reviewers come back for the bartenders and the creative cocktail menu, but a recurring friction around staff protocols and occasional slow service keeps the sentiment signal from matching the loyalty the place clearly earns.",
+  "quarter_narrative": "Lorelei heads into Spring 2026 as a genuine East Liberty standout with 392 Google reviews and a 72 percent five-star rate, numbers that reflect real neighborhood attachment. The problem is that the signal is not traveling far enough: no Pittsburgh TikTok coverage exists for the restaurant, and its Instagram engagement sits below one percent on four posts in the last thirty days with zero Reels. Elsewhere in the Pittsburgh Businesses family, Nan Xiang Soup Dumplings is leading on social momentum, which is exactly the axis where Lorelei is quietest. Closing that gap, specifically by generating short-form video in a bar environment that already earns lines like 'maybe this place is the bee's knees,' is the most direct route from Ones to Watch toward the next tier.",
+  "tldr_read": "Strong review base and a perfect conversion path, but near-zero Instagram engagement and no TikTok presence leave the city's awareness of Lorelei well below what the room deserves. Ones to Watch, #2 in Pittsburgh Restaurants.",
+  "tldr_meaning": "The review foundation is already in place; the rank ceiling is set by a social signal that is posting but not yet reaching anyone.",
   "diagnosis_pullquote": {
-    "line": "Third In Pittsburgh Businesses, Carried By Creators. The Bar Itself Has No TikTok Foothold.",
-    "highlight": "No TikTok Foothold"
+    "line": "Second In Pittsburgh Restaurants On Review Depth Alone, Not Yet On TikTok.",
+    "highlight": "Not Yet On TikTok"
   },
   "playbook": [
     {
-      "headline": "Build a TikTok presence before the window closes",
-      "action": "Eighteen creators have already produced 1.23 million plays tagged to Lorelei; a verified business account with even four posts a month could begin capturing that audience directly.",
+      "headline": "Start Reels before TikTok fills the void",
+      "action": "Zero Reels posted in the last 30 days; one cocktail-process or bar-atmosphere Reel per week would directly address a 0.79 percent engagement rate on an otherwise active account.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE CREATOR LIFT"
+      "impact_label": "+ENGAGEMENT LIFT"
     },
     {
-      "headline": "Turn the cocktail bar into a visual catalog",
-      "action": "Google Photos sits at 291 images across only six categories, with no dedicated cocktail or bartender category; a weekly behind-the-bar photo set would begin closing the gap to the family median.",
+      "headline": "Close the photo category gaps on Google",
+      "action": "With 291 photos across only 7 categories and no dedicated exterior or cocktail-specific album, adding 15 to 20 owner-uploaded photos in underrepresented categories would raise a Visual Catalog signal sitting well below the family median.",
       "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+12 VISUAL RANK"
+      "impact_label": "+VISUAL RANK"
     },
     {
-      "headline": "Address the service equity gap publicly",
-      "action": "The deadnaming review is sitting unaddressed in the public record; a direct, policy-specific owner response would limit further sentiment erosion on a 59-point signal already below the family median of 82.",
+      "headline": "Build a staff protocol around preferred names",
+      "action": "One review directly names a deadnaming incident at the order pickup window; a consistent name-at-order policy is the specific operational fix that Review Sentiment at 59 needs to start climbing.",
       "signal": "community_spark",
       "priority": "low",
-      "impact_label": "STOP SENTIMENT DROP"
+      "impact_label": "+SENTIMENT PTS"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-26T23:35:56.704Z",
+  "analyzed_at": "2026-04-27T00:48:37.211Z",
   "model": "claude-sonnet-4-6"
 }

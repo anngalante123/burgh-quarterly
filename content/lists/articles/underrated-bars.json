@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Bars",
   "subtitle": "Bars and breweries the regulars treat as their own.",
   "angle": "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
-  "intro": "The bars that earn a spot on this list didn't get here through ad spend or a publicist. They got here because someone told someone else, and that person told three more, and the conversation kept moving without the business ever having to push it. That kind of momentum is harder to build than a following, and it's also harder to fake.\n\nHidden Harbor ranked first in Pittsburgh bars this quarter, carried almost entirely by creators posting to a platform the Squirrel Hill tiki bar has never joined. Commerce Bar in East Liberty placed second on word of mouth alone, with a social footprint that doesn't begin to reflect the volume or consistency of what people are actually saying about it. Hop Farm Brewing pulled 170,000 TikTok plays this quarter from content the brewery itself didn't produce. These numbers aren't anomalies. They're a pattern.\n\nWhat the pattern suggests is straightforward: the customer love is already there, and the next move is cheaper than most owners assume. Pittsburgh has more creators actively looking for places to feature than the bar industry here tends to know, and the infrastructure connecting them operates without needing to announce itself.\n\nIssue 02, out Summer 2026, will track whether any of the businesses on this list close the gap.",
+  "intro": "The bars that earn the deepest loyalty in Pittsburgh tend to be the ones that haven't optimized for anything. No curated grid, no branded cocktail shots, no TikTok account someone updates twice a month. Just reviews that accumulate the way they used to, one honest paragraph at a time, written by someone who felt strongly enough to sit down and type.\n\nThis quarter's underrated list is built on exactly that gap. Hidden Harbor in Squirrel Hill leads Pittsburgh bars on combined review volume and photo contributions, a signal that suggests a genuinely engaged regular base, yet it has almost no video presence to show for it. Commerce Bar in East Liberty ranks second on review depth alone, the kind of written record that takes years to build, while its social signal has barely registered. Golden Age Beer Company sits third on the same review-depth measure, with no TikTok presence at all to carry that reputation further.\n\nThe businesses on this list already have the hardest thing: customers who care enough to say so publicly. The logical next move is shorter than most owners think, and the infrastructure to make it happen without a marketing budget exists and runs quieter than it sounds. Issue 02, Summer 2026, looks at which Pittsburgh bars are starting to close the gap.",
   "items": [
     {
       "rank": 1,
@@ -11,10 +11,10 @@
       "name": "Commerce Bar",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "East Liberty",
-      "descriptor": "Second In Pittsburgh Bars On Word Of Mouth Alone, No Social Signal To Show For It.",
-      "descriptor_highlight": "Word Of Mouth Alone",
+      "descriptor": "Second In Pittsburgh Bars On Review Depth Alone, The Social Signal Has Barely Shown Up.",
+      "descriptor_highlight": "Barely Shown Up",
       "stat_line": "106 reviews · 4.7★ · 1 IG posts/30d",
-      "playbook_top_move": "Restart Instagram with weekly reels. One reel per week of the room at golden hour or a cocktail build; the account posted once in 30 days and has zero reels on record."
+      "playbook_top_move": "Get the bar on Google completely. Add a website URL and phone number to the Google profile; right now both fields are blank, which stalls every potential first visit."
     },
     {
       "rank": 2,
@@ -22,10 +22,10 @@
       "name": "Golden Age Beer Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Third In Pittsburgh Bars On Beer Alone. The Food Ceiling And Missing TikTok Presence Keep The Rank There.",
-      "descriptor_highlight": "Missing TikTok Presence",
+      "descriptor": "Third In Pittsburgh Bars On Review Depth Alone, With No TikTok Presence To Build On It.",
+      "descriptor_highlight": "No TikTok Presence",
       "stat_line": "195 reviews · 4.8★ · 12 IG posts/30d",
-      "playbook_top_move": "Fix the food execution gap now. Two of eight sampled reviews cite specific overcooked dishes; resolving those complaints directly raises sentiment off its below-median floor."
+      "playbook_top_move": "Get the food story on video. Reels of the shepherd pie pierogi special and the $10 liter pour are the two most repeatable, specific hooks in the current review record; start there."
     },
     {
       "rank": 3,
@@ -33,16 +33,10 @@
       "name": "Hidden Harbor",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "First In Pittsburgh Bars, Carried By Creators On A Platform It Has Never Joined.",
-      "descriptor_highlight": "Never Joined",
-      "stat_line": "765 reviews · 4.6★ · 10 creators · 426K plays · 12 IG posts/30d",
-      "featured_tiktok": {
-        "author": "messihasaura7689",
-        "plays": 204400,
-        "url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527",
-        "caption": "Pearl Harbor #usa #japan #pearlharbor #edit #darktriad "
-      },
-      "playbook_top_move": "Turn existing TikTok plays into owned presence. Ten creators posted 425,844 plays this quarter; claim a TikTok account and repost the top-performing videos before that momentum belongs entirely to someone else."
+      "descriptor": "First In Pittsburgh Bars On Reviews And Photos, Not Yet On Video.",
+      "descriptor_highlight": "Not Yet On Video",
+      "stat_line": "765 reviews · 4.6★ · 12 IG posts/30d",
+      "playbook_top_move": "Turn the bar into a Reels set. Hidden Harbor posted 12 times in 30 days but shot zero Reels; one drink-pour or atmosphere Reel per week would directly address the weakest signal on the board."
     },
     {
       "rank": 4,
@@ -50,16 +44,16 @@
       "name": "Hop Farm Brewing Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Second In Pittsburgh Bars, With 170K TikTok Plays The Brewery Itself Didn't Post.",
-      "descriptor_highlight": "170K TikTok Plays",
-      "stat_line": "298 reviews · 4.6★ · 21 creators · 171K plays · 12 IG posts/30d",
+      "descriptor": "Second In Pittsburgh Bars, Built On Reviews And A Single Manager. TikTok Has Barely Noticed.",
+      "descriptor_highlight": "TikTok Has Barely",
+      "stat_line": "298 reviews · 4.6★ · 1 creators · 285 plays · 12 IG posts/30d",
       "featured_tiktok": {
-        "author": "stevenjamesyuhasz",
-        "plays": 51500,
-        "url": "https://www.tiktok.com/@stevenjamesyuhasz/video/7610945922725465374",
-        "caption": "The staff and customer service here was unbelievable. Definitely the type of place I want to support. @B&K Farm Market #warren #youngstown #cortland #ohio "
+        "author": "jseguritan23",
+        "plays": 285,
+        "url": "https://www.tiktok.com/@jseguritan23/video/7628319601306209549",
+        "caption": "Trivial Warfare Army Takeover 2026 in Pittsburgh, PA:\nMain trivia event hosted by Liz Quesnelle’s Madcap Trivia at the Hop Farm Brewing Company \n\n#pubtrivia #triviaevent #triviatime #triviatok #pittsburgh "
       },
-      "playbook_top_move": "Turn creator footage into owned reach. Launch a Hop Farm TikTok account and repost top creator clips; 21 creators and 170,828 plays exist with no account to capture any of it."
+      "playbook_top_move": "Make the space impossible to scroll past. With 364 photos already on Google, the gap is short-form video. The live edge tables, garage door, and pool room are three distinct visual environments that creators have not filmed yet."
     }
   ],
   "query": {
@@ -69,6 +63,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-26T23:43:56.064Z",
+  "generated_at": "2026-04-27T00:56:45.748Z",
   "model": "claude-sonnet-4-6"
 }

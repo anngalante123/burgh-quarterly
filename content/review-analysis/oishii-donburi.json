@@ -2,69 +2,69 @@
   "slug": "oishii-donburi",
   "themes": [
     {
-      "phrase": "katsudon and bulgogi bowls",
+      "phrase": "reliable bowls",
       "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "Always reliable for chicken katsu or beef bulgogi bowls"
+      "exampleQuote": "always reliable for chicken katsu or beef bulgogi bowls"
     },
     {
-      "phrase": "quick hole-in-the-wall",
+      "phrase": "hole in the wall",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Easy fast hole in the wall with delicious food"
+      "exampleQuote": "easy fast hole in the wall with delicious food"
     },
     {
-      "phrase": "generous portions",
+      "phrase": "katsudon and bibimbap",
       "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Perfect for lunch with enough for a snack later that night"
+      "exampleQuote": "we had the katsudon and bulgogi bibimbap and it was perfect for lunch"
     },
     {
-      "phrase": "confusing sauce presentation",
-      "frequency": 1,
-      "sentiment": "negative",
-      "exampleQuote": "Four little circle containers of unusual sauces and not told what any of them were"
-    },
-    {
-      "phrase": "staff attitude",
+      "phrase": "service attitude",
       "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "I felt very unwelcome from the man's attitude, and I witnessed him be rude to another patron"
+    },
+    {
+      "phrase": "quiet lunch spot",
+      "frequency": 2,
+      "sentiment": "positive",
+      "exampleQuote": "very delicious quiet spot for Korean style bowls"
     }
   ],
   "notable_quote": "Always reliable for chicken katsu or beef bulgogi bowls.",
-  "sentiment_summary": "Reviewers consistently praise the katsudon and bulgogi bowls for portion size and value, but a recurring undercurrent around staff coldness and unexplained sauce pairings keeps the sentiment signal from hitting its ceiling.",
-  "quarter_narrative": "Five Pittsburgh TikTok creators filmed Oishii Donburi this quarter, and the place filmed none of it back. With 26,872 plays across those videos, the restaurant is generating real reach on a platform where it has no account and no footprint to show for it. That gap sits at the center of its Spring 2026 story: a Lawrenceville spot with 385 Google reviews, 84 percent of them five stars, and an Instagram that has been quiet for 72 days, while the city keeps showing up with cameras. Within the Pittsburgh Asian Kitchens family, Mola holds the top position this issue on the strength of creator collaboration, a signal Oishii has the raw material to chase. Closing the distance means the Instagram account has to wake up, and the staff experience friction visible in the reviews has to stop undercutting one of the stronger menus in the family.",
-  "tldr_read": "Strong Google rating and creator curiosity, but a dormant Instagram and uneven service reviews hold the signal back. Ones to Watch, #5 in Pittsburgh Asian Kitchens.",
-  "tldr_meaning": "The path from fifth to something higher in the Asian Kitchens family runs directly through Instagram consistency and the service moments that keep pulling the sentiment number below the family median.",
+  "sentiment_summary": "Reviewers keep coming back for the speed, the value, and the specificity of the bowls; the friction, when it surfaces, is in service tone and a container format that makes eating in awkward.",
+  "quarter_narrative": "Oishii Donburi opened Spring 2026 as the quietest number one in Pittsburgh Japanese restaurants, a 385-review operation with an 84 percent five-star rate and an Instagram account that has not posted in 72 days. No Pittsburgh TikTok creator has indexed this place yet, which means the city's short-video layer is entirely absent, not dormant, just never started. Within the Pittsburgh Asian Kitchens family, Mola holds the top position partly on the strength of creator collaboration fit; Oishii has a comparable fit score but nothing to show for it in observable video coverage. The rank climbs when the visual catalog catches up to the review depth and when the first creator walks in with a phone.",
+  "tldr_read": "Strong review volume, Instagram silent for over two months, zero TikTok presence. Ones to Watch, #1 in Pittsburgh Japanese restaurants, fifth in Pittsburgh Asian Kitchens.",
+  "tldr_meaning": "The review foundation is real, but the visual and social signals are too thin to push this business up the Asian Kitchens family without new photo coverage and at least one creator entering the picture.",
   "diagnosis_pullquote": {
-    "line": "Fifth In Asian Kitchens, Carried By Reviews. The Instagram Has Been Quiet For 72 Days.",
-    "highlight": "Quiet For 72 Days"
+    "line": "Fifth In Asian Kitchens On Review Depth Alone, The Visual Layer Has Not Arrived Yet.",
+    "highlight": "Review Depth Alone"
   },
   "playbook": [
     {
-      "headline": "Restart the Instagram account now",
-      "action": "The account has posted zero times in 72 days; even two posts per week would reopen the momentum signal entirely.",
+      "headline": "Restart Instagram before summer ends",
+      "action": "The account has been silent for 72 days; one post per week featuring a specific bowl by name would restart the signal index.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+MOMENTUM SIGNAL"
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Address the sauce and service friction",
-      "action": "Two of five available reviews flag staff coldness and unexplained condiments; fixing table communication is the fastest way to lift a sentiment number sitting below the family median.",
-      "signal": "community_spark",
+      "headline": "Build out the photo catalog on Google",
+      "action": "342 photos across 15 categories sounds solid, but the family median for visual catalog is 84 versus Oishii's 62; targeted shots of the dining space and sauce pairings would close that gap.",
+      "signal": "content_canvas",
       "priority": "medium",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "+12 VISUAL PTS"
     },
     {
-      "headline": "Build toward creator capture",
-      "action": "Five creators filmed this place with no TikTok account to land on; a business TikTok would give those 26,872 plays somewhere to convert.",
+      "headline": "Get one local creator through the door",
+      "action": "No Pittsburgh TikTok video is indexed for this business; a single katsudon-focused creator visit could open a channel the business currently has no presence in at all.",
       "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "CAPTURE CREATOR REACH"
+      "impact_label": "UNLOCK TIKTOK LAYER"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-26T23:38:13.716Z",
+  "analyzed_at": "2026-04-27T00:50:51.118Z",
   "model": "claude-sonnet-4-6"
 }

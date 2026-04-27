@@ -2,20 +2,26 @@
   "slug": "square-cafe",
   "themes": [
     {
-      "phrase": "vegan menu options",
+      "phrase": "vegan-friendly menu",
       "frequency": 3,
       "sentiment": "positive",
       "exampleQuote": "Their vegan breakfast, especially the biscuit sandwich is to die for"
     },
     {
-      "phrase": "wait and table turnover",
+      "phrase": "wait times and turnover",
       "frequency": 2,
       "sentiment": "neutral",
       "exampleQuote": "They do a good job of quickly and efficiently clearing tables to keep the wait as short as possible"
     },
     {
-      "phrase": "portion-to-price ratio",
-      "frequency": 2,
+      "phrase": "standout specific dishes",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "The Brussels sprout hash was amazing and unique. Would go back."
+    },
+    {
+      "phrase": "price-to-portion concern",
+      "frequency": 1,
       "sentiment": "negative",
       "exampleQuote": "The portion to price ratio is not the best"
     },
@@ -26,45 +32,45 @@
       "exampleQuote": "No pressure to eat up and go"
     },
     {
-      "phrase": "standout menu items",
-      "frequency": 4,
+      "phrase": "friendly, efficient staff",
+      "frequency": 3,
       "sentiment": "positive",
-      "exampleQuote": "The Brussels sprout hash was amazing and unique"
+      "exampleQuote": "The staff are super nice. It's no wonder this place gets slammed with customers."
     }
   ],
   "notable_quote": "It's no wonder this place gets slammed with customers.",
-  "sentiment_summary": "Reviewers consistently praise the inventive menu, the vegan-friendly options, and a staff that keeps a busy room moving without making guests feel rushed; the recurring friction is value perception, specifically portion sizes that don't always feel proportional to East Liberty prices.",
-  "quarter_narrative": "Square Cafe enters Spring 2026 as the clear anchor of Pittsburgh brunch, sitting at the top of its category and second across the entire Pittsburgh Businesses family, trailing only Nan Xiang Soup Dumplings, whose social momentum has been this issue's defining story. Square Cafe's story is different: its authority comes from depth, 1,839 Google reviews, 72 percent of them five-star, a creator ecosystem putting up 317,000 TikTok plays across 13 filmmakers, and a conversion path that leaves nothing on the table. The variable that keeps it from the family's top slot is Instagram engagement, where eleven posts and two reels in the last 30 days show consistent effort but a 0.19 percent engagement rate that hasn't translated that effort into reach; closing that gap is the most direct path to the number-one position across the full family.",
-  "tldr_read": "Deep review equity and a creator-driven TikTok footprint, but Instagram engagement is running well below the signal those other axes deserve. Icons of the Burgh, number one in Pittsburgh Brunch, number two in Pittsburgh Businesses.",
-  "tldr_meaning": "The data places Square Cafe at the top of its category on almost every axis except Instagram pull-through, and that single gap is the margin separating it from the Pittsburgh Businesses leader position.",
+  "sentiment_summary": "Reviewers consistently praise the menu range, especially vegan options and standout dishes like the Brussels sprout hash and eggs benedict, while a recurring minority notes that portion sizes feel small relative to price.",
+  "quarter_narrative": "Square Cafe entered Spring 2026 as the undisputed anchor of Pittsburgh brunch, sitting on 1,839 Google reviews at 72% five-star with a conversion profile that has no gaps: hours, phone, website, and a deep photo catalog all present and indexed. The family leader this issue is Nan Xiang Soup Dumplings, riding a wave of social momentum that Square Cafe simply does not have in the same form. With an Instagram engagement rate of 0.19% across 11 posts in the last 30 days and just one TikTok creator logging 713 plays this quarter, the business's social signal is quietly plateauing even as its reputation stays strong. The rank holds at number one in Pittsburgh brunch for now, but the gap between review depth and creator energy is the story of the next two issues.",
+  "tldr_read": "Conversion path is airtight and sentiment is deep, but Instagram engagement is thin and TikTok creator presence is nearly nonexistent. Icons of the Burgh, number one in Pittsburgh brunch restaurants.",
+  "tldr_meaning": "The review floor is so strong that the rank is secure short-term, but without a meaningful uptick in creator coverage or Instagram engagement, the momentum axis will continue to lag the rest of the profile.",
   "diagnosis_pullquote": {
-    "line": "Second In Pittsburgh Businesses, Carried By 1,839 Reviews. Instagram Reach Has Not Caught Up.",
-    "highlight": "1,839 Reviews"
+    "line": "Number Two In Pittsburgh Businesses, Built On Review Depth. The Creator Layer Has Barely Shown Up.",
+    "highlight": "Built On Review Depth"
   },
   "playbook": [
     {
-      "headline": "Convert TikTok plays into Instagram pull",
-      "action": "Thirteen creators generated 317,000 TikTok plays this quarter; reposting that footage to Reels is the fastest path to closing a 0.19% engagement rate.",
+      "headline": "Turn 11 posts into reel-first weeks",
+      "action": "Only 2 of 11 recent Instagram posts were reels; reels drive the engagement rate that 0.19% is failing to reach.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "+ENGAGEMENT RATE"
+      "impact_label": "+ENGAGEMENT FLOOR"
     },
     {
-      "headline": "Turn the wait line into a photo moment",
-      "action": "The wait is already part of the Square Cafe story in reviews; a designed, photographable queue element could push the visual catalog past its current 1,386-photo ceiling.",
-      "signal": "content_canvas",
-      "priority": "medium",
-      "impact_label": "+VISUAL RANK"
-    },
-    {
-      "headline": "Tag and respond to the 13 TikTok creators",
-      "action": "With 13 unique creators already filming, direct acknowledgment builds repeat visits and keeps the quarterly play count from plateauing at 317,000.",
+      "headline": "Make the TikTok account findable and active",
+      "action": "@squarecafe.lb exists but has generated no tagged creator volume this quarter beyond a single video with 713 plays from one creator.",
       "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "UNLOCK CREATORS"
+    },
+    {
+      "headline": "Address the bathroom and fix the public record",
+      "action": "One review this quarter flagged a broken faucet, missing fixtures, and an empty paper towel dispenser; unaddressed maintenance notes accumulate in sentiment over time.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "SUSTAIN CREATOR FLOW"
+      "impact_label": "+SENTIMENT GUARD"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T23:40:08.065Z",
+  "analyzed_at": "2026-04-27T00:52:52.144Z",
   "model": "claude-sonnet-4-6"
 }

@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Small Businesses",
   "subtitle": "The places customers love but the algorithm hasn't found yet, across every family.",
   "angle": "businesses with high customer ratings and real review depth that haven't broken through on social yet. The point of this list is celebration, not critique. Pittsburgh's neighborhood spots, the ones worth telling a friend about.",
-  "intro": "Some Pittsburgh businesses don't need the algorithm. They've already won the room.\n\nThis quarter's underrated list is built on a simple observation: customer conviction and platform presence are two different things, and the gap between them is wider here than it should be. Commerce Bar has climbed to second in Pittsburgh bars on word of mouth alone, with no meaningful social signal to explain it. Pusadee's Garden is sitting on 3.4 million plays generated entirely by other people's accounts. Everyday Noodles has 19 million TikTok views attached to its name, almost none of them posted by the restaurant itself. These are not struggling businesses. They are beloved ones, moving through the city mostly by mouth, occasionally by accident.\n\nWhat's worth noting across this list: the customer love is already there, and in most of these cases, so are the creators. Businesses that figure out how to invite back the people already filming them tend to close this gap faster than they expect. Pittsburgh has more creators actively looking for places to feature than most owners realize, and the infrastructure connecting them has gotten quieter and more efficient, not louder.\n\nIssue 02 arrives in summer 2026, when we turn this same lens on Pittsburgh's fastest-rising neighborhoods.",
+  "intro": "The businesses on this list didn't earn their rankings through campaigns or influencer gifting. They earned them the old way: enough customers showed up, felt something, and said so in writing. What the review record shows, and what the social data confirms by its absence, is a specific kind of Pittsburgh business that has built real loyalty without building a feed. That gap is the story this quarter.\n\nA few signals worth naming. Commerce Bar in East Liberty sits second among Pittsburgh bars on review depth alone, and its social footprint is almost nonexistent. Everyday Noodles in Squirrel Hill North has 2,216 reviews behind it, a number that would generate serious algorithmic attention almost anywhere else. Pusadee's Garden is the one outlier: creator videos exist, but the restaurant isn't making them. Someone else's content is doing the work.\n\nWhat connects most of these businesses is that the customer love is already there, and the cheapest second move is simply asking the people who already love them to come back with a purpose. Pittsburgh has more creators looking for places to feature than most owners realize, and the infrastructure that connects them tends to work quietly, because it doesn't have to pitch.\n\nIssue 02, Summer 2026, will track whether any of these businesses close the gap.",
   "items": [
     {
       "rank": 1,
@@ -11,10 +11,10 @@
       "name": "Commerce Bar",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "East Liberty",
-      "descriptor": "Second In Pittsburgh Bars On Word Of Mouth Alone, No Social Signal To Show For It.",
-      "descriptor_highlight": "Word Of Mouth Alone",
+      "descriptor": "Second In Pittsburgh Bars On Review Depth Alone, The Social Signal Has Barely Shown Up.",
+      "descriptor_highlight": "Barely Shown Up",
       "stat_line": "106 reviews · 4.7★ · 1 IG posts/30d",
-      "playbook_top_move": "Restart Instagram with weekly reels. One reel per week of the room at golden hour or a cocktail build; the account posted once in 30 days and has zero reels on record."
+      "playbook_top_move": "Get the bar on Google completely. Add a website URL and phone number to the Google profile; right now both fields are blank, which stalls every potential first visit."
     },
     {
       "rank": 2,
@@ -22,16 +22,10 @@
       "name": "Oishii Donburi",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Fifth In Asian Kitchens, Carried By Reviews. The Instagram Has Been Quiet For 72 Days.",
-      "descriptor_highlight": "Quiet For 72 Days",
-      "stat_line": "385 reviews · 4.6★ · 5 creators · 27K plays",
-      "featured_tiktok": {
-        "author": "missrichauntie",
-        "plays": 9983,
-        "url": "https://www.tiktok.com/@missrichauntie/video/7622326183576849695",
-        "caption": "Things to do in the 302 😗.\nFinally tried this sushi place while I was waiting for my car in the shop for a quick bite. #\nOishii Sushi in Camden, Delaware \n\nJapanese restaurant in delaware\n#sushilover #Foodie #delaware #delawarefood #japane"
-      },
-      "playbook_top_move": "Restart the Instagram account now. The account has posted zero times in 72 days; even two posts per week would reopen the momentum signal entirely."
+      "descriptor": "Fifth In Asian Kitchens On Review Depth Alone, The Visual Layer Has Not Arrived Yet.",
+      "descriptor_highlight": "Review Depth Alone",
+      "stat_line": "385 reviews · 4.6★",
+      "playbook_top_move": "Restart Instagram before summer ends. The account has been silent for 72 days; one post per week featuring a specific bowl by name would restart the signal index."
     },
     {
       "rank": 3,
@@ -39,16 +33,16 @@
       "name": "Everyday Noodles",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Squirrel Hill North",
-      "descriptor": "Third In Pittsburgh Asian Kitchens, Fueled By 19 Million TikTok Plays It Cannot Claim.",
-      "descriptor_highlight": "19 Million TikTok Plays",
-      "stat_line": "2,216 reviews · 4.6★ · 26 creators · 19.1M plays",
+      "descriptor": "Third In Pittsburgh Asian Kitchens, Backed By 2,216 Reviews. No Social Presence To Show For It.",
+      "descriptor_highlight": "No Social Presence",
+      "stat_line": "2,216 reviews · 4.6★ · 2 creators · 3K plays",
       "featured_tiktok": {
-        "author": "joshua.guitar",
-        "plays": 11400000,
-        "url": "https://www.tiktok.com/@joshua.guitar/video/7603185879934340365",
-        "caption": "Good noodles everyday 🤤 #trending #noodles #meme #fyp #guitar "
+        "author": "sheseatingit",
+        "plays": 1811,
+        "url": "https://www.tiktok.com/@sheseatingit/video/7617842917629070622",
+        "caption": "Everyday Noodles is my dream come true because I could eat noodles everyday.\n\n#Pittsburgh #soupdumplings #xiaolongbao #pennsylvania #pittsburghsteelers "
       },
-      "playbook_top_move": "Get onto TikTok before creators define you. Open a business TikTok account and post once; 26 creators have already built the template, film the noodle pull and use their format."
+      "playbook_top_move": "Start an Instagram account, post the kitchen. The open noodle-making kitchen is a ready visual; a basic account with weekly posts stops the indexed-handle gap cold."
     },
     {
       "rank": 4,
@@ -56,16 +50,10 @@
       "name": "Lorelei",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "East Liberty",
-      "descriptor": "Third In Pittsburgh Businesses, Carried By Creators. The Bar Itself Has No TikTok Foothold.",
-      "descriptor_highlight": "No TikTok Foothold",
-      "stat_line": "392 reviews · 4.5★ · 18 creators · 1.2M plays · 4 IG posts/30d",
-      "featured_tiktok": {
-        "author": "ernest",
-        "plays": 569300,
-        "url": "https://www.tiktok.com/@ernest/video/7607938994898291981",
-        "caption": "Lorelei. She’ll pull you down if you let her.\n\n#newmusic #lorelei "
-      },
-      "playbook_top_move": "Build a TikTok presence before the window closes. Eighteen creators have already produced 1.23 million plays tagged to Lorelei; a verified business account with even four posts a month could begin capturing that audience directly."
+      "descriptor": "Second In Pittsburgh Restaurants On Review Depth Alone, Not Yet On TikTok.",
+      "descriptor_highlight": "Not Yet On TikTok",
+      "stat_line": "392 reviews · 4.5★ · 4 IG posts/30d",
+      "playbook_top_move": "Start Reels before TikTok fills the void. Zero Reels posted in the last 30 days; one cocktail-process or bar-atmosphere Reel per week would directly address a 0.79 percent engagement rate on an otherwise active account."
     },
     {
       "rank": 5,
@@ -73,16 +61,16 @@
       "name": "La Gourmandine Lawrenceville",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Eighth In Sweets, First In Bakeries. Nine Creators Are Filming; The Feed Went Quiet.",
-      "descriptor_highlight": "Feed Went Quiet",
-      "stat_line": "1,294 reviews · 4.8★ · 9 creators · 32K plays",
+      "descriptor": "Eighth In Sweets Despite A Deep Review Record. The Feed Has Gone Quiet.",
+      "descriptor_highlight": "Feed Has Gone Quiet",
+      "stat_line": "1,294 reviews · 4.8★ · 5 creators · 18K plays",
       "featured_tiktok": {
-        "author": "mattdinguspgh",
-        "plays": 11800,
-        "url": "https://www.tiktok.com/@mattdinguspgh/video/7609890059071933726",
-        "caption": "Welcome to 337 Fisk Street in Lawrenceville, Pittsburgh. This iconic 1900 residence spans nearly 4,000 square feet, blending historic soul with modern luxury. \n\nhttps://www.zillow.com/homedetails/337-Fisk-St-Pittsburgh-PA-15201/11514118_zpi"
+        "author": "melissasadhdlife",
+        "plays": 7521,
+        "url": "https://www.tiktok.com/@melissasadhdlife/video/7620558568844004639",
+        "caption": "I love La Gourmandine, they never disappoint 🥐 🍫 \n\n#pittsburghtreats #patisserie #springpastries "
       },
-      "playbook_top_move": "Restart Instagram before the next weekend. The account has been silent for 41 days; one post per week of whatever is in the case that morning closes the momentum gap fast."
+      "playbook_top_move": "Restart the Instagram feed consistently. The account has posted zero times in 42 days; even two posts per week featuring named seasonal items would reactivate the momentum signal."
     },
     {
       "rank": 6,
@@ -90,16 +78,10 @@
       "name": "24 Carrot Juice",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Bloomfield",
-      "descriptor": "Eighth In Pittsburgh Cafes, Powered By 1.45 Million Creator Plays On A Platform Where It Has No Account.",
-      "descriptor_highlight": "1.45 Million Creator Plays",
-      "stat_line": "519 reviews · 5★ · 30 creators · 1.5M plays · 3 IG posts/30d",
-      "featured_tiktok": {
-        "author": "amalkzad",
-        "plays": 671100,
-        "url": "https://www.tiktok.com/@amalkzad/video/7625691066913656078",
-        "caption": "Carrot juice glow up ✨ @Ninja Kitchen \n\n•8 carrots\n• 1 piece of beet\n• Ginger (to taste)\n• Turmeric (to taste)\n• 1 apple\n• 1 orange\n• 1 lemon\n• Coconut water 500 ml\n• Water\n• Optional: a pinch of black pepper"
-      },
-      "playbook_top_move": "Claim the TikTok audience that already exists. Open a TikTok business account and post one short video per week; 30 creators have already seeded 1.45 million plays with no account to absorb them."
+      "descriptor": "Eighth In Pittsburgh Cafes On The Back Of Flawless Reviews. The Video Layer Has Not Arrived Yet.",
+      "descriptor_highlight": "Flawless Reviews",
+      "stat_line": "519 reviews · 5★ · 3 IG posts/30d",
+      "playbook_top_move": "Post at least one Reel this week. Zero Reels in the last 30 days on an account with 2.53 percent engagement means the algorithm has no video signal to distribute; one Reel of the acai bowl build or a smoothie pour could change that immediately."
     },
     {
       "rank": 7,
@@ -107,16 +89,16 @@
       "name": "Pusadee's Garden",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Second In Asian Kitchens, Carried By 3.4 Million Outside Plays. The Restaurant's Own Feed Has Not Caught Up.",
-      "descriptor_highlight": "3.4 Million Outside Plays",
-      "stat_line": "1,224 reviews · 4.7★ · 16 creators · 3.4M plays · 2 IG posts/30d",
+      "descriptor": "Second In Pittsburgh Asian Kitchens, Carried By Creator Videos The Restaurant Itself Isn't Making.",
+      "descriptor_highlight": "Creator Videos The",
+      "stat_line": "1,224 reviews · 4.7★ · 8 creators · 19K plays · 2 IG posts/30d",
       "featured_tiktok": {
-        "author": "avixenm",
-        "plays": 2800000,
-        "url": "https://www.tiktok.com/@avixenm/video/7605311656453000456",
-        "caption": "Naglaro kami pogs! 🫣 #roblox #growagarden #robloxmemes #elmilogato #fyp robloxph robloxskit omsim posa jandel"
+        "author": "mad_i_libs",
+        "plays": 6614,
+        "url": "https://www.tiktok.com/@mad_i_libs/video/7604578609566633229",
+        "caption": "This Thai restaurant is a gorgeous spot for your next date night or special occasion in Pittsburgh! 💖 \n\nThere are so many food and drink options, for meat-eaters and vegans alike, you'll want to come back more than once. 🥂 \n\nTip: Show up "
       },
-      "playbook_top_move": "Restart the Instagram feed with urgency. Two posts in 30 days is not a cadence; the garden alone, photographed at dusk, is a reason to post three times a week."
+      "playbook_top_move": "Start posting reels, starting this week. Zero reels in the last 30 days is the single largest gap; one short reel of the garden space or a dish being plated would immediately lift Instagram momentum above its current floor."
     },
     {
       "rank": 8,
@@ -124,10 +106,10 @@
       "name": "Golden Age Beer Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Third In Pittsburgh Bars On Beer Alone. The Food Ceiling And Missing TikTok Presence Keep The Rank There.",
-      "descriptor_highlight": "Missing TikTok Presence",
+      "descriptor": "Third In Pittsburgh Bars On Review Depth Alone, With No TikTok Presence To Build On It.",
+      "descriptor_highlight": "No TikTok Presence",
       "stat_line": "195 reviews · 4.8★ · 12 IG posts/30d",
-      "playbook_top_move": "Fix the food execution gap now. Two of eight sampled reviews cite specific overcooked dishes; resolving those complaints directly raises sentiment off its below-median floor."
+      "playbook_top_move": "Get the food story on video. Reels of the shepherd pie pierogi special and the $10 liter pour are the two most repeatable, specific hooks in the current review record; start there."
     },
     {
       "rank": 9,
@@ -135,16 +117,10 @@
       "name": "Reva Modern Indian Cuisine",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "East Liberty",
-      "descriptor": "Fourth In Asian Kitchens, Carried By 33 Creators. Reva Has No TikTok Account To Answer With.",
-      "descriptor_highlight": "No TikTok Account",
-      "stat_line": "527 reviews · 4.6★ · 33 creators · 373K plays",
-      "featured_tiktok": {
-        "author": "gabs_joella",
-        "plays": 66300,
-        "url": "https://www.tiktok.com/@gabs_joella/video/7627972466371022111",
-        "caption": "My mom didn’t have to ask me twice to make this video for her to help promote the family’s restaurant. I got to eat bomb, authentic Indian food and see my mom smile! It would mean a lot her and the fam if you checked out this wonderful smal"
-      },
-      "playbook_top_move": "Claim a TikTok account, post once. 33 creators have generated 373,000-plus plays at Reva with zero reciprocal presence; one account and one video closes that gap immediately."
+      "descriptor": "Fourth In Asian Kitchens, Built On Reviews Alone. The Social Layer Has Not Started.",
+      "descriptor_highlight": "Built On Reviews Alone",
+      "stat_line": "527 reviews · 4.6★",
+      "playbook_top_move": "Restart Instagram before the feed dies completely. The account has been silent for 72 days; one weekly post of a plated dish resets the momentum signal before it flatlines entirely."
     },
     {
       "rank": 10,
@@ -152,10 +128,10 @@
       "name": "MeetCha",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "Fourth In Pittsburgh Cafes On Genuine Affection, Stalled By 92 Days Of Silence.",
-      "descriptor_highlight": "92 Days Of Silence",
+      "descriptor": "Fourth In Pittsburgh Cafes On Goodwill Alone. The Social Signal Has Been Silent For Ninety Days.",
+      "descriptor_highlight": "Goodwill Alone",
       "stat_line": "134 reviews · 4.8★",
-      "playbook_top_move": "Break the 92-day Instagram silence now. MeetCha's Instagram has been dark for 92 days; a single weekly post restarts the momentum signal and surfaces the 15% engagement rate it already earns."
+      "playbook_top_move": "Restart the Instagram account now. The account has been dark for 92 days; even two posts per week would put MeetCha back in the feed conversation the rest of the cafe family never left."
     }
   ],
   "query": {
@@ -165,6 +141,6 @@
     "ranking": "underrated",
     "limit": 10
   },
-  "generated_at": "2026-04-26T23:43:33.155Z",
+  "generated_at": "2026-04-27T00:56:20.604Z",
   "model": "claude-sonnet-4-6"
 }

@@ -8,63 +8,63 @@
       "exampleQuote": "A perfect speakeasy vibe with the best cocktails I've had in Pittsburgh."
     },
     {
-      "phrase": "creative cocktail program",
+      "phrase": "standout bartender service",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Alicia was one of the best bartenders I've had, definitely deserves the bar manager position."
+    },
+    {
+      "phrase": "creative cocktail menu",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "A superb riff on a Sazerac/Manhattan/old fashioned. Slightly sweet, little liquorice flavor, booze heavy."
     },
     {
-      "phrase": "Alicia and Addie bartenders",
-      "frequency": 2,
-      "sentiment": "positive",
-      "exampleQuote": "Alicia was one of the best bartenders I've had, definitely deserves the bar manager position."
-    },
-    {
       "phrase": "90-minute time limit",
       "frequency": 1,
       "sentiment": "negative",
-      "exampleQuote": "We were informed we had to leave because there is a 90-minute time limit, only mentioned in the menu in very small print."
+      "exampleQuote": "We were informed that we had to leave because there is a 90-minute time limit. This policy is only mentioned in the menu in very small print."
     },
     {
-      "phrase": "hard to get in",
+      "phrase": "worth the price",
       "frequency": 2,
-      "sentiment": "neutral",
-      "exampleQuote": "I have tried to get in a few times but it is always super packed."
+      "sentiment": "positive",
+      "exampleQuote": "The price reflects the quality, atmosphere and overall experience you're going to have."
     }
   ],
-  "notable_quote": "I will be making the drive from Cleveland just for this bar in the near future.",
-  "sentiment_summary": "Reviewers keep coming back to the moody candlelit room, the bartender-driven cocktail creativity, and specific staff by name; the friction point is a 90-minute seating policy that catches guests off guard at the moment they order another round.",
-  "quarter_narrative": "Commerce Bar spent Spring 2026 as one of East Liberty's most talked-about rooms, pulling visitors from Cleveland and earning repeat-visit pledges in nearly every review. The 83 percent five-star rate on 106 Google reviews is a strong floor, but the Instagram account posted once in 30 days and produced zero reels, while no TikTok creator has indexed the bar at all. That silence is notable for a place reviewers call an 'entire experience' with a 'moody, vintage, and botanical' aesthetic, exactly the kind of environment that travels well on video. Hidden Harbor leads the Pittsburgh Bars family this issue on social momentum, a signal Commerce Bar has the raw material to compete on but hasn't yet converted. Closing the gap between the room's word-of-mouth pull and its near-zero social footprint is the clearest path up the family rankings.",
-  "tldr_read": "Strong review sentiment and a room people drive from Cleveland for, paired with a near-dormant Instagram and zero TikTok presence. Neighborhood Staples, ranked second in Pittsburgh Bars.",
-  "tldr_meaning": "The review floor is solid, but the social signals are too quiet for a bar with this level of in-person word-of-mouth, and the gap to the family leader runs almost entirely through momentum and visual catalog.",
+  "notable_quote": "I will be making the drive from Cleveland JUST for this bar in the near future.",
+  "sentiment_summary": "Reviewers consistently praise the moody botanical aesthetic, named bartenders by name, and cocktails built around unusual riffs; the one recurring friction is the 90-minute seating policy, which at least one party felt was enforced without warning.",
+  "quarter_narrative": "Commerce Bar spent Spring 2026 collecting the kind of reviews that travel, a Cleveland regular promising a return trip, cocktail names like 'absinthe makes the heart grow fonder' written out in full in guest posts, staff singled out by first name. None of that translated into social momentum. One Instagram post in thirty days, zero Reels, and no TikTok presence of any kind means the bar's best stories are staying inside the room. Hidden Harbor, the family leader this issue, built its top rank on social momentum; Commerce is running the opposite playbook right now. Closing the gap to number one means getting the conversation happening online at the same pace it clearly happens at the bar.",
+  "tldr_read": "Strong Google sentiment and genuinely distinctive cocktail reviews, but near-dormant Instagram and no TikTok footprint keep Commerce Bar at number two in Pittsburgh Bars.",
+  "tldr_meaning": "The review signal is healthy but plateauing at 106 total; without a social layer, the conversion path and momentum axes have nowhere to grow from here.",
   "diagnosis_pullquote": {
-    "line": "Second In Pittsburgh Bars On Word Of Mouth Alone, No Social Signal To Show For It.",
-    "highlight": "Word Of Mouth Alone"
+    "line": "Second In Pittsburgh Bars On Review Depth Alone, The Social Signal Has Barely Shown Up.",
+    "highlight": "Barely Shown Up"
   },
   "playbook": [
     {
-      "headline": "Restart Instagram with weekly reels",
-      "action": "One reel per week of the room at golden hour or a cocktail build; the account posted once in 30 days and has zero reels on record.",
-      "signal": "momentum",
-      "priority": "high",
-      "impact_label": "REOPEN SIGNAL"
-    },
-    {
-      "headline": "Claim a website and phone on Google",
-      "action": "Commerce Bar has no website and no phone number on its Google profile, both fields are blank while the conversion path sits well below the family median.",
+      "headline": "Get the bar on Google completely",
+      "action": "Add a website URL and phone number to the Google profile; right now both fields are blank, which stalls every potential first visit.",
       "signal": "conversion_path",
-      "priority": "medium",
-      "impact_label": "+CONVERSION PATH"
+      "priority": "high",
+      "impact_label": "CLOSE CONV. GAP"
     },
     {
-      "headline": "Tag the seating policy before the check lands",
-      "action": "The single negative review stems from the 90-minute limit surfacing at checkout; a verbal heads-up at the second round would neutralize the recurring complaint before it repeats.",
-      "signal": "community_spark",
+      "headline": "Post one Reel per week minimum",
+      "action": "Commerce Bar posted one Instagram Reel in the last thirty days and zero in the month prior; a weekly cocktail Reel would push engagement past its current 0.72 percent rate.",
+      "signal": "momentum",
+      "priority": "medium",
+      "impact_label": "+FEED VELOCITY"
+    },
+    {
+      "headline": "Build a TikTok presence from scratch",
+      "action": "No Pittsburgh TikTok creator has indexed Commerce Bar yet; a single account posting the cocktail names and the room's candlelit aesthetic could seed that coverage before competitors do.",
+      "signal": "collab_fit",
       "priority": "low",
-      "impact_label": "+SENTIMENT FLOOR"
+      "impact_label": "OPEN CREATOR LAYER"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T23:31:17.000Z",
+  "analyzed_at": "2026-04-27T00:43:55.262Z",
   "model": "claude-sonnet-4-6"
 }

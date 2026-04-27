@@ -2,69 +2,69 @@
   "slug": "meetcha",
   "themes": [
     {
-      "phrase": "study spot atmosphere",
-      "frequency": 3,
-      "sentiment": "positive",
-      "exampleQuote": "such an amazing environment... would recommend as a go to study spot"
-    },
-    {
       "phrase": "boba and milk tea",
       "frequency": 4,
       "sentiment": "positive",
       "exampleQuote": "Delicious boba and great atmosphere!"
     },
     {
-      "phrase": "cute and comfortable",
-      "frequency": 3,
+      "phrase": "cute cozy atmosphere",
+      "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "literally such a cute place"
     },
     {
-      "phrase": "friendly staff",
-      "frequency": 3,
+      "phrase": "go-to study spot",
+      "frequency": 2,
       "sentiment": "positive",
-      "exampleQuote": "Staff was VERY helpful and kind"
+      "exampleQuote": "Would recommend as a go to study spot!"
     },
     {
-      "phrase": "relaxing experience",
+      "phrase": "friendly helpful staff",
+      "frequency": 3,
+      "sentiment": "positive",
+      "exampleQuote": "Staff was VERY helpful and kind."
+    },
+    {
+      "phrase": "comfortable relaxing visit",
       "frequency": 2,
       "sentiment": "positive",
       "exampleQuote": "It's so comfortable and relaxing and the staff is super friendly"
     }
   ],
-  "notable_quote": "Always such a good experience: it's so comfortable and relaxing and the staff is super friendly.",
-  "sentiment_summary": "Reviewers are consistently enthusiastic about the vibe and boba quality, and almost never nitpick; the 134 reviews skew extremely positive, but the absence of critical feedback suggests a shallow reviewer pool rather than a flawless operation.",
-  "quarter_narrative": "MeetCha spent Spring 2026 quietly building a loyal Squirrel Hill South following without doing much to be found beyond it. The 93-percent five-star rating is real, but 134 total reviews and a last post 92 days ago tells a story of a place that earns genuine affection and then goes quiet. No Pittsburgh TikTok content is indexed for the shop, which is a gap worth naming plainly: a boba and milk tea cafe with a photogenic interior is exactly the kind of place creators film, and none have surfaced here yet. Allegheny Coffee and Tea Exchange is running away with the Pittsburgh Cafes family this issue on the strength of social momentum, the signal MeetCha most conspicuously lacks. The rank climbs when the review volume grows and when even one creator discovers the space.",
-  "tldr_read": "Exceptional customer affection and a perfect conversion path, but dormant Instagram and zero TikTok presence leave MeetCha at Ones to Watch, fourth in Pittsburgh Cafes.",
-  "tldr_meaning": "The sentiment ceiling is high and the infrastructure is sound; the rank stalls until review volume deepens and a social presence, on any platform, picks back up.",
+  "notable_quote": "Always such a good experience, it's so comfortable and relaxing and the staff is super friendly.",
+  "sentiment_summary": "Reviewers are consistent and warm on atmosphere, staff, and the boba itself, but the review pool is shallow at 134 total and the texts rarely go beyond single-adjective praise, leaving no detail that would help a first-time visitor choose a specific drink or dish.",
+  "quarter_narrative": "MeetCha's Spring 2026 was quiet in the most literal sense: no TikTok presence indexed for the business, no Instagram posts in the 92 days leading into the quarter, and a review base that, while affectionate, has stalled well below where the rest of the Pittsburgh Cafes family sits on sentiment depth. The city's cafe conversation this issue is anchored by Allegheny Coffee and Tea Exchange, whose social momentum is doing exactly what MeetCha's Instagram used to do before it went dark. What makes that gap stranger is MeetCha's Creator Fit signal, the single strongest axis in its profile, suggesting the space, the product, and the aesthetic are exactly what short-form video wants. The rank moves when that potential meets an actual posting cadence, on any platform.",
+  "tldr_read": "Near-perfect review star ratio, dormant Instagram, zero TikTok footprint. Ones to Watch, #4 in Pittsburgh Cafes.",
+  "tldr_meaning": "The review foundation is solid but thin, and every social signal is either stalled or absent, so the rank holds for now but has no current force pushing it upward.",
   "diagnosis_pullquote": {
-    "line": "Fourth In Pittsburgh Cafes On Genuine Affection, Stalled By 92 Days Of Silence.",
-    "highlight": "92 Days Of Silence"
+    "line": "Fourth In Pittsburgh Cafes On Goodwill Alone. The Social Signal Has Been Silent For Ninety Days.",
+    "highlight": "Goodwill Alone"
   },
   "playbook": [
     {
-      "headline": "Break the 92-day Instagram silence now",
-      "action": "MeetCha's Instagram has been dark for 92 days; a single weekly post restarts the momentum signal and surfaces the 15% engagement rate it already earns.",
+      "headline": "Restart the Instagram account now",
+      "action": "The account has been dark for 92 days; even two posts per week would put MeetCha back in the feed conversation the rest of the cafe family never left.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "RESTART SIGNAL"
+      "impact_label": "REOPEN SIGNAL"
     },
     {
-      "headline": "Push review volume past 200 this quarter",
-      "action": "With only 134 reviews, a table card or receipt prompt asking regulars to post could close the gap to family-median review depth within one season.",
-      "signal": "community_spark",
-      "priority": "medium",
-      "impact_label": "+SENTIMENT RANK"
-    },
-    {
-      "headline": "Expand photo catalog beyond six categories",
-      "action": "MeetCha's 115 Google photos cluster in six categories; staff-submitted shots of the study seating and seasonal drinks could close the gap to the family visual median.",
+      "headline": "Convert the visual catalog into categories",
+      "action": "115 photos exist but are bunched loosely; adding tagged shots across drink builds, interior detail, and seasonal menu items would close the gap to the family median visual catalog.",
       "signal": "content_canvas",
+      "priority": "medium",
+      "impact_label": "+12 VISUAL RANK"
+    },
+    {
+      "headline": "Push review writers toward specifics",
+      "action": "93 percent of 134 reviews are five stars, but almost none name a specific drink; a single prompt near the register could shift the review quality that holds the sentiment signal back.",
+      "signal": "community_spark",
       "priority": "low",
-      "impact_label": "+VISUAL DEPTH"
+      "impact_label": "+SENTIMENT DEPTH"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T23:36:38.515Z",
+  "analyzed_at": "2026-04-27T00:49:20.789Z",
   "model": "claude-sonnet-4-6"
 }

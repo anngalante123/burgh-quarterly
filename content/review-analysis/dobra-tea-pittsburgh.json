@@ -2,69 +2,69 @@
   "slug": "dobra-tea-pittsburgh",
   "themes": [
     {
-      "phrase": "tea selection breadth",
-      "frequency": 6,
+      "phrase": "extensive tea selection",
+      "frequency": 7,
       "sentiment": "positive",
       "exampleQuote": "One of the widest tea selections I have ever seen"
     },
     {
       "phrase": "third space atmosphere",
-      "frequency": 7,
+      "frequency": 6,
       "sentiment": "positive",
       "exampleQuote": "a wonderful pseudo-third space where you can sip tea, relax, play a board game, study, and talk to other patrons"
     },
     {
-      "phrase": "crowded seating",
-      "frequency": 2,
-      "sentiment": "negative",
-      "exampleQuote": "It's hard to get a seat sometimes because it's crowded"
-    },
-    {
-      "phrase": "knowledgeable friendly staff",
-      "frequency": 4,
+      "phrase": "knowledgeable, friendly staff",
+      "frequency": 5,
       "sentiment": "positive",
       "exampleQuote": "Staff is extremely friendly and knowledgeable about tea"
     },
     {
-      "phrase": "food worth ordering",
-      "frequency": 3,
+      "phrase": "hard to get a seat",
+      "frequency": 2,
+      "sentiment": "neutral",
+      "exampleQuote": "It's hard to get a seat sometimes because it's crowded"
+    },
+    {
+      "phrase": "food worth trying",
+      "frequency": 4,
       "sentiment": "positive",
-      "exampleQuote": "The babaganoush is delicious"
+      "exampleQuote": "The babaganoush is delicious, I went back and tried some food"
     }
   ],
   "notable_quote": "One of my favorite places on Earth: a wonderfully large selection of teas from around the world, served in an intimate and quiet setting.",
-  "sentiment_summary": "Reviewers consistently celebrate the scope of the tea menu, the board-game-and-book atmosphere, and a staff that can actually explain what they're serving; the one recurring friction is seating scarcity during busy hours.",
-  "quarter_narrative": "Ten Pittsburgh creators filmed Dobra Tea this quarter, logging 9,656 plays on TikTok without any help from the business itself, which has no TikTok account and posted once to Instagram in the last 30 days. The Bombay chai is carrying the word-of-mouth on its own; @alexgdeckerr pulled nearly 2,600 plays from a single video, and the business captured none of that momentum in its own feed. Elsewhere in the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange holds the top spot on the strength of social momentum, exactly the axis where Dobra lags hardest. Closing that gap, not the review gap (82 percent five-star, 1,107 total, those are already exceptional), is what separates a sustained hold at the top of the Tea houses list from a real push into the Cafes family's upper tier.",
-  "tldr_read": "Exceptional review sentiment and a growing creator footprint on TikTok, undermined by a near-dormant Instagram and no TikTok account of its own. Ones to Watch, #1 in Pittsburgh Tea Houses.",
-  "tldr_meaning": "The review signal is already at the ceiling and creator discovery is arriving uninvited; the rank ceiling lifts only if Dobra builds any reciprocal social presence to catch what the city is already sending its way.",
+  "sentiment_summary": "Reviewers reliably praise the depth of the tea menu, the board-game-and-linger atmosphere, and staff who can actually explain what they're serving; the only friction that surfaces is seat availability on busy stretches.",
+  "quarter_narrative": "Dobrá Tea Pittsburgh enters Spring 2026 as the city's consensus answer to the question of where to spend three hours over a pot of something unusual. Its 1,107 Google reviews skew overwhelmingly positive, and the review recency is tight, someone was there five days ago and felt compelled to write about it. The gap that keeps it at number six in the Pittsburgh Cafes family, where Allegheny Coffee and Tea Exchange is setting the pace on social momentum, is not the product or the room. It is the near-total silence on Instagram, one post in thirty days, no reels, and no TikTok presence of any kind, meaning the city's visual record of this place lives almost entirely on Google photo uploads rather than in any feed a new customer might stumble into. The rank climbs when the room that people are already crowding into starts showing up where people are already scrolling.",
+  "tldr_read": "Strongest review sentiment in the Cafes family, nearly invisible on Instagram and absent from TikTok entirely. Ones to Watch, number one in Pittsburgh Tea Houses.",
+  "tldr_meaning": "The review foundation is already top-of-family strong; what separates this business from the Cafes leaders is the social signal, which is currently close to flat across every platform.",
   "diagnosis_pullquote": {
-    "line": "First In Tea Houses, Sixth In Cafes. Ten Creators Posting, Zero TikTok Account.",
-    "highlight": "Zero TikTok Account"
+    "line": "First In Tea Houses, Sixth In Pittsburgh Cafes. The Room Is Full; The Feed Is Empty.",
+    "highlight": "The Feed Is Empty"
   },
   "playbook": [
     {
-      "headline": "Claim a TikTok presence before momentum fades",
-      "action": "Ten creators have posted 11 TikToks this quarter; a business account captures that search traffic and gives the Bombay chai its own stage.",
+      "headline": "Restart Instagram with weekly reels",
+      "action": "One post in thirty days and zero reels means the account's reach ceiling is effectively zero; a single sixty-second reel of the tea service ritual would change that math immediately.",
       "signal": "momentum",
       "priority": "high",
-      "impact_label": "CAPTURE CREATOR LIFT"
+      "impact_label": "RESTART SIGNAL"
     },
     {
-      "headline": "Restart Instagram with weekly visual posts",
-      "action": "One post in 30 days at a 2.76 percent engagement rate leaves a willing audience idle; three posts a week tied to specific teas would rebuild cadence.",
-      "signal": "content_canvas",
-      "priority": "medium",
-      "impact_label": "+INSTAGRAM SIGNAL"
-    },
-    {
-      "headline": "Invite the top five creators back formally",
-      "action": "Five named creators already filmed here; a direct invitation with a new seasonal tea or snack platter gives them a concrete reason to post again this quarter.",
+      "headline": "Invite TikTok creators into the room",
+      "action": "No Pittsburgh TikToks are indexed for Dobrá Tea at all; reaching out to even two or three local food creators for a hosted tasting session would open a discovery channel that currently does not exist.",
       "signal": "collab_fit",
+      "priority": "medium",
+      "impact_label": "UNLOCK CREATORS"
+    },
+    {
+      "headline": "Tag and expand the photo categories on Google",
+      "action": "690 photos across a limited category set is a strong foundation; actively prompting guests to tag the board games, the bell-call service ritual, and the snack platters would fill the visual gaps and push the catalog signal higher.",
+      "signal": "content_canvas",
       "priority": "low",
-      "impact_label": "DOUBLE CREATOR COUNT"
+      "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T23:32:04.508Z",
+  "analyzed_at": "2026-04-27T00:44:44.375Z",
   "model": "claude-sonnet-4-6"
 }
