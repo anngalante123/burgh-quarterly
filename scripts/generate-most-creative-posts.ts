@@ -29,6 +29,7 @@ import Anthropic from "@anthropic-ai/sdk";
 
 import { loadAllRichBusinesses } from "@/lib/query/business-query";
 import { familyForCategory } from "@/lib/data/category-family";
+import { downloadThumbnail } from "@/lib/scrape/download-thumbnail";
 
 loadEnv({ path: join(process.cwd(), ".env.local") });
 loadEnv();
@@ -374,6 +375,16 @@ async function main() {
     if (final.length >= TOP_N) break;
   }
 
+  // Download thumbnails into /public/post-thumbs/<shortcode>.<ext> so the
+  // site can serve them from our own domain. IG's CDN URLs are short-lived
+  // and block cross-origin hot-linking, so this is the only reliable path.
+  console.log(`[creative] downloading ${final.length} thumbnails...`);
+  const thumbnails = await Promise.all(
+    final.map((e) => downloadThumbnail(e.c.displayUrl, e.c.shortcode)),
+  );
+  const got = thumbnails.filter(Boolean).length;
+  console.log(`[creative] saved ${got}/${final.length} thumbnails to /public/post-thumbs/`);
+
   const items: CreativeItem[] = final.map((e, i) => {
     const c = e.c;
     const fam = familyForCategory(c.business.artifact.meta.categoryName).label;
@@ -384,7 +395,7 @@ async function main() {
       platform: "instagram",
       video_url: c.url,
       video_id: c.shortcode,
-      thumbnail_url: null,
+      thumbnail_url: thumbnails[i],
       plays: c.plays,
       likes: c.likes,
       comments: c.comments,

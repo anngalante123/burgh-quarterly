@@ -4,15 +4,99 @@
   "title": "The Most Creative Posts From Pittsburgh Small Businesses",
   "subtitle": "Judged by Claude on visual concept, caption craft, format fit, and surprise. Not ranked by likes.",
   "angle": "the IG posts that took risks, made craft choices, or said something specific this quarter, ranked by editorial judgment instead of follower count.",
-  "intro": "Every quarter, we ask a simple question: which Pittsburgh small businesses are actually doing something interesting on Instagram, not just posting to post. This list rewards craft. A juice bar with 3,000 followers can outscore a regional chain with half a million if the concept is sharper, the caption earns its place, and the format does real work. Follower counts don't appear anywhere in our scoring. Execution does.\n\nThis quarter's top 30 pulled from 17 businesses, and the range was genuinely surprising. Lorelei landed the top spot by doing something most accounts never attempt: matching its mid-century aesthetic so precisely to its actual concept that the $1 hot dog and live music post felt less like marketing and more like a scene you'd already missed. Page's, in second, ran an April Fools misdirection so convincingly staged it drove the kind of engagement most real announcements never see. Golden Age Beer Company, third, let a vintage neon sign and a specific mention of Czech lager do the heavy lifting, which turns out to be more than enough.\n\nIssue 02 expands the scoring panel and adds a new category tracking how well posts hold up one week after publish.",
+  "intro": "Every quarter, Pittsburgh's small business Instagram ecosystem produces a handful of posts worth studying. Not because they went viral, not because the accounts behind them are massive, but because someone made a real creative decision. This list rewards that. A 14,000-follower coffee shop can outrank a 500,000-follower chain if the post is sharper, stranger, or more honest. Follower counts don't appear anywhere in our scoring. Visual concept does. Caption craft does. Surprise does.\n\nThis quarter's top posts leaned into specificity and personality. Lorelei led the pack with a retro illustration and caption details so local they practically smell like the North Side: Pleaktones on the bill, $1 dogs, the word \"glizzies\" used without irony. Golden Age Beer Company followed close behind, pairing a vintage neon sign illustration with caption copy that explained their Czech lager strategy like they were talking to a friend who actually cared. Delanie's Coffee in Shadyside landed a gilded boot mug in the frame and somehow made honky tonk feel right at home in Shadyside.\n\nThirty posts, 17 businesses. Issue 02 starts fresh in July.",
   "items": [
     {
       "rank": 1,
       "kind": "post",
       "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DWEaqRblfy_/",
+      "video_id": "DWEaqRblfy_",
+      "thumbnail_url": "/post-thumbs/DWEaqRblfy_.jpg",
+      "plays": 0,
+      "likes": 8896,
+      "comments": 17,
+      "posted": "2026-03-19T14:15:17.000Z",
+      "caption": "we ready for the honky tonk 👀👀 thank you for this gorgeous picture 📸📸 @ashleymoen_",
+      "creator_handle": "delaniescoffee",
+      "business_slug": "delanies-coffee-shadyside",
+      "business_name": "Delanie's Coffee Shadyside",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Shadyside",
+      "ig_type": "Sidecar",
+      "creativity_score": 7.5,
+      "scores": {
+        "visual_concept": 8,
+        "caption_craft": 7,
+        "format_fit": 7,
+        "surprise": 8,
+        "why": "Gilded boot mugs are visually distinctive and playful, the caption feels authentic and fun, and the honky tonk angle creates unexpected personality for a coffee shop."
+      },
+      "why": "Gilded boot mugs are visually distinctive and playful, the caption feels authentic and fun, and the honky tonk angle creates unexpected personality for a coffee shop."
+    },
+    {
+      "rank": 2,
+      "kind": "post",
+      "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DVZcaZ9Ehy4/",
+      "video_id": "DVZcaZ9Ehy4",
+      "thumbnail_url": "/post-thumbs/DVZcaZ9Ehy4.jpg",
+      "plays": 0,
+      "likes": 284,
+      "comments": 815,
+      "posted": "2026-03-02T21:43:15.000Z",
+      "caption": "🚫CLOSED🚫 \n\nIt’s a mini giveaway! 😙❤️💋\nWe’re so grateful for all your love and support of Spot Of Coffee, if it weren’t for you all, no one would believe that there’s the coolest coffee shop, hidden in an alley between Shadyside and East",
+      "creator_handle": "spot.of.coffee",
+      "business_slug": "spot-of-coffee",
+      "business_name": "Spot of Coffee",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Shadyside",
+      "ig_type": "Sidecar",
+      "creativity_score": 7.25,
+      "scores": {
+        "visual_concept": 7,
+        "caption_craft": 8,
+        "format_fit": 6,
+        "surprise": 8,
+        "why": "Authentic voice and generous giveaway create genuine engagement, though product shot is straightforward rather than conceptually inventive."
+      },
+      "why": "Authentic voice and generous giveaway create genuine engagement, though product shot is straightforward rather than conceptually inventive."
+    },
+    {
+      "rank": 3,
+      "kind": "post",
+      "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DWl-y_Ohnqc/",
+      "video_id": "DWl-y_Ohnqc",
+      "thumbnail_url": "/post-thumbs/DWl-y_Ohnqc.jpg",
+      "plays": 483990,
+      "likes": 12730,
+      "comments": 184,
+      "posted": "2026-04-01T14:05:00.000Z",
+      "caption": "INTRODUCING OUR LIMITED-TIME PICKLE SPLIT SUNDAE! 🥒🍦\n\nMade with vanilla ice cream, strawberries, chocolate syrup, and pineapple topped with whipped cream, nuts, and of course, a pickle!\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\nJK… April Fools 😅",
+      "creator_handle": "pagesdairymart",
+      "business_slug": "pages",
+      "business_name": "Page's",
+      "family_label": "Pittsburgh Sweets",
+      "neighborhood": "Arlington",
+      "ig_type": "Video",
+      "creativity_score": null,
+      "scores": {
+        "visual_concept": 8,
+        "caption_craft": 9,
+        "format_craft": 7,
+        "surprise": 9,
+        "why": "Visually compelling food styling and April Fools misdirect create high engagement, though static image limits format potential."
+      },
+      "why": "Visually compelling food styling and April Fools misdirect create high engagement, though static image limits format potential."
+    },
+    {
+      "rank": 4,
+      "kind": "post",
+      "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DWE4CSlEcia/",
       "video_id": "DWE4CSlEcia",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DWE4CSlEcia.jpg",
       "plays": 0,
       "likes": 333,
       "comments": 7,
@@ -30,45 +114,17 @@
         "caption_craft": 9,
         "format_fit": 9,
         "surprise": 8,
-        "why": "Retro aesthetic perfectly matches the mid-century concept, voice is genuinely fun and specific, and $1 hot dogs plus live music create authentic local appeal."
+        "why": "Retro illustration aesthetic with confident voice and specific details (Pleaktones, $1 dogs, glizzies) creates shareable, locally-rooted appeal."
       },
-      "why": "Retro aesthetic perfectly matches the mid-century concept, voice is genuinely fun and specific, and $1 hot dogs plus live music create authentic local appeal."
+      "why": "Retro illustration aesthetic with confident voice and specific details (Pleaktones, $1 dogs, glizzies) creates shareable, locally-rooted appeal."
     },
     {
-      "rank": 2,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DWl-y_Ohnqc/",
-      "video_id": "DWl-y_Ohnqc",
-      "thumbnail_url": null,
-      "plays": 483990,
-      "likes": 12730,
-      "comments": 184,
-      "posted": "2026-04-01T14:05:00.000Z",
-      "caption": "INTRODUCING OUR LIMITED-TIME PICKLE SPLIT SUNDAE! 🥒🍦\n\nMade with vanilla ice cream, strawberries, chocolate syrup, and pineapple topped with whipped cream, nuts, and of course, a pickle!\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\n•\n\nJK… April Fools 😅",
-      "creator_handle": "pagesdairymart",
-      "business_slug": "pages",
-      "business_name": "Page's",
-      "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Arlington",
-      "ig_type": "Video",
-      "creativity_score": 8.25,
-      "scores": {
-        "visual_concept": 8,
-        "caption_craft": 9,
-        "format_fit": 7,
-        "surprise": 9,
-        "why": "April Fools misdirection with convincing food prop execution and authentic voice drives massive engagement despite being a joke."
-      },
-      "why": "April Fools misdirection with convincing food prop execution and authentic voice drives massive engagement despite being a joke."
-    },
-    {
-      "rank": 3,
+      "rank": 5,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DXFCAsJke83/",
       "video_id": "DXFCAsJke83",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DXFCAsJke83.jpg",
       "plays": 0,
       "likes": 805,
       "comments": 38,
@@ -86,45 +142,17 @@
         "caption_craft": 7,
         "format_fit": 8,
         "surprise": 8,
-        "why": "Vintage neon sign aesthetic arrests scrollers while authentic voice and Czech lager specificity signal genuine expertise, not generic expansion news."
+        "why": "Vintage neon sign illustration arrests the eye immediately while the caption's specificity about Czech lager strategy reads authentic and insider-y."
       },
-      "why": "Vintage neon sign aesthetic arrests scrollers while authentic voice and Czech lager specificity signal genuine expertise, not generic expansion news."
+      "why": "Vintage neon sign illustration arrests the eye immediately while the caption's specificity about Czech lager strategy reads authentic and insider-y."
     },
     {
-      "rank": 4,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DXCQ9xGEWR5/",
-      "video_id": "DXCQ9xGEWR5",
-      "thumbnail_url": null,
-      "plays": 283888,
-      "likes": 8315,
-      "comments": 126,
-      "posted": "2026-04-12T14:44:21.000Z",
-      "caption": "Nothing will stand between an ice cream lover and their Gooey Butter Cake at 1:03 am\n\n@caseyworthamm",
-      "creator_handle": "jenisicecreams",
-      "business_slug": "jenis-splendid-ice-creams",
-      "business_name": "Jeni's Splendid Ice Creams",
-      "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Larimer",
-      "ig_type": "Video",
-      "creativity_score": 8,
-      "scores": {
-        "visual_concept": 7,
-        "caption_craft": 8,
-        "format_fit": 9,
-        "surprise": 8,
-        "why": "Late-night crowd energy captures genuine obsession with a specific flavor, making the video format feel like insider access to devoted customers."
-      },
-      "why": "Late-night crowd energy captures genuine obsession with a specific flavor, making the video format feel like insider access to devoted customers."
-    },
-    {
-      "rank": 5,
+      "rank": 6,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DUTLFq_jVjd/",
       "video_id": "DUTLFq_jVjd",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DUTLFq_jVjd.jpg",
       "plays": 506,
       "likes": 19,
       "comments": 1,
@@ -142,37 +170,9 @@
         "caption_craft": 8,
         "format_fit": 9,
         "surprise": 8,
-        "why": "Relatable meme format with hands-on food prep visual perfectly captures the tension between healthy advice and indulgence."
+        "why": "Relatable meme format with hands-on product demo perfectly captures the gap between healthy advice and indulgent reality."
       },
-      "why": "Relatable meme format with hands-on food prep visual perfectly captures the tension between healthy advice and indulgence."
-    },
-    {
-      "rank": 6,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DWEaqRblfy_/",
-      "video_id": "DWEaqRblfy_",
-      "thumbnail_url": null,
-      "plays": 0,
-      "likes": 8896,
-      "comments": 17,
-      "posted": "2026-03-19T14:15:17.000Z",
-      "caption": "we ready for the honky tonk 👀👀 thank you for this gorgeous picture 📸📸 @ashleymoen_",
-      "creator_handle": "delaniescoffee",
-      "business_slug": "delanies-coffee-shadyside",
-      "business_name": "Delanie's Coffee Shadyside",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Shadyside",
-      "ig_type": "Sidecar",
-      "creativity_score": 7.75,
-      "scores": {
-        "visual_concept": 8,
-        "caption_craft": 7,
-        "format_fit": 8,
-        "surprise": 8,
-        "why": "Golden boot mugs with cowboy theme are visually distinctive and shareable, paired with casual brand voice and strong engagement metrics prove scroll-stopping appeal."
-      },
-      "why": "Golden boot mugs with cowboy theme are visually distinctive and shareable, paired with casual brand voice and strong engagement metrics prove scroll-stopping appeal."
+      "why": "Relatable meme format with hands-on product demo perfectly captures the gap between healthy advice and indulgent reality."
     },
     {
       "rank": 7,
@@ -180,7 +180,7 @@
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DVd-utrEa7Z/",
       "video_id": "DVd-utrEa7Z",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DVd-utrEa7Z.jpg",
       "plays": 92137,
       "likes": 7361,
       "comments": 192,
@@ -198,45 +198,73 @@
         "caption_craft": 7,
         "format_fit": 8,
         "surprise": 8,
-        "why": "Vibrant, recognizable Pittsburgh iconography on a bright truck with authentic local voice and genuine gratitude creates scroll-stopping appeal."
+        "why": "Vibrant, locally-designed truck with authentic gratitude and clear personality stops scrolls and invites sharing among Pittsburgh community."
       },
-      "why": "Vibrant, recognizable Pittsburgh iconography on a bright truck with authentic local voice and genuine gratitude creates scroll-stopping appeal."
+      "why": "Vibrant, locally-designed truck with authentic gratitude and clear personality stops scrolls and invites sharing among Pittsburgh community."
     },
     {
       "rank": 8,
       "kind": "post",
       "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DUCHxH7DBIm/",
-      "video_id": "DUCHxH7DBIm",
-      "thumbnail_url": null,
-      "plays": 0,
-      "likes": 465,
-      "comments": 2,
-      "posted": "2026-01-28T00:48:50.000Z",
-      "caption": "Thank you to all of the people who have been working hard to clear Penn Avenue today (and yesterday, and tomorrow, probably)! \nWe will be operating under limited hours for at least the next few days due to low temperatures, and to ensure sa",
-      "creator_handle": "alleghenycoffee",
-      "business_slug": "allegheny-coffee-tea-exchange",
-      "business_name": "Allegheny Coffee & Tea Exchange",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Strip District",
-      "ig_type": "Image",
+      "video_url": "https://www.instagram.com/p/DXCQ9xGEWR5/",
+      "video_id": "DXCQ9xGEWR5",
+      "thumbnail_url": "/post-thumbs/DXCQ9xGEWR5.jpg",
+      "plays": 283888,
+      "likes": 8315,
+      "comments": 126,
+      "posted": "2026-04-12T14:44:21.000Z",
+      "caption": "Nothing will stand between an ice cream lover and their Gooey Butter Cake at 1:03 am\n\n@caseyworthamm",
+      "creator_handle": "jenisicecreams",
+      "business_slug": "jenis-splendid-ice-creams",
+      "business_name": "Jeni's Splendid Ice Creams",
+      "family_label": "Pittsburgh Sweets",
+      "neighborhood": "Larimer",
+      "ig_type": "Video",
+      "creativity_score": 7.75,
+      "scores": {
+        "visual_concept": 7,
+        "caption_craft": 8,
+        "format_fit": 8,
+        "surprise": 8,
+        "why": "Late-night crowd chaos paired with relatable flavor obsession creates authentic, shareable urgency that feels earned rather than staged."
+      },
+      "why": "Late-night crowd chaos paired with relatable flavor obsession creates authentic, shareable urgency that feels earned rather than staged."
+    },
+    {
+      "rank": 9,
+      "kind": "post",
+      "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DU1CMC4kbTx/",
+      "video_id": "DU1CMC4kbTx",
+      "thumbnail_url": "/post-thumbs/DU1CMC4kbTx.jpg",
+      "plays": 15793,
+      "likes": 144,
+      "comments": 9,
+      "posted": "2026-02-16T18:23:51.000Z",
+      "caption": "Tag a friend that would eat your food while you’re not looking 👁️👄👁️\n\nWhere to find us:\n📍920 W Broad St, Falls Church, VA 22046\n📍33 Maryland Ave Unit A, Rockville, MD 20850\n📍10045 Baltimore National Pike Ste A6, Ellicott City, MD 2104",
+      "creator_handle": "kyomatchausa",
+      "business_slug": "kyo-matcha",
+      "business_name": "Kyo Matcha",
+      "family_label": "Pittsburgh Sweets",
+      "neighborhood": "Squirrel Hill South",
+      "ig_type": "Video",
       "creativity_score": 7.5,
       "scores": {
         "visual_concept": 7,
         "caption_craft": 8,
         "format_fit": 8,
         "surprise": 7,
-        "why": "Genuine gratitude and operational honesty resonate more than promotion, backed by a compelling snow-clearing scene that feels timely and locally specific."
+        "why": "Relatable humor about food theft paired with candid video creates authentic engagement, though the concept feels slightly familiar to casual food brand content."
       },
-      "why": "Genuine gratitude and operational honesty resonate more than promotion, backed by a compelling snow-clearing scene that feels timely and locally specific."
+      "why": "Relatable humor about food theft paired with candid video creates authentic engagement, though the concept feels slightly familiar to casual food brand content."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DVwIE7LEb91/",
       "video_id": "DVwIE7LEb91",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DVwIE7LEb91.jpg",
       "plays": 6602,
       "likes": 150,
       "comments": 4,
@@ -254,17 +282,17 @@
         "caption_craft": 6,
         "format_fit": 9,
         "surprise": 7,
-        "why": "The overhead shot captures genuine moment of anticipation with beautiful matcha cakes, but the caption feels disconnected from the visual payoff."
+        "why": "Relatable food porn moment with excellent video timing, though the caption feels disconnected from the visual payoff."
       },
-      "why": "The overhead shot captures genuine moment of anticipation with beautiful matcha cakes, but the caption feels disconnected from the visual payoff."
+      "why": "Relatable food porn moment with excellent video timing, though the caption feels disconnected from the visual payoff."
     },
     {
-      "rank": 10,
+      "rank": 11,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DV8hPC6DQt_/",
       "video_id": "DV8hPC6DQt_",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DV8hPC6DQt_.jpg",
       "plays": 0,
       "likes": 368,
       "comments": 10,
@@ -282,17 +310,45 @@
         "caption_craft": 8,
         "format_fit": 7,
         "surprise": 7,
-        "why": "Elegant plated dessert with thoughtful styling and genuine French pastry knowledge elevates beyond typical bakery content."
+        "why": "Elegant plating with deliberate butterfly detail and specific flavor narrative creates craveable luxury, though sidecar format dilutes impact versus full-screen showcase."
       },
-      "why": "Elegant plated dessert with thoughtful styling and genuine French pastry knowledge elevates beyond typical bakery content."
+      "why": "Elegant plating with deliberate butterfly detail and specific flavor narrative creates craveable luxury, though sidecar format dilutes impact versus full-screen showcase."
     },
     {
-      "rank": 11,
+      "rank": 12,
+      "kind": "post",
+      "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DUCHxH7DBIm/",
+      "video_id": "DUCHxH7DBIm",
+      "thumbnail_url": "/post-thumbs/DUCHxH7DBIm.jpg",
+      "plays": 0,
+      "likes": 465,
+      "comments": 2,
+      "posted": "2026-01-28T00:48:50.000Z",
+      "caption": "Thank you to all of the people who have been working hard to clear Penn Avenue today (and yesterday, and tomorrow, probably)! \nWe will be operating under limited hours for at least the next few days due to low temperatures, and to ensure sa",
+      "creator_handle": "alleghenycoffee",
+      "business_slug": "allegheny-coffee-tea-exchange",
+      "business_name": "Allegheny Coffee & Tea Exchange",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Strip District",
+      "ig_type": "Image",
+      "creativity_score": 7.25,
+      "scores": {
+        "visual_concept": 7,
+        "caption_craft": 8,
+        "format_fit": 8,
+        "surprise": 6,
+        "why": "Authentic community gratitude with clear operational info beats generic snow content through genuine voice and specificity."
+      },
+      "why": "Authentic community gratitude with clear operational info beats generic snow content through genuine voice and specificity."
+    },
+    {
+      "rank": 13,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DV8hPC6DQt_/",
       "video_id": "DV8hPC6DQt_",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DV8hPC6DQt_.jpg",
       "plays": 0,
       "likes": 368,
       "comments": 10,
@@ -310,17 +366,17 @@
         "caption_craft": 7,
         "format_fit": 7,
         "surprise": 7,
-        "why": "Elegant plated dessert with thoughtful butterfly garnish and bilingual naming catches eyes, though execution feels expected for fine pastry."
+        "why": "Elegant pastry photography with thoughtful plating stops scrolls, but caption feels slightly templated despite French naming flourish."
       },
-      "why": "Elegant plated dessert with thoughtful butterfly garnish and bilingual naming catches eyes, though execution feels expected for fine pastry."
+      "why": "Elegant pastry photography with thoughtful plating stops scrolls, but caption feels slightly templated despite French naming flourish."
     },
     {
-      "rank": 12,
+      "rank": 14,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DUHClKBkvKI/",
       "video_id": "DUHClKBkvKI",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DUHClKBkvKI.jpg",
       "plays": 3010,
       "likes": 101,
       "comments": 6,
@@ -338,45 +394,45 @@
         "caption_craft": 6,
         "format_fit": 8,
         "surprise": 7,
-        "why": "Hands-on video reveal of an unexpected flavor combo creates genuine curiosity and stops scrolls, though the caption leaves the concept slightly mysterious rather than inviting."
+        "why": "Hands-on video of an unusual drink concept stops scrollers, but the questioning caption undersells the intrigue."
       },
-      "why": "Hands-on video reveal of an unexpected flavor combo creates genuine curiosity and stops scrolls, though the caption leaves the concept slightly mysterious rather than inviting."
+      "why": "Hands-on video of an unusual drink concept stops scrollers, but the questioning caption undersells the intrigue."
     },
     {
-      "rank": 13,
+      "rank": 15,
       "kind": "post",
       "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DVMRkBTkbyh/",
-      "video_id": "DVMRkBTkbyh",
-      "thumbnail_url": null,
-      "plays": 17475,
-      "likes": 243,
-      "comments": 0,
-      "posted": "2026-02-25T18:59:36.000Z",
-      "caption": "we’re not judging!!! 🤥\n\nWhere to find us:\n📍920 W Broad St, Falls Church, VA 22046\n📍33 Maryland Ave Unit A, Rockville, MD 20850\n📍10045 Baltimore National Pike Ste A6, Ellicott City, MD 21042\n📍100 Shawn Rd Suite B, Hunt Valley, MD 21030\n",
-      "creator_handle": "kyomatchausa",
-      "business_slug": "kyo-matcha",
-      "business_name": "Kyo Matcha",
+      "video_url": "https://www.instagram.com/p/DXW9_euje_b/",
+      "video_id": "DXW9_euje_b",
+      "thumbnail_url": "/post-thumbs/DXW9_euje_b.jpg",
+      "plays": 23683,
+      "likes": 620,
+      "comments": 535,
+      "posted": "2026-04-20T15:46:38.000Z",
+      "caption": "Our Lubbock doors are THISCLOSE to opening - whaddya say we do a little giveaway for all our new Texas friends?! 🤩\n\nYou know the drill:\n1️⃣ LIKE this post\n2️⃣ TAG a friend in Lubbock\n3️⃣ FOLLOW @millies \n🍦 and ONE LUCKY WINNER in Lubbock ",
+      "creator_handle": "millies",
+      "business_slug": "millies-homemade-ice-cream",
+      "business_name": "Millie's Homemade Ice Cream",
       "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Squirrel Hill South",
+      "neighborhood": "Shadyside",
       "ig_type": "Video",
       "creativity_score": 7,
       "scores": {
-        "visual_concept": 7,
-        "caption_craft": 6,
-        "format_fit": 8,
+        "visual_concept": 6,
+        "caption_craft": 8,
+        "format_fit": 7,
         "surprise": 7,
-        "why": "Relatable product video with humorous non-judgment angle catches scrollers, though caption feels slightly forced and locations list overshadows the creative hook."
+        "why": "Conversational voice and Texas-specific humor elevate a simple expansion announcement, though the visual itself is fairly standard brand marketing."
       },
-      "why": "Relatable product video with humorous non-judgment angle catches scrollers, though caption feels slightly forced and locations list overshadows the creative hook."
+      "why": "Conversational voice and Texas-specific humor elevate a simple expansion announcement, though the visual itself is fairly standard brand marketing."
     },
     {
-      "rank": 14,
+      "rank": 16,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DXZ7I0VCU2I/",
       "video_id": "DXZ7I0VCU2I",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DXZ7I0VCU2I.jpg",
       "plays": 29698,
       "likes": 937,
       "comments": 12,
@@ -394,17 +450,17 @@
         "caption_craft": 7,
         "format_fit": 6,
         "surprise": 7,
-        "why": "Eye-catching ice cream shot with genuine local voice, but the list format feels slightly templated despite good personality."
+        "why": "Delicious hero shot stops scrolls, but list format dilutes focus and the caption tries too hard with forced Pittsburgh dialect."
       },
-      "why": "Eye-catching ice cream shot with genuine local voice, but the list format feels slightly templated despite good personality."
+      "why": "Delicious hero shot stops scrolls, but list format dilutes focus and the caption tries too hard with forced Pittsburgh dialect."
     },
     {
-      "rank": 15,
+      "rank": 17,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DU-9NAPEQmR/",
       "video_id": "DU-9NAPEQmR",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DU-9NAPEQmR.jpg",
       "plays": 5292,
       "likes": 339,
       "comments": 21,
@@ -422,66 +478,9 @@
         "caption_craft": 6,
         "format_fit": 8,
         "surprise": 7,
-        "why": "Vintage tiki mug with playful spin command leverages nostalgic charm and video format to create engaging, on-brand personality."
+        "why": "Vintage tiki aesthetic with skulls and playful animation creates strong visual intrigue, but caption feels slightly surface-level for the creative execution."
       },
-      "why": "Vintage tiki mug with playful spin command leverages nostalgic charm and video format to create engaging, on-brand personality."
-    },
-    {
-      "rank": 16,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DVZcaZ9Ehy4/",
-      "video_id": "DVZcaZ9Ehy4",
-      "thumbnail_url": null,
-      "plays": 0,
-      "likes": 284,
-      "comments": 815,
-      "posted": "2026-03-02T21:43:15.000Z",
-      "caption": "🚫CLOSED🚫 \n\nIt’s a mini giveaway! 😙❤️💋\nWe’re so grateful for all your love and support of Spot Of Coffee, if it weren’t for you all, no one would believe that there’s the coolest coffee shop, hidden in an alley between Shadyside and East",
-      "creator_handle": "spot.of.coffee",
-      "business_slug": "spot-of-coffee",
-      "business_name": "Spot of Coffee",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Shadyside",
-      "ig_type": "Sidecar",
-      "creativity_score": 6.5,
-      "scores": {
-        "visual_concept": 6,
-        "caption_craft": 7,
-        "format_fit": 6,
-        "surprise": 7,
-        "why": "Authentic voice and strong engagement offset by safe product photography and predictable giveaway mechanics."
-      },
-      "why": "Authentic voice and strong engagement offset by safe product photography and predictable giveaway mechanics."
-    },
-    {
-      "rank": 17,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DXW9_euje_b/",
-      "video_id": "DXW9_euje_b",
-      "thumbnail_url": null,
-      "plays": 23683,
-      "likes": 620,
-      "comments": 535,
-      "posted": "2026-04-20T15:46:38.000Z",
-      "caption": "Our Lubbock doors are THISCLOSE to opening - whaddya say we do a little giveaway for all our new Texas friends?! 🤩\n\nYou know the drill:\n1️⃣ LIKE this post\n2️⃣ TAG a friend in Lubbock\n3️⃣ FOLLOW @millies \n🍦 and ONE LUCKY WINNER in Lubbock ",
-      "creator_handle": "millies",
-      "business_slug": "millies-homemade-ice-cream",
-      "business_name": "Millie's Homemade Ice Cream",
-      "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Shadyside",
-      "ig_type": "Video",
-      "creativity_score": 6.5,
-      "scores": {
-        "visual_concept": 6,
-        "caption_craft": 8,
-        "caption_craft_why": "Conversational tone with personality ('whaddya say,' 'Lubbockians (?!)') and specific details that feel genuinely local rather than templated.",
-        "format_fit": 5,
-        "surprise": 7,
-        "why": "Strong voice and clear giveaway mechanics drive engagement, but soft-focus pink aesthetic feels more generic than the brand's personality demands."
-      },
-      "why": "Strong voice and clear giveaway mechanics drive engagement, but soft-focus pink aesthetic feels more generic than the brand's personality demands."
+      "why": "Vintage tiki aesthetic with skulls and playful animation creates strong visual intrigue, but caption feels slightly surface-level for the creative execution."
     },
     {
       "rank": 18,
@@ -489,7 +488,7 @@
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DWtYKU0AdbQ/",
       "video_id": "DWtYKU0AdbQ",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DWtYKU0AdbQ.jpg",
       "plays": 0,
       "likes": 191,
       "comments": 2,
@@ -507,17 +506,73 @@
         "caption_craft": 6,
         "format_fit": 7,
         "surprise": 6,
-        "why": "Strong visual comparison hook and genuine Strip District pride, but caption leans corporate and engagement remains modest for follower count."
+        "why": "Strong side-by-side product comparison with authentic branding, but caption leans corporate despite genuine Strip District pride."
       },
-      "why": "Strong visual comparison hook and genuine Strip District pride, but caption leans corporate and engagement remains modest for follower count."
+      "why": "Strong side-by-side product comparison with authentic branding, but caption leans corporate despite genuine Strip District pride."
     },
     {
       "rank": 19,
       "kind": "post",
       "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DVgQHqijVhP/",
+      "video_id": "DVgQHqijVhP",
+      "thumbnail_url": "/post-thumbs/DVgQHqijVhP.jpg",
+      "plays": 0,
+      "likes": 67,
+      "comments": 4,
+      "posted": "2026-03-05T13:11:52.000Z",
+      "caption": "#localbusiness @kafair_cafe  #mangotiramisu  #banoffee",
+      "creator_handle": "kafair_cafe",
+      "business_slug": "ka-fair-coffee-and-cakery",
+      "business_name": "Ka-Fair Coffee and Cakery",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Morningside",
+      "ig_type": "Image",
+      "creativity_score": 6.5,
+      "scores": {
+        "visual_concept": 8,
+        "caption_craft": 2,
+        "format_fit": 9,
+        "surprise": 7,
+        "why": "Professional product photography with strong composition undermined by lazy hashtag-only caption that wastes the visual's storytelling potential."
+      },
+      "why": "Professional product photography with strong composition undermined by lazy hashtag-only caption that wastes the visual's storytelling potential."
+    },
+    {
+      "rank": 20,
+      "kind": "post",
+      "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DWW1ai_ApLB/",
+      "video_id": "DWW1ai_ApLB",
+      "thumbnail_url": "/post-thumbs/DWW1ai_ApLB.jpg",
+      "plays": 0,
+      "likes": 158,
+      "comments": 5,
+      "posted": "2026-03-26T17:57:05.000Z",
+      "caption": "This guy gets it.  And so can you!  Pilsner Shirts back in stock today!\n\nProst!",
+      "creator_handle": "goldenagebeer",
+      "business_slug": "golden-age-beer-company",
+      "business_name": "Golden Age Beer Company",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "Pittsburgh",
+      "ig_type": "Image",
+      "creativity_score": 6.5,
+      "scores": {
+        "visual_concept": 7,
+        "caption_craft": 6,
+        "format_fit": 7,
+        "surprise": 6,
+        "why": "Strong portrait with product integration and authentic venue, but familiar merch-drop messaging that lacks distinctive voice or tension."
+      },
+      "why": "Strong portrait with product integration and authentic venue, but familiar merch-drop messaging that lacks distinctive voice or tension."
+    },
+    {
+      "rank": 21,
+      "kind": "post",
+      "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DVgpnOgjjeD/",
       "video_id": "DVgpnOgjjeD",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DVgpnOgjjeD.jpg",
       "plays": 18265,
       "likes": 265,
       "comments": 3,
@@ -535,17 +590,17 @@
         "caption_craft": 4,
         "format_fit": 8,
         "surprise": 6,
-        "why": "Strong visual narrative arc from restaurant to food to diners creates engagement, but generic caption and modest hashtag strategy limit impact."
+        "why": "Strong three-act visual narrative and high engagement, but generic caption and modest reach limit impact for editorial consideration."
       },
-      "why": "Strong visual narrative arc from restaurant to food to diners creates engagement, but generic caption and modest hashtag strategy limit impact."
+      "why": "Strong three-act visual narrative and high engagement, but generic caption and modest reach limit impact for editorial consideration."
     },
     {
-      "rank": 20,
+      "rank": 22,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DW3rKolDyoY/",
       "video_id": "DW3rKolDyoY",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DW3rKolDyoY.jpg",
       "plays": 0,
       "likes": 118,
       "comments": 1,
@@ -563,45 +618,73 @@
         "caption_craft": 6,
         "format_fit": 7,
         "surprise": 5,
-        "why": "Charming architectural illustration arrests attention, but generic community art announcement copy undermines the visual's personality."
+        "why": "Charming watercolor illustration with authentic local voice, but safe execution and modest engagement limit its scroll-stopping power."
       },
-      "why": "Charming architectural illustration arrests attention, but generic community art announcement copy undermines the visual's personality."
+      "why": "Charming watercolor illustration with authentic local voice, but safe execution and modest engagement limit its scroll-stopping power."
     },
     {
-      "rank": 21,
+      "rank": 23,
       "kind": "post",
       "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DWW1ai_ApLB/",
-      "video_id": "DWW1ai_ApLB",
-      "thumbnail_url": null,
+      "video_url": "https://www.instagram.com/p/DWPtUn0DZkR/",
+      "video_id": "DWPtUn0DZkR",
+      "thumbnail_url": "/post-thumbs/DWPtUn0DZkR.jpg",
       "plays": 0,
-      "likes": 158,
+      "likes": 89,
       "comments": 5,
-      "posted": "2026-03-26T17:57:05.000Z",
-      "caption": "This guy gets it.  And so can you!  Pilsner Shirts back in stock today!\n\nProst!",
-      "creator_handle": "goldenagebeer",
-      "business_slug": "golden-age-beer-company",
-      "business_name": "Golden Age Beer Company",
-      "family_label": "Pittsburgh Bars",
-      "neighborhood": "Pittsburgh",
+      "posted": "2026-03-23T23:31:10.000Z",
+      "caption": "@kafair_cafe  get cozy and relax. #localbusiness  @morningsidepgh #smallbuisness  #coffeestation",
+      "creator_handle": "kafair_cafe",
+      "business_slug": "ka-fair-coffee-and-cakery",
+      "business_name": "Ka-Fair Coffee and Cakery",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Morningside",
       "ig_type": "Image",
-      "creativity_score": 6.25,
+      "creativity_score": 6,
       "scores": {
         "visual_concept": 7,
-        "caption_craft": 6,
-        "format_fit": 7,
-        "surprise": 5,
-        "why": "Strong portrait and product placement, but casual merch-drop post relies on existing brand loyalty rather than stopping cold scrollers."
+        "caption_craft": 3,
+        "format_fit": 8,
+        "surprise": 6,
+        "why": "Strong interior design photography undermined by generic caption and hashtag-heavy approach that feels template-driven."
       },
-      "why": "Strong portrait and product placement, but casual merch-drop post relies on existing brand loyalty rather than stopping cold scrollers."
+      "why": "Strong interior design photography undermined by generic caption and hashtag-heavy approach that feels template-driven."
     },
     {
-      "rank": 22,
+      "rank": 24,
+      "kind": "post",
+      "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DXFE8kSjVla/",
+      "video_id": "DXFE8kSjVla",
+      "thumbnail_url": "/post-thumbs/DXFE8kSjVla.jpg",
+      "plays": 7604,
+      "likes": 144,
+      "comments": 2,
+      "posted": "2026-04-13T16:56:29.000Z",
+      "caption": "Food, drinks, and the right vibe. That’s the plan\n·\n·\n#NanXiang #NanXiangPittsburgh #412Eats #PittsburghFood #PittsburghEats #FoodiePGH #ChineseFood #ShanghaiCuisine #SoupDumplings #XiaoLongBao #EatInPittsburgh",
+      "creator_handle": "nanxiangdumplings.pgh",
+      "business_slug": "nan-xiang-soup-dumplings-pittsburgh",
+      "business_name": "Nan Xiang Soup Dumplings - Pittsburgh",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "South Side Flats",
+      "ig_type": "Video",
+      "creativity_score": 5.75,
+      "scores": {
+        "visual_concept": 6,
+        "caption_craft": 5,
+        "format_fit": 7,
+        "surprise": 5,
+        "why": "Authentic dining moment with good energy, but generic caption and predictable hashtag strategy limit editorial appeal and shareability."
+      },
+      "why": "Authentic dining moment with good energy, but generic caption and predictable hashtag strategy limit editorial appeal and shareability."
+    },
+    {
+      "rank": 25,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DUUTEIBjCu0/",
       "video_id": "DUUTEIBjCu0",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DUUTEIBjCu0.jpg",
       "plays": 0,
       "likes": 123,
       "comments": 12,
@@ -619,93 +702,9 @@
         "caption_craft": 5,
         "format_fit": 6,
         "surprise": 5,
-        "why": "Warm, authentic portrait humanizes the brand but caption reads like a standard repost without personality or hook."
+        "why": "Strong portrait humanizes the brand but caption reads as standard feature announcement without voice or depth."
       },
-      "why": "Warm, authentic portrait humanizes the brand but caption reads like a standard repost without personality or hook."
-    },
-    {
-      "rank": 23,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DVgQHqijVhP/",
-      "video_id": "DVgQHqijVhP",
-      "thumbnail_url": null,
-      "plays": 0,
-      "likes": 67,
-      "comments": 4,
-      "posted": "2026-03-05T13:11:52.000Z",
-      "caption": "#localbusiness @kafair_cafe  #mangotiramisu  #banoffee",
-      "creator_handle": "kafair_cafe",
-      "business_slug": "ka-fair-coffee-and-cakery",
-      "business_name": "Ka-Fair Coffee and Cakery",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Morningside",
-      "ig_type": "Image",
-      "creativity_score": 5.75,
-      "scores": {
-        "visual_concept": 7,
-        "caption_craft": 2,
-        "format_fit": 8,
-        "surprise": 6,
-        "why": "Polished product photography with strong composition undercut by lazy hashtag-only caption that wastes the beautiful imagery's storytelling potential."
-      },
-      "why": "Polished product photography with strong composition undercut by lazy hashtag-only caption that wastes the beautiful imagery's storytelling potential."
-    },
-    {
-      "rank": 24,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DWPtUn0DZkR/",
-      "video_id": "DWPtUn0DZkR",
-      "thumbnail_url": null,
-      "plays": 0,
-      "likes": 89,
-      "comments": 5,
-      "posted": "2026-03-23T23:31:10.000Z",
-      "caption": "@kafair_cafe  get cozy and relax. #localbusiness  @morningsidepgh #smallbuisness  #coffeestation",
-      "creator_handle": "kafair_cafe",
-      "business_slug": "ka-fair-coffee-and-cakery",
-      "business_name": "Ka-Fair Coffee and Cakery",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Morningside",
-      "ig_type": "Image",
-      "creativity_score": 5.5,
-      "scores": {
-        "visual_concept": 7,
-        "caption_craft": 3,
-        "format_fit": 7,
-        "surprise": 5,
-        "why": "Strong interior design photography undermined by generic, hashtag-heavy caption with typos that reads corporate rather than authentic."
-      },
-      "why": "Strong interior design photography undermined by generic, hashtag-heavy caption with typos that reads corporate rather than authentic."
-    },
-    {
-      "rank": 25,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DXFE8kSjVla/",
-      "video_id": "DXFE8kSjVla",
-      "thumbnail_url": null,
-      "plays": 7604,
-      "likes": 144,
-      "comments": 2,
-      "posted": "2026-04-13T16:56:29.000Z",
-      "caption": "Food, drinks, and the right vibe. That’s the plan\n·\n·\n#NanXiang #NanXiangPittsburgh #412Eats #PittsburghFood #PittsburghEats #FoodiePGH #ChineseFood #ShanghaiCuisine #SoupDumplings #XiaoLongBao #EatInPittsburgh",
-      "creator_handle": "nanxiangdumplings.pgh",
-      "business_slug": "nan-xiang-soup-dumplings-pittsburgh",
-      "business_name": "Nan Xiang Soup Dumplings - Pittsburgh",
-      "family_label": "Pittsburgh Restaurants",
-      "neighborhood": "South Side Flats",
-      "ig_type": "Video",
-      "creativity_score": 5.25,
-      "scores": {
-        "visual_concept": 6,
-        "caption_craft": 5,
-        "format_fit": 5,
-        "surprise": 5,
-        "why": "Authentic dining scene with decent engagement, but familiar restaurant content lacking distinctive visual or narrative hook."
-      },
-      "why": "Authentic dining scene with decent engagement, but familiar restaurant content lacking distinctive visual or narrative hook."
+      "why": "Strong portrait humanizes the brand but caption reads as standard feature announcement without voice or depth."
     },
     {
       "rank": 26,
@@ -713,7 +712,7 @@
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DWKnMQSj4WA/",
       "video_id": "DWKnMQSj4WA",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DWKnMQSj4WA.jpg",
       "plays": 0,
       "likes": 98,
       "comments": 1,
@@ -725,15 +724,15 @@
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Highland Park",
       "ig_type": "Sidecar",
-      "creativity_score": 5,
+      "creativity_score": 5.75,
       "scores": {
         "visual_concept": 6,
-        "caption_craft": 5,
+        "caption_craft": 7,
         "format_fit": 5,
-        "surprise": 4,
-        "why": "Competent storefront shot with warm branding but lacks visual tension; earnest anniversary message reads corporate despite friendly tone."
+        "surprise": 5,
+        "why": "Strong neon sign photography but familiar milestone post, warm gratitude undercuts novelty, static image limits engagement potential."
       },
-      "why": "Competent storefront shot with warm branding but lacks visual tension; earnest anniversary message reads corporate despite friendly tone."
+      "why": "Strong neon sign photography but familiar milestone post, warm gratitude undercuts novelty, static image limits engagement potential."
     },
     {
       "rank": 27,
@@ -741,7 +740,7 @@
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DVBuXDxEQcu/",
       "video_id": "DVBuXDxEQcu",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DVBuXDxEQcu.jpg",
       "plays": 0,
       "likes": 387,
       "comments": 7,
@@ -759,9 +758,9 @@
         "caption_craft": 7,
         "format_fit": 8,
         "surprise": 7,
-        "why": "Tiki mug with crocodile and vibrant florals is visually magnetic and venue-specific, though caption feels slightly generic despite the personality."
+        "why": "Vibrant tiki mug with playful crocodile and flowers arrests the eye, caption has personality, but event promotion feels slightly routine despite strong execution."
       },
-      "why": "Tiki mug with crocodile and vibrant florals is visually magnetic and venue-specific, though caption feels slightly generic despite the personality."
+      "why": "Vibrant tiki mug with playful crocodile and flowers arrests the eye, caption has personality, but event promotion feels slightly routine despite strong execution."
     },
     {
       "rank": 28,
@@ -769,7 +768,7 @@
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DXHQBVxkTuj/",
       "video_id": "DXHQBVxkTuj",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DXHQBVxkTuj.jpg",
       "plays": 0,
       "likes": 9896,
       "comments": 169,
@@ -787,9 +786,9 @@
         "caption_craft": 7,
         "format_fit": 8,
         "surprise": 7,
-        "why": "Melting ice cream shot with spoon and dripping frosting creates immediate appetite appeal, though flavor description reads slightly corporate despite genuine specificity."
+        "why": "Vibrant product shot with dripping frosting arrests attention, though execution is polished rather than unexpected for ice cream marketing."
       },
-      "why": "Melting ice cream shot with spoon and dripping frosting creates immediate appetite appeal, though flavor description reads slightly corporate despite genuine specificity."
+      "why": "Vibrant product shot with dripping frosting arrests attention, though execution is polished rather than unexpected for ice cream marketing."
     },
     {
       "rank": 29,
@@ -797,7 +796,7 @@
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DUWUUmYD02y/",
       "video_id": "DUWUUmYD02y",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DUWUUmYD02y.jpg",
       "plays": 0,
       "likes": 109,
       "comments": 3,
@@ -815,9 +814,9 @@
         "caption_craft": 7,
         "format_fit": 8,
         "surprise": 7,
-        "why": "Visually stunning plated dish with strong color contrast stops the scroll; authentic voice and specific ingredient details elevate beyond typical restaurant copy."
+        "why": "Expertly composed flat lay of premium sushi components with genuine passion in voice, but lacks unexpected angle or narrative hook that would drive saves."
       },
-      "why": "Visually stunning plated dish with strong color contrast stops the scroll; authentic voice and specific ingredient details elevate beyond typical restaurant copy."
+      "why": "Expertly composed flat lay of premium sushi components with genuine passion in voice, but lacks unexpected angle or narrative hook that would drive saves."
     },
     {
       "rank": 30,
@@ -825,7 +824,7 @@
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DXfCON9j9S2/",
       "video_id": "DXfCON9j9S2",
-      "thumbnail_url": null,
+      "thumbnail_url": "/post-thumbs/DXfCON9j9S2.jpg",
       "plays": 0,
       "likes": 453,
       "comments": 29,
@@ -839,15 +838,15 @@
       "ig_type": "Image",
       "creativity_score": 7,
       "scores": {
-        "visual_concept": 7,
+        "visual_concept": 6,
         "caption_craft": 8,
-        "format_fit": 6,
+        "format_fit": 7,
         "surprise": 7,
-        "why": "Genuine employee appreciation with authentic voice and warm portrait, but static photo format limits visual impact for the emotional weight of the message."
+        "why": "Authentic employee appreciation hits harder than polished ads, though the phone photo is technically basic."
       },
-      "why": "Genuine employee appreciation with authentic voice and warm portrait, but static photo format limits visual impact for the emotional weight of the message."
+      "why": "Authentic employee appreciation hits harder than polished ads, though the phone photo is technically basic."
     }
   ],
-  "generated_at": "2026-04-27T01:50:14.072Z",
+  "generated_at": "2026-04-27T02:07:43.062Z",
   "model": "claude-haiku-4-5-20251001 (vision) + claude-sonnet-4-6 (intro)"
 }

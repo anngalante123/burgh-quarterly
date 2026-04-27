@@ -21,6 +21,7 @@ import Anthropic from "@anthropic-ai/sdk";
 
 import { loadAllRichBusinesses } from "@/lib/query/business-query";
 import { familyForCategory } from "@/lib/data/category-family";
+import { downloadThumbnail } from "@/lib/scrape/download-thumbnail";
 
 loadEnv({ path: join(process.cwd(), ".env.local") });
 loadEnv();
@@ -42,6 +43,7 @@ type RawPost = {
   commentsCount?: number;
   videoPlayCount?: number;
   videoViewCount?: number;
+  displayUrl?: string;
   ownerUsername?: string;
 };
 
@@ -143,6 +145,9 @@ async function main() {
   type Candidate = {
     item: Omit<Item, "rank">;
     rate: number;
+    /** Held aside so we can fetch the thumbnail later for the top N only. */
+    displayUrl: string;
+    shortcode: string;
   };
   const candidates: Candidate[] = [];
 
@@ -173,6 +178,8 @@ async function main() {
       const fam = familyForCategory(rb.artifact.meta.categoryName).label;
       candidates.push({
         rate,
+        displayUrl: p.displayUrl ?? "",
+        shortcode: p.shortCode,
         item: {
           kind: "post",
           platform: "instagram",
@@ -213,9 +220,23 @@ async function main() {
     if (final.length >= TOP_N) break;
   }
 
+  // Download thumbnails for the top N only, mirrors the creative
+  // generator. Files land in /public/post-thumbs/<shortcode>.<ext>.
+  console.log(`[engagement] downloading ${final.length} thumbnails...`);
+  const thumbnails = await Promise.all(
+    final.map((c) =>
+      c.displayUrl
+        ? downloadThumbnail(c.displayUrl, c.shortcode)
+        : Promise.resolve(null),
+    ),
+  );
+  const got = thumbnails.filter(Boolean).length;
+  console.log(`[engagement] saved ${got}/${final.length} thumbnails`);
+
   const items: Item[] = final.map((c, i) => ({
     rank: i + 1,
     ...c.item,
+    thumbnail_url: thumbnails[i],
   }));
 
   if (dryRun) {

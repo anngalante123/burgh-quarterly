@@ -3,19 +3,23 @@
 import { cn } from "@/lib/utils";
 
 /**
- * InstagramEmbedPreview, the post-card thumbnail for the BY list.
+ * InstagramEmbedPreview, the post-card thumbnail for the BY lists.
  *
- * IG's iframe embed is unreliable on mobile (renders a static thumbnail
- * + caption, video doesn't play inline reliably across devices, tap
- * behavior is inconsistent). So we don't try to embed it. We render the
- * brand-treated placeholder card and on tap we open the post on
- * Instagram directly (new tab on web, IG app if installed on mobile).
- * Reliable, native, fast.
+ * Two render paths:
  *
- * The Apify-served thumbnail URL is also skipped because IG's CDN URLs
- * are short-lived and block cross-origin hot-linking. The gradient
- * placeholder reads as 'tap to watch on Instagram' and gets us out of
- * the way.
+ * 1. WITH thumbnail (preferred). When the generator successfully
+ *    downloaded the IG image into /public/post-thumbs/, we render the
+ *    real thumbnail with a lime play-button overlay. Click opens the
+ *    post on Instagram (new tab, native IG-app handoff on iOS).
+ *    Visually parallel to the TikTok cards. The play button is
+ *    aspirational — IG opens in a new tab/app, but the visual cue
+ *    matches the TikTok pattern so the lists feel like one product.
+ *
+ * 2. WITHOUT thumbnail (fallback). When the IG CDN URL had already
+ *    expired by gen time, we render the cream editorial card we used
+ *    before: brand-purple kicker, IG glyph, "Tap to watch" headline,
+ *    "Open on Instagram" link. Honest about there being no preview,
+ *    still a usable CTA.
  */
 
 type Props = {
@@ -31,11 +35,53 @@ export function InstagramEmbedPreview({
   thumbnailUrl,
   caption,
 }: Props) {
-  // shortcode + thumbnailUrl are accepted for back-compat with the
-  // original embed-iframe approach; we no longer render them.
   void shortcode;
-  void thumbnailUrl;
 
+  // Path 1, real thumbnail
+  if (thumbnailUrl) {
+    return (
+      <a
+        href={postUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative block w-full max-w-[280px] aspect-[4/5] overflow-hidden bg-brand-black/85 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+        aria-label={`Open Instagram post: ${caption.slice(0, 60)}`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={thumbnailUrl}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-[1.02] motion-reduce:group-hover:scale-100"
+        />
+        <span
+          aria-hidden="true"
+          className="absolute inset-0 flex items-center justify-center bg-black/15 group-hover:bg-black/30 transition-colors"
+        >
+          <span className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-brand-lime text-brand-black shadow-[3px_3px_0_0_var(--color-brand-purple)] group-hover:scale-105 transition-transform motion-reduce:group-hover:scale-100">
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6 md:w-7 md:h-7 ml-1"
+              aria-hidden="true"
+            >
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </span>
+        </span>
+        {/* Subtle "Instagram" tag in the corner so the brand is clear */}
+        <span
+          aria-hidden="true"
+          className="absolute top-3 left-3 font-display text-[0.55rem] font-semibold uppercase tracking-[0.18em] text-brand-off-white bg-brand-black/60 px-1.5 py-0.5"
+        >
+          Instagram
+        </span>
+      </a>
+    );
+  }
+
+  // Path 2, fallback editorial card when no thumbnail downloaded
   return (
     <a
       href={postUrl}
@@ -54,8 +100,6 @@ export function InstagramEmbedPreview({
         <span className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
           Instagram
         </span>
-        {/* Instagram glyph, simple square + ring SVG. Visual anchor in
-            absence of a real post thumbnail. */}
         <svg
           viewBox="0 0 24 24"
           fill="none"
