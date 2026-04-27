@@ -24,6 +24,7 @@ import {
   RowPeerStat,
   fmtStatValue,
 } from "@/components/insights/RowPeerStat";
+import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
 import { loadReviewAnalysis } from "@/lib/data/load-review-analysis";
 import { pickPullquote } from "@/lib/editorial/pick-pullquote";
 import {
@@ -592,12 +593,20 @@ export default async function BusinessPage({ params }: PageProps) {
 
           {/* Hero photo banner. Visual anchor so a cold reader knows what
               the place looks like before the editorial diagnosis lands.
-              Falls back gracefully when no photo, just no banner. */}
+              Falls back gracefully when no photo, just no banner.
+              Upgraded from the Apify-default 408x306 to 1600x1200 via
+              the Google CDN size suffix swap, so the photo is sharp at
+              full card width on retina. */}
           {(biz.hero_photo || biz.photos[0]?.url) && (
             <div className="mt-6 md:mt-8 relative w-full aspect-[16/7] md:aspect-[16/6] overflow-hidden bg-brand-black/5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={biz.hero_photo || biz.photos[0]!.url}
+                src={
+                  upgradeGooglePhotoSize(
+                    biz.hero_photo || biz.photos[0]!.url,
+                    1600,
+                  ) ?? (biz.hero_photo || biz.photos[0]!.url)
+                }
                 alt={`${biz.name} storefront / interior photo from Google Maps`}
                 loading="eager"
                 className="absolute inset-0 w-full h-full object-cover"

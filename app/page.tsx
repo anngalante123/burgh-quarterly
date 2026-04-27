@@ -11,6 +11,7 @@ import {
 } from "@/components/BusinessSearch";
 import { loadAllListArticles } from "@/lib/data/load-list";
 import { GetFeaturedCTA } from "@/components/GetFeaturedCTA";
+import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
 
 /**
  * Homepage, editorial table of contents for the quarterly issue.
@@ -199,7 +200,7 @@ export default function Home() {
                       {b.photo ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
-                          src={b.photo}
+                          src={upgradeGooglePhotoSize(b.photo, 200) ?? b.photo}
                           alt=""
                           aria-hidden="true"
                           loading="lazy"
@@ -344,7 +345,7 @@ export default function Home() {
               <div className="relative w-full aspect-[16/7] md:aspect-[16/6] overflow-hidden bg-brand-black/5">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={featuredPhoto}
+                  src={upgradeGooglePhotoSize(featuredPhoto, 1600) ?? featuredPhoto}
                   alt="La Gourmandine, Lawrenceville exterior"
                   loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02] motion-reduce:group-hover:scale-100"

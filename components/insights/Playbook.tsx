@@ -64,7 +64,12 @@ export function Playbook({ playbook }: PlaybookProps) {
           {playbook.items.map((item, i) => (
             <li
               key={i}
-              className="flex flex-col gap-3 border border-brand-black/15 bg-white/70 p-5 md:p-6"
+              className="pb-card flex flex-col gap-3 border border-brand-black/15 bg-white/70 p-5 md:p-6"
+              style={
+                {
+                  "--pb-delay": `${i * 120}ms`,
+                } as React.CSSProperties
+              }
             >
               <div className="flex items-baseline justify-between gap-2">
                 <span className="font-display text-[0.7rem] font-semibold tabular-nums tracking-[0.14em] text-brand-purple">
@@ -87,13 +92,22 @@ export function Playbook({ playbook }: PlaybookProps) {
               </p>
               {/* Impact pill, bottom-of-card. From Claude when present;
                   falls back to the signal label when an older analysis
-                  hasn't been regenerated yet. */}
+                  hasn't been regenerated yet. The pulse-glow animation
+                  cycles staggered per card so the row of three breathes
+                  in sequence, drawing the eye through the moves. */}
               <div className="mt-auto pt-2 border-t border-brand-black/10 flex items-center justify-between gap-2 flex-wrap">
                 <p className="font-display text-[0.58rem] font-semibold uppercase tracking-[0.18em] text-brand-black/50">
                   Signal · {SIGNAL_LABEL[item.signal]}
                 </p>
                 {(item as { impact_label?: string }).impact_label ? (
-                  <span className="inline-flex items-center bg-brand-lime text-brand-black font-display text-[0.58rem] font-semibold uppercase tracking-[0.14em] px-2 py-0.5">
+                  <span
+                    className="pb-impact-pulse inline-flex items-center bg-brand-lime text-brand-black font-display text-[0.58rem] font-semibold uppercase tracking-[0.14em] px-2 py-0.5"
+                    style={
+                      {
+                        "--pb-delay": `${i * 1400}ms`,
+                      } as React.CSSProperties
+                    }
+                  >
                     {(item as { impact_label?: string }).impact_label}
                   </span>
                 ) : null}

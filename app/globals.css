@@ -216,3 +216,48 @@
     opacity: 0.25;
   }
 }
+/* Playbook card animations */
+@keyframes pb-stagger-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.pb-card {
+  animation: pb-stagger-in 0.5s ease-out both;
+  animation-delay: var(--pb-delay, 0ms);
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+.pb-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 0 var(--color-brand-purple);
+}
+
+@keyframes pb-impact-pulse {
+  0%, 70%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(198, 244, 50, 0);
+  }
+  35% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 6px rgba(198, 244, 50, 0.55);
+  }
+}
+.pb-impact-pulse {
+  animation: pb-impact-pulse 4.2s ease-in-out infinite;
+  animation-delay: var(--pb-delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pb-card,
+  .pb-impact-pulse {
+    animation: none;
+  }
+  .pb-card:hover {
+    transform: none;
+  }
+}
