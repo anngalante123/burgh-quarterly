@@ -17,115 +17,14 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "ka-fair coffee and cakery pittsburgh",
-    "video_count": 30,
-    "total_plays": 1049142,
-    "total_likes": 63224,
-    "unique_creators": 28,
-    "top_creators": [
-      {
-        "handle": "dailysipclub8",
-        "fans": 21500,
-        "verified": false,
-        "videos": 1,
-        "plays": 617500,
-        "likes": 33900,
-        "top_video_url": "https://www.tiktok.com/@dailysipclub8/video/7625180370853530902"
-      },
-      {
-        "handle": "foodbyremi",
-        "fans": 448900,
-        "verified": false,
-        "videos": 1,
-        "plays": 211700,
-        "likes": 15900,
-        "top_video_url": "https://www.tiktok.com/@foodbyremi/video/7603110537479605526"
-      },
-      {
-        "handle": "wanderingpassports",
-        "fans": 72400,
-        "verified": false,
-        "videos": 1,
-        "plays": 68300,
-        "likes": 4255,
-        "top_video_url": "https://www.tiktok.com/@wanderingpassports/video/7622683210698214670"
-      },
-      {
-        "handle": "socotracafe.pgh",
-        "fans": 544,
-        "verified": false,
-        "videos": 1,
-        "plays": 27700,
-        "likes": 2287,
-        "top_video_url": "https://www.tiktok.com/@socotracafe.pgh/video/7620574127971126542"
-      },
-      {
-        "handle": "amberthepghbarista",
-        "fans": 2066,
-        "verified": false,
-        "videos": 3,
-        "plays": 22451,
-        "likes": 1245,
-        "top_video_url": "https://www.tiktok.com/@amberthepghbarista/video/7608631946763095326"
-      },
-      {
-        "handle": "abcoffees",
-        "fans": 5042,
-        "verified": false,
-        "videos": 1,
-        "plays": 16200,
-        "likes": 1354,
-        "top_video_url": "https://www.tiktok.com/@abcoffees/video/7620227800158735647"
-      },
-      {
-        "handle": "indulge.in.pgh",
-        "fans": 1790,
-        "verified": false,
-        "videos": 1,
-        "plays": 11000,
-        "likes": 582,
-        "top_video_url": "https://www.tiktok.com/@indulge.in.pgh/video/7604588308210978062"
-      },
-      {
-        "handle": "simy_choudhary",
-        "fans": 711,
-        "verified": false,
-        "videos": 1,
-        "plays": 8858,
-        "likes": 293,
-        "top_video_url": "https://www.tiktok.com/@simy_choudhary/video/7603425745049865494"
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "7625180370853530902",
-        "url": "https://www.tiktok.com/@dailysipclub8/video/7625180370853530902",
-        "text": "ube vanilla velvet matcha latte.\n.\n.\nrecipe \n250ml milk \n50ml matcha \n2 pumps vanilla syrup \n\nube cold foam \n3 tbsp double cream \n2 tbsp milk \n1 tsp ube powder \nmix until thick pour \n\n#matcha #matchapowder #coffee #morningroutine ",
-        "author": "dailysipclub8",
-        "plays": 617500,
-        "likes": 33900,
-        "posted": "2026-04-05T07:54:25.000Z"
-      },
-      {
-        "id": "7603110537479605526",
-        "url": "https://www.tiktok.com/@foodbyremi/video/7603110537479605526",
-        "text": "Welcome back to another episode of Baking 101 where I teach you all the tips and tricks to becoming a better baker.\nOn today’s episode we’re learning all about oil based cakes, specifically this coffee and walnut cake! For the full recipe c",
-        "author": "foodbyremi",
-        "plays": 211700,
-        "likes": 15900,
-        "posted": "2026-02-04T20:32:03.000Z"
-      },
-      {
-        "id": "7622683210698214670",
-        "url": "https://www.tiktok.com/@wanderingpassports/video/7622683210698214670",
-        "text": "Check out @Royal Chocolate for the most insanee desserts 😋\n📍5204 Simpson Ferry Rd 104 Mechanicsburg, PA\n\ncrepes • waffles • mini pancakes • ice cream • water ice • milkshakes • sushi crepes • cheesecake • waffle sticks • air fried oreos •",
-        "author": "wanderingpassports",
-        "plays": 68300,
-        "likes": 4255,
-        "posted": "2026-03-29T14:24:39.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-26T06:44:53.000Z",
-    "median_plays": 4591,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T15:59:35.679Z"
   }

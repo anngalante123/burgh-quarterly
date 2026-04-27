@@ -37,115 +37,34 @@
   },
   "tiktok_mentions": {
     "query": "millie's homemade ice cream pittsburgh",
-    "video_count": 26,
-    "total_plays": 578817,
-    "total_likes": 20395,
-    "unique_creators": 25,
+    "video_count": 1,
+    "total_plays": 1831,
+    "total_likes": 151,
+    "unique_creators": 1,
     "top_creators": [
       {
-        "handle": "nonazgonenutz",
-        "fans": 861,
+        "handle": "maddielovespittsburgh",
+        "fans": 1047,
         "verified": false,
         "videos": 1,
-        "plays": 278300,
-        "likes": 2313,
-        "top_video_url": "https://www.tiktok.com/@nonazgonenutz/video/7620920784357248287"
-      },
-      {
-        "handle": "kaitlynmcv_",
-        "fans": 6342,
-        "verified": false,
-        "videos": 1,
-        "plays": 62100,
-        "likes": 3816,
-        "top_video_url": "https://www.tiktok.com/@kaitlynmcv_/video/7625825368548707598"
-      },
-      {
-        "handle": "buschs_market",
-        "fans": 1056,
-        "verified": false,
-        "videos": 1,
-        "plays": 42000,
-        "likes": 1170,
-        "top_video_url": "https://www.tiktok.com/@buschs_market/video/7611609388792483086"
-      },
-      {
-        "handle": "macaylee",
-        "fans": 2143,
-        "verified": false,
-        "videos": 1,
-        "plays": 37400,
-        "likes": 2073,
-        "top_video_url": "https://www.tiktok.com/@macaylee/video/7602372374943550750"
-      },
-      {
-        "handle": "giovannarwilson",
-        "fans": 3657,
-        "verified": false,
-        "videos": 1,
-        "plays": 35800,
-        "likes": 2027,
-        "top_video_url": "https://www.tiktok.com/@giovannarwilson/video/7629469698651966750"
-      },
-      {
-        "handle": "matchakcafe",
-        "fans": 402,
-        "verified": false,
-        "videos": 1,
-        "plays": 34700,
-        "likes": 3358,
-        "top_video_url": "https://www.tiktok.com/@matchakcafe/video/7616096022460173598"
-      },
-      {
-        "handle": "madicelina",
-        "fans": 34300,
-        "verified": false,
-        "videos": 1,
-        "plays": 24500,
-        "likes": 1840,
-        "top_video_url": "https://www.tiktok.com/@madicelina/video/7624237216927124767"
-      },
-      {
-        "handle": "checkwhatsgood",
-        "fans": 8416,
-        "verified": false,
-        "videos": 1,
-        "plays": 14100,
-        "likes": 1081,
-        "top_video_url": "https://www.tiktok.com/@checkwhatsgood/video/7628412191514971422"
+        "plays": 1831,
+        "likes": 151,
+        "top_video_url": "https://www.tiktok.com/@maddielovespittsburgh/video/7628325194876144909"
       }
     ],
     "top_videos": [
       {
-        "id": "7620920784357248287",
-        "url": "https://www.tiktok.com/@nonazgonenutz/video/7620920784357248287",
-        "text": "#Mandelaeffect #Dreyers #edys #wtf Messing with my ice-cream is a No NO",
-        "author": "nonazgonenutz",
-        "plays": 278300,
-        "likes": 2313,
-        "posted": "2026-03-24T20:25:11.000Z"
-      },
-      {
-        "id": "7625825368548707598",
-        "url": "https://www.tiktok.com/@kaitlynmcv_/video/7625825368548707598",
-        "text": "If you’re in South Jersey and love a good dessert spot, you need to check out @Hershey Shake Shop Creamery in Bellmawr, NJ🍦🍫\nThey’re known for their over-the-top handcrafted milkshakes, stacked sundaes, and a huge selection of ice cream f",
-        "author": "kaitlynmcv_",
-        "plays": 62100,
-        "likes": 3816,
-        "posted": "2026-04-07T01:37:38.000Z"
-      },
-      {
-        "id": "7611609388792483086",
-        "url": "https://www.tiktok.com/@buschs_market/video/7611609388792483086",
-        "text": "Found the internet’s favorite ice cream at Busch’s. You’re welcome. 👀🍓🍦\n#ViralFood #FYPFinds #BuschsFreshFoodMarket #MichiganMade",
-        "author": "buschs_market",
-        "plays": 42000,
-        "likes": 1170,
-        "posted": "2026-02-27T18:12:32.000Z"
+        "id": "7628325194876144909",
+        "url": "https://www.tiktok.com/@maddielovespittsburgh/video/7628325194876144909",
+        "text": "did you know that the @Millie’s Homemade Ice Cream inside the @Giant Eagle @Giant Eagle Market District at Tje Meridian serves coffee!? well, now you do !!! 🤭☕️🧋🍦💖 \n\nwhether you take your coffee black, with a little bit of milk or a who",
+        "author": "maddielovespittsburgh",
+        "plays": 1831,
+        "likes": 151,
+        "posted": "2026-04-13T19:18:14.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-22T21:40:39.000Z",
-    "median_plays": 4117,
+    "most_recent_post_at": "2026-04-13T19:18:14.000Z",
+    "median_plays": 1831,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T16:05:11.520Z"
   }

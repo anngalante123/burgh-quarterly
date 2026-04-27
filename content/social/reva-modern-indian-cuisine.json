@@ -17,115 +17,14 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "reva modern indian cuisine pittsburgh",
-    "video_count": 33,
-    "total_plays": 373326,
-    "total_likes": 28274,
-    "unique_creators": 33,
-    "top_creators": [
-      {
-        "handle": "gabs_joella",
-        "fans": 452,
-        "verified": false,
-        "videos": 1,
-        "plays": 66300,
-        "likes": 8752,
-        "top_video_url": "https://www.tiktok.com/@gabs_joella/video/7627972466371022111"
-      },
-      {
-        "handle": "hotbitemama",
-        "fans": 4182,
-        "verified": false,
-        "videos": 1,
-        "plays": 57600,
-        "likes": 6285,
-        "top_video_url": "https://www.tiktok.com/@hotbitemama/video/7600851176707362079"
-      },
-      {
-        "handle": "dadbodcooking",
-        "fans": 75200,
-        "verified": false,
-        "videos": 1,
-        "plays": 35700,
-        "likes": 2265,
-        "top_video_url": "https://www.tiktok.com/@dadbodcooking/video/7604122253818629406"
-      },
-      {
-        "handle": "justgisellea",
-        "fans": 1237,
-        "verified": false,
-        "videos": 1,
-        "plays": 31100,
-        "likes": 3954,
-        "top_video_url": "https://www.tiktok.com/@justgisellea/video/7624657390125796621"
-      },
-      {
-        "handle": "wanderingpassports",
-        "fans": 72400,
-        "verified": false,
-        "videos": 1,
-        "plays": 31100,
-        "likes": 1425,
-        "top_video_url": "https://www.tiktok.com/@wanderingpassports/video/7611949289870314765"
-      },
-      {
-        "handle": "toddthuynh",
-        "fans": 463,
-        "verified": false,
-        "videos": 1,
-        "plays": 24600,
-        "likes": 953,
-        "top_video_url": "https://www.tiktok.com/@toddthuynh/video/7620252023136521486"
-      },
-      {
-        "handle": "eatwithtroy",
-        "fans": 16600,
-        "verified": false,
-        "videos": 1,
-        "plays": 23000,
-        "likes": 1006,
-        "top_video_url": "https://www.tiktok.com/@eatwithtroy/video/7605313027214265630"
-      },
-      {
-        "handle": "punjabi.rasoi.tif",
-        "fans": 80,
-        "verified": false,
-        "videos": 1,
-        "plays": 22200,
-        "likes": 240,
-        "top_video_url": "https://www.tiktok.com/@punjabi.rasoi.tif/video/7631612398637518113"
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "7627972466371022111",
-        "url": "https://www.tiktok.com/@gabs_joella/video/7627972466371022111",
-        "text": "My mom didn’t have to ask me twice to make this video for her to help promote the family’s restaurant. I got to eat bomb, authentic Indian food and see my mom smile! It would mean a lot her and the fam if you checked out this wonderful smal",
-        "author": "gabs_joella",
-        "plays": 66300,
-        "likes": 8752,
-        "posted": "2026-04-12T20:29:20.000Z"
-      },
-      {
-        "id": "7600851176707362079",
-        "url": "https://www.tiktok.com/@hotbitemama/video/7600851176707362079",
-        "text": "@azaadindiancuisine has the best Indian food in the IE declaring it right here!!\n\nThis small business in Riverside is providing the best authentic Indian food around. So good 10/10\n\nItems mentioned:\n• samosas\n• fish pakora\n• chicken tandoor",
-        "author": "hotbitemama",
-        "plays": 57600,
-        "likes": 6285,
-        "posted": "2026-01-29T18:24:57.000Z"
-      },
-      {
-        "id": "7604122253818629406",
-        "url": "https://www.tiktok.com/@dadbodcooking/video/7604122253818629406",
-        "text": "Good Indian food packs so much savory flavor and this one really stands out! #indianfood #foodreviews #naan ",
-        "author": "dadbodcooking",
-        "plays": 35700,
-        "likes": 2265,
-        "posted": "2026-02-07T13:58:40.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-26T10:00:00.000Z",
-    "median_plays": 2609,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T16:10:49.809Z"
   }

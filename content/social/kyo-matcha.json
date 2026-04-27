@@ -37,115 +37,52 @@
   },
   "tiktok_mentions": {
     "query": "kyo matcha pittsburgh",
-    "video_count": 39,
-    "total_plays": 1794398,
-    "total_likes": 206514,
-    "unique_creators": 39,
+    "video_count": 2,
+    "total_plays": 4417,
+    "total_likes": 121,
+    "unique_creators": 2,
     "top_creators": [
       {
-        "handle": "andremelendez",
-        "fans": 2999,
+        "handle": "ride_rev_rx",
+        "fans": 1793,
         "verified": false,
         "videos": 1,
-        "plays": 1400000,
-        "likes": 171200,
-        "top_video_url": "https://www.tiktok.com/@andremelendez/video/7616424534505229582"
+        "plays": 4006,
+        "likes": 98,
+        "top_video_url": "https://www.tiktok.com/@ride_rev_rx/video/7610764382192143629"
       },
       {
-        "handle": "pattalina",
-        "fans": 113400,
+        "handle": "natalieorlando5",
+        "fans": 116,
         "verified": false,
         "videos": 1,
-        "plays": 173400,
-        "likes": 20400,
-        "top_video_url": "https://www.tiktok.com/@pattalina/video/7615673438023322893"
-      },
-      {
-        "handle": "brendenmany13",
-        "fans": 997,
-        "verified": false,
-        "videos": 1,
-        "plays": 55000,
-        "likes": 4456,
-        "top_video_url": "https://www.tiktok.com/@brendenmany13/video/7600567758467730719"
-      },
-      {
-        "handle": "coriinthecity",
-        "fans": 230700,
-        "verified": false,
-        "videos": 1,
-        "plays": 37800,
-        "likes": 2633,
-        "top_video_url": "https://www.tiktok.com/@coriinthecity/video/7628737165656083742"
-      },
-      {
-        "handle": "_vinazoey",
-        "fans": 1112,
-        "verified": false,
-        "videos": 1,
-        "plays": 27100,
-        "likes": 1354,
-        "top_video_url": "https://www.tiktok.com/@_vinazoey/video/7624990290012622094"
-      },
-      {
-        "handle": "pierry.mpp",
-        "fans": 2930,
-        "verified": false,
-        "videos": 1,
-        "plays": 15900,
-        "likes": 1538,
-        "top_video_url": "https://www.tiktok.com/@pierry.mpp/video/7606532505419762974"
-      },
-      {
-        "handle": "lukecastle34",
-        "fans": 4754,
-        "verified": false,
-        "videos": 1,
-        "plays": 12900,
-        "likes": 1090,
-        "top_video_url": "https://www.tiktok.com/@lukecastle34/video/7631226585017896205"
-      },
-      {
-        "handle": "thedelcoesthetician",
-        "fans": 521,
-        "verified": false,
-        "videos": 1,
-        "plays": 11000,
-        "likes": 334,
-        "top_video_url": "https://www.tiktok.com/@thedelcoesthetician/video/7615646137575378206"
+        "plays": 411,
+        "likes": 23,
+        "top_video_url": "https://www.tiktok.com/@natalieorlando5/video/7626865669597941023"
       }
     ],
     "top_videos": [
       {
-        "id": "7616424534505229582",
-        "url": "https://www.tiktok.com/@andremelendez/video/7616424534505229582",
-        "text": "this matcha place deserves more hype👀 #matchalover #fluffiestmatcha #matchaspot ",
-        "author": "andremelendez",
-        "plays": 1400000,
-        "likes": 171200,
-        "posted": "2026-03-12T17:37:51.000Z"
+        "id": "7610764382192143629",
+        "url": "https://www.tiktok.com/@ride_rev_rx/video/7610764382192143629",
+        "text": "I'm a sucker for matcha ice cream and I'm SO happy Pittsburgh has started to get bits and pieces of authentic asian cuisine 🤭  next place to try is Meccha Matcha!\n\n#matchalover #throttletherapy #pittsburgheats #biketok #sweettooth \n@Kyo Ma",
+        "author": "ride_rev_rx",
+        "plays": 4006,
+        "likes": 98,
+        "posted": "2026-02-25T11:34:45.000Z"
       },
       {
-        "id": "7615673438023322893",
-        "url": "https://www.tiktok.com/@pattalina/video/7615673438023322893",
-        "text": "Mango sticky rice matcha 😱 tried  drinks from @chai.culture.cafe new spring menu - they have so many fun tasty drinks!! Don’t skip their desserts too especially the biscoff brownie. Still dreaming about that tbh😭 these specialty drinks ar",
-        "author": "pattalina",
-        "plays": 173400,
-        "likes": 20400,
-        "posted": "2026-03-10T17:03:21.000Z"
-      },
-      {
-        "id": "7600567758467730719",
-        "url": "https://www.tiktok.com/@brendenmany13/video/7600567758467730719",
-        "text": "I was super excited to try this place out especially for their Matcha soft serve but unfortunately the machine was down 😭 the drinks were pretty solid but the dessert items we got were kind of dissapointing. The milk cap cake was very dry ",
-        "author": "brendenmany13",
-        "plays": 55000,
-        "likes": 4456,
-        "posted": "2026-01-29T00:04:58.000Z"
+        "id": "7626865669597941023",
+        "url": "https://www.tiktok.com/@natalieorlando5/video/7626865669597941023",
+        "text": "Just a quick matcha run ✨🍵@Kyo Matcha USA #fyp #matcha #kyomatcha #sisterdate #pittsburgh @Nicolette Orlando ",
+        "author": "natalieorlando5",
+        "plays": 411,
+        "likes": 23,
+        "posted": "2026-04-09T20:54:15.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-26T15:15:49.000Z",
-    "median_plays": 1716,
+    "most_recent_post_at": "2026-04-09T20:54:15.000Z",
+    "median_plays": 2209,
     "detected_own_handle": "kyomatcha.columbia",
     "scraped_at": "2026-04-26T16:00:17.193Z"
   }

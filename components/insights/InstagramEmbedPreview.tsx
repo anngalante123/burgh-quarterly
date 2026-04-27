@@ -42,21 +42,41 @@ export function InstagramEmbedPreview({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "group relative flex flex-col items-start justify-between w-full max-w-[200px] min-h-[140px] p-4 md:p-5",
-        "bg-brand-cream/40 border border-brand-black/15",
-        "hover:bg-brand-cream/70 hover:border-brand-black hover:shadow-[3px_3px_0_0_var(--color-brand-purple)]",
+        "group relative flex flex-col items-start justify-between w-full max-w-[280px] min-h-[200px] p-5 md:p-6",
+        "bg-brand-cream/60 border-t-4 border-brand-lime border-l border-r border-b border-brand-black/20",
+        "hover:bg-brand-cream hover:border-l-brand-black hover:border-r-brand-black hover:border-b-brand-black",
+        "hover:shadow-[5px_5px_0_0_var(--color-brand-purple)]",
         "transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple",
       )}
       aria-label={`Open Instagram post: ${caption.slice(0, 60)}`}
     >
-      <span className="font-display text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
-        Instagram
+      <div className="flex items-center justify-between w-full">
+        <span className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
+          Instagram
+        </span>
+        {/* Instagram glyph, simple square + ring SVG. Visual anchor in
+            absence of a real post thumbnail. */}
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          className="w-6 h-6 text-brand-black/55 group-hover:text-brand-purple transition-colors"
+          aria-hidden="true"
+        >
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+        </svg>
+      </div>
+      <span className="font-display font-black uppercase tracking-[-0.01em] text-brand-black text-xl md:text-2xl leading-[1.05] mt-3 [text-wrap:balance]">
+        Watch the post
       </span>
-      <span className="font-display font-black uppercase tracking-[-0.005em] text-brand-black text-base md:text-lg leading-tight mt-2">
-        Tap to watch on Instagram
+      <span className="font-body text-xs md:text-sm text-brand-black/65 mt-2 leading-snug line-clamp-2 [overflow-wrap:anywhere]">
+        &ldquo;{caption.slice(0, 80)}{caption.length > 80 ? "…" : ""}&rdquo;
       </span>
-      <span className="mt-3 inline-flex items-center gap-1 font-display text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-brand-black/70 group-hover:text-brand-purple transition-colors">
-        Open post
+      <span className="mt-4 inline-flex items-center gap-1.5 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-black group-hover:text-brand-purple transition-colors">
+        Open on Instagram
         <span
           aria-hidden="true"
           className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1"

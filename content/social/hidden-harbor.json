@@ -17,115 +17,14 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "hidden harbor pittsburgh",
-    "video_count": 10,
-    "total_plays": 425844,
-    "total_likes": 31844,
-    "unique_creators": 10,
-    "top_creators": [
-      {
-        "handle": "messihasaura7689",
-        "fans": 241,
-        "verified": false,
-        "videos": 1,
-        "plays": 204400,
-        "likes": 20800,
-        "top_video_url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527"
-      },
-      {
-        "handle": "outspokenexpressions",
-        "fans": 571,
-        "verified": false,
-        "videos": 1,
-        "plays": 172600,
-        "likes": 9680,
-        "top_video_url": "https://www.tiktok.com/@outspokenexpressions/video/7631288928741444878"
-      },
-      {
-        "handle": "hiltonheadlivin",
-        "fans": 25500,
-        "verified": false,
-        "videos": 1,
-        "plays": 13200,
-        "likes": 338,
-        "top_video_url": "https://www.tiktok.com/@hiltonheadlivin/video/7632759846978309389"
-      },
-      {
-        "handle": "redbarnwinerydelmont",
-        "fans": 1009,
-        "verified": false,
-        "videos": 1,
-        "plays": 11300,
-        "likes": 197,
-        "top_video_url": "https://www.tiktok.com/@redbarnwinerydelmont/video/7613797115680066846"
-      },
-      {
-        "handle": "sugarrainbowbubbl",
-        "fans": 1485,
-        "verified": false,
-        "videos": 1,
-        "plays": 11200,
-        "likes": 321,
-        "top_video_url": "https://www.tiktok.com/@sugarrainbowbubbl/video/7605729492199312662"
-      },
-      {
-        "handle": "412onthemove",
-        "fans": 12700,
-        "verified": false,
-        "videos": 1,
-        "plays": 4759,
-        "likes": 216,
-        "top_video_url": "https://www.tiktok.com/@412onthemove/video/7620204635810286878"
-      },
-      {
-        "handle": "daddys_budget_tools",
-        "fans": 1357,
-        "verified": false,
-        "videos": 1,
-        "plays": 4581,
-        "likes": 143,
-        "top_video_url": "https://www.tiktok.com/@daddys_budget_tools/video/7618323453975858463"
-      },
-      {
-        "handle": "aprilsgeorge",
-        "fans": 13100,
-        "verified": false,
-        "videos": 1,
-        "plays": 2117,
-        "likes": 54,
-        "top_video_url": "https://www.tiktok.com/@aprilsgeorge/video/7630257930155117855"
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "7621394526262922527",
-        "url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527",
-        "text": "Pearl Harbor #usa #japan #pearlharbor #edit #darktriad ",
-        "author": "messihasaura7689",
-        "plays": 204400,
-        "likes": 20800,
-        "posted": "2026-03-26T03:03:36.000Z"
-      },
-      {
-        "id": "7631288928741444878",
-        "url": "https://www.tiktok.com/@outspokenexpressions/video/7631288928741444878",
-        "text": "👉 “Are you a Harbor Freight mechanic but kind? Got Snap-on friends that always talk? I’ve got a sticker for them.” Order yours today! #harborfreight #snapon #tools #outspokenexpression",
-        "author": "outspokenexpressions",
-        "plays": 172600,
-        "likes": 9680,
-        "posted": "2026-04-21T18:59:20.000Z"
-      },
-      {
-        "id": "7632759846978309389",
-        "url": "https://www.tiktok.com/@hiltonheadlivin/video/7632759846978309389",
-        "text": "Hidden Gem Waterfront Dining on Hilton Head Island ",
-        "author": "hiltonheadlivin",
-        "plays": 13200,
-        "likes": 338,
-        "posted": "2026-04-25T18:06:58.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-25T18:06:58.000Z",
-    "median_plays": 7980,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T15:57:52.446Z"
   }

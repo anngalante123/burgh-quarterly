@@ -3,115 +3,52 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "everyday noodles pittsburgh",
-    "video_count": 26,
-    "total_plays": 19087660,
-    "total_likes": 2569852,
-    "unique_creators": 26,
+    "video_count": 2,
+    "total_plays": 2680,
+    "total_likes": 126,
+    "unique_creators": 2,
     "top_creators": [
       {
-        "handle": "joshua.guitar",
-        "fans": 1900000,
+        "handle": "sheseatingit",
+        "fans": 12900,
         "verified": false,
         "videos": 1,
-        "plays": 11400000,
-        "likes": 1700000,
-        "top_video_url": "https://www.tiktok.com/@joshua.guitar/video/7603185879934340365"
+        "plays": 1811,
+        "likes": 93,
+        "top_video_url": "https://www.tiktok.com/@sheseatingit/video/7617842917629070622"
       },
       {
-        "handle": "boburtzz",
-        "fans": 13600,
+        "handle": "sarahkib15",
+        "fans": 82,
         "verified": false,
         "videos": 1,
-        "plays": 4500000,
-        "likes": 516200,
-        "top_video_url": "https://www.tiktok.com/@boburtzz/video/7600850911975509262"
-      },
-      {
-        "handle": "wes.1020",
-        "fans": 3614,
-        "verified": false,
-        "videos": 1,
-        "plays": 1800000,
-        "likes": 218300,
-        "top_video_url": "https://www.tiktok.com/@wes.1020/video/7600968917325974814"
-      },
-      {
-        "handle": "1timesdaviyon",
-        "fans": 1451,
-        "verified": false,
-        "videos": 1,
-        "plays": 423300,
-        "likes": 27300,
-        "top_video_url": "https://www.tiktok.com/@1timesdaviyon/video/7600951195338919199"
-      },
-      {
-        "handle": "justacancerlol",
-        "fans": 139600,
-        "verified": false,
-        "videos": 1,
-        "plays": 384600,
-        "likes": 67700,
-        "top_video_url": "https://www.tiktok.com/@justacancerlol/video/7610974684141702414"
-      },
-      {
-        "handle": "recteamnyc",
-        "fans": 43500,
-        "verified": false,
-        "videos": 1,
-        "plays": 124500,
-        "likes": 17300,
-        "top_video_url": "https://www.tiktok.com/@recteamnyc/video/7605675454703373582"
-      },
-      {
-        "handle": "kitchenstories14",
-        "fans": 32,
-        "verified": false,
-        "videos": 1,
-        "plays": 94100,
-        "likes": 3580,
-        "top_video_url": "https://www.tiktok.com/@kitchenstories14/video/7622989221690789141"
-      },
-      {
-        "handle": "imbryantbarnes",
-        "fans": 3400000,
-        "verified": false,
-        "videos": 1,
-        "plays": 64100,
-        "likes": 7470,
-        "top_video_url": "https://www.tiktok.com/@imbryantbarnes/video/7613833770805873934"
+        "plays": 869,
+        "likes": 33,
+        "top_video_url": "https://www.tiktok.com/@sarahkib15/video/7611732475273841933"
       }
     ],
     "top_videos": [
       {
-        "id": "7603185879934340365",
-        "url": "https://www.tiktok.com/@joshua.guitar/video/7603185879934340365",
-        "text": "Good noodles everyday 🤤 #trending #noodles #meme #fyp #guitar ",
-        "author": "joshua.guitar",
-        "plays": 11400000,
-        "likes": 1700000,
-        "posted": "2026-02-05T13:20:00.000Z"
+        "id": "7617842917629070622",
+        "url": "https://www.tiktok.com/@sheseatingit/video/7617842917629070622",
+        "text": "Everyday Noodles is my dream come true because I could eat noodles everyday.\n\n#Pittsburgh #soupdumplings #xiaolongbao #pennsylvania #pittsburghsteelers ",
+        "author": "sheseatingit",
+        "plays": 1811,
+        "likes": 93,
+        "posted": "2026-03-16T13:21:27.000Z"
       },
       {
-        "id": "7600850911975509262",
-        "url": "https://www.tiktok.com/@boburtzz/video/7600850911975509262",
-        "text": "We gonna be eaten good noodle everyday",
-        "author": "boburtzz",
-        "plays": 4500000,
-        "likes": 516200,
-        "posted": "2026-01-29T18:24:24.000Z"
-      },
-      {
-        "id": "7600968917325974814",
-        "url": "https://www.tiktok.com/@wes.1020/video/7600968917325974814",
-        "text": "WE GON BE EATIN GOOD NOODLES ER DAY🗣️🗣️🔥\n(Audio was made by me🥹) \n#fyp #xyzbca #tayk #edit #freetaykjustnotaroundme ",
-        "author": "wes.1020",
-        "plays": 1800000,
-        "likes": 218300,
-        "posted": "2026-01-30T02:01:42.000Z"
+        "id": "7611732475273841933",
+        "url": "https://www.tiktok.com/@sarahkib15/video/7611732475273841933",
+        "text": "What dreams are made of - the best noodles in Pittsburgh Everyday Noodles @ky ",
+        "author": "sarahkib15",
+        "plays": 869,
+        "likes": 33,
+        "posted": "2026-02-28T02:09:56.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-24T23:52:20.000Z",
-    "median_plays": 22300,
+    "most_recent_post_at": "2026-03-16T13:21:27.000Z",
+    "median_plays": 1340,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T15:56:38.686Z"
   }

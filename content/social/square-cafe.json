@@ -37,115 +37,34 @@
   },
   "tiktok_mentions": {
     "query": "square cafe pittsburgh",
-    "video_count": 14,
-    "total_plays": 317083,
-    "total_likes": 16073,
-    "unique_creators": 13,
+    "video_count": 1,
+    "total_plays": 713,
+    "total_likes": 15,
+    "unique_creators": 1,
     "top_creators": [
       {
-        "handle": "cbspittsburgh",
-        "fans": 87300,
-        "verified": true,
-        "videos": 1,
-        "plays": 98700,
-        "likes": 6944,
-        "top_video_url": "https://www.tiktok.com/@cbspittsburgh/video/7620457050283363615"
-      },
-      {
-        "handle": "sfax_planner",
-        "fans": 91500,
+        "handle": "lexianna1215",
+        "fans": 2112,
         "verified": false,
         "videos": 1,
-        "plays": 70900,
-        "likes": 2548,
-        "top_video_url": "https://www.tiktok.com/@sfax_planner/video/7629057936995683591"
-      },
-      {
-        "handle": "squarecafe.lb",
-        "fans": 9926,
-        "verified": false,
-        "videos": 1,
-        "plays": 61500,
-        "likes": 1079,
-        "top_video_url": "https://www.tiktok.com/@squarecafe.lb/video/7609336189098806546"
-      },
-      {
-        "handle": "arjunmanjunath_",
-        "fans": 57700,
-        "verified": false,
-        "videos": 1,
-        "plays": 31800,
-        "likes": 1995,
-        "top_video_url": "https://www.tiktok.com/@arjunmanjunath_/video/7631732757860748574"
-      },
-      {
-        "handle": "laurelkate_",
-        "fans": 1292,
-        "verified": false,
-        "videos": 1,
-        "plays": 27600,
-        "likes": 2351,
-        "top_video_url": "https://www.tiktok.com/@laurelkate_/video/7629830351937867039"
-      },
-      {
-        "handle": "iamshadyhendrix",
-        "fans": 3214,
-        "verified": false,
-        "videos": 1,
-        "plays": 13500,
-        "likes": 633,
-        "top_video_url": "https://www.tiktok.com/@iamshadyhendrix/video/7629450274981154061"
-      },
-      {
-        "handle": "squarecafe.1",
-        "fans": 1240,
-        "verified": false,
-        "videos": 1,
-        "plays": 8002,
-        "likes": 314,
-        "top_video_url": "https://www.tiktok.com/@squarecafe.1/video/7621956040506084629"
-      },
-      {
-        "handle": "square_coffee_shop",
-        "fans": 188,
-        "verified": false,
-        "videos": 1,
-        "plays": 1509,
-        "likes": 28,
-        "top_video_url": "https://www.tiktok.com/@square_coffee_shop/video/7625646390571584776"
+        "plays": 713,
+        "likes": 15,
+        "top_video_url": "https://www.tiktok.com/@lexianna1215/video/7604240489734245646"
       }
     ],
     "top_videos": [
       {
-        "id": "7620457050283363615",
-        "url": "https://www.tiktok.com/@cbspittsburgh/video/7620457050283363615",
-        "text": "A large gathering of young people in Pittsburgh's Market Square got out of control and ended with three people taken into custody.\n\nAccording to Pittsburgh Public Safety, the incident happened around 5:30 p.m. Sunday when a fight broke out ",
-        "author": "cbspittsburgh",
-        "plays": 98700,
-        "likes": 6944,
-        "posted": "2026-03-23T14:26:05.000Z"
-      },
-      {
-        "id": "7629057936995683591",
-        "url": "https://www.tiktok.com/@sfax_planner/video/7629057936995683591",
-        "text": "Adresse جديدة في صفاقس 🎉🎉🎉\n@square_coffee_shop 🔥\n📍 Ceinture Bourguiba Manzel cheker vers el Ain \n\n#sfaxplanner #sfax #ɪɴsᴛᴀʀᴇᴇʟs #tunisie🇹🇳 #صفاقس ",
-        "author": "sfax_planner",
-        "plays": 70900,
-        "likes": 2548,
-        "posted": "2026-04-15T18:41:16.000Z"
-      },
-      {
-        "id": "7609336189098806546",
-        "url": "https://www.tiktok.com/@squarecafe.lb/video/7609336189098806546",
-        "text": "After Iftar at Square Café 🌙✨\nThe table is full, the vibes are warm, and the night is just getting started 🤍\nFrom fresh desserts to late-night coffee, every moment tastes better after Iftar.\nRamadan nights hit different here… ✨\n\n#RamadanN",
-        "author": "squarecafe.lb",
-        "plays": 61500,
-        "likes": 1079,
-        "posted": "2026-02-21T15:10:50.000Z"
+        "id": "7604240489734245646",
+        "url": "https://www.tiktok.com/@lexianna1215/video/7604240489734245646",
+        "text": "Everything we ate today at breakfast:) menu is huge and everything looked delicious it was so hard to choose!!! \n\n#squarecafe #pittsburghcafe #pittsburghbreakfast #breakfastspot #cafe ",
+        "author": "lexianna1215",
+        "plays": 713,
+        "likes": 15,
+        "posted": "2026-02-07T21:37:21.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-22T23:41:05.000Z",
-    "median_plays": 4756,
+    "most_recent_post_at": "2026-02-07T21:37:21.000Z",
+    "median_plays": 713,
     "detected_own_handle": "squarecafe.lb",
     "scraped_at": "2026-04-26T16:12:03.559Z"
   }

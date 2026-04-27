@@ -37,115 +37,14 @@
   },
   "tiktok_mentions": {
     "query": "treat - ice cream and liege waffles pittsburgh",
-    "video_count": 32,
-    "total_plays": 1122935,
-    "total_likes": 49558,
-    "unique_creators": 32,
-    "top_creators": [
-      {
-        "handle": "dipitcafe",
-        "fans": 1220,
-        "verified": false,
-        "videos": 1,
-        "plays": 296900,
-        "likes": 6930,
-        "top_video_url": "https://www.tiktok.com/@dipitcafe/video/7626609541450321183"
-      },
-      {
-        "handle": "the412franimal",
-        "fans": 1366,
-        "verified": false,
-        "videos": 1,
-        "plays": 156900,
-        "likes": 176,
-        "top_video_url": "https://www.tiktok.com/@the412franimal/video/7615752857433787678"
-      },
-      {
-        "handle": "_fruitastik",
-        "fans": 5414,
-        "verified": false,
-        "videos": 1,
-        "plays": 76900,
-        "likes": 7746,
-        "top_video_url": "https://www.tiktok.com/@_fruitastik/video/7626835594492120350"
-      },
-      {
-        "handle": "ashleyvivian_",
-        "fans": 2299,
-        "verified": false,
-        "videos": 1,
-        "plays": 70800,
-        "likes": 4576,
-        "top_video_url": "https://www.tiktok.com/@ashleyvivian_/video/7626483507656740110"
-      },
-      {
-        "handle": "wanderingpassports",
-        "fans": 72400,
-        "verified": false,
-        "videos": 1,
-        "plays": 68400,
-        "likes": 4258,
-        "top_video_url": "https://www.tiktok.com/@wanderingpassports/video/7622683210698214670"
-      },
-      {
-        "handle": "beingmikii",
-        "fans": 5045,
-        "verified": false,
-        "videos": 1,
-        "plays": 61000,
-        "likes": 4768,
-        "top_video_url": "https://www.tiktok.com/@beingmikii/video/7630907539734924558"
-      },
-      {
-        "handle": "taylorhoffman80",
-        "fans": 4979,
-        "verified": false,
-        "videos": 1,
-        "plays": 59300,
-        "likes": 5128,
-        "top_video_url": "https://www.tiktok.com/@taylorhoffman80/video/7623951710947380511"
-      },
-      {
-        "handle": "columbuscoffeeshops",
-        "fans": 5745,
-        "verified": false,
-        "videos": 1,
-        "plays": 49300,
-        "likes": 2743,
-        "top_video_url": "https://www.tiktok.com/@columbuscoffeeshops/video/7620295175687916831"
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "7626609541450321183",
-        "url": "https://www.tiktok.com/@dipitcafe/video/7626609541450321183",
-        "text": "Waffle with ice cream #icecream #TikTok #viral #viralvideo #Dessert ",
-        "author": "dipitcafe",
-        "plays": 296900,
-        "likes": 6930,
-        "posted": "2026-04-09T04:20:29.000Z"
-      },
-      {
-        "id": "7615752857433787678",
-        "url": "https://www.tiktok.com/@the412franimal/video/7615752857433787678",
-        "text": "No matter the weather, we #RitasIce together 🫡🍧 Pittsburgh weather is insanely unpredictable, but one thing that remains constant is that anytime I pass a Rita’s - I’m stopping for a lil treat. & that’s exactly what we did on a rainy day ",
-        "author": "the412franimal",
-        "plays": 156900,
-        "likes": 176,
-        "posted": "2026-03-10T22:10:59.000Z"
-      },
-      {
-        "id": "7626835594492120350",
-        "url": "https://www.tiktok.com/@_fruitastik/video/7626835594492120350",
-        "text": "Viral Korean Ice Crean in FruiTastik in Pittsburgh \n\n#fyp #fruitastik #pittsburgh #viralkoreanicecream #mangoicecream ",
-        "author": "_fruitastik",
-        "plays": 76900,
-        "likes": 7746,
-        "posted": "2026-04-09T18:57:33.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-22T18:27:05.000Z",
-    "median_plays": 13600,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T16:14:04.900Z"
   }

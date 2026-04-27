@@ -37,10 +37,10 @@
   },
   "tiktok_mentions": {
     "query": "margaux pittsburgh",
-    "video_count": 7,
-    "total_plays": 43606,
-    "total_likes": 3939,
-    "unique_creators": 7,
+    "video_count": 5,
+    "total_plays": 39178,
+    "total_likes": 3296,
+    "unique_creators": 5,
     "top_creators": [
       {
         "handle": "deluludayss",
@@ -77,24 +77,6 @@
         "plays": 2925,
         "likes": 180,
         "top_video_url": "https://www.tiktok.com/@maddielovespittsburgh/video/7601180796682030350"
-      },
-      {
-        "handle": "margauxxgriffon",
-        "fans": 613,
-        "verified": false,
-        "videos": 1,
-        "plays": 2265,
-        "likes": 234,
-        "top_video_url": "https://www.tiktok.com/@margauxxgriffon/video/7632267338213068054"
-      },
-      {
-        "handle": "margaux_jacob",
-        "fans": 3061,
-        "verified": false,
-        "videos": 1,
-        "plays": 2163,
-        "likes": 409,
-        "top_video_url": "https://www.tiktok.com/@margaux_jacob/video/7630550631375293718"
       },
       {
         "handle": "carlys_coffee",
@@ -135,8 +117,8 @@
         "posted": "2026-03-07T15:13:04.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-24T10:15:26.000Z",
-    "median_plays": 2925,
+    "most_recent_post_at": "2026-03-07T15:13:04.000Z",
+    "median_plays": 3155,
     "detected_own_handle": "margauxxgriffon",
     "scraped_at": "2026-04-26T16:03:57.304Z"
   }

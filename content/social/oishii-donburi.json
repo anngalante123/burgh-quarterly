@@ -17,88 +17,14 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "oishii donburi pittsburgh",
-    "video_count": 5,
-    "total_plays": 26872,
-    "total_likes": 1059,
-    "unique_creators": 5,
-    "top_creators": [
-      {
-        "handle": "missrichauntie",
-        "fans": 937,
-        "verified": false,
-        "videos": 1,
-        "plays": 9983,
-        "likes": 516,
-        "top_video_url": "https://www.tiktok.com/@missrichauntie/video/7622326183576849695"
-      },
-      {
-        "handle": "wassupminnesota",
-        "fans": 17600,
-        "verified": false,
-        "videos": 1,
-        "plays": 6217,
-        "likes": 133,
-        "top_video_url": "https://www.tiktok.com/@wassupminnesota/video/7602793819498630413"
-      },
-      {
-        "handle": "oishiideli2",
-        "fans": 2862,
-        "verified": false,
-        "videos": 1,
-        "plays": 5894,
-        "likes": 107,
-        "top_video_url": "https://www.tiktok.com/@oishiideli2/video/7630740368979463445"
-      },
-      {
-        "handle": "annniexn",
-        "fans": 1052,
-        "verified": false,
-        "videos": 1,
-        "plays": 3595,
-        "likes": 283,
-        "top_video_url": "https://www.tiktok.com/@annniexn/video/7621032282341772565"
-      },
-      {
-        "handle": "dondonjfb",
-        "fans": 78,
-        "verified": false,
-        "videos": 1,
-        "plays": 1183,
-        "likes": 20,
-        "top_video_url": "https://www.tiktok.com/@dondonjfb/video/7621979011983379743"
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "7622326183576849695",
-        "url": "https://www.tiktok.com/@missrichauntie/video/7622326183576849695",
-        "text": "Things to do in the 302 😗.\nFinally tried this sushi place while I was waiting for my car in the shop for a quick bite. #\nOishii Sushi in Camden, Delaware \n\nJapanese restaurant in delaware\n#sushilover #Foodie #delaware #delawarefood #japane",
-        "author": "missrichauntie",
-        "plays": 9983,
-        "likes": 516,
-        "posted": "2026-03-28T15:18:55.000Z"
-      },
-      {
-        "id": "7602793819498630413",
-        "url": "https://www.tiktok.com/@wassupminnesota/video/7602793819498630413",
-        "text": "🚨 MUST TRY RAMEN SPOT IN MINNESOTA TO TRY THIS WINTER! // @oishiiramenmn\n#WassupMinnesota\nIf YOU love ramen and udon, Oishii Japanese Ramen & Donburi in Savage is one you should know about. We just found out they have been open for seven y",
-        "author": "wassupminnesota",
-        "plays": 6217,
-        "likes": 133,
-        "posted": "2026-02-04T00:03:18.000Z"
-      },
-      {
-        "id": "7630740368979463445",
-        "url": "https://www.tiktok.com/@oishiideli2/video/7630740368979463445",
-        "text": "Em đã thử rồi, mọi người thử món mới của nhà Oishii chưa ạ - Đồng Giá 59K thôi đó #oishidelivery #comcahoicay #cacuon #sushi #antruavanphong ",
-        "author": "oishiideli2",
-        "plays": 5894,
-        "likes": 107,
-        "posted": "2026-04-20T07:30:05.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-20T07:30:05.000Z",
-    "median_plays": 5894,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T16:08:02.153Z"
   }

@@ -37,115 +37,106 @@
   },
   "tiktok_mentions": {
     "query": "spot of coffee pittsburgh",
-    "video_count": 31,
-    "total_plays": 278472,
-    "total_likes": 17344,
-    "unique_creators": 24,
+    "video_count": 8,
+    "total_plays": 30753,
+    "total_likes": 1457,
+    "unique_creators": 7,
     "top_creators": [
       {
-        "handle": "lyssad16",
-        "fans": 401,
+        "handle": "asprinkleofjen",
+        "fans": 158,
         "verified": false,
-        "videos": 1,
-        "plays": 44300,
-        "likes": 1933,
-        "top_video_url": "https://www.tiktok.com/@lyssad16/video/7617949708450876685"
-      },
-      {
-        "handle": "stephr0se8",
-        "fans": 122,
-        "verified": false,
-        "videos": 1,
-        "plays": 31200,
-        "likes": 1946,
-        "top_video_url": "https://www.tiktok.com/@stephr0se8/video/7613871282186177805"
-      },
-      {
-        "handle": "socotracafe.pgh",
-        "fans": 544,
-        "verified": false,
-        "videos": 1,
-        "plays": 27700,
-        "likes": 2287,
-        "top_video_url": "https://www.tiktok.com/@socotracafe.pgh/video/7620574127971126542"
-      },
-      {
-        "handle": "laurelkate_",
-        "fans": 1292,
-        "verified": false,
-        "videos": 1,
-        "plays": 27600,
-        "likes": 2351,
-        "top_video_url": "https://www.tiktok.com/@laurelkate_/video/7629830351937867039"
+        "videos": 2,
+        "plays": 12214,
+        "likes": 483,
+        "top_video_url": "https://www.tiktok.com/@asprinkleofjen/video/7620804294987582734"
       },
       {
         "handle": "calsipos",
         "fans": 73000,
         "verified": false,
-        "videos": 3,
-        "plays": 21569,
-        "likes": 1647,
-        "top_video_url": "https://www.tiktok.com/@calsipos/video/7630959934938565918"
+        "videos": 1,
+        "plays": 5114,
+        "likes": 418,
+        "top_video_url": "https://www.tiktok.com/@calsipos/video/7624188110481444127"
       },
       {
-        "handle": "deluludayss",
-        "fans": 1290,
+        "handle": "mcmonaglle",
+        "fans": 4737,
         "verified": false,
         "videos": 1,
-        "plays": 21400,
-        "likes": 2544,
-        "top_video_url": "https://www.tiktok.com/@deluludayss/video/7603414782779067661"
+        "plays": 4328,
+        "likes": 195,
+        "top_video_url": "https://www.tiktok.com/@mcmonaglle/video/7601706534862654750"
       },
       {
-        "handle": "alexgdeckerr",
-        "fans": 1111,
+        "handle": "sara.mackenzie03",
+        "fans": 183,
         "verified": false,
         "videos": 1,
-        "plays": 16400,
-        "likes": 934,
-        "top_video_url": "https://www.tiktok.com/@alexgdeckerr/video/7602402689401556238"
+        "plays": 4266,
+        "likes": 178,
+        "top_video_url": "https://www.tiktok.com/@sara.mackenzie03/video/7603455506195270926"
       },
       {
-        "handle": "kellyroxyay",
-        "fans": 538,
+        "handle": "aubreyclaree_",
+        "fans": 70000,
         "verified": false,
-        "videos": 2,
-        "plays": 16296,
-        "likes": 785,
-        "top_video_url": "https://www.tiktok.com/@kellyroxyay/video/7617587100342340895"
+        "videos": 1,
+        "plays": 3652,
+        "likes": 127,
+        "top_video_url": "https://www.tiktok.com/@aubreyclaree_/video/7618388467243846943"
+      },
+      {
+        "handle": "coffee.reviewers",
+        "fans": 32,
+        "verified": false,
+        "videos": 1,
+        "plays": 829,
+        "likes": 31,
+        "top_video_url": "https://www.tiktok.com/@coffee.reviewers/video/7628702794303671583"
+      },
+      {
+        "handle": "candijessie",
+        "fans": 3604,
+        "verified": false,
+        "videos": 1,
+        "plays": 350,
+        "likes": 25,
+        "top_video_url": "https://www.tiktok.com/@candijessie/video/7627201495896771871"
       }
     ],
     "top_videos": [
       {
-        "id": "7617949708450876685",
-        "url": "https://www.tiktok.com/@lyssad16/video/7617949708450876685",
-        "text": "neeeeedddd to try more tho! #coffee #pittsburgh #trending ",
-        "author": "lyssad16",
-        "plays": 44300,
-        "likes": 1933,
-        "posted": "2026-03-16T20:15:46.000Z"
+        "id": "7620804294987582734",
+        "url": "https://www.tiktok.com/@asprinkleofjen/video/7620804294987582734",
+        "text": "Delicious recent food and drinks I’ve got in Pittsburgh when eating out!! All time favs are @Spot Of Coffee & Alta Via!\n#pittsburgh #pittsburghfood #foodie #pitt #thingstodo places to eat in Pittsburgh ",
+        "author": "asprinkleofjen",
+        "plays": 9337,
+        "likes": 404,
+        "posted": "2026-03-24T12:53:43.000Z"
       },
       {
-        "id": "7613871282186177805",
-        "url": "https://www.tiktok.com/@stephr0se8/video/7613871282186177805",
-        "text": "Some of my fave local coffee shops! Drop some more reccs for me to try 👇🏼\n#localcoffeeshop #pittsburgh #coffeetok #supportsmallbusiness #fyp ",
-        "author": "stephr0se8",
-        "plays": 31200,
-        "likes": 1946,
-        "posted": "2026-03-05T20:29:55.000Z"
+        "id": "7624188110481444127",
+        "url": "https://www.tiktok.com/@calsipos/video/7624188110481444127",
+        "text": "You know I LOVE carrot cake and when I see a carrot cake latte, I have to go check it out! This is my second stop to spot of coffee & its such a cute spot 🥹 my friend comes here all the time as her local coffee shop & im happy we stopped b",
+        "author": "calsipos",
+        "plays": 5114,
+        "likes": 418,
+        "posted": "2026-04-02T15:43:57.000Z"
       },
       {
-        "id": "7620574127971126542",
-        "url": "https://www.tiktok.com/@socotracafe.pgh/video/7620574127971126542",
-        "text": "New spot in Pittsburgh 🤎\nServing warm vibes, top-quality drinks, and fresh pastries 🥐☕️\nCome experience it for yourself ✨ #pittsburgh #412 #pgheats #yemenicoffee #socotracafepgh ",
-        "author": "socotracafe.pgh",
-        "plays": 27700,
-        "likes": 2287,
-        "posted": "2026-03-23T22:00:03.000Z"
+        "id": "7601706534862654750",
+        "url": "https://www.tiktok.com/@mcmonaglle/video/7601706534862654750",
+        "text": "Spot of Coffee has delicious homemade syrups made without refined sugars! They have unique flavors on an always changing menu! I got the miso blondie latte and it was delicious! @Spot Of Coffee \n#coffee #latte #coffeeshop #foodie #pittsburg",
+        "author": "mcmonaglle",
+        "plays": 4328,
+        "likes": 195,
+        "posted": "2026-02-01T01:44:03.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-25T16:13:48.000Z",
-    "median_plays": 4509,
+    "most_recent_post_at": "2026-04-14T19:43:24.000Z",
+    "median_plays": 3959,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T16:11:12.981Z"
   }

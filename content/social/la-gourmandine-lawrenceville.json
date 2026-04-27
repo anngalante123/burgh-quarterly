@@ -17,20 +17,11 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "la gourmandine lawrenceville pittsburgh",
-    "video_count": 11,
-    "total_plays": 31960,
-    "total_likes": 1825,
-    "unique_creators": 9,
+    "video_count": 7,
+    "total_plays": 17694,
+    "total_likes": 1213,
+    "unique_creators": 5,
     "top_creators": [
-      {
-        "handle": "mattdinguspgh",
-        "fans": 340,
-        "verified": false,
-        "videos": 1,
-        "plays": 11800,
-        "likes": 498,
-        "top_video_url": "https://www.tiktok.com/@mattdinguspgh/video/7609890059071933726"
-      },
       {
         "handle": "melissasadhdlife",
         "fans": 4365,
@@ -59,15 +50,6 @@
         "top_video_url": "https://www.tiktok.com/@sheseatingit/video/7617861323484876062"
       },
       {
-        "handle": "steel.city.sippin",
-        "fans": 13200,
-        "verified": false,
-        "videos": 1,
-        "plays": 1235,
-        "likes": 52,
-        "top_video_url": "https://www.tiktok.com/@steel.city.sippin/video/7608275095584345374"
-      },
-      {
         "handle": "tori.eats.pgh",
         "fans": 533,
         "verified": false,
@@ -77,34 +59,16 @@
         "top_video_url": "https://www.tiktok.com/@tori.eats.pgh/video/7629034069891779871"
       },
       {
-        "handle": "haileyquattrocchi",
-        "fans": 1965,
+        "handle": "shainagorm",
+        "fans": 218,
         "verified": false,
         "videos": 1,
-        "plays": 765,
-        "likes": 37,
-        "top_video_url": "https://www.tiktok.com/@haileyquattrocchi/video/7600782945619692814"
-      },
-      {
-        "handle": "erica.tolin.realtor",
-        "fans": 1509,
-        "verified": false,
-        "videos": 1,
-        "plays": 466,
-        "likes": 25,
-        "top_video_url": "https://www.tiktok.com/@erica.tolin.realtor/video/7623152825362664717"
+        "plays": 174,
+        "likes": 4,
+        "top_video_url": "https://www.tiktok.com/@shainagorm/video/7606070868854279438"
       }
     ],
     "top_videos": [
-      {
-        "id": "7609890059071933726",
-        "url": "https://www.tiktok.com/@mattdinguspgh/video/7609890059071933726",
-        "text": "Welcome to 337 Fisk Street in Lawrenceville, Pittsburgh. This iconic 1900 residence spans nearly 4,000 square feet, blending historic soul with modern luxury. \n\nhttps://www.zillow.com/homedetails/337-Fisk-St-Pittsburgh-PA-15201/11514118_zpi",
-        "author": "mattdinguspgh",
-        "plays": 11800,
-        "likes": 498,
-        "posted": "2026-02-23T03:00:21.000Z"
-      },
       {
         "id": "7620558568844004639",
         "url": "https://www.tiktok.com/@melissasadhdlife/video/7620558568844004639",
@@ -122,10 +86,19 @@
         "plays": 3018,
         "likes": 156,
         "posted": "2026-02-04T22:06:23.000Z"
+      },
+      {
+        "id": "7614919961160568078",
+        "url": "https://www.tiktok.com/@abbeykugel/video/7614919961160568078",
+        "text": "La Gourmandine Bakery, PGH 🥐🍰🥖",
+        "author": "abbeykugel",
+        "plays": 2453,
+        "likes": 148,
+        "posted": "2026-03-08T16:19:11.000Z"
       }
     ],
     "most_recent_post_at": "2026-04-21T21:04:40.000Z",
-    "median_plays": 1235,
+    "median_plays": 2208,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T16:01:50.865Z"
   }

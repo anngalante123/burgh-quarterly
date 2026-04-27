@@ -37,20 +37,11 @@
   },
   "tiktok_mentions": {
     "query": "mola pittsburgh",
-    "video_count": 3,
-    "total_plays": 6590,
-    "total_likes": 231,
-    "unique_creators": 3,
+    "video_count": 1,
+    "total_plays": 2849,
+    "total_likes": 129,
+    "unique_creators": 1,
     "top_creators": [
-      {
-        "handle": "kylie.belli",
-        "fans": 12100,
-        "verified": false,
-        "videos": 1,
-        "plays": 2907,
-        "likes": 88,
-        "top_video_url": "https://www.tiktok.com/@kylie.belli/video/7615827032286432542"
-      },
       {
         "handle": "zoetaylorrrfit",
         "fans": 1098,
@@ -59,27 +50,9 @@
         "plays": 2849,
         "likes": 129,
         "top_video_url": "https://www.tiktok.com/@zoetaylorrrfit/video/7605020364741135630"
-      },
-      {
-        "handle": "molapeluqueria",
-        "fans": 281,
-        "verified": false,
-        "videos": 1,
-        "plays": 834,
-        "likes": 14,
-        "top_video_url": "https://www.tiktok.com/@molapeluqueria/video/7620921533241822486"
       }
     ],
     "top_videos": [
-      {
-        "id": "7615827032286432542",
-        "url": "https://www.tiktok.com/@kylie.belli/video/7615827032286432542",
-        "text": "Need a cheap eat in pittsburgh grab an #onigiri at Mola in the strip! \n\n$5 for select Onigiri🍙 \n\n#pittsburgh ",
-        "author": "kylie.belli",
-        "plays": 2907,
-        "likes": 88,
-        "posted": "2026-03-11T02:58:37.000Z"
-      },
       {
         "id": "7605020364741135630",
         "url": "https://www.tiktok.com/@zoetaylorrrfit/video/7605020364741135630",
@@ -88,18 +61,9 @@
         "plays": 2849,
         "likes": 129,
         "posted": "2026-02-10T00:03:38.000Z"
-      },
-      {
-        "id": "7620921533241822486",
-        "url": "https://www.tiktok.com/@molapeluqueria/video/7620921533241822486",
-        "text": "#CapCut ",
-        "author": "molapeluqueria",
-        "plays": 834,
-        "likes": 14,
-        "posted": "2026-03-24T20:27:51.000Z"
       }
     ],
-    "most_recent_post_at": "2026-03-24T20:27:51.000Z",
+    "most_recent_post_at": "2026-02-10T00:03:38.000Z",
     "median_plays": 2849,
     "detected_own_handle": "molapeluqueria",
     "scraped_at": "2026-04-26T16:06:20.580Z"

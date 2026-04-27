@@ -37,115 +37,34 @@
   },
   "tiktok_mentions": {
     "query": "allegheny coffee and tea exchange pittsburgh",
-    "video_count": 36,
-    "total_plays": 607052,
-    "total_likes": 37409,
-    "unique_creators": 31,
+    "video_count": 1,
+    "total_plays": 578,
+    "total_likes": 29,
+    "unique_creators": 1,
     "top_creators": [
       {
-        "handle": "pittsburghpg",
-        "fans": 10200,
+        "handle": "christinaclothesncoffee",
+        "fans": 7266,
         "verified": false,
         "videos": 1,
-        "plays": 127500,
-        "likes": 7517,
-        "top_video_url": "https://www.tiktok.com/@pittsburghpg/video/7607959834289343757"
-      },
-      {
-        "handle": "grazecafe",
-        "fans": 3247,
-        "verified": false,
-        "videos": 1,
-        "plays": 122400,
-        "likes": 6231,
-        "top_video_url": "https://www.tiktok.com/@grazecafe/video/7608581165913591060"
-      },
-      {
-        "handle": "tierneyanne2313",
-        "fans": 1043,
-        "verified": false,
-        "videos": 1,
-        "plays": 92200,
-        "likes": 4529,
-        "top_video_url": "https://www.tiktok.com/@tierneyanne2313/video/7615748276234538271"
-      },
-      {
-        "handle": "calsipos",
-        "fans": 73000,
-        "verified": false,
-        "videos": 4,
-        "plays": 72500,
-        "likes": 5141,
-        "top_video_url": "https://www.tiktok.com/@calsipos/video/7616496496757820703"
-      },
-      {
-        "handle": "morgan.bold",
-        "fans": 110100,
-        "verified": false,
-        "videos": 1,
-        "plays": 46000,
-        "likes": 3064,
-        "top_video_url": "https://www.tiktok.com/@morgan.bold/video/7629005909494074646"
-      },
-      {
-        "handle": "socotracafe.pgh",
-        "fans": 543,
-        "verified": false,
-        "videos": 1,
-        "plays": 27700,
-        "likes": 2287,
-        "top_video_url": "https://www.tiktok.com/@socotracafe.pgh/video/7620574127971126542"
-      },
-      {
-        "handle": "charlesmuyezwa",
-        "fans": 7667,
-        "verified": false,
-        "videos": 1,
-        "plays": 24900,
-        "likes": 3087,
-        "top_video_url": "https://www.tiktok.com/@charlesmuyezwa/video/7615276004197534996"
-      },
-      {
-        "handle": "amberthepghbarista",
-        "fans": 2066,
-        "verified": false,
-        "videos": 2,
-        "plays": 19215,
-        "likes": 1107,
-        "top_video_url": "https://www.tiktok.com/@amberthepghbarista/video/7608631946763095326"
+        "plays": 578,
+        "likes": 29,
+        "top_video_url": "https://www.tiktok.com/@christinaclothesncoffee/video/7628564445622504717"
       }
     ],
     "top_videos": [
       {
-        "id": "7607959834289343757",
-        "url": "https://www.tiktok.com/@pittsburghpg/video/7607959834289343757",
-        "text": "HBO Max's award-winning medical drama “The Pitt” does a lot of things to ground itself in Pittsburgh.\nIts emergency room is based on that of Allegheny General Hospital on the North Side. There are a variety of local references, including on",
-        "author": "pittsburghpg",
-        "plays": 127500,
-        "likes": 7517,
-        "posted": "2026-02-17T22:10:06.000Z"
-      },
-      {
-        "id": "7608581165913591060",
-        "url": "https://www.tiktok.com/@grazecafe/video/7608581165913591060",
-        "text": "Pretoria… this is your sign.\nCoffee tasting at Graze Café ☕\nThe Graze charcuterie boards 🧀\nAnd a space made for real connection.\nNot just a date night.\nA do-something-different night.\nWeekdays - walk in.\nSaturdays - booking recommended.\nTa",
-        "author": "grazecafe",
-        "plays": 122400,
-        "likes": 6231,
-        "posted": "2026-02-19T14:20:58.000Z"
-      },
-      {
-        "id": "7615748276234538271",
-        "url": "https://www.tiktok.com/@tierneyanne2313/video/7615748276234538271",
-        "text": "All their drinks are so unique and flavorful!\n\n#steepmountain #teacompany #coffee #latte #greensburgpa ",
-        "author": "tierneyanne2313",
-        "plays": 92200,
-        "likes": 4529,
-        "posted": "2026-03-10T21:53:15.000Z"
+        "id": "7628564445622504717",
+        "url": "https://www.tiktok.com/@christinaclothesncoffee/video/7628564445622504717",
+        "text": "If you’re visiting the Strip District add the Allegheny Coffee & Tea Exchange to your list! The salty pretzel Nitro Brew is a top favorite of mine!\n\n@VisitPITTSBURGH \n\n#fyp #pittsburgh #nfldraft #412 #coffee",
+        "author": "christinaclothesncoffee",
+        "plays": 578,
+        "likes": 29,
+        "posted": "2026-04-14T10:47:21.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-24T19:14:36.000Z",
-    "median_plays": 4919,
+    "most_recent_post_at": "2026-04-14T10:47:21.000Z",
+    "median_plays": 578,
     "detected_own_handle": "adventureallegheny",
     "scraped_at": "2026-04-26T15:53:28.096Z"
   }

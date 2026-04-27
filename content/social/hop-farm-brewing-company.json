@@ -17,115 +17,34 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "hop farm brewing pittsburgh",
-    "video_count": 21,
-    "total_plays": 170828,
-    "total_likes": 8542,
-    "unique_creators": 21,
+    "video_count": 1,
+    "total_plays": 285,
+    "total_likes": 16,
+    "unique_creators": 1,
     "top_creators": [
       {
-        "handle": "stevenjamesyuhasz",
-        "fans": 6421,
+        "handle": "jseguritan23",
+        "fans": 2620,
         "verified": false,
         "videos": 1,
-        "plays": 51500,
-        "likes": 2691,
-        "top_video_url": "https://www.tiktok.com/@stevenjamesyuhasz/video/7610945922725465374"
-      },
-      {
-        "handle": "412onthemove",
-        "fans": 12800,
-        "verified": false,
-        "videos": 1,
-        "plays": 50600,
-        "likes": 2685,
-        "top_video_url": "https://www.tiktok.com/@412onthemove/video/7619048510226320670"
-      },
-      {
-        "handle": "alissa.and.michael",
-        "fans": 11500,
-        "verified": false,
-        "videos": 1,
-        "plays": 20500,
-        "likes": 975,
-        "top_video_url": "https://www.tiktok.com/@alissa.and.michael/video/7630290427660274974"
-      },
-      {
-        "handle": "kitten2kat",
-        "fans": 5056,
-        "verified": false,
-        "videos": 1,
-        "plays": 10800,
-        "likes": 434,
-        "top_video_url": "https://www.tiktok.com/@kitten2kat/video/7624553526999534878"
-      },
-      {
-        "handle": "bterrytv",
-        "fans": 39300,
-        "verified": false,
-        "videos": 1,
-        "plays": 6389,
-        "likes": 160,
-        "top_video_url": "https://www.tiktok.com/@bterrytv/video/7623966633802894606"
-      },
-      {
-        "handle": "ninabrenna.vlogs",
-        "fans": 556,
-        "verified": false,
-        "videos": 1,
-        "plays": 5153,
-        "likes": 239,
-        "top_video_url": "https://www.tiktok.com/@ninabrenna.vlogs/video/7627964998739889421"
-      },
-      {
-        "handle": "heathironnn",
-        "fans": 719,
-        "verified": false,
-        "videos": 1,
-        "plays": 4377,
-        "likes": 209,
-        "top_video_url": "https://www.tiktok.com/@heathironnn/video/7628029108408061198"
-      },
-      {
-        "handle": "deluludayss",
-        "fans": 1290,
-        "verified": false,
-        "videos": 1,
-        "plays": 3763,
-        "likes": 180,
-        "top_video_url": "https://www.tiktok.com/@deluludayss/video/7625000668306165006"
+        "plays": 285,
+        "likes": 16,
+        "top_video_url": "https://www.tiktok.com/@jseguritan23/video/7628319601306209549"
       }
     ],
     "top_videos": [
       {
-        "id": "7610945922725465374",
-        "url": "https://www.tiktok.com/@stevenjamesyuhasz/video/7610945922725465374",
-        "text": "The staff and customer service here was unbelievable. Definitely the type of place I want to support. @B&K Farm Market #warren #youngstown #cortland #ohio ",
-        "author": "stevenjamesyuhasz",
-        "plays": 51500,
-        "likes": 2691,
-        "posted": "2026-02-25T23:17:37.000Z"
-      },
-      {
-        "id": "7619048510226320670",
-        "url": "https://www.tiktok.com/@412onthemove/video/7619048510226320670",
-        "text": "7Brew Coffee is an Arkansas based coffee chain that’s experiencing massive growth. With more than 600 locations they opened nearly half of them in 2025. The Pittsburgh area has 4 locations in Moon, Washington, Greensburg and Indiana. Soon a",
-        "author": "412onthemove",
-        "plays": 50600,
-        "likes": 2685,
-        "posted": "2026-03-19T19:19:41.000Z"
-      },
-      {
-        "id": "7630290427660274974",
-        "url": "https://www.tiktok.com/@alissa.and.michael/video/7630290427660274974",
-        "text": "A perfect spot for pizza, drinks, and patio vibes 🍕🍻 @CocoonBrewing \n\nHere’s what we tried:\n• Margherita Pizza\n• Burrata & Prosciutto Pizza\n• Drinks\n\n📍 2233 Kaftan Way, De Pere\nPrice range: $ - $$\n\n#greenbay #resturantreview #foodie #loc",
-        "author": "alissa.and.michael",
-        "plays": 20500,
-        "likes": 975,
-        "posted": "2026-04-19T02:24:10.000Z"
+        "id": "7628319601306209549",
+        "url": "https://www.tiktok.com/@jseguritan23/video/7628319601306209549",
+        "text": "Trivial Warfare Army Takeover 2026 in Pittsburgh, PA:\nMain trivia event hosted by Liz Quesnelle’s Madcap Trivia at the Hop Farm Brewing Company \n\n#pubtrivia #triviaevent #triviatime #triviatok #pittsburgh ",
+        "author": "jseguritan23",
+        "plays": 285,
+        "likes": 16,
+        "posted": "2026-04-13T18:56:47.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-24T19:27:02.000Z",
-    "median_plays": 2349,
+    "most_recent_post_at": "2026-04-13T18:56:47.000Z",
+    "median_plays": 285,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T15:58:27.914Z"
   }

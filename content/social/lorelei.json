@@ -37,115 +37,14 @@
   },
   "tiktok_mentions": {
     "query": "lorelei pittsburgh",
-    "video_count": 18,
-    "total_plays": 1230257,
-    "total_likes": 99934,
-    "unique_creators": 18,
-    "top_creators": [
-      {
-        "handle": "ernest",
-        "fans": 355700,
-        "verified": true,
-        "videos": 1,
-        "plays": 569300,
-        "likes": 24100,
-        "top_video_url": "https://www.tiktok.com/@ernest/video/7607938994898291981"
-      },
-      {
-        "handle": "rankoganei797",
-        "fans": 52100,
-        "verified": false,
-        "videos": 1,
-        "plays": 318400,
-        "likes": 20700,
-        "top_video_url": "https://www.tiktok.com/@rankoganei797/video/7624185629600992530"
-      },
-      {
-        "handle": "dylanmenor",
-        "fans": 726800,
-        "verified": false,
-        "videos": 1,
-        "plays": 188200,
-        "likes": 21500,
-        "top_video_url": "https://www.tiktok.com/@dylanmenor/video/7626283101961964821"
-      },
-      {
-        "handle": "l0velyd3vis",
-        "fans": 137,
-        "verified": false,
-        "videos": 1,
-        "plays": 125800,
-        "likes": 30000,
-        "top_video_url": "https://www.tiktok.com/@l0velyd3vis/video/7626533281412009238"
-      },
-      {
-        "handle": "serafica._",
-        "fans": 49,
-        "verified": false,
-        "videos": 1,
-        "plays": 8493,
-        "likes": 691,
-        "top_video_url": "https://www.tiktok.com/@serafica._/video/7629945652444761352"
-      },
-      {
-        "handle": "madilorelei",
-        "fans": 1327,
-        "verified": false,
-        "videos": 1,
-        "plays": 5987,
-        "likes": 1221,
-        "top_video_url": "https://www.tiktok.com/@madilorelei/video/7632846161040231711"
-      },
-      {
-        "handle": "lorerei.love.life",
-        "fans": 162,
-        "verified": false,
-        "videos": 1,
-        "plays": 5473,
-        "likes": 903,
-        "top_video_url": "https://www.tiktok.com/@lorerei.love.life/video/7612273948159479047"
-      },
-      {
-        "handle": "fender",
-        "fans": 3900000,
-        "verified": true,
-        "videos": 1,
-        "plays": 2927,
-        "likes": 165,
-        "top_video_url": "https://www.tiktok.com/@fender/video/7632031448207215886"
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "7607938994898291981",
-        "url": "https://www.tiktok.com/@ernest/video/7607938994898291981",
-        "text": "Lorelei. She’ll pull you down if you let her.\n\n#newmusic #lorelei ",
-        "author": "ernest",
-        "plays": 569300,
-        "likes": 24100,
-        "posted": "2026-02-17T20:49:29.000Z"
-      },
-      {
-        "id": "7624185629600992530",
-        "url": "https://www.tiktok.com/@rankoganei797/video/7624185629600992530",
-        "text": "REINA LORELEI 👑 \n#princesitasofia #serie #edit #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii ",
-        "author": "rankoganei797",
-        "plays": 318400,
-        "likes": 20700,
-        "posted": "2026-04-02T15:34:11.000Z"
-      },
-      {
-        "id": "7626283101961964821",
-        "url": "https://www.tiktok.com/@dylanmenor/video/7626283101961964821",
-        "text": "well, thanks for the lock pick, Lorelei 🔐 #ProjectLoki @Jayda ",
-        "author": "dylanmenor",
-        "plays": 188200,
-        "likes": 21500,
-        "posted": "2026-04-08T07:13:31.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-26T13:58:24.000Z",
-    "median_plays": 1556,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": "loreleishae3",
     "scraped_at": "2026-04-26T16:02:33.217Z"
   }

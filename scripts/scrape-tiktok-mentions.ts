@@ -153,25 +153,125 @@ const STOP = new Set([
  * publish editorial claims about creator coverage that don't survive
  * a skeptic checking the actual videos.
  */
-function filterRelevant(items: ApifyVideo[], businessName: string): ApifyVideo[] {
-  const tokens = nameTokens(businessName);
-  if (tokens.length === 0) return items;
+/**
+ * Pittsburgh-area markers, mirrors the strict filter in
+ * scripts/generate-creator-posts.ts. A video must contain one of these
+ * (caption / hashtag / author handle / nickname) to count as a real
+ * Pittsburgh-relevant mention.
+ */
+const PITTSBURGH_MARKERS = [
+  "pittsburgh", "pgh", "412", "steelcity", "yinz",
+  "arlington", "bloomfield", "eastliberty", "hazelwood", "highlandpark",
+  "larimer", "lawrenceville", "morningside", "shadyside", "southside",
+  "southsideflats", "squirrelhill", "stripdistrict",
+];
+
+const FAMILY_CONTEXT_KEYWORDS: Record<string, string[]> = {
+  Bakery: ["bakery", "pastry", "bread", "croissant", "cake", "cookie"],
+  "Pastry shop": ["pastry", "bakery", "croissant", "bread"],
+  "Dessert shop": ["dessert", "ice cream", "icecream", "sweet", "cake"],
+  "Dessert restaurant": ["dessert", "ice cream", "sweet", "treat"],
+  "Ice cream shop": ["ice cream", "icecream", "gelato", "scoop"],
+  Cafe: ["coffee", "cafe", "café", "latte", "espresso", "matcha", "drink"],
+  "Coffee shop": ["coffee", "cafe", "latte", "espresso", "drink", "brew"],
+  "Tea house": ["tea", "matcha", "cafe", "drink"],
+  "Juice shop": ["juice", "smoothie", "drink", "carrot"],
+  "Noodle shop": ["noodle", "ramen", "soup", "asian"],
+  "Japanese restaurant": ["sushi", "japanese", "ramen", "donburi", "rice"],
+  "Sushi restaurant": ["sushi", "japanese", "rice"],
+  "Thai restaurant": ["thai", "noodle", "curry", "rice"],
+  "Indian restaurant": ["indian", "curry", "naan", "rice"],
+  Restaurant: ["restaurant", "food", "dish", "eat", "lunch", "dinner"],
+  "Brunch restaurant": ["brunch", "restaurant", "eggs", "pancakes", "breakfast"],
+  Bar: ["bar", "cocktail", "drink", "beer", "wine"],
+  Brewery: ["brewery", "beer", "ipa", "lager", "pint", "tap"],
+};
+
+const STOP_TOKENS = new Set([
+  "and", "the", "with", "for", "from", "pittsburgh", "shop", "cafe",
+  "bar", "restaurant", "kitchen", "company", "house",
+]);
+
+/**
+ * Core business name: lowercased + alphanumeric-only, with neighborhood
+ * suffixes stripped (e.g. "La Gourmandine Lawrenceville" -> "lagourmandine"
+ * because "lawrenceville" is a tracked neighborhood marker that creators
+ * commonly use without referring to the business itself).
+ */
+function coreBusinessName(name: string): string {
+  let s = name.toLowerCase();
+  for (const m of PITTSBURGH_MARKERS) {
+    if (m.length < 6) continue;
+    s = s.replace(new RegExp(`\\b${m}\\b`, "gi"), "");
+  }
+  s = s.replace(/^\s*(the|a)\s+/, "");
+  return s.replace(/[^a-z0-9]/g, "");
+}
+
+/**
+ * Strict 3-condition filter applied at scrape time:
+ *   (a) Recency, posted in the last 90 days.
+ *   (b) Explicit business name match, the core normalized business name
+ *       must appear as a contiguous substring of the alphanumeric haystack
+ *       (caption + hashtags + author handle + nickname). For short cores
+ *       (<8 chars: 'pages', 'mola') a family-context keyword must also
+ *       appear.
+ *   (c) Pittsburgh area marker, caption / hashtag / handle / nickname
+ *       must contain Pittsburgh, PGH, 412, or a Pittsburgh neighborhood.
+ *
+ * This is the same filter scripts/generate-creator-posts.ts uses, ported
+ * here so the scraper's saved aggregates match what generators consume.
+ * Was the looser any-token-match filter, which let Zillow real-estate
+ * videos about Lawrenceville pass into La Gourmandine's data.
+ */
+function filterRelevant(items: ApifyVideo[], businessName: string, categoryName?: string): ApifyVideo[] {
+  const core = coreBusinessName(businessName);
+  if (!core) return [];
   const cutoff = Date.now() - 90 * 24 * 60 * 60 * 1000;
+  const familyKeywords = categoryName ? FAMILY_CONTEXT_KEYWORDS[categoryName] ?? [] : [];
 
   return items.filter((v) => {
     // (a) Recency
     const posted = v.createTimeISO ? Date.parse(v.createTimeISO) : NaN;
     if (Number.isNaN(posted) || posted < cutoff) return false;
 
-    // (b) Relevance: caption, hashtag, or author handle must contain
-    // at least one distinguishing token from the business name.
+    const fullLower = [
+      v.text ?? "",
+      v.authorMeta?.name ?? "",
+      v.authorMeta?.nickName ?? "",
+      ...(v.hashtags ?? []).map((h) => h.name ?? ""),
+    ]
+      .join(" ")
+      .toLowerCase();
+    const alphanum = fullLower.replace(/[^a-z0-9]/g, "");
+
+    // (b) Strict business name match
+    if (!alphanum.includes(core)) return false;
+    // For short cores, also require a family context word to avoid generic-token false positives.
+    if (core.length < 8 && familyKeywords.length > 0) {
+      const tagged = fullLower.includes(`@${core}`) || fullLower.includes(`#${core}`);
+      if (!tagged && !familyKeywords.some((k) => fullLower.includes(k))) {
+        return false;
+      }
+    }
+
+    // (c) Pittsburgh area marker
+    if (!PITTSBURGH_MARKERS.some((m) => alphanum.includes(m))) return false;
+
+    return true;
+  });
+}
+
+// Old loose filter kept for reference; superseded by the strict one above.
+// Was: tokens.some((t) => haystack.includes(t)) which let any partial
+// match (e.g. neighborhood word) pass.
+function _looseFilterRelevant_unused(items: ApifyVideo[], businessName: string): ApifyVideo[] {
+  const tokens = nameTokens(businessName);
+  return items.filter((v) => {
     const haystack = [
       (v.text ?? "").toLowerCase(),
       (v.authorMeta?.name ?? "").toLowerCase(),
-      (v.authorMeta?.nickName ?? "").toLowerCase(),
-      ...(v.hashtags ?? []).map((h) => (h.name ?? "").toLowerCase()),
     ].join(" ");
-
     return tokens.some((t) => haystack.includes(t));
   });
 }
@@ -355,7 +455,7 @@ async function main() {
     try {
       console.log(`[query] ${slug} :: "${query}"`);
       const rawItems = await runActor(query);
-      const items = filterRelevant(rawItems, record.name);
+      const items = filterRelevant(rawItems, record.name, record.category);
       console.log(
         `[filter] ${slug}, kept ${items.length} of ${rawItems.length} (90-day + relevance)`,
       );

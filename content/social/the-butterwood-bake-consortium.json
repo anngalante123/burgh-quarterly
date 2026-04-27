@@ -17,115 +17,70 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "butterwood bake consortium pittsburgh",
-    "video_count": 20,
-    "total_plays": 598874,
-    "total_likes": 25344,
-    "unique_creators": 20,
+    "video_count": 3,
+    "total_plays": 3775,
+    "total_likes": 155,
+    "unique_creators": 3,
     "top_creators": [
       {
-        "handle": "easternpanhandlefoodie",
-        "fans": 16000,
+        "handle": "courtneyncamp",
+        "fans": 2174,
         "verified": false,
         "videos": 1,
-        "plays": 190300,
-        "likes": 3957,
-        "top_video_url": "https://www.tiktok.com/@easternpanhandlefoodie/video/7622415816557956365"
+        "plays": 2918,
+        "likes": 115,
+        "top_video_url": "https://www.tiktok.com/@courtneyncamp/video/7611749661170224397"
       },
       {
-        "handle": "chefadambyatt",
-        "fans": 105200,
+        "handle": "erica.tolin.realtor",
+        "fans": 1508,
         "verified": false,
         "videos": 1,
-        "plays": 128200,
-        "likes": 7624,
-        "top_video_url": "https://www.tiktok.com/@chefadambyatt/video/7599686063963049238"
+        "plays": 466,
+        "likes": 25,
+        "top_video_url": "https://www.tiktok.com/@erica.tolin.realtor/video/7623152825362664717"
       },
       {
-        "handle": "katechalater",
-        "fans": 3358,
+        "handle": "wu.taozi26",
+        "fans": 159,
         "verified": false,
         "videos": 1,
-        "plays": 60900,
-        "likes": 4021,
-        "top_video_url": "https://www.tiktok.com/@katechalater/video/7620454534128749837"
-      },
-      {
-        "handle": "mcmonaglle",
-        "fans": 4737,
-        "verified": false,
-        "videos": 1,
-        "plays": 60700,
-        "likes": 3976,
-        "top_video_url": "https://www.tiktok.com/@mcmonaglle/video/7628680514840300830"
-      },
-      {
-        "handle": "zainebsoven",
-        "fans": 128800,
-        "verified": false,
-        "videos": 1,
-        "plays": 37800,
-        "likes": 1535,
-        "top_video_url": "https://www.tiktok.com/@zainebsoven/video/7632645046751235346"
-      },
-      {
-        "handle": "robinwashvill",
-        "fans": 901,
-        "verified": false,
-        "videos": 1,
-        "plays": 32000,
-        "likes": 683,
-        "top_video_url": "https://www.tiktok.com/@robinwashvill/video/7618306980670754061"
-      },
-      {
-        "handle": "exploringhendrickscounty",
-        "fans": 1960,
-        "verified": false,
-        "videos": 1,
-        "plays": 27000,
-        "likes": 1042,
-        "top_video_url": "https://www.tiktok.com/@exploringhendrickscounty/video/7628417150926982431"
-      },
-      {
-        "handle": "ruthhiann",
-        "fans": 228000,
-        "verified": false,
-        "videos": 1,
-        "plays": 20000,
-        "likes": 684,
-        "top_video_url": "https://www.tiktok.com/@ruthhiann/video/7620141678132858125"
+        "plays": 391,
+        "likes": 15,
+        "top_video_url": "https://www.tiktok.com/@wu.taozi26/video/7613490916778691870"
       }
     ],
     "top_videos": [
       {
-        "id": "7622415816557956365",
-        "url": "https://www.tiktok.com/@easternpanhandlefoodie/video/7622415816557956365",
-        "text": "This isn’t fruit… and it actually tastes like it is 🤯🍓\n\nThis new spot Layers Bakery & Café in Martinsburg is doing those viral fruit desserts — and yeah… they’re legit.\n\nThey’re made of mousse, but somehow taste exactly like the fruit the",
-        "author": "easternpanhandlefoodie",
-        "plays": 190300,
-        "likes": 3957,
-        "posted": "2026-03-28T21:06:56.000Z"
+        "id": "7611749661170224397",
+        "url": "https://www.tiktok.com/@courtneyncamp/video/7611749661170224397",
+        "text": "the banana espresso cake 😍 love a spot in Pittsburgh that has later hours for an amazing post dinner sweet treat! and everything in the shop is vegan!\n•\n•\n•\n#butterwoodbakeconsortium #pittsburgh #pittsburghfood #pittsburghdessert #sweettre",
+        "author": "courtneyncamp",
+        "plays": 2918,
+        "likes": 115,
+        "posted": "2026-02-28T03:16:33.000Z"
       },
       {
-        "id": "7599686063963049238",
-        "url": "https://www.tiktok.com/@chefadambyatt/video/7599686063963049238",
-        "text": "How to make: Choux Pastry\n\nTHE most versatile of all the pastries.\n\n140g milk\n140g water\n115g butter\n150g flour\n4 St ewe eggs\n\nBring liquid to a boil with butter. Add flour and beat in, cook out stirring constantly until the butter splits a",
-        "author": "chefadambyatt",
-        "plays": 128200,
-        "likes": 7624,
-        "posted": "2026-02-21T10:00:00.000Z"
+        "id": "7623152825362664717",
+        "url": "https://www.tiktok.com/@erica.tolin.realtor/video/7623152825362664717",
+        "text": "Community Crush: Butterwood Bake Consortium in Lawrenceville. The most delicious and beautiful treats 💕💕 I had a blood orange vegan love cake with fig buttercream. If you yearn for sugar and moody spaces suggestive of ruined aristocracy t",
+        "author": "erica.tolin.realtor",
+        "plays": 466,
+        "likes": 25,
+        "posted": "2026-03-30T20:46:48.000Z"
       },
       {
-        "id": "7620454534128749837",
-        "url": "https://www.tiktok.com/@katechalater/video/7620454534128749837",
-        "text": "🍓🥐✨ @Tous Les Jours USA \n•••\nTOP 5 PICKS:\n1.  strawberry croissant 🍓\n2. pistachio iced matcha tea 🍵\n3. tiramisu iced latte ☕️\n4. bacon egg and cheese croissant 🥓\n5. fruit danish 🫐\n•••\nHighly recommend checking this place out! We will ",
-        "author": "katechalater",
-        "plays": 60900,
-        "likes": 4021,
-        "posted": "2026-03-23T14:16:39.000Z"
+        "id": "7613490916778691870",
+        "url": "https://www.tiktok.com/@wu.taozi26/video/7613490916778691870",
+        "text": "Wandering around Lawrenceville and somehow ended up at Butterwood Bake Consortium 🍰✨ no regrets, just cake.\n\n#Lawrenceville #PittsburghEats #DessertStop #cake #Butterwood",
+        "author": "wu.taozi26",
+        "plays": 391,
+        "likes": 15,
+        "posted": "2026-03-04T19:53:25.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-25T10:41:04.000Z",
-    "median_plays": 6775,
+    "most_recent_post_at": "2026-03-30T20:46:48.000Z",
+    "median_plays": 466,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T16:13:08.191Z"
   }

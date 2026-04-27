@@ -17,10 +17,10 @@
   "growth": null,
   "tiktok_mentions": {
     "query": "nan xiang soup dumplings - pittsburgh pittsburgh",
-    "video_count": 13,
-    "total_plays": 35914,
-    "total_likes": 1496,
-    "unique_creators": 13,
+    "video_count": 7,
+    "total_plays": 25671,
+    "total_likes": 1182,
+    "unique_creators": 7,
     "top_creators": [
       {
         "handle": "bitesbymorgan",
@@ -50,24 +50,6 @@
         "top_video_url": "https://www.tiktok.com/@noelxo_empower/video/7612039595596778766"
       },
       {
-        "handle": "miasushireview",
-        "fans": 199,
-        "verified": false,
-        "videos": 1,
-        "plays": 4021,
-        "likes": 94,
-        "top_video_url": "https://www.tiktok.com/@miasushireview/video/7616041972976913677"
-      },
-      {
-        "handle": "dumpling.sunday",
-        "fans": 621,
-        "verified": false,
-        "videos": 1,
-        "plays": 1935,
-        "likes": 75,
-        "top_video_url": "https://www.tiktok.com/@dumpling.sunday/video/7602005690365840654"
-      },
-      {
         "handle": "bradentomalson",
         "fans": 3216,
         "verified": false,
@@ -77,15 +59,6 @@
         "top_video_url": "https://www.tiktok.com/@bradentomalson/video/7612350720842485023"
       },
       {
-        "handle": "rosemarieden",
-        "fans": 5358,
-        "verified": false,
-        "videos": 1,
-        "plays": 1697,
-        "likes": 75,
-        "top_video_url": "https://www.tiktok.com/@rosemarieden/video/7625679096776756511"
-      },
-      {
         "handle": "pittsburghfooddude",
         "fans": 1298,
         "verified": false,
@@ -93,6 +66,24 @@
         "plays": 1169,
         "likes": 41,
         "top_video_url": "https://www.tiktok.com/@pittsburghfooddude/video/7606042419787877646"
+      },
+      {
+        "handle": "sof.cac",
+        "fans": 635,
+        "verified": false,
+        "videos": 1,
+        "plays": 893,
+        "likes": 42,
+        "top_video_url": "https://www.tiktok.com/@sof.cac/video/7601687811518942519"
+      },
+      {
+        "handle": "wu.taozi26",
+        "fans": 159,
+        "verified": false,
+        "videos": 1,
+        "plays": 537,
+        "likes": 119,
+        "top_video_url": "https://www.tiktok.com/@wu.taozi26/video/7632513024967888159"
       }
     ],
     "top_videos": [
@@ -124,8 +115,8 @@
         "posted": "2026-02-28T22:01:50.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-25T12:07:22.000Z",
-    "median_plays": 1697,
+    "most_recent_post_at": "2026-04-25T02:08:55.000Z",
+    "median_plays": 1752,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T16:07:17.305Z"
   }

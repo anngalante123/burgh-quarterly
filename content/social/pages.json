@@ -37,10 +37,10 @@
   },
   "tiktok_mentions": {
     "query": "page's pittsburgh",
-    "video_count": 14,
-    "total_plays": 177416,
-    "total_likes": 14219,
-    "unique_creators": 13,
+    "video_count": 4,
+    "total_plays": 86974,
+    "total_likes": 5601,
+    "unique_creators": 4,
     "top_creators": [
       {
         "handle": "bhphotographypa",
@@ -52,24 +52,6 @@
         "top_video_url": "https://www.tiktok.com/@bhphotographypa/video/7615450580697337119"
       },
       {
-        "handle": "sarah_cooper08",
-        "fans": 491,
-        "verified": false,
-        "videos": 1,
-        "plays": 45800,
-        "likes": 4131,
-        "top_video_url": "https://www.tiktok.com/@sarah_cooper08/video/7614542506281159949"
-      },
-      {
-        "handle": "waggingwithwords",
-        "fans": 12900,
-        "verified": false,
-        "videos": 1,
-        "plays": 36100,
-        "likes": 3927,
-        "top_video_url": "https://www.tiktok.com/@waggingwithwords/video/7612456801354665246"
-      },
-      {
         "handle": "lilbigbackz",
         "fans": 18700,
         "verified": false,
@@ -79,33 +61,6 @@
         "top_video_url": "https://www.tiktok.com/@lilbigbackz/video/7623554629510450462"
       },
       {
-        "handle": "kailyn_nicole",
-        "fans": 5,
-        "verified": false,
-        "videos": 1,
-        "plays": 2953,
-        "likes": 187,
-        "top_video_url": "https://www.tiktok.com/@kailyn_nicole/video/7632850980719168781"
-      },
-      {
-        "handle": "highflyer412",
-        "fans": 4904,
-        "verified": false,
-        "videos": 1,
-        "plays": 2633,
-        "likes": 230,
-        "top_video_url": "https://www.tiktok.com/@highflyer412/video/7632703713282379022"
-      },
-      {
-        "handle": "kps_live",
-        "fans": 292,
-        "verified": false,
-        "videos": 2,
-        "plays": 1153,
-        "likes": 47,
-        "top_video_url": "https://www.tiktok.com/@kps_live/video/7609009581972327693"
-      },
-      {
         "handle": "tierneyanne2313",
         "fans": 1043,
         "verified": false,
@@ -113,6 +68,15 @@
         "plays": 797,
         "likes": 40,
         "top_video_url": "https://www.tiktok.com/@tierneyanne2313/video/7622793160728644894"
+      },
+      {
+        "handle": "morgspingola",
+        "fans": 37,
+        "verified": false,
+        "videos": 1,
+        "plays": 477,
+        "likes": 20,
+        "top_video_url": "https://www.tiktok.com/@morgspingola/video/7627582613087063326"
       }
     ],
     "top_videos": [
@@ -126,26 +90,26 @@
         "posted": "2026-03-10T02:38:00.000Z"
       },
       {
-        "id": "7614542506281159949",
-        "url": "https://www.tiktok.com/@sarah_cooper08/video/7614542506281159949",
-        "text": "Visited Pittsburghs NEW all romance book store; Passonate Pages in Lawrenceville! Super cute vibe, you can tell they are new & building their collection! Definitely recommend supporting #romancebooks #pittsburgh #passionatepages #romanceboo",
-        "author": "sarah_cooper08",
-        "plays": 45800,
-        "likes": 4131,
-        "posted": "2026-03-07T15:54:27.000Z"
+        "id": "7623554629510450462",
+        "url": "https://www.tiktok.com/@lilbigbackz/video/7623554629510450462",
+        "text": "Page’s Icecream located on the Southside🍦 I truly don’t know how this was my first time ever at Page’s… What’s your favorite thing here? 💭 #pagesicecream #pittsburgh #southside #icecream #sundae @Page's ",
+        "author": "lilbigbackz",
+        "plays": 22900,
+        "likes": 1663,
+        "posted": "2026-03-31T22:45:50.000Z"
       },
       {
-        "id": "7612456801354665246",
-        "url": "https://www.tiktok.com/@waggingwithwords/video/7612456801354665246",
-        "text": "The cutest romance bookstore in pittsburgh exists!! @PassionatePages #passionatepages #romancebookstore #bookstore #pittsburgh #romance ",
-        "author": "waggingwithwords",
-        "plays": 36100,
-        "likes": 3927,
-        "posted": "2026-03-02T01:00:35.000Z"
+        "id": "7622793160728644894",
+        "url": "https://www.tiktok.com/@tierneyanne2313/video/7622793160728644894",
+        "text": "Ice cream is delicious but the parking situation is a nightmare. No outdoor seating either.\n\n#pages #icecream #pittsburgh #pittsburghpa #sunday ",
+        "author": "tierneyanne2313",
+        "plays": 797,
+        "likes": 40,
+        "posted": "2026-03-29T21:31:02.000Z"
       }
     ],
-    "most_recent_post_at": "2026-04-26T13:34:16.000Z",
-    "median_plays": 785,
+    "most_recent_post_at": "2026-04-11T19:16:29.000Z",
+    "median_plays": 11849,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T16:08:43.613Z"
   }

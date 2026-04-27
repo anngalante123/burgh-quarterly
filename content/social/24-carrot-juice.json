@@ -37,115 +37,14 @@
   },
   "tiktok_mentions": {
     "query": "24 carrot juice pittsburgh",
-    "video_count": 33,
-    "total_plays": 1451491,
-    "total_likes": 114608,
-    "unique_creators": 30,
-    "top_creators": [
-      {
-        "handle": "amalkzad",
-        "fans": 154700,
-        "verified": false,
-        "videos": 1,
-        "plays": 671100,
-        "likes": 62200,
-        "top_video_url": "https://www.tiktok.com/@amalkzad/video/7625691066913656078"
-      },
-      {
-        "handle": "gracemayofficial",
-        "fans": 329100,
-        "verified": false,
-        "videos": 1,
-        "plays": 575900,
-        "likes": 35000,
-        "top_video_url": "https://www.tiktok.com/@gracemayofficial/video/7631784134397922591"
-      },
-      {
-        "handle": "louisegreen_",
-        "fans": 142800,
-        "verified": false,
-        "videos": 1,
-        "plays": 58000,
-        "likes": 8202,
-        "top_video_url": "https://www.tiktok.com/@louisegreen_/video/7632702504035159318"
-      },
-      {
-        "handle": "ana.eats.pgh",
-        "fans": 58400,
-        "verified": false,
-        "videos": 1,
-        "plays": 34500,
-        "likes": 1821,
-        "top_video_url": "https://www.tiktok.com/@ana.eats.pgh/video/7613944519179980063"
-      },
-      {
-        "handle": "daniellemelhanna",
-        "fans": 4754,
-        "verified": false,
-        "videos": 1,
-        "plays": 24600,
-        "likes": 1451,
-        "top_video_url": "https://www.tiktok.com/@daniellemelhanna/video/7628356366301728031"
-      },
-      {
-        "handle": "emilymchaney4",
-        "fans": 591,
-        "verified": false,
-        "videos": 1,
-        "plays": 15400,
-        "likes": 629,
-        "top_video_url": "https://www.tiktok.com/@emilymchaney4/video/7618709235873893662"
-      },
-      {
-        "handle": "romanameijer",
-        "fans": 2988,
-        "verified": false,
-        "videos": 1,
-        "plays": 15100,
-        "likes": 1645,
-        "top_video_url": "https://www.tiktok.com/@romanameijer/video/7622968309893303584"
-      },
-      {
-        "handle": "aleynacandan_",
-        "fans": 6587,
-        "verified": false,
-        "videos": 1,
-        "plays": 12200,
-        "likes": 1165,
-        "top_video_url": "https://www.tiktok.com/@aleynacandan_/video/7629356289251970337"
-      }
-    ],
-    "top_videos": [
-      {
-        "id": "7625691066913656078",
-        "url": "https://www.tiktok.com/@amalkzad/video/7625691066913656078",
-        "text": "Carrot juice glow up ✨ @Ninja Kitchen \n\n•8 carrots\n• 1 piece of beet\n• Ginger (to taste)\n• Turmeric (to taste)\n• 1 apple\n• 1 orange\n• 1 lemon\n• Coconut water 500 ml\n• Water\n• Optional: a pinch of black pepper",
-        "author": "amalkzad",
-        "plays": 671100,
-        "likes": 62200,
-        "posted": "2026-04-06T16:56:38.000Z"
-      },
-      {
-        "id": "7631784134397922591",
-        "url": "https://www.tiktok.com/@gracemayofficial/video/7631784134397922591",
-        "text": "Me and retinol juice forever 🤞🥕\n\n#acne #retinol #carrotjuice #skinfood #clearskin ",
-        "author": "gracemayofficial",
-        "plays": 575900,
-        "likes": 35000,
-        "posted": "2026-04-23T03:00:28.000Z"
-      },
-      {
-        "id": "7632702504035159318",
-        "url": "https://www.tiktok.com/@louisegreen_/video/7632702504035159318",
-        "text": "drinking our skincare🥕 @aisha potter ur a real one xxx \n\n#carrotjuice ",
-        "author": "louisegreen_",
-        "plays": 58000,
-        "likes": 8202,
-        "posted": "2026-04-25T14:24:03.000Z"
-      }
-    ],
-    "most_recent_post_at": "2026-04-26T03:42:09.000Z",
-    "median_plays": 1581,
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
     "detected_own_handle": null,
     "scraped_at": "2026-04-26T15:52:55.627Z"
   }
