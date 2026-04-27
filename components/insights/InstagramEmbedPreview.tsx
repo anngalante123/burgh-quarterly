@@ -1,20 +1,21 @@
 "use client";
 
-import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * InstagramEmbedPreview, click-to-embed for IG posts in the BY list.
- * Mirrors TikTokEmbedPreview but uses IG's public embed URL
- * (https://www.instagram.com/p/<shortcode>/embed/) and renders in a
- * 4:5 aspect ratio (typical for IG feed posts) instead of 9:16.
+ * InstagramEmbedPreview, the post-card thumbnail for the BY list.
  *
- * Default state, displays the IG-served thumbnail + lime play button.
- * On click, swaps to the iframe. Heavy embed only loads on demand.
+ * IG's iframe embed is unreliable on mobile (renders a static thumbnail
+ * + caption, video doesn't play inline reliably across devices, tap
+ * behavior is inconsistent). So we don't try to embed it. We render the
+ * brand-treated placeholder card and on tap we open the post on
+ * Instagram directly (new tab on web, IG app if installed on mobile).
+ * Reliable, native, fast.
  *
- * Note: IG image URLs are CDN-signed and expire over time. For an
- * Issue 01 publication this is acceptable; for longer durability the
- * generator could download images at gen time and serve from /public.
+ * The Apify-served thumbnail URL is also skipped because IG's CDN URLs
+ * are short-lived and block cross-origin hot-linking. The gradient
+ * placeholder reads as 'tap to watch on Instagram' and gets us out of
+ * the way.
  */
 
 type Props = {
@@ -30,45 +31,25 @@ export function InstagramEmbedPreview({
   thumbnailUrl,
   caption,
 }: Props) {
-  const [playing, setPlaying] = useState(false);
-
-  if (playing && shortcode) {
-    return (
-      <div className="relative w-full max-w-[280px] aspect-[4/5] overflow-hidden bg-brand-black">
-        <iframe
-          src={`https://www.instagram.com/p/${shortcode}/embed/captioned`}
-          allow="encrypted-media"
-          allowFullScreen
-          loading="lazy"
-          className="absolute inset-0 w-full h-full border-0 bg-white"
-          title={`Instagram post: ${caption.slice(0, 60)}`}
-        />
-      </div>
-    );
-  }
-
-  // We deliberately skip the Apify-served thumbnail URL because IG's CDN
-  // URLs are short-lived and block cross-origin hot-linking. Showing a
-  // broken-image icon would be worse than a clean placeholder; clicking
-  // loads the iframe which renders the actual post reliably.
+  // shortcode + thumbnailUrl are accepted for back-compat with the
+  // original embed-iframe approach; we no longer render them.
+  void shortcode;
   void thumbnailUrl;
 
   return (
-    <button
-      type="button"
-      onClick={() => {
-        if (shortcode) {
-          setPlaying(true);
-        } else {
-          window.open(postUrl, "_blank", "noopener,noreferrer");
-        }
-      }}
-      className="group relative w-full max-w-[280px] aspect-[4/5] overflow-hidden bg-brand-black/85 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+    <a
+      href={postUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative block w-full max-w-[280px] aspect-[4/5] overflow-hidden bg-brand-black/85 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
       aria-label={`Open Instagram post: ${caption.slice(0, 60)}`}
     >
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-brand-black via-brand-purple/40 to-brand-black">
         <span className="font-display text-[0.6rem] uppercase tracking-[0.22em] text-brand-lime">
           Instagram
+        </span>
+        <span className="font-display text-[0.55rem] uppercase tracking-[0.18em] text-brand-off-white/55">
+          Tap to watch
         </span>
       </div>
       <span
@@ -88,7 +69,7 @@ export function InstagramEmbedPreview({
           </svg>
         </span>
       </span>
-    </button>
+    </a>
   );
 }
 
