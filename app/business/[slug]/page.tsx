@@ -11,6 +11,7 @@ import {
   type AtAGlanceRow,
 } from "@/components/insights/BusinessAtAGlance";
 import { SubscribeFooter } from "@/components/SubscribeFooter";
+import { GetFeaturedCTA } from "@/components/GetFeaturedCTA";
 import { buildBusinessTldr } from "@/lib/editorial/business-tldr";
 import { buildPlaybook } from "@/lib/editorial/playbook";
 import { computeSocialTrend } from "@/lib/editorial/compute-trend";
@@ -637,8 +638,15 @@ export default async function BusinessPage({ params }: PageProps) {
             <Playbook playbook={playbook} />
           </div>
 
-          {/* 4. Subscribe footer, the single page CTA */}
-          <div className="mt-12 md:mt-16">
+          {/* 4. Get Featured CTA, third sanctioned Relay surface per
+              editorial brief. Sits between the Playbook (diagnostic) and
+              the Subscribe footer (return-loop). */}
+          <div className="mt-10 md:mt-12">
+            <GetFeaturedCTA businessName={biz.name} businessSlug={biz.slug} />
+          </div>
+
+          {/* 5. Subscribe footer */}
+          <div className="mt-10 md:mt-12">
             <SubscribeFooter businessName={biz.name} />
           </div>
         </article>
