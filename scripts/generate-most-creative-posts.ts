@@ -350,12 +350,18 @@ async function main() {
     const c = prefiltered[i];
     process.stdout.write(`  ${i + 1}/${prefiltered.length} ${c.shortcode}... `);
     const score = await judgeCreativity(client, c);
-    if (score) {
+    if (
+      score &&
+      Number.isFinite(score.visual_concept) &&
+      Number.isFinite(score.caption_craft) &&
+      Number.isFinite(score.format_fit) &&
+      Number.isFinite(score.surprise)
+    ) {
       scored.push({ c, score });
       const avg = (score.visual_concept + score.caption_craft + score.format_fit + score.surprise) / 4;
       console.log(`${avg.toFixed(1)}/10`);
     } else {
-      console.log("skipped");
+      console.log("skipped (malformed score)");
     }
   }
 

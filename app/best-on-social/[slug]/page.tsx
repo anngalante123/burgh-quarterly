@@ -110,7 +110,8 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
 
             {/* Creativity score badge + editorial "why" line, only on
                 the most-creative list where these fields exist. */}
-            {item.creativity_score !== undefined && (
+            {item.creativity_score !== undefined &&
+              Number.isFinite(item.creativity_score) && (
               <div className="mt-4 flex flex-col gap-2">
                 <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                   <span className="inline-flex items-center bg-brand-lime text-brand-black font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em] px-2 py-0.5">
