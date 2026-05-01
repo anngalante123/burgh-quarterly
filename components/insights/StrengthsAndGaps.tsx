@@ -70,7 +70,7 @@ export function StrengthsAndGaps({ strengths, gaps, familyShort }: Props) {
                     <span className="block font-body text-[0.68rem] uppercase tracking-[0.1em] text-brand-black/45 mb-1">
                       {comparisonPhrase(h.stat.label, h.stat.pctVsMedian)}
                     </span>
-                    <span className="block font-body text-xs text-brand-black/60 leading-snug">
+                    <span className="block font-body text-sm text-brand-black/75 leading-snug">
                       {strengthCopy(h)}
                     </span>
                   </span>
@@ -119,7 +119,7 @@ export function StrengthsAndGaps({ strengths, gaps, familyShort }: Props) {
                         ? `${h.stat.label} · zero this quarter`
                         : comparisonPhrase(h.stat.label, h.stat.pctVsMedian)}
                     </span>
-                    <span className="block font-body text-xs text-brand-black/60 leading-snug">
+                    <span className="block font-body text-sm text-brand-black/75 leading-snug">
                       {gapCopy(h)}
                     </span>
                   </span>
