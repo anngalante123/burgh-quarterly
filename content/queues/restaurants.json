@@ -1,0 +1,305 @@
+{
+  "category": "restaurants",
+  "notes": "Pre-populated from content/raw/apify/pit-dts-foodniche-v2.json. Filters: 4.0+ stars, 100+ reviews, non-chain, not already in DB. Chain blocklist may miss local chains; spot-check before running. A fresh metro-wide Apify scrape will surface more candidates.",
+  "place_ids": [
+    "ChIJ9Z-2LCbuNIgR6TMWSLvlrt8",
+    "ChIJb026fVHyNIgRp717s78G9n0",
+    "ChIJEfe6zHfxNIgRGR0MD0pIGHU",
+    "ChIJtTeWBpHxNIgRj46Y9IzyXKA",
+    "ChIJR0IGCADyNIgRvOjy0MNoRTs",
+    "ChIJyQ0Jh3XyNIgRqa_YXoFXgkY",
+    "ChIJk3ZweXPyNIgR8yU9fdW2sAE",
+    "ChIJ0QaFRi_uNIgRKUAJ6hSkDL0",
+    "ChIJLd3F_PzxNIgRDq8xAmHQ18Q",
+    "ChIJvTL5iH_yNIgRdO6KVGjHGXM",
+    "ChIJLSSPhtrtNIgRU7-0N5Gk5to",
+    "ChIJrURZDBLvNIgRudRNZ6bNUs8",
+    "ChIJU-45Yv_xNIgRciJEiRDX_LU",
+    "ChIJzRu8mX_yNIgRIXXPzSRbLMU",
+    "ChIJfWX-mf7xNIgRE9ZKdBmUiFE",
+    "ChIJwy6Z7v7xNIgRVHQFJTCXZIA",
+    "ChIJo8aPmf7xNIgRV9yjm17UQt0",
+    "ChIJb-E6XA3tNIgRlOPGd5IREiw",
+    "ChIJ6WqCYf_xNIgRLF0LEZn2XH0",
+    "ChIJYYxtuivuNIgRLssvlSmc8h4",
+    "ChIJg4iqU1zxNIgRpPPslHG6YxA",
+    "ChIJmWLN6GnzNIgRo8_Bfz1dHAw",
+    "ChIJufXkRy_uNIgR65lTRblErbQ",
+    "ChIJY7vxeg3zNIgRbP8LKtK3xXc",
+    "ChIJlfRanibyNIgRcoAza6F4sdI",
+    "ChIJuR3d3OrzNIgRjtHbCef0GP0",
+    "ChIJr8rw-jvuNIgRFTbgL_cAVN8",
+    "ChIJz0PVtfrzNIgRaWN_i9gYILM",
+    "ChIJ1-wrqeLzNIgRdgQMOvkxIuU",
+    "ChIJhRcnX0u6GiQRtGb6eG0egbI",
+    "ChIJx8-wQdzxNIgRkbReNVtFhdk",
+    "ChIJrYxVSgDxNIgRN34zzur-iPs",
+    "ChIJWRRFN3nxNIgRrX1RQquEA5A"
+  ],
+  "_candidates_for_review": [
+    {
+      "placeId": "ChIJ9Z-2LCbuNIgR6TMWSLvlrt8",
+      "title": "Burgatory",
+      "categoryName": "Hamburger restaurant",
+      "neighborhood": "",
+      "reviewsCount": 3285,
+      "totalScore": 4.4
+    },
+    {
+      "placeId": "ChIJb026fVHyNIgRp717s78G9n0",
+      "title": "The Abbey on Butler Street",
+      "categoryName": "Restaurant",
+      "neighborhood": "Lawrenceville",
+      "reviewsCount": 2310,
+      "totalScore": 4.3
+    },
+    {
+      "placeId": "ChIJEfe6zHfxNIgRGR0MD0pIGHU",
+      "title": "Hofbräuhaus Pittsburgh",
+      "categoryName": "German restaurant",
+      "neighborhood": "South Side Flats",
+      "reviewsCount": 2259,
+      "totalScore": 4.5
+    },
+    {
+      "placeId": "ChIJtTeWBpHxNIgRj46Y9IzyXKA",
+      "title": "Big Jim's in the Run",
+      "categoryName": "Italian restaurant",
+      "neighborhood": "Greenfield",
+      "reviewsCount": 2027,
+      "totalScore": 4.6
+    },
+    {
+      "placeId": "ChIJR0IGCADyNIgRvOjy0MNoRTs",
+      "title": "Taiwanese Bistro Cafe 33",
+      "categoryName": "Taiwanese restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 1418,
+      "totalScore": 4.5
+    },
+    {
+      "placeId": "ChIJyQ0Jh3XyNIgRqa_YXoFXgkY",
+      "title": "The Fire Side Public House",
+      "categoryName": "Bar & grill",
+      "neighborhood": "East Liberty",
+      "reviewsCount": 1189,
+      "totalScore": 4.2
+    },
+    {
+      "placeId": "ChIJk3ZweXPyNIgR8yU9fdW2sAE",
+      "title": "Muddy Waters Oyster Bar",
+      "categoryName": "Oyster bar restaurant",
+      "neighborhood": "East Liberty",
+      "reviewsCount": 1156,
+      "totalScore": 4.5
+    },
+    {
+      "placeId": "ChIJ0QaFRi_uNIgRKUAJ6hSkDL0",
+      "title": "Duke's Upper Deck Cafe",
+      "categoryName": "Gastropub",
+      "neighborhood": "",
+      "reviewsCount": 992,
+      "totalScore": 4.5
+    },
+    {
+      "placeId": "ChIJLd3F_PzxNIgRDq8xAmHQ18Q",
+      "title": "Chengdu Gourmet（Squirrel Hill)",
+      "categoryName": "Chinese restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 974,
+      "totalScore": 4.4
+    },
+    {
+      "placeId": "ChIJvTL5iH_yNIgRdO6KVGjHGXM",
+      "title": "Smiling Banana Leaf",
+      "categoryName": "Thai restaurant",
+      "neighborhood": "Highland Park",
+      "reviewsCount": 904,
+      "totalScore": 4.4
+    },
+    {
+      "placeId": "ChIJLSSPhtrtNIgRU7-0N5Gk5to",
+      "title": "Nancy's Revival",
+      "categoryName": "Diner",
+      "neighborhood": "",
+      "reviewsCount": 799,
+      "totalScore": 4.3
+    },
+    {
+      "placeId": "ChIJrURZDBLvNIgRudRNZ6bNUs8",
+      "title": "El Campesino",
+      "categoryName": "Mexican restaurant",
+      "neighborhood": "",
+      "reviewsCount": 762,
+      "totalScore": 4.3
+    },
+    {
+      "placeId": "ChIJU-45Yv_xNIgRciJEiRDX_LU",
+      "title": "Silk Elephant",
+      "categoryName": "Thai restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 642,
+      "totalScore": 4.2
+    },
+    {
+      "placeId": "ChIJzRu8mX_yNIgRIXXPzSRbLMU",
+      "title": "Teppanyaki Kyoto",
+      "categoryName": "Teppanyaki restaurant",
+      "neighborhood": "Highland Park",
+      "reviewsCount": 603,
+      "totalScore": 4.7
+    },
+    {
+      "placeId": "ChIJfWX-mf7xNIgRE9ZKdBmUiFE",
+      "title": "Tan Lac Vien Vietnamese Bistro",
+      "categoryName": "Vietnamese restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 500,
+      "totalScore": 4.4
+    },
+    {
+      "placeId": "ChIJwy6Z7v7xNIgRVHQFJTCXZIA",
+      "title": "GREEN PEPPER",
+      "categoryName": "Korean restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 469,
+      "totalScore": 4.2
+    },
+    {
+      "placeId": "ChIJo8aPmf7xNIgRV9yjm17UQt0",
+      "title": "Milky Way",
+      "categoryName": "Kosher restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 397,
+      "totalScore": 4.6
+    },
+    {
+      "placeId": "ChIJb-E6XA3tNIgRlOPGd5IREiw",
+      "title": "City Kitchen",
+      "categoryName": "Restaurant",
+      "neighborhood": "Larimer",
+      "reviewsCount": 379,
+      "totalScore": 4.4
+    },
+    {
+      "placeId": "ChIJ6WqCYf_xNIgRLF0LEZn2XH0",
+      "title": "T-Swirl Crepe",
+      "categoryName": "Dessert restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 379,
+      "totalScore": 4.6
+    },
+    {
+      "placeId": "ChIJYYxtuivuNIgRLssvlSmc8h4",
+      "title": "Babylon Restaurant and Bar",
+      "categoryName": "Restaurant",
+      "neighborhood": "",
+      "reviewsCount": 370,
+      "totalScore": 4.8
+    },
+    {
+      "placeId": "ChIJg4iqU1zxNIgRpPPslHG6YxA",
+      "title": "Took Took 98 | Thai Street Food Restaurant",
+      "categoryName": "Thai restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 343,
+      "totalScore": 4.3
+    },
+    {
+      "placeId": "ChIJmWLN6GnzNIgRo8_Bfz1dHAw",
+      "title": "BLUE SKY KITCHEN & BAR",
+      "categoryName": "Restaurant",
+      "neighborhood": "East Liberty",
+      "reviewsCount": 313,
+      "totalScore": 4.4
+    },
+    {
+      "placeId": "ChIJufXkRy_uNIgR65lTRblErbQ",
+      "title": "Eighth & Hays",
+      "categoryName": "Restaurant",
+      "neighborhood": "",
+      "reviewsCount": 304,
+      "totalScore": 4.6
+    },
+    {
+      "placeId": "ChIJY7vxeg3zNIgRbP8LKtK3xXc",
+      "title": "Lawrence Hall",
+      "categoryName": "Restaurant",
+      "neighborhood": "Lawrenceville",
+      "reviewsCount": 303,
+      "totalScore": 4.2
+    },
+    {
+      "placeId": "ChIJlfRanibyNIgRcoAza6F4sdI",
+      "title": "Rose Tea Cafe",
+      "categoryName": "Taiwanese restaurant",
+      "neighborhood": "North Oakland",
+      "reviewsCount": 288,
+      "totalScore": 4.1
+    },
+    {
+      "placeId": "ChIJuR3d3OrzNIgRjtHbCef0GP0",
+      "title": "Garbarino's",
+      "categoryName": "Italian restaurant",
+      "neighborhood": "East Liberty",
+      "reviewsCount": 265,
+      "totalScore": 4.5
+    },
+    {
+      "placeId": "ChIJr8rw-jvuNIgRFTbgL_cAVN8",
+      "title": "Mama Pepino's",
+      "categoryName": "Pizza restaurant",
+      "neighborhood": "",
+      "reviewsCount": 259,
+      "totalScore": 4.1
+    },
+    {
+      "placeId": "ChIJz0PVtfrzNIgRaWN_i9gYILM",
+      "title": "Yotea & Yoka Kitchen 友茶&友家厨房",
+      "categoryName": "Asian fusion restaurant",
+      "neighborhood": "North Oakland",
+      "reviewsCount": 240,
+      "totalScore": 4.4
+    },
+    {
+      "placeId": "ChIJ1-wrqeLzNIgRdgQMOvkxIuU",
+      "title": "Amazing Dumplings",
+      "categoryName": "Chinese restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 225,
+      "totalScore": 4.5
+    },
+    {
+      "placeId": "ChIJhRcnX0u6GiQRtGb6eG0egbI",
+      "title": "Moodz Co.",
+      "categoryName": "Vegan restaurant",
+      "neighborhood": "South Side Flats",
+      "reviewsCount": 221,
+      "totalScore": 4.4
+    },
+    {
+      "placeId": "ChIJx8-wQdzxNIgRkbReNVtFhdk",
+      "title": "Papelón Venezuelan Arepa Bar",
+      "categoryName": "Takeout Restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 168,
+      "totalScore": 4.8
+    },
+    {
+      "placeId": "ChIJrYxVSgDxNIgRN34zzur-iPs",
+      "title": "Casa del Tequila Fine Eatery",
+      "categoryName": "Mexican restaurant",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 110,
+      "totalScore": 4.9
+    },
+    {
+      "placeId": "ChIJWRRFN3nxNIgRrX1RQquEA5A",
+      "title": "Poke Bowl Express & asian cuisine",
+      "categoryName": "Restaurant",
+      "neighborhood": "Greenfield",
+      "reviewsCount": 110,
+      "totalScore": 4.9
+    }
+  ]
+}
