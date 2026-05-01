@@ -30,7 +30,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import Anthropic from "@anthropic-ai/sdk";
-import { and, desc, eq, sum } from "drizzle-orm";
+import { and, desc, eq, gt, gte, sum } from "drizzle-orm";
 import { config as loadEnv } from "dotenv";
 
 loadEnv({ path: path.join(process.cwd(), ".env.local") });
@@ -43,6 +43,11 @@ import {
   type Score,
   type ScoreBreakdown,
 } from "@/lib/data/schemas";
+import {
+  normalizeApifyRecordWithMeta,
+  type NormalizedArtifact,
+} from "@/lib/data/normalize";
+import { uploadPhotoToBlob } from "@/lib/scrape/blob-upload";
 import type {
   AnalysisPlaybookItem,
   DiagnosisPullquote,
@@ -77,7 +82,18 @@ import {
 const ROOT = process.cwd();
 const BUSINESSES_DIR = path.join(ROOT, "content", "businesses");
 const SOCIAL_DIR = path.join(ROOT, "content", "social");
+const QUEUES_DIR = path.join(ROOT, "content", "queues");
 const DEFAULT_ISSUE_SLUG = "2026-spring";
+
+/** Apify Google Maps actor (compass/crawler-google-places). */
+const APIFY_GMAPS_ACTOR = "compass~crawler-google-places";
+const APIFY_BASE = "https://api.apify.com/v2";
+/**
+ * Conservative upper bound for the Anthropic spend of one analyze call. The
+ * batch loop halts when cumulative_spent + ESTIMATED_NEXT_USD would exceed
+ * the budget. Sized to never get blindsided by a single expensive call.
+ */
+const ESTIMATED_NEXT_USD = 0.2;
 
 const PIPELINE_STEPS = [
   "scraped",
@@ -971,23 +987,682 @@ async function runOne(slug: string, flags: Flags): Promise<void> {
   }
 }
 
+/* ----------------------- Apify scrape (--place-id) ---------------------- */
+
+/**
+ * Sleep with backoff while polling. Schedule mirrors the Phase 2 retry
+ * pattern: 5s, 10s, 20s, 30s, then 30s every 30s up to a 5 min ceiling.
+ */
+function pollDelays(): number[] {
+  const out = [5000, 10000, 20000, 30000];
+  // Top up to 5 min total = 300s. We've used 65s already; pad with 30s
+  // intervals.
+  const remaining = (5 * 60 * 1000 - 65000) / 30000;
+  for (let i = 0; i < remaining; i += 1) out.push(30000);
+  return out;
+}
+
+interface ApifyRunData {
+  status: string;
+  defaultDatasetId: string;
+  usageTotalUsd?: number;
+  stats?: { computeUnits?: number };
+}
+
+async function startApifyRun(
+  placeId: string,
+  token: string,
+): Promise<string> {
+  const url = `${APIFY_BASE}/acts/${APIFY_GMAPS_ACTOR}/runs?token=${token}`;
+  const body = {
+    placeIds: [placeId],
+    maxReviews: 15,
+    language: "en",
+    maxImages: 20,
+    includeWebResults: false,
+    scrapePlaceDetailPage: true,
+  };
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    const t = await res.text().catch(() => "");
+    throw new Error(
+      `Apify start run failed ${res.status}: ${t.slice(0, 300)}`,
+    );
+  }
+  const data = (await res.json()) as { data: { id: string } };
+  return data.data.id;
+}
+
+async function waitForApifyRun(
+  runId: string,
+  token: string,
+): Promise<{ datasetId: string; costUsd: number }> {
+  const url = `${APIFY_BASE}/actor-runs/${runId}?token=${token}`;
+  const delays = pollDelays();
+  for (const d of delays) {
+    await new Promise((r) => setTimeout(r, d));
+    const res = await fetch(url);
+    if (!res.ok) continue;
+    const { data } = (await res.json()) as { data: ApifyRunData };
+    const cost =
+      data.usageTotalUsd ?? (data.stats?.computeUnits ?? 0) * 0.25;
+    if (
+      ["SUCCEEDED", "FAILED", "ABORTED", "TIMED-OUT"].includes(data.status)
+    ) {
+      if (data.status !== "SUCCEEDED") {
+        throw new Error(`Apify run ${runId} ended ${data.status}`);
+      }
+      return { datasetId: data.defaultDatasetId, costUsd: cost };
+    }
+  }
+  throw new Error(`Apify run ${runId} did not complete within ~5 minutes`);
+}
+
+async function fetchApifyDataset(
+  datasetId: string,
+  token: string,
+): Promise<unknown[]> {
+  const url = `${APIFY_BASE}/datasets/${datasetId}/items?token=${token}&format=json&clean=true`;
+  const res = await fetch(url);
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(
+      `Apify dataset fetch ${res.status}: ${body.slice(0, 300)}`,
+    );
+  }
+  return (await res.json()) as unknown[];
+}
+
+/**
+ * Resolve slug collisions for a brand-new scrape by appending a short
+ * suffix based on the placeId. Curated-source collisions short-circuit:
+ * if the existing row has source='curated', we refuse to clobber it and
+ * raise so the caller can flag for review and skip.
+ */
+async function resolveSlugForNewBusiness(
+  baseSlug: string,
+  placeId: string,
+): Promise<string> {
+  const { db, schema } = await getDb();
+  const existing = await db
+    .select({ slug: schema.businesses.slug, source: schema.businesses.source })
+    .from(schema.businesses)
+    .where(eq(schema.businesses.slug, baseSlug))
+    .limit(1);
+  if (existing.length === 0) return baseSlug;
+  const row = existing[0];
+  if (row.source === "curated") {
+    throw new Error(
+      `slug collision with curated business "${baseSlug}". Refusing to overwrite. Flag for manual review.`,
+    );
+  }
+  // Apify-source collision: append a placeId-derived suffix.
+  const suffix = placeId.replace(/[^a-zA-Z0-9]/g, "").slice(-6).toLowerCase();
+  return `${baseSlug}-${suffix}`;
+}
+
+interface PlaceIdScrapePlan {
+  placeId: string;
+  url: string;
+  body: Record<string, unknown>;
+  expectedSteps: string[];
+}
+
+function buildScrapePlan(placeId: string): PlaceIdScrapePlan {
+  return {
+    placeId,
+    url: `${APIFY_BASE}/acts/${APIFY_GMAPS_ACTOR}/runs`,
+    body: {
+      placeIds: [placeId],
+      maxReviews: 15,
+      language: "en",
+      maxImages: 20,
+      includeWebResults: false,
+      scrapePlaceDetailPage: true,
+    },
+    expectedSteps: [
+      "POST run with payload",
+      "poll /actor-runs/<id> with backoff (5s, 10s, 20s, 30s, then 30s up to 5 min)",
+      "fetch dataset items, expect ONE record",
+      "validate (skip if permanentlyClosed=true or core fields missing)",
+      "normalize via lib/data/normalize.ts",
+      "resolve slug collision against businesses table (curated => skip + flag)",
+      "insert businesses row (source=apify), upsert business_photos and business_reviews",
+      "stepPhotosUploaded -> uploadPhotoToBlob (graceful if BLOB_READ_WRITE_TOKEN missing)",
+      "stepScored, stepAnalyzed",
+    ],
+  };
+}
+
+interface ScrapedToLegacy {
+  legacy: LegacyBusinessFile;
+  artifact: NormalizedArtifact;
+}
+
+/**
+ * Run the Apify scrape for a single place_id and convert the result into
+ * the LegacyBusinessFile shape that the rest of the pipeline already
+ * consumes. Writes the businesses row + business_photos + business_reviews
+ * to DB on the way through. Returns null if the place is permanently closed
+ * or essential fields are missing (and flags needs_review).
+ */
+async function scrapePlaceIdToLegacy(
+  placeId: string,
+): Promise<ScrapedToLegacy | null> {
+  const token = process.env.APIFY_TOKEN;
+  if (!token) {
+    throw new Error(
+      "APIFY_TOKEN not set in environment. Add it to .env.local before running --place-id in live mode. Use --dry-run to validate without calling Apify.",
+    );
+  }
+  console.log(`[scrape] place_id=${placeId}: starting Apify run`);
+  const runId = await startApifyRun(placeId, token);
+  console.log(`[scrape] place_id=${placeId}: run id=${runId}`);
+  const { datasetId, costUsd } = await waitForApifyRun(runId, token);
+  console.log(
+    `[scrape] place_id=${placeId}: dataset=${datasetId} apify_cost=$${costUsd.toFixed(3)}`,
+  );
+  const items = await fetchApifyDataset(datasetId, token);
+  if (items.length === 0) {
+    throw new Error(
+      `Apify returned 0 items for place_id=${placeId}. The actor may not have indexed this place; verify the id manually.`,
+    );
+  }
+  const raw = items[0] as Record<string, unknown>;
+  if (raw.permanentlyClosed === true) {
+    console.log(
+      `[scrape] place_id=${placeId}: permanentlyClosed, skipping`,
+    );
+    return null;
+  }
+  if (!raw.title || !raw.address) {
+    const reason = `essential fields missing for place_id=${placeId} (title=${raw.title ? "yes" : "no"}, address=${raw.address ? "yes" : "no"})`;
+    console.warn(`[scrape] ${reason}`);
+    await flagNeedsReviewLoose(`apify:${placeId}`, reason);
+    return null;
+  }
+
+  const artifact = normalizeApifyRecordWithMeta(raw);
+  if (!artifact) {
+    const reason = `normalizer rejected place_id=${placeId} (likely category did not map to our enum)`;
+    console.warn(`[scrape] ${reason}`);
+    await flagNeedsReviewLoose(`apify:${placeId}`, reason);
+    return null;
+  }
+
+  // Resolve slug collisions before any DB writes.
+  const resolvedSlug = await resolveSlugForNewBusiness(
+    artifact.business.slug,
+    artifact.meta.placeId,
+  );
+  if (resolvedSlug !== artifact.business.slug) {
+    console.log(
+      `[scrape] place_id=${placeId}: slug "${artifact.business.slug}" collided, using "${resolvedSlug}"`,
+    );
+    artifact.business.slug = resolvedSlug;
+  }
+
+  const slug = artifact.business.slug;
+  const { db, schema } = await getDb();
+
+  // Upsert businesses row first so FK references resolve.
+  await db
+    .insert(schema.businesses)
+    .values({
+      slug,
+      name: artifact.business.name,
+      category: artifact.business.category,
+      neighborhood: artifact.business.neighborhood,
+      address: artifact.business.address,
+      website: artifact.business.website ?? null,
+      instagram: artifact.business.instagram ?? null,
+      tiktok: artifact.business.tiktok ?? null,
+      lat: null,
+      lng: null,
+      place_id: artifact.meta.placeId,
+      hero_photo: artifact.business.hero_photo ?? null,
+      claimed: false,
+      owner_email: null,
+      source: "apify",
+    })
+    .onConflictDoUpdate({
+      target: schema.businesses.slug,
+      set: {
+        name: artifact.business.name,
+        category: artifact.business.category,
+        neighborhood: artifact.business.neighborhood,
+        address: artifact.business.address,
+        website: artifact.business.website ?? null,
+        place_id: artifact.meta.placeId,
+        hero_photo: artifact.business.hero_photo ?? null,
+        updated_at: new Date(),
+      },
+    });
+
+  // Upsert review rows. Existing rows for the slug get replaced by deleting
+  // first; this is the simplest idempotent path until we track per-review
+  // identity.
+  await db
+    .delete(schema.businessReviews)
+    .where(eq(schema.businessReviews.business_slug, slug));
+  if (artifact.meta.reviewTexts.length > 0) {
+    await db.insert(schema.businessReviews).values(
+      artifact.meta.reviewTexts.map((text) => ({
+        business_slug: slug,
+        text,
+        rating: null,
+        language: "en",
+        posted_at: null,
+      })),
+    );
+  }
+
+  // Build the LegacyBusinessFile shape the existing pipeline consumes. The
+  // "score" placeholder is a deterministic neutral default; stepScored
+  // overwrites with real values immediately. We keep this lean rather than
+  // computing rank-of-N here because rank context is built from the family
+  // peer JSONs (Phase 1 carryover) and the new business is not yet ranked.
+  const nowIso = new Date().toISOString();
+  const placeholderScore: Score = {
+    business_slug: slug,
+    issue_slug: DEFAULT_ISSUE_SLUG,
+    subscores: {
+      content_canvas: 0,
+      community_spark: 0,
+      conversion_path: 0,
+      momentum: 0,
+      collab_fit: 0,
+    },
+    composite: 0,
+    tier: "neighborhood_staples",
+    rank_category: 1,
+    rank_neighborhood: 1,
+    rank_overall: 1,
+    movement: { category: null, neighborhood: null, overall: null },
+    unfair_advantage: { label: "TBD", evidence: "TBD" },
+    scored_at: nowIso,
+  };
+
+  const legacy: LegacyBusinessFile = {
+    slug,
+    business: artifact.business,
+    score: placeholderScore,
+    meta: {
+      placeId: artifact.meta.placeId,
+      categoryName: artifact.meta.categoryName,
+      imagesCount: artifact.meta.imagesCount,
+      imageCategories: artifact.meta.imageCategories,
+      fromTheBusinessFlags: artifact.meta.fromTheBusinessFlags,
+      hasWebsite: artifact.meta.hasWebsite,
+      hasPhone: artifact.meta.hasPhone,
+      hasOpeningHours: artifact.meta.hasOpeningHours,
+      claimThisBusiness: artifact.meta.claimThisBusiness,
+      reviewsDistribution: artifact.meta.reviewsDistribution,
+      reviewTexts: artifact.meta.reviewTexts,
+      keywordPhrases: artifact.meta.keywordPhrases,
+    },
+  };
+
+  return { legacy, artifact };
+}
+
+/**
+ * Best-effort needs_review writer for cases where we don't have a slug yet
+ * (validation fails before the businesses row exists). The schema requires
+ * a FK to businesses.slug, so this swallows FK-violation errors and only
+ * logs to console. Pipeline continues.
+ */
+async function flagNeedsReviewLoose(
+  pseudoSlug: string,
+  reason: string,
+): Promise<void> {
+  console.warn(`[needs_review] ${pseudoSlug}: ${reason}`);
+  // Intentionally do NOT attempt a DB insert here; the FK on
+  // needs_review.business_slug would reject "apify:<pid>". Console-only
+  // surface is good enough; the batch summary also reports flagged counts.
+}
+
+/**
+ * Persist the photo set for a freshly scraped business. Each photo is run
+ * through uploadPhotoToBlob; null returns mean we keep the source URL on
+ * business_photos.url with blob_key=null. Idempotent: we delete and replace
+ * the photo set per business slug.
+ */
+async function persistPhotosForArtifact(
+  artifact: NormalizedArtifact,
+): Promise<{ uploaded: number; total: number }> {
+  const slug = artifact.business.slug;
+  const { db, schema } = await getDb();
+  await db
+    .delete(schema.businessPhotos)
+    .where(eq(schema.businessPhotos.business_slug, slug));
+  let uploaded = 0;
+  const photos = artifact.business.photos;
+  for (let i = 0; i < photos.length; i += 1) {
+    const p = photos[i];
+    const result = await uploadPhotoToBlob(p.url, slug, i);
+    const finalUrl = result.sizes.w800 ?? result.sizes.w1600 ?? p.url;
+    await db.insert(schema.businessPhotos).values({
+      business_slug: slug,
+      url: finalUrl,
+      blob_key: result.blob_key,
+      source: p.source,
+      sort_order: i,
+    });
+    if (result.blob_key) uploaded += 1;
+  }
+  return { uploaded, total: photos.length };
+}
+
+/* ---------------- step 1 (alternate): scraped from Apify ---------------- */
+
+/**
+ * --place-id variant of stepScraped. Reuses the checkpoint table so a
+ * mid-batch crash doesn't waste Apify spend on a re-run.
+ */
+async function stepScrapedFromApify(
+  placeId: string,
+  flags: Flags,
+): Promise<ScrapedToLegacy | null> {
+  // We don't yet know the slug, so we use a synthetic checkpoint key. This
+  // is a no-op write, the real ingest_runs entry happens once we know the
+  // real slug; keep the per-step structure here for log symmetry.
+  console.log(`[scraped] place_id=${placeId}: start (Apify path)`);
+  if (flags.dryRun) {
+    const plan = buildScrapePlan(placeId);
+    console.log("Planned Apify call:");
+    console.log(`  POST ${plan.url}?token=<APIFY_TOKEN>`);
+    console.log(`  body: ${JSON.stringify(plan.body)}`);
+    console.log("  expected steps:");
+    for (const s of plan.expectedSteps) console.log(`    - ${s}`);
+    console.log(
+      `[scraped] place_id=${placeId}: dry-run, no Apify call, no DB writes`,
+    );
+    return null;
+  }
+  const result = await scrapePlaceIdToLegacy(placeId);
+  if (!result) return null;
+  const slug = result.legacy.slug;
+  await checkpointWritePending(slug, "scraped");
+  await checkpointWriteSuccess(slug, "scraped");
+  logComplete(
+    "scraped",
+    slug,
+    `${result.legacy.meta?.reviewTexts?.length ?? 0} reviews, ${result.artifact.business.photos.length} photos`,
+  );
+  return result;
+}
+
+/* ---------------- step 2 (alternate): photos with blob upload ----------- */
+
+async function stepPhotosUploadedForArtifact(
+  artifact: NormalizedArtifact,
+  flags: Flags,
+): Promise<void> {
+  const slug = artifact.business.slug;
+  logStart("photos_uploaded", slug);
+  const decision = flags.dryRun
+    ? { run: true, reason: "dry-run" }
+    : await checkpointShouldRun(slug, "photos_uploaded", flags);
+  if (!decision.run) {
+    logSkipped("photos_uploaded", slug, decision.reason);
+    return;
+  }
+  if (flags.dryRun) {
+    logComplete(
+      "photos_uploaded",
+      slug,
+      `dry-run, would upload ${artifact.business.photos.length} photo(s) via uploadPhotoToBlob`,
+    );
+    return;
+  }
+  await checkpointWritePending(slug, "photos_uploaded");
+  try {
+    const { uploaded, total } = await persistPhotosForArtifact(artifact);
+    await checkpointWriteSuccess(slug, "photos_uploaded");
+    logComplete(
+      "photos_uploaded",
+      slug,
+      `${uploaded}/${total} blobs uploaded${
+        uploaded < total ? " (rest stored as source URL)" : ""
+      }`,
+    );
+  } catch (e) {
+    const msg = (e as Error).message;
+    await checkpointWriteFailed(slug, "photos_uploaded", msg);
+    logFailed("photos_uploaded", slug, msg);
+    throw e;
+  }
+}
+
+/* --------------------------- run-place-id ------------------------------- */
+
+async function runPlaceId(placeId: string, flags: Flags): Promise<void> {
+  console.log(
+    `\n=== ingest-one place_id=${placeId} mode=${
+      flags.dryRun ? "dry-run" : "live"
+    } ===`,
+  );
+
+  // Idempotent re-runs: if a business already exists with this place_id,
+  // print and exit 0.
+  if (!flags.dryRun) {
+    const { db, schema } = await getDb();
+    const existing = await db
+      .select({ slug: schema.businesses.slug })
+      .from(schema.businesses)
+      .where(eq(schema.businesses.place_id, placeId))
+      .limit(1);
+    if (existing.length > 0) {
+      console.log(
+        `[place-id] place_id=${placeId} already ingested as ${existing[0].slug}. Re-runs are no-ops; pass --force on a --slug invocation to redo any step.`,
+      );
+      return;
+    }
+  } else {
+    const plan = buildScrapePlan(placeId);
+    console.log("Dry-run, no Apify call, no DB writes. Planned request:");
+    console.log(`  POST ${plan.url}?token=<APIFY_TOKEN>`);
+    console.log(`  body: ${JSON.stringify(plan.body, null, 2)}`);
+    console.log("  expected pipeline steps:");
+    for (const s of plan.expectedSteps) console.log(`    - ${s}`);
+    return;
+  }
+
+  const scraped = await stepScrapedFromApify(placeId, flags);
+  if (!scraped) {
+    console.log(
+      `[place-id] place_id=${placeId}: scrape produced no business (closed or invalid). See logs above.`,
+    );
+    return;
+  }
+  await stepPhotosUploadedForArtifact(scraped.artifact, flags);
+  const scoreOut = await stepScored(
+    scraped.legacy.slug,
+    scraped.legacy,
+    flags,
+  );
+  await stepAnalyzed(scraped.legacy.slug, scraped.legacy, flags);
+  const usd = await readUsdSpentForSlug(scraped.legacy.slug);
+  console.log(
+    `\n[summary] ${scraped.legacy.slug}: tier=${scoreOut.tier} composite=${scoreOut.composite} usd_spent_total=$${usd.toFixed(4)} (lifetime ledger sum)`,
+  );
+}
+
+/* ------------------------------ run-batch ------------------------------- */
+
+interface QueueFile {
+  category: string;
+  place_ids: string[];
+  notes?: string;
+}
+
+function loadQueueFile(category: string): QueueFile {
+  const file = path.join(QUEUES_DIR, `${category}.json`);
+  if (!fs.existsSync(file)) {
+    throw new Error(
+      `Queue file not found: ${file}. Create it with shape { "category": "${category}", "place_ids": [...] } before running --batch.`,
+    );
+  }
+  const raw = JSON.parse(fs.readFileSync(file, "utf8")) as QueueFile;
+  if (!raw || typeof raw !== "object" || !Array.isArray(raw.place_ids)) {
+    throw new Error(
+      `Queue file ${file} is malformed: expected { category, place_ids: string[] }`,
+    );
+  }
+  return raw;
+}
+
+/**
+ * Cumulative spend for the active session. We treat "session" as everything
+ * logged on or after `sessionStart`, since the batch begins by recording
+ * its own start time. Lifetime ledger sums are available via
+ * readUsdSpentForSlug on the per-business summary line.
+ */
+async function readSessionSpend(sessionStart: Date): Promise<number> {
+  try {
+    const { db, schema } = await getDb();
+    const rows = await db
+      .select({ total: sum(schema.ingestCostLog.usd_cost) })
+      .from(schema.ingestCostLog)
+      .where(gte(schema.ingestCostLog.occurred_at, sessionStart));
+    const raw = rows[0]?.total;
+    if (raw === null || raw === undefined) return 0;
+    const n = Number(raw);
+    return Number.isFinite(n) ? n : 0;
+  } catch {
+    return 0;
+  }
+}
+
+async function runBatch(
+  category: string,
+  budget: number,
+  flags: Flags,
+): Promise<void> {
+  console.log(
+    `\n=== ingest-one --batch category=${category} budget=$${budget.toFixed(2)} mode=${
+      flags.dryRun ? "dry-run" : "live"
+    } ===`,
+  );
+  const queue = loadQueueFile(category);
+  console.log(
+    `[batch] queue file: content/queues/${category}.json (${queue.place_ids.length} place_id(s) listed)`,
+  );
+
+  if (flags.dryRun) {
+    const projectedMax = queue.place_ids.length * ESTIMATED_NEXT_USD;
+    console.log(
+      `[batch] dry-run, would attempt up to ${queue.place_ids.length} business(es). Projected upper bound: $${projectedMax.toFixed(2)} of analyze spend (estimate=$${ESTIMATED_NEXT_USD.toFixed(2)} per call). Halt threshold: cumulative + $${ESTIMATED_NEXT_USD.toFixed(2)} > $${budget.toFixed(2)}.`,
+    );
+    if (queue.place_ids.length === 0) {
+      console.log(
+        `[batch] queue is empty. Anna populates content/queues/${category}.json with place_ids before running live.`,
+      );
+    } else {
+      console.log(
+        `[batch] sample place_id(s): ${queue.place_ids.slice(0, 3).join(", ")}${queue.place_ids.length > 3 ? ", ..." : ""}`,
+      );
+    }
+    return;
+  }
+
+  const sessionStart = new Date();
+  let succeeded = 0;
+  let failed = 0;
+  let flagged = 0;
+  let halted = false;
+
+  for (const placeId of queue.place_ids) {
+    const cumulative = await readSessionSpend(sessionStart);
+    if (cumulative + ESTIMATED_NEXT_USD > budget) {
+      halted = true;
+      console.log(
+        `\nBUDGET CAP HIT. cumulative=$${cumulative.toFixed(4)} + estimated_next=$${ESTIMATED_NEXT_USD.toFixed(2)} > budget=$${budget.toFixed(2)}. Halting.`,
+      );
+      break;
+    }
+    try {
+      await runPlaceId(placeId, flags);
+      // Heuristic: if any needs_review row was written for this place_id's
+      // resolved slug during this session, count as flagged. We don't have a
+      // direct hook back from runPlaceId; do a cheap post-check.
+      const newlyFlagged = await wasFlagged(placeId, sessionStart);
+      if (newlyFlagged) flagged += 1;
+      succeeded += 1;
+    } catch (e) {
+      const msg = (e as Error).message;
+      console.error(
+        `[batch] place_id=${placeId}: failed, continuing. ${msg.slice(0, 300)}`,
+      );
+      failed += 1;
+    }
+  }
+
+  const totalSpent = await readSessionSpend(sessionStart);
+  const completedAttempts = succeeded + failed;
+  const avg =
+    completedAttempts > 0 ? totalSpent / completedAttempts : 0;
+  console.log(
+    `\n[batch summary] category=${category} succeeded=${succeeded} failed=${failed} flagged=${flagged} halted=${halted} usd_spent_session=$${totalSpent.toFixed(4)} avg_per_business=$${avg.toFixed(4)}`,
+  );
+}
+
+async function wasFlagged(
+  placeId: string,
+  sessionStart: Date,
+): Promise<boolean> {
+  try {
+    const { db, schema } = await getDb();
+    const biz = await db
+      .select({ slug: schema.businesses.slug })
+      .from(schema.businesses)
+      .where(eq(schema.businesses.place_id, placeId))
+      .limit(1);
+    if (biz.length === 0) return false;
+    const rows = await db
+      .select({ id: schema.needsReview.id })
+      .from(schema.needsReview)
+      .where(
+        and(
+          eq(schema.needsReview.business_slug, biz[0].slug),
+          gt(schema.needsReview.created_at, sessionStart),
+        ),
+      )
+      .limit(1);
+    return rows.length > 0;
+  } catch {
+    return false;
+  }
+}
+
 /* -------------------------------- main ---------------------------------- */
 
 async function main(): Promise<void> {
   const flags = parseFlags(process.argv.slice(2));
 
-  // Phase 3 stubs first; both flags accepted, both immediately bail with a
-  // clear "not yet" message so callers don't hit a half-implemented path.
-  if (flags.placeId) {
-    console.log(
-      `[--place-id ${flags.placeId}] Phase 3 work; not yet implemented. The Apify-scrape path for new place_ids ships in Phase 3. Use --slug for existing businesses today.`,
-    );
+  // Phase 3 paths: scrape a brand-new business by Google place_id, or
+  // sweep a queued category with a hard budget cap.
+  if (flags.batch) {
+    if (!flags.category) {
+      console.error("--batch requires --category <slug>");
+      process.exit(1);
+    }
+    if (flags.budget === null || !Number.isFinite(flags.budget) || flags.budget <= 0) {
+      console.error(
+        "--batch requires --budget <usd>, a positive number (e.g. --budget 15)",
+      );
+      process.exit(1);
+    }
+    await runBatch(flags.category, flags.budget, flags);
     return;
   }
-  if (flags.batch) {
-    console.log(
-      `[--batch] Phase 3 work; not yet implemented. The category sweep with --budget halt-on-spend ships in Phase 3. Provided flags: category=${flags.category ?? "(none)"} budget=${flags.budget ?? "(none)"}`,
-    );
+  if (flags.placeId) {
+    await runPlaceId(flags.placeId, flags);
     return;
   }
 

@@ -1,0 +1,5 @@
+{
+  "category": "specialty-grocery",
+  "notes": "Phase 3 queue for specialty grocery sweep (butchers, cheese shops, ethnic markets, bottle shops). Anna populates place_ids by hand or by exporting from an Apify task. Run via: npx tsx scripts/ingest-one.ts --batch --category specialty-grocery --budget 15",
+  "place_ids": []
+}
