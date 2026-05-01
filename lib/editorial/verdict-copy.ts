@@ -17,14 +17,16 @@ import type { Highlight } from "./family-stats";
  * is too close to typical to brag about quantitatively.
  */
 function aheadMultiplier(pctVsMedian: number | null): string | null {
-  if (pctVsMedian === null || pctVsMedian < 50) return null;
+  if (pctVsMedian === null || pctVsMedian < 15) return null;
   const mult = pctVsMedian / 100 + 1;
   if (mult >= 10) return `${Math.round(mult)}×`;
   if (mult >= 2) {
     const rounded = mult.toFixed(1).replace(/\.0$/, "");
     return `${rounded}×`;
   }
-  return null;
+  // Small leads (1.15× to 2×): express as "X% above" instead so it
+  // doesn't read as the awkward "1.3× the industry typical".
+  return `${Math.round(pctVsMedian)}% above`;
 }
 
 /**
