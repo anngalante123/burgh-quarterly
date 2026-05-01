@@ -162,6 +162,16 @@ Editorial vocabulary:
 
 ---
 
+## Punctuation: never use em dashes
+
+Hard rule, no exceptions. Em dashes (—) are banned from every surface of the property: UI copy, editorial features, business pages, claim/subscribe/request flows, email confirmations, error messages, alt text, and even commit messages and code comments inside this repo.
+
+Replace with periods, commas, semicolons, parens, or a clean sentence break depending on what fits.
+
+En dashes (–), hyphens (-), and ellipses (...) are still fine. Only the em dash is out.
+
+---
+
 ## The loud-quiet asymmetry
 
 | Zone | Voice | Why |
