@@ -9,6 +9,7 @@ import {
   createPersonNote,
   upsertPersonByEmail,
 } from "@/lib/attio/client";
+import { splitFullName, submitToHubSpot } from "@/lib/hubspot/client";
 
 /**
  * POST /api/claim, the Gate-3 ownership claim endpoint.
@@ -269,6 +270,18 @@ export async function POST(request: Request) {
       content: noteLines.join("\n"),
     });
   }
+
+  // HubSpot mirror: claim submissions land in HubSpot too. We pass
+  // the splitted name and the business slug as page context so it's
+  // visible in HubSpot's submission view.
+  const { firstName, lastName } = splitFullName(name);
+  await submitToHubSpot({
+    email,
+    firstName,
+    lastName,
+    pageUri: `https://burgh-quarterly.vercel.app/claim/${slug}`,
+    pageName: `Signal Pittsburgh claim: ${businessName}`,
+  });
 
   const mailed = await sendEmails({
     email,

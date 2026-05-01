@@ -7,6 +7,7 @@ import {
   createPersonNote,
   upsertPersonByEmail,
 } from "@/lib/attio/client";
+import { submitToHubSpot } from "@/lib/hubspot/client";
 
 /**
  * POST /api/subscribe, the subscribe + unlock endpoint.
@@ -177,6 +178,16 @@ export async function POST(request: Request) {
       content: noteLines.join("\n"),
     });
   }
+
+  // HubSpot mirror: same submission lands in HubSpot via the public
+  // Forms API. Side-channel — failure here doesn't block the user.
+  await submitToHubSpot({
+    email,
+    pageUri: source ?? null,
+    pageName: follow
+      ? `Signal Pittsburgh subscribe (following ${follow})`
+      : "Signal Pittsburgh subscribe",
+  });
 
   const confirmation = await sendConfirmation(email, follow);
 
