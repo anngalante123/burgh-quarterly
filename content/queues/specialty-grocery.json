@@ -1,5 +1,53 @@
 {
   "category": "specialty-grocery",
-  "notes": "Phase 3 queue for specialty grocery sweep (butchers, cheese shops, ethnic markets, bottle shops). Anna populates place_ids by hand or by exporting from an Apify task. Run via: npx tsx scripts/ingest-one.ts --batch --category specialty-grocery --budget 15",
-  "place_ids": []
+  "notes": "Pre-populated from content/raw/apify/pit-dts-foodniche-v2.json (April 2026 scrape, 200 records). High-confidence categories only: butchers, cheese shops, wine/liquor/beer stores, gourmet groceries, delis, and ethnically-named grocery stores. Excludes chains (Whole Foods, Trader Joe, etc.). A fresh Apify scrape targeting specialty grocery in Pittsburgh + Washington County will add more candidates; this is a starter list only. Verify each before running the batch sweep.",
+  "place_ids": [
+    "ChIJoWLCsOfxNIgRc-OdKViCxnc",
+    "ChIJHSMP5d3xNIgRugRjvBNHITY",
+    "ChIJTZI2vU_xNIgRUptka-9QjUw",
+    "ChIJw4RNyHHyNIgRnlZy6PRgl4Q",
+    "ChIJhXPKO7rxNIgR4RL5D_bHgoM"
+  ],
+  "_candidates_for_review": [
+    {
+      "placeId": "ChIJoWLCsOfxNIgRc-OdKViCxnc",
+      "title": "NATALIYA European Food Market Inc.",
+      "categoryName": "Grocery store",
+      "neighborhood": "Greenfield",
+      "reviewsCount": 287,
+      "totalScore": 4.6
+    },
+    {
+      "placeId": "ChIJHSMP5d3xNIgRugRjvBNHITY",
+      "title": "Save-Mor Beer & Pop Warehouse",
+      "categoryName": "Beer store",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 217,
+      "totalScore": 4.7
+    },
+    {
+      "placeId": "ChIJTZI2vU_xNIgRUptka-9QjUw",
+      "title": "Squirrel Hill Market",
+      "categoryName": "Deli",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 170,
+      "totalScore": 4.6
+    },
+    {
+      "placeId": "ChIJw4RNyHHyNIgRnlZy6PRgl4Q",
+      "title": "Farm Fresh Halal Market",
+      "categoryName": "Grocery store",
+      "neighborhood": "East Liberty",
+      "reviewsCount": 155,
+      "totalScore": 4.3
+    },
+    {
+      "placeId": "ChIJhXPKO7rxNIgR4RL5D_bHgoM",
+      "title": "Vendor Bender",
+      "categoryName": "Gourmet grocery store",
+      "neighborhood": "Squirrel Hill South",
+      "reviewsCount": 95,
+      "totalScore": 4.6
+    }
+  ]
 }
