@@ -192,7 +192,7 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
 
   if (!isUnderratedCategorySlug(category)) notFound();
 
-  const result = selectUnderratedForCategory(category);
+  const result = await selectUnderratedForCategory(category);
   if (!result) notFound();
 
   const { spec, entries } = result;

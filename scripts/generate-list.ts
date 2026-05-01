@@ -206,7 +206,7 @@ async function generateList(
   spec: ListSpec,
   dryRun: boolean,
 ): Promise<{ written: boolean; reason?: string }> {
-  const ranked = queryBusinesses(spec.query);
+  const ranked = await queryBusinesses(spec.query);
   if (ranked.length === 0) {
     console.warn(
       `[generate-list] ${spec.slug}: query returned 0 results, skipping`,
@@ -267,7 +267,7 @@ async function main() {
   await mkdir(OUT_DIR, { recursive: true });
 
   // Warm the rich-business cache once.
-  const richCount = loadAllRichBusinesses().length;
+  const richCount = (await loadAllRichBusinesses()).length;
   console.log(`[generate-list] loaded ${richCount} businesses`);
 
   const client = dryRun

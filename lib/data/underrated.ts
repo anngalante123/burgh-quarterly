@@ -155,16 +155,19 @@ const TARGET_ENTRIES = 5;
  *
  * The caller should `notFound()` on null.
  */
-export function selectUnderratedForCategory(
+export async function selectUnderratedForCategory(
   slug: string,
-): {
-  spec: (typeof UNDERRATED_CATEGORIES)[UnderratedCategorySlug];
-  entries: BusinessArtifact[];
-} | null {
+): Promise<
+  | {
+      spec: (typeof UNDERRATED_CATEGORIES)[UnderratedCategorySlug];
+      entries: BusinessArtifact[];
+    }
+  | null
+> {
   if (!isUnderratedCategorySlug(slug)) return null;
   const spec = UNDERRATED_CATEGORIES[slug];
 
-  const all = loadAllBusinesses();
+  const all = await loadAllBusinesses();
   const inCategory = all.filter((b) => matchesCategory(b, spec));
 
   const nonIcons = inCategory.filter((b) => b.score.tier !== "icons");

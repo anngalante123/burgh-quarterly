@@ -161,14 +161,18 @@ let _cache: RichBusiness[] | null = null;
  * Cached for the lifetime of the process so multiple queries don't
  * re-read disk. Reset by passing { fresh: true }.
  */
-export function loadAllRichBusinesses(opts?: { fresh?: boolean }): RichBusiness[] {
+export async function loadAllRichBusinesses(
+  opts?: { fresh?: boolean },
+): Promise<RichBusiness[]> {
   if (_cache && !opts?.fresh) return _cache;
-  const arts = loadAllBusinesses();
-  _cache = arts.map((artifact) => {
+  const arts = await loadAllBusinesses();
+  const enriched: RichBusiness[] = [];
+  for (const artifact of arts) {
     const social = loadSocialBySlug(artifact.business.slug);
-    const analysis = loadReviewAnalysis(artifact.business.slug);
-    return { artifact, social, analysis };
-  });
+    const analysis = await loadReviewAnalysis(artifact.business.slug);
+    enriched.push({ artifact, social, analysis });
+  }
+  _cache = enriched;
   return _cache;
 }
 
@@ -210,8 +214,10 @@ function applyFilter(b: RichBusiness, f: BusinessFilter): boolean {
  * Run a query against the loaded business set. Returns a ranked,
  * 1-indexed list capped at `limit`. Sort is descending by ranking value.
  */
-export function queryBusinesses(spec: QuerySpec): RankedBusiness[] {
-  const all = loadAllRichBusinesses();
+export async function queryBusinesses(
+  spec: QuerySpec,
+): Promise<RankedBusiness[]> {
+  const all = await loadAllRichBusinesses();
   const filtered = spec.filter
     ? all.filter((b) => applyFilter(b, spec.filter!))
     : all;

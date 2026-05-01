@@ -36,8 +36,8 @@ import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
  *   4. Subscribe + Colophon
  */
 
-export default function Home() {
-  const all = loadAllBusinesses();
+export default async function Home() {
+  const all = await loadAllBusinesses();
   const tc = computeTierCounts(all);
 
   // Slim searchable payload, passed to the client-side BusinessSearch.
@@ -125,7 +125,7 @@ export default function Home() {
           {/* Self-contained hero search. Visible above the fold so a
               visitor who came to look themselves up can start typing
               immediately. Results render inline as an overlay dropdown
-              directly under the input — no scroll, no jump to a second
+              directly under the input. No scroll, no jump to a second
               input below the fold. The lower BusinessSearch section
               remains as the canonical browse view. */}
           <Reveal delay={0.16}>

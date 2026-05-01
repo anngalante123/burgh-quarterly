@@ -339,7 +339,7 @@ async function main() {
 
   await mkdir(OUT_DIR, { recursive: true });
 
-  const all = loadAllRichBusinesses({ fresh: true });
+  const all = await loadAllRichBusinesses({ fresh: true });
   console.log(`[generate-posts] loaded ${all.length} businesses`);
 
   // Build candidate pool from RAW scrape data, applying a TIGHTER filter

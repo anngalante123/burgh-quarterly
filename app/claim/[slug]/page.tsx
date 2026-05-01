@@ -27,13 +27,14 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams(): { slug: string }[] {
-  return loadAllBusinesses().map((b) => ({ slug: b.business.slug }));
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const all = await loadAllBusinesses();
+  return all.map((b) => ({ slug: b.business.slug }));
 }
 
 export default async function ClaimPage({ params }: PageProps) {
   const { slug } = await params;
-  const artifact = loadBusinessBySlug(slug);
+  const artifact = await loadBusinessBySlug(slug);
   if (!artifact) notFound();
 
   const { business } = artifact;

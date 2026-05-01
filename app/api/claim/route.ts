@@ -23,7 +23,7 @@ import { splitFullName, submitToHubSpot } from "@/lib/hubspot/client";
  *      - Email the claimant: "we got your claim, we'll be in touch."
  *      - Email the admin (Anna) at ADMIN_EMAIL with the full claim
  *        details so she can verify against public info.
- *      Either email failing does NOT fail the request — the lead is
+ *      Either email failing does NOT fail the request. The lead is
  *      still captured.
  *   4. Return ok.
  *
@@ -207,7 +207,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const artifact = loadBusinessBySlug(slug);
+  const artifact = await loadBusinessBySlug(slug);
   if (!artifact) {
     return NextResponse.json(
       { ok: false, error: "Business not found" },
@@ -235,13 +235,13 @@ export async function POST(request: Request) {
     captured_at: new Date().toISOString(),
   };
 
-  // Local JSONL log (works in dev; silently fails on Vercel — Attio is
+  // Local JSONL log (works in dev; silently fails on Vercel. Attio is
   // the source of truth in prod).
   try {
     await appendClaim(record);
   } catch (err) {
     console.error("[claim] failed to append claim:", err);
-    // Don't fail the request — Attio + Resend below still capture the lead.
+    // Don't fail the request. Attio + Resend below still capture the lead.
   }
 
   // Attio CRM upsert (Person record by email) + add to "Signal PGH"

@@ -109,7 +109,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
 
   if (!isTopCategorySlug(category)) notFound();
 
-  const result = selectTopForCategory(category);
+  const result = await selectTopForCategory(category);
   if (!result) notFound();
 
   const { spec, entries } = result;

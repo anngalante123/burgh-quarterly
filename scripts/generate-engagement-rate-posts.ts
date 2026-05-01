@@ -137,7 +137,7 @@ async function main() {
 
   await mkdir(OUT_DIR, { recursive: true });
 
-  const all = loadAllRichBusinesses({ fresh: true });
+  const all = await loadAllRichBusinesses({ fresh: true });
   const bySlug = new Map(all.map((rb) => [rb.artifact.business.slug, rb]));
 
   const cutoff = Date.now() - 90 * 24 * 60 * 60 * 1000;

@@ -69,7 +69,7 @@ type EmailPair = {
 
 async function generateEmailPair(
   client: Anthropic,
-  business: ReturnType<typeof loadAllRichBusinesses>[number],
+  business: Awaited<ReturnType<typeof loadAllRichBusinesses>>[number],
   rankInFamily: number | null,
   familyLabel: string,
 ): Promise<EmailPair> {
@@ -80,7 +80,7 @@ async function generateEmailPair(
 
 async function generateInitialEmail(
   client: Anthropic,
-  business: ReturnType<typeof loadAllRichBusinesses>[number],
+  business: Awaited<ReturnType<typeof loadAllRichBusinesses>>[number],
   rankInFamily: number | null,
   familyLabel: string,
 ): Promise<{ subject: string; body: string }> {
@@ -186,7 +186,7 @@ Return ONLY the SUBJECT/BODY block. No surrounding explanation.`;
  */
 async function generateFollowupEmail(
   client: Anthropic,
-  business: ReturnType<typeof loadAllRichBusinesses>[number],
+  business: Awaited<ReturnType<typeof loadAllRichBusinesses>>[number],
   rankInFamily: number | null,
   familyLabel: string,
 ): Promise<{ subject: string; body: string }> {
@@ -274,7 +274,7 @@ async function main() {
 
   await mkdir(OUT_DIR, { recursive: true });
 
-  const all = loadAllRichBusinesses({ fresh: true });
+  const all = await loadAllRichBusinesses({ fresh: true });
   console.log(`[outreach] writing for ${all.length} businesses`);
 
   // Compute rank-in-family for each business once

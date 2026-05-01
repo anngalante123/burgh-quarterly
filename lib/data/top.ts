@@ -55,13 +55,16 @@ function matchesCategory(
 const MIN_ENTRIES = 3;
 const TARGET_ENTRIES = 5;
 
-export function selectTopForCategory(slug: string): {
-  spec: (typeof UNDERRATED_CATEGORIES)[TopCategorySlug];
-  entries: BusinessArtifact[];
-} | null {
+export async function selectTopForCategory(slug: string): Promise<
+  | {
+      spec: (typeof UNDERRATED_CATEGORIES)[TopCategorySlug];
+      entries: BusinessArtifact[];
+    }
+  | null
+> {
   if (!isTopCategorySlug(slug)) return null;
   const spec = TOP_CATEGORIES[slug];
-  const all = loadAllBusinesses();
+  const all = await loadAllBusinesses();
   const inCategory = all.filter((a) => matchesCategory(a, spec));
   if (inCategory.length < MIN_ENTRIES) return null;
 

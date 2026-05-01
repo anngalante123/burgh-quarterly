@@ -66,8 +66,9 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams(): { slug: string }[] {
-  return listAllBusinessSlugs().map((slug) => ({ slug }));
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const slugs = await listAllBusinessSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 function pluralizeCategoryLabel(categoryName: string): string {
@@ -146,7 +147,7 @@ function buildCategoryPeerDots(
 export default async function BusinessPage({ params }: PageProps) {
   const { slug } = await params;
 
-  const art = loadBusinessBySlug(slug);
+  const art = await loadBusinessBySlug(slug);
   if (!art) notFound();
 
   const { business: biz, score, meta } = art;
@@ -155,7 +156,7 @@ export default async function BusinessPage({ params }: PageProps) {
   const fiveStar = meta.reviewsDistribution?.fiveStar ?? 0;
   const pct = totalRev > 0 ? Math.round((fiveStar / totalRev) * 100) : null;
 
-  const all = loadAllBusinesses();
+  const all = await loadAllBusinesses();
   const reviewPhrases = meta.keywordPhrases.slice(0, 5);
 
   const peerMedians = computePeerMedians(art, all);
@@ -259,7 +260,7 @@ export default async function BusinessPage({ params }: PageProps) {
   const categoryLabel = pluralizeCategoryLabel(meta.categoryName);
   const neighborhoodLabel = biz.neighborhood;
 
-  const reviewAnalysis = loadReviewAnalysis(biz.slug);
+  const reviewAnalysis = await loadReviewAnalysis(biz.slug);
 
   const diagnosis = reviewAnalysis?.diagnosis_pullquote ?? {
     line:
