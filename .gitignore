@@ -48,3 +48,4 @@ content/raw/
 .idea/
 *.swp
 *.swo
+.env*.local
