@@ -183,3 +183,18 @@ ADR-lite. Each decision: what, why, when. Never re-debate without updating here.
 - Comparison line: black/55 → black/45
 - Row spacing: 16px → 14px
 - Removed duplicate ▲/▼ at section header (rows already carry them)
+
+---
+
+## D-022 — User-facing word: "industry" not "family"
+
+**2026-05-01.** Anna flagged "family" as ambiguous (could read as neighborhood, ownership group, etc.). The comparison cohorts in this publication are business-type categories — Sweets, Cafes, Bars, Asian Kitchens, Restaurants — so "industry" is the right plain-English word for end users.
+
+**Rule:** in user-visible UI, "industry" replaces generic "family" everywhere. Specific names like "Pittsburgh Sweets" / "Pittsburgh Cafes" stay (they already name the industry concretely). Variable names (`familyShort`, `familyMedian`, `family-stats.ts`, `category-family.ts`) keep the codebase term — internal only.
+
+**Phrases now in production:**
+- `Top of Sweets · more than 2× the industry typical`
+- `#3 of 6 in Cafes · ahead of industry typical`
+- `industry typical: 350` (RowPeerStat)
+- `Top of industry` / `Bottom of industry` (PeerDotPlot axis)
+- `vs industry` (compare tab sublabel)
