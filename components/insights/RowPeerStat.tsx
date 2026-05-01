@@ -55,7 +55,7 @@ export function RowPeerStat({
         {thisValue}
       </span>
       <span className="font-body text-xs md:text-sm text-brand-black/55">
-        vs median {familyMedian}
+        family typical: {familyMedian}
       </span>
       <span
         className={cn(
@@ -68,9 +68,6 @@ export function RowPeerStat({
         )}
       >
         {rankLabel}
-        {pctVsMedian !== undefined && pctVsMedian !== null && pctVsMedian !== 0
-          ? ` · ${pctVsMedian > 0 ? "+" : ""}${pctVsMedian}%`
-          : ""}
       </span>
     </div>
   );

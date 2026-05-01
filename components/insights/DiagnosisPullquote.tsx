@@ -50,7 +50,7 @@ export function DiagnosisPullquote({ line, highlight }: Props) {
           {split ? (
             <>
               {split.before}
-              <span className="bg-brand-lime text-brand-black px-1.5 box-decoration-clone">
+              <span className="scan-sweep bg-brand-lime text-brand-black px-1.5 box-decoration-clone">
                 {split.match}
               </span>
               {split.after}

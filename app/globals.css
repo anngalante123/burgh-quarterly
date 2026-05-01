@@ -261,3 +261,121 @@
     transform: none;
   }
 }
+
+/* Cycling spotlight on the Playbook row, draws the eye through the
+   three moves in sequence so the page feels alive without anything
+   moving aggressively. Each card lifts and gains a stronger purple
+   border for ~1.5s, then hands off to the next. */
+@keyframes pb-spotlight-1 {
+  0%, 33%, 100% { box-shadow: inset 0 0 0 1px rgba(15, 15, 15, 0.15); }
+  8%, 25% { box-shadow: inset 0 0 0 2px var(--color-brand-purple), 0 6px 18px -8px rgba(171, 53, 238, 0.45); }
+}
+@keyframes pb-spotlight-2 {
+  0%, 33%, 66%, 100% { box-shadow: inset 0 0 0 1px rgba(15, 15, 15, 0.15); }
+  41%, 58% { box-shadow: inset 0 0 0 2px var(--color-brand-purple), 0 6px 18px -8px rgba(171, 53, 238, 0.45); }
+}
+@keyframes pb-spotlight-3 {
+  0%, 66%, 100% { box-shadow: inset 0 0 0 1px rgba(15, 15, 15, 0.15); }
+  74%, 91% { box-shadow: inset 0 0 0 2px var(--color-brand-purple), 0 6px 18px -8px rgba(171, 53, 238, 0.45); }
+}
+.pb-card[data-pos="0"] { animation: pb-stagger-in 0.5s ease-out both, pb-spotlight-1 9s ease-in-out infinite 1.2s; }
+.pb-card[data-pos="1"] { animation: pb-stagger-in 0.5s ease-out both, pb-spotlight-2 9s ease-in-out infinite 1.2s; }
+.pb-card[data-pos="2"] { animation: pb-stagger-in 0.5s ease-out both, pb-spotlight-3 9s ease-in-out infinite 1.2s; }
+@media (prefers-reduced-motion: reduce) {
+  .pb-card[data-pos="0"],
+  .pb-card[data-pos="1"],
+  .pb-card[data-pos="2"] {
+    animation: none;
+  }
+}
+
+/* Faint horizontal flow line connecting the three Playbook cards
+   on desktop, signals "this is a sequence" without an arrow. */
+.pb-flow-line {
+  position: relative;
+}
+.pb-flow-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(171, 53, 238, 0.25) 20%,
+    rgba(171, 53, 238, 0.25) 80%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+@media (max-width: 767px) {
+  .pb-flow-line::before { display: none; }
+}
+
+/* Ken-Burns: very slow zoom on the hero photo. Subtle (1 -> 1.06)
+   over 30s alternating, so the page feels "live" rather than static
+   without competing with content. */
+@keyframes ken-burns {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+.ken-burns {
+  animation: ken-burns 30s ease-in-out infinite alternate;
+  transform-origin: center center;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ken-burns { animation: none; }
+}
+
+/* Scan-sweep across a lime highlight, fires once on first reveal
+   to draw the eye to the diagnosis pull-quote, then settles. */
+@keyframes scan-sweep {
+  0% { background-position: -150% 0; }
+  100% { background-position: 250% 0; }
+}
+.scan-sweep {
+  background-image: linear-gradient(
+    100deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 70%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: scan-sweep 2.4s ease-out 0.6s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scan-sweep { animation: none; background: none; }
+}
+
+/* Verdict row stagger, each Strengths/Gaps row fades up 80ms after
+   the previous, so the panel reads as "assembled" rather than
+   appearing all at once. */
+@keyframes verdict-row-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.verdict-row {
+  animation: verdict-row-in 0.5s ease-out both;
+  animation-delay: var(--row-delay, 0ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .verdict-row { animation: none; }
+}
+
+/* Trend pill breathe, subtle scale + shadow loop. Used on the
+   SocialTrendPill so the trend signal feels live. */
+@keyframes trend-breathe {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(171, 53, 238, 0); }
+  50% { transform: scale(1.02); box-shadow: 0 0 0 4px rgba(171, 53, 238, 0.15); }
+}
+.trend-breathe {
+  animation: trend-breathe 3.6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .trend-breathe { animation: none; }
+}

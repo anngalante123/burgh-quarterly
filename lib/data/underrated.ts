@@ -27,7 +27,11 @@ import type { Category } from "./schemas";
  * and the page renders rank + tier labels only.
  */
 
-export type UnderratedCategorySlug = "bakeries";
+export type UnderratedCategorySlug =
+  | "bakeries"
+  | "coffee-shops"
+  | "bars-breweries"
+  | "restaurants";
 
 export const UNDERRATED_CATEGORIES: Readonly<
   Record<UnderratedCategorySlug, {
@@ -44,6 +48,19 @@ export const UNDERRATED_CATEGORIES: Readonly<
      * pastry shop tagged `boutique`), so we widen by categoryName too.
      */
     categoryNameMatches: readonly string[];
+    /**
+     * Schema categories to exclude even when categoryName matches. Lets
+     * us prevent overlap, e.g. coffee-shops shouldn't pull a business
+     * already tagged `category: "bakery"` (those belong to bakeries).
+     */
+    excludeSchemaCategories?: readonly Category[];
+    /**
+     * Hero paragraph shown above the list. Bakery-specific for v1; per-
+     * bucket so each list reads in the right voice (a coffee shop isn't
+     * "pulling a tray out of the oven"). Plain string with one
+     * substitution token: {{count}} resolves to the spelled-out count.
+     */
+    heroLine: string;
   }>
 > = {
   bakeries: {
@@ -58,6 +75,49 @@ export const UNDERRATED_CATEGORIES: Readonly<
       "Dessert restaurant",
       "Ice cream shop",
     ],
+    heroLine:
+      "Every quarter, somewhere in Pittsburgh, a bakery is pulling a tray out of the oven at 6am for a line that doesn't quite exist yet. These are the {{count}} the city is behind on.",
+  },
+  "coffee-shops": {
+    label: "Coffee Shops & Cafes",
+    singularLower: "coffee shop",
+    pluralLower: "coffee shops and cafes",
+    schemaCategories: [],
+    categoryNameMatches: [
+      "Cafe",
+      "Coffee shop",
+      "Tea house",
+      "Brunch restaurant",
+      "Juice shop",
+    ],
+    excludeSchemaCategories: ["bakery"],
+    heroLine:
+      "Every quarter, a Pittsburgh cafe pulls its first shot of espresso at 6:30am for a room that's still mostly regulars. These are the {{count}} the city hasn't caught up to yet.",
+  },
+  "bars-breweries": {
+    label: "Bars & Breweries",
+    singularLower: "bar",
+    pluralLower: "bars and breweries",
+    schemaCategories: [],
+    categoryNameMatches: ["Bar", "Brewery"],
+    heroLine:
+      "Every quarter, a Pittsburgh bar pours the first round of the night to a half-full room and a regular nobody knows by name yet. These are the {{count}} the city should be sending people to.",
+  },
+  restaurants: {
+    label: "Restaurants",
+    singularLower: "restaurant",
+    pluralLower: "restaurants",
+    schemaCategories: [],
+    categoryNameMatches: [
+      "Restaurant",
+      "Indian restaurant",
+      "Japanese restaurant",
+      "Thai restaurant",
+      "Noodle shop",
+      "Sushi restaurant",
+    ],
+    heroLine:
+      "Every quarter, a Pittsburgh kitchen plates a dish at 7:15pm for a four-top who's never been before and won't be the last to get it wrong. These are the {{count}} the city is behind on.",
   },
 };
 
@@ -71,6 +131,11 @@ function matchesCategory(
   artifact: BusinessArtifact,
   spec: (typeof UNDERRATED_CATEGORIES)[UnderratedCategorySlug],
 ): boolean {
+  if (
+    spec.excludeSchemaCategories?.includes(artifact.business.category)
+  ) {
+    return false;
+  }
   if (spec.schemaCategories.includes(artifact.business.category)) return true;
   const categoryName = artifact.meta.categoryName ?? "";
   return spec.categoryNameMatches.some(

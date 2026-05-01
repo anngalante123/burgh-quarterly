@@ -1,3 +1,4 @@
+import { AnimatedValue } from "@/components/motion/AnimatedValue";
 import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
 
@@ -59,14 +60,13 @@ export function AtAGlance({ rows }: Props) {
                 )}
               </dt>
               <dd className="flex items-baseline gap-2 text-right whitespace-nowrap">
-                <span
+                <AnimatedValue
+                  value={row.value}
                   className={cn(
                     "font-display text-xl md:text-2xl font-black tabular-nums leading-none",
                     row.focus ? "text-brand-off-white" : "text-brand-black",
                   )}
-                >
-                  {row.value}
-                </span>
+                />
                 {row.delta && (
                   <span
                     className={cn(

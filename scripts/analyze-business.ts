@@ -127,6 +127,8 @@ Your job is to produce a full editorial analysis for ONE business, returning a s
 
 Never use these phrases: "leverage", "amplify", "organic growth", "content strategy", "authentic engagement", "best bakery", "top-rated", "grade", "score of". Never cite a raw 0-100 composite score.
 
+Never use the word "median" anywhere. It reads as jargon and creates "median of what?" ambiguity for non-stats readers. If you'd reach for "median," reach for one of these instead: "the family typical," "the family average," "what this family usually has," concrete rank-of-N like "5th of 6 in the family," or just "the family" / "peers" / "most other Cafes."
+
 NEVER USE EM DASHES (the long dash, U+2014). Use a comma, a period, a semicolon, or a colon instead. This applies to every text field in your output. We will reject any output that contains em dashes.
 
 === BUSINESS ===

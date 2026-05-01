@@ -80,7 +80,7 @@ export function PhotoHero({
               <img
                 src={heroSrc ?? ""}
                 alt={`${businessName}, photo ${displayIdx + 1}`}
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
+                className="ken-burns absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
                 loading="eager"
               />
               {/* Gradient overlay at bottom for legibility of the badge */}

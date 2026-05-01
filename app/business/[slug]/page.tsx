@@ -344,9 +344,7 @@ export default async function BusinessPage({ params }: PageProps) {
                 ? `Top of ${familyStats.familyShort}`
                 : rankFamilyPos === categoryPeerDots.length
                   ? `Bottom of ${familyStats.familyShort}`
-                  : rankFamilyPos <= Math.ceil(categoryPeerDots.length / 2)
-                    ? `Above ${familyStats.familyShort} median`
-                    : `Below ${familyStats.familyShort} median`
+                  : `#${rankFamilyPos} of ${categoryPeerDots.length} in ${familyStats.familyShort}`
             }
             familyShort={familyStats.familyShort}
           />
@@ -415,7 +413,7 @@ export default async function BusinessPage({ params }: PageProps) {
       expanded: (
         <Gated label="review voice" businessName={biz.name} source={`reviews:${biz.slug}`}>
           <RowPeerStat
-            label="Review depth"
+            label="Review volume"
             thisValue={fmtStatValue(familyStats.reviewCount.value, "reviewCount")}
             familyMedian={fmtStatValue(familyStats.reviewCount.median, "reviewCount")}
             rankLabel={familyStats.reviewCount.label}
@@ -609,7 +607,7 @@ export default async function BusinessPage({ params }: PageProps) {
                 }
                 alt={`${biz.name} storefront / interior photo from Google Maps`}
                 loading="eager"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="ken-burns absolute inset-0 w-full h-full object-cover"
               />
             </div>
           )}

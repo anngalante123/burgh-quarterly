@@ -60,11 +60,12 @@ export function Playbook({ playbook }: PlaybookProps) {
           </span>
         </div>
 
-        <ol className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+        <ol className="pb-flow-line relative grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
           {playbook.items.map((item, i) => (
             <li
               key={i}
-              className="pb-card flex flex-col gap-3 border border-brand-black/15 bg-white/70 p-5 md:p-6"
+              data-pos={i}
+              className="pb-card relative z-10 flex flex-col gap-3 border border-brand-black/15 bg-white/85 backdrop-blur-sm p-5 md:p-6 rounded-sm"
               style={
                 {
                   "--pb-delay": `${i * 120}ms`,
@@ -90,27 +91,14 @@ export function Playbook({ playbook }: PlaybookProps) {
               <p className="font-body text-sm md:text-base text-brand-black/80 leading-snug">
                 {item.action}
               </p>
-              {/* Impact pill, bottom-of-card. From Claude when present;
-                  falls back to the signal label when an older analysis
-                  hasn't been regenerated yet. The pulse-glow animation
-                  cycles staggered per card so the row of three breathes
-                  in sequence, drawing the eye through the moves. */}
-              <div className="mt-auto pt-2 border-t border-brand-black/10 flex items-center justify-between gap-2 flex-wrap">
+              {/* Signal label only. The lime impact_label pill was
+                  removed per 2026-04-30 review — the codenames
+                  ("+SENTIMENT FLOOR", "+VISUAL RANK") read as internal
+                  jargon and didn't add reader value. */}
+              <div className="mt-auto pt-2 border-t border-brand-black/10">
                 <p className="font-display text-[0.58rem] font-semibold uppercase tracking-[0.18em] text-brand-black/50">
                   Signal · {SIGNAL_LABEL[item.signal]}
                 </p>
-                {(item as { impact_label?: string }).impact_label ? (
-                  <span
-                    className="pb-impact-pulse inline-flex items-center bg-brand-lime text-brand-black font-display text-[0.58rem] font-semibold uppercase tracking-[0.14em] px-2 py-0.5"
-                    style={
-                      {
-                        "--pb-delay": `${i * 1400}ms`,
-                      } as React.CSSProperties
-                    }
-                  >
-                    {(item as { impact_label?: string }).impact_label}
-                  </span>
-                ) : null}
               </div>
             </li>
           ))}
@@ -118,8 +106,7 @@ export function Playbook({ playbook }: PlaybookProps) {
 
         <p className="mt-4 font-body text-[0.7rem] text-brand-black/50 leading-relaxed">
           Recommendations are pulled from the record, lowest-leverage signals,
-          gaps in the Google listing, and dormant Instagram cadence. They&apos;re
-          generic enough to respect the business and specific enough to act on.
+          gaps in the Google listing, and dormant Instagram cadence.
         </p>
       </div>
     </Reveal>

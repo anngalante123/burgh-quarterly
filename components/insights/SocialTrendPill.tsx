@@ -42,6 +42,10 @@ type Props = {
 
 export function SocialTrendPill({ trend }: Props) {
   const s = BUCKET_STYLE[trend.bucket];
+  // Only "active" buckets breathe — drawing the eye to a positive signal.
+  // Quiet/losing buckets stay static so the page doesn't pulse on a downer.
+  const breathe =
+    trend.bucket === "on_a_tear" || trend.bucket === "citys_talking";
   return (
     <div className="flex flex-col gap-2">
       <span
@@ -49,6 +53,7 @@ export function SocialTrendPill({ trend }: Props) {
           "inline-flex items-center gap-2 self-start px-3 py-1.5 font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em]",
           s.bg,
           s.text,
+          breathe && "trend-breathe",
         )}
       >
         <span aria-hidden="true" className="text-base leading-none">

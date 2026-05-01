@@ -87,6 +87,66 @@ const ENTRY_COPY: Record<string, EntryCopy> = {
       "Women-owned, Butler Street, and the review that keeps coming back is the one about gluten-free and nut-free options that don't taste like compromise. The last review landed today. The last reel about it landed sometime last year.",
     stat: "736 reviews, 984 photos on file. A fresh review today. Creator coverage: missing.",
   },
+  // --- coffee shops & cafes ---
+  meetcha: {
+    hook:
+      "Forbes Avenue, Squirrel Hill South. The matcha latte is the move and the room knows it, quiet on weekday mornings, packed by 11. The reviews skew young and earnest. The grids haven't found it.",
+    stat:
+      "124 five-star reviews. 115 photos on the listing. Zero creator moments in the last 30 days.",
+  },
+  "ka-fair-coffee-and-cakery": {
+    hook:
+      "Morningside isn't a coffee neighborhood by reputation, which is exactly why Ka-Fair sits with a steady regular base and almost no out-of-neighborhood awareness. The cake case rotates weekly. The chairs are full by 9.",
+    stat:
+      "146 photos on file, dominated by the case. Creator coverage of the cakes: zero this quarter.",
+  },
+  "24-carrot-juice": {
+    hook:
+      "Bloomfield's juice room, the kind of place that picks up steady weekday foot traffic from the hospital workers and almost no weekend reach beyond it. The menu hasn't changed enough to confuse the regulars. The feed has barely moved.",
+    stat:
+      "177 photos on file. Steady five-star drip from regulars. The TikTok layer hasn't started.",
+  },
+
+  // --- bars & breweries ---
+  "commerce-bar": {
+    hook:
+      "East Liberty's quiet cocktail room. 88 five-star reviews from people who finished the drink and meant it. The room is small enough to feel like a tip, large enough to bring a date.",
+    stat:
+      "88 five-star reviews against 138 photos. A photogenic room. Zero reels in the last 30 days.",
+  },
+  "golden-age-beer-company": {
+    hook:
+      "Lawrenceville-adjacent brewer running a tight, narrow lineup, no distillery cosplay, no merch wall. The kind of taproom that fills with regulars after work and nobody films. 298 photos on file. Almost none of them theirs.",
+    stat:
+      "298 photos on the listing, most uploaded by drinkers. The brewery's own coverage layer: missing.",
+  },
+  "hop-farm-brewing-company": {
+    hook:
+      "Lawrenceville's quiet brewer, single location, door open in summer. The beer is regulars-good. The Instagram traffic is regulars-only. The kind of operation a creator-week could move two ranks.",
+    stat:
+      "239 five-star reviews. 364 photos. A taproom Pittsburgh hasn't filmed yet.",
+  },
+
+  // --- restaurants ---
+  "oishii-donburi": {
+    hook:
+      "Lawrenceville donburi shop, rice bowls, pickles, beer, no dinner reservations. The lunch line is the tell. The food photographs better than the room, and the room is fine.",
+    stat:
+      "324 five-star reviews. 342 photos. Reviews still landing this week. The feed: dormant.",
+  },
+  lorelei: {
+    hook:
+      "East Liberty's German-Austrian holdover, sausages and pretzels, a patio that does steady summer work. Reviews call out the same bratwurst, the same beer list, the same one waiter. The kind of consistency that doesn't trend.",
+    stat:
+      "284 five-star reviews. 291 photos. Steady, unflashy, undercovered.",
+  },
+  "reva-modern-indian-cuisine": {
+    hook:
+      "East Liberty's modern Indian, spice level honest, the lamb chops the regulars order without looking. Reviews mention the same three dishes three times in a row. Nothing reads as 'discovered' yet.",
+    stat:
+      "443 photos on file. Reviews repeating the same favorites. Signal: locked in. Coverage: hasn't cracked.",
+  },
+
   // --- fallbacks for future bakeries when the dataset grows ---
   pages: {
     hook:
@@ -196,12 +256,12 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
             </div>
 
             <p className="mt-10 max-w-3xl font-body text-brand-black/85 text-lg md:text-xl leading-relaxed">
-              Every quarter, somewhere in Pittsburgh, a {spec.singularLower}
-              {" "}is pulling a tray out of the oven at 6am for a line that
-              doesn&apos;t quite exist yet. These are the{" "}
-              {count === 1 ? "one" : countWord} the city is behind on. Not
-              our top-ranked, the ones whose rank we expect to move most,
-              and soonest. If you haven&apos;t been, go this weekend.
+              {spec.heroLine.replace(
+                "{{count}}",
+                count === 1 ? "one" : countWord,
+              )}{" "}
+              Not our top-ranked, the ones whose rank we expect to move
+              most, and soonest. If you haven&apos;t been, go this weekend.
             </p>
 
             {/* Category switcher, tabs for every Underrated list live */}

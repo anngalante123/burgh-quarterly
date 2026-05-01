@@ -65,8 +65,9 @@ function rankInArray(value: number, all: number[]): number {
 function buildLabel(rank: number, familySize: number, familyShort: string): string {
   if (rank === 1) return `Top of ${familyShort}`;
   if (rank === familySize) return `Bottom of ${familyShort}`;
-  if (rank <= Math.ceil(familySize / 2)) return `Above ${familyShort} median`;
-  return `Below ${familyShort} median`;
+  // Avoid the word "median" — it's jargon and reads ambiguously.
+  // Use concrete rank-of-N positioning instead.
+  return `#${rank} of ${familySize} in ${familyShort}`;
 }
 
 function pctVsMedian(value: number, m: number): number | null {
@@ -223,14 +224,14 @@ export type Highlight = {
 };
 
 const HIGHLIGHT_LABELS: Record<string, string> = {
-  reviewCount: "Review depth",
+  reviewCount: "Review volume",
   rating: "Star rating",
   fiveStarPct: "Five-star ratio",
-  igPosts30d: "Instagram cadence",
-  igFollowers: "Instagram followers",
-  igEngagement: "Engagement rate",
+  igPosts30d: "Posting cadence",
+  igFollowers: "Instagram audience",
+  igEngagement: "Post engagement",
   tiktokCreators: "Creators filming",
-  tiktokPlays: "TikTok plays",
+  tiktokPlays: "TikTok reach",
 };
 
 export function pickStrengthsAndGaps(

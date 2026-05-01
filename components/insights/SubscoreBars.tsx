@@ -304,7 +304,7 @@ export function SubscoreBars({
         </ul>
 
         <p className="mt-5 font-body text-[0.7rem] text-brand-black/50 leading-relaxed">
-          Tick marks show the peer median for this family. Bars show relative
+          Tick marks show the typical family score. Bars show relative
           position only, no numeric scores are published.
         </p>
       </div>
@@ -363,14 +363,14 @@ function Bar({
           className="absolute top-[-3px] bottom-[-3px] w-[2px] bg-brand-black/50"
           style={{ left: `calc(${median}% - 1px)` }}
           aria-hidden="true"
-          title="Peer median"
+          title="Family typical"
         />
       ) : (
         <motion.div
           className="absolute top-[-3px] bottom-[-3px] w-[2px] bg-brand-black/50"
           style={{ left: `calc(${median}% - 1px)` }}
           aria-hidden="true"
-          title="Peer median"
+          title="Family typical"
           initial={{ opacity: 0, scaleY: 0.4 }}
           whileInView={{ opacity: 1, scaleY: 1 }}
           viewport={{ once: true, amount: 0.6 }}
