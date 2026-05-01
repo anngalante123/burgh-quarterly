@@ -11,6 +11,7 @@ import {
 } from "@/components/BusinessSearch";
 import { loadAllListArticles } from "@/lib/data/load-list";
 import { GetFeaturedCTA } from "@/components/GetFeaturedCTA";
+import { HeroSearch } from "@/components/HeroSearch";
 import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
 
 /**
@@ -119,6 +120,16 @@ export default function Home() {
               . Read the index, see who&apos;s climbing, and watch your
               own block in real time.
             </p>
+          </Reveal>
+
+          {/* Self-contained hero search. Visible above the fold so a
+              visitor who came to look themselves up can start typing
+              immediately. Results render inline as an overlay dropdown
+              directly under the input — no scroll, no jump to a second
+              input below the fold. The lower BusinessSearch section
+              remains as the canonical browse view. */}
+          <Reveal delay={0.16}>
+            <HeroSearch businesses={searchable} />
           </Reveal>
 
           {/* Compact this-quarter stat line, one row, no donut, no bar chart */}

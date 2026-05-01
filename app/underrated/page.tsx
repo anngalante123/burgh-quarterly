@@ -112,6 +112,29 @@ export default function UnderratedIndexPage() {
               </Link>
             </p>
           </Reveal>
+
+          <Reveal as="section" className="mt-16 md:mt-24">
+            <div className="border-2 border-brand-black bg-white p-8 md:p-12">
+              <h2 className="font-display font-black uppercase tracking-[-0.01em] text-brand-black [text-wrap:balance] text-[clamp(1.75rem,5vw,3rem)] leading-[0.95]">
+                Not on{" "}
+                <span className="bg-brand-lime px-2 box-decoration-clone">
+                  this list
+                </span>
+                ?
+              </h2>
+              <p className="mt-5 max-w-2xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
+                Issue 01 covers 30 Pittsburgh businesses. Issue 02 ships this
+                summer. We review every request for inclusion by hand.
+              </p>
+              <Link
+                href="/request"
+                className="mt-7 inline-flex items-center gap-2 bg-brand-black px-6 py-3 font-display text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-brand-off-white transition-colors hover:bg-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+              >
+                Get reviewed for Issue 02
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </Reveal>
         </article>
       </main>
 

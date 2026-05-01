@@ -5,17 +5,21 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 /**
- * BusinessSearch, homepage search component.
+ * BusinessSearch — browse-only canonical index list.
  *
- * Filters the full index by name or neighborhood. Entirely client-side
- * since the dataset is small (30 businesses). Data is passed in at build
- * time from the server component that renders the homepage.
+ * Rebuilt 2026-05-01: search now lives in the hero (`HeroSearch`). This
+ * component is the always-visible record of the full Issue 01 index. It
+ * no longer accepts text input or listens for cross-component events;
+ * it just shows all 30 businesses, filterable by neighborhood chip.
+ *
+ * Why keep it: the hero search is interactive and only opens on intent.
+ * This section is the canonical, scrollable list a reader can land on
+ * to see the full issue at a glance — the "table of contents" view.
  *
  * Interactions:
- *   - Type to filter results by name or neighborhood (case-insensitive)
- *   - Click a neighborhood chip to filter by neighborhood only
- *   - Clear button resets state
- *   - Keyboard: arrow keys to move selection, Enter to navigate
+ *   - Click a neighborhood chip to filter (multi-select OR; click again
+ *     to deselect)
+ *   - Defaults to showing all 30
  */
 
 export type SearchableBusiness = {
@@ -44,11 +48,9 @@ const TIER_SHORT: Record<SearchableBusiness["tier"], string> = {
 };
 
 export function BusinessSearch({ businesses }: BusinessSearchProps) {
-  const [query, setQuery] = useState("");
-  const [selectedNeighborhood, setSelectedNeighborhood] = useState<string | null>(
-    null,
+  const [selectedNeighborhoods, setSelectedNeighborhoods] = useState<string[]>(
+    [],
   );
-  const [focusedIdx, setFocusedIdx] = useState<number>(-1);
 
   const neighborhoods = useMemo(() => {
     const counts = new Map<string, number>();
@@ -63,100 +65,54 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
   }, [businesses]);
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return businesses.filter((b) => {
-      if (selectedNeighborhood && b.neighborhood !== selectedNeighborhood) {
-        return false;
-      }
-      if (!q) return true;
-      return (
-        b.name.toLowerCase().includes(q) ||
-        b.neighborhood.toLowerCase().includes(q) ||
-        b.categoryName.toLowerCase().includes(q)
-      );
-    });
-  }, [businesses, query, selectedNeighborhood]);
+    if (selectedNeighborhoods.length === 0) return businesses;
+    return businesses.filter((b) =>
+      selectedNeighborhoods.includes(b.neighborhood),
+    );
+  }, [businesses, selectedNeighborhoods]);
 
-  const hasActiveFilter = query.length > 0 || selectedNeighborhood !== null;
+  const hasActiveFilter = selectedNeighborhoods.length > 0;
+
+  function toggleNeighborhood(name: string) {
+    setSelectedNeighborhoods((prev) =>
+      prev.includes(name) ? prev.filter((n) => n !== name) : [...prev, name],
+    );
+  }
 
   function resetFilters() {
-    setQuery("");
-    setSelectedNeighborhood(null);
-    setFocusedIdx(-1);
+    setSelectedNeighborhoods([]);
   }
 
-  function handleKey(e: React.KeyboardEvent<HTMLInputElement>) {
-    if (e.key === "ArrowDown") {
-      e.preventDefault();
-      setFocusedIdx((i) => Math.min(filtered.length - 1, i + 1));
-    } else if (e.key === "ArrowUp") {
-      e.preventDefault();
-      setFocusedIdx((i) => Math.max(-1, i - 1));
-    } else if (e.key === "Enter" && focusedIdx >= 0) {
-      e.preventDefault();
-      const target = filtered[focusedIdx];
-      if (target) {
-        window.location.href = `/business/${target.slug}`;
-      }
-    } else if (e.key === "Escape") {
-      resetFilters();
-    }
-  }
+  const counterText = hasActiveFilter
+    ? `Showing ${filtered.length} of ${businesses.length}`
+    : `${businesses.length} businesses in Issue 01`;
 
   return (
     <section
-      aria-label="Find a business"
+      aria-label="Browse the full index"
       className="border border-brand-black/15 bg-white/70 p-5 md:p-7"
     >
       <div className="flex items-baseline justify-between gap-3 flex-wrap mb-4">
         <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
-          Find a business
+          Browse the full index
         </h3>
         <span className="font-body text-[0.7rem] md:text-xs text-brand-black/55">
-          {filtered.length} of {businesses.length} in the index
+          {counterText}
         </span>
       </div>
 
-      {/* Search input */}
-      <div className="relative">
-        <input
-          type="search"
-          value={query}
-          onChange={(e) => {
-            setQuery(e.target.value);
-            setFocusedIdx(-1);
-          }}
-          onKeyDown={handleKey}
-          placeholder="Search by name, neighborhood, or category"
-          aria-label="Search businesses"
-          className="w-full border-2 border-brand-black bg-white px-4 py-3 pr-12 font-body text-base text-brand-black placeholder:text-brand-black/40 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/30"
-        />
-        {hasActiveFilter && (
-          <button
-            type="button"
-            onClick={resetFilters}
-            aria-label="Clear search"
-            className="absolute right-2 top-1/2 -translate-y-1/2 font-display text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-brand-black/60 hover:text-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple px-2 py-1"
-          >
-            Clear
-          </button>
-        )}
-      </div>
-
       {/* Neighborhood chips */}
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2">
         <p className="w-full font-display text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55 mb-1">
           Filter by neighborhood
         </p>
         {neighborhoods.map(({ name, count }) => {
-          const isActive = selectedNeighborhood === name;
+          const isActive = selectedNeighborhoods.includes(name);
           return (
             <button
               key={name}
               type="button"
-              onClick={() =>
-                setSelectedNeighborhood(isActive ? null : name)
-              }
+              onClick={() => toggleNeighborhood(name)}
               aria-pressed={isActive}
               className={cn(
                 "font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 transition-all",
@@ -178,25 +134,35 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
             </button>
           );
         })}
+        {hasActiveFilter && (
+          <button
+            type="button"
+            onClick={resetFilters}
+            className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 underline decoration-brand-purple underline-offset-2 text-brand-black/65 hover:text-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+          >
+            Clear filter
+          </button>
+        )}
       </div>
 
-      {/* Results */}
+      {/* Always-visible canonical list */}
       <div className="mt-6">
         {filtered.length === 0 ? (
           <p className="font-body text-sm text-brand-black/60 italic py-4">
-            Nothing in the index matches that search. Try a neighborhood
-            chip, or clear to see everything.
+            No matches in the selected neighborhoods.{" "}
+            <button
+              type="button"
+              onClick={resetFilters}
+              className="underline decoration-brand-purple underline-offset-2 hover:text-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+            >
+              View the full index
+            </button>
+            .
           </p>
         ) : (
           <ul className="border-t border-brand-black/10 max-h-[26rem] overflow-y-auto">
-            {filtered.map((b, i) => (
-              <li
-                key={b.slug}
-                className={cn(
-                  "border-b border-brand-black/10",
-                  focusedIdx === i && "bg-brand-cream/60",
-                )}
-              >
+            {filtered.map((b) => (
+              <li key={b.slug} className="border-b border-brand-black/10">
                 <Link
                   href={`/business/${b.slug}`}
                   className="group flex items-start gap-3 py-3 px-1 hover:bg-brand-cream/60 focus:outline-none focus-visible:bg-brand-cream/80"
