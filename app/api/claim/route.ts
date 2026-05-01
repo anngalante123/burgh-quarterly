@@ -4,6 +4,7 @@ import path from "node:path";
 import { Resend } from "resend";
 
 import { loadBusinessBySlug } from "@/lib/data/load-business";
+import { createPersonNote, upsertPersonByEmail } from "@/lib/attio/client";
 
 /**
  * POST /api/claim, the Gate-3 ownership claim endpoint.
@@ -229,14 +230,32 @@ export async function POST(request: Request) {
     captured_at: new Date().toISOString(),
   };
 
+  // Local JSONL log (works in dev; silently fails on Vercel — Attio is
+  // the source of truth in prod).
   try {
     await appendClaim(record);
   } catch (err) {
     console.error("[claim] failed to append claim:", err);
-    return NextResponse.json(
-      { ok: false, error: "Couldn't save claim" },
-      { status: 500 },
-    );
+    // Don't fail the request — Attio + Resend below still capture the lead.
+  }
+
+  // Attio CRM upsert (Person record by email) + claim note.
+  const attioPerson = await upsertPersonByEmail({ email, name });
+  if (attioPerson.ok) {
+    const noteLines = [
+      `Source: claim`,
+      `Business: ${businessName} (slug: ${slug})`,
+      `Verification: ${verification}`,
+      `Verified: false (manual review pending)`,
+      `Captured at: ${record.captured_at}`,
+      ip ? `IP: ${ip}` : null,
+      ua ? `User agent: ${ua}` : null,
+    ].filter(Boolean) as string[];
+    await createPersonNote({
+      personRecordId: attioPerson.recordId,
+      title: `Claim: ${businessName}`,
+      content: noteLines.join("\n"),
+    });
   }
 
   const mailed = await sendEmails({

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { Resend } from "resend";
+import { createPersonNote, upsertPersonByEmail } from "@/lib/attio/client";
 
 /**
  * POST /api/subscribe, the subscribe + unlock endpoint.
@@ -136,12 +137,33 @@ export async function POST(request: Request) {
     captured_at: new Date().toISOString(),
   };
 
+  // Local JSONL log (works in dev, silently fails on Vercel — that's fine
+  // since Attio is now the source of truth in prod).
   try {
     await appendLead(record);
   } catch (err) {
     console.error("[subscribe] failed to append lead:", err);
-    // Don't block the user, set the cookie + return ok so the gate opens.
-    // Lead loss in the file system is fixable, a frustrated visitor is not.
+  }
+
+  // Attio CRM upsert. Failure here doesn't block the user — they still
+  // get the cookie + confirmation email — but it logs so we notice.
+  const attioPerson = await upsertPersonByEmail({ email });
+  if (attioPerson.ok) {
+    const noteLines = [
+      `Source: subscribe`,
+      source ? `Page: ${source}` : null,
+      follow ? `Following: ${follow}` : null,
+      `Captured at: ${record.captured_at}`,
+      ip ? `IP: ${ip}` : null,
+      ua ? `User agent: ${ua}` : null,
+    ].filter(Boolean) as string[];
+    await createPersonNote({
+      personRecordId: attioPerson.recordId,
+      title: follow
+        ? `Subscribed (following ${follow})`
+        : "Subscribed to Signal Pittsburgh",
+      content: noteLines.join("\n"),
+    });
   }
 
   const confirmation = await sendConfirmation(email, follow);
