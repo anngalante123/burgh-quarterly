@@ -11,50 +11,141 @@ import type { Highlight } from "./family-stats";
  * statistic.
  */
 
-const STRENGTH_COPY: Record<string, string> = {
-  igEngagement:
-    "Followers aren't scrolling past — they comment, save, and share. The room is awake.",
-  igFollowers:
-    "The Instagram audience is real and built. Reach lands wider than industry peers.",
-  igPosts30d:
-    "Cadence is consistent. The feed shows up in followers' grids week after week.",
-  reviewCount:
-    "Review traffic is heavy. Discovery via Google Maps search is doing its job.",
-  rating:
+/**
+ * Multiplier phrase for a positive pctVsMedian, e.g. "5.6×",
+ * "more than 2×", "a hair above". Returns null when the value
+ * is too close to typical to brag about quantitatively.
+ */
+function aheadMultiplier(pctVsMedian: number | null): string | null {
+  if (pctVsMedian === null || pctVsMedian < 50) return null;
+  const mult = pctVsMedian / 100 + 1;
+  if (mult >= 10) return `${Math.round(mult)}×`;
+  if (mult >= 2) {
+    const rounded = mult.toFixed(1).replace(/\.0$/, "");
+    return `${rounded}×`;
+  }
+  return null;
+}
+
+/**
+ * Multiplier phrase for a negative pctVsMedian on the gap side,
+ * worded around "X× behind" or "Xth the". Returns null when too
+ * close to typical to make a quantitative claim.
+ */
+function behindMultiplier(pctVsMedian: number | null): string | null {
+  if (pctVsMedian === null || pctVsMedian > -25) return null;
+  const ratio = 1 + pctVsMedian / 100; // value = ratio × typical, ratio < 1
+  if (ratio <= 0.1) return "less than a tenth of";
+  if (ratio <= 0.2) return "a fraction of";
+  if (ratio <= 0.34) return "about a third of";
+  if (ratio <= 0.55) return "roughly half of";
+  if (ratio <= 0.75) return "well behind";
+  return null;
+}
+
+/**
+ * STRENGTH_COPY produces a quantified one-line strength sentence
+ * per metric, using the actual pctVsMedian + value to inject a
+ * concrete multiplier ("5.6× the industry typical") when the
+ * gap is meaningful. Falls back to a softer line when the lead
+ * is small enough that bragging numerically would feel forced.
+ */
+const STRENGTH_COPY: Record<string, (h: Highlight) => string> = {
+  igEngagement: (h) => {
+    const m = aheadMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `Followers comment, save, and share at ${m} the industry rate. The room is awake.`;
+    }
+    return "Followers aren't scrolling past — they comment, save, and share at a higher rate than peers.";
+  },
+  igFollowers: (h) => {
+    const m = aheadMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `The Instagram audience is real and built. Reach is ${m} the industry typical.`;
+    }
+    return "The Instagram audience is real and built. Reach lands wider than industry peers.";
+  },
+  igPosts30d: (h) => {
+    const m = aheadMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `Cadence is heavy — ${m} the typical posting rate for the industry. The feed shows up week after week.`;
+    }
+    return "Cadence is consistent. The feed shows up in followers' grids week after week.";
+  },
+  reviewCount: (h) => {
+    const m = aheadMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `Review traffic is heavy — ${m} the volume of typical Pittsburgh peers. Google Maps discovery is working.`;
+    }
+    return "Review traffic is heavy. Discovery via Google Maps search is doing its job.";
+  },
+  rating: () =>
     "The product holds up. Customers leave with a clean rating, quarter after quarter.",
-  fiveStarPct:
+  fiveStarPct: () =>
     "Reviews skew strongly five-star. The signal is clean — not gamed, not padded.",
-  tiktokPlays:
-    "TikTok creators built reach here without you running an account.",
-  tiktokCreators:
-    "Pittsburgh creators are filming here unprompted — that's earned attention.",
+  tiktokPlays: (h) => {
+    const m = aheadMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `TikTok creators built ${m} the typical play count for the industry. Earned reach, no account required.`;
+    }
+    return "TikTok creators built reach here without you running an account.";
+  },
+  tiktokCreators: (h) => {
+    const m = aheadMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `${m} the number of creators filming here vs the typical Pittsburgh peer. That's earned attention.`;
+    }
+    return "Pittsburgh creators are filming here unprompted — that's earned attention.";
+  },
 };
 
-const GAP_COPY: Record<string, string> = {
-  igEngagement:
-    "Posts go out, but the room doesn't talk back. Comments per post sit below peers.",
-  igFollowers:
-    "The audience is small for the category. Family peers carry multiples of the reach.",
-  igPosts30d:
-    "The feed is quiet. Posting cadence trails the industry — followers may forget you exist.",
-  reviewCount:
-    "Review volume is light. Search-driven discovery loses to peers carrying 2–4× the count.",
-  rating:
+const GAP_COPY: Record<string, (h: Highlight) => string> = {
+  igEngagement: (h) => {
+    const m = behindMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `Posts go out, but the room doesn't talk back — engagement is ${m} the industry rate.`;
+    }
+    return "Posts go out, but the room doesn't talk back. Comments per post sit below peers.";
+  },
+  igFollowers: (h) => {
+    const m = behindMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `The audience is small for the category — ${m} the typical Pittsburgh peer's reach.`;
+    }
+    return "The audience is small for the category. Industry peers carry multiples of the reach.";
+  },
+  igPosts30d: (h) => {
+    const m = behindMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `The feed is quiet — posting cadence is ${m} the industry rate. Followers may forget you exist.`;
+    }
+    return "The feed is quiet. Posting cadence trails the industry — followers may forget you exist.";
+  },
+  reviewCount: (h) => {
+    const m = behindMultiplier(h.stat.pctVsMedian);
+    if (m) {
+      return `Review volume is light — ${m} the typical Pittsburgh peer's count. Search-driven discovery is losing.`;
+    }
+    return "Review volume is light. Search-driven discovery loses to peers carrying more reviews.";
+  },
+  rating: () =>
     "The rating sits below industry. A few low-star reviews are pulling the average down.",
-  fiveStarPct:
+  fiveStarPct: () =>
     "Five-star ratio lags the industry — too many three- and four-stars relative to peers.",
-  tiktokPlays:
+  tiktokPlays: () =>
     "No TikTok footprint to speak of yet. Peers are pulling views you're not.",
-  tiktokCreators:
+  tiktokCreators: () =>
     "No creators are filming here. The kind of organic on-camera moment peers get.",
 };
 
 export function strengthCopy(h: Highlight): string {
-  return STRENGTH_COPY[h.metricKey as string] ?? "";
+  const fn = STRENGTH_COPY[h.metricKey as string];
+  return fn ? fn(h) : "";
 }
 
 export function gapCopy(h: Highlight): string {
-  return GAP_COPY[h.metricKey as string] ?? "";
+  const fn = GAP_COPY[h.metricKey as string];
+  return fn ? fn(h) : "";
 }
 
 /**
