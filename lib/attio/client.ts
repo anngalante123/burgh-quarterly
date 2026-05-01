@@ -116,6 +116,64 @@ type CreateNoteArgs = {
  * verification text, etc. Notes are append-only in Attio so the
  * activity history of repeat submitters survives.
  */
+type AddToListArgs = {
+  /** Attio list UUID. */
+  listId: string;
+  /** Person record_id returned by upsertPersonByEmail. */
+  personRecordId: string;
+};
+
+/**
+ * Add a Person to an Attio list (creates a list entry). Idempotent —
+ * Attio dedupes list entries by parent_record_id within a list, so
+ * calling twice for the same person is a no-op.
+ *
+ * Used to drop every subscribe + claim submitter into the master
+ * "Signal PGH" list so the editorial team can work the lead pipeline
+ * inside Attio without filtering across the entire People object.
+ */
+export async function addPersonToList(
+  args: AddToListArgs,
+): Promise<{ ok: boolean; error?: string }> {
+  const headers = authHeaders();
+  if (!headers) return { ok: false, error: "no_api_key" };
+
+  try {
+    const res = await fetch(
+      `${ATTIO_BASE}/lists/${args.listId}/entries`,
+      {
+        method: "POST",
+        headers,
+        body: JSON.stringify({
+          data: {
+            parent_record_id: args.personRecordId,
+            parent_object: "people",
+            entry_values: {},
+          },
+        }),
+      },
+    );
+    // Attio returns 409-ish behavior as a normal response; we accept
+    // any 2xx as success. Duplicates are silently fine because Attio
+    // collapses them on its side.
+    if (!res.ok) {
+      const json = await res.json().catch(() => ({}));
+      // 400 with "already exists" is OK — surface it but don't treat
+      // as failure for the caller's purposes.
+      const errMsg = JSON.stringify(json).toLowerCase();
+      if (errMsg.includes("already") || errMsg.includes("duplicate")) {
+        return { ok: true };
+      }
+      console.error("[attio] addPersonToList failed:", res.status, json);
+      return { ok: false, error: `http_${res.status}` };
+    }
+    return { ok: true };
+  } catch (err) {
+    console.error("[attio] addPersonToList exception:", err);
+    return { ok: false, error: "exception" };
+  }
+}
+
 export async function createPersonNote(
   args: CreateNoteArgs,
 ): Promise<{ ok: boolean; error?: string }> {

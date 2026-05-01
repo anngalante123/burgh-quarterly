@@ -2,7 +2,11 @@ import { NextResponse } from "next/server";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { Resend } from "resend";
-import { createPersonNote, upsertPersonByEmail } from "@/lib/attio/client";
+import {
+  addPersonToList,
+  createPersonNote,
+  upsertPersonByEmail,
+} from "@/lib/attio/client";
 
 /**
  * POST /api/subscribe, the subscribe + unlock endpoint.
@@ -145,10 +149,18 @@ export async function POST(request: Request) {
     console.error("[subscribe] failed to append lead:", err);
   }
 
-  // Attio CRM upsert. Failure here doesn't block the user — they still
-  // get the cookie + confirmation email — but it logs so we notice.
+  // Attio CRM upsert + add to "Signal PGH" list + leave a note.
+  // Failures here don't block the user — they still get the cookie +
+  // confirmation email — but they log so we notice.
   const attioPerson = await upsertPersonByEmail({ email });
   if (attioPerson.ok) {
+    const listId = process.env.ATTIO_LIST_SIGNAL_PGH;
+    if (listId) {
+      await addPersonToList({
+        listId,
+        personRecordId: attioPerson.recordId,
+      });
+    }
     const noteLines = [
       `Source: subscribe`,
       source ? `Page: ${source}` : null,

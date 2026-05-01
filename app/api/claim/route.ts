@@ -4,7 +4,11 @@ import path from "node:path";
 import { Resend } from "resend";
 
 import { loadBusinessBySlug } from "@/lib/data/load-business";
-import { createPersonNote, upsertPersonByEmail } from "@/lib/attio/client";
+import {
+  addPersonToList,
+  createPersonNote,
+  upsertPersonByEmail,
+} from "@/lib/attio/client";
 
 /**
  * POST /api/claim, the Gate-3 ownership claim endpoint.
@@ -239,9 +243,17 @@ export async function POST(request: Request) {
     // Don't fail the request — Attio + Resend below still capture the lead.
   }
 
-  // Attio CRM upsert (Person record by email) + claim note.
+  // Attio CRM upsert (Person record by email) + add to "Signal PGH"
+  // list + claim note.
   const attioPerson = await upsertPersonByEmail({ email, name });
   if (attioPerson.ok) {
+    const listId = process.env.ATTIO_LIST_SIGNAL_PGH;
+    if (listId) {
+      await addPersonToList({
+        listId,
+        personRecordId: attioPerson.recordId,
+      });
+    }
     const noteLines = [
       `Source: claim`,
       `Business: ${businessName} (slug: ${slug})`,
