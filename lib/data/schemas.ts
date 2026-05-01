@@ -18,6 +18,13 @@ export const CategorySchema = z.enum([
   "fitness",
   "bakery",
   "experience",
+  "grocery",
+  "bar",
+  "brewery",
+  "distillery",
+  "tattoo",
+  "ice_cream",
+  "juice",
 ]);
 export type Category = z.infer<typeof CategorySchema>;
 

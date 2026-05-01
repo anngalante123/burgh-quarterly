@@ -64,6 +64,13 @@ export const categoryEnum = pgEnum("category", [
   "fitness",
   "bakery",
   "experience",
+  "grocery",
+  "bar",
+  "brewery",
+  "distillery",
+  "tattoo",
+  "ice_cream",
+  "juice",
 ]);
 
 export const businessSourceEnum = pgEnum("business_source", [

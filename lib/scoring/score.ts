@@ -91,6 +91,15 @@ const CATEGORY_REVIEW_MEDIAN: Record<Business["category"], number> = {
   boutique: 150,
   fitness: 80,
   experience: 200,
+  // New verticals (Phase 4 taxonomy expansion). Bands estimated from peer
+  // categories pending real-population calibration.
+  grocery: 200,
+  bar: 400,
+  brewery: 400,
+  distillery: 200,
+  tattoo: 150,
+  ice_cream: 300,
+  juice: 150,
 };
 
 const CATEGORY_PHOTO_MEDIAN: Record<Business["category"], number> = {
@@ -101,6 +110,13 @@ const CATEGORY_PHOTO_MEDIAN: Record<Business["category"], number> = {
   boutique: 100,
   fitness: 80,
   experience: 200,
+  grocery: 100,
+  bar: 300,
+  brewery: 300,
+  distillery: 150,
+  tattoo: 200,
+  ice_cream: 150,
+  juice: 100,
 };
 
 /* --------------------------- utilities ---------------------------------- */
@@ -276,6 +292,13 @@ const CATEGORY_POSTS_30D_MEDIAN: Record<Business["category"], number> = {
   boutique: 6,
   fitness: 8,
   experience: 6,
+  grocery: 4,
+  bar: 8,
+  brewery: 10,
+  distillery: 6,
+  tattoo: 8,
+  ice_cream: 6,
+  juice: 6,
 };
 
 export interface IgSnapshot {
@@ -371,11 +394,18 @@ export function scoreSubscores(
 }
 
 export function composite(subs: ScoreBreakdown): number {
-  const raw = 0.25 * subs.content_canvas +
-    0.20 * subs.community_spark +
-    0.20 * subs.conversion_path +
-    0.20 * subs.momentum +
-    0.15 * subs.collab_fit;
+  // Coalesce missing subscores to 0. A subscore can come back null/NaN when
+  // the data needed to compute it is genuinely absent (e.g. a fresh Apify
+  // scrape with no keyword_phrases yet). Treat that as "no signal observed"
+  // rather than letting NaN propagate into the integer composite column,
+  // which Postgres rejects.
+  const safe = (n: number | null | undefined) =>
+    typeof n === "number" && Number.isFinite(n) ? n : 0;
+  const raw = 0.25 * safe(subs.content_canvas) +
+    0.20 * safe(subs.community_spark) +
+    0.20 * safe(subs.conversion_path) +
+    0.20 * safe(subs.momentum) +
+    0.15 * safe(subs.collab_fit);
   return Math.round(clamp(raw));
 }
 

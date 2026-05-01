@@ -108,21 +108,75 @@ export function mapCategory(
 
   if (!haystack.trim()) return null;
 
-  // Order matters: bakery before cafe before restaurant (bakeries often
-  // appear as "bakery; cafe"; we want bakery to win).
+  // Order matters: each return is final. Specific categories win over
+  // generic fallbacks. Bakery comes first because Apify often returns
+  // "bakery; cafe" for shops we want labeled bakery. The boutique branch
+  // is the LAST retail fallback and intentionally avoids bare "shop" or
+  // "store" matches (they leak specialty groceries and bottle shops in).
   if (/bakery|patisserie|pâtisserie/.test(haystack)) return "bakery";
+  if (/tattoo/.test(haystack)) return "tattoo";
+  if (/ice cream|frozen yogurt|froyo|gelato/.test(haystack)) return "ice_cream";
+  if (/juice (bar|shop)|smoothie|acai/.test(haystack)) return "juice";
+
+  // Specialty grocery: butchers, cheese shops, bottle shops, ethnic markets,
+  // delis, fishmongers, farm/farmers/public markets, gourmet groceries.
+  if (/butcher( shop)?|cheese (shop|monger)/.test(haystack)) return "grocery";
+  if (/(beer|wine|liquor|bottle) (store|shop|warehouse)/.test(haystack)) {
+    return "grocery";
+  }
+  if (
+    /(gourmet|ethnic|asian|italian|polish|german|caribbean|halal|kosher|mexican|hispanic|european) (grocery|food market|market|deli)/
+      .test(haystack)
+  ) {
+    return "grocery";
+  }
+  if (/(natural|health|organic) (food|grocery|market)/.test(haystack)) {
+    return "grocery";
+  }
+  if (/specialty (food|grocery)/.test(haystack)) return "grocery";
+  if (
+    /delicatessen|(^|\W)deli(\W|$)|gourmet grocery|specialty food store|spice (store|shop)|olive oil|fish(monger|market)|greengrocer|farm market|farmers market|public market/
+      .test(haystack)
+  ) {
+    return "grocery";
+  }
+  // Generic grocery / food market catch-all. Queue-driven sweeps already
+  // exclude chains (Whole Foods, Trader Joe, etc.) at the place_id list
+  // level, so a bare "Grocery store" from Apify is safe to label specialty.
+  if (/grocery store|food market/.test(haystack)) return "grocery";
+
+  if (/brewery|brewpub|microbrewery|taproom/.test(haystack)) return "brewery";
+  if (/distillery/.test(haystack)) return "distillery";
+
+  // Bar split out from restaurant: only match bar-specific phrases so we
+  // don't sweep in every restaurant that happens to have a bar attached.
+  if (/(^|\W)bar(\W|$)|wine bar|cocktail bar|sports bar|dive bar|tiki bar/.test(haystack)) {
+    return "bar";
+  }
+
   if (/salon|barber|beauty|spa|nail/.test(haystack)) return "salon";
-  if (/boutique|gift shop|clothing store|shop/.test(haystack))
-    return "boutique";
   if (/gym|fitness|yoga|pilates|studio/.test(haystack)) return "fitness";
   if (/cafe|coffee|tea room|espresso/.test(haystack)) return "cafe";
-  if (/restaurant|bar|pub|grill|bistro|diner|eatery|pizzeria/.test(haystack))
+  // Bar removed from restaurant regex since bar is now its own category.
+  if (/restaurant|pub|grill|bistro|diner|eatery|pizzeria/.test(haystack)) {
     return "restaurant";
+  }
   if (
     /museum|gallery|theater|theatre|arena|bowling|arcade|escape room|tour/
       .test(haystack)
-  )
+  ) {
     return "experience";
+  }
+
+  // Boutique is the final retail fallback. Intentionally narrow: indie
+  // clothing, vintage, thrift, gifts, antiques, home goods. No bare "shop"
+  // or "store" match (those leaked specialty groceries into boutique).
+  if (
+    /boutique|gift shop|clothing|apparel|vintage|thrift|consignment|home goods|furniture|antique/
+      .test(haystack)
+  ) {
+    return "boutique";
+  }
 
   return null;
 }
