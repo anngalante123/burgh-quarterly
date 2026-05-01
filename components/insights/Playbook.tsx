@@ -104,10 +104,6 @@ export function Playbook({ playbook }: PlaybookProps) {
           ))}
         </ol>
 
-        <p className="mt-4 font-body text-[0.7rem] text-brand-black/50 leading-relaxed">
-          Recommendations are pulled from the record, lowest-leverage signals,
-          gaps in the Google listing, and dormant Instagram cadence.
-        </p>
       </div>
     </Reveal>
   );

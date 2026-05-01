@@ -12,7 +12,7 @@ test("get featured CTA desktop", async ({ page, context }) => {
     waitUntil: "networkidle",
   });
   // Scroll to the CTA section
-  await page.locator("text=The cheap next move").scrollIntoViewIfNeeded();
+  await page.locator("text=For the owner").scrollIntoViewIfNeeded();
   await page.waitForTimeout(400);
   await page.screenshot({
     path: "e2e/screenshots/v22-get-featured-cta.png",

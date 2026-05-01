@@ -38,7 +38,7 @@ export function GetFeaturedCTA({
       ? `https://run-relay.com/apply?business=${encodeURIComponent(businessSlug)}`
       : `https://run-relay.com/apply`);
   const compact = variant === "compact";
-  const kicker = businessName ? "The cheap next move" : "For Pittsburgh business owners";
+  const kicker = businessName ? "For the owner" : "For Pittsburgh business owners";
   const headline = businessName
     ? `Get ${businessName} featured by a Pittsburgh creator.`
     : "Get your business featured by a Pittsburgh creator.";
@@ -85,7 +85,7 @@ export function GetFeaturedCTA({
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-brand-purple text-brand-off-white font-display text-xs md:text-sm font-semibold uppercase tracking-[0.18em] px-6 py-4 md:px-8 md:py-5 hover:bg-brand-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime whitespace-nowrap shrink-0"
           >
-            Get matched, free
+            Apply on Relay
             <span aria-hidden="true">→</span>
           </a>
         </div>
