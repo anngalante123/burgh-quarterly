@@ -299,8 +299,8 @@ export function PeerDotPlot({
 
             {/* Axis range labels */}
             <div className="mt-8 flex items-center justify-between font-body text-[0.6rem] tracking-[0.18em] uppercase text-brand-black/45">
-              <span>Top of family</span>
-              <span>Bottom of family</span>
+              <span>Top of industry</span>
+              <span>Bottom of industry</span>
             </div>
           </div>
 

@@ -15,7 +15,7 @@ const STRENGTH_COPY: Record<string, string> = {
   igEngagement:
     "Followers aren't scrolling past — they comment, save, and share. The room is awake.",
   igFollowers:
-    "The Instagram audience is real and built. Reach lands wider than family peers.",
+    "The Instagram audience is real and built. Reach lands wider than industry peers.",
   igPosts30d:
     "Cadence is consistent. The feed shows up in followers' grids week after week.",
   reviewCount:
@@ -36,13 +36,13 @@ const GAP_COPY: Record<string, string> = {
   igFollowers:
     "The audience is small for the category. Family peers carry multiples of the reach.",
   igPosts30d:
-    "The feed is quiet. Posting cadence trails the family — followers may forget you exist.",
+    "The feed is quiet. Posting cadence trails the industry — followers may forget you exist.",
   reviewCount:
     "Review volume is light. Search-driven discovery loses to peers carrying 2–4× the count.",
   rating:
-    "The rating sits below family. A few low-star reviews are pulling the average down.",
+    "The rating sits below industry. A few low-star reviews are pulling the average down.",
   fiveStarPct:
-    "Five-star ratio lags the family — too many three- and four-stars relative to peers.",
+    "Five-star ratio lags the industry — too many three- and four-stars relative to peers.",
   tiktokPlays:
     "No TikTok footprint to speak of yet. Peers are pulling views you're not.",
   tiktokCreators:
@@ -86,15 +86,15 @@ export function fmtVerdict(value: number, key: string): string {
 
 /**
  * Comparison phrase: rank label + a magnitude qualifier. The
- * magnitude language uses "family typical" instead of "median" per
+ * magnitude language uses "industry typical" instead of "median" per
  * 2026-04-30 review (which flagged "median" as jargon, "median of
  * what?"). "Family typical" reads as plain English while still
  * conveying quantitative comparison.
  *
  * Examples:
- *   "Top of Bars · more than 2× the family typical"
- *   "#3 of 6 in Cafes · ahead of family typical"
- *   "Bottom of Sweets · roughly half the family typical"
+ *   "Top of Bars · more than 2× the industry typical"
+ *   "#3 of 6 in Cafes · ahead of industry typical"
+ *   "Bottom of Sweets · roughly half the industry typical"
  */
 export function comparisonPhrase(
   rankLabel: string,
@@ -105,16 +105,16 @@ export function comparisonPhrase(
   const abs = Math.abs(pctVsMedian);
   let magnitude: string;
   if (pctVsMedian > 0) {
-    if (abs >= 300) magnitude = `${Math.round(abs / 100 + 1)}× the family typical`;
-    else if (abs >= 100) magnitude = `more than 2× the family typical`;
-    else if (abs >= 50) magnitude = `well ahead of family typical`;
-    else if (abs >= 20) magnitude = `ahead of family typical`;
-    else magnitude = `just ahead of family typical`;
+    if (abs >= 300) magnitude = `${Math.round(abs / 100 + 1)}× the industry typical`;
+    else if (abs >= 100) magnitude = `more than 2× the industry typical`;
+    else if (abs >= 50) magnitude = `well ahead of industry typical`;
+    else if (abs >= 20) magnitude = `ahead of industry typical`;
+    else magnitude = `just ahead of industry typical`;
   } else {
-    if (abs >= 75) magnitude = `a fraction of family typical`;
-    else if (abs >= 50) magnitude = `roughly half family typical`;
-    else if (abs >= 25) magnitude = `well behind family typical`;
-    else magnitude = `behind family typical`;
+    if (abs >= 75) magnitude = `a fraction of industry typical`;
+    else if (abs >= 50) magnitude = `roughly half industry typical`;
+    else if (abs >= 25) magnitude = `well behind industry typical`;
+    else magnitude = `behind industry typical`;
   }
   return `${rankLabel} · ${magnitude}`;
 }
