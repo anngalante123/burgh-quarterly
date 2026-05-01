@@ -134,3 +134,52 @@ ADR-lite. Each decision: what, why, when. Never re-debate without updating here.
 - **Pilot business** — shortlist in D-016. Awaiting Anna's call.
 - **Domain** — defer until name locks.
 - **Re-scrape with review text?** — flagged in D-015. Decide before Phase 2.
+
+---
+
+## D-019 — "Median" is banned UI jargon
+
+**2026-04-30.** Editorial review flagged "median" as confusing for non-stats readers ("median of what?"). Anna confirmed the issue 2026-05-01.
+
+**Banned everywhere in user-facing UI:**
+- Verdict card rank labels: "Above Cafes median" / "Below Cafes median" → use `#X of N in Cafes` instead
+- Magnitude phrases: "5× the family median" / "above the family median" → use **"family typical"** ("more than 2× the family typical", "well behind family typical", etc.)
+- Tooltips, helper copy, axis labels: same rule
+
+**Where it's enforced:**
+- `lib/editorial/family-stats.ts::buildLabel` — returns "Top of X", "Bottom of X", or "#R of N in X"
+- `lib/editorial/verdict-copy.ts::comparisonPhrase` — produces "Top of Cafes · more than 2× the family typical"
+- `components/insights/RowPeerStat.tsx` — reads `family typical: X` not `vs median X`
+- `components/insights/SubscoreBars.tsx` — tooltip "Family typical", footer "the typical family score"
+- `scripts/analyze-business.ts` — prompt forbids "median" so future regenerations match the UI voice
+
+**Known stale content:** existing `content/analyses/*.json` files were generated before the prompt update. They contain phrases like "below the family median of 79". To eradicate fully, regenerate analyses (~$3-5 in Claude across 30 businesses). Until then, narrative copy may still leak the word "median".
+
+---
+
+## D-020 — Sponsor model: direct sponsorships, not AdSense
+
+**Proposed 2026-05-01.** AdSense / programmatic banners would be off-brand and pay nothing meaningful at this scale. Right model is Pittsburgh-Magazine-style direct sponsorships, hand-curated.
+
+**Shape (when scaffolded):**
+- `content/sponsors/*.json` — one file per sponsor (logo, blurb, link, tier, run dates, slot eligibility)
+- `<SponsorSlot />` component with clear "Sponsored" label, brand-matched styling, sticky on desktop / inline on mobile
+- 2–3 tiers: Issue sponsor (big, runs across most pages), Section sponsor (medium, e.g. /best-on-social), Record sponsor (small, individual scorecards) — but **never on /business/[slug]** to protect editorial integrity (sponsors there could read as Relay selling rankings)
+- Rotation so the same sponsor doesn't dominate
+
+**Status:** approach agreed, not yet built.
+
+---
+
+## D-021 — Verdict-card visual weight reduction
+
+**2026-05-01.** Verdict card was "heavy on the eyes" per Anna. Coordinated lightening pass while keeping all three layers of substance per row (label/value, comparison, editorial sentence).
+
+**Changes:**
+- Lime panel bg: 40% → 15% opacity
+- Purple panel bg: 20% → 8% opacity
+- Big value: text-lg md:text-xl → text-base md:text-lg
+- Editorial sentence: text-sm black/85 → text-xs black/60
+- Comparison line: black/55 → black/45
+- Row spacing: 16px → 14px
+- Removed duplicate ▲/▼ at section header (rows already carry them)

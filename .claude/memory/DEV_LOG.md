@@ -100,3 +100,67 @@ Dated entries, what shipped, what broke, where we left off. Append-only. Future 
 - `/Users/annamariegalante/burgh-quarterly/.claude/memory/DEV_LOG.md` (this file)
 - `/Users/annamariegalante/burgh-quarterly/.claude/memory/GOTCHAS.md` (created, empty-seeded)
 - `/Users/annamariegalante/burgh-quarterly/.claude/memory/TODO.md` (created)
+
+---
+
+## 2026-04-30 / 2026-05-01 — Session N: Polish pass + Underrated expansion + Claim flow
+
+**Shipped (committed in `4dbb886` on `main`, pushed):**
+
+*Verdict card readability*
+- "Engagement rate, X% engagement" → "Post engagement / X.X%" (no doubled words)
+- "Review depth" → "Review volume" (truthful — 314 reviews is volume, not depth)
+- "median" eradicated from UI; rank labels now `Top of Cafes` or `#3 of 6 in Cafes`; magnitude tail uses "family typical" (D-019)
+- Lighter panel backgrounds, smaller body text, dimmer comparison line (D-021)
+- Removed duplicate ▲/▼ at section header
+
+*Post cards (best-on-social)*
+- Caption block + redundant "See record" CTA removed — significantly less heavy on phone
+- Big headline now business name → opens `/business/[slug]` in new tab; @handle demoted to small line
+- Kicker is just neighborhood (no "BY"/"ABOUT" prefix)
+
+*Playbook*
+- Removed +SENTIMENT FLOOR / +VISUAL RANK impact pills (low signal)
+- Removed trailing "generic enough to respect..." reasoning leak
+- Cycling spotlight + flow-line visual on desktop
+
+*GetFeatured CTA:* "Apply for a creator" → "Get matched, free"
+
+*Underrated List → 4 categories live*
+- Existing: bakeries
+- New: coffee-shops (5 entries), bars-breweries (4), restaurants (5)
+- Hero paragraph parameterized per bucket (no more "pulling a tray out of the oven" on a coffee shop list)
+- Handwritten editorial copy for the #1 anchor in each new bucket
+- `excludeSchemaCategories` added to selection logic to prevent overlap (bakery-tagged businesses don't bleed into coffee-shops)
+
+*Claim flow shipped (Gate 3)*
+- `/claim/[slug]` server-rendered page + breadcrumb
+- `components/ClaimForm.tsx` client form (name, email, free-text proof) with success + error states
+- `/api/claim/route.ts` validates, persists to `content/leads/claims.jsonl`, sends confirmation to claimant + admin notification to Anna via Resend
+- Manual review for v1; magic-link auto-verify is v2
+
+*Animation pass*
+- `AnimatedValue` counts AtAGlance numbers up on viewport intersection
+- Ken-Burns on hero photo (30s slow zoom — wired to inline `<img>`, not the unused PhotoHero component)
+- Scan-sweep on diagnosis lime highlight
+- Verdict rows stagger in
+- Trend pill breathes on positive buckets only
+- All respect `prefers-reduced-motion`
+
+*Prompt hygiene*
+- `scripts/analyze-business.ts` prompt now forbids "median" so future regenerations match UI voice (D-019)
+
+**Still pending:**
+- Regenerate `content/analyses/*.json` to clean stale "median" references in Claude-generated narrative (~$3-5 across 30 businesses)
+- Sponsor system scaffolding (D-020 — model agreed, not built)
+- Filesystem writes in `/api/subscribe` and `/api/claim` will silently fail on Vercel (read-only filesystem). Lead capture survives via Resend admin emails. Wire to Supabase / Vercel Marketplace for real DB.
+
+**Vercel env vars to set before deploy:**
+- `RESEND_API_KEY` (required for any email)
+- `RESEND_FROM` (default `Signal Pittsburgh <signal@run-relay.com>` — domain must be verified in Resend)
+- `ADMIN_EMAIL` (default `annamarie.galante@blastpoint.com`)
+
+**Next session picks up at:**
+- Decide on lead-capture DB (Supabase recommended)
+- Scaffold sponsor system per D-020
+- Optionally regen analyses to clean residual "median" leaks

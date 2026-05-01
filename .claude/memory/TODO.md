@@ -64,3 +64,25 @@ Single source of truth for next-session work. Session 001 lands with Phase 1 par
 - [ ] Claude-assisted editorial drafting
 - [ ] Movement alert system
 - [ ] Expand to 300+ businesses, 6 verticals
+
+---
+
+## 2026-05-01 update — most of Phase 1 + Phase 2 shipped
+
+The TODO above is partly stale; here's the current punch list.
+
+### Done (commit `4dbb886`)
+- Underrated List × 4 categories live (bakeries / coffee-shops / bars-breweries / restaurants)
+- Claim flow shipped (`/claim/[slug]` + `/api/claim` + Resend wiring)
+- Subscribe wired to `/api/subscribe` + Resend
+- Verdict card readability pass (D-019, D-021)
+- Post-card simplification on best-on-social
+- Animation pass (Ken-Burns, scan-sweep, verdict stagger, trend breathe, animated counters)
+
+### Open
+
+- [ ] **Lead-capture DB.** `/api/subscribe` and `/api/claim` write to `content/leads/*.jsonl` which silently fails on Vercel's read-only filesystem. Options: (1) rely on Resend admin emails as the lead log (no code), (2) wire Supabase via Vercel Marketplace (~30 min), (3) push subscribers to a Resend Audience.
+- [ ] **Sponsor system (D-020).** Approach agreed; not yet built. JSON schema + `<SponsorSlot />` component + 2–3 tier model, never on `/business/[slug]`.
+- [ ] **Regenerate analyses** to clean residual "median" leaks in Claude-generated narrative (~$3-5 across 30 businesses with current prompt update).
+- [ ] **Vercel env vars before deploy:** `RESEND_API_KEY` (required), `RESEND_FROM` (optional, domain must be verified), `ADMIN_EMAIL` (optional).
+- [ ] **Magic-link auto-verify for claim flow.** v1 is manual review by Anna. v2 graduates per `LEAD_CAPTURE.md`.

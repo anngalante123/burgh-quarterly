@@ -27,7 +27,7 @@ export type MetricStat = {
   rank: number;
   /** Total number of businesses in the family. */
   familySize: number;
-  /** Short editorial label, e.g. "Top of Sweets" / "Above Sweets median" / "Below Sweets median" / "Bottom of Sweets". */
+  /** Short editorial label, e.g. "Top of Sweets" / "#3 of 6 in Sweets" / "Bottom of Sweets". The word "median" is intentionally avoided; per 2026-04-30 review it reads as jargon. */
   label: string;
   /** Optional, percent gap to median when above (positive) or below (negative). Null when median is 0. */
   pctVsMedian: number | null;
