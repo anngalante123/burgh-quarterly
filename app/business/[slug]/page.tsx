@@ -72,6 +72,11 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return slugs.map((slug) => ({ slug }));
 }
 
+// Daily ISR: pre-render every known slug at build time, revalidate on
+// the next request after 24h. New slugs added to the DB after build will
+// render on demand (dynamicParams defaults to true).
+export const revalidate = 86400;
+
 function pluralizeCategoryLabel(categoryName: string): string {
   const trimmed = categoryName.trim();
   if (!trimmed) return "Pittsburgh Businesses";
