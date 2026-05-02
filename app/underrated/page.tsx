@@ -6,6 +6,7 @@ import {
   UNDERRATED_CATEGORIES,
   type UnderratedCategorySlug,
 } from "@/lib/data/underrated";
+import { getAllBusinessSlugs } from "@/lib/data/load-business";
 
 /**
  * /underrated, index page listing every available Underrated List.
@@ -20,8 +21,9 @@ export const metadata = {
     "Pittsburgh's small businesses the city hasn't caught up to yet.",
 };
 
-export default function UnderratedIndexPage() {
+export default async function UnderratedIndexPage() {
   const slugs = Object.keys(UNDERRATED_CATEGORIES) as UnderratedCategorySlug[];
+  const count = (await getAllBusinessSlugs()).length;
 
   return (
     <>
@@ -123,8 +125,9 @@ export default function UnderratedIndexPage() {
                 ?
               </h2>
               <p className="mt-5 max-w-2xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
-                Issue 01 covers 30 Pittsburgh businesses. Issue 02 ships this
-                summer. We review every request for inclusion by hand.
+                The Spring 2026 index covers {count} Pittsburgh businesses.
+                The next issue ships this summer. We review every request
+                for inclusion by hand.
               </p>
               <Link
                 href="/request"

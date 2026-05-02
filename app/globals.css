@@ -12,21 +12,21 @@
   --font-heading: var(--font-unbounded);
   --font-display: var(--font-unbounded);
   --font-body: var(--font-dm-sans);
-  /* Relay brand — exact values. Purple sourced from Logo SVG fill. */
+  /* Relay brand, exact values. Purple sourced from Logo SVG fill. */
   --color-brand-purple: #AB35EE;
   --color-brand-lime: #C6F432;
   --color-brand-black: #0F0F0F;
   --color-brand-off-white: #F5F0FA;
   --color-brand-cream: #F5F8E8;
-  /* Editorial ground — warm newsprint. Pulled from the HTML design canvas
+  /* Editorial ground, warm newsprint. Pulled from the HTML design canvas
      (Pittsburgh Social Scorecard.html) so the page feels like a printed
      quarterly, not a SaaS landing. Body surface is this color now. */
   --color-brand-newsprint: #F0EEE9;
   --color-brand-newsprint-warm: #E8E3D6;
-  /* Terracotta — a second accent to pair with lime. Used for data viz,
+  /* Terracotta, a second accent to pair with lime. Used for data viz,
      trend arrows, and the peer-position dot. From HTML canvas fill #d97757. */
   --color-brand-terracotta: #D97757;
-  /* Secondary palette (Colors.png) — currently unused, reserved for data viz / charts later. */
+  /* Secondary palette (Colors.png), currently unused, reserved for data viz / charts later. */
   --color-data-blue: #209AFF;
   --color-data-lavender: #ABB5FE;
   --color-data-cyan: #01EFFF;
@@ -151,17 +151,17 @@
 }
 
 /**
- * editorial-gradient — warm near-white ground with a narrow purple wash
+ * editorial-gradient, warm near-white ground with a narrow purple wash
  * on the right edge. Pattern pulled from the Relay marketing site
  * (2026-04-22 reference, "REAL BRANDON SOCIAL" layout). Much lighter than
- * the prior warm-cream-to-lavender attempt — reads clean and editorial
+ * the prior warm-cream-to-lavender attempt, reads clean and editorial
  * without feeling SaaS-stark.
  *
  * Layered backgrounds:
- *   1. Right-edge purple gradient (rgba(171,53,238,X) — our brand purple)
+ *   1. Right-edge purple gradient (rgba(171,53,238,X), our brand purple)
  *      fading from ~15% alpha at the right edge to 0% by ~7% in from the
  *      right. This is the subtle accent strip.
- *   2. Solid warm near-white base (#FCFAF5) — slightly creamy, not clinical.
+ *   2. Solid warm near-white base (#FCFAF5), slightly creamy, not clinical.
  *
  * `background-attachment: fixed` keeps the purple strip anchored to the
  * viewport rather than scrolling with content.
@@ -182,10 +182,10 @@
 }
 
 /**
- * paper-grain — an editorial noise overlay that warms up solid brand surfaces.
+ * paper-grain, an editorial noise overlay that warms up solid brand surfaces.
  * Rendered via an inline SVG data URI so there's no extra network request
  * and no asset-pipeline dependency. Opacity is low enough that it reads as
- * "paper" not "TV static" — and it's completely disabled for users who prefer
+ * "paper" not "TV static", and it's completely disabled for users who prefer
  * reduced motion (even though it's static, respecting the preference signals
  * a general "quieter" preference).
  *

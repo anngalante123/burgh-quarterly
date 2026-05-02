@@ -92,7 +92,7 @@ export function Playbook({ playbook }: PlaybookProps) {
                 {item.action}
               </p>
               {/* Signal label only. The lime impact_label pill was
-                  removed per 2026-04-30 review — the codenames
+                  removed per 2026-04-30 review. The codenames
                   ("+SENTIMENT FLOOR", "+VISUAL RANK") read as internal
                   jargon and didn't add reader value. */}
               <div className="mt-auto pt-2 border-t border-brand-black/10">

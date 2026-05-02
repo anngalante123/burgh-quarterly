@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
 /**
- * RequestProfileForm, client form for /request — the path an unranked
+ * RequestProfileForm, client form for /request, the path an unranked
  * Pittsburgh business owner takes to ask to be reviewed for the next
  * issue. POSTs to /api/request.
  *
@@ -19,7 +19,7 @@ import { z } from "zod";
  *
  * Pattern follows ClaimForm.tsx for the in-place idle/submitting/ok/
  * error states. Uses React Hook Form + Zod for validation per the
- * brief. Includes a hidden honeypot (`website_url`) — bots fill it,
+ * brief. Includes a hidden honeypot (`website_url`); bots fill it,
  * humans never see it, server silently drops anything with it set.
  */
 

@@ -5,9 +5,10 @@ import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
 import { Reveal } from "@/components/motion/Reveal";
 import { RequestProfileForm } from "@/components/RequestProfileForm";
+import { getAllBusinessSlugs } from "@/lib/data/load-business";
 
 /**
- * /request — the path an unranked Pittsburgh business owner takes to
+ * /request, the path an unranked Pittsburgh business owner takes to
  * ask to be reviewed for the next issue.
  *
  * Editorially distinct from:
@@ -17,7 +18,7 @@ import { RequestProfileForm } from "@/components/RequestProfileForm";
  *     Relay's creator-match offer. Different audience.
  *
  * This page exists because the highest-intent moment in the funnel is
- * the empty state of BusinessSearch — an owner searches for their
+ * the empty state of BusinessSearch. An owner searches for their
  * business, doesn't find it, and that energy was previously a
  * dead-end. Now it has a place to land.
  *
@@ -30,12 +31,13 @@ import { RequestProfileForm } from "@/components/RequestProfileForm";
  */
 
 export const metadata: Metadata = {
-  title: "Request your profile — Signal Pittsburgh",
+  title: "Request your profile, Signal Pittsburgh",
   description:
-    "Issue 01 is closed. Issue 02 ships this summer. Pittsburgh business owners can request a profile review here.",
+    "The Spring 2026 index is closed. The next issue ships this summer. Pittsburgh business owners can request a profile review here.",
 };
 
-export default function RequestPage() {
+export default async function RequestPage() {
+  const count = (await getAllBusinessSlugs()).length;
   return (
     <>
       <Masthead variant="compact" />
@@ -62,9 +64,10 @@ export default function RequestPage() {
             </h1>
 
             <p className="mt-6 font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
-              Issue 01 is closed. Thirty Pittsburgh businesses are live in
-              the index this quarter. Issue 02 ships this summer, and we
-              review every request by hand before deciding what makes it.
+              The Spring 2026 index is closed. {count} Pittsburgh businesses
+              are live in the index this quarter. The next issue ships this
+              summer, and we review every request by hand before deciding
+              what makes it.
             </p>
 
             <p className="mt-4 font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
@@ -103,8 +106,9 @@ export default function RequestPage() {
                 />
                 <span>
                   Submitting a request doesn&apos;t guarantee a profile.
-                  The next issue still ranks 30 businesses, and we choose
-                  based on the same five signals every record uses.
+                  The next issue ranks Pittsburgh small businesses by the
+                  same five signals every record uses, and we choose based
+                  on those signals.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">

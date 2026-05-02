@@ -5,21 +5,22 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 /**
- * BusinessSearch — browse-only canonical index list.
+ * BusinessSearch, browse-only canonical index list.
  *
  * Rebuilt 2026-05-01: search now lives in the hero (`HeroSearch`). This
- * component is the always-visible record of the full Issue 01 index. It
- * no longer accepts text input or listens for cross-component events;
- * it just shows all 30 businesses, filterable by neighborhood chip.
+ * component is the always-visible record of the full Spring 2026 index.
+ * It no longer accepts text input or listens for cross-component events;
+ * it just shows every business in the index, filterable by neighborhood
+ * chip.
  *
  * Why keep it: the hero search is interactive and only opens on intent.
  * This section is the canonical, scrollable list a reader can land on
- * to see the full issue at a glance — the "table of contents" view.
+ * to see the full issue at a glance, the "table of contents" view.
  *
  * Interactions:
  *   - Click a neighborhood chip to filter (multi-select OR; click again
  *     to deselect)
- *   - Defaults to showing all 30
+ *   - Defaults to showing the full index
  */
 
 export type SearchableBusiness = {
@@ -85,7 +86,7 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
 
   const counterText = hasActiveFilter
     ? `Showing ${filtered.length} of ${businesses.length}`
-    : `${businesses.length} businesses in Issue 01`;
+    : `${businesses.length} businesses in the Spring 2026 index`;
 
   return (
     <section

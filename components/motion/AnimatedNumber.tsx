@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
  * scrolls into view. Used in AtAGlance rows to make the data feel
  * alive and "computed" rather than static.
  *
- * Easing: ease-out cubic — fast at first, decelerating into the final
+ * Easing: ease-out cubic, fast at first, decelerating into the final
  * number. Matches the "data being processed" feel.
  *
  * Respects prefers-reduced-motion: skips the animation and renders

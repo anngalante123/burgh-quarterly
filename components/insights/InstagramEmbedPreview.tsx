@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
  *    real thumbnail with a lime play-button overlay. Click opens the
  *    post on Instagram (new tab, native IG-app handoff on iOS).
  *    Visually parallel to the TikTok cards. The play button is
- *    aspirational — IG opens in a new tab/app, but the visual cue
+ *    aspirational. IG opens in a new tab/app, but the visual cue
  *    matches the TikTok pattern so the lists feel like one product.
  *
  * 2. WITHOUT thumbnail (fallback). When the IG CDN URL had already

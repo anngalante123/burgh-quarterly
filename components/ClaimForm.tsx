@@ -4,7 +4,7 @@ import { useState } from "react";
 
 /**
  * ClaimForm, client form for the Gate-3 claim flow. Submits to
- * /api/claim. v1 is human-reviewed by Anna, not auto-verified — the
+ * /api/claim. v1 is human-reviewed by Anna, not auto-verified. The
  * "verification" field is free-text the claimant uses to prove they
  * own the business (a contact already on the listing, the owner's
  * direct email, etc.) and Anna confirms manually.

@@ -11,7 +11,7 @@ import {
 import { splitFullName, submitToHubSpot } from "@/lib/hubspot/client";
 
 /**
- * POST /api/request — the "ask to be in the next issue" endpoint.
+ * POST /api/request, the "ask to be in the next issue" endpoint.
  *
  * Editorially distinct from /api/subscribe (newsletter signup) and
  * /api/claim (verify ownership of an existing record). This is for
@@ -20,7 +20,7 @@ import { splitFullName, submitToHubSpot } from "@/lib/hubspot/client";
  *
  * Flow mirrors /api/subscribe:
  *   1. Validate required fields + email shape.
- *   2. Honeypot check — silently drop if `website_url` is filled.
+ *   2. Honeypot check; silently drop if `website_url` is filled.
  *   3. Append to content/leads/requests.jsonl with consent metadata.
  *   4. Upsert Person in Attio + add to "Signal PGH" list + leave a
  *      note titled "Requested profile in next issue" with the
@@ -195,7 +195,7 @@ export async function POST(request: Request) {
     captured_at: new Date().toISOString(),
   };
 
-  // Local JSONL log (works in dev; silently fails on Vercel — Attio
+  // Local JSONL log (works in dev; silently fails on Vercel, Attio
   // is the source of truth in prod).
   try {
     await appendRequest(record);

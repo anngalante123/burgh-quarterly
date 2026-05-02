@@ -12,7 +12,10 @@ import {
   selectUnderratedForCategory,
   type UnderratedCategorySlug,
 } from "@/lib/data/underrated";
-import type { BusinessArtifact } from "@/lib/data/load-business";
+import {
+  getAllBusinessSlugs,
+  type BusinessArtifact,
+} from "@/lib/data/load-business";
 import type { Tier } from "@/lib/data/schemas";
 import { estimateReadingMinutes } from "@/lib/editorial/reading-time";
 import { CategorySwitcher } from "@/components/editorial/CategorySwitcher";
@@ -196,6 +199,7 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
   if (!result) notFound();
 
   const { spec, entries } = result;
+  const indexCount = (await getAllBusinessSlugs()).length;
 
   const headline = `Pittsburgh's Most Underrated ${spec.label}, Spring 2026`;
   const count = entries.length;
@@ -373,8 +377,9 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
                   ?
                 </h2>
                 <p className="mt-5 max-w-2xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
-                  Issue 01 covers 30 Pittsburgh businesses. Issue 02 ships
-                  this summer. We review every request for inclusion by hand.
+                  The Spring 2026 index covers {indexCount} Pittsburgh
+                  businesses. The next issue ships this summer. We review
+                  every request for inclusion by hand.
                 </p>
                 <Link
                   href="/request"

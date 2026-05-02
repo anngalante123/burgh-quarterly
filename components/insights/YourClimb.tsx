@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * YourClimb, hero strip showing 3 momentum charts side-by-side. For
- * Issue 01 we don't have multi-issue rank history, so we render this
+ * Spring 2026 we don't have multi-issue rank history, so we render this
  * as a "DEBUT" frame with current-quarter stats and the deltas we DO
  * have (review-count growth from Dec to Apr, current TikTok reach).
  *
@@ -21,7 +21,7 @@ export type ClimbStat = {
 };
 
 type Props = {
-  /** "DEBUT" on Issue 01, "3 quarters" once we have history. */
+  /** "DEBUT" on Spring 2026, "3 quarters" once we have history. */
   framing: string;
   stats: ClimbStat[];
 };

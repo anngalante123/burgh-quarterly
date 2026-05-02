@@ -91,7 +91,7 @@ export default async function Home() {
 
   // Featured record's hero photo, pulled from the live business artifact
   // so it stays in sync with the index. La Gourmandine Lawrenceville
-  // for Issue 01.
+  // for Spring 2026.
   const featuredSlug = "la-gourmandine-lawrenceville";
   const featured = all.find((b) => b.business.slug === featuredSlug);
   const featuredPhoto =
@@ -106,7 +106,7 @@ export default async function Home() {
         <section className="mx-auto max-w-7xl px-6 pt-10 pb-14 md:pt-16 md:pb-20">
           <Reveal delay={0.05}>
             <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple mb-4">
-              Issue 01 · Spring 2026
+              Spring 2026
             </p>
             <h2 className="font-display font-black uppercase tracking-[-0.02em] text-brand-black max-w-5xl [text-wrap:balance] [word-break:break-word] text-[clamp(2.25rem,7.5vw,5.5rem)] leading-[0.9]">
               Pittsburgh small businesses,
@@ -121,7 +121,7 @@ export default async function Home() {
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
               Every quarter, Signal Pittsburgh scores{" "}
               <span className="font-semibold text-brand-black">
-                30 local small businesses
+                {all.length} local small businesses
               </span>{" "}
               on creator coverage, customer reviews, and posting cadence.
               We don&apos;t rank taste,{" "}
@@ -187,7 +187,7 @@ export default async function Home() {
               href="#search"
               className="font-display text-[0.7rem] md:text-xs font-semibold uppercase tracking-[0.18em] text-brand-purple hover:text-brand-black"
             >
-              See the full 30 →
+              See the full index →
             </Link>
           </div>
           <ol className="border border-brand-black/15 bg-white/60">
@@ -304,7 +304,7 @@ export default async function Home() {
                         : "font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple"
                     }
                   >
-                    {i === 0 ? "Issue 01 · Featured" : `${a.items.length} businesses · Spring 2026`}
+                    {i === 0 ? "Spring 2026 · Featured" : `${a.items.length} businesses · Spring 2026`}
                   </p>
                   <h4
                     className={
@@ -356,7 +356,7 @@ export default async function Home() {
               The Record · Featured
             </h3>
             <span className="font-body text-[0.7rem] md:text-xs uppercase tracking-[0.14em] text-brand-black/50">
-              Issue 01 deep dive
+              Spring 2026 deep dive
             </span>
           </div>
           <Link

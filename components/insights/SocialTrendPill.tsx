@@ -42,7 +42,7 @@ type Props = {
 
 export function SocialTrendPill({ trend }: Props) {
   const s = BUCKET_STYLE[trend.bucket];
-  // Only "active" buckets breathe — drawing the eye to a positive signal.
+  // Only "active" buckets breathe, drawing the eye to a positive signal.
   // Quiet/losing buckets stay static so the page doesn't pulse on a downer.
   const breathe =
     trend.bucket === "on_a_tear" || trend.bucket === "citys_talking";

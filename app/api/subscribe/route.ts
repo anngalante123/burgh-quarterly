@@ -69,6 +69,8 @@ async function sendConfirmation(email: string, follow: string | null): Promise<{
     const followLine = follow
       ? `<p style="margin:0 0 16px 0;">We'll email you when ${follow}'s Issue 02 numbers land. No filler in between.</p>`
       : `<p style="margin:0 0 16px 0;">Quarterly. One email per issue. We'll tell you when Issue 02 drops.</p>`;
+    // TODO: parameterize the count when issue 02 ships. Hardcoded to the
+    // Spring 2026 total because email send-time can't cheaply call the DB.
     const html = `<!doctype html>
 <html><body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#0F0F0F; padding:32px; max-width:560px;">
 <div style="background:#0F0F0F; color:#F5F0FA; padding:24px; margin-bottom:24px;">
@@ -76,14 +78,15 @@ async function sendConfirmation(email: string, follow: string | null): Promise<{
   <h1 style="margin:8px 0 0 0; font-size:24px; line-height:1.1; font-weight:900; letter-spacing:-0.02em;">You're on the list.</h1>
 </div>
 ${followLine}
-<p style="margin:0 0 16px 0;">Issue 01 is live at <a href="https://burgh-quarterly.vercel.app" style="color:#AB35EE;">signal.run-relay.com</a>. Read every business in this quarter's index, ranked on reviews, social, and creator coverage.</p>
+<p style="margin:0 0 16px 0;">The Spring 2026 index is live at <a href="https://burgh-quarterly.vercel.app" style="color:#AB35EE;">signal.run-relay.com</a>. 68 Pittsburgh businesses are ranked this quarter on reviews, social, and creator coverage.</p>
 <p style="margin:0 0 16px 0; font-size:13px; color:#0F0F0F99;">Signal is published by Relay. We don't rank taste. We rank the conversation.</p>
 </body></html>`;
+    // TODO: parameterize the count when issue 02 ships.
     const text = `You're on the list.
 
 ${follow ? `We'll email you when ${follow}'s Issue 02 numbers land. No filler in between.` : "Quarterly. One email per issue. We'll tell you when Issue 02 drops."}
 
-Issue 01 is live at burgh-quarterly.vercel.app
+The Spring 2026 index is live at burgh-quarterly.vercel.app. 68 Pittsburgh businesses are ranked this quarter on reviews, social, and creator coverage.
 
 Signal is published by Relay. We don't rank taste. We rank the conversation.`;
 
@@ -142,7 +145,7 @@ export async function POST(request: Request) {
     captured_at: new Date().toISOString(),
   };
 
-  // Local JSONL log (works in dev, silently fails on Vercel — that's fine
+  // Local JSONL log (works in dev, silently fails on Vercel; that's fine
   // since Attio is now the source of truth in prod).
   try {
     await appendLead(record);
@@ -151,8 +154,8 @@ export async function POST(request: Request) {
   }
 
   // Attio CRM upsert + add to "Signal PGH" list + leave a note.
-  // Failures here don't block the user — they still get the cookie +
-  // confirmation email — but they log so we notice.
+  // Failures here don't block the user; they still get the cookie +
+  // confirmation email, but they log so we notice.
   const attioPerson = await upsertPersonByEmail({ email });
   if (attioPerson.ok) {
     const listId = process.env.ATTIO_LIST_SIGNAL_PGH;
@@ -180,7 +183,7 @@ export async function POST(request: Request) {
   }
 
   // HubSpot mirror: same submission lands in HubSpot via the public
-  // Forms API. Side-channel — failure here doesn't block the user.
+  // Forms API. Side-channel; failure here doesn't block the user.
   await submitToHubSpot({
     email,
     pageUri: source ?? null,

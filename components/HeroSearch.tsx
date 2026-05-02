@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils";
 import type { SearchableBusiness } from "@/components/BusinessSearch";
 
 /**
- * HeroSearch — self-contained search with inline results dropdown.
+ * HeroSearch, self-contained search with inline results dropdown.
  *
  * Lives in the homepage hero. A Pittsburgh business owner who arrived to
  * "look themselves up" sees this as the second thing on the page (under
  * the H1), no scroll required. They type or click a neighborhood chip
  * and results appear directly under the input as an absolutely-positioned
- * overlay panel — no scrolling, no bait-and-switch jump to a different
+ * overlay panel. No scrolling, no bait-and-switch jump to a different
  * input below the fold.
  *
  * Behavior:
@@ -27,7 +27,7 @@ import type { SearchableBusiness } from "@/components/BusinessSearch";
  *     Underrated List, matching the previous BusinessSearch fork
  *
  * Notes:
- *   - No form wrapper, no submit button — the input alone is the search
+ *   - No form wrapper, no submit button. The input alone is the search
  *     affordance. Live filtering replaces submit.
  *   - No cross-component event bridge. The lower BusinessSearch is now
  *     browse-only and shares no state with this component.
@@ -58,7 +58,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
   const [focusedIdx, setFocusedIdx] = useState<number>(-1);
   // `isClosed` is the user's explicit "I dismissed the dropdown" intent
   // (Esc key, outside click, Close button). It only matters while there
-  // IS an active filter — once filters clear, the dropdown is closed
+  // IS an active filter; once filters clear, the dropdown is closed
   // regardless. This pattern keeps the dropdown derived from state
   // instead of synced via effect.
   const [isClosed, setIsClosed] = useState(false);
@@ -104,7 +104,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
   const isOpen = hasActiveFilter && !isClosed;
 
   // Outside-click handler. Closes the dropdown but preserves query and
-  // chip state — typing in the input or clicking a chip is in-bounds.
+  // chip state. Typing in the input or clicking a chip is in-bounds.
   useEffect(() => {
     if (!isOpen) return;
     function onDocClick(e: MouseEvent) {
@@ -156,7 +156,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
         Look up your business
       </p>
 
-      {/* Search input. Standalone — no form, no submit button. Live
+      {/* Search input. Standalone, no form, no submit button. Live
           filtering means submit is meaningless. */}
       <div className="relative">
         <input
@@ -172,7 +172,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
           onFocus={() => {
             if (hasActiveFilter) setIsClosed(false);
           }}
-          placeholder="Search 30 ranked businesses by name, neighborhood, or category"
+          placeholder="Search the Spring 2026 index by name, neighborhood, or category"
           aria-label="Search the index"
           aria-expanded={isOpen}
           aria-controls="hero-search-results"
@@ -199,7 +199,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
       </div>
 
       {/* Neighborhood chips, directly under the input. Wrap on all
-          viewports — counts are small enough that wrapping is fine on
+          viewports; counts are small enough that wrapping is fine on
           mobile too. */}
       <div className="mt-3 flex flex-wrap gap-2">
         {neighborhoods.map(({ name, count }) => {
@@ -232,7 +232,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
         })}
       </div>
 
-      {/* Results dropdown — absolutely positioned overlay so other hero
+      {/* Results dropdown, absolutely positioned overlay so other hero
           content (the stat line below) is not pushed down. */}
       {isOpen && (
         <div
@@ -260,18 +260,18 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
           </div>
 
           {filtered.length === 0 ? (
-            // Empty state — the highest-intent moment in the funnel.
+            // Empty state, the highest-intent moment in the funnel.
             // Fork into Issue 02 request + Underrated List. Editorial
             // framing only; no "leverage / unlock / amplify" per voice
             // rules.
             <div className="p-5 md:p-6 bg-brand-cream/60">
               <p className="font-display font-black uppercase tracking-[-0.01em] text-brand-black text-lg md:text-xl leading-[1.1]">
-                Not in the Spring 2026 index — yet.
+                Not in the Spring 2026 index, yet.
               </p>
               <p className="mt-3 font-body text-sm md:text-base text-brand-black/75 leading-relaxed max-w-xl">
-                Issue 01 covers 30 businesses. Issue 02 ships this
-                summer. Tell us about yours, or browse the list of
-                underrated picks already in print.
+                The Spring 2026 index covers {businesses.length} businesses.
+                The next issue ships this summer. Tell us about yours, or
+                browse the list of underrated picks already in print.
               </p>
               <div className="mt-5 flex flex-col sm:flex-row gap-3">
                 <Link

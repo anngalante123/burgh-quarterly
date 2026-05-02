@@ -12,7 +12,7 @@ import { useEffect, useRef, useState } from "react";
  *   "4.7★"   -> animates 0 -> 4.7, then "★"
  *   "47.9%"  -> animates 0 -> 47.9, then "%"
  *   "1,294"  -> animates 0 -> 1294 with comma formatting, no suffix
- *   "—"      -> rendered as-is, no animation
+ *   "N/A"    -> rendered as-is, no animation (any unparseable string)
  *
  * Respects prefers-reduced-motion: jumps to final value immediately.
  *
