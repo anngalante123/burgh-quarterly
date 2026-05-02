@@ -95,24 +95,18 @@ export function slugify(input: string): string {
 }
 
 /**
- * Map Apify's free-text categoryName → our tight Category enum.
- * Returns null if nothing matches; caller decides whether to skip.
+ * Run the regex ladder against a single lowercase string and return the
+ * first matching Category, or null if nothing matches.
+ *
+ * Order matters: each return is final. Specific categories win over
+ * generic fallbacks. Bakery comes first because Apify often returns
+ * "bakery; cafe" for shops we want labeled bakery. The boutique branch
+ * is the LAST retail fallback and intentionally avoids bare "shop" or
+ * "store" matches (they leak specialty groceries and bottle shops in).
  */
-export function mapCategory(
-  categoryName: string | undefined,
-  categories: string[] | undefined,
-): Category | null {
-  const haystack = [categoryName ?? "", ...(categories ?? [])]
-    .join(" ")
-    .toLowerCase();
-
+function matchCategoryFromHaystack(haystack: string): Category | null {
   if (!haystack.trim()) return null;
 
-  // Order matters: each return is final. Specific categories win over
-  // generic fallbacks. Bakery comes first because Apify often returns
-  // "bakery; cafe" for shops we want labeled bakery. The boutique branch
-  // is the LAST retail fallback and intentionally avoids bare "shop" or
-  // "store" matches (they leak specialty groceries and bottle shops in).
   if (/bakery|patisserie|pâtisserie/.test(haystack)) return "bakery";
   if (/tattoo/.test(haystack)) return "tattoo";
   if (/ice cream|frozen yogurt|froyo|gelato/.test(haystack)) return "ice_cream";
@@ -150,15 +144,21 @@ export function mapCategory(
 
   // Bar split out from restaurant: only match bar-specific phrases so we
   // don't sweep in every restaurant that happens to have a bar attached.
-  if (/(^|\W)bar(\W|$)|wine bar|cocktail bar|sports bar|dive bar|tiki bar/.test(haystack)) {
-    return "bar";
-  }
+  // Guard: if the SAME string also names a restaurant/grill/etc., the
+  // place is a restaurant-with-bar, not a bar (e.g. "oyster bar restaurant"
+  // or "bar & grill"). Skip the bar branch and fall through to restaurant.
+  const looksLikeBar =
+    /(^|\W)bar(\W|$)|wine bar|cocktail bar|sports bar|dive bar|tiki bar/
+      .test(haystack);
+  const looksLikeRestaurant =
+    /restaurant|pub|grill|bistro|diner|eatery|pizzeria/.test(haystack);
+  if (looksLikeBar && !looksLikeRestaurant) return "bar";
 
   if (/salon|barber|beauty|spa|nail/.test(haystack)) return "salon";
   if (/gym|fitness|yoga|pilates|studio/.test(haystack)) return "fitness";
   if (/cafe|coffee|tea room|espresso/.test(haystack)) return "cafe";
   // Bar removed from restaurant regex since bar is now its own category.
-  if (/restaurant|pub|grill|bistro|diner|eatery|pizzeria/.test(haystack)) {
+  if (looksLikeRestaurant) {
     return "restaurant";
   }
   if (
@@ -179,6 +179,36 @@ export function mapCategory(
   }
 
   return null;
+}
+
+/**
+ * Map Apify's free-text categoryName → our tight Category enum.
+ * Returns null if nothing matches; caller decides whether to skip.
+ *
+ * Precedence: the primary `categoryName` always wins if it matches a
+ * known category. Apify's primary tag is the most reliable signal, while
+ * the secondary `categories[]` array often includes auxiliary tags
+ * (e.g. a restaurant that also has a bar gets "Bar" in its secondaries).
+ * Only when the primary fails to match do we fall back to scanning the
+ * full joined haystack of primary + secondaries.
+ */
+export function mapCategory(
+  categoryName: string | undefined,
+  categories: string[] | undefined,
+): Category | null {
+  // Step 1: try the primary categoryName alone. If it matches anything,
+  // that wins, no matter what the secondaries say.
+  const primary = (categoryName ?? "").toLowerCase();
+  const fromPrimary = matchCategoryFromHaystack(primary);
+  if (fromPrimary) return fromPrimary;
+
+  // Step 2: primary did not match (or was empty). Fall back to the joined
+  // haystack of primary + secondaries so callers without a primary, or
+  // with an obscure primary, still get a category from the secondaries.
+  const haystack = [categoryName ?? "", ...(categories ?? [])]
+    .join(" ")
+    .toLowerCase();
+  return matchCategoryFromHaystack(haystack);
 }
 
 /* ---------------------------- normalize --------------------------------- */
