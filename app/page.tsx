@@ -3,7 +3,10 @@ import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
 import { SubscribeInline } from "@/components/SubscribeInline";
 import { Reveal } from "@/components/motion/Reveal";
-import { loadAllBusinesses } from "@/lib/data/load-business";
+import {
+  getAllBusinessesForSearch,
+  loadAllBusinesses,
+} from "@/lib/data/load-business";
 import { computeTierCounts } from "@/lib/data/stats";
 import {
   BusinessSearch,
@@ -37,16 +40,24 @@ import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
  */
 
 export default async function Home() {
-  const all = await loadAllBusinesses();
+  // Two reads on purpose. The full artifact load is needed for the Top 5
+  // (composite + photo + categoryName), the Featured Record (hero_photo +
+  // photos array), and tier counts. The slim search payload skips signals,
+  // photos, keywords, and the JSONB ranks unpack so the client search prop
+  // stays cheap to compute as the index grows past the current 30 records.
+  const [all, searchItems] = await Promise.all([
+    loadAllBusinesses(),
+    getAllBusinessesForSearch(),
+  ]);
   const tc = computeTierCounts(all);
 
   // Slim searchable payload, passed to the client-side BusinessSearch.
-  const searchable: SearchableBusiness[] = all.map((a) => ({
-    slug: a.business.slug,
-    name: a.business.name,
-    neighborhood: a.business.neighborhood,
-    categoryName: a.meta.categoryName ?? a.business.category,
-    tier: a.score.tier,
+  const searchable: SearchableBusiness[] = searchItems.map((b) => ({
+    slug: b.slug,
+    name: b.name,
+    neighborhood: b.neighborhood,
+    categoryName: b.categoryName,
+    tier: b.tier,
   }));
 
   // Best on Social series, three featured articles + the rest.

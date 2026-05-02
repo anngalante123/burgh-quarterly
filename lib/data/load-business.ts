@@ -93,6 +93,13 @@ export interface BusinessSearchItem {
   slug: string;
   name: string;
   category: Category;
+  /**
+   * Free-text Apify primary categoryName (e.g. "German restaurant",
+   * "Coffee shop"). Falls back to the tight `category` enum value when
+   * the legacy meta record is missing or empty. Preferred over `category`
+   * for human-facing display in search UIs.
+   */
+  categoryName: string;
   neighborhood: string;
   tier: Tier;
   hero_photo: string | null;
@@ -360,15 +367,85 @@ export async function loadAllBusinesses(
 export async function getAllBusinessesForSearch(
   issueSlug: string = DEFAULT_ISSUE_SLUG,
 ): Promise<BusinessSearchItem[]> {
-  const all = await loadAllBusinesses(issueSlug);
-  return all.map((a) => ({
-    slug: a.business.slug,
-    name: a.business.name,
-    category: a.business.category,
-    neighborhood: a.business.neighborhood,
-    tier: a.score.tier,
-    hero_photo: a.business.hero_photo ?? a.business.photos[0]?.url ?? null,
-  }));
+  // Slim path: select only the columns the search UI needs, skip the
+  // heavy signal / photo / keyword joins that loadAllBusinesses pulls.
+  // Falls back to the first photo per slug only when hero_photo is null,
+  // which requires one separate (still narrow) photos read.
+  const [bizRows, scoreRows] = await Promise.all([
+    db
+      .select({
+        slug: businessesTable.slug,
+        name: businessesTable.name,
+        category: businessesTable.category,
+        neighborhood: businessesTable.neighborhood,
+        hero_photo: businessesTable.hero_photo,
+      })
+      .from(businessesTable),
+    db
+      .select({
+        business_slug: scoresTable.business_slug,
+        tier: scoresTable.tier,
+      })
+      .from(scoresTable)
+      .where(eq(scoresTable.issue_slug, issueSlug)),
+  ]);
+
+  const tierBySlug = new Map(scoreRows.map((r) => [r.business_slug, r.tier]));
+
+  // For rows missing a hero_photo, fall back to the first photo. Only
+  // pull photos for those slugs to keep the query narrow.
+  const slugsNeedingPhotoFallback = bizRows
+    .filter((b) => !b.hero_photo)
+    .map((b) => b.slug);
+  const fallbackPhotoBySlug = new Map<string, string>();
+  if (slugsNeedingPhotoFallback.length > 0) {
+    const photoRows = await db
+      .select({
+        business_slug: businessPhotosTable.business_slug,
+        url: businessPhotosTable.url,
+        sort_order: businessPhotosTable.sort_order,
+      })
+      .from(businessPhotosTable)
+      .where(
+        inArray(businessPhotosTable.business_slug, slugsNeedingPhotoFallback),
+      );
+    for (const p of photoRows) {
+      const existing = fallbackPhotoBySlug.get(p.business_slug);
+      if (!existing) {
+        fallbackPhotoBySlug.set(p.business_slug, p.url);
+        continue;
+      }
+      // Keep the photo with the lowest sort_order. Re-fetch the row
+      // for that comparison from the existing entry would require
+      // another lookup, so just track via a parallel map.
+    }
+    // Second pass for sort_order resolution. Cheap given the row count.
+    const lowestSortBySlug = new Map<string, number>();
+    for (const p of photoRows) {
+      const cur = lowestSortBySlug.get(p.business_slug);
+      if (cur === undefined || p.sort_order < cur) {
+        lowestSortBySlug.set(p.business_slug, p.sort_order);
+        fallbackPhotoBySlug.set(p.business_slug, p.url);
+      }
+    }
+  }
+
+  const out: BusinessSearchItem[] = [];
+  for (const b of bizRows) {
+    const tier = tierBySlug.get(b.slug);
+    if (!tier) continue;
+    const meta = loadLegacyMeta(b.slug);
+    out.push({
+      slug: b.slug,
+      name: b.name,
+      category: b.category,
+      categoryName: meta.categoryName || b.category,
+      neighborhood: b.neighborhood,
+      tier,
+      hero_photo: b.hero_photo ?? fallbackPhotoBySlug.get(b.slug) ?? null,
+    });
+  }
+  return out.sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
 export async function getBusinessesForCategory(
