@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "tsx --test lib/data/__tests__/*.test.ts",
-    "ingest": "tsx scripts/ingest-apify.ts",
+    "ingest": "node --env-file=.env.local --import tsx scripts/ingest-apify.ts",
     "ingest30": "tsx scripts/ingest-30.ts",
     "rank": "tsx scripts/compute-ranks.ts",
     "analyze:reviews": "tsx scripts/analyze-reviews.ts",
