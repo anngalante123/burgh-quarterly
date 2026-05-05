@@ -280,9 +280,10 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
                 We filtered the {spec.pluralLower} to every business outside
-                the Icons tier this issue, sorted by composite score ascending
-               , the lowest-ranked first. Composite comes from five signals:
-                reviews, sentiment, photos, Instagram cadence, and creator fit.{" "}
+                the Icons tier this issue, then sorted by composite score
+                ascending so the lowest-ranked land first. Composite comes
+                from five signals: reviews, sentiment, photos, Instagram
+                cadence, and creator fit.{" "}
                 <Link
                   href="/about"
                   className="text-brand-purple hover:underline font-medium"

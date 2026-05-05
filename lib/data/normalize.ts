@@ -107,6 +107,54 @@ export function slugify(input: string): string {
 function matchCategoryFromHaystack(haystack: string): Category | null {
   if (!haystack.trim()) return null;
 
+  // Live music venues take precedence over bar so a "Live music venue" or
+  // "Concert venue" primary does not get swallowed by the bar branch later.
+  if (
+    /live music venue|concert venue|music venue|music club|jazz club|karaoke bar/
+      .test(haystack)
+  ) {
+    return "live_music";
+  }
+
+  // Galleries and small museums. Carved out from `experience` (which holds
+  // tours, axe throwing, escape rooms, etc.) so we can rank them as a peer
+  // group without polluting the existing experience set.
+  if (
+    /art gallery|art museum|modern art museum|history museum|children'?s museum|(^|\W)museum(\W|$)/
+      .test(haystack)
+  ) {
+    return "gallery_museum";
+  }
+
+  // Record stores: vinyl / music retail. Match before "music store" generic
+  // collisions; "Music store" alone is ambiguous (could be instruments) and
+  // is intentionally NOT mapped here, leaving it for needs_review.
+  if (/record store|vinyl (store|shop)/.test(haystack)) return "record_store";
+
+  // Bookstores: independent + comic + used. Match before generic shops.
+  if (
+    /book ?store|bookshop|used bookstore|comic book store|comic shop/
+      .test(haystack)
+  ) {
+    return "bookstore";
+  }
+
+  // Plant shops + nurseries + garden centers. "Florist" is intentionally not
+  // matched here; pure florists fall to the florist branch below. If the
+  // haystack mentions both "florist" and a plant signal we lean plant_shop
+  // because plant retailers often sell cut flowers as a side line.
+  if (
+    /plant nursery|garden center|garden centre|plant store|plant shop|indoor plant|house ?plant/
+      .test(haystack)
+  ) {
+    return "plant_shop";
+  }
+  if (/florist/.test(haystack) && /plant/.test(haystack)) return "plant_shop";
+
+  // Florist: pure flower retail / delivery. Falls through to here only if
+  // the plant_shop check above did not catch a hybrid.
+  if (/florist|flower shop|flower delivery/.test(haystack)) return "florist";
+
   if (/bakery|patisserie|pâtisserie/.test(haystack)) return "bakery";
   if (/tattoo/.test(haystack)) return "tattoo";
   if (/ice cream|frozen yogurt|froyo|gelato/.test(haystack)) return "ice_cream";
@@ -166,8 +214,10 @@ function matchCategoryFromHaystack(haystack: string): Category | null {
   if (looksLikeRestaurant) {
     return "restaurant";
   }
+  // gallery_museum is matched earlier in this ladder; experience holds
+  // theaters, arenas, bowling, arcades, escape rooms, tours, and the like.
   if (
-    /museum|gallery|theater|theatre|arena|bowling|arcade|escape room|tour/
+    /theater|theatre|arena|bowling|arcade|escape room|(^|\W)tour(\W|$)|axe throwing|mini golf/
       .test(haystack)
   ) {
     return "experience";
@@ -205,6 +255,21 @@ export function mapCategory(
   // that wins, no matter what the secondaries say.
   const primary = (categoryName ?? "").toLowerCase();
   const fromPrimary = matchCategoryFromHaystack(primary);
+
+  // Carve-out: a "Florist" primary that ALSO has plant context in the
+  // secondaries is a plant retailer with cut flowers as a side line, not
+  // a pure florist. Bump it to plant_shop. Pure florists fall through
+  // unchanged.
+  if (fromPrimary === "florist") {
+    const secondaryHay = (categories ?? []).join(" ").toLowerCase();
+    if (
+      /plant|nursery|garden center|garden centre|house ?plant/
+        .test(secondaryHay)
+    ) {
+      return "plant_shop";
+    }
+  }
+
   if (fromPrimary) return fromPrimary;
 
   // Step 2: primary did not match (or was empty). Fall back to the joined

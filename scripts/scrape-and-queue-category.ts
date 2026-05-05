@@ -32,9 +32,12 @@
  */
 
 import { mkdir, readFile, writeFile, access } from "node:fs/promises";
-import { dirname, join, resolve } from "node:path";
+import { join, resolve } from "node:path";
 import { CategorySchema, type Category } from "../lib/data/schemas";
 import { ApifyGoogleMapsRecordSchema } from "../lib/data/normalize";
+import { isChain as isChainShared } from "../lib/data/chain-detection";
+import { isInPittsburghMetro } from "../lib/data/geo-filter";
+import { targetFor } from "../lib/ingest/category-targets";
 
 const APIFY_BASE = "https://api.apify.com/v2";
 const ACTOR_ID = "compass~crawler-google-places";
@@ -48,70 +51,13 @@ const POLL_SOFT_TIMEOUT_MS = 30 * 60 * 1000; // 30 min, print warning
 const POLL_HARD_TIMEOUT_MS = 45 * 60 * 1000; // 45 min, give up
 
 /**
- * Substring blocklist matched against `title.toLowerCase()`. Easy to extend.
- * Covers national chains (food + retail) we don't want polluting Pittsburgh
- * editorial coverage.
+ * Chain detection lives in `lib/data/chain-detection.ts` so the same
+ * blocklist applies in scrape-and-queue, ingest-one, and any future
+ * sweep tooling. The local `isChain` shim below preserves the existing
+ * call shape (substring-match against title) while delegating to the
+ * shared implementation, which also short-circuits Pittsburgh local
+ * mini-chains.
  */
-const CHAIN_BLOCKLIST: string[] = [
-  "buffalo wild wings",
-  "bw3",
-  "applebees",
-  "applebee's",
-  "chilis",
-  "chili's",
-  "outback steakhouse",
-  "olive garden",
-  "red lobster",
-  "tgi fridays",
-  "fridays",
-  "hooters",
-  "twin peaks",
-  "hard rock",
-  "ruby tuesday",
-  "perkins",
-  "ihop",
-  "denny's",
-  "dennys",
-  "starbucks",
-  "dunkin",
-  "panera",
-  "chipotle",
-  "subway",
-  "mcdonald's",
-  "mcdonalds",
-  "burger king",
-  "wendy's",
-  "wendys",
-  "taco bell",
-  "kfc",
-  "domino's",
-  "dominos",
-  "pizza hut",
-  // Bar chains added after the first sweep let three through.
-  "howl at the moon",
-  "tom's watch bar",
-  "toms watch bar",
-  "barcelona wine bar",
-  "yard house",
-  "miller's ale house",
-  "millers ale house",
-  "bar louie",
-  "world of beer",
-  "tilted kilt",
-  "duckpin",
-  "topgolf",
-  "main event",
-  "dave & buster's",
-  "dave and busters",
-  "dave & busters",
-  "papa john's",
-  "jersey mike's",
-  "five guys",
-  "sheetz",
-  "gabes",
-  "walmart",
-  "target",
-];
 
 /* ----------------------------- CLI parsing ------------------------------ */
 
@@ -287,6 +233,7 @@ interface FilterStats {
   reviews: number;
   closed: number;
   chains: number;
+  out_of_geo: number;
   missing_placeid: number;
   invalid_shape: number;
   duplicates: number;
@@ -297,9 +244,8 @@ interface FilterResult {
   stats: FilterStats;
 }
 
-function isChain(title: string): boolean {
-  const t = title.toLowerCase();
-  return CHAIN_BLOCKLIST.some((needle) => t.includes(needle));
+function isChain(title: string, additionalInfo?: unknown): boolean {
+  return isChainShared({ name: title, additionalInfo });
 }
 
 function filterItems(
@@ -313,6 +259,7 @@ function filterItems(
     reviews: 0,
     closed: 0,
     chains: 0,
+    out_of_geo: 0,
     missing_placeid: 0,
     invalid_shape: 0,
     duplicates: 0,
@@ -334,8 +281,32 @@ function filterItems(
       stats.duplicates += 1;
       continue;
     }
+    // Always filter permanently-closed and chains BEFORE the queue,
+    // independent of the legacy --exclude-chains flag. The chain blocklist
+    // is now centralized in lib/data/chain-detection.ts and short-circuits
+    // Pittsburgh local mini-chains (Pamela's, Eat'n Park, Big Burrito,
+    // Klavon's, etc.).
     if (r.permanentlyClosed === true || r.temporarilyClosed === true) {
       stats.closed += 1;
+      continue;
+    }
+    // Geographic filter. Apify exposes postalCode + state directly when
+    // available; we fall back to parsing the combined address string if
+    // either is missing. Records with no recoverable location are dropped
+    // as out_of_geo (better to skip than wrong-ingest).
+    if (
+      !isInPittsburghMetro({
+        postalCode:
+          (r as unknown as { postalCode?: string | null }).postalCode ?? null,
+        state: r.state ?? null,
+        address: r.address ?? null,
+      })
+    ) {
+      stats.out_of_geo += 1;
+      continue;
+    }
+    if (r.title && isChain(r.title, r.additionalInfo)) {
+      stats.chains += 1;
       continue;
     }
     if (typeof r.totalScore !== "number" || r.totalScore < args.minStars) {
@@ -347,10 +318,6 @@ function filterItems(
       r.reviewsCount < args.minReviews
     ) {
       stats.reviews += 1;
-      continue;
-    }
-    if (args.excludeChains && r.title && isChain(r.title)) {
-      stats.chains += 1;
       continue;
     }
 
@@ -561,8 +528,44 @@ async function main(): Promise<void> {
       ? existingScrapedAt
       : newScrapedAt;
 
-  const freshIds = kept.map((k) => k.placeId);
-  const merge = mergePlaceIds(existing?.place_ids, freshIds);
+  // Per-category cap: combine DB count + existing queue size and cap the
+  // number of fresh place_ids we add. This stops the runaway-category
+  // problem where one vertical (e.g. restaurants) eats the whole budget.
+  // Best-effort: if DATABASE_URL is missing or the DB is unreachable we
+  // log a warning and treat DB count as 0.
+  const target = targetFor(category);
+  let dbCount = 0;
+  if (target !== null) {
+    try {
+      const { db, schema } = await import("../lib/db/client");
+      const { eq, sql } = await import("drizzle-orm");
+      const rows = await db
+        .select({ n: sql<number>`count(*)::int` })
+        .from(schema.businesses)
+        .where(eq(schema.businesses.category, category));
+      dbCount = Number(rows[0]?.n ?? 0);
+    } catch (e) {
+      console.warn(
+        `[scrape-and-queue] WARNING: could not read DB count for category=${category} (${(e as Error).message.slice(0, 200)}). Treating db_count as 0.`,
+      );
+    }
+  }
+  const existingQueueCount = existing?.place_ids.length ?? 0;
+  const headroom =
+    target === null
+      ? Infinity
+      : Math.max(0, target - dbCount - existingQueueCount);
+  const allFreshIds = kept.map((k) => k.placeId);
+  const cappedFreshIds = Number.isFinite(headroom)
+    ? allFreshIds.slice(0, Math.floor(headroom))
+    : allFreshIds;
+  const cappedOff = allFreshIds.length - cappedFreshIds.length;
+  if (target !== null) {
+    console.log(
+      `[scrape-and-queue] cap: target=${target} db_count=${dbCount} existing_queue=${existingQueueCount} headroom=${Number.isFinite(headroom) ? headroom : "inf"} fresh_pre_cap=${allFreshIds.length} fresh_after_cap=${cappedFreshIds.length} dropped_for_cap=${cappedOff}`,
+    );
+  }
+  const merge = mergePlaceIds(existing?.place_ids, cappedFreshIds);
 
   const out: QueueFile = {
     category,
@@ -581,7 +584,7 @@ async function main(): Promise<void> {
   console.log(
     `[scrape-and-queue] searches=${searches.length}, totalScraped=${items.length}, kept=${kept.length}, ` +
       `filteredOut={ stars: ${stats.stars}, reviews: ${stats.reviews}, closed: ${stats.closed}, ` +
-      `chains: ${stats.chains}, missing_placeid: ${stats.missing_placeid}, invalid_shape: ${stats.invalid_shape}, duplicates: ${stats.duplicates} }`,
+      `chains: ${stats.chains}, out_of_geo: ${stats.out_of_geo}, missing_placeid: ${stats.missing_placeid}, invalid_shape: ${stats.invalid_shape}, duplicates: ${stats.duplicates} }`,
   );
   console.log(`[scrape-and-queue] written: ${rawPath}`);
   if (existing) {

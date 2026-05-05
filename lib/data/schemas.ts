@@ -25,6 +25,12 @@ export const CategorySchema = z.enum([
   "tattoo",
   "ice_cream",
   "juice",
+  "live_music",
+  "plant_shop",
+  "bookstore",
+  "record_store",
+  "florist",
+  "gallery_museum",
 ]);
 export type Category = z.infer<typeof CategorySchema>;
 

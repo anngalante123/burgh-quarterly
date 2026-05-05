@@ -41,6 +41,12 @@ const CATEGORY_LABELS: Record<Category, string> = {
   tattoo: "Tattoo Studios",
   ice_cream: "Ice Cream",
   juice: "Juice Bars",
+  live_music: "Live Music",
+  plant_shop: "Plant Shops",
+  bookstore: "Bookstores",
+  record_store: "Record Stores",
+  florist: "Florists",
+  gallery_museum: "Galleries and Museums",
 };
 
 export function labelForCategory(category: string): string {

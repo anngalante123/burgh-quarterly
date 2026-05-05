@@ -77,6 +77,32 @@ const CATEGORY_LABEL: Record<Category, CategoryLabel> = {
     title: "Ice Cream",
   },
   juice: { singular: "juice bar", plural: "juice bars", title: "Juice Bars" },
+  live_music: {
+    singular: "live music venue",
+    plural: "live music venues",
+    title: "Live Music Venues",
+  },
+  plant_shop: {
+    singular: "plant shop",
+    plural: "plant shops",
+    title: "Plant Shops",
+  },
+  bookstore: {
+    singular: "bookstore",
+    plural: "bookstores",
+    title: "Bookstores",
+  },
+  record_store: {
+    singular: "record store",
+    plural: "record stores",
+    title: "Record Stores",
+  },
+  florist: { singular: "florist", plural: "florists", title: "Florists" },
+  gallery_museum: {
+    singular: "gallery or museum",
+    plural: "galleries and museums",
+    title: "Galleries and Museums",
+  },
 };
 
 const TIER_LABEL: Record<Tier, string> = {

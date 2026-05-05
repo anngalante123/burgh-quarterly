@@ -15,6 +15,20 @@
       "when": 1777674536456,
       "tag": "0001_free_alex_wilder",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1778020823885,
+      "tag": "0002_blushing_patch",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1778021979766,
+      "tag": "0003_wonderful_bulldozer",
+      "breakpoints": true
     }
   ]
 }

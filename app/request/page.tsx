@@ -33,7 +33,7 @@ import { getAllBusinessSlugs } from "@/lib/data/load-business";
 export const metadata: Metadata = {
   title: "Request your profile, Signal Pittsburgh",
   description:
-    "The Spring 2026 index is closed. The next issue ships this summer. Pittsburgh business owners can request a profile review here.",
+    "Pittsburgh's most-talked-about businesses, ranked every quarter. Request a profile review for the next issue.",
 };
 
 export default async function RequestPage() {
@@ -64,10 +64,10 @@ export default async function RequestPage() {
             </h1>
 
             <p className="mt-6 font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
-              The Spring 2026 index is closed. {count} Pittsburgh businesses
-              are live in the index this quarter. The next issue ships this
-              summer, and we review every request by hand before deciding
-              what makes it.
+              Pittsburgh&apos;s most-talked-about businesses, ranked every
+              quarter. {count} are live in the index right now. The Spring
+              2026 issue is closed; the next one ships this summer, and we
+              review every request by hand before deciding what makes it.
             </p>
 
             <p className="mt-4 font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
@@ -106,9 +106,8 @@ export default async function RequestPage() {
                 />
                 <span>
                   Submitting a request doesn&apos;t guarantee a profile.
-                  The next issue ranks Pittsburgh small businesses by the
-                  same five signals every record uses, and we choose based
-                  on those signals.
+                  We rank by the same five signals every record uses, and
+                  we choose on those.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">

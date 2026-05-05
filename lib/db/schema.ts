@@ -71,6 +71,12 @@ export const categoryEnum = pgEnum("category", [
   "tattoo",
   "ice_cream",
   "juice",
+  "live_music",
+  "plant_shop",
+  "bookstore",
+  "record_store",
+  "florist",
+  "gallery_museum",
 ]);
 
 export const businessSourceEnum = pgEnum("business_source", [
@@ -101,6 +107,9 @@ export const ingestStatusEnum = pgEnum("ingest_status", [
   "pending",
   "success",
   "failed",
+  "skipped_closed",
+  "skipped_chain",
+  "skipped_out_of_geo",
 ]);
 
 /* ---------------------------- businesses -------------------------------- */

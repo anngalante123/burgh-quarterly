@@ -8,6 +8,7 @@ import {
   upsertPersonByEmail,
 } from "@/lib/attio/client";
 import { submitToHubSpot } from "@/lib/hubspot/client";
+import { getAllBusinessSlugs } from "@/lib/data/load-business";
 
 /**
  * POST /api/subscribe, the subscribe + unlock endpoint.
@@ -65,12 +66,24 @@ async function sendConfirmation(email: string, follow: string | null): Promise<{
       process.env.RESEND_FROM ?? "Signal Pittsburgh <signal@run-relay.com>";
     const subject = follow
       ? `You're in. We'll tell you when ${follow} climbs.`
-      : "You're in. Issue 02 lands this summer.";
+      : "You're in. The next issue lands this summer.";
     const followLine = follow
-      ? `<p style="margin:0 0 16px 0;">We'll email you when ${follow}'s Issue 02 numbers land. No filler in between.</p>`
-      : `<p style="margin:0 0 16px 0;">Quarterly. One email per issue. We'll tell you when Issue 02 drops.</p>`;
-    // TODO: parameterize the count when issue 02 ships. Hardcoded to the
-    // Spring 2026 total because email send-time can't cheaply call the DB.
+      ? `<p style="margin:0 0 16px 0;">We'll email you when ${follow}'s next-issue numbers land. No filler in between.</p>`
+      : `<p style="margin:0 0 16px 0;">Quarterly. One email per issue. We'll tell you when the next issue drops.</p>`;
+    // Live count, read at send time. Falls back to a generic phrasing
+    // if the DB lookup fails so a transient DB error never blocks a
+    // subscribe confirmation.
+    let countLineHtml: string;
+    let countLineText: string;
+    try {
+      const liveCount = (await getAllBusinessSlugs()).length;
+      countLineHtml = `<p style="margin:0 0 16px 0;">Pittsburgh's most-talked-about businesses, ranked every quarter. ${liveCount} are live in the index right now at <a href="https://signal.run-relay.com" style="color:#AB35EE;">signal.run-relay.com</a>, ranked on reviews, social, and creator coverage.</p>`;
+      countLineText = `Pittsburgh's most-talked-about businesses, ranked every quarter. ${liveCount} are live in the index right now at signal.run-relay.com, ranked on reviews, social, and creator coverage.`;
+    } catch (err) {
+      console.warn("[subscribe] live count lookup failed, falling back:", err);
+      countLineHtml = `<p style="margin:0 0 16px 0;">Pittsburgh's most-talked-about businesses, ranked every quarter at <a href="https://signal.run-relay.com" style="color:#AB35EE;">signal.run-relay.com</a>, on reviews, social, and creator coverage.</p>`;
+      countLineText = `Pittsburgh's most-talked-about businesses, ranked every quarter at signal.run-relay.com, on reviews, social, and creator coverage.`;
+    }
     const html = `<!doctype html>
 <html><body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:#0F0F0F; padding:32px; max-width:560px;">
 <div style="background:#0F0F0F; color:#F5F0FA; padding:24px; margin-bottom:24px;">
@@ -78,15 +91,14 @@ async function sendConfirmation(email: string, follow: string | null): Promise<{
   <h1 style="margin:8px 0 0 0; font-size:24px; line-height:1.1; font-weight:900; letter-spacing:-0.02em;">You're on the list.</h1>
 </div>
 ${followLine}
-<p style="margin:0 0 16px 0;">The Spring 2026 index is live at <a href="https://burgh-quarterly.vercel.app" style="color:#AB35EE;">signal.run-relay.com</a>. 68 Pittsburgh businesses are ranked this quarter on reviews, social, and creator coverage.</p>
+${countLineHtml}
 <p style="margin:0 0 16px 0; font-size:13px; color:#0F0F0F99;">Signal is published by Relay. We don't rank taste. We rank the conversation.</p>
 </body></html>`;
-    // TODO: parameterize the count when issue 02 ships.
     const text = `You're on the list.
 
-${follow ? `We'll email you when ${follow}'s Issue 02 numbers land. No filler in between.` : "Quarterly. One email per issue. We'll tell you when Issue 02 drops."}
+${follow ? `We'll email you when ${follow}'s next-issue numbers land. No filler in between.` : "Quarterly. One email per issue. We'll tell you when the next issue drops."}
 
-The Spring 2026 index is live at burgh-quarterly.vercel.app. 68 Pittsburgh businesses are ranked this quarter on reviews, social, and creator coverage.
+${countLineText}
 
 Signal is published by Relay. We don't rank taste. We rank the conversation.`;
 

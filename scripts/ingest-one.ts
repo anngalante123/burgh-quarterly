@@ -47,6 +47,8 @@ import {
   normalizeApifyRecordWithMeta,
   type NormalizedArtifact,
 } from "@/lib/data/normalize";
+import { isChain } from "@/lib/data/chain-detection";
+import { isInPittsburghMetro } from "@/lib/data/geo-filter";
 import { uploadPhotoToBlob } from "@/lib/scrape/blob-upload";
 import type {
   AnalysisPlaybookItem,
@@ -216,7 +218,13 @@ function logFailed(step: PipelineStep, slug: string, message: string) {
 /* ---------------------------- checkpoint -------------------------------- */
 
 interface RunRow {
-  status: "pending" | "success" | "failed";
+  status:
+    | "pending"
+    | "success"
+    | "failed"
+    | "skipped_closed"
+    | "skipped_chain"
+    | "skipped_out_of_geo";
   error: string | null;
   started_at: Date;
   finished_at: Date | null;
@@ -264,6 +272,17 @@ async function checkpointShouldRun(
     return {
       run: false,
       reason: "already succeeded; pass --force to redo",
+      prior: priorRow,
+    };
+  }
+  if (
+    prior.status === "skipped_closed" ||
+    prior.status === "skipped_chain" ||
+    prior.status === "skipped_out_of_geo"
+  ) {
+    return {
+      run: false,
+      reason: `previously ${prior.status}; pass --force to redo`,
       prior: priorRow,
     };
   }
@@ -326,6 +345,39 @@ async function checkpointWriteSuccess(
       set: {
         status: "success",
         error: null,
+        finished_at: new Date(),
+      },
+    });
+}
+
+/**
+ * Write a "skipped_*" terminal status to ingest_runs. Used when an input
+ * record is dropped before any spend (chain or permanently closed). The FK
+ * on ingest_runs.business_slug requires the business row to exist; for a
+ * brand-new place_id we have nothing to FK to, so callers must guard. See
+ * `flagSkipLoose` for the no-slug variant which logs only.
+ */
+async function checkpointWriteSkipped(
+  slug: string,
+  step: PipelineStep,
+  status: "skipped_closed" | "skipped_chain" | "skipped_out_of_geo",
+  reason: string,
+): Promise<void> {
+  const { db, schema } = await getDb();
+  await db
+    .insert(schema.ingestRuns)
+    .values({
+      business_slug: slug,
+      step,
+      status,
+      error: reason.slice(0, 2000),
+      finished_at: new Date(),
+    })
+    .onConflictDoUpdate({
+      target: [schema.ingestRuns.business_slug, schema.ingestRuns.step],
+      set: {
+        status,
+        error: reason.slice(0, 2000),
         finished_at: new Date(),
       },
     });
@@ -971,6 +1023,39 @@ async function runOne(slug: string, flags: Flags): Promise<void> {
   }
 
   const parsed = await stepScraped(slug, flags);
+
+  // Pre-spend filters: skip chains and out-of-geo records before any
+  // photos or Claude analyze spend. The Business schema does not carry a
+  // permanently-closed flag (closed places are dropped at normalize-time),
+  // so the closed branch is meaningful only on the --place-id path; here
+  // we re-check the chain blocklist against the existing record's name
+  // and the geo window against its address string.
+  if (!isInPittsburghMetro({ address: parsed.business.address })) {
+    const reason = `out of Pittsburgh metro: address="${parsed.business.address}"`;
+    if (!flags.dryRun) {
+      await checkpointWriteSkipped(
+        slug,
+        "scraped",
+        "skipped_out_of_geo",
+        reason,
+      );
+    }
+    console.log(
+      `[skip] ${slug}: ${reason} -> skipped_out_of_geo (no photos, score, or analyze spend)`,
+    );
+    return;
+  }
+  if (isChain({ name: parsed.business.name })) {
+    const reason = `chain detected: name="${parsed.business.name}"`;
+    if (!flags.dryRun) {
+      await checkpointWriteSkipped(slug, "scraped", "skipped_chain", reason);
+    }
+    console.log(
+      `[skip] ${slug}: ${reason} -> skipped_chain (no photos, score, or analyze spend)`,
+    );
+    return;
+  }
+
   await stepPhotosUploaded(slug, flags);
   const scoreOut = await stepScored(slug, parsed, flags);
   await stepAnalyzed(slug, parsed, flags);
@@ -1175,7 +1260,31 @@ async function scrapePlaceIdToLegacy(
   const raw = items[0] as Record<string, unknown>;
   if (raw.permanentlyClosed === true) {
     console.log(
-      `[scrape] place_id=${placeId}: permanentlyClosed, skipping`,
+      `[scrape] place_id=${placeId}: permanentlyClosed, skipping (no analyze spend)`,
+    );
+    return null;
+  }
+  if (
+    !isInPittsburghMetro({
+      postalCode:
+        typeof raw.postalCode === "string" ? raw.postalCode : null,
+      state: typeof raw.state === "string" ? raw.state : null,
+      address: typeof raw.address === "string" ? raw.address : null,
+    })
+  ) {
+    console.log(
+      `[scrape] place_id=${placeId}: out of Pittsburgh metro (state=${String(raw.state)}, postalCode=${String(raw.postalCode)}), skipping (no analyze spend)`,
+    );
+    return null;
+  }
+  if (
+    isChain({
+      name: typeof raw.title === "string" ? raw.title : null,
+      additionalInfo: raw.additionalInfo,
+    })
+  ) {
+    console.log(
+      `[scrape] place_id=${placeId}: chain detected ("${raw.title}"), skipping (no analyze spend)`,
     );
     return null;
   }

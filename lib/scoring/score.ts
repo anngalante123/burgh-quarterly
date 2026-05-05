@@ -100,6 +100,15 @@ const CATEGORY_REVIEW_MEDIAN: Record<Business["category"], number> = {
   tattoo: 150,
   ice_cream: 300,
   juice: 150,
+  // Phase scaling expansion. Bands estimated from adjacent verticals
+  // pending real-population calibration once the 4,000-business sweep
+  // lands. RISK: these are educated guesses; revisit after Phase 5.
+  live_music: 250,
+  plant_shop: 100,
+  bookstore: 150,
+  record_store: 100,
+  florist: 100,
+  gallery_museum: 200,
 };
 
 const CATEGORY_PHOTO_MEDIAN: Record<Business["category"], number> = {
@@ -117,6 +126,13 @@ const CATEGORY_PHOTO_MEDIAN: Record<Business["category"], number> = {
   tattoo: 200,
   ice_cream: 150,
   juice: 100,
+  // Phase scaling expansion. RISK: estimates pending real calibration.
+  live_music: 250,
+  plant_shop: 80,
+  bookstore: 80,
+  record_store: 60,
+  florist: 80,
+  gallery_museum: 200,
 };
 
 /* --------------------------- utilities ---------------------------------- */
@@ -299,6 +315,13 @@ const CATEGORY_POSTS_30D_MEDIAN: Record<Business["category"], number> = {
   tattoo: 8,
   ice_cream: 6,
   juice: 6,
+  // Phase scaling expansion. RISK: estimates pending real calibration.
+  live_music: 12,
+  plant_shop: 6,
+  bookstore: 6,
+  record_store: 4,
+  florist: 6,
+  gallery_museum: 8,
 };
 
 export interface IgSnapshot {

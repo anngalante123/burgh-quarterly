@@ -96,7 +96,13 @@ describe("mapCategory primary-wins precedence", () => {
   it("'Snail Gallery' is not a salon (substring 'nail')", () => {
     // Same family of bug: bare /nail/ would match 'snail'. Word
     // boundaries keep nail salons distinct from anything else.
-    assert.equal(mapCategory("Art gallery", ["Snail collection"]), "experience");
+    // Note: galleries now live in gallery_museum after the Phase scaling
+    // carve-out; this test verifies the salon regex does not misfire on
+    // the substring 'snail' in the secondaries.
+    assert.equal(
+      mapCategory("Art gallery", ["Snail collection"]),
+      "gallery_museum",
+    );
   });
 
   it("real spa / nail salon still maps to salon", () => {
@@ -109,5 +115,98 @@ describe("mapCategory primary-wins precedence", () => {
   it("returns null when both primary and secondaries are empty", () => {
     assert.equal(mapCategory(undefined, undefined), null);
     assert.equal(mapCategory("", []), null);
+  });
+});
+
+describe("mapCategory new categories (Phase scaling)", () => {
+  it("primary 'Live music venue' returns live_music, not bar", () => {
+    assert.equal(mapCategory("Live music venue", []), "live_music");
+  });
+  it("primary 'Concert venue' returns live_music", () => {
+    assert.equal(mapCategory("Concert venue", []), "live_music");
+  });
+  it("primary 'Jazz club' returns live_music", () => {
+    assert.equal(mapCategory("Jazz club", ["Bar"]), "live_music");
+  });
+  it("primary 'Music venue' returns live_music", () => {
+    assert.equal(mapCategory("Music venue", []), "live_music");
+  });
+
+  it("primary 'Plant nursery' returns plant_shop", () => {
+    assert.equal(mapCategory("Plant nursery", []), "plant_shop");
+  });
+  it("primary 'Garden center' returns plant_shop", () => {
+    assert.equal(mapCategory("Garden center", []), "plant_shop");
+  });
+  it("primary 'Plant store' returns plant_shop", () => {
+    assert.equal(mapCategory("Plant store", []), "plant_shop");
+  });
+  it("'Florist' with plant context returns plant_shop", () => {
+    assert.equal(
+      mapCategory("Florist", ["Plant store", "House plants"]),
+      "plant_shop",
+    );
+  });
+
+  it("primary 'Book store' returns bookstore", () => {
+    assert.equal(mapCategory("Book store", []), "bookstore");
+  });
+  it("primary 'Bookstore' returns bookstore", () => {
+    assert.equal(mapCategory("Bookstore", []), "bookstore");
+  });
+  it("primary 'Used bookstore' returns bookstore", () => {
+    assert.equal(mapCategory("Used bookstore", []), "bookstore");
+  });
+  it("primary 'Comic book store' returns bookstore", () => {
+    assert.equal(mapCategory("Comic book store", []), "bookstore");
+  });
+
+  it("primary 'Record store' returns record_store", () => {
+    assert.equal(mapCategory("Record store", []), "record_store");
+  });
+  it("primary 'Vinyl store' returns record_store", () => {
+    assert.equal(mapCategory("Vinyl store", []), "record_store");
+  });
+  it("'Music store' alone returns null (ambiguous, queue for review)", () => {
+    // Could be instruments OR vinyl. We do NOT map it; needs_review queue
+    // catches it. This is the explicit carve-out from the spec.
+    assert.equal(mapCategory("Music store", []), null);
+  });
+
+  it("primary 'Florist' returns florist", () => {
+    assert.equal(mapCategory("Florist", []), "florist");
+  });
+  it("primary 'Flower shop' returns florist", () => {
+    assert.equal(mapCategory("Flower shop", []), "florist");
+  });
+  it("primary 'Flower delivery' returns florist", () => {
+    assert.equal(mapCategory("Flower delivery", []), "florist");
+  });
+
+  it("primary 'Art gallery' returns gallery_museum", () => {
+    assert.equal(mapCategory("Art gallery", []), "gallery_museum");
+  });
+  it("primary 'Museum' returns gallery_museum", () => {
+    assert.equal(mapCategory("Museum", []), "gallery_museum");
+  });
+  it("primary 'Modern art museum' returns gallery_museum", () => {
+    assert.equal(mapCategory("Modern art museum", []), "gallery_museum");
+  });
+  it("primary 'History museum' returns gallery_museum", () => {
+    assert.equal(mapCategory("History museum", []), "gallery_museum");
+  });
+  it("primary \"Children's museum\" returns gallery_museum", () => {
+    assert.equal(mapCategory("Children's museum", []), "gallery_museum");
+  });
+  it("'Theater' still returns experience (not gallery_museum)", () => {
+    // Regression: gallery_museum carved out from experience; experience
+    // retains theaters, arenas, bowling, escape rooms, tours.
+    assert.equal(mapCategory("Theater", []), "experience");
+    assert.equal(mapCategory("Bowling alley", []), "experience");
+    assert.equal(mapCategory("Escape room", []), "experience");
+  });
+
+  it("'Karaoke bar' returns live_music, not bar", () => {
+    assert.equal(mapCategory("Karaoke bar", []), "live_music");
   });
 });
