@@ -154,7 +154,12 @@ function matchCategoryFromHaystack(haystack: string): Category | null {
     /restaurant|pub|grill|bistro|diner|eatery|pizzeria/.test(haystack);
   if (looksLikeBar && !looksLikeRestaurant) return "bar";
 
-  if (/salon|barber|beauty|spa|nail/.test(haystack)) return "salon";
+  // "spa" needs word boundaries so it does not match "Spanish" (which
+  // contains the substring "spa" and was rerouting Spanish restaurants
+  // to salon). Same applies to "nail" so it does not match "snail" etc.
+  if (/salon|barber|beauty|(^|\W)spa(\W|$)|(^|\W)nail(\W|$)/.test(haystack)) {
+    return "salon";
+  }
   if (/gym|fitness|yoga|pilates|studio/.test(haystack)) return "fitness";
   if (/cafe|coffee|tea room|espresso/.test(haystack)) return "cafe";
   // Bar removed from restaurant regex since bar is now its own category.

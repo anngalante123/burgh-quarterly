@@ -85,6 +85,27 @@ describe("mapCategory primary-wins precedence", () => {
     assert.equal(mapCategory("Dive bar", []), "bar");
   });
 
+  it("'Spanish restaurant' returns restaurant, not salon (substring 'spa')", () => {
+    // Regression: the salon regex used a bare /spa/ that matched the
+    // 'spa' substring inside 'Spanish'. Spanish restaurants got rerouted
+    // to salon. Word boundaries fix it.
+    assert.equal(mapCategory("Spanish restaurant", []), "restaurant");
+    assert.equal(mapCategory("Spanish restaurant", ["Tapas bar"]), "restaurant");
+  });
+
+  it("'Snail Gallery' is not a salon (substring 'nail')", () => {
+    // Same family of bug: bare /nail/ would match 'snail'. Word
+    // boundaries keep nail salons distinct from anything else.
+    assert.equal(mapCategory("Art gallery", ["Snail collection"]), "experience");
+  });
+
+  it("real spa / nail salon still maps to salon", () => {
+    assert.equal(mapCategory("Day spa", []), "salon");
+    assert.equal(mapCategory("Nail salon", []), "salon");
+    assert.equal(mapCategory("Hair salon", []), "salon");
+    assert.equal(mapCategory("Barber shop", []), "salon");
+  });
+
   it("returns null when both primary and secondaries are empty", () => {
     assert.equal(mapCategory(undefined, undefined), null);
     assert.equal(mapCategory("", []), null);
