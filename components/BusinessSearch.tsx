@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -72,6 +72,54 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
     );
   }, [businesses, selectedNeighborhoods]);
 
+  // Compact-by-default chip list. Show top STABLE_COUNT + ROTATING_COUNT
+  // rotating slots; user can expand to the full wall via "Show all". A
+  // selected chip from the long tail stays visible (we promote it into
+  // the rendered set) so filter state is never invisible to the reader.
+  const STABLE_COUNT = 10;
+  const ROTATING_COUNT = 3;
+  const ROTATE_MS = 1800;
+  const [showAll, setShowAll] = useState(false);
+  const stableNeighborhoods = neighborhoods.slice(0, STABLE_COUNT);
+  const tailNeighborhoods = neighborhoods.slice(STABLE_COUNT);
+  const [slotCounters, setSlotCounters] = useState<number[]>(() =>
+    Array.from({ length: ROTATING_COUNT }, () => 0),
+  );
+  useEffect(() => {
+    if (showAll || tailNeighborhoods.length <= ROTATING_COUNT) return;
+    let tick = 0;
+    const t = window.setInterval(() => {
+      const slot = tick % ROTATING_COUNT;
+      tick += 1;
+      setSlotCounters((prev) => {
+        const next = [...prev];
+        next[slot] = next[slot] + 1;
+        return next;
+      });
+    }, ROTATE_MS);
+    return () => window.clearInterval(t);
+  }, [showAll, tailNeighborhoods.length]);
+  const rotatingNeighborhoods = useMemo(() => {
+    if (tailNeighborhoods.length === 0) return [];
+    return Array.from({
+      length: Math.min(ROTATING_COUNT, tailNeighborhoods.length),
+    }).map((_, k) => {
+      const idx =
+        (slotCounters[k] * ROTATING_COUNT + k) % tailNeighborhoods.length;
+      return tailNeighborhoods[idx];
+    });
+  }, [tailNeighborhoods, slotCounters]);
+  // Pinned chips: any selected tail neighborhood that is not in the stable
+  // or currently-rotating set, so an active filter never disappears.
+  const visibleNamesSet = new Set([
+    ...stableNeighborhoods.map((n) => n.name),
+    ...rotatingNeighborhoods.map((n) => n.name),
+  ]);
+  const pinnedSelectedTail = neighborhoods.filter(
+    (n) =>
+      selectedNeighborhoods.includes(n.name) && !visibleNamesSet.has(n.name),
+  );
+
   const hasActiveFilter = selectedNeighborhoods.length > 0;
 
   function toggleNeighborhood(name: string) {
@@ -102,12 +150,14 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
         </span>
       </div>
 
-      {/* Neighborhood chips */}
+      {/* Neighborhood chips. Compact by default: stable top 10 + 3
+          rotating slots that flash through the long tail, plus a "Show
+          all" expander. */}
       <div className="flex flex-wrap gap-2">
         <p className="w-full font-display text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55 mb-1">
           Filter by neighborhood
         </p>
-        {neighborhoods.map(({ name, count }) => {
+        {(showAll ? neighborhoods : stableNeighborhoods).map(({ name, count }) => {
           const isActive = selectedNeighborhoods.includes(name);
           return (
             <button
@@ -135,6 +185,69 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
             </button>
           );
         })}
+        {!showAll &&
+          rotatingNeighborhoods.map((n, k) => {
+            if (!n) return null;
+            const isActive = selectedNeighborhoods.includes(n.name);
+            return (
+              <button
+                key={`rot-${k}-${slotCounters[k]}`}
+                type="button"
+                onClick={() => toggleNeighborhood(n.name)}
+                aria-pressed={isActive}
+                aria-live="polite"
+                className={cn(
+                  "font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 transition-all",
+                  "motion-safe:animate-[chip-flash_700ms_ease-out]",
+                  isActive
+                    ? "bg-brand-lime text-brand-black"
+                    : "border border-brand-purple/40 text-brand-black/70 hover:bg-brand-cream hover:text-brand-black hover:border-brand-black",
+                  "focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple",
+                )}
+              >
+                {n.name}{" "}
+                <span
+                  className={cn(
+                    "tabular-nums",
+                    isActive ? "text-brand-black/60" : "text-brand-black/40",
+                  )}
+                >
+                  {n.count}
+                </span>
+              </button>
+            );
+          })}
+        {!showAll &&
+          pinnedSelectedTail.map(({ name, count }) => (
+            <button
+              key={`pin-${name}`}
+              type="button"
+              onClick={() => toggleNeighborhood(name)}
+              aria-pressed={true}
+              className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 transition-all bg-brand-lime text-brand-black focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+            >
+              {name}{" "}
+              <span className="tabular-nums text-brand-black/60">{count}</span>
+            </button>
+          ))}
+        {!showAll && tailNeighborhoods.length > ROTATING_COUNT && (
+          <button
+            type="button"
+            onClick={() => setShowAll(true)}
+            className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 text-brand-purple hover:text-brand-black hover:bg-brand-cream focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+          >
+            Show all {neighborhoods.length} →
+          </button>
+        )}
+        {showAll && (
+          <button
+            type="button"
+            onClick={() => setShowAll(false)}
+            className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 text-brand-purple hover:text-brand-black hover:bg-brand-cream focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+          >
+            Show fewer
+          </button>
+        )}
         {hasActiveFilter && (
           <button
             type="button"

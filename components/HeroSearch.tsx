@@ -78,6 +78,49 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
       .map(([name, count]) => ({ name, count }));
   }, [businesses]);
 
+  // Show the top STABLE_COUNT neighborhoods always-on, plus ROTATING_COUNT
+  // slots that cycle through the long tail. Only ONE slot advances per
+  // tick so only one chip flashes at a time, the other two stay settled.
+  // That gives the eye a single moving signal instead of three competing
+  // ones. A given slot rotates every ROTATE_MS * ROTATING_COUNT ms.
+  const STABLE_COUNT = 10;
+  const ROTATING_COUNT = 3;
+  const ROTATE_MS = 1800;
+  const stableNeighborhoods = neighborhoods.slice(0, STABLE_COUNT);
+  const tailNeighborhoods = neighborhoods.slice(STABLE_COUNT);
+
+  // slotCounters[k] = how many times slot k has advanced. The displayed
+  // neighborhood for slot k is tail[(slotCounters[k] * ROTATING_COUNT + k) % tail.length],
+  // so the three slots iterate through interleaved subsets and never
+  // collide on the same name.
+  const [slotCounters, setSlotCounters] = useState<number[]>(() =>
+    Array.from({ length: ROTATING_COUNT }, () => 0),
+  );
+  useEffect(() => {
+    if (tailNeighborhoods.length <= ROTATING_COUNT) return;
+    let tick = 0;
+    const t = window.setInterval(() => {
+      const slot = tick % ROTATING_COUNT;
+      tick += 1;
+      setSlotCounters((prev) => {
+        const next = [...prev];
+        next[slot] = next[slot] + 1;
+        return next;
+      });
+    }, ROTATE_MS);
+    return () => window.clearInterval(t);
+  }, [tailNeighborhoods.length]);
+
+  const rotatingNeighborhoods = useMemo(() => {
+    if (tailNeighborhoods.length === 0) return [];
+    return Array.from({ length: Math.min(ROTATING_COUNT, tailNeighborhoods.length) }).map(
+      (_, k) => {
+        const idx = (slotCounters[k] * ROTATING_COUNT + k) % tailNeighborhoods.length;
+        return tailNeighborhoods[idx];
+      },
+    );
+  }, [tailNeighborhoods, slotCounters]);
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return businesses.filter((b) => {
@@ -198,11 +241,12 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
         )}
       </div>
 
-      {/* Neighborhood chips, directly under the input. Wrap on all
-          viewports; counts are small enough that wrapping is fine on
-          mobile too. */}
+      {/* Neighborhood chips: a stable top-N plus a few rotating slots that
+          flash through the long tail. The rotating chips remount on each
+          tick (key includes rotatingIdx) so the fade-in keyframe re-fires.
+          Reduced-motion users see the same swap without the fade. */}
       <div className="mt-3 flex flex-wrap gap-2">
-        {neighborhoods.map(({ name, count }) => {
+        {stableNeighborhoods.map(({ name, count }) => {
           const isActive = selectedNeighborhoods.includes(name);
           return (
             <button
@@ -230,6 +274,45 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
             </button>
           );
         })}
+        {rotatingNeighborhoods.map((n, k) => {
+          if (!n) return null;
+          const isActive = selectedNeighborhoods.includes(n.name);
+          return (
+            <button
+              key={`rot-${k}-${slotCounters[k]}`}
+              type="button"
+              onClick={() => toggleNeighborhood(n.name)}
+              aria-pressed={isActive}
+              aria-live="polite"
+              className={cn(
+                "font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 transition-all",
+                "motion-safe:animate-[chip-flash_700ms_ease-out]",
+                isActive
+                  ? "bg-brand-lime text-brand-black"
+                  : "border border-brand-purple/40 text-brand-black/70 hover:bg-brand-cream hover:text-brand-black hover:border-brand-black",
+                "focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple",
+              )}
+            >
+              {n.name}{" "}
+              <span
+                className={cn(
+                  "tabular-nums",
+                  isActive ? "text-brand-black/60" : "text-brand-black/40",
+                )}
+              >
+                {n.count}
+              </span>
+            </button>
+          );
+        })}
+        {tailNeighborhoods.length > ROTATING_COUNT && (
+          <span
+            className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 text-brand-black/45"
+            aria-hidden="true"
+          >
+            +{neighborhoods.length - STABLE_COUNT} more
+          </span>
+        )}
       </div>
 
       {/* Results dropdown, absolutely positioned overlay so other hero

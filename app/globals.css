@@ -379,3 +379,26 @@
 @media (prefers-reduced-motion: reduce) {
   .trend-breathe { animation: none; }
 }
+
+/* Hero neighborhood chip rotation: a brief lime flash + fade-in when a
+   rotating chip remounts with a new neighborhood. The chip starts fully
+   highlighted and decays back to its resting style. */
+@keyframes chip-flash {
+  0% {
+    background-color: var(--color-brand-lime);
+    color: var(--color-brand-black);
+    opacity: 0.4;
+    transform: translateY(2px);
+  }
+  35% {
+    background-color: var(--color-brand-lime);
+    color: var(--color-brand-black);
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    background-color: transparent;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
