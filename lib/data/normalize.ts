@@ -202,10 +202,25 @@ function matchCategoryFromHaystack(haystack: string): Category | null {
     /restaurant|pub|grill|bistro|diner|eatery|pizzeria/.test(haystack);
   if (looksLikeBar && !looksLikeRestaurant) return "bar";
 
-  // "spa" needs word boundaries so it does not match "Spanish" (which
-  // contains the substring "spa" and was rerouting Spanish restaurants
-  // to salon). Same applies to "nail" so it does not match "snail" etc.
-  if (/salon|barber|beauty|(^|\W)spa(\W|$)|(^|\W)nail(\W|$)/.test(haystack)) {
+  // Spa: day spas, medical spas, wellness centers/studios, massage spas.
+  // Match BEFORE salon so a "Day spa" or "Med spa" primary does not get
+  // swallowed by the salon branch. We intentionally do NOT match bare
+  // "salon", "barber", "nail" here. Word boundaries on "spa" so it does
+  // not hit "Spanish".
+  if (
+    /(^|\W)day spa(\W|$)|(^|\W)med(ical)? spa(\W|$)|massage spa|(^|\W)spa(\W|$)|wellness studio|wellness center|wellness centre/
+      .test(haystack)
+  ) {
+    // Guard against false positives: if the haystack also calls out salon,
+    // barber, or nail context, the place is a salon-with-spa-services, not
+    // a true spa. Defer to the salon branch below.
+    if (!/hair salon|nail salon|barber|beauty salon/.test(haystack)) {
+      return "spa";
+    }
+  }
+
+  // "nail" needs word boundaries so it does not match "snail" etc.
+  if (/salon|barber|beauty|(^|\W)nail(\W|$)/.test(haystack)) {
     return "salon";
   }
   if (/gym|fitness|yoga|pilates|studio/.test(haystack)) return "fitness";

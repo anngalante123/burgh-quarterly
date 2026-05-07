@@ -109,6 +109,7 @@ const CATEGORY_REVIEW_MEDIAN: Record<Business["category"], number> = {
   record_store: 100,
   florist: 100,
   gallery_museum: 200,
+  spa: 150,
 };
 
 const CATEGORY_PHOTO_MEDIAN: Record<Business["category"], number> = {
@@ -133,6 +134,7 @@ const CATEGORY_PHOTO_MEDIAN: Record<Business["category"], number> = {
   record_store: 60,
   florist: 80,
   gallery_museum: 200,
+  spa: 100,
 };
 
 /* --------------------------- utilities ---------------------------------- */
@@ -322,6 +324,7 @@ const CATEGORY_POSTS_30D_MEDIAN: Record<Business["category"], number> = {
   record_store: 4,
   florist: 6,
   gallery_museum: 8,
+  spa: 6,
 };
 
 export interface IgSnapshot {

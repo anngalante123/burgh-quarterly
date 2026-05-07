@@ -47,6 +47,7 @@ const CATEGORY_LABELS: Record<Category, string> = {
   record_store: "Record Stores",
   florist: "Florists",
   gallery_museum: "Galleries and Museums",
+  spa: "Spas",
 };
 
 export function labelForCategory(category: string): string {

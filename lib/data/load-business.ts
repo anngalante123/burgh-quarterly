@@ -468,6 +468,156 @@ export async function getBusinessesForCategory(
   }));
 }
 
+/* --------------------------- global rankings ---------------------------- */
+
+/**
+ * Property-wide ranking row, one per business in the active issue.
+ *
+ * `composite` is the raw 0-100 score and is intentionally returned at the
+ * data layer so callers can sort, slice, and tier-band. Do NOT render the
+ * raw composite to end users (EDITORIAL_VOICE.md, "gap not grade"). UI
+ * should only ever surface `tier` and `rank_global` in user-facing copy.
+ *
+ * Sort order:
+ *   1. composite DESC
+ *   2. rank_category ASC (lower is better within category — settles
+ *      ties between categories where multiple bizs share a composite)
+ *   3. business_signals.review_count DESC (more reviewed wins ties; this
+ *      pulls from `google_review_count` since the signals table tracks
+ *      Google review volume)
+ *   4. slug ASC (final deterministic tiebreak so build output is stable)
+ */
+export interface GlobalRankingRow {
+  business_slug: string;
+  name: string;
+  neighborhood: string;
+  category: Category;
+  tier: Tier;
+  composite: number;
+  rank_global: number;
+  rank_category: number;
+  hero_photo: string | null;
+}
+
+/**
+ * Computed-on-read global ranking. Joins businesses + scores + signals,
+ * orders per the rules above, and assigns rank_global by row position
+ * after sort.
+ *
+ * Computed in JS (not SQL `ROW_NUMBER OVER`) because:
+ *   - The Drizzle Neon HTTP driver doesn't expose window functions cleanly,
+ *     and we already pull every row for other surfaces (homepage, /search).
+ *     Sort happens in memory once, no extra round trip.
+ *   - At ~1900 rows per issue this is 1-2ms of JS; not worth a materialized
+ *     view yet. If we ever cross 50k rows or want cross-region replicas,
+ *     promote to a `global_rankings` materialized view.
+ */
+export async function getGlobalRankings(
+  issueSlug: string = DEFAULT_ISSUE_SLUG,
+  limit?: number,
+): Promise<GlobalRankingRow[]> {
+  const [bizRows, scoreRows, signalRows] = await Promise.all([
+    db
+      .select({
+        slug: businessesTable.slug,
+        name: businessesTable.name,
+        category: businessesTable.category,
+        neighborhood: businessesTable.neighborhood,
+        hero_photo: businessesTable.hero_photo,
+      })
+      .from(businessesTable),
+    db
+      .select({
+        business_slug: scoresTable.business_slug,
+        composite: scoresTable.composite,
+        tier: scoresTable.tier,
+        ranks: scoresTable.ranks,
+      })
+      .from(scoresTable)
+      .where(eq(scoresTable.issue_slug, issueSlug)),
+    db
+      .select({
+        business_slug: businessSignalsTable.business_slug,
+        google_review_count: businessSignalsTable.google_review_count,
+      })
+      .from(businessSignalsTable)
+      .where(eq(businessSignalsTable.issue_slug, issueSlug)),
+  ]);
+
+  const bizBySlug = new Map(bizRows.map((b) => [b.slug, b]));
+  const reviewsBySlug = new Map(
+    signalRows.map((s) => [s.business_slug, s.google_review_count ?? 0]),
+  );
+
+  type Intermediate = {
+    business_slug: string;
+    name: string;
+    neighborhood: string;
+    category: Category;
+    tier: Tier;
+    composite: number;
+    rank_category: number;
+    review_count: number;
+    hero_photo: string | null;
+  };
+
+  const intermediate: Intermediate[] = [];
+  for (const s of scoreRows) {
+    const biz = bizBySlug.get(s.business_slug);
+    if (!biz) continue;
+    intermediate.push({
+      business_slug: s.business_slug,
+      name: biz.name,
+      neighborhood: biz.neighborhood,
+      category: biz.category,
+      tier: s.tier,
+      composite: s.composite,
+      rank_category: s.ranks.category,
+      review_count: reviewsBySlug.get(s.business_slug) ?? 0,
+      hero_photo: biz.hero_photo,
+    });
+  }
+
+  intermediate.sort((a, b) => {
+    if (b.composite !== a.composite) return b.composite - a.composite;
+    if (a.rank_category !== b.rank_category) {
+      return a.rank_category - b.rank_category;
+    }
+    if (b.review_count !== a.review_count) {
+      return b.review_count - a.review_count;
+    }
+    return a.business_slug.localeCompare(b.business_slug);
+  });
+
+  const ranked: GlobalRankingRow[] = intermediate.map((row, i) => ({
+    business_slug: row.business_slug,
+    name: row.name,
+    neighborhood: row.neighborhood,
+    category: row.category,
+    tier: row.tier,
+    composite: row.composite,
+    rank_global: i + 1,
+    rank_category: row.rank_category,
+    hero_photo: row.hero_photo,
+  }));
+
+  return typeof limit === "number" ? ranked.slice(0, limit) : ranked;
+}
+
+/**
+ * Lookup map of business_slug → rank_global. Used by category pages and
+ * other surfaces that need to display "#M in Pittsburgh" alongside the
+ * existing per-category rank.
+ */
+export async function getGlobalRankMap(
+  issueSlug: string = DEFAULT_ISSUE_SLUG,
+): Promise<Map<string, number>> {
+  const all = await getGlobalRankings(issueSlug);
+  const out = new Map<string, number>();
+  for (const r of all) out.set(r.business_slug, r.rank_global);
+  return out;
+}
+
 export async function getBusinessesForTier(
   tier: Tier,
   issueSlug: string = DEFAULT_ISSUE_SLUG,

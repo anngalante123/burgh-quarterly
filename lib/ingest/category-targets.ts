@@ -38,6 +38,7 @@ export const CATEGORY_TARGETS: Record<Category, number | null> = {
   record_store: 30,
   florist: 100,
   experience: 50,
+  spa: 200,
 };
 
 /**

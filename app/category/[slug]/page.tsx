@@ -8,6 +8,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 import {
   getBusinessesForCategory,
+  getGlobalRankMap,
   type BusinessSummary,
 } from "@/lib/data/load-business";
 import { CategorySchema, type Category, type Tier } from "@/lib/data/schemas";
@@ -103,6 +104,7 @@ const CATEGORY_LABEL: Record<Category, CategoryLabel> = {
     plural: "galleries and museums",
     title: "Galleries and Museums",
   },
+  spa: { singular: "spa", plural: "spas", title: "Spas" },
 };
 
 const TIER_LABEL: Record<Tier, string> = {
@@ -165,7 +167,10 @@ export default async function CategoryLeaderboardPage({ params }: PageProps) {
   const category = slugToCategory(slug);
   if (!category) notFound();
 
-  const businesses = await getBusinessesForCategory(category);
+  const [businesses, globalRankBySlug] = await Promise.all([
+    getBusinessesForCategory(category),
+    getGlobalRankMap(),
+  ]);
   if (businesses.length === 0) notFound();
 
   const label = CATEGORY_LABEL[category];
@@ -249,9 +254,15 @@ export default async function CategoryLeaderboardPage({ params }: PageProps) {
           {/* ---------- LIST ---------- */}
           <div className="mt-14 md:mt-20">
             {sparse ? (
-              <SparseList businesses={businesses} />
+              <SparseList
+                businesses={businesses}
+                globalRankBySlug={globalRankBySlug}
+              />
             ) : (
-              <TierGroupedList businesses={businesses} />
+              <TierGroupedList
+                businesses={businesses}
+                globalRankBySlug={globalRankBySlug}
+              />
             )}
           </div>
 
@@ -278,19 +289,35 @@ export default async function CategoryLeaderboardPage({ params }: PageProps) {
 
 /* ---------- list variants ---------- */
 
-function SparseList({ businesses }: { businesses: BusinessSummary[] }) {
+function SparseList({
+  businesses,
+  globalRankBySlug,
+}: {
+  businesses: BusinessSummary[];
+  globalRankBySlug: Map<string, number>;
+}) {
   return (
     <ol className="space-y-6">
       {businesses.map((b, i) => (
         <Reveal as="li" key={b.slug} delay={i * 0.06}>
-          <BusinessRow business={b} rank={i + 1} />
+          <BusinessRow
+            business={b}
+            rank={i + 1}
+            globalRank={globalRankBySlug.get(b.slug) ?? null}
+          />
         </Reveal>
       ))}
     </ol>
   );
 }
 
-function TierGroupedList({ businesses }: { businesses: BusinessSummary[] }) {
+function TierGroupedList({
+  businesses,
+  globalRankBySlug,
+}: {
+  businesses: BusinessSummary[];
+  globalRankBySlug: Map<string, number>;
+}) {
   // Group by tier while preserving the composite-descending order inside each
   // group (the input is already sorted that way).
   const groups: Record<Tier, { business: BusinessSummary; rank: number }[]> = {
@@ -320,7 +347,11 @@ function TierGroupedList({ businesses }: { businesses: BusinessSummary[] }) {
             <ol className="mt-6 space-y-6">
               {items.map(({ business, rank }, i) => (
                 <Reveal as="li" key={business.slug} delay={i * 0.04}>
-                  <BusinessRow business={business} rank={rank} />
+                  <BusinessRow
+                    business={business}
+                    rank={rank}
+                    globalRank={globalRankBySlug.get(business.slug) ?? null}
+                  />
                 </Reveal>
               ))}
             </ol>
@@ -336,9 +367,11 @@ function TierGroupedList({ businesses }: { businesses: BusinessSummary[] }) {
 function BusinessRow({
   business,
   rank,
+  globalRank,
 }: {
   business: BusinessSummary;
   rank: number;
+  globalRank: number | null;
 }) {
   const rankNumeral = rank < 10 ? `0${rank}` : String(rank);
   return (
@@ -374,6 +407,11 @@ function BusinessRow({
           <p className="mt-1 font-body text-sm md:text-base text-brand-black/65">
             {business.neighborhood}
           </p>
+          {globalRank !== null ? (
+            <p className="mt-0.5 font-display text-[0.6rem] md:text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
+              #{globalRank} in Pittsburgh
+            </p>
+          ) : null}
           {/* Mobile-only tier badge stacked under name+neighborhood */}
           <span
             className={`md:hidden mt-2 inline-flex items-center font-display font-semibold uppercase tracking-[0.08em] whitespace-nowrap px-2 py-0.5 text-[0.65rem] ${TIER_PILL[business.tier]}`}

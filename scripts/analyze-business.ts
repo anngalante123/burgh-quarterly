@@ -41,6 +41,9 @@ import { config as loadEnv } from "dotenv";
 loadEnv({ path: join(process.cwd(), ".env.local") });
 loadEnv();
 
+import { familyForBusinessCategory } from "@/lib/data/category-family";
+import type { Category } from "@/lib/data/schemas";
+
 const BUSINESSES_DIR = join(process.cwd(), "content", "businesses");
 const SOCIAL_DIR = join(process.cwd(), "content", "social");
 const ANALYSIS_DIR = join(process.cwd(), "content", "review-analysis");
@@ -750,37 +753,46 @@ async function main() {
     }),
   );
 
-  // Family grouping, inline so this script is self-contained
-  const SWEETS = new Set([
-    "Bakery",
-    "Pastry shop",
-    "Dessert shop",
-    "Dessert restaurant",
-    "Ice cream shop",
-  ]);
-  const CAFES = new Set(["Cafe", "Coffee shop", "Tea house", "Juice shop"]);
-  const ASIAN = new Set([
-    "Noodle shop",
-    "Japanese restaurant",
-    "Sushi restaurant",
-    "Thai restaurant",
-    "Indian restaurant",
-  ]);
-  const BARS = new Set(["Bar", "Brewery"]);
-  function family(categoryName: string): {
-    key: string;
-    label: string;
-  } {
-    if (SWEETS.has(categoryName))
-      return { key: "sweets", label: "Pittsburgh Sweets" };
-    if (CAFES.has(categoryName))
-      return { key: "cafes", label: "Pittsburgh Cafes" };
-    if (ASIAN.has(categoryName))
-      return { key: "asian", label: "Pittsburgh Asian Kitchens" };
-    if (BARS.has(categoryName))
-      return { key: "bars", label: "Pittsburgh Bars" };
-    return { key: "other", label: "Pittsburgh Businesses" };
-  }
+  // Family grouping comes from the typed Category enum, not Google's
+  // freeform `categoryName` text. The previous Google-text-keyed lookup
+  // here forced every category outside (sweets, cafes, asian, bars) into
+  // a "Pittsburgh Businesses" bucket. That bug bled food-leader names
+  // (Nan Xiang Soup Dumplings) into tattoo studio narratives. See
+  // lib/data/category-family.ts for the single source of truth.
+
+  // Peer set is sourced from the DB so that DB-only categories (tattoo,
+  // spa, salon, ...) get real per-family peers instead of falling back to
+  // the 30 calibration JSONs on disk.
+  const ISSUE_SLUG = "2026-spring";
+  const { db, schema } = await import("@/lib/db/client");
+  const dbRows = await db
+    .select({
+      slug: schema.businesses.slug,
+      name: schema.businesses.name,
+      category: schema.businesses.category,
+      composite: schema.scores.composite,
+      subscores: schema.scores.subscores,
+      unfair_advantage: schema.scores.unfair_advantage,
+    })
+    .from(schema.businesses)
+    .innerJoin(
+      schema.scores,
+      // import dynamically to avoid a top-level drizzle-orm import the
+      // existing file already keeps small.
+      (await import("drizzle-orm")).and(
+        (await import("drizzle-orm")).eq(
+          schema.scores.business_slug,
+          schema.businesses.slug,
+        ),
+        (await import("drizzle-orm")).eq(
+          schema.scores.issue_slug,
+          ISSUE_SLUG,
+        ),
+      ),
+    );
+  type DbPeerRow = (typeof dbRows)[number];
+
+  const MIN_FAMILY_SIZE = 5;
 
   let processed = 0;
   let skipped = 0;
@@ -853,16 +865,38 @@ async function main() {
       }
     } catch {}
 
-    const fam = family(record._meta?.categoryName ?? "");
-    const sameFamily = allBusinesses.filter(
-      (b) => family(b.record._meta?.categoryName ?? "").key === fam.key,
+    // Family + peer set, DB-backed and keyed off the typed Category enum.
+    const targetCategory = record.category as Category | undefined;
+    const fam = familyForBusinessCategory(targetCategory ?? null);
+    const sameFamily: DbPeerRow[] = dbRows.filter(
+      (r) => familyForBusinessCategory(r.category).key === fam.key,
     );
+    // Make sure the target itself is in the peer set even if its score row
+    // has not been written for this issue yet.
+    if (!sameFamily.some((r) => r.slug === slug)) {
+      sameFamily.push({
+        slug,
+        name: record.name,
+        category: (targetCategory ?? "restaurant") as Category,
+        composite: record._score.composite,
+        subscores: record._score.subscores,
+        unfair_advantage: record._score.unfair_advantage,
+      });
+    }
     const familyRanked = [...sameFamily].sort(
-      (a, b) => b.record._score.composite - a.record._score.composite,
+      (a, b) => b.composite - a.composite,
     );
-    const familyRank =
-      familyRanked.findIndex((b) => b.record.slug === record.slug) + 1;
-    const familyLeader = familyRanked[0].record;
+    const familyRank = familyRanked.findIndex((r) => r.slug === slug) + 1;
+    // Leader excludes the target itself so we never describe a business
+    // by comparing it to a copy of its own row.
+    const familyLeaderRow =
+      familyRanked.find((r) => r.slug !== slug) ?? familyRanked[0];
+
+    if (sameFamily.length < MIN_FAMILY_SIZE) {
+      console.warn(
+        `[family] ${slug}: small family "${fam.label}" has only ${sameFamily.length} member(s) (min ${MIN_FAMILY_SIZE} for a confident peer comparison).`,
+      );
+    }
 
     // Peer medians within the family
     function median(vals: number[]): number {
@@ -873,20 +907,23 @@ async function main() {
     }
     const peerMedians: Record<string, number> = {
       content_canvas: median(
-        sameFamily.map((b) => b.record._score.subscores.content_canvas),
+        sameFamily.map((r) => r.subscores.content_canvas),
       ),
       community_spark: median(
-        sameFamily.map((b) => b.record._score.subscores.community_spark),
+        sameFamily.map((r) => r.subscores.community_spark),
       ),
       conversion_path: median(
-        sameFamily.map((b) => b.record._score.subscores.conversion_path),
+        sameFamily.map((r) => r.subscores.conversion_path),
       ),
-      momentum: median(
-        sameFamily.map((b) => b.record._score.subscores.momentum),
-      ),
-      collab_fit: median(
-        sameFamily.map((b) => b.record._score.subscores.collab_fit),
-      ),
+      momentum: median(sameFamily.map((r) => r.subscores.momentum)),
+      collab_fit: median(sameFamily.map((r) => r.subscores.collab_fit)),
+    };
+
+    // assembleAnalyzeInput's familyLeader argument is structurally typed;
+    // we synthesize the minimum shape it needs from the DB row.
+    const familyLeader = {
+      name: familyLeaderRow.name,
+      _score: { unfair_advantage: { label: familyLeaderRow.unfair_advantage?.label ?? "" } },
     };
 
     const analyzeInput = assembleAnalyzeInput(

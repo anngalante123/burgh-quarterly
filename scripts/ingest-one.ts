@@ -78,6 +78,10 @@ import {
   printDryRun,
   type AnalyzeInput,
 } from "@/scripts/analyze-business";
+import {
+  familyForBusinessCategory,
+  type CategoryFamily,
+} from "@/lib/data/category-family";
 
 /* ----------------------------- Constants -------------------------------- */
 
@@ -502,33 +506,23 @@ function loadSocialFile(slug: string): SocialFile {
 
 /* --------------------------- family helpers ----------------------------- */
 
-const SWEETS = new Set([
-  "Bakery",
-  "Pastry shop",
-  "Dessert shop",
-  "Dessert restaurant",
-  "Ice cream shop",
-]);
-const CAFES = new Set(["Cafe", "Coffee shop", "Tea house", "Juice shop"]);
-const ASIAN = new Set([
-  "Noodle shop",
-  "Japanese restaurant",
-  "Sushi restaurant",
-  "Thai restaurant",
-  "Indian restaurant",
-]);
-const BARS = new Set(["Bar", "Brewery"]);
+/**
+ * Editorial families are keyed off the internal Zod Category enum (not the
+ * raw Google `categoryName` string). The previous Google-text-keyed lookup
+ * fell into a "Pittsburgh Businesses" bucket for every category outside
+ * the four it knew about (sweets, cafes, asian, bars). That bug bled
+ * "Nan Xiang Soup Dumplings" into tattoo studio narratives because every
+ * tattoo shop landed in the catch-all bucket alongside the food-leader.
+ *
+ * Single source of truth lives in lib/data/category-family.ts.
+ */
 
-function family(categoryName: string): { key: string; label: string } {
-  if (SWEETS.has(categoryName))
-    return { key: "sweets", label: "Pittsburgh Sweets" };
-  if (CAFES.has(categoryName))
-    return { key: "cafes", label: "Pittsburgh Cafes" };
-  if (ASIAN.has(categoryName))
-    return { key: "asian", label: "Pittsburgh Asian Kitchens" };
-  if (BARS.has(categoryName)) return { key: "bars", label: "Pittsburgh Bars" };
-  return { key: "other", label: "Pittsburgh Businesses" };
-}
+/**
+ * Below this many peers (counting the target), the family is "small" and
+ * the editorial copy should hedge. We do NOT collapse small families into
+ * a parent bucket here, that's out of scope for the bug fix; we just log.
+ */
+const MIN_FAMILY_SIZE = 5;
 
 function median(vals: number[]): number {
   if (vals.length === 0) return 0;
@@ -538,7 +532,7 @@ function median(vals: number[]): number {
 }
 
 interface FamilyContext {
-  fam: { key: string; label: string };
+  fam: CategoryFamily;
   rank: number;
   size: number;
   leaderName: string;
@@ -546,54 +540,99 @@ interface FamilyContext {
   peerMedians: Record<string, number>;
 }
 
-function buildFamilyContext(target: LegacyBusinessFile): FamilyContext {
-  // Read every business JSON on disk to compute family rank + medians. This
-  // matches what scripts/analyze-business.ts does today; once Phase 3 batch
-  // ingestion lands we'll move family stats into a DB precompute.
-  const allFiles = fs
-    .readdirSync(BUSINESSES_DIR)
-    .filter((f) => f.endsWith(".json"));
-  const all: Array<{ slug: string; meta: LegacyBusinessFile }> = [];
-  for (const f of allFiles) {
-    const slug = f.replace(/\.json$/, "");
-    try {
-      const parsed = loadBusinessFile(slug);
-      if (parsed) all.push({ slug, meta: parsed });
-    } catch {
-      // skip un-parseable peers; one busted file shouldn't kill the run
-    }
+/**
+ * Build the family context (rank, leader, peer medians) for the target
+ * business by querying the DB for ALL businesses + scores in the active
+ * issue. Replaces the disk-only loader, which only saw the 30 calibration
+ * JSON files and forced every DB-only category (tattoo, spa, salon...)
+ * into a fallback "Pittsburgh Businesses" bucket alongside food-leaders.
+ *
+ * Family grouping is keyed off the typed `businesses.category` enum via
+ * familyForBusinessCategory, so adding a new Category to the enum without
+ * adding it to the family map will fail typecheck loudly.
+ */
+async function buildFamilyContext(
+  target: LegacyBusinessFile,
+  issueSlug: string,
+): Promise<FamilyContext> {
+  const { db, schema } = await getDb();
+  // Pull every business with a score for this issue. We need composite
+  // (for ranking + leader), subscores (for medians), unfair_advantage
+  // (for leader's standout signal), and category (for grouping).
+  const rows = await db
+    .select({
+      slug: schema.businesses.slug,
+      name: schema.businesses.name,
+      category: schema.businesses.category,
+      composite: schema.scores.composite,
+      subscores: schema.scores.subscores,
+      unfair_advantage: schema.scores.unfair_advantage,
+    })
+    .from(schema.businesses)
+    .innerJoin(
+      schema.scores,
+      and(
+        eq(schema.scores.business_slug, schema.businesses.slug),
+        eq(schema.scores.issue_slug, issueSlug),
+      ),
+    );
+
+  const targetCategory = target.business.category;
+  const fam = familyForBusinessCategory(targetCategory);
+  const sameFamily = rows.filter(
+    (r) => familyForBusinessCategory(r.category).key === fam.key,
+  );
+
+  // Target may not yet have a score row in the DB at the moment this runs
+  // (scored step writes immediately before analyze, so usually it does);
+  // fall back to the in-memory legacy score if missing so the target is
+  // counted in size + rank correctly.
+  const hasTarget = sameFamily.some((r) => r.slug === target.slug);
+  if (!hasTarget) {
+    sameFamily.push({
+      slug: target.slug,
+      name: target.business.name,
+      category: targetCategory,
+      composite: target.score.composite,
+      subscores: target.score.subscores,
+      unfair_advantage: target.score.unfair_advantage,
+    });
   }
-  const targetCat = target.meta?.categoryName ?? "";
-  const fam = family(targetCat);
-  const sameFamily = all.filter(
-    (b) => family(b.meta.meta?.categoryName ?? "").key === fam.key,
-  );
-  const ranked = [...sameFamily].sort(
-    (a, b) => b.meta.score.composite - a.meta.score.composite,
-  );
-  const rank = ranked.findIndex((b) => b.slug === target.slug) + 1;
-  const leader = ranked[0]?.meta;
+
+  const ranked = [...sameFamily].sort((a, b) => b.composite - a.composite);
+  const rank = ranked.findIndex((r) => r.slug === target.slug) + 1;
+
+  // Leader = highest composite within the family, EXCLUDING the target
+  // itself. If the target IS the leader, we still need a "leader-advantage"
+  // string to feed the prompt; use the runner-up so the editorial line
+  // doesn't compare the business to itself.
+  const nonTarget = ranked.filter((r) => r.slug !== target.slug);
+  const leader = nonTarget[0] ?? null;
+
   const peerMedians: Record<string, number> = {
-    content_canvas: median(
-      sameFamily.map((b) => b.meta.score.subscores.content_canvas),
-    ),
+    content_canvas: median(sameFamily.map((r) => r.subscores.content_canvas)),
     community_spark: median(
-      sameFamily.map((b) => b.meta.score.subscores.community_spark),
+      sameFamily.map((r) => r.subscores.community_spark),
     ),
     conversion_path: median(
-      sameFamily.map((b) => b.meta.score.subscores.conversion_path),
+      sameFamily.map((r) => r.subscores.conversion_path),
     ),
-    momentum: median(sameFamily.map((b) => b.meta.score.subscores.momentum)),
-    collab_fit: median(
-      sameFamily.map((b) => b.meta.score.subscores.collab_fit),
-    ),
+    momentum: median(sameFamily.map((r) => r.subscores.momentum)),
+    collab_fit: median(sameFamily.map((r) => r.subscores.collab_fit)),
   };
+
+  if (sameFamily.length < MIN_FAMILY_SIZE) {
+    console.warn(
+      `[family] ${target.slug}: small family "${fam.label}" has only ${sameFamily.length} member(s) (min ${MIN_FAMILY_SIZE} for a confident peer comparison). Editorial copy may hedge.`,
+    );
+  }
+
   return {
     fam,
     rank: rank > 0 ? rank : 1,
     size: sameFamily.length,
-    leaderName: leader?.business.name ?? target.business.name,
-    leaderAdvantage: leader?.score.unfair_advantage.label ?? "",
+    leaderName: leader?.name ?? target.business.name,
+    leaderAdvantage: leader?.unfair_advantage?.label ?? "",
     peerMedians,
   };
 }
@@ -826,7 +865,7 @@ async function stepAnalyzed(
   }
 
   const social = loadSocialFile(slug);
-  const ctx = buildFamilyContext(parsed);
+  const ctx = await buildFamilyContext(parsed, flags.issueSlug);
 
   const analyzeInput: AnalyzeInput = assembleAnalyzeInput(
     slug,

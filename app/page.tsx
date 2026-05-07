@@ -5,6 +5,7 @@ import { SubscribeInline } from "@/components/SubscribeInline";
 import { Reveal } from "@/components/motion/Reveal";
 import {
   getAllBusinessesForSearch,
+  getGlobalRankings,
   loadAllBusinesses,
 } from "@/lib/data/load-business";
 import { computeTierCounts } from "@/lib/data/stats";
@@ -45,9 +46,10 @@ export default async function Home() {
   // photos array), and tier counts. The slim search payload skips signals,
   // photos, keywords, and the JSONB ranks unpack so the client search prop
   // stays cheap to compute as the index grows past the current 30 records.
-  const [all, searchItems] = await Promise.all([
+  const [all, searchItems, globalTop10] = await Promise.all([
     loadAllBusinesses(),
     getAllBusinessesForSearch(),
+    getGlobalRankings("2026-spring", 10),
   ]);
   const tc = computeTierCounts(all);
 
@@ -71,23 +73,27 @@ export default async function Home() {
     .map((s) => allArticles.find((a) => a.slug === s))
     .filter((a): a is NonNullable<typeof a> => !!a);
 
-  // Top 5 leaderboard preview, the visual anchor right below the hero
-  // stats line. Sorted by composite score descending. Surfaces what the
-  // publication actually IS (a ranking) instead of asking the reader
-  // to scroll to find rank #1.
-  const top5 = all
-    .slice()
-    .sort((a, b) => b.score.composite - a.score.composite)
-    .slice(0, 5)
-    .map((b) => ({
-      slug: b.business.slug,
-      name: b.business.name,
-      neighborhood: b.business.neighborhood,
-      categoryName: b.meta.categoryName ?? b.business.category,
-      tier: b.score.tier,
-      composite: b.score.composite,
-      photo: b.business.hero_photo ?? b.business.photos[0]?.url ?? null,
-    }));
+  // Pittsburgh Firecast Top 10, the visual anchor right below the hero
+  // stats line. Sourced from the property-wide global ranking so ties
+  // settle deterministically (rank_category, then review volume) and the
+  // homepage rail stays consistent with the full /leaderboard page.
+  // Photos and human category labels still come from the full artifact
+  // load so we can keep the existing card design.
+  const artifactBySlug = new Map(all.map((a) => [a.business.slug, a]));
+  const top10 = globalTop10.map((row) => {
+    const artifact = artifactBySlug.get(row.business_slug);
+    return {
+      slug: row.business_slug,
+      name: row.name,
+      neighborhood: row.neighborhood,
+      categoryName: artifact?.meta.categoryName || row.category,
+      tier: row.tier,
+      photo:
+        artifact?.business.hero_photo ??
+        artifact?.business.photos[0]?.url ??
+        null,
+    };
+  });
 
   // Featured record's hero photo, pulled from the live business artifact
   // so it stays in sync with the index. La Gourmandine Lawrenceville
@@ -174,24 +180,25 @@ export default async function Home() {
           </Reveal>
         </section>
 
-        {/* ── TOP 5 INDEX PREVIEW ───────────────────────────────
-            Surfaces the actual ranking right under the hero so the
-            page's primary asset (the index itself) is visible, not just
-            announced in copy. Links into each business page. */}
+        {/* ── PITTSBURGH FIRECAST TOP 10 ────────────────────────
+            Property-wide rail. Surfaces the actual ranking right under
+            the hero so the page's primary asset (the index itself) is
+            visible, not just announced in copy. Links into each business
+            page; the see-more link drops the reader into the full 100. */}
         <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
           <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-6 flex-wrap gap-3">
             <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
-              The Index · Top 5
+              Pittsburgh Firecast · Top 10 this quarter
             </h3>
             <Link
-              href="#search"
+              href="/leaderboard"
               className="font-display text-[0.7rem] md:text-xs font-semibold uppercase tracking-[0.18em] text-brand-purple hover:text-brand-black"
             >
-              See the full index →
+              See full leaderboard →
             </Link>
           </div>
           <ol className="border border-brand-black/15 bg-white/60">
-            {top5.map((b, i) => {
+            {top10.map((b, i) => {
               const tierAccent =
                 b.tier === "icons"
                   ? "bg-brand-lime"

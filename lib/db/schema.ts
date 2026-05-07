@@ -77,6 +77,7 @@ export const categoryEnum = pgEnum("category", [
   "record_store",
   "florist",
   "gallery_museum",
+  "spa",
 ]);
 
 export const businessSourceEnum = pgEnum("business_source", [

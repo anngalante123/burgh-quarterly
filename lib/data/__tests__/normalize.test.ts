@@ -105,11 +105,11 @@ describe("mapCategory primary-wins precedence", () => {
     );
   });
 
-  it("real spa / nail salon still maps to salon", () => {
-    assert.equal(mapCategory("Day spa", []), "salon");
+  it("hair / nail / barber / beauty still maps to salon", () => {
     assert.equal(mapCategory("Nail salon", []), "salon");
     assert.equal(mapCategory("Hair salon", []), "salon");
     assert.equal(mapCategory("Barber shop", []), "salon");
+    assert.equal(mapCategory("Beauty salon", []), "salon");
   });
 
   it("returns null when both primary and secondaries are empty", () => {
@@ -208,5 +208,52 @@ describe("mapCategory new categories (Phase scaling)", () => {
 
   it("'Karaoke bar' returns live_music, not bar", () => {
     assert.equal(mapCategory("Karaoke bar", []), "live_music");
+  });
+});
+
+describe("mapCategory spa branch (Phase A2 follow-up)", () => {
+  it("primary 'Day spa' returns spa", () => {
+    assert.equal(mapCategory("Day spa", []), "spa");
+  });
+  it("primary 'Spa' returns spa", () => {
+    assert.equal(mapCategory("Spa", []), "spa");
+  });
+  it("primary 'Med spa' returns spa", () => {
+    assert.equal(mapCategory("Med spa", []), "spa");
+  });
+  it("primary 'Medical spa' returns spa", () => {
+    assert.equal(mapCategory("Medical spa", []), "spa");
+  });
+  it("primary 'Massage spa' returns spa", () => {
+    assert.equal(mapCategory("Massage spa", []), "spa");
+  });
+  it("primary 'Wellness center' returns spa", () => {
+    assert.equal(mapCategory("Wellness center", []), "spa");
+  });
+  it("primary 'Wellness studio' returns spa", () => {
+    assert.equal(mapCategory("Wellness studio", []), "spa");
+  });
+
+  it("'Hair salon' does NOT map to spa", () => {
+    assert.equal(mapCategory("Hair salon", []), "salon");
+  });
+  it("'Nail salon' does NOT map to spa", () => {
+    assert.equal(mapCategory("Nail salon", []), "salon");
+  });
+  it("'Barber shop' does NOT map to spa", () => {
+    assert.equal(mapCategory("Barber shop", []), "salon");
+  });
+  it("'Beauty salon' does NOT map to spa", () => {
+    assert.equal(mapCategory("Beauty salon", []), "salon");
+  });
+
+  it("'Spanish restaurant' still returns restaurant (substring 'spa' guard)", () => {
+    assert.equal(mapCategory("Spanish restaurant", []), "restaurant");
+  });
+
+  it("'Hair salon' with 'Spa' secondary stays salon, not spa", () => {
+    // Salons that also list spa services in secondaries should not flip
+    // to spa. The spa branch defers when salon/barber/nail context shows.
+    assert.equal(mapCategory("Hair salon", ["Spa", "Day spa"]), "salon");
   });
 });
