@@ -536,6 +536,22 @@ async function loadBusinessFromDb(
   if (scoreRows.length === 0) return null;
   const s = scoreRows[0];
 
+  // business_photos.url is unconstrained text in DB; BusinessPhotoSchema.url
+  // is z.string().url(). One malformed row (rare but possible from older
+  // ingest paths) would otherwise fail the BusinessSchema parse for the
+  // whole slug. Drop the bad rows with a warning so --resume keeps working.
+  const validPhotos: { url: string; source: string }[] = [];
+  for (const p of photoRows) {
+    try {
+      new URL(p.url);
+      validPhotos.push({ url: p.url, source: p.source });
+    } catch {
+      console.warn(
+        `[loadBusinessFromDb] ${slug}: dropping photo with malformed url at sort_order=${p.sort_order}`,
+      );
+    }
+  }
+
   // Reconstruct the Zod-shaped Business object from DB columns.
   const businessRaw: Record<string, unknown> = {
     slug: b.slug,
@@ -543,7 +559,7 @@ async function loadBusinessFromDb(
     category: b.category,
     neighborhood: b.neighborhood,
     address: b.address,
-    photos: photoRows.map((p) => ({ url: p.url, source: p.source })),
+    photos: validPhotos,
     review_keywords: keywordRows.map((k) => k.keyword),
     created_at: (b.created_at ?? new Date()).toISOString(),
     updated_at: (b.updated_at ?? new Date()).toISOString(),
@@ -561,8 +577,19 @@ async function loadBusinessFromDb(
     if (sig.posts_last_30 != null) businessRaw.posts_last_30 = sig.posts_last_30;
     if (sig.reels_last_30 != null) businessRaw.reels_last_30 = sig.reels_last_30;
   }
-  if (b.hero_photo) businessRaw.hero_photo = b.hero_photo;
-  else if (photoRows[0]?.url) businessRaw.hero_photo = photoRows[0].url;
+  // Hero photo: try the businesses.hero_photo column first, fall back to the
+  // first valid photo. Same URL-validity guard so the BusinessSchema parse
+  // does not blow up on a stray malformed value.
+  for (const candidate of [b.hero_photo, validPhotos[0]?.url]) {
+    if (!candidate) continue;
+    try {
+      new URL(candidate);
+      businessRaw.hero_photo = candidate;
+      break;
+    } catch {
+      // try the next candidate
+    }
+  }
 
   const biz = BusinessSchema.safeParse(businessRaw);
   if (!biz.success) {
