@@ -1388,10 +1388,18 @@ async function fetchApifyDataset(
 }
 
 /**
- * Resolve slug collisions for a brand-new scrape by appending a short
- * suffix based on the placeId. Curated-source collisions short-circuit:
- * if the existing row has source='curated', we refuse to clobber it and
- * raise so the caller can flag for review and skip.
+ * Resolve slug collisions for a brand-new scrape.
+ *
+ * Three cases:
+ *   1. baseSlug is unused → return baseSlug.
+ *   2. baseSlug exists AND its place_id matches the incoming scrape →
+ *      return baseSlug. Re-ingesting the same place_id should update in
+ *      place, not create a duplicate row. Pre-2026-05-07 behavior was to
+ *      always suffix, which created 377 duplicate businesses across the
+ *      Phase 7 sweep. See scripts/dedup-businesses.ts for cleanup.
+ *   3. baseSlug exists AND its place_id differs → genuine name collision.
+ *      Curated-source rows refuse to clobber and throw. Apify-source rows
+ *      get a placeId-derived suffix appended.
  */
 async function resolveSlugForNewBusiness(
   baseSlug: string,
@@ -1399,18 +1407,26 @@ async function resolveSlugForNewBusiness(
 ): Promise<string> {
   const { db, schema } = await getDb();
   const existing = await db
-    .select({ slug: schema.businesses.slug, source: schema.businesses.source })
+    .select({
+      slug: schema.businesses.slug,
+      source: schema.businesses.source,
+      place_id: schema.businesses.place_id,
+    })
     .from(schema.businesses)
     .where(eq(schema.businesses.slug, baseSlug))
     .limit(1);
   if (existing.length === 0) return baseSlug;
   const row = existing[0];
+  // Same place_id, same business: keep the existing slug, update in place.
+  if (row.place_id && row.place_id === placeId) {
+    return baseSlug;
+  }
   if (row.source === "curated") {
     throw new Error(
       `slug collision with curated business "${baseSlug}". Refusing to overwrite. Flag for manual review.`,
     );
   }
-  // Apify-source collision: append a placeId-derived suffix.
+  // Apify-source collision with a different place_id: append a suffix.
   const suffix = placeId.replace(/[^a-zA-Z0-9]/g, "").slice(-6).toLowerCase();
   return `${baseSlug}-${suffix}`;
 }
