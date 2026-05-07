@@ -111,6 +111,7 @@ export const ingestStatusEnum = pgEnum("ingest_status", [
   "skipped_closed",
   "skipped_chain",
   "skipped_out_of_geo",
+  "skipped_low_reviews",
 ]);
 
 /* ---------------------------- businesses -------------------------------- */

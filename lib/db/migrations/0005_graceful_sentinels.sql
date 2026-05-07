@@ -1,0 +1,1 @@
+ALTER TYPE "public"."ingest_status" ADD VALUE 'skipped_low_reviews';

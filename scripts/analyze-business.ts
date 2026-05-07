@@ -199,7 +199,7 @@ Never use the word "median" anywhere. It reads as jargon and creates "median of 
 NEVER USE EM DASHES (the long dash, U+2014). Use a comma, a period, a semicolon, or a colon instead. This applies to every text field in your output. We will reject any output that contains em dashes.
 
 === OUTPUT ===
-Return ONLY a valid JSON object with this exact shape (no markdown, no prose outside JSON):
+Emit your analysis by calling the emit_business_analysis tool. The tool's input schema describes the exact shape required. The field-by-field guidance below tells you WHAT to write in each field, the schema enforces the structure.
 
 {
   "themes": [
@@ -421,6 +421,92 @@ async function logCost(row: {
 
 /* ---------------------------- analyzeOne -------------------------------- */
 
+/**
+ * Forced-output tool. Anthropic guarantees that when tool_choice names this
+ * tool, the model returns a tool_use block whose `input` matches the JSON
+ * Schema below. This eliminates the three failure modes we saw on the first
+ * pipeline pass: truncated JSON, refusal-style prose ("I need to..."),
+ * and analysis-as-prose ("Looking at..."). The schema mirrors the example
+ * spelled out in SYSTEM_PROMPT so the field-by-field guidance still applies.
+ */
+const ANALYSIS_TOOL = {
+  name: "emit_business_analysis",
+  description:
+    "Emit the editorial analysis for the business as structured JSON. Call exactly once.",
+  input_schema: {
+    type: "object" as const,
+    properties: {
+      themes: {
+        type: "array",
+        description: "4 to 6 review themes.",
+        items: {
+          type: "object",
+          properties: {
+            phrase: { type: "string" },
+            frequency: { type: "number" },
+            sentiment: {
+              type: "string",
+              enum: ["positive", "neutral", "negative"],
+            },
+            exampleQuote: { type: "string" },
+          },
+          required: ["phrase", "frequency", "sentiment", "exampleQuote"],
+        },
+      },
+      notable_quote: { type: "string" },
+      sentiment_summary: { type: "string" },
+      quarter_narrative: { type: "string" },
+      tldr_read: { type: "string" },
+      tldr_meaning: { type: "string" },
+      diagnosis_pullquote: {
+        type: "object",
+        properties: {
+          line: { type: "string" },
+          highlight: { type: "string" },
+        },
+        required: ["line", "highlight"],
+      },
+      playbook: {
+        type: "array",
+        description: "Exactly 3 items.",
+        items: {
+          type: "object",
+          properties: {
+            headline: { type: "string" },
+            action: { type: "string" },
+            signal: {
+              type: "string",
+              enum: [
+                "momentum",
+                "content_canvas",
+                "community_spark",
+                "conversion_path",
+                "collab_fit",
+              ],
+            },
+            priority: {
+              type: "string",
+              enum: ["high", "medium", "low"],
+            },
+            impact_label: { type: "string" },
+          },
+          required: ["headline", "action", "signal", "priority", "impact_label"],
+        },
+      },
+    },
+    required: [
+      "themes",
+      "notable_quote",
+      "sentiment_summary",
+      "quarter_narrative",
+      "tldr_read",
+      "tldr_meaning",
+      "diagnosis_pullquote",
+      "playbook",
+    ],
+  },
+};
+
 export async function analyzeOne(
   client: Anthropic,
   input: AnalyzeInput,
@@ -443,6 +529,8 @@ export async function analyzeOne(
             cache_control: { type: "ephemeral" },
           },
         ],
+        tools: [ANALYSIS_TOOL],
+        tool_choice: { type: "tool", name: ANALYSIS_TOOL.name },
         messages: [{ role: "user", content: userPrompt }],
       }),
     { slug: input.slug, step: "analyze" },
@@ -455,15 +543,13 @@ export async function analyzeOne(
     cache_write_tokens: response.usage.cache_creation_input_tokens ?? 0,
   };
 
-  const textBlock = response.content.find((b) => b.type === "text");
-  if (!textBlock || textBlock.type !== "text") {
-    throw new Error(`No text block in Claude response for ${input.name}`);
+  const toolUse = response.content.find((b) => b.type === "tool_use");
+  if (!toolUse || toolUse.type !== "tool_use") {
+    throw new Error(
+      `No tool_use block in Claude response for ${input.name} (stop_reason=${response.stop_reason})`,
+    );
   }
-  let json = textBlock.text.trim();
-  if (json.startsWith("```")) {
-    json = json.replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/, "");
-  }
-  const parsed = JSON.parse(json) as Omit<
+  const parsed = toolUse.input as Omit<
     BusinessAnalysis,
     "slug" | "analyzed_at" | "model" | "review_count"
   >;

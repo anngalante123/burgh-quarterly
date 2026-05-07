@@ -164,3 +164,35 @@ Dated entries, what shipped, what broke, where we left off. Append-only. Future 
 - Decide on lead-capture DB (Supabase recommended)
 - Scaffold sponsor system per D-020
 - Optionally regen analyses to clean residual "median" leaks
+
+---
+
+## 2026-05-07 — Phase A2 + A3: spa branch, DB-backed family pool, ingest triage
+
+**Phase A2 (commit `0353a29`):** spa category end-to-end (enum, mapCategory regex, target, label, medians, migration `0004_many_harrier.sql`). Replaced disk-only Google-text-keyed family lookup with single source of truth in `lib/data/category-family.ts`, keyed off the typed Category enum. Family peers now sourced from DB so DB-only categories (tattoo, spa, salon) get real per-family peers. Family-leader excludes the target itself. New `/leaderboard` route (untracked-then-committed). 13 new normalize tests for spa precedence and salon-spa disambiguation. 108 tests pass.
+
+**Phase A3 (this commit):** ingestion-pipeline triage. The 44 stuck `failed` ingest_runs broke into:
+- 17 low-review failures (analyze step threw on `< 2 reviews on disk`)
+- 24 JSON-output failures (Claude returned non-JSON: 7 truncated, 11 "I need to..." refusals, 6 "Looking at..." prose)
+- 1 photo upload (iron-city, hidden DB error)
+- 1 timeout retry exhaustion (wyomissing)
+- 1 missing-disk-file (inktoxicating-tattoos)
+
+Three changes:
+
+1. **skipped_low_reviews ingest_status** (migration `0005_graceful_sentinels.sql`). Replaced the throw on `<2 reviews` with `checkpointWriteSkipped(slug, "analyzed", "skipped_low_reviews", msg)` plus clean return. Updated RunRow union, checkpointShouldRun prior-skip branch, and checkpointWriteSkipped signature.
+
+2. **Tool-use forced output in `analyzeOne`**. Defined `ANALYSIS_TOOL` whose input_schema mirrors the JSON shape. Calls now pass `tools: [ANALYSIS_TOOL]` and `tool_choice: { type: "tool", name: "emit_business_analysis" }`. Pulls parsed object from `tool_use` block instead of JSON.parse on text. Trimmed redundant "Return ONLY a valid JSON object" SYSTEM_PROMPT instruction. Prompt caching preserved on system block.
+
+3. **DB-backed slug-resume**. New `loadBusinessFromDb(slug, issueSlug)` reconstructs LegacyBusinessFile from `businesses` + `business_signals` + `business_reviews` + `business_photos` + `scores` + `business_review_keywords`. Flattens DB ranks JSONB into Zod's flat rank_category/neighborhood/overall. `stepScraped` now falls back to DB when disk JSON is missing. Required because Phase 7 batch ingest writes straight to DB and never produces per-slug JSON, so `--resume` was previously broken for any slug not in the original 30 calibration JSONs.
+
+**Re-run results:** 44 stuck → 1 stuck. Final state: 7,922 success, 34 skipped_out_of_geo (geo filter caught Albany NY, Portland ME, Newport RI, etc. that should never have been queued), 17 skipped_low_reviews, 1 failed.
+
+**Spend:** ~$0.50 across the re-run batch. The cache-hit rate on SYSTEM_PROMPT is high (cache_r > 0 on every successful call), so per-business analyze cost stayed in the $0.025-$0.030 band.
+
+**Iron-city follow-up (parked):** 1 row remains failed, `iron-city-elite-fitness-and-performance` at the `photos_uploaded` step. The Drizzle wrapper swallowed the underlying Postgres error; only `Failed query: insert into "business_photos" ... params: ...,blob_key="",...` is logged. Business row + 13 photos already exist in DB, so the failure is on the FOURTEENTH photo (sort_order=12, the URL ends with `=w1920-h1080-k-no` query string). Not blocking; addresses can be debugged when next touching the photo upload path.
+
+**Next session picks up at:**
+- Run the next Phase 7 sweep (queues are populated for 18 categories, the spa queue is fresh with 200-target).
+- Optional: investigate iron-city photo bug if/when the upload code is touched.
+- Optional: regen analyses for the older 30 calibration businesses to clean residual "median" leaks (still in their JSON files since they predate the prompt rule).

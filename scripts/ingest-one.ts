@@ -228,7 +228,8 @@ interface RunRow {
     | "failed"
     | "skipped_closed"
     | "skipped_chain"
-    | "skipped_out_of_geo";
+    | "skipped_out_of_geo"
+    | "skipped_low_reviews";
   error: string | null;
   started_at: Date;
   finished_at: Date | null;
@@ -282,7 +283,8 @@ async function checkpointShouldRun(
   if (
     prior.status === "skipped_closed" ||
     prior.status === "skipped_chain" ||
-    prior.status === "skipped_out_of_geo"
+    prior.status === "skipped_out_of_geo" ||
+    prior.status === "skipped_low_reviews"
   ) {
     return {
       run: false,
@@ -364,7 +366,11 @@ async function checkpointWriteSuccess(
 async function checkpointWriteSkipped(
   slug: string,
   step: PipelineStep,
-  status: "skipped_closed" | "skipped_chain" | "skipped_out_of_geo",
+  status:
+    | "skipped_closed"
+    | "skipped_chain"
+    | "skipped_out_of_geo"
+    | "skipped_low_reviews",
   reason: string,
 ): Promise<void> {
   const { db, schema } = await getDb();
@@ -462,6 +468,153 @@ function loadBusinessFile(slug: string): LegacyBusinessFile | null {
     business: biz.data,
     score: score.data,
     meta: _meta ?? null,
+  };
+}
+
+/**
+ * DB-backed reconstruction of LegacyBusinessFile. Used by the slug-resume
+ * path when the per-slug JSON does not exist on disk (the Phase 7 batch
+ * ingest path writes straight to DB and never produces a JSON file). All
+ * downstream pipeline steps consume the legacy shape, so this lets a
+ * --resume run the analyze step on any business that already has a row
+ * in `businesses` plus reviews and a score for the active issue.
+ */
+async function loadBusinessFromDb(
+  slug: string,
+  issueSlug: string,
+): Promise<LegacyBusinessFile | null> {
+  const { db, schema } = await getDb();
+  const bizRows = await db
+    .select()
+    .from(schema.businesses)
+    .where(eq(schema.businesses.slug, slug))
+    .limit(1);
+  if (bizRows.length === 0) return null;
+  const b = bizRows[0];
+
+  const signalsRows = await db
+    .select()
+    .from(schema.businessSignals)
+    .where(
+      and(
+        eq(schema.businessSignals.business_slug, slug),
+        eq(schema.businessSignals.issue_slug, issueSlug),
+      ),
+    )
+    .limit(1);
+  const sig = signalsRows[0] ?? null;
+
+  const reviewRows = await db
+    .select()
+    .from(schema.businessReviews)
+    .where(eq(schema.businessReviews.business_slug, slug));
+  const reviewTexts = reviewRows
+    .map((r) => r.text)
+    .filter((t): t is string => typeof t === "string" && t.length > 0);
+
+  const photoRows = await db
+    .select()
+    .from(schema.businessPhotos)
+    .where(eq(schema.businessPhotos.business_slug, slug))
+    .orderBy(schema.businessPhotos.sort_order);
+
+  const keywordRows = await db
+    .select()
+    .from(schema.businessReviewKeywords)
+    .where(eq(schema.businessReviewKeywords.business_slug, slug));
+
+  const scoreRows = await db
+    .select()
+    .from(schema.scores)
+    .where(
+      and(
+        eq(schema.scores.business_slug, slug),
+        eq(schema.scores.issue_slug, issueSlug),
+      ),
+    )
+    .limit(1);
+  if (scoreRows.length === 0) return null;
+  const s = scoreRows[0];
+
+  // Reconstruct the Zod-shaped Business object from DB columns.
+  const businessRaw: Record<string, unknown> = {
+    slug: b.slug,
+    name: b.name,
+    category: b.category,
+    neighborhood: b.neighborhood,
+    address: b.address,
+    photos: photoRows.map((p) => ({ url: p.url, source: p.source })),
+    review_keywords: keywordRows.map((k) => k.keyword),
+    created_at: (b.created_at ?? new Date()).toISOString(),
+    updated_at: (b.updated_at ?? new Date()).toISOString(),
+    claimed: false,
+  };
+  if (b.website) businessRaw.website = b.website;
+  if (b.instagram) businessRaw.instagram = b.instagram;
+  if (b.tiktok) businessRaw.tiktok = b.tiktok;
+  if (sig) {
+    if (sig.google_rating != null) businessRaw.google_rating = sig.google_rating;
+    if (sig.google_review_count != null)
+      businessRaw.google_review_count = sig.google_review_count;
+    if (sig.review_freshness_days != null)
+      businessRaw.review_freshness_days = sig.review_freshness_days;
+    if (sig.posts_last_30 != null) businessRaw.posts_last_30 = sig.posts_last_30;
+    if (sig.reels_last_30 != null) businessRaw.reels_last_30 = sig.reels_last_30;
+  }
+  if (b.hero_photo) businessRaw.hero_photo = b.hero_photo;
+  else if (photoRows[0]?.url) businessRaw.hero_photo = photoRows[0].url;
+
+  const biz = BusinessSchema.safeParse(businessRaw);
+  if (!biz.success) {
+    throw new Error(
+      `BusinessSchema parse failed for ${slug} (DB): ${biz.error.message.slice(0, 300)}`,
+    );
+  }
+
+  // Reconstruct the Score object. DB stores ranks as a nested {category,
+  // neighborhood, overall} JSONB blob; the Zod schema expects flat
+  // rank_category / rank_neighborhood / rank_overall fields.
+  const scoreRaw: Record<string, unknown> = {
+    business_slug: slug,
+    issue_slug: issueSlug,
+    subscores: s.subscores,
+    composite: s.composite,
+    tier: s.tier,
+    rank_category: s.ranks?.category ?? 1,
+    rank_neighborhood: s.ranks?.neighborhood ?? 1,
+    rank_overall: s.ranks?.overall ?? 1,
+    movement: s.movement,
+    unfair_advantage: s.unfair_advantage,
+    scored_at: (s.scored_at ?? new Date()).toISOString(),
+  };
+  const score = ScoreSchema.safeParse(scoreRaw);
+  if (!score.success) {
+    throw new Error(
+      `ScoreSchema parse failed for ${slug} (DB): ${score.error.message.slice(0, 300)}`,
+    );
+  }
+
+  // Reconstruct the meta block. Most rich Apify fields (categoryName,
+  // imagesCount, hasWebsite, etc.) are not in the DB schema today, so they
+  // stay undefined and assembleAnalyzeInput uses its safe fallbacks (0, [],
+  // false). The only meta field that MUST be populated is reviewTexts, since
+  // analyze-business builds the review block from it.
+  const meta: LegacyBusinessFile["meta"] = {
+    placeId: b.place_id ?? undefined,
+    hasWebsite: !!b.website,
+    reviewTexts,
+    keywordPhrases: keywordRows.map((k) => ({
+      text: k.keyword,
+      count: k.frequency ?? 0,
+      exampleQuote: "",
+    })),
+  };
+
+  return {
+    slug,
+    business: biz.data,
+    score: score.data,
+    meta,
   };
 }
 
@@ -670,19 +823,23 @@ async function stepScraped(
     : await checkpointShouldRun(slug, "scraped", flags);
   if (!decision.run) {
     logSkipped("scraped", slug, decision.reason);
-    const parsed = loadBusinessFile(slug);
+    const parsed =
+      loadBusinessFile(slug) ??
+      (flags.dryRun ? null : await loadBusinessFromDb(slug, flags.issueSlug));
     if (!parsed)
       throw new Error(
-        `[scraped] ${slug}: no content/businesses/${slug}.json on disk and no DB fallback yet (Phase 3 work).`,
+        `[scraped] ${slug}: no content/businesses/${slug}.json on disk and no DB row for issue ${flags.issueSlug}.`,
       );
     return parsed;
   }
   if (!flags.dryRun) await checkpointWritePending(slug, "scraped");
   try {
-    const parsed = loadBusinessFile(slug);
+    const parsed =
+      loadBusinessFile(slug) ??
+      (flags.dryRun ? null : await loadBusinessFromDb(slug, flags.issueSlug));
     if (!parsed) {
       throw new Error(
-        `no content/businesses/${slug}.json on disk. For new place_ids, the Apify scrape path is Phase 3 work.`,
+        `no content/businesses/${slug}.json on disk and no DB row for issue ${flags.issueSlug}. For brand-new place_ids use the --place-id path.`,
       );
     }
     if (!flags.dryRun) await checkpointWriteSuccess(slug, "scraped");
@@ -859,9 +1016,11 @@ async function stepAnalyzed(
   const reviews = parsed.meta?.reviewTexts ?? [];
   if (reviews.length < 2) {
     const msg = `only ${reviews.length} review(s) on disk; analyze-business expects 2+`;
-    if (!flags.dryRun) await checkpointWriteFailed(slug, "analyzed", msg);
-    logFailed("analyzed", slug, msg);
-    throw new Error(msg);
+    if (!flags.dryRun) {
+      await checkpointWriteSkipped(slug, "analyzed", "skipped_low_reviews", msg);
+    }
+    logSkipped("analyzed", slug, msg);
+    return;
   }
 
   const social = loadSocialFile(slug);
