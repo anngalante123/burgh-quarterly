@@ -26,6 +26,7 @@ import {
   type UnderratedList,
 } from "./schemas";
 import type { ReviewAnalysis } from "./load-review-analysis";
+import { singularLabelForCategory } from "./stats";
 
 /**
  * Database-backed read adapter for the Burgh Quarterly content layer.
@@ -133,9 +134,22 @@ const EMPTY_META: BusinessArtifact["meta"] = {
  * columns; until then we keep this single residual JSON read so the business
  * page renders the same insight blocks as before.
  */
-function loadLegacyMeta(slug: string): BusinessArtifact["meta"] {
+function loadLegacyMeta(
+  slug: string,
+  fallbackCategory?: Category,
+): BusinessArtifact["meta"] {
+  // For DB-only businesses (Phase 7 batch ingest does not write per-slug
+  // JSON), fall back to a synthesized categoryName from the typed Category
+  // enum. Without this the page renders "Pittsburgh Businesses" everywhere
+  // because callers like pluralizeCategoryLabel and familyForCategory key
+  // off the freeform string.
+  const fallbackCategoryName = fallbackCategory
+    ? singularLabelForCategory(fallbackCategory)
+    : "";
   const file = path.join(BUSINESSES_DIR, `${slug}.json`);
-  if (!fs.existsSync(file)) return EMPTY_META;
+  if (!fs.existsSync(file)) {
+    return { ...EMPTY_META, categoryName: fallbackCategoryName };
+  }
   try {
     const raw = JSON.parse(fs.readFileSync(file, "utf8")) as {
       _meta?: Partial<BusinessArtifact["meta"]>;
@@ -143,7 +157,7 @@ function loadLegacyMeta(slug: string): BusinessArtifact["meta"] {
     const meta = raw._meta ?? {};
     return {
       placeId: meta.placeId ?? "",
-      categoryName: meta.categoryName ?? "",
+      categoryName: meta.categoryName || fallbackCategoryName,
       imagesCount: meta.imagesCount ?? 0,
       imageCategories: meta.imageCategories ?? [],
       fromTheBusinessFlags: meta.fromTheBusinessFlags ?? [],
@@ -158,7 +172,7 @@ function loadLegacyMeta(slug: string): BusinessArtifact["meta"] {
       keywordPhrases: meta.keywordPhrases ?? [],
     };
   } catch {
-    return EMPTY_META;
+    return { ...EMPTY_META, categoryName: fallbackCategoryName };
   }
 }
 
@@ -278,7 +292,7 @@ export async function loadBusinessBySlug(
   return {
     business: assembleBusiness(bizRow, signalsRow, photoRows, keywordRows),
     score: assembleScore(scoreRow),
-    meta: loadLegacyMeta(slug),
+    meta: loadLegacyMeta(slug, bizRow.category),
     momentum_source: "instagram_scrape",
   };
 }
@@ -351,7 +365,7 @@ export async function loadAllBusinesses(
         keywordsBySlug.get(bizRow.slug) ?? [],
       ),
       score: assembleScore(scoreRow),
-      meta: loadLegacyMeta(bizRow.slug),
+      meta: loadLegacyMeta(bizRow.slug, bizRow.category),
       momentum_source: "instagram_scrape",
     });
   }
@@ -434,7 +448,7 @@ export async function getAllBusinessesForSearch(
   for (const b of bizRows) {
     const tier = tierBySlug.get(b.slug);
     if (!tier) continue;
-    const meta = loadLegacyMeta(b.slug);
+    const meta = loadLegacyMeta(b.slug, b.category);
     out.push({
       slug: b.slug,
       name: b.name,
@@ -854,7 +868,7 @@ export async function loadBusinessesBySlugs(
         keywordsBySlug.get(bizRow.slug) ?? [],
       ),
       score: assembleScore(scoreRow),
-      meta: loadLegacyMeta(bizRow.slug),
+      meta: loadLegacyMeta(bizRow.slug, bizRow.category),
       momentum_source: "instagram_scrape",
     });
   }

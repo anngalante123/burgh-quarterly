@@ -44,7 +44,7 @@ import {
   type BusinessArtifact,
 } from "@/lib/data/load-business";
 import { loadSocialBySlug } from "@/lib/data/load-social";
-import { familyForCategory } from "@/lib/data/category-family";
+import { familyForBusinessCategory } from "@/lib/data/category-family";
 
 /**
  * Business page, restructured 2026-04-25 (pass 2). Anna's feedback:
@@ -102,9 +102,9 @@ function computePeerMedians(
   current: BusinessArtifact,
   all: BusinessArtifact[],
 ): Record<SubscoreKey, number> {
-  const currentFamily = familyForCategory(current.meta.categoryName).key;
+  const currentFamily = familyForBusinessCategory(current.business.category).key;
   const sameFamily = all.filter(
-    (b) => familyForCategory(b.meta.categoryName).key === currentFamily,
+    (b) => familyForBusinessCategory(b.business.category).key === currentFamily,
   );
   const keys: SubscoreKey[] = [
     "content_canvas",
@@ -133,9 +133,10 @@ function buildCategoryPeerDots(
   }[];
   familyLabel: string;
 } {
-  const currentFamily = familyForCategory(current.meta.categoryName);
+  const currentFamily = familyForBusinessCategory(current.business.category);
   const sameFamily = all.filter(
-    (b) => familyForCategory(b.meta.categoryName).key === currentFamily.key,
+    (b) =>
+      familyForBusinessCategory(b.business.category).key === currentFamily.key,
   );
   const rankedInFamily = sameFamily
     .slice()

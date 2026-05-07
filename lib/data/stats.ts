@@ -57,6 +57,42 @@ export function labelForCategory(category: string): string {
   return category.charAt(0).toUpperCase() + category.slice(1);
 }
 
+/**
+ * Singular display label, e.g. "Bakery" not "Bakeries". Used as a fallback
+ * value for the legacy `meta.categoryName` field when no per-slug JSON
+ * exists on disk (Phase 7 batch ingest writes straight to DB).
+ */
+const CATEGORY_SINGULAR: Record<Category, string> = {
+  restaurant: "Restaurant",
+  cafe: "Cafe",
+  salon: "Salon",
+  boutique: "Boutique",
+  fitness: "Fitness Studio",
+  bakery: "Bakery",
+  experience: "Experience",
+  grocery: "Grocery",
+  bar: "Bar",
+  brewery: "Brewery",
+  distillery: "Distillery",
+  tattoo: "Tattoo Studio",
+  ice_cream: "Ice Cream Shop",
+  juice: "Juice Bar",
+  live_music: "Live Music Venue",
+  plant_shop: "Plant Shop",
+  bookstore: "Bookstore",
+  record_store: "Record Store",
+  florist: "Florist",
+  gallery_museum: "Gallery",
+  spa: "Spa",
+};
+
+export function singularLabelForCategory(category: string): string {
+  if (category in CATEGORY_SINGULAR) {
+    return CATEGORY_SINGULAR[category as Category];
+  }
+  return category.charAt(0).toUpperCase() + category.slice(1);
+}
+
 export function computeTierCounts(
   artifacts: BusinessArtifact[],
 ): TierCounts {
