@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Reveal } from "@/components/motion/Reveal";
+import { PeerScoreboard } from "@/components/insights/PeerScoreboard";
 import { cn } from "@/lib/utils";
 
 /**
@@ -304,126 +305,17 @@ export function PeerDotPlot({
             </div>
           </div>
 
-          {/* ── Ranked list ─────────────────────────────────────────── */}
-          <div className="mt-2">
-            <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55 mb-3">
-              The full family
-            </p>
-            <ol className="border-t border-brand-black/10">
-              {[...peers].sort((a, b) => a.rank - b.rank).map((peer, i) => {
-                const isCurrent = peer.slug === currentSlug;
-                const isHovered = hoveredSlug === peer.slug;
-                const isActive = activeSlug === peer.slug;
-                const isHighlighted = isHovered || isActive;
-
-                const rowInner = (
-                  <div
-                    className={cn(
-                      "grid grid-cols-[2.5rem_1fr_auto] md:grid-cols-[3rem_1fr_auto] items-center gap-3 py-3 transition-all",
-                      isCurrent && "relative pl-3 -ml-3",
-                      isHighlighted && !isCurrent && "bg-brand-cream/40",
-                    )}
-                  >
-                    {isCurrent && (
-                      <span
-                        aria-hidden="true"
-                        className="absolute left-0 top-2 bottom-2 w-1 bg-brand-lime"
-                      />
-                    )}
-                    <span
-                      className={cn(
-                        "font-display font-black tabular-nums tracking-[-0.01em]",
-                        isCurrent
-                          ? "text-brand-black text-xl md:text-2xl"
-                          : "text-brand-black/45 text-base md:text-lg",
-                      )}
-                    >
-                      #{peer.rank}
-                    </span>
-                    <div className="min-w-0">
-                      <div className="flex flex-wrap items-baseline gap-2">
-                        <span
-                          className={cn(
-                            "font-display tracking-[-0.01em] truncate",
-                            isCurrent
-                              ? "font-black text-base md:text-lg text-brand-black"
-                              : "font-semibold text-sm md:text-base text-brand-black",
-                          )}
-                        >
-                          {peer.name}
-                        </span>
-                        {peer.tier && (
-                          <span
-                            className={cn(
-                              "font-display text-[0.55rem] font-semibold uppercase tracking-[0.12em] px-1.5 py-0.5 shrink-0",
-                              TIER_PILL_CLASS[peer.tier],
-                            )}
-                          >
-                            {TIER_SHORT[peer.tier]}
-                          </span>
-                        )}
-                      </div>
-                      {peer.distinguishingSignal && (
-                        <p className="mt-0.5 font-body text-[0.72rem] md:text-xs text-brand-black/60 leading-snug">
-                          {peer.distinguishingSignal}
-                        </p>
-                      )}
-                    </div>
-                    {/* Mini dot, mirror of the plot, reinforces mapping */}
-                    <span
-                      aria-hidden="true"
-                      className={cn(
-                        "shrink-0 block rounded-full transition-all",
-                        peer.tier ? TIER_DOT_CLASS[peer.tier] : "bg-brand-black/40",
-                        isCurrent ? "w-4 h-4 ring-2 ring-brand-black" : "w-2.5 h-2.5",
-                        isHighlighted && !isCurrent && "w-3.5 h-3.5",
-                      )}
-                    />
-                  </div>
-                );
-
-                return (
-                  <li
-                    key={peer.slug}
-                    className="border-b border-brand-black/10 last:border-b-0"
-                    onMouseEnter={() => {
-                      setHoveredSlug(peer.slug);
-                      openPopover(peer.slug);
-                    }}
-                    onMouseLeave={() => {
-                      setHoveredSlug(null);
-                      scheduleClose();
-                    }}
-                  >
-                    {isCurrent ? (
-                      rowInner
-                    ) : (
-                      <Link
-                        href={`/business/${peer.slug}`}
-                        className="block focus:outline-none focus-visible:bg-brand-cream/60 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-purple"
-                      >
-                        {rowInner}
-                      </Link>
-                    )}
-                    {/* Motion wrapper for stagger reveal */}
-                    {!reduced && (
-                      <motion.div
-                        aria-hidden="true"
-                        initial={{ opacity: 0, x: -8 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.6 }}
-                        transition={{
-                          duration: 0.35,
-                          delay: 0.25 + i * 0.04,
-                          ease: [0.22, 1, 0.36, 1],
-                        }}
-                      />
-                    )}
-                  </li>
-                );
-              })}
-            </ol>
-          </div>
+          {/* ── Compact scoreboard (replaces the 219-row wall) ──────── */}
+          <PeerScoreboard
+            currentSlug={currentSlug}
+            familyShort={categoryShort}
+            peers={peers.map((p) => ({
+              slug: p.slug,
+              name: p.name,
+              rank: p.rank,
+              tier: p.tier,
+            }))}
+          />
         </div>
 
         <p className="mt-6 font-body text-[0.72rem] md:text-xs text-brand-black/55 leading-relaxed">
