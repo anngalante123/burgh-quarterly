@@ -1577,6 +1577,62 @@ async function scrapePlaceIdToLegacy(
       },
     });
 
+  // Upsert business_signals row. Carries the rich Apify metadata that the
+  // page rendering depends on (verdict card, AtAGlance peer comparisons,
+  // rich meta block via loadLegacyMeta DB-fallback path). Phase 7 batch
+  // ingest used to skip this entirely, leaving 1,992 businesses with no
+  // signals row and degenerate page rendering. Keep parity with the
+  // schema added in migration 0006_flimsy_thunderball.sql.
+  const signalsRow = {
+    business_slug: slug,
+    issue_slug: DEFAULT_ISSUE_SLUG,
+    google_rating: artifact.business.google_rating ?? null,
+    google_review_count: artifact.business.google_review_count ?? null,
+    review_freshness_days: artifact.business.review_freshness_days ?? null,
+    posts_last_30: artifact.business.posts_last_30 ?? null,
+    reels_last_30: artifact.business.reels_last_30 ?? null,
+    has_booking_link: artifact.business.has_booking_link ?? null,
+    has_ugc_visible: artifact.business.has_ugc_visible ?? null,
+    primary_category_name: artifact.meta.categoryName || null,
+    images_count: artifact.meta.imagesCount ?? null,
+    image_categories:
+      artifact.meta.imageCategories && artifact.meta.imageCategories.length > 0
+        ? artifact.meta.imageCategories
+        : null,
+    from_the_business_flags:
+      artifact.meta.fromTheBusinessFlags &&
+      artifact.meta.fromTheBusinessFlags.length > 0
+        ? artifact.meta.fromTheBusinessFlags
+        : null,
+    has_phone: artifact.meta.hasPhone ?? null,
+    has_opening_hours: artifact.meta.hasOpeningHours ?? null,
+    claim_this_business: artifact.meta.claimThisBusiness ?? null,
+    reviews_distribution: artifact.meta.reviewsDistribution ?? null,
+  };
+  await db
+    .insert(schema.businessSignals)
+    .values(signalsRow)
+    .onConflictDoUpdate({
+      target: [
+        schema.businessSignals.business_slug,
+        schema.businessSignals.issue_slug,
+      ],
+      set: {
+        google_rating: signalsRow.google_rating,
+        google_review_count: signalsRow.google_review_count,
+        review_freshness_days: signalsRow.review_freshness_days,
+        primary_category_name: signalsRow.primary_category_name,
+        images_count: signalsRow.images_count,
+        image_categories: signalsRow.image_categories,
+        from_the_business_flags: signalsRow.from_the_business_flags,
+        has_phone: signalsRow.has_phone,
+        has_opening_hours: signalsRow.has_opening_hours,
+        claim_this_business: signalsRow.claim_this_business,
+        reviews_distribution: signalsRow.reviews_distribution,
+        scraped_at: new Date(),
+      },
+    });
+
   // Upsert review rows. Existing rows for the slug get replaced by deleting
   // first; this is the simplest idempotent path until we track per-review
   // identity.

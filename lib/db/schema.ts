@@ -156,6 +156,24 @@ export const businessSignals = pgTable(
     reels_last_30: integer("reels_last_30"),
     has_booking_link: boolean("has_booking_link"),
     has_ugc_visible: boolean("has_ugc_visible"),
+    /* ---- legacy _meta fields, previously read from per-slug JSON ----
+       Page rendering (verdict card, AtAGlance, peer comparisons) reads
+       these. Phase 7 batch ingest writes straight to DB so we hold them
+       here instead of reconstructing per-slug JSON files. */
+    primary_category_name: text("primary_category_name"),
+    images_count: integer("images_count"),
+    image_categories: jsonb("image_categories").$type<string[]>(),
+    from_the_business_flags: jsonb("from_the_business_flags").$type<string[]>(),
+    has_phone: boolean("has_phone"),
+    has_opening_hours: boolean("has_opening_hours"),
+    claim_this_business: boolean("claim_this_business"),
+    reviews_distribution: jsonb("reviews_distribution").$type<{
+      oneStar?: number;
+      twoStar?: number;
+      threeStar?: number;
+      fourStar?: number;
+      fiveStar?: number;
+    }>(),
     scraped_at: timestamp("scraped_at", { withTimezone: true })
       .notNull()
       .defaultNow(),

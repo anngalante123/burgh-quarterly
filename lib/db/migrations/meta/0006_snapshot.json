@@ -1,0 +1,1319 @@
+{
+  "id": "907741aa-27e6-43fd-9088-0dca7fca2c19",
+  "prevId": "c3f0fcda-3199-401c-a1a9-0c241ebc931d",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.analyses": {
+      "name": "analyses",
+      "schema": "",
+      "columns": {
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "issue_slug": {
+          "name": "issue_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "themes": {
+          "name": "themes",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "notable_quote": {
+          "name": "notable_quote",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sentiment_summary": {
+          "name": "sentiment_summary",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "quarter_narrative": {
+          "name": "quarter_narrative",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tldr_read": {
+          "name": "tldr_read",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tldr_meaning": {
+          "name": "tldr_meaning",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "diagnosis_pullquote": {
+          "name": "diagnosis_pullquote",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "playbook": {
+          "name": "playbook",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "review_count": {
+          "name": "review_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "model": {
+          "name": "model",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "prompt_version": {
+          "name": "prompt_version",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "generated_at": {
+          "name": "generated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "analyses_business_slug_businesses_slug_fk": {
+          "name": "analyses_business_slug_businesses_slug_fk",
+          "tableFrom": "analyses",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "analyses_business_slug_issue_slug_pk": {
+          "name": "analyses_business_slug_issue_slug_pk",
+          "columns": [
+            "business_slug",
+            "issue_slug"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.business_photos": {
+      "name": "business_photos",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "url": {
+          "name": "url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "blob_key": {
+          "name": "blob_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source": {
+          "name": "source",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sort_order": {
+          "name": "sort_order",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "business_photos_business_slug_businesses_slug_fk": {
+          "name": "business_photos_business_slug_businesses_slug_fk",
+          "tableFrom": "business_photos",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.business_review_keywords": {
+      "name": "business_review_keywords",
+      "schema": "",
+      "columns": {
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "keyword": {
+          "name": "keyword",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "frequency": {
+          "name": "frequency",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 1
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "business_review_keywords_business_slug_businesses_slug_fk": {
+          "name": "business_review_keywords_business_slug_businesses_slug_fk",
+          "tableFrom": "business_review_keywords",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "business_review_keywords_business_slug_keyword_pk": {
+          "name": "business_review_keywords_business_slug_keyword_pk",
+          "columns": [
+            "business_slug",
+            "keyword"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.business_reviews": {
+      "name": "business_reviews",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "text": {
+          "name": "text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "rating": {
+          "name": "rating",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "language": {
+          "name": "language",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "posted_at": {
+          "name": "posted_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "scraped_at": {
+          "name": "scraped_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "business_reviews_business_slug_businesses_slug_fk": {
+          "name": "business_reviews_business_slug_businesses_slug_fk",
+          "tableFrom": "business_reviews",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.business_signals": {
+      "name": "business_signals",
+      "schema": "",
+      "columns": {
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "issue_slug": {
+          "name": "issue_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "google_rating": {
+          "name": "google_rating",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "google_review_count": {
+          "name": "google_review_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "review_freshness_days": {
+          "name": "review_freshness_days",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "posts_last_30": {
+          "name": "posts_last_30",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "reels_last_30": {
+          "name": "reels_last_30",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "has_booking_link": {
+          "name": "has_booking_link",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "has_ugc_visible": {
+          "name": "has_ugc_visible",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "primary_category_name": {
+          "name": "primary_category_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "images_count": {
+          "name": "images_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_categories": {
+          "name": "image_categories",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "from_the_business_flags": {
+          "name": "from_the_business_flags",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "has_phone": {
+          "name": "has_phone",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "has_opening_hours": {
+          "name": "has_opening_hours",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "claim_this_business": {
+          "name": "claim_this_business",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "reviews_distribution": {
+          "name": "reviews_distribution",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "scraped_at": {
+          "name": "scraped_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "business_signals_business_slug_businesses_slug_fk": {
+          "name": "business_signals_business_slug_businesses_slug_fk",
+          "tableFrom": "business_signals",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "business_signals_business_slug_issue_slug_pk": {
+          "name": "business_signals_business_slug_issue_slug_pk",
+          "columns": [
+            "business_slug",
+            "issue_slug"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.businesses": {
+      "name": "businesses",
+      "schema": "",
+      "columns": {
+        "slug": {
+          "name": "slug",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "category": {
+          "name": "category",
+          "type": "category",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "neighborhood": {
+          "name": "neighborhood",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "address": {
+          "name": "address",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "website": {
+          "name": "website",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "instagram": {
+          "name": "instagram",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tiktok": {
+          "name": "tiktok",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lat": {
+          "name": "lat",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lng": {
+          "name": "lng",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "place_id": {
+          "name": "place_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hero_photo": {
+          "name": "hero_photo",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "claimed": {
+          "name": "claimed",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "owner_email": {
+          "name": "owner_email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source": {
+          "name": "source",
+          "type": "business_source",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'curated'"
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.features": {
+      "name": "features",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "issue_slug": {
+          "name": "issue_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "headline": {
+          "name": "headline",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "dek": {
+          "name": "dek",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "body_mdx": {
+          "name": "body_mdx",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "credits": {
+          "name": "credits",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "movement": {
+          "name": "movement",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "published_at": {
+          "name": "published_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "features_issue_slug_issues_slug_fk": {
+          "name": "features_issue_slug_issues_slug_fk",
+          "tableFrom": "features",
+          "tableTo": "issues",
+          "columnsFrom": [
+            "issue_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "features_business_slug_businesses_slug_fk": {
+          "name": "features_business_slug_businesses_slug_fk",
+          "tableFrom": "features",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.ingest_cost_log": {
+      "name": "ingest_cost_log",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "step": {
+          "name": "step",
+          "type": "ingest_step",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "model": {
+          "name": "model",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "input_tokens": {
+          "name": "input_tokens",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "cache_read_tokens": {
+          "name": "cache_read_tokens",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "cache_write_tokens": {
+          "name": "cache_write_tokens",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "output_tokens": {
+          "name": "output_tokens",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "usd_cost": {
+          "name": "usd_cost",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "occurred_at": {
+          "name": "occurred_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "ingest_cost_log_business_slug_businesses_slug_fk": {
+          "name": "ingest_cost_log_business_slug_businesses_slug_fk",
+          "tableFrom": "ingest_cost_log",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.ingest_runs": {
+      "name": "ingest_runs",
+      "schema": "",
+      "columns": {
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "step": {
+          "name": "step",
+          "type": "ingest_step",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "status": {
+          "name": "status",
+          "type": "ingest_status",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'pending'"
+        },
+        "error": {
+          "name": "error",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "started_at": {
+          "name": "started_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "finished_at": {
+          "name": "finished_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "ingest_runs_business_slug_businesses_slug_fk": {
+          "name": "ingest_runs_business_slug_businesses_slug_fk",
+          "tableFrom": "ingest_runs",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "ingest_runs_business_slug_step_pk": {
+          "name": "ingest_runs_business_slug_step_pk",
+          "columns": [
+            "business_slug",
+            "step"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.issues": {
+      "name": "issues",
+      "schema": "",
+      "columns": {
+        "slug": {
+          "name": "slug",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "season": {
+          "name": "season",
+          "type": "season",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "year": {
+          "name": "year",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "published_at": {
+          "name": "published_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "cover_blurb": {
+          "name": "cover_blurb",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "stats": {
+          "name": "stats",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.lead_captures": {
+      "name": "lead_captures",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "email": {
+          "name": "email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source": {
+          "name": "source",
+          "type": "lead_source",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "owner_name": {
+          "name": "owner_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "verification_answer": {
+          "name": "verification_answer",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "claim_status": {
+          "name": "claim_status",
+          "type": "lead_claim_status",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "opted_in_alerts": {
+          "name": "opted_in_alerts",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "consent_ip": {
+          "name": "consent_ip",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "consent_ua": {
+          "name": "consent_ua",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "lead_captures_business_slug_businesses_slug_fk": {
+          "name": "lead_captures_business_slug_businesses_slug_fk",
+          "tableFrom": "lead_captures",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "set null",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.needs_review": {
+      "name": "needs_review",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "reason": {
+          "name": "reason",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "resolved_at": {
+          "name": "resolved_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "needs_review_business_slug_businesses_slug_fk": {
+          "name": "needs_review_business_slug_businesses_slug_fk",
+          "tableFrom": "needs_review",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.scores": {
+      "name": "scores",
+      "schema": "",
+      "columns": {
+        "business_slug": {
+          "name": "business_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "issue_slug": {
+          "name": "issue_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "subscores": {
+          "name": "subscores",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "composite": {
+          "name": "composite",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tier": {
+          "name": "tier",
+          "type": "tier",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ranks": {
+          "name": "ranks",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "movement": {
+          "name": "movement",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "unfair_advantage": {
+          "name": "unfair_advantage",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "scored_at": {
+          "name": "scored_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "scores_business_slug_businesses_slug_fk": {
+          "name": "scores_business_slug_businesses_slug_fk",
+          "tableFrom": "scores",
+          "tableTo": "businesses",
+          "columnsFrom": [
+            "business_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "scores_business_slug_issue_slug_pk": {
+          "name": "scores_business_slug_issue_slug_pk",
+          "columns": [
+            "business_slug",
+            "issue_slug"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.underrated_lists": {
+      "name": "underrated_lists",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "issue_slug": {
+          "name": "issue_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "category": {
+          "name": "category",
+          "type": "category",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "intro": {
+          "name": "intro",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "entries": {
+          "name": "entries",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "underrated_lists_issue_slug_issues_slug_fk": {
+          "name": "underrated_lists_issue_slug_issues_slug_fk",
+          "tableFrom": "underrated_lists",
+          "tableTo": "issues",
+          "columnsFrom": [
+            "issue_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {
+    "public.business_source": {
+      "name": "business_source",
+      "schema": "public",
+      "values": [
+        "curated",
+        "apify"
+      ]
+    },
+    "public.category": {
+      "name": "category",
+      "schema": "public",
+      "values": [
+        "restaurant",
+        "cafe",
+        "salon",
+        "boutique",
+        "fitness",
+        "bakery",
+        "experience",
+        "grocery",
+        "bar",
+        "brewery",
+        "distillery",
+        "tattoo",
+        "ice_cream",
+        "juice",
+        "live_music",
+        "plant_shop",
+        "bookstore",
+        "record_store",
+        "florist",
+        "gallery_museum",
+        "spa"
+      ]
+    },
+    "public.ingest_status": {
+      "name": "ingest_status",
+      "schema": "public",
+      "values": [
+        "pending",
+        "success",
+        "failed",
+        "skipped_closed",
+        "skipped_chain",
+        "skipped_out_of_geo",
+        "skipped_low_reviews"
+      ]
+    },
+    "public.ingest_step": {
+      "name": "ingest_step",
+      "schema": "public",
+      "values": [
+        "scraped",
+        "photos_uploaded",
+        "scored",
+        "analyzed"
+      ]
+    },
+    "public.lead_claim_status": {
+      "name": "lead_claim_status",
+      "schema": "public",
+      "values": [
+        "pending",
+        "verified",
+        "rejected"
+      ]
+    },
+    "public.lead_source": {
+      "name": "lead_source",
+      "schema": "public",
+      "values": [
+        "subscribe",
+        "claim",
+        "alerts"
+      ]
+    },
+    "public.season": {
+      "name": "season",
+      "schema": "public",
+      "values": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    "public.tier": {
+      "name": "tier",
+      "schema": "public",
+      "values": [
+        "icons",
+        "ones_to_watch",
+        "neighborhood_staples"
+      ]
+    }
+  },
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

@@ -43,6 +43,13 @@
       "when": 1778185377102,
       "tag": "0005_graceful_sentinels",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1778188709782,
+      "tag": "0006_flimsy_thunderball",
+      "breakpoints": true
     }
   ]
 }

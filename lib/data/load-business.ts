@@ -9,6 +9,7 @@ import {
   businesses as businessesTable,
   businessPhotos as businessPhotosTable,
   businessReviewKeywords as businessReviewKeywordsTable,
+  businessReviews as businessReviewsTable,
   businessSignals as businessSignalsTable,
   issues as issuesTable,
   scores as scoresTable,
@@ -134,20 +135,66 @@ const EMPTY_META: BusinessArtifact["meta"] = {
  * columns; until then we keep this single residual JSON read so the business
  * page renders the same insight blocks as before.
  */
+type LegacyMetaInputs = {
+  fallbackCategory?: Category;
+  /** From DB: business_signals row for this slug + issue. */
+  signalsRow?: SignalsRow | null;
+  /** From DB: businesses row, used for placeId, hasWebsite. */
+  bizRow?: BusinessRow | null;
+  /** From DB: review texts for this slug (already filtered to non-empty). */
+  reviewTexts?: string[];
+  /** From DB: review keywords with example quotes. */
+  keywordRows?: { keyword: string; frequency: number | null }[];
+};
+
 function loadLegacyMeta(
   slug: string,
-  fallbackCategory?: Category,
+  inputs: Category | LegacyMetaInputs = {},
 ): BusinessArtifact["meta"] {
-  // For DB-only businesses (Phase 7 batch ingest does not write per-slug
-  // JSON), fall back to a synthesized categoryName from the typed Category
-  // enum. Without this the page renders "Pittsburgh Businesses" everywhere
-  // because callers like pluralizeCategoryLabel and familyForCategory key
-  // off the freeform string.
-  const fallbackCategoryName = fallbackCategory
-    ? singularLabelForCategory(fallbackCategory)
+  // Back-compat: callers used to pass just a Category fallback. Coerce.
+  const opts: LegacyMetaInputs =
+    typeof inputs === "string" ? { fallbackCategory: inputs } : inputs;
+
+  const fallbackCategoryName = opts.fallbackCategory
+    ? singularLabelForCategory(opts.fallbackCategory)
     : "";
+
+  // Source priority:
+  //   1. content/businesses/<slug>.json — original 30 calibration entries
+  //      have full _meta written by the Apify-to-disk path.
+  //   2. business_signals row + DB joins — Phase 7 batch ingest writes
+  //      these directly so no JSON file ever exists.
+  //   3. Synthesized fallback (categoryName from typed enum, everything
+  //      else zero/null/empty).
   const file = path.join(BUSINESSES_DIR, `${slug}.json`);
-  if (!fs.existsSync(file)) {
+  const jsonExists = fs.existsSync(file);
+
+  if (!jsonExists && opts.signalsRow) {
+    const s = opts.signalsRow;
+    const b = opts.bizRow;
+    return {
+      placeId: b?.place_id ?? "",
+      categoryName: s.primary_category_name || fallbackCategoryName,
+      imagesCount: s.images_count ?? 0,
+      imageCategories: s.image_categories ?? [],
+      fromTheBusinessFlags: s.from_the_business_flags ?? [],
+      hasWebsite: !!b?.website,
+      hasPhone: s.has_phone ?? false,
+      phone: null,
+      hasOpeningHours: s.has_opening_hours ?? false,
+      claimThisBusiness: s.claim_this_business ?? null,
+      reviewsDistribution: (s.reviews_distribution as BusinessArtifact["meta"]["reviewsDistribution"]) ?? null,
+      rawReviewsCount: s.google_review_count ?? 0,
+      reviewTexts: opts.reviewTexts ?? [],
+      keywordPhrases: (opts.keywordRows ?? []).map((k) => ({
+        text: k.keyword,
+        count: k.frequency ?? 0,
+        exampleQuote: "",
+      })),
+    };
+  }
+
+  if (!jsonExists) {
     return { ...EMPTY_META, categoryName: fallbackCategoryName };
   }
   try {
@@ -289,10 +336,27 @@ export async function loadBusinessBySlug(
     .limit(1);
   if (!scoreRow) return null;
 
+  // Pull review text for the per-page pull-quote and any meta.reviewTexts
+  // consumer. Originals get the same content from per-slug JSON; new
+  // ingests need DB.
+  const reviewRows = await db
+    .select({ text: businessReviewsTable.text })
+    .from(businessReviewsTable)
+    .where(eq(businessReviewsTable.business_slug, slug));
+  const reviewTexts = reviewRows
+    .map((r) => r.text)
+    .filter((t): t is string => typeof t === "string" && t.length > 0);
+
   return {
     business: assembleBusiness(bizRow, signalsRow, photoRows, keywordRows),
     score: assembleScore(scoreRow),
-    meta: loadLegacyMeta(slug, bizRow.category),
+    meta: loadLegacyMeta(slug, {
+      fallbackCategory: bizRow.category,
+      signalsRow,
+      bizRow,
+      reviewTexts,
+      keywordRows,
+    }),
     momentum_source: "instagram_scrape",
   };
 }
@@ -357,6 +421,7 @@ export async function loadAllBusinesses(
   for (const bizRow of bizRows) {
     const scoreRow = scoresBySlug.get(bizRow.slug);
     if (!scoreRow) continue;
+    const signalsRow = signalsBySlug.get(bizRow.slug) ?? null;
     out.push({
       business: assembleBusiness(
         bizRow,
@@ -365,7 +430,16 @@ export async function loadAllBusinesses(
         keywordsBySlug.get(bizRow.slug) ?? [],
       ),
       score: assembleScore(scoreRow),
-      meta: loadLegacyMeta(bizRow.slug, bizRow.category),
+      // reviewTexts intentionally omitted in the bulk loader: per-page
+      // pull-quote rendering is the only consumer and it uses
+      // loadBusinessBySlug, not loadAllBusinesses. Skipping the join keeps
+      // this from pulling tens of thousands of review rows on every page.
+      meta: loadLegacyMeta(bizRow.slug, {
+        fallbackCategory: bizRow.category,
+        signalsRow,
+        bizRow,
+        keywordRows: keywordsBySlug.get(bizRow.slug) ?? [],
+      }),
       momentum_source: "instagram_scrape",
     });
   }
@@ -860,6 +934,7 @@ export async function loadBusinessesBySlugs(
   for (const bizRow of bizRows) {
     const scoreRow = scoresBySlug.get(bizRow.slug);
     if (!scoreRow) continue;
+    const signalsRow = signalsBySlug.get(bizRow.slug) ?? null;
     out.set(bizRow.slug, {
       business: assembleBusiness(
         bizRow,
@@ -868,7 +943,12 @@ export async function loadBusinessesBySlugs(
         keywordsBySlug.get(bizRow.slug) ?? [],
       ),
       score: assembleScore(scoreRow),
-      meta: loadLegacyMeta(bizRow.slug, bizRow.category),
+      meta: loadLegacyMeta(bizRow.slug, {
+        fallbackCategory: bizRow.category,
+        signalsRow,
+        bizRow,
+        keywordRows: keywordsBySlug.get(bizRow.slug) ?? [],
+      }),
       momentum_source: "instagram_scrape",
     });
   }

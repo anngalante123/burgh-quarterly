@@ -196,3 +196,29 @@ Three changes:
 - Run the next Phase 7 sweep (queues are populated for 18 categories, the spa queue is fresh with 200-target).
 - Optional: investigate iron-city photo bug if/when the upload code is touched.
 - Optional: regen analyses for the older 30 calibration businesses to clean residual "median" leaks (still in their JSON files since they predate the prompt rule).
+
+---
+
+## 2026-05-07 (evening) — Phase A4: business_signals backfill + page rendering recovery
+
+**The bug Anna found:** Phase 7 batch ingest never wrote to `business_signals`. Result: 1,992 businesses had no signals row, so the page rendering for everything outside the 30 calibration originals lost the verdict card ("DOING WELL / ROOM TO RUN"), the per-row peer comparisons ("12/30d Top of Sweets"), and most of the rich-data blocks. Pleasant Bar's diagnosis line read "GOOGLE PROFILE IS STILL EMPTY" because Claude was looking at zero values when it ran analyze.
+
+**Fix in three parts:**
+
+1. **Schema extension (migration `0006_flimsy_thunderball.sql`).** Added 8 columns to `business_signals`: `primary_category_name`, `images_count`, `image_categories` (jsonb), `from_the_business_flags` (jsonb), `has_phone`, `has_opening_hours`, `claim_this_business`, `reviews_distribution` (jsonb). These had been living on a per-slug `_meta` JSON block that Phase 7 never wrote. Putting them in DB beats reconstructing 2K JSON files.
+
+2. **Loader refactor.** `loadLegacyMeta` in `lib/data/load-business.ts` now takes optional pre-loaded DB rows (`signalsRow`, `bizRow`, `reviewTexts`, `keywordRows`) and source-priorities them: per-slug JSON file first (originals), then DB row (Phase 7), then synthesized fallback. The three bulk loaders (`loadBusinessBySlug`, `loadAllBusinesses`, `loadBusinessesBySlugs`) all pass DB rows through. Old callsites that just pass a Category fallback still work via a back-compat coercion. `loadBusinessBySlug` now also pulls review text rows from DB so per-page pull-quotes work for Phase 7 businesses.
+
+3. **Pipeline fix.** `stepScrapedFromApify` in `scripts/ingest-one.ts` now upserts `business_signals` immediately after the businesses upsert. All 11 columns written from `artifact.business` + `artifact.meta`. Future Phase 7 runs do not need a backfill.
+
+**Backfill (one-time, scripts/backfill-signals.ts).** Reads every `content/raw/apify/pit-*.json` (52 files, 5,522 records, 3,705 unique placeIds). Joins to `businesses.place_id`. Writes 1,813 new signals rows (90% of the 2,022-business index). 209 rows had no placeId match in raw dumps, mostly the 30 calibration originals (which already have JSON files) plus a few duplicate-slug edge cases. No API spend.
+
+**Verified.** Pleasant Bar's page now renders the full verdict card: REVIEW VOLUME 497, "#29 of 157 in Bars", "more than 2x the industry typical", "Review traffic is heavy, 2.2x the volume of typical Pittsburgh peers." Family rank, breadcrumb, subhead all unchanged from the Phase A3 fix.
+
+**Still parked:** the 1,987 existing analyses still carry diagnosis text generated when Claude saw zero data. Re-running analyze on them with `--force` would replace those lines with text that reflects real review volume, ratings, and category context. Cost is roughly $50 across the index. Anna will plan that as its own pass.
+
+108 tests pass, clean typecheck.
+
+**Next session picks up at:**
+- Re-analyze sweep across 1,987 businesses (~$50, ~30 min) when Anna is ready.
+- iron-city-elite photo upload (still 1 row stuck) when the upload path gets next touched.
