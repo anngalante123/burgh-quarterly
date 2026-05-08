@@ -222,3 +222,31 @@ Three changes:
 **Next session picks up at:**
 - Re-analyze sweep across 1,987 businesses (~$50, ~30 min) when Anna is ready.
 - iron-city-elite photo upload (still 1 row stuck) when the upload path gets next touched.
+
+---
+
+## 2026-05-08 — Phase A5: rescore + dedup + scoreboard + sweep with caveat
+
+**Where you sit, redesigned.** New `components/insights/PeerScoreboard.tsx` replaces the 220-row "WHERE YOU SIT" wall with a position-aware compact view. Three flavors (top-of-family, middle, bottom). Editorial sentence above the scoreboard names a specific rival when one exists. "Show all N" toggle preserves access to the full list. Reviewer-flagged accessibility fixes applied: aria-current on self row, aria-label on rival callout. Commit `7345af8`.
+
+**Duplicate businesses cleanup.** Phase 7 ingest had created 377 duplicate rows (one with clean slug, one with `-XXXXXX` hash suffix; same place_id). Root cause: `scripts/ingest-one.ts resolveSlugForNewBusiness` checked only "does this slug exist" before suffixing, so re-ingesting the same place_id created a second row instead of updating the first. Patched the function to also check place_id; if existing slug's place_id matches, return the existing slug. Wrote `scripts/dedup-businesses.ts` to walk the 377 dup groups, pick the canonical (non-suffixed) slug, and delete the dup. Cascade FKs handle the children. Result: 2,022 to 1,645 businesses. Zero remaining dup groups. Commit `3903e3e`.
+
+**Rescore-all (and the bug that cost a sweep).** `scripts/rescore-all.ts` recomputes subscores+composite+tier across the index using the now-populated business_signals from Phase A4. First version omitted review texts from the meta block, which silently flat-lined `communitySparkScore`'s sentiment leg at 30 for every business. Code review caught it before push. Fixed version loads `business_reviews.text` in bulk and feeds it through. Comparison:
+
+| | Broken rescore | Fixed rescore |
+|---|---:|---:|
+| Staples to OTW | 4 | 895 |
+| Staples to Icons | 0 | 127 |
+| OTW to Icons | 4 | 20 |
+| Icons drops | 147 | 2 |
+
+Fixed-rescore tier distribution: 44 Icons / 200 OTW / 1,400 Staples. Honest, matches real-world tier shape.
+
+**Re-analyze sweep, $52.50, partially complete.** Ran a full re-analyze sweep against the (still-broken) rescore on the first pass: 1,640 of 1,644 succeeded for $51. Smoke test on Pleasant Bar showed dramatically better diagnosis text once Claude had real signals to work with. Pushed for a second sweep against the fixed rescore. Anthropic API credit ran out at iteration 86. Only ~85 businesses got refreshed against the corrected scores; the remaining 1,559 still carry the diagnosis text generated against the broken-rescore family ranks. Mostly minor (editorial commentary survives; rank-citation numbers in some lines are stale).
+
+**The stuck spot:** site renders consistently with proper tiers and signals. Diagnosis text is good for ~85 businesses on the fixed rescore plus all 30 calibration originals; the other ~1,500 carry slightly-stale rank citations. The pages still look correct because PeerScoreboard and family-rank rendering compute on the fly from current scores, so the rank shown next to "you are here" is always fresh. The staleness is only in Claude's editorial copy.
+
+**Next session picks up at:**
+- **Top up Anthropic credits**, then run `scripts/reanalyze-all.sh` again to refresh diagnosis text on the remaining ~1,559 businesses against the fixed rescore. Estimated cost: another ~$45.
+- Investigate whether the iron-city-elite photo-upload bug should ship as a fix or stay parked.
+- Optional follow-ups from reviewer notes: tighten dedup `SUFFIX_RE` to require at least one digit (currently false-positive-prone for legit slugs ending in 6 alpha chars; didn't bite this run because no dup-group contained one); guard PeerScoreboard for total<6 family sizes.
