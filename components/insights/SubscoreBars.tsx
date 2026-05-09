@@ -42,11 +42,22 @@ export type SubscoreKey =
 
 type Subscores = Record<SubscoreKey, number>;
 
+/**
+ * One row in the "What we found" list. `text` is the human-facing bullet.
+ * `found` indicates whether this marker was satisfied:
+ *   true   marker present (renders with a lime check)
+ *   false  marker missing (renders with a purple cross)
+ *   undefined  descriptive bullet, no pass/fail (renders with a neutral dot)
+ */
+export type SubscoreBullet =
+  | string
+  | { text: string; found?: boolean };
+
 export type SubscoreDetail = {
   /** Longer explainer, one sentence, starts with "We read X as..." or similar */
   explainer?: string;
   /** 2-4 concrete data points from this business's record */
-  bullets: string[];
+  bullets: SubscoreBullet[];
   /** Optional editorial pullquote, short phrase in italic */
   pullquote?: string;
 };
@@ -275,20 +286,69 @@ export function SubscoreBars({
                         <p className="mt-4 font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55">
                           What we found
                         </p>
-                        <ul className="mt-2 space-y-1.5">
-                          {detail.bullets.map((b, bi) => (
-                            <li
-                              key={bi}
-                              className="flex items-baseline gap-2.5 font-body text-sm text-brand-black/85"
-                            >
-                              <span
-                                aria-hidden="true"
-                                className="inline-block h-[6px] w-[6px] rounded-full bg-brand-lime shrink-0 translate-y-[-2px]"
-                              />
-                              <span className="leading-relaxed">{b}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        {(() => {
+                          const items = detail.bullets.map((b) =>
+                            typeof b === "string"
+                              ? { text: b, found: undefined as boolean | undefined }
+                              : b,
+                          );
+                          const passFail = items.filter(
+                            (it) => typeof it.found === "boolean",
+                          );
+                          const passes = passFail.filter((it) => it.found).length;
+                          const showSummary = passFail.length >= 2;
+                          return (
+                            <>
+                              {showSummary && (
+                                <p className="mt-2 font-body text-[0.78rem] md:text-sm text-brand-black/65">
+                                  <span className="font-semibold text-brand-black">
+                                    {passes} of {passFail.length} markers present
+                                  </span>
+                                  .{" "}
+                                  {passes === passFail.length
+                                    ? "Every public-readiness marker we look for is in place."
+                                    : passes === 0
+                                      ? "None of the public-readiness markers are in place yet."
+                                      : "The miss is what tilts this signal below peers."}
+                                </p>
+                              )}
+                              <ul className="mt-2 space-y-1.5">
+                                {items.map((b, bi) => {
+                                  const isPass = b.found === true;
+                                  const isMiss = b.found === false;
+                                  return (
+                                    <li
+                                      key={bi}
+                                      className={cn(
+                                        "flex items-baseline gap-2.5 font-body text-sm",
+                                        isMiss
+                                          ? "text-brand-black/65"
+                                          : "text-brand-black/85",
+                                      )}
+                                    >
+                                      <span
+                                        aria-hidden="true"
+                                        className={cn(
+                                          "inline-flex items-center justify-center shrink-0 translate-y-[-1px] font-display text-[0.7rem] font-bold leading-none",
+                                          isPass
+                                            ? "h-4 w-4 rounded-full bg-brand-lime text-brand-black"
+                                            : isMiss
+                                              ? "h-4 w-4 rounded-full bg-brand-purple/15 text-brand-purple ring-1 ring-brand-purple/40"
+                                              : "h-[6px] w-[6px] rounded-full bg-brand-lime",
+                                        )}
+                                      >
+                                        {isPass ? "✓" : isMiss ? "✕" : ""}
+                                      </span>
+                                      <span className="leading-relaxed">
+                                        {b.text}
+                                      </span>
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            </>
+                          );
+                        })()}
                         {detail.pullquote && (
                           <blockquote className="mt-4 pl-4 border-l-2 border-brand-black/20 font-body italic text-sm text-brand-black/70 leading-relaxed max-w-xl">
                             &ldquo;{detail.pullquote}&rdquo;

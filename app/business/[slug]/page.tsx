@@ -267,16 +267,34 @@ export default async function BusinessPage({ params }: PageProps) {
       explainer:
         "How ready a business is for a creator partnership, public presence, real contact surface, and an owner who's reachable.",
       bullets: [
-        meta.hasWebsite ? "Website (linkable in captions)" : "No website",
-        meta.hasPhone ? "Phone line live" : "No phone",
-        meta.hasOpeningHours ? "Hours published" : "No hours",
-        social.ig?.is_business_account
-          ? "Instagram is a business account"
-          : social.ig
-            ? "Instagram not configured as business account"
-            : "Instagram handle pending",
-        social.ig?.verified ? "Verified on Instagram" : "",
-      ].filter(Boolean),
+        {
+          text: meta.hasWebsite
+            ? "Website (linkable in captions)"
+            : "No website on Google",
+          found: meta.hasWebsite,
+        },
+        {
+          text: meta.hasPhone ? "Phone line live" : "No phone on Google",
+          found: meta.hasPhone,
+        },
+        {
+          text: meta.hasOpeningHours
+            ? "Hours published"
+            : "No hours on Google",
+          found: meta.hasOpeningHours,
+        },
+        {
+          text: social.ig?.is_business_account
+            ? "Instagram is a business account"
+            : social.ig
+              ? "Instagram not configured as business account"
+              : "Instagram handle not yet discovered",
+          found: !!social.ig?.is_business_account,
+        },
+        ...(social.ig?.verified
+          ? [{ text: "Verified on Instagram", found: true }]
+          : []),
+      ],
     },
   };
 
