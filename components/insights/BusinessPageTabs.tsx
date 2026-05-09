@@ -25,7 +25,7 @@ type TabDef = {
 
 const TABS: TabDef[] = [
   { key: "playbook", label: "The Playbook", sublabel: "3 moves" },
-  { key: "compare", label: "How you compare", sublabel: "vs industry" },
+  { key: "compare", label: "How you compare", sublabel: "vs family" },
   { key: "voice", label: "What customers say", sublabel: "themes" },
 ];
 

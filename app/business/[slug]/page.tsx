@@ -370,26 +370,13 @@ export default async function BusinessPage({ params }: PageProps) {
 
     glanceRows.push({
       key: "rank",
-      label: `Rank in ${familyShort}`,
+      label: "Rank",
       value: `#${rankFamilyPos}`,
       delta: `of ${categoryPeerDots.length} · ${score.tier === "icons" ? "Icons" : score.tier === "ones_to_watch" ? "Ones to Watch" : "Neighborhood Staples"}`,
       focus: false,
       expanded: (
         <Gated label="rank" businessName={biz.name} source={`rank:${biz.slug}`}>
         <div className="space-y-8">
-          <RowPeerStat
-            label="Composite rank"
-            thisValue={`#${rankFamilyPos} of ${categoryPeerDots.length}`}
-            familyMedian={`#${Math.ceil(categoryPeerDots.length / 2)}`}
-            rankLabel={
-              rankFamilyPos === 1
-                ? `Top of ${familyStats.familyShort}`
-                : rankFamilyPos === categoryPeerDots.length
-                  ? `Bottom of ${familyStats.familyShort}`
-                  : `#${rankFamilyPos} of ${categoryPeerDots.length} in ${familyStats.familyShort}`
-            }
-            familyShort={familyStats.familyShort}
-          />
           <PeerDotPlot
             currentSlug={biz.slug}
             category={familyLabel}
@@ -406,7 +393,13 @@ export default async function BusinessPage({ params }: PageProps) {
                 <p className="font-body text-sm md:text-base text-brand-black/85 leading-relaxed mb-2">
                   <span className="font-semibold">Above:</span>{" "}
                   {peersAbove
-                    .map((p) => `#${p.rank} ${p.name} (${p.distinguishingSignal})`)
+                    .map((p) => {
+                      const sig = p.distinguishingSignal?.trim();
+                      const showSig = sig && sig.toUpperCase() !== "TBD";
+                      return showSig
+                        ? `#${p.rank} ${p.name} (${sig})`
+                        : `#${p.rank} ${p.name}`;
+                    })
                     .join(", ")}
                   .
                 </p>
@@ -570,12 +563,17 @@ export default async function BusinessPage({ params }: PageProps) {
                   {categoryLabel.replace(/^Pittsburgh\s+/, "")}
                 </Link>
               </li>
-              <li aria-hidden="true">›</li>
-              <li>
-                <Link href="/#search" className="hover:text-brand-purple">
-                  {neighborhoodLabel}
-                </Link>
-              </li>
+              {neighborhoodLabel &&
+              neighborhoodLabel.trim().toLowerCase() !== "pittsburgh" ? (
+                <>
+                  <li aria-hidden="true">›</li>
+                  <li>
+                    <Link href="/#search" className="hover:text-brand-purple">
+                      {neighborhoodLabel}
+                    </Link>
+                  </li>
+                </>
+              ) : null}
             </ol>
           </nav>
 
@@ -621,12 +619,6 @@ export default async function BusinessPage({ params }: PageProps) {
                 <span className="text-brand-black/55">
                   #{rankFamilyPos} in Pittsburgh {familyShort}
                 </span>
-                {score.rank_category && score.rank_category !== rankFamilyPos ? (
-                  <span className="text-brand-black/35">
-                    · #{score.rank_category} in{" "}
-                    {labelForCategory(biz.category).toLowerCase()}
-                  </span>
-                ) : null}
               </p>
             </div>
           )}

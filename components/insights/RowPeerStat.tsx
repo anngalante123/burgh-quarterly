@@ -55,7 +55,7 @@ export function RowPeerStat({
         {thisValue}
       </span>
       <span className="font-body text-xs md:text-sm text-brand-black/55">
-        industry typical: {familyMedian}
+        family typical: {familyMedian}
       </span>
       <span
         className={cn(

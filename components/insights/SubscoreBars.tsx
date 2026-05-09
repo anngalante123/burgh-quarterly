@@ -145,13 +145,10 @@ export function SubscoreBars({
   return (
     <Reveal as="section" className="block">
       <div aria-label="Subscore index">
-        <div className="border-b border-brand-black/15 pb-3 mb-5 flex flex-wrap items-baseline justify-between gap-2">
+        <div className="border-b border-brand-black/15 pb-3 mb-5">
           <h2 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-brand-black">
             Subscore Index
           </h2>
-          <span className="font-body text-[0.65rem] md:text-xs uppercase tracking-[0.14em] text-brand-black/50">
-            Tap a row to expand
-          </span>
         </div>
         <p className="mb-6 font-body text-sm text-brand-black/65 leading-snug max-w-2xl">
           Five signals that decide where this business lands.{" "}
@@ -206,14 +203,16 @@ export function SubscoreBars({
 
                   {/* Position + chevron */}
                   <div className="flex items-center gap-2 md:col-start-3">
-                    <span
-                      className={cn(
-                        "font-display text-[0.6rem] md:text-[0.62rem] uppercase tracking-[0.14em] whitespace-nowrap",
-                        q.positionLabelClass,
-                      )}
-                    >
-                      {q.positionLabel}
-                    </span>
+                    {q.tone !== "near" && (
+                      <span
+                        className={cn(
+                          "font-display text-[0.6rem] md:text-[0.62rem] uppercase tracking-[0.14em] whitespace-nowrap",
+                          q.positionLabelClass,
+                        )}
+                      >
+                        {q.positionLabel}
+                      </span>
+                    )}
                     {hasDetail && (
                       <motion.span
                         aria-hidden="true"
@@ -273,7 +272,7 @@ export function SubscoreBars({
                       }}
                       className="overflow-hidden"
                     >
-                      <div className="relative bg-brand-cream border-l-4 border-brand-purple pl-5 pr-4 py-5 md:pl-8 md:pr-6 md:py-6 mt-1 mb-1">
+                      <div className="relative bg-brand-cream border-t-2 border-brand-lime px-5 py-5 md:px-8 md:py-6 mt-1 mb-1">
                         {/* Editorial kicker */}
                         <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
                           What we&apos;re measuring
