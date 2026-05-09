@@ -198,10 +198,10 @@ export function TierProportionBar({ currentSlug, peers }: Props) {
 
       {/* The bar itself. Bare colored zones, hoverable + clickable to
           open a popover listing the top 3 peers in that tier. */}
-      <div className="relative flex h-7 w-full overflow-hidden rounded-sm">
+      <div className="relative flex h-9 w-full overflow-hidden rounded-sm border border-brand-black/15 shadow-[0_1px_0_0_rgba(0,0,0,0.04)]">
         {(() => {
           let cursor = 0;
-          return orderedTiers.map((t) => {
+          return orderedTiers.map((t, i) => {
             if (counts[t] === 0) return null;
             const left = cursor;
             cursor += finalPct[t];
@@ -222,8 +222,11 @@ export function TierProportionBar({ currentSlug, peers }: Props) {
                 }}
                 className={cn(
                   TIER_BG[t],
-                  "h-full transition-[filter] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple ring-inset",
-                  isActive ? "brightness-110" : "hover:brightness-110",
+                  "relative h-full cursor-pointer transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple ring-inset",
+                  i > 0 && "border-l border-brand-black/15",
+                  isActive
+                    ? "brightness-105 shadow-[inset_0_0_0_2px_rgba(15,15,15,0.65)]"
+                    : "hover:brightness-105 hover:shadow-[inset_0_0_0_2px_rgba(15,15,15,0.45)]",
                 )}
                 style={{ width: `${finalPct[t]}%` }}
               />
@@ -316,30 +319,55 @@ export function TierProportionBar({ currentSlug, peers }: Props) {
           })()}
       </div>
 
-      {/* Single legend row beneath the bar: colored swatch + tier name +
-          count, evenly spaced. One slot per tier, no positional
-          collisions. */}
-      <ul className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-[0.65rem] md:text-xs text-brand-black/65">
+      {/* Legend row beneath the bar. Each item is also a button so the
+          zone popover can be opened by keyboard or by tapping the
+          label text instead of a colored zone (better for narrow
+          zones, better for accessibility). */}
+      <ul className="mt-3 flex flex-wrap items-center gap-x-1 gap-y-2 font-body text-[0.65rem] md:text-xs text-brand-black/65">
         {orderedTiers.map((t) => {
           if (counts[t] === 0) return null;
+          const isActive = activeZone === t || pinnedZone === t;
           return (
-            <li key={t} className="flex items-center gap-1.5">
-              <span
+            <li key={t}>
+              <button
+                type="button"
+                aria-label={`${TIER_LABEL[t]}: ${counts[t]} peers. Click to view.`}
+                aria-expanded={isActive}
+                onMouseEnter={() => openZone(t)}
+                onMouseLeave={scheduleZoneClose}
+                onFocus={() => openZone(t)}
+                onBlur={scheduleZoneClose}
+                onClick={() => {
+                  setPinnedZone(pinnedZone === t ? null : t);
+                  setActiveZone(t);
+                }}
                 className={cn(
-                  "inline-block w-2.5 h-2.5 rounded-full",
-                  TIER_BG[t],
+                  "flex items-center gap-1.5 px-2 py-1 -mx-1 cursor-pointer transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple",
+                  isActive
+                    ? "bg-brand-cream/60"
+                    : "hover:bg-brand-cream/40",
                 )}
-                aria-hidden="true"
-              />
-              <span className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-brand-black">
-                {TIER_LABEL[t]}
-              </span>
-              <span className="tabular-nums text-brand-black/60">
-                {counts[t]}
-              </span>
+              >
+                <span
+                  className={cn(
+                    "inline-block w-2.5 h-2.5 rounded-full",
+                    TIER_BG[t],
+                  )}
+                  aria-hidden="true"
+                />
+                <span className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-brand-black">
+                  {TIER_LABEL[t]}
+                </span>
+                <span className="tabular-nums text-brand-black/60">
+                  {counts[t]}
+                </span>
+              </button>
             </li>
           );
         })}
+        <li className="ml-1 font-body text-[0.62rem] uppercase tracking-[0.14em] text-brand-black/40">
+          {pinnedZone ? "esc to close" : "tap a tier"}
+        </li>
       </ul>
 
       <p className="mt-3 font-body text-[0.7rem] md:text-xs text-brand-black/55 leading-relaxed">
