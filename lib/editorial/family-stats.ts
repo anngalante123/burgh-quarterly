@@ -1,6 +1,7 @@
 import type { BusinessArtifact } from "@/lib/data/load-business";
 import type { SocialRecord } from "@/lib/data/load-social";
-import { familyForCategory } from "@/lib/data/category-family";
+import { familyForBusinessCategory } from "@/lib/data/category-family";
+import { pickPeerScope } from "@/lib/data/sub-category-peers";
 
 /**
  * Per-family peer comparisons for the raw metrics we surface on a
@@ -65,7 +66,7 @@ function rankInArray(value: number, all: number[]): number {
 function buildLabel(rank: number, familySize: number, familyShort: string): string {
   if (rank === 1) return `Top of ${familyShort}`;
   if (rank === familySize) return `Bottom of ${familyShort}`;
-  // Avoid the word "median" — it's jargon and reads ambiguously.
+  // Avoid the word "median", it's jargon and reads ambiguously.
   // Use concrete rank-of-N positioning instead.
   return `#${rank} of ${familySize} in ${familyShort}`;
 }
@@ -108,12 +109,21 @@ export function computeFamilyMetricStats(
   current: RichBiz,
   all: RichBiz[],
 ): FamilyMetricStats {
-  const fam = familyForCategory(current.artifact.meta.categoryName);
-  const familyShort = fam.label.replace(/^Pittsburgh\s+/, "");
-
-  const family = all.filter(
-    (b) => familyForCategory(b.artifact.meta.categoryName).key === fam.key,
+  const fam = familyForBusinessCategory(current.artifact.business.category);
+  const familyMembers = all.filter(
+    (b) =>
+      familyForBusinessCategory(b.artifact.business.category).key === fam.key,
   );
+  const scope = pickPeerScope<RichBiz>({
+    selfPrimary: current.artifact.meta.categoryName || null,
+    selfFamilyKey: fam.key,
+    selfFamilyLabel: fam.label,
+    familyMembers,
+    primaryOf: (b) => b.artifact.meta.categoryName || null,
+    isSelf: (b) => b.artifact.business.slug === current.artifact.business.slug,
+  });
+  const family = scope.peers;
+  const familyShort = scope.shortLabel;
 
   // ----- review count
   const reviewCounts = family.map(
@@ -202,7 +212,7 @@ export function computeFamilyMetricStats(
     igEngagement,
     tiktokCreators,
     tiktokPlays,
-    familyLabel: fam.label,
+    familyLabel: scope.label,
     familyShort,
   };
 }

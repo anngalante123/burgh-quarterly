@@ -1,0 +1,189 @@
+import { cn } from "@/lib/utils";
+
+/**
+ * TierProportionBar replaces the per-business dot strip on the "Where
+ * you sit" section.
+ *
+ * One horizontal bar split into three colored zones sized proportionally
+ * to the tier counts (Icons / Ones to Watch / Neighborhood Staples).
+ * A single small YOU arrow + label sits above the bar at the user's
+ * rank position. Counts under each zone read out the tier's size.
+ *
+ * Why this shape: the previous N-dot strip overlapped its own labels
+ * once N exceeded ~15 and gave the reader no spatial sense of the
+ * family's tier shape. The proportional bar communicates two facts at
+ * once  family shape (zone widths) and your position (single arrow)
+ * without naming any individual peers. The compact scoreboard below
+ * supplies the named-peer view.
+ *
+ * Brand-compliant tier colors:
+ *   icons               -> brand-lime (#C6F432)
+ *   ones_to_watch       -> brand-purple (#AB35EE)
+ *   neighborhood_staples -> brand-cream (#F5F8E8) with thin black ring
+ */
+
+type Tier = "icons" | "ones_to_watch" | "neighborhood_staples";
+
+type ScoreboardPeer = {
+  slug: string;
+  name: string;
+  rank: number;
+  tier?: Tier;
+};
+
+type Props = {
+  currentSlug: string;
+  /** All peers in the same scope (sub-category or family fallback), in any order. */
+  peers: ScoreboardPeer[];
+};
+
+const TIER_LABEL: Record<Tier, string> = {
+  icons: "Icons",
+  ones_to_watch: "Ones to Watch",
+  neighborhood_staples: "Staples",
+};
+
+const TIER_BG: Record<Tier, string> = {
+  icons: "bg-brand-lime",
+  ones_to_watch: "bg-brand-purple",
+  neighborhood_staples: "bg-brand-cream ring-1 ring-inset ring-brand-black/30",
+};
+
+const TIER_TEXT: Record<Tier, string> = {
+  icons: "text-brand-black",
+  ones_to_watch: "text-brand-off-white",
+  neighborhood_staples: "text-brand-black",
+};
+
+export function TierProportionBar({ currentSlug, peers }: Props) {
+  const total = peers.length;
+  if (total === 0) return null;
+
+  const counts: Record<Tier, number> = {
+    icons: 0,
+    ones_to_watch: 0,
+    neighborhood_staples: 0,
+  };
+  for (const p of peers) {
+    if (p.tier) counts[p.tier] += 1;
+  }
+
+  const self = peers.find((p) => p.slug === currentSlug);
+  // Position the YOU arrow at the center of the cell containing rank N.
+  // ((rank - 0.5) / total) maps rank=1 to a small positive offset and
+  // rank=total to a position just inside the right edge.
+  const arrowPct = self
+    ? Math.max(0, Math.min(100, ((self.rank - 0.5) / total) * 100))
+    : null;
+
+  // Zone widths as percentages. Tiny tiers get a minimum so they remain
+  // visible; we shrink Staples (always the largest) to absorb the slack.
+  const MIN_ZONE = 6;
+  const orderedTiers: Tier[] = ["icons", "ones_to_watch", "neighborhood_staples"];
+  const rawPct: Record<Tier, number> = {
+    icons: total > 0 ? (counts.icons / total) * 100 : 0,
+    ones_to_watch: total > 0 ? (counts.ones_to_watch / total) * 100 : 0,
+    neighborhood_staples:
+      total > 0 ? (counts.neighborhood_staples / total) * 100 : 0,
+  };
+  const finalPct: Record<Tier, number> = { ...rawPct };
+  let owe = 0;
+  for (const t of orderedTiers) {
+    if (counts[t] > 0 && finalPct[t] < MIN_ZONE) {
+      owe += MIN_ZONE - finalPct[t];
+      finalPct[t] = MIN_ZONE;
+    }
+  }
+  if (owe > 0) {
+    // Take from the largest zone first so the visual stays honest.
+    const largest = orderedTiers.reduce((a, b) =>
+      finalPct[a] >= finalPct[b] ? a : b,
+    );
+    finalPct[largest] = Math.max(MIN_ZONE, finalPct[largest] - owe);
+  }
+
+  return (
+    <div className="relative pt-12 pb-4">
+      {/* YOU marker, edge-aware so it never clips the viewport. */}
+      {self && arrowPct !== null && (
+        <div
+          aria-hidden="true"
+          className="absolute top-0 -translate-x-1/2"
+          style={{ left: `${arrowPct}%` }}
+        >
+          <div
+            className={cn(
+              "flex flex-col items-center",
+              arrowPct < 8
+                ? "items-start ml-[-0.25rem]"
+                : arrowPct > 92
+                  ? "items-end mr-[-0.25rem]"
+                  : "items-center",
+            )}
+          >
+            <span className="inline-block bg-brand-black text-brand-lime font-display text-[0.58rem] font-semibold uppercase tracking-[0.18em] px-2 py-0.5 whitespace-nowrap">
+              You · #{self.rank} of {total}
+            </span>
+            <span
+              aria-hidden="true"
+              className="block w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-brand-black"
+            />
+          </div>
+        </div>
+      )}
+
+      {/* The bar itself. Bare colored zones, no inline text. The
+          counts and tier names live in the legend below. */}
+      <div className="flex h-7 w-full overflow-hidden rounded-sm">
+        {orderedTiers.map((t) => {
+          if (counts[t] === 0) return null;
+          return (
+            <div
+              key={t}
+              className={cn(TIER_BG[t])}
+              style={{ width: `${finalPct[t]}%` }}
+              aria-label={`${TIER_LABEL[t]}: ${counts[t]}`}
+            />
+          );
+        })}
+      </div>
+
+      {/* Single legend row beneath the bar: colored swatch + tier name +
+          count, evenly spaced. One slot per tier, no positional
+          collisions. */}
+      <ul className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-[0.65rem] md:text-xs text-brand-black/65">
+        {orderedTiers.map((t) => {
+          if (counts[t] === 0) return null;
+          return (
+            <li key={t} className="flex items-center gap-1.5">
+              <span
+                className={cn(
+                  "inline-block w-2.5 h-2.5 rounded-full",
+                  TIER_BG[t],
+                )}
+                aria-hidden="true"
+              />
+              <span className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-brand-black">
+                {TIER_LABEL[t]}
+              </span>
+              <span className="tabular-nums text-brand-black/60">
+                {counts[t]}
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+
+      <p className="mt-3 font-body text-[0.7rem] md:text-xs text-brand-black/55 leading-relaxed">
+        {self ? (
+          <>
+            You sit #{self.rank} of {total} in this scope. Tier widths
+            reflect actual peer counts in this group.
+          </>
+        ) : (
+          <>Tier widths reflect actual peer counts in this group.</>
+        )}
+      </p>
+    </div>
+  );
+}

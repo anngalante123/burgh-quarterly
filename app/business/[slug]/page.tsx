@@ -45,6 +45,7 @@ import {
 } from "@/lib/data/load-business";
 import { loadSocialBySlug } from "@/lib/data/load-social";
 import { familyForBusinessCategory } from "@/lib/data/category-family";
+import { pickPeerScope } from "@/lib/data/sub-category-peers";
 
 /**
  * Business page, restructured 2026-04-25 (pass 2). Anna's feedback:
@@ -102,10 +103,18 @@ function computePeerMedians(
   current: BusinessArtifact,
   all: BusinessArtifact[],
 ): Record<SubscoreKey, number> {
-  const currentFamily = familyForBusinessCategory(current.business.category).key;
-  const sameFamily = all.filter(
-    (b) => familyForBusinessCategory(b.business.category).key === currentFamily,
+  const fam = familyForBusinessCategory(current.business.category);
+  const familyMembers = all.filter(
+    (b) => familyForBusinessCategory(b.business.category).key === fam.key,
   );
+  const scope = pickPeerScope<BusinessArtifact>({
+    selfPrimary: current.meta.categoryName || null,
+    selfFamilyKey: fam.key,
+    selfFamilyLabel: fam.label,
+    familyMembers,
+    primaryOf: (b) => b.meta.categoryName || null,
+    isSelf: (b) => b.business.slug === current.business.slug,
+  });
   const keys: SubscoreKey[] = [
     "content_canvas",
     "community_spark",
@@ -115,7 +124,7 @@ function computePeerMedians(
   ];
   const out = {} as Record<SubscoreKey, number>;
   for (const k of keys) {
-    out[k] = median(sameFamily.map((b) => b.score.subscores[k]));
+    out[k] = median(scope.peers.map((b) => b.score.subscores[k]));
   }
   return out;
 }
@@ -133,12 +142,19 @@ function buildCategoryPeerDots(
   }[];
   familyLabel: string;
 } {
-  const currentFamily = familyForBusinessCategory(current.business.category);
-  const sameFamily = all.filter(
-    (b) =>
-      familyForBusinessCategory(b.business.category).key === currentFamily.key,
+  const fam = familyForBusinessCategory(current.business.category);
+  const familyMembers = all.filter(
+    (b) => familyForBusinessCategory(b.business.category).key === fam.key,
   );
-  const rankedInFamily = sameFamily
+  const scope = pickPeerScope<BusinessArtifact>({
+    selfPrimary: current.meta.categoryName || null,
+    selfFamilyKey: fam.key,
+    selfFamilyLabel: fam.label,
+    familyMembers,
+    primaryOf: (b) => b.meta.categoryName || null,
+    isSelf: (b) => b.business.slug === current.business.slug,
+  });
+  const rankedInFamily = scope.peers
     .slice()
     .sort((a, b) => b.score.composite - a.score.composite)
     .map((b, i) => ({
@@ -148,7 +164,7 @@ function buildCategoryPeerDots(
       tier: b.score.tier,
       distinguishingSignal: b.score.unfair_advantage.label,
     }));
-  return { peers: rankedInFamily, familyLabel: currentFamily.label };
+  return { peers: rankedInFamily, familyLabel: scope.label };
 }
 
 export default async function BusinessPage({ params }: PageProps) {

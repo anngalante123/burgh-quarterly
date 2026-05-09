@@ -250,3 +250,36 @@ Fixed-rescore tier distribution: 44 Icons / 200 OTW / 1,400 Staples. Honest, mat
 - **Top up Anthropic credits**, then run `scripts/reanalyze-all.sh` again to refresh diagnosis text on the remaining ~1,559 businesses against the fixed rescore. Estimated cost: another ~$45.
 - Investigate whether the iron-city-elite photo-upload bug should ship as a fix or stay parked.
 - Optional follow-ups from reviewer notes: tighten dedup `SUFFIX_RE` to require at least one digit (currently false-positive-prone for legit slugs ending in 6 alpha chars; didn't bite this run because no dup-group contained one); guard PeerScoreboard for total<6 family sizes.
+
+---
+
+## 2026-05-08 to 2026-05-09 — Phase B: index expansion + sub-category peers + new "where you sit" visual
+
+**Index expansion.** Sequenced 4 categories (restaurant, cafe, bar, fitness) through Apify Google Maps Scraper with neighborhood-split and sub-type-split queries, then ingested via `ingest-one --batch`. Apify returned ~12,000 raw places, the existing chain/geo filters dropped about 60% as out-of-Pittsburgh or chain, ~3,700 net new place_ids landed in queues. The first sequential ingest was running at ~40/hr because Apify per-place start-up dominates; switched to four parallel `--batch` processes and the rate held while wall time dropped to 2-3 hours. 1,579 ingests succeeded, 0 failures. **DB grew from 1,657 to 2,910 businesses.** Tier distribution honest: 142 Icons / 1,133 Ones to Watch / 1,634 Neighborhood Staples. Total Apify spend tonight ~$50; total Anthropic spend tonight ~$70. Anthropic credit ran out twice mid-session and Anna topped up.
+
+**One slug-resolver finding.** Found the polling bug in `scripts/scrape-and-queue-category.ts` (it reads `run.stats.itemCount` which Apify never returns; `items=0` was misleading the operator while the actual scrape was running). Logged but not fixed in this session because the script's wait-loop terminates on run-status anyway, so the misleading log was cosmetic. Wrote `scripts/harvest-apify-run.ts` as a side-channel that fetches a dataset by run id when the local script is killed mid-flight.
+
+**Sub-category peer scoping.** The "WHERE YOU SIT" section previously compared every business against the entire family (Pittsburgh Restaurants = 600+ peers, Pittsburgh Boutiques = 69 peers). The dot strip overlapped its own labels at any N greater than ~15 and the comparisons were editorially meaningless (a vintage boutique vs a sporting-goods store). New `lib/data/sub-category-peers.ts` picks "true peers" via Apify `primary_category_name` with a layered fallback:
+
+  1. STRICT same primary_category_name (e.g. all 49 "Italian restaurant" peers)
+  2. RELATED expand by significant-word overlap within family if strict pool is below 5
+  3. FAMILY full family fallback otherwise
+
+Wired into `lib/editorial/family-stats.ts` (medians and ranks), and into `app/business/[slug]/page.tsx` (`computePeerMedians` and `buildCategoryPeerDots`). Headers now read "RANK IN ITALIAN RESTAURANTS, #20 of 56" and the editorial sentence references the sub-category by name.
+
+**TierProportionBar component.** Replaced the per-business dot strip with a single proportional 3-zone bar (lime Icons, purple Ones to Watch, cream Staples) sized to actual tier counts, with one YOU marker. Counts and tier names live in a single legend row beneath the bar so narrow zones never truncate. Reader gets two facts at one glance: the family's tier shape, and where they sit. Plays well at any N from 5 to 600+. Located at `components/insights/TierProportionBar.tsx`.
+
+**PeerDotPlot rewrite.** The component is now a thin 80-line wrapper around TierProportionBar + PeerScoreboard. Old version had ~460 lines of dot-rendering, hover state, popovers, motion stagger, sub-components (Dot, PeerPopover, LegendDot) and a duplicate tier legend. All dropped. Imports of `motion`, `AnimatePresence`, `useReducedMotion`, `useState`, `useRef`, `useEffect`, `Link` removed too.
+
+**Code review.** Two-agent parallel review on each major change. One real bug caught and fixed before commit each time:
+- Phase B reviewer 1 caught dead code in PeerDotPlot.tsx (~300 lines) and a stale "Each dot is a business" caption that no longer matched the new visual.
+- Reviewer 2 caught an em dash in family-stats.ts:69 ("Avoid the word 'median' — it's jargon"). Single-character fix for Anna's hard rule.
+
+Verified live across multiple business pages (Italian restaurants, fitness, etc.). 108 unit tests pass, clean typecheck.
+
+**Tonight's parked items:**
+- ~1,559 businesses with stale-rank analyses from earlier in the session. Refresh costs ~$45 when Anna decides.
+- iron-city-elite photo-upload bug (still 1 row stuck).
+- Reviewer suggestions parked: page-level scope memoization (3x peer-scope calls per page render), aria-current on the YOU marker, subtle reveal animation on the YOU arrow.
+
+**Net session result:** index nearly doubled (1,657 → 2,910), tier comparisons now editorially meaningful (sub-category peer pools), main visualization replaced with a clean proportional bar, ~$140 total spend across both Apify and Anthropic.
