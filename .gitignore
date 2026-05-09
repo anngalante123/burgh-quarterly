@@ -49,3 +49,9 @@ content/raw/
 *.swp
 *.swo
 .env*.local
+
+# Skill installations (per-project). Manifest lives in skills-lock.json,
+# devs bootstrap with `npx skills install`. Skill internals and the
+# generated Claude Code symlink stay out of source control.
+.agents/
+.claude/skills/
