@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 /**
@@ -56,6 +60,54 @@ const TIER_TEXT: Record<Tier, string> = {
 };
 
 export function TierProportionBar({ currentSlug, peers }: Props) {
+  const [activeZone, setActiveZone] = useState<Tier | null>(null);
+  const [pinnedZone, setPinnedZone] = useState<Tier | null>(null);
+  const closeTimerRef = useRef<number | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  // Close pinned popover on outside click or Esc.
+  useEffect(() => {
+    if (!pinnedZone) return;
+    function onDocClick(e: MouseEvent) {
+      const node = containerRef.current;
+      if (!node) return;
+      if (e.target instanceof Node && !node.contains(e.target)) {
+        setPinnedZone(null);
+        setActiveZone(null);
+      }
+    }
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        setPinnedZone(null);
+        setActiveZone(null);
+      }
+    }
+    document.addEventListener("mousedown", onDocClick);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDocClick);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [pinnedZone]);
+
+  function openZone(tier: Tier) {
+    if (closeTimerRef.current !== null) {
+      window.clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    setActiveZone(tier);
+  }
+
+  function scheduleZoneClose() {
+    if (pinnedZone) return;
+    if (closeTimerRef.current !== null)
+      window.clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = window.setTimeout(() => {
+      setActiveZone(null);
+      closeTimerRef.current = null;
+    }, 120);
+  }
+
   const total = peers.length;
   if (total === 0) return null;
 
@@ -64,9 +116,21 @@ export function TierProportionBar({ currentSlug, peers }: Props) {
     ones_to_watch: 0,
     neighborhood_staples: 0,
   };
+  const peersByTier: Record<Tier, ScoreboardPeer[]> = {
+    icons: [],
+    ones_to_watch: [],
+    neighborhood_staples: [],
+  };
   for (const p of peers) {
-    if (p.tier) counts[p.tier] += 1;
+    if (p.tier) {
+      counts[p.tier] += 1;
+      peersByTier[p.tier].push(p);
+    }
   }
+  // Sort each tier by rank ascending so "top 3" is rank 1, 2, 3.
+  (Object.keys(peersByTier) as Tier[]).forEach((t) =>
+    peersByTier[t].sort((a, b) => a.rank - b.rank),
+  );
 
   const self = peers.find((p) => p.slug === currentSlug);
   // Position the YOU arrow at the center of the cell containing rank N.
@@ -103,7 +167,7 @@ export function TierProportionBar({ currentSlug, peers }: Props) {
   }
 
   return (
-    <div className="relative pt-12 pb-4">
+    <div ref={containerRef} className="relative pt-12 pb-4">
       {/* YOU marker, edge-aware so it never clips the viewport. */}
       {self && arrowPct !== null && (
         <div
@@ -132,20 +196,124 @@ export function TierProportionBar({ currentSlug, peers }: Props) {
         </div>
       )}
 
-      {/* The bar itself. Bare colored zones, no inline text. The
-          counts and tier names live in the legend below. */}
-      <div className="flex h-7 w-full overflow-hidden rounded-sm">
-        {orderedTiers.map((t) => {
-          if (counts[t] === 0) return null;
-          return (
-            <div
-              key={t}
-              className={cn(TIER_BG[t])}
-              style={{ width: `${finalPct[t]}%` }}
-              aria-label={`${TIER_LABEL[t]}: ${counts[t]}`}
-            />
-          );
-        })}
+      {/* The bar itself. Bare colored zones, hoverable + clickable to
+          open a popover listing the top 3 peers in that tier. */}
+      <div className="relative flex h-7 w-full overflow-hidden rounded-sm">
+        {(() => {
+          let cursor = 0;
+          return orderedTiers.map((t) => {
+            if (counts[t] === 0) return null;
+            const left = cursor;
+            cursor += finalPct[t];
+            const isActive = activeZone === t || pinnedZone === t;
+            return (
+              <button
+                key={t}
+                type="button"
+                aria-label={`${TIER_LABEL[t]}: ${counts[t]} peers. Click to view.`}
+                aria-expanded={isActive}
+                onMouseEnter={() => openZone(t)}
+                onMouseLeave={scheduleZoneClose}
+                onFocus={() => openZone(t)}
+                onBlur={scheduleZoneClose}
+                onClick={() => {
+                  setPinnedZone(pinnedZone === t ? null : t);
+                  setActiveZone(t);
+                }}
+                className={cn(
+                  TIER_BG[t],
+                  "h-full transition-[filter] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple ring-inset",
+                  isActive ? "brightness-110" : "hover:brightness-110",
+                )}
+                style={{ width: `${finalPct[t]}%` }}
+              />
+            );
+          });
+        })()}
+
+        {/* Popover for the active zone. Anchored to the zone's center
+            with edge-aware shifts so it never clips. */}
+        {(activeZone || pinnedZone) &&
+          (() => {
+            const tier = (pinnedZone ?? activeZone)!;
+            // Compute zone center as % of bar width.
+            let cursor = 0;
+            for (const t of orderedTiers) {
+              if (t === tier) break;
+              if (counts[t] > 0) cursor += finalPct[t];
+            }
+            const center = cursor + finalPct[tier] / 2;
+            const isLeft = center < 22;
+            const isRight = center > 78;
+            const top3 = peersByTier[tier].slice(0, 3);
+            return (
+              <div
+                role="dialog"
+                aria-label={`${TIER_LABEL[tier]} top peers`}
+                className={cn(
+                  "absolute z-30 top-[calc(100%+0.5rem)]",
+                  isLeft
+                    ? "left-0"
+                    : isRight
+                      ? "right-0"
+                      : "-translate-x-1/2",
+                )}
+                style={
+                  isLeft || isRight ? undefined : { left: `${center}%` }
+                }
+                onMouseEnter={() => openZone(tier)}
+                onMouseLeave={scheduleZoneClose}
+              >
+                <div className="min-w-[14rem] max-w-[18rem] border-2 border-brand-black bg-white shadow-[3px_3px_0_0_var(--color-brand-purple)]">
+                  <div className="flex items-baseline justify-between gap-2 border-b border-brand-black/15 bg-brand-cream/40 px-3 py-2">
+                    <span className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-brand-black">
+                      {TIER_LABEL[tier]}
+                    </span>
+                    <span className="font-display text-[0.62rem] tabular-nums text-brand-black/60">
+                      {counts[tier]} in this tier
+                    </span>
+                  </div>
+                  {top3.length > 0 ? (
+                    <ol className="px-3 py-2">
+                      {top3.map((p) => (
+                        <li
+                          key={p.slug}
+                          className="grid grid-cols-[1.5rem_1fr] items-baseline gap-2 py-1"
+                        >
+                          <span className="font-display text-xs font-black tabular-nums text-brand-black/55">
+                            #{p.rank}
+                          </span>
+                          <Link
+                            href={`/business/${p.slug}`}
+                            className={cn(
+                              "font-display text-sm font-semibold text-brand-black truncate hover:text-brand-purple",
+                              p.slug === currentSlug && "text-brand-purple",
+                            )}
+                          >
+                            {p.name}
+                            {p.slug === currentSlug && (
+                              <span className="ml-1 font-body text-[0.6rem] font-normal uppercase tracking-[0.14em] text-brand-black/55">
+                                you
+                              </span>
+                            )}
+                          </Link>
+                        </li>
+                      ))}
+                    </ol>
+                  ) : (
+                    <p className="px-3 py-3 font-body text-xs text-brand-black/55">
+                      No peers in this tier yet.
+                    </p>
+                  )}
+                  {counts[tier] > 3 && (
+                    <p className="border-t border-brand-black/10 px-3 py-2 font-display text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-brand-purple">
+                      see all {counts[tier]} below
+                    </p>
+                  )}
+                </div>
+              </div>
+            );
+          })()}
       </div>
 
       {/* Single legend row beneath the bar: colored swatch + tier name +
