@@ -7,6 +7,10 @@ import { Reveal } from "@/components/motion/Reveal";
 import { RequestProfileForm } from "@/components/RequestProfileForm";
 import { getAllBusinessSlugs } from "@/lib/data/load-business";
 
+// Render on demand to skip the build-time DB hit during the migration
+// to fully-dynamic data pages.
+export const dynamic = "force-dynamic";
+
 /**
  * /request, the path an unranked Pittsburgh business owner takes to
  * ask to be reviewed for the next issue.

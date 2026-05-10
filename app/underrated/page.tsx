@@ -8,6 +8,10 @@ import {
 } from "@/lib/data/underrated";
 import { getAllBusinessSlugs } from "@/lib/data/load-business";
 
+// Render on demand to skip the build-time DB hit during the migration
+// to fully-dynamic data pages.
+export const dynamic = "force-dynamic";
+
 /**
  * /underrated, index page listing every available Underrated List.
  *
