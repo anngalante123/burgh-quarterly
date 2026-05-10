@@ -18,6 +18,11 @@ import { GetFeaturedCTA } from "@/components/GetFeaturedCTA";
 import { HeroSearch } from "@/components/HeroSearch";
 import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
 
+// Render on demand to skip the build-time DB hit. The homepage pulls
+// every business for the hero search index and the global rankings,
+// which during build counted against Neon's data-transfer quota.
+export const dynamic = "force-dynamic";
+
 /**
  * Homepage, editorial table of contents for the quarterly issue.
  *

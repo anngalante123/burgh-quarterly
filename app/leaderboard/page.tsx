@@ -25,6 +25,11 @@ import type { Category, Tier } from "@/lib/data/schemas";
  *   - Editorial voice on the page intro, quiet record voice on the rows
  */
 
+// Render on demand to skip the build-time DB hit. /leaderboard pulls
+// the top 100 across every category, which during build counted
+// against Neon's data-transfer quota and crashed the export.
+export const dynamic = "force-dynamic";
+
 const TOP_N = 100;
 
 const TIER_LABEL: Record<Tier, string> = {
