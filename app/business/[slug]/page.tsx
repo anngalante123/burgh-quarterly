@@ -37,7 +37,6 @@ import { TikTokMentions } from "@/components/insights/TikTokMentions";
 import { Gated } from "@/components/gating/Gated";
 
 import {
-  listAllBusinessSlugs,
   loadAllBusinesses,
   loadBusinessBySlug,
   type BusinessArtifact,
@@ -68,13 +67,16 @@ type PageProps = {
 };
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const slugs = await listAllBusinessSlugs();
-  return slugs.map((slug) => ({ slug }));
+  // Render every business page on demand. Pre-rendering 2,910 pages
+  // at build time exhausted Neon's data-transfer quota and connection
+  // pool. ISR caches each page for 24h after first visit, so traffic
+  // patterns determine which pages stay warm. SEO impact is minimal:
+  // Google crawls and indexes on demand, just slightly more gradually.
+  return [];
 }
 
-// Daily ISR: pre-render every known slug at build time, revalidate on
-// the next request after 24h. New slugs added to the DB after build will
-// render on demand (dynamicParams defaults to true).
+// 24h cache after first render. dynamicParams defaults to true so any
+// valid slug resolves; invalid slugs 404.
 export const revalidate = 86400;
 
 function pluralizeCategoryLabel(categoryName: string): string {
