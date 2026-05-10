@@ -42,11 +42,11 @@ type PageProps = {
 };
 
 export function generateStaticParams(): { category: string }[] {
-  // v1 ships bakeries only; keyed off UNDERRATED_CATEGORIES so it's
-  // trivial to add more (coffee-shops, salons, etc.) when data exists.
-  return (Object.keys(UNDERRATED_CATEGORIES) as UnderratedCategorySlug[]).map(
-    (category) => ({ category }),
-  );
+  // Render on demand to fit Neon's data-transfer quota. ISR caches
+  // each page for 24h after first visit. dynamicParams defaults to
+  // true so any UNDERRATED_CATEGORIES slug resolves; unknown slugs
+  // 404 via notFound() in the page body.
+  return [];
 }
 
 const TIER_LABEL: Record<Tier, string> = {

@@ -37,9 +37,9 @@ type PageProps = {
 };
 
 export function generateStaticParams(): { category: string }[] {
-  return (Object.keys(TOP_CATEGORIES) as TopCategorySlug[]).map((category) => ({
-    category,
-  }));
+  // Render on demand to fit Neon's data-transfer quota. ISR caches
+  // each page for 24h after first visit.
+  return [];
 }
 
 const TIER_LABEL: Record<Tier, string> = {

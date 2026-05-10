@@ -139,12 +139,11 @@ function categoryToSlug(category: Category): string {
 /* ---------- static params ---------- */
 
 export function generateStaticParams(): { slug: string }[] {
-  // Every enum value gets a route. Categories with zero businesses will 404
-  // at runtime via notFound(), which is fine: a stable URL exists, the page
-  // just declines to render until data shows up.
-  return CategorySchema.options.map((category) => ({
-    slug: categoryToSlug(category),
-  }));
+  // Render on demand. Pre-rendering all 14 category leaderboards at
+  // build time exhausted Neon's data-transfer quota (each page loads
+  // every business in its category). ISR caches each page for 24h
+  // after first visit.
+  return [];
 }
 
 /* ---------- metadata ---------- */
