@@ -5,10 +5,7 @@ import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
 import { Reveal } from "@/components/motion/Reveal";
 import { ClaimForm } from "@/components/ClaimForm";
-import {
-  loadAllBusinesses,
-  loadBusinessBySlug,
-} from "@/lib/data/load-business";
+import { loadBusinessBySlug } from "@/lib/data/load-business";
 
 /**
  * /claim/[slug], the Gate-3 ownership claim flow.
@@ -28,8 +25,14 @@ type PageProps = {
 };
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const all = await loadAllBusinesses();
-  return all.map((b) => ({ slug: b.business.slug }));
+  // Render on demand. With 2,910 businesses, pre-rendering every
+  // /claim/[slug] alongside every /business/[slug] (5,820 pages at
+  // build time on 21 parallel workers) exhausted Neon's per-query
+  // memory budget mid-build (see commit message for the OOM trace).
+  // Claim pages sit behind a lead-capture flow, are not SEO-critical,
+  // and benefit from ISR caching after first visit. dynamicParams
+  // defaults to true so any valid slug still resolves.
+  return [];
 }
 
 export default async function ClaimPage({ params }: PageProps) {

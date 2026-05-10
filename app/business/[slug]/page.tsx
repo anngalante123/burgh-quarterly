@@ -25,7 +25,6 @@ import {
   fmtStatValue,
 } from "@/components/insights/RowPeerStat";
 import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
-import { labelForCategory } from "@/lib/data/stats";
 import { loadReviewAnalysis } from "@/lib/data/load-review-analysis";
 import { pickPullquote } from "@/lib/editorial/pick-pullquote";
 import {
