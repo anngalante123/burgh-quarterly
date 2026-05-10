@@ -316,10 +316,18 @@ export default async function BusinessPage({ params }: PageProps) {
   const reviewPullquote = pickPullquote(meta.reviewTexts);
 
   // Determine the weakest subscore so we can default-open the matching
-  // accordion row (the leverage point).
-  const weakestKey = (
-    Object.entries(score.subscores) as Array<[SubscoreKey, number]>
-  ).reduce((a, b) => (a[1] <= b[1] ? a : b))[0];
+  // accordion row (the leverage point). Guard against empty/missing
+  // subscores: some rare records have JSONB that didn't ingest cleanly,
+  // and reduce-with-no-initial-value crashes the page on those.
+  const subEntries = (
+    score.subscores && typeof score.subscores === "object"
+      ? (Object.entries(score.subscores) as Array<[SubscoreKey, number]>)
+      : []
+  ).filter(([, v]) => typeof v === "number");
+  const weakestKey: SubscoreKey =
+    subEntries.length > 0
+      ? subEntries.reduce((a, b) => (a[1] <= b[1] ? a : b))[0]
+      : "community_spark";
 
   const familyShort = familyLabel.replace(/^Pittsburgh\s+/, "");
   const rankFamilyPos =

@@ -88,11 +88,17 @@ export function buildQuarterNarrative(
     peerSentence = `No one in the family outranked them this issue.`;
   }
 
-  // Forward-looking conclusion
+  // Forward-looking conclusion. Guard against missing/empty subscores
+  // so reduce-with-no-initial-value doesn't crash the page.
   const subs = score.subscores;
-  const weakest = Object.entries(subs).reduce((a, b) =>
-    a[1] <= b[1] ? a : b,
-  );
+  const subEntries =
+    subs && typeof subs === "object"
+      ? Object.entries(subs).filter(([, v]) => typeof v === "number")
+      : [];
+  const weakest =
+    subEntries.length > 0
+      ? subEntries.reduce((a, b) => (a[1] <= b[1] ? a : b))
+      : (["community_spark", 50] as [string, number]);
   let conclusion: string;
   switch (weakest[0]) {
     case "momentum":
