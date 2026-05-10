@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 120" role="img" aria-labelledby="signalLogoTitle">
+  <title id="signalLogoTitle">Signal Pittsburgh</title>
+  <!--
+    Wordmark + signal-mark lockup for the Burgh Quarterly publication.
+    Composition:
+      - 3 rising lime bars (signal-strength glyph) at the left
+      - "SIGNAL" in Unbounded-style display, off-white or black
+      - "PITTSBURGH" tracked tight, kicker register
+    Colors per DESIGN.md: brand-lime, brand-purple, brand-black, brand-off-white.
+    Sized for 760x120 so it tiles cleanly into 32x32 favicon down to A4 print.
+  -->
+  <!-- Signal-strength glyph: 3 lime bars rising left-to-right -->
+  <rect x="14"  y="78" width="14" height="22" fill="#C6F432"/>
+  <rect x="34"  y="56" width="14" height="44" fill="#C6F432"/>
+  <rect x="54"  y="28" width="14" height="72" fill="#C6F432"/>
+  <!-- Wordmark: SIGNAL in Unbounded Black, on lime highlight -->
+  <rect x="92" y="20" width="320" height="60" fill="#C6F432"/>
+  <text x="106" y="68"
+        font-family="Unbounded, 'Arial Black', sans-serif"
+        font-weight="900"
+        font-size="58"
+        letter-spacing="-1.2"
+        fill="#0F0F0F">SIGNAL</text>
+  <!-- PITTSBURGH kicker, tracked tight -->
+  <text x="426" y="68"
+        font-family="Unbounded, 'Arial Black', sans-serif"
+        font-weight="900"
+        font-size="58"
+        letter-spacing="-1.2"
+        fill="#0F0F0F">PITTSBURGH</text>
+</svg>

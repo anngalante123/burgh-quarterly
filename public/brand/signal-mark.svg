@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="signalMarkTitle">
+  <title id="signalMarkTitle">Signal Pittsburgh mark</title>
+  <!--
+    Square favicon / social-avatar mark for Signal Pittsburgh.
+    Composition: black square (editorial publication background) +
+    three lime bars rising left-to-right (signal-strength glyph).
+    Reads cleanly at 16x16 favicon size all the way up.
+  -->
+  <rect width="64" height="64" fill="#0F0F0F"/>
+  <rect x="10" y="42" width="10" height="14" fill="#C6F432"/>
+  <rect x="24" y="30" width="10" height="26" fill="#C6F432"/>
+  <rect x="38" y="14" width="10" height="42" fill="#C6F432"/>
+</svg>
