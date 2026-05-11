@@ -3,68 +3,62 @@
   "title": "Pittsburgh's Most Underrated Cafes",
   "subtitle": "Coffee, tea, juice. Loved locally, not yet viral.",
   "angle": "the cafes that Pittsburgh regulars rave about in reviews but the broader internet hasn't caught up to. Quietly excellent, quietly under-followed.",
-  "intro": "Some businesses win the internet. Others win the room. The five cafes on this list have done the harder thing first: they've earned the kind of customer loyalty that shows up in reviews written at 11pm, unprompted, by people who just needed to tell someone. Pittsburgh regulars have been quietly stacking five stars on these places for months. The broader feed hasn't noticed yet.\n\nThe gap is sharpest at the extremes. Butterwood Bake Consortium in Lawrenceville ranks second among Pittsburgh cafes on review signal alone, but its Instagram has sat untouched for 515 days. Dobrá Tea in Squirrel Hill South holds first in its category and sixth citywide, a room that fills daily without a single reel to show for it. Meanwhile, 24 Carrot Juice in Bloomfield climbed to eighth on the back of reviews so consistent they read like a coordinated campaign, except they aren't.\n\nWhat these businesses share is a customer base that already advocates loudly in text. The inexpensive next move is often just asking those same people back with a camera. Pittsburgh has more creators actively looking for subjects than most owners know, and the infrastructure connecting them works without anyone having to pitch cold.\n\nIssue 02, out Summer 2026, will track whether any of this quarter's quiet leaders close the gap.",
+  "intro": "Some Pittsburgh cafes have figured out the hard part. They've built the kind of regulars who write paragraph reviews unprompted, who describe the light through the windows and the temperature of the milk and the name of the person behind the counter. What they haven't built is any signal the broader internet can find. That gap is what this list is about.\n\nBiddle's Escape ranks first in Pittsburgh cafes on review depth alone this quarter, which is a remarkable thing to say about a place with effectively no social presence. De Fer Coffee and Tea holds first in its category on the strength of its roasting reputation, but its Google profile gives potential customers nowhere to land. Carnegie Coffee Company, ranked 142nd overall despite genuine neighborhood devotion, earns real affection for its space and almost nothing for its feed.\n\nThe shortcut hiding in plain sight: these places already have customers who are creators, people who make food and local content for a living and are actively looking for the next place to feature. The infrastructure that connects them to businesses like these works without anyone having to announce it.\n\nIssue 02, out Summer 2026, will track which of these cafes closed the gap.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "24-carrot-juice",
-      "name": "24 Carrot Juice",
+      "business_slug": "carnegie-coffee-company",
+      "name": "Carnegie Coffee Company",
       "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Bloomfield",
-      "descriptor": "Eighth In Pittsburgh Cafes On The Back Of Flawless Reviews. The Video Layer Has Not Arrived Yet.",
-      "descriptor_highlight": "Flawless Reviews",
-      "stat_line": "519 reviews · 5★ · 3 IG posts/30d",
-      "playbook_top_move": "Post at least one Reel this week. Zero Reels in the last 30 days on an account with 2.53 percent engagement means the algorithm has no video signal to distribute; one Reel of the acai bowl build or a smoothie pour could change that immediately."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "Icons Tier, 142nd In Pittsburgh Cafes. The Building Earns Fans; The Feed Earns Nothing.",
+      "descriptor_highlight": "Feed Earns Nothing",
+      "stat_line": "1,198 reviews · 4.6★",
+      "playbook_top_move": "Get on Instagram, then get on Google. Carnegie has no indexed Instagram and is missing phone, hours, and photos on Google, fix the Google listing first since it feeds 1,198 existing reviewers nowhere to go next."
     },
     {
       "rank": 2,
-      "business_slug": "meetcha",
-      "name": "MeetCha",
+      "business_slug": "big-dog-coffee",
+      "name": "Big Dog Coffee",
       "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Squirrel Hill South",
-      "descriptor": "Fourth In Pittsburgh Cafes On Goodwill Alone. The Social Signal Has Been Silent For Ninety Days.",
-      "descriptor_highlight": "Goodwill Alone",
-      "stat_line": "134 reviews · 4.8★",
-      "playbook_top_move": "Restart the Instagram account now. The account has been dark for 92 days; even two posts per week would put MeetCha back in the feed conversation the rest of the cafe family never left."
+      "neighborhood": "South Side Flats",
+      "descriptor": "Top Of Its Category, Lost In The Family. Google Can't Even List The Hours.",
+      "descriptor_highlight": "Lost In The Family",
+      "stat_line": "1,025 reviews · 4.7★",
+      "playbook_top_move": "Put the front door on Google. Add phone number and business hours to the Google profile, both are missing and both kill walk-in conversion for 143rd-ranked cafe."
     },
     {
       "rank": 3,
-      "business_slug": "ka-fair-coffee-and-cakery",
-      "name": "Ka-Fair Coffee and Cakery",
+      "business_slug": "biddles-escape",
+      "name": "Biddle's Escape",
       "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Morningside",
-      "descriptor": "Third In Pittsburgh Cafes On Word Of Mouth Alone. The Visual Catalog Has Not Caught Up.",
-      "descriptor_highlight": "Word Of Mouth Alone",
-      "stat_line": "235 reviews · 4.8★ · 3 IG posts/30d",
-      "playbook_top_move": "Double the posting frequency on Instagram. Three posts in thirty days is below the family median; moving to six or more, prioritizing the visually specific items reviewers already name, banoffee, crepe cake, tiramisu latte, would push Instagram Momentum toward the family median of 44."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Pittsburgh Cafes On Review Depth Alone. Every Social Signal Is Still Dark.",
+      "descriptor_highlight": "Every Social Signal",
+      "stat_line": "898 reviews · 4.6★",
+      "playbook_top_move": "Get a findable Instagram presence indexed. An unindexed handle means zero Instagram signal counted; confirm the account exists and is publicly searchable, then post at least weekly to activate the momentum axis."
     },
     {
       "rank": 4,
-      "business_slug": "dobra-tea-pittsburgh",
-      "name": "Dobrá Tea Pittsburgh",
+      "business_slug": "de-fer-coffee-tea",
+      "name": "De Fer Coffee & Tea",
       "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Squirrel Hill South",
-      "descriptor": "First In Tea Houses, Sixth In Pittsburgh Cafes. The Room Is Full; The Feed Is Empty.",
-      "descriptor_highlight": "The Feed Is Empty",
-      "stat_line": "1,107 reviews · 4.7★ · 1 IG posts/30d",
-      "playbook_top_move": "Restart Instagram with weekly reels. One post in thirty days and zero reels means the account's reach ceiling is effectively zero; a single sixty-second reel of the tea service ritual would change that math immediately."
+      "neighborhood": "Strip District",
+      "descriptor": "First In Pittsburgh Cafes, Built On The Roasts. The Google Profile Is Leaving Customers Nowhere.",
+      "descriptor_highlight": "Leaving Customers Nowhere",
+      "stat_line": "857 reviews · 4.8★",
+      "playbook_top_move": "Complete the Google Business profile today. Add phone number, current hours, and claim or re-index the Instagram handle, three missing fields that break the discovery path for first-time visitors."
     },
     {
       "rank": 5,
-      "business_slug": "the-butterwood-bake-consortium",
-      "name": "The Butterwood Bake Consortium",
+      "business_slug": "espresso-a-mano",
+      "name": "Espresso A Mano",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Second In Pittsburgh Cafes, Built On Pastry Depth. The Instagram Has Been Quiet For 515 Days.",
-      "descriptor_highlight": "Quiet For 515 Days",
-      "stat_line": "736 reviews · 4.6★ · 3 creators · 4K plays",
-      "featured_tiktok": {
-        "author": "courtneyncamp",
-        "plays": 2918,
-        "url": "https://www.tiktok.com/@courtneyncamp/video/7611749661170224397",
-        "caption": "the banana espresso cake 😍 love a spot in Pittsburgh that has later hours for an amazing post dinner sweet treat! and everything in the shop is vegan!\n•\n•\n•\n#butterwoodbakeconsortium #pittsburgh #pittsburghfood #pittsburghdessert #sweettre"
-      },
-      "playbook_top_move": "Restart the Instagram account now. The account has been dormant for 515 days; one post per week of the pastry case alone would reopen the momentum signal."
+      "descriptor": "First In Ones To Watch, Stalled At 122nd. The Listing Has No Hours, No Phone, And No Social Presence To Find.",
+      "descriptor_highlight": "No Hours, No Phone",
+      "stat_line": "790 reviews · 4.7★",
+      "playbook_top_move": "Complete the Google listing immediately. Add phone number, business hours, and at least one photo category to close the three open gaps killing walk-in and discovery conversion."
     }
   ],
   "query": {
@@ -74,6 +68,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-27T00:56:37.421Z",
+  "generated_at": "2026-05-10T23:50:13.368Z",
   "model": "claude-sonnet-4-6"
 }

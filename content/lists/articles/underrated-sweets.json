@@ -3,80 +3,62 @@
   "title": "Pittsburgh's Most Underrated Sweets",
   "subtitle": "Bakeries, dessert spots, and ice cream shops the city should be talking about.",
   "angle": "the dessert shops Pittsburgh customers love but creators haven't fully caught onto. High ratings, real review depth, lower social signal. The places worth a Sunday morning detour.",
-  "intro": "The dessert shops on this list are not struggling. Their customers are loyal, their review counts are deep, and in several cases their ratings sit above anything their neighborhood competitors have managed. What they share is a quieter kind of visibility: robust on the platforms where people leave reviews, thin on the platforms where creators set the week's agenda.\n\nPage's in Arlington leads the list with 3,145 reviews, a number that would make most restaurant owners in this city genuinely emotional. TikTok creators have found it; Page's own feed has not followed. Waffallonia in Squirrel Hill has built its ranking on review depth alone, with a social feed that has gone silent long enough to matter. Treat in Shadyside is carrying 623 reviews into a seventh month of quiet. These are not overlooked businesses. They are underleveraged ones.\n\nThe practical observation here is simple: customer love already exists, and the cheapest second move is inviting back the people who already documented it once. Pittsburgh has more creators actively looking for places to feature than most owners would guess, and the infrastructure that connects them tends to work without fanfare.\n\nIssue 02 arrives in summer 2026, when ice cream shops and outdoor dessert spots absorb most of the city's attention. We will see which of these businesses are ready for it.",
+  "intro": "The dessert shops Pittsburgh talks about most are not always the ones Pittsburgh customers love most. That gap is what this list is about. These five businesses rank first in their immediate categories by review depth and rating quality, but sit far down the broader sweets rankings because the signals creators and platforms look for, photos, hours, a working phone number, a single Instagram post, are missing. The customers showed up. The documentation didn't.\n\nOakmont Bakery leads the list, ranked first among Pittsburgh bakeries by customer signal but sitting 52 spots below the sweets category ceiling because its profile is effectively invisible to anyone discovering it from outside the neighborhood. Mancini's, a decades-old institution on the North Side, has no photos attached to its listing and no social presence, which means its strongest quarter of reviews generated almost no reach beyond the people who already knew to go. MilkShake Factory Downtown ranks first in ice cream and 63rd in sweets. That spread is a number worth sitting with.\n\nThe simpler version of what this points to: these businesses already have the customer love, and the creators who gave them that love would mostly come back if someone asked. Pittsburgh has more creators actively looking for places to feature than most owners realize, and the infrastructure that connects them tends to work quietly, because it doesn't need to make noise to be useful.\n\nIssue 02, arriving summer 2026, will track whether any of this quarter's most underrated spots close the gap.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "la-gourmandine-lawrenceville",
-      "name": "La Gourmandine Lawrenceville",
+      "business_slug": "oakmont-bakery",
+      "name": "Oakmont Bakery",
       "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "Eighth In Sweets Despite A Deep Review Record. The Feed Has Gone Quiet.",
-      "descriptor_highlight": "Feed Has Gone Quiet",
-      "stat_line": "1,294 reviews · 4.8★ · 5 creators · 18K plays",
-      "featured_tiktok": {
-        "author": "melissasadhdlife",
-        "plays": 7521,
-        "url": "https://www.tiktok.com/@melissasadhdlife/video/7620558568844004639",
-        "caption": "I love La Gourmandine, they never disappoint 🥐 🍫 \n\n#pittsburghtreats #patisserie #springpastries "
-      },
-      "playbook_top_move": "Restart the Instagram feed consistently. The account has posted zero times in 42 days; even two posts per week featuring named seasonal items would reactivate the momentum signal."
+      "neighborhood": "Riverview North",
+      "descriptor": "First In Pittsburgh Bakeries, But 52 Sweets Businesses Rank Higher. The Missing Profile Data Explains It.",
+      "descriptor_highlight": "52 Sweets Businesses Rank Higher",
+      "stat_line": "7,666 reviews · 4.7★",
+      "playbook_top_move": "Complete the Google business profile today. Add phone number, business hours, and photo categories; all three are currently absent and suppress cold-search discovery."
     },
     {
       "rank": 2,
-      "business_slug": "treat-ice-cream-and-liege-waffles",
-      "name": "Treat - Ice Cream and Liege Waffles",
+      "business_slug": "milkshake-factory-downtown",
+      "name": "MilkShake Factory Downtown",
       "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Shadyside",
-      "descriptor": "Seventh In Sweets, Carried By 623 Reviews. The Feed Has Been Quiet For Seven Months.",
-      "descriptor_highlight": "623 Reviews",
-      "stat_line": "623 reviews · 5★",
-      "playbook_top_move": "Restart the Instagram feed now. The account has posted zero times in 200 days; even two posts a week would reactivate a 7.65 percent engagement rate that is already well above average."
+      "neighborhood": "Downtown",
+      "descriptor": "First In Ice Cream, Sixty-Third In Sweets. The Social Layer Doesn't Exist Yet.",
+      "descriptor_highlight": "Sixty-Third In Sweets",
+      "stat_line": "1,953 reviews · 4.7★",
+      "playbook_top_move": "Get an indexed Instagram presence live. No Instagram handle is indexed anywhere for this location. Claiming and linking one account closes the biggest single gap in the signal profile."
     },
     {
       "rank": 3,
-      "business_slug": "la-gourmandine-hazelwood",
-      "name": "La Gourmandine Hazelwood",
+      "business_slug": "pitaland",
+      "name": "Pitaland",
       "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Hazelwood",
-      "descriptor": "Sixth In Pittsburgh Sweets, Built On 525 Reviews. The Business Hasn't Posted In Six Weeks.",
-      "descriptor_highlight": "Built On 525 Reviews",
-      "stat_line": "525 reviews · 4.8★ · 5 creators · 18K plays",
-      "featured_tiktok": {
-        "author": "melissasadhdlife",
-        "plays": 7521,
-        "url": "https://www.tiktok.com/@melissasadhdlife/video/7620558568844004639",
-        "caption": "I love La Gourmandine, they never disappoint 🥐 🍫 \n\n#pittsburghtreats #patisserie #springpastries "
-      },
-      "playbook_top_move": "Break the six-week Instagram silence. Post at minimum twice weekly; the account has been dark for 42 days while creators are actively filming the shop."
+      "neighborhood": "Brookline",
+      "descriptor": "First In Bakeries, But 47th In Sweets. The Listing Has No Phone, No Hours, No Social Handle.",
+      "descriptor_highlight": "No Phone, No Hours",
+      "stat_line": "1,696 reviews · 4.7★",
+      "playbook_top_move": "Complete the Google listing today. Add phone number, business hours, and a website link. Both are missing, costing direct conversion from 1,696 existing reviewers."
     },
     {
       "rank": 4,
-      "business_slug": "waffallonia",
-      "name": "Waffallonia",
+      "business_slug": "mancinis-bakery",
+      "name": "Mancini's Bakery",
       "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Squirrel Hill South",
-      "descriptor": "Fifth In Pittsburgh Sweets On Review Depth Alone. The Feed Has Gone Silent.",
-      "descriptor_highlight": "Review Depth Alone",
-      "stat_line": "605 reviews · 4.6★",
-      "playbook_top_move": "Restart the Instagram account with product footage. The account has no bio, no recent posts, and is not set to business status; a single weekly Liège waffle pull video would reopen the momentum signal entirely."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Bakeries, Seventy-Third In Sweets. A Legend With No Photos, No Hours, No Instagram.",
+      "descriptor_highlight": "No Photos, No Hours",
+      "stat_line": "749 reviews · 4.8★",
+      "playbook_top_move": "Complete the Google listing today. Add phone number, hours, and at least one photo category to a profile that currently shows none of the three."
     },
     {
       "rank": 5,
-      "business_slug": "pages",
-      "name": "Page's",
+      "business_slug": "la-gourmandine-mt-lebanon",
+      "name": "La Gourmandine Mt. Lebanon",
       "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Arlington",
-      "descriptor": "First In Pittsburgh Sweets, Carried By 3,145 Reviews. Creators Are On TikTok; Page's Still Is Not.",
-      "descriptor_highlight": "Page's Still Is Not",
-      "stat_line": "3,145 reviews · 4.8★ · 4 creators · 87K plays · 9 IG posts/30d",
-      "featured_tiktok": {
-        "author": "bhphotographypa",
-        "plays": 62800,
-        "url": "https://www.tiktok.com/@bhphotographypa/video/7615450580697337119",
-        "caption": "Who Wants Ice Cream? 🍦 @Page's  #pagesdairymart #bhphotographypa #pittsburgh #southside #icecream"
-      },
-      "playbook_top_move": "Claim the TikTok account creators built. Four creators generated 87,000 plays this quarter tagging a business with no TikTok presence. Registering an account captures that existing search traffic and named tags."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Pittsburgh Bakeries, Stalled At 80th In Sweets. No Phone, No Hours, No Instagram Signal.",
+      "descriptor_highlight": "No Phone, No Hours",
+      "stat_line": "815 reviews · 4.7★",
+      "playbook_top_move": "Close the Google profile gaps now. Add a phone number and business hours to the Google listing, both are missing and actively block new customers from confirming a visit."
     }
   ],
   "query": {
@@ -86,6 +68,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-27T00:56:28.422Z",
+  "generated_at": "2026-05-10T23:50:06.055Z",
   "model": "claude-sonnet-4-6"
 }

@@ -3,80 +3,62 @@
   "title": "Pittsburgh's Most Underrated Asian Kitchens",
   "subtitle": "Sushi, Thai, Indian, Japanese, noodles. Loved in person, not yet celebrated online.",
   "angle": "the Asian kitchens earning real love in reviews but flying under the social radar. The spots regulars defend.",
-  "intro": "Some of Pittsburgh's best Asian kitchens are running a strange deficit right now: deep review counts, loyal regulars, and almost no presence on the feeds where food discovery actually happens in 2025. This list ranks the five that have earned the most credibility in writing and almost none of it in video. They are not hidden. They are just un-filmed.\n\nMola, in East Liberty, leads the entire category on review depth while customers film the food themselves and post without the restaurant ever asking. Everyday Noodles in Squirrel Hill has 2,216 reviews and no social account to receive the compliment. Pusadee's Garden is the sharpest case study: creator videos exist, they perform, and the restaurant did not make a single one of them. That is the pattern worth watching across this list. The customer love is already documented. The visual record is being built by strangers.\n\nThe cheap second move for any of these kitchens is already in motion for some of them: the creators who shot on their own frequently want a reason to come back, and Pittsburgh has more food-focused creators actively looking for places to feature than most owners sitting in their kitchens realize. The platforms that connect them tend to work quietly, because they do not need to pitch anyone. Signal Issue 02, Summer 2026, tracks whether that gap closes.",
+  "intro": "The restaurants on this list are not hidden. Regulars at Noodlehead in Shadyside know exactly where to find it, and their reviews reflect the kind of specific, repeated loyalty that takes years to build. Taj Mahal Pittsburgh has accumulated review depth that puts it ahead of competitors with far more polished online presences. Neither spot has a phone number publicly listed. Neither has posted to Instagram in any traceable way this quarter. That gap, between what customers are saying and what the internet can actually find, is the whole story here.\n\nLittle Bangkok in the Strip District leads this issue's debut ranking on earned signal alone, which makes the missing hours and absent social presence more striking, not less. These kitchens are being chosen, described in detail, and returned to. The reviews are doing work that a website or a grid of food photos would normally do.\n\nThe customers who already show up and write about these places are also, in many cities, the same people creating content for a living. Pittsburgh has more of them looking for the right room than most owners know, and the infrastructure that connects them tends to operate without much noise.\n\nIssue 02, out Summer 2026, will track whether any of these kitchens close the gap.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "oishii-donburi",
-      "name": "Oishii Donburi",
+      "business_slug": "noodlehead",
+      "name": "Noodlehead",
       "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "Fifth In Asian Kitchens On Review Depth Alone, The Visual Layer Has Not Arrived Yet.",
-      "descriptor_highlight": "Review Depth Alone",
-      "stat_line": "385 reviews · 4.6★",
-      "playbook_top_move": "Restart Instagram before summer ends. The account has been silent for 72 days; one post per week featuring a specific bowl by name would restart the signal index."
+      "neighborhood": "Shadyside",
+      "descriptor": "First In Pittsburgh Restaurants On Review Depth. The Phone Number And Hours Are Still Missing.",
+      "descriptor_highlight": "Phone Number And Hours",
+      "stat_line": "3,562 reviews · 4.6★",
+      "playbook_top_move": "Complete the Google Business listing today. Add phone number and business hours to Google, both are missing and directly undercut a perfect conversion path signal."
     },
     {
       "rank": 2,
-      "business_slug": "everyday-noodles",
-      "name": "Everyday Noodles",
+      "business_slug": "taj-mahal-pittsburgh",
+      "name": "Taj Mahal Pittsburgh",
       "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "Squirrel Hill North",
-      "descriptor": "Third In Pittsburgh Asian Kitchens, Backed By 2,216 Reviews. No Social Presence To Show For It.",
-      "descriptor_highlight": "No Social Presence",
-      "stat_line": "2,216 reviews · 4.6★ · 2 creators · 3K plays",
-      "featured_tiktok": {
-        "author": "sheseatingit",
-        "plays": 1811,
-        "url": "https://www.tiktok.com/@sheseatingit/video/7617842917629070622",
-        "caption": "Everyday Noodles is my dream come true because I could eat noodles everyday.\n\n#Pittsburgh #soupdumplings #xiaolongbao #pennsylvania #pittsburghsteelers "
-      },
-      "playbook_top_move": "Start an Instagram account, post the kitchen. The open noodle-making kitchen is a ready visual; a basic account with weekly posts stops the indexed-handle gap cold."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Pittsburgh Restaurants, Built On Review Depth. The Listing Still Has No Phone, No Hours, No Social.",
+      "descriptor_highlight": "No Phone, No Hours",
+      "stat_line": "2,805 reviews · 4.4★",
+      "playbook_top_move": "Complete the Google listing today. Add phone number, business hours, and at least one photo category; the listing currently shows none of these three basics."
     },
     {
       "rank": 3,
-      "business_slug": "pusadees-garden",
-      "name": "Pusadee's Garden",
+      "business_slug": "little-bangkok-in-the-strip",
+      "name": "Little Bangkok in the Strip",
       "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "Second In Pittsburgh Asian Kitchens, Carried By Creator Videos The Restaurant Itself Isn't Making.",
-      "descriptor_highlight": "Creator Videos The",
-      "stat_line": "1,224 reviews · 4.7★ · 8 creators · 19K plays · 2 IG posts/30d",
-      "featured_tiktok": {
-        "author": "mad_i_libs",
-        "plays": 6614,
-        "url": "https://www.tiktok.com/@mad_i_libs/video/7604578609566633229",
-        "caption": "This Thai restaurant is a gorgeous spot for your next date night or special occasion in Pittsburgh! 💖 \n\nThere are so many food and drink options, for meat-eaters and vegans alike, you'll want to come back more than once. 🥂 \n\nTip: Show up "
-      },
-      "playbook_top_move": "Start posting reels, starting this week. Zero reels in the last 30 days is the single largest gap; one short reel of the garden space or a dish being plated would immediately lift Instagram momentum above its current floor."
+      "neighborhood": "Strip District",
+      "descriptor": "First In This Issue, But No Phone, No Hours, No Social To Sustain It.",
+      "descriptor_highlight": "No Phone, No Hours",
+      "stat_line": "1,454 reviews · 4.8★",
+      "playbook_top_move": "Complete the Google Business listing today. Add a phone number and business hours to Google, both are missing and cost the business every search-intent visit that bounces."
     },
     {
       "rank": 4,
-      "business_slug": "reva-modern-indian-cuisine",
-      "name": "Reva Modern Indian Cuisine",
+      "business_slug": "umami",
+      "name": "Umami",
       "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "East Liberty",
-      "descriptor": "Fourth In Asian Kitchens, Built On Reviews Alone. The Social Layer Has Not Started.",
-      "descriptor_highlight": "Built On Reviews Alone",
-      "stat_line": "527 reviews · 4.6★",
-      "playbook_top_move": "Restart Instagram before the feed dies completely. The account has been silent for 72 days; one weekly post of a plated dish resets the momentum signal before it flatlines entirely."
+      "neighborhood": "Lawrenceville",
+      "descriptor": "First In Pittsburgh Restaurants, But No Phone, No Hours, No Instagram On Record.",
+      "descriptor_highlight": "No Phone, No Hours",
+      "stat_line": "1,092 reviews · 4.6★",
+      "playbook_top_move": "Complete the Google listing immediately. Add phone number, business hours, and at least 10 photos to a listing that currently shows none of the three."
     },
     {
       "rank": 5,
-      "business_slug": "mola",
-      "name": "Mola",
+      "business_slug": "masala-house-indian-bistro",
+      "name": "Masala House Indian Bistro",
       "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "East Liberty",
-      "descriptor": "Leading Pittsburgh Asian Kitchens On Review Depth, While The City Films What Mola Hasn't Yet.",
-      "descriptor_highlight": "City Films What Mola",
-      "stat_line": "767 reviews · 4.6★ · 1 creators · 3K plays · 2 IG posts/30d",
-      "featured_tiktok": {
-        "author": "zoetaylorrrfit",
-        "plays": 2849,
-        "url": "https://www.tiktok.com/@zoetaylorrrfit/video/7605020364741135630",
-        "caption": "You already know .. do I even need to say anymore about how much I love Mola🍣🥢 my favorite sushi in Pittsburgh \n\n#pittsburghrestaurants #pgh #sushipittsburgh #fyp #sushilover "
-      },
-      "playbook_top_move": "Start posting Reels before next quarter. Zero Reels posted this month against a 1.42% engagement rate that has room to grow if video content is introduced consistently."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Ones To Watch, Held Back By A Listing With No Phone And No Hours.",
+      "descriptor_highlight": "No Phone And No Hours",
+      "stat_line": "588 reviews · 4.7★",
+      "playbook_top_move": "Fix the Google listing today. Add phone number and business hours to Google; both are currently missing, costing every potential walk-in and call-ahead."
     }
   ],
   "query": {
@@ -86,6 +68,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-27T00:56:53.907Z",
+  "generated_at": "2026-05-10T23:50:30.017Z",
   "model": "claude-sonnet-4-6"
 }

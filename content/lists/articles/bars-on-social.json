@@ -3,57 +3,62 @@
   "title": "The Pittsburgh Bars Most Worth Following",
   "subtitle": "By the numbers, this quarter",
   "angle": "which Pittsburgh bars and breweries are leading the social conversation. Who's getting filmed, who's posting, who's getting talked about.",
-  "intro": "Pittsburgh's bar scene has always had strong opinions attached to it. What's changed is where those opinions land and how loudly they accumulate. This quarter's rankings measure the actual conversation: reviews, photos, video, and the staff accounts that shape all three.\n\nHidden Harbor leads the Pittsburgh bar rankings by a significant margin on reviews and photos, which makes its near-total absence from video that much more striking. The tiki bar in Squirrel Hill South has built genuine visual equity without a single viral clip to show for it. Hop Farm Brewing Company sits second, powered largely by review volume and a single active manager account, while TikTok has produced almost nothing for them. Golden Age Beer Company holds third on review depth alone, a real signal, but one that exists entirely without the video infrastructure that tends to accelerate it.\n\nThe pattern this quarter is bars earning credibility through text and photos while leaving video essentially untouched. That gap is the most interesting thing to watch heading into summer. Issue 02 will track whether any of these businesses close it, and which ones let it widen.",
+  "intro": "Pittsburgh's bar scene is loud in person. Online, it's quieter than you'd expect. This quarter's rankings surfaced a specific and recurring pattern: bars earning serious review volume without a single corresponding social signal, no original posts, no customer video, no secondary conversation worth measuring.\n\nThe Urban Tap on South Side Flats ranks first on reviews alone, which is its own kind of story. That's a bar with a real audience and essentially no social footprint to show for it. Pins Mechanical Co. lands third with what might be the most underleveraged asset in Pittsburgh hospitality right now: a giant slide that almost nobody is filming.\n\nWhat the numbers describe, collectively, is a tier of bars that have built genuine local loyalty without building anything resembling a content presence. Whether that's a strategic choice or a missed signal is the question worth tracking. Issue 02, Summer 2026, will follow whether any of these businesses close the gap, and whether the bars currently absent from both lists start showing up on one of them.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "hidden-harbor",
-      "name": "Hidden Harbor",
+      "business_slug": "the-urban-tap-southside",
+      "name": "The Urban Tap - Southside",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "Squirrel Hill South",
-      "descriptor": "First In Pittsburgh Bars On Reviews And Photos, Not Yet On Video.",
-      "descriptor_highlight": "Not Yet On Video",
-      "stat_line": "765 reviews · 4.6★ · 12 IG posts/30d",
-      "playbook_top_move": "Turn the bar into a Reels set. Hidden Harbor posted 12 times in 30 days but shot zero Reels; one drink-pour or atmosphere Reel per week would directly address the weakest signal on the board."
+      "neighborhood": "South Side Flats",
+      "descriptor": "First In Pittsburgh Bars On Reviews Alone. No Social Signal Has Joined The Conversation Yet.",
+      "descriptor_highlight": "Reviews Alone",
+      "stat_line": "1,167 reviews · 4.4★",
+      "playbook_top_move": "Get Instagram indexed and findable. No Instagram handle is indexed anywhere for this business; claim or reactivate and link the profile directly on the Google Business listing this week."
     },
     {
       "rank": 2,
-      "business_slug": "hop-farm-brewing-company",
-      "name": "Hop Farm Brewing Company",
+      "business_slug": "howl-at-the-moon-pittsburgh",
+      "name": "Howl at the Moon Pittsburgh",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "Second In Pittsburgh Bars, Built On Reviews And A Single Manager. TikTok Has Barely Noticed.",
-      "descriptor_highlight": "TikTok Has Barely",
-      "stat_line": "298 reviews · 4.6★ · 1 creators · 285 plays · 12 IG posts/30d",
-      "featured_tiktok": {
-        "author": "jseguritan23",
-        "plays": 285,
-        "url": "https://www.tiktok.com/@jseguritan23/video/7628319601306209549",
-        "caption": "Trivial Warfare Army Takeover 2026 in Pittsburgh, PA:\nMain trivia event hosted by Liz Quesnelle’s Madcap Trivia at the Hop Farm Brewing Company \n\n#pubtrivia #triviaevent #triviatime #triviatok #pittsburgh "
-      },
-      "playbook_top_move": "Make the space impossible to scroll past. With 364 photos already on Google, the gap is short-form video. The live edge tables, garage door, and pool room are three distinct visual environments that creators have not filmed yet."
+      "neighborhood": "Downtown",
+      "descriptor": "First In Pittsburgh Bars On Review Volume Alone. Every Other Signal Is Unbuilt.",
+      "descriptor_highlight": "Every Other Signal",
+      "stat_line": "1,071 reviews · 4.3★",
+      "playbook_top_move": "Establish an Instagram presence immediately. The business has no indexed Instagram account; 10,707 customer photos exist but no owned channel captures any of it."
     },
     {
       "rank": 3,
-      "business_slug": "golden-age-beer-company",
-      "name": "Golden Age Beer Company",
+      "business_slug": "pins-mechanical-co",
+      "name": "Pins Mechanical Co.",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "Pittsburgh",
-      "descriptor": "Third In Pittsburgh Bars On Review Depth Alone, With No TikTok Presence To Build On It.",
-      "descriptor_highlight": "No TikTok Presence",
-      "stat_line": "195 reviews · 4.8★ · 12 IG posts/30d",
-      "playbook_top_move": "Get the food story on video. Reels of the shepherd pie pierogi special and the $10 liter pour are the two most repeatable, specific hooks in the current review record; start there."
+      "neighborhood": "South Side Flats",
+      "descriptor": "Third In Pittsburgh Bars, With A Giant Slide Nobody Is Filming.",
+      "descriptor_highlight": "Nobody Is Filming",
+      "stat_line": "903 reviews · 4.4★",
+      "playbook_top_move": "Get the Instagram handle indexed. The handle is not findable via Google; confirm the profile is public, linked on the Google Business listing, and actively posting so discovery closes."
     },
     {
       "rank": 4,
-      "business_slug": "commerce-bar",
-      "name": "Commerce Bar",
+      "business_slug": "ocean-mist",
+      "name": "Ocean Mist",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "East Liberty",
-      "descriptor": "Second In Pittsburgh Bars On Review Depth Alone, The Social Signal Has Barely Shown Up.",
-      "descriptor_highlight": "Barely Shown Up",
-      "stat_line": "106 reviews · 4.7★ · 1 IG posts/30d",
-      "playbook_top_move": "Get the bar on Google completely. Add a website URL and phone number to the Google profile; right now both fields are blank, which stalls every potential first visit."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Pittsburgh Bars On Review Depth. Every Other Signal Axis Is Dark.",
+      "descriptor_highlight": "Every Other Signal Axis",
+      "stat_line": "1,794 reviews · 4.5★",
+      "playbook_top_move": "Get an indexed Instagram presence live. Ocean Mist has no indexed Instagram handle; establishing and verifying one is the single prerequisite for every other social signal to register."
+    },
+    {
+      "rank": 5,
+      "business_slug": "over-the-bar-bicycle-cafe",
+      "name": "Over The Bar Bicycle Cafe",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "South Side Flats",
+      "descriptor": "Third In Pittsburgh Bars On Review Depth Alone. Every Social Signal Is Missing.",
+      "descriptor_highlight": "Every Social Signal Is Missing",
+      "stat_line": "985 reviews · 4.5★",
+      "playbook_top_move": "Get the Instagram handle publicly indexed. Ensure the Instagram profile is public, linked on the Google Business profile, and searchable so the handle appears in discovery results."
     }
   ],
   "query": {
@@ -63,6 +68,6 @@
     "ranking": "composite",
     "limit": 5
   },
-  "generated_at": "2026-04-27T00:55:59.135Z",
+  "generated_at": "2026-05-10T23:49:34.461Z",
   "model": "claude-sonnet-4-6"
 }

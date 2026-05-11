@@ -3,52 +3,62 @@
   "title": "Pittsburgh's Most Underrated Restaurants",
   "subtitle": "Brunch spots, neighborhood restaurants. High ratings, low spotlight.",
   "angle": "Pittsburgh restaurants whose reviews speak for themselves but whose social channels are quieter than they should be. The neighborhood standbys we'd send a visiting friend to.",
-  "intro": "Some Pittsburgh restaurants have figured out the hard part. The food is consistent, the regulars show up, and the reviews accumulate without anyone having to ask. What they haven't figured out, or haven't gotten around to, is the easier second act.\n\nThis quarter's underrated list is built on review depth: the volume and specificity of what customers actually write, measured against how much creator attention those same businesses are pulling. Lorelei in East Liberty ranks second among Pittsburgh restaurants on review signal alone, and is not on TikTok. Square Cafe, also in East Liberty, holds the second spot among all Pittsburgh businesses on that same metric, with almost no creator layer to speak of. Nan Xiang Soup Dumplings on the South Side ranks first in the city for review-powered reputation; seven creators are active on TikTok in Pittsburgh's food space this quarter, and Nan Xiang is not working with any of them.\n\nThe gap between customer love and creator attention is smaller than most owners think. Pittsburgh has more food creators actively looking for places to feature than the city's restaurant scene tends to assume, and the infrastructure connecting them works quietly, because it doesn't need to pitch.\n\nIssue 02, out Summer 2026, will track whether any of this moves.",
+  "intro": "Some Pittsburgh restaurants don't need a publicist. They need someone to look at what's already there. The five on this quarter's list have review counts and ratings that would satisfy most owners, but the conversation stops at the review. No social layer, no discovery engine, no reason for someone scrolling on a Tuesday night to stop and book a table. That gap is the story.\n\nChurch Brew Works comes in first with 5,598 reviews, a number most downtown hotel bars would trade everything for, yet its social presence reads like a church bulletin, appropriate given the address. Federal Galley is carrying 2,593 reviews on a food hall model that should generate content daily just from the volume of people moving through it. Proper Brick Oven downtown has review depth that belongs in a different tier entirely; its listing gaps are the kind that quietly redirect reservations to competitors without anyone noticing until the quarter is over.\n\nWhat these five share is a customer base that already did the work. The next move costs almost nothing: the creators who would shoot these rooms already eat in them, Pittsburgh has more of them than most owners have considered, and the platforms that connect the two operate without fanfare precisely because they don't need to.\n\nIssue 02 arrives in summer 2026 with a look at which of these five closed the gap, and which ones let a quieter competitor take the room.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "lorelei",
-      "name": "Lorelei",
+      "business_slug": "the-church-brew-works",
+      "name": "The Church Brew Works",
       "family_label": "Pittsburgh Restaurants",
-      "neighborhood": "East Liberty",
-      "descriptor": "Second In Pittsburgh Restaurants On Review Depth Alone, Not Yet On TikTok.",
-      "descriptor_highlight": "Not Yet On TikTok",
-      "stat_line": "392 reviews · 4.5★ · 4 IG posts/30d",
-      "playbook_top_move": "Start Reels before TikTok fills the void. Zero Reels posted in the last 30 days; one cocktail-process or bar-atmosphere Reel per week would directly address a 0.79 percent engagement rate on an otherwise active account."
+      "neighborhood": "Lawrenceville",
+      "descriptor": "First In Pittsburgh Restaurants, Carried By 5,598 Reviews. The Social Layer Is Still Missing.",
+      "descriptor_highlight": "Still Missing",
+      "stat_line": "5,598 reviews · 4.3★",
+      "playbook_top_move": "Get the Google listing complete today. Add phone number and business hours to Google, both are missing and together they are costing real walk-in conversions from visitors who won't guess."
     },
     {
       "rank": 2,
-      "business_slug": "square-cafe",
-      "name": "Square Cafe",
+      "business_slug": "southern-tier-brewery-pittsburgh",
+      "name": "Southern Tier Brewery Pittsburgh",
       "family_label": "Pittsburgh Restaurants",
-      "neighborhood": "East Liberty",
-      "descriptor": "Number Two In Pittsburgh Businesses, Built On Review Depth. The Creator Layer Has Barely Shown Up.",
-      "descriptor_highlight": "Built On Review Depth",
-      "stat_line": "1,839 reviews · 4.5★ · 1 creators · 713 plays · 11 IG posts/30d",
-      "featured_tiktok": {
-        "author": "lexianna1215",
-        "plays": 713,
-        "url": "https://www.tiktok.com/@lexianna1215/video/7604240489734245646",
-        "caption": "Everything we ate today at breakfast:) menu is huge and everything looked delicious it was so hard to choose!!! \n\n#squarecafe #pittsburghcafe #pittsburghbreakfast #breakfastspot #cafe "
-      },
-      "playbook_top_move": "Turn 11 posts into reel-first weeks. Only 2 of 11 recent Instagram posts were reels; reels drive the engagement rate that 0.19% is failing to reach."
+      "neighborhood": "North Shore",
+      "descriptor": "First In Pittsburgh Restaurants, Built On Event Nights. The Discovery Layer Has Gaps That Could Cost It.",
+      "descriptor_highlight": "Discovery Layer Has Gaps",
+      "stat_line": "2,662 reviews · 4.6★",
+      "playbook_top_move": "Fix the Google listing's missing basics. Add phone number and hours to Google Business Profile, both are currently absent, cutting off the most direct conversion path for new visitors."
     },
     {
       "rank": 3,
-      "business_slug": "nan-xiang-soup-dumplings-pittsburgh",
-      "name": "Nan Xiang Soup Dumplings - Pittsburgh",
+      "business_slug": "proper-brick-oven-tap-room",
+      "name": "Proper Brick Oven & Tap Room",
       "family_label": "Pittsburgh Restaurants",
-      "neighborhood": "South Side Flats",
-      "descriptor": "First In Pittsburgh Businesses, Powered By Reviews. Seven Creators Are On TikTok; Nan Xiang Is Not.",
-      "descriptor_highlight": "Seven Creators Are On TikTok",
-      "stat_line": "1,212 reviews · 4.8★ · 7 creators · 26K plays · 11 IG posts/30d",
-      "featured_tiktok": {
-        "author": "bitesbymorgan",
-        "plays": 8535,
-        "url": "https://www.tiktok.com/@bitesbymorgan/video/7612029218091781407",
-        "caption": "Last weekend, I tried Nan Xiang Soup Dumplings located in the Southside of Pittsburgh. If you love soup dumplings, you should absolutely check this spot out!\n\nMy overall review is:\n\nOverall Rating: 8/10\nFood: 8.5/10\nAtmosphere: 7.5/10\nServi"
-      },
-      "playbook_top_move": "Open a TikTok account this quarter. Seven creators have already filmed here with 25,671 plays; a verified account lets Nan Xiang stitch, repost, and capture that reach directly."
+      "neighborhood": "Downtown",
+      "descriptor": "Review Depth Is Icons-Tier. The Listing Gaps Are Doing Real Damage.",
+      "descriptor_highlight": "Listing Gaps Are",
+      "stat_line": "2,247 reviews · 4.6★",
+      "playbook_top_move": "Complete the Google listing today. Add phone number and hours to Google Business Profile. Both are missing, and a customer verifying hours before a downtown dinner will bounce."
+    },
+    {
+      "rank": 4,
+      "business_slug": "federal-galley",
+      "name": "Federal Galley",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "Allegheny Center",
+      "descriptor": "First In Ones To Watch, Carried By 2,593 Reviews. The Social Layer Has Not Arrived.",
+      "descriptor_highlight": "Social Layer Has Not",
+      "stat_line": "2,593 reviews · 4.5★",
+      "playbook_top_move": "Establish a findable Instagram presence. Create and index an Instagram account; the business has no handle on record, making it invisible to the largest local discovery audience in the family."
+    },
+    {
+      "rank": 5,
+      "business_slug": "bakersfield-penn-ave",
+      "name": "Bakersfield Penn Ave",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "Downtown",
+      "descriptor": "First In Pittsburgh Restaurants, But No Phone, No Hours, No Way In After Hours.",
+      "descriptor_highlight": "No Phone, No Hours",
+      "stat_line": "2,378 reviews · 4.5★",
+      "playbook_top_move": "Fix the Google Business listing today. Add phone number and business hours to Google, both are missing and actively blocking reservation intent from 2,378 reviewers already searching."
     }
   ],
   "query": {
@@ -58,6 +68,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-27T00:57:01.226Z",
+  "generated_at": "2026-05-10T23:50:39.110Z",
   "model": "claude-sonnet-4-6"
 }

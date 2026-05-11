@@ -4,7 +4,7 @@
   "title": "The Highest Engagement Rate Posts From Pittsburgh Small Businesses",
   "subtitle": "Ranked by engagement as a percentage of follower count, not absolute likes. The punching-above-weight list.",
   "angle": "Pittsburgh's IG posts with the strongest reach relative to their account size. Small businesses can beat national chains here.",
-  "intro": "The engagement rate list does not care how many followers you have. It cares what you do with them. That is the whole point of this ranking: we computed likes, comments, and weighted video plays as a percentage of each account's actual follower base, which means a tight-knit neighborhood coffee shop can absolutely outrank a regional chain with half a million followers. This quarter, they did.\n\nDelanie's Coffee in Shadyside topped the list at 39.29 percent, on a caption that was essentially just a honky tonk shoutout and a photographer credit. Spot of Coffee, working with a follower base under 3,000, placed second and fifth simultaneously, at 39.03 and 20.38 percent. Page's ice cream shop cracked the top three with a pickle split sundae announcement that hit 27.94 percent, which, for a six-figure follower account, is genuinely hard to do.\n\nThirty posts, seventeen businesses, a two-post-per-account cap to keep any single player from dominating the board. Issue 02 will track whether these same businesses can hold their efficiency advantage as their audiences grow, or whether size eventually wins after all.",
+  "intro": "The engagement rate list doesn't care how big you are. It measures what percentage of your actual followers showed up, liked something, left a comment, watched a video. A 500,000-follower chain getting 5,000 likes is, by this math, getting ignored. A 2,800-follower coffee shop converting 39% of its audience on a giveaway post is doing something right. That's the logic behind this ranking, and it's why the top 30 is dominated by small Pittsburgh independents, not verified accounts with marketing budgets.\n\nThis quarter's leader is Delanie's Coffee in Shadyside, which hit a 39.29% engagement rate on a single honky tonk photo. Spot of Coffee, working with fewer than 3,000 followers, appears twice in the top five. Page's earned its spot at number three with a pickle split sundae that, whatever you think about the flavor combination, clearly landed.\n\nIssue 02 will expand the dataset, add more businesses to the tracking pool, and start building a picture of which Pittsburgh operators are consistently punching above their weight, not just once.",
   "items": [
     {
       "rank": 1,
@@ -164,28 +164,6 @@
       "rank": 8,
       "kind": "post",
       "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DUCHxH7DBIm/",
-      "video_id": "DUCHxH7DBIm",
-      "thumbnail_url": "/post-thumbs/DUCHxH7DBIm.jpg",
-      "plays": 0,
-      "likes": 465,
-      "comments": 2,
-      "posted": "2026-01-28T00:48:50.000Z",
-      "caption": "Thank you to all of the people who have been working hard to clear Penn Avenue today (and yesterday, and tomorrow, probably)! \nWe will be operating under limited hours for at least the next few days due to low temperatures, and to ensure sa",
-      "creator_handle": "alleghenycoffee",
-      "business_slug": "allegheny-coffee-tea-exchange",
-      "business_name": "Allegheny Coffee & Tea Exchange",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Strip District",
-      "ig_type": "Image",
-      "engagement_rate": 0.10341009743135518,
-      "total_engagement": 467,
-      "followers": 4516
-    },
-    {
-      "rank": 9,
-      "kind": "post",
-      "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DVd-utrEa7Z/",
       "video_id": "DVd-utrEa7Z",
       "thumbnail_url": "/post-thumbs/DVd-utrEa7Z.jpg",
@@ -205,29 +183,7 @@
       "followers": 103944
     },
     {
-      "rank": 10,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DUUTEIBjCu0/",
-      "video_id": "DUUTEIBjCu0",
-      "thumbnail_url": "/post-thumbs/DUUTEIBjCu0.jpg",
-      "plays": 0,
-      "likes": 123,
-      "comments": 12,
-      "posted": "2026-02-04T01:15:27.000Z",
-      "caption": "Thank you Table magazine for the Black History Month feature!!! Check out the entire article here…..\nhttps://pittsburgh.tablemagazine.com/blog/what-does-black-history-month-mean-to-pittsburgh/",
-      "creator_handle": "twentyfourcarrotjuice",
-      "business_slug": "24-carrot-juice",
-      "business_name": "24 Carrot Juice",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Bloomfield",
-      "ig_type": "Image",
-      "engagement_rate": 0.10180995475113122,
-      "total_engagement": 135,
-      "followers": 1326
-    },
-    {
-      "rank": 11,
+      "rank": 9,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DVMRkBTkbyh/",
@@ -249,7 +205,7 @@
       "followers": 13453
     },
     {
-      "rank": 12,
+      "rank": 10,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DXW9_euje_b/",
@@ -271,7 +227,7 @@
       "followers": 36930
     },
     {
-      "rank": 13,
+      "rank": 11,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DXZ7I0VCU2I/",
@@ -293,7 +249,7 @@
       "followers": 36930
     },
     {
-      "rank": 14,
+      "rank": 12,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DU1CMC4kbTx/",
@@ -315,7 +271,7 @@
       "followers": 13453
     },
     {
-      "rank": 15,
+      "rank": 13,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DWtYKU0AdbQ/",
@@ -337,29 +293,7 @@
       "followers": 4516
     },
     {
-      "rank": 16,
-      "kind": "post",
-      "platform": "instagram",
-      "video_url": "https://www.instagram.com/p/DUQoGDEjbUE/",
-      "video_id": "DUQoGDEjbUE",
-      "thumbnail_url": "/post-thumbs/DUQoGDEjbUE.jpg",
-      "plays": 858,
-      "likes": 27,
-      "comments": 0,
-      "posted": "2026-02-02T15:00:00.000Z",
-      "caption": "Stay healthy in this cold weather. Stop in or place your order online. \n#24carrotjuice",
-      "creator_handle": "twentyfourcarrotjuice",
-      "business_slug": "24-carrot-juice",
-      "business_name": "24 Carrot Juice",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Bloomfield",
-      "ig_type": "Video",
-      "engagement_rate": 0.04147812971342383,
-      "total_engagement": 55,
-      "followers": 1326
-    },
-    {
-      "rank": 17,
+      "rank": 14,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DWHeAvXgson/",
@@ -381,7 +315,7 @@
       "followers": 6462
     },
     {
-      "rank": 18,
+      "rank": 15,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DWPtUn0DZkR/",
@@ -403,7 +337,7 @@
       "followers": 2594
     },
     {
-      "rank": 19,
+      "rank": 16,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DXCQ9xGEWR5/",
@@ -425,7 +359,29 @@
       "followers": 522411
     },
     {
-      "rank": 20,
+      "rank": 17,
+      "kind": "post",
+      "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DW6eUlXoM50/",
+      "video_id": "DW6eUlXoM50",
+      "thumbnail_url": null,
+      "plays": 0,
+      "likes": 143,
+      "comments": 6,
+      "posted": "2026-04-09T14:07:00.000Z",
+      "caption": "We upgraded our signage outside! What do we think?🧡💙\n\n📍 2005 Penn Ave, Pittsburgh, PA 15222 \n📞 (412) 471-5557 \n\nAllegheny Coffee & Tea Exchange, Allegheny Coffee, Shop Local, Strip District, Pittsburgh Coffee Shops Near Me",
+      "creator_handle": "alleghenycoffee",
+      "business_slug": "allegheny-coffee-tea-exchange",
+      "business_name": "Allegheny Coffee & Tea Exchange",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Strip District",
+      "ig_type": "Sidecar",
+      "engagement_rate": 0.03299379982285208,
+      "total_engagement": 149,
+      "followers": 4516
+    },
+    {
+      "rank": 18,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DW3rKolDyoY/",
@@ -447,7 +403,7 @@
       "followers": 4022
     },
     {
-      "rank": 21,
+      "rank": 19,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DVgQHqijVhP/",
@@ -469,7 +425,7 @@
       "followers": 2594
     },
     {
-      "rank": 22,
+      "rank": 20,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DU-9NAPEQmR/",
@@ -491,7 +447,7 @@
       "followers": 20443
     },
     {
-      "rank": 23,
+      "rank": 21,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DV8hPC6DQt_/",
@@ -513,7 +469,7 @@
       "followers": 14478
     },
     {
-      "rank": 24,
+      "rank": 22,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DV8hPC6DQt_/",
@@ -535,7 +491,7 @@
       "followers": 14478
     },
     {
-      "rank": 25,
+      "rank": 23,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DWE4CSlEcia/",
@@ -557,7 +513,7 @@
       "followers": 13091
     },
     {
-      "rank": 26,
+      "rank": 24,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DWKnMQSj4WA/",
@@ -579,7 +535,7 @@
       "followers": 4022
     },
     {
-      "rank": 27,
+      "rank": 25,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DXfCON9j9S2/",
@@ -601,7 +557,7 @@
       "followers": 22684
     },
     {
-      "rank": 28,
+      "rank": 26,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DVBuXDxEQcu/",
@@ -623,7 +579,7 @@
       "followers": 20443
     },
     {
-      "rank": 29,
+      "rank": 27,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DXHQBVxkTuj/",
@@ -645,7 +601,7 @@
       "followers": 522411
     },
     {
-      "rank": 30,
+      "rank": 28,
       "kind": "post",
       "platform": "instagram",
       "video_url": "https://www.instagram.com/p/DUtDhI1juUB/",
@@ -665,8 +621,52 @@
       "engagement_rate": 0.018945634266886325,
       "total_engagement": 23,
       "followers": 1214
+    },
+    {
+      "rank": 29,
+      "kind": "post",
+      "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DU6DHw5jY1N/",
+      "video_id": "DU6DHw5jY1N",
+      "thumbnail_url": null,
+      "plays": 227,
+      "likes": 16,
+      "comments": 2,
+      "posted": "2026-02-18T17:05:00.000Z",
+      "caption": "We know you want it…..\n#24carrotjuice #healthylifestyle",
+      "creator_handle": "twentyfourcarrotjuice",
+      "business_slug": "24-carrot-juice",
+      "business_name": "24 Carrot Juice",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Bloomfield",
+      "ig_type": "Video",
+      "engagement_rate": 0.01885369532428356,
+      "total_engagement": 25,
+      "followers": 1326
+    },
+    {
+      "rank": 30,
+      "kind": "post",
+      "platform": "instagram",
+      "video_url": "https://www.instagram.com/p/DXCpTl_AbmC/",
+      "video_id": "DXCpTl_AbmC",
+      "thumbnail_url": null,
+      "plays": 0,
+      "likes": 24,
+      "comments": 0,
+      "posted": "2026-04-12T18:16:11.000Z",
+      "caption": "Thank you @professionalwomennetwork for having us curator a wellness activation for the wonderful women that attended the even! It was an honor!",
+      "creator_handle": "twentyfourcarrotjuice",
+      "business_slug": "24-carrot-juice",
+      "business_name": "24 Carrot Juice",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Bloomfield",
+      "ig_type": "Sidecar",
+      "engagement_rate": 0.01809954751131222,
+      "total_engagement": 24,
+      "followers": 1326
     }
   ],
-  "generated_at": "2026-04-27T02:07:52.341Z",
+  "generated_at": "2026-05-10T23:56:47.404Z",
   "model": "claude-sonnet-4-6"
 }

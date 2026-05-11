@@ -3,135 +3,117 @@
   "title": "Pittsburgh's Most Underrated Small Businesses",
   "subtitle": "The places customers love but the algorithm hasn't found yet, across every family.",
   "angle": "businesses with high customer ratings and real review depth that haven't broken through on social yet. The point of this list is celebration, not critique. Pittsburgh's neighborhood spots, the ones worth telling a friend about.",
-  "intro": "The businesses on this list didn't earn their rankings through campaigns or influencer gifting. They earned them the old way: enough customers showed up, felt something, and said so in writing. What the review record shows, and what the social data confirms by its absence, is a specific kind of Pittsburgh business that has built real loyalty without building a feed. That gap is the story this quarter.\n\nA few signals worth naming. Commerce Bar in East Liberty sits second among Pittsburgh bars on review depth alone, and its social footprint is almost nonexistent. Everyday Noodles in Squirrel Hill North has 2,216 reviews behind it, a number that would generate serious algorithmic attention almost anywhere else. Pusadee's Garden is the one outlier: creator videos exist, but the restaurant isn't making them. Someone else's content is doing the work.\n\nWhat connects most of these businesses is that the customer love is already there, and the cheapest second move is simply asking the people who already love them to come back with a purpose. Pittsburgh has more creators looking for places to feature than most owners realize, and the infrastructure that connects them tends to work quietly, because it doesn't have to pitch.\n\nIssue 02, Summer 2026, will track whether any of these businesses close the gap.",
+  "intro": "The businesses on this list didn't earn their ratings through campaigns or coordinated review drops. They earned them the slow way, through repeat visits, word of mouth, and the kind of customer loyalty that shows up in review text, not follower counts. What Signal tracks is the gap between that earned trust and the digital infrastructure that would let a stranger act on it. For most of these ten, that gap is surprisingly fixable. The problem isn't the product. It's the profile.\n\nA few names stand out this quarter. Oakmont Bakery sits first among Pittsburgh bakeries by rating and review depth, yet 52 businesses in its own category rank above it in discovery because the profile data is incomplete. Gaucho Parrilla Argentina built its position on 4,326 reviews and ranks first in Pittsburgh restaurants by Signal's methodology, but missing contact information is turning away walk-ins the reviews already earned. City Works has accumulated nearly nine thousand reviews, and one server appears to be the primary engine behind the story Google is telling about the place.\n\nThese businesses already have the customer love. The next move is simpler than most owners expect: the creators who already love these places are often willing to come back on purpose, and Pittsburgh has more of them looking for something worth featuring than most owners realize. The platforms that connect them work quietly, because they don't have to pitch what's already there.\n\nIssue 02, Summer 2026, will follow the businesses from this list that close the gap.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "commerce-bar",
-      "name": "Commerce Bar",
-      "family_label": "Pittsburgh Bars",
-      "neighborhood": "East Liberty",
-      "descriptor": "Second In Pittsburgh Bars On Review Depth Alone, The Social Signal Has Barely Shown Up.",
-      "descriptor_highlight": "Barely Shown Up",
-      "stat_line": "106 reviews · 4.7★ · 1 IG posts/30d",
-      "playbook_top_move": "Get the bar on Google completely. Add a website URL and phone number to the Google profile; right now both fields are blank, which stalls every potential first visit."
+      "business_slug": "city-works-market-square-pittsburgh",
+      "name": "City Works (Market Square - Pittsburgh)",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "Downtown",
+      "descriptor": "Nearly Nine Thousand Reviews, Zero Social Presence. One Server Is Carrying The Whole Story.",
+      "descriptor_highlight": "Zero Social Presence",
+      "stat_line": "8,766 reviews · 4.6★",
+      "playbook_top_move": "Claim Instagram before the gap widens. City Works has no indexed Instagram handle. Establishing and verifying one account closes the single largest gap between this business and the Restaurants family leaders."
     },
     {
       "rank": 2,
-      "business_slug": "oishii-donburi",
-      "name": "Oishii Donburi",
-      "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "Fifth In Asian Kitchens On Review Depth Alone, The Visual Layer Has Not Arrived Yet.",
-      "descriptor_highlight": "Review Depth Alone",
-      "stat_line": "385 reviews · 4.6★",
-      "playbook_top_move": "Restart Instagram before summer ends. The account has been silent for 72 days; one post per week featuring a specific bowl by name would restart the signal index."
+      "business_slug": "carnegie-museum-of-natural-history",
+      "name": "Carnegie Museum of Natural History",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "North Oakland",
+      "descriptor": "First In Its Category, Thirtieth In The Family. No Hours, No Phone, No Social Layer Yet.",
+      "descriptor_highlight": "No Hours, No Phone",
+      "stat_line": "4,521 reviews · 4.8★",
+      "playbook_top_move": "Complete the Google Business listing immediately. Add phone number and hours to Google, two missing fields costing the museum conversion rank in a 38-business family."
     },
     {
       "rank": 3,
-      "business_slug": "everyday-noodles",
-      "name": "Everyday Noodles",
-      "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "Squirrel Hill North",
-      "descriptor": "Third In Pittsburgh Asian Kitchens, Backed By 2,216 Reviews. No Social Presence To Show For It.",
-      "descriptor_highlight": "No Social Presence",
-      "stat_line": "2,216 reviews · 4.6★ · 2 creators · 3K plays",
-      "featured_tiktok": {
-        "author": "sheseatingit",
-        "plays": 1811,
-        "url": "https://www.tiktok.com/@sheseatingit/video/7617842917629070622",
-        "caption": "Everyday Noodles is my dream come true because I could eat noodles everyday.\n\n#Pittsburgh #soupdumplings #xiaolongbao #pennsylvania #pittsburghsteelers "
-      },
-      "playbook_top_move": "Start an Instagram account, post the kitchen. The open noodle-making kitchen is a ready visual; a basic account with weekly posts stops the indexed-handle gap cold."
+      "business_slug": "benedum-center-for-the-performing-arts",
+      "name": "Benedum Center for the Performing Arts",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "Downtown",
+      "descriptor": "First In Its Category, Fifteenth In The Family. The Listing Is Missing A Phone Number.",
+      "descriptor_highlight": "Fifteenth In The Family",
+      "stat_line": "5,849 reviews · 4.8★",
+      "playbook_top_move": "Complete the Google listing today. Add phone number and hours to Google Business Profile. Both are currently absent on a venue with 5,849 reviews."
     },
     {
       "rank": 4,
-      "business_slug": "lorelei",
-      "name": "Lorelei",
-      "family_label": "Pittsburgh Restaurants",
-      "neighborhood": "East Liberty",
-      "descriptor": "Second In Pittsburgh Restaurants On Review Depth Alone, Not Yet On TikTok.",
-      "descriptor_highlight": "Not Yet On TikTok",
-      "stat_line": "392 reviews · 4.5★ · 4 IG posts/30d",
-      "playbook_top_move": "Start Reels before TikTok fills the void. Zero Reels posted in the last 30 days; one cocktail-process or bar-atmosphere Reel per week would directly address a 0.79 percent engagement rate on an otherwise active account."
+      "business_slug": "the-andy-warhol-museum",
+      "name": "The Andy Warhol Museum",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "North Shore",
+      "descriptor": "Seventeenth In Galleries Despite The Family's Strongest Conversion Signal. The Discovery Layer Is Still Missing.",
+      "descriptor_highlight": "Strongest Conversion Signal",
+      "stat_line": "5,735 reviews · 4.6★",
+      "playbook_top_move": "Complete the Google business profile now. Add phone, hours, and at least one photo category; Google is currently missing all three, costing direct discovery."
     },
     {
       "rank": 5,
-      "business_slug": "la-gourmandine-lawrenceville",
-      "name": "La Gourmandine Lawrenceville",
+      "business_slug": "oakmont-bakery",
+      "name": "Oakmont Bakery",
       "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "Eighth In Sweets Despite A Deep Review Record. The Feed Has Gone Quiet.",
-      "descriptor_highlight": "Feed Has Gone Quiet",
-      "stat_line": "1,294 reviews · 4.8★ · 5 creators · 18K plays",
-      "featured_tiktok": {
-        "author": "melissasadhdlife",
-        "plays": 7521,
-        "url": "https://www.tiktok.com/@melissasadhdlife/video/7620558568844004639",
-        "caption": "I love La Gourmandine, they never disappoint 🥐 🍫 \n\n#pittsburghtreats #patisserie #springpastries "
-      },
-      "playbook_top_move": "Restart the Instagram feed consistently. The account has posted zero times in 42 days; even two posts per week featuring named seasonal items would reactivate the momentum signal."
+      "neighborhood": "Riverview North",
+      "descriptor": "First In Pittsburgh Bakeries, But 52 Sweets Businesses Rank Higher. The Missing Profile Data Explains It.",
+      "descriptor_highlight": "52 Sweets Businesses Rank Higher",
+      "stat_line": "7,666 reviews · 4.7★",
+      "playbook_top_move": "Complete the Google business profile today. Add phone number, business hours, and photo categories; all three are currently absent and suppress cold-search discovery."
     },
     {
       "rank": 6,
-      "business_slug": "24-carrot-juice",
-      "name": "24 Carrot Juice",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Bloomfield",
-      "descriptor": "Eighth In Pittsburgh Cafes On The Back Of Flawless Reviews. The Video Layer Has Not Arrived Yet.",
-      "descriptor_highlight": "Flawless Reviews",
-      "stat_line": "519 reviews · 5★ · 3 IG posts/30d",
-      "playbook_top_move": "Post at least one Reel this week. Zero Reels in the last 30 days on an account with 2.53 percent engagement means the algorithm has no video signal to distribute; one Reel of the acai bowl build or a smoothie pour could change that immediately."
+      "business_slug": "primanti-bros-restaurant-and-bar-ixaoae",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "Strip District",
+      "descriptor": "First In Pittsburgh Restaurants, But 276 Businesses Rank Above It In The Family. The Google Profile Tells Visitors Almost Nothing.",
+      "descriptor_highlight": "276 Businesses Rank Above",
+      "stat_line": "7,415 reviews · 4.5★",
+      "playbook_top_move": "Complete the Google Business profile today. Add phone number and hours to Google; both fields are currently blank, costing ranking signals across the entire 640-business family."
     },
     {
       "rank": 7,
-      "business_slug": "pusadees-garden",
-      "name": "Pusadee's Garden",
-      "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "Second In Pittsburgh Asian Kitchens, Carried By Creator Videos The Restaurant Itself Isn't Making.",
-      "descriptor_highlight": "Creator Videos The",
-      "stat_line": "1,224 reviews · 4.7★ · 8 creators · 19K plays · 2 IG posts/30d",
-      "featured_tiktok": {
-        "author": "mad_i_libs",
-        "plays": 6614,
-        "url": "https://www.tiktok.com/@mad_i_libs/video/7604578609566633229",
-        "caption": "This Thai restaurant is a gorgeous spot for your next date night or special occasion in Pittsburgh! 💖 \n\nThere are so many food and drink options, for meat-eaters and vegans alike, you'll want to come back more than once. 🥂 \n\nTip: Show up "
-      },
-      "playbook_top_move": "Start posting reels, starting this week. Zero reels in the last 30 days is the single largest gap; one short reel of the garden space or a dish being plated would immediately lift Instagram momentum above its current floor."
+      "business_slug": "north-park",
+      "name": "North Park",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "Pittsburgh",
+      "descriptor": "Twelfth In Experiences Despite A Perfect Conversion Path. The Google Listing Has No Hours, No Phone.",
+      "descriptor_highlight": "Perfect Conversion Path",
+      "stat_line": "5,072 reviews · 4.7★",
+      "playbook_top_move": "Complete the Google business listing now. Add hours and a phone number to the Google profile, two missing fields that pull the conversion signal down from its ceiling."
     },
     {
       "rank": 8,
-      "business_slug": "golden-age-beer-company",
-      "name": "Golden Age Beer Company",
-      "family_label": "Pittsburgh Bars",
+      "business_slug": "central-diner-grille",
+      "name": "Central Diner & Grille",
+      "family_label": "Pittsburgh Businesses",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Third In Pittsburgh Bars On Review Depth Alone, With No TikTok Presence To Build On It.",
-      "descriptor_highlight": "No TikTok Presence",
-      "stat_line": "195 reviews · 4.8★ · 12 IG posts/30d",
-      "playbook_top_move": "Get the food story on video. Reels of the shepherd pie pierogi special and the $10 liter pour are the two most repeatable, specific hooks in the current review record; start there."
+      "descriptor": "474th In Pittsburgh Restaurants, With 5,753 Reviews Behind It. The Profile Has No Photos, No Hours, No Phone.",
+      "descriptor_highlight": "No Photos, No Hours",
+      "stat_line": "5,753 reviews · 4.5★",
+      "playbook_top_move": "Complete the Google business profile now. Add hours, a phone number, and at least 10 photos across food and interior categories, all three are currently missing."
     },
     {
       "rank": 9,
-      "business_slug": "reva-modern-indian-cuisine",
-      "name": "Reva Modern Indian Cuisine",
-      "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "East Liberty",
-      "descriptor": "Fourth In Asian Kitchens, Built On Reviews Alone. The Social Layer Has Not Started.",
-      "descriptor_highlight": "Built On Reviews Alone",
-      "stat_line": "527 reviews · 4.6★",
-      "playbook_top_move": "Restart Instagram before the feed dies completely. The account has been silent for 72 days; one weekly post of a plated dish resets the momentum signal before it flatlines entirely."
+      "business_slug": "randyland",
+      "name": "Randyland",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "Mexican War Streets",
+      "descriptor": "Thirteenth In Galleries On Review Depth Alone. Google Still Lists No Hours, No Phone.",
+      "descriptor_highlight": "No Hours, No Phone",
+      "stat_line": "3,672 reviews · 4.7★",
+      "playbook_top_move": "Fix the Google listing gaps now. Add hours and a phone number to the Google Business Profile; both are currently missing and suppress conversion for 3,672 reviewers' worth of curious visitors."
     },
     {
       "rank": 10,
-      "business_slug": "meetcha",
-      "name": "MeetCha",
-      "family_label": "Pittsburgh Cafes",
-      "neighborhood": "Squirrel Hill South",
-      "descriptor": "Fourth In Pittsburgh Cafes On Goodwill Alone. The Social Signal Has Been Silent For Ninety Days.",
-      "descriptor_highlight": "Goodwill Alone",
-      "stat_line": "134 reviews · 4.8★",
-      "playbook_top_move": "Restart the Instagram account now. The account has been dark for 92 days; even two posts per week would put MeetCha back in the feed conversation the rest of the cafe family never left."
+      "business_slug": "gaucho-parrilla-argentina",
+      "name": "Gaucho Parrilla Argentina",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "Downtown",
+      "descriptor": "First In Pittsburgh Restaurants, Built On 4,326 Reviews. The Contact Info Gap Is Costing Real Walk-Ins.",
+      "descriptor_highlight": "4,326 Reviews",
+      "stat_line": "4,326 reviews · 4.6★",
+      "playbook_top_move": "Fix the Google Business profile today. Add phone number, hours, and a category-specific listing. Right now Google shows none of the three, and visitors are bouncing before they arrive."
     }
   ],
   "query": {
@@ -141,6 +123,6 @@
     "ranking": "underrated",
     "limit": 10
   },
-  "generated_at": "2026-04-27T00:56:20.604Z",
+  "generated_at": "2026-05-10T23:49:56.871Z",
   "model": "claude-sonnet-4-6"
 }
