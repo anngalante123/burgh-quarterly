@@ -19,7 +19,7 @@ import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
 
-import { loadAllRichBusinesses } from "@/lib/query/business-query";
+import { brandKey, loadAllRichBusinesses } from "@/lib/query/business-query";
 import { familyForCategory } from "@/lib/data/category-family";
 import { downloadThumbnail } from "@/lib/scrape/download-thumbnail";
 
@@ -209,13 +209,16 @@ async function main() {
 
   candidates.sort((a, b) => b.rate - a.rate);
 
-  const perBiz = new Map<string, number>();
+  // Cap per BRAND, not per slug — chains like Eat'n Park have 14
+  // locations in the index and any per-slug cap would let the same
+  // brand crowd the list across its multiple records.
+  const perBrand = new Map<string, number>();
   const final: Candidate[] = [];
   for (const c of candidates) {
-    const slug = c.item.business_slug;
-    const cnt = perBiz.get(slug) ?? 0;
+    const key = brandKey(c.item.business_name);
+    const cnt = perBrand.get(key) ?? 0;
     if (cnt >= PER_BUSINESS_CAP) continue;
-    perBiz.set(slug, cnt + 1);
+    perBrand.set(key, cnt + 1);
     final.push(c);
     if (final.length >= TOP_N) break;
   }

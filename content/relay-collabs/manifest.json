@@ -60,51 +60,51 @@
     "size_kb": 160
   },
   {
-    "file": "11-der-fer-coffee-and-tea.jpg",
-    "business": "Der Fer coffee and tea",
-    "creator": "Felicity bird",
-    "size_kb": 401
-  },
-  {
-    "file": "12-east-west-boutique.jpg",
+    "file": "11-east-west-boutique.jpg",
     "business": "East West Boutique",
     "creator": "Maura Spang",
     "size_kb": 149
   },
   {
-    "file": "13-frenchies-nail-salon.jpg",
+    "file": "12-frenchies-nail-salon.jpg",
     "business": "Frenchies nail salon",
     "creator": "Hana Daisy",
     "size_kb": 211
   },
   {
-    "file": "14-golden-gai.jpg",
+    "file": "13-golden-gai.jpg",
     "business": "Golden Gai",
     "creator": "Cindy Richey",
     "size_kb": 233
   },
   {
-    "file": "15-grapow.jpg",
+    "file": "14-grapow.jpg",
     "business": "Grapow",
     "creator": "PGH Date Spotters",
     "size_kb": 204
   },
   {
-    "file": "16-honey-bee-bakery.jpg",
+    "file": "15-honey-bee-bakery.jpg",
     "business": "Honey Bee Bakery",
     "creator": "Alex Seibert",
     "size_kb": 183
   },
   {
-    "file": "17-keeta-s-pet-salon.jpg",
+    "file": "16-keeta-s-pet-salon.jpg",
     "business": "Keeta's Pet Salon",
     "creator": "Juli Singer",
     "size_kb": 201
   },
   {
-    "file": "18-latitude-48.jpg",
+    "file": "17-latitude-48.jpg",
     "business": "Latitude 48",
     "creator": "Teniola Odumosu",
     "size_kb": 194
+  },
+  {
+    "file": "18-little-city-coffee.jpg",
+    "business": "Little city coffee",
+    "creator": "Felicity bird",
+    "size_kb": 203
   }
 ]

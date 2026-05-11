@@ -27,7 +27,7 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
 
-import { loadAllRichBusinesses } from "@/lib/query/business-query";
+import { brandKey, loadAllRichBusinesses } from "@/lib/query/business-query";
 import { familyForCategory } from "@/lib/data/category-family";
 import { downloadThumbnail } from "@/lib/scrape/download-thumbnail";
 
@@ -370,13 +370,15 @@ async function main() {
     (s.visual_concept + s.caption_craft + s.format_fit + s.surprise) / 4;
   scored.sort((a, b) => composite(b.score) - composite(a.score));
 
-  const perBiz = new Map<string, number>();
+  // Cap per BRAND, not per slug — keeps Eat'n Park / Primanti / etc.
+  // from crowding the list with multiple locations of the same chain.
+  const perBrand = new Map<string, number>();
   const final: typeof scored = [];
   for (const entry of scored) {
-    const slug = entry.c.business.artifact.business.slug;
-    const cnt = perBiz.get(slug) ?? 0;
+    const key = brandKey(entry.c.business.artifact.business.name);
+    const cnt = perBrand.get(key) ?? 0;
     if (cnt >= PER_BUSINESS_CAP) continue;
-    perBiz.set(slug, cnt + 1);
+    perBrand.set(key, cnt + 1);
     final.push(entry);
     if (final.length >= TOP_N) break;
   }

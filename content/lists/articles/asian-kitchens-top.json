@@ -3,7 +3,7 @@
   "title": "The Pittsburgh Asian Kitchens Creators Keep Returning To",
   "subtitle": "Sushi, noodles, Thai, Indian, Japanese",
   "angle": "the Asian kitchens generating the most creator coverage this quarter. The dishes the city is filming and the restaurants behind them.",
-  "intro": "Asian kitchens have become the most filmed category in Pittsburgh this quarter, and the gap between who is cooking well and who is capturing that cooking online is wider here than anywhere else in the city's dining scene. Creators are showing up regardless. The question this list answers is which restaurants are actually built to benefit from it.\n\nEveryday Noodles in Squirrel Hill has no Instagram account and no TikTok presence, yet it landed second among Pittsburgh Asian restaurants on review depth alone, which means people are finding language for the food without any prompting from the restaurant itself. That is a rare signal. Pusadee's Garden, the city's top-ranked Thai kitchen, is in a stranger position: a feed that posts roughly twice a month and no TikTok footprint, despite being the kind of place creators consistently return to. Atarashi sits first in Pittsburgh sushi but recent reviews are pulling in a direction the ranking will need to watch.\n\nThese eight kitchens represent the clearest version of a tension that will define Pittsburgh dining coverage through 2026, and Issue 02 this summer will track whether the gaps visible here have started to close.",
+  "intro": "Asian kitchens are generating some of the most consistent creator attention in Pittsburgh this quarter, and the pattern is worth examining closely. Everyday Noodles in Squirrel Hill has no Instagram account and no TikTok presence, yet creators are already filming inside. Pusadee's Garden in Lawrenceville ranks first among Pittsburgh Thai restaurants on conversation volume, running on a feed that posts roughly twice a month and nothing on short-form video. The coverage is arriving faster than the infrastructure meant to catch it.\n\nMola in East Liberty tells a sharper version of the same story. It leads Pittsburgh in sushi on review depth alone, which means the written record is substantial, but the social feed has gone nearly quiet. Atarashi holds the same top ranking in sushi with more recent activity, though the newest reviews are pulling sentiment in a complicated direction. Both restaurants are filming-ready in ways their accounts have not fully accounted for.\n\nWhat this quarter establishes is a gap between where creators are pointing their cameras and where restaurants have built the surface to receive that attention. That gap will only matter more as competition tightens. Issue 02 will track whether these kitchens close it.",
   "items": [
     {
       "rank": 1,
@@ -119,6 +119,6 @@
     "ranking": "creator_pickup",
     "limit": 8
   },
-  "generated_at": "2026-05-10T23:49:41.436Z",
+  "generated_at": "2026-05-11T00:33:22.965Z",
   "model": "claude-sonnet-4-6"
 }

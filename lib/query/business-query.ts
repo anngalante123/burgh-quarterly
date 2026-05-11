@@ -223,12 +223,58 @@ export async function queryBusinesses(
     : all;
   const rankFn = RANKINGS[spec.ranking];
   const sorted = filtered.slice().sort((a, b) => rankFn(b) - rankFn(a));
-  const limited = sorted.slice(0, spec.limit);
-  return limited.map((b, i) => ({
+
+  // Brand-level dedup: the catalog has many chain duplicates (Eat'n
+  // Park ×14, Primanti ×13, La Gourmandine Hazelwood + Lawrenceville,
+  // etc.). For an editorial list, only the highest-ranked location of
+  // each brand should surface; "Top 10 Sweets" reading like "top 10
+  // La Gourmandine locations" is not what a reader wants. We walk
+  // the sorted list and keep the first entry per brand key.
+  const seen = new Set<string>();
+  const deduped: typeof sorted = [];
+  for (const b of sorted) {
+    const key = brandKey(b.artifact.business.name);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    deduped.push(b);
+    if (deduped.length >= spec.limit) break;
+  }
+  return deduped.map((b, i) => ({
     rank: i + 1,
     business: b,
     rankingValue: rankFn(b),
   }));
+}
+
+/**
+ * Normalize a business name to a brand identifier. Strips
+ * apostrophes, parentheticals, neighborhood suffixes after " - ", and
+ * keeps the first two tokens of the cleaned name. Used for list
+ * dedup so multiple locations of one brand don't crowd the same
+ * editorial list.
+ *
+ * Examples:
+ *   "Millie's Homemade Ice Cream"           -> "millies homemade"
+ *   "Millie's Homemade Ice Cream & Coffee"  -> "millies homemade"
+ *   "La Gourmandine Hazelwood"              -> "la gourmandine"
+ *   "La Gourmandine Lawrenceville"          -> "la gourmandine"
+ *   "Hook Fish & Chicken (Penn Hills)"      -> "hook fish"
+ *   "Big Shot Bob's House of Wings - Beechview" -> "big shot"
+ *   "Margaux"                               -> "margaux"
+ */
+export function brandKey(name: string): string {
+  const cleaned = name
+    .toLowerCase()
+    .replace(/['"`’]/g, "")
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/\s*-\s.*$/, "")
+    .replace(/[^a-z0-9 ]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const tokens = cleaned.split(" ").filter(Boolean);
+  if (tokens.length === 0) return name.toLowerCase();
+  if (tokens.length === 1) return tokens[0];
+  return tokens.slice(0, 2).join(" ");
 }
 
 /* ----------------------------- ranking utils -------------------------- */

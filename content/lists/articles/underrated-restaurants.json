@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Restaurants",
   "subtitle": "Brunch spots, neighborhood restaurants. High ratings, low spotlight.",
   "angle": "Pittsburgh restaurants whose reviews speak for themselves but whose social channels are quieter than they should be. The neighborhood standbys we'd send a visiting friend to.",
-  "intro": "Some Pittsburgh restaurants don't need a publicist. They need someone to look at what's already there. The five on this quarter's list have review counts and ratings that would satisfy most owners, but the conversation stops at the review. No social layer, no discovery engine, no reason for someone scrolling on a Tuesday night to stop and book a table. That gap is the story.\n\nChurch Brew Works comes in first with 5,598 reviews, a number most downtown hotel bars would trade everything for, yet its social presence reads like a church bulletin, appropriate given the address. Federal Galley is carrying 2,593 reviews on a food hall model that should generate content daily just from the volume of people moving through it. Proper Brick Oven downtown has review depth that belongs in a different tier entirely; its listing gaps are the kind that quietly redirect reservations to competitors without anyone noticing until the quarter is over.\n\nWhat these five share is a customer base that already did the work. The next move costs almost nothing: the creators who would shoot these rooms already eat in them, Pittsburgh has more of them than most owners have considered, and the platforms that connect the two operate without fanfare precisely because they don't need to.\n\nIssue 02 arrives in summer 2026 with a look at which of these five closed the gap, and which ones let a quieter competitor take the room.",
+  "intro": "Some Pittsburgh restaurants have done the hard part. They've earned the reviews, held the room, built the regulars. What they haven't done is show up where the next customer is actually looking. That gap is what this list measures, and it shows up in specific, unsentimental ways: a missing phone number, a social feed that stopped posting in October, a listing that hasn't been touched since the address changed.\n\nThe Church Brew Works arrives at the top of this quarter's rankings carried by 5,598 reviews, which is a number most national chains would envy. Federal Galley follows close behind on review volume, with 2,593 ratings that reflect a food hall doing genuine work. Neither has a social layer that matches what their customers are already saying. Bakersfield Penn Ave presents a different problem: no phone, no posted hours, no way for someone standing outside at 9 p.m. to confirm the door is open.\n\nThe businesses on this list already have customer love. The cheap second move is simply asking the creators who already love them to come back on purpose. Pittsburgh has more creators looking for places to feature than most owners realize, and the platforms that connect them work quietly, because they don't need to pitch.\n\nIssue 02 arrives in summer 2026, when patio season resets the discovery cycle entirely.",
   "items": [
     {
       "rank": 1,
@@ -68,6 +68,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-05-10T23:50:39.110Z",
+  "generated_at": "2026-05-11T00:34:18.864Z",
   "model": "claude-sonnet-4-6"
 }

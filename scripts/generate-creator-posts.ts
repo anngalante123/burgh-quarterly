@@ -22,7 +22,7 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
 
-import { loadAllRichBusinesses } from "@/lib/query/business-query";
+import { brandKey, loadAllRichBusinesses } from "@/lib/query/business-query";
 import { familyForCategory } from "@/lib/data/category-family";
 
 loadEnv({ path: join(process.cwd(), ".env.local") });
@@ -439,18 +439,21 @@ async function main() {
   // business doesn't dominate, the list reads as a survey of which
   // Pittsburgh businesses the city is filming, not a deep dive into
   // Everyday Noodles or Page's specifically.
-  const PER_BUSINESS_CAP = 2;
-  const perBizCount = new Map<string, number>();
+  // Cap per BRAND, not per slug — chains like Eat'n Park have many
+  // locations in the index and any per-slug cap would let one brand
+  // crowd the list across its records.
+  const PER_BRAND_CAP = 2;
+  const perBrandCount = new Map<string, number>();
   const capped: typeof candidates = [];
   for (const c of unique) {
-    const slug = c.business.artifact.business.slug;
-    const cnt = perBizCount.get(slug) ?? 0;
-    if (cnt >= PER_BUSINESS_CAP) continue;
-    perBizCount.set(slug, cnt + 1);
+    const key = brandKey(c.business.artifact.business.name);
+    const cnt = perBrandCount.get(key) ?? 0;
+    if (cnt >= PER_BRAND_CAP) continue;
+    perBrandCount.set(key, cnt + 1);
     capped.push(c);
   }
   console.log(
-    `[generate-posts] ${capped.length} after cap (max ${PER_BUSINESS_CAP} per business)`,
+    `[generate-posts] ${capped.length} after cap (max ${PER_BRAND_CAP} per brand)`,
   );
   const top = capped.slice(0, TOP_N);
   console.log(`[generate-posts] keeping top ${top.length}`);

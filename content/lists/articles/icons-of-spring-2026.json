@@ -3,7 +3,7 @@
   "title": "The 10 Pittsburgh Businesses Defining Social This Quarter",
   "subtitle": "Spring 2026, across every family",
   "angle": "the businesses winning the conversation this quarter, regardless of category. We're surfacing who creators are filming, who customers are reviewing, and who is actually showing up on their own feeds.",
-  "intro": "The businesses on this list did not win because they have the biggest budgets or the most polished content strategies. They won because the city decided to talk about them, and the signal showed up whether or not they were ready to receive it. Nan Xiang Soup Dumplings, ranked first among Pittsburgh restaurants, is being carried almost entirely by reviews and a TikTok presence it does not actually own. Someone else's footage is doing the work. Pusadee's Garden, first among Thai restaurants in the city, posts twice a month and has no TikTok account, yet still leads its category. That is not a social strategy. That is a reputation so strong it outran the feed.\n\nThe tension inside this quarter's list is not between good businesses and bad ones. It is between businesses the conversation has chosen and businesses equipped to do anything with that attention. La Gourmandine's Instagram has been dark for 53 days across both locations. The Butterwood Bake Consortium's feed has been quiet for 527. The interest has not gone away. The infrastructure to meet it has.\n\nIssue 02 tracks whether any of these ten close the gap before summer foot traffic arrives and the window gets more expensive to ignore.",
+  "intro": "Every quarter, the businesses winning Pittsburgh's social conversation turn out to be a different animal than whoever is winning on the ground. Spring 2026 is no exception. The list below tracks creator activity, review velocity, platform presence, and conversion signals across every category we cover, and what it surfaces is less a ranking of the best businesses in Pittsburgh than a map of where attention is moving and why.\n\nSome of the patterns this quarter are genuinely strange. Nan Xiang Soup Dumplings is first among Pittsburgh restaurants on review strength and conversion, with TikTok play counts accumulating fast, but there is no account to catch that traffic. Pusadee's Garden holds the top Thai spot in the city while posting twice a month and sitting out TikTok entirely. La Gourmandine Hazelwood is first in pastry shops with 53 days of silence on Instagram, which is not a strategy so much as an open door.\n\nThe businesses that figure out how to close those gaps before summer will look very different by the time Issue 02 publishes. We will be watching who moved.",
   "items": [
     {
       "rank": 1,
@@ -109,23 +109,6 @@
     },
     {
       "rank": 7,
-      "business_slug": "la-gourmandine-lawrenceville",
-      "name": "La Gourmandine Lawrenceville",
-      "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "First In Pittsburgh Bakeries, Stalled By 53 Days Of Silence On Instagram.",
-      "descriptor_highlight": "53 Days Of Silence",
-      "stat_line": "1,289 reviews · 4.8★ · 5 creators · 18K plays",
-      "featured_tiktok": {
-        "author": "melissasadhdlife",
-        "plays": 7521,
-        "url": "https://www.tiktok.com/@melissasadhdlife/video/7620558568844004639",
-        "caption": "I love La Gourmandine, they never disappoint 🥐 🍫 \n\n#pittsburghtreats #patisserie #springpastries "
-      },
-      "playbook_top_move": "Restart Instagram before the quarter closes. The account has been dark for 53 days. Even 3 posts per week featuring seasonal items reactivates the momentum signal."
-    },
-    {
-      "rank": 8,
       "business_slug": "pages",
       "name": "Page's",
       "family_label": "Pittsburgh Sweets",
@@ -142,7 +125,7 @@
       "playbook_top_move": "Claim the TikTok account before someone else does. Register @pagesdairymart on TikTok now. Four creators already drove 87K plays this quarter with nowhere to send that traffic."
     },
     {
-      "rank": 9,
+      "rank": 8,
       "business_slug": "jenis-splendid-ice-creams",
       "name": "Jeni's Splendid Ice Creams",
       "family_label": "Pittsburgh Sweets",
@@ -159,7 +142,7 @@
       "playbook_top_move": "Claim the TikTok account before summer. Three Pittsburgh creators have already filmed Jeni's with 6,049 plays and no owned account exists to redirect that traffic or build on it."
     },
     {
-      "rank": 10,
+      "rank": 9,
       "business_slug": "the-butterwood-bake-consortium",
       "name": "The Butterwood Bake Consortium",
       "family_label": "Pittsburgh Cafes",
@@ -174,6 +157,23 @@
         "caption": "the banana espresso cake 😍 love a spot in Pittsburgh that has later hours for an amazing post dinner sweet treat! and everything in the shop is vegan!\n•\n•\n•\n#butterwoodbakeconsortium #pittsburgh #pittsburghfood #pittsburghdessert #sweettre"
       },
       "playbook_top_move": "Restart Instagram after 527 days dark. Post three times a week for four weeks, focusing on the late-night hours angle and vegan cake close-ups that already drive creator interest."
+    },
+    {
+      "rank": 10,
+      "business_slug": "kyo-matcha",
+      "name": "Kyo Matcha",
+      "family_label": "Pittsburgh Sweets",
+      "neighborhood": "Squirrel Hill South",
+      "descriptor": "First In Pittsburgh Cafes, Held By Cakes And Matcha. Creator Volume Is Still The Open Question.",
+      "descriptor_highlight": "Still The Open Question",
+      "stat_line": "315 reviews · 4.7★ · 2 creators · 4K plays · 6 IG posts/30d",
+      "featured_tiktok": {
+        "author": "ride_rev_rx",
+        "plays": 4006,
+        "url": "https://www.tiktok.com/@ride_rev_rx/video/7610764382192143629",
+        "caption": "I'm a sucker for matcha ice cream and I'm SO happy Pittsburgh has started to get bits and pieces of authentic asian cuisine 🤭  next place to try is Meccha Matcha!\n\n#matchalover #throttletherapy #pittsburgheats #biketok #sweettooth \n@Kyo Ma"
+      },
+      "playbook_top_move": "Convert Instagram to a business account now. Switching from personal to business unlocks analytics, promoted posts, and credibility signals that currently cap the Instagram Momentum ceiling."
     }
   ],
   "query": {
@@ -183,6 +183,6 @@
     "ranking": "creator_pickup",
     "limit": 10
   },
-  "generated_at": "2026-05-10T23:49:13.001Z",
+  "generated_at": "2026-05-11T00:32:53.316Z",
   "model": "claude-sonnet-4-6"
 }

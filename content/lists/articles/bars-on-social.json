@@ -3,7 +3,7 @@
   "title": "The Pittsburgh Bars Most Worth Following",
   "subtitle": "By the numbers, this quarter",
   "angle": "which Pittsburgh bars and breweries are leading the social conversation. Who's getting filmed, who's posting, who's getting talked about.",
-  "intro": "Pittsburgh's bar scene is loud in person. Online, it's quieter than you'd expect. This quarter's rankings surfaced a specific and recurring pattern: bars earning serious review volume without a single corresponding social signal, no original posts, no customer video, no secondary conversation worth measuring.\n\nThe Urban Tap on South Side Flats ranks first on reviews alone, which is its own kind of story. That's a bar with a real audience and essentially no social footprint to show for it. Pins Mechanical Co. lands third with what might be the most underleveraged asset in Pittsburgh hospitality right now: a giant slide that almost nobody is filming.\n\nWhat the numbers describe, collectively, is a tier of bars that have built genuine local loyalty without building anything resembling a content presence. Whether that's a strategic choice or a missed signal is the question worth tracking. Issue 02, Summer 2026, will follow whether any of these businesses close the gap, and whether the bars currently absent from both lists start showing up on one of them.",
+  "intro": "Pittsburgh's bar scene is loud in person and surprisingly quiet online. This quarter's rankings expose a specific tension: rooms full of people, phones in pockets. The Urban Tap on South Side Flats lands first on review volume alone, which tells you something about loyalty and nothing about reach. Howl at the Moon Downtown matches that story almost exactly, reviews stacking up while every other signal sits at zero.\n\nThe one that deserves a second look is Pins Mechanical Co. A giant slide. A functioning duckpin bowling alley. Content that should be writing itself. And yet the filming isn't happening, or isn't spreading, which is either a missed opportunity or a deliberate posture worth watching either way.\n\nWhat this quarter confirms is that Pittsburgh drinkers are still more likely to leave a star rating than a tagged video, more likely to recommend verbally than to post. That gap between a full room and a visible footprint is the story we'll keep tracking. Issue 02 arrives in Summer 2026, and by then, the bars that figured out how to close that gap will be easy to spot.",
   "items": [
     {
       "rank": 1,
@@ -68,6 +68,6 @@
     "ranking": "composite",
     "limit": 5
   },
-  "generated_at": "2026-05-10T23:49:34.461Z",
+  "generated_at": "2026-05-11T00:33:15.965Z",
   "model": "claude-sonnet-4-6"
 }

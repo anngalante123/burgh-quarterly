@@ -3,7 +3,7 @@
   "title": "Still Posting: Pittsburgh's Most Active Instagram Feeds",
   "subtitle": "The minority that are posting, ranked by Instagram momentum",
   "angle": "most Pittsburgh small businesses on this index are dormant on Instagram. These are the ones that aren't, ranked by 30-day cadence and engagement.",
-  "intro": "Most Pittsburgh small businesses indexed this quarter have gone quiet on Instagram. Not deleted, not pivoting to another platform, just quiet. The ones on this list are the exception: ten businesses still posting with enough regularity to generate measurable momentum, ranked by 30-day cadence and engagement rate.\n\nA few signals stand out. Hidden Harbor holds the top spot among Pittsburgh bars and has the visual catalog to justify it, yet no TikTok creator has filmed the place yet, which is either an oversight or an opportunity depending on how quickly that changes. Delanie's Coffee in Shadyside sits seventy-fifth among Pittsburgh cafes by most metrics, but seven separate creators have already filmed it this quarter with no TikTok account to funnel that attention anywhere. That gap between earned attention and owned presence is the defining tension in this list. Kyo Matcha, first among Pittsburgh cafes, is running on cake and matcha content with creator volume still the unanswered question heading into summer.\n\nIssue 02 will track whether any of these businesses close those gaps, and whether the dormant majority starts moving before the season does.",
+  "intro": "Most Pittsburgh small businesses on this index have gone quiet on Instagram. Not slow, quiet. The accounts exist; the posts stopped. What you're reading is a ranking of the minority that kept going, ordered by 30-day cadence and engagement over the past quarter.\n\nA few signals worth noting before the list. Kyo Matcha is holding the top cafe slot on the strength of cakes and matcha content, but creator volume is still thin, which means the ranking is more fragile than the number suggests. Hidden Harbor sits first among Pittsburgh bars with a visual catalog that's doing real work on Instagram, and yet not a single TikTok creator has filmed the place. That gap between earned reputation and platform reach turns up repeatedly in this data. Hop Farm Brewing holds the top brewery position with a nearly empty TikTok layer: one creator, one clip.\n\nThe pattern across this list is consistent. Instagram activity alone is enough to separate these businesses from the dormant majority, but TikTok is where most of them have left the door open. Issue 02, out this summer, will track whether that changes.",
   "items": [
     {
       "rank": 1,
@@ -171,6 +171,6 @@
     "ranking": "instagram_momentum",
     "limit": 10
   },
-  "generated_at": "2026-05-10T23:49:48.435Z",
+  "generated_at": "2026-05-11T00:33:30.031Z",
   "model": "claude-sonnet-4-6"
 }

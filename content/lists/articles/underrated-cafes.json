@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Cafes",
   "subtitle": "Coffee, tea, juice. Loved locally, not yet viral.",
   "angle": "the cafes that Pittsburgh regulars rave about in reviews but the broader internet hasn't caught up to. Quietly excellent, quietly under-followed.",
-  "intro": "Some Pittsburgh cafes have figured out the hard part. They've built the kind of regulars who write paragraph reviews unprompted, who describe the light through the windows and the temperature of the milk and the name of the person behind the counter. What they haven't built is any signal the broader internet can find. That gap is what this list is about.\n\nBiddle's Escape ranks first in Pittsburgh cafes on review depth alone this quarter, which is a remarkable thing to say about a place with effectively no social presence. De Fer Coffee and Tea holds first in its category on the strength of its roasting reputation, but its Google profile gives potential customers nowhere to land. Carnegie Coffee Company, ranked 142nd overall despite genuine neighborhood devotion, earns real affection for its space and almost nothing for its feed.\n\nThe shortcut hiding in plain sight: these places already have customers who are creators, people who make food and local content for a living and are actively looking for the next place to feature. The infrastructure that connects them to businesses like these works without anyone having to announce it.\n\nIssue 02, out Summer 2026, will track which of these cafes closed the gap.",
+  "intro": "Some Pittsburgh cafes have already won the room. The regulars are loyal, the reviews are deep, and the word of mouth is real. What's missing is everything that happens after someone closes their laptop and tries to find the place online.\n\nThis quarter's list surfaces five cafes where the conversation quality outpaces the digital footprint by a significant margin. Biddle's Escape ranks first in Pittsburgh cafes on review depth alone, yet carries almost no social signal. De Fer Coffee and Tea holds the top spot in its category on the strength of its roasts, but its Google profile is leaving potential customers nowhere to go. Espresso A Mano sits first in the Ones to Watch tier while stalled at 122nd overall, with no listed hours, no phone, and no social presence to find. These are not struggling businesses. They are visible businesses with invisible profiles.\n\nThe customer love is already there. The second move, often the cheaper one, is getting the creators who already love these places to come back with a purpose. Pittsburgh has more of them than most owners realize, and the platforms connecting them to local businesses tend to work quietly, because they don't have to pitch.\n\nIssue 02 arrives in summer 2026, when patio season resets the rankings and new names tend to surface fast.",
   "items": [
     {
       "rank": 1,
@@ -68,6 +68,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-05-10T23:50:13.368Z",
+  "generated_at": "2026-05-11T00:33:53.889Z",
   "model": "claude-sonnet-4-6"
 }

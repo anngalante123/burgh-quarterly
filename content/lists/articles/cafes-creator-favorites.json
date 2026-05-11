@@ -3,7 +3,7 @@
   "title": "The Pittsburgh Cafes Creators Won't Stop Filming",
   "subtitle": "Coffee, tea, juice, ranked by creator pickup",
   "angle": "Pittsburgh's coffee, tea, and juice scene through the lens of TikTok creator coverage. The cafes the city keeps posting about, even when the cafes themselves aren't.",
-  "intro": "Pittsburgh's cafe scene has a visibility problem, and it cuts both ways. Some of the city's most photographed spots are running on borrowed attention, propped up by creators who film without being asked and customers who post without being prompted. This quarter's rankings track that gap between what's happening on the ground and what the businesses themselves are doing about it.\n\nThe signals are specific. Spot of Coffee in Shadyside carries an engagement rate that outperforms most of its category peers, yet a missing website and inconsistent posting are actively suppressing what should be a much stronger rank. Allegheny Coffee and Tea Exchange sits first in Pittsburgh Cafes on review depth alone, with years of accumulated credibility, and exactly one TikTok creator has filmed it so far. Delanie's Coffee has seven creators already in the field and no TikTok account to receive any of that traffic.\n\nWhat this list can't yet measure is staying power. A few of these businesses are one consistent content push away from a different conversation entirely, and a few are coasting on goodwill that has a shorter shelf life than they probably realize. Issue 02 will track whether the gap closed or widened by summer.",
+  "intro": "Pittsburgh's cafe scene has a visibility problem, and it runs in both directions. Some of the city's most-filmed spots have no TikTok account to receive the traffic. Others have built a conversion path nobody seems to be walking through. This quarter's rankings track where creator attention is actually landing, and what the businesses are doing, or not doing, with it.\n\nSpot of Coffee in Shadyside is pulling engagement rates that most boutique cafes would spend real money chasing, yet a missing website and inconsistent posting are bleeding the momentum. Allegheny Coffee and Tea Exchange in the Strip has earned the deepest review volume of any Pittsburgh cafe on the list, but only one TikTok creator has filmed it so far. Delanie's Coffee in Shadyside has seven creators already shooting content with zero owned TikTok presence to catch the referral.\n\nThe through-line is the same every time: organic attention arriving before the infrastructure exists to hold it. Issue 02 will track whether any of these businesses close that gap over summer, when foot traffic peaks and the window for compounding creator coverage is at its shortest.",
   "items": [
     {
       "rank": 1,
@@ -116,6 +116,6 @@
     "ranking": "creator_pickup",
     "limit": 8
   },
-  "generated_at": "2026-05-10T23:49:27.227Z",
+  "generated_at": "2026-05-11T00:33:08.769Z",
   "model": "claude-sonnet-4-6"
 }
