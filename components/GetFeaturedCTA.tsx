@@ -1,5 +1,6 @@
 import { Reveal } from "@/components/motion/Reveal";
 import { RelayCollabStrip } from "@/components/RelayCollabs";
+import type { Category } from "@/lib/data/schemas";
 
 /**
  * GetFeaturedCTA, the third sanctioned Relay surface (per the
@@ -21,6 +22,9 @@ type Props = {
   businessName?: string;
   /** Slug passed to Relay so they can pre-fill the apply form. */
   businessSlug?: string;
+  /** Business category so the collab strip can prefer family-matched
+   *  photos (bars get bars, cafes get cafes). */
+  businessCategory?: Category | null;
   /** Override the destination URL if Relay has a specific apply endpoint. */
   applyUrl?: string;
   /** Smaller variant for above-the-fold homepage placement. */
@@ -30,6 +34,7 @@ type Props = {
 export function GetFeaturedCTA({
   businessName,
   businessSlug,
+  businessCategory,
   applyUrl,
   variant = "default",
 }: Props) {
@@ -91,9 +96,16 @@ export function GetFeaturedCTA({
           </a>
         </div>
         {/* Social proof strip — three rotating photos from real Relay
-            collabs so the CTA isn't just copy. Hidden on the compact
-            variant where vertical room is tight. */}
-        {!compact && <RelayCollabStrip anchor={businessSlug} />}
+            collabs so the CTA isn't just copy. When a business
+            category is passed in, the strip prefers photos from the
+            same editorial family. Hidden on the compact variant
+            where vertical room is tight. */}
+        {!compact && (
+          <RelayCollabStrip
+            anchor={businessSlug}
+            category={businessCategory}
+          />
+        )}
       </div>
     </Reveal>
   );

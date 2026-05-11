@@ -3,108 +3,126 @@
     "file": "01-3natives.jpg",
     "business": "3Natives",
     "creator": "kbunnerr",
+    "category": "restaurant",
     "size_kb": 117
   },
   {
     "file": "02-aetheria-aesthetics.jpg",
     "business": "Aetheria Aesthetics",
     "creator": "Brittany Pent Rohm",
+    "category": "salon",
     "size_kb": 117
   },
   {
     "file": "03-alice-s-restaurant.jpg",
     "business": "Alice's Restaurant",
     "creator": "Alyson Thompson",
+    "category": "restaurant",
     "size_kb": 156
   },
   {
     "file": "04-anthropologie-at-bakery-square.jpg",
     "business": "Anthropologie at Bakery Square",
     "creator": "Maura Hoch",
+    "category": "boutique",
     "size_kb": 100
   },
   {
     "file": "05-ascend-climbing.jpg",
     "business": "Ascend Climbing",
     "creator": "kbrunnerr",
+    "category": "fitness",
     "size_kb": 109
   },
   {
     "file": "06-bazookas-charlies.jpg",
     "business": "BAZOOKAS CHARLIES",
     "creator": "kbrunnerr",
+    "category": "bar",
     "size_kb": 117
   },
   {
     "file": "07-baxter-s-rcade-washington-county.jpg",
     "business": "Baxter's RCADE'Washington county",
     "creator": "Steelcitybeergal",
+    "category": "bar",
     "size_kb": 207
   },
   {
     "file": "08-beano-s.jpg",
     "business": "Beano's",
     "creator": "Sarah Krut",
+    "category": "cafe",
     "size_kb": 198
   },
   {
     "file": "09-buenatarde.jpg",
     "business": "Buenatarde",
     "creator": "Julia Shellard (Xtreme.eats)",
+    "category": "restaurant",
     "size_kb": 285
   },
   {
     "file": "10-de-fer.jpg",
     "business": "De Fer",
     "creator": "Ciara",
+    "category": "cafe",
     "size_kb": 160
   },
   {
     "file": "11-east-west-boutique.jpg",
     "business": "East West Boutique",
     "creator": "Maura Spang",
+    "category": "boutique",
     "size_kb": 149
   },
   {
     "file": "12-frenchies-nail-salon.jpg",
     "business": "Frenchies nail salon",
     "creator": "Hana Daisy",
+    "category": "salon",
     "size_kb": 211
   },
   {
     "file": "13-golden-gai.jpg",
     "business": "Golden Gai",
     "creator": "Cindy Richey",
+    "category": "bar",
     "size_kb": 233
   },
   {
     "file": "14-grapow.jpg",
     "business": "Grapow",
     "creator": "PGH Date Spotters",
+    "category": "restaurant",
     "size_kb": 204
   },
   {
     "file": "15-honey-bee-bakery.jpg",
     "business": "Honey Bee Bakery",
     "creator": "Alex Seibert",
+    "category": "bakery",
     "size_kb": 183
   },
   {
     "file": "16-keeta-s-pet-salon.jpg",
     "business": "Keeta's Pet Salon",
     "creator": "Juli Singer",
+    "category": "salon",
     "size_kb": 201
   },
   {
     "file": "17-latitude-48.jpg",
     "business": "Latitude 48",
     "creator": "Teniola Odumosu",
+    "category": "restaurant",
     "size_kb": 194
   },
   {
     "file": "18-little-city-coffee.jpg",
     "business": "Little city coffee",
     "creator": "Felicity bird",
-    "size_kb": 203
+    "category": "cafe",
+    "size_kb": 194
   }
 ]

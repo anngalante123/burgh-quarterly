@@ -694,7 +694,11 @@ export default async function BusinessPage({ params }: PageProps) {
               editorial brief. Sits between the Playbook (diagnostic) and
               the Subscribe footer (return-loop). */}
           <div className="mt-10 md:mt-12">
-            <GetFeaturedCTA businessName={biz.name} businessSlug={biz.slug} />
+            <GetFeaturedCTA
+              businessName={biz.name}
+              businessSlug={biz.slug}
+              businessCategory={biz.category}
+            />
           </div>
 
           {/* 5. Subscribe footer */}

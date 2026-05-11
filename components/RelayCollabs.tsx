@@ -1,5 +1,7 @@
 import manifest from "@/content/relay-collabs/manifest.json";
 import { Reveal } from "@/components/motion/Reveal";
+import { familyForBusinessCategory } from "@/lib/data/category-family";
+import type { Category } from "@/lib/data/schemas";
 
 /**
  * Two surfaces for the Relay creator-collab proof:
@@ -119,14 +121,53 @@ function CollabTile({
 
 /* ---------------------------------------------------------- *
  *  Strip — compact, 3 tiles
+ *  Tries to pick photos from the same editorial family as the
+ *  current business (bars get bars, cafes get cafes, etc). Falls
+ *  back to the broader photo pool when the family doesn't have
+ *  enough collab photos to fill three slots.
  * ---------------------------------------------------------- */
-export function RelayCollabStrip({ anchor }: { anchor?: string }) {
-  const picks = shuffle(manifest, hashSeed(anchor)).slice(0, 3) as CollabEntry[];
+export function RelayCollabStrip({
+  anchor,
+  category,
+}: {
+  anchor?: string;
+  /** Optional category of the business this strip sits next to. When
+   *  provided, the strip prefers photos from the same family so a
+   *  bar's page shows bars and a cafe's page shows cafes. */
+  category?: Category | null;
+}) {
+  // Map the business's category to its editorial family, then map
+  // each manifest entry to its own family; keep entries in the same
+  // family.
+  const targetFamily = category
+    ? familyForBusinessCategory(category).key
+    : null;
+
+  const sameFamily = targetFamily
+    ? (manifest as CollabEntry[]).filter(
+        (m) =>
+          (m as { category?: string }).category &&
+          familyForBusinessCategory(
+            (m as { category: Category }).category,
+          ).key === targetFamily,
+      )
+    : [];
+
+  // Need at least 3 same-family photos to feel intentional. Otherwise
+  // fall back to the global pool so we never render < 3 tiles.
+  const pool = sameFamily.length >= 3 ? sameFamily : (manifest as CollabEntry[]);
+  const picks = shuffle(pool, hashSeed(anchor)).slice(0, 3) as CollabEntry[];
+
+  // Editorial kicker reflects which case fired.
+  const kicker =
+    pool === sameFamily
+      ? `Recently filmed · Pittsburgh ${familyLabelShort(targetFamily)}`
+      : "Recently filmed · Pittsburgh creators";
 
   return (
     <div className="mt-6 border-t border-brand-purple/25 pt-5">
       <p className="font-display text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-brand-purple/80 mb-3">
-        Recently filmed · Pittsburgh creators
+        {kicker}
       </p>
       <div className="grid grid-cols-3 gap-2.5 md:gap-3">
         {picks.map((p, i) => (
@@ -137,6 +178,32 @@ export function RelayCollabStrip({ anchor }: { anchor?: string }) {
       </div>
     </div>
   );
+}
+
+/** Short label for the family kicker. */
+function familyLabelShort(famKey: string | null): string {
+  switch (famKey) {
+    case "restaurants":
+      return "restaurants";
+    case "cafes":
+      return "cafes";
+    case "bars":
+      return "bars";
+    case "sweets":
+      return "sweets";
+    case "boutiques":
+      return "boutiques";
+    case "salons":
+      return "salons";
+    case "fitness":
+      return "fitness";
+    case "spa":
+      return "spas";
+    case "tattoo":
+      return "tattoo studios";
+    default:
+      return "businesses";
+  }
 }
 
 /* ---------------------------------------------------------- *
