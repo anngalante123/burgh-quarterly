@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/motion/Reveal";
+import { RelayCollabStrip } from "@/components/RelayCollabs";
 
 /**
  * GetFeaturedCTA, the third sanctioned Relay surface (per the
@@ -89,6 +90,10 @@ export function GetFeaturedCTA({
             <span aria-hidden="true">→</span>
           </a>
         </div>
+        {/* Social proof strip — three rotating photos from real Relay
+            collabs so the CTA isn't just copy. Hidden on the compact
+            variant where vertical room is tight. */}
+        {!compact && <RelayCollabStrip anchor={businessSlug} />}
       </div>
     </Reveal>
   );

@@ -15,6 +15,7 @@ import {
 } from "@/components/BusinessSearch";
 import { loadAllListArticles } from "@/lib/data/load-list";
 import { GetFeaturedCTA } from "@/components/GetFeaturedCTA";
+import { RelayCollabGallery } from "@/components/RelayCollabs";
 import { HeroSearch } from "@/components/HeroSearch";
 import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
 
@@ -279,6 +280,15 @@ export default async function Home() {
         <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
           <GetFeaturedCTA variant="compact" />
         </Reveal>
+
+        {/* ── RELAY COLLAB GALLERY ────────────────────────────
+            12 photos from real creator collabs, rotates daily. Sits
+            right after the CTA so the "Get matched, free" copy is
+            immediately followed by visual proof of what that means
+            in practice. */}
+        <div className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
+          <RelayCollabGallery />
+        </div>
 
         {/* ── BEST ON SOCIAL SERIES ─────────────────────────────
             Replaces the prior "This issue" section that pointed to
