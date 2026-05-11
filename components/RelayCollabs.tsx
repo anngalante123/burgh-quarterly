@@ -180,7 +180,7 @@ export function RelayCollabGallery() {
             className="inline-flex items-center gap-2 bg-brand-purple text-brand-off-white font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] px-5 py-3 md:px-7 md:py-4 hover:bg-brand-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"
             style={{ boxShadow: "5px 5px 0 0 var(--color-brand-lime)" }}
           >
-            Get matched
+            Get filmed
             <span aria-hidden="true">→</span>
           </a>
         </div>

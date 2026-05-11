@@ -283,7 +283,7 @@ export default async function Home() {
 
         {/* ── RELAY COLLAB GALLERY ────────────────────────────
             12 photos from real creator collabs, rotates daily. Sits
-            right after the CTA so the "Get matched, free" copy is
+            right after the CTA so the "Get filmed" copy is
             immediately followed by visual proof of what that means
             in practice. */}
         <div className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
