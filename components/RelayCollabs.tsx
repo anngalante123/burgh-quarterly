@@ -174,7 +174,7 @@ export function RelayCollabGallery() {
             </p>
           </div>
           <a
-            href="https://run-relay.com/apply"
+            href="https://run-relay.com/try"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-brand-purple text-brand-off-white font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] px-5 py-3 md:px-7 md:py-4 hover:bg-brand-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"

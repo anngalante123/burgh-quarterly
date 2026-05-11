@@ -36,8 +36,8 @@ export function GetFeaturedCTA({
   const href =
     applyUrl ??
     (businessSlug
-      ? `https://run-relay.com/apply?business=${encodeURIComponent(businessSlug)}`
-      : `https://run-relay.com/apply`);
+      ? `https://run-relay.com/try?business=${encodeURIComponent(businessSlug)}`
+      : `https://run-relay.com/try`);
   const compact = variant === "compact";
   const kicker = businessName ? "For the owner" : "For Pittsburgh business owners";
   const headline = businessName

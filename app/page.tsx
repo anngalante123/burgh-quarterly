@@ -14,6 +14,7 @@ import {
   type SearchableBusiness,
 } from "@/components/BusinessSearch";
 import { loadAllListArticles } from "@/lib/data/load-list";
+import { GetFeaturedCTA } from "@/components/GetFeaturedCTA";
 import { RelayCollabGallery } from "@/components/RelayCollabs";
 import { HeroSearch } from "@/components/HeroSearch";
 import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
@@ -272,12 +273,19 @@ export default async function Home() {
           </ol>
         </Reveal>
 
+        {/* ── GET FEATURED CTA, generic homepage variant ───────
+            Sits between the Top 5 leaderboard and the Series cards
+            so a Pittsburgh business owner arriving via the front door
+            sees the offer without needing to click into a scorecard. */}
+        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
+          <GetFeaturedCTA variant="compact" />
+        </Reveal>
+
         {/* ── RELAY COLLAB GALLERY ────────────────────────────
-            The publication's single Relay surface on the homepage.
-            Bigger than the compact CTA card it replaced: visual proof
-            (12 rotating creator-collab photos) plus the "Get matched"
-            CTA in the same component. Replaces the small CTA card
-            that sat above and duplicated this block's copy + button. */}
+            12 photos from real creator collabs, rotates daily. Sits
+            right after the CTA so the "Get matched, free" copy is
+            immediately followed by visual proof of what that means
+            in practice. */}
         <div className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
           <RelayCollabGallery />
         </div>
