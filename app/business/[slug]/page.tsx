@@ -227,9 +227,11 @@ export default async function BusinessPage({ params }: PageProps) {
         biz.review_freshness_days !== undefined
           ? `Most recent review ${biz.review_freshness_days === 0 ? "today" : biz.review_freshness_days === 1 ? "yesterday" : `${biz.review_freshness_days} days ago`}`
           : "Freshness unknown",
-        reviewPhrases.length >= 2
-          ? `Recurring themes: ${reviewPhrases.slice(0, 3).join(", ")}`
-          : "Review-text mining queued for next issue",
+        // Themes bullet only shows when there are enough phrases. Skipping
+        // it when sparse avoids surfacing engineer-speak fallback copy.
+        ...(reviewPhrases.length >= 2
+          ? [`Recurring themes: ${reviewPhrases.slice(0, 3).join(", ")}`]
+          : []),
       ],
       pullquote: meta.reviewTexts[0],
     },

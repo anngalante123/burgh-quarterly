@@ -96,7 +96,7 @@ export const LISTS: ListSpec[] = [
   },
   {
     slug: "active-posters",
-    title: "The Pittsburgh Businesses Actually Showing Up On Their Own Feed",
+    title: "Still Posting: Pittsburgh's Most Active Instagram Feeds",
     subtitle:
       "The minority that are posting, ranked by Instagram momentum",
     angle:
