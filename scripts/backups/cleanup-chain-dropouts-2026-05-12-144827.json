@@ -1,0 +1,2408 @@
+{
+  "real_chains": [
+    {
+      "name_lc": "the yard",
+      "canonicalSlug": "the-yard-zqeq1y",
+      "dropoutSlugs": [
+        "the-yard-urpp3y",
+        "the-yard"
+      ],
+      "sharedDomain": "theyardpgh.com"
+    },
+    {
+      "name_lc": "doce taqueria",
+      "canonicalSlug": "doce-taqueria-yby6ug",
+      "dropoutSlugs": [
+        "doce-taqueria"
+      ],
+      "sharedDomain": "docetaqueria.com"
+    },
+    {
+      "name_lc": "burgatory",
+      "canonicalSlug": "burgatory-do4nnw",
+      "dropoutSlugs": [
+        "burgatory-nafy0a",
+        "burgatory-icnki0",
+        "burgatory-9sgf0e",
+        "burgatory"
+      ],
+      "sharedDomain": "burgatorybar.com"
+    },
+    {
+      "name_lc": "primanti bros. restaurant and bar",
+      "canonicalSlug": "primanti-bros-restaurant-and-bar-wmwaow",
+      "dropoutSlugs": [
+        "primanti-bros-restaurant-and-bar-1jwhp0",
+        "primanti-bros-restaurant-and-bar-po6ctq",
+        "primanti-bros-restaurant-and-bar-lsdpzu",
+        "primanti-bros-restaurant-and-bar-intmik",
+        "primanti-bros-restaurant-and-bar-ixaoae",
+        "primanti-bros-restaurant-and-bar-g9faqu",
+        "primanti-bros-restaurant-and-bar",
+        "primanti-bros-restaurant-and-bar-1ufx1q",
+        "primanti-bros-restaurant-and-bar-zllkre",
+        "primanti-bros-restaurant-and-bar-fex9wi",
+        "primanti-bros-restaurant-and-bar-ixjawg"
+      ],
+      "sharedDomain": "restaurants.primantibros.com"
+    },
+    {
+      "name_lc": "yinz coffee",
+      "canonicalSlug": "yinz-coffee",
+      "dropoutSlugs": [
+        "yinz-coffee-da7gfe"
+      ],
+      "sharedDomain": "yinzcoffee.com"
+    },
+    {
+      "name_lc": "de fer coffee & tea",
+      "canonicalSlug": "de-fer-coffee-tea",
+      "dropoutSlugs": [
+        "de-fer-coffee-tea-ie9l7g",
+        "de-fer-coffee-tea-koelmm",
+        "de-fer-coffee-tea-ltn1yk"
+      ],
+      "sharedDomain": "defer.coffee"
+    },
+    {
+      "name_lc": "redhawk coffee roasters",
+      "canonicalSlug": "redhawk-coffee-roasters-lpdcp8",
+      "dropoutSlugs": [
+        "redhawk-coffee-roasters"
+      ],
+      "sharedDomain": "redhawkcoffee.com"
+    },
+    {
+      "name_lc": "chicco baccello",
+      "canonicalSlug": "chicco-baccello",
+      "dropoutSlugs": [
+        "chicco-baccello-ftidyg"
+      ],
+      "sharedDomain": "chiccobaccello.com"
+    },
+    {
+      "name_lc": "7 brew coffee",
+      "canonicalSlug": "7-brew-coffee-jacqqw",
+      "dropoutSlugs": [
+        "7-brew-coffee"
+      ],
+      "sharedDomain": "7brew.com"
+    },
+    {
+      "name_lc": "espresso a mano",
+      "canonicalSlug": "espresso-a-mano",
+      "dropoutSlugs": [
+        "espresso-a-mano-x8qmew"
+      ],
+      "sharedDomain": "espressoamano.com"
+    },
+    {
+      "name_lc": "commonplace coffee",
+      "canonicalSlug": "commonplace-coffee-60lyh4",
+      "dropoutSlugs": [
+        "commonplace-coffee-h39xly",
+        "commonplace-coffee",
+        "commonplace-coffee-ecw9ag",
+        "commonplace-coffee-jro8uu"
+      ],
+      "sharedDomain": "commonplacecoffee.com"
+    },
+    {
+      "name_lc": "colombino coffee",
+      "canonicalSlug": "colombino-coffee-cxk1jg",
+      "dropoutSlugs": [
+        "colombino-coffee-3nqqxm",
+        "colombino-coffee"
+      ],
+      "sharedDomain": "colombino.com"
+    },
+    {
+      "name_lc": "mechanic coffee company",
+      "canonicalSlug": "mechanic-coffee-company-erawfu",
+      "dropoutSlugs": [
+        "mechanic-coffee-company"
+      ],
+      "sharedDomain": "mechaniccoffee.com"
+    },
+    {
+      "name_lc": "convive coffee roastery",
+      "canonicalSlug": "convive-coffee-roastery-qqp7d8",
+      "dropoutSlugs": [
+        "convive-coffee-roastery",
+        "convive-coffee-roastery-ruwbze"
+      ],
+      "sharedDomain": "convivecoffee.com"
+    },
+    {
+      "name_lc": "anytime fitness",
+      "canonicalSlug": "anytime-fitness",
+      "dropoutSlugs": [
+        "anytime-fitness-so9cyc"
+      ],
+      "sharedDomain": "anytimefitness.com"
+    },
+    {
+      "name_lc": "fitness 19",
+      "canonicalSlug": "fitness-19-aepark",
+      "dropoutSlugs": [
+        "fitness-19-0kjxbm",
+        "fitness-19"
+      ],
+      "sharedDomain": "fitness19.com"
+    },
+    {
+      "name_lc": "the edge fitness clubs",
+      "canonicalSlug": "the-edge-fitness-clubs-ihfst4",
+      "dropoutSlugs": [
+        "the-edge-fitness-clubs"
+      ],
+      "sharedDomain": "theedgefitnessclubs.com"
+    },
+    {
+      "name_lc": "the pittsburgh tattoo studio",
+      "canonicalSlug": "the-pittsburgh-tattoo-studio",
+      "dropoutSlugs": [
+        "the-pittsburgh-tattoo-studio-w5etou"
+      ],
+      "sharedDomain": "pittsburghtattoostudio.com"
+    },
+    {
+      "name_lc": "cookie's creamery",
+      "canonicalSlug": "cookies-creamery",
+      "dropoutSlugs": [
+        "cookies-creamery-amqraa"
+      ],
+      "sharedDomain": "cookiescreamery.com"
+    },
+    {
+      "name_lc": "club pilates",
+      "canonicalSlug": "club-pilates-c3xhfy",
+      "dropoutSlugs": [
+        "club-pilates",
+        "club-pilates-1vfw3m",
+        "club-pilates-7ilvb4",
+        "club-pilates-ls02ac",
+        "club-pilates-pgara0"
+      ],
+      "sharedDomain": "clubpilates.com"
+    },
+    {
+      "name_lc": "rita's italian ice & frozen custard",
+      "canonicalSlug": "ritas-italian-ice-frozen-custard-ajnhj0",
+      "dropoutSlugs": [
+        "ritas-italian-ice-frozen-custard-qlhabu",
+        "ritas-italian-ice-frozen-custard-wjt8wq",
+        "ritas-italian-ice-frozen-custard-zdj1ec",
+        "ritas-italian-ice-frozen-custard-1l2rsc",
+        "ritas-italian-ice-frozen-custard"
+      ],
+      "sharedDomain": "ritasice.com"
+    },
+    {
+      "name_lc": "bruster's real ice cream",
+      "canonicalSlug": "brusters-real-ice-cream-uuov6m",
+      "dropoutSlugs": [
+        "brusters-real-ice-cream-hou17o",
+        "brusters-real-ice-cream-p4wnr4",
+        "brusters-real-ice-cream"
+      ],
+      "sharedDomain": "brusters.com"
+    },
+    {
+      "name_lc": "prantl's bakery",
+      "canonicalSlug": "prantls-bakery",
+      "dropoutSlugs": [
+        "prantls-bakery-z7mwoc"
+      ],
+      "sharedDomain": "prantlsbakery.com"
+    },
+    {
+      "name_lc": "paris baguette",
+      "canonicalSlug": "paris-baguette",
+      "dropoutSlugs": [
+        "paris-baguette-gxwmes"
+      ],
+      "sharedDomain": "parisbaguette.com"
+    },
+    {
+      "name_lc": "live fresh cold pressed juice + smoothie bar",
+      "canonicalSlug": "live-fresh-cold-pressed-juice-smoothie-bar-mxydqq",
+      "dropoutSlugs": [
+        "live-fresh-cold-pressed-juice-smoothie-bar-ih988s",
+        "live-fresh-cold-pressed-juice-smoothie-bar-t4vera",
+        "live-fresh-cold-pressed-juice-smoothie-bar"
+      ],
+      "sharedDomain": "livefreshjuicery.com"
+    },
+    {
+      "name_lc": "tropical smoothie cafe",
+      "canonicalSlug": "tropical-smoothie-cafe-gdkpmo",
+      "dropoutSlugs": [
+        "tropical-smoothie-cafe-ghhrzc",
+        "tropical-smoothie-cafe"
+      ],
+      "sharedDomain": "locations.tropicalsmoothiecafe.com"
+    },
+    {
+      "name_lc": "the exchange",
+      "canonicalSlug": "the-exchange-nkzquq",
+      "dropoutSlugs": [
+        "the-exchange-rgeugg",
+        "the-exchange-sbvf9m",
+        "the-exchange"
+      ],
+      "sharedDomain": "theexchange.com"
+    },
+    {
+      "name_lc": "the porch",
+      "canonicalSlug": "the-porch-0shlxw",
+      "dropoutSlugs": [
+        "the-porch"
+      ],
+      "sharedDomain": "dineattheporch.com"
+    },
+    {
+      "name_lc": "amazing books & records",
+      "canonicalSlug": "amazing-books-records",
+      "dropoutSlugs": [
+        "amazing-books-records-vk57f4"
+      ],
+      "sharedDomain": "amazingbooksandrecords.com"
+    },
+    {
+      "name_lc": "riverstone books",
+      "canonicalSlug": "riverstone-books",
+      "dropoutSlugs": [
+        "riverstone-books-uwbfcg"
+      ],
+      "sharedDomain": "riverstonebookstore.com"
+    },
+    {
+      "name_lc": "city grows",
+      "canonicalSlug": "city-grows-gqhzue",
+      "dropoutSlugs": [
+        "city-grows"
+      ],
+      "sharedDomain": "city-grows.square.site"
+    },
+    {
+      "name_lc": "condado tacos",
+      "canonicalSlug": "condado-tacos-yi8ksw",
+      "dropoutSlugs": [
+        "condado-tacos-ogxie8",
+        "condado-tacos",
+        "condado-tacos-90dqik",
+        "condado-tacos-8fm5hq"
+      ],
+      "sharedDomain": "locations.condadotacos.com"
+    },
+    {
+      "name_lc": "the fresh market",
+      "canonicalSlug": "the-fresh-market-wzhe30",
+      "dropoutSlugs": [
+        "the-fresh-market"
+      ],
+      "sharedDomain": "stores.thefreshmarket.com"
+    },
+    {
+      "name_lc": "the coffee village",
+      "canonicalSlug": "the-coffee-village-wov9cw",
+      "dropoutSlugs": [
+        "the-coffee-village-tdkuhc",
+        "the-coffee-village"
+      ],
+      "sharedDomain": "coffeevillages.com"
+    },
+    {
+      "name_lc": "market district supermarket",
+      "canonicalSlug": "market-district-supermarket-rhqzqk",
+      "dropoutSlugs": [
+        "market-district-supermarket-wbyqrw",
+        "market-district-supermarket",
+        "market-district-supermarket-ck109s"
+      ],
+      "sharedDomain": "marketdistrict.com"
+    },
+    {
+      "name_lc": "piada italian street food",
+      "canonicalSlug": "piada-italian-street-food-r0qqau",
+      "dropoutSlugs": [
+        "piada-italian-street-food"
+      ],
+      "sharedDomain": "mypiada.com"
+    },
+    {
+      "name_lc": "kuhn's market",
+      "canonicalSlug": "kuhns-market-kdoe4s",
+      "dropoutSlugs": [
+        "kuhns-market"
+      ],
+      "sharedDomain": "kuhnsmarket.com"
+    },
+    {
+      "name_lc": "burn boot camp",
+      "canonicalSlug": "burn-boot-camp",
+      "dropoutSlugs": [
+        "burn-boot-camp-5s4cbg"
+      ],
+      "sharedDomain": "locations.burnbootcamp.com"
+    },
+    {
+      "name_lc": "el burro",
+      "canonicalSlug": "el-burro-zfuh9s",
+      "dropoutSlugs": [
+        "el-burro"
+      ],
+      "sharedDomain": "elburropgh.com"
+    },
+    {
+      "name_lc": "longhorn steakhouse",
+      "canonicalSlug": "longhorn-steakhouse-wai4pu",
+      "dropoutSlugs": [
+        "longhorn-steakhouse-s7gwaq",
+        "longhorn-steakhouse-bmblz4",
+        "longhorn-steakhouse"
+      ],
+      "sharedDomain": "longhornsteakhouse.com"
+    },
+    {
+      "name_lc": "red lobster",
+      "canonicalSlug": "red-lobster-waeg1q",
+      "dropoutSlugs": [
+        "red-lobster-4ibon4",
+        "red-lobster"
+      ],
+      "sharedDomain": "redlobster.com"
+    },
+    {
+      "name_lc": "layne's chicken fingers- pittsburgh",
+      "canonicalSlug": "laynes-chicken-fingers-pittsburgh",
+      "dropoutSlugs": [
+        "laynes-chicken-fingers-pittsburgh-l03gtq"
+      ],
+      "sharedDomain": "layneschickenfingers.com"
+    },
+    {
+      "name_lc": "masala house indian bistro",
+      "canonicalSlug": "masala-house-indian-bistro",
+      "dropoutSlugs": [
+        "masala-house-indian-bistro-7yxyvi"
+      ],
+      "sharedDomain": "mymasalahouse.com"
+    },
+    {
+      "name_lc": "fiori's pizzaria",
+      "canonicalSlug": "fioris-pizzaria-nmf81s",
+      "dropoutSlugs": [
+        "fioris-pizzaria"
+      ],
+      "sharedDomain": "fiorispizzaria.com"
+    },
+    {
+      "name_lc": "bob's diner",
+      "canonicalSlug": "bobs-diner-82zsrc",
+      "dropoutSlugs": [
+        "bobs-diner"
+      ],
+      "sharedDomain": "eatatbobsdiner.com"
+    },
+    {
+      "name_lc": "mineo's pizza house",
+      "canonicalSlug": "mineos-pizza-house-edqd1g",
+      "dropoutSlugs": [
+        "mineos-pizza-house"
+      ],
+      "sharedDomain": "mineospizza.com"
+    },
+    {
+      "name_lc": "cava",
+      "canonicalSlug": "cava-9z9sr0",
+      "dropoutSlugs": [
+        "cava"
+      ],
+      "sharedDomain": "cava.com"
+    },
+    {
+      "name_lc": "vocelli pizza",
+      "canonicalSlug": "vocelli-pizza",
+      "dropoutSlugs": [
+        "vocelli-pizza-yow0pi"
+      ],
+      "sharedDomain": "vocellipizza.com"
+    },
+    {
+      "name_lc": "fox's pizza den",
+      "canonicalSlug": "foxs-pizza-den",
+      "dropoutSlugs": [
+        "foxs-pizza-den-vv2s2q"
+      ],
+      "sharedDomain": "foxspizza.com"
+    },
+    {
+      "name_lc": "the colombian spot",
+      "canonicalSlug": "the-colombian-spot-vqbiak",
+      "dropoutSlugs": [
+        "the-colombian-spot"
+      ],
+      "sharedDomain": "thecolombianspot-pgh.com"
+    },
+    {
+      "name_lc": "treats n beans",
+      "canonicalSlug": "treats-n-beans",
+      "dropoutSlugs": [
+        "treats-n-beans-g9pjoq"
+      ],
+      "sharedDomain": "treatsandbeans.com"
+    },
+    {
+      "name_lc": "bob evans",
+      "canonicalSlug": "bob-evans-6vcj4i",
+      "dropoutSlugs": [
+        "bob-evans-amsyku",
+        "bob-evans"
+      ],
+      "sharedDomain": "bobevans.com"
+    },
+    {
+      "name_lc": "eat'n park",
+      "canonicalSlug": "eatn-park-wujice",
+      "dropoutSlugs": [
+        "eatn-park-5fq9kc",
+        "eatn-park-xdrjxy",
+        "eatn-park-0cjrqw",
+        "eatn-park-phbaz4",
+        "eatn-park-5og55g",
+        "eatn-park-d0g2ny",
+        "eatn-park-gv8zs4",
+        "eatn-park-4cvpr8",
+        "eatn-park-1ukd1k",
+        "eatn-park-66jq7i",
+        "eatn-park-widzla",
+        "eatn-park-ar4wto",
+        "eatn-park"
+      ],
+      "sharedDomain": "locations.eatnpark.com"
+    },
+    {
+      "name_lc": "pasquale's pizzeria",
+      "canonicalSlug": "pasquales-pizzeria-6fwtcq",
+      "dropoutSlugs": [
+        "pasquales-pizzeria"
+      ],
+      "sharedDomain": "pasqualespizzeria.com"
+    },
+    {
+      "name_lc": "caliente pizza & drafthouse",
+      "canonicalSlug": "caliente-pizza-drafthouse-c1hfoc",
+      "dropoutSlugs": [
+        "caliente-pizza-drafthouse",
+        "caliente-pizza-drafthouse-xhy9qa"
+      ],
+      "sharedDomain": "pizzadrafthouse.com"
+    },
+    {
+      "name_lc": "the coffee tree roasters",
+      "canonicalSlug": "the-coffee-tree-roasters-czpxgo",
+      "dropoutSlugs": [
+        "the-coffee-tree-roasters",
+        "the-coffee-tree-roasters-zxlcf4"
+      ],
+      "sharedDomain": "coffeetree.store"
+    },
+    {
+      "name_lc": "graze craze charcuterie boards & boxes",
+      "canonicalSlug": "graze-craze-charcuterie-boards-boxes-qapzha",
+      "dropoutSlugs": [
+        "graze-craze-charcuterie-boards-boxes"
+      ],
+      "sharedDomain": "order.toasttab.com"
+    },
+    {
+      "name_lc": "wingstop",
+      "canonicalSlug": "wingstop-gzjumc",
+      "dropoutSlugs": [
+        "wingstop",
+        "wingstop-wdbgfc"
+      ],
+      "sharedDomain": "wingstop.com"
+    },
+    {
+      "name_lc": "roots natural kitchen",
+      "canonicalSlug": "roots-natural-kitchen-vlddy8",
+      "dropoutSlugs": [
+        "roots-natural-kitchen",
+        "roots-natural-kitchen-zfojfu",
+        "roots-natural-kitchen-5eckzi",
+        "roots-natural-kitchen-z6uqnm"
+      ],
+      "sharedDomain": "rootsnaturalkitchen.com"
+    },
+    {
+      "name_lc": "einstein bros. bagels",
+      "canonicalSlug": "einstein-bros-bagels",
+      "dropoutSlugs": [
+        "einstein-bros-bagels-i6ampk"
+      ],
+      "sharedDomain": "locations.einsteinbros.com"
+    },
+    {
+      "name_lc": "moe's southwest grill",
+      "canonicalSlug": "moes-southwest-grill-7cbzcy",
+      "dropoutSlugs": [
+        "moes-southwest-grill"
+      ],
+      "sharedDomain": "locations.moes.com"
+    },
+    {
+      "name_lc": "the original pancake house",
+      "canonicalSlug": "the-original-pancake-house-nbnajo",
+      "dropoutSlugs": [
+        "the-original-pancake-house"
+      ],
+      "sharedDomain": "originalpancakehousepittsburgh.com"
+    },
+    {
+      "name_lc": "noodles and company",
+      "canonicalSlug": "noodles-and-company",
+      "dropoutSlugs": [
+        "noodles-and-company-gyai6q"
+      ],
+      "sharedDomain": "locations.noodles.com"
+    },
+    {
+      "name_lc": "first watch",
+      "canonicalSlug": "first-watch-oss18o",
+      "dropoutSlugs": [
+        "first-watch",
+        "first-watch-zlovci",
+        "first-watch-50gyr4"
+      ],
+      "sharedDomain": "firstwatch.com"
+    },
+    {
+      "name_lc": "hello bistro",
+      "canonicalSlug": "hello-bistro-phqous",
+      "dropoutSlugs": [
+        "hello-bistro-vqowvw",
+        "hello-bistro",
+        "hello-bistro-k9mkbc"
+      ],
+      "sharedDomain": "hellobistro.com"
+    },
+    {
+      "name_lc": "bruegger's bagels",
+      "canonicalSlug": "brueggers-bagels",
+      "dropoutSlugs": [
+        "brueggers-bagels-ewplxk",
+        "brueggers-bagels-s3ajlw",
+        "brueggers-bagels-ltwitw"
+      ],
+      "sharedDomain": "locations.brueggers.com"
+    },
+    {
+      "name_lc": "nicky's thai kitchen",
+      "canonicalSlug": "nickys-thai-kitchen-tdt2ay",
+      "dropoutSlugs": [
+        "nickys-thai-kitchen"
+      ],
+      "sharedDomain": "nickysthaikitchen.com"
+    },
+    {
+      "name_lc": "dollar general",
+      "canonicalSlug": "dollar-general-6rzn4a",
+      "dropoutSlugs": [
+        "dollar-general"
+      ],
+      "sharedDomain": "dollargeneral.com"
+    },
+    {
+      "name_lc": "mike & tony's gyros",
+      "canonicalSlug": "mike-tonys-gyros-ena6n8",
+      "dropoutSlugs": [
+        "mike-tonys-gyros-nlzcry",
+        "mike-tonys-gyros"
+      ],
+      "sharedDomain": "mikeandtonysgyros.com"
+    },
+    {
+      "name_lc": "tasty taquitos",
+      "canonicalSlug": "tasty-taquitos",
+      "dropoutSlugs": [
+        "tasty-taquitos-dedmqi",
+        "tasty-taquitos-gr2rry"
+      ],
+      "sharedDomain": "tastytaquitos.com"
+    },
+    {
+      "name_lc": "fine wine & good spirits",
+      "canonicalSlug": "fine-wine-good-spirits-cgq7mu",
+      "dropoutSlugs": [
+        "fine-wine-good-spirits-ckatuo",
+        "fine-wine-good-spirits-pzbtdq",
+        "fine-wine-good-spirits-fzabvy",
+        "fine-wine-good-spirits-amawzm",
+        "fine-wine-good-spirits-tq35ks",
+        "fine-wine-good-spirits"
+      ],
+      "sharedDomain": "finewineandgoodspirits.com"
+    },
+    {
+      "name_lc": "anchor & anvil coffee bar",
+      "canonicalSlug": "anchor-anvil-coffee-bar",
+      "dropoutSlugs": [
+        "anchor-anvil-coffee-bar-ltyj0c"
+      ],
+      "sharedDomain": "anchoranvilcoffee.com"
+    },
+    {
+      "name_lc": "brighton hot dog shoppe",
+      "canonicalSlug": "brighton-hot-dog-shoppe-9x8gvu",
+      "dropoutSlugs": [
+        "brighton-hot-dog-shoppe"
+      ],
+      "sharedDomain": "brightonhotdogshoppes.com"
+    }
+  ],
+  "dropouts": [
+    {
+      "slug": "the-yard-urpp3y",
+      "name": "The Yard",
+      "name_lc": "the yard",
+      "address": "1500 Washington Rd, Pittsburgh, PA 15228",
+      "website": "https://www.theyardpgh.com/location/the-yard-the-galleria-of-mt-lebanon/",
+      "claimed": false,
+      "created_at": "2026-05-09T01:42:19.101Z",
+      "composite": 71,
+      "google_review_count": 498
+    },
+    {
+      "slug": "the-yard",
+      "name": "The Yard",
+      "name_lc": "the yard",
+      "address": "100 Fifth Ave, Pittsburgh, PA 15222",
+      "website": "http://www.theyardpgh.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T14:17:29.231Z",
+      "composite": 50,
+      "google_review_count": 1729
+    },
+    {
+      "slug": "doce-taqueria",
+      "name": "Doce Taqueria",
+      "name_lc": "doce taqueria",
+      "address": "1302 E Carson St, Pittsburgh, PA 15203",
+      "website": "http://www.docetaqueria.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T14:31:57.841Z",
+      "composite": 48,
+      "google_review_count": 926
+    },
+    {
+      "slug": "burgatory-nafy0a",
+      "name": "Burgatory",
+      "name_lc": "burgatory",
+      "address": "700 Providence Blvd, Pittsburgh, PA 15237",
+      "website": "http://burgatorybar.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:43:34.419Z",
+      "composite": 79,
+      "google_review_count": 2146
+    },
+    {
+      "slug": "burgatory-icnki0",
+      "name": "Burgatory",
+      "name_lc": "burgatory",
+      "address": "342 North Shore Drive, Pittsburgh, PA 15212",
+      "website": "http://www.burgatorybar.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T14:12:39.836Z",
+      "composite": 50,
+      "google_review_count": 4336
+    },
+    {
+      "slug": "burgatory-9sgf0e",
+      "name": "Burgatory",
+      "name_lc": "burgatory",
+      "address": "932 Freeport Rd, Pittsburgh, PA 15238",
+      "website": "http://www.burgatorybar.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T18:13:10.937Z",
+      "composite": 49,
+      "google_review_count": 1760
+    },
+    {
+      "slug": "burgatory",
+      "name": "Burgatory",
+      "name_lc": "burgatory",
+      "address": "299 West Bridge St, Homestead, PA 15120",
+      "website": "http://www.burgatorybar.com/",
+      "claimed": false,
+      "created_at": "2026-05-01T22:44:30.788Z",
+      "composite": 47,
+      "google_review_count": 3272
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-1jwhp0",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "8651 University Blvd, Moon Township, PA 15108",
+      "website": "https://restaurants.primantibros.com/locations/pa/moon-township/8651-university-boulevard",
+      "claimed": false,
+      "created_at": "2026-05-09T04:08:05.874Z",
+      "composite": 80,
+      "google_review_count": 3417
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-po6ctq",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "1539 Washington Rd, Mount Lebanon Township, PA 15228",
+      "website": "https://restaurants.primantibros.com/locations/pa/mount-lebanon/1539-washington-road",
+      "claimed": false,
+      "created_at": "2026-05-09T01:45:28.086Z",
+      "composite": 80,
+      "google_review_count": 2169
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-lsdpzu",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "4501 Steubenville Pike, Pittsburgh, PA 15205",
+      "website": "https://restaurants.primantibros.com/locations/pa/pittsburgh/4501-steubenville-pike",
+      "claimed": false,
+      "created_at": "2026-05-09T01:11:14.369Z",
+      "composite": 79,
+      "google_review_count": 2500
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-intmik",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "152 East Bridge St, Homestead, PA 15120",
+      "website": "https://restaurants.primantibros.com/locations/pa/homestead/152-east-bridge-street",
+      "claimed": false,
+      "created_at": "2026-05-09T04:24:19.561Z",
+      "composite": 79,
+      "google_review_count": 1783
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-ixaoae",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "46 18th St, Pittsburgh, PA 15222",
+      "website": "https://restaurants.primantibros.com/locations/pa/pittsburgh/46-18th-street",
+      "claimed": false,
+      "created_at": "2026-05-07T13:49:21.848Z",
+      "composite": 49,
+      "google_review_count": 7415
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-g9faqu",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "2 Market Square, Pittsburgh, PA 15222",
+      "website": "https://restaurants.primantibros.com/locations/pa/pittsburgh/2-market-square",
+      "claimed": false,
+      "created_at": "2026-05-02T22:41:36.511Z",
+      "composite": 49,
+      "google_review_count": 4939
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "400 Adios Dr, Washington, PA 15301",
+      "website": "https://restaurants.primantibros.com/locations/pa/washington/400-adios-drive",
+      "claimed": false,
+      "created_at": "2026-05-02T21:18:44.009Z",
+      "composite": 48,
+      "google_review_count": 2729
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-1ufx1q",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "830 Clairton Blvd, Pittsburgh, PA 15236",
+      "website": "https://restaurants.primantibros.com/locations/pa/pittsburgh/830-clairton-boulevard",
+      "claimed": false,
+      "created_at": "2026-05-07T17:58:10.144Z",
+      "composite": 48,
+      "google_review_count": 2308
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-zllkre",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "6 Anchor Dr, Pittsburgh, PA 15238",
+      "website": "https://restaurants.primantibros.com/locations/pa/pittsburgh/6-anchor-drive",
+      "claimed": false,
+      "created_at": "2026-05-07T18:14:59.885Z",
+      "composite": 47,
+      "google_review_count": 3085
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-fex9wi",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "3803 Forbes Ave, Pittsburgh, PA 15213",
+      "website": "https://restaurants.primantibros.com/locations/pa/pittsburgh/3803-forbes-avenue",
+      "claimed": false,
+      "created_at": "2026-05-07T18:20:17.053Z",
+      "composite": 38,
+      "google_review_count": null
+    },
+    {
+      "slug": "primanti-bros-restaurant-and-bar-ixjawg",
+      "name": "Primanti Bros. Restaurant and Bar",
+      "name_lc": "primanti bros. restaurant and bar",
+      "address": "4679 William Flinn Hwy, Allison Park, PA 15101",
+      "website": "https://restaurants.primantibros.com/locations/pa/allison-park/4679-william-flinn-highway",
+      "claimed": false,
+      "created_at": "2026-05-07T18:36:30.602Z",
+      "composite": 37,
+      "google_review_count": null
+    },
+    {
+      "slug": "yinz-coffee-da7gfe",
+      "name": "Yinz Coffee",
+      "name_lc": "yinz coffee",
+      "address": "437 Grant St #617, Pittsburgh, PA 15219",
+      "website": "https://www.yinzcoffee.com/frickbuilding",
+      "claimed": false,
+      "created_at": "2026-05-07T13:52:54.322Z",
+      "composite": 41,
+      "google_review_count": 2
+    },
+    {
+      "slug": "de-fer-coffee-tea-ie9l7g",
+      "name": "De Fer Coffee & Tea",
+      "name_lc": "de fer coffee & tea",
+      "address": "1800 Rialto St, Pittsburgh, PA 15212",
+      "website": "https://www.defer.coffee/troy-hill?utm_source=gbp_profile&utm_medium=organic&utm_campaign=gbp",
+      "claimed": false,
+      "created_at": "2026-05-07T14:55:51.151Z",
+      "composite": 44,
+      "google_review_count": 95
+    },
+    {
+      "slug": "de-fer-coffee-tea-koelmm",
+      "name": "De Fer Coffee & Tea",
+      "name_lc": "de fer coffee & tea",
+      "address": "725 Penn Ave, Pittsburgh, PA 15222",
+      "website": "https://www.defer.coffee/downtown?utm_source=gbp-profile&utm_medium=organic&utm_campaign=gbp",
+      "claimed": false,
+      "created_at": "2026-05-07T14:50:58.795Z",
+      "composite": 44,
+      "google_review_count": 93
+    },
+    {
+      "slug": "de-fer-coffee-tea-ltn1yk",
+      "name": "De Fer Coffee & Tea",
+      "name_lc": "de fer coffee & tea",
+      "address": "350 Technology Dr, Pittsburgh, PA 15219",
+      "website": "https://www.defer.coffee/riviera?utm_source=gbp_profile&utm_medium=organic&utm_campaign=gbp",
+      "claimed": false,
+      "created_at": "2026-05-07T14:56:30.931Z",
+      "composite": 42,
+      "google_review_count": 40
+    },
+    {
+      "slug": "redhawk-coffee-roasters",
+      "name": "Redhawk Coffee Roasters",
+      "name_lc": "redhawk coffee roasters",
+      "address": "120 Meyran Ave, Pittsburgh, PA 15213",
+      "website": "https://www.redhawkcoffee.com/",
+      "claimed": false,
+      "created_at": "2026-05-05T01:11:12.620Z",
+      "composite": 50,
+      "google_review_count": 587
+    },
+    {
+      "slug": "chicco-baccello-ftidyg",
+      "name": "Chicco Baccello",
+      "name_lc": "chicco baccello",
+      "address": "111 W Pike St, Canonsburg, PA 15317",
+      "website": "http://www.chiccobaccello.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T16:28:57.607Z",
+      "composite": 42,
+      "google_review_count": 112
+    },
+    {
+      "slug": "7-brew-coffee",
+      "name": "7 Brew Coffee",
+      "name_lc": "7 brew coffee",
+      "address": "189 Old Mill Blvd, Washington, PA 15301",
+      "website": "https://7brew.com/",
+      "claimed": false,
+      "created_at": "2026-05-05T01:29:28.763Z",
+      "composite": 45,
+      "google_review_count": 154
+    },
+    {
+      "slug": "espresso-a-mano-x8qmew",
+      "name": "Espresso a mano",
+      "name_lc": "espresso a mano",
+      "address": "1412 Potomac Ave, Pittsburgh, PA 15216",
+      "website": "http://espressoamano.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:49:14.620Z",
+      "composite": 43,
+      "google_review_count": 66
+    },
+    {
+      "slug": "commonplace-coffee-h39xly",
+      "name": "Commonplace Coffee",
+      "name_lc": "commonplace coffee",
+      "address": "1501 Buena Vista St, Pittsburgh, PA 15212",
+      "website": "https://commonplacecoffee.com/mws/",
+      "claimed": false,
+      "created_at": "2026-05-05T01:46:38.910Z",
+      "composite": 50,
+      "google_review_count": 806
+    },
+    {
+      "slug": "commonplace-coffee",
+      "name": "Commonplace Coffee",
+      "name_lc": "commonplace coffee",
+      "address": "5827 Forbes Ave, Pittsburgh, PA 15217",
+      "website": "https://commonplacecoffee.com/squirrel-hill/",
+      "claimed": false,
+      "created_at": "2026-05-05T01:43:05.171Z",
+      "composite": 50,
+      "google_review_count": 614
+    },
+    {
+      "slug": "commonplace-coffee-ecw9ag",
+      "name": "Commonplace Coffee",
+      "name_lc": "commonplace coffee",
+      "address": "5467 Penn Ave, Pittsburgh, PA 15206",
+      "website": "https://commonplacecoffee.com/garfield/",
+      "claimed": false,
+      "created_at": "2026-05-05T02:18:22.831Z",
+      "composite": 48,
+      "google_review_count": 337
+    },
+    {
+      "slug": "commonplace-coffee-jro8uu",
+      "name": "Commonplace Coffee",
+      "name_lc": "commonplace coffee",
+      "address": "428 S 27th St, Pittsburgh, PA 15203",
+      "website": "https://commonplacecoffee.com/pages/southside-works",
+      "claimed": false,
+      "created_at": "2026-05-07T13:50:27.739Z",
+      "composite": 43,
+      "google_review_count": 88
+    },
+    {
+      "slug": "colombino-coffee-3nqqxm",
+      "name": "COLOMBINO Coffee",
+      "name_lc": "colombino coffee",
+      "address": "3817 Butler St, Pittsburgh, PA 15201",
+      "website": "http://www.colombino.com/",
+      "claimed": false,
+      "created_at": "2026-05-05T02:14:20.678Z",
+      "composite": 46,
+      "google_review_count": 144
+    },
+    {
+      "slug": "colombino-coffee",
+      "name": "COLOMBINO Coffee",
+      "name_lc": "colombino coffee",
+      "address": "926 Western Ave, Pittsburgh, PA 15233",
+      "website": "http://www.colombino.com/",
+      "claimed": false,
+      "created_at": "2026-05-05T01:45:27.332Z",
+      "composite": 45,
+      "google_review_count": 156
+    },
+    {
+      "slug": "mechanic-coffee-company",
+      "name": "Mechanic Coffee Company",
+      "name_lc": "mechanic coffee company",
+      "address": "707 E Railroad Ave, Verona, PA 15147",
+      "website": "http://www.mechaniccoffee.com/",
+      "claimed": false,
+      "created_at": "2026-05-05T01:54:53.016Z",
+      "composite": 47,
+      "google_review_count": 344
+    },
+    {
+      "slug": "convive-coffee-roastery",
+      "name": "Convive Coffee Roastery",
+      "name_lc": "convive coffee roastery",
+      "address": "960 Adams Shoppes, Mars, PA 16046",
+      "website": "http://convivecoffee.com/",
+      "claimed": false,
+      "created_at": "2026-05-05T02:20:40.780Z",
+      "composite": 63,
+      "google_review_count": 115
+    },
+    {
+      "slug": "convive-coffee-roastery-ruwbze",
+      "name": "Convive Coffee Roastery",
+      "name_lc": "convive coffee roastery",
+      "address": "225 North Shore Drive Suite 100, Pittsburgh, PA 15212",
+      "website": "https://convivecoffee.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:47:25.162Z",
+      "composite": 41,
+      "google_review_count": 60
+    },
+    {
+      "slug": "anytime-fitness-so9cyc",
+      "name": "Anytime Fitness",
+      "name_lc": "anytime fitness",
+      "address": "3961 Washington Rd, McMurray, PA 15317",
+      "website": "https://www.anytimefitness.com/locations/mcmurray-pennsylvania-2127/?utm_source=google&utm_medium=organic-businesslisting&utm_campaign=gbp-listing&utm_content=2127",
+      "claimed": false,
+      "created_at": "2026-05-05T22:13:51.703Z",
+      "composite": 69,
+      "google_review_count": 113
+    },
+    {
+      "slug": "fitness-19-0kjxbm",
+      "name": "FITNESS 19",
+      "name_lc": "fitness 19",
+      "address": "5301 Grove Rd, Pittsburgh, PA 15236",
+      "website": "https://www.fitness19.com/centers/pittsburgh-south-hills/",
+      "claimed": false,
+      "created_at": "2026-05-08T22:38:20.444Z",
+      "composite": 66,
+      "google_review_count": 197
+    },
+    {
+      "slug": "fitness-19",
+      "name": "FITNESS 19",
+      "name_lc": "fitness 19",
+      "address": "1960 Greentree Rd, Pittsburgh, PA 15220",
+      "website": "https://www.fitness19.com/centers/pittsburgh-greentree-scott-twp/",
+      "claimed": false,
+      "created_at": "2026-05-05T12:53:04.294Z",
+      "composite": 49,
+      "google_review_count": 307
+    },
+    {
+      "slug": "the-edge-fitness-clubs",
+      "name": "The Edge Fitness Clubs",
+      "name_lc": "the edge fitness clubs",
+      "address": "500 W Germantown Pike, Plymouth Meeting, PA 19462",
+      "website": "https://www.theedgefitnessclubs.com/locations/pennsylvania-plymouth-meeting",
+      "claimed": false,
+      "created_at": "2026-05-05T22:02:06.250Z",
+      "composite": 78,
+      "google_review_count": 598
+    },
+    {
+      "slug": "the-pittsburgh-tattoo-studio-w5etou",
+      "name": "The Pittsburgh Tattoo Studio",
+      "name_lc": "the pittsburgh tattoo studio",
+      "address": "800 Wildflower Cir # 801, Washington, PA 15301",
+      "website": "http://www.pittsburghtattoostudio.com/",
+      "claimed": false,
+      "created_at": "2026-05-06T00:12:12.307Z",
+      "composite": 40,
+      "google_review_count": 54
+    },
+    {
+      "slug": "cookies-creamery-amqraa",
+      "name": "Cookie's Creamery",
+      "name_lc": "cookie's creamery",
+      "address": "9559 Babcock Blvd, Allison Park, PA 15101",
+      "website": "https://www.cookiescreamery.com/",
+      "claimed": false,
+      "created_at": "2026-05-06T02:20:41.544Z",
+      "composite": 39,
+      "google_review_count": 8
+    },
+    {
+      "slug": "club-pilates",
+      "name": "Club Pilates",
+      "name_lc": "club pilates",
+      "address": "1500 Washington Rd Suite 2601, Pittsburgh, PA 15228",
+      "website": "https://www.clubpilates.com/southhills/?utm_source=google.com&utm_medium=referral&utm_campaign=yext",
+      "claimed": false,
+      "created_at": "2026-05-08T22:17:52.552Z",
+      "composite": 69,
+      "google_review_count": 374
+    },
+    {
+      "slug": "club-pilates-1vfw3m",
+      "name": "Club Pilates",
+      "name_lc": "club pilates",
+      "address": "5430 Centre Ave, Pittsburgh, PA 15232",
+      "website": "https://www.clubpilates.com/shadyside/?utm_source=google.com&utm_medium=referral&utm_campaign=yext",
+      "claimed": false,
+      "created_at": "2026-05-08T22:18:08.848Z",
+      "composite": 69,
+      "google_review_count": 113
+    },
+    {
+      "slug": "club-pilates-7ilvb4",
+      "name": "Club Pilates",
+      "name_lc": "club pilates",
+      "address": "4655 William Flinn Hwy #113, Allison Park, PA 15101",
+      "website": "https://www.clubpilates.com/hampton/?utm_source=google.com&utm_medium=referral&utm_campaign=yext",
+      "claimed": false,
+      "created_at": "2026-05-08T23:08:55.785Z",
+      "composite": 68,
+      "google_review_count": 213
+    },
+    {
+      "slug": "club-pilates-ls02ac",
+      "name": "Club Pilates",
+      "name_lc": "club pilates",
+      "address": "8013 McKnight Rd #200B, Pittsburgh, PA 15237",
+      "website": "https://www.clubpilates.com/location/northhills/?utm_source=google.com&utm_medium=referral&utm_campaign=yext",
+      "claimed": false,
+      "created_at": "2026-05-08T22:47:36.982Z",
+      "composite": 68,
+      "google_review_count": 167
+    },
+    {
+      "slug": "club-pilates-pgara0",
+      "name": "Club Pilates",
+      "name_lc": "club pilates",
+      "address": "860 Beaver Grade Rd Suite 200, Coraopolis, PA 15108",
+      "website": "https://www.clubpilates.com/location/moon/?utm_source=google.com&utm_medium=referral&utm_campaign=yext",
+      "claimed": false,
+      "created_at": "2026-05-08T23:30:50.272Z",
+      "composite": 65,
+      "google_review_count": 202
+    },
+    {
+      "slug": "ritas-italian-ice-frozen-custard-qlhabu",
+      "name": "Rita's Italian Ice & Frozen Custard",
+      "name_lc": "rita's italian ice & frozen custard",
+      "address": "2070 Greentree Rd, Pittsburgh, PA 15220",
+      "website": "https://www.ritasice.com/location/ritas-of-scott-twp-pa/",
+      "claimed": false,
+      "created_at": "2026-05-09T04:21:22.804Z",
+      "composite": 70,
+      "google_review_count": 225
+    },
+    {
+      "slug": "ritas-italian-ice-frozen-custard-wjt8wq",
+      "name": "Rita's Italian Ice & Frozen Custard",
+      "name_lc": "rita's italian ice & frozen custard",
+      "address": "5029 Library Rd, Bethel Park, PA 15102",
+      "website": "https://www.ritasice.com/location/ritas-of-bethel-park-pa/",
+      "claimed": false,
+      "created_at": "2026-05-09T03:57:43.187Z",
+      "composite": 69,
+      "google_review_count": 211
+    },
+    {
+      "slug": "ritas-italian-ice-frozen-custard-zdj1ec",
+      "name": "Rita's Italian Ice & Frozen Custard",
+      "name_lc": "rita's italian ice & frozen custard",
+      "address": "427 McNeilly Rd, Pittsburgh, PA 15226",
+      "website": "https://www.ritasice.com/location/ritas-of-baldwin-township-pa/",
+      "claimed": false,
+      "created_at": "2026-05-09T04:02:05.337Z",
+      "composite": 66,
+      "google_review_count": 120
+    },
+    {
+      "slug": "ritas-italian-ice-frozen-custard-1l2rsc",
+      "name": "Rita's Italian Ice & Frozen Custard",
+      "name_lc": "rita's italian ice & frozen custard",
+      "address": "3712 Fifth Ave, Pittsburgh, PA 15213",
+      "website": "https://www.ritasice.com/location/ritas-of-oakland-pa/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:46:14.843Z",
+      "composite": 61,
+      "google_review_count": 103
+    },
+    {
+      "slug": "ritas-italian-ice-frozen-custard",
+      "name": "Rita's Italian Ice & Frozen Custard",
+      "name_lc": "rita's italian ice & frozen custard",
+      "address": "74 Trinity Point Dr, Washington, PA 15301",
+      "website": "https://www.ritasice.com/location/ritas-of-trinity-point-pa/",
+      "claimed": false,
+      "created_at": "2026-05-06T02:20:02.267Z",
+      "composite": 44,
+      "google_review_count": 240
+    },
+    {
+      "slug": "brusters-real-ice-cream-hou17o",
+      "name": "Bruster's Real Ice Cream",
+      "name_lc": "bruster's real ice cream",
+      "address": "5888 Steubenville Pike Unit #2, McKees Rocks, PA 15136",
+      "website": "https://www.brusters.com/locations/robinsontwp/371",
+      "claimed": false,
+      "created_at": "2026-05-09T01:15:31.536Z",
+      "composite": 73,
+      "google_review_count": 436
+    },
+    {
+      "slug": "brusters-real-ice-cream-p4wnr4",
+      "name": "Bruster's Real Ice Cream",
+      "name_lc": "bruster's real ice cream",
+      "address": "4940 Library Rd, Bethel Park, PA 15102",
+      "website": "https://www.brusters.com/locations/bethelpark/324",
+      "claimed": false,
+      "created_at": "2026-05-09T03:59:49.777Z",
+      "composite": 70,
+      "google_review_count": 400
+    },
+    {
+      "slug": "brusters-real-ice-cream",
+      "name": "Bruster's Real Ice Cream",
+      "name_lc": "bruster's real ice cream",
+      "address": "4584 Browns Hill Rd, Pittsburgh, PA 15217",
+      "website": "https://www.brusters.com/locations/squirrelhill/390",
+      "claimed": false,
+      "created_at": "2026-05-06T02:27:17.000Z",
+      "composite": 45,
+      "google_review_count": 342
+    },
+    {
+      "slug": "prantls-bakery-z7mwoc",
+      "name": "Prantl's Bakery",
+      "name_lc": "prantl's bakery",
+      "address": "528 E Ohio St, Pittsburgh, PA 15212",
+      "website": "https://www.prantlsbakery.com/locations/northside/",
+      "claimed": false,
+      "created_at": "2026-05-06T03:10:06.926Z",
+      "composite": 44,
+      "google_review_count": 153
+    },
+    {
+      "slug": "paris-baguette-gxwmes",
+      "name": "Paris Baguette",
+      "name_lc": "paris baguette",
+      "address": "5514 Walnut St, Pittsburgh, PA 15232",
+      "website": "https://parisbaguette.com/locations/pa/pittsburgh/5514-walnut-street",
+      "claimed": false,
+      "created_at": "2026-05-06T02:57:29.144Z",
+      "composite": 43,
+      "google_review_count": 110
+    },
+    {
+      "slug": "live-fresh-cold-pressed-juice-smoothie-bar-ih988s",
+      "name": "Live Fresh Cold Pressed Juice + Smoothie Bar",
+      "name_lc": "live fresh cold pressed juice + smoothie bar",
+      "address": "845 Western Ave, Pittsburgh, PA 15233",
+      "website": "http://www.livefreshjuicery.com/",
+      "claimed": false,
+      "created_at": "2026-05-06T12:24:30.893Z",
+      "composite": 47,
+      "google_review_count": 268
+    },
+    {
+      "slug": "live-fresh-cold-pressed-juice-smoothie-bar-t4vera",
+      "name": "Live Fresh Cold Pressed Juice + Smoothie Bar",
+      "name_lc": "live fresh cold pressed juice + smoothie bar",
+      "address": "1104 S Braddock Ave, Pittsburgh, PA 15218",
+      "website": "http://www.livefreshjuicery.com/",
+      "claimed": false,
+      "created_at": "2026-05-06T12:23:30.631Z",
+      "composite": 46,
+      "google_review_count": 153
+    },
+    {
+      "slug": "live-fresh-cold-pressed-juice-smoothie-bar",
+      "name": "Live Fresh Cold Pressed Juice + Smoothie Bar",
+      "name_lc": "live fresh cold pressed juice + smoothie bar",
+      "address": "6506 Steubenville Pike, Pittsburgh, PA 15205",
+      "website": "https://www.livefreshjuicery.com/",
+      "claimed": false,
+      "created_at": "2026-05-06T12:19:59.453Z",
+      "composite": 40,
+      "google_review_count": 49
+    },
+    {
+      "slug": "tropical-smoothie-cafe-ghhrzc",
+      "name": "Tropical Smoothie Cafe",
+      "name_lc": "tropical smoothie cafe",
+      "address": "507 Towne Square Wy, Brentwood, PA 15227",
+      "website": "https://locations.tropicalsmoothiecafe.com/pa/brentwood/507-town-square-way?y_source=1_MTAyMTA0ODg0MC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "claimed": false,
+      "created_at": "2026-05-09T04:50:08.310Z",
+      "composite": 73,
+      "google_review_count": 115
+    },
+    {
+      "slug": "tropical-smoothie-cafe",
+      "name": "Tropical Smoothie Cafe",
+      "name_lc": "tropical smoothie cafe",
+      "address": "5996 Centre Ave, Pittsburgh, PA 15206",
+      "website": "https://locations.tropicalsmoothiecafe.com/pa/pittsburgh/5996-centre-avenue?y_source=1_Mjg2NTEwMjQtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "claimed": false,
+      "created_at": "2026-05-06T12:28:21.641Z",
+      "composite": 46,
+      "google_review_count": 170
+    },
+    {
+      "slug": "the-exchange-rgeugg",
+      "name": "The Exchange",
+      "name_lc": "the exchange",
+      "address": "5862 Forbes Ave, Pittsburgh, PA 15217",
+      "website": "http://www.theexchange.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:50:50.337Z",
+      "composite": 48,
+      "google_review_count": 413
+    },
+    {
+      "slug": "the-exchange-sbvf9m",
+      "name": "The Exchange",
+      "name_lc": "the exchange",
+      "address": "2973 W Liberty Ave, Pittsburgh, PA 15216",
+      "website": "http://www.theexchange.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:48:58.783Z",
+      "composite": 48,
+      "google_review_count": 394
+    },
+    {
+      "slug": "the-exchange",
+      "name": "The Exchange",
+      "name_lc": "the exchange",
+      "address": "6535 Robinson Centre Dr, Pittsburgh, PA 15205",
+      "website": "http://www.theexchange.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:35:05.038Z",
+      "composite": 47,
+      "google_review_count": 947
+    },
+    {
+      "slug": "the-porch",
+      "name": "The Porch",
+      "name_lc": "the porch",
+      "address": "221 Schenley Dr, Pittsburgh, PA 15213",
+      "website": "https://www.dineattheporch.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:34:46.187Z",
+      "composite": 49,
+      "google_review_count": 2149
+    },
+    {
+      "slug": "amazing-books-records-vk57f4",
+      "name": "Amazing Books & Records",
+      "name_lc": "amazing books & records",
+      "address": "320 Smithfield St, Pittsburgh, PA 15222",
+      "website": "https://www.amazingbooksandrecords.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:47:43.499Z",
+      "composite": 45,
+      "google_review_count": 145
+    },
+    {
+      "slug": "riverstone-books-uwbfcg",
+      "name": "Riverstone Books",
+      "name_lc": "riverstone books",
+      "address": "5841 Forbes Ave, Pittsburgh, PA 15217",
+      "website": "https://www.riverstonebookstore.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:41:12.178Z",
+      "composite": 42,
+      "google_review_count": 53
+    },
+    {
+      "slug": "city-grows",
+      "name": "City Grows",
+      "name_lc": "city grows",
+      "address": "1659 Smallman St, Pittsburgh, PA 15222",
+      "website": "https://city-grows.square.site/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:41:54.769Z",
+      "composite": 45,
+      "google_review_count": 98
+    },
+    {
+      "slug": "condado-tacos-ogxie8",
+      "name": "Condado Tacos",
+      "name_lc": "condado tacos",
+      "address": "971 Liberty Ave, Pittsburgh, PA 15222",
+      "website": "https://locations.condadotacos.com/pa/971-liberty-ave",
+      "claimed": false,
+      "created_at": "2026-05-07T14:25:37.994Z",
+      "composite": 50,
+      "google_review_count": 5010
+    },
+    {
+      "slug": "condado-tacos",
+      "name": "Condado Tacos",
+      "name_lc": "condado tacos",
+      "address": "4300 Butler St, Pittsburgh, PA 15201",
+      "website": "https://locations.condadotacos.com/pa/4300-butler-st",
+      "claimed": false,
+      "created_at": "2026-05-07T14:20:36.177Z",
+      "composite": 49,
+      "google_review_count": 2482
+    },
+    {
+      "slug": "condado-tacos-90dqik",
+      "name": "Condado Tacos",
+      "name_lc": "condado tacos",
+      "address": "6210 Penn Ave, Pittsburgh, PA 15206",
+      "website": "https://locations.condadotacos.com/pa/6210-penn-ave",
+      "claimed": false,
+      "created_at": "2026-05-07T18:22:10.313Z",
+      "composite": 49,
+      "google_review_count": 971
+    },
+    {
+      "slug": "condado-tacos-8fm5hq",
+      "name": "Condado Tacos",
+      "name_lc": "condado tacos",
+      "address": "9036 St Simon Way, Pittsburgh, PA 15237",
+      "website": "https://locations.condadotacos.com/pa/9036-st.-simon-way",
+      "claimed": false,
+      "created_at": "2026-05-07T18:34:01.153Z",
+      "composite": 46,
+      "google_review_count": 787
+    },
+    {
+      "slug": "the-fresh-market",
+      "name": "The Fresh Market",
+      "name_lc": "the fresh market",
+      "address": "5880 Centre Ave, Pittsburgh, PA 15206",
+      "website": "https://stores.thefreshmarket.com/PA/pittsburgh/266",
+      "claimed": false,
+      "created_at": "2026-05-07T13:55:23.664Z",
+      "composite": 40,
+      "google_review_count": 39
+    },
+    {
+      "slug": "the-coffee-village-tdkuhc",
+      "name": "The Coffee Village",
+      "name_lc": "the coffee village",
+      "address": "417 Walnut St, Sewickley, PA 15143",
+      "website": "http://www.coffeevillages.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T01:50:29.272Z",
+      "composite": 70,
+      "google_review_count": 272
+    },
+    {
+      "slug": "the-coffee-village",
+      "name": "The Coffee Village",
+      "name_lc": "the coffee village",
+      "address": "500 Grant St, Pittsburgh, PA 15219",
+      "website": "https://coffeevillages.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T13:51:05.345Z",
+      "composite": 42,
+      "google_review_count": 51
+    },
+    {
+      "slug": "market-district-supermarket-wbyqrw",
+      "name": "Market District Supermarket",
+      "name_lc": "market district supermarket",
+      "address": "100 Settlers Ridge Center Dr, Pittsburgh, PA 15205",
+      "website": "https://www.marketdistrict.com/stores/47?utm_source=google&utm_medium=organic&utm_campaign=md_ll",
+      "claimed": false,
+      "created_at": "2026-05-09T05:24:53.958Z",
+      "composite": 77,
+      "google_review_count": 4464
+    },
+    {
+      "slug": "market-district-supermarket",
+      "name": "Market District Supermarket",
+      "name_lc": "market district supermarket",
+      "address": "5550 Centre Ave, Pittsburgh, PA 15232",
+      "website": "https://www.marketdistrict.com/stores/40?utm_source=google&utm_medium=organic&utm_campaign=md_ll",
+      "claimed": false,
+      "created_at": "2026-05-07T13:52:20.115Z",
+      "composite": 48,
+      "google_review_count": 5345
+    },
+    {
+      "slug": "market-district-supermarket-ck109s",
+      "name": "Market District Supermarket",
+      "name_lc": "market district supermarket",
+      "address": "7000 Oxford Dr #288, Bethel Park, PA 15102",
+      "website": "https://www.marketdistrict.com/stores/14?utm_source=google&utm_medium=organic&utm_campaign=md_ll",
+      "claimed": false,
+      "created_at": "2026-05-07T14:11:27.928Z",
+      "composite": 47,
+      "google_review_count": 2212
+    },
+    {
+      "slug": "piada-italian-street-food",
+      "name": "Piada Italian Street Food",
+      "name_lc": "piada italian street food",
+      "address": "200 McHolme Dr, Pittsburgh, PA 15275",
+      "website": "https://mypiada.com/locations/north-fayette",
+      "claimed": false,
+      "created_at": "2026-05-07T14:00:08.228Z",
+      "composite": 46,
+      "google_review_count": 712
+    },
+    {
+      "slug": "kuhns-market",
+      "name": "Kuhn's Market",
+      "name_lc": "kuhn's market",
+      "address": "700 Beulah Rd, Turtle Creek, PA 15145",
+      "website": "http://www.kuhnsmarket.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T14:04:59.618Z",
+      "composite": 46,
+      "google_review_count": 667
+    },
+    {
+      "slug": "burn-boot-camp-5s4cbg",
+      "name": "Burn Boot Camp",
+      "name_lc": "burn boot camp",
+      "address": "458 Home Dr, Pittsburgh, PA 15275",
+      "website": "https://locations.burnbootcamp.com/locations/robinson-pa/?utm_source=gmb&utm_medium=listings",
+      "claimed": false,
+      "created_at": "2026-05-09T00:30:54.376Z",
+      "composite": 70,
+      "google_review_count": 75
+    },
+    {
+      "slug": "el-burro",
+      "name": "El Burro",
+      "name_lc": "el burro",
+      "address": "1108 Federal St, Pittsburgh, PA 15212",
+      "website": "http://www.elburropgh.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T14:29:24.276Z",
+      "composite": 49,
+      "google_review_count": 805
+    },
+    {
+      "slug": "longhorn-steakhouse-s7gwaq",
+      "name": "LongHorn Steakhouse",
+      "name_lc": "longhorn steakhouse",
+      "address": "200 Robinson Centre Dr, Pittsburgh, PA 15205",
+      "website": "https://www.longhornsteakhouse.com/locations/pa/pittsburgh/pittsburgh-robinson/5293?cmpid=br:lh_ag:ie_ch:loc_ca:LHGMB_sn:gmb_gt:pittsburgh-pa-5293_pl:locurl_rd:1244",
+      "claimed": false,
+      "created_at": "2026-05-09T02:29:51.828Z",
+      "composite": 76,
+      "google_review_count": 2519
+    },
+    {
+      "slug": "longhorn-steakhouse-bmblz4",
+      "name": "LongHorn Steakhouse",
+      "name_lc": "longhorn steakhouse",
+      "address": "9150 Covenant Ave, Pittsburgh, PA 15237",
+      "website": "https://www.longhornsteakhouse.com/locations/pa/pittsburgh/pittsburgh-mccandless-township/5525?cmpid=br:lh_ag:ie_ch:loc_ca:LHGMB_sn:gmb_gt:pittsburgh-pa-5525_pl:locurl_rd:1458",
+      "claimed": false,
+      "created_at": "2026-05-09T02:26:36.980Z",
+      "composite": 74,
+      "google_review_count": 1526
+    },
+    {
+      "slug": "longhorn-steakhouse",
+      "name": "LongHorn Steakhouse",
+      "name_lc": "longhorn steakhouse",
+      "address": "377 Washington Rd, Washington, PA 15301",
+      "website": "https://www.longhornsteakhouse.com/locations/pa/washington/washington/5539?cmpid=br:lh_ag:ie_ch:loc_ca:LHGMB_sn:gmb_gt:washington-pa-5539_pl:locurl_rd:1468",
+      "claimed": false,
+      "created_at": "2026-05-07T14:54:17.451Z",
+      "composite": 50,
+      "google_review_count": 2085
+    },
+    {
+      "slug": "red-lobster-4ibon4",
+      "name": "Red Lobster",
+      "name_lc": "red lobster",
+      "address": "THE MALL AT ROBINSON, 6150 Robinson Centre Dr NEAR, Pittsburgh, PA 15205",
+      "website": "https://www.redlobster.com/seafood-restaurants/locations/pa/pittsburgh/6150-robinson-center-drive",
+      "claimed": false,
+      "created_at": "2026-05-09T02:29:13.432Z",
+      "composite": 80,
+      "google_review_count": 3317
+    },
+    {
+      "slug": "red-lobster",
+      "name": "Red Lobster",
+      "name_lc": "red lobster",
+      "address": "1005 Trinity Cir, Washington, PA 15301",
+      "website": "https://www.redlobster.com/seafood-restaurants/locations/pa/washington/1005-trinity-cir",
+      "claimed": false,
+      "created_at": "2026-05-07T14:55:30.611Z",
+      "composite": 49,
+      "google_review_count": 2341
+    },
+    {
+      "slug": "laynes-chicken-fingers-pittsburgh-l03gtq",
+      "name": "Layne's Chicken Fingers- Pittsburgh",
+      "name_lc": "layne's chicken fingers- pittsburgh",
+      "address": "5200 Baum Blvd, Pittsburgh, PA 15224",
+      "website": "https://www.layneschickenfingers.com/baum/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:16:09.220Z",
+      "composite": 66,
+      "google_review_count": 285
+    },
+    {
+      "slug": "masala-house-indian-bistro-7yxyvi",
+      "name": "Masala House Indian Bistro",
+      "name_lc": "masala house indian bistro",
+      "address": "5102 Baum Blvd, Pittsburgh, PA 15224",
+      "website": "https://www.mymasalahouse.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T18:19:40.342Z",
+      "composite": 39,
+      "google_review_count": null
+    },
+    {
+      "slug": "fioris-pizzaria",
+      "name": "Fiori's Pizzaria",
+      "name_lc": "fiori's pizzaria",
+      "address": "103 Capital Ave, Pittsburgh, PA 15226",
+      "website": "https://www.fiorispizzaria.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T15:05:44.873Z",
+      "composite": 39,
+      "google_review_count": null
+    },
+    {
+      "slug": "bobs-diner",
+      "name": "Bob's Diner",
+      "name_lc": "bob's diner",
+      "address": "1815 McKees Rocks Rd, McKees Rocks, PA 15136",
+      "website": "http://eatatbobsdiner.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T01:01:58.247Z",
+      "composite": 75,
+      "google_review_count": 834
+    },
+    {
+      "slug": "mineos-pizza-house",
+      "name": "Mineo's Pizza House",
+      "name_lc": "mineo's pizza house",
+      "address": "2128 Murray Ave, Pittsburgh, PA 15217",
+      "website": "http://www.mineospizza.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T15:08:01.133Z",
+      "composite": 39,
+      "google_review_count": null
+    },
+    {
+      "slug": "cava",
+      "name": "CAVA",
+      "name_lc": "cava",
+      "address": "151 Shady Ave, Pittsburgh, PA 15206",
+      "website": "https://cava.com/locations/East-Liberty-(Meridian)-PA",
+      "claimed": false,
+      "created_at": "2026-05-07T15:11:07.364Z",
+      "composite": 40,
+      "google_review_count": null
+    },
+    {
+      "slug": "vocelli-pizza-yow0pi",
+      "name": "Vocelli Pizza",
+      "name_lc": "vocelli pizza",
+      "address": "1019 Mt Royal Blvd, Pittsburgh, PA 15223",
+      "website": "http://www.vocellipizza.com/shaler_pa",
+      "claimed": false,
+      "created_at": "2026-05-09T02:09:34.522Z",
+      "composite": 64,
+      "google_review_count": 102
+    },
+    {
+      "slug": "foxs-pizza-den-vv2s2q",
+      "name": "Fox's Pizza Den",
+      "name_lc": "fox's pizza den",
+      "address": "2374 Golden Mile Hwy, Plum, PA 15239",
+      "website": "http://foxspizza.com/store/pennsylvania/plum-boro-pa/",
+      "claimed": false,
+      "created_at": "2026-05-09T05:29:28.044Z",
+      "composite": 59,
+      "google_review_count": 108
+    },
+    {
+      "slug": "the-colombian-spot",
+      "name": "The Colombian Spot",
+      "name_lc": "the colombian spot",
+      "address": "University of Pittsburgh, 3533 Forbes Ave Floor 1, Pittsburgh, PA 15203",
+      "website": "https://www.thecolombianspot-pgh.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:13:33.870Z",
+      "composite": 68,
+      "google_review_count": 219
+    },
+    {
+      "slug": "treats-n-beans-g9pjoq",
+      "name": "Treats n Beans",
+      "name_lc": "treats n beans",
+      "address": "1105 Bower Hill Rd, Pittsburgh, PA 15243",
+      "website": "http://www.treatsandbeans.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T05:29:56.528Z",
+      "composite": 71,
+      "google_review_count": 50
+    },
+    {
+      "slug": "bob-evans-amsyku",
+      "name": "Bob Evans",
+      "name_lc": "bob evans",
+      "address": "8405 University Blvd, Moon Township, PA 15108",
+      "website": "https://www.bobevans.com/locations/coraopolis?utm_source=google&utm_medium=local&utm_campaign=109-Moon-Township-PA",
+      "claimed": false,
+      "created_at": "2026-05-09T04:22:43.025Z",
+      "composite": 80,
+      "google_review_count": 1350
+    },
+    {
+      "slug": "bob-evans",
+      "name": "Bob Evans",
+      "name_lc": "bob evans",
+      "address": "3350 Washington Rd, McMurray, PA 15317",
+      "website": "https://www.bobevans.com/locations/mcmurray?utm_source=google&utm_medium=local&utm_campaign=498-McMurray-PA",
+      "claimed": false,
+      "created_at": "2026-05-07T16:32:49.948Z",
+      "composite": 46,
+      "google_review_count": 801
+    },
+    {
+      "slug": "eatn-park-5fq9kc",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "2874 W Liberty Ave, Pittsburgh, PA 15216",
+      "website": "https://locations.eatnpark.com/pa-pittsburgh-4/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:36:17.337Z",
+      "composite": 77,
+      "google_review_count": 1362
+    },
+    {
+      "slug": "eatn-park-xdrjxy",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "1002 Ohio River Blvd, Pittsburgh, PA 15202",
+      "website": "https://locations.eatnpark.com/pa-pittsburgh-2/",
+      "claimed": false,
+      "created_at": "2026-05-09T05:13:29.158Z",
+      "composite": 75,
+      "google_review_count": 2265
+    },
+    {
+      "slug": "eatn-park-0cjrqw",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "9516 University Blvd, Moon Township, PA 15108",
+      "website": "https://locations.eatnpark.com/pa-moon-twsp-41/",
+      "claimed": false,
+      "created_at": "2026-05-09T04:18:40.807Z",
+      "composite": 75,
+      "google_review_count": 1840
+    },
+    {
+      "slug": "eatn-park-phbaz4",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "5220 Library Rd, Bethel Park, PA 15102",
+      "website": "https://locations.eatnpark.com/pa-bethel-park-18/",
+      "claimed": false,
+      "created_at": "2026-05-09T01:41:17.316Z",
+      "composite": 75,
+      "google_review_count": 1486
+    },
+    {
+      "slug": "eatn-park-5og55g",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "7370 McKnight Rd, Pittsburgh, PA 15237",
+      "website": "https://locations.eatnpark.com/pa-pittsburgh-3/",
+      "claimed": false,
+      "created_at": "2026-05-09T05:05:30.883Z",
+      "composite": 75,
+      "google_review_count": 1393
+    },
+    {
+      "slug": "eatn-park-d0g2ny",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "299 Lincoln Hwy, North Versailles Township, PA 15137",
+      "website": "https://locations.eatnpark.com/pa-north-versailles-80/",
+      "claimed": false,
+      "created_at": "2026-05-09T05:31:16.210Z",
+      "composite": 74,
+      "google_review_count": 1516
+    },
+    {
+      "slug": "eatn-park-gv8zs4",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "11746 Frankstown Rd, Pittsburgh, PA 15235",
+      "website": "https://locations.eatnpark.com/pa-pittsburgh-30/",
+      "claimed": false,
+      "created_at": "2026-05-09T01:41:37.737Z",
+      "composite": 74,
+      "google_review_count": 1232
+    },
+    {
+      "slug": "eatn-park-4cvpr8",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "201 Ohio River Blvd, Sewickley, PA 15143",
+      "website": "https://locations.eatnpark.com/pa-sewickley-28/",
+      "claimed": false,
+      "created_at": "2026-05-09T03:27:20.719Z",
+      "composite": 73,
+      "google_review_count": 1377
+    },
+    {
+      "slug": "eatn-park-1ukd1k",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "301 S Hills Village, Pittsburgh, PA 15241",
+      "website": "https://locations.eatnpark.com/pa-pittsburgh-35/",
+      "claimed": false,
+      "created_at": "2026-05-09T03:48:18.913Z",
+      "composite": 69,
+      "google_review_count": 1093
+    },
+    {
+      "slug": "eatn-park-66jq7i",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "849 Freeport Rd, Pittsburgh, PA 15238",
+      "website": "https://locations.eatnpark.com/pa-pittsburgh-87/",
+      "claimed": false,
+      "created_at": "2026-05-07T18:14:25.873Z",
+      "composite": 49,
+      "google_review_count": 1467
+    },
+    {
+      "slug": "eatn-park-widzla",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "930 Butler St, Etna, PA 15223",
+      "website": "https://locations.eatnpark.com/pa-etna-23/",
+      "claimed": false,
+      "created_at": "2026-05-07T18:15:57.080Z",
+      "composite": 48,
+      "google_review_count": 1418
+    },
+    {
+      "slug": "eatn-park-ar4wto",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "5100 Clairton Blvd, Pittsburgh, PA 15236",
+      "website": "https://locations.eatnpark.com/pa-pittsburgh-9/",
+      "claimed": false,
+      "created_at": "2026-05-07T18:00:51.226Z",
+      "composite": 47,
+      "google_review_count": 2467
+    },
+    {
+      "slug": "eatn-park",
+      "name": "Eat'n Park",
+      "name_lc": "eat'n park",
+      "address": "3380 Washington Rd #1, McMurray, PA 15317",
+      "website": "https://locations.eatnpark.com/pa-memurray-22/",
+      "claimed": false,
+      "created_at": "2026-05-07T16:34:43.132Z",
+      "composite": 47,
+      "google_review_count": 1043
+    },
+    {
+      "slug": "pasquales-pizzeria",
+      "name": "Pasquale's Pizzeria",
+      "name_lc": "pasquale's pizzeria",
+      "address": "309 Freeport Rd, Aspinwall, PA 15215",
+      "website": "http://pasqualespizzeria.com/locations/aspinwall.html",
+      "claimed": false,
+      "created_at": "2026-05-07T18:02:23.422Z",
+      "composite": 38,
+      "google_review_count": null
+    },
+    {
+      "slug": "caliente-pizza-drafthouse",
+      "name": "Caliente Pizza & Drafthouse",
+      "name_lc": "caliente pizza & drafthouse",
+      "address": "225 Commercial Ave, Aspinwall, PA 15215",
+      "website": "https://pizzadrafthouse.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T18:07:19.410Z",
+      "composite": 48,
+      "google_review_count": 929
+    },
+    {
+      "slug": "caliente-pizza-drafthouse-xhy9qa",
+      "name": "Caliente Pizza & Drafthouse",
+      "name_lc": "caliente pizza & drafthouse",
+      "address": "4706 William Flinn Hwy, Allison Park, PA 15101",
+      "website": "http://www.pizzadrafthouse.com/",
+      "claimed": false,
+      "created_at": "2026-05-07T18:40:24.452Z",
+      "composite": 38,
+      "google_review_count": null
+    },
+    {
+      "slug": "the-coffee-tree-roasters",
+      "name": "The Coffee Tree Roasters",
+      "name_lc": "the coffee tree roasters",
+      "address": "48 Fox Chapel Rd, Pittsburgh, PA 15238",
+      "website": "https://coffeetree.store/",
+      "claimed": false,
+      "created_at": "2026-05-09T01:39:17.231Z",
+      "composite": 76,
+      "google_review_count": 256
+    },
+    {
+      "slug": "the-coffee-tree-roasters-zxlcf4",
+      "name": "The Coffee Tree Roasters",
+      "name_lc": "the coffee tree roasters",
+      "address": "10 Old Clairton Rd, Pittsburgh, PA 15236",
+      "website": "https://coffeetree.store/",
+      "claimed": false,
+      "created_at": "2026-05-09T04:01:55.268Z",
+      "composite": 75,
+      "google_review_count": 343
+    },
+    {
+      "slug": "graze-craze-charcuterie-boards-boxes",
+      "name": "Graze Craze Charcuterie Boards & Boxes",
+      "name_lc": "graze craze charcuterie boards & boxes",
+      "address": "1153 Old Freeport Rd, Pittsburgh, PA 15238",
+      "website": "https://order.toasttab.com/online/graze-craze-pittsburgh-pa",
+      "claimed": false,
+      "created_at": "2026-05-07T18:25:39.313Z",
+      "composite": 41,
+      "google_review_count": 28
+    },
+    {
+      "slug": "wingstop",
+      "name": "Wingstop",
+      "name_lc": "wingstop",
+      "address": "880 Butler St, Pittsburgh, PA 15223",
+      "website": "https://www.wingstop.com/location/wingstop-4050-pittsburgh-pa-15223/menu?y_source=1_MjAxMDM1NjcxNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "claimed": false,
+      "created_at": "2026-05-09T01:59:58.887Z",
+      "composite": 59,
+      "google_review_count": 51
+    },
+    {
+      "slug": "wingstop-wdbgfc",
+      "name": "Wingstop",
+      "name_lc": "wingstop",
+      "address": "216 Summit Park Dr Suite D1, Pittsburgh, PA 15275",
+      "website": "https://www.wingstop.com/location/wingstop-2656-pittsburgh-pa-15275/menu?y_source=1_MTA2Mzg1NDgyMC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "claimed": false,
+      "created_at": "2026-05-09T02:37:21.319Z",
+      "composite": 58,
+      "google_review_count": 140
+    },
+    {
+      "slug": "roots-natural-kitchen",
+      "name": "Roots Natural Kitchen",
+      "name_lc": "roots natural kitchen",
+      "address": "5231 Liberty Ave, Pittsburgh, PA 15224",
+      "website": "https://www.rootsnaturalkitchen.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:03:01.932Z",
+      "composite": 76,
+      "google_review_count": 224
+    },
+    {
+      "slug": "roots-natural-kitchen-zfojfu",
+      "name": "Roots Natural Kitchen",
+      "name_lc": "roots natural kitchen",
+      "address": "1644 Cochran Rd, Pittsburgh, PA 15220",
+      "website": "https://www.rootsnaturalkitchen.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T04:02:52.574Z",
+      "composite": 63,
+      "google_review_count": 184
+    },
+    {
+      "slug": "roots-natural-kitchen-5eckzi",
+      "name": "Roots Natural Kitchen",
+      "name_lc": "roots natural kitchen",
+      "address": "4885 McKnight Rd, Pittsburgh, PA 15237",
+      "website": "https://www.rootsnaturalkitchen.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:15:06.248Z",
+      "composite": 61,
+      "google_review_count": 187
+    },
+    {
+      "slug": "roots-natural-kitchen-z6uqnm",
+      "name": "Roots Natural Kitchen",
+      "name_lc": "roots natural kitchen",
+      "address": "227 Summit Park Dr, Pittsburgh, PA 15275",
+      "website": "https://www.rootsnaturalkitchen.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:34:20.847Z",
+      "composite": 61,
+      "google_review_count": 72
+    },
+    {
+      "slug": "einstein-bros-bagels-i6ampk",
+      "name": "Einstein Bros. Bagels",
+      "name_lc": "einstein bros. bagels",
+      "address": "4910 Baum Blvd, Pittsburgh, PA 15213",
+      "website": "https://locations.einsteinbros.com/us/pa/pittsburgh/4910-baum-blvd?y_source=1_OTA0OTk1Ni03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "claimed": false,
+      "created_at": "2026-05-09T03:07:56.836Z",
+      "composite": 73,
+      "google_review_count": 398
+    },
+    {
+      "slug": "moes-southwest-grill",
+      "name": "Moe's Southwest Grill",
+      "name_lc": "moe's southwest grill",
+      "address": "3616 Fifth Ave, Pittsburgh, PA 15213",
+      "website": "https://locations.moes.com/pa/pittsburgh/3616-fifth-ave?utm_source=google&utm_medium=organic&utm_campaign=locations_partner",
+      "claimed": false,
+      "created_at": "2026-05-09T02:22:48.245Z",
+      "composite": 66,
+      "google_review_count": 118
+    },
+    {
+      "slug": "the-original-pancake-house",
+      "name": "The Original Pancake House",
+      "name_lc": "the original pancake house",
+      "address": "30 McIntyre Square Dr, Pittsburgh, PA 15237",
+      "website": "http://www.originalpancakehousepittsburgh.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:24:04.423Z",
+      "composite": 72,
+      "google_review_count": 924
+    },
+    {
+      "slug": "noodles-and-company-gyai6q",
+      "name": "Noodles and Company",
+      "name_lc": "noodles and company",
+      "address": "301 S Hills Village, Pittsburgh, PA 15241",
+      "website": "https://locations.noodles.com/pa/pittsburgh/301-south-hills-village?utm_campaign=soci&utm_medium=organic&utm_source=google",
+      "claimed": false,
+      "created_at": "2026-05-09T03:58:31.317Z",
+      "composite": 72,
+      "google_review_count": 209
+    },
+    {
+      "slug": "first-watch",
+      "name": "First Watch",
+      "name_lc": "first watch",
+      "address": "215 Settlers Ridge Center Dr, Pittsburgh, PA 15205",
+      "website": "http://www.firstwatch.com/locations/settlers-ridge/?utm_source=gbp-listing&utm_medium=organic&utm_campaign=gbp-listing&utm_content=settlers-ridge",
+      "claimed": false,
+      "created_at": "2026-05-09T02:33:40.890Z",
+      "composite": 78,
+      "google_review_count": 1161
+    },
+    {
+      "slug": "first-watch-zlovci",
+      "name": "First Watch",
+      "name_lc": "first watch",
+      "address": "9176 Covenant Ave, Pittsburgh, PA 15237",
+      "website": "http://www.firstwatch.com/locations/mccandless/?utm_source=gbp-listing&utm_medium=organic&utm_campaign=gbp-listing&utm_content=mccandless",
+      "claimed": false,
+      "created_at": "2026-05-09T02:42:57.890Z",
+      "composite": 76,
+      "google_review_count": 1459
+    },
+    {
+      "slug": "first-watch-50gyr4",
+      "name": "First Watch",
+      "name_lc": "first watch",
+      "address": "100 Siena Dr Suite 190, Upper St. Clair Township, PA 15241",
+      "website": "http://www.firstwatch.com/locations/siena/?utm_source=gbp-listing&utm_medium=organic&utm_campaign=gbp-listing&utm_content=siena",
+      "claimed": false,
+      "created_at": "2026-05-09T03:45:47.767Z",
+      "composite": 72,
+      "google_review_count": 409
+    },
+    {
+      "slug": "hello-bistro-vqowvw",
+      "name": "Hello Bistro",
+      "name_lc": "hello bistro",
+      "address": "3605 Forbes Ave, Pittsburgh, PA 15213",
+      "website": "https://www.hellobistro.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T03:33:18.702Z",
+      "composite": 71,
+      "google_review_count": 682
+    },
+    {
+      "slug": "hello-bistro",
+      "name": "Hello Bistro",
+      "name_lc": "hello bistro",
+      "address": "701 Providence Blvd, Pittsburgh, PA 15237",
+      "website": "https://www.hellobistro.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:41:59.527Z",
+      "composite": 70,
+      "google_review_count": 785
+    },
+    {
+      "slug": "hello-bistro-k9mkbc",
+      "name": "Hello Bistro",
+      "name_lc": "hello bistro",
+      "address": "100 Siena Dr Suite 250, Upper St. Clair Township, PA 15241",
+      "website": "https://www.hellobistro.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T03:49:58.990Z",
+      "composite": 66,
+      "google_review_count": 400
+    },
+    {
+      "slug": "brueggers-bagels-ewplxk",
+      "name": "Bruegger's Bagels",
+      "name_lc": "bruegger's bagels",
+      "address": "1801 E Carson St, Pittsburgh, PA 15203",
+      "website": "https://locations.brueggers.com/us/pa/pittsburgh/1801-east-carson-street?y_source=1_OTczMjE0Ny03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "claimed": false,
+      "created_at": "2026-05-09T04:31:59.284Z",
+      "composite": 75,
+      "google_review_count": 320
+    },
+    {
+      "slug": "brueggers-bagels-s3ajlw",
+      "name": "Bruegger's Bagels",
+      "name_lc": "bruegger's bagels",
+      "address": "5213 Library Rd, Bethel Park, PA 15102",
+      "website": "https://locations.brueggers.com/us/pa/bethel-park/5213-library-road?y_source=1_OTczMjEyMS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "claimed": false,
+      "created_at": "2026-05-09T03:59:10.392Z",
+      "composite": 73,
+      "google_review_count": 254
+    },
+    {
+      "slug": "brueggers-bagels-ltwitw",
+      "name": "Bruegger's Bagels",
+      "name_lc": "bruegger's bagels",
+      "address": "1719 Murray Ave, Pittsburgh, PA 15217",
+      "website": "https://locations.brueggers.com/us/pa/pittsburgh/1719-murray-ave?y_source=1_OTczMjA2NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "claimed": false,
+      "created_at": "2026-05-09T03:21:25.810Z",
+      "composite": 73,
+      "google_review_count": 213
+    },
+    {
+      "slug": "nickys-thai-kitchen",
+      "name": "Nicky's Thai Kitchen",
+      "name_lc": "nicky's thai kitchen",
+      "address": "856 Western Ave, Pittsburgh, PA 15233",
+      "website": "http://www.nickysthaikitchen.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T02:50:58.733Z",
+      "composite": 81,
+      "google_review_count": 1184
+    },
+    {
+      "slug": "dollar-general",
+      "name": "Dollar General",
+      "name_lc": "dollar general",
+      "address": "2610 S Braddock Ave, Swissvale, PA 15218",
+      "website": "https://www.dollargeneral.com/store-directory/pa/swissvale/17869",
+      "claimed": false,
+      "created_at": "2026-05-09T02:56:56.127Z",
+      "composite": 63,
+      "google_review_count": 312
+    },
+    {
+      "slug": "mike-tonys-gyros-nlzcry",
+      "name": "Mike & Tony's Gyros",
+      "name_lc": "mike & tony's gyros",
+      "address": "1414 E Carson St, Pittsburgh, PA 15203",
+      "website": "https://www.mikeandtonysgyros.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T04:38:57.214Z",
+      "composite": 69,
+      "google_review_count": 1321
+    },
+    {
+      "slug": "mike-tonys-gyros",
+      "name": "Mike & Tony's Gyros",
+      "name_lc": "mike & tony's gyros",
+      "address": "2935 W Liberty Ave, Pittsburgh, PA 15216",
+      "website": "https://www.mikeandtonysgyros.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T03:04:55.324Z",
+      "composite": 69,
+      "google_review_count": 549
+    },
+    {
+      "slug": "tasty-taquitos-dedmqi",
+      "name": "Tasty Taquitos",
+      "name_lc": "tasty taquitos",
+      "address": "301 North Ave, Pittsburgh, PA 15209",
+      "website": "https://www.tastytaquitos.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T03:15:37.025Z",
+      "composite": 61,
+      "google_review_count": 120
+    },
+    {
+      "slug": "tasty-taquitos-gr2rry",
+      "name": "Tasty Taquitos",
+      "name_lc": "tasty taquitos",
+      "address": "437 S 27th St, Pittsburgh, PA 15203",
+      "website": "http://www.tastytaquitos.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T03:24:17.117Z",
+      "composite": 60,
+      "google_review_count": 92
+    },
+    {
+      "slug": "fine-wine-good-spirits-ckatuo",
+      "name": "FINE WINE & GOOD SPIRITS",
+      "name_lc": "fine wine & good spirits",
+      "address": "339 Fifth Ave, Pittsburgh, PA 15222",
+      "website": "https://finewineandgoodspirits.com/store-0237",
+      "claimed": false,
+      "created_at": "2026-05-09T04:23:01.997Z",
+      "composite": 66,
+      "google_review_count": 303
+    },
+    {
+      "slug": "fine-wine-good-spirits-pzbtdq",
+      "name": "FINE WINE & GOOD SPIRITS",
+      "name_lc": "fine wine & good spirits",
+      "address": "Noble Manor Shopping Center, 2350 Noblestown Rd, Pittsburgh, PA 15205",
+      "website": "https://finewineandgoodspirits.com/store-0290",
+      "claimed": false,
+      "created_at": "2026-05-09T04:11:38.758Z",
+      "composite": 64,
+      "google_review_count": 299
+    },
+    {
+      "slug": "fine-wine-good-spirits-fzabvy",
+      "name": "FINE WINE & GOOD SPIRITS",
+      "name_lc": "fine wine & good spirits",
+      "address": "2629 Brownsville Rd, Pittsburgh, PA 15227",
+      "website": "https://finewineandgoodspirits.com/store-0261",
+      "claimed": false,
+      "created_at": "2026-05-09T05:02:07.162Z",
+      "composite": 62,
+      "google_review_count": 178
+    },
+    {
+      "slug": "fine-wine-good-spirits-amawzm",
+      "name": "Fine Wine & Good Spirits",
+      "name_lc": "fine wine & good spirits",
+      "address": "230 Yost Blvd, Pittsburgh, PA 15221",
+      "website": "http://www.finewineandgoodspirits.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T03:26:27.875Z",
+      "composite": 60,
+      "google_review_count": 237
+    },
+    {
+      "slug": "fine-wine-good-spirits-tq35ks",
+      "name": "FINE WINE & GOOD SPIRITS",
+      "name_lc": "fine wine & good spirits",
+      "address": "Dormont Village, 2947 W Liberty Ave, Pittsburgh, PA 15216",
+      "website": "https://finewineandgoodspirits.com/store-0218",
+      "claimed": false,
+      "created_at": "2026-05-09T04:49:31.094Z",
+      "composite": 57,
+      "google_review_count": 116
+    },
+    {
+      "slug": "fine-wine-good-spirits",
+      "name": "FINE WINE & GOOD SPIRITS",
+      "name_lc": "fine wine & good spirits",
+      "address": "Lebanon Shops, 300 Mt Lebanon Blvd, Pittsburgh, PA 15234",
+      "website": "https://finewineandgoodspirits.com/store-0274",
+      "claimed": false,
+      "created_at": "2026-05-09T03:19:30.984Z",
+      "composite": 54,
+      "google_review_count": 113
+    },
+    {
+      "slug": "anchor-anvil-coffee-bar-ltyj0c",
+      "name": "Anchor & Anvil Coffee Bar",
+      "name_lc": "anchor & anvil coffee bar",
+      "address": "7221 Church Ave, Ben Avon, PA 15202",
+      "website": "http://anchoranvilcoffee.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T04:02:53.553Z",
+      "composite": 75,
+      "google_review_count": 371
+    },
+    {
+      "slug": "brighton-hot-dog-shoppe",
+      "name": "Brighton Hot Dog Shoppe",
+      "name_lc": "brighton hot dog shoppe",
+      "address": "5990 University Blvd, Moon Township, PA 15108",
+      "website": "https://www.brightonhotdogshoppes.com/",
+      "claimed": false,
+      "created_at": "2026-05-09T04:20:47.788Z",
+      "composite": 64,
+      "google_review_count": 348
+    }
+  ],
+  "name_collision_clusters": [
+    {
+      "name_lc": "lotus spa",
+      "addresses": [
+        "418 Perry Hwy, Pittsburgh, PA 15229",
+        "2535 W Liberty Ave, Pittsburgh, PA 15226"
+      ],
+      "sample_slugs": [
+        "lotus-spa",
+        "lotus-spa-cebpki"
+      ]
+    },
+    {
+      "name_lc": "deluca's diner",
+      "addresses": [
+        "2015 Penn Ave, Pittsburgh, PA 15222",
+        "1110 Park Manor Blvd, Pittsburgh, PA 15205"
+      ],
+      "sample_slugs": [
+        "delucas-diner",
+        "delucas-diner-5hz5bq"
+      ]
+    },
+    {
+      "name_lc": "pizza parma",
+      "addresses": [
+        "963 Liberty Ave, Pittsburgh, PA 15222",
+        "217 S Highland Ave, Pittsburgh, PA 15206"
+      ],
+      "sample_slugs": [
+        "pizza-parma",
+        "pizza-parma-4ld0pm"
+      ]
+    },
+    {
+      "name_lc": "asian cafe",
+      "addresses": [
+        "1724 William Flinn Hwy, Glenshaw, PA 15116",
+        "701 Cooke Dr, Pittsburgh, PA 15234"
+      ],
+      "sample_slugs": [
+        "asian-cafe",
+        "asian-cafe-uoqcwm"
+      ]
+    },
+    {
+      "name_lc": "pamela's diner",
+      "addresses": [
+        "3703 Forbes Ave, Pittsburgh, PA 15213",
+        "60 21st St, Pittsburgh, PA 15222"
+      ],
+      "sample_slugs": [
+        "pamelas-diner",
+        "pamelas-diner-9ojzys"
+      ]
+    },
+    {
+      "name_lc": "armstrong's",
+      "addresses": [
+        "1136 Thorn Run Rd, Coraopolis, PA 15108",
+        "5301 Grove Rd, Pittsburgh, PA 15236"
+      ],
+      "sample_slugs": [
+        "armstrongs",
+        "armstrongs-j6pqio"
+      ]
+    },
+    {
+      "name_lc": "al's fish & chicken",
+      "addresses": [
+        "1860 Centre Ave, Pittsburgh, PA 15219",
+        "1021 Duquesne Blvd, Duquesne, PA 15110"
+      ],
+      "sample_slugs": [
+        "als-fish-chicken",
+        "als-fish-chicken-j9vbs8"
+      ]
+    }
+  ]
+}
