@@ -599,7 +599,7 @@ export default async function BusinessPage({ params }: PageProps) {
               {" · "}
               {biz.address}
             </p>
-            <p className="mt-2 font-body text-xs text-brand-black/45">
+            <p className="mt-2 font-body text-xs text-brand-black/60">
               Updated Spring 2026
             </p>
           </header>

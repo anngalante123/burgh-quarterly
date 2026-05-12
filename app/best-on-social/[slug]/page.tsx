@@ -166,7 +166,7 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
                 </span>
               ) : null}
               {dateLabel ? (
-                <span className="font-body text-xs text-brand-black/45">
+                <span className="font-body text-xs text-brand-black/60">
                   Posted {dateLabel}
                 </span>
               ) : null}

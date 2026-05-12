@@ -318,7 +318,7 @@ export function PeerScoreboard({
               <li
                 key={`div-${i}`}
                 aria-hidden="true"
-                className="flex items-center gap-3 py-2 text-brand-black/45"
+                className="flex items-center gap-3 py-2 text-brand-black/60"
               >
                 <span className="flex-1 border-t border-dashed border-brand-black/20" />
                 <span className="font-display text-[0.58rem] font-semibold uppercase tracking-[0.18em]">
@@ -348,7 +348,7 @@ export function PeerScoreboard({
                   "font-display font-black tabular-nums tracking-[-0.01em]",
                   row.isCurrent
                     ? "text-brand-black text-xl md:text-2xl"
-                    : "text-brand-black/45 text-base md:text-lg",
+                    : "text-brand-black/60 text-base md:text-lg",
                 )}
               >
                 #{peer.rank}
@@ -443,7 +443,7 @@ export function PeerScoreboard({
                     "font-display font-black tabular-nums tracking-[-0.01em]",
                     isCurrent
                       ? "text-brand-black text-base md:text-lg"
-                      : "text-brand-black/45 text-sm md:text-base",
+                      : "text-brand-black/60 text-sm md:text-base",
                   )}
                 >
                   #{peer.rank}

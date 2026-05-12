@@ -365,7 +365,7 @@ export function TierProportionBar({ currentSlug, peers }: Props) {
             </li>
           );
         })}
-        <li className="ml-1 font-body text-[0.62rem] uppercase tracking-[0.14em] text-brand-black/40">
+        <li className="ml-1 font-body text-[0.62rem] uppercase tracking-[0.14em] text-brand-black/60">
           {pinnedZone ? "esc to close" : "tap a tier"}
         </li>
       </ul>

@@ -177,7 +177,7 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
               <span
                 className={cn(
                   "tabular-nums",
-                  isActive ? "text-brand-black/60" : "text-brand-black/40",
+                  isActive ? "text-brand-black/60" : "text-brand-black/60",
                 )}
               >
                 {count}
@@ -209,7 +209,7 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
                 <span
                   className={cn(
                     "tabular-nums",
-                    isActive ? "text-brand-black/60" : "text-brand-black/40",
+                    isActive ? "text-brand-black/60" : "text-brand-black/60",
                   )}
                 >
                   {n.count}
@@ -301,7 +301,7 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
                   </div>
                   <span
                     aria-hidden="true"
-                    className="shrink-0 font-display text-[0.7rem] text-brand-black/40 group-hover:text-brand-purple group-hover:translate-x-1 transition-transform mt-1"
+                    className="shrink-0 font-display text-[0.7rem] text-brand-black/60 group-hover:text-brand-purple group-hover:translate-x-1 transition-transform mt-1"
                   >
                     →
                   </span>

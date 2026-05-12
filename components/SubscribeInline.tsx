@@ -101,7 +101,7 @@ export function SubscribeInline() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           disabled={state.kind === "submitting"}
-          className="flex-1 px-4 py-3 bg-white border border-brand-black/20 font-body text-sm md:text-base text-brand-black placeholder:text-brand-black/40 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/20"
+          className="flex-1 px-4 py-3 bg-white border border-brand-black/20 font-body text-sm md:text-base text-brand-black placeholder:text-brand-black/60 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/20"
         />
         {reduced ? (
           <button

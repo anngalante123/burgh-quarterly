@@ -148,7 +148,7 @@ export function MomentumSparkline({
         </div>
 
         {/* Axis */}
-        <div className="mt-2 flex items-center justify-between font-body text-[0.65rem] tracking-[0.18em] uppercase text-brand-black/45">
+        <div className="mt-2 flex items-center justify-between font-body text-[0.65rem] tracking-[0.18em] uppercase text-brand-black/60">
           <span>30 days ago</span>
           <span>Today</span>
         </div>
@@ -164,7 +164,7 @@ export function MomentumSparkline({
         </p>
 
         {handle && hasRealData && (
-          <p className="mt-1 font-body text-[0.7rem] text-brand-black/45">
+          <p className="mt-1 font-body text-[0.7rem] text-brand-black/60">
             From <span className="text-brand-purple">@</span>
             <span className="text-brand-black/70">{handle.replace(/^@/, "")}</span>{" "}
             · last 30 days.

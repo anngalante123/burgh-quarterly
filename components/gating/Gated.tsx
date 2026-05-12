@@ -100,7 +100,7 @@ export function Gated({ label, businessName, source, children }: Props) {
               placeholder="you@example.com"
               aria-label="Email address"
               disabled={state === "loading"}
-              className="flex-1 min-w-0 px-3 py-2.5 bg-brand-lavender text-brand-black font-body text-sm placeholder:text-brand-black/40 focus:outline-2 focus:outline-brand-lime"
+              className="flex-1 min-w-0 px-3 py-2.5 bg-brand-lavender text-brand-black font-body text-sm placeholder:text-brand-black/60 focus:outline-2 focus:outline-brand-lime"
             />
             <button
               type="submit"

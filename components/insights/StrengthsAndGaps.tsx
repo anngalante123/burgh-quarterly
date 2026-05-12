@@ -67,7 +67,7 @@ export function StrengthsAndGaps({ strengths, gaps, familyShort }: Props) {
                         {fmtVerdict(h.stat.value, h.metricKey as string)}
                       </span>
                     </span>
-                    <span className="block font-body text-[0.68rem] uppercase tracking-[0.1em] text-brand-black/45 mb-1">
+                    <span className="block font-body text-[0.68rem] uppercase tracking-[0.1em] text-brand-black/60 mb-1">
                       {comparisonPhrase(h.stat.label, h.stat.pctVsMedian)}
                     </span>
                     <span className="block font-body text-sm text-brand-black/75 leading-snug">
@@ -114,7 +114,7 @@ export function StrengthsAndGaps({ strengths, gaps, familyShort }: Props) {
                         {fmtVerdict(h.stat.value, h.metricKey as string)}
                       </span>
                     </span>
-                    <span className="block font-body text-[0.68rem] uppercase tracking-[0.1em] text-brand-black/45 mb-1">
+                    <span className="block font-body text-[0.68rem] uppercase tracking-[0.1em] text-brand-black/60 mb-1">
                       {h.stat.value === 0
                         ? `${h.stat.label} · zero this quarter`
                         : comparisonPhrase(h.stat.label, h.stat.pctVsMedian)}

@@ -27,7 +27,7 @@ export function CreatorReadyAudit({ audit }: CreatorReadyAuditProps) {
           </h2>
           <span className="font-display text-[0.65rem] font-semibold tabular-nums tracking-[0.14em] text-brand-black">
             <span className="text-brand-lime font-black">{passed}</span>
-            <span className="text-brand-black/40"> / {total} passing</span>
+            <span className="text-brand-black/60"> / {total} passing</span>
           </span>
         </div>
 

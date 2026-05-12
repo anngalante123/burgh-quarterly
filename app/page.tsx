@@ -262,7 +262,7 @@ export default async function Home() {
                     </span>
                     <span
                       aria-hidden="true"
-                      className="font-display text-base md:text-lg text-brand-black/40 group-hover:text-brand-purple group-hover:translate-x-1 transition-all"
+                      className="font-display text-base md:text-lg text-brand-black/60 group-hover:text-brand-purple group-hover:translate-x-1 transition-all"
                     >
                       →
                     </span>

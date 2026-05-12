@@ -98,7 +98,7 @@ export default function BestOnSocialIndex() {
                       );
                     })}
                     {a.items.length > 3 ? (
-                      <span className="font-body text-xs text-brand-black/45">
+                      <span className="font-body text-xs text-brand-black/60">
                         + {a.items.length - 3} more
                       </span>
                     ) : null}

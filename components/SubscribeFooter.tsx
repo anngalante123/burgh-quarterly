@@ -82,7 +82,7 @@ export function SubscribeFooter({ businessName }: Props) {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
                 aria-label="Email address"
-                className="flex-1 px-4 py-3 bg-brand-lavender text-brand-black font-body text-sm placeholder:text-brand-black/40 focus:outline-2 focus:outline-brand-lime"
+                className="flex-1 px-4 py-3 bg-brand-lavender text-brand-black font-body text-sm placeholder:text-brand-black/60 focus:outline-2 focus:outline-brand-lime"
               />
               <button
                 type="submit"

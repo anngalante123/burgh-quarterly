@@ -294,7 +294,7 @@ function LeaderboardRow({ row }: { row: GlobalRankingRow }) {
         {/* Arrow */}
         <span
           aria-hidden="true"
-          className="font-display text-brand-black/40 group-hover:text-brand-purple transition-colors text-base md:text-lg"
+          className="font-display text-brand-black/60 group-hover:text-brand-purple transition-colors text-base md:text-lg"
         >
           →
         </span>

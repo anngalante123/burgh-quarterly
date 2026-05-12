@@ -86,7 +86,7 @@ export function BusinessPageTabs({
               <span
                 className={cn(
                   "font-body text-[0.62rem] md:text-[0.7rem] uppercase tracking-[0.14em]",
-                  isActive ? "text-brand-lavender/55" : "text-brand-black/45",
+                  isActive ? "text-brand-lavender/55" : "text-brand-black/60",
                 )}
               >
                 {t.sublabel}

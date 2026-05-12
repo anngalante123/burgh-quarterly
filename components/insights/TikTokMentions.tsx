@@ -199,7 +199,7 @@ export function TikTokMentions({ data, businessName }: Props) {
           </div>
         )}
 
-        <p className="mt-4 font-body text-[0.68rem] text-brand-black/45 leading-relaxed">
+        <p className="mt-4 font-body text-[0.68rem] text-brand-black/60 leading-relaxed">
           Search query: &ldquo;{data.query}&rdquo;. Top 30 results from
           TikTok&apos;s public search. Total plays counts views across
           videos in the result set; some queries match loosely so very

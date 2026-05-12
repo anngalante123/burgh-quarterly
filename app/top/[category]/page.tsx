@@ -253,7 +253,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
                     <div>
                       <h2 className="font-display font-black uppercase tracking-[-0.01em] text-brand-black text-[clamp(1.5rem,4vw,2.5rem)] leading-[1.05] hyphens-manual">
                         {artifact.business.name}
-                        <span className="text-brand-black/40 font-medium text-base md:text-lg tracking-normal normal-case ml-2">
+                        <span className="text-brand-black/60 font-medium text-base md:text-lg tracking-normal normal-case ml-2">
                           / {artifact.business.neighborhood}
                         </span>
                       </h2>

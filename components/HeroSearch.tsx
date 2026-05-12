@@ -221,7 +221,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
           aria-controls="hero-search-results"
           role="combobox"
           autoComplete="off"
-          className="w-full border-2 border-brand-black bg-white px-4 py-3 pr-12 font-body text-base text-brand-black placeholder:text-brand-black/40 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/30"
+          className="w-full border-2 border-brand-black bg-white px-4 py-3 pr-12 font-body text-base text-brand-black placeholder:text-brand-black/60 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/30"
         />
         {hasActiveFilter && (
           <button
@@ -266,7 +266,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
               <span
                 className={cn(
                   "tabular-nums",
-                  isActive ? "text-brand-black/60" : "text-brand-black/40",
+                  isActive ? "text-brand-black/60" : "text-brand-black/60",
                 )}
               >
                 {count}
@@ -297,7 +297,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
               <span
                 className={cn(
                   "tabular-nums",
-                  isActive ? "text-brand-black/60" : "text-brand-black/40",
+                  isActive ? "text-brand-black/60" : "text-brand-black/60",
                 )}
               >
                 {n.count}
@@ -307,7 +307,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
         })}
         {tailNeighborhoods.length > ROTATING_COUNT && (
           <span
-            className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 text-brand-black/45"
+            className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 text-brand-black/60"
             aria-hidden="true"
           >
             +{neighborhoods.length - STABLE_COUNT} more
@@ -410,7 +410,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
                     </div>
                     <span
                       aria-hidden="true"
-                      className="shrink-0 font-display text-[0.7rem] text-brand-black/40 group-hover:text-brand-purple group-hover:translate-x-1 transition-transform mt-1"
+                      className="shrink-0 font-display text-[0.7rem] text-brand-black/60 group-hover:text-brand-purple group-hover:translate-x-1 transition-transform mt-1"
                     >
                       →
                     </span>

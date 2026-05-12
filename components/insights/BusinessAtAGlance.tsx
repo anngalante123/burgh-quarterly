@@ -46,7 +46,7 @@ export function BusinessAtAGlance({ businessName, rows, trend }: Props) {
           </p>
           <h2 className="mt-1.5 font-display font-black uppercase tracking-[-0.02em] text-brand-black text-2xl md:text-3xl leading-[1] [text-wrap:balance]">
             {businessName}{" "}
-            <span className="text-brand-black/40">at a glance.</span>
+            <span className="text-brand-black/60">at a glance.</span>
           </h2>
           <div className="mt-4">
             <SocialTrendPill trend={trend} />
