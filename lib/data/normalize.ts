@@ -5,6 +5,8 @@ import {
   type Category,
 } from "./schemas";
 import { extractKeywordPhrases, type KeywordPhrase } from "./keywords";
+import { isInPittsburghMetro } from "./geo-filter";
+import { isChain } from "./chain-detection";
 
 /**
  * Loose schema for the raw Apify Google Maps record shape.
@@ -315,6 +317,79 @@ export interface NormalizeOptions {
    * (placeId-based slug).
    */
   onSlugCollision?: (base: string, placeId: string) => string | null | void;
+  /**
+   * Default true. When true, records whose address is outside the
+   * Pittsburgh metro window (see `lib/data/geo-filter.ts`) are rejected.
+   * Set false only for callers that need to log the skip reason themselves
+   * (e.g. scripts/ingest-one.ts which checkpoints `skipped_out_of_geo`).
+   */
+  enforceGeoFilter?: boolean;
+  /**
+   * Default true. When true, records whose title matches the national-chain
+   * blocklist (see `lib/data/chain-detection.ts`) are rejected.
+   */
+  enforceChainFilter?: boolean;
+  /**
+   * Default true. When true, multi-word ALL-CAPS titles are title-cased
+   * before being stored as the business name. Single-word stylized brands
+   * (APTEKA, BARRE3, BRGR) are preserved.
+   */
+  normalizeTitleCase?: boolean;
+  /**
+   * Optional callback invoked when a record is rejected by one of the
+   * guards above. Useful for batch-ingest logging.
+   */
+  onSkip?: (reason: SkipReason, info: { title?: string; address?: string }) => void;
+}
+
+export type SkipReason =
+  | "closed"
+  | "missing_core_fields"
+  | "category_unmappable"
+  | "out_of_geo"
+  | "chain"
+  | "schema_invalid";
+
+/**
+ * Title-case a multi-word ALL-CAPS business name. Returns the input
+ * unchanged if it's not a multi-word all-caps string, so single-word
+ * stylized brands (APTEKA, BARRE3, BRGR, SOHO) are preserved.
+ *
+ * Lowercase connectors (and, or, of, in, on, at, to, for, with, the, a, an)
+ * are kept lowercase when not the first word. Two-to-four-letter all-caps
+ * acronyms inside the input (BBQ, USA, NYC) are also preserved.
+ */
+export function normalizeBusinessTitle(input: string): string {
+  if (typeof input !== "string") return input;
+  const trimmed = input.trim();
+  if (!trimmed) return input;
+  // Only touch strings that are ENTIRELY uppercase letters/digits/punct,
+  // with NO lowercase letters anywhere. This is the unambiguous signal.
+  if (/[a-z]/.test(trimmed)) return trimmed;
+  // Multi-word only. Single-word ALL-CAPS = stylized brand, leave alone.
+  const words = trimmed.split(/\s+/);
+  if (words.length < 2) return trimmed;
+  const connectors = new Set([
+    "and", "or", "of", "in", "on", "at", "to", "for", "with", "the", "a", "an",
+  ]);
+  const KNOWN_ACRONYMS = new Set([
+    "BBQ", "USA", "PA", "PGH", "NYC", "DJ", "VR", "AR", "AI", "TV", "DC",
+  ]);
+  return words
+    .map((w, i) => {
+      // Preserve symbols-only tokens (&, /, etc.)
+      if (!/[A-Z0-9]/.test(w)) return w;
+      // Preserve known acronyms (2-4 char all-caps).
+      const stripped = w.replace(/[^A-Z0-9]/g, "");
+      if (KNOWN_ACRONYMS.has(stripped)) return w;
+      const lower = w.toLowerCase();
+      if (i > 0 && connectors.has(lower)) return lower;
+      // Title-case: capitalize first letter and any letter after a hyphen.
+      // Do NOT treat apostrophe as a word boundary (we want "Schmick's"
+      // not "Schmick'S").
+      return lower.replace(/(^|[\s\-])(\w)/g, (_m, sep, ch) => sep + ch.toUpperCase());
+    })
+    .join(" ");
 }
 
 /**
@@ -367,15 +442,53 @@ export function normalizeApifyRecord(
   opts: NormalizeOptions = {},
 ): Business | null {
   const parsed = ApifyGoogleMapsRecordSchema.safeParse(raw);
-  if (!parsed.success) return null;
+  if (!parsed.success) {
+    opts.onSkip?.("schema_invalid", {});
+    return null;
+  }
   const rec = parsed.data;
 
   // Hard skips
-  if (rec.permanentlyClosed === true) return null;
-  if (!rec.title || !rec.address || !rec.placeId) return null;
+  if (rec.permanentlyClosed === true) {
+    opts.onSkip?.("closed", { title: rec.title, address: rec.address ?? undefined });
+    return null;
+  }
+  if (!rec.title || !rec.address || !rec.placeId) {
+    opts.onSkip?.("missing_core_fields", { title: rec.title, address: rec.address ?? undefined });
+    return null;
+  }
+
+  // Geo + chain guards. Default-on so the bulk ingest paths (ingest-30,
+  // migrate-json-to-db) are protected without each caller having to remember.
+  // ingest-one bypasses these and runs its own checks because it wants to
+  // checkpoint the skip reason; pass enforceGeoFilter:false to opt out.
+  if (opts.enforceGeoFilter !== false) {
+    if (!isInPittsburghMetro({
+      address: rec.address,
+      state: rec.state ?? null,
+    })) {
+      opts.onSkip?.("out_of_geo", { title: rec.title, address: rec.address });
+      return null;
+    }
+  }
+  if (opts.enforceChainFilter !== false) {
+    if (isChain({ name: rec.title })) {
+      opts.onSkip?.("chain", { title: rec.title, address: rec.address });
+      return null;
+    }
+  }
 
   const category = mapCategory(rec.categoryName, rec.categories);
-  if (!category) return null;
+  if (!category) {
+    opts.onSkip?.("category_unmappable", { title: rec.title, address: rec.address });
+    return null;
+  }
+
+  // Title normalization: multi-word ALL-CAPS to title case. Single-word
+  // stylized brands (APTEKA, BARRE3) are preserved. Opt out via
+  // normalizeTitleCase:false.
+  const title =
+    opts.normalizeTitleCase !== false ? normalizeBusinessTitle(rec.title) : rec.title;
 
   // Slug + collision handling
   const base = slugify(rec.title);
@@ -438,7 +551,7 @@ export function normalizeApifyRecord(
 
   const candidate: Business = {
     slug,
-    name: rec.title,
+    name: title,
     category,
     neighborhood: rec.neighborhood || "Pittsburgh",
     address: rec.address,
