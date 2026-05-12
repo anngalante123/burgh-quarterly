@@ -139,8 +139,8 @@ export default async function Home() {
               We don&apos;t rank taste,{" "}
               <span className="font-semibold text-brand-black">
                 we rank the conversation
-              </span>
-              . Read the index, see who&apos;s climbing, and watch your
+              </span>.{" "}
+              Read the index, see who&apos;s climbing, and watch your
               own block in real time.
             </p>
           </Reveal>
@@ -169,7 +169,7 @@ export default async function Home() {
               />
               <StatPair
                 label="Icons"
-                value={tc.icons.toString()}
+                value={Math.min(tc.icons, 100).toString()}
                 accent="bg-brand-lime"
               />
               <StatPair
@@ -441,12 +441,11 @@ export default async function Home() {
               We don&apos;t rank{" "}
               <span className="line-through decoration-brand-purple decoration-4">
                 taste
-              </span>
-              . We rank the{" "}
+              </span>.{" "}
+              We rank the{" "}
               <span className="bg-brand-lime px-2 box-decoration-clone">
                 conversation
-              </span>
-              .
+              </span>.
             </p>
             <Link
               href="/about"

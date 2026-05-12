@@ -134,19 +134,6 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
               </div>
             )}
 
-            {/* Engagement rate badge, only on the engagement-rate list. */}
-            {item.engagement_rate !== undefined && item.followers !== undefined && (
-              <div className="mt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <span className="inline-flex items-center bg-brand-lime text-brand-black font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em] px-2 py-0.5">
-                  {(item.engagement_rate * 100).toFixed(1)}% engagement rate
-                </span>
-                <span className="font-body text-[0.7rem] text-brand-black/55">
-                  {item.likes.toLocaleString()} likes on{" "}
-                  {item.followers.toLocaleString()} followers
-                </span>
-              </div>
-            )}
-
             <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
               {item.platform === "instagram" ? (
                 <span className="font-display text-base md:text-lg font-black tabular-nums text-brand-black">

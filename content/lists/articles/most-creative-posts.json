@@ -2,9 +2,9 @@
   "slug": "most-creative-posts",
   "kind": "posts",
   "title": "The Most Creative Posts From Pittsburgh Small Businesses",
-  "subtitle": "Judged by Claude on visual concept, caption craft, format fit, and surprise. Not ranked by likes.",
+  "subtitle": "The Pittsburgh small-business posts that took the biggest creative swing this quarter. Returns Issue 02.",
   "angle": "the IG posts that took risks, made craft choices, or said something specific this quarter, ranked by editorial judgment instead of follower count.",
-  "intro": "It looks like the post data didn't come through, the business names, captions, and post details are all showing as empty, so there's nothing specific to tease or reference yet.\n\nOnce you share the Top 6 posts with business names, caption text, visual descriptions, and scores, I can write the full editorial intro with the concrete details it needs to work.",
+  "intro": "The Most Creative Posts list returns in Issue 02. Spring 2026's dataset didn't have enough vision-scored entries to publish a Top 6 with confidence. Subscribe to the index and we'll surface the list the moment it's ready.",
   "items": [],
   "generated_at": "2026-05-10T23:55:35.740Z",
   "model": "claude-haiku-4-5-20251001 (vision) + claude-sonnet-4-6 (intro)"
