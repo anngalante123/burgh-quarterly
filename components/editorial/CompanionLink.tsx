@@ -35,7 +35,7 @@ export function CompanionLink({
   const kickerClass =
     accent === "lime" ? "text-brand-black" : "text-brand-purple";
   const kickerBg =
-    accent === "lime" ? "bg-brand-lime" : "bg-brand-off-white";
+    accent === "lime" ? "bg-brand-lime" : "bg-brand-lavender";
 
   return (
     <Link

@@ -119,7 +119,7 @@ const TIER_PILL: Record<Tier, string> = {
   icons:
     "bg-brand-lime text-brand-black border border-brand-black/10 rounded-sm",
   ones_to_watch:
-    "bg-brand-purple text-brand-off-white border border-brand-purple rounded-full",
+    "bg-brand-purple text-brand-lavender border border-brand-purple rounded-full",
   neighborhood_staples:
     "bg-brand-cream text-brand-black border border-brand-black/15 rounded-full",
 };

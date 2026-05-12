@@ -26,7 +26,7 @@ const FOOTER_LINKS: { label: string; href: string }[] = [
 
 export function Colophon() {
   return (
-    <footer className="w-full bg-brand-black text-brand-off-white/70">
+    <footer className="w-full bg-brand-black text-brand-lavender/70">
       <div className="mx-auto max-w-7xl px-6 py-8 flex flex-col gap-6">
         {/* Row 1, persistent nav so deep pages stay reachable. */}
         <nav
@@ -37,7 +37,7 @@ export function Colophon() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-display text-[0.7rem] uppercase tracking-[0.18em] text-brand-off-white/65 hover:text-brand-lime transition-colors"
+              className="font-display text-[0.7rem] uppercase tracking-[0.18em] text-brand-lavender/65 hover:text-brand-lime transition-colors"
             >
               {link.label}
             </Link>
@@ -52,7 +52,7 @@ export function Colophon() {
               href="https://run-relay.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand-off-white hover:text-brand-lime transition-colors underline-offset-2 hover:underline"
+              className="text-brand-lavender hover:text-brand-lime transition-colors underline-offset-2 hover:underline"
             >Relay</a>,{" "}
             Pittsburgh&apos;s local creator-matching platform.
           </p>

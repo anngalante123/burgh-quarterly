@@ -34,7 +34,7 @@ const DIRECTION_STYLES: Record<Direction, { badge: string; glyph: string; label:
     label: "Steady",
   },
   down: {
-    badge: "bg-brand-black text-brand-off-white",
+    badge: "bg-brand-black text-brand-lavender",
     glyph: "↓",
     label: "Down",
   },

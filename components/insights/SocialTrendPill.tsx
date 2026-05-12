@@ -21,7 +21,7 @@ const BUCKET_STYLE: Record<
   },
   citys_talking: {
     bg: "bg-brand-purple",
-    text: "text-brand-off-white",
+    text: "text-brand-lavender",
     symbol: "◆",
   },
   quiet_quarter: {
@@ -31,7 +31,7 @@ const BUCKET_STYLE: Record<
   },
   losing_ground: {
     bg: "bg-brand-black",
-    text: "text-brand-off-white",
+    text: "text-brand-lavender",
     symbol: "▼",
   },
 };

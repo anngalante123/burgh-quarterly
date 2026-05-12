@@ -73,7 +73,7 @@ export function InstagramEmbedPreview({
         {/* Subtle "Instagram" tag in the corner so the brand is clear */}
         <span
           aria-hidden="true"
-          className="absolute top-3 left-3 font-display text-[0.55rem] font-semibold uppercase tracking-[0.18em] text-brand-off-white bg-brand-black/60 px-1.5 py-0.5"
+          className="absolute top-3 left-3 font-display text-[0.55rem] font-semibold uppercase tracking-[0.18em] text-brand-lavender bg-brand-black/60 px-1.5 py-0.5"
         >
           Instagram
         </span>

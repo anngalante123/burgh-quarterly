@@ -28,7 +28,7 @@ const PRIORITY_CLASS: Record<
   string
 > = {
   high: "bg-brand-lime text-brand-black",
-  medium: "bg-brand-purple text-brand-off-white",
+  medium: "bg-brand-purple text-brand-lavender",
   low: "bg-brand-cream text-brand-black border border-brand-black/25",
 };
 

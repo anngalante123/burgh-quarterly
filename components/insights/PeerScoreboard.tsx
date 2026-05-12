@@ -44,7 +44,7 @@ const TIER_SHORT: Record<Tier, string> = {
 
 const TIER_PILL_CLASS: Record<Tier, string> = {
   icons: "bg-brand-lime text-brand-black",
-  ones_to_watch: "bg-brand-purple text-brand-off-white",
+  ones_to_watch: "bg-brand-purple text-brand-lavender",
   neighborhood_staples:
     "bg-brand-cream text-brand-black border border-brand-black/25",
 };

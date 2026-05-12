@@ -20,7 +20,7 @@ export const contentType = "image/png";
 
 const COLORS = {
   black: "#0F0F0F",
-  offWhite: "#F5F0FA",
+  lavender: "#F5F0FA",
   lime: "#C6F432",
   purple: "#AB35EE",
   cream: "#F5F8E8",
@@ -34,7 +34,7 @@ const TIER_LABEL: Record<string, string> = {
 
 const TIER_COLOR: Record<string, { bg: string; fg: string }> = {
   icons: { bg: COLORS.lime, fg: COLORS.black },
-  ones_to_watch: { bg: COLORS.purple, fg: COLORS.offWhite },
+  ones_to_watch: { bg: COLORS.purple, fg: COLORS.lavender },
   neighborhood_staples: { bg: COLORS.cream, fg: COLORS.black },
 };
 
@@ -59,7 +59,7 @@ export default async function OpengraphImage({
   );
   const tierLabel = TIER_LABEL[score.tier] ?? "RECORD";
   const tierColors = TIER_COLOR[score.tier] ?? {
-    bg: COLORS.offWhite,
+    bg: COLORS.lavender,
     fg: COLORS.black,
   };
   const rankCategory = score.rank_category ?? null;
@@ -71,7 +71,7 @@ export default async function OpengraphImage({
           width: "100%",
           height: "100%",
           background: COLORS.black,
-          color: COLORS.offWhite,
+          color: COLORS.lavender,
           display: "flex",
           flexDirection: "column",
           padding: "60px 72px",
@@ -108,7 +108,7 @@ export default async function OpengraphImage({
             </div>
             <div
               style={{
-                color: COLORS.offWhite,
+                color: COLORS.lavender,
                 opacity: 0.55,
                 fontSize: "14px",
                 fontWeight: 600,
@@ -129,7 +129,7 @@ export default async function OpengraphImage({
             letterSpacing: "-2px",
             lineHeight: 0.95,
             marginBottom: "40px",
-            color: COLORS.offWhite,
+            color: COLORS.lavender,
           }}
         >
           {business.name}
@@ -162,7 +162,7 @@ export default async function OpengraphImage({
               style={{
                 fontSize: "28px",
                 fontWeight: 700,
-                color: COLORS.offWhite,
+                color: COLORS.lavender,
                 opacity: 0.85,
                 display: "flex",
               }}
@@ -194,7 +194,7 @@ function DefaultCard() {
         width: "100%",
         height: "100%",
         background: COLORS.black,
-        color: COLORS.offWhite,
+        color: COLORS.lavender,
         display: "flex",
         flexDirection: "column",
         padding: "72px",

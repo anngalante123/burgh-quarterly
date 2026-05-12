@@ -134,7 +134,7 @@ export function SocialState(props: Partial<SocialStateProps>) {
           <span className="text-brand-black/80">{cleanHandle}</span>
           {verified && (
             <span
-              className="ml-1.5 inline-flex items-center justify-center h-3.5 w-3.5 rounded-full bg-brand-purple text-brand-off-white text-[0.55rem] font-bold align-baseline"
+              className="ml-1.5 inline-flex items-center justify-center h-3.5 w-3.5 rounded-full bg-brand-purple text-brand-lavender text-[0.55rem] font-bold align-baseline"
               aria-label="Verified account"
             >
               ✓

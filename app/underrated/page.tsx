@@ -135,7 +135,7 @@ export default async function UnderratedIndexPage() {
               </p>
               <Link
                 href="/request"
-                className="mt-7 inline-flex items-center gap-2 bg-brand-black px-6 py-3 font-display text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-brand-off-white transition-colors hover:bg-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+                className="mt-7 inline-flex items-center gap-2 bg-brand-black px-6 py-3 font-display text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-brand-lavender transition-colors hover:bg-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
               >
                 Get reviewed for Issue 02
                 <span aria-hidden="true">→</span>

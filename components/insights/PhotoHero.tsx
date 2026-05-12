@@ -89,7 +89,7 @@ export function PhotoHero({
                 className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-brand-black/70 via-brand-black/20 to-transparent"
               />
               {/* "View photo" hint */}
-              <span className="absolute top-3 right-3 inline-flex items-center gap-1 bg-brand-black/80 px-2.5 py-1 text-brand-off-white font-display text-[0.62rem] font-semibold uppercase tracking-[0.16em] opacity-0 transition-opacity duration-200 group-hover:opacity-100 motion-reduce:group-hover:opacity-100">
+              <span className="absolute top-3 right-3 inline-flex items-center gap-1 bg-brand-black/80 px-2.5 py-1 text-brand-lavender font-display text-[0.62rem] font-semibold uppercase tracking-[0.16em] opacity-0 transition-opacity duration-200 group-hover:opacity-100 motion-reduce:group-hover:opacity-100">
                 View full
                 <span aria-hidden="true" className="-mt-0.5">
                   ↗
@@ -97,7 +97,7 @@ export function PhotoHero({
               </span>
               {/* Google photos count badge */}
               {googleImagesCount > 0 && (
-                <span className="absolute bottom-3 left-3 inline-flex items-center gap-2 bg-brand-black/85 px-3 py-1.5 text-brand-off-white font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em]">
+                <span className="absolute bottom-3 left-3 inline-flex items-center gap-2 bg-brand-black/85 px-3 py-1.5 text-brand-lavender font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em]">
                   <span
                     aria-hidden="true"
                     className="inline-block h-1.5 w-1.5 rounded-full bg-brand-lime"
@@ -191,7 +191,7 @@ export function PhotoHero({
             <button
               type="button"
               onClick={() => setLightboxIdx(null)}
-              className="absolute top-4 right-4 md:top-6 md:right-6 bg-brand-lime text-brand-black font-display text-xs font-semibold uppercase tracking-[0.16em] px-3 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-off-white"
+              className="absolute top-4 right-4 md:top-6 md:right-6 bg-brand-lime text-brand-black font-display text-xs font-semibold uppercase tracking-[0.16em] px-3 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lavender"
               aria-label="Close photo"
             >
               Close ✕

@@ -51,11 +51,11 @@ export function SubscribeFooter({ businessName }: Props) {
 
   return (
     <Reveal as="section" className="block">
-      <div className="bg-brand-black text-brand-off-white px-6 py-10 md:px-10 md:py-14">
+      <div className="bg-brand-black text-brand-lavender px-6 py-10 md:px-10 md:py-14">
         <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-lime mb-3">
           Issue 02 · Summer 2026
         </p>
-        <h2 className="font-display font-black uppercase tracking-[-0.02em] text-brand-off-white text-2xl md:text-4xl leading-[0.98] [text-wrap:balance]">
+        <h2 className="font-display font-black uppercase tracking-[-0.02em] text-brand-lavender text-2xl md:text-4xl leading-[0.98] [text-wrap:balance]">
           See if {businessName}{" "}
           <span className="bg-brand-lime text-brand-black px-2 box-decoration-clone">
             climbs
@@ -82,7 +82,7 @@ export function SubscribeFooter({ businessName }: Props) {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
                 aria-label="Email address"
-                className="flex-1 px-4 py-3 bg-brand-off-white text-brand-black font-body text-sm placeholder:text-brand-black/40 focus:outline-2 focus:outline-brand-lime"
+                className="flex-1 px-4 py-3 bg-brand-lavender text-brand-black font-body text-sm placeholder:text-brand-black/40 focus:outline-2 focus:outline-brand-lime"
               />
               <button
                 type="submit"
@@ -92,7 +92,7 @@ export function SubscribeFooter({ businessName }: Props) {
                 {state === "loading" ? "..." : "Subscribe"}
               </button>
             </form>
-            <p className="mt-3 font-body text-xs text-brand-off-white/55">
+            <p className="mt-3 font-body text-xs text-brand-lavender/55">
               Quarterly. One email per issue. We&apos;ll tell you if{" "}
               {businessName} moves.
             </p>

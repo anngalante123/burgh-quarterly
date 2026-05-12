@@ -77,7 +77,7 @@ export default function AboutPage() {
               <div>
                 <p className="font-display font-black uppercase tracking-[-0.015em] text-brand-black text-[clamp(1.5rem,3.5vw,2.5rem)] leading-[1.02]">
                   Published by{" "}
-                  <span className="bg-brand-purple text-brand-off-white px-2 box-decoration-clone">
+                  <span className="bg-brand-purple text-brand-lavender px-2 box-decoration-clone">
                     Relay
                   </span>
                   .

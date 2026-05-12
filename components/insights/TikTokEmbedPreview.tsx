@@ -74,7 +74,7 @@ export function TikTokEmbedPreview({
         />
       ) : (
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-brand-black to-brand-purple/30">
-          <span className="font-display text-xs uppercase tracking-[0.18em] text-brand-off-white/55">
+          <span className="font-display text-xs uppercase tracking-[0.18em] text-brand-lavender/55">
             Tap to load
           </span>
         </div>

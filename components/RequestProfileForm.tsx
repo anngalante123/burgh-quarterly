@@ -343,7 +343,7 @@ export function RequestProfileForm() {
         <button
           type="submit"
           disabled={status.kind === "submitting"}
-          className="bg-brand-black text-brand-off-white font-display text-sm font-semibold uppercase tracking-[0.16em] px-6 py-3 hover:bg-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="bg-brand-black text-brand-lavender font-display text-sm font-semibold uppercase tracking-[0.16em] px-6 py-3 hover:bg-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           {status.kind === "submitting" ? "Sending..." : "Submit request"}
         </button>

@@ -72,7 +72,7 @@ export function BusinessPageTabs({
               className={cn(
                 "group inline-flex items-baseline gap-2 px-3 md:px-4 py-2 md:py-2.5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple",
                 isActive
-                  ? "bg-brand-black text-brand-off-white"
+                  ? "bg-brand-black text-brand-lavender"
                   : "bg-white/40 text-brand-black/70 border border-brand-black/15 hover:border-brand-black hover:text-brand-black",
               )}
             >
@@ -86,7 +86,7 @@ export function BusinessPageTabs({
               <span
                 className={cn(
                   "font-body text-[0.62rem] md:text-[0.7rem] uppercase tracking-[0.14em]",
-                  isActive ? "text-brand-off-white/55" : "text-brand-black/45",
+                  isActive ? "text-brand-lavender/55" : "text-brand-black/45",
                 )}
               >
                 {t.sublabel}

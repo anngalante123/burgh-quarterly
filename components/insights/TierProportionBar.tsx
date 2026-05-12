@@ -55,7 +55,7 @@ const TIER_BG: Record<Tier, string> = {
 
 const TIER_TEXT: Record<Tier, string> = {
   icons: "text-brand-black",
-  ones_to_watch: "text-brand-off-white",
+  ones_to_watch: "text-brand-lavender",
   neighborhood_staples: "text-brand-black",
 };
 

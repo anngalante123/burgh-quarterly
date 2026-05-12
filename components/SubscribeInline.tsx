@@ -108,7 +108,7 @@ export function SubscribeInline() {
             ref={buttonRef}
             type="submit"
             disabled={state.kind === "submitting"}
-            className="px-6 py-3 bg-brand-black text-brand-off-white font-display font-semibold uppercase tracking-[0.08em] text-sm hover:bg-brand-purple transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple disabled:opacity-60"
+            className="px-6 py-3 bg-brand-black text-brand-lavender font-display font-semibold uppercase tracking-[0.08em] text-sm hover:bg-brand-purple transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple disabled:opacity-60"
           >
             {state.kind === "submitting" ? "Subscribing…" : "Subscribe"}
           </button>
@@ -120,7 +120,7 @@ export function SubscribeInline() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 320, damping: 22 }}
-            className="px-6 py-3 bg-brand-black text-brand-off-white font-display font-semibold uppercase tracking-[0.08em] text-sm hover:bg-brand-purple transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple disabled:opacity-60"
+            className="px-6 py-3 bg-brand-black text-brand-lavender font-display font-semibold uppercase tracking-[0.08em] text-sm hover:bg-brand-purple transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple disabled:opacity-60"
           >
             {state.kind === "submitting" ? "Subscribing…" : "Subscribe"}
           </motion.button>

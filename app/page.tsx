@@ -315,7 +315,7 @@ export default async function Home() {
                   href={`/best-on-social/${a.slug}`}
                   className={
                     i === 0
-                      ? "group block h-full border border-brand-black bg-brand-black text-brand-off-white p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                      ? "group block h-full border border-brand-black bg-brand-black text-brand-lavender p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                       : "group block h-full border border-brand-black/15 bg-white/70 p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                   }
                 >
@@ -331,7 +331,7 @@ export default async function Home() {
                   <h4
                     className={
                       i === 0
-                        ? "mt-3 font-display font-black uppercase tracking-[-0.015em] text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05] text-brand-off-white [text-wrap:balance]"
+                        ? "mt-3 font-display font-black uppercase tracking-[-0.015em] text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05] text-brand-lavender [text-wrap:balance]"
                         : "mt-3 font-display font-black uppercase tracking-[-0.015em] text-brand-black text-[clamp(1.25rem,2.6vw,1.75rem)] leading-[1.05] [text-wrap:balance]"
                     }
                   >
@@ -340,7 +340,7 @@ export default async function Home() {
                   <p
                     className={
                       i === 0
-                        ? "mt-3 font-body text-sm text-brand-off-white/70 leading-snug"
+                        ? "mt-3 font-body text-sm text-brand-lavender/70 leading-snug"
                         : "mt-3 font-body text-sm text-brand-black/70 leading-snug"
                     }
                   >

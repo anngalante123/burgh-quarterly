@@ -77,14 +77,14 @@ export function Gated({ label, businessName, source, children }: Props) {
 
       {/* Email gate, in normal flow so its size dictates the row height */}
       <div className="relative flex items-center justify-center px-2 py-6 md:py-10">
-        <div className="w-full max-w-md bg-brand-black text-brand-off-white p-5 md:p-6 shadow-[6px_6px_0_0_var(--color-brand-purple)]">
+        <div className="w-full max-w-md bg-brand-black text-brand-lavender p-5 md:p-6 shadow-[6px_6px_0_0_var(--color-brand-purple)]">
           <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-lime mb-2">
             Subscribers only
           </p>
-          <h3 className="font-display font-black uppercase tracking-[-0.01em] text-brand-off-white text-lg md:text-xl leading-[1.1] [text-wrap:balance]">
+          <h3 className="font-display font-black uppercase tracking-[-0.01em] text-brand-lavender text-lg md:text-xl leading-[1.1] [text-wrap:balance]">
             See the full {label.toLowerCase()} read for {businessName}.
           </h3>
-          <p className="mt-2 font-body text-xs md:text-sm text-brand-off-white/70 leading-snug">
+          <p className="mt-2 font-body text-xs md:text-sm text-brand-lavender/70 leading-snug">
             One email unlocks every business in this issue, plus you get
             Issue 02 the day it drops.
           </p>
@@ -100,7 +100,7 @@ export function Gated({ label, businessName, source, children }: Props) {
               placeholder="you@example.com"
               aria-label="Email address"
               disabled={state === "loading"}
-              className="flex-1 min-w-0 px-3 py-2.5 bg-brand-off-white text-brand-black font-body text-sm placeholder:text-brand-black/40 focus:outline-2 focus:outline-brand-lime"
+              className="flex-1 min-w-0 px-3 py-2.5 bg-brand-lavender text-brand-black font-body text-sm placeholder:text-brand-black/40 focus:outline-2 focus:outline-brand-lime"
             />
             <button
               type="submit"
@@ -115,7 +115,7 @@ export function Gated({ label, businessName, source, children }: Props) {
               Something went wrong. Try again.
             </p>
           ) : (
-            <p className="mt-2 font-body text-[0.65rem] text-brand-off-white/45 leading-snug">
+            <p className="mt-2 font-body text-[0.65rem] text-brand-lavender/45 leading-snug">
               Quarterly. No filler. Unsubscribe in one click.
             </p>
           )}

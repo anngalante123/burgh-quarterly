@@ -39,7 +39,7 @@ type HeroSearchProps = {
 
 const TIER_PILL_CLASS: Record<SearchableBusiness["tier"], string> = {
   icons: "bg-brand-lime text-brand-black",
-  ones_to_watch: "bg-brand-purple text-brand-off-white",
+  ones_to_watch: "bg-brand-purple text-brand-lavender",
   neighborhood_staples:
     "bg-brand-cream text-brand-black border border-brand-black/25",
 };
@@ -359,7 +359,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
               <div className="mt-5 flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/request"
-                  className="inline-flex items-center justify-center gap-1 border-2 border-brand-black bg-brand-purple px-5 py-3 font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-off-white hover:bg-brand-black focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple transition-colors"
+                  className="inline-flex items-center justify-center gap-1 border-2 border-brand-black bg-brand-purple px-5 py-3 font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-lavender hover:bg-brand-black focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple transition-colors"
                 >
                   Get reviewed for Issue 02
                   <span aria-hidden="true">→</span>

@@ -49,7 +49,7 @@ export function CreatorReadyAudit({ audit }: CreatorReadyAuditProps) {
                   "shrink-0 inline-flex items-center justify-center w-5 h-5 mt-0.5 rounded-full font-display text-[0.65rem] font-semibold",
                   check.pass
                     ? "bg-brand-lime text-brand-black"
-                    : "bg-brand-purple text-brand-off-white",
+                    : "bg-brand-purple text-brand-lavender",
                 )}
               >
                 {check.pass ? "✓" : "×"}

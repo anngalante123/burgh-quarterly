@@ -41,14 +41,14 @@ export function AtAGlance({ rows }: Props) {
               key={row.label}
               className={cn(
                 "grid grid-cols-[1fr_auto] items-baseline gap-3 py-3 md:py-4 first:pt-0 last:pb-0 -mx-2 px-2",
-                row.focus && "bg-brand-purple text-brand-off-white rounded-md",
+                row.focus && "bg-brand-purple text-brand-lavender rounded-md",
               )}
             >
               <dt
                 className={cn(
                   "font-body text-sm md:text-base",
                   row.focus
-                    ? "text-brand-off-white"
+                    ? "text-brand-lavender"
                     : "text-brand-black/85",
                 )}
               >
@@ -64,7 +64,7 @@ export function AtAGlance({ rows }: Props) {
                   value={row.value}
                   className={cn(
                     "font-display text-xl md:text-2xl font-black tabular-nums leading-none",
-                    row.focus ? "text-brand-off-white" : "text-brand-black",
+                    row.focus ? "text-brand-lavender" : "text-brand-black",
                   )}
                 />
                 {row.delta && (

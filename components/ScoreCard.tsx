@@ -67,9 +67,9 @@ export function ScoreCard({
   const mv = formatMovement(movement);
   const toneClass = {
     up: "text-brand-black bg-brand-lime",
-    down: "text-brand-off-white bg-brand-black",
+    down: "text-brand-lavender bg-brand-black",
     flat: "text-brand-black/70 bg-brand-cream",
-    debut: "text-brand-off-white bg-brand-purple",
+    debut: "text-brand-lavender bg-brand-purple",
   }[mv.tone];
 
   return (

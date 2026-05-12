@@ -97,7 +97,7 @@ function CollabTile({
 
         {/* Number stamp, corner */}
         <span
-          className={`absolute top-2 left-2 md:top-3 md:left-3 ${numSize} font-display font-black tabular-nums leading-none text-brand-off-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]`}
+          className={`absolute top-2 left-2 md:top-3 md:left-3 ${numSize} font-display font-black tabular-nums leading-none text-brand-lavender drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]`}
           aria-hidden="true"
         >
           {String(index + 1).padStart(2, "0")}
@@ -107,7 +107,7 @@ function CollabTile({
         <figcaption
           className="absolute inset-x-0 bottom-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0 group-focus-within:translate-y-0 bg-brand-black/85 px-3 py-2 md:px-4 md:py-3"
         >
-          <p className="font-display text-[0.7rem] md:text-xs font-bold uppercase tracking-[0.12em] text-brand-off-white line-clamp-1">
+          <p className="font-display text-[0.7rem] md:text-xs font-bold uppercase tracking-[0.12em] text-brand-lavender line-clamp-1">
             {entry.business}
           </p>
           <p className="font-body text-[0.62rem] md:text-[0.7rem] text-brand-lime line-clamp-1">
@@ -244,7 +244,7 @@ export function RelayCollabGallery() {
             href="https://run-relay.com/try"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-brand-purple text-brand-off-white font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] px-5 py-3 md:px-7 md:py-4 hover:bg-brand-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"
+            className="inline-flex items-center gap-2 bg-brand-purple text-brand-lavender font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] px-5 py-3 md:px-7 md:py-4 hover:bg-brand-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"
             style={{ boxShadow: "5px 5px 0 0 var(--color-brand-lime)" }}
           >
             Get filmed

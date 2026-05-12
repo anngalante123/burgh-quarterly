@@ -33,7 +33,7 @@ const TIER_STYLES: Record<Tier, string> = {
     "bg-brand-lime text-brand-black border border-brand-black/10",
   // Ones to Watch: brand purple pill, off-white ink. Warm, optimistic, "coming up."
   ones_to_watch:
-    "bg-brand-purple text-brand-off-white border border-brand-purple",
+    "bg-brand-purple text-brand-lavender border border-brand-purple",
   // Neighborhood Staples: warm cream with black ink + purple hairline.
   // A compliment, rooted, beloved. Not a consolation prize.
   neighborhood_staples:

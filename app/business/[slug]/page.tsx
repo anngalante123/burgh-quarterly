@@ -617,7 +617,7 @@ export default async function BusinessPage({ params }: PageProps) {
                     score.tier === "icons"
                       ? "bg-brand-lime text-brand-black px-2 py-0.5"
                       : score.tier === "ones_to_watch"
-                        ? "bg-brand-purple text-brand-off-white px-2 py-0.5"
+                        ? "bg-brand-purple text-brand-lavender px-2 py-0.5"
                         : "bg-brand-cream text-brand-black border border-brand-black/30 px-2 py-0.5"
                   }
                 >

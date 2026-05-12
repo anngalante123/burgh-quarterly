@@ -13,7 +13,7 @@ export const contentType = "image/png";
 
 const COLORS = {
   black: "#0F0F0F",
-  offWhite: "#F5F0FA",
+  lavender: "#F5F0FA",
   lime: "#C6F432",
 } as const;
 
@@ -25,7 +25,7 @@ export default async function OpengraphImage() {
           width: "100%",
           height: "100%",
           background: COLORS.black,
-          color: COLORS.offWhite,
+          color: COLORS.lavender,
           display: "flex",
           flexDirection: "column",
           padding: "72px",
@@ -66,7 +66,7 @@ export default async function OpengraphImage() {
             </div>
             <div
               style={{
-                color: COLORS.offWhite,
+                color: COLORS.lavender,
                 opacity: 0.55,
                 fontSize: "16px",
                 fontWeight: 600,

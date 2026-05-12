@@ -87,9 +87,9 @@ export function ScoreHero({
     // Drop, muted cream pill with black text, quiet (we don't punish).
     down: "text-brand-black bg-brand-cream",
     // Neutral holding / no data.
-    flat: "text-brand-off-white/70 bg-brand-off-white/10 border border-brand-off-white/20",
+    flat: "text-brand-lavender/70 bg-brand-lavender/10 border border-brand-lavender/20",
     // Debut, purple pill for first-issue businesses.
-    debut: "text-brand-off-white bg-brand-purple",
+    debut: "text-brand-lavender bg-brand-purple",
   }[mv.tone];
 
   const accent = TIER_ACCENT[tier];
@@ -98,7 +98,7 @@ export function ScoreHero({
     <Reveal as="section" className="block">
       <div
         aria-label="Rank and tier"
-        className="relative overflow-hidden bg-brand-black text-brand-off-white px-6 py-8 md:px-10 md:py-12"
+        className="relative overflow-hidden bg-brand-black text-brand-lavender px-6 py-8 md:px-10 md:py-12"
       >
         {/* Diagonal tier accent stripe, tier-colored, bleeds off the right */}
         <span
@@ -113,14 +113,14 @@ export function ScoreHero({
         <div className="relative flex items-center justify-between gap-4 mb-6 md:mb-8">
           <span
             className={cn(
-              "font-display text-[0.65rem] md:text-xs font-semibold uppercase tracking-[0.22em] bg-brand-off-white/8 border border-brand-off-white/15 px-2.5 py-1",
+              "font-display text-[0.65rem] md:text-xs font-semibold uppercase tracking-[0.22em] bg-brand-lavender/8 border border-brand-lavender/15 px-2.5 py-1",
               accent,
             )}
           >
             PGH · Signal Index
           </span>
           <div className="flex flex-col items-end gap-1">
-            <span className="font-body text-[0.6rem] uppercase tracking-[0.22em] text-brand-off-white/55">
+            <span className="font-body text-[0.6rem] uppercase tracking-[0.22em] text-brand-lavender/55">
               Movement
             </span>
             <span
@@ -138,26 +138,26 @@ export function ScoreHero({
         {/* The anchor: the tier phrase at display scale. Fluid clamp so it
             scales continuously from narrow mobile (32px floor) to wide
             desktop (72px ceiling), no breakpoint jumps. */}
-        <h2 className="relative font-display font-black uppercase tracking-[-0.025em] text-brand-off-white [text-wrap:balance] [word-break:break-word] text-[clamp(2rem,6vw,4.5rem)] leading-[0.92]">
+        <h2 className="relative font-display font-black uppercase tracking-[-0.025em] text-brand-lavender [text-wrap:balance] [word-break:break-word] text-[clamp(2rem,6vw,4.5rem)] leading-[0.92]">
           {TIER_COPY[tier]}
         </h2>
 
         {/* Tier stance */}
-        <p className="relative mt-3 md:mt-4 font-body text-sm md:text-base text-brand-off-white/70 max-w-xl leading-relaxed">
+        <p className="relative mt-3 md:mt-4 font-body text-sm md:text-base text-brand-lavender/70 max-w-xl leading-relaxed">
           {TIER_STANCE[tier]}
         </p>
 
         {/* Rank row */}
         <div className="relative mt-6 md:mt-8 flex flex-wrap items-baseline gap-x-5 gap-y-2">
-          <p className="font-display text-xl md:text-2xl font-black tracking-[-0.01em] text-brand-off-white">
+          <p className="font-display text-xl md:text-2xl font-black tracking-[-0.01em] text-brand-lavender">
             <span className={accent}>
               <AnimatedRank value={rankCategory} prefix="#" />
             </span>{" "}
-            <span className="font-body font-medium text-sm md:text-base text-brand-off-white/70 normal-case">
+            <span className="font-body font-medium text-sm md:text-base text-brand-lavender/70 normal-case">
               in {categoryLabel}
             </span>
           </p>
-          <p className="font-body text-sm text-brand-off-white/55">
+          <p className="font-body text-sm text-brand-lavender/55">
             <span className={accent}>#{rankNeighborhood}</span> in{" "}
             {neighborhoodLabel}
           </p>
@@ -165,7 +165,7 @@ export function ScoreHero({
 
         {/* Private view strip, only when claimed AND gap copy provided */}
         {claimed && gapToNextTier && (
-          <p className="relative mt-8 pt-6 border-t border-brand-off-white/20 font-body text-sm text-brand-off-white/85">
+          <p className="relative mt-8 pt-6 border-t border-brand-lavender/20 font-body text-sm text-brand-lavender/85">
             <span className="font-display font-semibold uppercase tracking-[0.12em] text-[0.7rem] text-brand-lime">
               Private view ·{" "}
             </span>

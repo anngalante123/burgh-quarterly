@@ -42,11 +42,11 @@ export function DiagnosisPullquote({ line, highlight }: Props) {
 
   return (
     <Reveal as="section" className="block">
-      <div className="bg-brand-black text-brand-off-white px-6 py-7 md:px-9 md:py-9">
+      <div className="bg-brand-black text-brand-lavender px-6 py-7 md:px-9 md:py-9">
         <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-lime mb-3">
           The diagnosis · Spring 2026
         </p>
-        <h2 className="font-display font-black uppercase text-brand-off-white tracking-[-0.015em] leading-[1] text-[clamp(1.25rem,3.2vw,2.25rem)] [text-wrap:balance]">
+        <h2 className="font-display font-black uppercase text-brand-lavender tracking-[-0.015em] leading-[1] text-[clamp(1.25rem,3.2vw,2.25rem)] [text-wrap:balance]">
           {split ? (
             <>
               {split.before}

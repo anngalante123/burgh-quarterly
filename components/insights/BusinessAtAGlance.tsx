@@ -80,7 +80,7 @@ export function BusinessAtAGlance({ businessName, rows, trend }: Props) {
                   </div>
                   <span
                     aria-hidden="true"
-                    className="shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full border border-brand-black/20 font-display text-base text-brand-black/55 group-open:rotate-180 group-open:bg-brand-black group-open:text-brand-off-white group-open:border-brand-black transition-all"
+                    className="shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full border border-brand-black/20 font-display text-base text-brand-black/55 group-open:rotate-180 group-open:bg-brand-black group-open:text-brand-lavender group-open:border-brand-black transition-all"
                   >
                     ⌄
                   </span>

@@ -29,7 +29,7 @@ function Wordmark({ size }: { size: "home" | "compact" }) {
       : "font-display font-black uppercase tracking-[-0.01em] text-lg sm:text-xl text-brand-lime";
   return (
     <span className={className}>
-      Signal <span className="text-brand-off-white">Pittsburgh</span>
+      Signal <span className="text-brand-lavender">Pittsburgh</span>
     </span>
   );
 }
@@ -37,13 +37,13 @@ function Wordmark({ size }: { size: "home" | "compact" }) {
 export function Masthead({ variant = "compact" }: MastheadProps) {
   if (variant === "home") {
     return (
-      <header className="w-full bg-brand-black text-brand-off-white">
+      <header className="w-full bg-brand-black text-brand-lavender">
         {/* Narrow rule strip (publication plate) */}
-        <div className="mx-auto max-w-7xl px-6 pt-3 pb-2 flex items-center justify-between border-b border-brand-off-white/10">
+        <div className="mx-auto max-w-7xl px-6 pt-3 pb-2 flex items-center justify-between border-b border-brand-lavender/10">
           <span className="font-display text-[0.62rem] sm:text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-brand-lime">
             PGH · Signal Index
           </span>
-          <span className="font-body text-[0.62rem] sm:text-[0.68rem] uppercase tracking-[0.22em] text-brand-off-white/55">
+          <span className="font-body text-[0.62rem] sm:text-[0.68rem] uppercase tracking-[0.22em] text-brand-lavender/55">
             Spring 2026
           </span>
         </div>
@@ -56,7 +56,7 @@ export function Masthead({ variant = "compact" }: MastheadProps) {
               <Wordmark size="home" />
             </h1>
           </Link>
-          <p className="font-body mt-5 max-w-xl text-base md:text-lg text-brand-off-white/75">
+          <p className="font-body mt-5 max-w-xl text-base md:text-lg text-brand-lavender/75">
             The businesses Pittsburgh is talking about, ranked every quarter.
           </p>
         </div>
@@ -65,7 +65,7 @@ export function Masthead({ variant = "compact" }: MastheadProps) {
   }
 
   return (
-    <header className="w-full bg-brand-black text-brand-off-white">
+    <header className="w-full bg-brand-black text-brand-lavender">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         <Link
           href="/"
@@ -80,7 +80,7 @@ export function Masthead({ variant = "compact" }: MastheadProps) {
           <span className="hidden sm:inline text-brand-lime">
             PGH · Signal Index
           </span>
-          <span className="text-brand-off-white/55">Spring 2026</span>
+          <span className="text-brand-lavender/55">Spring 2026</span>
         </nav>
       </div>
     </header>
