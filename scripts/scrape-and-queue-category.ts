@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Autonomous category scraper for The Burgh Quarterly.
+ * Autonomous category scraper for Signal Pittsburgh.
  *
  * Calls the Apify `compass/crawler-google-places` actor via REST, polls until
  * the run finishes, fetches the dataset, filters by stars/reviews/closed/chain

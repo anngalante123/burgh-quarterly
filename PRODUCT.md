@@ -27,7 +27,7 @@ behavior signals what's resonating.
 
 ## Product Purpose
 
-The Burgh Quarterly is a quarterly editorial publication that ranks
+Signal Pittsburgh is a quarterly editorial publication that ranks
 Pittsburgh small businesses by creator-readiness signals (review
 depth and sentiment, photo catalog, conversion path, Instagram
 cadence, creator fit). It is published by Relay (run-relay.com), a
@@ -76,7 +76,7 @@ Explicitly NOT:
   voiceless.
 - SEO-farmed local blogs. Programmatic content farms that publish
   by template.
-- Marketing-tool screenshots. Burgh Quarterly is editorial, not a
+- Marketing-tool screenshots. Signal Pittsburgh is editorial, not a
   SaaS dashboard.
 
 Forbidden language (from EDITORIAL_VOICE.md, kept here for register):

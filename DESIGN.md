@@ -1,11 +1,11 @@
 ---
-name: The Burgh Quarterly
+name: Signal Pittsburgh
 description: A quarterly editorial publication ranking Pittsburgh small businesses by creator-readiness signals. Editorial all the way through — sharp, confident, generous.
 colors:
   brand-purple: "#AB35EE"
   brand-lime: "#C6F432"
   brand-black: "#0F0F0F"
-  brand-off-white: "#F5F0FA"
+  brand-lavender: "#F5F0FA"
   brand-cream: "#F5F8E8"
   brand-newsprint: "#F0EEE9"
   brand-newsprint-warm: "#E8E3D6"
@@ -73,7 +73,7 @@ components:
     typography: "{typography.kicker}"
   tier-pill-watch:
     backgroundColor: "{colors.brand-purple}"
-    textColor: "{colors.brand-off-white}"
+    textColor: "{colors.brand-lavender}"
     rounded: "{rounded.none}"
     padding: "2px 6px"
     typography: "{typography.kicker}"
@@ -90,7 +90,7 @@ components:
     padding: "0 4px"
   cta-primary:
     backgroundColor: "{colors.brand-purple}"
-    textColor: "{colors.brand-off-white}"
+    textColor: "{colors.brand-lavender}"
     rounded: "{rounded.none}"
     padding: "10px 18px"
     typography: "{typography.kicker}"
@@ -101,14 +101,14 @@ components:
     padding: "20px 24px"
   card-loud:
     backgroundColor: "{colors.brand-black}"
-    textColor: "{colors.brand-off-white}"
+    textColor: "{colors.brand-lavender}"
     rounded: "{rounded.sm}"
     padding: "24px 28px"
 ---
 
 ## Overview
 
-The Burgh Quarterly's visual system is editorial-magazine-meets-data-publication. It pairs heavyweight Unbounded display type with calm DM Sans body copy, deploys lime as a highlighter and purple as the conversion accent, and uses no rounded corners on most surfaces (square edges convey "record," not "app"). Color zones do most of the visual storytelling; motion is restrained but specific (Ken-Burns on hero photos, scan-sweep on diagnosis pull-quotes, micro-celebrations on rank reveals).
+Signal Pittsburgh's visual system is editorial-magazine-meets-data-publication. It pairs heavyweight Unbounded display type with calm DM Sans body copy, deploys lime as a highlighter and purple as the conversion accent, and uses no rounded corners on most surfaces (square edges convey "record," not "app"). Color zones do most of the visual storytelling; motion is restrained but specific (Ken-Burns on hero photos, scan-sweep on diagnosis pull-quotes, micro-celebrations on rank reveals).
 
 The system is built for both editorial-loud surfaces (homepage hero, issue features, "diagnosis" pull-quotes) and editorial-quiet-but-still-opinionated surfaces (business records, scoreboards, peer comparisons). Per the 2026-05-09 architectural shift in PRODUCT.md, all surfaces are now editorial; the previous "loud editorial / quiet record" split is retired in favor of a single confident voice with two register intensities.
 
@@ -122,7 +122,7 @@ The palette has three roles: brand identity, editorial surface, and tier signali
 - `brand-black` `#0F0F0F` — display type, primary text, "loud editorial" surface backgrounds (issue covers, masthead).
 
 **Surface palette.**
-- `brand-off-white` `#F5F0FA` — page background, warm white-lavender. Default canvas.
+- `brand-lavender` `#F5F0FA` — page background, warm white-lavender. Default canvas.
 - `brand-cream` `#F5F8E8` — section backgrounds, "Doing well" cards, expanded scoreboard panels. Warmer than the page; signals "this is data."
 - `brand-newsprint` `#F0EEE9` — heavier editorial blocks, deep-record zones.
 - `brand-newsprint-warm` `#E8E3D6` — used sparingly for the warmest editorial surfaces.
@@ -131,7 +131,7 @@ The palette has three roles: brand identity, editorial surface, and tier signali
 - `brand-terracotta` `#D97757` — second accent, used for trends and "dropped from" framing. Never a CTA color.
 - `data-blue` `#209AFF`, `data-lavender` `#ABB5FE`, `data-cyan` `#01EFFF`, `data-teal` `#0EB2E8` — data-viz palette for charts and momentum indicators. Reserved for charts only; never UI chrome.
 
-**Contrast floor.** Body text at 4.5:1 minimum (WCAG AA). Lime highlight blocks always pair with `brand-black` text (passes AA). Purple CTAs pair with `brand-off-white` (passes AA).
+**Contrast floor.** Body text at 4.5:1 minimum (WCAG AA). Lime highlight blocks always pair with `brand-black` text (passes AA). Purple CTAs pair with `brand-lavender` (passes AA).
 
 ## Typography
 
@@ -153,7 +153,7 @@ Two families, used with strict hierarchy.
 The system is largely flat. Cards differentiate by background color and border weight, not by drop shadows.
 
 - **Default:** flat against the page background. No shadow.
-- **Card-quiet:** `brand-cream` background on the `brand-off-white` page → reads as a recessed panel without a shadow. Used for scoreboard rows, "doing well" panels.
+- **Card-quiet:** `brand-cream` background on the `brand-lavender` page → reads as a recessed panel without a shadow. Used for scoreboard rows, "doing well" panels.
 - **Card-loud:** `brand-black` background → reads as a card lifted above the page through contrast alone. Used for diagnosis pull-quotes and editorial features.
 - **Hover state on interactive elements:** inset 2px ring (`brand-black/45`) instead of a drop shadow. Pinned/active state: inset 2px ring at higher opacity (`brand-black/65`). The visual logic is "I'm being held" rather than "I'm floating."
 - **Brutalist accent on key cards:** offset hard-shadow `3px 3px 0 0 var(--color-brand-purple)` on popovers and important cards. Square corners, no blur, no fade. Editorial publication, not a SaaS app.

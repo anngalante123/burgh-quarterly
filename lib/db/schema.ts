@@ -27,7 +27,7 @@ import type {
 } from "@/lib/data/schemas";
 
 /**
- * Drizzle schema for Burgh Quarterly. Phase 1 of the scale plan.
+ * Drizzle schema for Signal Pittsburgh. Phase 1 of the scale plan.
  *
  * Field names mirror `lib/data/schemas.ts` exactly so the JSON-to-DB
  * migration script can do a 1:1 map. JSONB columns are typed with $type

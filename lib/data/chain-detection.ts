@@ -1,7 +1,7 @@
 /**
  * Chain detection.
  *
- * The Burgh Quarterly is editorial coverage of independently-owned
+ * Signal Pittsburgh is editorial coverage of independently-owned
  * Pittsburgh businesses. National chains pollute the queue and waste
  * Apify + Claude spend, so we filter them out at scrape time AND again
  * before the per-business pipeline runs.

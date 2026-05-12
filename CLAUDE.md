@@ -1,10 +1,10 @@
-# CLAUDE.md — The Burgh Quarterly
+# CLAUDE.md — Signal Pittsburgh
 
 > **First thing, every session:** read `.claude/memory/TODO.md` and the last entry in `.claude/memory/DEV_LOG.md`. That tells you where we left off.
 
 ## What this is
 
-**The Burgh Quarterly** (working name — swap via find-replace if Anna picks a different one later) is a quarterly editorial publication that ranks Pittsburgh's small businesses by creator-readiness. It is **not a lead magnet** and not a sales tool. It is a property that local business owners find genuinely valuable on its own — something they check, share, claim, and try to climb.
+**Signal Pittsburgh** (renamed from "The Burgh Quarterly" on 2026-05-12; repo dir still named burgh-quarterly for path stability) is a quarterly editorial publication that ranks Pittsburgh's small businesses by creator-readiness. It is **not a lead magnet** and not a sales tool. It is a property that local business owners find genuinely valuable on its own, something they check, share, claim, and try to climb.
 
 Relay (run-relay.com) publishes it. Relay is a vetted local micro-influencer platform. The publication drives quiet trial adoption as a side effect of being good. It does not pitch.
 

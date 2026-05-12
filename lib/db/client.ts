@@ -3,7 +3,7 @@ import { neon } from "@neondatabase/serverless";
 import * as schema from "./schema";
 
 /**
- * Neon HTTP client for Burgh Quarterly.
+ * Neon HTTP client for Signal Pittsburgh.
  *
  * Phase 1 of the scale plan moves us off JSON files in `content/` into Neon
  * Postgres. This module is the single point of entry for the DB; every

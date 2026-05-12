@@ -30,7 +30,7 @@ import type { ReviewAnalysis } from "./load-review-analysis";
 import { singularLabelForCategory } from "./stats";
 
 /**
- * Database-backed read adapter for the Burgh Quarterly content layer.
+ * Database-backed read adapter for the Signal Pittsburgh content layer.
  *
  * Phase 1 of the scale plan moves reads off `content/*.json` and onto Neon
  * Postgres via Drizzle. The JSON files remain on disk as legacy fallback for
