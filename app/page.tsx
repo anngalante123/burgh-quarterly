@@ -13,7 +13,7 @@ import {
   BusinessSearch,
   type SearchableBusiness,
 } from "@/components/BusinessSearch";
-import { loadAllListArticles } from "@/lib/data/load-list";
+import { isPostArticle, loadAllListArticles } from "@/lib/data/load-list";
 import { GetFeaturedCTA } from "@/components/GetFeaturedCTA";
 import { RelayCollabGallery } from "@/components/RelayCollabs";
 import { HeroSearch } from "@/components/HeroSearch";
@@ -308,24 +308,39 @@ export default async function Home() {
           </div>
 
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {featuredArticles.map((a, i) => (
-              <li key={a.slug}>
-                <Link
-                  href={`/best-on-social/${a.slug}`}
-                  className={
-                    i === 0
-                      ? "group block h-full border border-brand-black bg-brand-black text-brand-lavender p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-                      : "group block h-full border border-brand-black/15 bg-white/70 p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-                  }
-                >
+            {featuredArticles.map((a, i) => {
+              const isEmpty = a.items.length === 0;
+              const unit = isPostArticle(a)
+                ? a.items.length === 1
+                  ? "post"
+                  : "posts"
+                : a.items.length === 1
+                  ? "business"
+                  : "businesses";
+              const eyebrow =
+                i === 0
+                  ? "Spring 2026 · Featured"
+                  : isEmpty
+                    ? "Coming Issue 02 · Summer 2026"
+                    : `${a.items.length} ${unit} · Spring 2026`;
+              const cardClass =
+                i === 0
+                  ? "group block h-full border border-brand-black bg-brand-black text-brand-lavender p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                  : "group block h-full border border-brand-black/15 bg-white/70 p-6 md:p-7 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0";
+              const emptyCardClass =
+                "block h-full border border-brand-black/15 bg-white/40 p-6 md:p-7 opacity-80";
+              const inner = (
+                <>
                   <p
                     className={
                       i === 0
                         ? "font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-lime"
-                        : "font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple"
+                        : isEmpty
+                          ? "font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55"
+                          : "font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple"
                     }
                   >
-                    {i === 0 ? "Spring 2026 · Featured" : `${a.items.length} businesses · Spring 2026`}
+                    {eyebrow}
                   </p>
                   <h4
                     className={
@@ -345,24 +360,37 @@ export default async function Home() {
                   >
                     {a.subtitle}
                   </p>
-                  <p
-                    className={
-                      i === 0
-                        ? "mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-lime"
-                        : "mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-black"
-                    }
-                  >
-                    Read the list
-                    <span
-                      aria-hidden="true"
-                      className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+                  {!isEmpty && (
+                    <p
+                      className={
+                        i === 0
+                          ? "mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-lime"
+                          : "mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-black"
+                      }
                     >
-                      →
-                    </span>
-                  </p>
-                </Link>
-              </li>
-            ))}
+                      Read the list
+                      <span
+                        aria-hidden="true"
+                        className="inline-block transition-transform duration-150 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
+                      >
+                        →
+                      </span>
+                    </p>
+                  )}
+                </>
+              );
+              return (
+                <li key={a.slug}>
+                  {isEmpty && i !== 0 ? (
+                    <div className={emptyCardClass}>{inner}</div>
+                  ) : (
+                    <Link href={`/best-on-social/${a.slug}`} className={cardClass}>
+                      {inner}
+                    </Link>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </Reveal>
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
 import { Reveal } from "@/components/motion/Reveal";
-import { loadAllListArticles } from "@/lib/data/load-list";
+import { isPostArticle, loadAllListArticles } from "@/lib/data/load-list";
 
 /**
  * /best-on-social, the series index. Lists every article currently
@@ -61,16 +61,27 @@ export default function BestOnSocialIndex() {
           </header>
 
           <section className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            {articles.map((a) => (
-              <Reveal key={a.slug} as="article" className="block">
-                <Link
-                  href={`/best-on-social/${a.slug}`}
-                  className="group block border border-brand-black/15 bg-white/60 p-5 md:p-7 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] transition-all"
-                >
-                  <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
-                    {a.items.length}{" "}
-                    {a.items.length === 1 ? "business" : "businesses"} ·
-                    Spring 2026
+            {articles.map((a) => {
+              const isEmpty = a.items.length === 0;
+              const unit = isPostArticle(a)
+                ? a.items.length === 1
+                  ? "post"
+                  : "posts"
+                : a.items.length === 1
+                  ? "business"
+                  : "businesses";
+              const inner = (
+                <>
+                  <p
+                    className={
+                      isEmpty
+                        ? "font-display text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-brand-black/55"
+                        : "font-display text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-brand-purple"
+                    }
+                  >
+                    {isEmpty
+                      ? "Coming Issue 02 · Summer 2026"
+                      : `${a.items.length} ${unit} · Spring 2026`}
                   </p>
                   <h2 className="mt-3 font-display font-black uppercase tracking-[-0.01em] text-brand-black text-xl md:text-2xl leading-[1.05] [text-wrap:balance] group-hover:text-brand-purple transition-colors">
                     {a.title}
@@ -80,41 +91,61 @@ export default function BestOnSocialIndex() {
                       {a.subtitle}
                     </p>
                   ) : null}
-                  <div className="mt-5 flex flex-wrap items-baseline gap-2">
-                    {a.items.slice(0, 3).map((it) => {
-                      // Both shapes carry business_slug, but the display
-                      // name differs: business cards have `name`, post
-                      // cards have `business_name` (the business the
-                      // creator filmed).
-                      const display = "name" in it ? it.name : it.business_name;
-                      return (
-                        <span
-                          key={`${it.business_slug}-${it.rank}`}
-                          className="font-body text-xs text-brand-black/55"
-                        >
-                          {display}
-                          {it.rank < Math.min(3, a.items.length) ? "," : ""}
+                  {!isEmpty && (
+                    <div className="mt-5 flex flex-wrap items-baseline gap-2">
+                      {a.items.slice(0, 3).map((it) => {
+                        // Both shapes carry business_slug, but the display
+                        // name differs: business cards have `name`, post
+                        // cards have `business_name` (the business the
+                        // creator filmed).
+                        const display = "name" in it ? it.name : it.business_name;
+                        return (
+                          <span
+                            key={`${it.business_slug}-${it.rank}`}
+                            className="font-body text-xs text-brand-black/55"
+                          >
+                            {display}
+                            {it.rank < Math.min(3, a.items.length) ? "," : ""}
+                          </span>
+                        );
+                      })}
+                      {a.items.length > 3 ? (
+                        <span className="font-body text-xs text-brand-black/60">
+                          + {a.items.length - 3} more
                         </span>
-                      );
-                    })}
-                    {a.items.length > 3 ? (
-                      <span className="font-body text-xs text-brand-black/60">
-                        + {a.items.length - 3} more
+                      ) : null}
+                    </div>
+                  )}
+                  {!isEmpty && (
+                    <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-black group-hover:text-brand-purple transition-colors">
+                      Read the list
+                      <span
+                        aria-hidden="true"
+                        className="inline-block transition-transform duration-150 group-hover:translate-x-1"
+                      >
+                        →
                       </span>
-                    ) : null}
-                  </div>
-                  <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-black group-hover:text-brand-purple transition-colors">
-                    Read the list
-                    <span
-                      aria-hidden="true"
-                      className="inline-block transition-transform duration-150 group-hover:translate-x-1"
+                    </p>
+                  )}
+                </>
+              );
+              return (
+                <Reveal key={a.slug} as="article" className="block">
+                  {isEmpty ? (
+                    <div className="block border border-brand-black/15 bg-white/40 p-5 md:p-7 opacity-80">
+                      {inner}
+                    </div>
+                  ) : (
+                    <Link
+                      href={`/best-on-social/${a.slug}`}
+                      className="group block border border-brand-black/15 bg-white/60 p-5 md:p-7 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] transition-all"
                     >
-                      →
-                    </span>
-                  </p>
-                </Link>
-              </Reveal>
-            ))}
+                      {inner}
+                    </Link>
+                  )}
+                </Reveal>
+              );
+            })}
           </section>
         </article>
       </main>
