@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "primanti-bros",
+    "name": "Primanti Bros.",
+    "category": "restaurant",
+    "neighborhood": "North Shore",
+    "address": "100 Art Rooney Ave, Pittsburgh, PA 15212",
+    "website": "http://primantibros.com/locations/",
+    "instagram": null,
+    "tiktok": null,
+    "lat": null,
+    "lng": null,
+    "place_id": "ChIJixr3YwL0NIgRIM-xM8ZFYFE",
+    "hero_photo": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHCbqudap7lfHDSj_H4SWpawxgSV_O3d3Rt-2ntJyLfM5zNt_eTQXRrSXlh06kJDwkN13XASGl_97S3fxArjzIhpH15zGUXhUK9Q4oJhEvghpbjKXYe6DSWYxC8s_um=w408-h399-k-no",
+    "claimed": false,
+    "owner_email": null,
+    "source": "apify",
+    "created_at": "2026-05-09T02:59:51.792Z",
+    "updated_at": "2026-05-09T02:59:51.792Z"
+  }
+]
