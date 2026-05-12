@@ -39,7 +39,7 @@ Full voice rules in `.claude/memory/EDITORIAL_VOICE.md`.
 | `brand-purple` | `#A855F7` | primary accent, buttons, links |
 | `brand-lime` | `#C6F432` | highlight blocks, hover states, score peaks |
 | `brand-black` | `#0F0F0F` | display type, primary text |
-| `brand-off-white` | `#F5F0FA` | page background (warm white-lavender) |
+| `brand-lavender` | `#F5F0FA` | page background (warm white-lavender). Renamed from `brand-off-white` on 2026-05-12; the value was always lavender. |
 | `brand-cream` | `#F5F8E8` | section backgrounds (warm cream-yellow) |
 
 Concept: **Bold, Playful, Trendy.** Display headlines in Unbounded Black, all caps, with the lime as highlight-block backgrounds behind key words. Body in DM Sans.
