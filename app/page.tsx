@@ -236,8 +236,7 @@ export default async function Home() {
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
                           src={upgradeGooglePhotoSize(b.photo, 200) ?? b.photo}
-                          alt=""
-                          aria-hidden="true"
+                          alt={`${b.name} in ${b.neighborhood}`}
                           loading="lazy"
                           className="absolute inset-0 w-full h-full object-cover"
                         />

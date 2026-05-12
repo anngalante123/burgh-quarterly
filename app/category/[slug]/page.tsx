@@ -389,7 +389,7 @@ function BusinessRow({
           {business.hero_photo ? (
             <Image
               src={business.hero_photo}
-              alt=""
+              alt={`${business.name} in ${business.neighborhood}`}
               fill
               sizes="96px"
               className="object-cover"
