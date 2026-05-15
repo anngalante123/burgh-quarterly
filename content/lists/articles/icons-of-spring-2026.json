@@ -1,9 +1,9 @@
 {
   "slug": "icons-of-spring-2026",
-  "title": "The 10 Pittsburgh Businesses Defining Social This Quarter",
-  "subtitle": "Spring 2026, across every family",
-  "angle": "the businesses winning the conversation this quarter, regardless of category. We're surfacing who creators are filming, who customers are reviewing, and who is actually showing up on their own feeds.",
-  "intro": "Every quarter, the businesses winning Pittsburgh's social conversation turn out to be a different animal than whoever is winning on the ground. Spring 2026 is no exception. The list below tracks creator activity, review velocity, platform presence, and conversion signals across every category we cover, and what it surfaces is less a ranking of the best businesses in Pittsburgh than a map of where attention is moving and why.\n\nSome of the patterns this quarter are genuinely strange. Nan Xiang Soup Dumplings is first among Pittsburgh restaurants on review strength and conversion, with TikTok play counts accumulating fast, but there is no account to catch that traffic. Pusadee's Garden holds the top Thai spot in the city while posting twice a month and sitting out TikTok entirely. La Gourmandine Hazelwood is first in pastry shops with 53 days of silence on Instagram, which is not a strategy so much as an open door.\n\nThe businesses that figure out how to close those gaps before summer will look very different by the time Issue 02 publishes. We will be watching who moved.",
+  "title": "The Icons Of Spring 2026",
+  "subtitle": "Ten Pittsburgh small businesses creators kept filming this quarter.",
+  "angle": "the businesses that earned the most pull from the city's creators and customers this quarter, across every category we cover. Editorial picks based on real coverage, not announcements.",
+  "intro": "Every quarter, a handful of Pittsburgh small businesses do the kind of work that pulls the rest of the city toward them. Spring 2026 has a clear top tier. The list below tracks the ten businesses that creators kept showing up to film, that customers kept reviewing, that anchored the conversation across cafes, restaurants, sweets, and bars. These are the Icons.\n\nSome of the patterns this quarter are worth flagging. Pusadee's Garden held the city's top Thai conversation while sitting still and letting the room do the work. Spot of Coffee, the alley shop between Shadyside and East Liberty, posted six times in thirty days and got more pickup per follower than most cafes get all year. Allegheny Coffee and Tea Exchange has been the Strip District's specialty coffee anchor since the 1980s and is still posting twelve times a month with reels in the mix. Page's, Pittsburgh's seventy-five-year-old ice cream institution in Arlington, set the engagement ceiling for the whole sweets category with a single ice cream truck reveal.\n\nWhat unites the Icons this quarter is not size or budget. It is consistency. Issue 02 will track who held position and who climbed in.",
   "items": [
     {
       "rank": 1,
@@ -11,16 +11,16 @@
       "name": "Pusadee's Garden",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First In Pittsburgh Thai, Stalled By A Feed That Posts Twice A Month And No TikTok Account.",
-      "descriptor_highlight": "No TikTok Account",
-      "stat_line": "1,233 reviews · 4.7★ · 8 creators · 19K plays · 2 IG posts/30d",
+      "descriptor": "Pittsburgh's Top Thai Room This Quarter, Carried By A Garden Creators Will Travel To Film.",
+      "descriptor_highlight": "A Garden Creators Will Travel",
+      "stat_line": "1,233 reviews · 4.7★ · 8 creators filmed this quarter",
       "featured_tiktok": {
         "author": "mad_i_libs",
         "plays": 6614,
         "url": "https://www.tiktok.com/@mad_i_libs/video/7604578609566633229",
         "caption": "This Thai restaurant is a gorgeous spot for your next date night or special occasion in Pittsburgh! 💖 \n\nThere are so many food and drink options, for meat-eaters and vegans alike, you'll want to come back more than once. 🥂 \n\nTip: Show up "
       },
-      "playbook_top_move": "Start posting Reels before creators outpace you. Zero Reels in 30 days while 8 creators generated 19,109 TikTok plays. One weekly Reel of the garden at golden hour costs nothing and reclaims the narrative."
+      "playbook_top_move": "The garden, the date-night framing, and the reputation creators are running with. Quietly the strongest Thai conversation in the city this quarter."
     },
     {
       "rank": 2,
@@ -28,33 +28,33 @@
       "name": "Spot of Coffee",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Seventh In Boutiques, With An Engagement Rate Most Peers Would Envy. The Website Gap And Posting Cadence Are Doing The Real Damage.",
-      "descriptor_highlight": "Posting Cadence Are Doing",
-      "stat_line": "156 reviews · 4.9★ · 7 creators · 31K plays · 6 IG posts/30d",
+      "descriptor": "The Alley Coffee Shop Punching Above Its Weight, Six Posts In Thirty Days And A Crowd That Actually Shows Up.",
+      "descriptor_highlight": "A Crowd That Actually Shows Up",
+      "stat_line": "156 reviews · 4.9★ · 7 creators filmed · six posts in the last 30 days",
       "featured_tiktok": {
         "author": "asprinkleofjen",
         "plays": 9337,
         "url": "https://www.tiktok.com/@asprinkleofjen/video/7620804294987582734",
         "caption": "Delicious recent food and drinks I’ve got in Pittsburgh when eating out!! All time favs are @Spot Of Coffee & Alta Via!\n#pittsburgh #pittsburghfood #foodie #pitt #thingstodo places to eat in Pittsburgh "
       },
-      "playbook_top_move": "Add a website to the Google listing. The Google profile has no website linked, a single fix that lifts conversion path signal in a family where the average is already well behind Spot of Coffee."
+      "playbook_top_move": "Single-origin organic coffee, a Spring drink lineup, and a feed that posts and converts in roughly equal measure. The format pillars are doing the work."
     },
     {
       "rank": 3,
-      "business_slug": "nan-xiang-soup-dumplings-pittsburgh",
-      "name": "Nan Xiang Soup Dumplings - Pittsburgh",
-      "family_label": "Pittsburgh Restaurants",
-      "neighborhood": "South Side Flats",
-      "descriptor": "First In Pittsburgh Restaurants, Carried By Reviews And Conversion. TikTok Plays Are Piling Up With No Account To Catch Them.",
-      "descriptor_highlight": "No Account To Catch Them",
-      "stat_line": "1,229 reviews · 4.8★ · 7 creators · 26K plays · 11 IG posts/30d",
+      "business_slug": "allegheny-coffee-tea-exchange",
+      "name": "Allegheny Coffee & Tea Exchange",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Strip District",
+      "descriptor": "The Strip District's Specialty Coffee Anchor Since The 1980s, Posting Twelve Times A Month With Five Reels In The Mix.",
+      "descriptor_highlight": "Specialty Coffee Anchor",
+      "stat_line": "924 reviews · 4.8★ · twelve posts in the last 30 days · five reels",
       "featured_tiktok": {
-        "author": "bitesbymorgan",
-        "plays": 8535,
-        "url": "https://www.tiktok.com/@bitesbymorgan/video/7612029218091781407",
-        "caption": "Last weekend, I tried Nan Xiang Soup Dumplings located in the Southside of Pittsburgh. If you love soup dumplings, you should absolutely check this spot out!\n\nMy overall review is:\n\nOverall Rating: 8/10\nFood: 8.5/10\nAtmosphere: 7.5/10\nServi"
+        "author": "christinaclothesncoffee",
+        "plays": 578,
+        "url": "https://www.tiktok.com/@christinaclothesncoffee/video/7628564445622504717",
+        "caption": "If you’re visiting the Strip District add the Allegheny Coffee & Tea Exchange to your list! The salty pretzel Nitro Brew is a top favorite of mine!\n\n@VisitPITTSBURGH \n\n#fyp #pittsburgh #nfldraft #412 #coffee"
       },
-      "playbook_top_move": "Open a TikTok account this quarter. Seven creators have already posted 25,671 plays with no brand account to follow, tag, or repost from; a TikTok presence turns passive coverage into compounding reach."
+      "playbook_top_move": "Forty years on Penn Avenue, a wall of single-origin beans the regulars scoop themselves, and a feed that still puts in the work. The Strip's coffee identity runs through this room."
     },
     {
       "rank": 4,
@@ -62,16 +62,16 @@
       "name": "Delanie's Coffee Shadyside",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Seventy-Fifth In Pittsburgh Cafes, With Seven Creators Already Filming And No TikTok Account To Show For It.",
-      "descriptor_highlight": "No TikTok Account",
-      "stat_line": "101 reviews · 4.6★ · 7 creators · 7K plays · 3 IG posts/30d",
+      "descriptor": "Cookie Butter Lattes, A Strawberry Matcha Reviewers Keep Mentioning, And Seven Creators Who Filmed This Quarter.",
+      "descriptor_highlight": "Seven Creators Who Filmed",
+      "stat_line": "104 reviews · 4.6★ · 7 creators filmed · women-owned, Identifies as small business",
       "featured_tiktok": {
         "author": "madisonrockk",
         "plays": 2190,
         "url": "https://www.tiktok.com/@madisonrockk/video/7605691920609709343",
         "caption": "Trying cookie butter lattes wherever I go // #fyp #coffeeshop #pittsburgh #cookiebutterlatte #delaniescoffee "
       },
-      "playbook_top_move": "Launch a TikTok account now. Seven creators have already tagged this business this quarter. Claiming that platform closes the loop and captures the cookie butter latte moment before it fades."
+      "playbook_top_move": "The signature drink is showing up in the city's coffee-tour TikToks. The cafe owns the cookie butter latte conversation in Pittsburgh outright."
     },
     {
       "rank": 5,
@@ -79,16 +79,16 @@
       "name": "Margaux",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "East Liberty",
-      "descriptor": "Fourteenth In Boutiques On Visual Strength Alone. The Feed Posts But Never Converts.",
-      "descriptor_highlight": "Never Converts",
-      "stat_line": "386 reviews · 4.4★ · 5 creators · 39K plays · 9 IG posts/30d",
+      "descriptor": "The East Liberty Cafe That Made The City's Aesthetic-Places Roundups. Five Creators, Forty Thousand Plays.",
+      "descriptor_highlight": "Forty Thousand Plays",
+      "stat_line": "386 reviews · 4.4★ · 5 creators filmed · nine posts in the last 30 days",
       "featured_tiktok": {
         "author": "deluludayss",
         "plays": 21400,
         "url": "https://www.tiktok.com/@deluludayss/video/7603414782779067661",
         "caption": "aesthetic places to visit in pittsburgh | part 1 #pittsburgh #pgh #aestheticplaces #coffeeaesthetic #aestheticvibes @fieldday.life @margauxpgh "
       },
-      "playbook_top_move": "Turn nine posts into Reels, not stills. Zero Reels in 30 days with 0.26% engagement means static posts are not moving the needle; converting even 3 of the current 9 monthly posts to short Reels would directly address the Instagram Momentum gap."
+      "playbook_top_move": "Margaux earned the aesthetic-cafe slot in the round-ups creators are making this spring. The room is doing the storytelling."
     },
     {
       "rank": 6,
@@ -96,16 +96,16 @@
       "name": "La Gourmandine Hazelwood",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Hazelwood",
-      "descriptor": "First In Pastry Shops, Thirty-Sixth In Sweets. The Instagram Has Been Dark For 53 Days.",
-      "descriptor_highlight": "Dark For 53 Days",
-      "stat_line": "522 reviews · 4.8★ · 5 creators · 18K plays",
+      "descriptor": "Pittsburgh's Top Pastry Shop By Customer Signal. Honey Bavarois, Swan Cream Puffs, And Five Creators Filming This Quarter.",
+      "descriptor_highlight": "Honey Bavarois, Swan Cream Puffs",
+      "stat_line": "522 reviews · 4.8★ · 5 creators filmed",
       "featured_tiktok": {
         "author": "melissasadhdlife",
         "plays": 7521,
         "url": "https://www.tiktok.com/@melissasadhdlife/video/7620558568844004639",
         "caption": "I love La Gourmandine, they never disappoint 🥐 🍫 \n\n#pittsburghtreats #patisserie #springpastries "
       },
-      "playbook_top_move": "Restart Instagram before the creator window closes. With 5 creators posting in the last quarter and the most recent TikTok just 14 days old, reposting or responding to that creator content costs nothing and rebuilds a feed that has been silent for 53 days."
+      "playbook_top_move": "The Hazelwood pastry counter is the city's quiet pastry leader, the kind of bakery creators tag because they actually go there."
     },
     {
       "rank": 7,
@@ -113,33 +113,33 @@
       "name": "Page's",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Arlington",
-      "descriptor": "First In Pittsburgh Boutiques On 3,145 Reviews. The TikTok Audience Has No Account To Follow.",
-      "descriptor_highlight": "No Account To Follow",
-      "stat_line": "3,153 reviews · 4.8★ · 4 creators · 87K plays · 9 IG posts/30d",
+      "descriptor": "Seventy-Five Years In Arlington, Three Thousand Reviews, And A Single Ice Cream Truck Reveal That Set The Sweets Ceiling.",
+      "descriptor_highlight": "Set The Sweets Ceiling",
+      "stat_line": "3,153 reviews · 4.8★ · 4 creators filmed · nine posts in the last 30 days",
       "featured_tiktok": {
         "author": "bhphotographypa",
         "plays": 62800,
         "url": "https://www.tiktok.com/@bhphotographypa/video/7615450580697337119",
         "caption": "Who Wants Ice Cream? 🍦 @Page's  #pagesdairymart #bhphotographypa #pittsburgh #southside #icecream"
       },
-      "playbook_top_move": "Claim the TikTok account before someone else does. Register @pagesdairymart on TikTok now. Four creators already drove 87K plays this quarter with nowhere to send that traffic."
+      "playbook_top_move": "Pittsburgh's longest-running ice cream institution still pulls the most creator volume in the sweets category, decade after decade."
     },
     {
       "rank": 8,
-      "business_slug": "jenis-splendid-ice-creams",
-      "name": "Jeni's Splendid Ice Creams",
+      "business_slug": "millies-homemade-ice-cream",
+      "name": "Millie's Homemade Ice Cream",
       "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Larimer",
-      "descriptor": "First In Pittsburgh Boutiques, Backed By 450 Photos And A Full Profile. TikTok Is The One Platform Missing.",
-      "descriptor_highlight": "One Platform Missing",
-      "stat_line": "254 reviews · 4.5★ · 3 creators · 6K plays · 12 IG posts/30d",
+      "neighborhood": "Shadyside",
+      "descriptor": "The Pittsburgh-Born Ice Cream Brand With Thirty-Seven Thousand Followers, Seven Reels This Month, And A Flagship That Still Sets The Tone.",
+      "descriptor_highlight": "Pittsburgh-Born Ice Cream Brand",
+      "stat_line": "1,150 reviews · 4.6★ · twelve posts in the last 30 days · seven reels",
       "featured_tiktok": {
-        "author": "soysauceyybae",
-        "plays": 3338,
-        "url": "https://www.tiktok.com/@soysauceyybae/video/7629810523340606751",
-        "caption": "Jeni’s Ice Cream Food Review with Bia Dao! \n@Jeni’s Splendid Ice Creams \n\n#jenissplendidicecream #foodreview #biadao #brambleberry #pittsburgh "
+        "author": "maddielovespittsburgh",
+        "plays": 1831,
+        "url": "https://www.tiktok.com/@maddielovespittsburgh/video/7628325194876144909",
+        "caption": "did you know that the @Millie’s Homemade Ice Cream inside the @Giant Eagle @Giant Eagle Market District at Tje Meridian serves coffee!? well, now you do !!! 🤭☕️🧋🍦💖 \n\nwhether you take your coffee black, with a little bit of milk or a who"
       },
-      "playbook_top_move": "Claim the TikTok account before summer. Three Pittsburgh creators have already filmed Jeni's with 6,049 plays and no owned account exists to redirect that traffic or build on it."
+      "playbook_top_move": "Grass-grazed flavors, dairy-free gelatos, and a feed that runs reels weekly. The Shadyside flagship still anchors the brand the rest of the city grew up on."
     },
     {
       "rank": 9,
@@ -147,42 +147,42 @@
       "name": "The Butterwood Bake Consortium",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Eighth In Pittsburgh Sweets On Pastry Depth And A Perfect Conversion Path. The Feed Has Been Quiet For 527 Days.",
-      "descriptor_highlight": "Perfect Conversion Path",
-      "stat_line": "736 reviews · 4.6★ · 3 creators · 4K plays",
+      "descriptor": "Banana Espresso Cake, Late Hours, And A Vegan Bakery Reputation The City's Creators Are Still Filming.",
+      "descriptor_highlight": "Banana Espresso Cake",
+      "stat_line": "736 reviews · 4.6★ · 3 creators filmed",
       "featured_tiktok": {
         "author": "courtneyncamp",
         "plays": 2918,
         "url": "https://www.tiktok.com/@courtneyncamp/video/7611749661170224397",
         "caption": "the banana espresso cake 😍 love a spot in Pittsburgh that has later hours for an amazing post dinner sweet treat! and everything in the shop is vegan!\n•\n•\n•\n#butterwoodbakeconsortium #pittsburgh #pittsburghfood #pittsburghdessert #sweettre"
       },
-      "playbook_top_move": "Restart Instagram after 527 days dark. Post three times a week for four weeks, focusing on the late-night hours angle and vegan cake close-ups that already drive creator interest."
+      "playbook_top_move": "Late-night, fully vegan, and a banana espresso cake creators tag by name. The room's reputation is doing the heavy lifting this quarter."
     },
     {
       "rank": 10,
-      "business_slug": "kyo-matcha",
-      "name": "Kyo Matcha",
-      "family_label": "Pittsburgh Sweets",
-      "neighborhood": "Squirrel Hill South",
-      "descriptor": "First In Pittsburgh Cafes, Held By Cakes And Matcha. Creator Volume Is Still The Open Question.",
-      "descriptor_highlight": "Still The Open Question",
-      "stat_line": "315 reviews · 4.7★ · 2 creators · 4K plays · 6 IG posts/30d",
+      "business_slug": "square-cafe",
+      "name": "Square Cafe",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "East Liberty",
+      "descriptor": "Eighteen Hundred Reviews, A South Highland Brunch Room, And An LGBTQ+ And Women-Owned Operation Posting Eleven Times A Month.",
+      "descriptor_highlight": "South Highland Brunch Room",
+      "stat_line": "1,839 reviews · 4.5★ · eleven posts in the last 30 days · LGBTQ+ and women-owned",
       "featured_tiktok": {
-        "author": "ride_rev_rx",
-        "plays": 4006,
-        "url": "https://www.tiktok.com/@ride_rev_rx/video/7610764382192143629",
-        "caption": "I'm a sucker for matcha ice cream and I'm SO happy Pittsburgh has started to get bits and pieces of authentic asian cuisine 🤭  next place to try is Meccha Matcha!\n\n#matchalover #throttletherapy #pittsburgheats #biketok #sweettooth \n@Kyo Ma"
+        "author": "lexianna1215",
+        "plays": 713,
+        "url": "https://www.tiktok.com/@lexianna1215/video/7604240489734245646",
+        "caption": "Everything we ate today at breakfast:) menu is huge and everything looked delicious it was so hard to choose!!! \n\n#squarecafe #pittsburghcafe #pittsburghbreakfast #breakfastspot #cafe "
       },
-      "playbook_top_move": "Convert Instagram to a business account now. Switching from personal to business unlocks analytics, promoted posts, and credibility signals that currently cap the Instagram Momentum ceiling."
+      "playbook_top_move": "Brussels sprout hash, vegan biscuit sandwiches, and a brunch menu the creators photograph plate by plate. East Liberty's most reviewed brunch room is still climbing."
     }
   ],
   "query": {
     "filter": {
       "family": "all"
     },
-    "ranking": "creator_pickup",
+    "ranking": "creator pickup",
     "limit": 10
   },
-  "generated_at": "2026-05-11T00:32:53.316Z",
-  "model": "claude-sonnet-4-6"
+  "generated_at": "2026-05-15T00:00:00.000Z",
+  "model": "claude-opus-4-7"
 }

@@ -3,63 +3,62 @@
   "title": "Pittsburgh's Most Underrated Bars",
   "subtitle": "Bars and breweries the regulars treat as their own.",
   "angle": "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
-  "intro": "The bars and breweries on this list did not underperform. Their customers just kept the secret better than the algorithm noticed.\n\nPittsburgh's most interesting drinking institutions this quarter share a specific pattern: the reviews read like regulars writing letters, not tourists logging check-ins. Commerce Bar in East Liberty ranked second among Pittsburgh bars on review depth alone, with no website and no listed phone number to help it along. Hidden Harbor in Squirrel Hill South ranked first in its category on borrowed reach, meaning creators have already done the work the bar itself has not claimed. Hop Farm Brewing in Lawrenceville sits at the top of the brewery rankings, carried by 21 individual creators whose content the business has not once amplified or returned.\n\nThe customer love is already documented. The cheaper second move, for most of these owners, is simply asking the people who already showed up on camera to come back with some intention. Pittsburgh has more creators actively looking for places to feature than most bar owners realize, and the infrastructure that connects them tends to work quietly, because it does not need to pitch.\n\nIssue 02 will return in summer 2026 with the full warm-weather audit, covering patios, seasonal openings, and whether any of these regulars finally brought their bars into the conversation they started.",
+  "intro": "The bars and breweries on this list are not hidden. Their regulars know exactly where they are, and the reviews prove it. What they share is a specific kind of gap: the room is full, the conversation is real, and the digital profile looks like an afterthought. Underrated, here, means the signal hasn't caught up to the substance.\n\nGrist House Craft Brewery ranks first among Pittsburgh breweries this quarter, which is not a small thing in a city that takes brewing seriously. It also barely registers in the broader discovery layer, the place where someone new to the city or the neighborhood would actually find it. Dancing Gnome Beer presents a sharper version of the same problem: it ranks first in its category with no Instagram presence, no listed phone number, and no posted hours on Google. A place earning that kind of word-of-mouth while running a Google listing that answers zero basic questions is leaving real ground uncovered.\n\nThe businesses on this list already have the hardest part, which is genuine customer loyalty. The gap between that loyalty and a visible digital presence is often shorter than owners expect, and the people who could close it are frequently already in the room.\n\nIssue 02, Summer 2026, turns to Pittsburgh's best new restaurants, and the category is closer than it looks.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "commerce-bar",
-      "name": "Commerce Bar",
+      "business_slug": "grist-house-craft-brewery",
+      "name": "Grist House Craft Brewery",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "East Liberty",
-      "descriptor": "Second In Pittsburgh Bars On Review Depth Alone. The Listing Has No Website, No Phone.",
-      "descriptor_highlight": "No Website, No Phone",
-      "stat_line": "106 reviews · 4.7★ · 1 IG posts/30d",
-      "playbook_top_move": "Complete the Google Business listing today. Add a website URL and phone number to the Google listing, which currently shows neither, closing the most direct path visitors use to confirm hours and book."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Pittsburgh Breweries, Invisible To The City's Discovery Layer.",
+      "descriptor_highlight": "Invisible To The City's",
+      "stat_line": "749 reviews · 4.8★",
+      "playbook_top_move": "Get the Instagram handle indexed publicly. The IG account is not searchable in any index; confirm handle is set to public and link it directly on the Google Business profile."
     },
     {
       "rank": 2,
-      "business_slug": "golden-age-beer-company",
-      "name": "Golden Age Beer Company",
+      "business_slug": "crafthouse-stage-grill",
+      "name": "Crafthouse Stage & Grill",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Second In Breweries, Carried By Reviews. The Taproom Has No TikTok Footprint Yet.",
-      "descriptor_highlight": "No TikTok Footprint",
-      "stat_line": "195 reviews · 4.8★ · 12 IG posts/30d",
-      "playbook_top_move": "Address the kitchen critique directly. One negative review thread on overcooked food is enough to suppress a sentiment signal sitting two points below the family median; a menu edit or staff calibration on bar bites is the fastest path to closing that gap."
+      "descriptor": "First In Its Tier, Zero Social Footprint. The Room Delivers, The Feed Does Not Exist.",
+      "descriptor_highlight": "Zero Social Footprint",
+      "stat_line": "1,560 reviews · 4.4★",
+      "playbook_top_move": "Build a discoverable Instagram presence now. Claim and index a business Instagram account; the handle is currently undetectable, costing the venue its share of every concert night recap posted by attendees."
     },
     {
       "rank": 3,
-      "business_slug": "hidden-harbor",
-      "name": "Hidden Harbor",
+      "business_slug": "hitchhiker-brewing-brewery-tap-room",
+      "name": "Hitchhiker Brewing - Brewery & Tap Room",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "Squirrel Hill South",
-      "descriptor": "First In Pittsburgh Bars On Borrowed Reach. The Bar Hasn't Claimed Its Own TikTok Story.",
-      "descriptor_highlight": "Borrowed Reach",
-      "stat_line": "765 reviews · 4.6★ · 10 creators · 426K plays · 12 IG posts/30d",
-      "featured_tiktok": {
-        "author": "messihasaura7689",
-        "plays": 204400,
-        "url": "https://www.tiktok.com/@messihasaura7689/video/7621394526262922527",
-        "caption": "Pearl Harbor #usa #japan #pearlharbor #edit #darktriad "
-      },
-      "playbook_top_move": "Build a TikTok presence before creators define you. Ten creators posted 425,844 plays this quarter with zero input from Hidden Harbor. Claim the account and post even two videos a month to own the narrative."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Breweries, But 161st In Bars. The Google Listing Is Doing This Place No Favors.",
+      "descriptor_highlight": "161st In Bars",
+      "stat_line": "444 reviews · 4.8★",
+      "playbook_top_move": "Complete the Google Business listing now. Add phone number, hours, and at least 10 photos to a profile that currently shows zero across all three fields."
     },
     {
       "rank": 4,
-      "business_slug": "hop-farm-brewing-company",
-      "name": "Hop Farm Brewing Company",
+      "business_slug": "dancing-gnome-beer",
+      "name": "Dancing Gnome Beer",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "Number One In Breweries, Powered By 21 Creators. The Business Captures None Of That Signal.",
-      "descriptor_highlight": "21 Creators",
-      "stat_line": "298 reviews · 4.6★ · 21 creators · 171K plays · 12 IG posts/30d",
-      "featured_tiktok": {
-        "author": "stevenjamesyuhasz",
-        "plays": 51500,
-        "url": "https://www.tiktok.com/@stevenjamesyuhasz/video/7610945922725465374",
-        "caption": "The staff and customer service here was unbelievable. Definitely the type of place I want to support. @B&K Farm Market #warren #youngstown #cortland #ohio "
-      },
-      "playbook_top_move": "Start a TikTok account this week. Twenty-one creators generated 170,828 plays tagging Hop Farm this quarter; a business account captures future tags, replies, and discovery that currently go nowhere."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Pittsburgh Breweries, But No Instagram, No Hours, No Phone On Google.",
+      "descriptor_highlight": "No Hours, No Phone",
+      "stat_line": "610 reviews · 4.6★",
+      "playbook_top_move": "Complete the Google Business listing today. Add hours and a phone number to Google; both are missing and directly suppress discovery for 610-review business."
+    },
+    {
+      "rank": 5,
+      "business_slug": "east-end-brewing-company",
+      "name": "East End Brewing Company",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "Larimer",
+      "descriptor": "First In Breweries, But The Listing Is Missing A Phone, Hours, And Any Photos.",
+      "descriptor_highlight": "Missing A Phone",
+      "stat_line": "495 reviews · 4.8★",
+      "playbook_top_move": "Complete the Google Business listing now. Add phone number, hours, and at least one photo category; all three are currently absent and suppressing discovery across 205 Bars competitors."
     }
   ],
   "query": {
@@ -69,6 +68,6 @@
     "ranking": "underrated",
     "limit": 5
   },
-  "generated_at": "2026-04-26T22:36:54.411Z",
+  "generated_at": "2026-05-11T00:34:02.695Z",
   "model": "claude-sonnet-4-6"
 }

@@ -21,23 +21,27 @@ type SocialStateProps = {
   handle: string | null;
   posts30d: number;
   reels30d: number;
-  engagementRate: number; // fractional, e.g. 0.042 = 4.2%
+  engagementRate: number; // fractional, kept on the type for callers; never rendered as a number
+  /**
+   * Optional short qualitative label for the engagement tile. One of
+   * "Above" / "Typical" / "Quiet", computed against the per-family
+   * baseline (see lib/editorial/category-baseline.ts). When null/
+   * undefined the tile falls back to "Typical" so the component still
+   * renders something useful without a baseline calculation upstream.
+   */
+  engagementLabel?: "Above" | "Typical" | "Quiet" | null;
   taggedUgc30d?: number;
   verified?: boolean;
   private?: boolean;
   hasRealData?: boolean; // if true, hide the PreviewBadge
 };
 
-function formatRate(rate: number): string {
-  return `${(rate * 100).toFixed(1)}%`;
-}
-
 export function SocialState(props: Partial<SocialStateProps>) {
   const {
     handle,
     posts30d = 14,
     reels30d = 6,
-    engagementRate = 0.042,
+    engagementLabel = null,
     verified = false,
     private: isPrivate = false,
     hasRealData = false,
@@ -54,7 +58,7 @@ export function SocialState(props: Partial<SocialStateProps>) {
           <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-brand-black">
             Social state
           </h3>
-          <p className="font-body text-xs text-brand-black/55">,</p>
+          <p className="font-body text-xs text-brand-black/55">No handle</p>
         </div>
         <p className="font-body text-sm text-brand-black/70 max-w-md leading-relaxed">
           Not on Instagram yet. No public handle surfaced from the website.
@@ -102,8 +106,11 @@ export function SocialState(props: Partial<SocialStateProps>) {
     },
     {
       label: "Engagement",
-      value: formatRate(engagementRate),
-      sub: "avg per post",
+      // Single-word qualitative band against the family typical.
+      // Defaults to "Typical" when the caller didn't supply a band
+      // (e.g. no baseline available, small family, missing IG rate).
+      value: engagementLabel ?? "Typical",
+      sub: "for the family",
     },
     {
       label: "Verified",

@@ -108,31 +108,18 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
               </a>
             </p>
 
-            {/* Creativity score badge + editorial "why" line, only on
-                the most-creative list where these fields exist. */}
+            {/* Editorial "why" pull-quote, only on the most-creative
+                list where this field exists. Numeric creativity scores
+                are intentionally not surfaced. */}
             {item.creativity_score !== undefined &&
-              Number.isFinite(item.creativity_score) && (
-              <div className="mt-4 flex flex-col gap-2">
-                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                  <span className="inline-flex items-center bg-brand-lime text-brand-black font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em] px-2 py-0.5">
-                    Creativity {item.creativity_score.toFixed(1)} / 10
-                  </span>
-                  {item.scores ? (
-                    <span className="font-body text-[0.7rem] text-brand-black/55">
-                      Visual {item.scores.visual_concept} · Caption{" "}
-                      {item.scores.caption_craft} · Format{" "}
-                      {item.scores.format_fit} · Surprise{" "}
-                      {item.scores.surprise}
-                    </span>
-                  ) : null}
-                </div>
-                {item.why ? (
-                  <p className="font-body text-xs md:text-sm text-brand-black/75 italic leading-snug border-l-2 border-brand-purple pl-3">
-                    {item.why}
-                  </p>
-                ) : null}
+              Number.isFinite(item.creativity_score) &&
+              item.why ? (
+              <div className="mt-4">
+                <p className="font-body text-xs md:text-sm text-brand-black/75 italic leading-snug border-l-2 border-brand-purple pl-3">
+                  {item.why}
+                </p>
               </div>
-            )}
+            ) : null}
 
             <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
               {item.platform === "instagram" ? (

@@ -19,6 +19,10 @@ import {
   computeFamilyMetricStats,
   pickStrengthsAndGaps,
 } from "@/lib/editorial/family-stats";
+import {
+  computeFamilyEngagementBaselines,
+  engagementBandForBusiness,
+} from "@/lib/editorial/category-baseline";
 import { StrengthsAndGaps } from "@/components/insights/StrengthsAndGaps";
 import {
   RowPeerStat,
@@ -199,6 +203,25 @@ export default async function BusinessPage({ params }: PageProps) {
     ? Math.round((now.getTime() - lastPostAt.getTime()) / 86_400_000)
     : null;
 
+  // Per-family engagement baseline + qualitative band for this business.
+  // Built up here (early) because the momentum bullet inside
+  // subscoreDetails uses it. The same baseline map is reused for the
+  // family-stats card lower down, so we only iterate the cohort once.
+  // Loading every social record city-wide is expensive but loadAllBusinesses
+  // is already cached for the page, and loadSocialBySlug reads a single
+  // JSON each. Acceptable for now; if it bites perf later, move to a
+  // pre-aggregated baseline file written by the ingest pipeline.
+  const richBusinesses = all.map((artifact) => ({
+    artifact,
+    social: loadSocialBySlug(artifact.business.slug),
+  }));
+  const currentRich = { artifact: art, social };
+  const engagementBaselines = computeFamilyEngagementBaselines(richBusinesses);
+  const engagementBand = engagementBandForBusiness(
+    currentRich,
+    engagementBaselines,
+  );
+
   // Subscore detail bullets, surfaced inside the SubscoreBars component
   // when a reader clicks a row.
   const subscoreDetails: Partial<
@@ -256,7 +279,13 @@ export default async function BusinessPage({ params }: PageProps) {
         ? [
             `${social.ig.posts_30d} posts in the last 30 days`,
             `${social.ig.reels_30d} reels in the last 30 days`,
-            `${Math.round(social.ig.avg_engagement_rate * 1000) / 10}% average engagement rate`,
+            // Engagement bullet: qualitative band against the
+            // per-family baseline. Falls back to a flat "typical" line
+            // when the engagement rate is missing or the family
+            // sample is too small to be meaningful.
+            engagementBand
+              ? `Engagement ${engagementBand.label.toLowerCase()}`
+              : "Engagement reads typical for the family",
             daysSinceLastPost !== null
               ? `Last post ${daysSinceLastPost} days ago`
               : "Last post unknown",
@@ -351,14 +380,6 @@ export default async function BusinessPage({ params }: PageProps) {
   // Powers the per-row peer comparison strings AND the Strengths-and-Gaps
   // summary card above AtAGlance. Computed before the row builders so
   // each row's expanded content can pull peer-comparison stats.
-  const richBusinesses = all.map((artifact) => ({
-    artifact,
-    social: loadSocialBySlug(artifact.business.slug),
-  }));
-  const currentRich = {
-    artifact: art,
-    social,
-  };
   const familyStats = computeFamilyMetricStats(currentRich, richBusinesses);
   const { strengths, gaps } = pickStrengthsAndGaps(familyStats);
 
@@ -690,16 +711,19 @@ export default async function BusinessPage({ params }: PageProps) {
             <Playbook playbook={playbook} />
           </div>
 
-          {/* 4. Get Featured CTA, third sanctioned Relay surface per
-              editorial brief. Sits between the Playbook (diagnostic) and
-              the Subscribe footer (return-loop). */}
-          <div className="mt-10 md:mt-12">
-            <GetFeaturedCTA
-              businessName={biz.name}
-              businessSlug={biz.slug}
-              businessCategory={biz.category}
-            />
-          </div>
+          {/* 4. Get Featured CTA, sanctioned Relay surface per editorial
+              brief. Renders only on CLAIMED business pages, never on
+              unclaimed records. Sits between the Playbook (diagnostic)
+              and the Subscribe footer (return-loop). */}
+          {biz.claimed ? (
+            <div className="mt-10 md:mt-12">
+              <GetFeaturedCTA
+                businessName={biz.name}
+                businessSlug={biz.slug}
+                businessCategory={biz.category}
+              />
+            </div>
+          ) : null}
 
           {/* 5. Subscribe footer */}
           <div className="mt-10 md:mt-12">

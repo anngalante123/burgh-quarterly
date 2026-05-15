@@ -14,10 +14,10 @@ import {
   type SearchableBusiness,
 } from "@/components/BusinessSearch";
 import { isPostArticle, loadAllListArticles } from "@/lib/data/load-list";
-import { GetFeaturedCTA } from "@/components/GetFeaturedCTA";
 import { RelayCollabGallery } from "@/components/RelayCollabs";
 import { HeroSearch } from "@/components/HeroSearch";
 import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
+import { loadSocialBySlug } from "@/lib/data/load-social";
 
 // Render on demand to skip the build-time DB hit. The homepage pulls
 // every business for the hero search index and the global rankings,
@@ -108,6 +108,31 @@ export default async function Home() {
   const featured = all.find((b) => b.business.slug === featuredSlug);
   const featuredPhoto =
     featured?.business.hero_photo ?? featured?.business.photos[0]?.url ?? null;
+
+  // Live stats for the Featured Record dek. All values pulled from the
+  // current business artifact + social record so the copy never drifts
+  // from the index. None of these are scores; they are factual counts.
+  const featuredSocial = featured ? loadSocialBySlug(featuredSlug) : null;
+  const featuredFiveStar =
+    featured?.meta.reviewsDistribution?.fiveStar ?? null;
+  const featuredCreatorCount =
+    featuredSocial?.tiktok_mentions?.unique_creators ?? null;
+  const featuredCategoryName = featured?.meta.categoryName ?? "Bakery";
+  const featuredCategoryRank = featured?.score.rank_category ?? null;
+  const featuredLastPostAt = featuredSocial?.ig?.last_post_at ?? null;
+  // Bound to "today" as of this render so the dek matches what the reader
+  // sees. Computed via `new Date()` to mirror the pattern already used on
+  // the business page (avoids the React Compiler's `Date.now()` purity rule).
+  const featuredDaysSincePost = featuredLastPostAt
+    ? Math.max(
+        0,
+        Math.floor(
+          (new Date().getTime() -
+            new Date(featuredLastPostAt).getTime()) /
+            86_400_000,
+        ),
+      )
+    : null;
 
   return (
     <>
@@ -272,14 +297,6 @@ export default async function Home() {
           </ol>
         </Reveal>
 
-        {/* ── GET FEATURED CTA, generic homepage variant ───────
-            Sits between the Top 5 leaderboard and the Series cards
-            so a Pittsburgh business owner arriving via the front door
-            sees the offer without needing to click into a scorecard. */}
-        <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
-          <GetFeaturedCTA variant="compact" />
-        </Reveal>
-
         {/* ── RELAY COLLAB GALLERY ────────────────────────────
             12 photos from real creator collabs, rotates daily. Sits
             right after the CTA so the "Get filmed" copy is
@@ -425,7 +442,10 @@ export default async function Home() {
             )}
             <div className="p-6 md:p-8">
               <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
-                Bakery · Lawrenceville · #8 in Sweets
+                {featuredCategoryName} · Lawrenceville
+                {featuredCategoryRank
+                  ? ` · #${featuredCategoryRank} in ${featuredCategoryName}`
+                  : ""}
               </p>
               <h4 className="mt-3 font-display font-black uppercase tracking-[-0.02em] text-brand-black text-[clamp(1.5rem,4vw,2.5rem)] leading-[1] [text-wrap:balance]">
                 La Gourmandine,
@@ -433,12 +453,23 @@ export default async function Home() {
                 Lawrenceville
               </h4>
               <p className="mt-4 max-w-2xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
-                1,294 five-star reviews. 779 photos on Google.{" "}
-                <span className="font-semibold text-brand-black">
-                  Nine creators filmed it on TikTok in the last 90 days.
-                </span>{" "}
-                The bakery itself hasn&apos;t posted in 40 days. The full
-                scorecard, ranked.
+                {featuredFiveStar
+                  ? `${featuredFiveStar.toLocaleString()} five-star reviews. `
+                  : ""}
+                {featured?.meta.imagesCount
+                  ? `${featured.meta.imagesCount.toLocaleString()} photos on Google. `
+                  : ""}
+                {featuredCreatorCount && featuredCreatorCount > 0 ? (
+                  <span className="font-semibold text-brand-black">
+                    {featuredCreatorCount === 1
+                      ? "One creator filmed it on TikTok this quarter."
+                      : `${featuredCreatorCount} creators filmed it on TikTok this quarter.`}
+                  </span>
+                ) : null}{" "}
+                {featuredDaysSincePost !== null
+                  ? `The bakery itself hasn't posted in ${featuredDaysSincePost} days. `
+                  : ""}
+                The full scorecard, ranked.
               </p>
               <p className="mt-5 inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
                 Read the record

@@ -100,7 +100,7 @@ Hope to see the Exchange on more screens soon.
 
 Commerce Bar is in Issue 01 of Signal Pittsburgh. We track Pittsburgh small businesses on social media every quarter, and your bar earned a spot in our Neighborhood Staples tier, ranking #4 in the Pittsburgh Bars family.
 
-Your Google presence is genuinely strong: 106 reviews at 4.7 stars puts you second in the family on review depth alone. Our published diagnosis reads: "Second In Pittsburgh Bars On Review Depth Alone, The Social Signal Has Barely Shown Up." That gap is the whole story, and your full scorecard breaks it down.
+Your Google presence is genuinely strong: 106 reviews at 4.7 stars puts you second in the family on review depth alone. Our published diagnosis reads: "Second In Pittsburgh Bars On Review Depth Alone, The Instagram Presence Has Barely Shown Up." That gap is the whole story, and your full scorecard breaks it down.
 
 https://burgh-quarterly.vercel.app/business/commerce-bar
 
@@ -665,7 +665,7 @@ Would love to see Margaux get the visibility it's already earning.
 
 MeetCha is in Issue 01 of Signal Pittsburgh. We rank Pittsburgh small businesses on their social presence each quarter, and your café made the list in the Pittsburgh Cafes family, landing at #10 in the Ones to Watch tier.
 
-Here is the line we published in your diagnosis: "Fourth In Pittsburgh Cafes On Goodwill Alone. The Social Signal Has Been Silent For Ninety Days." That 4.8-star reputation across 134 reviews is real, and it's doing a lot of heavy lifting right now.
+Here is the line we published in your diagnosis: "Fourth In Pittsburgh Cafes On Goodwill Alone. The Instagram Presence Has Been Silent For Ninety Days." That 4.8-star reputation across 134 reviews is real, and it's doing a lot of heavy lifting right now.
 
 Your full record, scorecard, and playbook are live here:
 https://burgh-quarterly.vercel.app/business/meetcha

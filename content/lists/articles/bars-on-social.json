@@ -1,73 +1,68 @@
 {
   "slug": "bars-on-social",
-  "title": "The Pittsburgh Bars Most Worth Following",
-  "subtitle": "By the numbers, this quarter",
-  "angle": "which Pittsburgh bars and breweries are leading the social conversation. Who's getting filmed, who's posting, who's getting talked about.",
-  "intro": "Pittsburgh's bar scene is loud in person and surprisingly quiet online. This quarter's rankings expose a specific tension: rooms full of people, phones in pockets. The Urban Tap on South Side Flats lands first on review volume alone, which tells you something about loyalty and nothing about reach. Howl at the Moon Downtown matches that story almost exactly, reviews stacking up while every other signal sits at zero.\n\nThe one that deserves a second look is Pins Mechanical Co. A giant slide. A functioning duckpin bowling alley. Content that should be writing itself. And yet the filming isn't happening, or isn't spreading, which is either a missed opportunity or a deliberate posture worth watching either way.\n\nWhat this quarter confirms is that Pittsburgh drinkers are still more likely to leave a star rating than a tagged video, more likely to recommend verbally than to post. That gap between a full room and a visible footprint is the story we'll keep tracking. Issue 02 arrives in Summer 2026, and by then, the bars that figured out how to close that gap will be easy to spot.",
+  "title": "Pittsburgh Bars Showing Up On Instagram",
+  "subtitle": "Five rooms doing the work this quarter, ranked by what's actually on the feed.",
+  "angle": "The Pittsburgh bars and breweries with active Instagram feeds this quarter, ranked by cadence and the kind of programming the feed actually shows.",
+  "intro": "Pittsburgh's bar scene is loud in person and famously quiet online. The five rooms below are the exception. They post weekly or better, they document the menu and the music, and the feed gives a real picture of what walking in feels like.\n\nHop Farm in Lawrenceville is the most consistent of the group, posting twelve times in the last thirty days with reels mixed in, leaning hard on the trivia-and-music programming that has defined the urban farmhouse since opening. Hidden Harbor in Squirrel Hill is matching that cadence with tiki content that travels, the kind of close-ups of cocktail glassware and themed nights that explain why creators keep filming there. Golden Age, the German and Czech lager house, is using Instagram to roll out the next chapter, the new Garden Theater concept on the North Side, ahead of opening.\n\nThis is the short list of bars whose feeds match the room. Issue 02 will track who joins them.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "the-urban-tap-southside",
-      "name": "The Urban Tap - Southside",
+      "business_slug": "hop-farm-brewing-company",
+      "name": "Hop Farm Brewing Company",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "South Side Flats",
-      "descriptor": "First In Pittsburgh Bars On Reviews Alone. No Social Signal Has Joined The Conversation Yet.",
-      "descriptor_highlight": "Reviews Alone",
-      "stat_line": "1,167 reviews · 4.4★",
-      "playbook_top_move": "Get Instagram indexed and findable. No Instagram handle is indexed anywhere for this business; claim or reactivate and link the profile directly on the Google Business listing this week."
+      "neighborhood": "Lawrenceville",
+      "descriptor": "Twelve Posts In Thirty Days, Four Of Them Reels, Programming The Urban Farmhouse Like Clockwork.",
+      "descriptor_highlight": "Twelve Posts In Thirty Days",
+      "stat_line": "298 reviews · 4.6★ · weekly trivia and Music Thursdays on the feed"
     },
     {
       "rank": 2,
-      "business_slug": "howl-at-the-moon-pittsburgh",
-      "name": "Howl at the Moon Pittsburgh",
+      "business_slug": "hidden-harbor",
+      "name": "Hidden Harbor",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "Downtown",
-      "descriptor": "First In Pittsburgh Bars On Review Volume Alone. Every Other Signal Is Unbuilt.",
-      "descriptor_highlight": "Every Other Signal",
-      "stat_line": "1,071 reviews · 4.3★",
-      "playbook_top_move": "Establish an Instagram presence immediately. The business has no indexed Instagram account; 10,707 customer photos exist but no owned channel captures any of it."
+      "neighborhood": "Squirrel Hill South",
+      "descriptor": "Tiki Content That Travels. Glassware, Themed Nights, And A Decade In The Neighborhood On Display.",
+      "descriptor_highlight": "Tiki Content That Travels",
+      "stat_line": "765 reviews · 4.6★ · twelve posts in the last 30 days"
     },
     {
       "rank": 3,
-      "business_slug": "pins-mechanical-co",
-      "name": "Pins Mechanical Co.",
+      "business_slug": "golden-age-beer-company",
+      "name": "Golden Age Beer Company",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "South Side Flats",
-      "descriptor": "Third In Pittsburgh Bars, With A Giant Slide Nobody Is Filming.",
-      "descriptor_highlight": "Nobody Is Filming",
-      "stat_line": "903 reviews · 4.4★",
-      "playbook_top_move": "Get the Instagram handle indexed. The handle is not findable via Google; confirm the profile is public, linked on the Google Business listing, and actively posting so discovery closes."
+      "neighborhood": "Pittsburgh",
+      "descriptor": "German And Czech Lagers, And A Garden Theater Reveal That The Feed Is Pacing Out Week By Week.",
+      "descriptor_highlight": "Garden Theater Reveal",
+      "stat_line": "195 reviews · 4.8★ · twelve posts in the last 30 days, the North Side expansion in motion"
     },
     {
       "rank": 4,
-      "business_slug": "ocean-mist",
-      "name": "Ocean Mist",
+      "business_slug": "lorelei",
+      "name": "Lorelei",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "Pittsburgh",
-      "descriptor": "First In Pittsburgh Bars On Review Depth. Every Other Signal Axis Is Dark.",
-      "descriptor_highlight": "Every Other Signal Axis",
-      "stat_line": "1,794 reviews · 4.5★",
-      "playbook_top_move": "Get an indexed Instagram presence live. Ocean Mist has no indexed Instagram handle; establishing and verifying one is the single prerequisite for every other social signal to register."
+      "neighborhood": "East Liberty",
+      "descriptor": "Alpine Cocktails, Wood-Fired Pizzas, And A Mid-Century Mondays Run That Started On Instagram.",
+      "descriptor_highlight": "Mid-Century Mondays",
+      "stat_line": "392 reviews · 4.5★ · four posts in the last 30 days, programming-led"
     },
     {
       "rank": 5,
-      "business_slug": "over-the-bar-bicycle-cafe",
-      "name": "Over The Bar Bicycle Cafe",
+      "business_slug": "commerce-bar",
+      "name": "Commerce Bar",
       "family_label": "Pittsburgh Bars",
-      "neighborhood": "South Side Flats",
-      "descriptor": "Third In Pittsburgh Bars On Review Depth Alone. Every Social Signal Is Missing.",
-      "descriptor_highlight": "Every Social Signal Is Missing",
-      "stat_line": "985 reviews · 4.5★",
-      "playbook_top_move": "Get the Instagram handle publicly indexed. Ensure the Instagram profile is public, linked on the Google Business profile, and searchable so the handle appears in discovery results."
+      "neighborhood": "East Liberty",
+      "descriptor": "A Hidden Cocktail Bar With Fourteen Thousand Followers, Posting Sparingly And Letting The Mystery Carry The Feed.",
+      "descriptor_highlight": "Letting The Mystery Carry",
+      "stat_line": "106 reviews · 4.7★ · the East Liberty cocktail room, no reservations"
     }
   ],
   "query": {
     "filter": {
       "family": "bars"
     },
-    "ranking": "composite",
+    "ranking": "instagram cadence",
     "limit": 5
   },
-  "generated_at": "2026-05-11T00:33:15.965Z",
-  "model": "claude-sonnet-4-6"
+  "generated_at": "2026-05-15T00:00:00.000Z",
+  "model": "claude-opus-4-7"
 }

@@ -88,7 +88,7 @@ function CollabTile({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={`/relay-collabs/${entry.file}`}
-          alt={`${entry.business} — filmed by ${entry.creator}`}
+          alt={`${entry.business}, filmed by ${entry.creator}`}
           className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
           loading="lazy"
           width={size === "lg" ? 1200 : 600}
@@ -120,7 +120,7 @@ function CollabTile({
 }
 
 /* ---------------------------------------------------------- *
- *  Strip — compact, 3 tiles
+ *  Strip, compact, 3 tiles
  *  Tries to pick photos from the same editorial family as the
  *  current business (bars get bars, cafes get cafes, etc). Falls
  *  back to the broader photo pool when the family doesn't have
@@ -207,7 +207,7 @@ function familyLabelShort(famKey: string | null): string {
 }
 
 /* ---------------------------------------------------------- *
- *  Gallery — magazine-bento
+ *  Gallery, magazine-bento
  *  Layout on md+:
  *    [ 01 (hero, 2x2) ][ 02 ][ 03 ]
  *    [               ][ 04 ][ 05 ]

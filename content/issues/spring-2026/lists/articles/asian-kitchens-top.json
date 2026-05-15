@@ -3,92 +3,113 @@
   "title": "The Pittsburgh Asian Kitchens Creators Keep Returning To",
   "subtitle": "Sushi, noodles, Thai, Indian, Japanese",
   "angle": "the Asian kitchens generating the most creator coverage this quarter. The dishes the city is filming and the restaurants behind them.",
-  "intro": "Pittsburgh's Asian restaurant conversation this quarter ran almost entirely on borrowed momentum. Creators drove the coverage; the kitchens, for the most part, stayed quiet. That gap is the story.\n\nEveryday Noodles sits at the top of the noodle rankings having never touched the 19 million plays circling its name online. Reva Modern Indian, the highest-ranked Indian kitchen on the list, was carried by 33 separate creators this quarter and has not posted once in 72 days. These are not restaurants gaming an algorithm. They are restaurants that made something people want to film, then stepped back entirely, which turns out to be its own kind of strategy, or at least its own kind of outcome.\n\nMola leads the full Asian kitchens ranking and Pusadee's Garden owns Thai in this city, both built on review depth rather than a coordinated feed. What this quarter's data keeps returning to is a simple problem: Pittsburgh knows what it likes before the restaurants do. Whether that gap closes, or whether these kitchens decide it needs to, is the question Issue 02 will be tracking when summer arrives.",
+  "intro": "Asian kitchens are generating some of the most consistent creator attention in Pittsburgh this quarter, and the pattern is worth examining closely. Everyday Noodles in Squirrel Hill has no Instagram account and no TikTok presence, yet creators are already filming inside. Pusadee's Garden in Lawrenceville ranks first among Pittsburgh Thai restaurants on conversation volume, running on a feed that posts roughly twice a month and nothing on short-form video. The coverage is arriving faster than the infrastructure meant to catch it.\n\nMola in East Liberty tells a sharper version of the same story. It leads Pittsburgh in sushi on review depth alone, which means the written record is substantial, but the social feed has gone nearly quiet. Atarashi holds the same top ranking in sushi with more recent activity, though the newest reviews are pulling sentiment in a complicated direction. Both restaurants are filming-ready in ways their accounts have not fully accounted for.\n\nWhat this quarter establishes is a gap between where creators are pointing their cameras and where restaurants have built the surface to receive that attention. That gap will only matter more as competition tightens. Issue 02 will track whether these kitchens close it.",
   "items": [
     {
       "rank": 1,
-      "business_slug": "everyday-noodles",
-      "name": "Everyday Noodles",
-      "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "Squirrel Hill North",
-      "descriptor": "First In Noodles On 19 Million Plays It Never Captured.",
-      "descriptor_highlight": "19 Million Plays",
-      "stat_line": "2,216 reviews · 4.6★ · 26 creators · 19.1M plays",
-      "featured_tiktok": {
-        "author": "joshua.guitar",
-        "plays": 11400000,
-        "url": "https://www.tiktok.com/@joshua.guitar/video/7603185879934340365",
-        "caption": "Good noodles everyday 🤤 #trending #noodles #meme #fyp #guitar "
-      },
-      "playbook_top_move": "Claim the TikTok account now. 26 creators have already done the work; an owned account turns 19 million plays into a followable destination instead of a dead end."
-    },
-    {
-      "rank": 2,
-      "business_slug": "reva-modern-indian-cuisine",
-      "name": "Reva Modern Indian Cuisine",
-      "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "East Liberty",
-      "descriptor": "Number One In Indian, Carried By 33 Creators. The Restaurant Has Not Posted In 72 Days.",
-      "descriptor_highlight": "Not Posted In 72 Days",
-      "stat_line": "527 reviews · 4.6★ · 33 creators · 373K plays",
-      "featured_tiktok": {
-        "author": "gabs_joella",
-        "plays": 66300,
-        "url": "https://www.tiktok.com/@gabs_joella/video/7627972466371022111",
-        "caption": "My mom didn’t have to ask me twice to make this video for her to help promote the family’s restaurant. I got to eat bomb, authentic Indian food and see my mom smile! It would mean a lot her and the fam if you checked out this wonderful smal"
-      },
-      "playbook_top_move": "Restart Instagram before the quarter ends. Reva has posted zero times in 72 days; a single weekly post would reactivate a feed sitting on a 37.85 percent engagement rate."
-    },
-    {
-      "rank": 3,
       "business_slug": "pusadees-garden",
       "name": "Pusadee's Garden",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First In Pittsburgh Thai On Review Depth Alone. The City Is Posting, The Garden Is Not.",
-      "descriptor_highlight": "The City Is Posting",
-      "stat_line": "1,224 reviews · 4.7★ · 16 creators · 3.4M plays · 2 IG posts/30d",
+      "descriptor": "First In Pittsburgh Thai, Stalled By A Feed That Posts Twice A Month And No TikTok Account.",
+      "descriptor_highlight": "No TikTok Account",
+      "stat_line": "1,233 reviews · 4.7★ · 8 creators · 19K plays · 2 IG posts/30d",
       "featured_tiktok": {
-        "author": "avixenm",
-        "plays": 2800000,
-        "url": "https://www.tiktok.com/@avixenm/video/7605311656453000456",
-        "caption": "Naglaro kami pogs! 🫣 #roblox #growagarden #robloxmemes #elmilogato #fyp robloxph robloxskit omsim posa jandel"
+        "author": "mad_i_libs",
+        "plays": 6614,
+        "url": "https://www.tiktok.com/@mad_i_libs/video/7604578609566633229",
+        "caption": "This Thai restaurant is a gorgeous spot for your next date night or special occasion in Pittsburgh! 💖 \n\nThere are so many food and drink options, for meat-eaters and vegans alike, you'll want to come back more than once. 🥂 \n\nTip: Show up "
       },
-      "playbook_top_move": "Build an Instagram presence that actually exists. Add a bio, establish a posting cadence above two posts per month, and publish at least two Reels before next quarter to lift an engagement rate sitting at 0.83 percent."
+      "playbook_top_move": "Start posting Reels before creators outpace you. Zero Reels in 30 days while 8 creators generated 19,109 TikTok plays. One weekly Reel of the garden at golden hour costs nothing and reclaims the narrative."
     },
     {
-      "rank": 4,
-      "business_slug": "oishii-donburi",
-      "name": "Oishii Donburi",
+      "rank": 2,
+      "business_slug": "everyday-noodles",
+      "name": "Everyday Noodles",
       "family_label": "Pittsburgh Asian Kitchens",
-      "neighborhood": "Lawrenceville",
-      "descriptor": "First In Pittsburgh Japanese, Built On Word Of Mouth. The Camera Never Turned Around.",
-      "descriptor_highlight": "Camera Never Turned Around",
-      "stat_line": "385 reviews · 4.6★ · 5 creators · 27K plays",
+      "neighborhood": "Squirrel Hill North",
+      "descriptor": "Second In Pittsburgh Boutiques On Review Depth Alone. No Instagram, No TikTok, And Creators Already Filming.",
+      "descriptor_highlight": "Creators Already Filming",
+      "stat_line": "2,220 reviews · 4.6★ · 2 creators · 3K plays",
       "featured_tiktok": {
-        "author": "missrichauntie",
-        "plays": 9983,
-        "url": "https://www.tiktok.com/@missrichauntie/video/7622326183576849695",
-        "caption": "Things to do in the 302 😗.\nFinally tried this sushi place while I was waiting for my car in the shop for a quick bite. #\nOishii Sushi in Camden, Delaware \n\nJapanese restaurant in delaware\n#sushilover #Foodie #delaware #delawarefood #japane"
+        "author": "sheseatingit",
+        "plays": 1811,
+        "url": "https://www.tiktok.com/@sheseatingit/video/7617842917629070622",
+        "caption": "Everyday Noodles is my dream come true because I could eat noodles everyday.\n\n#Pittsburgh #soupdumplings #xiaolongbao #pennsylvania #pittsburghsteelers "
       },
-      "playbook_top_move": "Restart Instagram before the quarter ends. The account has been silent for 72 days; even four posts showing the katsudon and bulgogi bowls would lift the momentum signal off its current floor."
+      "playbook_top_move": "Get an Instagram account indexed now. With no indexed Instagram handle, every five-star review and creator video leads to a dead end. Even a basic, active profile captures that referral traffic."
     },
     {
-      "rank": 5,
+      "rank": 3,
       "business_slug": "mola",
       "name": "Mola",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "East Liberty",
-      "descriptor": "Number One In Asian Kitchens, Built On Reviews. The Feed Has Not Kept Pace.",
-      "descriptor_highlight": "Built On Reviews",
-      "stat_line": "767 reviews · 4.6★ · 3 creators · 7K plays · 2 IG posts/30d",
+      "descriptor": "First In Pittsburgh Sushi On Review Depth Alone. The Feed Has Gone Nearly Quiet.",
+      "descriptor_highlight": "Gone Nearly Quiet",
+      "stat_line": "756 reviews · 4.6★ · 1 creators · 3K plays · 2 IG posts/30d",
       "featured_tiktok": {
-        "author": "kylie.belli",
-        "plays": 2907,
-        "url": "https://www.tiktok.com/@kylie.belli/video/7615827032286432542",
-        "caption": "Need a cheap eat in pittsburgh grab an #onigiri at Mola in the strip! \n\n$5 for select Onigiri🍙 \n\n#pittsburgh "
+        "author": "zoetaylorrrfit",
+        "plays": 2849,
+        "url": "https://www.tiktok.com/@zoetaylorrrfit/video/7605020364741135630",
+        "caption": "You already know .. do I even need to say anymore about how much I love Mola🍣🥢 my favorite sushi in Pittsburgh \n\n#pittsburghrestaurants #pgh #sushipittsburgh #fyp #sushilover "
       },
-      "playbook_top_move": "Post consistently before the algorithm forgets you. Two posts in 30 days and zero Reels is well below the threshold that keeps Instagram distributing a restaurant account; one short-form video per week, focused on prep or plating, would restart the signal."
+      "playbook_top_move": "Restart Reels before the next review cycle. Zero Reels in 30 days is the single biggest drag on Instagram Momentum; one Reel per week of the sushi counter or a chef prep moment closes that gap fast."
+    },
+    {
+      "rank": 4,
+      "business_slug": "atarashi",
+      "name": "Atarashi",
+      "family_label": "Pittsburgh Asian Kitchens",
+      "neighborhood": "West Oakland",
+      "descriptor": "First In Pittsburgh Sushi, But The Recent Reviews Are Pulling In The Other Direction.",
+      "descriptor_highlight": "Recent Reviews Are Pulling",
+      "stat_line": "604 reviews · 4.3★",
+      "playbook_top_move": "Get any social presence indexed and active. No Instagram handle is indexed and no TikTok account exists. Claiming and linking both cuts the discovery blackout for the 1,074-restaurant family."
+    },
+    {
+      "rank": 5,
+      "business_slug": "bengal-kabab-house-restaurant",
+      "name": "Bengal Kabab House & Restaurant",
+      "family_label": "Pittsburgh Asian Kitchens",
+      "neighborhood": "Central Oakland",
+      "descriptor": "First In Pittsburgh Indian, Seventy-Fourth In Restaurants. The Buffet Has No Feed.",
+      "descriptor_highlight": "The Buffet Has No Feed",
+      "stat_line": "993 reviews · 4.6★",
+      "playbook_top_move": "Launch an Instagram account this quarter. Bengal has no indexed Instagram handle. A basic account with weekly lunch buffet photos closes the single biggest gap in this rank."
+    },
+    {
+      "rank": 6,
+      "business_slug": "benihana-pittsburgh",
+      "name": "Benihana - Pittsburgh",
+      "family_label": "Pittsburgh Asian Kitchens",
+      "neighborhood": "Pittsburgh",
+      "descriptor": "Thirty-Seventh In Pittsburgh Restaurants On Review Depth Alone. No Social Surface To Catch What Happens At Every Table.",
+      "descriptor_highlight": "No Social Surface",
+      "stat_line": "2,297 reviews · 4.3★",
+      "playbook_top_move": "Claim and activate an Instagram presence. The location has no indexed Instagram handle. A single active account capturing chef moments would open the most glaring gap in this business's signal profile."
+    },
+    {
+      "rank": 7,
+      "business_slug": "bombay-to-burgh",
+      "name": "Bombay To Burgh",
+      "family_label": "Pittsburgh Asian Kitchens",
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Pittsburgh Indian, Twenty-Sixth In Restaurants. The Social Layer Has Not Arrived Yet.",
+      "descriptor_highlight": "Social Layer Has Not",
+      "stat_line": "1,242 reviews · 4.8★",
+      "playbook_top_move": "Get an Instagram presence indexed. No Instagram handle is indexed anywhere. Create or claim the account and post at minimum 4 times in the first 30 days to establish a signal baseline."
+    },
+    {
+      "rank": 8,
+      "business_slug": "chao-phraya-thai-cuisine",
+      "name": "Chao Phraya Thai Cuisine",
+      "family_label": "Pittsburgh Asian Kitchens",
+      "neighborhood": "Pittsburgh",
+      "descriptor": "First In Its Tier, But Zero Photos And No Hours On Google Hold The Ceiling Down.",
+      "descriptor_highlight": "Zero Photos And No Hours",
+      "stat_line": "214 reviews · 4.4★",
+      "playbook_top_move": "Complete the Google Business Profile now. Add phone number, hours, and at least 10 food photos to a profile that currently shows zero of all three."
     }
   ],
   "query": {
@@ -98,6 +119,6 @@
     "ranking": "creator_pickup",
     "limit": 8
   },
-  "generated_at": "2026-04-26T22:36:17.153Z",
+  "generated_at": "2026-05-11T00:33:22.965Z",
   "model": "claude-sonnet-4-6"
 }
