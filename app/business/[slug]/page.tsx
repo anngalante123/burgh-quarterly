@@ -712,18 +712,15 @@ export default async function BusinessPage({ params }: PageProps) {
           </div>
 
           {/* 4. Get Featured CTA, sanctioned Relay surface per editorial
-              brief. Renders only on CLAIMED business pages, never on
-              unclaimed records. Sits between the Playbook (diagnostic)
-              and the Subscribe footer (return-loop). */}
-          {biz.claimed ? (
-            <div className="mt-10 md:mt-12">
-              <GetFeaturedCTA
-                businessName={biz.name}
-                businessSlug={biz.slug}
-                businessCategory={biz.category}
-              />
-            </div>
-          ) : null}
+              brief. Sits between the Playbook (diagnostic) and the
+              Subscribe footer (return-loop). */}
+          <div className="mt-10 md:mt-12">
+            <GetFeaturedCTA
+              businessName={biz.name}
+              businessSlug={biz.slug}
+              businessCategory={biz.category}
+            />
+          </div>
 
           {/* 5. Subscribe footer */}
           <div className="mt-10 md:mt-12">
