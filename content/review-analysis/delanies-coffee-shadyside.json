@@ -41,7 +41,7 @@
   "notable_quote": "The strawberry matcha here might be the best I've ever had. The coffee, food, and overall cafe vibe is fantastic.",
   "sentiment_summary": "Reviewers return for the specialty drinks, particularly the strawberry matcha and tiramisu latte, and consistently praise the staff; the friction points are capacity and at least one service recovery that cost a customer money instead of goodwill.",
   "quarter_narrative": "Seven Pittsburgh creators filed TikToks at Delanie's Coffee Shadyside this quarter, logging 6,787 plays across the board while the shop itself posted three times on Instagram and never once to TikTok. The cookie butter latte is doing its own PR, with @madisonrockk's 2,190-play video carrying a dedicated hashtag the business didn't seed and can't point back to anything on its own channels. In the Pittsburgh Cafes family, Allegheny Coffee and Tea Exchange holds the top position on social momentum; Delanie's sits seventh in that family, carried almost entirely by creator goodwill and a conversion path that is flawless on paper. The rank moves when the gap between seven creators filming and zero TikTok presence from the shop itself starts to close.",
-  "tldr_read": "Creator coverage is strong and the conversion path is complete, but a dormant TikTok and below-median review sentiment keep Delanie's at Ones to Watch, #7 in Pittsburgh Cafes.",
+  "tldr_read": "Creator coverage is strong and the conversion path is complete, but a dormant TikTok and below-typical review sentiment keep Delanie's at Ones to Watch, #7 in Pittsburgh Cafes.",
   "tldr_meaning": "The creator layer is already active and the Google profile converts; review volume and social posting frequency are the two variables that determine whether this stays a hidden gem or becomes a recurring name in the family.",
   "diagnosis_pullquote": {
     "line": "Seventh In Pittsburgh Cafes, Carried By Creators. The Shop Itself Has No TikTok To Show For It.",
@@ -57,20 +57,19 @@
     },
     {
       "headline": "Fix the order error recovery policy",
-      "action": "One documented case of charging a customer for a staff mistake is pulling the sentiment signal below the family median of 79; a no-charge remake policy closes that gap directly.",
+      "action": "One documented case of charging a customer for a staff mistake is pulling the sentiment signal below the family typical of 79; a no-charge remake policy closes that gap directly.",
       "signal": "community_spark",
       "priority": "medium",
       "impact_label": "+SENTIMENT FLOOR"
     },
     {
       "headline": "Expand the photo catalog past six categories",
-      "action": "Delanie's sits at 68 against a family visual median of 77; adding staff, behind-the-counter, and seasonal drink photos closes that gap and gives creators more surface to tag.",
+      "action": "Delanie's sits at 68 against a family visual typical of 77; adding staff, behind-the-counter, and seasonal drink photos closes that gap and gives creators more surface to tag.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-27T00:44:19.882Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:44:19.882Z"
 }

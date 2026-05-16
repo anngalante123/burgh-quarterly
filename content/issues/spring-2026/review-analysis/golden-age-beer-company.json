@@ -41,8 +41,8 @@
   "notable_quote": "Special for the weekend were shepherd pie pierogis, omg, worth the trip out of the city.",
   "sentiment_summary": "Reviewers are consistently enthusiastic about the beer, particularly pilsners and value-priced liters, and the rotating weekend food specials draw real loyalty; the kitchen's execution on bar bites draws sharper criticism, with overcooked proteins and overly seasoned starters the clearest friction point.",
   "quarter_narrative": "Spring 2026 found Golden Age Beer Company holding a firm second in Pittsburgh Breweries on the back of 195 Google reviews at an 85 percent five-star rate, a conversion path that is fully buttoned up, and an Instagram account posting twelve times in the last thirty days. What the numbers don't show is a creator layer: no Pittsburgh TikTok coverage exists for this business, which means whatever energy fills the taproom on a weekend night is staying inside the room. Meanwhile, Hidden Harbor is leading the Bars family on social momentum, a signal type where creator spillover tends to compound quickly. For Golden Age to close the gap, the question is not whether people are talking, it is whether the conversation is escaping the four walls.",
-  "tldr_read": "Strong review base and active Instagram, but no TikTok creator presence and review sentiment just below the family median. Ones to Watch, #2 in Pittsburgh Breweries.",
-  "tldr_meaning": "The review floor is solid and the Instagram cadence is real, but without any creator-driven reach on TikTok and a sentiment signal trailing the family median, the climb toward the top of Bars requires the kitchen critique to quiet down and the taproom energy to show up somewhere it can be discovered.",
+  "tldr_read": "Strong review base and active Instagram, but no TikTok creator presence and review sentiment just below the family typical. Ones to Watch, #2 in Pittsburgh Breweries.",
+  "tldr_meaning": "The review floor is solid and the Instagram cadence is real, but without any creator-driven reach on TikTok and a sentiment signal trailing the family typical, the climb toward the top of Bars requires the kitchen critique to quiet down and the taproom energy to show up somewhere it can be discovered.",
   "diagnosis_pullquote": {
     "line": "Second In Breweries, Carried By Reviews. The Taproom Has No TikTok Footprint Yet.",
     "highlight": "No TikTok Footprint"
@@ -50,7 +50,7 @@
   "playbook": [
     {
       "headline": "Address the kitchen critique directly",
-      "action": "One negative review thread on overcooked food is enough to suppress a sentiment signal sitting two points below the family median; a menu edit or staff calibration on bar bites is the fastest path to closing that gap.",
+      "action": "One negative review thread on overcooked food is enough to suppress a sentiment signal sitting two points below the family typical; a menu edit or staff calibration on bar bites is the fastest path to closing that gap.",
       "signal": "community_spark",
       "priority": "high",
       "impact_label": "+6 SENTIMENT PTS"
@@ -71,6 +71,5 @@
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T22:25:16.562Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:25:16.562Z"
 }

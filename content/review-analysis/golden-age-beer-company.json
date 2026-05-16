@@ -58,13 +58,12 @@
     },
     {
       "headline": "Add a photo category for the beer program",
-      "action": "298 photos across 6 categories include no dedicated beer or tap-room category; a tagged owner upload set for the pilsner program fills the visual gap that keeps visual catalog below the family median.",
+      "action": "298 photos across 6 categories include no dedicated beer or tap-room category; a tagged owner upload set for the pilsner program fills the visual gap that keeps visual catalog below the family typical.",
       "signal": "momentum",
       "priority": "low",
       "impact_label": "+VISUAL CATALOG"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-27T00:45:29.228Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:45:29.228Z"
 }

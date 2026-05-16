@@ -34,9 +34,9 @@
   ],
   "notable_quote": "This is a place we make a point to stop at every time we're in Pittsburgh, grab a coffee and then walk around the city.",
   "sentiment_summary": "Reviewers return repeatedly for the sensory ritual of the shop, the bean-smelling wall, the multi-tap cold brew, the staff by name, with almost nothing surfacing as a complaint across 924 reviews.",
-  "quarter_narrative": "Spring 2026 looks like this for Allegheny Coffee and Tea Exchange: 31 creators posted 36-plus TikToks inside or about the shop this quarter, pulling 607,052 plays, and the top video alone, keyed to HBO's 'The Pitt' and its Allegheny General Hospital setting, drew 127,500 views without the shop lifting a finger. That wave of creator attention lands on top of 924 Google reviews running 81 percent five-star, a conversion path with no gaps, and Instagram momentum that sits nearly double the family median. Allegheny Coffee holds the top rank in both the Pittsburgh Coffee Shops and Pittsburgh Cafes families, and the forward question is whether the shop's own TikTok presence, currently under @adventureallegheny, develops enough cadence to meet the creator conversation already happening around it.",
+  "quarter_narrative": "Spring 2026 looks like this for Allegheny Coffee and Tea Exchange: 31 creators posted 36-plus TikToks inside or about the shop this quarter, pulling 607,052 plays, and the top video alone, keyed to HBO's 'The Pitt' and its Allegheny General Hospital setting, drew 127,500 views without the shop lifting a finger. That wave of creator attention lands on top of 924 Google reviews running 81 percent five-star, a conversion path with no gaps, and Instagram momentum that sits nearly double the family typical. Allegheny Coffee holds the top rank in both the Pittsburgh Coffee Shops and Pittsburgh Cafes families, and the forward question is whether the shop's own TikTok presence, currently under @adventureallegheny, develops enough cadence to meet the creator conversation already happening around it.",
   "tldr_read": "Dominant reviews, surging Instagram, and 607,000 TikTok plays driven largely by outside creators. Icons of the Burgh, number one in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "Every core signal is at or above family median and the TikTok creator layer is already activating at scale; the variable is whether the business's own posting cadence consolidates that attention before it cycles to the next Strip District story.",
+  "tldr_meaning": "Every core signal is at or above family typical and the TikTok creator layer is already activating at scale; the variable is whether the business's own posting cadence consolidates that attention before it cycles to the next Strip District story.",
   "diagnosis_pullquote": {
     "line": "Number One In Coffee, Built On Smell And Ritual. Thirty-One Creators Confirm It.",
     "highlight": "Thirty-One Creators Confirm"
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T22:23:20.141Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:23:20.141Z"
 }

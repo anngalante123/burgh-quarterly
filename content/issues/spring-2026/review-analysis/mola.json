@@ -36,7 +36,7 @@
   "sentiment_summary": "Reviewers keep landing on superlatives for the food, specifically the craft and ingredient quality, while a recurring undercurrent flags price sensitivity and uneven front-of-house service.",
   "quarter_narrative": "Three Pittsburgh TikTok creators filmed Mola this quarter without any apparent coordination with the restaurant, pulling 6,590 plays on content the business had no hand in making. The top video, a creator pointing at a five-dollar onigiri and tagging East Liberty, is doing more to drive lunch traffic than anything Mola posted itself in the same window. That gap is the defining story of their Spring 2026: 767 Google reviews averaging 80 percent five stars, a conversion path that is fully built out, and a creator ecosystem already treating the place as a shortcut for cheap, quality bites. What happens next depends almost entirely on whether Mola starts capturing what the city is already generating around it.",
   "tldr_read": "Dominant reviews and full conversion infrastructure, near-dormant own social presence. Ones to Watch, #1 in Pittsburgh Sushi and #1 in Pittsburgh Asian Kitchens.",
-  "tldr_meaning": "The path from Ones to Watch to Icons runs directly through Instagram momentum and owned TikTok presence; every other axis is already performing at or above the family median.",
+  "tldr_meaning": "The path from Ones to Watch to Icons runs directly through Instagram momentum and owned TikTok presence; every other axis is already performing at or above the family typical.",
   "diagnosis_pullquote": {
     "line": "Number One In Asian Kitchens, Built On Reviews. The Feed Has Not Kept Pace.",
     "highlight": "Built On Reviews"
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T22:29:51.799Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:29:51.799Z"
 }

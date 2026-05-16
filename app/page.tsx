@@ -194,7 +194,7 @@ export default async function Home() {
               />
               <StatPair
                 label="Icons"
-                value={Math.min(tc.icons, 100).toString()}
+                value={tc.icons.toString()}
                 accent="bg-brand-lime"
               />
               <StatPair

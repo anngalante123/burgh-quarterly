@@ -40,9 +40,9 @@
   ],
   "notable_quote": "The matcha latte was rich and creamy and sweet. The best matcha I've had in a long time.",
   "sentiment_summary": "Reviewers consistently praise the restrained sweetness of the cakes and the depth of the matcha drinks, while a meaningful minority flags uneven soft-serve portions and closing-time enforcement that doesn't match what's posted on the door.",
-  "quarter_narrative": "Thirty-nine Pittsburgh creators posted Kyo Matcha to TikTok this quarter, generating just under 1.8 million plays, led by a single @andremelendez video that pulled 1.4 million on its own. The shop's own TikTok account, @kyomatcha.columbia, exists but is not the engine here: the city is producing the content, and Kyo Matcha is largely a subject rather than a participant in its own story. That asymmetry keeps it at #2 in Dessert shops and #4 in Pittsburgh Sweets, behind Page's, whose social momentum is the signal that earned the family lead this issue. Review sentiment sits below the family median, dragged by operational complaints that are fixable, and closing that gap is the clearest path toward the top slot.",
-  "tldr_read": "Creator-driven TikTok reach near two million plays, review sentiment below the family median, Icons of the Burgh, #2 in Pittsburgh Dessert shops.",
-  "tldr_meaning": "The rank holds on extraordinary creator volume and a nearly perfect conversion path, but sentiment trending below the family median means the ceiling stays visible without being reached.",
+  "quarter_narrative": "Thirty-nine Pittsburgh creators posted Kyo Matcha to TikTok this quarter, generating just under 1.8 million plays, led by a single @andremelendez video that pulled 1.4 million on its own. The shop's own TikTok account, @kyomatcha.columbia, exists but is not the engine here: the city is producing the content, and Kyo Matcha is largely a subject rather than a participant in its own story. That asymmetry keeps it at #2 in Dessert shops and #4 in Pittsburgh Sweets, behind Page's, whose social momentum is the signal that earned the family lead this issue. Review sentiment sits below the family typical, dragged by operational complaints that are fixable, and closing that gap is the clearest path toward the top slot.",
+  "tldr_read": "Creator-driven TikTok reach near two million plays, review sentiment below the family typical, Icons of the Burgh, #2 in Pittsburgh Dessert shops.",
+  "tldr_meaning": "The rank holds on extraordinary creator volume and a nearly perfect conversion path, but sentiment trending below the family typical means the ceiling stays visible without being reached.",
   "diagnosis_pullquote": {
     "line": "Second In Desserts On The Strength Of 1.8 Million TikTok Plays. The Reviews Have Not Kept Pace.",
     "highlight": "1.8 Million TikTok Plays"
@@ -63,14 +63,13 @@
       "impact_label": "CAPTURE SPILLOVER"
     },
     {
-      "headline": "Push the visual catalog past the median",
-      "action": "Visual catalog sits just below the family median at 83; a focused photo push across the underrepresented menu and vibe categories on Google could close that gap.",
+      "headline": "Push the visual catalog past the typical",
+      "action": "Visual catalog sits just below the family typical at 83; a focused photo push across the underrepresented menu and vibe categories on Google could close that gap.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T22:27:22.552Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:27:22.552Z"
 }

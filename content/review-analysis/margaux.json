@@ -36,7 +36,7 @@
   "sentiment_summary": "Reviewers consistently praise the drinks and the room's warmth, but a recurring thread of staff inattention, specifically bartenders chatting among themselves while tables go unattended, keeps the sentiment from breaking cleanly into the top tier.",
   "quarter_narrative": "Five Pittsburgh creators tagged Margaux this quarter, generating nearly 40,000 TikTok plays without the business doing much to meet them halfway. The top video, a 21,400-play aesthetic Pittsburgh travel post from @deluludayss, treats the space as a destination prop, which says something real about how the room photographs. Meanwhile, Allegheny Coffee and Tea Exchange holds the top of the Pittsburgh Cafes family this issue on the back of social momentum, a signal where Margaux's own Instagram engagement sits at 0.26 percent despite nine posts in 30 days, well below where creator-driven visual interest usually translates. The gap between how the city films this place and how the place performs on its own channels is the central story of Margaux's spring, and closing it is what a climb toward the top of the Cafes family looks like.",
   "tldr_read": "Strong visual catalog and genuine creator pull, undercut by thin Instagram engagement and a service thread in the reviews that won't go away. Ones to Watch, #3 in Pittsburgh Cafes.",
-  "tldr_meaning": "The visual and creator signals are already punching above the family median; the next rank move depends on whether that TikTok interest converts into Instagram momentum and whether the service complaints stop trimming an otherwise high sentiment ceiling.",
+  "tldr_meaning": "The visual and creator signals are already punching above the family typical; the next rank move depends on whether that TikTok interest converts into Instagram momentum and whether the service complaints stop trimming an otherwise high sentiment ceiling.",
   "diagnosis_pullquote": {
     "line": "Third In Pittsburgh Cafes, Built On Creator Interest. The Instagram Engagement Hasn't Kept Pace.",
     "highlight": "Creator Interest. The Instagram"
@@ -51,7 +51,7 @@
     },
     {
       "headline": "Add a phone number to Google",
-      "action": "The conversion path is missing a phone number on Google entirely; that single gap pulls the conversion signal below the family median of 100 and costs walk-in trust at the decision moment.",
+      "action": "The conversion path is missing a phone number on Google entirely; that single gap pulls the conversion signal below the family typical of 100 and costs walk-in trust at the decision moment.",
       "signal": "conversion_path",
       "priority": "medium",
       "impact_label": "CLOSE CONVERSION GAP"
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-27T00:48:58.702Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:48:58.702Z"
 }

@@ -34,9 +34,9 @@
   ],
   "notable_quote": "Le Gourmandine can be put on any corner in Paris France and it would be packed.",
   "sentiment_summary": "Reviewers reach for superlatives around specific items, particularly the raspberry lychee macaron and the overall pastry case; nitpicks are essentially absent from the available sample, though the brevity of many reviews suggests the experience is visceral enough that people struggle to find words beyond 'amazing.'",
-  "quarter_narrative": "Five TikTok creators filmed La Gourmandine Hazelwood this past quarter and the business posted nothing back. The 18,079 plays those videos accumulated represent a city actively narrating this bakery's story while the bakery's own Instagram sat quiet for six weeks. That gap is the defining fact of Spring 2026 for La Gourmandine: 525 Google reviews sitting at 88 percent five-star, a Creator Fit score matching the family median, and yet the Sweets family is led this issue by Page's, whose signal edge is social momentum, the exact axis where La Gourmandine is most exposed. A single consistent posting cadence, or even one reel that captures the macaron case, would close the distance between this rank and the top of the Sweets family considerably.",
+  "quarter_narrative": "Five TikTok creators filmed La Gourmandine Hazelwood this past quarter and the business posted nothing back. The 18,079 plays those videos accumulated represent a city actively narrating this bakery's story while the bakery's own Instagram sat quiet for six weeks. That gap is the defining fact of Spring 2026 for La Gourmandine: 525 Google reviews sitting at 88 percent five-star, a Creator Fit score matching the family typical, and yet the Sweets family is led this issue by Page's, whose signal edge is social momentum, the exact axis where La Gourmandine is most exposed. A single consistent posting cadence, or even one reel that captures the macaron case, would close the distance between this rank and the top of the Sweets family considerably.",
   "tldr_read": "Dominant review sentiment and a perfect conversion path, but a six-week Instagram silence and no TikTok presence of its own: Ones to Watch, #1 in Pittsburgh Pastry Shops, sixth in Pittsburgh Sweets.",
-  "tldr_meaning": "The review foundation and creator interest are both present; the rank climbs when the business starts producing any social signal of its own, because every other axis is already performing at or above the family median.",
+  "tldr_meaning": "The review foundation and creator interest are both present; the rank climbs when the business starts producing any Instagram momentum of its own, because every other axis is already performing at or above the family typical.",
   "diagnosis_pullquote": {
     "line": "Sixth In Pittsburgh Sweets, Built On 525 Reviews. The Business Hasn't Posted In Six Weeks.",
     "highlight": "Built On 525 Reviews"
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 4,
-  "analyzed_at": "2026-04-27T00:47:53.806Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:47:53.806Z"
 }

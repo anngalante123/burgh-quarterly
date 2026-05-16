@@ -58,13 +58,12 @@
     },
     {
       "headline": "Address the service gap in public responses",
-      "action": "Two reviews cite specific staff rudeness; a direct, non-defensive owner response to those posts would push the sentiment score closer to the family median of 78.",
+      "action": "Two reviews cite specific staff rudeness; a direct, non-defensive owner response to those posts would push the sentiment score closer to the family typical of 78.",
       "signal": "community_spark",
       "priority": "low",
       "impact_label": "+SENTIMENT PTS"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-26T22:31:49.229Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:31:49.229Z"
 }

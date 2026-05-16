@@ -51,7 +51,7 @@
     },
     {
       "headline": "Build out the Google photo catalog",
-      "action": "342 photos across 15 categories sounds deep, but the visual signal trails the family median by a wide margin; adding tagged shots across underrepresented categories closes that gap fast.",
+      "action": "342 photos across 15 categories sounds deep, but the visual signal trails the family typical by a wide margin; adding tagged shots across underrepresented categories closes that gap fast.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+VISUAL RANK"
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-26T22:30:36.003Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:30:36.003Z"
 }

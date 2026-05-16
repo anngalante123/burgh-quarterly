@@ -50,7 +50,7 @@
   "playbook": [
     {
       "headline": "Address the portion and closing consistency gap",
-      "action": "Review sentiment sits well below the family median; two separate complaints about soft serve portion variance and a premature close are the specific friction points pulling the number down.",
+      "action": "Review sentiment sits well below the family typical; two separate complaints about soft serve portion variance and a premature close are the specific friction points pulling the number down.",
       "signal": "community_spark",
       "priority": "high",
       "impact_label": "+15 SENTIMENT PTS"
@@ -64,13 +64,12 @@
     },
     {
       "headline": "Convert seasonal cake drops into photo events",
-      "action": "With 405 Google photos across only six active categories and a visual score just below the family median, a coordinated Sakura or seasonal release push would close the gap.",
+      "action": "With 405 Google photos across only six active categories and a visual score just below the family typical, a coordinated Sakura or seasonal release push would close the gap.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+1 VISUAL RANK"
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-27T00:47:30.867Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:47:30.867Z"
 }

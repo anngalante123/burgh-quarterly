@@ -58,13 +58,12 @@
     },
     {
       "headline": "Expand the Google photo catalog",
-      "action": "291 photos across 7 categories is below the family median visual signal; owner-submitted shots of the cacio e pepe and cocktail program fill the gap reviewers are already describing.",
+      "action": "291 photos across 7 categories is below the family typical visual signal; owner-submitted shots of the cacio e pepe and cocktail program fill the gap reviewers are already describing.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-26T22:28:26.144Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:28:26.144Z"
 }

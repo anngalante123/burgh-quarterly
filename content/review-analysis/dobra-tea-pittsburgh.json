@@ -36,7 +36,7 @@
   "sentiment_summary": "Reviewers reliably praise the depth of the tea menu, the board-game-and-linger atmosphere, and staff who can actually explain what they're serving; the only friction that surfaces is seat availability on busy stretches.",
   "quarter_narrative": "Dobrá Tea Pittsburgh enters Spring 2026 as the city's consensus answer to the question of where to spend three hours over a pot of something unusual. Its 1,107 Google reviews skew overwhelmingly positive, and the review recency is tight, someone was there five days ago and felt compelled to write about it. The gap that keeps it at number six in the Pittsburgh Cafes family, where Allegheny Coffee and Tea Exchange is setting the pace on social momentum, is not the product or the room. It is the near-total silence on Instagram, one post in thirty days, no reels, and no TikTok presence of any kind, meaning the city's visual record of this place lives almost entirely on Google photo uploads rather than in any feed a new customer might stumble into. The rank climbs when the room that people are already crowding into starts showing up where people are already scrolling.",
   "tldr_read": "Strongest review sentiment in the Cafes family, nearly invisible on Instagram and absent from TikTok entirely. Ones to Watch, number one in Pittsburgh Tea Houses.",
-  "tldr_meaning": "The review foundation is already top-of-family strong; what separates this business from the Cafes leaders is the social signal, which is currently close to flat across every platform.",
+  "tldr_meaning": "The review foundation is already top-of-family strong; what separates this business from the Cafes leaders is creator-side momentum, which is currently close to flat across every platform.",
   "diagnosis_pullquote": {
     "line": "First In Tea Houses, Sixth In Pittsburgh Cafes. The Room Is Full; The Feed Is Empty.",
     "highlight": "The Feed Is Empty"
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-27T00:44:44.375Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:44:44.375Z"
 }

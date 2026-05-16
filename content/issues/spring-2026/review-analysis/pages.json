@@ -40,7 +40,7 @@
   ],
   "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype.",
   "sentiment_summary": "Reviewers consistently celebrate the size-to-price ratio and the soft serve quality, with the coconut and sundae options named repeatedly; the only friction is the expected evening wait, which most reviewers immediately reframe as worth it.",
-  "quarter_narrative": "Thirteen Pittsburgh creators posted 14 TikToks about Page's this quarter, pulling 177,416 plays without the business posting a single frame back. The top video alone, a 62,800-play clip from @bhphotographypa, out-reached anything Page's own channels generated in the same window. That is the defining tension of this ranking: the city's appetite for Page's content is outrunning the business's participation in it. Page's holds the family-leader position across Pittsburgh Sweets on the strength of 3,145 Google reviews and a visual catalog that ranks above the family median, both durable signals. The rank stays at one as long as the review velocity holds and no competitor in the family closes the TikTok creator gap first.",
+  "quarter_narrative": "Thirteen Pittsburgh creators posted 14 TikToks about Page's this quarter, pulling 177,416 plays without the business posting a single frame back. The top video alone, a 62,800-play clip from @bhphotographypa, out-reached anything Page's own channels generated in the same window. That is the defining tension of this ranking: the city's appetite for Page's content is outrunning the business's participation in it. Page's holds the family-leader position across Pittsburgh Sweets on the strength of 3,145 Google reviews and a visual catalog that ranks above the family typical, both durable signals. The rank stays at one as long as the review velocity holds and no competitor in the family closes the TikTok creator gap first.",
   "tldr_read": "Massive review depth, verified Instagram presence, and 177,000-plus TikTok plays from other people's accounts. Icons of the Burgh, number one in Pittsburgh Dessert Shops.",
   "tldr_meaning": "The rank is structurally sound across every axis except the creator channel, where Page's is collecting reach it didn't generate and cannot yet convert.",
   "diagnosis_pullquote": {
@@ -71,6 +71,5 @@
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T22:31:05.008Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:31:05.008Z"
 }

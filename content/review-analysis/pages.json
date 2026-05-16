@@ -40,7 +40,7 @@
   ],
   "notable_quote": "I'm very serious about ice cream and Page's lives up to the hype.",
   "sentiment_summary": "Reviewers are consistent on three things: the portions are enormous, the price is almost unfairly low, and the line, however long it looks, moves faster than you expect. The one recurring friction is the wait itself, though almost no one leaves angry about it.",
-  "quarter_narrative": "Four Pittsburgh TikTok creators filmed Page's this quarter and generated nearly 87,000 plays without any involvement from the business itself. The top video, a single post from @bhphotographypa, cleared 62,800 plays on a caption that reads like an invitation. Page's, meanwhile, has no TikTok account of its own. On Instagram, the account is active with nine posts in the last 30 days and a verified presence, but engagement sits at 1.29 percent, meaning the audience is there and not fully responding. Page's leads the Pittsburgh Sweets family this issue on the strength of social momentum, 3,145 Google reviews at 87 percent five-star, and a visual catalog that outpaces the family median by a meaningful margin. The rank holds at number one as long as that creator energy keeps producing plays; whether Page's eventually captures any of it on its own platform is the question that will define the next issue.",
+  "quarter_narrative": "Four Pittsburgh TikTok creators filmed Page's this quarter and generated nearly 87,000 plays without any involvement from the business itself. The top video, a single post from @bhphotographypa, cleared 62,800 plays on a caption that reads like an invitation. Page's, meanwhile, has no TikTok account of its own. On Instagram, the account is active with nine posts in the last 30 days and a verified presence, but engagement sits at 1.29 percent, meaning the audience is there and not fully responding. Page's leads the Pittsburgh Sweets family this issue on the strength of social momentum, 3,145 Google reviews at 87 percent five-star, and a visual catalog that outpaces the family typical by a meaningful margin. The rank holds at number one as long as that creator energy keeps producing plays; whether Page's eventually captures any of it on its own platform is the question that will define the next issue.",
   "tldr_read": "Dominant reviews, strong visual catalog, active Instagram, and 87,000 TikTok plays generated entirely by creators. Icons of the Burgh, number one in Pittsburgh Sweets.",
   "tldr_meaning": "The number one position in Sweets is well-supported across nearly every axis; the only structural gap is the absence of a TikTok account while creators are already doing the work there at scale.",
   "diagnosis_pullquote": {
@@ -71,6 +71,5 @@
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-27T00:51:16.440Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:51:16.440Z"
 }

@@ -42,7 +42,7 @@
   "sentiment_summary": "Reviewers come back for the bartenders and the creative cocktail menu, but a recurring friction around staff protocols and occasional slow service keeps the sentiment signal from matching the loyalty the place clearly earns.",
   "quarter_narrative": "Lorelei heads into Spring 2026 as a genuine East Liberty standout with 392 Google reviews and a 72 percent five-star rate, numbers that reflect real neighborhood attachment. The problem is that the signal is not traveling far enough: no Pittsburgh TikTok coverage exists for the restaurant, and its Instagram engagement sits below one percent on four posts in the last thirty days with zero Reels. Elsewhere in the Pittsburgh Businesses family, Nan Xiang Soup Dumplings is leading on social momentum, which is exactly the axis where Lorelei is quietest. Closing that gap, specifically by generating short-form video in a bar environment that already earns lines like 'maybe this place is the bee's knees,' is the most direct route from Ones to Watch toward the next tier.",
   "tldr_read": "Strong review base and a perfect conversion path, but near-zero Instagram engagement and no TikTok presence leave the city's awareness of Lorelei well below what the room deserves. Ones to Watch, #2 in Pittsburgh Restaurants.",
-  "tldr_meaning": "The review foundation is already in place; the rank ceiling is set by a social signal that is posting but not yet reaching anyone.",
+  "tldr_meaning": "The review foundation is already in place; the rank ceiling is set by an Instagram presence that is posting but not yet reaching anyone.",
   "diagnosis_pullquote": {
     "line": "Second In Pittsburgh Restaurants On Review Depth Alone, Not Yet On TikTok.",
     "highlight": "Not Yet On TikTok"
@@ -57,7 +57,7 @@
     },
     {
       "headline": "Close the photo category gaps on Google",
-      "action": "With 291 photos across only 7 categories and no dedicated exterior or cocktail-specific album, adding 15 to 20 owner-uploaded photos in underrepresented categories would raise a Visual Catalog signal sitting well below the family median.",
+      "action": "With 291 photos across only 7 categories and no dedicated exterior or cocktail-specific album, adding 15 to 20 owner-uploaded photos in underrepresented categories would raise a Visual Catalog signal sitting well below the family typical.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+VISUAL RANK"
@@ -71,6 +71,5 @@
     }
   ],
   "review_count": 5,
-  "analyzed_at": "2026-04-27T00:48:37.211Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:48:37.211Z"
 }

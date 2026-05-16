@@ -38,7 +38,7 @@
   "tldr_read": "Strong Google sentiment and genuinely distinctive cocktail reviews, but near-dormant Instagram and no TikTok footprint keep Commerce Bar at number two in Pittsburgh Bars.",
   "tldr_meaning": "The review signal is healthy but plateauing at 106 total; without a social layer, the conversion path and momentum axes have nowhere to grow from here.",
   "diagnosis_pullquote": {
-    "line": "Second In Pittsburgh Bars On Review Depth Alone, The Social Signal Has Barely Shown Up.",
+    "line": "Second In Pittsburgh Bars On Review Depth Alone, The Instagram Presence Has Barely Shown Up.",
     "highlight": "Barely Shown Up"
   },
   "playbook": [
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-27T00:43:55.262Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:43:55.262Z"
 }

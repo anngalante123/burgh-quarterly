@@ -44,7 +44,7 @@
   "playbook": [
     {
       "headline": "Restart the Instagram posting cadence",
-      "action": "One post in the last 30 days and zero reels puts Dobrá well below the family median of 44 on Instagram momentum; a twice-weekly cadence with one reel per week would close that gap measurably.",
+      "action": "One post in the last 30 days and zero reels puts Dobrá well below the family typical of 44 on Instagram momentum; a twice-weekly cadence with one reel per week would close that gap measurably.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "+MOMENTUM RANK"
@@ -58,13 +58,12 @@
     },
     {
       "headline": "Expand photo categories on Google",
-      "action": "690 photos across 11 categories is above the family median visually, but adding staff-submitted shots of the bell-service ritual and board game setup would sharpen the third-space story for first-time visitors.",
+      "action": "690 photos across 11 categories is above the family typical visually, but adding staff-submitted shots of the bell-service ritual and board game setup would sharpen the third-space story for first-time visitors.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+1 VISUAL DEPTH"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T22:24:31.224Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:24:31.224Z"
 }

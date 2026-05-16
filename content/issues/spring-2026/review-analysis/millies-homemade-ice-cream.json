@@ -57,7 +57,7 @@
     },
     {
       "headline": "Turn the 482 Google photos into a visual hierarchy",
-      "action": "Photos spread across only six tagged categories; adding dedicated Inside and Team category tags pulls the visual catalog above the family median and surfaces the seasonal flavor rotation more prominently in search.",
+      "action": "Photos spread across only six tagged categories; adding dedicated Inside and Team category tags pulls the visual catalog above the family typical and surfaces the seasonal flavor rotation more prominently in search.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+VISUAL RANK"
@@ -71,6 +71,5 @@
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T22:29:29.209Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:29:29.209Z"
 }

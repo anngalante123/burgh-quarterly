@@ -50,14 +50,14 @@
   "playbook": [
     {
       "headline": "Double the posting frequency on Instagram",
-      "action": "Three posts in thirty days is below the family median; moving to six or more, prioritizing the visually specific items reviewers already name, banoffee, crepe cake, tiramisu latte, would push Instagram Momentum toward the family median of 44.",
+      "action": "Three posts in thirty days is below the family typical; moving to six or more, prioritizing the visually specific items reviewers already name, banoffee, crepe cake, tiramisu latte, would push Instagram Momentum toward the family typical of 44.",
       "signal": "momentum",
       "priority": "high",
       "impact_label": "+IG MOMENTUM"
     },
     {
       "headline": "Build out the Google photo catalog",
-      "action": "146 photos across nine categories trails the family median of 77 in visual signal; adding shots of the interior counter, the pastry case, and labeled menu items would close the gap between the conversion path (already perfect) and the visual catalog that feeds it.",
+      "action": "146 photos across nine categories trails the family typical of 77 in visual signal; adding shots of the interior counter, the pastry case, and labeled menu items would close the gap between the conversion path (already perfect) and the visual catalog that feeds it.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+VISUAL RANK"
@@ -71,6 +71,5 @@
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-27T00:47:03.780Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:47:03.780Z"
 }

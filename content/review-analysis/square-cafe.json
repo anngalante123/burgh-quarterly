@@ -40,7 +40,7 @@
   ],
   "notable_quote": "It's no wonder this place gets slammed with customers.",
   "sentiment_summary": "Reviewers consistently praise the menu range, especially vegan options and standout dishes like the Brussels sprout hash and eggs benedict, while a recurring minority notes that portion sizes feel small relative to price.",
-  "quarter_narrative": "Square Cafe entered Spring 2026 as the undisputed anchor of Pittsburgh brunch, sitting on 1,839 Google reviews at 72% five-star with a conversion profile that has no gaps: hours, phone, website, and a deep photo catalog all present and indexed. The family leader this issue is Nan Xiang Soup Dumplings, riding a wave of social momentum that Square Cafe simply does not have in the same form. With an Instagram engagement rate of 0.19% across 11 posts in the last 30 days and just one TikTok creator logging 713 plays this quarter, the business's social signal is quietly plateauing even as its reputation stays strong. The rank holds at number one in Pittsburgh brunch for now, but the gap between review depth and creator energy is the story of the next two issues.",
+  "quarter_narrative": "Square Cafe entered Spring 2026 as the undisputed anchor of Pittsburgh brunch, sitting on 1,839 Google reviews at 72% five-star with a conversion profile that has no gaps: hours, phone, website, and a deep photo catalog all present and indexed. The family leader this issue is Nan Xiang Soup Dumplings, riding a wave of social momentum that Square Cafe simply does not have in the same form. With an Instagram engagement rate of 0.19% across 11 posts in the last 30 days and just one TikTok creator logging 713 plays this quarter, the business's Instagram presence is quietly plateauing even as its reputation stays strong. The rank holds at number one in Pittsburgh brunch for now, but the gap between review depth and creator energy is the story of the next two issues.",
   "tldr_read": "Conversion path is airtight and sentiment is deep, but Instagram engagement is thin and TikTok creator presence is nearly nonexistent. Icons of the Burgh, number one in Pittsburgh brunch restaurants.",
   "tldr_meaning": "The review floor is so strong that the rank is secure short-term, but without a meaningful uptick in creator coverage or Instagram engagement, the momentum axis will continue to lag the rest of the profile.",
   "diagnosis_pullquote": {
@@ -71,6 +71,5 @@
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-27T00:52:52.144Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:52:52.144Z"
 }

@@ -36,9 +36,9 @@
   "sentiment_summary": "Reviewers are consistent and warm on atmosphere, staff, and the boba itself, but the review pool is shallow at 134 total and the texts rarely go beyond single-adjective praise, leaving no detail that would help a first-time visitor choose a specific drink or dish.",
   "quarter_narrative": "MeetCha's Spring 2026 was quiet in the most literal sense: no TikTok presence indexed for the business, no Instagram posts in the 92 days leading into the quarter, and a review base that, while affectionate, has stalled well below where the rest of the Pittsburgh Cafes family sits on sentiment depth. The city's cafe conversation this issue is anchored by Allegheny Coffee and Tea Exchange, whose social momentum is doing exactly what MeetCha's Instagram used to do before it went dark. What makes that gap stranger is MeetCha's Creator Fit signal, the single strongest axis in its profile, suggesting the space, the product, and the aesthetic are exactly what short-form video wants. The rank moves when that potential meets an actual posting cadence, on any platform.",
   "tldr_read": "Near-perfect review star ratio, dormant Instagram, zero TikTok footprint. Ones to Watch, #4 in Pittsburgh Cafes.",
-  "tldr_meaning": "The review foundation is solid but thin, and every social signal is either stalled or absent, so the rank holds for now but has no current force pushing it upward.",
+  "tldr_meaning": "The review foundation is solid but thin, and every creator-side signal is either stalled or absent, so the rank holds for now but has no current force pushing it upward.",
   "diagnosis_pullquote": {
-    "line": "Fourth In Pittsburgh Cafes On Goodwill Alone. The Social Signal Has Been Silent For Ninety Days.",
+    "line": "Fourth In Pittsburgh Cafes On Goodwill Alone. The Instagram Presence Has Been Silent For Ninety Days.",
     "highlight": "Goodwill Alone"
   },
   "playbook": [
@@ -51,7 +51,7 @@
     },
     {
       "headline": "Convert the visual catalog into categories",
-      "action": "115 photos exist but are bunched loosely; adding tagged shots across drink builds, interior detail, and seasonal menu items would close the gap to the family median visual catalog.",
+      "action": "115 photos exist but are bunched loosely; adding tagged shots across drink builds, interior detail, and seasonal menu items would close the gap to the family typical visual catalog.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+12 VISUAL RANK"
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-27T00:49:20.789Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:49:20.789Z"
 }

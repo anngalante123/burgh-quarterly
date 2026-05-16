@@ -51,20 +51,19 @@
     },
     {
       "headline": "Post to Instagram at least three times weekly",
-      "action": "Three posts in thirty days puts the Instagram engagement rate at 1.74 percent; doubling cadence with reels, not static images, is the fastest path to closing the gap with the family median.",
+      "action": "Three posts in thirty days puts the Instagram engagement rate at 1.74 percent; doubling cadence with reels, not static images, is the fastest path to closing the gap with the family typical.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+VISUAL RANK"
     },
     {
       "headline": "Photograph every menu category on Google",
-      "action": "146 photos across 9 categories is a reasonable base, but the visual catalog sits below the family median of 77; targeted shots of the banoffee, crepe cake, and quiche would fill the most-searched food categories.",
+      "action": "146 photos across 9 categories is a reasonable base, but the visual catalog sits below the family typical of 77; targeted shots of the banoffee, crepe cake, and quiche would fill the most-searched food categories.",
       "signal": "conversion_path",
       "priority": "low",
       "impact_label": "+VISUAL SIGNAL"
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T22:26:56.846Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:26:56.846Z"
 }

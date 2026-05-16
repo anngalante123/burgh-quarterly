@@ -6,6 +6,5 @@
   "angle": "the IG posts that took risks, made craft choices, or said something specific this quarter, ranked by editorial judgment instead of follower count.",
   "intro": "The Most Creative Posts list returns in Issue 02. Spring 2026's dataset didn't have enough vision-scored entries to publish a Top 6 with confidence. Subscribe to the index and we'll surface the list the moment it's ready.",
   "items": [],
-  "generated_at": "2026-05-10T23:55:35.740Z",
-  "model": "claude-haiku-4-5-20251001 (vision) + claude-sonnet-4-6 (intro)"
+  "generated_at": "2026-05-10T23:55:35.740Z"
 }

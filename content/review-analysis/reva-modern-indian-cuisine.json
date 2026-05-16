@@ -35,7 +35,7 @@
   "notable_quote": "Reva first opened in June 2024 and I have been a regular customer ever since; the food taste is the best you can find in Pittsburgh and no other Indian restaurant can match the level.",
   "sentiment_summary": "Reviewers are loyal and specific about the food quality and Sahil's attentive service, but a recurring thread of front-of-house hostility, documented in at least two reviews, is pulling the sentiment ceiling down from what could otherwise be a near-perfect rating.",
   "quarter_narrative": "Reva opened less than two years ago and already holds the top spot among Pittsburgh's Indian restaurants on the strength of 527 Google reviews, 80 percent of them five stars, and a photo catalog of 443 images spread across a clean set of tagged categories. The family leader this issue is Mola, whose signal is built around creator collaboration; Reva has the visual foundation to compete on that axis but the Instagram account has been dark for 72 days, with zero posts and zero reels in the last 30, and no TikTok creator has indexed a video here yet. The rank climbs when the kitchen's obvious momentum finds a feed that actually runs.",
-  "tldr_read": "Strong Google review base and a complete conversion path, but a 72-day Instagram silence and no TikTok presence leave the social signal nearly empty. Ones to Watch, number one in Pittsburgh Indian restaurants, fourth in Pittsburgh Asian Kitchens.",
+  "tldr_read": "Strong Google review base and a complete conversion path, but a 72-day Instagram silence and no TikTok presence leave the Instagram presence nearly empty. Ones to Watch, number one in Pittsburgh Indian restaurants, fourth in Pittsburgh Asian Kitchens.",
   "tldr_meaning": "The review foundation is real and recent, but closing the gap on Mola for the family lead requires the social layer to activate, because on every signal that doesn't live on Google, Reva is currently invisible.",
   "diagnosis_pullquote": {
     "line": "Fourth In Asian Kitchens, Built On Reviews Alone. The Social Layer Has Not Started.",
@@ -51,7 +51,7 @@
     },
     {
       "headline": "Address the service split publicly in reviews",
-      "action": "Two detailed negative reviews cite specific staff incidents; a calm, named response to each raises the 69-point sentiment signal toward the family median of 78.",
+      "action": "Two detailed negative reviews cite specific staff incidents; a calm, named response to each raises the 69-point sentiment signal toward the family typical of 78.",
       "signal": "community_spark",
       "priority": "medium",
       "impact_label": "+8 SENTIMENT PTS"
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 8,
-  "analyzed_at": "2026-04-27T00:52:04.218Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:52:04.218Z"
 }

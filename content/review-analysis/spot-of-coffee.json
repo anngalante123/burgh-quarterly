@@ -58,13 +58,12 @@
     },
     {
       "headline": "Expand Google photo catalog to all listed categories",
-      "action": "With 126 photos across only 6 of 10 available categories, filling the gaps with menu and interior shots raises visual ranking above the family median of 77.",
+      "action": "With 126 photos across only 6 of 10 available categories, filling the gaps with menu and interior shots raises visual ranking above the family typical of 77.",
       "signal": "content_canvas",
       "priority": "low",
       "impact_label": "+VISUAL RANK"
     }
   ],
   "review_count": 10,
-  "analyzed_at": "2026-04-27T00:52:29.413Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-27T00:52:29.413Z"
 }

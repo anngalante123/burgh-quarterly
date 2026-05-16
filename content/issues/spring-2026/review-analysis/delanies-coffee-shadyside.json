@@ -41,8 +41,8 @@
   "notable_quote": "The strawberry matcha here might be the best I've ever had.",
   "sentiment_summary": "Reviewers come back for the specialty drinks, especially the strawberry matcha and tiramisu latte, and consistently praise the staff; the friction points are tight square footage, unreliable wi-fi, and at least one order-fulfillment misstep that cost a customer money.",
   "quarter_narrative": "Sixteen Pittsburgh creators posted 17 TikToks featuring Delanie's Coffee Shadyside this quarter, generating 66,299 plays without a single frame shot by the business itself. The shop has no TikTok account, and its Instagram produced three posts in the last 30 days, the most recent sitting 16 days old with zero Reels in the window. That gap is the story of Spring 2026 for Delanie's: a Shadyside cafe that the city has decided to film, repeatedly, while the cafe watches from the sideline. Allegheny Coffee and Tea Exchange holds the family lead this issue on social momentum, a signal Delanie's has the raw material to challenge if the visual and posting cadence catches up to the creator attention already surrounding it.",
-  "tldr_read": "Sixteen creators filming, three Instagram posts in a month, and a creator-fit signal that tops the family median. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
-  "tldr_meaning": "The creator layer is already activated from the outside; the rank moves when the business converts that external attention into its own consistent posting presence and addresses the review sentiment gap sitting below the family median.",
+  "tldr_read": "Sixteen creators filming, three Instagram posts in a month, and a creator-fit signal that tops the family typical. Ones to Watch, #4 in Pittsburgh Coffee Shops.",
+  "tldr_meaning": "The creator layer is already activated from the outside; the rank moves when the business converts that external attention into its own consistent posting presence and addresses the review sentiment gap sitting below the family typical.",
   "diagnosis_pullquote": {
     "line": "Sixteen Creators Have Filed Their Reports. Delanie's Coffee Has Not Filed Its Own.",
     "highlight": "Have Filed Their Reports"
@@ -57,7 +57,7 @@
     },
     {
       "headline": "Turn the strawberry matcha into a visual anchor",
-      "action": "Review sentiment sits below the family median; a consistent photo series on the two most-cited drinks can close that perception gap across 96 existing Google photos.",
+      "action": "Review sentiment sits below the family typical; a consistent photo series on the two most-cited drinks can close that perception gap across 96 existing Google photos.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+SENTIMENT SIGNAL"
@@ -71,6 +71,5 @@
     }
   ],
   "review_count": 7,
-  "analyzed_at": "2026-04-26T22:24:06.658Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:24:06.658Z"
 }

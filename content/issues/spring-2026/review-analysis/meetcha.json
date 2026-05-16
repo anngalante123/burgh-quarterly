@@ -34,9 +34,9 @@
   ],
   "notable_quote": "Always such a good experience!! It's so comfortable and relaxing and the staff is super friendly.",
   "sentiment_summary": "Reviewers consistently praise the atmosphere, the friendliness of staff, and the boba specifically; no one surfaces a complaint, though 134 reviews over the cafe's lifespan is a thin base for a business with this much apparent warmth.",
-  "quarter_narrative": "MeetCha had a quiet Spring 2026 by almost every measurable social signal. Its Instagram has been dormant for 92 days, with zero posts or reels in the last 30, and no TikTok creator has filed a video from Squirrel Hill South's most visually obvious boba spot. That is a notable gap for a cafe whose own reviewers reach for words like 'cute' and 'comfortable,' the exact language that typically precedes a creator moment. Meanwhile, Allegheny Coffee and Tea Exchange is leading the Pittsburgh Cafes family on social momentum, a signal MeetCha has essentially ceded this quarter. The rank moves when the feed restarts and a creator finally walks through the door with a phone.",
+  "quarter_narrative": "MeetCha had a quiet Spring 2026 by almost every measurable creator-side signal. Its Instagram has been dormant for 92 days, with zero posts or reels in the last 30, and no TikTok creator has filed a video from Squirrel Hill South's most visually obvious boba spot. That is a notable gap for a cafe whose own reviewers reach for words like 'cute' and 'comfortable,' the exact language that typically precedes a creator moment. Meanwhile, Allegheny Coffee and Tea Exchange is leading the Pittsburgh Cafes family on social momentum, a signal MeetCha has essentially ceded this quarter. The rank moves when the feed restarts and a creator finally walks through the door with a phone.",
   "tldr_read": "A 93% five-star rating and a dormant Instagram. Ones to Watch, #4 in Pittsburgh Cafes.",
-  "tldr_meaning": "The sentiment floor is solid and the conversion path is complete, but the rank stalls without a social signal to carry the word-of-mouth that is clearly already happening in person.",
+  "tldr_meaning": "The sentiment floor is solid and the conversion path is complete, but the rank stalls without an Instagram presence to carry the word-of-mouth that is clearly already happening in person.",
   "diagnosis_pullquote": {
     "line": "Fourth In Pittsburgh Cafes, Held There By Word Of Mouth Alone. The Feed Has Gone Silent.",
     "highlight": "Word Of Mouth Alone"
@@ -51,7 +51,7 @@
     },
     {
       "headline": "Build the photo catalog past 115 images",
-      "action": "Visual Catalog sits below the family median of 77; adding tagged interior and drink-prep photos closes that gap directly.",
+      "action": "Visual Catalog sits below the family typical of 77; adding tagged interior and drink-prep photos closes that gap directly.",
       "signal": "content_canvas",
       "priority": "medium",
       "impact_label": "+1 VISUAL RANK"
@@ -65,6 +65,5 @@
     }
   ],
   "review_count": 9,
-  "analyzed_at": "2026-04-26T22:29:06.860Z",
-  "model": "claude-sonnet-4-6"
+  "analyzed_at": "2026-04-26T22:29:06.860Z"
 }
