@@ -1,9 +1,9 @@
 {
   "slug": "underrated-restaurants",
   "title": "Pittsburgh's Most Underrated Restaurants",
-  "subtitle": "Brunch spots, neighborhood restaurants. High ratings, low spotlight.",
+  "subtitle": "Brunch spots and neighborhood rooms. High ratings, low spotlight.",
   "angle": "Pittsburgh restaurants whose reviews speak for themselves but whose social channels are quieter than they should be. The neighborhood standbys we'd send a visiting friend to.",
-  "intro": "Some Pittsburgh restaurants have done the hard part. They've earned the reviews, held the room, built the regulars. What they haven't done is show up where the next customer is actually looking. That gap is what this list measures, and it shows up in specific, unsentimental ways: a missing phone number, a social feed that stopped posting in October, a listing that hasn't been touched since the address changed.\n\nThe Church Brew Works arrives at the top of this quarter's rankings carried by 5,598 reviews, which is a number most national chains would envy. Federal Galley follows close behind on review volume, with 2,593 ratings that reflect a food hall doing genuine work. Neither has a social layer that matches what their customers are already saying. Bakersfield Penn Ave presents a different problem: no phone, no posted hours, no way for someone standing outside at 9 p.m. to confirm the door is open.\n\nThe businesses on this list already have customer love. The cheap second move is simply asking the creators who already love them to come back on purpose. Pittsburgh has more creators looking for places to feature than most owners realize.\n\nIssue 02 arrives in summer 2026, when patio season resets the discovery cycle entirely.",
+  "intro": "The Church Brew Works has 5,598 reviews. That is a number most national chains would frame in their lobby. It also has a digital presence that does not match. This list is about that gap, and about the four other Pittsburgh restaurants this quarter where the room is loud and the feed is not.\n\nFederal Galley on the North Side is doing real work as a food hall and carrying 2,593 reviews to prove it. Bakersfield on Penn has 2,378 reviews and a Google listing with no phone number and no posted hours, so a tourist standing on the sidewalk at 9 p.m. has no way to know if the door is open. Proper Brick Oven downtown has the kind of review depth that should anchor a category, and a listing that quietly fails the people trying to find it. These are not struggling restaurants. They are restaurants the algorithm has not bothered to keep up with.\n\nThe customer love is already there. The next move is letting Pittsburgh actually find them. Issue 02 arrives in summer 2026, when patio season resets the conversation.",
   "items": [
     {
       "rank": 1,
@@ -11,10 +11,9 @@
       "name": "The Church Brew Works",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First In Pittsburgh Restaurants, Carried By 5,598 Reviews. The Social Layer Is Still Missing.",
-      "descriptor_highlight": "Still Missing",
-      "stat_line": "5,598 reviews · 4.3★",
-      "playbook_top_move": "Get the Google listing complete today. Add phone number and business hours to Google, both are missing and together they are costing real walk-in conversions from visitors who won't guess."
+      "descriptor": "First in Pittsburgh restaurants on 5,598 reviews. The social layer is still missing.",
+      "descriptor_highlight": "still missing",
+      "stat_line": "5,598 reviews · 4.3★"
     },
     {
       "rank": 2,
@@ -22,10 +21,9 @@
       "name": "Southern Tier Brewery Pittsburgh",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "North Shore",
-      "descriptor": "First In Pittsburgh Restaurants, Built On Event Nights. The Discovery Layer Has Gaps That Could Cost It.",
-      "descriptor_highlight": "Discovery Layer Has Gaps",
-      "stat_line": "2,662 reviews · 4.6★",
-      "playbook_top_move": "Fix the Google listing's missing basics. Add phone number and hours to Google Business Profile, both are currently absent, cutting off the most direct conversion path for new visitors."
+      "descriptor": "Built on event nights and 2,662 reviews. The discovery layer has gaps that could cost it.",
+      "descriptor_highlight": "gaps that could cost it",
+      "stat_line": "2,662 reviews · 4.6★"
     },
     {
       "rank": 3,
@@ -33,10 +31,9 @@
       "name": "Proper Brick Oven & Tap Room",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "Downtown",
-      "descriptor": "Review Depth Is Icons-Tier. The Listing Gaps Are Doing Real Damage.",
-      "descriptor_highlight": "Listing Gaps Are",
-      "stat_line": "2,247 reviews · 4.6★",
-      "playbook_top_move": "Complete the Google listing today. Add phone number and hours to Google Business Profile. Both are missing, and a customer verifying hours before a downtown dinner will bounce."
+      "descriptor": "Review depth that should anchor a category. The listing gaps are doing real damage.",
+      "descriptor_highlight": "real damage",
+      "stat_line": "2,247 reviews · 4.6★"
     },
     {
       "rank": 4,
@@ -44,10 +41,9 @@
       "name": "Federal Galley",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "Allegheny Center",
-      "descriptor": "First In Ones To Watch, Carried By 2,593 Reviews. The Social Layer Has Not Arrived.",
-      "descriptor_highlight": "Social Layer Has Not",
-      "stat_line": "2,593 reviews · 4.5★",
-      "playbook_top_move": "Establish a findable Instagram presence. Create and index an Instagram account; the business has no handle on record, making it invisible to the largest local discovery audience in the family."
+      "descriptor": "2,593 reviews and a North Side food hall doing real work. The social layer has not arrived.",
+      "descriptor_highlight": "has not arrived",
+      "stat_line": "2,593 reviews · 4.5★"
     },
     {
       "rank": 5,
@@ -55,10 +51,9 @@
       "name": "Bakersfield Penn Ave",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "Downtown",
-      "descriptor": "First In Pittsburgh Restaurants, But No Phone, No Hours, No Way In After Hours.",
-      "descriptor_highlight": "No Phone, No Hours",
-      "stat_line": "2,378 reviews · 4.5★",
-      "playbook_top_move": "Fix the Google Business listing today. Add phone number and business hours to Google, both are missing and actively blocking reservation intent from 2,378 reviewers already searching."
+      "descriptor": "2,378 reviews on Penn Avenue. No phone, no hours, no way in after dark.",
+      "descriptor_highlight": "no phone, no hours",
+      "stat_line": "2,378 reviews · 4.5★"
     }
   ],
   "query": {

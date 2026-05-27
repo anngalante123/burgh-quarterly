@@ -3,7 +3,7 @@
   "title": "Pittsburgh Bars Showing Up On Instagram",
   "subtitle": "Five rooms doing the work this quarter, ranked by what's actually on the feed.",
   "angle": "The Pittsburgh bars and breweries with active Instagram feeds this quarter, ranked by cadence and the kind of programming the feed actually shows.",
-  "intro": "Pittsburgh's bar scene is loud in person and famously quiet online. The five rooms below are the exception. They post weekly or better, they document the menu and the music, and the feed gives a real picture of what walking in feels like.\n\nHop Farm in Lawrenceville is the most consistent of the group, posting twelve times in the last thirty days with reels mixed in, leaning hard on the trivia-and-music programming that has defined the urban farmhouse since opening. Hidden Harbor in Squirrel Hill is matching that cadence with tiki content that travels, the kind of close-ups of cocktail glassware and themed nights that explain why creators keep filming there. Golden Age, the German and Czech lager house, is using Instagram to roll out the next chapter, the new Garden Theater concept on the North Side, ahead of opening.\n\nThis is the short list of bars whose feeds match the room. Issue 02 will track who joins them.",
+  "intro": "Hop Farm posted twelve times in the last thirty days. Hidden Harbor posted twelve times in the last thirty days. Both are doing the kind of consistent, room-matching, this-is-what-Tuesday-looks-like work that almost no Pittsburgh bar bothers with. The other three on this list are doing some version of the same thing.\n\nPittsburgh's bar scene is loud in person and famously quiet online. The five rooms below are the exception. Hop Farm in Lawrenceville is the most consistent of the group, leaning hard on the trivia-and-music programming that has defined the urban farmhouse since opening. Hidden Harbor in Squirrel Hill is matching that cadence with tiki content that travels: close-ups of cocktail glassware, themed nights, the kind of feed that explains why creators keep filming there. Golden Age, the German and Czech lager house, is using Instagram to roll out the next chapter, the new Garden Theater concept on the North Side, ahead of opening.\n\nThis is the short list of bars whose feed actually matches the room. Issue 02 will tell you who joins them.",
   "items": [
     {
       "rank": 1,
@@ -11,8 +11,8 @@
       "name": "Hop Farm Brewing Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Twelve Posts In Thirty Days, Four Of Them Reels, Programming The Urban Farmhouse Like Clockwork.",
-      "descriptor_highlight": "Twelve Posts In Thirty Days",
+      "descriptor": "Twelve posts in thirty days, four of them reels, programming the urban farmhouse like clockwork.",
+      "descriptor_highlight": "twelve posts in thirty days",
       "stat_line": "298 reviews · 4.6★ · weekly trivia and Music Thursdays on the feed"
     },
     {
@@ -21,8 +21,8 @@
       "name": "Hidden Harbor",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "Tiki Content That Travels. Glassware, Themed Nights, And A Decade In The Neighborhood On Display.",
-      "descriptor_highlight": "Tiki Content That Travels",
+      "descriptor": "Tiki content that travels. Glassware, themed nights, and a decade in the neighborhood on display.",
+      "descriptor_highlight": "tiki content that travels",
       "stat_line": "765 reviews · 4.6★ · twelve posts in the last 30 days"
     },
     {
@@ -31,8 +31,8 @@
       "name": "Golden Age Beer Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "German And Czech Lagers, And A Garden Theater Reveal That The Feed Is Pacing Out Week By Week.",
-      "descriptor_highlight": "Garden Theater Reveal",
+      "descriptor": "German and Czech lagers, and a Garden Theater reveal the feed is pacing out week by week.",
+      "descriptor_highlight": "Garden Theater reveal",
       "stat_line": "195 reviews · 4.8★ · twelve posts in the last 30 days, the North Side expansion in motion"
     },
     {
@@ -41,7 +41,7 @@
       "name": "Lorelei",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "East Liberty",
-      "descriptor": "Alpine Cocktails, Wood-Fired Pizzas, And A Mid-Century Mondays Run That Started On Instagram.",
+      "descriptor": "Alpine cocktails, wood-fired pizzas, and a Mid-Century Mondays run that started on Instagram.",
       "descriptor_highlight": "Mid-Century Mondays",
       "stat_line": "392 reviews · 4.5★ · four posts in the last 30 days, programming-led"
     },
@@ -51,8 +51,8 @@
       "name": "Commerce Bar",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "East Liberty",
-      "descriptor": "A Hidden Cocktail Bar With Fourteen Thousand Followers, Posting Sparingly And Letting The Mystery Carry The Feed.",
-      "descriptor_highlight": "Letting The Mystery Carry",
+      "descriptor": "A hidden cocktail bar with fourteen thousand followers, posting sparingly and letting the mystery carry the feed.",
+      "descriptor_highlight": "letting the mystery carry",
       "stat_line": "106 reviews · 4.7★ · the East Liberty cocktail room, no reservations"
     }
   ],

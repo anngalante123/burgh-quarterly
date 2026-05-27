@@ -585,6 +585,7 @@ export interface GlobalRankingRow {
   rank_global: number;
   rank_category: number;
   hero_photo: string | null;
+  review_count: number;
 }
 
 /**
@@ -687,6 +688,7 @@ export async function getGlobalRankings(
     rank_global: i + 1,
     rank_category: row.rank_category,
     hero_photo: row.hero_photo,
+    review_count: row.review_count,
   }));
 
   return typeof limit === "number" ? ranked.slice(0, limit) : ranked;

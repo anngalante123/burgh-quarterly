@@ -40,9 +40,12 @@ export function Masthead({ variant = "compact" }: MastheadProps) {
       <header className="w-full bg-brand-black text-brand-lavender">
         {/* Narrow rule strip (publication plate) */}
         <div className="mx-auto max-w-7xl px-6 pt-3 pb-2 flex items-center justify-between border-b border-brand-lavender/10">
-          <span className="font-display text-[0.62rem] sm:text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-brand-lime">
+          <Link
+            href="/how-we-rank"
+            className="font-display text-[0.62rem] sm:text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-brand-lime no-underline hover:text-brand-lavender transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"
+          >
             PGH · Signal Index
-          </span>
+          </Link>
           <span className="font-body text-[0.62rem] sm:text-[0.68rem] uppercase tracking-[0.22em] text-brand-lavender/55">
             Spring 2026
           </span>
@@ -77,9 +80,12 @@ export function Masthead({ variant = "compact" }: MastheadProps) {
           aria-label="Issue"
           className="flex items-center gap-4 font-display text-[0.62rem] sm:text-[0.68rem] font-semibold uppercase tracking-[0.22em]"
         >
-          <span className="hidden sm:inline text-brand-lime">
+          <Link
+            href="/how-we-rank"
+            className="hidden sm:inline text-brand-lime no-underline hover:text-brand-lavender transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"
+          >
             PGH · Signal Index
-          </span>
+          </Link>
           <span className="text-brand-lavender/55">Spring 2026</span>
         </nav>
       </div>

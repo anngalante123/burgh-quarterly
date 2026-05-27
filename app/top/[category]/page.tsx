@@ -200,7 +200,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
                 reviews, sentiment, photos, Instagram cadence, and creator
                 fit.{" "}
                 <Link
-                  href="/about"
+                  href="/how-we-rank"
                   className="text-brand-purple hover:underline font-medium"
                 >
                   Full methodology →

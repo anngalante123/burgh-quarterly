@@ -1,22 +1,25 @@
+import { Suspense } from "react";
 import Link from "next/link";
 
 import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
 import { Reveal } from "@/components/motion/Reveal";
+import { LeaderboardBrowser } from "@/components/LeaderboardBrowser";
 
 import {
   getGlobalRankings,
   type GlobalRankingRow,
 } from "@/lib/data/load-business";
-import type { Category, Tier } from "@/lib/data/schemas";
+import type { Category } from "@/lib/data/schemas";
 
 /**
- * /leaderboard, the property-wide Pittsburgh Firecast 100.
+ * /leaderboard, the property-wide Pittsburgh Firecast.
  *
- * Server component. Pulls the top 100 businesses across every category for
- * the active issue, sorted by composite descending (with rank_category and
- * review volume as tiebreaks at the data layer). Renders three tier-banded
- * sections, each row deep-linked to /business/[slug].
+ * Server component. Pulls every scored business in the active issue,
+ * sorts them by composite descending (with rank_category and review
+ * volume as tiebreaks at the data layer), and hands the full set to a
+ * client browser component that owns filter state in URL params and
+ * renders the tier-banded sections with chunked "show more" rendering.
  *
  * Voice rules (EDITORIAL_VOICE.md):
  *   - No raw composite scores, no letter grades, no "best of" framing
@@ -26,28 +29,9 @@ import type { Category, Tier } from "@/lib/data/schemas";
  */
 
 // Render on demand to skip the build-time DB hit. /leaderboard pulls
-// the top 100 across every category, which during build counted
+// every business across every category, which during build counted
 // against Neon's data-transfer quota and crashed the export.
 export const dynamic = "force-dynamic";
-
-const TOP_N = 100;
-
-const TIER_LABEL: Record<Tier, string> = {
-  icons: "Icons of the Burgh",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staples",
-};
-
-const TIER_ORDER: Tier[] = ["icons", "ones_to_watch", "neighborhood_staples"];
-
-const TIER_PILL: Record<Tier, string> = {
-  icons:
-    "bg-brand-lime text-brand-black border border-brand-black/10 rounded-sm",
-  ones_to_watch:
-    "bg-brand-purple text-brand-lavender border border-brand-purple rounded-full",
-  neighborhood_staples:
-    "bg-brand-cream text-brand-black border border-brand-black/15 rounded-full",
-};
 
 const CATEGORY_LABEL: Record<Category, string> = {
   restaurant: "Restaurants",
@@ -74,13 +58,13 @@ const CATEGORY_LABEL: Record<Category, string> = {
 };
 
 export const metadata = {
-  title: "The Pittsburgh Firecast 100, Spring 2026 · Signal Pittsburgh",
+  title: "The Pittsburgh Firecast, Spring 2026 · Signal Pittsburgh",
   description:
-    "The 100 small businesses Pittsburgh is talking about this quarter, ranked across every category by reputation, presence, and momentum.",
+    "Every small business Pittsburgh is talking about this quarter, ranked across every category by reputation, presence, and momentum. Filter by neighborhood, category, tier, and review volume.",
 };
 
 export default async function LeaderboardPage() {
-  const rows = await getGlobalRankings("2026-spring", TOP_N);
+  const rows: GlobalRankingRow[] = await getGlobalRankings("2026-spring");
 
   if (rows.length === 0) {
     return (
@@ -98,8 +82,37 @@ export default async function LeaderboardPage() {
     );
   }
 
-  const totalShown = rows.length;
-  const groups = groupByTier(rows);
+  const totalRanked = rows.length;
+
+  // Build the category options from the actual ranked set, so the
+  // dropdown never shows categories with zero businesses this issue.
+  const categoryCounts = new Map<Category, number>();
+  for (const r of rows) {
+    categoryCounts.set(r.category, (categoryCounts.get(r.category) ?? 0) + 1);
+  }
+  const categoryOptions = Array.from(categoryCounts.entries())
+    .map(([value, count]) => ({
+      value,
+      label: `${CATEGORY_LABEL[value]} (${count})`,
+    }))
+    .sort((a, b) => a.label.localeCompare(b.label));
+
+  // Slim the rows for the client payload. The hero_photo and composite
+  // are intentionally dropped here; the browse view never renders the
+  // raw composite, and the rich rows show typography, not photography,
+  // so we keep the client bundle lean.
+  const browserRows = rows.map((r) => ({
+    slug: r.business_slug,
+    name: r.name,
+    neighborhood: r.neighborhood,
+    category: r.category,
+    categoryName: CATEGORY_LABEL[r.category],
+    tier: r.tier,
+    rank_global: r.rank_global,
+    rank_category: r.rank_category,
+    hero_photo: null,
+    review_count: r.review_count,
+  }));
 
   return (
     <>
@@ -126,23 +139,23 @@ export default async function LeaderboardPage() {
                 Signal Pittsburgh
               </Link>
               <span className="mx-2 text-brand-black/30">›</span>
-              <span className="text-brand-black">The Firecast 100</span>
+              <span className="text-brand-black">The Firecast</span>
             </nav>
 
             <p className="mt-8 font-body italic text-brand-black/75 text-lg md:text-xl">
-              Every category in one index. The top {totalShown} this issue.
+              Every category in one index. {totalRanked.toLocaleString()}{" "}
+              ranked this issue.
             </p>
 
             <h1 className="mt-3 font-display font-black uppercase tracking-[-0.02em] text-brand-black [text-wrap:balance] [word-break:break-word] text-[clamp(2.25rem,7.5vw,6rem)] leading-[0.92]">
               The Pittsburgh{" "}
               <span className="bg-brand-lime px-2 box-decoration-clone">
                 Firecast
-              </span>{" "}
-              100
+              </span>
             </h1>
 
             <p className="mt-6 font-display text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55">
-              {totalShown} ranked this issue · Spring 2026 ·{" "}
+              {totalRanked.toLocaleString()} ranked this issue · Spring 2026 ·{" "}
               <span className="text-brand-lime bg-brand-black px-1.5 py-0.5">
                 PGH
               </span>
@@ -170,9 +183,10 @@ export default async function LeaderboardPage() {
                 Composite index, descending. The composite combines five
                 signals: reviews, sentiment, photos, Instagram cadence, and
                 creator fit. Ties settle on category position, then on
-                review volume.{" "}
+                review volume. Filter by neighborhood, category, tier, or
+                review volume to narrow the view.{" "}
                 <Link
-                  href="/about"
+                  href="/how-we-rank"
                   className="text-brand-purple hover:underline font-medium"
                 >
                   Full methodology →
@@ -181,33 +195,17 @@ export default async function LeaderboardPage() {
             </div>
           </Reveal>
 
-          {/* ---------- TIER-BANDED LIST ---------- */}
-          <div className="mt-14 md:mt-20 space-y-14 md:space-y-20">
-            {TIER_ORDER.map((tier) => {
-              const items = groups[tier];
-              if (items.length === 0) return null;
-              return (
-                <Reveal as="section" key={tier}>
-                  <header className="flex items-baseline justify-between gap-4 border-b border-brand-black/15 pb-3">
-                    <h2 className="font-display font-black uppercase tracking-[-0.01em] text-brand-black text-2xl md:text-3xl">
-                      {TIER_LABEL[tier]}
-                    </h2>
-                    <span className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55">
-                      {items.length}{" "}
-                      {items.length === 1 ? "entry" : "entries"}
-                    </span>
-                  </header>
-                  <ol className="mt-6 space-y-3 md:space-y-4">
-                    {items.map((row) => (
-                      <li key={row.business_slug}>
-                        <LeaderboardRow row={row} />
-                      </li>
-                    ))}
-                  </ol>
-                </Reveal>
-              );
-            })}
-          </div>
+          {/* ---------- BROWSE / FILTER / RENDER ---------- */}
+          <Suspense
+            fallback={
+              <p className="mt-12 sr-only">Loading.</p>
+            }
+          >
+            <LeaderboardBrowser
+              rows={browserRows}
+              categories={categoryOptions}
+            />
+          </Suspense>
 
           {/* Closing */}
           <Reveal as="section" className="mt-14 md:mt-20">
@@ -216,10 +214,10 @@ export default async function LeaderboardPage() {
                 What the Firecast is
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/85 leading-relaxed">
-                A working record. The {totalShown} businesses we&apos;ve
-                scored highest across every category this issue, in order.
-                Movement matters more than position. Next quarter we&apos;ll
-                see who climbs and who holds.
+                A working record. Every business we&apos;ve scored across
+                every category this issue, in order. Movement matters more
+                than position. Next quarter we&apos;ll see who climbs and
+                who holds.
               </p>
             </div>
           </Reveal>
@@ -228,77 +226,5 @@ export default async function LeaderboardPage() {
 
       <Colophon />
     </>
-  );
-}
-
-/* ---------- helpers ---------- */
-
-function groupByTier(rows: GlobalRankingRow[]): Record<Tier, GlobalRankingRow[]> {
-  const out: Record<Tier, GlobalRankingRow[]> = {
-    icons: [],
-    ones_to_watch: [],
-    neighborhood_staples: [],
-  };
-  for (const r of rows) out[r.tier].push(r);
-  return out;
-}
-
-/* ---------- row ---------- */
-
-function LeaderboardRow({ row }: { row: GlobalRankingRow }) {
-  const rankNumeral =
-    row.rank_global < 10 ? `00${row.rank_global}` : row.rank_global < 100 ? `0${row.rank_global}` : String(row.rank_global);
-  const categoryLabel = CATEGORY_LABEL[row.category];
-
-  return (
-    <Link
-      href={`/business/${row.business_slug}`}
-      className="group block rounded-md border border-brand-black/10 bg-white/70 px-4 py-4 md:px-6 md:py-5 transition-colors hover:bg-brand-cream focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
-    >
-      <div className="grid grid-cols-[3rem_1fr_auto] md:grid-cols-[5rem_1fr_auto_auto] items-center gap-4 md:gap-6">
-        {/* Rank numeral */}
-        <div className="font-display font-black tabular-nums text-2xl md:text-4xl leading-none tracking-[-0.02em] text-brand-black/20 group-hover:text-brand-purple/60 transition-colors">
-          {rankNumeral}
-        </div>
-
-        {/* Name + neighborhood + category badge (mobile stacks tier under) */}
-        <div className="min-w-0">
-          <h3 className="font-display font-black uppercase tracking-[-0.01em] text-brand-black text-base md:text-xl leading-tight [word-break:break-word]">
-            {row.name}
-          </h3>
-          <p className="mt-1 font-body text-xs md:text-sm text-brand-black/65">
-            {row.neighborhood}
-          </p>
-          <div className="mt-2 flex flex-wrap items-center gap-2">
-            <span
-              className="inline-flex items-center font-display font-semibold uppercase tracking-[0.08em] whitespace-nowrap px-2 py-0.5 text-[0.6rem] md:text-[0.65rem] bg-brand-black/5 text-brand-black/75 border border-brand-black/10 rounded-sm"
-            >
-              {categoryLabel}
-            </span>
-            {/* Mobile-only tier badge */}
-            <span
-              className={`md:hidden inline-flex items-center font-display font-semibold uppercase tracking-[0.08em] whitespace-nowrap px-2 py-0.5 text-[0.6rem] ${TIER_PILL[row.tier]}`}
-            >
-              {TIER_LABEL[row.tier]}
-            </span>
-          </div>
-        </div>
-
-        {/* Tier badge desktop */}
-        <span
-          className={`hidden md:inline-flex items-center font-display font-semibold uppercase tracking-[0.08em] whitespace-nowrap px-2 py-0.5 text-[0.7rem] ${TIER_PILL[row.tier]}`}
-        >
-          {TIER_LABEL[row.tier]}
-        </span>
-
-        {/* Arrow */}
-        <span
-          aria-hidden="true"
-          className="font-display text-brand-black/60 group-hover:text-brand-purple transition-colors text-base md:text-lg"
-        >
-          →
-        </span>
-      </div>
-    </Link>
   );
 }

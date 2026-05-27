@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Bars",
   "subtitle": "Bars and breweries the regulars treat as their own.",
   "angle": "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
-  "intro": "The bars and breweries on this list are not hidden. Their regulars know exactly where they are, and the reviews prove it. What they share is a specific kind of gap: the room is full, the conversation is real, and the digital profile looks like an afterthought. Underrated, here, means the signal hasn't caught up to the substance.\n\nGrist House Craft Brewery ranks first among Pittsburgh breweries this quarter, which is not a small thing in a city that takes brewing seriously. It also barely registers in the broader discovery layer, the place where someone new to the city or the neighborhood would actually find it. Dancing Gnome Beer presents a sharper version of the same problem: it ranks first in its category with no Instagram presence, no listed phone number, and no posted hours on Google. A place earning that kind of word-of-mouth while running a Google listing that answers zero basic questions is leaving real ground uncovered.\n\nThe businesses on this list already have the hardest part, which is genuine customer loyalty. The gap between that loyalty and a visible digital presence is often shorter than owners expect, and the people who could close it are frequently already in the room.\n\nIssue 02, Summer 2026, turns to Pittsburgh's best new restaurants, and the category is closer than it looks.",
+  "intro": "Grist House sits in Millvale at the foot of Troy Hill. It is, by review depth, the best-loved brewery in Pittsburgh this quarter. It is also nearly invisible to anyone trying to find it for the first time. That is the through-line of this list.\n\nFive Pittsburgh bars and breweries earned the underrated tag this quarter. Dancing Gnome ranks first in its category with no Instagram, no listed phone, and no posted hours on Google. A brewery earning that kind of regulars' loyalty while running a Google listing that answers zero questions is leaving real ground uncovered. Hitchhiker has a 4.8 average and a profile with no photos. East End Brewing in Larimer has 495 reviews and a listing missing every basic field a stranger would check. None of these are hidden bars. They are bars the city's regulars love and the city's broader feed has not noticed yet.\n\nThe hard part is already done. Closing the rest is shorter than most owners expect. Issue 02, summer 2026, turns to Pittsburgh's best new restaurants.",
   "items": [
     {
       "rank": 1,
@@ -11,10 +11,9 @@
       "name": "Grist House Craft Brewery",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Pittsburgh Breweries, Invisible To The City's Discovery Layer.",
-      "descriptor_highlight": "Invisible To The City's",
-      "stat_line": "749 reviews · 4.8★",
-      "playbook_top_move": "Get the Instagram handle indexed publicly. The IG account is not searchable in any index; confirm handle is set to public and link it directly on the Google Business profile."
+      "descriptor": "First in Pittsburgh breweries, invisible to the city's discovery layer.",
+      "descriptor_highlight": "invisible to the city's",
+      "stat_line": "749 reviews · 4.8★"
     },
     {
       "rank": 2,
@@ -22,10 +21,9 @@
       "name": "Crafthouse Stage & Grill",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Its Tier, Zero Social Footprint. The Room Delivers, The Feed Does Not Exist.",
-      "descriptor_highlight": "Zero Social Footprint",
-      "stat_line": "1,560 reviews · 4.4★",
-      "playbook_top_move": "Build a discoverable Instagram presence now. Claim and index a business Instagram account; the handle is currently undetectable, costing the venue its share of every concert night recap posted by attendees."
+      "descriptor": "First in its tier, zero social footprint. The room delivers, the feed does not exist.",
+      "descriptor_highlight": "zero social footprint",
+      "stat_line": "1,560 reviews · 4.4★"
     },
     {
       "rank": 3,
@@ -33,10 +31,9 @@
       "name": "Hitchhiker Brewing - Brewery & Tap Room",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Breweries, But 161st In Bars. The Google Listing Is Doing This Place No Favors.",
-      "descriptor_highlight": "161st In Bars",
-      "stat_line": "444 reviews · 4.8★",
-      "playbook_top_move": "Complete the Google Business listing now. Add phone number, hours, and at least 10 photos to a profile that currently shows zero across all three fields."
+      "descriptor": "First in breweries, 161st in bars. The Google listing is doing this place no favors.",
+      "descriptor_highlight": "161st in bars",
+      "stat_line": "444 reviews · 4.8★"
     },
     {
       "rank": 4,
@@ -44,10 +41,9 @@
       "name": "Dancing Gnome Beer",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Pittsburgh Breweries, But No Instagram, No Hours, No Phone On Google.",
-      "descriptor_highlight": "No Hours, No Phone",
-      "stat_line": "610 reviews · 4.6★",
-      "playbook_top_move": "Complete the Google Business listing today. Add hours and a phone number to Google; both are missing and directly suppress discovery for 610-review business."
+      "descriptor": "First in Pittsburgh breweries. No Instagram, no hours, no phone on Google.",
+      "descriptor_highlight": "no hours, no phone",
+      "stat_line": "610 reviews · 4.6★"
     },
     {
       "rank": 5,
@@ -55,10 +51,9 @@
       "name": "East End Brewing Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Larimer",
-      "descriptor": "First In Breweries, But The Listing Is Missing A Phone, Hours, And Any Photos.",
-      "descriptor_highlight": "Missing A Phone",
-      "stat_line": "495 reviews · 4.8★",
-      "playbook_top_move": "Complete the Google Business listing now. Add phone number, hours, and at least one photo category; all three are currently absent and suppressing discovery across 205 Bars competitors."
+      "descriptor": "First in breweries. The listing is missing a phone, hours, and any photos.",
+      "descriptor_highlight": "missing a phone",
+      "stat_line": "495 reviews · 4.8★"
     }
   ],
   "query": {

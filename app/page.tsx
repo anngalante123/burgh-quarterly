@@ -73,7 +73,7 @@ export default async function Home() {
   const FEATURED_SLUGS = [
     "best-creator-posts-about",
     "most-creative-posts",
-    "highest-engagement-rate-posts",
+    "loudest-feeds",
   ];
   const featuredArticles = FEATURED_SLUGS
     .map((s) => allArticles.find((a) => a.slug === s))
@@ -156,7 +156,7 @@ export default async function Home() {
           </Reveal>
           <Reveal delay={0.12}>
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
-              Every quarter, Signal Pittsburgh scores{" "}
+              Every quarter, Signal Pittsburgh ranks{" "}
               <span className="font-semibold text-brand-black">
                 {all.length} local small businesses
               </span>{" "}
@@ -506,7 +506,7 @@ export default async function Home() {
               </span>.
             </p>
             <Link
-              href="/about"
+              href="/how-we-rank"
               className="inline-flex items-center gap-1 font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-black/70 hover:text-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
             >
               How we rank

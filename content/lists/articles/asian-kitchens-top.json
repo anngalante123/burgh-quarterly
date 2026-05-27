@@ -3,7 +3,7 @@
   "title": "The Pittsburgh Asian Kitchens Creators Keep Returning To",
   "subtitle": "Sushi, noodles, Thai, Indian, Japanese",
   "angle": "the Asian kitchens generating the most creator coverage this quarter. The dishes the city is filming and the restaurants behind them.",
-  "intro": "Asian kitchens are generating some of the most consistent creator attention in Pittsburgh this quarter, and the pattern is worth examining closely. Everyday Noodles in Squirrel Hill has no Instagram account and no TikTok presence, yet creators are already filming inside. Pusadee's Garden in Lawrenceville ranks first among Pittsburgh Thai restaurants on conversation volume, running on a feed that posts roughly twice a month and nothing on short-form video. The coverage is arriving faster than the infrastructure meant to catch it.\n\nMola in East Liberty tells a sharper version of the same story. It leads Pittsburgh in sushi on review depth alone, which means the written record is substantial, but the social feed has gone nearly quiet. Atarashi holds the same top ranking in sushi with more recent activity, though the newest reviews are pulling sentiment in a complicated direction. Both restaurants are filming-ready in ways their accounts have not fully accounted for.\n\nWhat this quarter establishes is a gap between where creators are pointing their cameras and where restaurants have built the surface to receive that attention. That gap will only matter more as competition tightens. Issue 02 will track whether these kitchens close it.",
+  "intro": "Everyday Noodles in Squirrel Hill has no Instagram account, no TikTok presence, and creators have already filmed inside. Two of them this quarter, three thousand plays. That is what happens when the room is good enough that the absence of a feed does not matter.\n\nPittsburgh's Asian kitchens are generating some of the most consistent creator attention in the city this spring, and the kitchens themselves have not all caught up. Pusadee's Garden ranks first among Pittsburgh Thai restaurants on conversation volume, running a feed that posts roughly twice a month and nothing on short-form video. Mola in East Liberty leads on sushi by review depth alone, with a feed that has gone nearly quiet. Atarashi in Oakland holds the same top sushi ranking with newer activity and a recent review trail pulling sentiment in a complicated direction.\n\nWhat the data says this quarter is simple. Pittsburgh is pointing cameras at its Asian kitchens faster than the kitchens have built the surface to receive that attention. Issue 02 will track who closed the gap.",
   "items": [
     {
       "rank": 1,
@@ -11,16 +11,15 @@
       "name": "Pusadee's Garden",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First In Pittsburgh Thai, Stalled By A Feed That Posts Twice A Month And No TikTok Account.",
-      "descriptor_highlight": "No TikTok Account",
+      "descriptor": "First in Pittsburgh Thai, stalled by a feed that posts twice a month and no TikTok account.",
+      "descriptor_highlight": "no TikTok account",
       "stat_line": "1,233 reviews · 4.7★ · 8 creators · 19K plays · 2 IG posts/30d",
       "featured_tiktok": {
         "author": "mad_i_libs",
         "plays": 6614,
         "url": "https://www.tiktok.com/@mad_i_libs/video/7604578609566633229",
         "caption": "This Thai restaurant is a gorgeous spot for your next date night or special occasion in Pittsburgh! 💖 \n\nThere are so many food and drink options, for meat-eaters and vegans alike, you'll want to come back more than once. 🥂 \n\nTip: Show up "
-      },
-      "playbook_top_move": "Start posting Reels before creators outpace you. Zero Reels in 30 days while 8 creators generated 19,109 TikTok plays. One weekly Reel of the garden at golden hour costs nothing and reclaims the narrative."
+      }
     },
     {
       "rank": 2,
@@ -28,16 +27,15 @@
       "name": "Everyday Noodles",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Squirrel Hill North",
-      "descriptor": "Second In Pittsburgh Boutiques On Review Depth Alone. No Instagram, No TikTok, And Creators Already Filming.",
-      "descriptor_highlight": "Creators Already Filming",
+      "descriptor": "Second in Pittsburgh restaurants on review depth. No Instagram, no TikTok, and creators already filming.",
+      "descriptor_highlight": "creators already filming",
       "stat_line": "2,220 reviews · 4.6★ · 2 creators · 3K plays",
       "featured_tiktok": {
         "author": "sheseatingit",
         "plays": 1811,
         "url": "https://www.tiktok.com/@sheseatingit/video/7617842917629070622",
         "caption": "Everyday Noodles is my dream come true because I could eat noodles everyday.\n\n#Pittsburgh #soupdumplings #xiaolongbao #pennsylvania #pittsburghsteelers "
-      },
-      "playbook_top_move": "Get an Instagram account indexed now. With no indexed Instagram handle, every five-star review and creator video leads to a dead end. Even a basic, active profile captures that referral traffic."
+      }
     },
     {
       "rank": 3,
@@ -45,16 +43,15 @@
       "name": "Mola",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "East Liberty",
-      "descriptor": "First In Pittsburgh Sushi On Review Depth Alone. The Feed Has Gone Nearly Quiet.",
-      "descriptor_highlight": "Gone Nearly Quiet",
+      "descriptor": "First in Pittsburgh sushi on review depth. The feed has gone nearly quiet.",
+      "descriptor_highlight": "gone nearly quiet",
       "stat_line": "756 reviews · 4.6★ · 1 creators · 3K plays · 2 IG posts/30d",
       "featured_tiktok": {
         "author": "zoetaylorrrfit",
         "plays": 2849,
         "url": "https://www.tiktok.com/@zoetaylorrrfit/video/7605020364741135630",
         "caption": "You already know .. do I even need to say anymore about how much I love Mola🍣🥢 my favorite sushi in Pittsburgh \n\n#pittsburghrestaurants #pgh #sushipittsburgh #fyp #sushilover "
-      },
-      "playbook_top_move": "Restart Reels before the next review cycle. Zero Reels in 30 days is the single biggest drag on Instagram Momentum; one Reel per week of the sushi counter or a chef prep moment closes that gap fast."
+      }
     },
     {
       "rank": 4,
@@ -62,10 +59,9 @@
       "name": "Atarashi",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "West Oakland",
-      "descriptor": "First In Pittsburgh Sushi, But The Recent Reviews Are Pulling In The Other Direction.",
-      "descriptor_highlight": "Recent Reviews Are Pulling",
-      "stat_line": "604 reviews · 4.3★",
-      "playbook_top_move": "Get any social presence indexed and active. No Instagram handle is indexed and no TikTok account exists. Claiming and linking both cuts the discovery blackout for the 1,074-restaurant family."
+      "descriptor": "First in Pittsburgh sushi. The recent reviews are pulling in the other direction.",
+      "descriptor_highlight": "recent reviews are pulling",
+      "stat_line": "604 reviews · 4.3★"
     },
     {
       "rank": 5,
@@ -73,10 +69,9 @@
       "name": "Bengal Kabab House & Restaurant",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Central Oakland",
-      "descriptor": "First In Pittsburgh Indian, Seventy-Fourth In Restaurants. The Buffet Has No Feed.",
-      "descriptor_highlight": "The Buffet Has No Feed",
-      "stat_line": "993 reviews · 4.6★",
-      "playbook_top_move": "Launch an Instagram account this quarter. Bengal has no indexed Instagram handle. A basic account with weekly lunch buffet photos closes the single biggest gap in this rank."
+      "descriptor": "First in Pittsburgh Indian, seventy-fourth in restaurants. The buffet has no feed.",
+      "descriptor_highlight": "the buffet has no feed",
+      "stat_line": "993 reviews · 4.6★"
     },
     {
       "rank": 6,
@@ -84,10 +79,9 @@
       "name": "Benihana - Pittsburgh",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Thirty-Seventh In Pittsburgh Restaurants On Review Depth Alone. No Social Surface To Catch What Happens At Every Table.",
-      "descriptor_highlight": "No Social Surface",
-      "stat_line": "2,297 reviews · 4.3★",
-      "playbook_top_move": "Claim and activate an Instagram presence. The location has no indexed Instagram handle. A single active account capturing chef moments would open the most glaring gap in this business's signal profile."
+      "descriptor": "Thirty-seventh in Pittsburgh restaurants on review depth. No social surface to catch what happens at every table.",
+      "descriptor_highlight": "no social surface",
+      "stat_line": "2,297 reviews · 4.3★"
     },
     {
       "rank": 7,
@@ -95,10 +89,9 @@
       "name": "Bombay To Burgh",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Pittsburgh Indian, Twenty-Sixth In Restaurants. The Social Layer Has Not Arrived Yet.",
-      "descriptor_highlight": "Social Layer Has Not",
-      "stat_line": "1,242 reviews · 4.8★",
-      "playbook_top_move": "Get an Instagram presence indexed. No Instagram handle is indexed anywhere. Create or claim the account and post at minimum 4 times in the first 30 days to establish a signal baseline."
+      "descriptor": "First in Pittsburgh Indian, twenty-sixth in restaurants. The social layer has not arrived yet.",
+      "descriptor_highlight": "social layer has not",
+      "stat_line": "1,242 reviews · 4.8★"
     },
     {
       "rank": 8,
@@ -106,10 +99,9 @@
       "name": "Chao Phraya Thai Cuisine",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Its Tier, But Zero Photos And No Hours On Google Hold The Ceiling Down.",
-      "descriptor_highlight": "Zero Photos And No Hours",
-      "stat_line": "214 reviews · 4.4★",
-      "playbook_top_move": "Complete the Google Business Profile now. Add phone number, hours, and at least 10 food photos to a profile that currently shows zero of all three."
+      "descriptor": "First in its tier, but zero photos and no hours on Google hold the ceiling down.",
+      "descriptor_highlight": "zero photos and no hours",
+      "stat_line": "214 reviews · 4.4★"
     }
   ],
   "query": {

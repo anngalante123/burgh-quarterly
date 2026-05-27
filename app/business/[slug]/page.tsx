@@ -457,6 +457,15 @@ export default async function BusinessPage({ params }: PageProps) {
             peerFamilyLabel={familyLabel}
             details={subscoreDetails}
           />
+          <div className="mt-4">
+            <Link
+              href="/how-we-rank"
+              className="inline-flex items-center gap-1 font-display text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-black/60 hover:text-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+            >
+              How we rank
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
         </Gated>
       ),

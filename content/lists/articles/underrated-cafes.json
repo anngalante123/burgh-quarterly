@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Cafes",
   "subtitle": "Coffee, tea, juice. Loved locally, not yet viral.",
   "angle": "the cafes that Pittsburgh regulars rave about in reviews but the broader internet hasn't caught up to. Quietly excellent, quietly under-followed.",
-  "intro": "Some Pittsburgh cafes have already won the room. The regulars are loyal, the reviews are deep, and the word of mouth is real. What's missing is everything that happens after someone closes their laptop and tries to find the place online.\n\nThis quarter's list surfaces five cafes where the conversation quality outpaces the digital footprint by a significant margin. Biddle's Escape ranks first in Pittsburgh cafes on review depth alone, yet carries almost no Instagram presence. De Fer Coffee and Tea holds the top spot in its category on the strength of its roasts, but its Google profile is leaving potential customers nowhere to go. Espresso A Mano sits first in the Ones to Watch tier while stalled at 122nd overall, with no listed hours, no phone, and no social presence to find. These are not struggling businesses. They are visible businesses with invisible profiles.\n\nThe customer love is already there. The second move, often the cheaper one, is getting the creators who already love these places to come back with a purpose. Pittsburgh has more of them than most owners realize.\n\nIssue 02 arrives in summer 2026, when patio season resets the rankings and new names tend to surface fast.",
+  "intro": "Biddle's Escape in Regent Square has 898 reviews and a 4.6 average. By review depth, it is the best-loved cafe in Pittsburgh this quarter. By Instagram presence, it is nearly invisible. That gap is the entire premise of this list.\n\nFive cafes earned the underrated tag this spring. De Fer in the Strip is leading its category on the strength of its roasts, with a Google profile that leaves first-time visitors nowhere to go. Espresso A Mano in Lawrenceville is first in the Ones to Watch tier and stuck at 122nd overall, with no listed hours, no phone, and no social handle to find. Carnegie Coffee Company in Carnegie has 1,198 reviews and an Instagram account nobody can locate. Big Dog in the South Side has 1,025 reviews and a Google listing that cannot tell you when the door is open. None of these cafes are struggling. They are visible businesses with invisible profiles.\n\nThe regulars are already there. The next move is letting the city find them. Issue 02 arrives in summer 2026, when patio season resets the discovery cycle.",
   "items": [
     {
       "rank": 1,
@@ -11,10 +11,9 @@
       "name": "Carnegie Coffee Company",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Icons Tier, 142nd In Pittsburgh Cafes. The Building Earns Fans; The Feed Earns Nothing.",
-      "descriptor_highlight": "Feed Earns Nothing",
-      "stat_line": "1,198 reviews · 4.6★",
-      "playbook_top_move": "Get on Instagram, then get on Google. Carnegie has no indexed Instagram and is missing phone, hours, and photos on Google, fix the Google listing first since it feeds 1,198 existing reviewers nowhere to go next."
+      "descriptor": "Icons tier, 142nd in Pittsburgh cafes. The building earns fans; the feed earns nothing.",
+      "descriptor_highlight": "feed earns nothing",
+      "stat_line": "1,198 reviews · 4.6★"
     },
     {
       "rank": 2,
@@ -22,10 +21,9 @@
       "name": "Big Dog Coffee",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "South Side Flats",
-      "descriptor": "Top Of Its Category, Lost In The Family. Google Can't Even List The Hours.",
-      "descriptor_highlight": "Lost In The Family",
-      "stat_line": "1,025 reviews · 4.7★",
-      "playbook_top_move": "Put the front door on Google. Add phone number and business hours to the Google profile, both are missing and both kill walk-in conversion for 143rd-ranked cafe."
+      "descriptor": "Top of its category, lost in the family. Google cannot even list the hours.",
+      "descriptor_highlight": "lost in the family",
+      "stat_line": "1,025 reviews · 4.7★"
     },
     {
       "rank": 3,
@@ -33,10 +31,9 @@
       "name": "Biddle's Escape",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Pittsburgh Cafes On Review Depth Alone. Every Instagram Channel Is Still Dark.",
-      "descriptor_highlight": "Every Instagram Channel",
-      "stat_line": "898 reviews · 4.6★",
-      "playbook_top_move": "Get a findable Instagram presence indexed. An unindexed handle means zero Instagram signal counted; confirm the account exists and is publicly searchable, then post at least weekly to activate the momentum axis."
+      "descriptor": "First in Pittsburgh cafes on review depth alone. Every Instagram channel is still dark.",
+      "descriptor_highlight": "every Instagram channel",
+      "stat_line": "898 reviews · 4.6★"
     },
     {
       "rank": 4,
@@ -44,10 +41,9 @@
       "name": "De Fer Coffee & Tea",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Strip District",
-      "descriptor": "First In Pittsburgh Cafes, Built On The Roasts. The Google Profile Is Leaving Customers Nowhere.",
-      "descriptor_highlight": "Leaving Customers Nowhere",
-      "stat_line": "857 reviews · 4.8★",
-      "playbook_top_move": "Complete the Google Business profile today. Add phone number, current hours, and claim or re-index the Instagram handle, three missing fields that break the discovery path for first-time visitors."
+      "descriptor": "First in Pittsburgh cafes, built on the roasts. The Google profile is leaving customers nowhere.",
+      "descriptor_highlight": "leaving customers nowhere",
+      "stat_line": "857 reviews · 4.8★"
     },
     {
       "rank": 5,
@@ -55,10 +51,9 @@
       "name": "Espresso A Mano",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First In Ones To Watch, Stalled At 122nd. The Listing Has No Hours, No Phone, And No Social Presence To Find.",
-      "descriptor_highlight": "No Hours, No Phone",
-      "stat_line": "790 reviews · 4.7★",
-      "playbook_top_move": "Complete the Google listing immediately. Add phone number, business hours, and at least one photo category to close the three open gaps killing walk-in and discovery conversion."
+      "descriptor": "First in Ones to Watch, stalled at 122nd. No hours, no phone, no social presence to find.",
+      "descriptor_highlight": "no hours, no phone",
+      "stat_line": "790 reviews · 4.7★"
     }
   ],
   "query": {

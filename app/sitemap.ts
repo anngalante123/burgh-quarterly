@@ -9,6 +9,7 @@ export const dynamic = "force-dynamic";
 const STATIC_ROUTES: Array<{ path: string; priority: number }> = [
   { path: "/", priority: 1.0 },
   { path: "/about", priority: 0.7 },
+  { path: "/how-we-rank", priority: 0.8 },
   { path: "/leaderboard", priority: 0.7 },
   { path: "/best-on-social", priority: 0.7 },
   { path: "/underrated", priority: 0.7 },

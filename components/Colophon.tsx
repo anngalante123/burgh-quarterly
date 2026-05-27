@@ -18,6 +18,7 @@ import Link from "next/link";
 
 const FOOTER_LINKS: { label: string; href: string }[] = [
   { label: "About", href: "/about" },
+  { label: "How we rank", href: "/how-we-rank" },
   { label: "Leaderboard", href: "/leaderboard" },
   { label: "Best on Social", href: "/best-on-social" },
   { label: "Underrated", href: "/underrated" },

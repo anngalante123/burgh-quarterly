@@ -29,7 +29,7 @@ loadEnv();
 const MODEL = "claude-sonnet-4-6";
 const RAW_DIR = join(process.cwd(), "content/raw/own-posts");
 const OUT_DIR = join(process.cwd(), "content/lists/articles");
-const SLUG = "highest-engagement-rate-posts";
+const SLUG = "loudest-feeds";
 const TOP_N = 30;
 const PER_BUSINESS_CAP = 2;
 

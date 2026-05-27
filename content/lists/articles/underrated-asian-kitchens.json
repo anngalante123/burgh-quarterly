@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Asian Kitchens",
   "subtitle": "Sushi, Thai, Indian, Japanese, noodles. Loved in person, not yet celebrated online.",
   "angle": "the Asian kitchens earning real love in reviews but flying under the social radar. The spots regulars defend.",
-  "intro": "The best Asian kitchens in Pittsburgh have a particular problem: the people eating in them are happy enough to write about it, and not bothered enough to photograph it. This list tracks the restaurants where review depth outran social presence, where the conversation is real but quiet. Five kitchens made the cut this quarter. All five have legitimate review volume. None of them have a complete digital listing.\n\nNoodlehead in Shadyside sits at the top, earning the highest review depth score among Pittsburgh restaurants this issue, with no phone number and no posted hours to speak of. Taj Mahal Pittsburgh matches it, built entirely on the weight of what diners wrote, with no social presence at all to carry that forward. Little Bangkok in the Strip District leads its category on first appearance here, which makes the missing infrastructure more conspicuous, not less. These are not obscure restaurants. They are restaurants that have not caught up to their own reputation.\n\nThe customer love is already there. The next move, and it is a cheap one, is asking the creators who already love these places to come back on purpose. Pittsburgh has more food creators looking for something real to feature than most owners in this city realize.\n\nIssue 02, Summer 2026, tracks which of these kitchens closed the gap.",
+  "intro": "Noodlehead on South Highland is a tiny Shadyside room with 3,562 reviews and a 4.6 average. By customer signal, it is the most-loved Asian kitchen in Pittsburgh this quarter. Its Google listing has no phone number and no posted hours.\n\nFive Pittsburgh Asian kitchens earned the underrated tag this issue, and all five have the same problem: a real room with a thin profile. Taj Mahal on Centre Avenue has 2,805 reviews and no social presence at all. Little Bangkok in the Strip is first in its category on first appearance and missing the basic listing fields a hungry stranger would check at 7 p.m. Umami in Lawrenceville has 1,092 reviews and a Google profile that cannot tell you when it opens. Masala House in Bethel Park has 588 reviews and a 4.7 average, held back by a listing with no phone and no hours.\n\nThe regulars are eating. The cameras are not pointed yet. Issue 02, summer 2026, tracks which of these kitchens closed the gap.",
   "items": [
     {
       "rank": 1,
@@ -11,10 +11,9 @@
       "name": "Noodlehead",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Shadyside",
-      "descriptor": "First In Pittsburgh Restaurants On Review Depth. The Phone Number And Hours Are Still Missing.",
-      "descriptor_highlight": "Phone Number And Hours",
-      "stat_line": "3,562 reviews · 4.6★",
-      "playbook_top_move": "Complete the Google Business listing today. Add phone number and business hours to Google, both are missing and directly undercut a perfect conversion path signal."
+      "descriptor": "First in Pittsburgh restaurants on review depth. The phone number and hours are still missing.",
+      "descriptor_highlight": "phone number and hours",
+      "stat_line": "3,562 reviews · 4.6★"
     },
     {
       "rank": 2,
@@ -22,10 +21,9 @@
       "name": "Taj Mahal Pittsburgh",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Pittsburgh Restaurants, Built On Review Depth. The Listing Still Has No Phone, No Hours, No Social.",
-      "descriptor_highlight": "No Phone, No Hours",
-      "stat_line": "2,805 reviews · 4.4★",
-      "playbook_top_move": "Complete the Google listing today. Add phone number, business hours, and at least one photo category; the listing currently shows none of these three basics."
+      "descriptor": "First in Pittsburgh restaurants, built on review depth. The listing still has no phone, no hours, no social.",
+      "descriptor_highlight": "no phone, no hours",
+      "stat_line": "2,805 reviews · 4.4★"
     },
     {
       "rank": 3,
@@ -33,10 +31,9 @@
       "name": "Little Bangkok in the Strip",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Strip District",
-      "descriptor": "First In This Issue, But No Phone, No Hours, No Social To Sustain It.",
-      "descriptor_highlight": "No Phone, No Hours",
-      "stat_line": "1,454 reviews · 4.8★",
-      "playbook_top_move": "Complete the Google Business listing today. Add a phone number and business hours to Google, both are missing and cost the business every search-intent visit that bounces."
+      "descriptor": "First in this issue. No phone, no hours, no social to sustain it.",
+      "descriptor_highlight": "no phone, no hours",
+      "stat_line": "1,454 reviews · 4.8★"
     },
     {
       "rank": 4,
@@ -44,10 +41,9 @@
       "name": "Umami",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First In Pittsburgh Restaurants, But No Phone, No Hours, No Instagram On Record.",
-      "descriptor_highlight": "No Phone, No Hours",
-      "stat_line": "1,092 reviews · 4.6★",
-      "playbook_top_move": "Complete the Google listing immediately. Add phone number, business hours, and at least 10 photos to a listing that currently shows none of the three."
+      "descriptor": "First in Pittsburgh restaurants. No phone, no hours, no Instagram on record.",
+      "descriptor_highlight": "no phone, no hours",
+      "stat_line": "1,092 reviews · 4.6★"
     },
     {
       "rank": 5,
@@ -55,10 +51,9 @@
       "name": "Masala House Indian Bistro",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Ones To Watch, Held Back By A Listing With No Phone And No Hours.",
-      "descriptor_highlight": "No Phone And No Hours",
-      "stat_line": "588 reviews · 4.7★",
-      "playbook_top_move": "Fix the Google listing today. Add phone number and business hours to Google; both are currently missing, costing every potential walk-in and call-ahead."
+      "descriptor": "First in Ones to Watch, held back by a listing with no phone and no hours.",
+      "descriptor_highlight": "no phone and no hours",
+      "stat_line": "588 reviews · 4.7★"
     }
   ],
   "query": {

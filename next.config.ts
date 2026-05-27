@@ -10,6 +10,18 @@ const nextConfig: NextConfig = {
   experimental: {
     cpus: 8,
   },
+  async redirects() {
+    return [
+      {
+        // Old slug exposed a banned engagement-rate metric in the URL.
+        // Renamed to /loudest-feeds in May 2026. Permanent so inbound
+        // links from social shares and email survive.
+        source: "/best-on-social/highest-engagement-rate-posts",
+        destination: "/best-on-social/loudest-feeds",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

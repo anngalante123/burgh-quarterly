@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Sweets",
   "subtitle": "Bakeries, dessert spots, and ice cream shops the city should be talking about.",
   "angle": "the dessert shops Pittsburgh customers love but creators haven't fully caught onto. High ratings, real review depth, thin Instagram momentum. The places worth a Sunday morning detour.",
-  "intro": "The dessert shops Pittsburgh talks about loudest are not always the ones Pittsburgh customers love most. This quarter's sweets rankings exposed a specific and recurring gap: businesses sitting at the top of their category by review volume and rating depth, but absent from the social layer that drives discovery for anyone under forty. The signal deficit is not about quality. It is about visibility infrastructure, and the two are not the same thing.\n\nOakmont Bakery holds the first position in Pittsburgh bakeries by customer conversation, but fifty-two sweets businesses rank above it in overall signal. Mancini's, a name that has been in this city's mouth for decades, has no photos on its listing, no posted hours, no Instagram presence at all, and still lands first in its category by review weight alone. That is not a struggling business. That is a business with a loyalty floor so solid it never needed to perform online. MilkShake Factory Downtown tells a version of the same story: first in ice cream, sixty-third in sweets, with almost no social layer to explain either ranking to someone encountering it for the first time.\n\nThese businesses already have the customer love. The next move, and it is not a complicated one, is getting the creators who already love them to come back on purpose. Pittsburgh has more creators actively looking for places to feature than most owners realize.\n\nIssue 02 arrives in Summer 2026, with a full look at which Pittsburgh food businesses closed the gap.",
+  "intro": "Mancini's has been in Pittsburgh's mouth for decades. The McKees Rocks bakery, the city's bread of record, ranks first in its category on review weight alone. It also has no photos on its Google listing, no posted hours, and no Instagram presence anyone can locate. That is not a struggling bakery. That is a bakery with a loyalty floor so deep it never needed to perform online.\n\nFive Pittsburgh dessert shops earned the underrated tag this quarter, and the through-line is the same: the room is loved, the listing is empty. Oakmont Bakery holds the first position by customer conversation and gets outranked by fifty-two other sweets businesses on overall signal. MilkShake Factory Downtown sits first in ice cream and sixty-third in sweets, with almost no social layer to explain either number. Pitaland in Brookline carries 1,696 reviews and a 4.7 average on baklava, ka'ak, and savory pies, and Google has no phone or hours to point a stranger toward. La Gourmandine Mt. Lebanon has 815 reviews and an unfindable Instagram.\n\nThe customer love is there. The visibility is not. Issue 02 arrives in summer 2026 to see who closed it.",
   "items": [
     {
       "rank": 1,
@@ -11,10 +11,9 @@
       "name": "Oakmont Bakery",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Riverview North",
-      "descriptor": "First In Pittsburgh Bakeries, But 52 Sweets Businesses Rank Higher. The Missing Profile Data Explains It.",
-      "descriptor_highlight": "52 Sweets Businesses Rank Higher",
-      "stat_line": "7,666 reviews · 4.7★",
-      "playbook_top_move": "Complete the Google business profile today. Add phone number, business hours, and photo categories; all three are currently absent and suppress cold-search discovery."
+      "descriptor": "First in Pittsburgh bakeries, but 52 sweets businesses rank higher. The missing profile data explains it.",
+      "descriptor_highlight": "52 sweets businesses rank higher",
+      "stat_line": "7,666 reviews · 4.7★"
     },
     {
       "rank": 2,
@@ -22,10 +21,9 @@
       "name": "MilkShake Factory Downtown",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Downtown",
-      "descriptor": "First In Ice Cream, Sixty-Third In Sweets. The Social Layer Doesn't Exist Yet.",
-      "descriptor_highlight": "Sixty-Third In Sweets",
-      "stat_line": "1,953 reviews · 4.7★",
-      "playbook_top_move": "Get an indexed Instagram presence live. No Instagram handle is indexed anywhere for this location. Claiming and linking one account closes the biggest single gap in the signal profile."
+      "descriptor": "First in ice cream, sixty-third in sweets. The social layer does not exist yet.",
+      "descriptor_highlight": "sixty-third in sweets",
+      "stat_line": "1,953 reviews · 4.7★"
     },
     {
       "rank": 3,
@@ -33,10 +31,9 @@
       "name": "Pitaland",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Brookline",
-      "descriptor": "First In Bakeries, But 47th In Sweets. The Listing Has No Phone, No Hours, No Social Handle.",
-      "descriptor_highlight": "No Phone, No Hours",
-      "stat_line": "1,696 reviews · 4.7★",
-      "playbook_top_move": "Complete the Google listing today. Add phone number, business hours, and a website link. Both are missing, costing direct conversion from 1,696 existing reviewers."
+      "descriptor": "First in bakeries, 47th in sweets. The listing has no phone, no hours, no social handle.",
+      "descriptor_highlight": "no phone, no hours",
+      "stat_line": "1,696 reviews · 4.7★"
     },
     {
       "rank": 4,
@@ -44,10 +41,9 @@
       "name": "Mancini's Bakery",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Bakeries, Seventy-Third In Sweets. A Legend With No Photos, No Hours, No Instagram.",
-      "descriptor_highlight": "No Photos, No Hours",
-      "stat_line": "749 reviews · 4.8★",
-      "playbook_top_move": "Complete the Google listing today. Add phone number, hours, and at least one photo category to a profile that currently shows none of the three."
+      "descriptor": "First in bakeries, seventy-third in sweets. A legend with no photos, no hours, no Instagram.",
+      "descriptor_highlight": "no photos, no hours",
+      "stat_line": "749 reviews · 4.8★"
     },
     {
       "rank": 5,
@@ -55,10 +51,9 @@
       "name": "La Gourmandine Mt. Lebanon",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First In Pittsburgh Bakeries, Stalled At 80th In Sweets. No Phone, No Hours, No Instagram Signal.",
-      "descriptor_highlight": "No Phone, No Hours",
-      "stat_line": "815 reviews · 4.7★",
-      "playbook_top_move": "Close the Google profile gaps now. Add a phone number and business hours to the Google listing, both are missing and actively block new customers from confirming a visit."
+      "descriptor": "First in Pittsburgh bakeries, stalled at 80th in sweets. No phone, no hours, no Instagram signal.",
+      "descriptor_highlight": "no phone, no hours",
+      "stat_line": "815 reviews · 4.7★"
     }
   ],
   "query": {
