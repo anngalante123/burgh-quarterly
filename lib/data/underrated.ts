@@ -76,7 +76,7 @@ export const UNDERRATED_CATEGORIES: Readonly<
       "Ice cream shop",
     ],
     heroLine:
-      "Every quarter, somewhere in Pittsburgh, a bakery is pulling a tray out of the oven at 6am for a line that doesn't quite exist yet. These are the {{count}} the city is behind on.",
+      "Somewhere on Butler Street or Murray Avenue, a bakery is pulling a tray out of the oven at 6am for a line that doesn't quite exist yet. Strong reviews on the listing. A quiet feed. These are the {{count}} where the city hasn't filled in the second side of the conversation.",
   },
   "coffee-shops": {
     label: "Coffee Shops & Cafes",
@@ -92,7 +92,7 @@ export const UNDERRATED_CATEGORIES: Readonly<
     ],
     excludeSchemaCategories: ["bakery"],
     heroLine:
-      "Every quarter, a Pittsburgh cafe pulls its first shot of espresso at 6:30am for a room that's still mostly regulars. These are the {{count}} the city hasn't caught up to yet.",
+      "A cafe in Bloomfield or Morningside pulls its first shot of espresso at 6:30am for a room of regulars. The regulars review. The wider city doesn't post. These are the {{count}} where one side of the conversation is steady and the other side hasn't started.",
   },
   "bars-breweries": {
     label: "Bars & Breweries",
@@ -101,7 +101,7 @@ export const UNDERRATED_CATEGORIES: Readonly<
     schemaCategories: [],
     categoryNameMatches: ["Bar", "Brewery"],
     heroLine:
-      "Every quarter, a Pittsburgh bar pours the first round of the night to a half-full room and a regular nobody knows by name yet. These are the {{count}} the city should be sending people to.",
+      "A Lawrenceville taproom or an East Liberty cocktail room pours the first round of the night to a half-full bar. The drinkers leave reviews. The reels don't follow. These are the {{count}} where the city is one side behind on the conversation.",
   },
   restaurants: {
     label: "Restaurants",
@@ -117,7 +117,7 @@ export const UNDERRATED_CATEGORIES: Readonly<
       "Sushi restaurant",
     ],
     heroLine:
-      "Every quarter, a Pittsburgh kitchen plates a dish at 7:15pm for a four-top who's never been before and won't be the last to get it wrong. These are the {{count}} the city is behind on.",
+      "A kitchen in East Liberty or Lawrenceville plates a dish at 7:15pm for a four-top who picked the place on a friend's word, not a feed. The reviews keep landing. The grids keep missing it. These are the {{count}} where one side of the conversation is locked in and the other side hasn't caught up.",
   },
 };
 

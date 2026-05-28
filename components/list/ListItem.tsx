@@ -38,6 +38,13 @@ type ListItemEnriched = {
     website?: string | null;
     tier: Tier;
   } | null;
+  /**
+   * When false, the tier pill is suppressed. Used on Underrated lists,
+   * where surfacing per-item tier labels (Ones to Watch / Neighborhood
+   * Staples) mixes two editorial frames and reads as inconsistent.
+   * The Underrated frame is the only frame those lists need.
+   */
+  showTier?: boolean;
 };
 
 const CATEGORY_LABEL: Record<Category, string> = {
@@ -90,9 +97,13 @@ function formatPlays(n: number): string {
   return `${n.toLocaleString()} plays`;
 }
 
-export function ListItem({ item, business }: ListItemEnriched) {
+export function ListItem({
+  item,
+  business,
+  showTier = true,
+}: ListItemEnriched) {
   const heroPhoto = business?.hero_photo ?? null;
-  const tier = business?.tier ?? null;
+  const tier = showTier ? (business?.tier ?? null) : null;
   const familyLabel = resolvedFamilyLabel(
     item.family_label,
     business?.category,

@@ -64,9 +64,10 @@ export default async function UnderratedIndexPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
-              Every quarter, we cover the businesses the city hasn&apos;t
-              caught up to yet, low on the index, high on potential, and
-              worth a visit this weekend.
+              Underrated means one side of the conversation is moving and
+              the other side hasn&apos;t shown up yet. Strong reviews, quiet
+              feeds. Or strong feeds, quiet city. Either gap is the finding,
+              and either gap is worth a visit this weekend.
             </p>
           </Reveal>
 

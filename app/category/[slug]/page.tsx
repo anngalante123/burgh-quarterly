@@ -223,10 +223,12 @@ export default async function CategoryLeaderboardPage({ params }: PageProps) {
           {/* Standfirst */}
           <Reveal delay={0.1}>
             <p className="mt-10 max-w-3xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
-              Every {label.singular}{" "}we&apos;ve scored this quarter, sorted
-              by the index. Reviews, sentiment, photos, Instagram cadence, and
-              creator fit, all rolled into a single rank. The top of the list
-              is firing on every signal. The rest are climbing.
+              {count} Pittsburgh {label.plural} in the index this quarter, from
+              Butler Street to East Carson, ranked top to bottom. The list is
+              the whole conversation: what each business posts, and what the
+              city posts back. Reviews, sentiment, photos, Instagram cadence,
+              owner presence. The names near the top are loud on both sides.
+              The names near the bottom are quieter, for now.
             </p>
           </Reveal>
 
@@ -237,9 +239,8 @@ export default async function CategoryLeaderboardPage({ params }: PageProps) {
                 How this list is ordered
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
-                Composite index, descending. The composite combines five
-                signals: reviews, sentiment, photos, Instagram cadence, and
-                creator fit.{" "}
+                Composite index, descending. Five signals feed it: reviews,
+                sentiment, photos, Instagram cadence, and creator fit.{" "}
                 <Link
                   href="/how-we-rank"
                   className="text-brand-purple hover:underline font-medium"

@@ -119,7 +119,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
   const countWord = numberWord(count);
   const dek = `${capitalize(countWord)} ${
     count === 1 ? spec.singularLower : spec.pluralLower
-  } firing on every signal, reviews, photos, and momentum.`;
+  } at the top of the index this quarter. The room is loud. The city is louder back.`;
   const readMinutes = estimateReadingMinutes(count);
   const tocItems = entries.map((e) => ({ name: e.business.name }));
 
@@ -174,11 +174,11 @@ export default async function TopCategoryPage({ params }: PageProps) {
           {/* Standfirst */}
           <Reveal delay={0.1}>
             <p className="mt-10 max-w-3xl font-body text-base md:text-lg text-brand-black/80 leading-relaxed">
-              Every quarter we rank Pittsburgh&apos;s small businesses on the
-              conversation, reviews, sentiment, photos, Instagram, how it
-              keeps moving. These are the {spec.pluralLower} at the top of
-              the index this issue. Reviews stack. Photos document. The line
-              is part of the point.
+              These {spec.pluralLower} sit at the top of the index this
+              issue. They post, and the city posts back. Reviews land week
+              over week. Photos pile up on the listing. A creator walks in
+              because of a reel and walks out filming another one. That loop
+              is the whole point.
             </p>
           </Reveal>
 
@@ -303,10 +303,11 @@ export default async function TopCategoryPage({ params }: PageProps) {
                 Why these are the Icons
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/85 leading-relaxed">
-                The index rewards businesses whose signal fires across every
-                axis, reviews, sentiment, photos, Instagram cadence, and
-                reachability. These {spec.pluralLower} have it on all five.
-                Next issue we&apos;ll see who holds and who gets passed.
+                The index rewards businesses where both sides of the
+                conversation show up: review sentiment, photos, Instagram
+                cadence, creator fit. These {spec.pluralLower} have it on
+                all five. Next issue we&apos;ll see who holds and who
+                gets passed.
               </p>
             </div>
           </Reveal>

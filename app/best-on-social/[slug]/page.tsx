@@ -373,6 +373,7 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
                     key={item.business_slug}
                     item={item}
                     business={enrichedBySlug.get(item.business_slug) ?? null}
+                    showTier={!slug.startsWith("underrated-")}
                   />
                 ))}
               </ol>
