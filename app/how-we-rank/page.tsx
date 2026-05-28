@@ -58,8 +58,8 @@ const SIGNALS: Array<{
           Volume matters, but tone matters more. We read the reviews and
           look at what reviewers keep saying. The repeated phrases. The
           words a business owns in the city&apos;s head. Five stars with no
-          texture moves the needle less than four stars where everyone is
-          writing about the same thing.
+          texture tells us less than four stars where everyone is writing
+          about the same thing.
         </p>
         <p>
           Page&apos;s Dairy Mart has decades of reviews where people are
@@ -202,8 +202,10 @@ export default function HowWeRankPage() {
               </p>
               <p>
                 This is not a best-of list. We do not taste the croissants.
-                We watch what Pittsburgh says, posts, and films about a
-                place, and we publish the result every quarter.
+                We watch how a business is showing up on social, how often
+                they post, who engages back, and what the city is posting
+                about them in return. Every quarter, we publish where
+                everybody lands.
               </p>
               <p className="text-brand-black/65">
                 If you want to know why a business sits where it does on the
@@ -228,28 +230,31 @@ export default function HowWeRankPage() {
             <div className="grid grid-cols-1 md:grid-cols-[minmax(16rem,1fr)_2fr] gap-10 md:gap-14">
               <div>
                 <p className="font-display font-black uppercase tracking-[-0.015em] text-brand-black text-[clamp(1.5rem,3.5vw,2.5rem)] leading-[1.02]">
-                  Conversation is what the{" "}
+                  Conversation is what a business{" "}
                   <span className="bg-brand-lime px-2 box-decoration-clone">
-                    city is doing
-                  </span>{" "}
-                  around a business.
+                    posts
+                  </span>
+                  , and what the city posts back.
                 </p>
               </div>
 
               <div className="space-y-5 font-body text-base md:text-lg text-brand-black/85 leading-relaxed max-w-3xl">
                 <p>
-                  Conversation is the reviews. The photos on Google. The
-                  reels someone posts after dinner. What surfaces when a
-                  newcomer types the place into search. Taste is a
-                  critic&apos;s verdict on the food, the cut, the cocktail.
-                  Critics are great. This isn&apos;t one.
+                  Conversation has two sides. On one side, a business
+                  posts. Reels, photos, captions, cadence, how often they
+                  show up and who comments back. On the other side, the
+                  city posts. Reviews on Google, comments on a story, a
+                  reel a creator filmed last weekend. We watch both, and
+                  the index is the sum of them.
                 </p>
                 <p>
-                  We rank what the city is doing around the business, not
-                  the work of the business itself. An owner can run a
-                  perfect kitchen and still land low if nobody is talking
-                  about it. That is a finding, not a flaw. It means the
-                  index has spotted a gap between the room and the room&apos;s
+                  Taste is a critic&apos;s verdict on the food, the cut, the
+                  cocktail. Critics are great. This isn&apos;t one. We rank
+                  presence on both sides of the conversation, not the work
+                  itself. An owner can run a perfect kitchen and still land
+                  low if the feed is quiet and the city is not talking
+                  back. That is a finding, not a flaw. It means the index
+                  has spotted a gap between the room and the room&apos;s
                   reputation, and that gap is usually the most useful thing
                   on the page.
                 </p>

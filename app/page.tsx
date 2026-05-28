@@ -79,7 +79,7 @@ export default async function Home() {
     .map((s) => allArticles.find((a) => a.slug === s))
     .filter((a): a is NonNullable<typeof a> => !!a);
 
-  // Pittsburgh Firecast Top 10, the visual anchor right below the hero
+  // Pittsburgh Index Top 10, the visual anchor right below the hero
   // stats line. Sourced from the property-wide global ranking so ties
   // settle deterministically (rank_category, then review volume) and the
   // homepage rail stays consistent with the full /leaderboard page.
@@ -211,21 +211,21 @@ export default async function Home() {
           </Reveal>
         </section>
 
-        {/* ── PITTSBURGH FIRECAST TOP 10 ────────────────────────
+        {/* ── PITTSBURGH INDEX TOP 10 ───────────────────────────
             Property-wide rail. Surfaces the actual ranking right under
             the hero so the page's primary asset (the index itself) is
             visible, not just announced in copy. Links into each business
-            page; the see-more link drops the reader into the full 100. */}
+            page; the see-more link drops the reader into the Full Index. */}
         <Reveal as="section" className="mx-auto max-w-7xl px-6 pb-14 md:pb-20">
           <div className="flex items-baseline justify-between border-b-2 border-brand-black pb-3 mb-6 flex-wrap gap-3">
             <h3 className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-brand-black">
-              Pittsburgh Firecast · Top 10 this quarter
+              The Pittsburgh Index · Top 10 this quarter
             </h3>
             <Link
               href="/leaderboard"
               className="font-display text-[0.7rem] md:text-xs font-semibold uppercase tracking-[0.18em] text-brand-purple hover:text-brand-black"
             >
-              See full leaderboard →
+              See the full index →
             </Link>
           </div>
           <ol className="border border-brand-black/15 bg-white/60">

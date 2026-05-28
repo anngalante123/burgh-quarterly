@@ -13,7 +13,7 @@ import {
 import type { Category } from "@/lib/data/schemas";
 
 /**
- * /leaderboard, the property-wide Pittsburgh Firecast.
+ * /leaderboard, the Full Pittsburgh Index.
  *
  * Server component. Pulls every scored business in the active issue,
  * sorts them by composite descending (with rank_category and review
@@ -58,7 +58,7 @@ const CATEGORY_LABEL: Record<Category, string> = {
 };
 
 export const metadata = {
-  title: "The Pittsburgh Firecast, Spring 2026 · Signal Pittsburgh",
+  title: "The Full Pittsburgh Index, Spring 2026 · Signal Pittsburgh",
   description:
     "Every small business Pittsburgh is talking about this quarter, ranked across every category by reputation, presence, and momentum. Filter by neighborhood, category, tier, and review volume.",
 };
@@ -122,7 +122,7 @@ export default async function LeaderboardPage() {
       <div className="w-full bg-brand-black">
         <div className="mx-auto max-w-7xl px-6 py-3">
           <p className="font-display text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-lime">
-            PGH · Signal Index · The Firecast
+            PGH · Signal Index · The Full Index
           </p>
         </div>
       </div>
@@ -139,7 +139,7 @@ export default async function LeaderboardPage() {
                 Signal Pittsburgh
               </Link>
               <span className="mx-2 text-brand-black/30">›</span>
-              <span className="text-brand-black">The Firecast</span>
+              <span className="text-brand-black">The Full Index</span>
             </nav>
 
             <p className="mt-8 font-body italic text-brand-black/75 text-lg md:text-xl">
@@ -148,9 +148,9 @@ export default async function LeaderboardPage() {
             </p>
 
             <h1 className="mt-3 font-display font-black uppercase tracking-[-0.02em] text-brand-black [text-wrap:balance] [word-break:break-word] text-[clamp(2.25rem,7.5vw,6rem)] leading-[0.92]">
-              The Pittsburgh{" "}
+              The Full Pittsburgh{" "}
               <span className="bg-brand-lime px-2 box-decoration-clone">
-                Firecast
+                Index
               </span>
             </h1>
 
@@ -211,7 +211,7 @@ export default async function LeaderboardPage() {
           <Reveal as="section" className="mt-14 md:mt-20">
             <div className="bg-brand-cream border-l-4 border-brand-lime px-6 py-6 md:px-10 md:py-8 max-w-3xl">
               <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55">
-                What the Firecast is
+                What this index is
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/85 leading-relaxed">
                 A working record. Every business we&apos;ve scored across
