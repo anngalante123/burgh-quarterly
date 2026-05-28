@@ -1,9 +1,9 @@
 {
   "slug": "underrated-asian-kitchens",
   "title": "Pittsburgh's Most Underrated Asian Kitchens",
-  "subtitle": "Sushi, Thai, Indian, Japanese, noodles. Loved in person, not yet celebrated online.",
+  "subtitle": "Sushi, Thai, Indian, Japanese, noodles. Loved in person, not yet online.",
   "angle": "the Asian kitchens earning real love in reviews but flying under the social radar. The spots regulars defend.",
-  "intro": "Noodlehead on South Highland is a tiny Shadyside room with 3,562 reviews and a 4.6 average. By customer signal, it is the most-loved Asian kitchen in Pittsburgh this quarter. Its Google listing has no phone number and no posted hours.\n\nFive Pittsburgh Asian kitchens earned the underrated tag this issue, and all five have the same problem: a real room with a thin profile. Taj Mahal on Centre Avenue has 2,805 reviews and no social presence at all. Little Bangkok in the Strip is first in its category on first appearance and missing the basic listing fields a hungry stranger would check at 7 p.m. Umami in Lawrenceville has 1,092 reviews and a Google profile that cannot tell you when it opens. Masala House in Bethel Park has 588 reviews and a 4.7 average, held back by a listing with no phone and no hours.\n\nThe regulars are eating. The cameras are not pointed yet. Issue 02, summer 2026, tracks which of these kitchens closed the gap.",
+  "intro": "Noodlehead on South Highland is a tiny Shadyside room with 3,562 reviews and a 4.6 average. By customer signal, it's the most-loved Asian kitchen in Pittsburgh this quarter. Its Google listing has no phone number and no posted hours.\n\nFive Pittsburgh Asian kitchens earned the underrated tag this issue. All five have the same problem. A real room, a thin profile. Taj Mahal on Centre Avenue has 2,805 reviews and no social presence at all. Little Bangkok in the Strip is first in its category and missing the basic listing fields a hungry stranger would check at 7 p.m. Umami in Lawrenceville has 1,092 reviews and a Google profile that can't tell you when it opens. Masala House in Bethel Park has 588 reviews and a 4.7 average, held back by a listing with no phone and no hours.\n\nThe regulars are eating. The cameras aren't pointed yet. Issue 02 in summer 2026 tracks who closed the gap.",
   "items": [
     {
       "rank": 1,
@@ -11,8 +11,8 @@
       "name": "Noodlehead",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Shadyside",
-      "descriptor": "First in Pittsburgh restaurants on review depth. The phone number and hours are still missing.",
-      "descriptor_highlight": "phone number and hours",
+      "descriptor": "First in Pittsburgh restaurants on review depth. No phone number, no hours.",
+      "descriptor_highlight": "no phone number",
       "stat_line": "3,562 reviews · 4.6★"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Taj Mahal Pittsburgh",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First in Pittsburgh restaurants, built on review depth. The listing still has no phone, no hours, no social.",
+      "descriptor": "First in Pittsburgh restaurants on review depth. No phone, no hours, no social.",
       "descriptor_highlight": "no phone, no hours",
       "stat_line": "2,805 reviews · 4.4★"
     },
@@ -51,7 +51,7 @@
       "name": "Masala House Indian Bistro",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First in Ones to Watch, held back by a listing with no phone and no hours.",
+      "descriptor": "First in Ones to Watch. Held back by a listing with no phone and no hours.",
       "descriptor_highlight": "no phone and no hours",
       "stat_line": "588 reviews · 4.7★"
     }

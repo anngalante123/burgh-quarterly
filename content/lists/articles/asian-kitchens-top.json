@@ -1,9 +1,9 @@
 {
   "slug": "asian-kitchens-top",
   "title": "The Pittsburgh Asian Kitchens Creators Keep Returning To",
-  "subtitle": "Sushi, noodles, Thai, Indian, Japanese",
-  "angle": "the Asian kitchens generating the most creator coverage this quarter. The dishes the city is filming and the restaurants behind them.",
-  "intro": "Everyday Noodles in Squirrel Hill has no Instagram account, no TikTok presence, and creators have already filmed inside. Two of them this quarter, three thousand plays. That is what happens when the room is good enough that the absence of a feed does not matter.\n\nPittsburgh's Asian kitchens are generating some of the most consistent creator attention in the city this spring, and the kitchens themselves have not all caught up. Pusadee's Garden ranks first among Pittsburgh Thai restaurants on conversation volume, running a feed that posts roughly twice a month and nothing on short-form video. Mola in East Liberty leads on sushi by review depth alone, with a feed that has gone nearly quiet. Atarashi in Oakland holds the same top sushi ranking with newer activity and a recent review trail pulling sentiment in a complicated direction.\n\nWhat the data says this quarter is simple. Pittsburgh is pointing cameras at its Asian kitchens faster than the kitchens have built the surface to receive that attention. Issue 02 will track who closed the gap.",
+  "subtitle": "Sushi, noodles, Thai, Indian, Japanese.",
+  "angle": "the Asian kitchens generating the most creator coverage this quarter. The dishes the city is filming and the rooms behind them.",
+  "intro": "Everyday Noodles in Squirrel Hill has no Instagram, no TikTok, and creators have already filmed inside. Two of them this quarter. Three thousand plays. That's what happens when the room is good enough that a missing feed doesn't matter.\n\nPittsburgh's Asian kitchens are getting steady creator attention this spring. The kitchens haven't all caught up. Pusadee's Garden holds first among Pittsburgh Thai on conversation volume. Its feed posts twice a month and nothing on short-form video. Mola in East Liberty leads sushi on review depth alone, on a feed that has gone nearly quiet. Atarashi in Oakland holds the same top sushi rank, but the recent reviews are pulling sentiment in a complicated direction.\n\nThe pattern is clear. Pittsburgh is pointing cameras at its Asian kitchens faster than the kitchens have built the surface to catch them. Issue 02 will track who closed the gap.",
   "items": [
     {
       "rank": 1,
@@ -11,7 +11,7 @@
       "name": "Pusadee's Garden",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First in Pittsburgh Thai, stalled by a feed that posts twice a month and no TikTok account.",
+      "descriptor": "First in Pittsburgh Thai. Feed posts twice a month, no TikTok account.",
       "descriptor_highlight": "no TikTok account",
       "stat_line": "1,233 reviews · 4.7★ · 8 creators · 19K plays · 2 IG posts/30d",
       "featured_tiktok": {
@@ -27,8 +27,8 @@
       "name": "Everyday Noodles",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Squirrel Hill North",
-      "descriptor": "Second in Pittsburgh restaurants on review depth. No Instagram, no TikTok, and creators already filming.",
-      "descriptor_highlight": "creators already filming",
+      "descriptor": "Second in restaurants on review depth. No Instagram, no TikTok, creators filming anyway.",
+      "descriptor_highlight": "creators filming anyway",
       "stat_line": "2,220 reviews · 4.6★ · 2 creators · 3K plays",
       "featured_tiktok": {
         "author": "sheseatingit",
@@ -44,7 +44,7 @@
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "East Liberty",
       "descriptor": "First in Pittsburgh sushi on review depth. The feed has gone nearly quiet.",
-      "descriptor_highlight": "gone nearly quiet",
+      "descriptor_highlight": "nearly quiet",
       "stat_line": "756 reviews · 4.6★ · 1 creators · 3K plays · 2 IG posts/30d",
       "featured_tiktok": {
         "author": "zoetaylorrrfit",
@@ -59,8 +59,8 @@
       "name": "Atarashi",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "West Oakland",
-      "descriptor": "First in Pittsburgh sushi. The recent reviews are pulling in the other direction.",
-      "descriptor_highlight": "recent reviews are pulling",
+      "descriptor": "First in Pittsburgh sushi. The recent reviews are pulling the other way.",
+      "descriptor_highlight": "recent reviews",
       "stat_line": "604 reviews · 4.3★"
     },
     {
@@ -69,8 +69,8 @@
       "name": "Bengal Kabab House & Restaurant",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Central Oakland",
-      "descriptor": "First in Pittsburgh Indian, seventy-fourth in restaurants. The buffet has no feed.",
-      "descriptor_highlight": "the buffet has no feed",
+      "descriptor": "First in Pittsburgh Indian, 74th in restaurants. The buffet has no feed.",
+      "descriptor_highlight": "buffet has no feed",
       "stat_line": "993 reviews · 4.6★"
     },
     {
@@ -79,8 +79,8 @@
       "name": "Benihana - Pittsburgh",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Thirty-seventh in Pittsburgh restaurants on review depth. No social surface to catch what happens at every table.",
-      "descriptor_highlight": "no social surface",
+      "descriptor": "37th in restaurants on review depth. No social to catch what happens at every table.",
+      "descriptor_highlight": "no social",
       "stat_line": "2,297 reviews · 4.3★"
     },
     {
@@ -89,8 +89,8 @@
       "name": "Bombay To Burgh",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First in Pittsburgh Indian, twenty-sixth in restaurants. The social layer has not arrived yet.",
-      "descriptor_highlight": "social layer has not",
+      "descriptor": "First in Pittsburgh Indian, 26th in restaurants. The social layer hasn't arrived.",
+      "descriptor_highlight": "social layer hasn't arrived",
       "stat_line": "1,242 reviews · 4.8★"
     },
     {
@@ -99,7 +99,7 @@
       "name": "Chao Phraya Thai Cuisine",
       "family_label": "Pittsburgh Asian Kitchens",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First in its tier, but zero photos and no hours on Google hold the ceiling down.",
+      "descriptor": "First in its tier. Zero photos and no hours on Google hold the ceiling down.",
       "descriptor_highlight": "zero photos and no hours",
       "stat_line": "214 reviews · 4.4★"
     }

@@ -1,9 +1,9 @@
 {
   "slug": "cafes-creator-favorites",
   "title": "The Pittsburgh Cafes Creators Won't Stop Filming",
-  "subtitle": "Coffee, tea, juice, ranked by creator pickup",
+  "subtitle": "Coffee, tea, juice. Ranked by creator pickup.",
   "angle": "Pittsburgh's coffee, tea, and juice scene through the lens of TikTok creator coverage. The cafes the city keeps posting about, even when the cafes themselves aren't.",
-  "intro": "Spot of Coffee is at the bottom of an alley between Shadyside and East Liberty. Seven Pittsburgh creators filmed there this quarter and pulled thirty-one thousand plays between them. Spot of Coffee's Google listing has no website on it. That is the shape of this list, the shape repeated six different ways.\n\nPittsburgh's cafe scene has a visibility problem that runs in both directions. Some of the city's most-filmed spots have no TikTok account to catch the traffic. Others have built every other discovery surface and left the social one empty. Allegheny Coffee and Tea on Penn Avenue has the deepest review depth of any cafe on this list, and exactly one TikTok creator has walked in with a camera. Delanie's in Shadyside has seven creators making cookie-butter-latte content and no owned TikTok account to send any of them. Margaux earned the aesthetic-cafe slot in every round-up the city's creators made this spring, on a feed that posts stills and not reels.\n\nThe through-line is consistent. The attention is arriving before the room is built to hold it. Issue 02 will track who builds the room.",
+  "intro": "Spot of Coffee sits at the bottom of an alley between Shadyside and East Liberty. Seven Pittsburgh creators filmed there this quarter and pulled 31,000 plays between them. Spot of Coffee's Google listing has no website. That's the shape of this list, repeated six different ways.\n\nPittsburgh's cafes have a visibility problem that runs in both directions. Some of the city's most-filmed spots have no TikTok account to catch the traffic. Others have built every other discovery surface and left the social one empty. Allegheny Coffee and Tea on Penn Avenue has the deepest review depth of any cafe on this list. One TikTok creator has walked in with a camera. Delanie's in Shadyside has seven creators making cookie-butter-latte content and no TikTok account to send them to. Margaux earned the aesthetic-cafe slot in every Pittsburgh round-up creators made this spring, on a feed that posts stills, not reels.\n\nThe through-line is the same. The attention is arriving before the room is built to hold it. Issue 02 will track who builds the room.",
   "items": [
     {
       "rank": 1,
@@ -11,7 +11,7 @@
       "name": "Spot of Coffee",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Seven creators, thirty-one thousand plays, and a Google listing with no website to send anyone to.",
+      "descriptor": "Seven creators, 31,000 plays, and a Google listing with no website.",
       "descriptor_highlight": "no website",
       "stat_line": "156 reviews · 4.9★ · 7 creators · 31K plays · 6 IG posts/30d",
       "featured_tiktok": {
@@ -27,7 +27,7 @@
       "name": "Delanie's Coffee Shadyside",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Seventy-fifth in Pittsburgh cafes, with seven creators already filming and no TikTok account to show for it.",
+      "descriptor": "75th in Pittsburgh cafes. Seven creators filming, no TikTok account to catch it.",
       "descriptor_highlight": "no TikTok account",
       "stat_line": "101 reviews · 4.6★ · 7 creators · 7K plays · 3 IG posts/30d",
       "featured_tiktok": {
@@ -43,8 +43,8 @@
       "name": "Margaux",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "East Liberty",
-      "descriptor": "Fourteenth in Pittsburgh cafes on visual strength alone. The feed posts but does not convert.",
-      "descriptor_highlight": "does not convert",
+      "descriptor": "14th in Pittsburgh cafes on visual strength alone. The feed posts but doesn't convert.",
+      "descriptor_highlight": "doesn't convert",
       "stat_line": "386 reviews · 4.4★ · 5 creators · 39K plays · 9 IG posts/30d",
       "featured_tiktok": {
         "author": "deluludayss",
@@ -59,7 +59,7 @@
       "name": "The Butterwood Bake Consortium",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Eighth in Pittsburgh sweets on pastry depth and a complete listing. The feed has been quiet for 527 days.",
+      "descriptor": "8th in Pittsburgh sweets on pastry depth. The feed has been quiet for 527 days.",
       "descriptor_highlight": "quiet for 527 days",
       "stat_line": "736 reviews · 4.6★ · 3 creators · 4K plays",
       "featured_tiktok": {
@@ -75,8 +75,8 @@
       "name": "Tazza D'Oro",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Highland Park",
-      "descriptor": "Best conversion path in Pittsburgh cafes. Reels are missing and TikTok has one video.",
-      "descriptor_highlight": "reels are missing",
+      "descriptor": "Best conversion path in Pittsburgh cafes. No reels, one TikTok video.",
+      "descriptor_highlight": "no reels",
       "stat_line": "570 reviews · 4.6★ · 1 creators · 2K plays · 11 IG posts/30d",
       "featured_tiktok": {
         "author": "latashaforpa",
@@ -91,7 +91,7 @@
       "name": "Allegheny Coffee & Tea Exchange",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Strip District",
-      "descriptor": "First in Pittsburgh cafes on review depth. One TikTok creator has filmed it so far.",
+      "descriptor": "First in Pittsburgh cafes on review depth. One TikTok creator has filmed it.",
       "descriptor_highlight": "one TikTok creator",
       "stat_line": "916 reviews · 4.8★ · 1 creators · 578 plays · 12 IG posts/30d",
       "featured_tiktok": {

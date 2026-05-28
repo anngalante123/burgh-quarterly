@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Restaurants",
   "subtitle": "Brunch spots and neighborhood rooms. High ratings, low spotlight.",
   "angle": "Pittsburgh restaurants whose reviews speak for themselves but whose social channels are quieter than they should be. The neighborhood standbys we'd send a visiting friend to.",
-  "intro": "The Church Brew Works has 5,598 reviews. That is a number most national chains would frame in their lobby. It also has a digital presence that does not match. This list is about that gap, and about the four other Pittsburgh restaurants this quarter where the room is loud and the feed is not.\n\nFederal Galley on the North Side is doing real work as a food hall and carrying 2,593 reviews to prove it. Bakersfield on Penn has 2,378 reviews and a Google listing with no phone number and no posted hours, so a tourist standing on the sidewalk at 9 p.m. has no way to know if the door is open. Proper Brick Oven downtown has the kind of review depth that should anchor a category, and a listing that quietly fails the people trying to find it. These are not struggling restaurants. They are restaurants the algorithm has not bothered to keep up with.\n\nThe customer love is already there. The next move is letting Pittsburgh actually find them. Issue 02 arrives in summer 2026, when patio season resets the conversation.",
+  "intro": "The Church Brew Works has 5,598 reviews. That's a number most national chains would frame in their lobby. The digital presence doesn't match. This list is about that gap, and about four other Pittsburgh restaurants where the room is loud and the feed is not.\n\nFederal Galley on the North Side is doing real work as a food hall, with 2,593 reviews to prove it. Bakersfield on Penn has 2,378 reviews and a Google listing with no phone number and no posted hours. A tourist standing on the sidewalk at 9 p.m. has no way to know if the door is open. Proper Brick Oven downtown has the kind of review depth that should anchor a category, and a listing that quietly fails the people trying to find it. These are not struggling restaurants. They're restaurants the algorithm hasn't kept up with.\n\nThe customer love is already there. The next move is letting Pittsburgh find them. Issue 02 arrives in summer 2026, when patio season resets the conversation.",
   "items": [
     {
       "rank": 1,
@@ -11,7 +11,7 @@
       "name": "The Church Brew Works",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First in Pittsburgh restaurants on 5,598 reviews. The social layer is still missing.",
+      "descriptor": "First in Pittsburgh restaurants on 5,598 reviews. The social layer is missing.",
       "descriptor_highlight": "still missing",
       "stat_line": "5,598 reviews · 4.3★"
     },
@@ -21,7 +21,7 @@
       "name": "Southern Tier Brewery Pittsburgh",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "North Shore",
-      "descriptor": "Built on event nights and 2,662 reviews. The discovery layer has gaps that could cost it.",
+      "descriptor": "Built on event nights and 2,662 reviews. The discovery gaps could cost it.",
       "descriptor_highlight": "gaps that could cost it",
       "stat_line": "2,662 reviews · 4.6★"
     },
@@ -41,8 +41,8 @@
       "name": "Federal Galley",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "Allegheny Center",
-      "descriptor": "2,593 reviews and a North Side food hall doing real work. The social layer has not arrived.",
-      "descriptor_highlight": "has not arrived",
+      "descriptor": "2,593 reviews and a North Side food hall doing real work. No social layer yet.",
+      "descriptor_highlight": "no social layer",
       "stat_line": "2,593 reviews · 4.5★"
     },
     {

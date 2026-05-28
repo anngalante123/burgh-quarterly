@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Small Businesses",
   "subtitle": "The neighborhood operators who deserve more of the city's attention this quarter.",
   "angle": "Single-location Pittsburgh small businesses with strong customer signal and an honest IG presence whose visibility lags the quality on the ground. The point is celebration, not critique.",
-  "intro": "Ka-Fair Coffee and Cakery is on Chislett Street in Morningside. It is a 4.8-star cafe that posts weekly, makes a mango tiramisu people travel for, and somehow sits outside every Pittsburgh coffee-tour round-up the city makes. That is what this list is about.\n\nUnderrated does not mean weak. Every business below is doing the actual work: posting on Instagram, holding strong reviews, running a real room with a real point of view. Mola in East Liberty is the sushi spot the regulars guard, with a feed that posts and a citywide conversation that has not arrived. 24 Carrot Juice in Bloomfield is the only five-star account on this list, a minority-owned juice bar operating at the city's quality ceiling. Hidden Harbor has been in Squirrel Hill for ten years and Pittsburgh still treats it like a secret.\n\nThese are the ten the rest of the city should be filming. Issue 02 will tell you who the cameras finally found.",
+  "intro": "Ka-Fair Coffee and Cakery sits on Chislett Street in Morningside. It's a 4.8-star cafe that posts weekly, makes a mango tiramisu people travel for, and sits outside every Pittsburgh coffee-tour round-up the city makes. That's what this list is about.\n\nUnderrated doesn't mean weak. Every business below is doing the actual work. Posting on Instagram, holding strong reviews, running a real room with a real point of view. Mola in East Liberty is the sushi spot regulars guard, with a feed that posts and a citywide conversation that hasn't arrived. 24 Carrot Juice in Bloomfield is the only five-star account on this list, a minority-owned juice bar operating at the city's quality ceiling. Hidden Harbor has been in Squirrel Hill for ten years and Pittsburgh still treats it like a secret.\n\nThese are the ten the rest of the city should be filming. Issue 02 will tell you who the cameras finally found.",
   "items": [
     {
       "rank": 1,
@@ -11,8 +11,8 @@
       "name": "Ka-Fair Coffee and Cakery",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Morningside",
-      "descriptor": "A 4.8-star Morningside cafe posting three times a month, and the city's coffee tour still has not caught up.",
-      "descriptor_highlight": "has not caught up",
+      "descriptor": "A 4.8-star Morningside cafe posting three times a month. The city's coffee tour hasn't caught up.",
+      "descriptor_highlight": "hasn't caught up",
       "stat_line": "235 reviews · 4.8★ · the Chislett Street cafe nobody outside Morningside is filming yet"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Mola",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "East Liberty",
-      "descriptor": "Sushi, rice bowls, bao, bubble tea, and a cult following the rest of the city has not met yet.",
+      "descriptor": "Sushi, rice bowls, bao, bubble tea, and a cult following the rest of the city hasn't met yet.",
       "descriptor_highlight": "a cult following",
       "stat_line": "767 reviews · 4.6★ · the East Liberty sushi room with a quietly devoted following"
     },
@@ -41,7 +41,7 @@
       "name": "Dobrá Tea Pittsburgh",
       "family_label": "Pittsburgh Restaurants",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "More than a thousand reviews, a 4.7 average, and a tea room the rest of Pittsburgh forgets to mention.",
+      "descriptor": "Over a thousand reviews, a 4.7 average, and a tea room Pittsburgh forgets to mention.",
       "descriptor_highlight": "forgets to mention",
       "stat_line": "1,107 reviews · 4.7★ · the Squirrel Hill tea house operating eleven hours a day"
     },
@@ -51,7 +51,7 @@
       "name": "Commerce Bar",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "East Liberty",
-      "descriptor": "Fourteen thousand followers, a hundred reviews, and a hidden cocktail room that trusts the mystery.",
+      "descriptor": "Fourteen thousand followers, a hundred reviews, a hidden cocktail room that trusts the mystery.",
       "descriptor_highlight": "trusts the mystery",
       "stat_line": "106 reviews · 4.7★ · the East Liberty cocktail bar without reservations"
     },
@@ -61,7 +61,7 @@
       "name": "Hop Farm Brewing Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Lawrenceville",
-      "descriptor": "Pittsburgh's original urban farmhouse brewery, posting twelve times a month, and still underrated in the city conversation.",
+      "descriptor": "Pittsburgh's original urban farmhouse brewery. Twelve posts a month, still underrated in the city conversation.",
       "descriptor_highlight": "original urban farmhouse brewery",
       "stat_line": "298 reviews · 4.6★ · weekly trivia, Music Thursdays, the Lawrenceville taproom"
     },
@@ -71,7 +71,7 @@
       "name": "Golden Age Beer Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "German and Czech lagers, a 4.8 average, and a Garden Theater reveal pacing out week by week.",
+      "descriptor": "German and Czech lagers, a 4.8 average, a Garden Theater reveal pacing out week by week.",
       "descriptor_highlight": "Garden Theater reveal",
       "stat_line": "195 reviews · 4.8★ · the lager house and an opening on the North Side"
     },
@@ -81,8 +81,8 @@
       "name": "Hidden Harbor",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "Ten years of tiki in Squirrel Hill, twelve posts in thirty days, and a spot the city still treats as a secret.",
-      "descriptor_highlight": "treats as a secret",
+      "descriptor": "Ten years of tiki in Squirrel Hill. Twelve posts in thirty days, and the city still treats it as a secret.",
+      "descriptor_highlight": "treats it as a secret",
       "stat_line": "765 reviews · 4.6★ · tropical cocktails, themed nights, a decade in the neighborhood"
     },
     {
@@ -101,7 +101,7 @@
       "name": "Tazza D'Oro",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Highland Park",
-      "descriptor": "Highland Park and Oakland, eleven posts in thirty days, a 3-year anniversary, and resident artists on the wall.",
+      "descriptor": "Highland Park and Oakland. Eleven posts in thirty days, a 3-year anniversary, resident artists on the wall.",
       "descriptor_highlight": "resident artists on the wall",
       "stat_line": "573 reviews · 4.6★ · cafe and gallery, two Pittsburgh locations"
     }

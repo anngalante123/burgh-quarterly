@@ -1,9 +1,9 @@
 {
   "slug": "sweets-top-10",
   "title": "The 10 Pittsburgh Sweets on Social",
-  "subtitle": "Bakeries, pastry shops, ice cream, dessert",
-  "angle": "which Pittsburgh dessert businesses are showing up online this spring, ranked by creator pickup. Who creators are filming and what those videos reveal.",
-  "intro": "Page's, the seventy-five-year-old ice cream stand in Arlington, drew enough reviews this quarter to rank first in Pittsburgh sweets across 3,145 entries. The TikTok creators filming it have nowhere to tag back to. There is no Page's TikTok account. There is just a line on Brownsville Road and a stack of footage with no destination.\n\nThe gap between Pittsburgh's reputation for sweets and the city's pickup of them is where this list does its work. La Gourmandine Hazelwood sits first among Pittsburgh pastry shops and thirty-sixth in sweets overall, with an Instagram that has been dark for fifty-three days. Jeni's in Larimer arrives with 450 photos and the strongest visual foundation on this list, and still has no TikTok presence to turn the attention into a following. Kyo Matcha is here on cakes and matcha content; Millie's is here on the flagship that started in a stand at the farmers' market.\n\nWhat the summer months will test is whether any of these businesses close that distance on purpose. Warm weather brings more foot traffic, more phones, more impulse filming. Issue 02 will track who converted the moment into something durable.",
+  "subtitle": "Bakeries, pastry shops, ice cream, dessert.",
+  "angle": "the Pittsburgh dessert shops showing up online this spring, ranked by creator pickup. Who creators are filming and what those videos reveal.",
+  "intro": "Page's, the seventy-five-year-old ice cream stand in Arlington, drew enough reviews this quarter to rank first in Pittsburgh sweets across 3,145 shops. The TikTok creators filming it have nowhere to tag back to. There's no Page's TikTok account. Just a line on Brownsville Road and a stack of footage with no destination.\n\nThat gap is what this list is about. La Gourmandine Hazelwood sits first among Pittsburgh pastry shops and 36th in sweets overall. Its Instagram has been dark for 53 days. Jeni's in Larimer brings 450 photos and the strongest visual foundation on this list. No TikTok presence to turn the attention into a following. Kyo Matcha is here on cakes and matcha. Millie's is here on the flagship that started at the farmers' market.\n\nSummer will test whether any of these shops close the distance on purpose. Warm weather brings more foot traffic, more phones, more impulse filming. Issue 02 will track who turned the moment into something durable.",
   "items": [
     {
       "rank": 1,
@@ -11,7 +11,7 @@
       "name": "La Gourmandine Hazelwood",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Hazelwood",
-      "descriptor": "First in pastry shops, thirty-sixth in sweets. The Instagram has been dark for 53 days.",
+      "descriptor": "First in pastry shops, 36th in sweets. Instagram has been dark for 53 days.",
       "descriptor_highlight": "dark for 53 days",
       "stat_line": "522 reviews · 4.8★ · 5 creators · 18K plays",
       "featured_tiktok": {
@@ -59,8 +59,8 @@
       "name": "Kyo Matcha",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "First in Pittsburgh cafes, held by cakes and matcha. Creator volume is still the open question.",
-      "descriptor_highlight": "still the open question",
+      "descriptor": "Top cafe slot on cakes and matcha. Creator volume is still thin.",
+      "descriptor_highlight": "creator volume is still thin",
       "stat_line": "315 reviews · 4.7★ · 2 creators · 4K plays · 6 IG posts/30d",
       "featured_tiktok": {
         "author": "ride_rev_rx",
@@ -75,7 +75,7 @@
       "name": "Millie's Homemade Ice Cream",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Shadyside",
-      "descriptor": "First in Pittsburgh sweets on review depth. The TikTok layer is still one creator deep.",
+      "descriptor": "First in Pittsburgh sweets on review depth. The TikTok layer is one creator deep.",
       "descriptor_highlight": "one creator deep",
       "stat_line": "1,150 reviews · 4.6★ · 1 creators · 2K plays · 12 IG posts/30d",
       "featured_tiktok": {
@@ -91,8 +91,8 @@
       "name": "350° Bakery",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "South Side Slopes",
-      "descriptor": "First in Pittsburgh bakeries, invisible online. No hours, no phone, no Instagram.",
-      "descriptor_highlight": "invisible online",
+      "descriptor": "First in Pittsburgh bakeries. No hours, no phone, no Instagram.",
+      "descriptor_highlight": "no hours, no phone",
       "stat_line": "282 reviews · 4.6★"
     },
     {
@@ -101,8 +101,8 @@
       "name": "Allegro - Vegan Bakery & Sandwich Shop",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "First in bakeries, 116th in sweets. No Instagram, no hours, no phone found.",
-      "descriptor_highlight": "116th in sweets",
+      "descriptor": "First in bakeries, 116th in sweets. No Instagram, no hours, no phone.",
+      "descriptor_highlight": "no Instagram",
       "stat_line": "402 reviews · 4.8★"
     },
     {
@@ -121,7 +121,7 @@
       "name": "Angelina's Bakery & Pastry Shop",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First in bakeries, nearly last in sweets. Zero photos and no hours are doing real damage.",
+      "descriptor": "First in bakeries, near last in sweets. Zero photos and no hours.",
       "descriptor_highlight": "zero photos and no hours",
       "stat_line": "114 reviews · 4.8★"
     },
@@ -131,8 +131,8 @@
       "name": "Antney's Ice Cream",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Westwood",
-      "descriptor": "First in ice cream, 112th in sweets. The gap is everything Google cannot find.",
-      "descriptor_highlight": "Google cannot find",
+      "descriptor": "First in ice cream, 112th in sweets. The gap is everything Google can't find.",
+      "descriptor_highlight": "Google can't find",
       "stat_line": "703 reviews · 4.8★"
     }
   ],

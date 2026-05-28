@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Bars",
   "subtitle": "Bars and breweries the regulars treat as their own.",
   "angle": "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
-  "intro": "Grist House sits in Millvale at the foot of Troy Hill. It is, by review depth, the best-loved brewery in Pittsburgh this quarter. It is also nearly invisible to anyone trying to find it for the first time. That is the through-line of this list.\n\nFive Pittsburgh bars and breweries earned the underrated tag this quarter. Dancing Gnome ranks first in its category with no Instagram, no listed phone, and no posted hours on Google. A brewery earning that kind of regulars' loyalty while running a Google listing that answers zero questions is leaving real ground uncovered. Hitchhiker has a 4.8 average and a profile with no photos. East End Brewing in Larimer has 495 reviews and a listing missing every basic field a stranger would check. None of these are hidden bars. They are bars the city's regulars love and the city's broader feed has not noticed yet.\n\nThe hard part is already done. Closing the rest is shorter than most owners expect. Issue 02, summer 2026, turns to Pittsburgh's best new restaurants.",
+  "intro": "Grist House sits in Millvale at the foot of Troy Hill. By review depth, it's the best-loved brewery in Pittsburgh this quarter. It's also nearly invisible to anyone trying to find it for the first time. That's the through-line of this list.\n\nFive Pittsburgh bars and breweries earned the underrated tag this quarter. Dancing Gnome ranks first in its category with no Instagram, no listed phone, no posted hours on Google. A brewery earning that kind of regulars' loyalty on a Google listing that answers zero questions is leaving real ground uncovered. Hitchhiker has a 4.8 average and a profile with no photos. East End Brewing in Larimer has 495 reviews and a listing missing every basic field a stranger would check. None of these are hidden bars. They're bars the regulars love and the city's broader feed hasn't noticed yet.\n\nThe hard part is already done. Closing the rest is shorter than most owners expect. Issue 02 in summer 2026 turns to Pittsburgh's best new restaurants.",
   "items": [
     {
       "rank": 1,
@@ -11,8 +11,8 @@
       "name": "Grist House Craft Brewery",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First in Pittsburgh breweries, invisible to the city's discovery layer.",
-      "descriptor_highlight": "invisible to the city's",
+      "descriptor": "First in Pittsburgh breweries. Hard to find for anyone outside the regulars.",
+      "descriptor_highlight": "hard to find",
       "stat_line": "749 reviews · 4.8★"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Crafthouse Stage & Grill",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First in its tier, zero social footprint. The room delivers, the feed does not exist.",
+      "descriptor": "First in its tier, zero social footprint. The room delivers, the feed doesn't exist.",
       "descriptor_highlight": "zero social footprint",
       "stat_line": "1,560 reviews · 4.4★"
     },
@@ -31,7 +31,7 @@
       "name": "Hitchhiker Brewing - Brewery & Tap Room",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First in breweries, 161st in bars. The Google listing is doing this place no favors.",
+      "descriptor": "First in breweries, 161st in bars. The Google listing does this place no favors.",
       "descriptor_highlight": "161st in bars",
       "stat_line": "444 reviews · 4.8★"
     },
@@ -51,8 +51,8 @@
       "name": "East End Brewing Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Larimer",
-      "descriptor": "First in breweries. The listing is missing a phone, hours, and any photos.",
-      "descriptor_highlight": "missing a phone",
+      "descriptor": "First in breweries. No phone, no hours, no photos.",
+      "descriptor_highlight": "no phone, no hours",
       "stat_line": "495 reviews · 4.8★"
     }
   ],

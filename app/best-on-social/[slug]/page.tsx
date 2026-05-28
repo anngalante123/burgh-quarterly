@@ -12,20 +12,26 @@ import {
   type ListArticleItem,
   type PostArticleItem,
 } from "@/lib/data/load-list";
+import { getBusiness } from "@/lib/data/load-business";
 import { TikTokEmbedPreview } from "@/components/insights/TikTokEmbedPreview";
 import { InstagramEmbedPreview } from "@/components/insights/InstagramEmbedPreview";
+import { ListHero } from "@/components/list/ListHero";
+import { ListItem } from "@/components/list/ListItem";
 
 /**
- * /best-on-social/[slug], the renderer for ranked-list articles.
+ * /best-on-social/[slug], renderer for ranked-list articles.
  *
- * Layout: magazine-style. Masthead, big editorial hero with title +
- * intro paragraphs, then a stack of ranked cards with rank, name,
- * descriptor, stat line, featured TikTok creator pull, and a
- * "read the record" link to the full business page.
+ * Two layouts share this route:
+ *   - Business lists (the typical case): magazine layout with a
+ *     real photographic hero pulled from the #1 business, then a
+ *     stack of ListItem blocks. No card chrome, lots of whitespace.
+ *     Inspired by Eater + Infatuation list templates.
+ *   - Post lists (kind: "posts"): kept as compact cards because
+ *     the load-bearing content is the embed itself.
  *
- * Article JSON is hand-edited in content/lists/articles. Owner-facing
- * playbook moves live in the JSON for internal use only; the public
- * renderer intentionally does not surface them.
+ * Article JSON is hand-edited in content/lists/articles. Owner-
+ * facing playbook moves live in the JSON for internal use only;
+ * the public renderer does not surface them.
  */
 
 type PageProps = {
@@ -43,27 +49,6 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title: `${article.title}, Signal Pittsburgh`,
     description: article.angle,
-  };
-}
-
-function formatPlays(n: number): string {
-  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M plays`;
-  if (n >= 1_000) return `${Math.round(n / 1_000)}K plays`;
-  return `${n.toLocaleString()} plays`;
-}
-
-function splitDescriptor(line: string, highlight: string): {
-  before: string;
-  match: string;
-  after: string;
-} | null {
-  if (!highlight) return null;
-  const idx = line.toLowerCase().indexOf(highlight.toLowerCase());
-  if (idx === -1) return null;
-  return {
-    before: line.slice(0, idx),
-    match: line.slice(idx, idx + highlight.length),
-    after: line.slice(idx + highlight.length),
   };
 }
 
@@ -196,83 +181,12 @@ function PostItemCard({ item }: { item: PostArticleItem }) {
   );
 }
 
-function ItemCard({ item }: { item: ListArticleItem }) {
-  const split = splitDescriptor(item.descriptor, item.descriptor_highlight);
-  return (
-    <Reveal as="article" className="block">
-      <div className="grid grid-cols-[3rem_1fr] md:grid-cols-[5rem_1fr] gap-4 md:gap-6 border-b border-brand-black/15 pb-8 md:pb-10">
-        {/* Rank */}
-        <div>
-          <span className="font-display text-3xl md:text-5xl font-black tabular-nums tracking-[-0.02em] text-brand-purple">
-            {String(item.rank).padStart(2, "0")}
-          </span>
-        </div>
-
-        {/* Body */}
-        <div className="min-w-0">
-          <Link
-            href={`/business/${item.business_slug}`}
-            className="group inline-block"
-          >
-            <h3 className="font-display font-black uppercase tracking-[-0.02em] text-brand-black text-2xl md:text-4xl leading-[1] [text-wrap:balance] group-hover:text-brand-purple transition-colors">
-              {item.name}
-            </h3>
-          </Link>
-          <p className="mt-2 font-body text-xs md:text-sm text-brand-black/55 uppercase tracking-[0.14em]">
-            {item.neighborhood} · {item.family_label}
-          </p>
-
-          {/* Descriptor (the rank-grounded diagnosis line) */}
-          <h4 className="mt-5 font-display font-black uppercase tracking-[-0.01em] text-brand-black text-lg md:text-2xl leading-[1.05] [text-wrap:balance]">
-            {split ? (
-              <>
-                {split.before}
-                <span className="bg-brand-lime text-brand-black px-1.5 box-decoration-clone">
-                  {split.match}
-                </span>
-                {split.after}
-              </>
-            ) : (
-              item.descriptor
-            )}
-          </h4>
-
-          {/* Stat line */}
-          <p className="mt-4 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
-            {item.stat_line}
-          </p>
-
-          {/* Featured TikTok */}
-          {item.featured_tiktok ? (
-            <div className="mt-5 inline-flex items-baseline flex-wrap gap-x-3 gap-y-1 border-l-2 border-brand-purple pl-4 py-1">
-              <span className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-brand-purple">
-                Top creator pull
-              </span>
-              <a
-                href={item.featured_tiktok.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-display text-sm md:text-base font-semibold text-brand-black hover:text-brand-purple transition-colors"
-              >
-                @{item.featured_tiktok.author}
-              </a>
-              <span className="font-body text-xs md:text-sm text-brand-black/65 tabular-nums">
-                {formatPlays(item.featured_tiktok.plays)}
-              </span>
-            </div>
-          ) : null}
-
-          <Link
-            href={`/business/${item.business_slug}`}
-            className="mt-5 inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-black hover:text-brand-purple transition-colors"
-          >
-            Read the record
-            <span aria-hidden="true">→</span>
-          </Link>
-        </div>
-      </div>
-    </Reveal>
-  );
+/** Updated-on label, "May 2026" style. Sourced from generated_at. */
+function formatUpdated(iso: string | undefined): string | null {
+  if (!iso) return null;
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return null;
+  return d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
 }
 
 export default async function BestOnSocialArticlePage({ params }: PageProps) {
@@ -284,6 +198,71 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
     .split(/\n\n+/)
     .map((p) => p.trim())
     .filter(Boolean);
+
+  // For business articles only, fan out one getBusiness call per item
+  // in parallel so we can render real photos + tiers. For post articles
+  // we keep the existing compact card layout.
+  const businessMode = !isPostArticle(article);
+  const items = article.items;
+
+  type EnrichedBusiness = {
+    name: string;
+    neighborhood: string;
+    category: import("@/lib/data/schemas").Category;
+    hero_photo: string | null;
+    instagram?: string | null;
+    website?: string | null;
+    tier: import("@/lib/data/schemas").Tier;
+  } | null;
+
+  let enrichedBySlug: Map<string, EnrichedBusiness> = new Map();
+  if (businessMode) {
+    const slugs = (items as ListArticleItem[]).map((i) => i.business_slug);
+    const results = await Promise.all(slugs.map((s) => getBusiness(s)));
+    enrichedBySlug = new Map(
+      results.map((art, i) => {
+        if (!art) return [slugs[i], null] as const;
+        return [
+          slugs[i],
+          {
+            name: art.business.name,
+            neighborhood: art.business.neighborhood,
+            category: art.business.category,
+            hero_photo:
+              art.business.hero_photo ?? art.business.photos[0]?.url ?? null,
+            instagram: art.business.instagram ?? null,
+            website: art.business.website ?? null,
+            tier: art.score.tier,
+          },
+        ] as const;
+      }),
+    );
+  }
+
+  // Hero photo: the #1-ranked business in business articles, otherwise null.
+  const heroBusiness = businessMode
+    ? enrichedBySlug.get((items[0] as ListArticleItem).business_slug)
+    : null;
+  const heroPhoto = heroBusiness?.hero_photo ?? null;
+  const heroAlt = heroBusiness
+    ? `${heroBusiness.name}, ${heroBusiness.neighborhood}`
+    : article.title;
+
+  const itemNoun = isPostArticle(article)
+    ? items.length === 1
+      ? "post"
+      : "posts"
+    : items.length === 1
+      ? "business"
+      : "businesses";
+  const updated = formatUpdated(article.generated_at);
+  const metaRow = [
+    "Spring 2026",
+    updated ? `Updated ${updated}` : null,
+    `${items.length} ${itemNoun}`,
+  ]
+    .filter(Boolean)
+    .join(" · ");
 
   return (
     <>
@@ -318,24 +297,43 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
             </ol>
           </nav>
 
-          {/* Hero */}
-          <header className="mt-6 md:mt-8">
-            <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
-              The Series · Spring 2026
-            </p>
-            <h1 className="mt-3 font-display font-black uppercase tracking-[-0.02em] text-brand-black text-[clamp(2rem,6vw,4.25rem)] leading-[0.95] [text-wrap:balance]">
-              {article.title}
-            </h1>
-            {article.subtitle ? (
-              <p className="mt-4 font-body text-base md:text-lg text-brand-black/70 [text-wrap:balance]">
-                {article.subtitle}
+          {/* Hero (business articles get a real photo; post articles
+              keep a quiet text-only hero without a photo slot). */}
+          {businessMode ? (
+            <ListHero
+              heroPhoto={heroPhoto}
+              heroAlt={heroAlt}
+              kicker="The Series · Spring 2026"
+              title={article.title}
+              dek={
+                article.subtitle ??
+                introParagraphs[0]?.split(/(?<=[.!?])\s/)[0] ??
+                null
+              }
+              meta={metaRow}
+            />
+          ) : (
+            <header className="mt-6 md:mt-8">
+              <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
+                The Series · Spring 2026
               </p>
-            ) : null}
-          </header>
+              <h1 className="mt-3 font-display font-black uppercase tracking-[-0.02em] text-brand-black text-[clamp(2rem,6vw,4.25rem)] leading-[0.95] [text-wrap:balance]">
+                {article.title}
+              </h1>
+              {article.subtitle ? (
+                <p className="mt-4 font-body text-base md:text-lg text-brand-black/70 leading-relaxed max-w-2xl [text-wrap:balance]">
+                  {article.subtitle}
+                </p>
+              ) : null}
+              <p className="mt-5 font-body text-xs uppercase tracking-[0.16em] text-brand-black/55">
+                {metaRow}
+              </p>
+            </header>
+          )}
 
-          {/* Intro paragraphs */}
+          {/* Intro paragraphs, tighter typography for editorial body. */}
           <Reveal as="div" className="block">
-            <div className="mt-8 md:mt-10 space-y-4 md:space-y-5">
+            <div className="mt-10 md:mt-12 space-y-4 md:space-y-5 max-w-2xl">
               {introParagraphs.map((p, i) => (
                 <p
                   key={i}
@@ -351,21 +349,15 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
             </div>
           </Reveal>
 
-          {/* The list, branches on article kind, business cards or post cards */}
-          <section className="mt-12 md:mt-16">
-            <div className="border-y-2 border-brand-black py-3 mb-8 md:mb-10 flex flex-wrap items-baseline justify-between gap-3">
+          {/* The list. Business mode gets the new ListItem layout;
+              post mode keeps the compact card. */}
+          <section className="mt-14 md:mt-20">
+            <div className="border-y-2 border-brand-black py-3 mb-10 md:mb-14 flex flex-wrap items-baseline justify-between gap-3">
               <h2 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-brand-black">
                 The list
               </h2>
               <span className="font-body text-xs text-brand-black/55 uppercase tracking-[0.14em]">
-                {article.items.length}{" "}
-                {isPostArticle(article)
-                  ? article.items.length === 1
-                    ? "post"
-                    : "posts"
-                  : article.items.length === 1
-                    ? "business"
-                    : "businesses"}
+                {items.length} {itemNoun}
                 {article.query
                   ? ` · ranked by ${String(article.query.ranking).replace(/_/g, " ")}`
                   : isPostArticle(article)
@@ -373,19 +365,59 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
                     : ""}
               </span>
             </div>
-            <div className="space-y-8 md:space-y-10">
-              {isPostArticle(article)
-                ? article.items.map((item) => (
-                    <PostItemCard
-                      key={`${item.creator_handle}-${item.video_url}`}
-                      item={item}
-                    />
-                  ))
-                : (article.items as ListArticleItem[]).map((item) => (
-                    <ItemCard key={item.business_slug} item={item} />
-                  ))}
-            </div>
+
+            {businessMode ? (
+              <ol className="space-y-24 md:space-y-32">
+                {(items as ListArticleItem[]).map((item) => (
+                  <ListItem
+                    key={item.business_slug}
+                    item={item}
+                    business={enrichedBySlug.get(item.business_slug) ?? null}
+                  />
+                ))}
+              </ol>
+            ) : (
+              <div className="space-y-8 md:space-y-10">
+                {(items as PostArticleItem[]).map((item) => (
+                  <PostItemCard
+                    key={`${item.creator_handle}-${item.video_url}`}
+                    item={item}
+                  />
+                ))}
+              </div>
+            )}
           </section>
+
+          {/* How we picked this. Small methodology box. */}
+          <aside className="mt-20 md:mt-24 border-t border-brand-black/15 pt-8">
+            <div className="bg-brand-cream rounded-sm p-6 md:p-8">
+              <h3 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-brand-purple">
+                How we picked this
+              </h3>
+              <p className="mt-3 font-body text-sm md:text-base text-brand-black/85 leading-relaxed max-w-2xl">
+                Signal Pittsburgh ranks the conversation, not taste. Every list
+                pulls from reviews, photos, Instagram cadence, and what
+                creators in the city actually filmed this quarter. Editorial
+                picks, not announcements.
+              </p>
+              <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2">
+                <Link
+                  href="/how-we-rank"
+                  className="inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-black hover:text-brand-purple transition-colors"
+                >
+                  Full methodology
+                  <span aria-hidden="true">→</span>
+                </Link>
+                <Link
+                  href="/request"
+                  className="inline-flex items-center gap-1 font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-black hover:text-brand-purple transition-colors"
+                >
+                  Submit a business
+                  <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            </div>
+          </aside>
 
           {/* Subscribe footer */}
           <div className="mt-16 md:mt-20">

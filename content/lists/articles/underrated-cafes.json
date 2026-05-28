@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Cafes",
   "subtitle": "Coffee, tea, juice. Loved locally, not yet viral.",
   "angle": "the cafes that Pittsburgh regulars rave about in reviews but the broader internet hasn't caught up to. Quietly excellent, quietly under-followed.",
-  "intro": "Biddle's Escape in Regent Square has 898 reviews and a 4.6 average. By review depth, it is the best-loved cafe in Pittsburgh this quarter. By Instagram presence, it is nearly invisible. That gap is the entire premise of this list.\n\nFive cafes earned the underrated tag this spring. De Fer in the Strip is leading its category on the strength of its roasts, with a Google profile that leaves first-time visitors nowhere to go. Espresso A Mano in Lawrenceville is first in the Ones to Watch tier and stuck at 122nd overall, with no listed hours, no phone, and no social handle to find. Carnegie Coffee Company in Carnegie has 1,198 reviews and an Instagram account nobody can locate. Big Dog in the South Side has 1,025 reviews and a Google listing that cannot tell you when the door is open. None of these cafes are struggling. They are visible businesses with invisible profiles.\n\nThe regulars are already there. The next move is letting the city find them. Issue 02 arrives in summer 2026, when patio season resets the discovery cycle.",
+  "intro": "Biddle's Escape in Regent Square has 898 reviews and a 4.6 average. By review depth, it's the best-loved cafe in Pittsburgh this quarter. By Instagram presence, it's nearly invisible. That gap is the whole premise of this list.\n\nFive cafes earned the underrated tag this spring. De Fer in the Strip leads its category on the strength of its roasts, with a Google profile that leaves first-time visitors nowhere to go. Espresso A Mano in Lawrenceville is first in the Ones to Watch tier and stuck at 122nd overall. No hours, no phone, no social handle to find. Carnegie Coffee Company in Carnegie has 1,198 reviews and an Instagram account nobody can locate. Big Dog in the South Side has 1,025 reviews and a Google listing that can't tell you when the door is open. None of these cafes are struggling. They're visible businesses with invisible profiles.\n\nThe regulars are already there. The next move is letting the city find them. Issue 02 arrives in summer 2026, when patio season resets the discovery cycle.",
   "items": [
     {
       "rank": 1,
@@ -11,7 +11,7 @@
       "name": "Carnegie Coffee Company",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Icons tier, 142nd in Pittsburgh cafes. The building earns fans; the feed earns nothing.",
+      "descriptor": "Icons tier, 142nd in Pittsburgh cafes. The building earns fans. The feed earns nothing.",
       "descriptor_highlight": "feed earns nothing",
       "stat_line": "1,198 reviews · 4.6★"
     },
@@ -21,8 +21,8 @@
       "name": "Big Dog Coffee",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "South Side Flats",
-      "descriptor": "Top of its category, lost in the family. Google cannot even list the hours.",
-      "descriptor_highlight": "lost in the family",
+      "descriptor": "Top of its category, lost in the broader sweets list. Google can't even list the hours.",
+      "descriptor_highlight": "lost in the broader sweets list",
       "stat_line": "1,025 reviews · 4.7★"
     },
     {
@@ -31,7 +31,7 @@
       "name": "Biddle's Escape",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Pittsburgh",
-      "descriptor": "First in Pittsburgh cafes on review depth alone. Every Instagram channel is still dark.",
+      "descriptor": "First in Pittsburgh cafes on review depth alone. Every Instagram channel is dark.",
       "descriptor_highlight": "every Instagram channel",
       "stat_line": "898 reviews · 4.6★"
     },
@@ -41,8 +41,8 @@
       "name": "De Fer Coffee & Tea",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Strip District",
-      "descriptor": "First in Pittsburgh cafes, built on the roasts. The Google profile is leaving customers nowhere.",
-      "descriptor_highlight": "leaving customers nowhere",
+      "descriptor": "First in Pittsburgh cafes on the roasts. The Google profile leaves customers nowhere.",
+      "descriptor_highlight": "leaves customers nowhere",
       "stat_line": "857 reviews · 4.8★"
     },
     {
@@ -51,7 +51,7 @@
       "name": "Espresso A Mano",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First in Ones to Watch, stalled at 122nd. No hours, no phone, no social presence to find.",
+      "descriptor": "First in Ones to Watch, stalled at 122nd. No hours, no phone, no social.",
       "descriptor_highlight": "no hours, no phone",
       "stat_line": "790 reviews · 4.7★"
     }

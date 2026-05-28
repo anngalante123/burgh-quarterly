@@ -1,9 +1,9 @@
 {
   "slug": "active-posters",
   "title": "Still Posting: Pittsburgh's Most Active Instagram Feeds",
-  "subtitle": "The minority that are posting, ranked by Instagram momentum",
-  "angle": "most Pittsburgh small businesses on this index are dormant on Instagram. These are the ones that aren't, ranked by 30-day cadence.",
-  "intro": "Hidden Harbor in Squirrel Hill posted twelve times in the last thirty days. It is, by a real margin, the most consistent bar feed in Pittsburgh. Not a single TikTok creator has filmed inside. That distance, between a room that is doing the work on its own feed and a city not yet pointing cameras back at it, is the story this list is about.\n\nMost Pittsburgh small businesses on this index have gone quiet on Instagram. Not slow, quiet. The accounts exist; the posts stopped. The ten below are the exception. Kyo Matcha holds the top cafe slot on the back of cakes and matcha content, though creator volume is still thin, which makes the ranking more fragile than the number suggests. Hop Farm Brewing holds first among breweries with twelve posts a month and a TikTok layer that is essentially one creator and one clip. Page's is here with 87,000 plays driven by other people, and no TikTok account of its own to catch any of it.\n\nThe pattern across this list is the same one. Instagram activity alone is enough to separate these feeds from the dormant majority. TikTok is where most of them have left the door open. Issue 02 will track who walks through it.",
+  "subtitle": "The ten small businesses still posting this quarter, ranked by cadence.",
+  "angle": "most Pittsburgh small businesses on this index have gone quiet on Instagram. These ten haven't, ranked by 30-day cadence.",
+  "intro": "Hidden Harbor in Squirrel Hill posted twelve times in the last thirty days. That makes it the most consistent bar feed in Pittsburgh. And not one TikTok creator has filmed inside. The room is doing the work. The city isn't pointing cameras back yet. That gap is what this list is about.\n\nMost Pittsburgh small businesses on this index have gone quiet on Instagram. The accounts exist. The posts stopped. These ten are the exception. Kyo Matcha holds the top cafe slot on cakes and matcha content, though creator volume is still thin. Hop Farm Brewing holds first among breweries with twelve posts a month and a TikTok layer that's basically one creator, one clip. Page's is here with 87,000 plays driven by other people, and no TikTok account to catch any of it.\n\nThe pattern is the same across the list. Posting on Instagram alone is enough to separate these feeds from the quiet majority. TikTok is where most of them have left the door open. Issue 02 will track who walks through it.",
   "items": [
     {
       "rank": 1,
@@ -11,8 +11,8 @@
       "name": "Kyo Matcha",
       "family_label": "Pittsburgh Sweets",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "First in Pittsburgh cafes, held by cakes and matcha. Creator volume is still the open question.",
-      "descriptor_highlight": "still the open question",
+      "descriptor": "Top cafe slot on cakes and matcha. Creator volume is still thin.",
+      "descriptor_highlight": "creator volume is still thin",
       "stat_line": "315 reviews · 4.7★ · 2 creators · 4K plays · 6 IG posts/30d",
       "featured_tiktok": {
         "author": "ride_rev_rx",
@@ -27,8 +27,8 @@
       "name": "Spot of Coffee",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Engagement most cafes would envy, capped by a missing website and an uneven posting cadence.",
-      "descriptor_highlight": "missing website",
+      "descriptor": "Engagement most cafes would envy. No website on the Google listing.",
+      "descriptor_highlight": "no website",
       "stat_line": "156 reviews · 4.9★ · 7 creators · 31K plays · 6 IG posts/30d",
       "featured_tiktok": {
         "author": "asprinkleofjen",
@@ -43,8 +43,8 @@
       "name": "Golden Age Beer Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Second in breweries on the beer. Food complaints and a missing video presence are the ceiling.",
-      "descriptor_highlight": "missing video presence",
+      "descriptor": "Second in breweries on the beer. Food complaints and no video are the ceiling.",
+      "descriptor_highlight": "no video",
       "stat_line": "188 reviews · 4.8★ · 12 IG posts/30d"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Allegheny Coffee & Tea Exchange",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Strip District",
-      "descriptor": "First in Pittsburgh cafes on review depth. One TikTok creator has filmed it so far.",
+      "descriptor": "First in Pittsburgh cafes on review depth. One TikTok creator has filmed it.",
       "descriptor_highlight": "one TikTok creator",
       "stat_line": "916 reviews · 4.8★ · 1 creators · 578 plays · 12 IG posts/30d",
       "featured_tiktok": {
@@ -69,7 +69,7 @@
       "name": "Hidden Harbor",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Squirrel Hill South",
-      "descriptor": "First in Pittsburgh bars, with the visual catalog to prove it. No TikTok creator has filed a frame yet.",
+      "descriptor": "First in Pittsburgh bars on visual catalog. No TikTok creator has filmed inside.",
       "descriptor_highlight": "no TikTok creator",
       "stat_line": "765 reviews · 4.6★ · 12 IG posts/30d"
     },
@@ -95,8 +95,8 @@
       "name": "Tazza D'Oro",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Highland Park",
-      "descriptor": "Best conversion path in Pittsburgh cafes. The reels are missing and TikTok has one video.",
-      "descriptor_highlight": "reels are missing",
+      "descriptor": "Best conversion path in Pittsburgh cafes. No reels, one TikTok video.",
+      "descriptor_highlight": "no reels",
       "stat_line": "570 reviews · 4.6★ · 1 creators · 2K plays · 11 IG posts/30d",
       "featured_tiktok": {
         "author": "latashaforpa",
@@ -127,8 +127,8 @@
       "name": "Hop Farm Brewing Company",
       "family_label": "Pittsburgh Bars",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First in breweries. The TikTok layer is practically empty: one creator, one clip.",
-      "descriptor_highlight": "practically empty",
+      "descriptor": "First in breweries. One creator, one clip on TikTok.",
+      "descriptor_highlight": "one creator, one clip",
       "stat_line": "298 reviews · 4.6★ · 1 creators · 285 plays · 12 IG posts/30d",
       "featured_tiktok": {
         "author": "jseguritan23",
@@ -143,7 +143,7 @@
       "name": "Delanie's Coffee Shadyside",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Shadyside",
-      "descriptor": "Seventy-fifth in Pittsburgh cafes, with seven creators already filming and no TikTok account to show for it.",
+      "descriptor": "Seventy-fifth in cafes. Seven creators filming, no TikTok account to catch it.",
       "descriptor_highlight": "no TikTok account",
       "stat_line": "101 reviews · 4.6★ · 7 creators · 7K plays · 3 IG posts/30d",
       "featured_tiktok": {
