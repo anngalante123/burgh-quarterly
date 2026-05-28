@@ -77,9 +77,9 @@ const STRENGTH_COPY: Record<string, (h: Highlight) => string> = {
   reviewCount: (h) => {
     const m = aheadMultiplier(h.stat.pctVsMedian);
     if (m) {
-      return `Review traffic is heavy. ${m} the volume of typical Pittsburgh peers. Google Maps discovery is working.`;
+      return `Review traffic is heavy. ${m} the volume of typical Pittsburgh peers. Google Maps is pulling its weight.`;
     }
-    return "Review traffic is heavy. Discovery via Google Maps search is doing its job.";
+    return "Review traffic is heavy. Google Maps is doing the job here.";
   },
   rating: () =>
     "The product holds up. Customers leave with a clean rating, quarter after quarter.",
@@ -126,9 +126,9 @@ const GAP_COPY: Record<string, (h: Highlight) => string> = {
   reviewCount: (h) => {
     const m = behindMultiplier(h.stat.pctVsMedian);
     if (m) {
-      return `Review volume is light. ${m} the typical Pittsburgh peer's count. Search-driven discovery is losing.`;
+      return `Review volume is light. ${m} the typical Pittsburgh peer's count. Search traffic is going to peers with deeper review counts.`;
     }
-    return "Review volume is light. Search-driven discovery loses to peers carrying more reviews.";
+    return "Review volume is light. Peers carrying more reviews are taking the search traffic.";
   },
   rating: () =>
     "The rating sits below family typical. A few low-star reviews are pulling the average down.",

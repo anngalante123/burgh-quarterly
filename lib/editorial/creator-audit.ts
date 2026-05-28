@@ -72,7 +72,7 @@ export function buildCreatorAudit(
       label: "Opening hours published",
       pass: meta.hasOpeningHours,
       fix: !meta.hasOpeningHours
-        ? "Fill in every day's hours, 'hours unavailable' caps discovery."
+        ? "Fill in every day's hours, 'hours unavailable' caps how often the listing surfaces in search."
         : undefined,
     },
     {

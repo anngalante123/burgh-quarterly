@@ -170,7 +170,19 @@ export async function selectUnderratedForCategory(
   const all = await loadAllBusinesses();
   const inCategory = all.filter((b) => matchesCategory(b, spec));
 
-  const nonIcons = inCategory.filter((b) => b.score.tier !== "icons");
+  // Eligibility floor: an Underrated entry shows a one-line stat to the
+  // reader (handwritten or fallback-synthesized from imagesCount and
+  // fiveStar). When either is zero the card reads as broken ("0 photos
+  // on the listing" / "0 five-star reviews"), which is the production
+  // issue this filter exists to prevent. Require both to be populated.
+  const eligibility = (b: BusinessArtifact): boolean => {
+    if (b.score.tier === "icons") return false;
+    if ((b.meta.imagesCount ?? 0) <= 0) return false;
+    if (!b.meta.reviewsDistribution) return false;
+    if ((b.meta.reviewsDistribution.fiveStar ?? 0) <= 0) return false;
+    return true;
+  };
+  const nonIcons = inCategory.filter(eligibility);
 
   // Sort by composite ASC, most underrated first (lowest composite).
   // Deterministic tiebreaker on slug to keep static builds stable.

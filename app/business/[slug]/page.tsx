@@ -293,7 +293,7 @@ export default async function BusinessPage({ params }: PageProps) {
               ? `${social.ig.followers.toLocaleString()} followers`
               : "",
           ].filter(Boolean)
-        : ["Instagram handle not yet discovered"],
+        : ["Instagram handle not yet indexed"],
     },
     collab_fit: {
       explainer:
@@ -320,7 +320,7 @@ export default async function BusinessPage({ params }: PageProps) {
             ? "Instagram is a business account"
             : social.ig
               ? "Instagram not configured as business account"
-              : "Instagram handle not yet discovered",
+              : "Instagram handle not yet indexed",
           found: !!social.ig?.is_business_account,
         },
         ...(social.ig?.verified

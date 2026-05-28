@@ -145,7 +145,7 @@ const ENTRY_COPY: Record<string, EntryCopy> = {
   },
   "reva-modern-indian-cuisine": {
     hook:
-      "East Liberty's modern Indian, spice level honest, the lamb chops the regulars order without looking. Reviews mention the same three dishes three times in a row. Nothing reads as 'discovered' yet.",
+      "East Liberty's modern Indian, spice level honest, the lamb chops the regulars order without looking. Reviews mention the same three dishes three times in a row. Nothing reads as a city-wide find yet.",
     stat:
       "443 photos on file. Reviews repeating the same favorites. Signal: locked in. Coverage: hasn't cracked.",
   },

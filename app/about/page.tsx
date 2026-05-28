@@ -19,7 +19,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About, Signal Pittsburgh",
   description:
-    "How we rank Pittsburgh's small businesses every quarter, reviews, sentiment, photos, Instagram, momentum. Published by Relay.",
+    "Signal Pittsburgh is a quarterly index of the city's small businesses, ranked on the conversation around them. Published by Relay.",
 };
 
 export default function AboutPage() {
@@ -52,8 +52,14 @@ export default function AboutPage() {
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
               Signal Pittsburgh is a living index of the city&apos;s small
               businesses, published every quarter. We don&apos;t rank taste.
-              We rank the conversation: reviews, sentiment, photos,
-              Instagram, and how all of it is moving this quarter.
+              We rank the conversation, both sides of it. What a business
+              posts on social. What the city posts back.{" "}
+              <Link
+                href="/how-we-rank"
+                className="text-brand-purple underline-offset-4 hover:underline"
+              >
+                The full methodology lives here.
+              </Link>
             </p>
           </Reveal>
         </article>
@@ -100,22 +106,23 @@ export default function AboutPage() {
                 <p>
                   Relay is a Pittsburgh-based creator network. We match
                   local small businesses with vetted local micro-influencers.
-                  We built Signal Pittsburgh to understand what makes a
-                  business creator-ready in our city, and to track how the
-                  conversation around them moves quarter over quarter.
+                  We built Signal Pittsburgh to track how Pittsburgh talks
+                  about its small businesses, and how those businesses show
+                  up in return, quarter after quarter.
                 </p>
                 <p>
-                  The index is open, the methodology is public, and every
+                  The index is open. The methodology is public. Every
                   business page is free to read and share. Relay is one
-                  service among many that can help a business move a
-                  signal. We think a healthier small-business scene is
-                  good for Pittsburgh regardless.
+                  way a business can climb its rank. It is not the only
+                  way, and the index does not care which one a business
+                  picks. A healthier small-business scene is good for
+                  Pittsburgh either way.
                 </p>
                 <p className="text-brand-black/75">
-                  If you run a business that appears here, you can claim
-                  the page to see the deeper view. If you&apos;re a reader,
-                  follow the lists and watch the ranks change. If you&apos;re
-                  a journalist or researcher, our methodology is above and
+                  If you run a business that appears here, claim the page
+                  to see the deeper view. If you&apos;re a reader, follow
+                  the lists and watch the ranks move. If you&apos;re a
+                  journalist or researcher, the methodology is above and
                   the data is open.
                 </p>
               </div>
@@ -137,8 +144,8 @@ export default function AboutPage() {
                   Open methodology
                 </p>
                 <p className="mt-2 font-body text-sm text-brand-black/80 leading-snug">
-                  Every subscore is derived from public signals. We publish
-                  how we weight them above and update the scoring quarterly.
+                  Every signal we read is public. The full methodology is
+                  above, and the index is refreshed every quarter.
                 </p>
               </li>
               <li className="border border-brand-black/15 bg-white/60 p-5">

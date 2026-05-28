@@ -144,43 +144,94 @@ export function computeFamilyMetricStats(
   );
 
   // ----- 5-star percent (0-100)
-  const fiveStarPcts = family.map((b) => {
-    const total = b.artifact.business.google_review_count ?? 0;
-    const five = b.artifact.meta.reviewsDistribution?.fiveStar ?? 0;
-    return total > 0 ? Math.round((five / total) * 100) : 0;
-  });
-  const currentTotal = current.artifact.business.google_review_count ?? 0;
-  const currentFive = current.artifact.meta.reviewsDistribution?.fiveStar ?? 0;
-  const fiveStarPct = buildStat(
-    currentTotal > 0 ? Math.round((currentFive / currentTotal) * 100) : 0,
-    fiveStarPcts,
-    familyShort,
-  );
+  // When reviewsDistribution is null on the business_signals row, we have
+  // no signal — the ratio is unknown, not zero. The renderer (StrengthsAndGaps
+  // and RowPeerStat) used to display "0% five-star" in that case, which is
+  // mathematically impossible on a 4.3-star business with thousands of
+  // reviews. We now return a familySize=0 stat that downstream filters
+  // (`familySize > 1` in pickStrengthsAndGaps) drop entirely, matching the
+  // pattern already used for unmeasured IG metrics.
+  const currentDist = current.artifact.meta.reviewsDistribution;
+  const currentDistMeasured = currentDist !== null && currentDist !== undefined;
+  let fiveStarPct: MetricStat;
+  if (!currentDistMeasured) {
+    fiveStarPct = {
+      value: 0,
+      median: 0,
+      top: 0,
+      rank: 0,
+      familySize: 0,
+      label: `Five-star ratio not measured`,
+      pctVsMedian: null,
+    };
+  } else {
+    // Only include family members with a measured distribution in the
+    // peer set, so the median is not pulled to zero by missing data.
+    const fiveStarPcts = family
+      .filter((b) => b.artifact.meta.reviewsDistribution !== null && b.artifact.meta.reviewsDistribution !== undefined)
+      .map((b) => {
+        const total = b.artifact.business.google_review_count ?? 0;
+        const five = b.artifact.meta.reviewsDistribution?.fiveStar ?? 0;
+        return total > 0 ? Math.round((five / total) * 100) : 0;
+      });
+    const currentTotal = current.artifact.business.google_review_count ?? 0;
+    const currentFive = currentDist?.fiveStar ?? 0;
+    fiveStarPct = buildStat(
+      currentTotal > 0 ? Math.round((currentFive / currentTotal) * 100) : 0,
+      fiveStarPcts,
+      familyShort,
+    );
+  }
+
+  // ----- IG metrics
+  // Family members without a measured IG snapshot are excluded from the
+  // IG peer set rather than zero-filled. Zero-filling let one calibration
+  // business in a family of mostly-unmeasured peers register as "Top of
+  // Family on Posting cadence / Audience / Engagement" against a wall of
+  // zeros, producing verdict copy like "5.6x the family typical" from
+  // five null neighbors. The peer set is now only the businesses we
+  // actually observed.
+  const igMeasured = family.filter((b) => b.social.ig);
+  const currentIgMeasured = Boolean(current.social.ig);
+  const buildIgStat = (
+    value: number,
+    familyValues: number[],
+  ): MetricStat => {
+    if (!currentIgMeasured) {
+      // Setting familySize=0 makes pickStrengthsAndGaps drop the metric
+      // entirely (it filters on familySize > 1). The card simply won't
+      // show an IG strength or gap line for businesses we haven't scraped.
+      return {
+        value: 0,
+        median: 0,
+        top: 0,
+        rank: 0,
+        familySize: 0,
+        label: `Not yet measured in ${familyShort}`,
+        pctVsMedian: null,
+      };
+    }
+    return buildStat(value, familyValues, familyShort);
+  };
 
   // ----- IG posts in last 30 days
-  const igPosts = family.map((b) => b.social.ig?.posts_30d ?? 0);
-  const igPosts30d = buildStat(
-    current.social.ig?.posts_30d ?? 0,
-    igPosts,
-    familyShort,
-  );
+  const igPosts = igMeasured.map((b) => b.social.ig!.posts_30d ?? 0);
+  const igPosts30d = buildIgStat(current.social.ig?.posts_30d ?? 0, igPosts);
 
   // ----- IG followers
-  const igFollowersAll = family.map((b) => b.social.ig?.followers ?? 0);
-  const igFollowers = buildStat(
+  const igFollowersAll = igMeasured.map((b) => b.social.ig!.followers ?? 0);
+  const igFollowers = buildIgStat(
     current.social.ig?.followers ?? 0,
     igFollowersAll,
-    familyShort,
   );
 
   // ----- IG engagement rate (basis points to avoid float ranking weirdness)
-  const igEngagementAll = family.map((b) =>
-    Math.round((b.social.ig?.avg_engagement_rate ?? 0) * 10000),
+  const igEngagementAll = igMeasured.map((b) =>
+    Math.round((b.social.ig!.avg_engagement_rate ?? 0) * 10000),
   );
-  const igEngagement = buildStat(
+  const igEngagement = buildIgStat(
     Math.round((current.social.ig?.avg_engagement_rate ?? 0) * 10000),
     igEngagementAll,
-    familyShort,
   );
 
   // ----- TikTok unique creators (90-day, post-strict-filter)
