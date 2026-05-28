@@ -181,8 +181,16 @@ export default async function BusinessPage({ params }: PageProps) {
   const { business: biz, score, meta } = art;
 
   const totalRev = biz.google_review_count ?? 0;
+  const distMeasured =
+    meta.reviewsDistribution !== null && meta.reviewsDistribution !== undefined;
   const fiveStar = meta.reviewsDistribution?.fiveStar ?? 0;
-  const pct = totalRev > 0 ? Math.round((fiveStar / totalRev) * 100) : null;
+  // pct is null when the scraper didn't return a review-rating distribution,
+  // not zero. A 4.3-star business with 5,598 reviews cannot have a 0% five-
+  // star share, and rendering "0%" reads as a data bug to anyone literate.
+  const pct =
+    distMeasured && totalRev > 0
+      ? Math.round((fiveStar / totalRev) * 100)
+      : null;
 
   const all = await loadAllBusinesses();
   const reviewPhrases = meta.keywordPhrases.slice(0, 5);
