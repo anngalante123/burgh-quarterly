@@ -34,6 +34,13 @@ export const metadata = {
     "Pittsburgh's small businesses ranked by reviews, social, and creator coverage. Quarterly lists.",
 };
 
+// Render on demand. The page consumes useSearchParams in a client child
+// (ListsBrowser) for filter state; under static prerender the Suspense
+// fallback strips the entire filtered grid from the SSR HTML, leaving
+// only the three featured cards visible to crawlers and no-JS readers.
+// Force-dynamic resolves the filter UI and grid in the SSR pass.
+export const dynamic = "force-dynamic";
+
 const FEATURED_SLUGS = [
   "icons-of-spring-2026",
   "underrated-spring-2026",

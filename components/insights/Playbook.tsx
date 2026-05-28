@@ -36,8 +36,8 @@ const PRIORITY_LABEL: Record<
   PlaybookData["items"][number]["priority"],
   string
 > = {
-  high: "Highest leverage",
-  medium: "Medium leverage",
+  high: "Start here",
+  medium: "Next",
   low: "Keep it tight",
 };
 

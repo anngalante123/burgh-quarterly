@@ -161,9 +161,9 @@ export default async function Home() {
                 {all.length} local small businesses
               </span>{" "}
               on creator coverage, customer reviews, and posting cadence.
-              We don&apos;t rank taste,{" "}
+              We don&apos;t rank taste.{" "}
               <span className="font-semibold text-brand-black">
-                we rank the conversation
+                We rank the conversation
               </span>.{" "}
               Read the index, see who&apos;s climbing, and watch your
               own block in real time.
