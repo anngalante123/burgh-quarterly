@@ -554,20 +554,20 @@ export default function HowWeRankPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl">
               <Link
-                href="/claim"
+                href="/leaderboard"
                 className="group border border-brand-black/20 bg-white/70 p-6 hover:border-brand-purple transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
               >
                 <p className="font-display text-[0.68rem] md:text-xs font-semibold uppercase tracking-[0.22em] text-brand-purple">
                   Claim your page
                 </p>
                 <p className="mt-3 font-body text-sm md:text-base text-brand-black/85 leading-snug">
-                  If you run a business that appears here, claim the page.
-                  You will see the deeper view: what is pulling the rank
-                  up, what is holding it down, and what changed this
-                  quarter.
+                  Find your business in the index and open its page. The
+                  claim flow lives there. Once claimed, you see the deeper
+                  view: what is pulling the rank up, what is holding it
+                  down, and what changed this quarter.
                 </p>
                 <p className="mt-4 font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-purple group-hover:underline">
-                  Start a claim →
+                  Find your business →
                 </p>
               </Link>
 
