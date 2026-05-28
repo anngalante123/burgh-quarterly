@@ -104,7 +104,7 @@ export function TikTokMentions({ data, businessName }: Props) {
               </a>
               , and {data.unique_creators - 1} other Pittsburgh creators are
               filming there too. The catalog already exists; the question
-              is who's amplifying it.
+              is who's carrying it forward.
             </>
           ) : (
             <>
