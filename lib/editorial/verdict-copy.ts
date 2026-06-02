@@ -56,21 +56,21 @@ const STRENGTH_COPY: Record<string, (h: Highlight) => string> = {
   igEngagement: (h) => {
     const m = aheadMultiplier(h.stat.pctVsMedian);
     if (m) {
-      return `Followers comment, save, and share at ${m} the family typical. The room is awake.`;
+      return `Followers comment, save, and share at ${m} the industry typical. The room is awake.`;
     }
     return "Followers aren't scrolling past. They comment, save, and share at a higher rate than peers.";
   },
   igFollowers: (h) => {
     const m = aheadMultiplier(h.stat.pctVsMedian);
     if (m) {
-      return `The Instagram audience is real and built. Reach is ${m} the family typical.`;
+      return `The Instagram audience is real and built. Reach is ${m} the industry typical.`;
     }
-    return "The Instagram audience is real and built. Reach lands wider than family peers.";
+    return "The Instagram audience is real and built. Reach lands wider than industry peers.";
   },
   igPosts30d: (h) => {
     const m = aheadMultiplier(h.stat.pctVsMedian);
     if (m) {
-      return `Cadence is heavy. ${m} the typical posting rate for the family. The feed shows up week after week.`;
+      return `Cadence is heavy. ${m} the typical posting rate for the industry. The feed shows up week after week.`;
     }
     return "Cadence is consistent. The feed shows up in followers' grids week after week.";
   },
@@ -88,7 +88,7 @@ const STRENGTH_COPY: Record<string, (h: Highlight) => string> = {
   tiktokPlays: (h) => {
     const m = aheadMultiplier(h.stat.pctVsMedian);
     if (m) {
-      return `TikTok creators built ${m} the typical play count for the family. Earned reach, no account required.`;
+      return `TikTok creators built ${m} the typical play count for the industry. Earned reach, no account required.`;
     }
     return "TikTok creators built reach here without you running an account.";
   },
@@ -105,7 +105,7 @@ const GAP_COPY: Record<string, (h: Highlight) => string> = {
   igEngagement: (h) => {
     const m = behindMultiplier(h.stat.pctVsMedian);
     if (m) {
-      return `Posts go out, but the room doesn't talk back. Engagement is ${m} the family typical.`;
+      return `Posts go out, but the room doesn't talk back. Engagement is ${m} the industry typical.`;
     }
     return "Posts go out, but the room doesn't talk back. Comments per post sit below peers.";
   },
@@ -114,14 +114,14 @@ const GAP_COPY: Record<string, (h: Highlight) => string> = {
     if (m) {
       return `The audience is small for the category. ${m} the typical Pittsburgh peer's reach.`;
     }
-    return "The audience is small for the category. Family peers carry multiples of the reach.";
+    return "The audience is small for the category. Industry peers carry multiples of the reach.";
   },
   igPosts30d: (h) => {
     const m = behindMultiplier(h.stat.pctVsMedian);
     if (m) {
-      return `The feed is quiet. Posting cadence is ${m} the family typical. Followers may forget you exist.`;
+      return `The feed is quiet. Posting cadence is ${m} the industry typical. Followers may forget you exist.`;
     }
-    return "The feed is quiet. Posting cadence trails the family. Followers may forget you exist.";
+    return "The feed is quiet. Posting cadence trails the industry. Followers may forget you exist.";
   },
   reviewCount: (h) => {
     const m = behindMultiplier(h.stat.pctVsMedian);
@@ -131,9 +131,9 @@ const GAP_COPY: Record<string, (h: Highlight) => string> = {
     return "Review volume is light. Peers carrying more reviews are taking the search traffic.";
   },
   rating: () =>
-    "The rating sits below family typical. A few low-star reviews are pulling the average down.",
+    "The rating sits below industry typical. A few low-star reviews are pulling the average down.",
   fiveStarPct: () =>
-    "Five-star ratio lags the family. Too many three- and four-stars relative to peers.",
+    "Five-star ratio lags the industry. Too many three- and four-stars relative to peers.",
   tiktokPlays: () =>
     "No TikTok footprint to speak of yet. Peers are pulling views you're not.",
   tiktokCreators: () =>
@@ -198,16 +198,16 @@ export function comparisonPhrase(
   const abs = Math.abs(pctVsMedian);
   let magnitude: string;
   if (pctVsMedian > 0) {
-    if (abs >= 300) magnitude = `${Math.round(abs / 100 + 1)}× the family typical`;
-    else if (abs >= 100) magnitude = `more than 2× the family typical`;
-    else if (abs >= 50) magnitude = `well ahead of family typical`;
-    else if (abs >= 20) magnitude = `ahead of family typical`;
-    else magnitude = `just ahead of family typical`;
+    if (abs >= 300) magnitude = `${Math.round(abs / 100 + 1)}× the industry typical`;
+    else if (abs >= 100) magnitude = `more than 2× the industry typical`;
+    else if (abs >= 50) magnitude = `well ahead of industry typical`;
+    else if (abs >= 20) magnitude = `ahead of industry typical`;
+    else magnitude = `just ahead of industry typical`;
   } else {
-    if (abs >= 75) magnitude = `a fraction of family typical`;
-    else if (abs >= 50) magnitude = `roughly half family typical`;
-    else if (abs >= 25) magnitude = `well behind family typical`;
-    else magnitude = `behind family typical`;
+    if (abs >= 75) magnitude = `a fraction of industry typical`;
+    else if (abs >= 50) magnitude = `roughly half industry typical`;
+    else if (abs >= 25) magnitude = `well behind industry typical`;
+    else magnitude = `behind industry typical`;
   }
   return `${rankLabel} · ${magnitude}`;
 }

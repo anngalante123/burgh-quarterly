@@ -93,8 +93,8 @@ async function main() {
   console.log(`[scan] ${groups.length} duplicate place_id groups`);
 
   let canonicalCount = 0;
-  let dupsToDelete: string[] = [];
-  let pathological: string[][] = [];
+  const dupsToDelete: string[] = [];
+  const pathological: string[][] = [];
 
   for (const g of groups) {
     const { canonical, dups } = pickCanonical(g.slugs);

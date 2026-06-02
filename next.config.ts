@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Strip the `x-powered-by: Next.js` header — minor info-leak, no upside.
+  // Strip the `x-powered-by: Next.js` header. Minor info-leak, no upside.
   poweredByHeader: false,
   // Cap SSG worker concurrency so the build doesn't fire 21 parallel
   // DB queries at Neon. Even on a paid Neon tier this keeps connection

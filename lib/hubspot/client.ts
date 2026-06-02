@@ -1,17 +1,17 @@
 /**
- * HubSpot Forms client. Mirrors the Attio integration — every
+ * HubSpot Forms client. Mirrors the Attio integration: every
  * subscribe/claim submission also lands in HubSpot via the public
  * Forms Submissions API, so leads exist in both CRMs simultaneously.
  *
  * Endpoint: POST https://api.hsforms.com/submissions/v3/integration/submit/{portalId}/{formId}
  *
- * No auth required — this is the public form-submission endpoint
+ * No auth required. This is the public form-submission endpoint
  * HubSpot uses for their embedded forms widget. Portal ID + Form GUID
  * are non-secret and live in env so they can be swapped without code
  * changes.
  *
  * Failure mode: HubSpot rejecting (or being unreachable) does NOT
- * block the user submission. Same pattern as Attio — CRMs are
+ * block the user submission. Same pattern as Attio: CRMs are
  * side-channels.
  */
 

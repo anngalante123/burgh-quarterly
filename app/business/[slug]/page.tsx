@@ -310,7 +310,7 @@ export default async function BusinessPage({ params }: PageProps) {
             // sample is too small to be meaningful.
             engagementBand
               ? `Engagement ${engagementBand.label.toLowerCase()}`
-              : "Engagement reads typical for the family",
+              : "Engagement reads typical for the industry",
             daysSinceLastPost !== null
               ? `Last post ${daysSinceLastPost} days ago`
               : "Last post unknown",

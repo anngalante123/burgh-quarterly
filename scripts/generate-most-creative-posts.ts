@@ -343,7 +343,7 @@ async function main() {
 
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-  // Vision pass — sequential to be polite to the API; could parallelize 3-5 wide.
+  // Vision pass: sequential to be polite to the API; could parallelize 3-5 wide.
   console.log(`[creative] running vision pass on ${prefiltered.length} candidates...`);
   const scored: { c: Candidate; score: CreativityScore }[] = [];
   for (let i = 0; i < prefiltered.length; i++) {
@@ -370,7 +370,7 @@ async function main() {
     (s.visual_concept + s.caption_craft + s.format_fit + s.surprise) / 4;
   scored.sort((a, b) => composite(b.score) - composite(a.score));
 
-  // Cap per BRAND, not per slug — keeps Eat'n Park / Primanti / etc.
+  // Cap per BRAND, not per slug. Keeps Eat'n Park / Primanti / etc.
   // from crowding the list with multiple locations of the same chain.
   const perBrand = new Map<string, number>();
   const final: typeof scored = [];

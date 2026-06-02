@@ -206,9 +206,9 @@ async function main() {
     WHERE address ~ ${FAR_PA_CITIES_REGEX}
   `) as Row[];
   const step2PlannedN = Number((step2Planned[0] as { n: number }).n);
-  // NOTE: Plan specified range 25-40 but actual count is 23 — all clearly far-PA
+  // NOTE: Plan specified range 25-40 but actual count is 23, all clearly far-PA
   // (Philadelphia, Scranton, Easton, Reading, Bethlehem, Allentown, Stroudsburg,
-  // Pottstown, Wilkes-Barre, Milford). Lowered floor to 20 — flagged in report.
+  // Pottstown, Wilkes-Barre, Milford). Lowered floor to 20, flagged in report.
   if (step2PlannedN < 20 || step2PlannedN > 40) {
     const msg = `STEP 2 ABORT: far-PA count ${step2PlannedN} outside 20-40 range`;
     console.error(msg);
@@ -339,14 +339,14 @@ async function main() {
   // -------- STEP 7: verification --------
   console.log("\n=== Step 7: Verification ===");
   const totalNow = (await sql`SELECT COUNT(*)::int AS n FROM businesses`) as Row[];
-  console.log(`  businesses total: ${(totalNow[0] as any).n}`);
-  report.verify_total = (totalNow[0] as any).n;
+  console.log(`  businesses total: ${(totalNow[0] as { n: number }).n}`);
+  report.verify_total = (totalNow[0] as { n: number }).n;
 
   const iconsNow = (await sql`
     SELECT COUNT(*)::int AS n FROM scores WHERE tier='icons'
   `) as Row[];
-  console.log(`  scores tier=icons: ${(iconsNow[0] as any).n}`);
-  report.verify_icons = (iconsNow[0] as any).n;
+  console.log(`  scores tier=icons: ${(iconsNow[0] as { n: number }).n}`);
+  report.verify_icons = (iconsNow[0] as { n: number }).n;
 
   const badSlugs = [
     "tatte-bakery-cafe-back-bay",

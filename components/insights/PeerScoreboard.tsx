@@ -95,7 +95,7 @@ function buildSentence(
   }
   if (position === "bottom") {
     if (rival) {
-      return `${selfName} trails the family. The closest peer with room to borrow from is ${rival.name}, ${selfRank - rival.rank === 1 ? "one spot" : `${selfRank - rival.rank} spots`} up.`;
+      return `${selfName} trails the industry. The closest peer with room to borrow from is ${rival.name}, ${selfRank - rival.rank === 1 ? "one spot" : `${selfRank - rival.rank} spots`} up.`;
     }
     return `${selfName} sits at the bottom of Pittsburgh ${familyShort} this issue.`;
   }

@@ -16,11 +16,11 @@ async function main() {
        OR name ILIKE 'Sooo Delicious%'
        OR name = 'MrTakeOutBags.com'
     ORDER BY name
-  ` as any[];
+  ` as { slug: string; name: string; address: string }[];
   console.log("Candidates:");
   for (const r of rows) console.log(`  ${r.slug}\t${r.name}`);
 
-  // 2. Targeted hand-fixes (specific slugs only — no fuzzy regex updates)
+  // 2. Targeted hand-fixes (specific slugs only, no fuzzy regex updates)
   const updates: Array<{ slug: string; newName: string }> = [];
   for (const r of rows) {
     if (r.name === "GossipandNailSpa") updates.push({ slug: r.slug, newName: "Gossip and Nail Spa" });
@@ -39,7 +39,7 @@ async function main() {
     }
     console.log(`\nUpdated ${updates.length} rows.`);
   } else {
-    console.log("\n(dry-run — pass --commit to write)");
+    console.log("\n(dry-run, pass --commit to write)");
   }
 }
 

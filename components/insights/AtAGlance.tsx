@@ -18,7 +18,7 @@ export type GlanceRow = {
   label: string;
   /** Big bold value. Pre-formatted (e.g. "4.7★", "314", "47.9%"). */
   value: string;
-  /** Tight delta or qualifier. e.g. "+0.1 vs Q4", "Ahead of family", "9 below peers". */
+  /** Tight delta or qualifier. e.g. "+0.1 vs Q4", "Ahead of industry", "9 below peers". */
   delta?: string;
   /** When true, this row gets the FOCUS HERE highlight. */
   focus?: boolean;

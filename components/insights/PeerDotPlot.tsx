@@ -52,7 +52,7 @@ export function PeerDotPlot({
             Where you sit in {categoryShort}
           </h2>
           <span className="font-body text-[0.65rem] md:text-xs uppercase tracking-[0.14em] text-brand-black/50">
-            {peers.length} in this family
+            {peers.length} in this industry
           </span>
         </div>
 

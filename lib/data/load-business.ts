@@ -160,9 +160,9 @@ function loadLegacyMeta(
     : "";
 
   // Source priority:
-  //   1. content/businesses/<slug>.json — original 30 calibration entries
+  //   1. content/businesses/<slug>.json: original 30 calibration entries
   //      have full _meta written by the Apify-to-disk path.
-  //   2. business_signals row + DB joins — Phase 7 batch ingest writes
+  //   2. business_signals row + DB joins: Phase 7 batch ingest writes
   //      these directly so no JSON file ever exists.
   //   3. Synthesized fallback (categoryName from typed enum, everything
   //      else zero/null/empty).
@@ -581,7 +581,7 @@ export async function getBusinessesForCategory(
  *
  * Sort order:
  *   1. composite DESC
- *   2. rank_category ASC (lower is better within category — settles
+ *   2. rank_category ASC (lower is better within category, settles
  *      ties between categories where multiple bizs share a composite)
  *   3. business_signals.review_count DESC (more reviewed wins ties; this
  *      pulls from `google_review_count` since the signals table tracks
