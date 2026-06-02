@@ -1,5 +1,7 @@
 # Scale Plan (2026-05-01)
 
+> **STATUS UPDATE 2026-06-02.** This plan is largely SHIPPED and is kept for history. The index is on Neon Postgres at ~2,580 businesses (2,579 scored: 242 Icons / 1,448 Ones to Watch / 889 Staples) across all 21 categories, not 30. Phases 1 (schema + migrate-json-to-db) and 2 (single-business pipeline: ingest-one, analyze-business, rescore-all) are DONE. Phase 3-4 partly done: restaurant, cafe, bar, fitness swept plus the curated set; still un-swept categories include tattoo, spa, distillery, yoga/Pilates, gallery/museum, specialty grocery, ice cream, fast-casual. Phase 5 (/category/[slug]) and 6 (/leaderboard, /top) are built. Phase 7 (quarterly refresh cron) is NOT built. "Firecast" branding was retired and the publication was renamed "Signal Pittsburgh" on 2026-05-12. Treat references to "Firecast" and "30 businesses" below as historical.
+
 **Goal:** grow the index from 30 hand-picked Pittsburgh businesses to roughly 3,000 to 5,000 across Pittsburgh + Washington County, keeping the same depth (Firecast scoring, narrative, playbook, peer comparison, photos, tier badge) for every business.
 
 The original 30 was a scope-of-work scaffolding starter, NOT the editorial premise. The premise was always a comprehensive ranking. Treat all "Issue 01 covers 30 businesses" copy as legacy that will need rewriting once volume lands.

@@ -10,8 +10,8 @@ import { SidebarCTA } from "@/components/SidebarCTA";
  * The ?claimed query-string toggle is the only source of page dynamism.
  * Keeping the toggle reader client-side lets the server component
  * pre-render to static HTML (one shell per slug via generateStaticParams).
- * All 30 business routes ship as static pages; these small components
- * hydrate the claimed/unclaimed variations at request time.
+ * These small components hydrate the claimed/unclaimed variations at
+ * request time, so the shell stays static while the toggle stays dynamic.
  */
 function useClaimed(): boolean {
   const sp = useSearchParams();

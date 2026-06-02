@@ -86,3 +86,21 @@ The TODO above is partly stale; here's the current punch list.
 - [ ] **Regenerate analyses** to clean residual "median" leaks in Claude-generated narrative (~$3-5 across 30 businesses with current prompt update).
 - [ ] **Vercel env vars before deploy:** `RESEND_API_KEY` (required), `RESEND_FROM` (optional, domain must be verified), `ADMIN_EMAIL` (optional).
 - [ ] **Magic-link auto-verify for claim flow.** v1 is manual review by Anna. v2 graduates per `LEAD_CAPTURE.md`.
+
+---
+
+## 2026-06-02: Data-quality cleanup (shipped on `fix/data-quality-cleanup`, commit `b595294`, pushed)
+
+Reality check first: the index is ~2,580 businesses on Neon (2,579 scored: 242 Icons / 1,448 OTW / 889 Staples), not 30. See DEV_LOG 2026-06-02 for full detail.
+
+Resolved this session:
+- [x] **Model-field leak (#12).** `analyses.model` no longer reaches the browser (was leaking on ~2,566 pages via ReviewVoice). Fixed at the loader.
+- [x] **Five-star % vintage + fold the 30 (#11).** Five-star ratio now self-consistent (same DB vintage for numerator + denominator). 2 article descriptor contradictions fixed.
+- [x] **Family-label drift (#10).** ListItem derives family label from canonical category; substring hack retired. Butterwood reads "Pittsburgh Sweets".
+- [x] **Category 404s (#9) and homepage Icons clamp (#14):** verified already fixed, no change needed.
+
+Still open:
+- [ ] **Run `scripts/refresh-stale-analyses.ts`** to refresh **2,545** stale analyses (not ~1,559; a 2nd rescore on 05-13 re-staled all). Built + dry-run-verified this session, NOT run. PRECONDITION: commit the mid-edit scoring on `wip/social-ingest-checkpoint-2026-06-02` and land a rescore first, or the refresh re-stales. Then snapshot `analyses`, run `--tier=icons,ones_to_watch --force --execute` (~$33), then staples (~$18).
+- [ ] **WIP parked** on `wip/social-ingest-checkpoint-2026-06-02` (commit `66028ab`, NOT pushed): social ingest + mid-edit scoring. Resume or finish before the rescore.
+- [ ] **D-022 gap:** verdict card shows "FAMILY TYPICAL"; user-facing copy should say "industry". Quick sweep in SubscoreBars/verdict-copy.
+- [ ] Pre-existing: 15 lint errors in app/category, app/page, app/top, app/underrated + scripts; hero photos not loading in local dev; em dashes in some code comments (sweep when asked).
