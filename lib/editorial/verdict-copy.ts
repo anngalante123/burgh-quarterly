@@ -137,7 +137,7 @@ const GAP_COPY: Record<string, (h: Highlight) => string> = {
   tiktokPlays: () =>
     "No TikTok footprint to speak of yet. Peers are pulling views you're not.",
   tiktokCreators: () =>
-    "No creators are filming here. Family peers are getting the on-camera moments you aren't.",
+    "No creators are filming here. Industry peers are getting the on-camera moments you aren't.",
 };
 
 export function strengthCopy(h: Highlight): string {
