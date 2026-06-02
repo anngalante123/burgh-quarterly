@@ -95,7 +95,7 @@ export function GetFeaturedCTA({
             <span aria-hidden="true">→</span>
           </a>
         </div>
-        {/* Social proof strip — three rotating photos from real Relay
+        {/* Social proof strip: three rotating photos from real Relay
             collabs so the CTA isn't just copy. When a business
             category is passed in, the strip prefers photos from the
             same editorial family. Hidden on the compact variant

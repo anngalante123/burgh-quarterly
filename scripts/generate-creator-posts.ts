@@ -439,7 +439,7 @@ async function main() {
   // business doesn't dominate, the list reads as a survey of which
   // Pittsburgh businesses the city is filming, not a deep dive into
   // Everyday Noodles or Page's specifically.
-  // Cap per BRAND, not per slug — chains like Eat'n Park have many
+  // Cap per BRAND, not per slug. Chains like Eat'n Park have many
   // locations in the index and any per-slug cap would let one brand
   // crowd the list across its records.
   const PER_BRAND_CAP = 2;

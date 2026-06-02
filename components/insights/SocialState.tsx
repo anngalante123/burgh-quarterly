@@ -110,7 +110,7 @@ export function SocialState(props: Partial<SocialStateProps>) {
       // Defaults to "Typical" when the caller didn't supply a band
       // (e.g. no baseline available, small family, missing IG rate).
       value: engagementLabel ?? "Typical",
-      sub: "for the family",
+      sub: "for the industry",
     },
     {
       label: "Verified",

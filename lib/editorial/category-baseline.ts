@@ -38,14 +38,14 @@ export type EngagementBand =
   | "quiet";
 
 export type EngagementBandLabel =
-  | "Above the family typical"
-  | "Typical for the family"
-  | "Quiet for the family";
+  | "Above the industry typical"
+  | "Typical for the industry"
+  | "Quiet for the industry";
 
 const LABEL_FOR_BAND: Record<EngagementBand, EngagementBandLabel> = {
-  above: "Above the family typical",
-  typical: "Typical for the family",
-  quiet: "Quiet for the family",
+  above: "Above the industry typical",
+  typical: "Typical for the industry",
+  quiet: "Quiet for the industry",
 };
 
 const ABOVE_MULTIPLIER = 1.25;

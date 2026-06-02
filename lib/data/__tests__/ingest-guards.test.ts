@@ -29,7 +29,7 @@ function record(overrides: Record<string, unknown> = {}) {
   };
 }
 
-describe("normalizeApifyRecord — geo guard", () => {
+describe("normalizeApifyRecord: geo guard", () => {
   it("accepts a Pittsburgh 152xx address", () => {
     resetDedupeState();
     const r = normalizeApifyRecord(record());
@@ -95,7 +95,7 @@ describe("normalizeApifyRecord — geo guard", () => {
   });
 });
 
-describe("normalizeApifyRecord — chain guard", () => {
+describe("normalizeApifyRecord: chain guard", () => {
   it("rejects Starbucks", () => {
     resetDedupeState();
     const skips: SkipReason[] = [];

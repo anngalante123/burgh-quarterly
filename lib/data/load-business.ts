@@ -160,9 +160,9 @@ function loadLegacyMeta(
     : "";
 
   // Source priority:
-  //   1. content/businesses/<slug>.json — original 30 calibration entries
+  //   1. content/businesses/<slug>.json: original 30 calibration entries
   //      have full _meta written by the Apify-to-disk path.
-  //   2. business_signals row + DB joins — Phase 7 batch ingest writes
+  //   2. business_signals row + DB joins: Phase 7 batch ingest writes
   //      these directly so no JSON file ever exists.
   //   3. Synthesized fallback (categoryName from typed enum, everything
   //      else zero/null/empty).
@@ -202,6 +202,19 @@ function loadLegacyMeta(
       _meta?: Partial<BusinessArtifact["meta"]>;
     };
     const meta = raw._meta ?? {};
+    // Data-vintage fix: the review-star distribution must come from the same
+    // vintage as the headline total (DB google_review_count). The legacy JSON
+    // distribution is stale, so for the original 30 calibration entries we
+    // prefer the DB business_signals.reviews_distribution when it is present
+    // (23 of the 30 have a self-consistent DB breakdown whose star counts sum
+    // to the DB total). We only fall back to the stale JSON distribution when
+    // the DB column is null (7 of the 30). In that fallback case the page
+    // divides by the JSON distribution's own sum, not the DB total, so the
+    // ratio stays internally consistent rather than mixing two vintages.
+    const dbDistribution =
+      (opts.signalsRow
+        ?.reviews_distribution as BusinessArtifact["meta"]["reviewsDistribution"]) ??
+      null;
     return {
       placeId: meta.placeId ?? "",
       categoryName: meta.categoryName || fallbackCategoryName,
@@ -213,7 +226,7 @@ function loadLegacyMeta(
       phone: meta.phone ?? null,
       hasOpeningHours: meta.hasOpeningHours ?? false,
       claimThisBusiness: meta.claimThisBusiness ?? null,
-      reviewsDistribution: meta.reviewsDistribution ?? null,
+      reviewsDistribution: dbDistribution ?? meta.reviewsDistribution ?? null,
       rawReviewsCount: meta.rawReviewsCount ?? 0,
       reviewTexts: meta.reviewTexts ?? [],
       keywordPhrases: meta.keywordPhrases ?? [],
@@ -568,7 +581,7 @@ export async function getBusinessesForCategory(
  *
  * Sort order:
  *   1. composite DESC
- *   2. rank_category ASC (lower is better within category — settles
+ *   2. rank_category ASC (lower is better within category, settles
  *      ties between categories where multiple bizs share a composite)
  *   3. business_signals.review_count DESC (more reviewed wins ties; this
  *      pulls from `google_review_count` since the signals table tracks
@@ -756,7 +769,9 @@ export async function loadReviewAnalysis(
     notable_quote: row.notable_quote,
     review_count: row.review_count,
     analyzed_at: row.generated_at.toISOString(),
-    model: row.model,
+    // NOTE: row.model is internal cost-audit data. Never include it in the
+    // returned object: this loader feeds a "use client" component and any
+    // prop is serialized into the Flight payload shipped to the browser.
     quarter_narrative: row.quarter_narrative ?? undefined,
     tldr_read: row.tldr_read ?? undefined,
     tldr_meaning: row.tldr_meaning ?? undefined,
@@ -785,7 +800,7 @@ export async function loadAllReviewAnalyses(
       notable_quote: row.notable_quote,
       review_count: row.review_count,
       analyzed_at: row.generated_at.toISOString(),
-      model: row.model,
+      // NOTE: row.model is internal cost-audit data, kept server-side only.
       quarter_narrative: row.quarter_narrative ?? undefined,
       tldr_read: row.tldr_read ?? undefined,
       tldr_meaning: row.tldr_meaning ?? undefined,

@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 /**
  * Quick audit: count rows in analyses where any other banned phrase appears
- * in editorial text fields (not notable_quote — that's verbatim customer text).
+ * in editorial text fields (not notable_quote, that's verbatim customer text).
  */
 import { neon } from "@neondatabase/serverless";
 

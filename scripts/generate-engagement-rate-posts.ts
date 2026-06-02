@@ -209,7 +209,7 @@ async function main() {
 
   candidates.sort((a, b) => b.rate - a.rate);
 
-  // Cap per BRAND, not per slug — chains like Eat'n Park have 14
+  // Cap per BRAND, not per slug. Chains like Eat'n Park have 14
   // locations in the index and any per-slug cap would let the same
   // brand crowd the list across its multiple records.
   const perBrand = new Map<string, number>();

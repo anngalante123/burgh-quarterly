@@ -37,10 +37,13 @@ import type {
   DiagnosisPullquote,
 } from "@/lib/data/load-review-analysis";
 
-const ISSUE_SLUG = "2026-spring";
+export const ISSUE_SLUG = "2026-spring";
 const HARD_CAP = 35;
 const COST_CEILING_USD = 5;
-const RATE_LIMIT_MS = 2000;
+export const RATE_LIMIT_MS = 2000;
+
+/** Per-business cost estimate at Sonnet 4.6 pricing with prompt caching warm. */
+export const USD_PER_BUSINESS = 0.02;
 
 // The 4 known businesses with rows but empty themes arrays (per orchestrator).
 const EMPTY_THEMES_SLUGS = [
@@ -50,7 +53,7 @@ const EMPTY_THEMES_SLUGS = [
   "piccola-piazza-company",
 ];
 
-function sleep(ms: number): Promise<void> {
+export function sleep(ms: number): Promise<void> {
   return new Promise((res) => setTimeout(res, ms));
 }
 
@@ -59,6 +62,253 @@ function median(vals: number[]): number {
   const s = vals.slice().sort((a, b) => a - b);
   const m = Math.floor(s.length / 2);
   return s.length % 2 === 0 ? Math.round((s[m - 1] + s[m]) / 2) : s[m];
+}
+
+/**
+ * Shape of one row returned by `loadScoredRowsForFamilyContext`. Pulled once
+ * per run and passed into `processSlug` so we do not re-query the whole scored
+ * set for every business.
+ */
+export type ScoredRowForContext = {
+  slug: string;
+  name: string;
+  category: string;
+  composite: number;
+  subscores: {
+    content_canvas: number;
+    community_spark: number;
+    conversion_path: number;
+    momentum: number;
+    collab_fit: number;
+  };
+  unfair_advantage: { label: string } | null;
+};
+
+/**
+ * Pull every scored business for the active issue once. Used to compute
+ * family rank, family leader, and peer medians inside `processSlug`. Read-only.
+ */
+export async function loadScoredRowsForFamilyContext(): Promise<
+  ScoredRowForContext[]
+> {
+  const { db, schema } = await import("@/lib/db/client");
+  const rows = await db
+    .select({
+      slug: schema.businesses.slug,
+      name: schema.businesses.name,
+      category: schema.businesses.category,
+      composite: schema.scores.composite,
+      subscores: schema.scores.subscores,
+      unfair_advantage: schema.scores.unfair_advantage,
+    })
+    .from(schema.businesses)
+    .innerJoin(
+      schema.scores,
+      and(
+        eq(schema.scores.business_slug, schema.businesses.slug),
+        eq(schema.scores.issue_slug, ISSUE_SLUG),
+      ),
+    );
+  return rows as unknown as ScoredRowForContext[];
+}
+
+/**
+ * Process a single business: load its DB record, signals, reviews, and score,
+ * build the family context, call `analyzeOne` (ONE Anthropic API call), and
+ * upsert the result into `analyses`. Idempotent on (business_slug, issue_slug):
+ * a conflict updates the existing row in place, so re-running is safe and
+ * resumable. This makes exactly one paid API call and one DB write per success.
+ *
+ * Returns "ok" on success, or "skip" with a reason when the business cannot be
+ * analyzed (no row, too few reviews, no score). Throws on API/DB errors so the
+ * caller can record a failure.
+ *
+ * SHARED by `backfill-missing-analyses.ts` and `refresh-stale-analyses.ts`.
+ * Do not add cost-gate or cap logic here. Callers own their own budgeting.
+ */
+export async function processSlug(
+  client: Anthropic,
+  slug: string,
+  allScoredRows: ScoredRowForContext[],
+): Promise<
+  | { status: "ok"; themes: number; playbook: number }
+  | { status: "skip"; reason: string }
+> {
+  const { db, schema } = await import("@/lib/db/client");
+
+  const bizRows = await db
+    .select()
+    .from(schema.businesses)
+    .where(eq(schema.businesses.slug, slug))
+    .limit(1);
+  if (bizRows.length === 0) {
+    return { status: "skip", reason: "no businesses row" };
+  }
+  const b = bizRows[0];
+
+  const sigRows = await db
+    .select()
+    .from(schema.businessSignals)
+    .where(
+      and(
+        eq(schema.businessSignals.business_slug, slug),
+        eq(schema.businessSignals.issue_slug, ISSUE_SLUG),
+      ),
+    )
+    .limit(1);
+  const sig = sigRows[0] ?? null;
+
+  const reviewRows = await db
+    .select()
+    .from(schema.businessReviews)
+    .where(eq(schema.businessReviews.business_slug, slug));
+  const reviews = reviewRows
+    .map((r) => r.text)
+    .filter((t): t is string => typeof t === "string" && t.length > 0);
+
+  if (reviews.length < 2) {
+    return { status: "skip", reason: `only ${reviews.length} reviews on disk` };
+  }
+
+  const scoreRows = await db
+    .select()
+    .from(schema.scores)
+    .where(
+      and(
+        eq(schema.scores.business_slug, slug),
+        eq(schema.scores.issue_slug, ISSUE_SLUG),
+      ),
+    )
+    .limit(1);
+  if (scoreRows.length === 0) {
+    return { status: "skip", reason: "no scores row" };
+  }
+  const s = scoreRows[0];
+
+  // Family context.
+  const fam = familyForBusinessCategory(b.category);
+  const sameFamily = allScoredRows.filter(
+    (r) => familyForBusinessCategory(r.category).key === fam.key,
+  );
+  const familyRanked = [...sameFamily].sort((a, b) => b.composite - a.composite);
+  const familyRank = familyRanked.findIndex((r) => r.slug === slug) + 1;
+  const familyLeaderRow =
+    familyRanked.find((r) => r.slug !== slug) ?? familyRanked[0];
+
+  const peerMedians: Record<string, number> = {
+    content_canvas: median(sameFamily.map((r) => r.subscores.content_canvas)),
+    community_spark: median(sameFamily.map((r) => r.subscores.community_spark)),
+    conversion_path: median(sameFamily.map((r) => r.subscores.conversion_path)),
+    momentum: median(sameFamily.map((r) => r.subscores.momentum)),
+    collab_fit: median(sameFamily.map((r) => r.subscores.collab_fit)),
+  };
+
+  const recordForInput = {
+    name: b.name,
+    neighborhood: b.neighborhood,
+    slug: b.slug,
+    category: b.category,
+    google_review_count: sig?.google_review_count ?? reviews.length,
+    review_freshness_days: sig?.review_freshness_days ?? 999,
+    _meta: {
+      categoryName: sig?.primary_category_name ?? b.category,
+      imagesCount: sig?.images_count ?? 0,
+      imageCategories: sig?.image_categories ?? [],
+      hasWebsite: !!b.website,
+      hasPhone: !!sig?.has_phone,
+      hasOpeningHours: !!sig?.has_opening_hours,
+      reviewsDistribution: sig?.reviews_distribution ?? null,
+    },
+    _score: {
+      tier: s.tier,
+      composite: s.composite,
+      rank_category: s.ranks?.category ?? 1,
+      subscores: s.subscores,
+      unfair_advantage: s.unfair_advantage,
+    },
+  };
+
+  const social = b.instagram
+    ? {
+        ig: {
+          handle: b.instagram.replace(/^@/, ""),
+          posts_30d: sig?.posts_last_30 ?? 0,
+          reels_30d: sig?.reels_last_30 ?? 0,
+          avg_engagement_rate: 0,
+          verified: false,
+          is_business_account: false,
+          biography: "",
+          last_post_at: null,
+        },
+      }
+    : {};
+
+  const familyLeader = {
+    name: familyLeaderRow.name,
+    _score: {
+      unfair_advantage: { label: familyLeaderRow.unfair_advantage?.label ?? "" },
+    },
+  };
+
+  const analyzeInput: AnalyzeInput = assembleAnalyzeInput(
+    slug,
+    recordForInput as unknown as Parameters<typeof assembleAnalyzeInput>[1],
+    social,
+    reviews,
+    fam,
+    familyRank,
+    sameFamily.length,
+    familyLeader,
+    peerMedians,
+  );
+
+  const result = await analyzeOne(client, analyzeInput);
+
+  const row = {
+    business_slug: slug,
+    issue_slug: ISSUE_SLUG,
+    themes: result.themes,
+    notable_quote: result.notable_quote,
+    sentiment_summary: result.sentiment_summary,
+    quarter_narrative: result.quarter_narrative ?? null,
+    tldr_read: result.tldr_read ?? null,
+    tldr_meaning: result.tldr_meaning ?? null,
+    diagnosis_pullquote:
+      ((result as unknown as { diagnosis_pullquote?: DiagnosisPullquote })
+        .diagnosis_pullquote ?? null) as DiagnosisPullquote | null,
+    playbook: (result.playbook ?? null) as AnalysisPlaybookItem[] | null,
+    review_count: reviews.length,
+    model: MODEL,
+    prompt_version: null,
+    generated_at: new Date(),
+  };
+
+  await db
+    .insert(schema.analyses)
+    .values(row)
+    .onConflictDoUpdate({
+      target: [schema.analyses.business_slug, schema.analyses.issue_slug],
+      set: {
+        themes: row.themes,
+        notable_quote: row.notable_quote,
+        sentiment_summary: row.sentiment_summary,
+        quarter_narrative: row.quarter_narrative,
+        tldr_read: row.tldr_read,
+        tldr_meaning: row.tldr_meaning,
+        diagnosis_pullquote: row.diagnosis_pullquote,
+        playbook: row.playbook,
+        review_count: row.review_count,
+        model: row.model,
+        prompt_version: row.prompt_version,
+        generated_at: row.generated_at,
+      },
+    });
+
+  return {
+    status: "ok",
+    themes: result.themes?.length ?? 0,
+    playbook: result.playbook?.length ?? 0,
+  };
 }
 
 async function main() {
@@ -142,222 +392,30 @@ async function main() {
   }
 
   // Step 3: pull all scored rows once for family context (rank, leader, peer medians).
-  const allScoredRows = await db
-    .select({
-      slug: schema.businesses.slug,
-      name: schema.businesses.name,
-      category: schema.businesses.category,
-      composite: schema.scores.composite,
-      subscores: schema.scores.subscores,
-      unfair_advantage: schema.scores.unfair_advantage,
-    })
-    .from(schema.businesses)
-    .innerJoin(
-      schema.scores,
-      and(
-        eq(schema.scores.business_slug, schema.businesses.slug),
-        eq(schema.scores.issue_slug, ISSUE_SLUG),
-      ),
-    );
+  const allScoredRows = await loadScoredRowsForFamilyContext();
 
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
   let processed = 0;
   let failed = 0;
   const failures: { slug: string; reason: string }[] = [];
-  let totalUsd = 0;
 
   for (let i = 0; i < slugs.length; i++) {
     const slug = slugs[i];
     const label = `[${i + 1}/${slugs.length}] ${slug}`;
 
     try {
-      // Load business + signals + reviews + score from DB.
-      const bizRows = await db
-        .select()
-        .from(schema.businesses)
-        .where(eq(schema.businesses.slug, slug))
-        .limit(1);
-      if (bizRows.length === 0) {
-        console.log(`${label} ... SKIP (no businesses row)`);
-        failures.push({ slug, reason: "no businesses row" });
+      const res = await processSlug(client, slug, allScoredRows);
+      if (res.status === "skip") {
+        console.log(`${label} ... SKIP (${res.reason})`);
+        failures.push({ slug, reason: res.reason });
         failed++;
-        continue;
+      } else {
+        console.log(
+          `${label} ... ok (playbook: ${res.playbook}, themes: ${res.themes})`,
+        );
+        processed++;
       }
-      const b = bizRows[0];
-
-      const sigRows = await db
-        .select()
-        .from(schema.businessSignals)
-        .where(
-          and(
-            eq(schema.businessSignals.business_slug, slug),
-            eq(schema.businessSignals.issue_slug, ISSUE_SLUG),
-          ),
-        )
-        .limit(1);
-      const sig = sigRows[0] ?? null;
-
-      const reviewRows = await db
-        .select()
-        .from(schema.businessReviews)
-        .where(eq(schema.businessReviews.business_slug, slug));
-      const reviews = reviewRows
-        .map((r) => r.text)
-        .filter((t): t is string => typeof t === "string" && t.length > 0);
-
-      if (reviews.length < 2) {
-        console.log(`${label} ... SKIP (only ${reviews.length} reviews)`);
-        failures.push({ slug, reason: `only ${reviews.length} reviews on disk` });
-        failed++;
-        continue;
-      }
-
-      const scoreRows = await db
-        .select()
-        .from(schema.scores)
-        .where(
-          and(
-            eq(schema.scores.business_slug, slug),
-            eq(schema.scores.issue_slug, ISSUE_SLUG),
-          ),
-        )
-        .limit(1);
-      if (scoreRows.length === 0) {
-        console.log(`${label} ... SKIP (no scores row)`);
-        failures.push({ slug, reason: "no scores row" });
-        failed++;
-        continue;
-      }
-      const s = scoreRows[0];
-
-      // Family context.
-      const fam = familyForBusinessCategory(b.category);
-      const sameFamily = allScoredRows.filter(
-        (r) => familyForBusinessCategory(r.category).key === fam.key,
-      );
-      const familyRanked = [...sameFamily].sort((a, b) => b.composite - a.composite);
-      const familyRank = familyRanked.findIndex((r) => r.slug === slug) + 1;
-      const familyLeaderRow =
-        familyRanked.find((r) => r.slug !== slug) ?? familyRanked[0];
-
-      const peerMedians: Record<string, number> = {
-        content_canvas: median(sameFamily.map((r) => r.subscores.content_canvas)),
-        community_spark: median(sameFamily.map((r) => r.subscores.community_spark)),
-        conversion_path: median(sameFamily.map((r) => r.subscores.conversion_path)),
-        momentum: median(sameFamily.map((r) => r.subscores.momentum)),
-        collab_fit: median(sameFamily.map((r) => r.subscores.collab_fit)),
-      };
-
-      // Build the "raw record" shape that assembleAnalyzeInput expects.
-      const recordForInput = {
-        name: b.name,
-        neighborhood: b.neighborhood,
-        slug: b.slug,
-        category: b.category,
-        google_review_count: sig?.google_review_count ?? reviews.length,
-        review_freshness_days: sig?.review_freshness_days ?? 999,
-        _meta: {
-          categoryName: sig?.primary_category_name ?? b.category,
-          imagesCount: sig?.images_count ?? 0,
-          imageCategories: sig?.image_categories ?? [],
-          hasWebsite: !!b.website,
-          hasPhone: !!sig?.has_phone,
-          hasOpeningHours: !!sig?.has_opening_hours,
-          reviewsDistribution: sig?.reviews_distribution ?? null,
-        },
-        _score: {
-          tier: s.tier,
-          composite: s.composite,
-          rank_category: s.ranks?.category ?? 1,
-          subscores: s.subscores,
-          unfair_advantage: s.unfair_advantage,
-        },
-      };
-
-      // Social. The DB does not currently store an `ig` snapshot table for this
-      // backfill scope, so fall back to whatever's in the businesses row.
-      const social = b.instagram
-        ? {
-            ig: {
-              handle: b.instagram.replace(/^@/, ""),
-              posts_30d: sig?.posts_last_30 ?? 0,
-              reels_30d: sig?.reels_last_30 ?? 0,
-              avg_engagement_rate: 0,
-              verified: false,
-              is_business_account: false,
-              biography: "",
-              last_post_at: null,
-            },
-          }
-        : {};
-
-      const familyLeader = {
-        name: familyLeaderRow.name,
-        _score: {
-          unfair_advantage: { label: familyLeaderRow.unfair_advantage?.label ?? "" },
-        },
-      };
-
-      const analyzeInput: AnalyzeInput = assembleAnalyzeInput(
-        slug,
-        recordForInput as unknown as Parameters<typeof assembleAnalyzeInput>[1],
-        social,
-        reviews,
-        fam,
-        familyRank,
-        sameFamily.length,
-        familyLeader,
-        peerMedians,
-      );
-
-      const result = await analyzeOne(client, analyzeInput);
-
-      // Upsert into analyses table.
-      const row = {
-        business_slug: slug,
-        issue_slug: ISSUE_SLUG,
-        themes: result.themes,
-        notable_quote: result.notable_quote,
-        sentiment_summary: result.sentiment_summary,
-        quarter_narrative: result.quarter_narrative ?? null,
-        tldr_read: result.tldr_read ?? null,
-        tldr_meaning: result.tldr_meaning ?? null,
-        diagnosis_pullquote:
-          ((result as unknown as { diagnosis_pullquote?: DiagnosisPullquote })
-            .diagnosis_pullquote ?? null) as DiagnosisPullquote | null,
-        playbook: (result.playbook ?? null) as AnalysisPlaybookItem[] | null,
-        review_count: reviews.length,
-        model: MODEL,
-        prompt_version: null,
-        generated_at: new Date(),
-      };
-
-      await db
-        .insert(schema.analyses)
-        .values(row)
-        .onConflictDoUpdate({
-          target: [schema.analyses.business_slug, schema.analyses.issue_slug],
-          set: {
-            themes: row.themes,
-            notable_quote: row.notable_quote,
-            sentiment_summary: row.sentiment_summary,
-            quarter_narrative: row.quarter_narrative,
-            tldr_read: row.tldr_read,
-            tldr_meaning: row.tldr_meaning,
-            diagnosis_pullquote: row.diagnosis_pullquote,
-            playbook: row.playbook,
-            review_count: row.review_count,
-            model: row.model,
-            prompt_version: row.prompt_version,
-            generated_at: row.generated_at,
-          },
-        });
-
-      console.log(
-        `${label} ... ok (playbook: ${result.playbook?.length ?? 0}, themes: ${result.themes?.length ?? 0})`,
-      );
-      processed++;
     } catch (e) {
       const msg = (e as Error).message;
       console.error(`${label} ... FAIL: ${msg}`);
@@ -394,7 +452,15 @@ async function main() {
   console.log("======================================\n");
 }
 
-main().catch((e) => {
-  console.error("[backfill] fatal:", e);
-  process.exit(1);
-});
+// Only auto-run when invoked directly (e.g. `tsx backfill-missing-analyses.ts`),
+// not when another script imports the exported helpers from this module.
+const invokedDirectly =
+  !!process.argv[1] &&
+  path.resolve(process.argv[1]).includes("backfill-missing-analyses");
+
+if (invokedDirectly) {
+  main().catch((e) => {
+    console.error("[backfill] fatal:", e);
+    process.exit(1);
+  });
+}

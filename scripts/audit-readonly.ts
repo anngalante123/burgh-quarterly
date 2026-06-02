@@ -1,4 +1,4 @@
-/* Read-only audit. SELECTs only — no writes. */
+/* Read-only audit. SELECTs only, no writes. */
 import { neon } from "@neondatabase/serverless";
 
 const sql = neon(process.env.DATABASE_URL!);

@@ -11,7 +11,7 @@
  *   - sentiment_summary (text)
  *   - quarter_narrative (text)
  *   - themes (JSONB array)
- *   - notable_quote (text) [verbatim — not rewritten]
+ *   - notable_quote (text) [verbatim, not rewritten]
  *
  * Usage:
  *   tsx scripts/sweep-infrastructure-word.ts              # dry-run (default)
@@ -46,7 +46,7 @@ type Rule = { pat: RegExp; rep: string };
  *   "infrastructure to handle"  -> "setup to handle"
  *
  * Bare "infrastructure" with no preceding context word is intentionally
- * NOT rewritten by regex — it's surfaced for manual review instead, since
+ * NOT rewritten by regex. It's surfaced for manual review instead, since
  * the right replacement ("presence" vs "setup" vs deletion) depends on the
  * surrounding sentence.
  */
@@ -132,7 +132,7 @@ function rewriteString(s: string): { changed: boolean; out: string } {
   return { changed: out !== s, out };
 }
 
-/** Detect bare "infrastructure" still remaining after rewrites — manual flag. */
+/** Detect bare "infrastructure" still remaining after rewrites. Manual flag. */
 function hasResidualInfrastructure(s: string): boolean {
   return /\binfrastructure\b/i.test(s);
 }

@@ -4,14 +4,14 @@
  * (read-only filesystem) and didn't survive across deploys anyway.
  *
  * Pattern: every submission upserts a Person record by email
- * (Attio's "assert" mode handles dedup automatically — same email →
+ * (Attio's "assert" mode handles dedup automatically, same email →
  * existing record updated, never duplicated), then attaches a Note
  * with the submission context (source, business slug if a claim,
  * verification text, timestamp).
  *
  * Failure mode: if Attio is unreachable or the API rejects, the
  * functions log + return a soft error. The caller should NOT block
- * the user submission on Attio — Resend confirmation still goes out,
+ * the user submission on Attio. Resend confirmation still goes out,
  * the form still succeeds. Attio is a side-channel, not the
  * source-of-truth for completing a request.
  *
@@ -44,7 +44,7 @@ type UpsertResult =
 /**
  * Upsert a Person by email. Uses Attio's "assert" mode
  * (matching_attribute=email_addresses) so calling twice with the
- * same email won't create a duplicate — it'll update the existing
+ * same email won't create a duplicate. It'll update the existing
  * record. Returns the Person's record_id for follow-up note creation.
  */
 export async function upsertPersonByEmail(
@@ -124,7 +124,7 @@ type AddToListArgs = {
 };
 
 /**
- * Add a Person to an Attio list (creates a list entry). Idempotent —
+ * Add a Person to an Attio list (creates a list entry). Idempotent:
  * Attio dedupes list entries by parent_record_id within a list, so
  * calling twice for the same person is a no-op.
  *
@@ -158,7 +158,7 @@ export async function addPersonToList(
     // collapses them on its side.
     if (!res.ok) {
       const json = await res.json().catch(() => ({}));
-      // 400 with "already exists" is OK — surface it but don't treat
+      // 400 with "already exists" is OK. Surface it but don't treat
       // as failure for the caller's purposes.
       const errMsg = JSON.stringify(json).toLowerCase();
       if (errMsg.includes("already") || errMsg.includes("duplicate")) {

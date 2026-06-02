@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import type { Category, Tier } from "@/lib/data/schemas";
 import type { ListArticleItem } from "@/lib/data/load-list";
+import { familyForBusinessCategory } from "@/lib/data/category-family";
 
 import { TierPill } from "./TierPill";
 
@@ -47,48 +48,23 @@ type ListItemEnriched = {
   showTier?: boolean;
 };
 
-const CATEGORY_LABEL: Record<Category, string> = {
-  restaurant: "Restaurant",
-  cafe: "Cafe",
-  salon: "Salon",
-  boutique: "Boutique",
-  fitness: "Fitness",
-  bakery: "Bakery",
-  experience: "Experience",
-  grocery: "Grocery",
-  bar: "Bar",
-  brewery: "Brewery",
-  distillery: "Distillery",
-  tattoo: "Tattoo",
-  ice_cream: "Ice Cream",
-  juice: "Juice Bar",
-  live_music: "Live Music",
-  plant_shop: "Plant Shop",
-  bookstore: "Bookstore",
-  record_store: "Record Store",
-  florist: "Florist",
-  gallery_museum: "Gallery",
-  spa: "Spa",
-};
-
 /**
- * If the article's family_label disagrees with the actual business
- * category (e.g. "Pittsburgh Boutiques" on a cafe), prefer the
- * canonical category label. We compare by checking whether the
- * canonical label word is anywhere inside the family_label.
+ * Resolve the family label to display for a list entry.
+ *
+ * The article JSON carries a cached `family_label` string that was correct
+ * when the article was generated, but it can drift from the business's
+ * current category over time (e.g. a bakery cached as "Pittsburgh Cafes").
+ * The DB `category` enum is the live source of truth, so we always derive
+ * the label from it via the canonical, enum-keyed resolver. When the live
+ * category is unavailable (business failed to load), we fall back to the
+ * article-embedded label so the row is not blanked.
  */
 function resolvedFamilyLabel(
   familyLabel: string,
   category: Category | undefined,
 ): string {
   if (!category) return familyLabel;
-  const label = CATEGORY_LABEL[category];
-  if (!label) return familyLabel;
-  const hay = familyLabel.toLowerCase();
-  const needle = label.toLowerCase();
-  // Plural-y fuzzy check: "cafe" matches "Pittsburgh Cafes".
-  if (hay.includes(needle)) return familyLabel;
-  return label;
+  return familyForBusinessCategory(category).label;
 }
 
 function formatPlays(n: number): string {

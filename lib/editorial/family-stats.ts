@@ -145,7 +145,7 @@ export function computeFamilyMetricStats(
 
   // ----- 5-star percent (0-100)
   // When reviewsDistribution is null on the business_signals row, we have
-  // no signal — the ratio is unknown, not zero. The renderer (StrengthsAndGaps
+  // no signal. The ratio is unknown, not zero. The renderer (StrengthsAndGaps
   // and RowPeerStat) used to display "0% five-star" in that case, which is
   // mathematically impossible on a 4.3-star business with thousands of
   // reviews. We now return a familySize=0 stat that downstream filters

@@ -83,9 +83,9 @@ export function buildQuarterNarrative(
   let peerSentence = "";
   if (familyTop && familyTop.business.slug !== business.slug) {
     const topIgPosts = null; // (we don't load social for peers here; keep it lean)
-    peerSentence = `${familyTop.business.name}, ${familyTop.business.neighborhood}, sits at #1 in the family this issue, ${familyTop.score.unfair_advantage.label} was the story.`;
+    peerSentence = `${familyTop.business.name}, ${familyTop.business.neighborhood}, sits at #1 in the industry this issue, ${familyTop.score.unfair_advantage.label} was the story.`;
   } else if (familyTop && familyTop.business.slug === business.slug) {
-    peerSentence = `No one in the family outranked them this issue.`;
+    peerSentence = `No one in the industry outranked them this issue.`;
   }
 
   // Forward-looking conclusion. Guard against missing/empty subscores
