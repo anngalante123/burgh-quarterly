@@ -51,8 +51,6 @@ export type ReviewAnalysis = {
   review_count: number;
   /** When the analysis was generated. */
   analyzed_at: string;
-  /** Model name used. */
-  model: string;
 
   /** 2-3 sentence editorial paragraph for this business's quarter. */
   quarter_narrative?: string;

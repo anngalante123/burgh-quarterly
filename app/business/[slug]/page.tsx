@@ -184,12 +184,29 @@ export default async function BusinessPage({ params }: PageProps) {
   const distMeasured =
     meta.reviewsDistribution !== null && meta.reviewsDistribution !== undefined;
   const fiveStar = meta.reviewsDistribution?.fiveStar ?? 0;
+  // Five-star share must divide by the SAME data vintage the numerator came
+  // from, never a cross-vintage mix. The headline total (totalRev) is the DB
+  // google_review_count, but the distribution may be a different source. So
+  // the denominator is the sum of the distribution we are actually reading
+  // (the numerator's own total), not totalRev. For the ~2,550 non-legacy and
+  // the 23 legacy businesses whose distribution comes from the DB, this sum
+  // equals the DB total anyway, so their displayed pct is unchanged. For the
+  // 7 legacy businesses still on the stale JSON distribution, we divide by the
+  // JSON's own sum so the ratio stays internally consistent.
+  const dist = meta.reviewsDistribution;
+  const distTotal = dist
+    ? (dist.oneStar ?? 0) +
+      (dist.twoStar ?? 0) +
+      (dist.threeStar ?? 0) +
+      (dist.fourStar ?? 0) +
+      (dist.fiveStar ?? 0)
+    : 0;
   // pct is null when the scraper didn't return a review-rating distribution,
   // not zero. A 4.3-star business with 5,598 reviews cannot have a 0% five-
   // star share, and rendering "0%" reads as a data bug to anyone literate.
   const pct =
-    distMeasured && totalRev > 0
-      ? Math.round((fiveStar / totalRev) * 100)
+    distMeasured && distTotal > 0
+      ? Math.round((fiveStar / distTotal) * 100)
       : null;
 
   const all = await loadAllBusinesses();

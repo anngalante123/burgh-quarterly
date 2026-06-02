@@ -563,7 +563,14 @@ async function migrateAnalyses(
   for (const file of files) {
     i += 1;
     tallies.analyses.read += 1;
-    const raw = readJson<ReviewAnalysis>(path.join(ANALYSES_DIR, file));
+    // The on-disk analysis JSON still carries `model` (internal cost-audit
+    // data) which the migration writes into the DB column. `model` was removed
+    // from the public ReviewAnalysis type because that type feeds a client
+    // component and would leak the model name to the browser, so we read it
+    // here via a local shape that adds the server-only field back.
+    const raw = readJson<ReviewAnalysis & { model?: string }>(
+      path.join(ANALYSES_DIR, file),
+    );
     const slug = raw.slug;
     if (!slug) {
       skipped.push({ slug: file, reason: "analysis JSON missing slug" });
