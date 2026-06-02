@@ -34,6 +34,7 @@ import {
   type IgSnapshot,
 } from "@/lib/scoring/score";
 import type { Business } from "@/lib/data/schemas";
+import { loadSocialBySlug } from "@/lib/data/load-social";
 
 type DbModule = typeof import("@/lib/db/client");
 let _dbMod: DbModule | null = null;
@@ -158,14 +159,14 @@ async function main() {
       })),
     };
 
-    // No IG snapshot wired into Phase 7 ingests; momentumScore returns
-    // the stub value (60) when ig is null, matching original ingest
-    // behavior. Tiers are therefore self-consistent across the index
-    // even though absolute momentum scores are uniform.
-    const ig: IgSnapshot | null = null;
+    // Load IG snapshot from content/social/<slug>.json (populated by
+    // scripts/scrape-ig-profiles-batched.ts). When ig is null (no handle
+    // discovered or scrape errored), composite() drops the momentum
+    // weight and rebalances the remaining four signals.
+    const ig = loadSocialBySlug(b.slug).ig as IgSnapshot | null;
 
     const subs = scoreSubscores(business, meta, ig);
-    const comp = computeComposite(subs);
+    const comp = computeComposite(subs, { skipMomentum: !ig });
     const tier = tierOf(comp);
 
     const cur = scoreRowBySlug.get(b.slug);

@@ -86,3 +86,12 @@ The TODO above is partly stale; here's the current punch list.
 - [ ] **Regenerate analyses** to clean residual "median" leaks in Claude-generated narrative (~$3-5 across 30 businesses with current prompt update).
 - [ ] **Vercel env vars before deploy:** `RESEND_API_KEY` (required), `RESEND_FROM` (optional, domain must be verified), `ADMIN_EMAIL` (optional).
 - [ ] **Magic-link auto-verify for claim flow.** v1 is manual review by Anna. v2 graduates per `LEAD_CAPTURE.md`.
+
+### Open (from 2026-05-15 site audit, items 9-14 + bars)
+
+- [ ] **#9 Category enum re-tag.** `/category/bar`, `/category/brewery`, `/category/ice-cream` 404 because entries are filed as `restaurant` or `boutique`. `/category/boutique` headlines "Every boutique" but shows dessert/coffee/noodle shops. Page's, Margaux, Spot of Coffee, Hidden Harbor, Commerce Bar, breweries all need re-tagging. Prereq: confirm whether category lives in DB `businesses` table or in `content/businesses/*.json`.
+- [ ] **#10 family_label vs category drift.** Spot of Coffee, Margaux, Butterwood have `family_label: "Pittsburgh Cafes"` in articles but `category: boutique / bakery` on business pages. Pick one source of truth before re-tagging or you re-create drift.
+- [ ] **#11 Re-stale-check numbers.** Page's article says 3,153 reviews, descriptor says 3,145, business JSON says 3,145. Spot of Coffee article 156 vs JSON 173. Needs Apify rescrape + article regen pass.
+- [ ] **#12 Strip `"model": "claude-sonnet-4-6"`** from all article + review-analysis JSONs (leak risk, currently visible in raw JSON).
+- [ ] **#14 Reconcile homepage Icons stat** (hard-clamped to 100) with real Icons count (~242 post-rescore).
+- [ ] **Bars-on-social article expansion.** Shipped at 5 entries this issue; expand curated bar set in `content/businesses/` (Apify ingest) then refresh the article before next publish.

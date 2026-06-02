@@ -352,8 +352,11 @@ export function momentumScore(
 ): number {
   void art.placeId;
   if (!ig || ig.error || ig.private) {
-    // No usable IG data, keep the old stub value so composites don't tank.
-    return 60;
+    // No measured IG signal. Return 0 so the subscore reflects reality;
+    // composite() rebalances and drops the momentum weight entirely when
+    // called with { skipMomentum: true } for these cases. (Previously this
+    // returned a 60-point stub, which silently inflated every non-IG biz.)
+    return 0;
   }
 
   const postsTarget = CATEGORY_POSTS_30D_MEDIAN[biz.category];
@@ -419,7 +422,10 @@ export function scoreSubscores(
   };
 }
 
-export function composite(subs: ScoreBreakdown): number {
+export function composite(
+  subs: ScoreBreakdown,
+  opts?: { skipMomentum?: boolean },
+): number {
   // Coalesce missing subscores to 0. A subscore can come back null/NaN when
   // the data needed to compute it is genuinely absent (e.g. a fresh Apify
   // scrape with no keyword_phrases yet). Treat that as "no signal observed"
@@ -427,6 +433,16 @@ export function composite(subs: ScoreBreakdown): number {
   // which Postgres rejects.
   const safe = (n: number | null | undefined) =>
     typeof n === "number" && Number.isFinite(n) ? n : 0;
+  if (opts?.skipMomentum) {
+    // No measured IG signal. Recompute over the four remaining signals
+    // with weights rebalanced so they sum to 1. Original weights w/o
+    // momentum totalled 0.80; each is scaled by 1/0.80 = 1.25.
+    const raw = 0.3125 * safe(subs.content_canvas) +
+      0.25 * safe(subs.community_spark) +
+      0.25 * safe(subs.conversion_path) +
+      0.1875 * safe(subs.collab_fit);
+    return Math.round(clamp(raw));
+  }
   const raw = 0.25 * safe(subs.content_canvas) +
     0.20 * safe(subs.community_spark) +
     0.20 * safe(subs.conversion_path) +
@@ -455,8 +471,9 @@ export function scoreBusiness(
   art: NormalizedArtifact["meta"],
   ig?: IgSnapshot | null,
 ): ScoredResult {
+  const noIg = !ig || Boolean(ig.error) || Boolean(ig.private);
   const subs = scoreSubscores(biz, art, ig);
-  const comp = composite(subs);
+  const comp = composite(subs, { skipMomentum: noIg });
   let momentum_source: string;
   if (!ig) momentum_source = MOMENTUM_SOURCE_NO_HANDLE;
   else if (ig.error || ig.private) momentum_source = MOMENTUM_SOURCE_NO_HANDLE;

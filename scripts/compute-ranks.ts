@@ -233,7 +233,7 @@ async function main(): Promise<void> {
       ..._score.subscores,
       momentum: newMomentum,
     };
-    const newComposite = composite(newSubscores);
+    const newComposite = composite(newSubscores, { skipMomentum: !ig });
     const newTier = tierOf(newComposite);
 
     records.push({
