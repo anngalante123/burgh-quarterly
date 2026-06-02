@@ -6,14 +6,14 @@ import { familyForBusinessCategory } from "@/lib/data/category-family";
  * Per-family engagement baseline, used to translate a raw IG engagement
  * rate into one of three qualitative bands for display:
  *
- *   "Above the family typical"
- *   "Typical for the family"
- *   "Quiet for the family"
+ *   "Above the industry typical"
+ *   "Typical for the industry"
+ *   "Quiet for the industry"
  *
  * Why qualitative: per the editorial voice rules, the business pages
  * (the quiet record zone) never surface raw engagement numbers. The
  * reader gets context without becoming a numbers-watcher. The word
- * "median" is also banned in UI strings, hence "family typical" copy.
+ * "median" is also banned in UI strings, hence "industry typical" copy.
  *
  * How the baseline is built:
  *   - For each business in the cohort that has an IG snapshot, group
