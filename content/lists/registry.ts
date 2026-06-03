@@ -109,7 +109,7 @@ export const LISTS: ListSpec[] = [
   },
 
   // ──────── The Underrated List, per editorial brief ────────
-  // Customers rate them well, the social signal hasn't caught up yet.
+  // Customers rate them well, the Instagram presence hasn't caught up yet.
   // Celebrated, never shamed. Recurring quarterly feature, one per
   // family + a flagship.
 
@@ -131,7 +131,7 @@ export const LISTS: ListSpec[] = [
     title: "Pittsburgh's Most Underrated Sweets",
     subtitle: "Bakeries, dessert spots, and ice cream shops the city should be talking about.",
     angle:
-      "the dessert shops Pittsburgh customers love but creators haven't fully caught onto. High ratings, real review depth, lower social signal. The places worth a Sunday morning detour.",
+      "the dessert shops Pittsburgh customers love but creators haven't fully caught onto. High ratings, real review depth, thin Instagram momentum. The places worth a Sunday morning detour.",
     query: {
       filter: { family: "sweets" },
       ranking: "underrated",

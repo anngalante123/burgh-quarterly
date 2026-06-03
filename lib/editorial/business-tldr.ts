@@ -32,9 +32,15 @@ export function buildBusinessTldr(
 ): BusinessTldr {
   const { score } = artifact;
 
-  // Strengths & weaknesses from subscores
+  // Strengths & weaknesses from subscores. When there is no measured IG
+  // signal we exclude the momentum entry entirely. Letting momentum=0
+  // win as "weakest" would print "..., dormant Instagram" for every
+  // business without a handle, which reads as a factual claim about an
+  // account we never observed. Letting it win as "strongest" (the old
+  // bug) printed "Active Instagram, ..." with no IG indexed at all.
+  const igMeasured = social.ig !== null && social.ig !== undefined;
   const s = score.subscores;
-  const entries: Array<[keyof typeof s, number, string, string]> = [
+  const allEntries: Array<[keyof typeof s, number, string, string]> = [
     [
       "content_canvas",
       s.content_canvas,
@@ -66,6 +72,9 @@ export function buildBusinessTldr(
       "lower creator fit",
     ],
   ];
+  const entries = igMeasured
+    ? allEntries
+    : allEntries.filter(([k]) => k !== "momentum");
 
   const strongest = entries.reduce((a, b) => (a[1] >= b[1] ? a : b));
   const weakest = entries.reduce((a, b) => (a[1] <= b[1] ? a : b));
