@@ -58,3 +58,4 @@ content/raw/
 
 # Local DB snapshots (large, do not commit)
 scripts/backups/*.json
+scripts/exports/*.csv
