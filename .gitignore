@@ -55,3 +55,6 @@ content/raw/
 # generated Claude Code symlink stay out of source control.
 .agents/
 .claude/skills/
+
+# Local DB snapshots (large, do not commit)
+scripts/backups/*.json
