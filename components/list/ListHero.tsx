@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { PhotoOrPlaceholder } from "@/components/PhotoOrPlaceholder";
 
 /**
  * ListHero, the top-of-article anchor for an editorial list.
@@ -8,14 +8,16 @@ import Image from "next/image";
  * beneath the headline, then a small meta row (issue + count).
  *
  * If `heroPhoto` is null (no #1 business resolved, or the business
- * has no hero), we fall back to a brand-tokenized gradient block
- * with a small "Photo coming next issue" label. This keeps every
- * article visually anchored without ever shipping a broken image.
+ * has no hero) or the photo fails to load, we fall back to a branded
+ * initial placeholder. This keeps every article visually anchored
+ * without ever shipping a broken image. `heroName` seeds the
+ * placeholder initial and color; it falls back to the title.
  */
 
 type ListHeroProps = {
   heroPhoto: string | null;
   heroAlt: string;
+  heroName?: string;
   kicker: string;
   title: string;
   dek?: string | null;
@@ -25,6 +27,7 @@ type ListHeroProps = {
 export function ListHero({
   heroPhoto,
   heroAlt,
+  heroName,
   kicker,
   title,
   dek,
@@ -35,26 +38,13 @@ export function ListHero({
       {/* Hero photo: 4:5 on mobile, 16:9 on desktop. Edge-to-edge
           inside the article column. */}
       <div className="relative w-full overflow-hidden rounded-sm bg-brand-cream aspect-[4/5] md:aspect-[16/9]">
-        {heroPhoto ? (
-          <Image
-            src={heroPhoto}
-            alt={heroAlt}
-            fill
-            sizes="(max-width: 768px) 100vw, 1024px"
-            className="object-cover"
-            priority
-            unoptimized
-          />
-        ) : (
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 flex items-end justify-start p-5 bg-gradient-to-br from-brand-lime via-brand-cream to-brand-lavender"
-          >
-            <span className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-brand-black/65">
-              Photo coming next issue
-            </span>
-          </div>
-        )}
+        <PhotoOrPlaceholder
+          src={heroPhoto}
+          alt={heroAlt}
+          name={heroName ?? title}
+          eager
+          imgClassName="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
 
       {/* Kicker + headline + dek + meta sit UNDER the photo. */}

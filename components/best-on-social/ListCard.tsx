@@ -1,5 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+
+import { PhotoOrPlaceholder } from "@/components/PhotoOrPlaceholder";
 
 /**
  * ListCard, the smaller card used in the "All Lists" grid below the
@@ -34,21 +35,12 @@ export function ListCard({
       className="group flex flex-col border border-brand-black/15 bg-white/60 overflow-hidden transition-all hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-black/5">
-        {heroPhoto ? (
-          <Image
-            src={heroPhoto}
-            alt={heroAlt}
-            fill
-            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
-            className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-            unoptimized
-          />
-        ) : (
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 bg-brand-cream"
-          />
-        )}
+        <PhotoOrPlaceholder
+          src={heroPhoto}
+          alt={heroAlt}
+          name={title}
+          imgClassName="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+        />
       </div>
       <div className="p-4 md:p-5 flex flex-col flex-1">
         <p className="font-display text-[0.58rem] font-semibold uppercase tracking-[0.2em] text-brand-purple">

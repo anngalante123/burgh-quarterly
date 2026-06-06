@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
+import { PhotoOrPlaceholder } from "@/components/PhotoOrPlaceholder";
 
 import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
@@ -387,16 +387,12 @@ function BusinessRow({
 
         {/* Hero thumb (desktop only) */}
         <div className="hidden md:block relative h-20 w-24 overflow-hidden rounded-sm bg-brand-black/5">
-          {business.hero_photo ? (
-            <Image
-              src={business.hero_photo}
-              alt={`${business.name} in ${business.neighborhood}`}
-              fill
-              sizes="96px"
-              className="object-cover"
-              unoptimized
-            />
-          ) : null}
+          <PhotoOrPlaceholder
+            src={business.hero_photo}
+            alt={`${business.name} in ${business.neighborhood}`}
+            name={business.name}
+            imgClassName="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
 
         {/* Name + neighborhood + (mobile-only tier badge stacked below) */}

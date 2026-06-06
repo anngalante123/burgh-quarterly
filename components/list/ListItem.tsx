@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 
+import { PhotoOrPlaceholder } from "@/components/PhotoOrPlaceholder";
 import type { Category, Tier } from "@/lib/data/schemas";
 import type { ListArticleItem } from "@/lib/data/load-list";
 import { familyForBusinessCategory } from "@/lib/data/category-family";
@@ -128,26 +128,12 @@ export function ListItem({
 
           {/* Photo, full-bleed on mobile, capped at ~720 on desktop. */}
           <div className="mt-6 relative w-full aspect-[3/2] overflow-hidden rounded-sm bg-brand-cream md:max-w-[720px]">
-            {heroPhoto ? (
-              <Image
-                src={heroPhoto}
-                alt={altText}
-                fill
-                sizes="(max-width: 768px) 100vw, 720px"
-                className="object-cover"
-                loading="lazy"
-                unoptimized
-              />
-            ) : (
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 flex items-end justify-start p-4 bg-gradient-to-br from-brand-lime via-brand-cream to-brand-lavender"
-              >
-                <span className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-brand-black/65">
-                  Photo coming next issue
-                </span>
-              </div>
-            )}
+            <PhotoOrPlaceholder
+              src={heroPhoto}
+              alt={altText}
+              name={item.name}
+              imgClassName="absolute inset-0 w-full h-full object-cover"
+            />
           </div>
 
           {/* Italic tagline, the one-line read of the place. */}

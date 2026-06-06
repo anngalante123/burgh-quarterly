@@ -303,6 +303,7 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
             <ListHero
               heroPhoto={heroPhoto}
               heroAlt={heroAlt}
+              heroName={heroBusiness?.name ?? article.title}
               kicker="The Series · Spring 2026"
               title={article.title}
               dek={

@@ -1,5 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+
+import { PhotoOrPlaceholder } from "@/components/PhotoOrPlaceholder";
 
 /**
  * FeaturedCard, the oversized hero card used for the three flagship lists
@@ -39,21 +40,12 @@ export function FeaturedCard({
       className="group flex flex-col border border-brand-black/15 bg-white/70 overflow-hidden transition-all hover:border-brand-black hover:shadow-[6px_6px_0_0_var(--color-brand-lime)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-black/5">
-        {heroPhoto ? (
-          <Image
-            src={heroPhoto}
-            alt={heroAlt}
-            fill
-            sizes="(min-width: 1024px) 33vw, 100vw"
-            className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-            unoptimized
-          />
-        ) : (
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 bg-brand-cream"
-          />
-        )}
+        <PhotoOrPlaceholder
+          src={heroPhoto}
+          alt={heroAlt}
+          name={title}
+          imgClassName="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+        />
         <span
           className={`absolute left-3 top-3 inline-flex items-center font-display text-[0.6rem] font-semibold uppercase tracking-[0.18em] px-2 py-1 ${tierPill}`}
         >

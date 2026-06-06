@@ -29,6 +29,7 @@ import {
   fmtStatValue,
 } from "@/components/insights/RowPeerStat";
 import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
+import { PhotoOrPlaceholder } from "@/components/PhotoOrPlaceholder";
 import { loadReviewAnalysis } from "@/lib/data/load-review-analysis";
 import { pickPullquote } from "@/lib/editorial/pick-pullquote";
 import {
@@ -697,8 +698,7 @@ export default async function BusinessPage({ params }: PageProps) {
               full card width on retina. */}
           {(biz.hero_photo || biz.photos[0]?.url) && (
             <div className="mt-6 md:mt-8 relative w-full aspect-[16/7] md:aspect-[16/6] overflow-hidden bg-brand-black/5">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <PhotoOrPlaceholder
                 src={
                   upgradeGooglePhotoSize(
                     biz.hero_photo || biz.photos[0]!.url,
@@ -706,8 +706,9 @@ export default async function BusinessPage({ params }: PageProps) {
                   ) ?? (biz.hero_photo || biz.photos[0]!.url)
                 }
                 alt={`${biz.name} storefront / interior photo from Google Maps`}
-                loading="eager"
-                className="ken-burns absolute inset-0 w-full h-full object-cover"
+                name={biz.name}
+                eager
+                imgClassName="ken-burns absolute inset-0 w-full h-full object-cover"
               />
             </div>
           )}
