@@ -33,6 +33,7 @@ loadEnv();
 
 import { and, eq, isNotNull, sql } from "drizzle-orm";
 import { uploadPhotoToBlob } from "@/lib/scrape/blob-upload";
+import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
 
 const ACTOR_ID = "WnMxbsRLNbPeYL6ge"; // lukaskrivka/google-maps-with-contact-details
 const APIFY_BASE = "https://api.apify.com/v2";
@@ -84,14 +85,17 @@ async function runApifyForPlaceIds(
   console.log(`[apify] run started: ${runId}; polling...`);
 
   // Poll until terminal state.
-  for (let i = 0; i < 120; i += 1) {
+  // High-res scrapes (250 places at 1600px) can run 10 to 20 minutes, so
+  // poll for up to 30 minutes before giving up.
+  const MAX_POLLS = 360;
+  for (let i = 0; i < MAX_POLLS; i += 1) {
     await sleep(5000);
     const r = await fetch(`${APIFY_BASE}/actor-runs/${runId}?token=${apifyToken}`);
     const j = (await r.json()) as {
       data: { status: string; defaultDatasetId: string; usageTotalUsd?: number };
     };
     const st = j.data.status;
-    if (i % 4 === 0) console.log(`[apify] status=${st} (${(i + 1) * 5}s)`);
+    if (i % 6 === 0) console.log(`[apify] status=${st} (${(i + 1) * 5}s)`);
     if (st === "SUCCEEDED") {
       return { datasetId: j.data.defaultDatasetId, costUsd: j.data.usageTotalUsd ?? 0 };
     }
@@ -99,7 +103,7 @@ async function runApifyForPlaceIds(
       throw new Error(`Apify run ${runId} ended ${st}`);
     }
   }
-  throw new Error(`Apify run ${runId} did not finish within 10 minutes`);
+  throw new Error(`Apify run ${runId} did not finish within 30 minutes`);
 }
 
 async function fetchDatasetItems(datasetId: string, apifyToken: string) {
@@ -124,7 +128,15 @@ async function selectCandidates(
   db: Db,
   schema: Schema,
   limit: number,
+  force: boolean,
+  offset: number,
 ): Promise<Candidate[]> {
+  // Normal: only businesses not yet self-hosted (blob_key IS NULL), so the
+  // job is resumable as rows get a blob_key. With --force: re-process all
+  // (e.g. to re-host at higher resolution); the loop advances via offset.
+  const where = force
+    ? isNotNull(schema.businesses.place_id)
+    : and(isNotNull(schema.businesses.place_id), sql`${schema.businessPhotos.blob_key} is null`);
   return db
     .select({ slug: schema.businesses.slug, placeId: schema.businesses.place_id })
     .from(schema.businesses)
@@ -135,8 +147,10 @@ async function selectCandidates(
         eq(schema.businessPhotos.sort_order, 0),
       ),
     )
-    .where(and(isNotNull(schema.businesses.place_id), sql`${schema.businessPhotos.blob_key} is null`))
-    .limit(limit);
+    .where(where)
+    .orderBy(schema.businesses.slug)
+    .limit(limit)
+    .offset(offset);
 }
 
 async function hostChunk(
@@ -169,14 +183,21 @@ async function hostChunk(
           noFresh += 1;
           return;
         }
-        const result = await uploadPhotoToBlob(fresh, r.slug, 0);
+        // Apify's imageUrl is a small (~408px) thumbnail. Upgrade the Google
+        // size suffix to 1600px BEFORE hosting so the full-width hero is sharp,
+        // matching what the original render-time upgrade did.
+        const hi = upgradeGooglePhotoSize(fresh, 1600) ?? fresh;
+        const result = await uploadPhotoToBlob(hi, r.slug, 0);
         if (!result.blob_key) {
           failed += 1;
           return;
         }
+        // The hero renders full width, so prefer the 1600w upload; fall back
+        // to 800w only if the 1600w resize was unavailable.
+        const heroUrl = result.sizes.w1600 ?? result.sizes.w800 ?? result.blob_key;
         await db
           .update(schema.businessPhotos)
-          .set({ url: result.blob_key, blob_key: result.blob_key })
+          .set({ url: heroUrl, blob_key: heroUrl })
           .where(
             and(
               eq(schema.businessPhotos.business_slug, r.slug),
@@ -192,9 +213,10 @@ async function hostChunk(
 
 async function main() {
   const execute = process.argv.includes("--execute");
+  const force = process.argv.includes("--force");
   const limit = parseInt(arg("limit", "50"), 10);
   const chunkSize = parseInt(arg("chunk", "250"), 10);
-  console.log(`[rehost] mode=${execute ? "EXECUTE (spends Apify $)" : "dry-run"} limit=${limit} chunk=${chunkSize}`);
+  console.log(`[rehost] mode=${execute ? "EXECUTE (spends Apify $)" : "dry-run"} limit=${limit} chunk=${chunkSize} force=${force}`);
 
   const apifyToken = process.env.APIFY_TOKEN;
   const blobToken = process.env.BLOB_READ_WRITE_TOKEN;
@@ -208,8 +230,8 @@ async function main() {
   const { db, schema } = await import("@/lib/db/client");
 
   if (!execute) {
-    const rows = await selectCandidates(db, schema, limit);
-    console.log(`[rehost] candidates (place_id present, not yet self-hosted): ${rows.length}`);
+    const rows = await selectCandidates(db, schema, limit, force, 0);
+    console.log(`[rehost] candidates (${force ? "FORCE: all with place_id" : "not yet self-hosted"}): ${rows.length}`);
     console.log("[rehost] DRY RUN. Would re-scrape + host these (first 10):");
     rows.slice(0, 10).forEach((r, i) => console.log(`  ${i + 1}. ${r.slug} (place_id ${r.placeId?.slice(0, 16)}...)`));
     console.log(`[rehost] Pass --execute to run the Apify scrape (~spend).`);
@@ -223,11 +245,17 @@ async function main() {
   let totalNoFresh = 0;
   let totalFailed = 0;
   let totalCost = 0;
-  let processed = 0;
+  // In force mode, --offset lets us resume a partially complete run without
+  // re-paying for chunks already done (offset = number already processed).
+  let processed = force ? parseInt(arg("offset", "0"), 10) : 0;
   let chunkNum = 0;
   while (processed < limit) {
     const take = Math.min(chunkSize, limit - processed);
-    const chunk = await selectCandidates(db, schema, take);
+    // In force mode blob_key stays set, so advance through the table by
+    // offset. In normal mode the blob_key IS NULL filter shrinks the set,
+    // so offset stays 0.
+    const offset = force ? processed : 0;
+    const chunk = await selectCandidates(db, schema, take, force, offset);
     if (chunk.length === 0) break;
     chunkNum += 1;
     console.log(`\n[rehost] chunk ${chunkNum}: ${chunk.length} businesses (processed ${processed} so far)`);
@@ -244,7 +272,10 @@ async function main() {
     // have no fresh photo available from Google (noFresh) and would be
     // re-selected forever, so re-scraping them again is pure waste. They
     // keep their placeholder.
-    if (res.hosted === 0) {
+    // Only short-circuit in normal mode: there, blob_key IS NULL means a
+    // zero-progress chunk is the unfixable noFresh tail. In force mode we
+    // must keep advancing by offset to cover the whole table.
+    if (!force && res.hosted === 0) {
       console.log(`[rehost] no progress this chunk (${res.noFresh} have no available photo); stopping.`);
       break;
     }
