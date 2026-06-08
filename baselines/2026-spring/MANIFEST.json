@@ -1,0 +1,11 @@
+{
+  "issue": "2026-spring",
+  "frozen_at": "2026-06-08T22:55:11.946Z",
+  "note": "Immutable baseline. Do not regenerate. Diff a future issue against scores.json to compute movement.",
+  "counts": {
+    "businesses": 2580,
+    "business_signals": 2478,
+    "scores": 2579,
+    "analyses": 2566
+  }
+}
