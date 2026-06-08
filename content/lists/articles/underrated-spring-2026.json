@@ -23,7 +23,7 @@
       "neighborhood": "East Liberty",
       "descriptor": "Sushi, rice bowls, bao, bubble tea, and a cult following the rest of the city hasn't met yet.",
       "descriptor_highlight": "a cult following",
-      "stat_line": "767 reviews · 4.6★ · the East Liberty sushi room with a quietly devoted following"
+      "stat_line": "756 reviews · 4.6★ · the East Liberty sushi room with a quietly devoted following"
     },
     {
       "rank": 3,
@@ -33,7 +33,7 @@
       "neighborhood": "Bloomfield",
       "descriptor": "The only five-star account on this list. Cold-pressed, minority-owned, and still underbilled.",
       "descriptor_highlight": "still underbilled",
-      "stat_line": "519 reviews · 5.0★ · cold-pressed juices, smoothies, and a wellness-activation track record"
+      "stat_line": "527 reviews · 5.0★ · cold-pressed juices, smoothies, and a wellness-activation track record"
     },
     {
       "rank": 4,
@@ -43,7 +43,7 @@
       "neighborhood": "Squirrel Hill South",
       "descriptor": "Over a thousand reviews, a 4.7 average, and a tea room Pittsburgh forgets to mention.",
       "descriptor_highlight": "forgets to mention",
-      "stat_line": "1,107 reviews · 4.7★ · the Squirrel Hill tea house operating eleven hours a day"
+      "stat_line": "1,103 reviews · 4.7★ · the Squirrel Hill tea house operating eleven hours a day"
     },
     {
       "rank": 5,
@@ -73,7 +73,7 @@
       "neighborhood": "Pittsburgh",
       "descriptor": "German and Czech lagers, a 4.8 average, a Garden Theater reveal pacing out week by week.",
       "descriptor_highlight": "Garden Theater reveal",
-      "stat_line": "195 reviews · 4.8★ · the lager house and an opening on the North Side"
+      "stat_line": "188 reviews · 4.8★ · the lager house and an opening on the North Side"
     },
     {
       "rank": 8,
@@ -93,7 +93,7 @@
       "neighborhood": "East Liberty",
       "descriptor": "An alpine beer hall with wood-fired pizza, Mid-Century Mondays, and a feed that programs itself.",
       "descriptor_highlight": "programs itself",
-      "stat_line": "392 reviews · 4.5★ · cocktail bar, beer hall, wine shop, and a wood-fired pizza partner"
+      "stat_line": "391 reviews · 4.5★ · cocktail bar, beer hall, wine shop, and a wood-fired pizza partner"
     },
     {
       "rank": 10,
@@ -103,7 +103,7 @@
       "neighborhood": "Highland Park",
       "descriptor": "Highland Park and Oakland. Eleven posts in thirty days, a 3-year anniversary, resident artists on the wall.",
       "descriptor_highlight": "resident artists on the wall",
-      "stat_line": "573 reviews · 4.6★ · cafe and gallery, two Pittsburgh locations"
+      "stat_line": "570 reviews · 4.6★ · cafe and gallery, two Pittsburgh locations"
     }
   ],
   "query": {
