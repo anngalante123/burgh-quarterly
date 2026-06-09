@@ -392,6 +392,27 @@ export default async function BusinessPage({ params }: PageProps) {
   const rankFamilyPos =
     categoryPeerDots.find((p) => p.slug === biz.slug)?.rank ?? null;
 
+  // Signal-strength stance. The tier reads as a quality verdict if left bare,
+  // so we name the axis ("Signal strength") and, for a business the city
+  // clearly already loves (strong review volume + rating) that still sits
+  // below the top tier, say so out loud: popular on the street, signal still
+  // building. Thresholds are a deliberate, tunable judgment call.
+  const STRONG_REVIEW_COUNT = 150;
+  const STRONG_REVIEW_RATING = 4.3;
+  const strongReviews =
+    totalRev >= STRONG_REVIEW_COUNT && (biz.google_rating ?? 0) >= STRONG_REVIEW_RATING;
+  let signalStance: string;
+  if (score.tier === "icons") {
+    signalStance =
+      "Top of the index this quarter. Reviews, photos, and momentum all moving.";
+  } else if (strongReviews) {
+    signalStance = `${totalRev.toLocaleString()} reviews at ${biz.google_rating} stars. The city already shows up. Their signal is still building, the photos, the feed, the momentum.`;
+  } else if (score.tier === "ones_to_watch") {
+    signalStance = "Strong on some signals, room to grow on others.";
+  } else {
+    signalStance = "Rooted in the neighborhood. The index hasn't caught up yet.";
+  }
+
   const tt = social.tiktok_mentions;
   const ttPlaysFmt = tt
     ? tt.total_plays >= 1_000_000
@@ -667,6 +688,11 @@ export default async function BusinessPage({ params }: PageProps) {
               pre-fold dead zone. */}
           {rankFamilyPos !== null && (
             <div className="mt-5 md:mt-6 border-t border-b border-brand-black/15 py-3">
+              {/* Axis label: names what the tier measures so it reads as a
+                  signal-strength level, not a verdict on the business. */}
+              <p className="font-display text-[0.55rem] md:text-[0.6rem] font-semibold uppercase tracking-[0.24em] text-brand-black/45 mb-1.5">
+                Signal strength
+              </p>
               <p className="font-display text-[0.6rem] md:text-[0.65rem] font-semibold uppercase tracking-[0.22em] flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <span
                   className={
@@ -686,6 +712,11 @@ export default async function BusinessPage({ params }: PageProps) {
                 <span className="text-brand-black/55">
                   #{rankFamilyPos} in Pittsburgh {familyShort}
                 </span>
+              </p>
+              {/* Decoupling line: separates "the city loves them" (their own
+                  review numbers) from where their signal sits. */}
+              <p className="mt-2.5 font-body text-xs md:text-sm text-brand-black/70 leading-snug max-w-2xl">
+                {signalStance}
               </p>
             </div>
           )}
