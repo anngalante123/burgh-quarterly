@@ -147,7 +147,13 @@ function parseTopN(args: string[]): number | null {
   const eq = args.find((a) => a.startsWith("--top="));
   if (eq) {
     const n = Number(eq.slice("--top=".length));
-    return Number.isFinite(n) && n > 0 ? Math.floor(n) : null;
+    // Invalid equals-form must fail loudly: returning null here means
+    // UNLIMITED downstream, the opposite of what the caller asked for.
+    if (!Number.isFinite(n) || n <= 0) {
+      console.error("[own-posts] --top requires a positive number, e.g. --top 200");
+      process.exit(1);
+    }
+    return Math.floor(n);
   }
   const i = args.indexOf("--top");
   if (i === -1) return null;

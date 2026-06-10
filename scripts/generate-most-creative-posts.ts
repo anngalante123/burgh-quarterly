@@ -166,7 +166,7 @@ JUDGE ON:
 3. format_fit (1-10): does the format (image / sidecar / video / reel) serve the idea, or is it generic? 1 = mismatched, 10 = the format IS the joke.
 4. surprise (1-10): would a stranger scrolling stop and lean in? 1 = forgettable, 10 = saved/sent to a friend.
 
-Then write 'why' as ONE short sentence (under 25 words) explaining what makes this post score the way it does. NO em dashes. Specific.
+Then write 'why' as ONE short sentence (under 25 words) explaining what makes this post score the way it does. NO em dashes. Specific. Plain magazine voice, like a sharp editor talking: do NOT use marketing register words such as "content", "product story", "authenticity", "earned", "scroll-stopping", or "engagement".
 
 Return ONLY valid JSON, this exact shape:
 {"visual_concept": <int>, "caption_craft": <int>, "format_fit": <int>, "surprise": <int>, "why": "<one sentence>"}`;

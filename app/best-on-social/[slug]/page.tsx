@@ -204,6 +204,10 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
   // we keep the existing compact card layout.
   const businessMode = !isPostArticle(article);
   const items = article.items;
+  // Empty-state guard: a curated list that has not published yet (items
+  // is exactly []) renders the editorial header + intro, but no hero
+  // photo, no "0 businesses" meta, and no empty "The list" scaffold.
+  const isEmpty = items.length === 0;
 
   type EnrichedBusiness = {
     name: string;
@@ -262,7 +266,7 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
   const metaRow = [
     "Spring 2026",
     updated ? `Updated ${updated}` : null,
-    `${items.length} ${itemNoun}`,
+    isEmpty ? null : `${items.length} ${itemNoun}`,
   ]
     .filter(Boolean)
     .join(" · ");
@@ -301,8 +305,9 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
           </nav>
 
           {/* Hero (business articles get a real photo; post articles
-              keep a quiet text-only hero without a photo slot). */}
-          {businessMode ? (
+              and not-yet-published empty lists keep a quiet text-only
+              hero without a photo slot). */}
+          {businessMode && !isEmpty ? (
             <ListHero
               heroPhoto={heroPhoto}
               heroAlt={heroAlt}
@@ -353,8 +358,22 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
             </div>
           </Reveal>
 
-          {/* The list. Business mode gets the new ListItem layout;
-              post mode keeps the compact card. */}
+          {/* Empty state: the list is still being reported. Replaces the
+              hero photo and "The list" scaffold; the page's existing
+              SubscribeFooter below stays as the subscribe CTA. */}
+          {isEmpty ? (
+            <section className="mt-14 md:mt-20">
+              <div className="border-2 border-brand-black rounded-sm p-6 md:p-8">
+                <h2 className="font-display text-lg md:text-xl font-black uppercase tracking-[-0.01em] text-brand-black">
+                  This list is being reported.
+                </h2>
+                <p className="mt-3 font-body text-sm md:text-base text-brand-black/85 leading-relaxed max-w-2xl">
+                  We only publish a defense we can point to. Subscribe to the
+                  index and you will see it the moment it holds up.
+                </p>
+              </div>
+            </section>
+          ) : (
           <section className="mt-14 md:mt-20">
             <div className="border-y-2 border-brand-black py-3 mb-10 md:mb-14 flex flex-wrap items-baseline justify-between gap-3">
               <h2 className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-brand-black">
@@ -394,6 +413,7 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
               </div>
             )}
           </section>
+          )}
 
           {/* How we picked this. Small methodology box. */}
           <aside className="mt-20 md:mt-24 border-t border-brand-black/15 pt-8">
@@ -407,6 +427,11 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
                 creators in the city actually filmed this quarter. Editorial
                 picks, not announcements.
               </p>
+              {article.method_note ? (
+                <p className="mt-3 font-body text-sm md:text-base text-brand-black/85 leading-relaxed max-w-2xl">
+                  {article.method_note}
+                </p>
+              ) : null}
               <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2">
                 <Link
                   href="/how-we-rank"

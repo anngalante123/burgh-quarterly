@@ -84,6 +84,10 @@ export type ListArticle = {
    *  "ranked by originality, not reach". Preferred over the query-derived
    *  label and the "ranked by plays" fallback when present. */
   rank_label?: string;
+  /** Optional article-specific sentence appended in the "How we picked
+   *  this" methodology box, e.g. defining what a ranking multiple is
+   *  measured against. */
+  method_note?: string;
   query?: {
     filter?: Record<string, unknown>;
     ranking: string;

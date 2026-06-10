@@ -4,7 +4,7 @@
   "title": "Pittsburgh's Most Unexpectedly Viral Moments",
   "subtitle": "The posts that blew up against each account's own baseline. The accident beats the campaign.",
   "angle": "the moments that ran far past what each business's own account typically draws. Some they posted themselves, some showed up in someone else's video. Not the biggest feeds, the biggest surprises: ranked by the multiple over each business's own baseline, never by raw reach.",
-  "intro": "The businesses on this list are ranked by surprise, not size. Every multiple here measures a moment against that business's own history, which means a West Oakland coffee and dessert shop with a median of 197 engagements per post landing 2.8 million plays on March 21 counts for more than a larger account's routine win. That's Treats n Beans, at 1,047 times its baseline. Further down the list, the surprise compounds: Krunchy Bird and Fry Bar didn't post their own viral moments at all. Someone else filmed them, and the views still register as multiples over those businesses' own accounts. The accident, it turns out, beats the campaign nearly every time.",
+  "intro": "The ranking you're about to read is not a popularity contest. Every entry is measured against the business's own typical post, which means a neighborhood dessert shop beating its baseline by a factor of 1,047 outranks a bigger account's routine performance, full stop. That's what happened to Treats n Beans in West Oakland on March 21, when a caption about Dubai chocolate and pistachios turned into 2.8 million plays against a median of roughly 197 engagements per post. And some of these businesses didn't even have to post anything: Fry Bar in Central Northside landed 181 times its own baseline inside someone else's NFL Draft restaurant guide, filmed and uploaded by a creator who just happened to include them.",
   "items": [
     {
       "rank": 1,
@@ -36,31 +36,6 @@
       "kind": "post",
       "platform": "instagram",
       "moment_type": "own",
-      "video_url": "https://www.instagram.com/p/DXhedc0CkUg/",
-      "video_id": "DXhedc0CkUg",
-      "thumbnail_url": "/post-thumbs/DXhedc0CkUg.jpg",
-      "plays": 510224,
-      "likes": 5795,
-      "comments": 65,
-      "posted": "2026-04-24T17:38:15.000Z",
-      "caption": "In a wild scene yesterday on the Allegheny River outside of Acrisure Stadium, a Tiki boat tried to outrun authorities and make it to the North Shore. When asked why the Tiki boat refused to stop, the Captain said that he needed to make it t",
-      "creator_handle": "cruisintikispgh",
-      "business_slug": "cruisin-tikis-pittsburgh",
-      "business_name": "Cruisin' Tikis Pittsburgh",
-      "family_label": "Pittsburgh Businesses",
-      "neighborhood": "North Shore",
-      "ig_type": "Video",
-      "followers": 3524,
-      "baseline_median": 27.5,
-      "baseline_ratio": 831.5272727272727,
-      "creativity_score": 831.5272727272727,
-      "why": "510,224 plays and 5,795 likes, roughly 832x what this account's typical post draws. Posted Apr 24."
-    },
-    {
-      "rank": 3,
-      "kind": "post",
-      "platform": "instagram",
-      "moment_type": "own",
       "video_url": "https://www.instagram.com/p/DYp01jGgoi6/",
       "video_id": "DYp01jGgoi6",
       "thumbnail_url": "/post-thumbs/DYp01jGgoi6.jpg",
@@ -82,13 +57,13 @@
       "why": "236,767 plays and 4,327 likes, roughly 327x what this account's typical post draws. Posted May 22."
     },
     {
-      "rank": 4,
+      "rank": 3,
       "kind": "post",
       "platform": "tiktok",
       "moment_type": "mention",
       "video_url": "https://www.tiktok.com/@lilbigbackz/video/7626423015802146078",
       "video_id": "7626423015802146078",
-      "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/ocJ0nveasASwDIa8AIiT6gqBWv6EcMziiCAvWI~tplv-tiktokx-origin.image?dr=9636&x-expires=1781290800&x-signature=2o5HFJZyNVgwGc1f5J8Lx2s%2BmaM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/ocJ0nveasASwDIa8AIiT6gqBWv6EcMziiCAvWI~tplv-tiktokx-origin.image?dr=9636&x-expires=1781294400&x-signature=R0s6MDHQ%2FwJonWxPTLAtRp1vUT8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
       "plays": 85200,
       "likes": 5579,
       "posted": "2026-04-08T16:16:30.000Z",
@@ -105,7 +80,7 @@
       "why": "85,200 plays on @lilbigbackz's video, roughly 198x what this account's own posts typically draw. They didn't post it. Posted Apr 8."
     },
     {
-      "rank": 5,
+      "rank": 4,
       "kind": "post",
       "platform": "instagram",
       "moment_type": "own",
@@ -130,13 +105,13 @@
       "why": "15,878 plays and 35 likes, roughly 188x what this account's typical post draws. Posted May 15."
     },
     {
-      "rank": 6,
+      "rank": 5,
       "kind": "post",
       "platform": "tiktok",
       "moment_type": "mention",
       "video_url": "https://www.tiktok.com/@jaywhitedigital/video/7628494168846863629",
       "video_id": "7628494168846863629",
-      "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/osw07ABLEBBiADwrfCAwIFAiUudowlR21RzIJ2~tplv-tiktokx-origin.image?dr=9636&x-expires=1781290800&x-signature=RaqIyAv9R4GYq9l%2BD8dmnPXVFXQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/osw07ABLEBBiADwrfCAwIFAiUudowlR21RzIJ2~tplv-tiktokx-origin.image?dr=9636&x-expires=1781294400&x-signature=NBknI1gfLmHJXzrDF1wvhjkmA9U%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
       "plays": 40500,
       "likes": 3550,
       "posted": "2026-04-14T11:00:00.000Z",
@@ -153,7 +128,7 @@
       "why": "40,500 plays on @jaywhitedigital's video, roughly 181x what this account's own posts typically draw. They didn't post it. Posted Apr 14."
     },
     {
-      "rank": 7,
+      "rank": 6,
       "kind": "post",
       "platform": "instagram",
       "moment_type": "own",
@@ -178,13 +153,13 @@
       "why": "246,386 plays and 5,247 likes, roughly 179x what this account's typical post draws. Posted Apr 29."
     },
     {
-      "rank": 8,
+      "rank": 7,
       "kind": "post",
       "platform": "tiktok",
       "moment_type": "mention",
       "video_url": "https://www.tiktok.com/@dope.eats.pgh/video/7631949933502909727",
       "video_id": "7631949933502909727",
-      "thumbnail_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/okzhqAexEqKhfQITT1W8ICATdIxGIwIej6MtID~tplv-tiktokx-origin.image?dr=9636&x-expires=1781290800&x-signature=RN%2BMGRTwOCzyF1ZVzUwVJkL1CaA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/okzhqAexEqKhfQITT1W8ICATdIxGIwIej6MtID~tplv-tiktokx-origin.image?dr=9636&x-expires=1781294400&x-signature=xi7yqypmdHd%2F44F9fPiL6x3x7Wk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
       "plays": 38700,
       "likes": 1892,
       "posted": "2026-04-23T13:43:48.000Z",
@@ -201,7 +176,7 @@
       "why": "38,700 plays on @dope.eats.pgh's video, roughly 177x what this account's own posts typically draw. They didn't post it. Posted Apr 23."
     },
     {
-      "rank": 9,
+      "rank": 8,
       "kind": "post",
       "platform": "instagram",
       "moment_type": "own",
@@ -226,7 +201,7 @@
       "why": "121,246 plays and 11,974 likes, roughly 123x what this account's typical post draws. Posted May 25."
     },
     {
-      "rank": 10,
+      "rank": 9,
       "kind": "post",
       "platform": "instagram",
       "moment_type": "own",
@@ -249,9 +224,35 @@
       "baseline_ratio": 68.56153846153846,
       "creativity_score": 68.56153846153846,
       "why": "8,896 likes and 17 comments, roughly 69x this account's typical post. Posted Mar 19."
+    },
+    {
+      "rank": 10,
+      "kind": "post",
+      "platform": "instagram",
+      "moment_type": "own",
+      "video_url": "https://www.instagram.com/p/DYDmo2Yzyl_/",
+      "video_id": "DYDmo2Yzyl_",
+      "thumbnail_url": "/post-thumbs/DYDmo2Yzyl_.jpg",
+      "plays": 10811,
+      "likes": 370,
+      "comments": 0,
+      "posted": "2026-05-07T23:43:43.000Z",
+      "caption": "When you see the host putting together every table in your section \n\n📍4655 William Flynn Highway, Allison Park, PA 15044",
+      "creator_handle": "mc_hampton_",
+      "business_slug": "monte-cellos-hampton",
+      "business_name": "Monte Cello's | Hampton",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "Pittsburgh",
+      "ig_type": "Video",
+      "followers": 133,
+      "baseline_median": 11,
+      "baseline_ratio": 66.36363636363636,
+      "creativity_score": 66.36363636363636,
+      "why": "10,811 plays and 370 likes, roughly 66x what this account's typical post draws. Posted May 7."
     }
   ],
   "rank_label": "ranked by lift over a typical post",
-  "generated_at": "2026-06-10T19:51:33.678Z",
+  "method_note": "Every multiple on this list compares one moment's combined engagement, likes plus comments plus a thirtieth of its plays, against that account's own median post. Reach never ranks here; surprise does.",
+  "generated_at": "2026-06-10T20:34:22.919Z",
   "model": "claude-sonnet-4-6 (intro); ranking is deterministic (median-baseline outliers)"
 }

@@ -51,6 +51,7 @@ export const EXCLUDED_HANDLES: ReadonlySet<string> = new Set([
   "primantibros", // chain
   "kaminsciencecenter", // institution
   "slyfoxbeer", // regional brand account, content not Pittsburgh-specific
+  "cruisintikispgh", // franchise
 ]);
 
 /** One scraped IG post, exactly as the Apify own-posts scraper wrote it.

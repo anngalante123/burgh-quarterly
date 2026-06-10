@@ -68,7 +68,13 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
 
-import { loadAllRichBusinesses } from "@/lib/query/business-query";
+// Type-only import is erased at runtime. The value import happens
+// dynamically inside main, AFTER dotenv has loaded .env.local, because
+// lib/db/client.ts (a transitive import of business-query) throws at
+// module-import time if DATABASE_URL is missing (static imports hoist
+// above this file's own loadEnv call). Same pattern as
+// scripts/scout-comment-defense.ts.
+import type { RichBusiness } from "@/lib/query/business-query";
 import { familyForCategory } from "@/lib/data/category-family";
 import { downloadThumbnail } from "@/lib/scrape/download-thumbnail";
 import { loadOwnPostsPool, type RawOwnPost } from "@/lib/lists/own-posts-pool";
@@ -94,11 +100,18 @@ const MIN_LIKES_FLOOR = 300;
 const MIN_PLAYS_FLOOR = 10_000;
 /** A creator's mention video must clear this many plays to qualify. */
 const MENTION_MIN_PLAYS = 25_000;
+/** Human-adjudicated mention rejections by TikTok video id. The model
+ *  gate is precision-first but not deterministic; cases a human has
+ *  ruled on get pinned here so a re-run cannot flip them. 2026-06-10:
+ *  7635345782836612383 is "The Breakfast Spot" (715 Penn-area
+ *  breakfast restaurant), a DIFFERENT business than "The Spot
+ *  Pittsburgh" (Dorseyville Rd); name collision. */
+const HUMAN_REJECTED_MENTIONS: ReadonlySet<string> = new Set([
+  "7635345782836612383",
+]);
 /** Qualifying posts must be recent (baseline uses all history). Mirrors
  *  the 90-day quarter window the most-creative generator uses. */
 const RECENCY_DAYS = 90;
-
-type RichBusiness = Awaited<ReturnType<typeof loadAllRichBusinesses>>[number];
 
 type MomentType = "own" | "mention";
 
@@ -191,6 +204,9 @@ type Article = {
   items: ViralItem[];
   /** Editorial label for the list-header meta on the article page. */
   rank_label?: string;
+  /** Article-specific sentence for the methodology box: defines what
+   *  the ranking multiple is measured against. */
+  method_note?: string;
   generated_at: string;
   model: string;
 };
@@ -421,6 +437,9 @@ Return ONLY a JSON array, no markdown fences, no commentary. One object per item
       const response = await client.messages.create({
         model: JUDGE_MODEL,
         max_tokens: 2048,
+        // Deterministic-ish verdicts: borderline cases flip-flopped
+        // between runs at the default temperature.
+        temperature: 0,
         messages: [{ role: "user", content: prompt }],
       });
       const block = response.content.find((b) => b.type === "text");
@@ -516,6 +535,9 @@ async function main() {
 
   await mkdir(OUT_DIR, { recursive: true });
 
+  // Dynamic import AFTER dotenv has populated DATABASE_URL; see the
+  // type-only import note at the top of this file.
+  const { loadAllRichBusinesses } = await import("@/lib/query/business-query");
   const all = await loadAllRichBusinesses({ fresh: true });
   const bySlug = new Map(all.map((rb) => [rb.artifact.business.slug, rb]));
 
@@ -576,7 +598,12 @@ async function main() {
       const ratio = engagement / baseline;
       const clearsFloor = likes >= MIN_LIKES_FLOOR || plays >= MIN_PLAYS_FLOOR;
       if (ratio < RATIO_THRESHOLD || !clearsFloor) continue;
-      if (!p.displayUrl) continue;
+      if (!p.displayUrl) {
+        console.log(
+          `[viral] ${slug}: own post ${p.shortCode} qualifies (${ratio.toFixed(1)}x baseline) but has no displayUrl, dropped (no thumbnail to self-host)`,
+        );
+        continue;
+      }
       candidates.push({
         momentType: "own",
         shortcode: p.shortCode!,
@@ -627,6 +654,12 @@ async function main() {
         const ratio = engagement / baseline;
         const videoId = v.id ?? extractTikTokVideoId(v.url);
         if (!videoId) continue; // dedupe key + embed id; URL didn't match either
+        if (HUMAN_REJECTED_MENTIONS.has(videoId)) {
+          console.log(
+            `[viral] mention rejected (human-adjudicated): ${slug} @${author} video ${videoId}`,
+          );
+          continue;
+        }
         candidates.push({
           momentType: "mention",
           shortcode: videoId,
@@ -852,6 +885,8 @@ async function main() {
     intro,
     items,
     rank_label: "ranked by lift over a typical post",
+    method_note:
+      "Every multiple on this list compares one moment's combined engagement, likes plus comments plus a thirtieth of its plays, against that account's own median post. Reach never ranks here; surprise does.",
     generated_at: new Date().toISOString(),
     model: `${INTRO_MODEL} (intro); ranking is deterministic (median-baseline outliers)`,
   };

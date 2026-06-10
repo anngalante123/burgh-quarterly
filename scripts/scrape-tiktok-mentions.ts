@@ -12,7 +12,9 @@
  * Candidates come from the full DB business catalog (lib/query/business-query,
  * ~2,580 businesses), not the 30 legacy content/businesses/*.json artifacts.
  *
- * Cost: about $0.005 per query x ~2,580 businesses = ~$13 for a full pass.
+ * Cost: measured at ~$0.22 per business (2026-06-10 pilot), so a full
+ * catalog pass (~2,580 businesses) runs ~$560. Use --pool or --limit to
+ * keep spend bounded.
  * Runtime: 6 actor runs in flight at once (worker pool), each run capped
  * at a 6 minute poll so one hung run can't stall the batch.
  *
@@ -50,7 +52,9 @@ const SOCIAL_DIR = join(process.cwd(), "content", "social");
 const RAW_DIR = join(process.cwd(), "content", "raw", "tiktok");
 
 const CONCURRENCY = 6;
-const COST_PER_QUERY = 0.005;
+// Measured ~$0.22/business in the 2026-06-10 pilot (was a stale $0.005
+// guess). Drives the dry-run cost estimate only.
+const COST_PER_QUERY = 0.22;
 // Politeness pause per worker between successive runs.
 const WORKER_PAUSE_MS = 1500;
 // Wall-clock estimate assumption for dry-run output only.
@@ -477,7 +481,13 @@ function parseLimit(args: string[]): number | null {
   const eq = args.find((a) => a.startsWith("--limit="));
   if (eq) {
     const n = Number(eq.slice("--limit=".length));
-    return Number.isFinite(n) && n > 0 ? Math.floor(n) : null;
+    // Invalid equals-form must fail loudly: returning null here means
+    // UNLIMITED downstream, the opposite of what the caller asked for.
+    if (!Number.isFinite(n) || n <= 0) {
+      console.error("[tt] --limit requires a positive number, e.g. --limit 50");
+      process.exit(1);
+    }
+    return Math.floor(n);
   }
   const i = args.indexOf("--limit");
   if (i === -1) return null;
@@ -550,7 +560,7 @@ async function main() {
     // lists (content/raw/own-posts via the shared loader, which already
     // drops franchises/institutions and collapses shared IG handles).
     // Budget guard: full-catalog scraping measured at ~$0.22/business
-    // (2026-06-10 pilot), 40x the stale $0.005 estimate in the header.
+    // (2026-06-10 pilot); see COST_PER_QUERY.
     const { loadOwnPostsPool } = await import("@/lib/lists/own-posts-pool");
     const poolSlugs = new Set((await loadOwnPostsPool()).map((r) => r.slug));
     candidates = candidates.filter((c) => poolSlugs.has(c.slug));
@@ -577,7 +587,7 @@ async function main() {
       `\n[dry-run] candidates=${candidates.length} to-scrape=${toScrape.length} skip-cached=${skippedCached} new-social-files=${toScrape.filter((c) => !c.hasSocialFile).length}`,
     );
     console.log(
-      `[dry-run] estimated cost: ~$${(toScrape.length * COST_PER_QUERY).toFixed(2)} (${toScrape.length} queries x $${COST_PER_QUERY.toFixed(3)}/query)`,
+      `[dry-run] estimated cost: ~$${(toScrape.length * COST_PER_QUERY).toFixed(2)} (${toScrape.length} queries x $${COST_PER_QUERY.toFixed(2)}/query, measured 2026-06-10 rate)`,
     );
     console.log(
       `[dry-run] estimated wall-clock: ~${formatDuration(estSeconds)} at ${CONCURRENCY} workers (assumes ~${AVG_RUN_SECONDS}s per actor run + ${WORKER_PAUSE_MS / 1000}s pause)`,
