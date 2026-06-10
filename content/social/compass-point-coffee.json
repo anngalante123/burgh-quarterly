@@ -14,5 +14,71 @@
   "full_name": "Compass Point Coffee",
   "last_post_at": "2026-05-12T22:11:48.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "compass point coffee pittsburgh",
+    "video_count": 4,
+    "total_plays": 3909,
+    "total_likes": 231,
+    "unique_creators": 3,
+    "top_creators": [
+      {
+        "handle": "the.ravens.quill",
+        "fans": 1096,
+        "verified": false,
+        "videos": 2,
+        "plays": 2727,
+        "likes": 169
+      },
+      {
+        "handle": "mcmonaglle",
+        "fans": 5965,
+        "verified": false,
+        "videos": 1,
+        "plays": 924,
+        "likes": 49
+      },
+      {
+        "handle": "christinaclothesncoffee",
+        "fans": 7388,
+        "verified": false,
+        "videos": 1,
+        "plays": 258,
+        "likes": 13
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7633073000639630605",
+        "url": "https://www.tiktok.com/@the.ravens.quill/video/7633073000639630605",
+        "text": "We’re out here at Compass Point Coffee in Millvale from 10–2 📚☕️\nIt may be cloudy, but that just makes it the perfect day to grab a coffee and a new book to cozy up with for the rest of your Sunday ✨\n\n#pittsburghbooks #indiebookstore #book",
+        "author": "the.ravens.quill",
+        "plays": 2024,
+        "likes": 138,
+        "posted": "2026-04-26T14:22:16.000Z"
+      },
+      {
+        "id": "7622073567705861407",
+        "url": "https://www.tiktok.com/@mcmonaglle/video/7622073567705861407",
+        "text": "Compass Point Coffee in Millvale, PA is a great option for house made syrups and roasted beans! They’ve got friendly staff and great drinks! I will say the more I sipped this latte, it didn’t taste so burnt! I’d totally come back!! I got an",
+        "author": "mcmonaglle",
+        "plays": 924,
+        "likes": 49,
+        "posted": "2026-03-27T22:58:34.000Z"
+      },
+      {
+        "id": "7631336991602265358",
+        "url": "https://www.tiktok.com/@the.ravens.quill/video/7631336991602265358",
+        "text": "Not into the NFL draft crowds and traffic? Same. 😅\n\nCome spend your Sunday morning with us instead coffee in hand, books to browse, and all the cozy vibes ☕📚✨\n\nIt’s Independent Bookstore Day on Saturday, so we’re keeping the celebration g",
+        "author": "the.ravens.quill",
+        "plays": 703,
+        "likes": 31,
+        "posted": "2026-04-21T22:05:35.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-26T14:22:16.000Z",
+    "median_plays": 814,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:13:04.106Z"
+  }
 }

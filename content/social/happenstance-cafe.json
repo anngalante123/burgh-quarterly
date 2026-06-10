@@ -14,5 +14,79 @@
   "full_name": "Happenstance Cafe",
   "last_post_at": "2026-05-08T13:47:14.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "happenstance cafe pittsburgh",
+    "video_count": 4,
+    "total_plays": 17009,
+    "total_likes": 983,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "heystephaniewess",
+        "fans": 1513,
+        "verified": false,
+        "videos": 1,
+        "plays": 14300,
+        "likes": 828
+      },
+      {
+        "handle": "pghsocialclub",
+        "fans": 3034,
+        "verified": false,
+        "videos": 1,
+        "plays": 1000,
+        "likes": 54
+      },
+      {
+        "handle": "thepittsburghweb",
+        "fans": 3687,
+        "verified": false,
+        "videos": 1,
+        "plays": 866,
+        "likes": 57
+      },
+      {
+        "handle": "charquigley",
+        "fans": 2040,
+        "verified": false,
+        "videos": 1,
+        "plays": 843,
+        "likes": 44
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7647335198329179405",
+        "url": "https://www.tiktok.com/@heystephaniewess/video/7647335198329179405",
+        "text": "Cutest place ever. The vibes are 100% their patio seating was so cozy and enchanting ✨ \n\n📍 Happenstance Cafe in penn ave #fyp #pittsburghpa #lawrenceville #latinatiktok #pittsburghrealtor ",
+        "author": "heystephaniewess",
+        "plays": 14300,
+        "likes": 828,
+        "posted": "2026-06-04T00:46:45.000Z"
+      },
+      {
+        "id": "7647656582741855501",
+        "url": "https://www.tiktok.com/@pghsocialclub/video/7647656582741855501",
+        "text": "THIS SATURDAY 🔔\n\njoin us on @happenstancecafepgh’s patio for great music, coffee, and local LGBTQ+ artists selling their creations! \n\nlink in bioooo",
+        "author": "pghsocialclub",
+        "plays": 1000,
+        "likes": 54,
+        "posted": "2026-06-04T21:33:42.000Z"
+      },
+      {
+        "id": "7649411667188600095",
+        "url": "https://www.tiktok.com/@thepittsburghweb/video/7649411667188600095",
+        "text": "we have the best little garden café oasis in the city!! they actually call it the “not so secret garden” and here’s what you need to know …\n\n📍 Happenstance Cafe\n🗺️ right on Penn Ave in Lawrenceville\n🪴 the most quaint and special little o",
+        "author": "thepittsburghweb",
+        "plays": 866,
+        "likes": 57,
+        "posted": "2026-06-09T15:04:36.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-09T15:04:36.000Z",
+    "median_plays": 933,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:20:02.128Z"
+  }
 }

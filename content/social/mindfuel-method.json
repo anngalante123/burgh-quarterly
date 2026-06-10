@@ -14,5 +14,71 @@
   "full_name": "MindFuel Sauna + Cold Plunge Pittsburgh",
   "last_post_at": "2026-05-11T14:19:11.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "mindfuel method pittsburgh",
+    "video_count": 4,
+    "total_plays": 1541,
+    "total_likes": 47,
+    "unique_creators": 3,
+    "top_creators": [
+      {
+        "handle": "forthegirlspgh",
+        "fans": 1739,
+        "verified": false,
+        "videos": 2,
+        "plays": 822,
+        "likes": 23
+      },
+      {
+        "handle": "sarahsmiley",
+        "fans": 4370,
+        "verified": false,
+        "videos": 1,
+        "plays": 605,
+        "likes": 16
+      },
+      {
+        "handle": "itskianautt",
+        "fans": 11500,
+        "verified": false,
+        "videos": 1,
+        "plays": 114,
+        "likes": 8
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7645338080148196621",
+        "url": "https://www.tiktok.com/@sarahsmiley/video/7645338080148196621",
+        "text": "You don’t have to be actively training in order to LOVE & partake in contrast therapy! Sometimes is a great way to simply unwind and give your mind a break! We feel so much better mentally and physically after a visit to @MindFuelMethod 🙌 ",
+        "author": "sarahsmiley",
+        "plays": 605,
+        "likes": 16,
+        "posted": "2026-05-29T15:37:00.000Z"
+      },
+      {
+        "id": "7629037365478149407",
+        "url": "https://www.tiktok.com/@forthegirlspgh/video/7629037365478149407",
+        "text": "This Saturday @MindFuelMethod \n4-6 PM \ncome for a women wellness experience ✨🤍\n\nUse FTG20 for 20% off ticket - come alone or bring your besties! 🤍\n\n#pittsburgh #nfldraft #412 #pittsburghgirl #yinz ",
+        "author": "forthegirlspgh",
+        "plays": 431,
+        "likes": 11,
+        "posted": "2026-04-15T17:22:01.000Z"
+      },
+      {
+        "id": "7630622652624899359",
+        "url": "https://www.tiktok.com/@forthegirlspgh/video/7630622652624899359",
+        "text": "@MindFuelMethod x @forthegirlspgh - ROOTED IN HER EXPERIENCE 🌿✨☕️ \n\nThe perfect Saturday reset 🤠\n\nsee you at our next event ladies! 🍸 \n\n#contrasttherapy #coldplungechallenge #sauna #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii #explorepage✨ ",
+        "author": "forthegirlspgh",
+        "plays": 391,
+        "likes": 12,
+        "posted": "2026-04-19T23:53:25.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-04T01:27:09.000Z",
+    "median_plays": 411,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:25:58.654Z"
+  }
 }

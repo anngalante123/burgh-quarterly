@@ -14,5 +14,54 @@
   "full_name": "Titusz",
   "last_post_at": "2026-05-10T19:38:34.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "titusz pittsburgh",
+    "video_count": 2,
+    "total_plays": 22260,
+    "total_likes": 1284,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "fashionablycait",
+        "fans": 1582,
+        "verified": false,
+        "videos": 1,
+        "plays": 20800,
+        "likes": 1203
+      },
+      {
+        "handle": "girleatsburgh",
+        "fans": 4566,
+        "verified": false,
+        "videos": 1,
+        "plays": 1460,
+        "likes": 81
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7638423253605747982",
+        "url": "https://www.tiktok.com/@fashionablycait/video/7638423253605747982",
+        "text": "#titusz #pittsburghrestaurants #pittsburgh #foodie #foodtiktok ",
+        "author": "fashionablycait",
+        "plays": 20800,
+        "likes": 1203,
+        "posted": "2026-05-11T00:23:44.000Z"
+      },
+      {
+        "id": "7634217391311899935",
+        "url": "https://www.tiktok.com/@girleatsburgh/video/7634217391311899935",
+        "text": "New Titusz restaurant was good but Fet-Fisk, Morcilla, and a few others stand as my favorites. \n\nThis place had some good dishes but some eh. We didn’t care for the stuffed cabbage at all but we loved the Walleye fish & loved all the wines ",
+        "author": "girleatsburgh",
+        "plays": 1460,
+        "likes": 81,
+        "posted": "2026-04-29T16:22:43.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-11T00:23:44.000Z",
+    "median_plays": 11130,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:39:41.476Z"
+  }
 }

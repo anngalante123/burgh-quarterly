@@ -14,5 +14,54 @@
   "full_name": "Roots To Petals Studio | Florist | Plant Shop | Gifts",
   "last_post_at": "2026-05-12T01:53:27.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "roots to petals pittsburgh",
+    "video_count": 2,
+    "total_plays": 2791,
+    "total_likes": 152,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "kristinalwiggins",
+        "fans": 0,
+        "verified": false,
+        "videos": 1,
+        "plays": 2448,
+        "likes": 148
+      },
+      {
+        "handle": "rootstopetals",
+        "fans": 0,
+        "verified": false,
+        "videos": 1,
+        "plays": 343,
+        "likes": 4
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7647319762552278302",
+        "url": "https://www.tiktok.com/@kristinalwiggins/video/7647319762552278302",
+        "text": "Oakmont is such a gem! Love exploring this Pittsburgh neighborhood for those quintessential hallmark town feels. \n\nAdd these local small businesses to your list: \n\n🌸Flowers & charming goodies at roots to petal studio \n\n🍽️ vibey restaurant",
+        "author": "kristinalwiggins",
+        "plays": 2448,
+        "likes": 148,
+        "posted": "2026-06-03T23:46:41.000Z"
+      },
+      {
+        "id": "7628227444834716959",
+        "url": "https://www.tiktok.com/@rootstopetals/video/7628227444834716959",
+        "text": "Our next Plant Bingo is in 6 days! Join us Sunday at 11am for Plant Bingo Brunch Edition at @innergroovebrewing ! We’ll play 6 exciting rounds of Bingo and you’ll have the chance to win some awesome plant prizes! Delicious Inner Groove brew",
+        "author": "rootstopetals",
+        "plays": 343,
+        "likes": 4,
+        "posted": "2026-04-13T12:59:05.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-03T23:46:41.000Z",
+    "median_plays": 1396,
+    "detected_own_handle": "rootstopetals",
+    "scraped_at": "2026-06-10T19:31:08.739Z"
+  }
 }

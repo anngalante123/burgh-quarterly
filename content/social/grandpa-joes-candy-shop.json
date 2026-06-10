@@ -14,5 +14,103 @@
   "full_name": "Grandpa Joe's Candy Shop",
   "last_post_at": "2026-05-08T21:13:45.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "grandpa joe's candy shop pittsburgh",
+    "video_count": 7,
+    "total_plays": 17659,
+    "total_likes": 946,
+    "unique_creators": 7,
+    "top_creators": [
+      {
+        "handle": "grandpajoes",
+        "fans": 31000,
+        "verified": false,
+        "videos": 1,
+        "plays": 6500,
+        "likes": 345
+      },
+      {
+        "handle": "arjunmanjunath_",
+        "fans": 58500,
+        "verified": false,
+        "videos": 1,
+        "plays": 4498,
+        "likes": 278
+      },
+      {
+        "handle": "ricky_george3",
+        "fans": 1465,
+        "verified": false,
+        "videos": 1,
+        "plays": 3723,
+        "likes": 179
+      },
+      {
+        "handle": "412funspots",
+        "fans": 3422,
+        "verified": false,
+        "videos": 1,
+        "plays": 2128,
+        "likes": 76
+      },
+      {
+        "handle": "accaylia.schaeffer",
+        "fans": 3422,
+        "verified": false,
+        "videos": 1,
+        "plays": 375,
+        "likes": 41
+      },
+      {
+        "handle": "gummipopzcandy",
+        "fans": 927,
+        "verified": false,
+        "videos": 1,
+        "plays": 290,
+        "likes": 18
+      },
+      {
+        "handle": "contentcreatortrice",
+        "fans": 34500,
+        "verified": false,
+        "videos": 1,
+        "plays": 145,
+        "likes": 9
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7633781375144971534",
+        "url": "https://www.tiktok.com/@grandpajoes/video/7633781375144971534",
+        "text": "Spring at Grandpa Joe’s just hits different… ✨🍭\n\n#GrandpaJoesCandyShop #PlacesToVisit #Nostalgic #Candy #Pittsburgh",
+        "author": "grandpajoes",
+        "plays": 6500,
+        "likes": 345,
+        "posted": "2026-04-28T12:11:30.000Z"
+      },
+      {
+        "id": "7640131728949906718",
+        "url": "https://www.tiktok.com/@arjunmanjunath_/video/7640131728949906718",
+        "text": "Officially obsessed with these… come find Gummi Popz with me at Grandpa Joes in Pittsburgh 🍬\n\n@Gummi Popz! @Grandpa Joe’s Candy Shop #sponsored #pittsburgh ",
+        "author": "arjunmanjunath_",
+        "plays": 4498,
+        "likes": 278,
+        "posted": "2026-05-15T14:53:37.000Z"
+      },
+      {
+        "id": "7641644144267382029",
+        "url": "https://www.tiktok.com/@ricky_george3/video/7641644144267382029",
+        "text": "Trying viral icecream again with @axelizabeth and @Noelle @Grandpa Joe’s Candy Shop #icecream #candy #viralicecream #samples #pittsburgh ",
+        "author": "ricky_george3",
+        "plays": 3723,
+        "likes": 179,
+        "posted": "2026-05-19T16:42:43.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-09T22:15:56.000Z",
+    "median_plays": 2128,
+    "detected_own_handle": "grandpajoes",
+    "scraped_at": "2026-06-10T19:18:58.486Z"
+  }
 }

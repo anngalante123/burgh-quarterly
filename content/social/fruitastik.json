@@ -14,5 +14,111 @@
   "full_name": "FruiTastik",
   "last_post_at": "2026-05-12T23:53:07.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "fruitastik pittsburgh",
+    "video_count": 22,
+    "total_plays": 358118,
+    "total_likes": 26493,
+    "unique_creators": 10,
+    "top_creators": [
+      {
+        "handle": "_fruitastik",
+        "fans": 6070,
+        "verified": false,
+        "videos": 12,
+        "plays": 250788,
+        "likes": 20466
+      },
+      {
+        "handle": "lilbigbackz",
+        "fans": 23000,
+        "verified": false,
+        "videos": 1,
+        "plays": 95700,
+        "likes": 5312
+      },
+      {
+        "handle": "liz_mac",
+        "fans": 6633,
+        "verified": false,
+        "videos": 2,
+        "plays": 4983,
+        "likes": 191
+      },
+      {
+        "handle": "megantuano",
+        "fans": 1374,
+        "verified": false,
+        "videos": 1,
+        "plays": 2884,
+        "likes": 385
+      },
+      {
+        "handle": "indulge.in.pgh",
+        "fans": 1998,
+        "verified": false,
+        "videos": 1,
+        "plays": 1107,
+        "likes": 30
+      },
+      {
+        "handle": "krystinasimms1",
+        "fans": 123,
+        "verified": false,
+        "videos": 1,
+        "plays": 879,
+        "likes": 30
+      },
+      {
+        "handle": "danielaggutierrez_",
+        "fans": 823,
+        "verified": false,
+        "videos": 1,
+        "plays": 676,
+        "likes": 38
+      },
+      {
+        "handle": "yippityyappity",
+        "fans": 1741,
+        "verified": false,
+        "videos": 1,
+        "plays": 656,
+        "likes": 33
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7626835594492120350",
+        "url": "https://www.tiktok.com/@_fruitastik/video/7626835594492120350",
+        "text": "Viral Korean Ice Crean in FruiTastik in Pittsburgh \n\n#fyp #fruitastik #pittsburgh #viralkoreanicecream #mangoicecream ",
+        "author": "_fruitastik",
+        "plays": 100200,
+        "likes": 10300,
+        "posted": "2026-04-09T18:57:33.000Z"
+      },
+      {
+        "id": "7620902558609034527",
+        "url": "https://www.tiktok.com/@lilbigbackz/video/7620902558609034527",
+        "text": "Fruitastik located in Moon Township 🥭 This legendary spot serves up fresh fruit in a Mexican street style and they have tons of different drinks, Mexican street foods, and much more 🔥 Have you tried it ⁉️ @Fruitastik #fruitastic #moontown",
+        "author": "lilbigbackz",
+        "plays": 95700,
+        "likes": 5312,
+        "posted": "2026-03-24T19:14:39.000Z"
+      },
+      {
+        "id": "7630308866747616542",
+        "url": "https://www.tiktok.com/@_fruitastik/video/7630308866747616542",
+        "text": "Viral Ice Cream in Pittsburgh in FruiTastik \n\n#fruitastik #pittsburgh #viralicecream #aniverario #emprendedor ",
+        "author": "_fruitastik",
+        "plays": 94200,
+        "likes": 8567,
+        "posted": "2026-04-19T03:35:44.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-04T17:27:59.000Z",
+    "median_plays": 2904,
+    "detected_own_handle": "_fruitastik",
+    "scraped_at": "2026-06-10T19:18:07.740Z"
+  }
 }

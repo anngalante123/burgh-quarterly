@@ -14,5 +14,54 @@
   "full_name": "",
   "last_post_at": "2026-05-13T16:30:29.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "pittsburgh float spa pittsburgh",
+    "video_count": 2,
+    "total_plays": 483,
+    "total_likes": 11,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "pittsburghdatedayzzz",
+        "fans": 665,
+        "verified": false,
+        "videos": 1,
+        "plays": 308,
+        "likes": 8
+      },
+      {
+        "handle": "aubrestacknick",
+        "fans": 1080,
+        "verified": false,
+        "videos": 1,
+        "plays": 175,
+        "likes": 3
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7639122845703867661",
+        "url": "https://www.tiktok.com/@pittsburghdatedayzzz/video/7639122845703867661",
+        "text": "Pittsburgh Date Dayzzz at Float Spa ♡\n\n#floatspa #relax #date #oxygenbar #massage ",
+        "author": "pittsburghdatedayzzz",
+        "plays": 308,
+        "likes": 8,
+        "posted": "2026-05-12T21:38:40.000Z"
+      },
+      {
+        "id": "7626141570894400782",
+        "url": "https://www.tiktok.com/@aubrestacknick/video/7626141570894400782",
+        "text": "Here you go—crafted in your voice, elevated but still real, inviting, and engaging:\n⸻\nSOCIAL POST:\nHey guys—this one is a little different… and honestly, really powerful.\nI had the chance to sit down with Luke Raymer, the owner of Pittsburg",
+        "author": "aubrestacknick",
+        "plays": 175,
+        "likes": 3,
+        "posted": "2026-04-07T22:04:10.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-12T21:38:40.000Z",
+    "median_plays": 242,
+    "detected_own_handle": "pittsburghdatedayzzz",
+    "scraped_at": "2026-06-10T19:28:01.653Z"
+  }
 }

@@ -14,5 +14,46 @@
   "full_name": "Bridge City Body Art",
   "last_post_at": "2026-05-12T17:28:32.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "bridge city body art pittsburgh",
+    "video_count": 2,
+    "total_plays": 1354,
+    "total_likes": 77,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "bridgecitybodyart_pgh",
+        "fans": 72,
+        "verified": false,
+        "videos": 2,
+        "plays": 1354,
+        "likes": 77
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7643239747871083806",
+        "url": "https://www.tiktok.com/@bridgecitybodyart_pgh/video/7643239747871083806",
+        "text": "We're just some silly lil guys tryna    s t a b   you.\n\n#fyp #pittsburgh #tattoos #piercings #gay ",
+        "author": "bridgecitybodyart_pgh",
+        "plays": 1067,
+        "likes": 67,
+        "posted": "2026-05-23T23:54:09.000Z"
+      },
+      {
+        "id": "7643231187044945183",
+        "url": "https://www.tiktok.com/@bridgecitybodyart_pgh/video/7643231187044945183",
+        "text": "It's hard to believe it's only been 3 months since this building was actually a boba tea Cafe.\n\n#bridgecitybodyart #bcba #downtownpittsburgh #culturaldistrictpgh #tattoostudio ",
+        "author": "bridgecitybodyart_pgh",
+        "plays": 287,
+        "likes": 10,
+        "posted": "2026-05-23T23:20:55.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-23T23:54:09.000Z",
+    "median_plays": 677,
+    "detected_own_handle": "bridgecitybodyart_pgh",
+    "scraped_at": "2026-06-10T19:11:25.087Z"
+  }
 }

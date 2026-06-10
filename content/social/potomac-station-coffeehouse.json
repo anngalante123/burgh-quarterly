@@ -14,5 +14,87 @@
   "full_name": "Potomac Station Coffee House",
   "last_post_at": "2026-05-12T12:24:37.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "potomac station coffeehouse pittsburgh",
+    "video_count": 7,
+    "total_plays": 3520,
+    "total_likes": 171,
+    "unique_creators": 5,
+    "top_creators": [
+      {
+        "handle": "cafedilemma",
+        "fans": 748,
+        "verified": false,
+        "videos": 2,
+        "plays": 1257,
+        "likes": 66
+      },
+      {
+        "handle": "mcmonaglle",
+        "fans": 5965,
+        "verified": false,
+        "videos": 1,
+        "plays": 884,
+        "likes": 41
+      },
+      {
+        "handle": "turnthepaige07",
+        "fans": 8614,
+        "verified": false,
+        "videos": 2,
+        "plays": 833,
+        "likes": 36
+      },
+      {
+        "handle": "melrossdesigns",
+        "fans": 3395,
+        "verified": false,
+        "videos": 1,
+        "plays": 498,
+        "likes": 24
+      },
+      {
+        "handle": "itsurgirljk",
+        "fans": 549,
+        "verified": false,
+        "videos": 1,
+        "plays": 48,
+        "likes": 4
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7617126689780419870",
+        "url": "https://www.tiktok.com/@mcmonaglle/video/7617126689780419870",
+        "text": "Potomac Station Coffeehouse in Potomac, PA is a cute little coffee shop with lots of options. They have a few house made syrups, but do have several pre-crafted syrups as well for their main menu. They have game nights I believe every week ",
+        "author": "mcmonaglle",
+        "plays": 884,
+        "likes": 41,
+        "posted": "2026-03-14T15:02:16.000Z"
+      },
+      {
+        "id": "7625641051792936206",
+        "url": "https://www.tiktok.com/@cafedilemma/video/7625641051792936206",
+        "text": "Highly recommend Potomac Station Coffeehouse in Pittsburgh, PA📍☕️✨🍪💯 #pittsburghpa #pittsburghcoffee #coffeereview #coffeetiktok #potomac ",
+        "author": "cafedilemma",
+        "plays": 794,
+        "likes": 48,
+        "posted": "2026-04-06T13:42:57.000Z"
+      },
+      {
+        "id": "7626864611257601293",
+        "url": "https://www.tiktok.com/@melrossdesigns/video/7626864611257601293",
+        "text": "Lil girlies morning with @Lindsay | Tattoo Artist PGH at @Potomac Station Coffee House \n\n#pittsburgh #pittsburghcoffeeshop #coffeetok #foryouuu | Pittsburgh Coffee Shop | Pittsburgh Coffee | Tattoo Artist PGH |",
+        "author": "melrossdesigns",
+        "plays": 498,
+        "likes": 24,
+        "posted": "2026-04-09T20:50:08.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-27T23:51:53.000Z",
+    "median_plays": 486,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:29:08.484Z"
+  }
 }

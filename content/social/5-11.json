@@ -14,5 +14,37 @@
   "full_name": "5.11",
   "last_post_at": "2026-05-12T14:00:01.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "5.11 pittsburgh",
+    "video_count": 1,
+    "total_plays": 12500,
+    "total_likes": 1406,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "zenspiredesigns",
+        "fans": 955400,
+        "verified": false,
+        "videos": 1,
+        "plays": 12500,
+        "likes": 1406
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7647318174664297742",
+        "url": "https://www.tiktok.com/@zenspiredesigns/video/7647318174664297742",
+        "text": "✨Three Rivers Arts Festival June 11th-14th! Booth 115 & 116✨ #zenspiredesigns #threeriversartsfestival #TRAF #pittsburghartist #artfestival ",
+        "author": "zenspiredesigns",
+        "plays": 12500,
+        "likes": 1406,
+        "posted": "2026-06-03T23:40:38.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-03T23:40:38.000Z",
+    "median_plays": 12500,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T18:30:00.362Z"
+  }
 }

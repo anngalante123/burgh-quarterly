@@ -14,5 +14,87 @@
   "full_name": "Squirrel Hill Sports Bar",
   "last_post_at": "2026-05-11T17:46:10.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "squirrel hill sports bar pittsburgh",
+    "video_count": 9,
+    "total_plays": 7686,
+    "total_likes": 463,
+    "unique_creators": 5,
+    "top_creators": [
+      {
+        "handle": "doll.trap",
+        "fans": 162,
+        "verified": false,
+        "videos": 4,
+        "plays": 5707,
+        "likes": 385
+      },
+      {
+        "handle": "jakecalvincomedian",
+        "fans": 213,
+        "verified": false,
+        "videos": 2,
+        "plays": 1116,
+        "likes": 33
+      },
+      {
+        "handle": "strappa412",
+        "fans": 81,
+        "verified": false,
+        "videos": 1,
+        "plays": 406,
+        "likes": 24
+      },
+      {
+        "handle": "theofficialdannyt",
+        "fans": 382,
+        "verified": false,
+        "videos": 1,
+        "plays": 309,
+        "likes": 15
+      },
+      {
+        "handle": "alottalegends",
+        "fans": 401,
+        "verified": false,
+        "videos": 1,
+        "plays": 148,
+        "likes": 6
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7644572182281981198",
+        "url": "https://www.tiktok.com/@doll.trap/video/7644572182281981198",
+        "text": "Featuring queer artists and hosted by Justine Case!!! \n\nThis event is at the Squirrel Hill Sports Bar on Friday June 5, so it’s a perfect way to start your Pride off. Come celebrate and dance with us 🏳️‍🌈🎀\n#queerpunk #punkrock #pittsburg",
+        "author": "doll.trap",
+        "plays": 3617,
+        "likes": 284,
+        "posted": "2026-05-27T14:05:02.000Z"
+      },
+      {
+        "id": "7635441919807491342",
+        "url": "https://www.tiktok.com/@doll.trap/video/7635441919807491342",
+        "text": "doll trap at the squirrel hill sports bar closing out with their soon to be released single , unwind 💓🫶⛓️ \n\nIsn’t our bassist jacked? And hot? \n\n#riotgrrrl #diymusic #pittsburgh #queerartist ",
+        "author": "doll.trap",
+        "plays": 793,
+        "likes": 29,
+        "posted": "2026-05-02T23:34:42.000Z"
+      },
+      {
+        "id": "7634589280559451405",
+        "url": "https://www.tiktok.com/@doll.trap/video/7634589280559451405",
+        "text": "I think it’s time we grow apart \nCause you and I are not alike \nYou like to sit and bark \nWhile I actually use my bite \n\nCome see us perform this song tomorrow, May 4 at the squirrel hill sports bar!  \n\nVideo and single out may 6💓⛓️🎀\n\n#di",
+        "author": "doll.trap",
+        "plays": 709,
+        "likes": 27,
+        "posted": "2026-04-30T16:26:08.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-30T10:24:40.000Z",
+    "median_plays": 588,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:34:17.369Z"
+  }
 }

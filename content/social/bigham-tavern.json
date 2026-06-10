@@ -14,5 +14,79 @@
   "full_name": "Bigham Tavern 🐽🐷🐖",
   "last_post_at": "2026-05-11T22:00:00.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "bigham tavern pittsburgh",
+    "video_count": 4,
+    "total_plays": 16564,
+    "total_likes": 529,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "weekendsintheburgh",
+        "fans": 6009,
+        "verified": false,
+        "videos": 1,
+        "plays": 10400,
+        "likes": 280
+      },
+      {
+        "handle": "biteswithbriii_",
+        "fans": 702,
+        "verified": false,
+        "videos": 1,
+        "plays": 3597,
+        "likes": 121
+      },
+      {
+        "handle": "suliveya_",
+        "fans": 2469,
+        "verified": false,
+        "videos": 1,
+        "plays": 1804,
+        "likes": 61
+      },
+      {
+        "handle": "emilyyspector",
+        "fans": 3607,
+        "verified": false,
+        "videos": 1,
+        "plays": 763,
+        "likes": 67
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7646142314326314253",
+        "url": "https://www.tiktok.com/@weekendsintheburgh/video/7646142314326314253",
+        "text": "Waterfront brunch views at Bigham Tavern at Bridgewater in Beaver, PA. We got the Blueberry Lemon French Toast, Black and Gold Rogi Bowl, and Garden Party cocktail. #pittsburghbrunch #waterfront #pittsburghrestaurants #foodtiktok ",
+        "author": "weekendsintheburgh",
+        "plays": 10400,
+        "likes": 280,
+        "posted": "2026-05-31T19:37:48.000Z"
+      },
+      {
+        "id": "7622452362233335054",
+        "url": "https://www.tiktok.com/@biteswithbriii_/video/7622452362233335054",
+        "text": "BIGHAM TAVERN on the mount!!\n\nhadn’t been here in a minute! Cold friends kitchen still has my fav wings in the burgh, but Bigham has an insane flavor list 🍗🔥\nBlack Pantha & Lou Q hit the spot while we watched some college hoops. 🏀\n\n#pitt",
+        "author": "biteswithbriii_",
+        "plays": 3597,
+        "likes": 121,
+        "posted": "2026-03-28T23:28:32.000Z"
+      },
+      {
+        "id": "7643995294480338206",
+        "url": "https://www.tiktok.com/@suliveya_/video/7643995294480338206",
+        "text": "Live music and good vibes at Bigham Tavern! Their wing menu is outrageous 🔥 #pittsburgh #wings #fyp ",
+        "author": "suliveya_",
+        "plays": 1804,
+        "likes": 61,
+        "posted": "2026-05-26T00:46:03.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-31T19:37:48.000Z",
+    "median_plays": 2701,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:09:43.537Z"
+  }
 }

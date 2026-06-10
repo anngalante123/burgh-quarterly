@@ -14,5 +14,55 @@
   "full_name": "Exercise Warehouse",
   "last_post_at": "2026-05-12T17:49:43.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "exercise warehouse pittsburgh",
+    "video_count": 4,
+    "total_plays": 6051,
+    "total_likes": 312,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "michaels_fit",
+        "fans": 529,
+        "verified": false,
+        "videos": 4,
+        "plays": 6051,
+        "likes": 312
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7637472322017873165",
+        "url": "https://www.tiktok.com/@michaels_fit/video/7637472322017873165",
+        "text": "Exercise Warehouse Gym🏋🏼‍♂️\nPITTSBURGH, PA📍\n\n#pittsburgh #fitness #bodybuilding #pgh #gymlife ",
+        "author": "michaels_fit",
+        "plays": 3305,
+        "likes": 152,
+        "posted": "2026-05-08T10:53:33.000Z"
+      },
+      {
+        "id": "7645268336808398093",
+        "url": "https://www.tiktok.com/@michaels_fit/video/7645268336808398093",
+        "text": "Just a few photos off Exercise Warehouse Gym located in Pittsburgh, Pa! Come get a day pass.. I promise you’ll be leaving with a membership application 💪🏼😳 \n\n#pittsburgh #pgh #gymtok #fyp #fitness ",
+        "author": "michaels_fit",
+        "plays": 1233,
+        "likes": 69,
+        "posted": "2026-05-29T11:06:05.000Z"
+      },
+      {
+        "id": "7645268874937650446",
+        "url": "https://www.tiktok.com/@michaels_fit/video/7645268874937650446",
+        "text": "Suspense. \nExercise Warehouse Gym PGH📍 \n\nReal weight. Real results. Great atmosphere. \n\n#pittsburgh #pgh #bodybuilding #fyp #gymlife ",
+        "author": "michaels_fit",
+        "plays": 991,
+        "likes": 58,
+        "posted": "2026-05-29T11:08:10.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-01T11:01:53.000Z",
+    "median_plays": 1112,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:15:34.400Z"
+  }
 }

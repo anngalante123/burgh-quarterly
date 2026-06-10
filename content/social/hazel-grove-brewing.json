@@ -14,5 +14,37 @@
   "full_name": "Hazel Grove Brewing",
   "last_post_at": "2026-05-11T14:59:51.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "hazel grove brewing pittsburgh",
+    "video_count": 1,
+    "total_plays": 124,
+    "total_likes": 0,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "risingstarpgh",
+        "fans": 223,
+        "verified": false,
+        "videos": 1,
+        "plays": 124,
+        "likes": 0
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7649507914830368031",
+        "url": "https://www.tiktok.com/@risingstarpgh/video/7649507914830368031",
+        "text": "Celebrate Amazing Books and Records 12th Anniversary with @folkindiebob with Free cold crafted beer and cocktails from Hazel Grove\nBrewing and Lucky\nSign Spirits (also sold to-go) & Cool\nVibes!\n5858 Forbes Ave\nPittsburgh, PA\n15217\nFeaturing",
+        "author": "risingstarpgh",
+        "plays": 124,
+        "likes": 0,
+        "posted": "2026-06-09T21:17:54.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-09T21:17:54.000Z",
+    "median_plays": 124,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:19:43.523Z"
+  }
 }

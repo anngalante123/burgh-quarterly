@@ -14,5 +14,79 @@
   "full_name": "Pink & Powerful 💖🦋",
   "last_post_at": "2026-05-13T16:13:13.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "pink and powerful pittsburgh",
+    "video_count": 4,
+    "total_plays": 5001,
+    "total_likes": 316,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "aleetie_in_pgh",
+        "fans": 426,
+        "verified": false,
+        "videos": 1,
+        "plays": 2707,
+        "likes": 58
+      },
+      {
+        "handle": "alleghenybaddie",
+        "fans": 1876,
+        "verified": false,
+        "videos": 1,
+        "plays": 1778,
+        "likes": 207
+      },
+      {
+        "handle": "madempowered",
+        "fans": 174,
+        "verified": false,
+        "videos": 1,
+        "plays": 335,
+        "likes": 23
+      },
+      {
+        "handle": "jalissadotcom",
+        "fans": 474,
+        "verified": false,
+        "videos": 1,
+        "plays": 181,
+        "likes": 28
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7622106732478696717",
+        "url": "https://www.tiktok.com/@aleetie_in_pgh/video/7622106732478696717",
+        "text": "Massage time ✨✨Before class at pink and powerful with the one and only @Meg 💖                        Looking for a massage I got that💆🏻‍♀️ #pgh #massagetherapy #massagetherapist #fyp #pittsburgh ",
+        "author": "aleetie_in_pgh",
+        "plays": 2707,
+        "likes": 58,
+        "posted": "2026-03-28T01:07:33.000Z"
+      },
+      {
+        "id": "7626787542117010702",
+        "url": "https://www.tiktok.com/@alleghenybaddie/video/7626787542117010702",
+        "text": "Finally checked out Pink and Powerful @Meg 💖 in the Strip District and I’m so glad I did. It’s woman-owned, supportive, and has the coolest aesthetic.\nButi Yoga with @butiwithkay was the perfect way to move and shake off the week. 🌸 Wheth",
+        "author": "alleghenybaddie",
+        "plays": 1778,
+        "likes": 207,
+        "posted": "2026-04-09T15:51:09.000Z"
+      },
+      {
+        "id": "7643825956527803678",
+        "url": "https://www.tiktok.com/@madempowered/video/7643825956527803678",
+        "text": "Welcome to the Pink & Powerful studio! 💖🪩🎀 The cutest place to get in the groove \n\n✨Positive Vibes Only ✨\n\n#pinkandpowerful #womeninpower #empowerwomen #pinkperfection \n#stripdistrictpittsburgh ",
+        "author": "madempowered",
+        "plays": 335,
+        "likes": 23,
+        "posted": "2026-05-25T13:49:05.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-25T13:49:05.000Z",
+    "median_plays": 1057,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:27:22.506Z"
+  }
 }

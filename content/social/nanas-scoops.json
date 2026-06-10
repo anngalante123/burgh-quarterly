@@ -14,5 +14,37 @@
   "full_name": "Nana’s Scoops",
   "last_post_at": "2026-05-12T19:01:56.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "nana’s scoops pittsburgh",
+    "video_count": 1,
+    "total_plays": 470,
+    "total_likes": 23,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "funadventureswithsarah",
+        "fans": 436,
+        "verified": false,
+        "videos": 1,
+        "plays": 470,
+        "likes": 23
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7646966222344457485",
+        "url": "https://www.tiktok.com/@funadventureswithsarah/video/7646966222344457485",
+        "text": "#pittsburgh #squirrelhillpittsburgh #squirrelhill #icecream #summerfun @Nanas Scoops ",
+        "author": "funadventureswithsarah",
+        "plays": 470,
+        "likes": 23,
+        "posted": "2026-06-03T00:54:45.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-03T00:54:45.000Z",
+    "median_plays": 470,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:26:04.155Z"
+  }
 }

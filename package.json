@@ -20,6 +20,7 @@
     "generate:by-posts": "tsx scripts/generate-by-posts.ts",
     "generate:creative": "tsx scripts/generate-most-creative-posts.ts",
     "generate:engagement": "tsx scripts/generate-engagement-rate-posts.ts",
+    "generate:viral": "tsx scripts/generate-viral-moments.ts",
     "generate:outreach": "tsx scripts/generate-owner-outreach.ts",
     "snapshot:issue": "tsx scripts/snapshot-issue.ts",
     "db:generate": "node --env-file=.env.local node_modules/.bin/drizzle-kit generate",

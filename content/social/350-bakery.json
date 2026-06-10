@@ -14,5 +14,71 @@
   "full_name": "350° Bakery",
   "last_post_at": "2026-05-09T11:52:08.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "350° bakery pittsburgh",
+    "video_count": 4,
+    "total_plays": 9408,
+    "total_likes": 312,
+    "unique_creators": 3,
+    "top_creators": [
+      {
+        "handle": "dope.eats.pgh",
+        "fans": 13400,
+        "verified": false,
+        "videos": 1,
+        "plays": 5045,
+        "likes": 202
+      },
+      {
+        "handle": "ezreviews_",
+        "fans": 6359,
+        "verified": false,
+        "videos": 2,
+        "plays": 3612,
+        "likes": 67
+      },
+      {
+        "handle": "yinzermorg",
+        "fans": 1489,
+        "verified": false,
+        "videos": 1,
+        "plays": 751,
+        "likes": 43
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7642018595433647391",
+        "url": "https://www.tiktok.com/@dope.eats.pgh/video/7642018595433647391",
+        "text": "Lately, one of my favorite parts about doing all this has been getting to see behind the scenes inside places I genuinely love supporting.\n\n350° Bakery has become one of my favorite weekend spots in Pittsburgh, so getting to spend some time",
+        "author": "dope.eats.pgh",
+        "plays": 5045,
+        "likes": 202,
+        "posted": "2026-05-20T16:55:34.000Z"
+      },
+      {
+        "id": "7633616756195544351",
+        "url": "https://www.tiktok.com/@ezreviews_/video/7633616756195544351",
+        "text": "350° Bakery Pittsburgh Review #EZReviews #EZEats #bakery #pittsburgh #350DegreeBakery @Threefifty° Bakery ",
+        "author": "ezreviews_",
+        "plays": 2191,
+        "likes": 29,
+        "posted": "2026-04-28T01:31:52.000Z"
+      },
+      {
+        "id": "7633410697929542925",
+        "url": "https://www.tiktok.com/@ezreviews_/video/7633410697929542925",
+        "text": "350° Bakery Pittsburgh Review #EZReviews #EZEats #350DegreeBakery #pittsburgh #pittsburghbakery @Threefifty° Bakery ",
+        "author": "ezreviews_",
+        "plays": 1421,
+        "likes": 38,
+        "posted": "2026-04-27T12:13:28.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-31T21:43:12.000Z",
+    "median_plays": 1806,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T18:29:12.873Z"
+  }
 }

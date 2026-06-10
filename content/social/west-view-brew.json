@@ -14,5 +14,54 @@
   "full_name": "West View Brew",
   "last_post_at": "2026-05-11T16:20:12.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "west view brew pittsburgh",
+    "video_count": 2,
+    "total_plays": 1048,
+    "total_likes": 48,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "melissasadhdlife",
+        "fans": 5574,
+        "verified": false,
+        "videos": 1,
+        "plays": 610,
+        "likes": 31
+      },
+      {
+        "handle": "christinaclothesncoffee",
+        "fans": 7388,
+        "verified": false,
+        "videos": 1,
+        "plays": 438,
+        "likes": 17
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7634997326070811934",
+        "url": "https://www.tiktok.com/@melissasadhdlife/video/7634997326070811934",
+        "text": "I’ve never had matcha and today was the day 🤣. West View brew definitely made a great one, and I would have this again! 😋 \n\n#pittsburghcoffeeshop ",
+        "author": "melissasadhdlife",
+        "plays": 610,
+        "likes": 31,
+        "posted": "2026-05-01T18:49:30.000Z"
+      },
+      {
+        "id": "7617811425355910414",
+        "url": "https://www.tiktok.com/@christinaclothesncoffee/video/7617811425355910414",
+        "text": "West View Brew has been recommended to be so many times! Today I took my family to visit, and I’m so glad I did! This little coffee spot is so sweet and thoughtful! There is even a small play area. Also.. the cinnamon roll focaccia is 10/10",
+        "author": "christinaclothesncoffee",
+        "plays": 438,
+        "likes": 17,
+        "posted": "2026-03-16T11:19:14.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-01T18:49:30.000Z",
+    "median_plays": 524,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:41:31.871Z"
+  }
 }

@@ -14,5 +14,103 @@
   "full_name": "Reform Pilates",
   "last_post_at": "2026-05-13T00:30:44.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "reform pilates pittsburgh pittsburgh",
+    "video_count": 7,
+    "total_plays": 9750,
+    "total_likes": 764,
+    "unique_creators": 7,
+    "top_creators": [
+      {
+        "handle": "aaaavvaaaaaaa",
+        "fans": 643,
+        "verified": false,
+        "videos": 1,
+        "plays": 4606,
+        "likes": 456
+      },
+      {
+        "handle": "kg.fit_",
+        "fans": 1219,
+        "verified": false,
+        "videos": 1,
+        "plays": 1247,
+        "likes": 67
+      },
+      {
+        "handle": "lexburley",
+        "fans": 803,
+        "verified": false,
+        "videos": 1,
+        "plays": 1034,
+        "likes": 71
+      },
+      {
+        "handle": "encore814",
+        "fans": 117,
+        "verified": false,
+        "videos": 1,
+        "plays": 1016,
+        "likes": 33
+      },
+      {
+        "handle": "clare.scully",
+        "fans": 310,
+        "verified": false,
+        "videos": 1,
+        "plays": 880,
+        "likes": 55
+      },
+      {
+        "handle": "charquigley",
+        "fans": 2041,
+        "verified": false,
+        "videos": 1,
+        "plays": 532,
+        "likes": 37
+      },
+      {
+        "handle": "lilchocochip",
+        "fans": 1166,
+        "verified": false,
+        "videos": 1,
+        "plays": 435,
+        "likes": 45
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7643457943525985566",
+        "url": "https://www.tiktok.com/@aaaavvaaaaaaa/video/7643457943525985566",
+        "text": "chill work day at the stu 🧘‍♀️☁️\n#dayinmylife #pilates #pilatestok #reformpilatespittsburgh @Natalie Rascati ",
+        "author": "aaaavvaaaaaaa",
+        "plays": 4606,
+        "likes": 456,
+        "posted": "2026-05-24T14:00:59.000Z"
+      },
+      {
+        "id": "7627302677977763085",
+        "url": "https://www.tiktok.com/@kg.fit_/video/7627302677977763085",
+        "text": "My 5-9 on a Friday evening in #pittsburgh 💛✨ft Reform Pilates and @CinderlandsBeerCo ",
+        "author": "kg.fit_",
+        "plays": 1247,
+        "likes": 67,
+        "posted": "2026-04-11T01:10:10.000Z"
+      },
+      {
+        "id": "7630948735090003213",
+        "url": "https://www.tiktok.com/@lexburley/video/7630948735090003213",
+        "text": "Promised myself I would hit 25 classes before baby and we barely made it lol Thanks to the best @Natalie Rascati and everyone at Reform! #reformpilates #reformpilatespittsburgh #pittsburghpilates #pilates #pregnancypilates ",
+        "author": "lexburley",
+        "plays": 1034,
+        "likes": 71,
+        "posted": "2026-04-20T20:59:05.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-24T14:00:59.000Z",
+    "median_plays": 1016,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:29:45.331Z"
+  }
 }

@@ -22,14 +22,14 @@
  */
 
 import { config as loadEnv } from "dotenv";
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
 
 import { brandKey, loadAllRichBusinesses } from "@/lib/query/business-query";
 import { familyForCategory } from "@/lib/data/category-family";
 import { downloadThumbnail } from "@/lib/scrape/download-thumbnail";
+import { loadOwnPostsPool } from "@/lib/lists/own-posts-pool";
 
 loadEnv({ path: join(process.cwd(), ".env.local") });
 loadEnv();
@@ -39,32 +39,15 @@ loadEnv();
 const VISION_MODEL = "claude-haiku-4-5-20251001";
 /** Sonnet for the editorial intro: one call, voice quality matters. */
 const INTRO_MODEL = "claude-sonnet-4-6";
-const RAW_DIR = join(process.cwd(), "content/raw/own-posts");
 const OUT_DIR = join(process.cwd(), "content/lists/articles");
 const SLUG = "most-creative-posts";
-const TOP_N = 30;
+const TOP_N = 10;
 const PER_BUSINESS_CAP = 2;
 /** Engagement-rate pre-filter: only vision-pass the top X% of candidates.
  *  At 30 businesses this is ~75 vision calls; at 5000 with the same ratio
  *  it's ~12500 calls. Tuned to keep vision cost under ~$0.30 today and
  *  ~$50/qtr at full Pittsburgh scale (with Haiku). */
 const PREFILTER_PERCENTILE = 0.20;
-
-type RawPost = {
-  shortCode?: string;
-  url?: string;
-  caption?: string;
-  hashtags?: string[];
-  type?: string;
-  productType?: string;
-  timestamp?: string;
-  likesCount?: number;
-  commentsCount?: number;
-  videoPlayCount?: number;
-  videoViewCount?: number;
-  displayUrl?: string;
-  ownerUsername?: string;
-};
 
 type Candidate = {
   shortcode: string;
@@ -123,6 +106,8 @@ type Article = {
   angle: string;
   intro: string;
   items: CreativeItem[];
+  /** Editorial label for the list-header meta on the article page. */
+  rank_label?: string;
   generated_at: string;
   model: string;
 };
@@ -181,7 +166,7 @@ JUDGE ON:
 3. format_fit (1-10): does the format (image / sidecar / video / reel) serve the idea, or is it generic? 1 = mismatched, 10 = the format IS the joke.
 4. surprise (1-10): would a stranger scrolling stop and lean in? 1 = forgettable, 10 = saved/sent to a friend.
 
-Then write 'why' as ONE short sentence (under 25 words) explaining what makes this post score the way it does. NO em dashes. Specific.
+Then write 'why' as ONE short sentence (under 25 words) explaining what makes this post score the way it does. NO em dashes. Specific. Plain magazine voice, like a sharp editor talking: do NOT use marketing register words such as "content", "product story", "authenticity", "earned", "scroll-stopping", or "engagement".
 
 Return ONLY valid JSON, this exact shape:
 {"visual_concept": <int>, "caption_craft": <int>, "format_fit": <int>, "surprise": <int>, "why": "<one sentence>"}`;
@@ -251,7 +236,7 @@ DATA:
 TOP 6:
 ${top}
 
-Write 2-3 short paragraphs (~140-200 words). Frame the editorial angle: this list rewards craft, not follower count. A 14K-follower bakery can beat a 500K-follower chain if the post is stronger. Tease 2-3 specific businesses by name with a concrete detail from their post. End with a forward-looking sentence about Issue 02.
+Write ONE paragraph, 80-120 words, no more. Frame the editorial angle: this list rewards craft, not follower count. A 14K-follower bakery can beat a 500K-follower chain if the post is stronger. Tease 1-2 specific businesses by name with a concrete detail from their post.
 
 Return ONLY the prose. No headers, no markdown, no quotes wrapping.`;
 
@@ -281,25 +266,22 @@ async function main() {
 
   const cutoff = Date.now() - 90 * 24 * 60 * 60 * 1000;
   const candidates: Candidate[] = [];
-  const rawFiles = (await readdir(RAW_DIR)).filter((f) => f.endsWith(".json"));
+  // One record per unique handle: excluded accounts dropped, shared-handle
+  // slugs collapsed. The dedupe/exclusion policy lives in the pool module.
+  const pool = await loadOwnPostsPool();
 
-  for (const f of rawFiles) {
-    const slug = f.replace(/\.json$/, "");
-    const rb = bySlug.get(slug);
+  for (const rec of pool) {
+    const rb = bySlug.get(rec.slug);
     if (!rb) continue;
     const followers = rb.social.ig?.followers ?? 0;
     if (followers === 0) continue;
 
-    const raw = JSON.parse(await readFile(join(RAW_DIR, f), "utf-8")) as {
-      handle: string;
-      items: RawPost[];
-    };
-    for (const p of raw.items) {
+    for (const p of rec.items) {
       if (!p.shortCode || !p.timestamp || !p.displayUrl) continue;
       const posted = Date.parse(p.timestamp);
       if (Number.isNaN(posted) || posted < cutoff) continue;
       const owner = (p.ownerUsername ?? "").toLowerCase();
-      if (owner && owner !== raw.handle.toLowerCase()) continue;
+      if (owner && owner !== rec.handle) continue;
       const likes = p.likesCount ?? 0;
       const comments = p.commentsCount ?? 0;
       const plays = p.videoPlayCount ?? p.videoViewCount ?? 0;
@@ -326,8 +308,21 @@ async function main() {
 
   // Smart prefilter: top X% by engagement rate
   candidates.sort((a, b) => b.engagementRate - a.engagementRate);
-  const prefilterCount = Math.max(50, Math.ceil(candidates.length * PREFILTER_PERCENTILE));
-  const prefiltered = candidates.slice(0, prefilterCount);
+  // Belt and suspenders: the pool loader already collapses shared handles,
+  // but never let the same post (shortcode) rank twice no matter what.
+  const seenShortcodes = new Set<string>();
+  const ranked = candidates.filter((c) => {
+    if (seenShortcodes.has(c.shortcode)) return false;
+    seenShortcodes.add(c.shortcode);
+    return true;
+  });
+  if (ranked.length < candidates.length) {
+    console.log(
+      `[creative] dropped ${candidates.length - ranked.length} duplicate shortcodes from ranking`,
+    );
+  }
+  const prefilterCount = Math.max(50, Math.ceil(ranked.length * PREFILTER_PERCENTILE));
+  const prefiltered = ranked.slice(0, prefilterCount);
   console.log(`[creative] prefiltered to top ${prefiltered.length} by engagement rate`);
 
   if (dryRun) {
@@ -372,13 +367,18 @@ async function main() {
 
   // Cap per BRAND, not per slug. Keeps Eat'n Park / Primanti / etc.
   // from crowding the list with multiple locations of the same chain.
+  // Also dedupe by shortcode before slicing the top N: the same post must
+  // never appear twice in a published list.
   const perBrand = new Map<string, number>();
+  const finalShortcodes = new Set<string>();
   const final: typeof scored = [];
   for (const entry of scored) {
+    if (finalShortcodes.has(entry.c.shortcode)) continue;
     const key = brandKey(entry.c.business.artifact.business.name);
     const cnt = perBrand.get(key) ?? 0;
     if (cnt >= PER_BUSINESS_CAP) continue;
     perBrand.set(key, cnt + 1);
+    finalShortcodes.add(entry.c.shortcode);
     final.push(entry);
     if (final.length >= TOP_N) break;
   }
@@ -428,11 +428,12 @@ async function main() {
     kind: "posts",
     title: "The Most Creative Posts From Pittsburgh Small Businesses",
     subtitle:
-      "Judged by Claude on visual concept, caption craft, format fit, and surprise. Not ranked by likes.",
+      "The Pittsburgh small-business posts that took the biggest creative swing this quarter. Ranked by originality, not reach.",
     angle:
       "the IG posts that took risks, made craft choices, or said something specific this quarter, ranked by editorial judgment instead of follower count.",
     intro,
     items,
+    rank_label: "ranked by originality, not reach",
     generated_at: new Date().toISOString(),
     model: `${VISION_MODEL} (vision) + ${INTRO_MODEL} (intro)`,
   };

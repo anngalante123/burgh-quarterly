@@ -14,5 +14,18 @@
   "full_name": "1833 Coffee and Tea Co",
   "last_post_at": "2026-05-10T11:02:02.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "1833 coffee and tea pittsburgh",
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T18:27:36.712Z"
+  }
 }

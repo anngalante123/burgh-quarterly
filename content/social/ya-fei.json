@@ -14,5 +14,37 @@
   "full_name": "Ya Fei PGH",
   "last_post_at": "2026-05-11T23:30:00.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "ya fei pittsburgh",
+    "video_count": 1,
+    "total_plays": 542,
+    "total_likes": 36,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "tatiimani_",
+        "fans": 2102,
+        "verified": false,
+        "videos": 1,
+        "plays": 542,
+        "likes": 36
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7623613822753951006",
+        "url": "https://www.tiktok.com/@tatiimani_/video/7623613822753951006",
+        "text": "Ya Fei located in Robinson Township… sushi was super fresh & delicious. I would give this roll a 10/10 easily. egg roll 8.5/10 - I went back again before I left too! 🍣🍱🥢🥡 #pittsburghsushi #yafei #chinesefood #sushilover #comewithme ",
+        "author": "tatiimani_",
+        "plays": 542,
+        "likes": 36,
+        "posted": "2026-04-01T02:35:23.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-01T02:35:23.000Z",
+    "median_plays": 542,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:41:42.968Z"
+  }
 }

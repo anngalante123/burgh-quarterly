@@ -14,5 +14,95 @@
   "full_name": "SelfchefPittsburgh",
   "last_post_at": "2026-05-11T15:34:35.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "self chef pittsburgh",
+    "video_count": 19,
+    "total_plays": 79580,
+    "total_likes": 2757,
+    "unique_creators": 6,
+    "top_creators": [
+      {
+        "handle": "dope.eats.pgh",
+        "fans": 13400,
+        "verified": false,
+        "videos": 1,
+        "plays": 38700,
+        "likes": 1892
+      },
+      {
+        "handle": "self.chef.pittsburgh",
+        "fans": 319,
+        "verified": false,
+        "videos": 14,
+        "plays": 37568,
+        "likes": 743
+      },
+      {
+        "handle": "agoodstein",
+        "fans": 6015,
+        "verified": false,
+        "videos": 1,
+        "plays": 1209,
+        "likes": 60
+      },
+      {
+        "handle": "stephaniegiglio5",
+        "fans": 757,
+        "verified": false,
+        "videos": 1,
+        "plays": 903,
+        "likes": 25
+      },
+      {
+        "handle": "theamandareilly",
+        "fans": 715,
+        "verified": false,
+        "videos": 1,
+        "plays": 780,
+        "likes": 34
+      },
+      {
+        "handle": "pittsburghluxrealtor",
+        "fans": 72,
+        "verified": false,
+        "videos": 1,
+        "plays": 420,
+        "likes": 3
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7631949933502909727",
+        "url": "https://www.tiktok.com/@dope.eats.pgh/video/7631949933502909727",
+        "text": "If you’ve been around the South Hills for a while, you probably remember this place as Linden Grove. Completely different now and honestly, a really solid switch.\n\nBig space, tons of seating, and a setup where you can build exactly what you",
+        "author": "dope.eats.pgh",
+        "plays": 38700,
+        "likes": 1892,
+        "posted": "2026-04-23T13:43:48.000Z"
+      },
+      {
+        "id": "7622347931185581325",
+        "url": "https://www.tiktok.com/@self.chef.pittsburgh/video/7622347931185581325",
+        "text": "New spot just opened in PGH 🍣🔥\n\nSushi and Mongolian stir fry — all made fresh, right in front of you.\nYou pick, we cook. Quality you can actually see.\n\nOmakase? Yeah, we do that too. ✨\n\nIf you haven’t stopped by yet, now’s your sign.\nStil",
+        "author": "self.chef.pittsburgh",
+        "plays": 14300,
+        "likes": 169,
+        "posted": "2026-03-28T16:43:21.000Z"
+      },
+      {
+        "id": "7627308499445239054",
+        "url": "https://www.tiktok.com/@self.chef.pittsburgh/video/7627308499445239054",
+        "text": "Pittsburgh, meet your new spot 🍜🍣\n\nMongolian stir-fry brings the heat, while sushi keeps it fresh and simple. Drinks, snacks, everything you need for an easy, satisfying meal. 😋\n\nNow open and ready—your next go-to might just be right her",
+        "author": "self.chef.pittsburgh",
+        "plays": 5460,
+        "likes": 94,
+        "posted": "2026-04-11T01:32:47.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-07T17:56:57.000Z",
+    "median_plays": 1022,
+    "detected_own_handle": "self.chef.pittsburgh",
+    "scraped_at": "2026-06-10T19:32:36.562Z"
+  }
 }

@@ -14,5 +14,79 @@
   "full_name": "Arabica Robusta Coffee House",
   "last_post_at": "2026-05-13T17:28:36.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "arabica robusta coffee house pittsburgh",
+    "video_count": 9,
+    "total_plays": 11829,
+    "total_likes": 574,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "arabicarobusta_homestead",
+        "fans": 82,
+        "verified": false,
+        "videos": 5,
+        "plays": 6740,
+        "likes": 329
+      },
+      {
+        "handle": "lattebrothers",
+        "fans": 4939,
+        "verified": false,
+        "videos": 1,
+        "plays": 3690,
+        "likes": 171
+      },
+      {
+        "handle": "neahg_",
+        "fans": 936,
+        "verified": false,
+        "videos": 1,
+        "plays": 840,
+        "likes": 31
+      },
+      {
+        "handle": "that_pgh_mom",
+        "fans": 1098,
+        "verified": false,
+        "videos": 2,
+        "plays": 559,
+        "likes": 43
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7639427524753116446",
+        "url": "https://www.tiktok.com/@arabicarobusta_homestead/video/7639427524753116446",
+        "text": "Come discover Pittsburghs newest, local coffee shop and try the Coconut Water, Mango Matcha! 🥥🥭💦\n\nLocated at: 207 E 8th Ave\nHomestead, PA  15120\nUnited States\n#coffee #coffeetiktok #coffeetok #matcha ",
+        "author": "arabicarobusta_homestead",
+        "plays": 4589,
+        "likes": 204,
+        "posted": "2026-05-13T17:20:57.000Z"
+      },
+      {
+        "id": "7623483101104164126",
+        "url": "https://www.tiktok.com/@lattebrothers/video/7623483101104164126",
+        "text": "Trying and rating Arabica Robusta’s iced vanilla latte. @Arabica Robusta Coffee House #coffee #pittsburgh #latte #coffeetiktok #lattebrothers ",
+        "author": "lattebrothers",
+        "plays": 3690,
+        "likes": 171,
+        "posted": "2026-03-31T18:08:25.000Z"
+      },
+      {
+        "id": "7649440495717944606",
+        "url": "https://www.tiktok.com/@arabicarobusta_homestead/video/7649440495717944606",
+        "text": "Serving the taste of ‘I deserved a little treat today.’\n\n#localcoffee #smallbusiness #pittsburgh #pittsburghcoffee",
+        "author": "arabicarobusta_homestead",
+        "plays": 885,
+        "likes": 49,
+        "posted": "2026-06-09T16:56:18.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-09T16:56:18.000Z",
+    "median_plays": 463,
+    "detected_own_handle": "arabicarobusta_homestead",
+    "scraped_at": "2026-06-10T19:06:49.852Z"
+  }
 }

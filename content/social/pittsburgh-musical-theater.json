@@ -14,5 +14,37 @@
   "full_name": "Pittsburgh Musical Theater",
   "last_post_at": "2026-05-11T15:23:28.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "pittsburgh musical theater pittsburgh",
+    "video_count": 1,
+    "total_plays": 2540,
+    "total_likes": 126,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "monriverarts",
+        "fans": 459,
+        "verified": false,
+        "videos": 1,
+        "plays": 2540,
+        "likes": 126
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7631271869223570701",
+        "url": "https://www.tiktok.com/@monriverarts/video/7631271869223570701",
+        "text": "Get your tickets now! At Monriverarts.org #anythinggoes #pittsburgh #anythinggoesmusical #theater #musicaltheatre ",
+        "author": "monriverarts",
+        "plays": 2540,
+        "likes": 126,
+        "posted": "2026-04-21T17:53:06.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-21T17:53:06.000Z",
+    "median_plays": 2540,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:28:10.359Z"
+  }
 }

@@ -14,5 +14,37 @@
   "full_name": "A Slice of New York Pizza",
   "last_post_at": "2026-05-13T15:46:03.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "a slice of new york squared pittsburgh",
+    "video_count": 1,
+    "total_plays": 1852,
+    "total_likes": 93,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "agoodstein",
+        "fans": 6015,
+        "verified": false,
+        "videos": 1,
+        "plays": 1852,
+        "likes": 93
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7642069706593094942",
+        "url": "https://www.tiktok.com/@agoodstein/video/7642069706593094942",
+        "text": "I #partnered with my friends at @A Slice of New York Pizzeria Squared in The Highline Pittsburgh, to try out all of their menu Sicilian pizzas as their new minis. They have only been open a month but I think they are already one of the best",
+        "author": "agoodstein",
+        "plays": 1852,
+        "likes": 93,
+        "posted": "2026-05-20T20:13:53.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-20T20:13:53.000Z",
+    "median_plays": 1852,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:05:49.520Z"
+  }
 }

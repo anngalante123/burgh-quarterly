@@ -14,5 +14,79 @@
   "full_name": "Yotea & Yoka Kitchen",
   "last_post_at": "2026-05-13T05:51:07.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "yotea and yoka kitchen 友茶and友家厨房 pittsburgh",
+    "video_count": 5,
+    "total_plays": 23922,
+    "total_likes": 2035,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "lilbigbackz",
+        "fans": 23000,
+        "verified": false,
+        "videos": 1,
+        "plays": 20400,
+        "likes": 1967
+      },
+      {
+        "handle": "foodnerdnelli",
+        "fans": 956,
+        "verified": false,
+        "videos": 1,
+        "plays": 1654,
+        "likes": 22
+      },
+      {
+        "handle": "mr.raden_lombok_ntb",
+        "fans": 86000,
+        "verified": false,
+        "videos": 1,
+        "plays": 1640,
+        "likes": 41
+      },
+      {
+        "handle": "yoteayokakitchen",
+        "fans": 22,
+        "verified": false,
+        "videos": 2,
+        "plays": 228,
+        "likes": 5
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7646111531905682718",
+        "url": "https://www.tiktok.com/@lilbigbackz/video/7646111531905682718",
+        "text": "Yotea & Yoka Kitchen located in Pittsburgh 🔥 This spot is open late daily and I’m so glad I stumbled across their restaurant… they have amazing drinks and their food is so fresh and filling… make sure you also don’t skip out on dessert ‼️ ",
+        "author": "lilbigbackz",
+        "plays": 20400,
+        "likes": 1967,
+        "posted": "2026-05-31T17:38:11.000Z"
+      },
+      {
+        "id": "7633159824687123726",
+        "url": "https://www.tiktok.com/@foodnerdnelli/video/7633159824687123726",
+        "text": "Authentic Chinese home-style cooking at YOYO Panda\n\nNorth Hills friends, this gem in Allison Park is a must try! YOYO Panda is from the same owners of Yotea & Yoka Kitchen in Oakland. The unassuming location is a delight inside with elevate",
+        "author": "foodnerdnelli",
+        "plays": 1654,
+        "likes": 22,
+        "posted": "2026-04-26T19:59:06.000Z"
+      },
+      {
+        "id": "7629306573331893522",
+        "url": "https://www.tiktok.com/@mr.raden_lombok_ntb/video/7629306573331893522",
+        "text": "Yotea & Yoka Kitchen 友茶 & 友家厨房—one of the fastest-growing spots right now.\n\nTheir boba is fresh, creamy, and premium… one sip and you’ll want more.\n\nAnd the food? Authentic Chinese, straight from the wok—hot, flavorful, and satisfying.\n\nOne",
+        "author": "mr.raden_lombok_ntb",
+        "plays": 1640,
+        "likes": 41,
+        "posted": "2026-04-16T10:46:04.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-31T17:38:11.000Z",
+    "median_plays": 1640,
+    "detected_own_handle": "yoteayokakitchen",
+    "scraped_at": "2026-06-10T19:42:32.566Z"
+  }
 }

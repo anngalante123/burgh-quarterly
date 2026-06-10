@@ -14,5 +14,37 @@
   "full_name": "SWEAT PGH",
   "last_post_at": "2026-05-13T13:33:17.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "sweat pgh pittsburgh",
+    "video_count": 1,
+    "total_plays": 1059,
+    "total_likes": 51,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "annalucaaa",
+        "fans": 787,
+        "verified": false,
+        "videos": 1,
+        "plays": 1059,
+        "likes": 51
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7641417059963899149",
+        "url": "https://www.tiktok.com/@annalucaaa/video/7641417059963899149",
+        "text": "Come workout w us at SWEAT PGH!💪🏼💗 #cycle #pilates #workout #fitness @Katie Lucarelli ",
+        "author": "annalucaaa",
+        "plays": 1059,
+        "likes": 51,
+        "posted": "2026-05-19T02:01:14.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-19T02:01:14.000Z",
+    "median_plays": 1059,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:36:35.127Z"
+  }
 }

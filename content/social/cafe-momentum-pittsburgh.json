@@ -14,5 +14,37 @@
   "full_name": "Café Momentum Pittsburgh",
   "last_post_at": "2026-05-11T15:38:32.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "café momentum pittsburgh pittsburgh",
+    "video_count": 1,
+    "total_plays": 68,
+    "total_likes": 0,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "rockreggaerelief",
+        "fans": 143,
+        "verified": false,
+        "videos": 1,
+        "plays": 68,
+        "likes": 0
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7647903984891514125",
+        "url": "https://www.tiktok.com/@rockreggaerelief/video/7647903984891514125",
+        "text": "Music with a mission. 🎶✨\nEvery ticket to Rock, Reggae & Relief 2026 does more than get you into an unforgettable festival… It directly supports our neighbors in need! This year, we are incredibly proud to announce our beneficiary: Café Mom",
+        "author": "rockreggaerelief",
+        "plays": 68,
+        "likes": 0,
+        "posted": "2026-06-05T13:34:09.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-05T13:34:09.000Z",
+    "median_plays": 68,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:12:09.644Z"
+  }
 }

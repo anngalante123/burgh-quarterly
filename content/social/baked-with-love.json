@@ -14,5 +14,54 @@
   "full_name": "Baked With Love",
   "last_post_at": "2026-05-07T16:03:04.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "baked with love pittsburgh",
+    "video_count": 2,
+    "total_plays": 7803,
+    "total_likes": 611,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "calsipos",
+        "fans": 74400,
+        "verified": false,
+        "videos": 1,
+        "plays": 7723,
+        "likes": 600
+      },
+      {
+        "handle": "nonistiktok_",
+        "fans": 333,
+        "verified": false,
+        "videos": 1,
+        "plays": 80,
+        "likes": 11
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7626146830304152863",
+        "url": "https://www.tiktok.com/@calsipos/video/7626146830304152863",
+        "text": "Our besties at latte lane alwayssss know what’s up 😎 the baked with love (banana bread latte) is the go to & I got it for my mom to try too. The breakfast sandwich is also sooo good! #pittsburgh #pitt #coffeeshop #trending #sandwich @Latte",
+        "author": "calsipos",
+        "plays": 7723,
+        "likes": 600,
+        "posted": "2026-04-07T22:24:47.000Z"
+      },
+      {
+        "id": "7648473944529374478",
+        "url": "https://www.tiktok.com/@nonistiktok_/video/7648473944529374478",
+        "text": "If you’re in Pittsburgh , get at @Amarii✨🤗  , These cookies are very good and what makes it more special are that they are home made & baked with love . \n\nGet at her 😘 ",
+        "author": "nonistiktok_",
+        "plays": 80,
+        "likes": 11,
+        "posted": "2026-06-07T02:25:40.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-07T02:25:40.000Z",
+    "median_plays": 3902,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:08:36.032Z"
+  }
 }

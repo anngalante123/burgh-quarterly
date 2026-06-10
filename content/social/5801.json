@@ -14,5 +14,54 @@
   "full_name": "5801 Video Lounge & Café",
   "last_post_at": "2026-05-09T20:28:24.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "5801 pittsburgh",
+    "video_count": 2,
+    "total_plays": 6964,
+    "total_likes": 214,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "adamusic_",
+        "fans": 770300,
+        "verified": false,
+        "videos": 1,
+        "plays": 6397,
+        "likes": 186
+      },
+      {
+        "handle": "alleghenybaddie",
+        "fans": 1876,
+        "verified": false,
+        "videos": 1,
+        "plays": 567,
+        "likes": 28
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7646985902211829022",
+        "url": "https://www.tiktok.com/@adamusic_/video/7646985902211829022",
+        "text": "DJing all around the U.S. this summer!! Come party 🥳🎧 \n\n6/4 - Pittsburgh, PA - 5801\n6/5 - Pittsburgh, PA - 5801\n6/13 - Boston, MA - Royale\n6/20 - Boise, ID  - Treefort Music Hall\n6/26 - New York City, NY - Eden\n6/28 - New York City, NY - ",
+        "author": "adamusic_",
+        "plays": 6397,
+        "likes": 186,
+        "posted": "2026-06-03T02:11:03.000Z"
+      },
+      {
+        "id": "7631656622728793357",
+        "url": "https://www.tiktok.com/@alleghenybaddie/video/7631656622728793357",
+        "text": "Ready for the ultimate Draft Weekend? I’ve done the homework so you don't have to! Check out this full itinerary of Black-owned and queer-led events happening in the city.\nThursday, April 23rd\n• Touchdown & Toast: Kick off the weekend at Pa",
+        "author": "alleghenybaddie",
+        "plays": 567,
+        "likes": 28,
+        "posted": "2026-04-22T18:46:01.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-03T02:11:03.000Z",
+    "median_plays": 3482,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:05:49.499Z"
+  }
 }

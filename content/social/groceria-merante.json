@@ -14,5 +14,37 @@
   "full_name": "Groceria Merante",
   "last_post_at": "2026-05-10T14:03:31.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "groceria merante pittsburgh",
+    "video_count": 1,
+    "total_plays": 43,
+    "total_likes": 3,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "_rgreenwood_",
+        "fans": 36400,
+        "verified": false,
+        "videos": 1,
+        "plays": 43,
+        "likes": 3
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7626848758705261837",
+        "url": "https://www.tiktok.com/@_rgreenwood_/video/7626848758705261837",
+        "text": "@Groceria Merante THE BEST ITALIAN MARKET IN THE BURG! \n\n#fyp #fypシ゚viral #trending #pittsburgh #italianfood ",
+        "author": "_rgreenwood_",
+        "plays": 43,
+        "likes": 3,
+        "posted": "2026-04-09T19:48:42.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-09T19:48:42.000Z",
+    "median_plays": 43,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:19:22.756Z"
+  }
 }

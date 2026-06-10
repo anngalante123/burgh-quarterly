@@ -14,5 +14,111 @@
   "full_name": "Krunchy Bird",
   "last_post_at": "2026-05-08T20:56:49.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "krunchy bird pittsburgh",
+    "video_count": 10,
+    "total_plays": 190883,
+    "total_likes": 9004,
+    "unique_creators": 9,
+    "top_creators": [
+      {
+        "handle": "lilbigbackz",
+        "fans": 23000,
+        "verified": false,
+        "videos": 1,
+        "plays": 85200,
+        "likes": 5579
+      },
+      {
+        "handle": "eatingwithjulia_",
+        "fans": 2660,
+        "verified": false,
+        "videos": 1,
+        "plays": 25800,
+        "likes": 1005
+      },
+      {
+        "handle": "assessedbyalexis",
+        "fans": 10100,
+        "verified": false,
+        "videos": 1,
+        "plays": 24900,
+        "likes": 756
+      },
+      {
+        "handle": "chowdownrn",
+        "fans": 1409,
+        "verified": false,
+        "videos": 1,
+        "plays": 18100,
+        "likes": 489
+      },
+      {
+        "handle": "pittsburgh.real.estate",
+        "fans": 661,
+        "verified": false,
+        "videos": 1,
+        "plays": 13000,
+        "likes": 276
+      },
+      {
+        "handle": "gabriael.onthego",
+        "fans": 2829,
+        "verified": false,
+        "videos": 2,
+        "plays": 10399,
+        "likes": 432
+      },
+      {
+        "handle": "agoodstein",
+        "fans": 6015,
+        "verified": false,
+        "videos": 1,
+        "plays": 6109,
+        "likes": 279
+      },
+      {
+        "handle": "karenwentwhere",
+        "fans": 1363,
+        "verified": false,
+        "videos": 1,
+        "plays": 5754,
+        "likes": 122
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7626423015802146078",
+        "url": "https://www.tiktok.com/@lilbigbackz/video/7626423015802146078",
+        "text": "Krunchy Bird located in Pittsburgh 🐓 This is a new Korean Fried Chicken spot located just south of Pittsburgh and they have a few different menu items… such as chicken sandwiches, wings, beef dumplings and much more… Are you gonna give it ",
+        "author": "lilbigbackz",
+        "plays": 85200,
+        "likes": 5579,
+        "posted": "2026-04-08T16:16:30.000Z"
+      },
+      {
+        "id": "7620845858564640013",
+        "url": "https://www.tiktok.com/@eatingwithjulia_/video/7620845858564640013",
+        "text": "Visited a new spot Krunchy Bird during their soft opening to try their menu! Everything is made fresh per order so it’s about a 20-30 min wait but so worth it. The fried chicken sandwich was absolutely amazing with the honey garlic sauce. T",
+        "author": "eatingwithjulia_",
+        "plays": 25800,
+        "likes": 1005,
+        "posted": "2026-03-24T15:34:51.000Z"
+      },
+      {
+        "id": "7649134956437851405",
+        "url": "https://www.tiktok.com/@assessedbyalexis/video/7649134956437851405",
+        "text": "Filmed this before I went to Krunchy bird but ofc those are up there #pittsburgh #pgh #pitt #pittsburghfood #pittsburghfoodie ",
+        "author": "assessedbyalexis",
+        "plays": 24900,
+        "likes": 756,
+        "posted": "2026-06-08T21:10:25.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-08T21:10:25.000Z",
+    "median_plays": 11170,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:22:46.156Z"
+  }
 }

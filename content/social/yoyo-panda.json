@@ -14,5 +14,54 @@
   "full_name": "",
   "last_post_at": "2026-05-11T18:32:05.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "yoyo panda pittsburgh",
+    "video_count": 2,
+    "total_plays": 1768,
+    "total_likes": 24,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "foodnerdnelli",
+        "fans": 956,
+        "verified": false,
+        "videos": 1,
+        "plays": 1654,
+        "likes": 22
+      },
+      {
+        "handle": "yoteayokakitchen",
+        "fans": 22,
+        "verified": false,
+        "videos": 1,
+        "plays": 114,
+        "likes": 2
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7633159824687123726",
+        "url": "https://www.tiktok.com/@foodnerdnelli/video/7633159824687123726",
+        "text": "Authentic Chinese home-style cooking at YOYO Panda\n\nNorth Hills friends, this gem in Allison Park is a must try! YOYO Panda is from the same owners of Yotea & Yoka Kitchen in Oakland. The unassuming location is a delight inside with elevate",
+        "author": "foodnerdnelli",
+        "plays": 1654,
+        "likes": 22,
+        "posted": "2026-04-26T19:59:06.000Z"
+      },
+      {
+        "id": "7640926803560828173",
+        "url": "https://www.tiktok.com/@yoteayokakitchen/video/7640926803560828173",
+        "text": "#pgheats #yoteayokakitchen #yoyopandapgh #asianfoodie ",
+        "author": "yoteayokakitchen",
+        "plays": 114,
+        "likes": 2,
+        "posted": "2026-05-17T18:18:58.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-17T18:18:58.000Z",
+    "median_plays": 884,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:43:02.982Z"
+  }
 }

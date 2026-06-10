@@ -14,5 +14,54 @@
   "full_name": "Smashed ‘N Fried",
   "last_post_at": "2026-04-30T13:17:23.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "smashed 'n fried pittsburgh",
+    "video_count": 2,
+    "total_plays": 66781,
+    "total_likes": 3763,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "dope.eats.pgh",
+        "fans": 13400,
+        "verified": false,
+        "videos": 1,
+        "plays": 63900,
+        "likes": 3695
+      },
+      {
+        "handle": "skeedtv",
+        "fans": 2806,
+        "verified": false,
+        "videos": 1,
+        "plays": 2881,
+        "likes": 68
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7634914941304130846",
+        "url": "https://www.tiktok.com/@dope.eats.pgh/video/7634914941304130846",
+        "text": "Grabbed my camera the other night and ended up back at Smashed N’ Fried.  Always a good time getting in there with Rodney and watching everything come together…simple food, done the right way.\n\nI come here for the smashburgers, but they’ve ",
+        "author": "dope.eats.pgh",
+        "plays": 63900,
+        "likes": 3695,
+        "posted": "2026-05-01T13:29:47.000Z"
+      },
+      {
+        "id": "7649369276394130701",
+        "url": "https://www.tiktok.com/@skeedtv/video/7649369276394130701",
+        "text": "Smashed ‘N Fried has been all down our timeline lately! 🤔 #pittsburghfood #pittsburgh #pittsburghfoodie #foodreview ",
+        "author": "skeedtv",
+        "plays": 2881,
+        "likes": 68,
+        "posted": "2026-06-09T12:20:42.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-09T12:20:42.000Z",
+    "median_plays": 33391,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:32:46.633Z"
+  }
 }

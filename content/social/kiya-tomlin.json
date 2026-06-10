@@ -14,5 +14,103 @@
   "full_name": "Kiya Tomlin | Sustainable Women's Fashion + Licensed NFL Apparel",
   "last_post_at": "2026-05-13T09:22:14.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "kiya tomlin pittsburgh",
+    "video_count": 8,
+    "total_plays": 12047,
+    "total_likes": 630,
+    "unique_creators": 7,
+    "top_creators": [
+      {
+        "handle": "demeatriastyle",
+        "fans": 1404,
+        "verified": false,
+        "videos": 1,
+        "plays": 6714,
+        "likes": 372
+      },
+      {
+        "handle": "handpickedhaute",
+        "fans": 248,
+        "verified": false,
+        "videos": 1,
+        "plays": 2031,
+        "likes": 16
+      },
+      {
+        "handle": "steelersireland",
+        "fans": 6305,
+        "verified": false,
+        "videos": 2,
+        "plays": 1945,
+        "likes": 101
+      },
+      {
+        "handle": "medoinmotion",
+        "fans": 214,
+        "verified": false,
+        "videos": 1,
+        "plays": 873,
+        "likes": 98
+      },
+      {
+        "handle": "patriciaford30",
+        "fans": 454,
+        "verified": false,
+        "videos": 1,
+        "plays": 234,
+        "likes": 28
+      },
+      {
+        "handle": "partyatbrittsllc",
+        "fans": 1236,
+        "verified": false,
+        "videos": 1,
+        "plays": 165,
+        "likes": 13
+      },
+      {
+        "handle": "wisdombydrew",
+        "fans": 4863,
+        "verified": false,
+        "videos": 1,
+        "plays": 85,
+        "likes": 2
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7628386896674163982",
+        "url": "https://www.tiktok.com/@demeatriastyle/video/7628386896674163982",
+        "text": "📍 Point State Park\n\nBIG ANNOUNCEMENT.\n\nDemeatria Boccella Productions x Kiya Tomlin\npresent:\n\nFROM OUR RUNWAY TO YOURS: A Black & Gold Welcome\nA Red Carpet Fashion Show Experience\n\n🗓 Friday, April 24\n🕒 3 PM\n\nFeaturing the Kiya Tomlin Col",
+        "author": "demeatriastyle",
+        "plays": 6714,
+        "likes": 372,
+        "posted": "2026-04-13T23:17:39.000Z"
+      },
+      {
+        "id": "7616533245072608526",
+        "url": "https://www.tiktok.com/@handpickedhaute/video/7616533245072608526",
+        "text": "What do you wear to the NFL Draft in Pittsburgh? 👀\n\nSteel City Style | Episode 1 featuring @Kiya Tomlin \nDraft week outfit ideas in Pittsburgh 🖤💛\n\n#SteelCityStyle #NFLDraft #pittsburghsteelers #pittsburgh #outfitideas ",
+        "author": "handpickedhaute",
+        "plays": 2031,
+        "likes": 16,
+        "posted": "2026-03-13T00:39:26.000Z"
+      },
+      {
+        "id": "7616517102798638350",
+        "url": "https://www.tiktok.com/@steelersireland/video/7616517102798638350",
+        "text": "Tonight, we’re celebrating the 50th Anniversary of The Ireland Funds at Acrisure Stadium!\n\nAs part of the celebration, Michael Keaton, Mike Tomlin and Kiya Tomlin will be honored for their impact on the Pittsburgh region in manners that fit",
+        "author": "steelersireland",
+        "plays": 1262,
+        "likes": 55,
+        "posted": "2026-03-12T23:36:43.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-26T16:52:09.000Z",
+    "median_plays": 778,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:22:56.250Z"
+  }
 }

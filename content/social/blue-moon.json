@@ -14,5 +14,103 @@
   "full_name": "Blue Moon Bar",
   "last_post_at": "2026-05-13T00:56:35.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "blue moon pittsburgh",
+    "video_count": 8,
+    "total_plays": 34547,
+    "total_likes": 5764,
+    "unique_creators": 7,
+    "top_creators": [
+      {
+        "handle": "jsko_",
+        "fans": 957,
+        "verified": false,
+        "videos": 2,
+        "plays": 29537,
+        "likes": 5497
+      },
+      {
+        "handle": "soysauceyybae",
+        "fans": 19400,
+        "verified": false,
+        "videos": 1,
+        "plays": 2488,
+        "likes": 93
+      },
+      {
+        "handle": "bluemoonpep",
+        "fans": 1474,
+        "verified": false,
+        "videos": 1,
+        "plays": 926,
+        "likes": 30
+      },
+      {
+        "handle": "lilyyyyy_h12",
+        "fans": 1435,
+        "verified": false,
+        "videos": 1,
+        "plays": 513,
+        "likes": 64
+      },
+      {
+        "handle": "ginacoladaaaaa",
+        "fans": 593,
+        "verified": false,
+        "videos": 1,
+        "plays": 468,
+        "likes": 32
+      },
+      {
+        "handle": "citydogs_co",
+        "fans": 939,
+        "verified": false,
+        "videos": 1,
+        "plays": 447,
+        "likes": 41
+      },
+      {
+        "handle": "heatherwestfall17",
+        "fans": 1218,
+        "verified": false,
+        "videos": 1,
+        "plays": 168,
+        "likes": 7
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7646003260284734733",
+        "url": "https://www.tiktok.com/@jsko_/video/7646003260284734733",
+        "text": "The \"Blue Moon\" rises in Pittsburgh over the PPG building and perfectly nestles into the spires of the building. This was shot from the McKees Rocks area of Pittsburgh. If you’ve never went to see the moon rise, go do it!\n\n#pittsburgh \n#moo",
+        "author": "jsko_",
+        "plays": 28200,
+        "likes": 5405,
+        "posted": "2026-05-31T10:39:22.000Z"
+      },
+      {
+        "id": "7632353703411846431",
+        "url": "https://www.tiktok.com/@soysauceyybae/video/7632353703411846431",
+        "text": "🌑🦋✨\nBlue Moon\nnew single out 5.2.26\nOn all music platforms!\nMusic Artist —> BIA DAO\n\nSomewhere between\ndreamy & eerie\nethereal & haunting\n\nlet me be lonely with you\n\n#newsingle #biadao #alternative #pittsburgh #bluemoon ",
+        "author": "soysauceyybae",
+        "plays": 2488,
+        "likes": 93,
+        "posted": "2026-04-24T15:50:47.000Z"
+      },
+      {
+        "id": "7646610461286321421",
+        "url": "https://www.tiktok.com/@jsko_/video/7646610461286321421",
+        "text": "Blue Moon over PPG Building  | Behind the Scenes | Pittsburgh | PA\n\nIf you have never gone to see the full moon rise, you will not regret it. This was the scene of the blue moon rising over Pittsburgh right after sunset. The moon gets illum",
+        "author": "jsko_",
+        "plays": 1337,
+        "likes": 92,
+        "posted": "2026-06-02T01:54:17.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-02T15:50:54.000Z",
+    "median_plays": 720,
+    "detected_own_handle": "bluemoonpep",
+    "scraped_at": "2026-06-10T19:09:59.994Z"
+  }
 }

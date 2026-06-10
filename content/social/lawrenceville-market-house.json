@@ -14,5 +14,79 @@
   "full_name": "Lawrenceville Market House",
   "last_post_at": "2026-05-12T15:23:29.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "lawrenceville market house pittsburgh",
+    "video_count": 4,
+    "total_plays": 6317,
+    "total_likes": 482,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "stayhungryvintage",
+        "fans": 608,
+        "verified": false,
+        "videos": 1,
+        "plays": 3375,
+        "likes": 312
+      },
+      {
+        "handle": "heyjuliacampana",
+        "fans": 1011,
+        "verified": false,
+        "videos": 1,
+        "plays": 1582,
+        "likes": 102
+      },
+      {
+        "handle": "melrossdesigns",
+        "fans": 3395,
+        "verified": false,
+        "videos": 1,
+        "plays": 998,
+        "likes": 57
+      },
+      {
+        "handle": "silver.horse.donegal",
+        "fans": 84,
+        "verified": false,
+        "videos": 1,
+        "plays": 362,
+        "likes": 11
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7630093906226580767",
+        "url": "https://www.tiktok.com/@stayhungryvintage/video/7630093906226580767",
+        "text": "Opening day at Lawrenceville Markethouse!!! 12 - 5pm I cannot believe this is REAL!!!! #vintage #store #pittsburgh ",
+        "author": "stayhungryvintage",
+        "plays": 3375,
+        "likes": 312,
+        "posted": "2026-04-18T13:41:54.000Z"
+      },
+      {
+        "id": "7646398957509168398",
+        "url": "https://www.tiktok.com/@heyjuliacampana/video/7646398957509168398",
+        "text": "Standing Wave Coffee in the Lawrenceville Market House!! ",
+        "author": "heyjuliacampana",
+        "plays": 1582,
+        "likes": 102,
+        "posted": "2026-06-01T12:14:15.000Z"
+      },
+      {
+        "id": "7625053424656157966",
+        "url": "https://www.tiktok.com/@melrossdesigns/video/7625053424656157966",
+        "text": "It is literally always such a great time tattooing at Lawrenceville’s Market House! Such an honor to do it. \n\nTattoo round up:\n2 Bee’s 🐝\n2 bows 🎀\n2 Wish Bones 🦴 \n1 Vine 🌿\n1 mirror 🪞 \n1 dagger 🗡️ \n1 Pennsylvania outline 💗\n1 “lucky” 🍀",
+        "author": "melrossdesigns",
+        "plays": 998,
+        "likes": 57,
+        "posted": "2026-04-04T23:42:11.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-01T12:14:15.000Z",
+    "median_plays": 1290,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:23:30.916Z"
+  }
 }

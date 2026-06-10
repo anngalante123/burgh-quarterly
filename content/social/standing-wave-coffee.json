@@ -14,5 +14,79 @@
   "full_name": "Standing Wave Coffee Roaster",
   "last_post_at": "2026-05-11T16:57:11.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "standing wave coffee pittsburgh",
+    "video_count": 4,
+    "total_plays": 13488,
+    "total_likes": 756,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "courtneyncamp",
+        "fans": 2290,
+        "verified": false,
+        "videos": 1,
+        "plays": 5576,
+        "likes": 243
+      },
+      {
+        "handle": "mcmonaglle",
+        "fans": 5965,
+        "verified": false,
+        "videos": 1,
+        "plays": 4111,
+        "likes": 296
+      },
+      {
+        "handle": "rinaelysee_",
+        "fans": 3527,
+        "verified": false,
+        "videos": 1,
+        "plays": 2218,
+        "likes": 115
+      },
+      {
+        "handle": "heyjuliacampana",
+        "fans": 1012,
+        "verified": false,
+        "videos": 1,
+        "plays": 1583,
+        "likes": 102
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7626372711765363982",
+        "url": "https://www.tiktok.com/@courtneyncamp/video/7626372711765363982",
+        "text": "8 new places in Pittsburgh 🎉\n🌊 standing wave coffee opening their second location in lawrenceville \n🍽️ the Eastman is coming to north side\n🥭 @mangomangodessertusa is opening in cranberry\n🐓 cockys coop is open in market square \n🥯 3 bro",
+        "author": "courtneyncamp",
+        "plays": 5576,
+        "likes": 243,
+        "posted": "2026-04-08T13:01:24.000Z"
+      },
+      {
+        "id": "7640677474677902622",
+        "url": "https://www.tiktok.com/@mcmonaglle/video/7640677474677902622",
+        "text": "This place is going in my new top coffee shop list!! Stay tuned for a full favorites list soon! I recommend the iced maple breve (half sweet) and Birmingham sammie at Standing Wave Coffee Roasters in Southside (Pittsburgh), PA! This place i",
+        "author": "mcmonaglle",
+        "plays": 4111,
+        "likes": 296,
+        "posted": "2026-05-17T11:30:00.000Z"
+      },
+      {
+        "id": "7644966748680244511",
+        "url": "https://www.tiktok.com/@rinaelysee_/video/7644966748680244511",
+        "text": "Standing Wave Coffee’s newest location in Lawrenceville is my new go-to. Tried their house-made matcha latte.. so good! \n\n#pittsburghcoffeeshop #pittsburghmatcha #standingwavecoffee #pittsburgh ",
+        "author": "rinaelysee_",
+        "plays": 2218,
+        "likes": 115,
+        "posted": "2026-05-28T15:35:41.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-01T12:14:15.000Z",
+    "median_plays": 3165,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:35:37.016Z"
+  }
 }

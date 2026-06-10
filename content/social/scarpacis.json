@@ -14,5 +14,37 @@
   "full_name": "Scarpaci’s Bar",
   "last_post_at": "2026-05-13T11:19:33.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "scarpaci's pittsburgh",
+    "video_count": 1,
+    "total_plays": 256,
+    "total_likes": 32,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "katie.roman.music",
+        "fans": 6005,
+        "verified": false,
+        "videos": 1,
+        "plays": 256,
+        "likes": 32
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7644612854544370958",
+        "url": "https://www.tiktok.com/@katie.roman.music/video/7644612854544370958",
+        "text": "headlined at Scarpacis  in pittsburgh  pa it was amazing crow was rocking and even got tips 🥰😍😘 bringing real authentic music to the burgh no lip syncing all vocals #queenenergy #Rnb ##pop #afrolatina #addme ",
+        "author": "katie.roman.music",
+        "plays": 256,
+        "likes": 32,
+        "posted": "2026-05-27T16:42:37.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-27T16:42:37.000Z",
+    "median_plays": 256,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:31:05.847Z"
+  }
 }

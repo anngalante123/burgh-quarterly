@@ -14,5 +14,54 @@
   "full_name": "Station No. 5",
   "last_post_at": "2026-05-13T11:00:00.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "station no. 5 pittsburgh",
+    "video_count": 2,
+    "total_plays": 10273,
+    "total_likes": 834,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "lifeaskristyn",
+        "fans": 1009,
+        "verified": false,
+        "videos": 1,
+        "plays": 5974,
+        "likes": 336
+      },
+      {
+        "handle": "megantuano",
+        "fans": 1374,
+        "verified": false,
+        "videos": 1,
+        "plays": 4299,
+        "likes": 498
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7636795059739888909",
+        "url": "https://www.tiktok.com/@lifeaskristyn/video/7636795059739888909",
+        "text": "This is going to quickly become a regular stop for us! 🪿☕️ We got the cutest mother's day gifts here too!\n\nSuper bummed we can't make Storytime With Mimi this weekend. Please go enjoy it for me 🥰\n\n📍Station No. 5, 185 Bradford Rd, Bradfor",
+        "author": "lifeaskristyn",
+        "plays": 5974,
+        "likes": 336,
+        "posted": "2026-05-06T15:05:57.000Z"
+      },
+      {
+        "id": "7633595194256002317",
+        "url": "https://www.tiktok.com/@megantuano/video/7633595194256002317",
+        "text": "Tucked in the woods, this place is a whole vibe — warm, whimsical, and honestly felt like my own little oasis. Station No. 5, every room room has a different feel, they partner with local artists, there’s a kids section, a mini library, and",
+        "author": "megantuano",
+        "plays": 4299,
+        "likes": 498,
+        "posted": "2026-04-28T00:08:31.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-06T15:05:57.000Z",
+    "median_plays": 5137,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:35:45.257Z"
+  }
 }

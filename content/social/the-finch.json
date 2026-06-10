@@ -14,5 +14,87 @@
   "full_name": "The Finch | Rooftop Bar",
   "last_post_at": "2026-05-11T15:57:42.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "finch pittsburgh",
+    "video_count": 5,
+    "total_plays": 76019,
+    "total_likes": 4318,
+    "unique_creators": 5,
+    "top_creators": [
+      {
+        "handle": "evelynsciulli",
+        "fans": 1868,
+        "verified": false,
+        "videos": 1,
+        "plays": 39200,
+        "likes": 2225
+      },
+      {
+        "handle": "indulge.in.pgh",
+        "fans": 1998,
+        "verified": false,
+        "videos": 1,
+        "plays": 32200,
+        "likes": 1971
+      },
+      {
+        "handle": "itsgouds",
+        "fans": 259,
+        "verified": false,
+        "videos": 1,
+        "plays": 3333,
+        "likes": 52
+      },
+      {
+        "handle": "suliveya_",
+        "fans": 2469,
+        "verified": false,
+        "videos": 1,
+        "plays": 959,
+        "likes": 44
+      },
+      {
+        "handle": "vexkelpie",
+        "fans": 12800,
+        "verified": false,
+        "videos": 1,
+        "plays": 327,
+        "likes": 26
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7641244568783998221",
+        "url": "https://www.tiktok.com/@evelynsciulli/video/7641244568783998221",
+        "text": "Give me rooftop parties all summer long @mattychiuch #pittsburgh #pittsburghrooftops #rooftopbar #djset #thefinch ",
+        "author": "evelynsciulli",
+        "plays": 39200,
+        "likes": 2225,
+        "posted": "2026-05-18T14:51:43.000Z"
+      },
+      {
+        "id": "7628213685663632653",
+        "url": "https://www.tiktok.com/@indulge.in.pgh/video/7628213685663632653",
+        "text": "the rooftop bars in Pittsburgh are UNREAL 🤳🏼🥹\n\n📍The Finch Distillery ",
+        "author": "indulge.in.pgh",
+        "plays": 32200,
+        "likes": 1971,
+        "posted": "2026-04-13T12:06:00.000Z"
+      },
+      {
+        "id": "7643124595481988383",
+        "url": "https://www.tiktok.com/@itsgouds/video/7643124595481988383",
+        "text": "POV: the sun is finally out in Pittsburgh so you book it to the nearest rooftop party ☀️ \n\n📍 The Finch | @finchpgh \n🪩 Eclipse Rooftop Party | @eclipserooftopparty \n\n🧀🧀🧀🧀🧀 DJs were perf, vibes were perf, everything #GOUDapproved ",
+        "author": "itsgouds",
+        "plays": 3333,
+        "likes": 52,
+        "posted": "2026-05-23T16:28:13.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-28T02:57:55.000Z",
+    "median_plays": 3333,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:38:00.935Z"
+  }
 }

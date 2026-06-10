@@ -14,5 +14,18 @@
   "full_name": "𝙰𝚁𝙼𝙵𝚄𝙻 𝙾𝙵 𝙵𝙻𝙾𝚆𝙴𝚁𝚂",
   "last_post_at": "2026-05-12T18:30:55.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "armful of flowers pittsburgh",
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:07:08.549Z"
+  }
 }

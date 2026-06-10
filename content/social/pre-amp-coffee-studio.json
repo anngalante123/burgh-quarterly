@@ -14,5 +14,103 @@
   "full_name": "Pre Amp Coffee Studio",
   "last_post_at": "2026-05-12T15:29:11.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "pre amp coffee studio pittsburgh",
+    "video_count": 7,
+    "total_plays": 4358,
+    "total_likes": 218,
+    "unique_creators": 7,
+    "top_creators": [
+      {
+        "handle": "preamp.coffeestudio",
+        "fans": 218,
+        "verified": false,
+        "videos": 1,
+        "plays": 1266,
+        "likes": 62
+      },
+      {
+        "handle": "twogobox",
+        "fans": 667,
+        "verified": false,
+        "videos": 1,
+        "plays": 603,
+        "likes": 18
+      },
+      {
+        "handle": "dwightgrlwasted",
+        "fans": 325,
+        "verified": false,
+        "videos": 1,
+        "plays": 600,
+        "likes": 36
+      },
+      {
+        "handle": "heystephaniewess",
+        "fans": 1513,
+        "verified": false,
+        "videos": 1,
+        "plays": 562,
+        "likes": 24
+      },
+      {
+        "handle": "angmarie_",
+        "fans": 4775,
+        "verified": false,
+        "videos": 1,
+        "plays": 531,
+        "likes": 32
+      },
+      {
+        "handle": "courtneyncamp",
+        "fans": 2291,
+        "verified": false,
+        "videos": 1,
+        "plays": 529,
+        "likes": 38
+      },
+      {
+        "handle": "itsgouds",
+        "fans": 259,
+        "verified": false,
+        "videos": 1,
+        "plays": 267,
+        "likes": 8
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7627674279206817037",
+        "url": "https://www.tiktok.com/@preamp.coffeestudio/video/7627674279206817037",
+        "text": "Be safe, and listen to the facts! Drinking more caffeine is good for your mental health!😌☕️🧡\n\n#coffeelovers #pittsburghcoffee #pittsburgh #coffee #fyp ",
+        "author": "preamp.coffeestudio",
+        "plays": 1266,
+        "likes": 62,
+        "posted": "2026-04-12T01:12:04.000Z"
+      },
+      {
+        "id": "7627529930624060686",
+        "url": "https://www.tiktok.com/@twogobox/video/7627529930624060686",
+        "text": "Headed out to Pre Amp Coffee studio today in Squirrel Hill & had so much fun! It’s so cute! \n#alt #couples #pittsburgh #pgh #coffeeshops ",
+        "author": "twogobox",
+        "plays": 603,
+        "likes": 18,
+        "posted": "2026-04-11T15:52:18.000Z"
+      },
+      {
+        "id": "7643425126339464462",
+        "url": "https://www.tiktok.com/@dwightgrlwasted/video/7643425126339464462",
+        "text": "Not my neighborhood… which is the only reason i’m not here every morning.\nPre Amp Coffee Studio in Squirrel Hill sits somewhere between retro diner and specialty coffee shop, and it works. low lighting, fresh flowers, equipment that means b",
+        "author": "dwightgrlwasted",
+        "plays": 600,
+        "likes": 36,
+        "posted": "2026-05-24T11:54:48.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-24T11:54:48.000Z",
+    "median_plays": 562,
+    "detected_own_handle": "preamp.coffeestudio",
+    "scraped_at": "2026-06-10T19:29:35.880Z"
+  }
 }

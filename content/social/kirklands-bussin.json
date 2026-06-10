@@ -14,5 +14,54 @@
   "full_name": "Kirklands Bussin MckeesRocks",
   "last_post_at": "2026-05-11T07:26:45.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "kirklands bussin pittsburgh",
+    "video_count": 2,
+    "total_plays": 593,
+    "total_likes": 25,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "zer0tolerance24",
+        "fans": 455,
+        "verified": false,
+        "videos": 1,
+        "plays": 307,
+        "likes": 19
+      },
+      {
+        "handle": "ai_digital_conten",
+        "fans": 83,
+        "verified": false,
+        "videos": 1,
+        "plays": 286,
+        "likes": 6
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7629177316110863629",
+        "url": "https://www.tiktok.com/@zer0tolerance24/video/7629177316110863629",
+        "text": "#pittsburgh #food #fyp #nfldraft @KIRKLANDS BUSSIN go see him in mckeesrocks 😋 ",
+        "author": "zer0tolerance24",
+        "plays": 307,
+        "likes": 19,
+        "posted": "2026-04-16T02:24:50.000Z"
+      },
+      {
+        "id": "7643553733804133646",
+        "url": "https://www.tiktok.com/@ai_digital_conten/video/7643553733804133646",
+        "text": "🔥 Come check Kirklands Bussin McKeesRocks!\nThe spot in Pittsburgh that’s truly bussin with that real soul food flavor! 🔥\n📍 647 Broadway Ave, McKees Rocks, PA\n📞 (412) 419-0223 \n\nNeed an ad for your business!  #fyp #viral #reels #food #pi",
+        "author": "ai_digital_conten",
+        "plays": 286,
+        "likes": 6,
+        "posted": "2026-05-24T20:12:49.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-24T20:12:49.000Z",
+    "median_plays": 297,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:22:23.557Z"
+  }
 }

@@ -14,5 +14,63 @@
   "full_name": "Benny Fierro's",
   "last_post_at": "2026-05-13T19:26:33.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "benny fierro's pittsburgh",
+    "video_count": 6,
+    "total_plays": 18304,
+    "total_likes": 480,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "user48030290182666",
+        "fans": 17700,
+        "verified": false,
+        "videos": 3,
+        "plays": 14034,
+        "likes": 93
+      },
+      {
+        "handle": "modestdirector",
+        "fans": 779,
+        "verified": false,
+        "videos": 3,
+        "plays": 4270,
+        "likes": 387
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7624147777634782494",
+        "url": "https://www.tiktok.com/@user48030290182666/video/7624147777634782494",
+        "text": "Barstool Pizza Review - Benny Fierro's (Pittsburgh, PA) presented by Mack Weldon",
+        "author": "user48030290182666",
+        "plays": 12700,
+        "likes": 57,
+        "posted": "2026-04-02T13:07:27.000Z"
+      },
+      {
+        "id": "7617098337266846990",
+        "url": "https://www.tiktok.com/@modestdirector/video/7617098337266846990",
+        "text": "Madman live at Benny Fierro’s pizza shop in Pittsburgh, PA on March 09, 2026. Full set now on YouTube. Link in bio! \n\n#hardcore #punk #hardcorepunk #pittsburgh #pizza ",
+        "author": "modestdirector",
+        "plays": 2156,
+        "likes": 197,
+        "posted": "2026-03-14T13:12:41.000Z"
+      },
+      {
+        "id": "7616763614510206221",
+        "url": "https://www.tiktok.com/@modestdirector/video/7616763614510206221",
+        "text": "Madman live at Benny Fierro’s in Pittsburgh, PA on March 09, 2026. Full set now on YouTube. Link in bio! \n\n#hardcore #punk #pittsburgh #hardcorepunk ",
+        "author": "modestdirector",
+        "plays": 1368,
+        "likes": 128,
+        "posted": "2026-03-13T15:33:42.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-02T13:07:27.000Z",
+    "median_plays": 1057,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:09:17.569Z"
+  }
 }

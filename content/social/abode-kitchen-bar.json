@@ -14,5 +14,54 @@
   "full_name": "Abode Kitchen & Bar",
   "last_post_at": "2026-05-07T21:46:09.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "abode kitchen and bar pittsburgh",
+    "video_count": 2,
+    "total_plays": 47293,
+    "total_likes": 1626,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "aprilsgeorge",
+        "fans": 13800,
+        "verified": false,
+        "videos": 1,
+        "plays": 46800,
+        "likes": 1615
+      },
+      {
+        "handle": "mae_mae.15",
+        "fans": 699,
+        "verified": false,
+        "videos": 1,
+        "plays": 493,
+        "likes": 11
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7619882749695888671",
+        "url": "https://www.tiktok.com/@aprilsgeorge/video/7619882749695888671",
+        "text": "Brand New Brunch Spot in Oakmont✨🍳🌿☕️\n\n📍Abode Kitchen & Bar\n\n#pittsburgh #pittsburghbrunch #oakmont #foodreview #newrestaurant ",
+        "author": "aprilsgeorge",
+        "plays": 46800,
+        "likes": 1615,
+        "posted": "2026-03-22T01:17:02.000Z"
+      },
+      {
+        "id": "7636207897139055886",
+        "url": "https://www.tiktok.com/@mae_mae.15/video/7636207897139055886",
+        "text": "📍abode kitchen & bar #abode #oakmont #pittsburgh #brunch #fyp ",
+        "author": "mae_mae.15",
+        "plays": 493,
+        "likes": 11,
+        "posted": "2026-05-05T01:07:00.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-05T01:07:00.000Z",
+    "median_plays": 23647,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:06:17.330Z"
+  }
 }

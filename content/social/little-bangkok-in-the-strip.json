@@ -14,5 +14,55 @@
   "full_name": "Little Bangkok in the Strip",
   "last_post_at": "2026-05-13T15:14:25.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "little bangkok in strip pittsburgh",
+    "video_count": 18,
+    "total_plays": 8588,
+    "total_likes": 455,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "auntpenny_cooking",
+        "fans": 2072,
+        "verified": false,
+        "videos": 18,
+        "plays": 8588,
+        "likes": 455
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7631999021665537294",
+        "url": "https://www.tiktok.com/@auntpenny_cooking/video/7631999021665537294",
+        "text": "🔥 PAD THAI — THE REAL TASTE OF THAILAND 🔥\nFrom the heart of Thailand to your table at\nLittle Bangkok in the Strip\n🍜 Stir-fried noodles with real tamarind sauce & palm sugar\n🍤 Your choice of protein\n🌶️ Spice it your way: 1 to Thai 10\n❤️",
+        "author": "auntpenny_cooking",
+        "plays": 3164,
+        "likes": 105,
+        "posted": "2026-04-23T16:54:18.000Z"
+      },
+      {
+        "id": "7625970570663922957",
+        "url": "https://www.tiktok.com/@auntpenny_cooking/video/7625970570663922957",
+        "text": "Looking for your next favorite spot? 👀\nCome enjoy fresh, authentic Thai dishes made just for you 🌿🍜\nFrom Pad Thai to rich curries — we’ve got your cravings covered!\n📍 Little Bangkok in the Strip • BYOB\n#PittsburghFood #ThaiCuisine #EatI",
+        "author": "auntpenny_cooking",
+        "plays": 802,
+        "likes": 15,
+        "posted": "2026-04-07T11:00:53.000Z"
+      },
+      {
+        "id": "7638206722523516173",
+        "url": "https://www.tiktok.com/@auntpenny_cooking/video/7638206722523516173",
+        "text": "🔥 Sundays just got better at Little Bangkok in the Strip! 🔥\nWe’re NOW OPEN SUNDAYS\n🕛 12 PM – 5 PM\nCome enjoy fresh Thai food, bold flavors, spicy curries, Pad Thai, noodles, fried rice & mango sticky rice 🍜🥭✨\n📍Little Bangkok in the St",
+        "author": "auntpenny_cooking",
+        "plays": 528,
+        "likes": 42,
+        "posted": "2026-05-10T10:25:04.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-10T11:35:09.000Z",
+    "median_plays": 287,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:23:53.357Z"
+  }
 }
