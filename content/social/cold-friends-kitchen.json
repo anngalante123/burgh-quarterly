@@ -14,5 +14,37 @@
   "full_name": "Cold Friends Kitchen",
   "last_post_at": "2026-04-23T15:19:06.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "cold friends kitchen pittsburgh",
+    "video_count": 1,
+    "total_plays": 3597,
+    "total_likes": 121,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "biteswithbriii_",
+        "fans": 702,
+        "verified": false,
+        "videos": 1,
+        "plays": 3597,
+        "likes": 121
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7622452362233335054",
+        "url": "https://www.tiktok.com/@biteswithbriii_/video/7622452362233335054",
+        "text": "BIGHAM TAVERN on the mount!!\n\nhadn’t been here in a minute! Cold friends kitchen still has my fav wings in the burgh, but Bigham has an insane flavor list 🍗🔥\nBlack Pantha & Lou Q hit the spot while we watched some college hoops. 🏀\n\n#pitt",
+        "author": "biteswithbriii_",
+        "plays": 3597,
+        "likes": 121,
+        "posted": "2026-03-28T23:28:32.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-03-28T23:28:32.000Z",
+    "median_plays": 3597,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:13:31.430Z"
+  }
 }

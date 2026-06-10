@@ -14,5 +14,18 @@
   "full_name": "1930 by Atria’s",
   "last_post_at": "2026-05-06T15:37:01.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "1930 by atria's pittsburgh",
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T18:26:51.607Z"
+  }
 }

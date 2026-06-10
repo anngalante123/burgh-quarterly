@@ -14,5 +14,111 @@
   "full_name": "pittsburgh based soup dood",
   "last_post_at": "2026-05-13T15:48:25.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "brothmonger pittsburgh",
+    "video_count": 16,
+    "total_plays": 397629,
+    "total_likes": 20261,
+    "unique_creators": 11,
+    "top_creators": [
+      {
+        "handle": "ana.eats.pgh",
+        "fans": 59500,
+        "verified": false,
+        "videos": 2,
+        "plays": 264100,
+        "likes": 11572
+      },
+      {
+        "handle": "calsipos",
+        "fans": 74400,
+        "verified": false,
+        "videos": 3,
+        "plays": 62800,
+        "likes": 5526
+      },
+      {
+        "handle": "yinzermorg",
+        "fans": 1489,
+        "verified": false,
+        "videos": 3,
+        "plays": 48979,
+        "likes": 1939
+      },
+      {
+        "handle": "alliebangor",
+        "fans": 5625,
+        "verified": false,
+        "videos": 1,
+        "plays": 9561,
+        "likes": 503
+      },
+      {
+        "handle": "happysifresh",
+        "fans": 8554,
+        "verified": false,
+        "videos": 1,
+        "plays": 7677,
+        "likes": 428
+      },
+      {
+        "handle": "sarah_craigg",
+        "fans": 379,
+        "verified": false,
+        "videos": 1,
+        "plays": 1463,
+        "likes": 77
+      },
+      {
+        "handle": "misssingnaction",
+        "fans": 5507,
+        "verified": false,
+        "videos": 1,
+        "plays": 1151,
+        "likes": 57
+      },
+      {
+        "handle": "kbsnailbar",
+        "fans": 2980,
+        "verified": false,
+        "videos": 1,
+        "plays": 733,
+        "likes": 81
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7631428786432658719",
+        "url": "https://www.tiktok.com/@ana.eats.pgh/video/7631428786432658719",
+        "text": "Italian wedding soup hoagie from Brothmonger 🔥 Available THIS WEEK probably for a limited time so hurry. & don’t be mad if it sells out quick because it might!\n\n#pittsburghfood ",
+        "author": "ana.eats.pgh",
+        "plays": 210500,
+        "likes": 8689,
+        "posted": "2026-04-22T04:01:29.000Z"
+      },
+      {
+        "id": "7619739867374734622",
+        "url": "https://www.tiktok.com/@ana.eats.pgh/video/7619739867374734622",
+        "text": "First time trying Brothmonger with my pal @caleb 💜⭐️😎🥪\n•\n•\n•\nWe tried so many delicious things. Here were my favorites:\n\n⭐️ The Boyfriend (my personal fav): mortadella, pistachio, pesto, on focaccia - 10/10 delicious.\n\n🔥 Roast Beefy Wee",
+        "author": "ana.eats.pgh",
+        "plays": 53600,
+        "likes": 2883,
+        "posted": "2026-03-21T16:02:40.000Z"
+      },
+      {
+        "id": "7631968121313643807",
+        "url": "https://www.tiktok.com/@yinzermorg/video/7631968121313643807",
+        "text": "Wowowow you NEED to try this hoagie ✨ \n\n📍 Brothmonger • Bloomfield\n\n#pittsburghfood #pgheats #meatballsub #yinzer #weddingsoup ",
+        "author": "yinzermorg",
+        "plays": 37200,
+        "likes": 1435,
+        "posted": "2026-04-23T14:54:23.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-05T04:56:16.000Z",
+    "median_plays": 7167,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:12:27.941Z"
+  }
 }

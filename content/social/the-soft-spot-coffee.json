@@ -14,5 +14,37 @@
   "full_name": "The Soft Spot",
   "last_post_at": "2026-05-13T17:02:40.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "soft spot coffee pittsburgh",
+    "video_count": 1,
+    "total_plays": 1595,
+    "total_likes": 101,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "rinaelysee_",
+        "fans": 3527,
+        "verified": false,
+        "videos": 1,
+        "plays": 1595,
+        "likes": 101
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7639840715333307679",
+        "url": "https://www.tiktok.com/@rinaelysee_/video/7639840715333307679",
+        "text": "New coffee shop alert in Pittsburgh ☕️ The Soft Spot in Garfield has quickly become a neighborhood favorite with great coffee, pastries, and community events. Their iced vanilla latte was so good. \n#thesoftspotcoffee #pittsburghcoffee #pitt",
+        "author": "rinaelysee_",
+        "plays": 1595,
+        "likes": 101,
+        "posted": "2026-05-14T20:04:04.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-14T20:04:04.000Z",
+    "median_plays": 1595,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:39:08.359Z"
+  }
 }

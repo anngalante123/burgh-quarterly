@@ -14,5 +14,79 @@
   "full_name": "The Spot Pittsburgh",
   "last_post_at": "2026-05-12T16:46:32.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "spot pittsburgh pittsburgh",
+    "video_count": 5,
+    "total_plays": 112491,
+    "total_likes": 9474,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "lilbigbackz",
+        "fans": 23000,
+        "verified": false,
+        "videos": 2,
+        "plays": 96500,
+        "likes": 8255
+      },
+      {
+        "handle": "tiakasch",
+        "fans": 2592,
+        "verified": false,
+        "videos": 1,
+        "plays": 14900,
+        "likes": 1158
+      },
+      {
+        "handle": "gabriael.onthego",
+        "fans": 2830,
+        "verified": false,
+        "videos": 1,
+        "plays": 686,
+        "likes": 39
+      },
+      {
+        "handle": "katechalater",
+        "fans": 3904,
+        "verified": false,
+        "videos": 1,
+        "plays": 405,
+        "likes": 22
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7635345782836612383",
+        "url": "https://www.tiktok.com/@lilbigbackz/video/7635345782836612383",
+        "text": "The Breakfast Spot located in Pittsburgh 🥞 When it comes to breakfast food this spot notoriously sells some of the best breakfast dishes in all of Pittsburgh… they have flights, drinks, sandwiches, wings and so much more… 🔥 Don’t get me s",
+        "author": "lilbigbackz",
+        "plays": 77000,
+        "likes": 6616,
+        "posted": "2026-05-02T17:21:28.000Z"
+      },
+      {
+        "id": "7647997192933854494",
+        "url": "https://www.tiktok.com/@lilbigbackz/video/7647997192933854494",
+        "text": "HK Dim Sum located in Pittsburgh 🥟 This Cantonese restaurant deserves more recognition for serving up quality dishes and excellent service… their hibachi fried rice and their chicken soup dumplings were by far our favorite but don’t sleep ",
+        "author": "lilbigbackz",
+        "plays": 19500,
+        "likes": 1639,
+        "posted": "2026-06-05T19:35:29.000Z"
+      },
+      {
+        "id": "7647959737421548830",
+        "url": "https://www.tiktok.com/@tiakasch/video/7647959737421548830",
+        "text": "10000% missing my penn state runs😔 if you have any safe running spots lmk!  honestly didn’t show you anything… except the best coffee, and pretty views…  maybe skip to the goats.  #pittsburgh ",
+        "author": "tiakasch",
+        "plays": 14900,
+        "likes": 1158,
+        "posted": "2026-06-05T17:10:07.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-09T14:55:38.000Z",
+    "median_plays": 14900,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:39:59.407Z"
+  }
 }

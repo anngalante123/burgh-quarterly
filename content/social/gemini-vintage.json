@@ -14,5 +14,37 @@
   "full_name": "Gemini Vintage",
   "last_post_at": "2026-05-08T16:30:00.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "gemini vintage pittsburgh",
+    "video_count": 1,
+    "total_plays": 1418,
+    "total_likes": 115,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "toricreates222",
+        "fans": 8046,
+        "verified": false,
+        "videos": 1,
+        "plays": 1418,
+        "likes": 115
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7630117080762797325",
+        "url": "https://www.tiktok.com/@toricreates222/video/7630117080762797325",
+        "text": "The cutest little vintage thrift store 😍👛🫶✨ \n\n#pittsburghthrift #geminivintage #vintageshopping #thriftshopping #pittsburghstores ",
+        "author": "toricreates222",
+        "plays": 1418,
+        "likes": 115,
+        "posted": "2026-04-18T15:11:54.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-18T15:11:54.000Z",
+    "median_plays": 1418,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:17:57.543Z"
+  }
 }

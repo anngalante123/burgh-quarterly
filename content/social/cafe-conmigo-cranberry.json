@@ -14,5 +14,37 @@
   "full_name": "Café Conmigo",
   "last_post_at": "2026-05-12T22:55:03.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "cafe conmigo - cranberry pittsburgh",
+    "video_count": 1,
+    "total_plays": 274,
+    "total_likes": 12,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "ashleymarieee47",
+        "fans": 1241,
+        "verified": false,
+        "videos": 1,
+        "plays": 274,
+        "likes": 12
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7620522772531318047",
+        "url": "https://www.tiktok.com/@ashleymarieee47/video/7620522772531318047",
+        "text": "Come to the coziest coffee shop in Cranberry! @Café Conmigo - PGH \n\n#coffee #coffeeshop #cafeconmigo #cranberrypa #pittsburgh #pittsburghpa #chailatte #coffeelover ",
+        "author": "ashleymarieee47",
+        "plays": 274,
+        "likes": 12,
+        "posted": "2026-03-23T18:40:48.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-03-23T18:40:48.000Z",
+    "median_plays": 274,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:12:07.335Z"
+  }
 }

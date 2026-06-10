@@ -14,5 +14,63 @@
   "full_name": "Dormont Florist",
   "last_post_at": "2026-05-11T16:54:59.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "dormont florist pittsburgh",
+    "video_count": 6,
+    "total_plays": 8178,
+    "total_likes": 598,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "dormont.florist",
+        "fans": 1422,
+        "verified": false,
+        "videos": 4,
+        "plays": 7065,
+        "likes": 547
+      },
+      {
+        "handle": "whitney.the.wareh",
+        "fans": 808,
+        "verified": false,
+        "videos": 2,
+        "plays": 1113,
+        "likes": 51
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7636030960248638750",
+        "url": "https://www.tiktok.com/@dormont.florist/video/7636030960248638750",
+        "text": "No side projects here — being an event florist is a way of life. 🌿\n\nIt takes a village to make these visions come to life. Shout out to the entire DF team, to the planner extraordinaire @Madeline Kelly Events, the dreamiest venue, and so m",
+        "author": "dormont.florist",
+        "plays": 3254,
+        "likes": 266,
+        "posted": "2026-05-04T13:40:37.000Z"
+      },
+      {
+        "id": "7623800860795079966",
+        "url": "https://www.tiktok.com/@dormont.florist/video/7623800860795079966",
+        "text": "Shout out to our friends at The 1978 Collection for these sweet treats featuring our florals! \n\nCheck out The 1978 Collection’s 2026 Lookbook to see their gorgeous rental options (and how you can style them with stunning floral arrangements",
+        "author": "dormont.florist",
+        "plays": 1854,
+        "likes": 134,
+        "posted": "2026-04-01T14:41:14.000Z"
+      },
+      {
+        "id": "7618017666627931423",
+        "url": "https://www.tiktok.com/@dormont.florist/video/7618017666627931423",
+        "text": "This snow squall in Pittsburgh has us daydreaming of summer weather…or spring weather…or, just, not a snow squall!!!! \n\nAriel & Abby were the sweetest couple with the loveliest disco vision. 🪩\n\nCover Photo: @Summer Fed \nVenue: @Sewickley Q",
+        "author": "dormont.florist",
+        "plays": 1307,
+        "likes": 122,
+        "posted": "2026-03-17T00:39:27.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-25T14:25:37.000Z",
+    "median_plays": 1010,
+    "detected_own_handle": "dormont.florist",
+    "scraped_at": "2026-06-10T19:14:10.039Z"
+  }
 }

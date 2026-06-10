@@ -14,5 +14,37 @@
   "full_name": "Swissvale Dari Delite",
   "last_post_at": "2026-05-10T15:48:23.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "swissvale dari delite pittsburgh",
+    "video_count": 1,
+    "total_plays": 856,
+    "total_likes": 20,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "vmoore094",
+        "fans": 276,
+        "verified": false,
+        "videos": 1,
+        "plays": 856,
+        "likes": 20
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7649397385604484383",
+        "url": "https://www.tiktok.com/@vmoore094/video/7649397385604484383",
+        "text": "POV: You’re eating at a Pennsylvania landmark that’s been serving the community since the 1950s \n\n🍦✨ Did you know Dari Delite actually started as a massive mid-century franchise chain before the local shops went independent? \n\nPlaces like ",
+        "author": "vmoore094",
+        "plays": 856,
+        "likes": 20,
+        "posted": "2026-06-09T14:09:12.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-09T14:09:12.000Z",
+    "median_plays": 856,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:35:19.704Z"
+  }
 }

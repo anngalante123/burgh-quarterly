@@ -14,5 +14,54 @@
   "full_name": "Giorgio’s Place",
   "last_post_at": "2026-04-30T20:38:54.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "giorgio's place pittsburgh",
+    "video_count": 2,
+    "total_plays": 6488,
+    "total_likes": 388,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "bkm740",
+        "fans": 53800,
+        "verified": false,
+        "videos": 1,
+        "plays": 5210,
+        "likes": 359
+      },
+      {
+        "handle": "barclaymountaincompany",
+        "fans": 16000,
+        "verified": false,
+        "videos": 1,
+        "plays": 1278,
+        "likes": 29
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7643628059031096606",
+        "url": "https://www.tiktok.com/@bkm740/video/7643628059031096606",
+        "text": "Local family owned spots just hit different. Stopped by Giorgio’s Place on the Northside and I already know this is about to become my new pizza spot. They’ve got a huge menu, but I was locked in on pizza.\n\nWent with two slices: a classic p",
+        "author": "bkm740",
+        "plays": 5210,
+        "likes": 359,
+        "posted": "2026-05-25T01:00:59.000Z"
+      },
+      {
+        "id": "7627882029400509710",
+        "url": "https://www.tiktok.com/@barclaymountaincompany/video/7627882029400509710",
+        "text": "Stayed at a small boutique hotel in Pittsburgh—the Villagio. Had a little trouble getting in at first, but after that… it turned into a great stay. Even better, we found Giorgio’s Place just down the road.\nSometimes the best experiences sta",
+        "author": "barclaymountaincompany",
+        "plays": 1278,
+        "likes": 29,
+        "posted": "2026-04-19T22:00:00.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-25T01:00:59.000Z",
+    "median_plays": 3244,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:18:45.835Z"
+  }
 }

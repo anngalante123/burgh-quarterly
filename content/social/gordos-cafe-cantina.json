@@ -14,5 +14,37 @@
   "full_name": "Gordo’s Cafe & Cantina",
   "last_post_at": "2026-05-13T13:38:52.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "gordo’s cafe and cantina pittsburgh",
+    "video_count": 1,
+    "total_plays": 271,
+    "total_likes": 17,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "blondefoodiepgh",
+        "fans": 1718,
+        "verified": false,
+        "videos": 1,
+        "plays": 271,
+        "likes": 17
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7639371724097637662",
+        "url": "https://www.tiktok.com/@blondefoodiepgh/video/7639371724097637662",
+        "text": "Finally found a FIRE chicken Caesar wrap @ Gordos Cafe & Cantina in FC 🙂‍↕️ they also have specialty cinnamon rolls 🤤 \n\n#pittsburgh #foodtok #pghfoodie #pgheats #pittsburghfoodie ",
+        "author": "blondefoodiepgh",
+        "plays": 271,
+        "likes": 17,
+        "posted": "2026-05-13T13:44:09.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-13T13:44:09.000Z",
+    "median_plays": 271,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:19:04.330Z"
+  }
 }

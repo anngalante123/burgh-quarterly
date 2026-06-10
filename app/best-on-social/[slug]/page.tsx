@@ -240,9 +240,12 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
   }
 
   // Hero photo: the #1-ranked business in business articles, otherwise null.
-  const heroBusiness = businessMode
-    ? enrichedBySlug.get((items[0] as ListArticleItem).business_slug)
-    : null;
+  // Guard on items.length so empty placeholder articles (curated lists that
+  // have not published yet) render instead of throwing at build time.
+  const heroBusiness =
+    businessMode && items.length > 0
+      ? enrichedBySlug.get((items[0] as ListArticleItem).business_slug)
+      : null;
   const heroPhoto = heroBusiness?.hero_photo ?? null;
   const heroAlt = heroBusiness
     ? `${heroBusiness.name}, ${heroBusiness.neighborhood}`
@@ -359,11 +362,13 @@ export default async function BestOnSocialArticlePage({ params }: PageProps) {
               </h2>
               <span className="font-body text-xs text-brand-black/55 uppercase tracking-[0.14em]">
                 {items.length} {itemNoun}
-                {article.query
-                  ? ` · ranked by ${String(article.query.ranking).replace(/_/g, " ")}`
-                  : isPostArticle(article)
-                    ? " · ranked by plays"
-                    : ""}
+                {article.rank_label
+                  ? ` · ${article.rank_label}`
+                  : article.query
+                    ? ` · ranked by ${String(article.query.ranking).replace(/_/g, " ")}`
+                    : isPostArticle(article)
+                      ? " · ranked by plays"
+                      : ""}
               </span>
             </div>
 

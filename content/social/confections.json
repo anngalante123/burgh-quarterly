@@ -14,5 +14,79 @@
   "full_name": "CONFECTIONS",
   "last_post_at": "2026-05-13T15:01:36.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "confections pittsburgh",
+    "video_count": 4,
+    "total_plays": 10413,
+    "total_likes": 423,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "courtneyncamp",
+        "fans": 2290,
+        "verified": false,
+        "videos": 1,
+        "plays": 5576,
+        "likes": 243
+      },
+      {
+        "handle": "food4paulrus",
+        "fans": 10100,
+        "verified": false,
+        "videos": 1,
+        "plays": 2565,
+        "likes": 75
+      },
+      {
+        "handle": "kavkas.confections",
+        "fans": 888,
+        "verified": false,
+        "videos": 1,
+        "plays": 2041,
+        "likes": 93
+      },
+      {
+        "handle": "rebecca.gaitan_affiliate",
+        "fans": 6358,
+        "verified": false,
+        "videos": 1,
+        "plays": 231,
+        "likes": 12
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7626372711765363982",
+        "url": "https://www.tiktok.com/@courtneyncamp/video/7626372711765363982",
+        "text": "8 new places in Pittsburgh 🎉\n🌊 standing wave coffee opening their second location in lawrenceville \n🍽️ the Eastman is coming to north side\n🥭 @mangomangodessertusa is opening in cranberry\n🐓 cockys coop is open in market square \n🥯 3 bro",
+        "author": "courtneyncamp",
+        "plays": 5576,
+        "likes": 243,
+        "posted": "2026-04-08T13:01:24.000Z"
+      },
+      {
+        "id": "7632783799528475934",
+        "url": "https://www.tiktok.com/@food4paulrus/video/7632783799528475934",
+        "text": "Confections is officially open in Regent Square and it’s a certified hit. Casey Renee is a two-time James Beard Semifinalist aka she’s legit. Pulled up at the perfect time as the chocolate chip cookies were fresh out the oven. \n\n📍 1141 S B",
+        "author": "food4paulrus",
+        "plays": 2565,
+        "likes": 75,
+        "posted": "2026-04-25T19:39:43.000Z"
+      },
+      {
+        "id": "7648108178651024670",
+        "url": "https://www.tiktok.com/@kavkas.confections/video/7648108178651024670",
+        "text": "Took a trip to Oakmont Bakery yesterday! They are great there, food and sweets are always fresh. Service is amazing! 🤩 Highly recommend visiting! #pittsburgh #oakmontbakery #sweets #cookies #cakes @OakmontBakery ",
+        "author": "kavkas.confections",
+        "plays": 2041,
+        "likes": 93,
+        "posted": "2026-06-06T02:46:34.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-06T02:46:34.000Z",
+    "median_plays": 2303,
+    "detected_own_handle": "kavkas.confections",
+    "scraped_at": "2026-06-10T19:13:25.341Z"
+  }
 }

@@ -14,5 +14,79 @@
   "full_name": "Alla Famiglia",
   "last_post_at": "2026-05-09T14:44:44.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "alla famiglia pittsburgh",
+    "video_count": 4,
+    "total_plays": 2665,
+    "total_likes": 191,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "dr.who.strange",
+        "fans": 444,
+        "verified": false,
+        "videos": 1,
+        "plays": 1011,
+        "likes": 48
+      },
+      {
+        "handle": "ciocia0601",
+        "fans": 202,
+        "verified": false,
+        "videos": 1,
+        "plays": 647,
+        "likes": 106
+      },
+      {
+        "handle": "coachmayers",
+        "fans": 46,
+        "verified": false,
+        "videos": 1,
+        "plays": 639,
+        "likes": 17
+      },
+      {
+        "handle": "marceeeeeella",
+        "fans": 261,
+        "verified": false,
+        "videos": 1,
+        "plays": 368,
+        "likes": 20
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7624013535944690975",
+        "url": "https://www.tiktok.com/@dr.who.strange/video/7624013535944690975",
+        "text": "#allafamiglia #pittsburgh #pennsylvania ",
+        "author": "dr.who.strange",
+        "plays": 1011,
+        "likes": 48,
+        "posted": "2026-04-02T04:26:50.000Z"
+      },
+      {
+        "id": "7645635650204470542",
+        "url": "https://www.tiktok.com/@ciocia0601/video/7645635650204470542",
+        "text": "#pittsburgh #allafamiglia #birthdayweekend #gemini",
+        "author": "ciocia0601",
+        "plays": 647,
+        "likes": 106,
+        "posted": "2026-05-30T10:52:30.000Z"
+      },
+      {
+        "id": "7630521837734169886",
+        "url": "https://www.tiktok.com/@coachmayers/video/7630521837734169886",
+        "text": "Alla Famiglia was an  experience for. If you’re looking for some high quality food, drinks, and vibes that’s the place for sure. The elk chop was heavenly. The cheese wheel was fun. The old fashioned was smooth. #yinzer #pittsburgh",
+        "author": "coachmayers",
+        "plays": 639,
+        "likes": 17,
+        "posted": "2026-04-19T17:22:13.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-03T18:06:18.000Z",
+    "median_plays": 643,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:05:40.446Z"
+  }
 }

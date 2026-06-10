@@ -14,5 +14,37 @@
   "full_name": "Fry Bar LLC",
   "last_post_at": "2026-05-13T15:34:40.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "fry bar pittsburgh",
+    "video_count": 1,
+    "total_plays": 40500,
+    "total_likes": 3550,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "jaywhitedigital",
+        "fans": 16900,
+        "verified": false,
+        "videos": 1,
+        "plays": 40500,
+        "likes": 3550
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7628494168846863629",
+        "url": "https://www.tiktok.com/@jaywhitedigital/video/7628494168846863629",
+        "text": "These are some Restaurants you need to eat at coming Pittsburgh for the NFL Draft. These local spots are just a bridge or blocks away and serving up the city’s best.\n1. Fry Bar 🍟\nSpecializing in loaded fries, smoked wings, and fish sandwic",
+        "author": "jaywhitedigital",
+        "plays": 40500,
+        "likes": 3550,
+        "posted": "2026-04-14T11:00:00.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-14T11:00:00.000Z",
+    "median_plays": 40500,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:17:52.307Z"
+  }
 }

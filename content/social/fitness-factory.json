@@ -14,5 +14,37 @@
   "full_name": "Fitness Factory Pgh.",
   "last_post_at": "2026-05-13T18:35:41.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "fitness factory pittsburgh",
+    "video_count": 1,
+    "total_plays": 860,
+    "total_likes": 65,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "jinlifts",
+        "fans": 5390,
+        "verified": false,
+        "videos": 1,
+        "plays": 860,
+        "likes": 65
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7645378818835860766",
+        "url": "https://www.tiktok.com/@jinlifts/video/7645378818835860766",
+        "text": "it’s an art. Awesome place, love the burgh. Fitness factory was awesome, just glad to be back to the grind.\n.\n.\n.\n#bodybuilding #fypシ #GymTok #physique #pittsburghpro ",
+        "author": "jinlifts",
+        "plays": 860,
+        "likes": 65,
+        "posted": "2026-05-29T18:14:55.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-29T18:14:55.000Z",
+    "median_plays": 860,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:16:43.432Z"
+  }
 }

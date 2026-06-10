@@ -14,5 +14,37 @@
   "full_name": "Cruisin’ Tikis Pittsburgh",
   "last_post_at": "2026-05-05T23:46:20.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "cruisin' tikis pittsburgh pittsburgh",
+    "video_count": 1,
+    "total_plays": 43200,
+    "total_likes": 660,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "wisdombydrew",
+        "fans": 4863,
+        "verified": false,
+        "videos": 1,
+        "plays": 43200,
+        "likes": 660
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7632432570495454495",
+        "url": "https://www.tiktok.com/@wisdombydrew/video/7632432570495454495",
+        "text": "In a wild scene yesterday on the Allegheny River outside of Acrisure Stadium, a Tiki boat tried to outrun authorities and make it to the North Shore. When asked why the Tiki boat refused to stop, the Captain said that he needed to make it t",
+        "author": "wisdombydrew",
+        "plays": 43200,
+        "likes": 660,
+        "posted": "2026-04-24T20:56:45.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-24T20:56:45.000Z",
+    "median_plays": 43200,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:13:43.735Z"
+  }
 }

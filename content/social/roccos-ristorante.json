@@ -14,5 +14,37 @@
   "full_name": "Rocco’s Ristorante by Villagio",
   "last_post_at": "2026-05-13T16:16:55.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "rocco's ristorante pittsburgh",
+    "video_count": 1,
+    "total_plays": 99500,
+    "total_likes": 2290,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "villagio_pgh_",
+        "fans": 1107,
+        "verified": false,
+        "videos": 1,
+        "plays": 99500,
+        "likes": 2290
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7643136630970125598",
+        "url": "https://www.tiktok.com/@villagio_pgh_/video/7643136630970125598",
+        "text": "The long awaited FULL property tour is here. 🗝️ From The Villagio Boutique Hotel to Rocco’s Ristorante and The 1864 Club Cocktail & Cigar Lounge… ever wondered what’s inside? Keep watching for the full scoop. See you soon. 🥂 #pittsburghfo",
+        "author": "villagio_pgh_",
+        "plays": 99500,
+        "likes": 2290,
+        "posted": "2026-05-23T17:13:58.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-23T17:13:58.000Z",
+    "median_plays": 99500,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:30:14.005Z"
+  }
 }

@@ -14,5 +14,54 @@
   "full_name": "Flora Park Garden Center & Creamery",
   "last_post_at": "2026-05-09T20:56:45.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "flora park creamery pittsburgh",
+    "video_count": 2,
+    "total_plays": 13040,
+    "total_likes": 512,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "charquigley",
+        "fans": 2041,
+        "verified": false,
+        "videos": 1,
+        "plays": 12100,
+        "likes": 473
+      },
+      {
+        "handle": "itslindsayanderson2.0",
+        "fans": 141,
+        "verified": false,
+        "videos": 1,
+        "plays": 940,
+        "likes": 39
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7645483271475776798",
+        "url": "https://www.tiktok.com/@charquigley/video/7645483271475776798",
+        "text": "FINDING TEABERRY ICE CREAM IN ALLEGHENY COUNTY?? I did not know this was a flavor I’d ever find outside of my hometown area. We headed to Flora Park Creamery tonight for a little sweet treat and it was the best. It’s nestled within South Pa",
+        "author": "charquigley",
+        "plays": 12100,
+        "likes": 473,
+        "posted": "2026-05-30T01:00:21.000Z"
+      },
+      {
+        "id": "7644294043240795422",
+        "url": "https://www.tiktok.com/@itslindsayanderson2.0/video/7644294043240795422",
+        "text": "Flora Park Garden Center is so nice and its right next to Flora Park Creamery which serves Penn State Creamery ice cream! #thingstodoinpittsburgh #pittsburghflorist #floraldesign #pittsburgh",
+        "author": "itslindsayanderson2.0",
+        "plays": 940,
+        "likes": 39,
+        "posted": "2026-05-26T20:05:23.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-30T01:00:21.000Z",
+    "median_plays": 6520,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:16:49.920Z"
+  }
 }

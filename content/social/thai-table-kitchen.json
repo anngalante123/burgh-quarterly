@@ -14,5 +14,37 @@
   "full_name": "THAI at Sacramento",
   "last_post_at": "2026-05-05T22:25:27.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "thai table and kitchen pittsburgh",
+    "video_count": 1,
+    "total_plays": 153,
+    "total_likes": 14,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "mammasoverit",
+        "fans": 4746,
+        "verified": false,
+        "videos": 1,
+        "plays": 153,
+        "likes": 14
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7622091952577678606",
+        "url": "https://www.tiktok.com/@mammasoverit/video/7622091952577678606",
+        "text": "#thaitable&kitchen #Pittsburghview#growwithme #DoMoreInAYear ",
+        "author": "mammasoverit",
+        "plays": 153,
+        "likes": 14,
+        "posted": "2026-03-28T00:10:04.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-03-28T00:10:04.000Z",
+    "median_plays": 153,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:38:21.936Z"
+  }
 }

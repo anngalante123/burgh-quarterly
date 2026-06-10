@@ -14,5 +14,111 @@
   "full_name": "CAFÉ 8848",
   "last_post_at": "2026-05-08T00:32:19.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "cafe 8848 pittsburgh",
+    "video_count": 14,
+    "total_plays": 37409,
+    "total_likes": 839,
+    "unique_creators": 8,
+    "top_creators": [
+      {
+        "handle": "divya.sapkota",
+        "fans": 335800,
+        "verified": true,
+        "videos": 1,
+        "plays": 14400,
+        "likes": 153
+      },
+      {
+        "handle": "sujub8",
+        "fans": 201,
+        "verified": false,
+        "videos": 1,
+        "plays": 7614,
+        "likes": 170
+      },
+      {
+        "handle": "cafe.8848",
+        "fans": 76,
+        "verified": false,
+        "videos": 7,
+        "plays": 6789,
+        "likes": 259
+      },
+      {
+        "handle": "keshsubedi09",
+        "fans": 9641,
+        "verified": false,
+        "videos": 1,
+        "plays": 4631,
+        "likes": 112
+      },
+      {
+        "handle": "ankeetapandey70",
+        "fans": 56600,
+        "verified": false,
+        "videos": 1,
+        "plays": 3074,
+        "likes": 117
+      },
+      {
+        "handle": "thefittraveler",
+        "fans": 7525,
+        "verified": false,
+        "videos": 1,
+        "plays": 420,
+        "likes": 18
+      },
+      {
+        "handle": "sierraapritchard",
+        "fans": 3132,
+        "verified": false,
+        "videos": 1,
+        "plays": 297,
+        "likes": 9
+      },
+      {
+        "handle": "pittsburghluxrealtor",
+        "fans": 72,
+        "verified": false,
+        "videos": 1,
+        "plays": 184,
+        "likes": 1
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7630094324650347790",
+        "url": "https://www.tiktok.com/@divya.sapkota/video/7630094324650347790",
+        "text": "Cafe 8848 #pittsburgh #divyasapkota #nepali #fyp #creatorsearchinsights ",
+        "author": "divya.sapkota",
+        "plays": 14400,
+        "likes": 153,
+        "posted": "2026-04-18T13:43:41.000Z"
+      },
+      {
+        "id": "7622791396633611533",
+        "url": "https://www.tiktok.com/@sujub8/video/7622791396633611533",
+        "text": "If you are Visiting Pittsburgh Pa, you should definitely check out!!! @cafe 8848 #vlog #cafe #fyp ",
+        "author": "sujub8",
+        "plays": 7614,
+        "likes": 170,
+        "posted": "2026-03-29T21:24:09.000Z"
+      },
+      {
+        "id": "7622478301566700831",
+        "url": "https://www.tiktok.com/@keshsubedi09/video/7622478301566700831",
+        "text": "New cafe in the town. I had pink blossoms matcha and It was so gooodddd \nPlease visit Cafe8848 in Brentwood Pittsburgh pa 😁 #pittsburgh #visitpittsburgh @#whatshappeninginpittsburgh ",
+        "author": "keshsubedi09",
+        "plays": 4631,
+        "likes": 112,
+        "posted": "2026-03-29T01:09:04.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-07T14:02:23.000Z",
+    "median_plays": 715,
+    "detected_own_handle": "cafe.8848",
+    "scraped_at": "2026-06-10T19:12:19.107Z"
+  }
 }

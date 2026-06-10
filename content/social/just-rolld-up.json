@@ -14,5 +14,71 @@
   "full_name": "Just Roll'd Up",
   "last_post_at": "2026-05-12T14:55:27.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "just roll'd up pittsburgh",
+    "video_count": 6,
+    "total_plays": 35651,
+    "total_likes": 1550,
+    "unique_creators": 3,
+    "top_creators": [
+      {
+        "handle": "ana.eats.pgh",
+        "fans": 59500,
+        "verified": false,
+        "videos": 1,
+        "plays": 29400,
+        "likes": 1195
+      },
+      {
+        "handle": "chowdownrn",
+        "fans": 1409,
+        "verified": false,
+        "videos": 1,
+        "plays": 4667,
+        "likes": 319
+      },
+      {
+        "handle": "justrolldup",
+        "fans": 65,
+        "verified": false,
+        "videos": 4,
+        "plays": 1584,
+        "likes": 36
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7624210536204373279",
+        "url": "https://www.tiktok.com/@ana.eats.pgh/video/7624210536204373279",
+        "text": "Insane poke bowls & sushi burritos in East Liberty! 🍣🔥🌯 I’m excited partner with @justrolldup on this collab - their poke is genuinely top notch! They get their fish delivered fresh daily, and the quality is the best you’ll find anywhere",
+        "author": "ana.eats.pgh",
+        "plays": 29400,
+        "likes": 1195,
+        "posted": "2026-04-02T17:10:56.000Z"
+      },
+      {
+        "id": "7640105381649304845",
+        "url": "https://www.tiktok.com/@chowdownrn/video/7640105381649304845",
+        "text": "📍Just Rolld Up\n\nthe best poke i’ve ever had in so fr @justrolldup \n\n#poke #pokebowl #pittsburgh #foodie #sushi ",
+        "author": "chowdownrn",
+        "plays": 4667,
+        "likes": 319,
+        "posted": "2026-05-15T13:11:44.000Z"
+      },
+      {
+        "id": "7641623808650186014",
+        "url": "https://www.tiktok.com/@justrolldup/video/7641623808650186014",
+        "text": "We LOVE working with these gorgeous petite yellowfin loins!\n\nLanded on the east coast of the USA, these smaller tuna are full of flavor and never have the grainy texture sometimes found on larger fish. \n\nWe’ll be serving them up at the shop",
+        "author": "justrolldup",
+        "plays": 910,
+        "likes": 19,
+        "posted": "2026-05-19T15:23:37.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-19T15:23:37.000Z",
+    "median_plays": 580,
+    "detected_own_handle": "justrolldup",
+    "scraped_at": "2026-06-10T19:21:56.889Z"
+  }
 }

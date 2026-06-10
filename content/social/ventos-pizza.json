@@ -14,5 +14,55 @@
   "full_name": "Vento’s Pizza",
   "last_post_at": "2026-05-13T19:15:12.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "vento’s pizza pittsburgh",
+    "video_count": 3,
+    "total_plays": 2926,
+    "total_likes": 294,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "ventos.pizza",
+        "fans": 17,
+        "verified": false,
+        "videos": 3,
+        "plays": 2926,
+        "likes": 294
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7641650129350446350",
+        "url": "https://www.tiktok.com/@ventos.pizza/video/7641650129350446350",
+        "text": "Fresh from the oven at Vento's in East Liberty, thick cut pepperoni pizza baked hot. If you're in Pittsburgh and craving a real local pizza spot, stop by Vento's and grab a fresh pie.The Steel City knows good pizza when it sees it.",
+        "author": "ventos.pizza",
+        "plays": 1534,
+        "likes": 128,
+        "posted": "2026-05-19T17:05:58.000Z"
+      },
+      {
+        "id": "7633485182116302094",
+        "url": "https://www.tiktok.com/@ventos.pizza/video/7633485182116302094",
+        "text": "Craving something sweet? Vento's Pizza has got you covered with the best desserts in Pittsburgh! From rich, creamy delights to perfectly baked treats, each bite promises pure happiness. Don't miss out on our irresistible dessert options! #D",
+        "author": "ventos.pizza",
+        "plays": 1244,
+        "likes": 162,
+        "posted": "2026-04-27T17:01:30.000Z"
+      },
+      {
+        "id": "7636423374243122445",
+        "url": "https://www.tiktok.com/@ventos.pizza/video/7636423374243122445",
+        "text": "Where can you find loaded calzones in Pittsburgh? At Vento's Pizza, their calzones are baked pizza dough folded over and packed with hearty fillings like chicken, steak, meatball, spinach, veggies, or buffalo chicken. Options like the Itali",
+        "author": "ventos.pizza",
+        "plays": 148,
+        "likes": 4,
+        "posted": "2026-05-05T15:03:16.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-19T17:05:58.000Z",
+    "median_plays": 1244,
+    "detected_own_handle": "ventos.pizza",
+    "scraped_at": "2026-06-10T19:41:09.396Z"
+  }
 }

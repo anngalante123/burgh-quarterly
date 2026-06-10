@@ -14,5 +14,54 @@
   "full_name": "Kool Cones",
   "last_post_at": "2026-05-11T21:19:22.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "kool cones pittsburgh",
+    "video_count": 2,
+    "total_plays": 8235,
+    "total_likes": 111,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "wtae4",
+        "fans": 22600,
+        "verified": true,
+        "videos": 1,
+        "plays": 7717,
+        "likes": 87
+      },
+      {
+        "handle": "yinzology412",
+        "fans": 1452,
+        "verified": false,
+        "videos": 1,
+        "plays": 518,
+        "likes": 24
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7640929725824781582",
+        "url": "https://www.tiktok.com/@wtae4/video/7640929725824781582",
+        "text": "The conversation was happening at Kool Cones in North Park, where Aaron Rodgers was spotted Friday night. Pittsburgh's Action News 4 spoke to fans on Saturday, who shared mixed opinions on Rodgers reported one-year deal with the Steelers.\nR",
+        "author": "wtae4",
+        "plays": 7717,
+        "likes": 87,
+        "posted": "2026-05-17T18:30:06.000Z"
+      },
+      {
+        "id": "7642793564908309791",
+        "url": "https://www.tiktok.com/@yinzology412/video/7642793564908309791",
+        "text": "The owner of Kool Cones, Hollie Morgano Dacquelente, discloses the biggest tipper and what they ordered. #fyp #yinzology #fypage #steelers #nfl ",
+        "author": "yinzology412",
+        "plays": 518,
+        "likes": 24,
+        "posted": "2026-05-22T19:02:42.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-22T19:02:42.000Z",
+    "median_plays": 4118,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:22:56.640Z"
+  }
 }

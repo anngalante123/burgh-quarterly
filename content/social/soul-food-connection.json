@@ -14,5 +14,37 @@
   "full_name": "Soul Food Connection",
   "last_post_at": "2026-05-08T15:05:02.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "soul food connection pittsburgh",
+    "video_count": 1,
+    "total_plays": 334,
+    "total_likes": 15,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "soulfood_connection",
+        "fans": 32,
+        "verified": false,
+        "videos": 1,
+        "plays": 334,
+        "likes": 15
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7623505208114547998",
+        "url": "https://www.tiktok.com/@soulfood_connection/video/7623505208114547998",
+        "text": "Everything cooked homemade and fresh 😋 \n#soulfoodconnection \n#restaurant \n#pghfood \n#blackownedbusiness \n#soulfood ",
+        "author": "soulfood_connection",
+        "plays": 334,
+        "likes": 15,
+        "posted": "2026-03-31T19:34:10.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-03-31T19:34:10.000Z",
+    "median_plays": 334,
+    "detected_own_handle": "soulfood_connection",
+    "scraped_at": "2026-06-10T19:33:49.296Z"
+  }
 }

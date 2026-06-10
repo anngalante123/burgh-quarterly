@@ -9,15 +9,29 @@
  * to surface, total plays, unique creators, top video, top creator,
  * recency. Relay's product literally matches this gap.
  *
- * Cost: about $0.005 per query × 30 businesses = $0.15.
+ * Candidates come from the full DB business catalog (lib/query/business-query,
+ * ~2,580 businesses), not the 30 legacy content/businesses/*.json artifacts.
+ *
+ * Cost: about $0.005 per query x ~2,580 businesses = ~$13 for a full pass.
+ * Runtime: 6 actor runs in flight at once (worker pool), each run capped
+ * at a 6 minute poll so one hung run can't stall the batch.
  *
  * Run:
- *   npx tsx scripts/scrape-tiktok-mentions.ts                # all
- *   npx tsx scripts/scrape-tiktok-mentions.ts <slug>         # one business
- *   npx tsx scripts/scrape-tiktok-mentions.ts --force        # overwrite cache
+ *   npx tsx scripts/scrape-tiktok-mentions.ts                  # all
+ *   npx tsx scripts/scrape-tiktok-mentions.ts <slug>           # one business
+ *   npx tsx scripts/scrape-tiktok-mentions.ts --force          # overwrite cache
+ *   npx tsx scripts/scrape-tiktok-mentions.ts --limit 50       # pilot: first 50 candidates
+ *   npx tsx scripts/scrape-tiktok-mentions.ts --dry-run        # plan + cost, no Apify calls
+ *
+ * NOTE on new social files: businesses with no content/social/<slug>.json
+ * yet get a minimal { slug, tiktok_mentions } file. Deliberately NO
+ * top-level scraped_at: scrape-ig-profiles-batched.ts treats a social file
+ * with top-level scraped_at and no error as "IG profile already scraped"
+ * and would skip the business forever. lib/data/load-social.ts tolerates
+ * the minimal shape (no handle means ig: null, tiktok_mentions still loads).
  */
 
-import { readdir, readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { config as loadEnv } from "dotenv";
@@ -32,9 +46,19 @@ if (!TOKEN) {
 }
 
 const ACTOR = "clockworks~tiktok-scraper";
-const BUSINESSES_DIR = join(process.cwd(), "content", "businesses");
 const SOCIAL_DIR = join(process.cwd(), "content", "social");
 const RAW_DIR = join(process.cwd(), "content", "raw", "tiktok");
+
+const CONCURRENCY = 6;
+const COST_PER_QUERY = 0.005;
+// Politeness pause per worker between successive runs.
+const WORKER_PAUSE_MS = 1500;
+// Wall-clock estimate assumption for dry-run output only.
+const AVG_RUN_SECONDS = 45;
+// Bounded poll: one hung actor run must not stall the whole batch. Same
+// fix as scripts/scout-comment-defense.ts (POLL_CAP_MS), where a run sat
+// RUNNING for 30+ minutes.
+const POLL_CAP_MS = 6 * 60 * 1000;
 
 type ApifyVideo = {
   id?: string;
@@ -98,6 +122,18 @@ export type TikTokMentions = {
   detected_own_handle: string | null;
   /** When this was scraped */
   scraped_at: string;
+};
+
+/** One scrape candidate, sourced from the DB business catalog. */
+type Candidate = {
+  slug: string;
+  name: string;
+  neighborhood: string;
+  /** Google categoryName, e.g. "Bakery", "Coffee shop". Feeds the
+   *  family-context keyword check in filterRelevant. */
+  category: string;
+  hasSocialFile: boolean;
+  hasTiktok: boolean;
 };
 
 function buildQuery(name: string, neighborhood: string | undefined): string {
@@ -300,7 +336,16 @@ async function runActor(query: string): Promise<ApifyVideo[]> {
   }
   const run = ((await startRes.json()) as { data: { id: string; status: string } }).data;
   let status = run.status;
+  const startedAt = Date.now();
   while (status === "READY" || status === "RUNNING") {
+    if (Date.now() - startedAt > POLL_CAP_MS) {
+      // Abort the hung run server-side so it stops billing, then bail.
+      // The per-business catch logs this as a [fail] and the batch moves on.
+      await fetch(`https://api.apify.com/v2/actor-runs/${run.id}/abort?token=${TOKEN}`, {
+        method: "POST",
+      }).catch(() => {});
+      throw new Error(`apify run exceeded ${POLL_CAP_MS / 60000}min poll cap, aborted`);
+    }
     await new Promise((r) => setTimeout(r, 3000));
     const r2 = await fetch(`https://api.apify.com/v2/actor-runs/${run.id}?token=${TOKEN}`);
     status = ((await r2.json()) as { data: { status: string } }).data.status;
@@ -408,58 +453,163 @@ function aggregate(
   };
 }
 
+// Run `worker` over `items` with at most `limit` in flight at once.
+// Same pool as scripts/scrape-business-own-posts.ts.
+async function runPool<T>(
+  items: T[],
+  limit: number,
+  worker: (item: T) => Promise<void>,
+): Promise<void> {
+  let next = 0;
+  const lanes = Array.from(
+    { length: Math.min(limit, items.length) },
+    async () => {
+      while (next < items.length) {
+        const item = items[next++];
+        await worker(item);
+      }
+    },
+  );
+  await Promise.all(lanes);
+}
+
+function parseLimit(args: string[]): number | null {
+  const eq = args.find((a) => a.startsWith("--limit="));
+  if (eq) {
+    const n = Number(eq.slice("--limit=".length));
+    return Number.isFinite(n) && n > 0 ? Math.floor(n) : null;
+  }
+  const i = args.indexOf("--limit");
+  if (i === -1) return null;
+  const n = Number(args[i + 1]);
+  if (!Number.isFinite(n) || n <= 0) {
+    console.error("[tt] --limit requires a positive number, e.g. --limit 50");
+    process.exit(1);
+  }
+  return Math.floor(n);
+}
+
+function formatDuration(seconds: number): string {
+  const h = Math.floor(seconds / 3600);
+  const m = Math.round((seconds % 3600) / 60);
+  return h > 0 ? `${h}h ${m}m` : `${m}m`;
+}
+
+/**
+ * Build the candidate list from the full DB business catalog. The dynamic
+ * import happens here, AFTER dotenv has populated DATABASE_URL, because
+ * lib/db/client.ts throws at module-import time if it's missing (same
+ * pattern as scripts/scout-comment-defense.ts).
+ */
+async function buildCandidates(): Promise<Candidate[]> {
+  const { loadAllRichBusinesses } = await import("@/lib/query/business-query");
+  const all = await loadAllRichBusinesses({ fresh: true });
+  return all.map((rb) => {
+    const slug = rb.artifact.business.slug;
+    return {
+      slug,
+      name: rb.artifact.business.name,
+      neighborhood: rb.artifact.business.neighborhood,
+      // Google categoryName ("Bakery", "Coffee shop"), the key space
+      // FAMILY_CONTEXT_KEYWORDS uses. The legacy 30-file run passed the
+      // lowercase category enum, which never matched those keys.
+      category: rb.artifact.meta.categoryName,
+      hasSocialFile: existsSync(join(SOCIAL_DIR, `${slug}.json`)),
+      hasTiktok: rb.social.tiktok_mentions !== null,
+    };
+  });
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const force = args.includes("--force");
-  const targetSlug = args.find((a) => !a.startsWith("--")) ?? null;
+  const dryRun = args.includes("--dry-run");
+  const limit = parseLimit(args);
+  // positional slug: first arg that isn't a flag and isn't the --limit value
+  const limitValueIdx = args.indexOf("--limit") + 1;
+  const targetSlug =
+    args.find(
+      (a, i) => !a.startsWith("--") && !(limitValueIdx > 0 && i === limitValueIdx),
+    ) ?? null;
 
   await import("node:fs").then((fs) => {
     fs.mkdirSync(SOCIAL_DIR, { recursive: true });
     fs.mkdirSync(RAW_DIR, { recursive: true });
   });
 
-  const files = (await readdir(BUSINESSES_DIR)).filter((f) =>
-    f.endsWith(".json"),
-  );
+  let candidates = await buildCandidates();
+  if (targetSlug) {
+    candidates = candidates.filter((c) => c.slug === targetSlug);
+    if (candidates.length === 0) {
+      console.error(`[tt] slug "${targetSlug}" not found in the business catalog`);
+      process.exit(1);
+    }
+  }
+  if (args.includes("--pool")) {
+    // Restrict to the curated top-engagement pool used by the editorial
+    // lists (content/raw/own-posts via the shared loader, which already
+    // drops franchises/institutions and collapses shared IG handles).
+    // Budget guard: full-catalog scraping measured at ~$0.22/business
+    // (2026-06-10 pilot), 40x the stale $0.005 estimate in the header.
+    const { loadOwnPostsPool } = await import("@/lib/lists/own-posts-pool");
+    const poolSlugs = new Set((await loadOwnPostsPool()).map((r) => r.slug));
+    candidates = candidates.filter((c) => poolSlugs.has(c.slug));
+    console.log(`[tt] --pool restricted to ${candidates.length} curated-pool businesses`);
+  }
+  if (limit !== null) candidates = candidates.slice(0, limit);
+
+  const toScrape = candidates.filter((c) => force || !c.hasTiktok);
+  const skippedCached = candidates.length - toScrape.length;
+
+  if (dryRun) {
+    for (const c of candidates) {
+      const query = buildQuery(c.name, c.neighborhood);
+      let status: string;
+      if (c.hasTiktok && !force) status = "SKIP (already has tiktok_mentions)";
+      else if (c.hasTiktok && force) status = "FORCE (re-scrape)";
+      else if (!c.hasSocialFile) status = "NEW (will create social file)";
+      else status = "NEW";
+      console.log(`[dry]  ${c.slug} :: "${query}" :: ${status}`);
+    }
+    const estSeconds =
+      (toScrape.length * (AVG_RUN_SECONDS + WORKER_PAUSE_MS / 1000)) / CONCURRENCY;
+    console.log(
+      `\n[dry-run] candidates=${candidates.length} to-scrape=${toScrape.length} skip-cached=${skippedCached} new-social-files=${toScrape.filter((c) => !c.hasSocialFile).length}`,
+    );
+    console.log(
+      `[dry-run] estimated cost: ~$${(toScrape.length * COST_PER_QUERY).toFixed(2)} (${toScrape.length} queries x $${COST_PER_QUERY.toFixed(3)}/query)`,
+    );
+    console.log(
+      `[dry-run] estimated wall-clock: ~${formatDuration(estSeconds)} at ${CONCURRENCY} workers (assumes ~${AVG_RUN_SECONDS}s per actor run + ${WORKER_PAUSE_MS / 1000}s pause)`,
+    );
+    console.log("[dry-run] no Apify calls were made.");
+    return;
+  }
 
   let processed = 0;
   let skipped = 0;
   let failed = 0;
 
-  for (const file of files) {
-    const slug = file.replace(/\.json$/, "");
-    if (targetSlug && slug !== targetSlug) continue;
-
-    const socialPath = join(SOCIAL_DIR, `${slug}.json`);
-    const rawPath = join(RAW_DIR, `${slug}.json`);
-
-    // Load existing social record (or empty seed)
-    let social: Record<string, unknown> = {};
-    if (existsSync(socialPath)) {
-      try {
-        social = JSON.parse(await readFile(socialPath, "utf-8"));
-      } catch {}
-    }
-
-    if (!force && social.tiktok_mentions) {
-      console.log(`[skip] ${slug}, already have tiktok_mentions`);
+  for (const c of candidates) {
+    if (c.hasTiktok && !force) {
+      console.log(`[skip] ${c.slug}, already have tiktok_mentions`);
       skipped++;
-      continue;
     }
+  }
 
-    const record = JSON.parse(
-      await readFile(join(BUSINESSES_DIR, file), "utf-8"),
-    );
-    const query = buildQuery(record.name, record.neighborhood);
+  await runPool(toScrape, CONCURRENCY, async (c) => {
+    const socialPath = join(SOCIAL_DIR, `${c.slug}.json`);
+    const rawPath = join(RAW_DIR, `${c.slug}.json`);
+    const query = buildQuery(c.name, c.neighborhood);
 
     try {
-      console.log(`[query] ${slug} :: "${query}"`);
+      console.log(`[query] ${c.slug} :: "${query}"`);
       const rawItems = await runActor(query);
-      const items = filterRelevant(rawItems, record.name, record.category);
+      const items = filterRelevant(rawItems, c.name, c.category);
       console.log(
-        `[filter] ${slug}, kept ${items.length} of ${rawItems.length} (90-day + relevance)`,
+        `[filter] ${c.slug}, kept ${items.length} of ${rawItems.length} (90-day + relevance)`,
       );
-      const mentions = aggregate(query, items, record.name);
+      const mentions = aggregate(query, items, c.name);
 
       // Save raw videos for future re-aggregation. Includes both the
       // pre-filter and post-filter sets so we can tune the filter
@@ -479,25 +629,34 @@ async function main() {
         ),
       );
 
-      // Merge into social file
-      social.slug = slug;
+      // Merge into social file. Read fresh right before writing so we never
+      // clobber fields written by other scripts. Missing or unreadable file
+      // seeds an empty object, producing the minimal { slug, tiktok_mentions }
+      // shape load-social.ts tolerates (see header note on scraped_at).
+      let social: Record<string, unknown> = {};
+      if (existsSync(socialPath)) {
+        try {
+          social = JSON.parse(await readFile(socialPath, "utf-8"));
+        } catch {}
+      }
+      social.slug = c.slug;
       social.tiktok_mentions = mentions;
       await writeFile(socialPath, JSON.stringify(social, null, 2));
 
       console.log(
-        `[ok]    ${slug}, ${mentions.video_count} videos, ${mentions.total_plays.toLocaleString()} plays, ${mentions.unique_creators} creators${
+        `[ok]    ${c.slug}, ${mentions.video_count} videos, ${mentions.total_plays.toLocaleString()} plays, ${mentions.unique_creators} creators${
           mentions.detected_own_handle ? ` (own: @${mentions.detected_own_handle})` : ""
         }`,
       );
       processed++;
     } catch (e) {
-      console.error(`[fail]  ${slug}:`, (e as Error).message);
+      console.error(`[fail]  ${c.slug}:`, (e as Error).message);
       failed++;
     }
 
-    // brief pause between runs to be polite
-    if (!targetSlug) await new Promise((r) => setTimeout(r, 1500));
-  }
+    // brief pause between runs to be polite (per worker lane)
+    if (toScrape.length > 1) await new Promise((r) => setTimeout(r, WORKER_PAUSE_MS));
+  });
 
   console.log(
     `\nDone. processed=${processed} skipped=${skipped} failed=${failed}`,

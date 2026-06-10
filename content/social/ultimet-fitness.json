@@ -14,5 +14,18 @@
   "full_name": "UltiMET Fitness",
   "last_post_at": "2026-05-11T14:27:06.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "ultimet fitness pittsburgh",
+    "video_count": 0,
+    "total_plays": 0,
+    "total_likes": 0,
+    "unique_creators": 0,
+    "top_creators": [],
+    "top_videos": [],
+    "most_recent_post_at": null,
+    "median_plays": 0,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:40:34.530Z"
+  }
 }

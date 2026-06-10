@@ -14,5 +14,54 @@
   "full_name": "Socotra Cafe & Grill",
   "last_post_at": "2026-05-11T16:06:27.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "socotra grill and cafe pittsburgh",
+    "video_count": 2,
+    "total_plays": 753,
+    "total_likes": 24,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "itsgouds",
+        "fans": 259,
+        "verified": false,
+        "videos": 1,
+        "plays": 401,
+        "likes": 10
+      },
+      {
+        "handle": "vividlyaria",
+        "fans": 957,
+        "verified": false,
+        "videos": 1,
+        "plays": 352,
+        "likes": 14
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7627853798786043167",
+        "url": "https://www.tiktok.com/@itsgouds/video/7627853798786043167",
+        "text": "| Brookline- Pittsburgh, PA | \n📍Socotra Grill & Cafe | @socotracafe.grill \n💌invited with @cocktailswithcait & @burghbooksandbites \n\n🧀🧀🧀🧀 I love pistachios but I am so curious why there is SUCH a resurgence of them everywhere. However,",
+        "author": "itsgouds",
+        "plays": 401,
+        "likes": 10,
+        "posted": "2026-04-12T12:49:11.000Z"
+      },
+      {
+        "id": "7644989667858763022",
+        "url": "https://www.tiktok.com/@vividlyaria/video/7644989667858763022",
+        "text": "Have you tried Socotra Cafe & Grill in #pittsburgh #socotracafepgh #foodie #pgh #foryoupage \n\n📍815 Brookline Blvd\nPittsburgh, PA  15226\nUnited States\n\nsocotragrillcafe.com ",
+        "author": "vividlyaria",
+        "plays": 352,
+        "likes": 14,
+        "posted": "2026-05-28T17:04:39.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-28T17:04:39.000Z",
+    "median_plays": 377,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:33:19.965Z"
+  }
 }

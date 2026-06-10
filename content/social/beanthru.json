@@ -14,5 +14,79 @@
   "full_name": "BeanThru",
   "last_post_at": "2026-05-12T16:29:02.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "beanthru pittsburgh",
+    "video_count": 4,
+    "total_plays": 8844,
+    "total_likes": 558,
+    "unique_creators": 4,
+    "top_creators": [
+      {
+        "handle": "calsipos",
+        "fans": 74400,
+        "verified": false,
+        "videos": 1,
+        "plays": 4633,
+        "likes": 315
+      },
+      {
+        "handle": "aroundtheburgh",
+        "fans": 9681,
+        "verified": false,
+        "videos": 1,
+        "plays": 2890,
+        "likes": 152
+      },
+      {
+        "handle": "melissasadhdlife",
+        "fans": 5573,
+        "verified": false,
+        "videos": 1,
+        "plays": 843,
+        "likes": 77
+      },
+      {
+        "handle": "christinaclothesncoffee",
+        "fans": 7388,
+        "verified": false,
+        "videos": 1,
+        "plays": 478,
+        "likes": 14
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7646917246761143583",
+        "url": "https://www.tiktok.com/@calsipos/video/7646917246761143583",
+        "text": "Going back to the bean thru to get my latte from their drive thru window! Their cold foam here is AMAZING and I hope next time they have some banana to try 🤭🫶🏼 #pittsburgh #trending #coffeeshop #tastetest #vlog ",
+        "author": "calsipos",
+        "plays": 4633,
+        "likes": 315,
+        "posted": "2026-06-02T21:44:43.000Z"
+      },
+      {
+        "id": "7618340599766289677",
+        "url": "https://www.tiktok.com/@aroundtheburgh/video/7618340599766289677",
+        "text": "Anytime we're near the Bean Thru, we're stopping! They have multiple locations, but this one was on the way to Sewickley. We were pleasantly surprised by the amount of seasonal drink options they had to offer and the friendly baristas!\n\n#pi",
+        "author": "aroundtheburgh",
+        "plays": 2890,
+        "likes": 152,
+        "posted": "2026-03-17T21:32:37.000Z"
+      },
+      {
+        "id": "7620177645250071838",
+        "url": "https://www.tiktok.com/@melissasadhdlife/video/7620177645250071838",
+        "text": "I love Bean Thru in Glenshaw, bonus that is incredibly quick and easy to grab a drink on the go.\n\n#pittsburghcoffee #beanthrucoffee ",
+        "author": "melissasadhdlife",
+        "plays": 843,
+        "likes": 77,
+        "posted": "2026-03-22T20:21:28.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-02T21:44:43.000Z",
+    "median_plays": 1867,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:09:42.189Z"
+  }
 }

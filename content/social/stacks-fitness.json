@@ -14,5 +14,55 @@
   "full_name": "Stacks Fitness",
   "last_post_at": "2026-05-12T14:24:38.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "stacks fitness pittsburgh",
+    "video_count": 6,
+    "total_plays": 3468,
+    "total_likes": 179,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "dropsoundeventspg",
+        "fans": 91,
+        "verified": false,
+        "videos": 6,
+        "plays": 3468,
+        "likes": 179
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7646553947305479455",
+        "url": "https://www.tiktok.com/@dropsoundeventspg/video/7646553947305479455",
+        "text": "Pittsburgh! We’re back at Stacks Fitness tomorrow night for Silent Buti Yoga 🎧✨\n\nDance, move, sweat, and get out of your head for an hour.\n\n💜 Pay what you can\n📍 Stacks Fitness - every Tuesday \n⏰ 7 PM\n\nBring a mat and a friend.\n\n#Pittsbur",
+        "author": "dropsoundeventspg",
+        "plays": 1698,
+        "likes": 101,
+        "posted": "2026-06-01T22:14:55.000Z"
+      },
+      {
+        "id": "7646960129014828319",
+        "url": "https://www.tiktok.com/@dropsoundeventspg/video/7646960129014828319",
+        "text": "Every Tuesday night is about to become your favorite summer tradition. ☀️🎧\n\nJoin us at Stacks Fitness for DropSound — a unique fitness experience combining movement, music, and community. Whether you’re a regular or trying your first class",
+        "author": "dropsoundeventspg",
+        "plays": 1106,
+        "likes": 60,
+        "posted": "2026-06-03T00:31:05.000Z"
+      },
+      {
+        "id": "7626230631197986078",
+        "url": "https://www.tiktok.com/@dropsoundeventspg/video/7626230631197986078",
+        "text": "Kaylee is BACK in June 🔥\n\ntonight was hot, emotional, and electric\nwe moved, we danced, we felt everything\nthe lights, the music, the energy… unreal at Stacks Fitness ✨\n\nDropsound is not your typical yoga class\nit’s an experience — you fee",
+        "author": "dropsoundeventspg",
+        "plays": 201,
+        "likes": 4,
+        "posted": "2026-04-08T03:49:57.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-03T00:31:05.000Z",
+    "median_plays": 201,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:34:29.863Z"
+  }
 }

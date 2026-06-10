@@ -14,5 +14,71 @@
   "full_name": "Dynamic Coffee",
   "last_post_at": "2026-05-12T12:32:46.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "dynamic coffee roasters pittsburgh",
+    "video_count": 3,
+    "total_plays": 5007,
+    "total_likes": 170,
+    "unique_creators": 3,
+    "top_creators": [
+      {
+        "handle": "thepittsburghweb",
+        "fans": 3687,
+        "verified": false,
+        "videos": 1,
+        "plays": 3238,
+        "likes": 81
+      },
+      {
+        "handle": "gracemousty",
+        "fans": 12100,
+        "verified": false,
+        "videos": 1,
+        "plays": 1242,
+        "likes": 42
+      },
+      {
+        "handle": "toricreates222",
+        "fans": 8050,
+        "verified": false,
+        "videos": 1,
+        "plays": 527,
+        "likes": 47
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7639544472249847070",
+        "url": "https://www.tiktok.com/@thepittsburghweb/video/7639544472249847070",
+        "text": "you know when something tastes so good and you’re like wow, I wish I knew what made this so special? and then you realize you’re at a local business and the owner is probably there so you can just ask? \n\n☕️ Dynamic Coffee Roasters \n\nhere’s ",
+        "author": "thepittsburghweb",
+        "plays": 3238,
+        "likes": 81,
+        "posted": "2026-05-14T00:54:34.000Z"
+      },
+      {
+        "id": "7636082131961236750",
+        "url": "https://www.tiktok.com/@gracemousty/video/7636082131961236750",
+        "text": "Okay but the aroma smelling was so cool #coffee #pgh #pittsburgh #pa \n\n@dynamiccoffeeroasters ",
+        "author": "gracemousty",
+        "plays": 1242,
+        "likes": 42,
+        "posted": "2026-05-04T16:59:30.000Z"
+      },
+      {
+        "id": "7635791876125166862",
+        "url": "https://www.tiktok.com/@toricreates222/video/7635791876125166862",
+        "text": "Dynamic Coffee roasters, Pittsburgh Pa 🍵 ☕️ ✨🤍 #pittsburghcoffee #pittsburghcafe #cafe #foodinpittsburgh ",
+        "author": "toricreates222",
+        "plays": 527,
+        "likes": 47,
+        "posted": "2026-05-03T22:12:44.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-14T00:54:34.000Z",
+    "median_plays": 1242,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:14:51.669Z"
+  }
 }

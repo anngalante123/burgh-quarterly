@@ -80,6 +80,10 @@ export type ListArticle = {
   angle: string;
   intro: string;
   items: ListArticleItem[] | PostArticleItem[];
+  /** Optional editorial ranking label for the list-header meta, e.g.
+   *  "ranked by originality, not reach". Preferred over the query-derived
+   *  label and the "ranked by plays" fallback when present. */
+  rank_label?: string;
   query?: {
     filter?: Record<string, unknown>;
     ranking: string;

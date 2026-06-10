@@ -14,5 +14,63 @@
   "full_name": "Fish nor Fowl",
   "last_post_at": "2026-05-12T15:10:41.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "fish nor fowl pittsburgh",
+    "video_count": 4,
+    "total_plays": 5788,
+    "total_likes": 225,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "courtneyncamp",
+        "fans": 2290,
+        "verified": false,
+        "videos": 3,
+        "plays": 3182,
+        "likes": 117
+      },
+      {
+        "handle": "ascdiaries",
+        "fans": 459,
+        "verified": false,
+        "videos": 1,
+        "plays": 2606,
+        "likes": 108
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7629458601131756814",
+        "url": "https://www.tiktok.com/@ascdiaries/video/7629458601131756814",
+        "text": "fish nor fowl in pgh!! Soo good def will go again ",
+        "author": "ascdiaries",
+        "plays": 2606,
+        "likes": 108,
+        "posted": "2026-04-16T20:36:11.000Z"
+      },
+      {
+        "id": "7634912688166014221",
+        "url": "https://www.tiktok.com/@courtneyncamp/video/7634912688166014221",
+        "text": "loveeee it here and this night was honestly one of the best meals I’ve had in a long time! if you haven’t been to fish nor fowl would highly recommend 😍\n•\n•\n•\n#fishnorfowl #pittsburgh #pittsburghfood #pittsburghdinner ",
+        "author": "courtneyncamp",
+        "plays": 2023,
+        "likes": 66,
+        "posted": "2026-05-01T13:21:26.000Z"
+      },
+      {
+        "id": "7633075357863709966",
+        "url": "https://www.tiktok.com/@courtneyncamp/video/7633075357863709966",
+        "text": "took full advantage of Pittsburgh this weekend going everywhere we could! Had so much fun checking out abode for the first time, walked are lawrenceville and got some fun cards and clothes, ventured over to east lib and finished off with on",
+        "author": "courtneyncamp",
+        "plays": 696,
+        "likes": 38,
+        "posted": "2026-04-26T14:31:20.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-20T12:39:42.000Z",
+    "median_plays": 1360,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:15:54.772Z"
+  }
 }

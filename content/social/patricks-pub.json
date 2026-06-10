@@ -14,5 +14,46 @@
   "full_name": "Patrick’s Pub ☘️",
   "last_post_at": "2026-05-13T13:15:50.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "patrick's pub pittsburgh",
+    "video_count": 2,
+    "total_plays": 10835,
+    "total_likes": 310,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "patricks.pub",
+        "fans": 739,
+        "verified": false,
+        "videos": 2,
+        "plays": 10835,
+        "likes": 310
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7617932139715136781",
+        "url": "https://www.tiktok.com/@patricks.pub/video/7617932139715136781",
+        "text": "It’s not even funny. Try cleaning in the dark 🤣 #pittsburgh #windstorm #stpatricks #bar #local ",
+        "author": "patricks.pub",
+        "plays": 8001,
+        "likes": 150,
+        "posted": "2026-03-16T19:07:35.000Z"
+      },
+      {
+        "id": "7637964576822267166",
+        "url": "https://www.tiktok.com/@patricks.pub/video/7637964576822267166",
+        "text": "Yes his name is Patrick and yes it’s named after him #fypシ #fyp #local #business #pittsburgh ",
+        "author": "patricks.pub",
+        "plays": 2834,
+        "likes": 160,
+        "posted": "2026-05-09T18:43:49.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-09T18:43:49.000Z",
+    "median_plays": 5418,
+    "detected_own_handle": "patricks.pub",
+    "scraped_at": "2026-06-10T19:27:26.185Z"
+  }
 }

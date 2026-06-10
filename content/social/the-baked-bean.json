@@ -14,5 +14,87 @@
   "full_name": "The Baked Bean",
   "last_post_at": "2026-05-13T15:38:51.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "baked bean pittsburgh",
+    "video_count": 6,
+    "total_plays": 22806,
+    "total_likes": 1708,
+    "unique_creators": 5,
+    "top_creators": [
+      {
+        "handle": "pittsburgh.real.estate",
+        "fans": 661,
+        "verified": false,
+        "videos": 1,
+        "plays": 13900,
+        "likes": 422
+      },
+      {
+        "handle": "x_bvln",
+        "fans": 1613,
+        "verified": false,
+        "videos": 2,
+        "plays": 5004,
+        "likes": 1076
+      },
+      {
+        "handle": "melissasadhdlife",
+        "fans": 5573,
+        "verified": false,
+        "videos": 1,
+        "plays": 2145,
+        "likes": 143
+      },
+      {
+        "handle": "the.baked.bean.pgh",
+        "fans": 204,
+        "verified": false,
+        "videos": 1,
+        "plays": 1218,
+        "likes": 57
+      },
+      {
+        "handle": "krisaf",
+        "fans": 23,
+        "verified": false,
+        "videos": 1,
+        "plays": 539,
+        "likes": 10
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7642129296659614990",
+        "url": "https://www.tiktok.com/@pittsburgh.real.estate/video/7642129296659614990",
+        "text": "☕✨ Say hello to The Baked Bean, an adorable coffee house and bakery bringing fun, local flavor and cozy vibes to the area.\n\nWhen you stop in, here’s what you can expect 👇🏻\n• Specialty coffees, teas & creative signature lattes including Th",
+        "author": "pittsburgh.real.estate",
+        "plays": 13900,
+        "likes": 422,
+        "posted": "2026-05-21T00:05:06.000Z"
+      },
+      {
+        "id": "7631717015589293342",
+        "url": "https://www.tiktok.com/@x_bvln/video/7631717015589293342",
+        "text": "Make time to live a little. ☕️📸⚾️\n\nPgh, Pa. | @Pittsburgh Pirates @The Baked Bean \n\n#pittsburgh #coffeetiktok #smallbusiness #pghfoodie #pittsburghinfluencer ",
+        "author": "x_bvln",
+        "plays": 3698,
+        "likes": 766,
+        "posted": "2026-04-22T22:40:08.000Z"
+      },
+      {
+        "id": "7645440037747838238",
+        "url": "https://www.tiktok.com/@melissasadhdlife/video/7645440037747838238",
+        "text": "Finally made it to The Baked Bean in Mt. Lebanon. I’ve been attempting to get there to try. It popped up, but of course I left with more than that. Their pastries are amazing and the drip coffee was fantastic!\n\n#pittsburgheats #pittsburghco",
+        "author": "melissasadhdlife",
+        "plays": 2145,
+        "likes": 143,
+        "posted": "2026-05-29T22:12:22.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-29T22:12:22.000Z",
+    "median_plays": 1726,
+    "detected_own_handle": "the.baked.bean.pgh",
+    "scraped_at": "2026-06-10T19:37:50.511Z"
+  }
 }

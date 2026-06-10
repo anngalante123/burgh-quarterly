@@ -14,5 +14,54 @@
   "full_name": "Heated Vinyasa Yoga // Wellness Center",
   "last_post_at": "2026-05-09T16:59:04.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "yoga flow pittsburgh",
+    "video_count": 2,
+    "total_plays": 1910,
+    "total_likes": 80,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "wqedpgh",
+        "fans": 20000,
+        "verified": true,
+        "videos": 1,
+        "plays": 1090,
+        "likes": 43
+      },
+      {
+        "handle": "finding.your.fire",
+        "fans": 1310,
+        "verified": false,
+        "videos": 1,
+        "plays": 820,
+        "likes": 37
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7622445401005706510",
+        "url": "https://www.tiktok.com/@wqedpgh/video/7622445401005706510",
+        "text": "Yoga Flow Studio 🧘🏼‍♀️\n@yoga_flow is a woman-owned, vinyasa-based yoga studio in Pittsburgh that’s teaching the importance of the breath when creating a stronger mind, body, and spirit.",
+        "author": "wqedpgh",
+        "plays": 1090,
+        "likes": 43,
+        "posted": "2026-03-28T23:00:18.000Z"
+      },
+      {
+        "id": "7624291349390494989",
+        "url": "https://www.tiktok.com/@finding.your.fire/video/7624291349390494989",
+        "text": "Cosmic Breath ✨\nA journey back to your body, your truth, your power.\n\n📍 YogaFlow Studios\n🗓 May 3rd | 12PM — Murrysville\n🗓 May 16th | 5PM — Aspinwall\n\nCome breathe with me.\n\n#cosmicbreath #pittsburghevents #breathwork #yogaflow #innerheal",
+        "author": "finding.your.fire",
+        "plays": 820,
+        "likes": 37,
+        "posted": "2026-04-02T22:24:35.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-04-02T22:24:35.000Z",
+    "median_plays": 955,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:41:45.221Z"
+  }
 }

@@ -14,5 +14,37 @@
   "full_name": "Grim Wizard Coffee",
   "last_post_at": "2026-05-12T22:23:08.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "grim wizard coffee pittsburgh",
+    "video_count": 1,
+    "total_plays": 1292,
+    "total_likes": 70,
+    "unique_creators": 1,
+    "top_creators": [
+      {
+        "handle": "wqedpgh",
+        "fans": 20100,
+        "verified": true,
+        "videos": 1,
+        "plays": 1292,
+        "likes": 70
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7619847509799685389",
+        "url": "https://www.tiktok.com/@wqedpgh/video/7619847509799685389",
+        "text": "SHOWDOWN RETURNS! ☕️\nThis round, @nebbynick stopped by three coffee shops in Pittsburgh, fueled on caffeine and… more caffeine!\n📍@laprimaespresso in the Strip District\n📍@grimwizardcoffee in Allentown\n📍@creativechemco in Bloomfield\nStream",
+        "author": "wqedpgh",
+        "plays": 1292,
+        "likes": 70,
+        "posted": "2026-03-21T23:00:24.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-03-21T23:00:24.000Z",
+    "median_plays": 1292,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:19:34.617Z"
+  }
 }

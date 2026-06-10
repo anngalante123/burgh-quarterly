@@ -14,5 +14,54 @@
   "full_name": "AVVA Modern Mediterranean Cuisine",
   "last_post_at": "2026-05-06T03:36:26.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "avva modern mediterranean cuisine pittsburgh",
+    "video_count": 2,
+    "total_plays": 7813,
+    "total_likes": 164,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "cernmcgern",
+        "fans": 1339,
+        "verified": false,
+        "videos": 1,
+        "plays": 7278,
+        "likes": 145
+      },
+      {
+        "handle": "kianna_brunner",
+        "fans": 6676,
+        "verified": false,
+        "videos": 1,
+        "plays": 535,
+        "likes": 19
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7630186141081292063",
+        "url": "https://www.tiktok.com/@cernmcgern/video/7630186141081292063",
+        "text": "AVVA Modern Mediterranean Cuisine in Aspinwall, Pennsylvania, offers fresh Turkish and Greek dishes like kebabs, seafood, and meze, with a focus on authentic recipes and modern presentation. They have an amazing outdoor patio and a curated ",
+        "author": "cernmcgern",
+        "plays": 7278,
+        "likes": 145,
+        "posted": "2026-04-18T19:39:33.000Z"
+      },
+      {
+        "id": "7639908289291111710",
+        "url": "https://www.tiktok.com/@kianna_brunner/video/7639908289291111710",
+        "text": "AVVA modern mediterranean cuisine 📍aspinwall, pa",
+        "author": "kianna_brunner",
+        "plays": 535,
+        "likes": 19,
+        "posted": "2026-05-15T00:26:26.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-15T00:26:26.000Z",
+    "median_plays": 3907,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:08:08.140Z"
+  }
 }

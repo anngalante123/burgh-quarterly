@@ -14,5 +14,103 @@
   "full_name": "Peppis Sandwich Shoppe",
   "last_post_at": "2026-04-23T17:02:29.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "peppi's pittsburgh",
+    "video_count": 7,
+    "total_plays": 28865,
+    "total_likes": 1313,
+    "unique_creators": 7,
+    "top_creators": [
+      {
+        "handle": "calsipos",
+        "fans": 74400,
+        "verified": false,
+        "videos": 1,
+        "plays": 9242,
+        "likes": 653
+      },
+      {
+        "handle": "ana.eats.pgh",
+        "fans": 59500,
+        "verified": false,
+        "videos": 1,
+        "plays": 9032,
+        "likes": 252
+      },
+      {
+        "handle": "stillatthetable",
+        "fans": 3656,
+        "verified": false,
+        "videos": 1,
+        "plays": 5723,
+        "likes": 195
+      },
+      {
+        "handle": "jenandko",
+        "fans": 628,
+        "verified": false,
+        "videos": 1,
+        "plays": 2224,
+        "likes": 127
+      },
+      {
+        "handle": "foodaddict717",
+        "fans": 2335,
+        "verified": false,
+        "videos": 1,
+        "plays": 1454,
+        "likes": 38
+      },
+      {
+        "handle": "wreckingbull_53",
+        "fans": 2336,
+        "verified": false,
+        "videos": 1,
+        "plays": 770,
+        "likes": 20
+      },
+      {
+        "handle": "_chellymejia",
+        "fans": 1493,
+        "verified": false,
+        "videos": 1,
+        "plays": 420,
+        "likes": 28
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7627249558527020319",
+        "url": "https://www.tiktok.com/@calsipos/video/7627249558527020319",
+        "text": "What an iconic sandwich spot! Peppi’s is right in the strip (I believe in north side too) and has such a good Italian sub! Check it out if you’re in Pittsburgh 😎 #pittsburgh #pitt #sandwich #trending #tastetest ",
+        "author": "calsipos",
+        "plays": 9242,
+        "likes": 653,
+        "posted": "2026-04-10T21:44:05.000Z"
+      },
+      {
+        "id": "7634337094856494366",
+        "url": "https://www.tiktok.com/@ana.eats.pgh/video/7634337094856494366",
+        "text": "Peppi’s Sammiches 🔥🔥🔥🔥\n#pittsburgh #foodie ",
+        "author": "ana.eats.pgh",
+        "plays": 9032,
+        "likes": 252,
+        "posted": "2026-04-30T00:07:11.000Z"
+      },
+      {
+        "id": "7627199275692297485",
+        "url": "https://www.tiktok.com/@stillatthetable/video/7627199275692297485",
+        "text": "Not really a hidden gem anymore, but Peppi’s Old Tyme Sandwich Shop never misses.\nOne of those spots that just hits every time.\n\nI went with the steak & egg 🔥\nWife grabbed the Franco 🥪\n\nSimple, classic, Pittsburgh done right.\n\n#pittsburgh",
+        "author": "stillatthetable",
+        "plays": 5723,
+        "likes": 195,
+        "posted": "2026-04-10T18:29:22.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-06-09T22:47:43.000Z",
+    "median_plays": 2224,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:27:01.484Z"
+  }
 }

@@ -14,5 +14,54 @@
   "full_name": "A&E Eat’z",
   "last_post_at": "2026-04-25T19:17:47.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "aande eat’z pittsburgh",
+    "video_count": 2,
+    "total_plays": 13069,
+    "total_likes": 1160,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "theebubblybaddie",
+        "fans": 2969,
+        "verified": false,
+        "videos": 1,
+        "plays": 8858,
+        "likes": 972
+      },
+      {
+        "handle": "ryleesatcho",
+        "fans": 15800,
+        "verified": false,
+        "videos": 1,
+        "plays": 4211,
+        "likes": 188
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7634983633064840461",
+        "url": "https://www.tiktok.com/@theebubblybaddie/video/7634983633064840461",
+        "text": "Can you say SCRUMPTIOUS!!! 😋 A&E Eat’z  in Pittsburgh Pa is a Hidden Gem 💎 of deliciousness! 🤏🏾😮‍💨😍😍😍 It would’ve been a crime not to share with yin’s! \n.\nThank me later 😉\n.\nWhere should I try next ? 👀\n.\n.\n.\n.\n#foodie #aandeeatz ",
+        "author": "theebubblybaddie",
+        "plays": 8858,
+        "likes": 972,
+        "posted": "2026-05-01T17:56:25.000Z"
+      },
+      {
+        "id": "7637564278412676382",
+        "url": "https://www.tiktok.com/@ryleesatcho/video/7637564278412676382",
+        "text": "A&E eatz it was very good. We do think the weight was a little bit long we ordered and it was about an hour wait but with that being said, it was really good!! ##soulfood##food##foodreview##pittsburgh",
+        "author": "ryleesatcho",
+        "plays": 4211,
+        "likes": 188,
+        "posted": "2026-05-08T16:50:17.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-08T16:50:17.000Z",
+    "median_plays": 6535,
+    "detected_own_handle": null,
+    "scraped_at": "2026-06-10T19:05:34.297Z"
+  }
 }

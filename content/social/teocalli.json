@@ -14,5 +14,54 @@
   "full_name": "Officially Teocalli",
   "last_post_at": "2026-05-09T20:30:44.000Z",
   "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "growth": null,
+  "tiktok_mentions": {
+    "query": "teocalli pittsburgh",
+    "video_count": 2,
+    "total_plays": 53207,
+    "total_likes": 4162,
+    "unique_creators": 2,
+    "top_creators": [
+      {
+        "handle": "mayorcoreyoconnor",
+        "fans": 5382,
+        "verified": false,
+        "videos": 1,
+        "plays": 52600,
+        "likes": 4105
+      },
+      {
+        "handle": "teocallipittsburgh",
+        "fans": 93,
+        "verified": false,
+        "videos": 1,
+        "plays": 607,
+        "likes": 57
+      }
+    ],
+    "top_videos": [
+      {
+        "id": "7619735766750465310",
+        "url": "https://www.tiktok.com/@mayorcoreyoconnor/video/7619735766750465310",
+        "text": "Mayor of Pittsburgh by title—Mayor of Flavortown in practice. Guy Fieri has some new competition…\n\nSpent Friday taste-testing new spots opening in the South Side:\n\n🍝 La Dolce Vita (2104 E Carson)\n🌮 Teocalli (1831 E Carson)\n🥙 Bedford Hous",
+        "author": "mayorcoreyoconnor",
+        "plays": 52600,
+        "likes": 4105,
+        "posted": "2026-03-21T15:46:45.000Z"
+      },
+      {
+        "id": "7638009141432192287",
+        "url": "https://www.tiktok.com/@teocallipittsburgh/video/7638009141432192287",
+        "text": "",
+        "author": "teocallipittsburgh",
+        "plays": 607,
+        "likes": 57,
+        "posted": "2026-05-09T21:36:43.000Z"
+      }
+    ],
+    "most_recent_post_at": "2026-05-09T21:36:43.000Z",
+    "median_plays": 26604,
+    "detected_own_handle": "teocallipittsburgh",
+    "scraped_at": "2026-06-10T19:37:37.950Z"
+  }
 }
