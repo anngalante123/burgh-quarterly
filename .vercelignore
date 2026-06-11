@@ -1,0 +1,10 @@
+.git
+node_modules
+content/raw
+content/leads
+scripts/backups
+scripts/output
+e2e/screenshots
+.claude
+test-results
+playwright-report
