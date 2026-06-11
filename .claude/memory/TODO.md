@@ -100,7 +100,24 @@ Resolved this session:
 - [x] **Category 404s (#9) and homepage Icons clamp (#14):** verified already fixed, no change needed.
 
 Still open:
-- [ ] **Run `scripts/refresh-stale-analyses.ts`** to refresh **2,545** stale analyses (not ~1,559; a 2nd rescore on 05-13 re-staled all). Built + dry-run-verified this session, NOT run. PRECONDITION: commit the mid-edit scoring on `wip/social-ingest-checkpoint-2026-06-02` and land a rescore first, or the refresh re-stales. Then snapshot `analyses`, run `--tier=icons,ones_to_watch --force --execute` (~$33), then staples (~$18).
-- [ ] **WIP parked** on `wip/social-ingest-checkpoint-2026-06-02` (commit `66028ab`, NOT pushed): social ingest + mid-edit scoring. Resume or finish before the rescore.
+- [x] **Stale-analysis refresh: DONE 2026-06-05/06.** 2,515 writeups regenerated, $42.20 true spend. (Was listed as open here; see memory/DEV_LOG for the in-between sessions.)
+- [x] **Social-ingest WIP: MERGED to main 2026-06-03** (squash commit `f6a52d8`), live rescore applied (28 score changes, 3 tier moves).
 - [ ] **D-022 gap:** verdict card shows "FAMILY TYPICAL"; user-facing copy should say "industry". Quick sweep in SubscoreBars/verdict-copy.
 - [ ] Pre-existing: 15 lint errors in app/category, app/page, app/top, app/underrated + scripts; hero photos not loading in local dev; em dashes in some code comments (sweep when asked).
+
+
+---
+
+## 2026-06-10: Issue 02 lists shipped (PR #2 squash-merged, deployed, verified live)
+
+- **Live:** /best-on-social/most-creative-posts (top 10 of 759 vision-scored own IG posts) and /best-on-social/unexpectedly-viral-moments (lift over own median; 7 own-post + 3 creator-filmed mention moments behind a Haiku relevance gate at temperature 0 with HUMAN_REJECTED_MENTIONS pinned video ids).
+- **Placeholder:** /best-on-social/defended-in-the-comments ("This list is being reported"). IG comment scout across 22 beloved businesses found ~no defense threads (memo: scripts/output/defense-curation-memo.md, gitignored). Defense evidence lives on Reddit/FB/review replies, not IG.
+- **Data:** own IG posts scraped for top-250 pool; TikTok mentions 30 -> 258 businesses (107 with videos). lib/lists/own-posts-pool.ts = shared franchise/institution exclusions + shared-handle dedupe for all small-business lists.
+- **New rules:** article intros are ONE paragraph, 80-120 words (Anna). Posts articles support rank_label + method_note (rendered in the methodology box). Empty business lists render a reported-not-generated note.
+- **Deploy gotchas:** .vercelignore now required (content/raw hit ~420MB and uploads 500'd); a deployment stuck "Initializing" poisons retries via dedupe, fix with `vercel --prod --force`. Zombie 06-10 deployment still listed in dashboard, delete manually.
+- **Costs:** ~$72.5 total. clockworks~tiktok-scraper measures ~$0.22/business (40x the old header estimate); full catalog ~$560, NOT run.
+
+Open next:
+- [ ] Defense list content: Anna curates from evidence, or scout Reddit/review-replies next quarter.
+- [ ] Summer issue: decide if TikTok creator coverage joins the composite (rubric change + recalibration + rescore under NEW issue_slug 2026-summer).
+- [ ] feat/issue-02-lists branch still on GitHub (ask Anna before deleting).
