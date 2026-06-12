@@ -1,18 +1,7 @@
 {
   "slug": "the-tap-room",
-  "handle": "omnihotels",
-  "followers": 145024,
-  "follows": 718,
-  "posts_total": 920,
-  "posts_30d": 9,
-  "reels_30d": 2,
-  "avg_engagement_rate": 0.00052,
-  "verified": true,
-  "private": false,
-  "is_business_account": true,
-  "biography": "Experiences Matter Here\n📸 Tag @omnihotels and #AtTheOmni to share.\n⛳️ @omnigolfcollection",
-  "full_name": "Omni Hotels & Resorts",
-  "last_post_at": "2026-05-11T20:00:20.000Z",
-  "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "error": "wrong_attribution",
+  "errorDescription": "IG handle 'omnihotels' belongs to a different entity; removed 2026-06-12 audit fix",
+  "growth": null,
+  "tiktok_mentions": null
 }

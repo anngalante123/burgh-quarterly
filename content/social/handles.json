@@ -709,9 +709,10 @@
     "slug": "the-speakeasy",
     "name": "The Speakeasy",
     "website": "https://www.omnihotels.com/hotels/pittsburgh-william-penn/dining/the-speakeasy?utm_source=gmblisting&utm_medium=organic",
-    "instagram_handle": "omnihotels",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "forbes-tavern",
@@ -769,9 +770,10 @@
     "slug": "la-bodega",
     "name": "La Bodega",
     "website": "http://www.labodegapgh.com/",
-    "instagram_handle": "squarespace",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "satalios",
@@ -786,9 +788,10 @@
     "slug": "the-tap-room",
     "name": "The Tap Room",
     "website": "https://www.omnihotels.com/hotels/pittsburgh-william-penn/dining/the-tap-room?utm_source=gmblisting&utm_medium=organic",
-    "instagram_handle": "omnihotels",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "gooskis",
@@ -964,14 +967,6 @@
     "discovery_method": "none",
     "confidence": null,
     "notes": "fetch failed; apify search attempted, no match"
-  },
-  {
-    "slug": "city-works-market-square-pittsburgh",
-    "name": "City Works (Market Square - Pittsburgh)",
-    "website": "https://www.cityworksrestaurant.com/locations/pittsburgh/",
-    "instagram_handle": "cityworksus",
-    "discovery_method": "website_link",
-    "confidence": "high"
   },
   {
     "slug": "shadyside-hideaway-bar",
@@ -2203,9 +2198,10 @@
     "slug": "the-cafe-at-the-frick",
     "name": "The Café at the Frick",
     "website": "https://www.thefrickpittsburgh.org/cafe",
-    "instagram_handle": "frickpittsburgh",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "gryphons-tea",
@@ -2917,9 +2913,10 @@
     "slug": "studio-39-fitness",
     "name": "Studio 39 Fitness",
     "website": "https://www.studio39fitness.com/",
-    "instagram_handle": "squarespace",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "sweat-pgh",
@@ -3814,9 +3811,10 @@
     "slug": "steam-beauty-and-wellness-spa",
     "name": "STEAM Beauty And Wellness Spa",
     "website": "http://www.steamwellnessspa.com/",
-    "instagram_handle": "wix",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "fox-chapel-day-spa",
@@ -3948,9 +3946,10 @@
     "slug": "lotus-spa-cebpki",
     "name": "Lotus spa",
     "website": "https://wanxin376.wixsite.com/my-site-1",
-    "instagram_handle": "wix",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "the-washington-winery",
@@ -4853,14 +4852,6 @@
     "confidence": "high",
     "notes": "agent research; Matches website gordospgh.com",
     "evidence": "instagram.com/gordos_pgh/ - Gordo's Tacos & Tequila, 131 Shiloh St, Mt Washington, Pittsburgh"
-  },
-  {
-    "slug": "burghers-brewing-tap-house-lawrenceville",
-    "name": "Burghers Brewing Tap House Lawrenceville",
-    "website": "http://www.burgherspgh.com/",
-    "instagram_handle": "burghersbrewing",
-    "discovery_method": "website_link",
-    "confidence": "high"
   },
   {
     "slug": "dels-plum-creamery",
@@ -6563,9 +6554,10 @@
     "slug": "benedum-center-for-the-performing-arts",
     "name": "Benedum Center for the Performing Arts",
     "website": "https://trustarts.org/pct_home/visit/facilities/benedum",
-    "instagram_handle": "culturaltrust",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "the-commoner",
@@ -6645,9 +6637,10 @@
     "slug": "carnegie-music-hall",
     "name": "Carnegie Music Hall",
     "website": "https://carnegiemuseums.org/great-event-spaces/carnegie-museums-in-oakland/",
-    "instagram_handle": "carnegiemuseums",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "the-tiny-bookstore",
@@ -7434,9 +7427,10 @@
     "slug": "urban-jungle-of-regent-square",
     "name": "Urban Jungle of Regent Square",
     "website": "http://urbanjungleofregentsquare.com/",
-    "instagram_handle": "squarespace",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "government-center-bar",
@@ -7563,14 +7557,6 @@
     "name": "Kiya Tomlin",
     "website": "https://kiyatomlin.us/",
     "instagram_handle": "kiyatomlin",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
-    "slug": "the-fresh-market-wzhe30",
-    "name": "The Fresh Market",
-    "website": "https://stores.thefreshmarket.com/pa/mt-lebanon/138",
-    "instagram_handle": "thefreshmarket",
     "discovery_method": "website_link",
     "confidence": "high"
   },
@@ -8080,14 +8066,6 @@
     "confidence": "high"
   },
   {
-    "slug": "the-melting-pot-of-pittsburgh",
-    "name": "The Melting Pot of Pittsburgh",
-    "website": "https://www.meltingpot.com/pittsburgh-pa/",
-    "instagram_handle": "themeltingpotrestaurants",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
     "slug": "groceria-merante",
     "name": "Groceria Merante",
     "website": "http://www.groceriamerante.com/",
@@ -8503,9 +8481,10 @@
     "slug": "space",
     "name": "SPACE",
     "website": "https://trustarts.org/pct_home/visual-arts/galleries/space",
-    "instagram_handle": "culturaltrust",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "frick-park-market",
@@ -9047,17 +9026,19 @@
     "slug": "707-penn-gallery",
     "name": "707 Penn Gallery",
     "website": "https://trustarts.org/pct_home/visual-arts/galleries/707",
-    "instagram_handle": "culturaltrust",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "wood-street-galleries",
     "name": "Wood Street Galleries",
     "website": "https://trustarts.org/pct_home/visual-arts/wood-street-galleries",
-    "instagram_handle": "culturaltrust",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "sweet-panda-asian-market",
@@ -9442,9 +9423,10 @@
     "slug": "delucas-diner",
     "name": "DeLuca's Diner",
     "website": "http://www.delucasinthestrip.com/",
-    "instagram_handle": "wix",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "kidstrong-north-hills-pittsburgh-pa",
@@ -9992,9 +9974,10 @@
     "slug": "results-fitness-gym-strength-and-endurance",
     "name": "Results Fitness - Gym - Strength - and Endurance",
     "website": "http://resultsclasses.com/",
-    "instagram_handle": "squarespace",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "alpha-waves-wellness",
@@ -13286,9 +13269,10 @@
     "slug": "the-warhol-cafe",
     "name": "The Warhol Café",
     "website": "http://www.warhol.org/",
-    "instagram_handle": "thewarholmuseum",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "taj-mahal-pittsburgh",
@@ -16797,9 +16781,10 @@
     "slug": "pgh-nailworks-co-formerly-paint-nail-bar-pittsburgh",
     "name": "PGH NailWorks & Co. (Formerly PAINT Nail Bar Pittsburgh)",
     "website": "http://www.pghnailworks.com/",
-    "instagram_handle": "wix",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "grandpa-joes-candy-shop",
@@ -17054,9 +17039,10 @@
     "slug": "stackd-underground",
     "name": "Stack'd Underground",
     "website": "https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=112",
-    "instagram_handle": "lifeatcmu",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "just-rolld-up",
@@ -17571,14 +17557,6 @@
     "evidence": "instagram.com/wilkbevco/ — 'Wilkinsburg Beverage Co · Pittsburgh, PA' 601 Penn Ave Wilkinsburg."
   },
   {
-    "slug": "raising-canes-chicken-fingers",
-    "name": "Raising Cane's Chicken Fingers",
-    "website": "https://locations.raisingcanes.com/pa/pittsburgh/3610-fifth-avenue",
-    "instagram_handle": "raisingcanes",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
     "slug": "owls-nest-restaurant",
     "name": "Owl's Nest Restaurant",
     "website": "http://owlsnest.restaurant/",
@@ -17677,9 +17655,10 @@
     "slug": "schenley-plaza",
     "name": "Schenley Plaza",
     "website": "https://pittsburghparks.org/park-projects/schenley-plaza/",
-    "instagram_handle": "pittsburghparks",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "876-island-spice-authentic-jamaican-restaurant",
@@ -17946,9 +17925,10 @@
     "slug": "the-terrace-room",
     "name": "The Terrace Room",
     "website": "https://www.omnihotels.com/hotels/pittsburgh-william-penn/dining/terrace-room?utm_source=gmblisting&utm_medium=organic",
-    "instagram_handle": "omnihotels",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "piada-italian-street-food-r0qqau",
@@ -18061,9 +18041,10 @@
     "slug": "gandy-dancer-saloon",
     "name": "Gandy Dancer Saloon",
     "website": "https://www.grandconcourserestaurant.com/location/gandy-dancer-saloon/",
-    "instagram_handle": "grandconcoursepa",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "oishii-bento",
@@ -18361,9 +18342,10 @@
     "slug": "the-spiice-route-indian-restaurant",
     "name": "The Spiice Route | Indian Restaurant",
     "website": "https://www.thespiiceroutepgh.com/",
-    "instagram_handle": "wix",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "anchor-anvil-coffee-bar",
@@ -18541,9 +18523,10 @@
     "slug": "uzbek-food",
     "name": "Uzbek Food",
     "website": "http://uzbekfood.net/",
-    "instagram_handle": "squarespace",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "noodle-house",
@@ -18811,9 +18794,10 @@
     "slug": "the-exchange-restaurant",
     "name": "The Exchange Restaurant",
     "website": "https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=92",
-    "instagram_handle": "lifeatcmu",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "cherries-diner",
@@ -19005,9 +18989,10 @@
     "slug": "greer-cabaret-theater",
     "name": "Greer Cabaret Theater",
     "website": "https://trustarts.org/pct_home/visit/facilities/cabaret",
-    "instagram_handle": "culturaltrust",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "scoops-in-bloomfield",
@@ -19188,9 +19173,10 @@
     "slug": "schenley-park-visitor-center",
     "name": "Schenley Park Visitor Center",
     "website": "https://pittsburghparks.org/",
-    "instagram_handle": "pittsburghparks",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "mollys-pizza-and-chicken",
@@ -20070,9 +20056,10 @@
     "slug": "wiggys",
     "name": "Wiggy’s",
     "website": "http://wiggyswings.com/",
-    "instagram_handle": "squarespace",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "shumans-homewood",
@@ -21348,9 +21335,10 @@
     "slug": "house-of-shish-kebabs",
     "name": "House of Shish Kebabs",
     "website": "http://www.uzbekfood.net/",
-    "instagram_handle": "squarespace",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "first-watch-oss18o",
@@ -22232,9 +22220,10 @@
     "slug": "lexus-club",
     "name": "Lexus Club",
     "website": "http://www.ppgpaintsarena.com/",
-    "instagram_handle": "ppgpaintsarena",
-    "discovery_method": "website_link",
-    "confidence": "high"
+    "instagram_handle": null,
+    "discovery_method": "rejected_wrong_attribution",
+    "confidence": "high",
+    "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
     "slug": "asian-house",
@@ -22329,14 +22318,6 @@
     "name": "Big Lots",
     "website": "https://biglots.com/",
     "instagram_handle": "biglots",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
-    "slug": "ross-dress-for-less",
-    "name": "Ross Dress for Less",
-    "website": "https://www.rossstores.com/",
-    "instagram_handle": "rossdressforless",
     "discovery_method": "website_link",
     "confidence": "high"
   },

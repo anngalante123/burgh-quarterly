@@ -1,18 +1,7 @@
 {
   "slug": "gandy-dancer-saloon",
-  "handle": "grandconcoursepa",
-  "followers": 5755,
-  "follows": 181,
-  "posts_total": 511,
-  "posts_30d": 9,
-  "reels_30d": 4,
-  "avg_engagement_rate": 0.00426,
-  "verified": true,
-  "private": false,
-  "is_business_account": true,
-  "biography": "Award-winning seafood restaurant est. in 1978 situated inside the Pittsburgh & Lake Erie Railroad Station. Tag your photos with #GrandConcourse",
-  "full_name": "Grand Concourse",
-  "last_post_at": "2026-05-13T16:00:53.000Z",
-  "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "error": "wrong_attribution",
+  "errorDescription": "IG handle 'grandconcoursepa' belongs to a different entity; removed 2026-06-12 audit fix",
+  "growth": null,
+  "tiktok_mentions": null
 }

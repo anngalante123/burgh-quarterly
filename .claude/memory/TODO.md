@@ -121,3 +121,17 @@ Open next:
 - [ ] Defense list content: Anna curates from evidence, or scout Reddit/review-replies next quarter.
 - [ ] Summer issue: decide if TikTok creator coverage joins the composite (rubric change + recalibration + rescore under NEW issue_slug 2026-summer).
 - [ ] feat/issue-02-lists branch still on GitHub (ask Anna before deleting).
+
+---
+
+## 2026-06-12: Batch 1 audit fixes shipped (see DEV_LOG same date)
+
+Done: chain blocklist +5 with row removal, engagement sanitizer + rescore (763 updates / 75 tier shifts, Anna approved), geo backfill (1,553 coords, 671 neighborhoods), 29 wrong-IG attributions nulled, 1 dup row deleted. DB now 2,574 businesses.
+
+Open (Batch 2, scraper + enrichment session):
+- [ ] More chains in index: Benihana, The Capital Grille surfaced in top-5 restaurants post-rescore. Add to blocklist + remove; consider the audit's follower-ceiling heuristic routing high-follower unknowns to needs_review.
+- [ ] Remaining 512 generic "Pittsburgh" neighborhoods: mostly USPS-Pittsburgh suburbs OUTSIDE city limits. Fix = Allegheny County municipal boundaries GeoJSON (WPRDC) point-in-polygon; ~316 have coords now. Needs download approval.
+- [ ] posts_30d true 30-day count (scrape fetches only ~12 posts; 355 accounts saturate at 12). Scraper change + re-scrape on ONE schedule; store scraped_at per record, compute dormancy against it.
+- [ ] Review-depth pilot (claim 6): we store max 20 review texts/business; Page's has 3,153 on Google, 0 stored. Pilot 10 businesses on Apify, check usageTotalUsd, THEN decide batch. Also business_review_keywords only covers 17 slugs.
+- [ ] house-of-shish-kebabs vs uzbek-food: same address (1926 Spring Garden Ave), likely one kitchen/two listings. Needs Anna judgment or phone call (like Al's Fish cluster).
+- [ ] Multi-location brand modeling (La Gourmandine x4 etc.): rows kept deliberately; lists dedupe by handle via own-posts-pool.ts. Decide at summer issue whether to model locations under one business.

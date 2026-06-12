@@ -123,6 +123,35 @@ describe("normalizeApifyRecord: chain guard", () => {
     );
     assert.notEqual(r, null);
   });
+
+  // 2026-06-11 audit: these five national chains were live in the index.
+  it("rejects the chains that slipped through the 2026-06 audit", () => {
+    const slipped = [
+      "Raising Cane's Chicken Fingers",
+      "Ross Dress for Less",
+      "The Fresh Market",
+      "The Melting Pot of Pittsburgh",
+      "City Works (Market Square - Pittsburgh)",
+    ];
+    for (const [i, title] of slipped.entries()) {
+      resetDedupeState();
+      const r = normalizeApifyRecord(
+        record({ title, placeId: `ChIJ_AUDIT_${i}` }),
+      );
+      assert.equal(r, null, `${title} should be rejected as a chain`);
+    }
+  });
+
+  it("still accepts La Gourmandine (protected local mini-chain)", () => {
+    resetDedupeState();
+    const r = normalizeApifyRecord(
+      record({
+        title: "La Gourmandine Lawrenceville",
+        placeId: "ChIJ_LAGOUR_1",
+      }),
+    );
+    assert.notEqual(r, null);
+  });
 });
 
 describe("normalizeBusinessTitle", () => {

@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { sanitizeEngagementRate } from "./engagement";
+
 /**
  * Social snapshot for a business, IG profile stats + Google Maps
  * growth deltas (Dec 2025 → Apr 2026). Written by:
@@ -120,7 +122,10 @@ export function loadSocialBySlug(slug: string): SocialRecord {
     posts_total: (raw.posts_total as number) ?? 0,
     posts_30d: (raw.posts_30d as number) ?? 0,
     reels_30d: (raw.reels_30d as number) ?? 0,
-    avg_engagement_rate: (raw.avg_engagement_rate as number) ?? 0,
+    avg_engagement_rate: sanitizeEngagementRate(
+      raw.avg_engagement_rate as number | undefined,
+      raw.followers as number | undefined,
+    ),
     verified: Boolean(raw.verified),
     private: Boolean(raw.private),
     is_business_account: raw.is_business_account as boolean | undefined,

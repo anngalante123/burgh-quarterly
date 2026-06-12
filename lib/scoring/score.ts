@@ -19,6 +19,7 @@
 
 import type { Business, ScoreBreakdown, Tier } from "@/lib/data/schemas";
 import type { NormalizedArtifact } from "@/lib/data/normalize";
+import { sanitizeEngagementRate } from "@/lib/data/engagement";
 
 /* ---------------------------- affection lexicon ------------------------- */
 
@@ -365,9 +366,13 @@ export function momentumScore(
   const postsPart = 40 * normalizeCapped(ig.posts_30d ?? 0, postsTarget);
   const reelsPart = 30 * normalizeCapped(ig.reels_30d ?? 0, 4);
 
-  // Engagement rate, clip the absurd tail from new/bursty accounts so a
-  // single viral reel doesn't inflate the score. Cap incoming rate at 10%.
-  const rawRate = ig.avg_engagement_rate ?? 0;
+  // Engagement rate: bound against the follower denominator first (tiny
+  // accounts and scrape artifacts read as unmeasured), then clip the
+  // legit-but-bursty tail at 10% so one viral reel doesn't inflate the score.
+  const rawRate = sanitizeEngagementRate(
+    ig.avg_engagement_rate,
+    ig.followers,
+  );
   const cleanRate = Math.min(rawRate, 0.10);
   const engagementPart = 20 * normalizeCapped(cleanRate, 0.03);
 

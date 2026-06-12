@@ -1,18 +1,7 @@
 {
   "slug": "stackd-underground",
-  "handle": "lifeatcmu",
-  "followers": 13957,
-  "follows": 663,
-  "posts_total": 987,
-  "posts_30d": 12,
-  "reels_30d": 6,
-  "avg_engagement_rate": 0.05887,
-  "verified": false,
-  "private": false,
-  "is_business_account": true,
-  "biography": "Share your #LifeAtCMU 📸",
-  "full_name": "Carnegie Mellon Student Affairs",
-  "last_post_at": "2026-05-13T17:26:19.000Z",
-  "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "error": "wrong_attribution",
+  "errorDescription": "IG handle 'lifeatcmu' belongs to a different entity; removed 2026-06-12 audit fix",
+  "growth": null,
+  "tiktok_mentions": null
 }

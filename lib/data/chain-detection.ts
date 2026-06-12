@@ -45,6 +45,7 @@ const NATIONAL_CHAINS: readonly string[] = [
   // Burgers + QSR
   "mcdonald's",
   "mcdonalds",
+  "raising cane",
   "burger king",
   "wendy's",
   "wendys",
@@ -99,6 +100,8 @@ const NATIONAL_CHAINS: readonly string[] = [
   "p f chang's",
   "the cheesecake factory",
   "cheesecake factory",
+  "the melting pot",
+  "city works",
   "hard rock cafe",
   "hooters",
   "tgi fridays",
@@ -120,6 +123,7 @@ const NATIONAL_CHAINS: readonly string[] = [
   "häagen-dazs",
 
   // Grocery + big box
+  "the fresh market",
   "whole foods",
   "trader joe's",
   "trader joes",
@@ -184,6 +188,7 @@ const NATIONAL_CHAINS: readonly string[] = [
   // Discount retail
   "gabes",
   "gabe's",
+  "ross dress for less",
 ];
 
 /**

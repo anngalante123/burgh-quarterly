@@ -1,18 +1,7 @@
 {
   "slug": "studio-39-fitness",
-  "handle": "squarespace",
-  "followers": 427183,
-  "follows": 4,
-  "posts_total": 138,
-  "posts_30d": 4,
-  "reels_30d": 4,
-  "avg_engagement_rate": 0.00309,
-  "verified": true,
-  "private": false,
-  "is_business_account": true,
-  "biography": "A website makes it real.",
-  "full_name": "Squarespace",
-  "last_post_at": "2026-04-30T18:09:27.000Z",
-  "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "error": "wrong_attribution",
+  "errorDescription": "IG handle 'squarespace' belongs to a different entity; removed 2026-06-12 audit fix",
+  "growth": null,
+  "tiktok_mentions": null
 }

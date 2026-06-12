@@ -1,18 +1,7 @@
 {
   "slug": "707-penn-gallery",
-  "handle": "culturaltrust",
-  "followers": 51288,
-  "follows": 593,
-  "posts_total": 3166,
-  "posts_30d": 9,
-  "reels_30d": 2,
-  "avg_engagement_rate": 0.00796,
-  "verified": false,
-  "private": false,
-  "is_business_account": true,
-  "biography": "🎭 Creating a scene in downtown PGH since 1984\n⬇️ Shows, festivals, info & more ⬇️",
-  "full_name": "Pittsburgh Cultural Trust",
-  "last_post_at": "2026-05-13T14:00:41.000Z",
-  "scraped_at": "2026-05-13T19:26:11.214Z",
-  "growth": null
+  "error": "wrong_attribution",
+  "errorDescription": "IG handle 'culturaltrust' belongs to a different entity; removed 2026-06-12 audit fix",
+  "growth": null,
+  "tiktok_mentions": null
 }
