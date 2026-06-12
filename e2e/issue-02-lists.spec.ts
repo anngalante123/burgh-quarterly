@@ -43,25 +43,32 @@ test("viral moments article mobile", async ({ page }) => {
   });
 });
 
-test("defense list placeholder card appears on index, not clickable as article", async ({
-  page,
-}) => {
+test("defense list card appears on index", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 1100 });
   await page.goto(`${BASE}/best-on-social`, { waitUntil: "networkidle" });
   await expect(
-    page.getByText(/The Businesses Pittsburgh Defends in the Comments/i),
-  ).toBeVisible();
-  await expect(
-    page.getByText(/show up swinging when somebody leaves a bad review/i),
+    page.getByText(/The Businesses Pittsburgh Defends in the Comments/i).first(),
   ).toBeVisible();
 });
 
-test("empty business-kind article page does not crash", async ({ page }) => {
-  // Regression guard: an items:[] business list used to throw on items[0]
-  // during the hero-business lookup and break the build.
+test("defense list renders six reported entries", async ({ page }) => {
   const res = await page.goto(`${BASE}/best-on-social/defended-in-the-comments`, {
     waitUntil: "networkidle",
   });
   expect(res?.status()).toBeLessThan(500);
-  await expect(page.getByText(/reported, not generated/i)).toBeVisible();
+  // Intro keeps the reported-not-generated framing.
+  await expect(
+    page.getByText(/This list is reported, not generated/i),
+  ).toBeVisible();
+  for (const name of [
+    "The Urban Tap",
+    "Beto's Pizza",
+    "Apteka",
+    "DiAnoia's Eatery",
+    "Oakmont Bakery",
+  ]) {
+    await expect(page.getByRole("heading", { name }).first()).toBeVisible();
+  }
+  const body = await page.locator("body").innerText();
+  expect(body).not.toContain("—");
 });

@@ -2,8 +2,70 @@
   "slug": "defended-in-the-comments",
   "title": "The Businesses Pittsburgh Defends in the Comments",
   "subtitle": "The places whose regulars show up swinging when somebody leaves a bad review. The defense is the story.",
-  "angle": "businesses whose customers argue back, ranked by how hard the city shows up for them when criticism lands.",
-  "intro": "This list is reported, not generated. We are reading the comment sections now, and we only publish a defense we can point to. Subscribe to the index and you will see it the moment it holds up.",
-  "items": [],
-  "generated_at": "2026-06-10T14:51:26.361Z"
+  "angle": "businesses whose customers argue back, ranked by how hard the city showed up for them when criticism landed.",
+  "intro": "This list is reported, not generated. We went looking for the places whose regulars show up swinging when somebody leaves a bad review, in the comment threads of r/pittsburgh, on the local news, under the TikToks of out-of-town critics, and we only kept a defense we could point to. Six businesses made the cut: a South Side bar whose regulars ate lunch on camera after a viral video, a square slice that starts a civil war every time someone insults the cold cheese, a vegan Polish kitchen that turns complaint threads into love letters. Plenty of beloved names did not survive the reporting. The defense is the story.",
+  "rank_label": "reported, not generated",
+  "method_note": "Every entry on this list traces to a public moment a skeptic can find: a named news report or a comment thread where the defense outweighed the criticism. Businesses whose threads agreed with the critics did not make the list, however beloved.",
+  "items": [
+    {
+      "rank": 1,
+      "business_slug": "the-urban-tap-southside",
+      "name": "The Urban Tap",
+      "family_label": "Pittsburgh Bars",
+      "neighborhood": "South Side Flats",
+      "descriptor": "A rat on camera is usually a death sentence. South Side regulars went on the news to eat lunch there instead, and the follow-up inspection came back clean.",
+      "descriptor_highlight": "went on the news to eat lunch there",
+      "stat_line": "1,167 reviews · 4.4★"
+    },
+    {
+      "rank": 2,
+      "business_slug": "betos-pizza",
+      "name": "Beto's Pizza",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "Beechview",
+      "descriptor": "Insult the cold cheese, summon the city. Every few months somebody calls the square slice broken pizza, and every time the comments fill with people explaining it is a style, it is Ohio Valley, it makes them feel like a kid again.",
+      "descriptor_highlight": "summon the city"
+    },
+    {
+      "rank": 3,
+      "business_slug": "apteka",
+      "name": "Apteka",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "Bloomfield",
+      "descriptor": "Twice now a complaint thread has turned into a love letter. Knock the ordering system and two hundred comments defend the kitchen. Even its own Crapteka pop-up joke got answered with \"one of the best places I've ever eaten.\"",
+      "descriptor_highlight": "turned into a love letter",
+      "stat_line": "1,806 reviews · 4.7★"
+    },
+    {
+      "rank": 4,
+      "business_slug": "pamelas-p-g-diner",
+      "name": "Pamela's | P&G Diner",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "Shadyside",
+      "descriptor": "Compare the crepe-style hotcakes to a chain diner and watch what happens. The defense showed up with menu-level receipts, lyonnaise potatoes cited by name, and outnumbered the critics two to one.",
+      "descriptor_highlight": "menu-level receipts",
+      "stat_line": "1,391 reviews · 4.5★"
+    },
+    {
+      "rank": 5,
+      "business_slug": "dianoias-eatery",
+      "name": "DiAnoia's Eatery",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "Strip District",
+      "descriptor": "An overrated hot take got reversed in its own thread, with even the concession reading like affection: \"the hype was diannoying.\" The hype was never the kitchen's fault.",
+      "descriptor_highlight": "reversed in its own thread",
+      "stat_line": "2,348 reviews · 4.6★"
+    },
+    {
+      "rank": 6,
+      "business_slug": "oakmont-bakery",
+      "name": "Oakmont Bakery",
+      "family_label": "Pittsburgh Sweets",
+      "neighborhood": "Oakmont",
+      "descriptor": "The critic came for the frosting. The defenders claimed the frosting as the entire point and cited the 4.7 stars like a court exhibit. When the thing you attack is the thing they love, you have already lost.",
+      "descriptor_highlight": "the frosting as the entire point",
+      "stat_line": "7,666 reviews · 4.7★"
+    }
+  ],
+  "generated_at": "2026-06-12T22:08:12.166882+00:00"
 }

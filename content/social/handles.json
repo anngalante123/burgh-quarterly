@@ -6774,15 +6774,6 @@
     "notes": "apify search; score=68; fullName=222 Ormsby Ave; medium-confidence match removed: was @ormsby222 via search_match"
   },
   {
-    "slug": "the-capital-grille",
-    "name": "The Capital Grille",
-    "website": "https://www.thecapitalgrille.com/locations/pa/pittsburgh/pittsburgh/8031?cmpid=br:tcg_ag:ie_ch:loc_ca:TCGGMB_sn:gmb_gt:pittsburgh-pa-8031_pl:locurl_rd:1027",
-    "instagram_handle": null,
-    "discovery_method": "none",
-    "confidence": null,
-    "notes": "apify search attempted, top=? score=0 below threshold"
-  },
-  {
     "slug": "etage-athletic-club",
     "name": "Etage Athletic Club",
     "website": "http://www.etageathletic.com/",
@@ -10346,14 +10337,6 @@
     "evidence": "https://www.instagram.com/cuddys_soulfood/ - bio mentions @lawrencehallpgh, 4609 Butler St."
   },
   {
-    "slug": "ruths-chris-steak-house",
-    "name": "Ruth's Chris Steak House",
-    "website": "https://www.ruthschris.com/",
-    "instagram_handle": "ruthschris",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
     "slug": "pre-amp-coffee-studio",
     "name": "Pre Amp Coffee Studio",
     "website": "https://www.preampcoffeestudio.com/",
@@ -10369,14 +10352,6 @@
     "discovery_method": "none",
     "confidence": null,
     "notes": "agent research; Likely the swim/tennis association running the pool; not 100% sure it's same entity as the public-pool listing but plausible.; medium-confidence match removed: was @westwoodswimtennis via agent_research"
-  },
-  {
-    "slug": "mortons-the-steakhouse",
-    "name": "Morton's The Steakhouse",
-    "website": "https://www.mortons.com/location/mortons-the-steakhouse-pittsburgh-pa/",
-    "instagram_handle": "mortonssteak",
-    "discovery_method": "website_link",
-    "confidence": "high"
   },
   {
     "slug": "escape-the-room-pittsburgh",
@@ -10395,15 +10370,6 @@
     "discovery_method": "none",
     "confidence": null,
     "notes": "apify search attempted, top=roamingbeanpgh score=30 below threshold"
-  },
-  {
-    "slug": "eddie-vs-prime-seafood",
-    "name": "Eddie V's Prime Seafood",
-    "website": "https://www.eddiev.com/locations/pa/pittsburgh/pittsburgh/8518?cmpid=br:ev_ag:ie_ch:loc_ca:EVGMB_sn:gmb_gt:pittsburgh-pa-8518_pl:locurl_rd:1017",
-    "instagram_handle": null,
-    "discovery_method": "none",
-    "confidence": null,
-    "notes": "agent research; National brand IG handle; per instructions skip national chain handles - flagging as medium since it's the brand's only handle and may apply, but treating as chain. Setting to null per; medium-confidence match removed: was @eddievs_ via agent_research"
   },
   {
     "slug": "goodwill-of-southwestern-pennsylvania",
@@ -12538,14 +12504,6 @@
     "name": "P Town Bar",
     "website": "https://ptownbarpgh.com/",
     "instagram_handle": "ptownbar",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
-    "slug": "cava-9z9sr0",
-    "name": "CAVA",
-    "website": "https://cava.com/locations/Oakland-(U-of-Pitt)-PA",
-    "instagram_handle": "cava",
     "discovery_method": "website_link",
     "confidence": "high"
   },
@@ -16441,14 +16399,6 @@
     "evidence": "https://www.instagram.com/yukiyamasushi/ - 'Yukiyama' Squirrel Hill chef oyama; 2121 Murray Ave"
   },
   {
-    "slug": "red-lobster-waeg1q",
-    "name": "Red Lobster",
-    "website": "https://www.redlobster.com/seafood-restaurants/locations/pa/pittsburgh/4766-mcknight-road",
-    "instagram_handle": "redlobster",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
     "slug": "chicken-latino",
     "name": "Chicken Latino",
     "website": "http://www.chickenlatino.net/",
@@ -16709,14 +16659,6 @@
     "discovery_method": "none",
     "confidence": null,
     "notes": "fetch failed; apify search attempted, top=? score=0 below threshold"
-  },
-  {
-    "slug": "noodles-and-company",
-    "name": "Noodles and Company",
-    "website": "https://locations.noodles.com/pa/pittsburgh/3805-forbes-ave?utm_campaign=soci&utm_medium=organic&utm_source=google",
-    "instagram_handle": "noodlescompany",
-    "discovery_method": "website_link",
-    "confidence": "high"
   },
   {
     "slug": "ditkas",
@@ -19152,15 +19094,6 @@
     "notes": "agent research; Name variation - possibly same business but not certain; low-confidence match removed: was @imprintnotaryexpressllc via agent_research"
   },
   {
-    "slug": "bob-evans-6vcj4i",
-    "name": "Bob Evans",
-    "website": "https://www.bobevans.com/locations/harmarville?utm_source=google&utm_medium=local&utm_campaign=98-Harmarville-PA",
-    "instagram_handle": null,
-    "discovery_method": "none",
-    "confidence": null,
-    "notes": "apify search attempted, top=? score=0 below threshold"
-  },
-  {
     "slug": "bambinos-pizzeria",
     "name": "Bambino's Pizzeria",
     "website": "https://www.bambinospizzaofpittsburgh.com/?utm_source=gbp",
@@ -19187,14 +19120,6 @@
     "confidence": "high",
     "notes": "agent research; 1525 Potomac Ave Pittsburgh",
     "evidence": "instagram.com/mollys.pizza.and.chicken/ - Pittsburgh Potomac Ave location, matches business name exactly"
-  },
-  {
-    "slug": "moes-southwest-grill-7cbzcy",
-    "name": "Moe's Southwest Grill",
-    "website": "https://locations.moes.com/pa/bethel-park/5211-library-rd?utm_source=google&utm_medium=organic&utm_campaign=locations_partner",
-    "instagram_handle": "moessouthwestgrill",
-    "discovery_method": "website_link",
-    "confidence": "high"
   },
   {
     "slug": "boulevard-icecream",
@@ -19261,14 +19186,6 @@
     "confidence": "high",
     "notes": "agent research; Matches business name exactly",
     "evidence": "instagram.com/tastycremeoflibrary/ - South Park PA ice cream shop, Library Rd"
-  },
-  {
-    "slug": "bonefish-grill",
-    "name": "Bonefish Grill",
-    "website": "https://locations.bonefishgrill.com/pennsylvania/upper-st.-clair/1835-washington-road?y_source=1_MTU1MDI4MzgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-    "instagram_handle": "bonefishgrill",
-    "discovery_method": "website_link",
-    "confidence": "high"
   },
   {
     "slug": "barbs-country-junction-cafe",
@@ -19593,14 +19510,6 @@
     "notes": "no website; apify search attempted, top=andjela.groves score=5 below threshold"
   },
   {
-    "slug": "wingstop-gzjumc",
-    "name": "Wingstop",
-    "website": "https://www.wingstop.com/location/wingstop-3078-pittsburgh-pa-15216/menu?y_source=1_MTA5NjY4NTk1Ni03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
-    "instagram_handle": "wingstop",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
     "slug": "pabellon-venezuelan-mexican-restaurant",
     "name": "Pabellon: Venezuelan & Mexican Restaurant",
     "website": "https://pabellononline.com/",
@@ -19894,14 +19803,6 @@
     "confidence": "high"
   },
   {
-    "slug": "bowlero-pittsburgh",
-    "name": "Bowlero Pittsburgh",
-    "website": "https://www.bowlero.com/location/bowlero-pittsburgh?utm_source=gbp&utm_medium=organic&utm_campaign=yext_listings",
-    "instagram_handle": "bowlerobowl",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
     "slug": "portogallo-peppers-nat",
     "name": "Portogallo Peppers N'AT",
     "website": "https://portogallopeppers.com/",
@@ -20116,14 +20017,6 @@
     "notes": "no website; apify search attempted, top=pretty_thickkk score=23 below threshold"
   },
   {
-    "slug": "tropical-smoothie-cafe-gdkpmo",
-    "name": "Tropical Smoothie Cafe",
-    "website": "https://locations.tropicalsmoothiecafe.com/pa/moon-township/9898-university-boulevard-unit-60?y_source=1_MTI2NzE3NzYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-    "instagram_handle": "tropicalsmoothiecafe",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
     "slug": "thai-touch-kitchen",
     "name": "Thai Touch Kitchen",
     "website": "http://www.thaitouchkitchen.com/",
@@ -20288,14 +20181,6 @@
     "discovery_method": "search_match",
     "confidence": "high",
     "notes": "apify search; score=120; fullName=Kabob-G Grill"
-  },
-  {
-    "slug": "benihana-pittsburgh",
-    "name": "Benihana - Pittsburgh",
-    "website": "https://www.benihana.com/locations/pittsburgh/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
-    "instagram_handle": "benihana",
-    "discovery_method": "website_link",
-    "confidence": "high"
   },
   {
     "slug": "halftime-lounge",
@@ -20884,15 +20769,6 @@
     "notes": "apify search attempted, top=? score=0 below threshold"
   },
   {
-    "slug": "dollar-general-6rzn4a",
-    "name": "Dollar General",
-    "website": "https://www.dollargeneral.com/store-directory/pa/pittsburgh/18057",
-    "instagram_handle": null,
-    "discovery_method": "none",
-    "confidence": null,
-    "notes": "fetch failed; apify search attempted, top=? score=0 below threshold"
-  },
-  {
     "slug": "just-good-donuts",
     "name": "Just Good Donuts",
     "website": "https://www.thepubchipshop.com/just-good-donuts",
@@ -21341,14 +21217,6 @@
     "notes": "handle belonged to a different entity (2026-06-12 audit fix)"
   },
   {
-    "slug": "first-watch-oss18o",
-    "name": "First Watch",
-    "website": "http://www.firstwatch.com/locations/century-iii/?utm_source=gbp-listing&utm_medium=organic&utm_campaign=gbp-listing&utm_content=century-iii",
-    "instagram_handle": "firstwatch",
-    "discovery_method": "website_link",
-    "confidence": "high"
-  },
-  {
     "slug": "franks-pizza-chicken-inc",
     "name": "Franks Pizza & Chicken Inc",
     "website": "http://www.frankspizzachicken.com/",
@@ -21376,15 +21244,6 @@
     "discovery_method": "none",
     "confidence": null,
     "notes": "fetch failed; apify search attempted, top=pittsburghpg score=25 below threshold"
-  },
-  {
-    "slug": "popeyes-louisiana-kitchen",
-    "name": "Popeyes Louisiana Kitchen",
-    "website": "https://www.popeyes.com/store-locator/store/restaurant_242835",
-    "instagram_handle": null,
-    "discovery_method": "none",
-    "confidence": null,
-    "notes": "apify search; score=45; fullName=; low-confidence match removed: was @popeyes via search_match"
   },
   {
     "slug": "china-sea-chinese-restaurant",
@@ -22003,15 +21862,6 @@
     "discovery_method": "none",
     "confidence": null,
     "notes": "apify search; score=65; fullName=PITTSBURGH PIZZA; medium-confidence match removed: was @rayas_pizzeria via search_match"
-  },
-  {
-    "slug": "longhorn-steakhouse-wai4pu",
-    "name": "LongHorn Steakhouse",
-    "website": "https://www.longhornsteakhouse.com/locations/pa/west-homestead/west-homestead-waterfront/5245?cmpid=br:lh_ag:ie_ch:loc_ca:LHGMB_sn:gmb_gt:west-homestead-pa-5245_pl:locurl_rd:1197",
-    "instagram_handle": null,
-    "discovery_method": "none",
-    "confidence": null,
-    "notes": "apify search attempted, top=pittsburghdad score=30 below threshold"
   },
   {
     "slug": "scottys-bar-and-lounge",
