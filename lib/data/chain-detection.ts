@@ -189,6 +189,41 @@ const NATIONAL_CHAINS: readonly string[] = [
   "gabes",
   "gabe's",
   "ross dress for less",
+
+  // Batch 2 audit additions (2026-06-12). The 06-11 audit named Benihana +
+  // The Capital Grille; a wider scan (scripts/scan-chains.ts) found these
+  // corporate-owned national brands also live in the index. Anna's call:
+  // remove corporate-owned restaurants/retail, KEEP locally-operated boutique
+  // franchises (Rita's, Bruster's, Club Pilates, StretchLab, Row House
+  // Fitness, barre3, Burn Boot Camp, Playa Bowls), so those are NOT added.
+  // Substrings kept specific (multi-word) to avoid false positives.
+  "benihana",
+  "the capital grille",
+  "capital grille",
+  "eddie v's",
+  "eddie vs",
+  "bob evans",
+  "noodles & company",
+  "noodles and company",
+  "longhorn steakhouse",
+  "red lobster",
+  "bonefish grill",
+  "morton's the steakhouse",
+  "mortons the steakhouse",
+  "tropical smoothie",
+  "ruth's chris",
+  "ruths chris",
+  "first watch",
+  "bowlero",
+  "dollar general",
+  "wingstop",
+  "wing stop",
+  "popeyes",
+  "moe's southwest",
+  "moes southwest",
+  // NOTE: CAVA is removed by row but intentionally NOT blocklisted here:
+  // the bare substring "cava" false-positives local names like "Cavacini
+  // Landscaping". If CAVA re-ingests, catch it by exact slug, not substring.
 ];
 
 /**
