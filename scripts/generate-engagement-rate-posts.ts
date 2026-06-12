@@ -21,6 +21,7 @@ import Anthropic from "@anthropic-ai/sdk";
 
 import { brandKey, loadAllRichBusinesses } from "@/lib/query/business-query";
 import { familyForCategory } from "@/lib/data/category-family";
+import { MIN_ENGAGEMENT_FOLLOWERS } from "@/lib/data/engagement";
 import { downloadThumbnail } from "@/lib/scrape/download-thumbnail";
 
 loadEnv({ path: join(process.cwd(), ".env.local") });
@@ -157,7 +158,9 @@ async function main() {
     const rb = bySlug.get(slug);
     if (!rb) continue;
     const followers = rb.social.ig?.followers ?? 0;
-    if (followers === 0) continue;
+    // Below the follower floor the per-post rate denominator is noise; a
+    // 20-follower account must not top the punching-above-weight list.
+    if (followers < MIN_ENGAGEMENT_FOLLOWERS) continue;
 
     const raw = JSON.parse(await readFile(join(RAW_DIR, f), "utf-8")) as {
       handle: string;
