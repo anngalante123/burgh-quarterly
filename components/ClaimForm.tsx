@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useTrackEvent } from "@/lib/hooks/use-track-event";
+import { EVENTS } from "@/lib/posthog/events";
 
 /**
  * ClaimForm, client form for the Gate-3 claim flow. Submits to
@@ -29,6 +31,7 @@ export function ClaimForm({ slug, businessName }: Props) {
   const [name, setName] = useState("");
   const [verification, setVerification] = useState("");
   const [status, setStatus] = useState<Status>({ kind: "idle" });
+  const track = useTrackEvent();
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -56,6 +59,7 @@ export function ClaimForm({ slug, businessName }: Props) {
         });
         return;
       }
+      track(EVENTS.BUSINESS_CLAIM_SUBMITTED, { slug });
       setStatus({ kind: "ok" });
     } catch {
       setStatus({

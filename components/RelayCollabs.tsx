@@ -1,6 +1,7 @@
 import manifest from "@/content/relay-collabs/manifest.json";
 import { Reveal } from "@/components/motion/Reveal";
 import { familyForBusinessCategory } from "@/lib/data/category-family";
+import { relayUrl } from "@/lib/relay/relay-url";
 import type { Category } from "@/lib/data/schemas";
 
 /**
@@ -241,7 +242,7 @@ export function RelayCollabGallery() {
             </p>
           </div>
           <a
-            href="https://run-relay.com/try"
+            href={relayUrl("/try", { campaign: "creator-collabs", content: "home" })}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-brand-purple text-brand-lavender font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] px-5 py-3 md:px-7 md:py-4 hover:bg-brand-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"

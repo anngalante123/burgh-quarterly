@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Reveal } from "@/components/motion/Reveal";
 import { dispatchUnlock } from "@/lib/hooks/use-unlocked";
+import { useTrackEvent } from "@/lib/hooks/use-track-event";
+import { EVENTS } from "@/lib/posthog/events";
 
 /**
  * SubscribeFooter, the single CTA that closes every business page.
@@ -22,6 +24,7 @@ type Props = { businessName: string };
 export function SubscribeFooter({ businessName }: Props) {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "loading" | "ok" | "err">("idle");
+  const track = useTrackEvent();
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -38,6 +41,7 @@ export function SubscribeFooter({ businessName }: Props) {
         }),
       });
       if (res.ok) {
+        track(EVENTS.SUBSCRIBE_COMPLETED, { location: "footer" });
         // Tell every Gated region on the page that we just unlocked,
         // so a footer subscriber doesn't see the gate when they go
         // back up to expand a row.

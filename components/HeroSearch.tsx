@@ -5,6 +5,9 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import type { SearchableBusiness } from "@/components/BusinessSearch";
 import { TIER_LABELS } from "@/lib/tiers";
+import { useTrackEvent } from "@/lib/hooks/use-track-event";
+import { EVENTS } from "@/lib/posthog/events";
+import { matchesQuery } from "@/lib/search/business-match";
 
 /**
  * HeroSearch, self-contained search with inline results dropdown.
@@ -63,6 +66,23 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
 
   const wrapperRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const track = useTrackEvent();
+
+  // Fire SEARCH_PERFORMED once the user stops typing for 800ms and the
+  // query is at least 2 chars. The component filters as-you-type with no
+  // submit, so a debounce keeps us from firing one event per keystroke.
+  useEffect(() => {
+    const q = query.trim();
+    if (q.length < 2) return;
+    const t = window.setTimeout(() => {
+      track(EVENTS.SEARCH_PERFORMED, {
+        query: q,
+        query_length: q.length,
+        source: "hero",
+      });
+    }, 800);
+    return () => window.clearTimeout(t);
+  }, [query, track]);
 
   const neighborhoods = useMemo(() => {
     const counts = new Map<string, number>();
@@ -120,7 +140,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
   }, [tailNeighborhoods, slotCounters]);
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = query.trim();
     return businesses.filter((b) => {
       if (
         selectedNeighborhoods.length > 0 &&
@@ -129,11 +149,9 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
         return false;
       }
       if (!q) return true;
-      return (
-        b.name.toLowerCase().includes(q) ||
-        b.neighborhood.toLowerCase().includes(q) ||
-        b.categoryName.toLowerCase().includes(q)
-      );
+      // Punctuation- and word-order-tolerant match so "gi jin" / "gijin"
+      // both find a business stored as "gi-jin". See lib/search/business-match.
+      return matchesQuery([b.name, b.neighborhood, b.categoryName], q);
     });
   }, [businesses, query, selectedNeighborhoods]);
 

@@ -2,6 +2,7 @@ import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
 import { HowWeRank } from "@/components/HowWeRank";
 import { Reveal } from "@/components/motion/Reveal";
+import { relayUrl } from "@/lib/relay/relay-url";
 import Link from "next/link";
 
 /**
@@ -92,7 +93,7 @@ export default function AboutPage() {
                   Pittsburgh, PA. Founded 2025.
                 </p>
                 <a
-                  href="https://run-relay.com"
+                  href={relayUrl("/", { campaign: "publisher-credit", content: "about" })}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 inline-flex items-center gap-1 font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-purple hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"

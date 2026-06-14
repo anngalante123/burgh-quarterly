@@ -4,6 +4,21 @@ import { motion, useReducedMotion } from "framer-motion";
 import { Reveal } from "@/components/motion/Reveal";
 import type { TikTokMentions as TikTokData } from "@/lib/data/load-social";
 import { cn } from "@/lib/utils";
+import { useTrackEvent } from "@/lib/hooks/use-track-event";
+import { EVENTS } from "@/lib/posthog/events";
+
+/** Infer a coarse platform label from a URL's host. Best-effort only. */
+function platformFromUrl(url: string): string | undefined {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "");
+    if (host.includes("tiktok")) return "tiktok";
+    if (host.includes("instagram")) return "instagram";
+    if (host.includes("facebook")) return "facebook";
+    return "website";
+  } catch {
+    return undefined;
+  }
+}
 
 /**
  * TikTokMentions, the creator-coverage block.
@@ -23,6 +38,7 @@ import { cn } from "@/lib/utils";
 type Props = {
   data: TikTokData | null;
   businessName: string;
+  slug: string;
 };
 
 function formatNumber(n: number): string {
@@ -44,8 +60,19 @@ function formatDate(iso: string | null): string {
   return d.toLocaleDateString("en-US", { month: "short", year: "numeric" });
 }
 
-export function TikTokMentions({ data, businessName }: Props) {
+export function TikTokMentions({ data, businessName, slug }: Props) {
   const reduced = useReducedMotion();
+  const track = useTrackEvent();
+
+  // Fire OUTBOUND_CLICK on any external creator/video link. We do NOT
+  // preventDefault, so the link still navigates normally.
+  function onOutbound(url: string) {
+    track(EVENTS.OUTBOUND_CLICK, {
+      url,
+      platform: platformFromUrl(url),
+      slug,
+    });
+  }
 
   if (!data || data.video_count === 0) {
     return (
@@ -98,6 +125,11 @@ export function TikTokMentions({ data, businessName }: Props) {
                 href={`https://www.tiktok.com/@${data.detected_own_handle}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  onOutbound(
+                    `https://www.tiktok.com/@${data.detected_own_handle}`,
+                  )
+                }
                 className="text-brand-purple font-medium hover:underline"
               >
                 @{data.detected_own_handle}
@@ -142,6 +174,12 @@ export function TikTokMentions({ data, businessName }: Props) {
                     href={c.top_video_url ?? `https://www.tiktok.com/@${c.handle}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() =>
+                      onOutbound(
+                        c.top_video_url ??
+                          `https://www.tiktok.com/@${c.handle}`,
+                      )
+                    }
                     title={
                       c.top_video_url
                         ? `Watch @${c.handle}'s top video about this business`
@@ -178,6 +216,9 @@ export function TikTokMentions({ data, businessName }: Props) {
                 href={`https://www.tiktok.com/@${top.author}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  onOutbound(`https://www.tiktok.com/@${top.author}`)
+                }
                 className="font-medium text-brand-purple hover:underline"
               >
                 @{top.author}
@@ -190,6 +231,7 @@ export function TikTokMentions({ data, businessName }: Props) {
                 href={top.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => onOutbound(top.url!)}
                 className="inline-flex items-center gap-1 font-display text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-brand-black hover:text-brand-purple"
               >
                 Watch on TikTok

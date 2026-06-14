@@ -1,5 +1,6 @@
 import { Reveal } from "@/components/motion/Reveal";
 import { RelayCollabStrip } from "@/components/RelayCollabs";
+import { relayUrl } from "@/lib/relay/relay-url";
 import type { Category } from "@/lib/data/schemas";
 
 /**
@@ -40,9 +41,11 @@ export function GetFeaturedCTA({
 }: Props) {
   const href =
     applyUrl ??
-    (businessSlug
-      ? `https://run-relay.com/try?business=${encodeURIComponent(businessSlug)}`
-      : `https://run-relay.com/try`);
+    relayUrl("/try", {
+      campaign: "get-featured",
+      content: businessSlug ? `business:${businessSlug}` : "home",
+      params: businessSlug ? { business: businessSlug } : undefined,
+    });
   const compact = variant === "compact";
   const kicker = businessName ? "For the owner" : "For Pittsburgh business owners";
   const headline = businessName

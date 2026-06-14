@@ -40,6 +40,7 @@ import { PeerDotPlot } from "@/components/insights/PeerDotPlot";
 import { MomentumSparkline } from "@/components/insights/MomentumSparkline";
 import { TikTokMentions } from "@/components/insights/TikTokMentions";
 import { Gated } from "@/components/gating/Gated";
+import { BusinessViewTracker } from "@/components/analytics/BusinessViewTracker";
 
 import {
   loadAllBusinesses,
@@ -573,7 +574,7 @@ export default async function BusinessPage({ params }: PageProps) {
               pctVsMedian={familyStats.tiktokCreators.pctVsMedian}
               familyShort={familyStats.familyShort}
             />
-            <TikTokMentions data={social.tiktok_mentions} businessName={biz.name} />
+            <TikTokMentions data={social.tiktok_mentions} businessName={biz.name} slug={biz.slug} />
           </div>
         </Gated>
       ),
@@ -631,6 +632,8 @@ export default async function BusinessPage({ params }: PageProps) {
 
   return (
     <>
+      {/* Client probe: fires BUSINESS_PROFILE_VIEWED once on mount. */}
+      <BusinessViewTracker slug={biz.slug} name={biz.name} />
       <Masthead variant="compact" />
 
       <main className="flex-1">

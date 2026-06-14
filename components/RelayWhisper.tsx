@@ -12,17 +12,21 @@
  *   editorial, longer line, renders only when IG is dormant (posts_30d=0)
  */
 
+import { relayUrl } from "@/lib/relay/relay-url";
+
 type RelayWhisperProps = {
   variant?: "whisper" | "editorial";
+  /** Business slug, encoded into utm_content for per-page attribution. */
+  slug?: string;
 };
 
-export function RelayWhisper({ variant = "whisper" }: RelayWhisperProps) {
+export function RelayWhisper({ variant = "whisper", slug }: RelayWhisperProps) {
   if (variant === "editorial") {
     return (
       <p className="mt-3 font-body text-sm text-brand-black/75 leading-relaxed">
         A gap creators can fill.{" "}
         <a
-          href="https://run-relay.com"
+          href={relayUrl("/", { campaign: "relay-whisper", content: slug ? `business:${slug}` : "business-profile" })}
           target="_blank"
           rel="noopener noreferrer"
           className="text-brand-purple font-medium hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
@@ -35,7 +39,7 @@ export function RelayWhisper({ variant = "whisper" }: RelayWhisperProps) {
 
   return (
     <a
-      href="https://run-relay.com"
+      href={relayUrl("/", { campaign: "relay-whisper", content: slug ? `business:${slug}` : "business-profile" })}
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-1.5 mt-3 font-display text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-brand-black/55 hover:text-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"

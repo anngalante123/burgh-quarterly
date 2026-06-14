@@ -4,6 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { TIER_LABELS } from "@/lib/tiers";
+import { useTrackEvent } from "@/lib/hooks/use-track-event";
+import { EVENTS } from "@/lib/posthog/events";
 
 /**
  * BusinessSearch, browse-only canonical index list.
@@ -50,6 +52,7 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
   const [selectedNeighborhoods, setSelectedNeighborhoods] = useState<string[]>(
     [],
   );
+  const track = useTrackEvent();
 
   const neighborhoods = useMemo(() => {
     const counts = new Map<string, number>();
@@ -121,9 +124,20 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
   const hasActiveFilter = selectedNeighborhoods.length > 0;
 
   function toggleNeighborhood(name: string) {
-    setSelectedNeighborhoods((prev) =>
-      prev.includes(name) ? prev.filter((n) => n !== name) : [...prev, name],
-    );
+    setSelectedNeighborhoods((prev) => {
+      const isAdding = !prev.includes(name);
+      // This list has no text box; applying a neighborhood filter IS the
+      // search action here. Fire only when turning a chip ON (not off), so
+      // it maps to "user ran a search" rather than every toggle.
+      if (isAdding) {
+        track(EVENTS.SEARCH_PERFORMED, {
+          query: name,
+          query_length: name.length,
+          source: "business_search",
+        });
+      }
+      return isAdding ? [...prev, name] : prev.filter((n) => n !== name);
+    });
   }
 
   function resetFilters() {
