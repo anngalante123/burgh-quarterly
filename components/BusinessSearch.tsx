@@ -6,24 +6,21 @@ import { cn } from "@/lib/utils";
 import { TIER_LABELS } from "@/lib/tiers";
 import { useTrackEvent } from "@/lib/hooks/use-track-event";
 import { EVENTS } from "@/lib/posthog/events";
+import { matchesQuery } from "@/lib/search/business-match";
 
 /**
- * BusinessSearch, browse-only canonical index list.
+ * BusinessSearch, the canonical index list with inline filtering.
  *
- * Rebuilt 2026-05-01: search now lives in the hero (`HeroSearch`). This
- * component is the always-visible record of the full Spring 2026 index.
- * It no longer accepts text input or listens for cross-component events;
- * it just shows every business in the index, filterable by neighborhood
- * chip.
- *
- * Why keep it: the hero search is interactive and only opens on intent.
- * This section is the canonical, scrollable list a reader can land on
- * to see the full issue at a glance, the "table of contents" view.
+ * This is the always-visible "table of contents" view of the full Spring 2026
+ * index. Unlike the hero search (which opens a dropdown on intent), this
+ * section filters the canonical list in place.
  *
  * Interactions:
+ *   - Type in the search box to filter by name / neighborhood / category
+ *     (same forgiving matcher as the hero, so "gi jin" finds "gi-jin")
  *   - Click a neighborhood chip to filter (multi-select OR; click again
  *     to deselect)
- *   - Defaults to showing the full index
+ *   - Text and chip filters combine (AND); defaults to the full index
  */
 
 export type SearchableBusiness = {
@@ -52,7 +49,23 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
   const [selectedNeighborhoods, setSelectedNeighborhoods] = useState<string[]>(
     [],
   );
+  const [query, setQuery] = useState("");
   const track = useTrackEvent();
+
+  // Fire SEARCH_PERFORMED once the user stops typing for 800ms (query >= 2
+  // chars), so the text filter maps to one "search" per intent, not per key.
+  useEffect(() => {
+    const q = query.trim();
+    if (q.length < 2) return;
+    const t = window.setTimeout(() => {
+      track(EVENTS.SEARCH_PERFORMED, {
+        query: q,
+        query_length: q.length,
+        source: "business_search",
+      });
+    }, 800);
+    return () => window.clearTimeout(t);
+  }, [query, track]);
 
   const neighborhoods = useMemo(() => {
     const counts = new Map<string, number>();
@@ -67,11 +80,18 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
   }, [businesses]);
 
   const filtered = useMemo(() => {
-    if (selectedNeighborhoods.length === 0) return businesses;
-    return businesses.filter((b) =>
-      selectedNeighborhoods.includes(b.neighborhood),
-    );
-  }, [businesses, selectedNeighborhoods]);
+    const q = query.trim();
+    return businesses.filter((b) => {
+      if (
+        selectedNeighborhoods.length > 0 &&
+        !selectedNeighborhoods.includes(b.neighborhood)
+      ) {
+        return false;
+      }
+      if (!q) return true;
+      return matchesQuery([b.name, b.neighborhood, b.categoryName], q);
+    });
+  }, [businesses, selectedNeighborhoods, query]);
 
   // Compact-by-default chip list. Show top STABLE_COUNT + ROTATING_COUNT
   // rotating slots; user can expand to the full wall via "Show all". A
@@ -121,7 +141,8 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
       selectedNeighborhoods.includes(n.name) && !visibleNamesSet.has(n.name),
   );
 
-  const hasActiveFilter = selectedNeighborhoods.length > 0;
+  const hasActiveFilter =
+    selectedNeighborhoods.length > 0 || query.trim().length > 0;
 
   function toggleNeighborhood(name: string) {
     const isAdding = !selectedNeighborhoods.includes(name);
@@ -144,6 +165,7 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
 
   function resetFilters() {
     setSelectedNeighborhoods([]);
+    setQuery("");
   }
 
   const counterText = hasActiveFilter
@@ -162,6 +184,20 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
         <span className="font-body text-[0.7rem] md:text-xs text-brand-black/55">
           {counterText}
         </span>
+      </div>
+
+      {/* Type-to-filter the canonical list (name, neighborhood, or category).
+          Reuses the same forgiving matcher as the hero search. */}
+      <div className="mb-4">
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search this list by name, neighborhood, or category"
+          aria-label="Search the index"
+          autoComplete="off"
+          className="w-full border-2 border-brand-black bg-white px-4 py-2.5 font-body text-sm md:text-base text-brand-black placeholder:text-brand-black/55 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/30"
+        />
       </div>
 
       {/* Neighborhood chips. Compact by default: stable top 10 + 3
@@ -277,7 +313,7 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
       <div className="mt-6">
         {filtered.length === 0 ? (
           <p className="font-body text-sm text-brand-black/60 italic py-4">
-            No matches in the selected neighborhoods.{" "}
+            No matches for that filter.{" "}
             <button
               type="button"
               onClick={resetFilters}
