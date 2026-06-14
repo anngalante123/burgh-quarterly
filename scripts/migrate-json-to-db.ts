@@ -159,7 +159,6 @@ function setAllExcluded(columns: string[]): Record<string, ReturnType<typeof sql
 /* ----------------------- Tier inference for lists ----------------------- */
 
 const UNDERRATED_LIST_TO_CATEGORY: Record<string, Category> = {
-  "underrated-asian-kitchens": "restaurant",
   "underrated-bars": "restaurant",
   "underrated-cafes": "cafe",
   "underrated-restaurants": "restaurant",

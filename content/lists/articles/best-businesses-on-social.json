@@ -1,0 +1,146 @@
+{
+  "slug": "best-businesses-on-social",
+  "title": "The Best Pittsburgh Businesses on Social",
+  "subtitle": "The full index, top down. Spring 2026.",
+  "angle": "the Pittsburgh small businesses showing up strongest across every social signal this quarter, ranked by the full index. Reviews stacking, photos documenting, feeds moving, creators filming. The definitive overall list, regardless of category.",
+  "intro": "The strongest social footprints in Pittsburgh this spring belong mostly to businesses that built their reputations the old way: review by review, visit by visit. Grim Wizard Coffee sits at the top of this index not because a video went viral but because its review velocity is the highest of any cafe in the city right now, a foundation most places spend years trying to construct. DeLuca's Diner anchors its spot on 2,456 reviews, a number that carries real weight in the algorithm whether or not the Strip District institution has touched a content calendar.\n\nWhat the full index makes clear is that Pittsburgh's social conversation is still review-driven at its core. The photo documentation layer is growing, the creator layer is just beginning to show up in pockets, and for most businesses on this list, TikTok remains an open question. Bigham Tavern ranks first among Pittsburgh restaurants on review depth and has almost nothing else working for it digitally, which tells you something about both the ceiling and the opportunity sitting in front of it.\n\nIssue 02 tracks the summer shift: whether the creator layer finally catches up to the review infrastructure these businesses have spent years building.",
+  "items": [
+    {
+      "rank": 1,
+      "business_slug": "grim-wizard-coffee",
+      "name": "Grim Wizard Coffee",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Allentown",
+      "descriptor": "First In Pittsburgh Cafes On Pure Review Strength. The TikTok Layer Hasn't Arrived Yet.",
+      "descriptor_highlight": "Pure Review Strength",
+      "stat_line": "1,028 reviews · 4.7★ · 1 creators · 1K plays · 12 IG posts/30d",
+      "featured_tiktok": {
+        "author": "wqedpgh",
+        "plays": 1292,
+        "url": "https://www.tiktok.com/@wqedpgh/video/7619847509799685389",
+        "caption": "SHOWDOWN RETURNS! ☕️\nThis round, @nebbynick stopped by three coffee shops in Pittsburgh, fueled on caffeine and… more caffeine!\n📍@laprimaespresso in the Strip District\n📍@grimwizardcoffee in Allentown\n📍@creativechemco in Bloomfield\nStream"
+      },
+      "playbook_top_move": "Get the first TikTok creator through the door. Zero Pittsburgh TikToks indexed; one creator video of the pinball setup and a seasonal latte could open the entire creator signal."
+    },
+    {
+      "rank": 2,
+      "business_slug": "steel-city-coffeehouse-brewery",
+      "name": "Steel City Coffeehouse & Brewery",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Phoenixville",
+      "descriptor": "Third In Pittsburgh Cafes On Review Depth Alone. The Weekly Open Mic Has No Social Echo.",
+      "descriptor_highlight": "No Social Echo",
+      "stat_line": "679 reviews · 4.6★",
+      "playbook_top_move": "Get the open mic onto TikTok. No Pittsburgh TikTok coverage exists yet; one 30-second open mic clip per week would open a creator entry point that currently does not exist."
+    },
+    {
+      "rank": 3,
+      "business_slug": "bigham-tavern",
+      "name": "Bigham Tavern",
+      "family_label": "Pittsburgh Restaurants",
+      "neighborhood": "Mount Washington",
+      "descriptor": "First In Pittsburgh Restaurants On Review Depth Alone. Social Presence Is The Missing Layer.",
+      "descriptor_highlight": "Review Depth Alone",
+      "stat_line": "1,998 reviews · 4.5★ · 4 creators · 17K plays · 9 IG posts/30d",
+      "featured_tiktok": {
+        "author": "weekendsintheburgh",
+        "plays": 10400,
+        "url": "https://www.tiktok.com/@weekendsintheburgh/video/7646142314326314253",
+        "caption": "Waterfront brunch views at Bigham Tavern at Bridgewater in Beaver, PA. We got the Blueberry Lemon French Toast, Black and Gold Rogi Bowl, and Garden Party cocktail. #pittsburghbrunch #waterfront #pittsburghrestaurants #foodtiktok "
+      },
+      "playbook_top_move": "Get the Instagram handle indexed publicly. Ensure the Instagram account is searchable and linked on Google Business; no handle is currently indexed, which means zero social signal is being captured for a #1-ranked restaurant."
+    },
+    {
+      "rank": 4,
+      "business_slug": "delucas-diner",
+      "name": "DeLuca's Diner",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "Strip District",
+      "descriptor": "Icons Rank Anchored By 2,456 Reviews. The Social Discovery Layer Hasn't Arrived Yet.",
+      "descriptor_highlight": "2,456 Reviews",
+      "stat_line": "2,456 reviews · 4.5★",
+      "playbook_top_move": "Get the Instagram handle indexed everywhere. Confirm and link the Instagram account on Google Business Profile so the handle surfaces in search; right now it is completely invisible to discovery."
+    },
+    {
+      "rank": 5,
+      "business_slug": "nail-bar-spa",
+      "name": "Nail Bar Spa",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "South Side Flats",
+      "descriptor": "First In Pittsburgh Salons On Review Depth Alone. The Social Layer Is Still Missing.",
+      "descriptor_highlight": "Social Layer Is Still Missing",
+      "stat_line": "430 reviews · 4.2★",
+      "playbook_top_move": "Get an indexed Instagram presence, now. No Instagram handle is indexed anywhere for this business. A single active account with 4 posts a month would immediately unlock the industry's weakest signal for Nail Bar Spa."
+    },
+    {
+      "rank": 6,
+      "business_slug": "novaria-coffee-co",
+      "name": "Novaria coffee co.",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Strip District",
+      "descriptor": "Second In Pittsburgh Cafes On Reviews Alone. The Social Layer Has Yet To Catch Up.",
+      "descriptor_highlight": "Reviews Alone",
+      "stat_line": "601 reviews · 4.9★ · 7 IG posts/30d",
+      "playbook_top_move": "Get the Instagram handle indexed and visible. No Instagram handle surfaced in this analysis; confirm the account is public, linked on Google, and actively posting to close the visibility gap."
+    },
+    {
+      "rank": 7,
+      "business_slug": "gossipandnailspa",
+      "name": "Gossip and Nail Spa",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "South Side Flats",
+      "descriptor": "Second In Pittsburgh Salons On Technician Loyalty. One Front Desk Pattern Is The Only Thing In The Way.",
+      "descriptor_highlight": "Technician Loyalty",
+      "stat_line": "1,038 reviews · 4.5★ · 11 IG posts/30d",
+      "playbook_top_move": "Fix the front desk complaint loop now. Four of 14 sampled reviews cite the same dismissive male front-of-house response; one protocol change on handling same-day repair requests stops the bleed."
+    },
+    {
+      "rank": 8,
+      "business_slug": "roots-to-petals",
+      "name": "Roots to Petals",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "Oakmont Central Business District",
+      "descriptor": "First In Pittsburgh Florists, Built On Weddings And Workshops. TikTok Has Not Found Oakmont Yet.",
+      "descriptor_highlight": "TikTok Has Not Found",
+      "stat_line": "121 reviews · 5★ · 2 creators · 3K plays · 9 IG posts/30d",
+      "featured_tiktok": {
+        "author": "kristinalwiggins",
+        "plays": 2448,
+        "url": "https://www.tiktok.com/@kristinalwiggins/video/7647319762552278302",
+        "caption": "Oakmont is such a gem! Love exploring this Pittsburgh neighborhood for those quintessential hallmark town feels. \n\nAdd these local small businesses to your list: \n\n🌸Flowers & charming goodies at roots to petal studio \n\n🍽️ vibey restaurant"
+      },
+      "playbook_top_move": "Get Roots to Petals onto TikTok. Zero creators have filmed this shop; a single behind-the-scenes bridal prep or workshop reel could open the channel entirely."
+    },
+    {
+      "rank": 9,
+      "business_slug": "taiwanese-bistro-cafe-33",
+      "name": "Taiwanese Bistro Cafe 33",
+      "family_label": "Pittsburgh Businesses",
+      "neighborhood": "Squirrel Hill South",
+      "descriptor": "Second In Pittsburgh Restaurants On Reviews And Photos, With No Social Layer Yet.",
+      "descriptor_highlight": "No Social Layer Yet",
+      "stat_line": "1,420 reviews · 4.5★",
+      "playbook_top_move": "Get on Instagram before creators arrive. With no indexed Instagram account, Cafe 33 has no destination for the 90-percentile creator interest this place is primed to attract."
+    },
+    {
+      "rank": 10,
+      "business_slug": "crazy-horse-coffee",
+      "name": "Crazy Horse Coffee",
+      "family_label": "Pittsburgh Cafes",
+      "neighborhood": "Washington",
+      "descriptor": "Sixth In Pittsburgh Cafes On Review Depth Alone. No Social Layer Has Joined Yet.",
+      "descriptor_highlight": "Review Depth Alone",
+      "stat_line": "529 reviews · 4.8★ · 8 IG posts/30d",
+      "playbook_top_move": "Establish a findable Instagram presence. Claim or reactivate an Instagram account so the handle indexes publicly, connecting 529 reviewers to a social home."
+    }
+  ],
+  "query": {
+    "filter": {
+      "family": "all"
+    },
+    "ranking": "composite",
+    "limit": 10
+  },
+  "generated_at": "2026-06-14T16:24:38.428Z",
+  "model": "claude-sonnet-4-6"
+}

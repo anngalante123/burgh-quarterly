@@ -21,7 +21,7 @@ const FOOTER_LINKS: { label: string; href: string }[] = [
   { label: "How we rank", href: "/how-we-rank" },
   { label: "Leaderboard", href: "/leaderboard" },
   { label: "Best on Social", href: "/best-on-social" },
-  { label: "Underrated", href: "/underrated" },
+  { label: "Word of Mouth", href: "/underrated" },
   { label: "Request a feature", href: "/request" },
 ];
 

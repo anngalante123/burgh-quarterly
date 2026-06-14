@@ -50,6 +50,22 @@ export const LISTS: ListSpec[] = [
     },
   },
   {
+    // The flagship "best on social" ranking: the full index, top down.
+    // Where "Talk of the Town" ranks by creator pickup alone, this list
+    // ranks by the composite signal (reviews, sentiment, photos, IG
+    // cadence, creator fit) so it reads as the definitive overall list.
+    slug: "best-businesses-on-social",
+    title: "The Best Pittsburgh Businesses on Social",
+    subtitle: "The full index, top down. Spring 2026.",
+    angle:
+      "the Pittsburgh small businesses showing up strongest across every social signal this quarter, ranked by the full index. Reviews stacking, photos documenting, feeds moving, creators filming. The definitive overall list, regardless of category.",
+    query: {
+      filter: { family: "all" },
+      ranking: "composite",
+      limit: 10,
+    },
+  },
+  {
     slug: "sweets-top-10",
     title: "The 10 Pittsburgh Sweets on Social",
     subtitle: "Bakeries, pastry shops, ice cream, dessert",
@@ -86,18 +102,6 @@ export const LISTS: ListSpec[] = [
     },
   },
   {
-    slug: "asian-kitchens-top",
-    title: "The Pittsburgh Asian Kitchens Creators Keep Returning To",
-    subtitle: "Sushi, noodles, Thai, Indian, Japanese",
-    angle:
-      "the Asian kitchens generating the most creator coverage this quarter. The dishes the city is filming and the restaurants behind them.",
-    query: {
-      filter: { family: "asian_eats" },
-      ranking: "creator_pickup",
-      limit: 8,
-    },
-  },
-  {
     slug: "active-posters",
     title: "Still Posting: Pittsburgh's Most Active Instagram Feeds",
     subtitle:
@@ -111,18 +115,21 @@ export const LISTS: ListSpec[] = [
     },
   },
 
-  // ──────── The Underrated List, per editorial brief ────────
-  // Customers rate them well, the Instagram presence hasn't caught up yet.
-  // Celebrated, never shamed. Recurring quarterly feature, one per
-  // family + a flagship.
+  // ──────── Word of Mouth, per editorial brief ────────
+  // Renamed from "The Underrated List" 2026-06-14 (approved by Anna).
+  // The frame moved off "underrated" (a quality verdict) and onto the
+  // social-media gap: these businesses win on word of mouth, the reviews
+  // are loud, the feed is quiet. Slugs + the "underrated" ranking key
+  // stay for URL and code stability; display copy only. Celebrated,
+  // never shamed. Recurring quarterly feature, one per family + a flagship.
 
   {
     slug: "underrated-spring-2026",
-    title: "Pittsburgh's Most Underrated Small Businesses",
+    title: "Word of Mouth: Pittsburgh's Quiet Favorites",
     subtitle:
-      "The places customers love but the algorithm hasn't found yet, across every family.",
+      "The businesses the city won't stop recommending, even though their feeds stay quiet. Across every family.",
     angle:
-      "businesses with high customer ratings and real review depth that haven't broken through on social yet. The point of this list is celebration, not critique. Pittsburgh's neighborhood spots, the ones worth telling a friend about.",
+      "businesses carried by word of mouth, high customer ratings and real review depth, that haven't translated any of it to social yet. The reviews are loud, the feed is quiet. The point of this list is celebration, not critique. Pittsburgh's neighborhood spots, the ones people text a friend about instead of tagging.",
     query: {
       filter: { family: "all" },
       ranking: "underrated",
@@ -131,10 +138,10 @@ export const LISTS: ListSpec[] = [
   },
   {
     slug: "underrated-sweets",
-    title: "Pittsburgh's Most Underrated Sweets",
-    subtitle: "Bakeries, dessert spots, and ice cream shops the city should be talking about.",
+    title: "Word of Mouth: Pittsburgh's Sweets",
+    subtitle: "The bakeries and dessert spots regulars rave about in person, long before the feed catches up.",
     angle:
-      "the dessert shops Pittsburgh customers love but creators haven't fully caught onto. High ratings, real review depth, thin Instagram momentum. The places worth a Sunday morning detour.",
+      "the dessert shops Pittsburgh customers line up for and review in detail, but that creators and the feed haven't found yet. Strong word of mouth, thin Instagram momentum. The places worth a Sunday morning detour.",
     query: {
       filter: { family: "sweets" },
       ranking: "underrated",
@@ -143,10 +150,10 @@ export const LISTS: ListSpec[] = [
   },
   {
     slug: "underrated-cafes",
-    title: "Pittsburgh's Most Underrated Cafes",
-    subtitle: "Coffee, tea, juice. Loved locally, not yet viral.",
+    title: "Word of Mouth: Pittsburgh's Cafes",
+    subtitle: "Coffee, tea, juice. The regulars already know. The feed hasn't caught on.",
     angle:
-      "the cafes that Pittsburgh regulars rave about in reviews but the broader internet hasn't caught up to. Quietly excellent, quietly under-followed.",
+      "the cafes Pittsburgh regulars rave about in reviews while the broader internet stays quiet. Loud word of mouth, near-invisible on social. Quietly excellent, quietly under-followed.",
     query: {
       filter: { family: "cafes" },
       ranking: "underrated",
@@ -155,10 +162,10 @@ export const LISTS: ListSpec[] = [
   },
   {
     slug: "underrated-bars",
-    title: "Pittsburgh's Most Underrated Bars",
-    subtitle: "Bars and breweries the regulars treat as their own.",
+    title: "Word of Mouth: Pittsburgh's Bars",
+    subtitle: "Bars and breweries the regulars treat as their own, with reviews to match and feeds that haven't caught up.",
     angle:
-      "the Pittsburgh bars and breweries with the kind of reviews that read like word-of-mouth, but the social presence hasn't caught up. Underrated does not mean undeserving.",
+      "the Pittsburgh bars and breweries with reviews that read like word of mouth, while the social presence stays a step behind. Quiet feed, loud room.",
     query: {
       filter: { family: "bars" },
       ranking: "underrated",
@@ -166,23 +173,11 @@ export const LISTS: ListSpec[] = [
     },
   },
   {
-    slug: "underrated-asian-kitchens",
-    title: "Pittsburgh's Most Underrated Asian Kitchens",
-    subtitle: "Sushi, Thai, Indian, Japanese, noodles. Loved in person, not yet celebrated online.",
-    angle:
-      "the Asian kitchens earning real love in reviews but flying under the social radar. The spots regulars defend.",
-    query: {
-      filter: { family: "asian_eats" },
-      ranking: "underrated",
-      limit: 5,
-    },
-  },
-  {
     slug: "underrated-restaurants",
-    title: "Pittsburgh's Most Underrated Restaurants",
-    subtitle: "Brunch spots, neighborhood restaurants. High ratings, low spotlight.",
+    title: "Word of Mouth: Pittsburgh's Restaurants",
+    subtitle: "Brunch spots and neighborhood kitchens with the reviews to prove it and feeds that stay quiet.",
     angle:
-      "Pittsburgh restaurants whose reviews speak for themselves but whose social channels are quieter than they should be. The neighborhood standbys we'd send a visiting friend to.",
+      "Pittsburgh restaurants whose reviews speak for themselves while their social channels stay quieter than the dining room. Carried by word of mouth. The neighborhood standbys we'd send a visiting friend to.",
     query: {
       filter: { family: "restaurants" },
       ranking: "underrated",

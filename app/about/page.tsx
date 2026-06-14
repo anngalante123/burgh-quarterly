@@ -136,7 +136,7 @@ export default function AboutPage() {
                 </p>
                 <p className="mt-2 font-body text-sm text-brand-black/80 leading-snug">
                   Businesses cannot pay for a higher rank, a kinder entry,
-                  or to be removed from an Underrated list.
+                  or to be removed from a Word of Mouth list.
                 </p>
               </li>
               <li className="border border-brand-black/15 bg-white/60 p-5">
