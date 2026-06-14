@@ -76,7 +76,7 @@ async function sendConfirmation(email: string, follow: string | null): Promise<{
     // Link back to the index, UTM-tagged so PostHog attributes return visits
     // driven by this subscribe confirmation email. Display text stays clean.
     const indexUrl =
-      "https://signal.run-relay.com/?utm_source=newsletter&utm_medium=email&utm_campaign=subscribe-confirmation";
+      "https://signal.run-relay.com/?utm_source=newsletter&utm_medium=email&utm_campaign=subscribe-confirmation&utm_content=confirmation-email";
     let countLineHtml: string;
     let countLineText: string;
     try {

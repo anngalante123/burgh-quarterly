@@ -14,6 +14,7 @@
  */
 
 import { relayUrl } from "@/lib/relay/relay-url";
+import { TrackedRelayLink } from "@/components/analytics/TrackedRelayLink";
 
 type SidebarCTAProps = {
   /** Gate: only renders when explicitly visible (i.e., page is claimed). */
@@ -37,14 +38,13 @@ export function SidebarCTA({ visible, slug }: SidebarCTAProps) {
       </p>
       <p className="mt-2 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
         Relay helps businesses test a creator partnership, free.{" "}
-        <a
+        <TrackedRelayLink
           href={relayUrl("/", { campaign: "publisher-sidebar", content: slug ? `business:${slug}` : "business-profile" })}
-          target="_blank"
-          rel="noopener noreferrer"
+          content={slug ? `business:${slug}` : "business-profile"}
           className="text-brand-purple underline decoration-brand-purple/40 underline-offset-4 hover:decoration-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
         >
           →
-        </a>
+        </TrackedRelayLink>
       </p>
     </aside>
   );
