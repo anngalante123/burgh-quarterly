@@ -20,9 +20,9 @@ export const dynamic = "force-dynamic";
  */
 
 export const metadata = {
-  title: "The Underrated List, Signal Pittsburgh",
+  title: "Word of Mouth, Signal Pittsburgh",
   description:
-    "Pittsburgh's small businesses the city hasn't caught up to yet.",
+    "Pittsburgh's small businesses carried by word of mouth, loved in reviews while their feeds stay quiet.",
 };
 
 export default async function UnderratedIndexPage() {
@@ -36,7 +36,7 @@ export default async function UnderratedIndexPage() {
       <div className="w-full bg-brand-black">
         <div className="mx-auto max-w-7xl px-6 py-3">
           <p className="font-display text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-lime">
-            PGH · Signal Index · The Underrated List
+            PGH · Signal Index · Word of Mouth
           </p>
         </div>
       </div>
@@ -52,22 +52,22 @@ export default async function UnderratedIndexPage() {
                 Signal Pittsburgh
               </Link>
               <span className="mx-2 text-brand-black/30">›</span>
-              <span className="text-brand-black">The Underrated List</span>
+              <span className="text-brand-black">Word of Mouth</span>
             </nav>
 
             <h1 className="mt-8 font-display font-black uppercase tracking-[-0.02em] text-brand-black [text-wrap:balance] text-[clamp(2.25rem,7.5vw,6rem)] leading-[0.92]">
-              The{" "}
+              Word of{" "}
               <span className="bg-brand-lime px-2 box-decoration-clone">
-                Underrated
-              </span>{" "}
-              List
+                Mouth
+              </span>
             </h1>
 
             <p className="mt-6 max-w-2xl font-body text-base md:text-lg text-brand-black/75 leading-relaxed">
-              Underrated means one side of the conversation is moving and
-              the other side hasn&apos;t shown up yet. Strong reviews, quiet
-              feeds. Or strong feeds, quiet city. Either gap is the finding,
-              and either gap is worth a visit this weekend.
+              These businesses run on word of mouth. The reviews are loud,
+              the regulars are loyal, and the feed hasn&apos;t caught up yet.
+              That gap between a room people love and a profile the city
+              can&apos;t find is the finding, and it&apos;s worth a visit
+              this weekend.
             </p>
           </Reveal>
 
@@ -88,10 +88,10 @@ export default async function UnderratedIndexPage() {
                       className="group block border border-brand-black/15 bg-white/70 p-6 md:p-8 transition-all duration-200 hover:-translate-y-1 hover:border-brand-black hover:shadow-[4px_4px_0_0_var(--color-brand-purple)] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                     >
                       <p className="font-display text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-brand-purple">
-                        The Underrated List · Spring 2026
+                        Word of Mouth · Spring 2026
                       </p>
                       <h3 className="mt-3 font-display font-black uppercase tracking-[-0.01em] text-brand-black [word-break:break-word] text-[clamp(1.5rem,4vw,2.5rem)] leading-[1.05]">
-                        Pittsburgh&apos;s Most Underrated {spec.label}
+                        Word of Mouth: Pittsburgh&apos;s {spec.label}
                       </h3>
                       <p className="mt-3 font-body text-sm md:text-base text-brand-black/70 leading-snug">
                         The {spec.pluralLower} whose rank we expect to move

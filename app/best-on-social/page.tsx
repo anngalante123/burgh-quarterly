@@ -22,9 +22,9 @@ import { loadBusinessesBySlugs } from "@/lib/data/load-business";
  * #1-ranked business, and hands the assembled card payload to
  * ListsBrowser (client) for filter UI + grid render.
  *
- * Three flagship lists are featured at the top (Talk of the Town, Underrated,
- * Loudest Feeds). The remaining lists render in the filtered grid
- * below. The empty "most-creative-posts" list (returns in Issue 02)
+ * Three flagship lists are featured at the top (Best on Social, Talk of
+ * the Town, Word of Mouth). The remaining lists render in the filtered
+ * grid below. The empty "most-creative-posts" list (returns in Issue 02)
  * renders as a subtle placeholder card at the bottom.
  */
 
@@ -42,9 +42,9 @@ export const metadata = {
 export const dynamic = "force-dynamic";
 
 const FEATURED_SLUGS = [
+  "best-businesses-on-social",
   "icons-of-spring-2026",
   "underrated-spring-2026",
-  "loudest-feeds",
 ] as const;
 
 /** Slug → category mapping used by the Category filter. Mirrors the
@@ -52,6 +52,7 @@ const FEATURED_SLUGS = [
  *  "Mixed"; single-category lists get their family label. */
 const CATEGORY_BY_SLUG: Record<string, ListCardData["category"]> = {
   "icons-of-spring-2026": "Mixed",
+  "best-businesses-on-social": "Mixed",
   "underrated-spring-2026": "Mixed",
   "loudest-feeds": "Mixed",
   "active-posters": "Mixed",
@@ -59,13 +60,11 @@ const CATEGORY_BY_SLUG: Record<string, ListCardData["category"]> = {
   "most-creative-posts": "Mixed",
   "bars-on-social": "Bars",
   "cafes-creator-favorites": "Cafes",
-  "asian-kitchens-top": "Asian kitchens",
   "sweets-top-10": "Sweets",
   "underrated-restaurants": "Restaurants",
   "underrated-bars": "Bars",
   "underrated-cafes": "Cafes",
   "underrated-sweets": "Sweets",
-  "underrated-asian-kitchens": "Asian kitchens",
 };
 
 function typeBucketForSlug(slug: string): ListCardData["typeBucket"] {

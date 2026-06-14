@@ -454,8 +454,8 @@ export default function HowWeRankPage() {
                   this as an index in the first place.
                 </p>
                 <p>
-                  What humans choose is the storytelling. The Underrated
-                  List, the Talk of the Town feature, the
+                  What humans choose is the storytelling. The Word of
+                  Mouth list, the Talk of the Town feature, the
                   neighborhood guides. Editors pull from the data,
                   curating who gets the spotlight. They do not rewrite the
                   data to fit a narrative they already had.

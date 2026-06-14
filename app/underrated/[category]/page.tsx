@@ -198,12 +198,12 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
   const { spec, entries } = result;
   const indexCount = (await getAllBusinessSlugs()).length;
 
-  const headline = `Pittsburgh's Most Underrated ${spec.label}, Spring 2026`;
+  const headline = `Word of Mouth: Pittsburgh's ${spec.label}, Spring 2026`;
   const count = entries.length;
   const countWord = numberWord(count);
   const dekCount = `${capitalize(countWord)} ${
     count === 1 ? spec.singularLower : spec.pluralLower
-  } the city hasn't caught up to yet.`;
+  } the feed hasn't caught up to yet.`;
   const readMinutes = estimateReadingMinutes(count);
   const tocItems = entries.map((e) => ({ name: e.business.name }));
 
@@ -215,7 +215,7 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
       <div className="w-full bg-brand-black">
         <div className="mx-auto max-w-7xl px-6 py-3">
           <p className="font-display text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-lime">
-            PGH · Signal Index · The Underrated List
+            PGH · Signal Index · Word of Mouth
           </p>
         </div>
       </div>
@@ -233,7 +233,7 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
               </Link>
               <span className="mx-2 text-brand-black/30">›</span>
               <Link href="/underrated" className="hover:text-brand-purple">
-                The Underrated List
+                Word of Mouth
               </Link>
               <span className="mx-2 text-brand-black/30">›</span>
               <span className="text-brand-black">{spec.label}</span>
@@ -299,7 +299,7 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
 
         {/* ---------- THE LIST ---------- */}
         <section
-          aria-label={`The list of underrated ${spec.pluralLower}`}
+          aria-label={`The Word of Mouth list of ${spec.pluralLower}`}
           className="border-t border-brand-black/15"
         >
           <ol className="mx-auto max-w-7xl px-6">

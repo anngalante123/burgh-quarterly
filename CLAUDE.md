@@ -15,7 +15,7 @@ Relay (run-relay.com) publishes it. Relay is a vetted local micro-influencer pla
 
 1. **Loud editorial, quiet record.** Editorial features have strong voice. Business pages (the scorecard zone) stay Wikipedia-neutral. The contrast is what lets the editorial be opinionated without the whole property feeling biased.
 
-2. **The Underrated List.** Low-ranked businesses are not shamed — they're celebrated as *underrated*. Each quarterly issue features a recurring "Pittsburgh's Most Underrated [Category]" list. This is where the businesses Relay most wants to convert get editorial recognition, not critique.
+2. **Word of Mouth** (renamed from "The Underrated List" 2026-06-14, display-only; slugs, routes under `/underrated`, and the `underrated` ranking key are unchanged for URL/code stability). Low-ranked businesses are not shamed, they're celebrated as carried by word of mouth: loud reviews, loyal regulars, a quiet feed. Each quarterly issue features a recurring "Word of Mouth: Pittsburgh's [Category]" list. This is where the businesses Relay most wants to convert get editorial recognition, not critique. The reframe moved the story onto the social-media gap (great room, quiet feed) rather than an "underrated" quality verdict.
 
 Full voice rules in `.claude/memory/EDITORIAL_VOICE.md`.
 

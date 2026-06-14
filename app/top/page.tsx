@@ -105,7 +105,7 @@ export default function TopIndexPage() {
                 href="/underrated"
                 className="text-brand-purple hover:underline"
               >
-                The Underrated List →
+                Word of Mouth →
               </Link>
             </p>
           </Reveal>

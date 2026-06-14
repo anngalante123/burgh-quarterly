@@ -14,9 +14,11 @@ import { cn } from "@/lib/utils";
  * share or bookmark a filtered view.
  *
  * Filter dimensions:
- *   - type: icons / underrated / best-on-social (single select)
- *   - category: Restaurants / Cafes / Bars / Sweets / Asian kitchens /
- *     Mixed (single select)
+ *   - type: icons / underrated / best-on-social (single select). The
+ *     "underrated" value renders as "Word of Mouth" (display rename
+ *     2026-06-14); the value stays "underrated" for URL stability.
+ *   - category: Restaurants / Cafes / Bars / Sweets / Mixed
+ *     (single select)
  *   - format: business / posts (single select)
  *
  * Filters are mutually composable. The empty-coming-next-issue card is
@@ -46,14 +48,13 @@ type CategoryFilter =
   | "Cafes"
   | "Bars"
   | "Sweets"
-  | "Asian kitchens"
   | "Mixed";
 type FormatFilter = "all" | "business" | "posts";
 
 const TYPE_CHIPS: { value: TypeFilter; label: string }[] = [
   { value: "all", label: "All" },
   { value: "icons", label: "Talk of the Town" },
-  { value: "underrated", label: "Underrated" },
+  { value: "underrated", label: "Word of Mouth" },
   { value: "best-on-social", label: "Best on social" },
 ];
 
@@ -63,7 +64,6 @@ const CATEGORY_CHIPS: { value: CategoryFilter; label: string }[] = [
   { value: "Cafes", label: "Cafes" },
   { value: "Bars", label: "Bars" },
   { value: "Sweets", label: "Sweets" },
-  { value: "Asian kitchens", label: "Asian kitchens" },
   { value: "Mixed", label: "Mixed" },
 ];
 

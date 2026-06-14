@@ -352,7 +352,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
               <p className="mt-3 font-body text-sm md:text-base text-brand-black/75 leading-relaxed max-w-xl">
                 The Spring 2026 index covers {businesses.length} businesses.
                 The next issue ships this summer. Tell us about yours, or
-                browse the list of underrated picks already in print.
+                browse the Word of Mouth picks already in print.
               </p>
               <div className="mt-5 flex flex-col sm:flex-row gap-3">
                 <Link
@@ -366,7 +366,7 @@ export function HeroSearch({ businesses }: HeroSearchProps) {
                   href="/underrated"
                   className="inline-flex items-center justify-center gap-1 border-2 border-brand-black bg-transparent px-5 py-3 font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-black hover:bg-brand-lime focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple transition-colors"
                 >
-                  See the Underrated List
+                  See Word of Mouth
                   <span aria-hidden="true">→</span>
                 </Link>
               </div>

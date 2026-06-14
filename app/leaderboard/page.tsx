@@ -5,6 +5,7 @@ import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
 import { Reveal } from "@/components/motion/Reveal";
 import { LeaderboardBrowser } from "@/components/LeaderboardBrowser";
+import { TierBadge } from "@/components/TierBadge";
 
 import {
   getGlobalRankings,
@@ -193,6 +194,58 @@ export default async function LeaderboardPage() {
                 </Link>
               </p>
             </div>
+          </Reveal>
+
+          {/* Tier legend. Explains the three rebranded tier names (renamed
+              2026-06-12, see lib/tiers.ts). No scores shown, per
+              EDITORIAL_VOICE: the tiers describe signal presence, not
+              quality. */}
+          <Reveal delay={0.2}>
+            <section
+              aria-label="What the tier names mean"
+              className="mt-8 border border-brand-black/15 bg-brand-cream/60 px-5 py-5 md:px-7 md:py-6 max-w-3xl"
+            >
+              <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-black">
+                What the tiers mean
+              </p>
+              <p className="mt-2 font-body text-sm md:text-base text-brand-black/75 leading-relaxed">
+                Every business lands in one of three tiers. The names
+                describe how loudly a business is showing up in the
+                conversation right now, not how good it is. No tier is a
+                consolation prize.
+              </p>
+
+              <dl className="mt-5 space-y-4">
+                <div className="grid grid-cols-[auto_1fr] items-start gap-x-4 gap-y-1">
+                  <dt className="pt-0.5">
+                    <TierBadge tier="icons" size="sm" />
+                  </dt>
+                  <dd className="font-body text-sm md:text-base text-brand-black/80 leading-snug">
+                    Top of the index this quarter. Reviews, photos, and
+                    Instagram momentum all moving at once.
+                  </dd>
+                </div>
+                <div className="grid grid-cols-[auto_1fr] items-start gap-x-4 gap-y-1">
+                  <dt className="pt-0.5">
+                    <TierBadge tier="ones_to_watch" size="sm" />
+                  </dt>
+                  <dd className="font-body text-sm md:text-base text-brand-black/80 leading-snug">
+                    Strong presence, climbing. The signal is building
+                    quarter over quarter.
+                  </dd>
+                </div>
+                <div className="grid grid-cols-[auto_1fr] items-start gap-x-4 gap-y-1">
+                  <dt className="pt-0.5">
+                    <TierBadge tier="neighborhood_staples" size="sm" />
+                  </dt>
+                  <dd className="font-body text-sm md:text-base text-brand-black/80 leading-snug">
+                    Rooted in the neighborhood. Loved in person and carried
+                    by word of mouth, the index just hasn&apos;t caught up to
+                    the room yet.
+                  </dd>
+                </div>
+              </dl>
+            </section>
           </Reveal>
 
           {/* ---------- BROWSE / FILTER / RENDER ---------- */}

@@ -315,8 +315,8 @@ export default async function TopCategoryPage({ params }: PageProps) {
           <Reveal as="section" className="mt-14 md:mt-20">
             <CompanionLink
               href={`/underrated/${category}`}
-              kicker="The Underrated List"
-              headline={`Pittsburgh's Most Underrated ${spec.label}, Spring 2026`}
+              kicker="Word of Mouth"
+              headline={`Word of Mouth: Pittsburgh's ${spec.label}, Spring 2026`}
               dek={`The ${spec.pluralLower} whose rank we expect to move most, the counterweight to this list.`}
               accent="purple"
             />
