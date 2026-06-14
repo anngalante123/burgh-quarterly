@@ -18,6 +18,7 @@ import { RelayCollabGallery } from "@/components/RelayCollabs";
 import { HeroSearch } from "@/components/HeroSearch";
 import { upgradeGooglePhotoSize } from "@/lib/scrape/google-photo-url";
 import { loadSocialBySlug } from "@/lib/data/load-social";
+import { TIER_LABELS } from "@/lib/tiers";
 
 // Render on demand to skip the build-time DB hit. The homepage pulls
 // every business for the hero search index and the global rankings,
@@ -35,7 +36,7 @@ export const dynamic = "force-dynamic";
  *   - Moved the full How We Rank methodology to /about. Homepage keeps a
  *     one-line teaser with a link so readers can get to content faster.
  *   - Collapsed Read + Featured + Underrated into ONE "This Issue" section
- *     with three equal-weight editorial entries: The Icons, The Underrated
+ *     with three equal-weight editorial entries: Talk of the Town, The Underrated
  *     List, and a Featured business page. Each links to real content.
  *   - Removed placeholder teasers that linked to dead routes.
  *
@@ -193,17 +194,17 @@ export default async function Home() {
                 value={all.length.toString()}
               />
               <StatPair
-                label="Icons"
+                label={TIER_LABELS.icons}
                 value={tc.icons.toString()}
                 accent="bg-brand-lime"
               />
               <StatPair
-                label="Ones to Watch"
+                label={TIER_LABELS.ones_to_watch}
                 value={tc.watch.toString()}
                 accent="bg-brand-purple"
               />
               <StatPair
-                label="Staples"
+                label={TIER_LABELS.neighborhood_staples}
                 value={tc.staples.toString()}
                 accent="bg-brand-cream ring-1 ring-brand-black/40"
               />
@@ -236,12 +237,7 @@ export default async function Home() {
                   : b.tier === "ones_to_watch"
                     ? "bg-brand-purple"
                     : "bg-brand-cream ring-1 ring-brand-black/40";
-              const tierLabel =
-                b.tier === "icons"
-                  ? "Icon"
-                  : b.tier === "ones_to_watch"
-                    ? "Ones to Watch"
-                    : "Staple";
+              const tierLabel = TIER_LABELS[b.tier];
               return (
                 <li
                   key={b.slug}

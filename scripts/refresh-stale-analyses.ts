@@ -49,8 +49,8 @@
  *   --tier=LIST       Comma-separated tiers to include. Valid: icons,
  *                     ones_to_watch, neighborhood_staples. Default: all three.
  *                     Use this to run cheaper-first: icons,ones_to_watch is
- *                     roughly 1,690 rows (about $34) before the larger Staples
- *                     tier.
+ *                     roughly 1,690 rows (about $34) before the larger
+ *                     neighborhood_staples tier.
  *   --limit=N         Process at most N stale rows (after tier filter,
  *                     ordered by business_slug for stable resumability).
  *   --cost-ceiling=N  Abort before any API calls if the estimated cost in USD

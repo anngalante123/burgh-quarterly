@@ -37,7 +37,7 @@ type ScoreCardProps = {
   claimed?: boolean;
   /**
    * Only used when `claimed` is true, the distance-to-next-tier phrase,
-   * e.g. "6 points from Ones to Watch". Null when already top-tier.
+   * e.g. "6 points from In the Conversation". Null when already top-tier.
    */
   gapToNextTier?: string | null;
 };

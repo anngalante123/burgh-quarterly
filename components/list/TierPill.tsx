@@ -1,4 +1,5 @@
 import type { Tier } from "@/lib/data/schemas";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * TierPill, server-rendered tier chip for editorial list items.
@@ -10,11 +11,7 @@ import type { Tier } from "@/lib/data/schemas";
  * No numbers, no letter grades, no scores anywhere on the pill.
  */
 
-const TIER_COPY: Record<Tier, string> = {
-  icons: "Icons of the Burgh",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staples",
-};
+const TIER_COPY: Record<Tier, string> = TIER_LABELS;
 
 const TIER_STYLES: Record<Tier, string> = {
   icons: "bg-brand-lime text-brand-black rounded-sm",

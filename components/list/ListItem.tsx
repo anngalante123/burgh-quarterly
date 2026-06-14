@@ -14,8 +14,8 @@ import { TierPill } from "./TierPill";
  *   - Large rank numeral (display font), aria-hidden. Real
  *     ordering comes from the wrapping <ol>.
  *   - Business name in display font, links to /business/[slug].
- *   - Tier pill (Icons of the Burgh / Ones to Watch /
- *     Neighborhood Staples). No numbers, no letter grades.
+ *   - Tier pill (Talk of the Town / In the Conversation /
+ *     Word of Mouth). No numbers, no letter grades.
  *   - Meta row (neighborhood · family label), muted, mid-dot.
  *   - 3:2 photo from the business's hero_photo. Lazy-loaded.
  *   - Italic tagline pulled from `descriptor`.
@@ -41,8 +41,8 @@ type ListItemEnriched = {
   } | null;
   /**
    * When false, the tier pill is suppressed. Used on Underrated lists,
-   * where surfacing per-item tier labels (Ones to Watch / Neighborhood
-   * Staples) mixes two editorial frames and reads as inconsistent.
+   * where surfacing per-item tier labels (In the Conversation / Word
+   * of Mouth) mixes two editorial frames and reads as inconsistent.
    * The Underrated frame is the only frame those lists need.
    */
   showTier?: boolean;

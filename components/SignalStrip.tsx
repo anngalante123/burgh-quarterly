@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { Reveal } from "@/components/motion/Reveal";
+import { TIER_LABELS as CANONICAL_TIER_LABELS } from "@/lib/tiers";
 
 /**
  * SignalStrip, the "This Quarter in Signal" data-viz band on the homepage.
@@ -41,9 +42,9 @@ const COLORS = {
 } as const;
 
 const TIER_LABELS = {
-  icons: "Icons of the Burgh",
-  watch: "Ones to Watch",
-  staples: "Neighborhood Staples",
+  icons: CANONICAL_TIER_LABELS.icons,
+  watch: CANONICAL_TIER_LABELS.ones_to_watch,
+  staples: CANONICAL_TIER_LABELS.neighborhood_staples,
 } as const;
 
 /* ------------------------------- Donut ---------------------------------- */
@@ -341,7 +342,7 @@ export function SignalStrip({
                 }
               />
               <StatCard
-                label="Icons Rate"
+                label="Talk of the Town Rate"
                 value={`${iconsRate}%`}
                 sub="of scored"
               />

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Masthead } from "@/components/Masthead";
 import { Colophon } from "@/components/Colophon";
 import { Reveal } from "@/components/motion/Reveal";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * /how-we-rank, the flagship methodology page.
@@ -133,15 +134,15 @@ const SIGNALS: Array<{
 
 const TIERS: Array<{ name: string; line: string }> = [
   {
-    name: "Icons of the Burgh",
+    name: TIER_LABELS.icons,
     line: "Top of the index this quarter. Reviews, photos, and momentum all moving in the same direction.",
   },
   {
-    name: "Ones to Watch",
+    name: TIER_LABELS.ones_to_watch,
     line: "Strong presence, climbing. The city is starting to catch on.",
   },
   {
-    name: "Neighborhood Staples",
+    name: TIER_LABELS.neighborhood_staples,
     line: "Rooted in the neighborhood. The index hasn't caught up to them yet.",
   },
 ];
@@ -349,7 +350,7 @@ export default function HowWeRankPage() {
               </p>
               <p>
                 What matters is movement, and how close a business is to
-                the next tier. Three points from Ones to Watch is a useful
+                the next tier. Three points from In the Conversation is a useful
                 sentence. A score of 76 is not. Letter grades and 0-to-100
                 rankings would make this read like a Yelp dashboard. It is
                 not one.
@@ -454,7 +455,7 @@ export default function HowWeRankPage() {
                 </p>
                 <p>
                   What humans choose is the storytelling. The Underrated
-                  List, the Icons of the Quarter feature, the
+                  List, the Talk of the Town feature, the
                   neighborhood guides. Editors pull from the data,
                   curating who gets the spotlight. They do not rewrite the
                   data to fit a narrative they already had.

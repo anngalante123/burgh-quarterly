@@ -78,16 +78,22 @@ Each subscore on 0–100 scale. Composite rounds to integer.
 
 | Score | Tier label |
 |---|---|
-| 80–100 | **Icons of the Burgh** |
-| 60–79 | **Ones to Watch** |
-| < 60 | **Neighborhood Staples** |
+| 80–100 | **Talk of the Town** |
+| 60–79 | **In the Conversation** |
+| < 60 | **Word of Mouth** |
+
+> **Display names renamed 2026-06-12** (was Icons of the Burgh / Ones to
+> Watch / Neighborhood Staples). The labels describe signal presence in
+> the online conversation, not business quality. Thresholds and DB tier
+> keys (icons / ones_to_watch / neighborhood_staples) unchanged.
+> Canonical map: `lib/tiers.ts`.
 
 ## Hard rules
 
 - **No one sees a sub-60 score on their public page.** The raw number is never displayed — only the tier label + "gap-to-next-tier" framing.
-- **Every business page surfaces one "unfair advantage"** — the dimension where the business outperforms the Icons tier median. Even a #83 business has one of these.
-- **The Underrated List** pulls Neighborhood Staples who outperform on specific signals (review sentiment, UGC presence, repeat-visit language). Editorial reward for bottom-tier scorers.
-- **Movement matters more than absolute position** for editorial. A Staple that moved +9 spots gets a feature; an Icon at a stable #3 does not.
+- **Every business page surfaces one "unfair advantage"** — the dimension where the business outperforms the Talk of the Town tier median. Even a #83 business has one of these.
+- **The Underrated List** pulls Word of Mouth businesses who outperform on specific signals (review sentiment, UGC presence, repeat-visit language). Editorial reward for bottom-tier scorers.
+- **Movement matters more than absolute position** for editorial. A Word of Mouth business that moved +9 spots gets a feature; a Talk of the Town business at a stable #3 does not.
 
 ## Calibration protocol
 

@@ -22,7 +22,7 @@ import { loadBusinessesBySlugs } from "@/lib/data/load-business";
  * #1-ranked business, and hands the assembled card payload to
  * ListsBrowser (client) for filter UI + grid render.
  *
- * Three flagship lists are featured at the top (Icons, Underrated,
+ * Three flagship lists are featured at the top (Talk of the Town, Underrated,
  * Loudest Feeds). The remaining lists render in the filtered grid
  * below. The empty "most-creative-posts" list (returns in Issue 02)
  * renders as a subtle placeholder card at the bottom.

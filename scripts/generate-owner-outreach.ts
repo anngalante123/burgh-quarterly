@@ -96,12 +96,14 @@ async function generateInitialEmail(
   const igPosts30d = social.ig?.posts_30d ?? 0;
   const igLastPost = social.ig?.last_post_at;
 
+  // 2026-06-12 tier display rename: labels describe signal presence,
+  // not business quality. DB keys unchanged.
   const tierLabel =
     score.tier === "icons"
-      ? "Icons"
+      ? "Talk of the Town"
       : score.tier === "ones_to_watch"
-        ? "Ones to Watch"
-        : "Neighborhood Staples";
+        ? "In the Conversation"
+        : "Word of Mouth";
 
   const diagnosisLine = analysis?.diagnosis_pullquote?.line ?? "";
   const topMove = analysis?.playbook?.[0];

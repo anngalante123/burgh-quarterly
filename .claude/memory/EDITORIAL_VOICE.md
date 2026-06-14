@@ -51,10 +51,10 @@ These MUST stay byte-identical across `HowWeRank.tsx` (homepage) and
 
 Tier stances (appear on the business-page ScoreHero under the tier phrase —
 no "signal" word; the methodology block establishes the frame):
-- **Icons of the Burgh** → "Top of the index this quarter — reviews, photos,
+- **Talk of the Town** → "Top of the index this quarter — reviews, photos,
   and momentum all moving."
-- **Ones to Watch** → "Strong presence. Climbing the index."
-- **Neighborhood Staples** → "Rooted in the neighborhood — the index hasn't
+- **In the Conversation** → "Strong presence. Climbing the index."
+- **Word of Mouth** → "Rooted in the neighborhood — the index hasn't
   caught up yet."
 
 **Never** say any of these in ranking-explainer copy:
@@ -74,10 +74,19 @@ Published by Relay. Pittsburgh, PA.
 
 ### Tier labels
 ```
-Icons of the Burgh       (80–100)
-Ones to Watch            (60–79)
-Neighborhood Staples     (<60)
+Talk of the Town         (80–100)
+In the Conversation      (60–79)
+Word of Mouth            (<60)
 ```
+**Renamed 2026-06-12.** The previous display names ("Icons of the Burgh" /
+"Ones to Watch" / "Neighborhood Staples") read as quality verdicts, and
+"Ones to Watch" misread when a true Pittsburgh institution sat mid-tier.
+The new names say what the tiers actually measure: how strongly a business
+shows up in the online conversation, not how good the business is. DB tier
+keys (icons / ones_to_watch / neighborhood_staples) and the score
+thresholds are unchanged. Canonical label map: `lib/tiers.ts`
+(TIER_LABELS). Pre-2026-06-12 mentions of the old names elsewhere in
+these memory docs are historical; do not backfill them.
 
 ### Owner first-visit (top of business page, claimed or unclaimed)
 ```
@@ -187,12 +196,12 @@ That asymmetry — **loud editorial, quiet record, whispered Relay** — is the 
 ## Patterns that recur
 
 **Gap, not grade.** Anywhere the score appears, frame it as distance-to-next-tier, never absolute position:
-- ✅ "6 points from Ones to Watch"
-- ❌ "Score: 52 / 100 (Neighborhood Staple)"
+- ✅ "6 points from In the Conversation"
+- ❌ "Score: 52 / 100 (Word of Mouth)"
 
-**Unfair advantages.** Every business page surfaces one signal where the business outperforms the Icons tier. Nobody is only weak:
-- "Your reviews mention 'feels like family' 4.2x more than any Icon-tier restaurant in Lawrenceville."
+**Unfair advantages.** Every business page surfaces one signal where the business outperforms the Talk of the Town tier. Nobody is only weak:
+- "Your reviews mention 'feels like family' 4.2x more than any Talk of the Town restaurant in Lawrenceville."
 
-**Motion over position.** Every tier has climbers. Every tier has features. A Staple that moved #78 → #69 gets covered. An Icon that moved #4 → #2 gets covered. Movement is the story.
+**Motion over position.** Every tier has climbers. Every tier has features. A Word of Mouth business that moved #78 → #69 gets covered. A Talk of the Town business that moved #4 → #2 gets covered. Movement is the story.
 
 **Underrated framing.** Low-ranked businesses are "underrated," not weak. Being on the Underrated List is a compliment (*the city hasn't caught up to you yet*), not a callout.

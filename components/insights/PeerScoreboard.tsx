@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * PeerScoreboard, the editorial replacement for the 219-row "Where you sit"
@@ -36,11 +37,9 @@ type Props = {
   peers: ScoreboardPeer[];
 };
 
-const TIER_SHORT: Record<Tier, string> = {
-  icons: "Icons",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Staple",
-};
+// 2026-06-12 rename: canonical labels, used in both divider sentences
+// and the inline tier pills.
+const TIER_SHORT: Record<Tier, string> = TIER_LABELS;
 
 const TIER_PILL_CLASS: Record<Tier, string> = {
   icons: "bg-brand-lime text-brand-black",
@@ -110,7 +109,7 @@ function buildSentence(
     const rivalTierLabel = rival.tier ? TIER_SHORT[rival.tier] : null;
     const headline =
       rivalInDifferentTier && rivalTierLabel
-        ? `${gap}, ${rivalName} sits in ${rivalTierLabel}.`
+        ? `${gap}, ${rivalName} sits in the ${rivalTierLabel} tier.`
         : `${gap} is ${rivalName}.`;
     if (spotsToNextTier !== null && nextTierLabel && !rivalInDifferentTier) {
       const tierLine =

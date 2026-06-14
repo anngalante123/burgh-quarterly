@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * LeaderboardBrowser, the client-side filter and render layer for
@@ -49,11 +50,7 @@ type ReviewBucket = "lt50" | "50-250" | "250-1k" | "1k+";
 
 const TIER_ORDER: Tier[] = ["icons", "ones_to_watch", "neighborhood_staples"];
 
-const TIER_LABEL: Record<Tier, string> = {
-  icons: "Icons of the Burgh",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staples",
-};
+const TIER_LABEL: Record<Tier, string> = TIER_LABELS;
 
 const TIER_PILL: Record<Tier, string> = {
   icons:
@@ -64,11 +61,10 @@ const TIER_PILL: Record<Tier, string> = {
     "bg-brand-cream text-brand-black border border-brand-black/15 rounded-full",
 };
 
-const TIER_SHORT: Record<Tier, string> = {
-  icons: "Icons",
-  ones_to_watch: "Watch",
-  neighborhood_staples: "Staple",
-};
+// 2026-06-12 rename: the compact pill now carries the full canonical
+// label. The row's name column truncates, so the longer pill degrades
+// gracefully; verify visually on narrow viewports.
+const TIER_SHORT: Record<Tier, string> = TIER_LABELS;
 
 const REVIEW_BUCKETS: { value: ReviewBucket; label: string }[] = [
   { value: "lt50", label: "Under 50" },

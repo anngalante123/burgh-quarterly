@@ -2,6 +2,7 @@ import type { Tier } from "@/lib/data/schemas";
 import { AnimatedRank } from "@/components/motion/AnimatedRank";
 import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/utils";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * ScoreHero, the big visual anchor at the top of a business page.
@@ -18,11 +19,7 @@ import { cn } from "@/lib/utils";
  *     (claimed pages only).
  */
 
-const TIER_COPY: Record<Tier, string> = {
-  icons: "Icons of the Burgh",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staples",
-};
+const TIER_COPY: Record<Tier, string> = TIER_LABELS;
 
 // Per-tier stance, telegraphs what the tier means without falling back to
 // "taste" framing. The methodology block on the homepage tells readers we

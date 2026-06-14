@@ -17,7 +17,7 @@ import {
  *
  * Selection rule:
  *   1. Filter to the category's broader match set.
- *   2. Prefer Icons-tier businesses. If fewer than 3 Icons exist, fall
+ *   2. Prefer icons-tier (Talk of the Town) businesses. If fewer than 3 exist, fall
  *      back to the top-ranked regardless of tier so the page still ships.
  *   3. Sort by `composite` DESC (highest first).
  *   4. Take up to 5.
@@ -68,7 +68,7 @@ export async function selectTopForCategory(slug: string): Promise<
   const inCategory = all.filter((a) => matchesCategory(a, spec));
   if (inCategory.length < MIN_ENTRIES) return null;
 
-  // Prefer Icons-tier. Fall back to top-ranked overall if Icons < MIN.
+  // Prefer icons-tier (Talk of the Town). Fall back to top-ranked overall if < MIN.
   const icons = inCategory.filter((a) => a.score.tier === "icons");
   const pool = icons.length >= MIN_ENTRIES ? icons : inCategory;
 
