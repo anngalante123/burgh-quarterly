@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import type { SearchableBusiness } from "@/components/BusinessSearch";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * HeroSearch, self-contained search with inline results dropdown.
@@ -44,11 +45,8 @@ const TIER_PILL_CLASS: Record<SearchableBusiness["tier"], string> = {
     "bg-brand-cream text-brand-black border border-brand-black/25",
 };
 
-const TIER_SHORT: Record<SearchableBusiness["tier"], string> = {
-  icons: "Icons",
-  ones_to_watch: "Watch",
-  neighborhood_staples: "Staple",
-};
+// 2026-06-12 rename: result-row pills carry the full canonical label.
+const TIER_SHORT: Record<SearchableBusiness["tier"], string> = TIER_LABELS;
 
 export function HeroSearch({ businesses }: HeroSearchProps) {
   const [query, setQuery] = useState("");

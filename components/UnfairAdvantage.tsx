@@ -1,9 +1,9 @@
 /**
- * UnfairAdvantage, one dimension where the business outperforms the Icons tier.
+ * UnfairAdvantage, one dimension where the business outperforms the Talk of the Town tier.
  *
  * Per SCORING_RUBRIC.md § Hard rules and EDITORIAL_VOICE.md § Patterns:
  *   "Every business page surfaces one 'unfair advantage', the dimension
- *    where the business outperforms the Icons tier median. Even a #83
+ *    where the business outperforms the Talk of the Town tier median. Even a #83
  *    business has one of these."
  *
  * From EDITORIAL_VOICE: "Nobody is only weak. Every business gets one."

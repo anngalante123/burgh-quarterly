@@ -1,5 +1,6 @@
 import type { BusinessArtifact } from "@/lib/data/load-business";
 import type { SocialRecord } from "@/lib/data/load-social";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * Business TL;DR, plain-language summary + "so what" derived from
@@ -19,11 +20,7 @@ export type BusinessTldr = {
   meaning: string;
 };
 
-const TIER_PHRASE = {
-  icons: "Icons of the Burgh",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staples",
-} as const;
+const TIER_PHRASE = TIER_LABELS;
 
 export function buildBusinessTldr(
   artifact: BusinessArtifact,
@@ -104,12 +101,12 @@ export function buildBusinessTldr(
   switch (score.tier) {
     case "icons":
       meaning = igDormant
-        ? `An Icon holding ground on every axis except the social layer, the rank depends on keeping the Instagram signal live.`
+        ? `A Talk of the Town business holding ground on every axis except the social layer, the rank depends on keeping the Instagram signal live.`
         : `Firing on every axis this quarter. The rank holds when the cadence holds.`;
       break;
     case "ones_to_watch":
       meaning = igDormant
-        ? `The climb to Icons depends on the Instagram signal restarting, the other axes are already there.`
+        ? `The climb to Talk of the Town depends on the Instagram signal restarting, the other axes are already there.`
         : `On the rise. The climb is in motion, next issue will show how much holds.`;
       break;
     case "neighborhood_staples":

@@ -4,6 +4,8 @@ Source of truth for the Pittsburgh Social Scorecard aesthetic that's being porte
 into The Burgh Quarterly. Captured after the 2026-04-22 "design is lackluster"
 feedback — use this doc before touching any visual components.
 
+> **TIER RENAME NOTE 2026-06-12.** Tier display names changed: "Icons of the Burgh" is now "Talk of the Town", "Ones to Watch" is now "In the Conversation", "Neighborhood Staples" is now "Word of Mouth" (signal-presence language; keys and thresholds unchanged; canonical map in `lib/tiers.ts`). Tier-name examples below are historical; the per-tier visual treatments (lime / purple / cream) are unchanged and still apply.
+
 ## The shift
 
 The prior aesthetic was typography-forward editorial (Infatuation/Eater feel):

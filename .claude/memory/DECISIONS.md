@@ -27,6 +27,7 @@ ADR-lite. Each decision: what, why, when. Never re-debate without updating here.
 - **Ones to Watch** (60–79)
 - **Neighborhood Staples** (<60)
 **Why:** Every tier flatters. "Neighborhood Staple" is a compliment (rooted, beloved) — no business lands in the bottom and feels insulted. "Icons" top tier pre-existed on Anna's design canvas.
+**Superseded by D-023 (2026-06-12):** display names only; thresholds and keys unchanged.
 
 ## D-005 — The Underrated List is the low-tier conversion engine
 **Date:** 2026-04-21
@@ -198,3 +199,12 @@ ADR-lite. Each decision: what, why, when. Never re-debate without updating here.
 - `industry typical: 350` (RowPeerStat)
 - `Top of industry` / `Bottom of industry` (PeerDotPlot axis)
 - `vs industry` (compare tab sublabel)
+
+## D-023: Tier display names renamed to social-presence language
+**Date:** 2026-06-12
+**What:** Display names only:
+- icons: "Icons of the Burgh" → **"Talk of the Town"** (80–100)
+- ones_to_watch: "Ones to Watch" → **"In the Conversation"** (60–79)
+- neighborhood_staples: "Neighborhood Staples" → **"Word of Mouth"** (<60)
+**Why:** The tiers measure how strongly a business shows up in the online conversation, not business quality. "Ones to Watch" misread when a true Pittsburgh institution sat mid-tier; the new names say "your signal is mid", not "you are mid". Approved by Anna.
+**Scope:** DB tier keys, score thresholds, slugs, URLs (`/top`), and CSS/variable names are UNCHANGED. Canonical label map lives in `lib/tiers.ts` (TIER_LABELS); every display site imports from it. Generator prompts updated so future generations write the new names. DB prose migration handled separately by `scripts/rename-tiers-prose.ts`.

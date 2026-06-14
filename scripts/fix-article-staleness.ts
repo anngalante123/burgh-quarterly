@@ -17,12 +17,20 @@ import { eq } from "drizzle-orm";
 
 const ISSUE = "2026-spring";
 const ARTICLES = path.join(process.cwd(), "content", "lists", "articles");
+// 2026-06-12 tier display rename: labels describe signal presence, not
+// business quality. Keys are unchanged. Future runs write and detect the
+// new label words only; legacy label sweeps were completed separately.
 const TIER_WORD: Record<string, string> = {
-  icons: "Icons",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staple",
+  icons: "Talk of the Town",
+  ones_to_watch: "In the Conversation",
+  neighborhood_staples: "Word of Mouth",
 };
-const ALL_TIER_WORDS = ["Icons tier", "Icons", "Ones to Watch", "Neighborhood Staple"];
+const ALL_TIER_WORDS = [
+  "Talk of the Town tier",
+  "Talk of the Town",
+  "In the Conversation",
+  "Word of Mouth",
+];
 
 async function main() {
   const execute = process.argv.includes("--execute");

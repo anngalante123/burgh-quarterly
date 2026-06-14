@@ -49,6 +49,7 @@ import {
 import { loadSocialBySlug } from "@/lib/data/load-social";
 import { familyForBusinessCategory } from "@/lib/data/category-family";
 import { pickPeerScope } from "@/lib/data/sub-category-peers";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * Business page, restructured 2026-04-25 (pass 2). Anna's feedback:
@@ -451,7 +452,7 @@ export default async function BusinessPage({ params }: PageProps) {
       key: "rank",
       label: "Rank",
       value: `#${rankFamilyPos}`,
-      delta: `of ${categoryPeerDots.length} · ${score.tier === "icons" ? "Icons" : score.tier === "ones_to_watch" ? "Ones to Watch" : "Neighborhood Staples"}`,
+      delta: `of ${categoryPeerDots.length} · ${TIER_LABELS[score.tier]}`,
       focus: false,
       expanded: (
         <Gated label="rank" businessName={biz.name} source={`rank:${biz.slug}`}>
@@ -703,11 +704,7 @@ export default async function BusinessPage({ params }: PageProps) {
                         : "bg-brand-cream text-brand-black border border-brand-black/30 px-2 py-0.5"
                   }
                 >
-                  {score.tier === "icons"
-                    ? "Icons"
-                    : score.tier === "ones_to_watch"
-                      ? "Ones to Watch"
-                      : "Neighborhood Staple"}
+                  {TIER_LABELS[score.tier]}
                 </span>
                 <span className="text-brand-black/55">
                   #{rankFamilyPos} in Pittsburgh {familyShort}

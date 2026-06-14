@@ -18,6 +18,7 @@ import { estimateReadingMinutes } from "@/lib/editorial/reading-time";
 import { CategorySwitcher } from "@/components/editorial/CategorySwitcher";
 import { ListTOC, toEntryAnchor } from "@/components/editorial/ListTOC";
 import { CompanionLink } from "@/components/editorial/CompanionLink";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * Top Performers, the celebratory counterpart to the Underrated List.
@@ -26,7 +27,7 @@ import { CompanionLink } from "@/components/editorial/CompanionLink";
  *   - LOUD editorial, celebratory, not braggy, not listicle
  *   - Specific: neighborhoods, product types, what the city actually loves
  *   - No raw composite scores, no grades, no Relay mention in body copy
- *   - No "best-of" framing ("best bakery"), use "Icons," "top of the index"
+ *   - No "best-of" framing ("best bakery"), use "Talk of the Town," "top of the index"
  *
  * v1 ships /top/bakeries (sweets family). Add categories by extending
  * TOP_CATEGORIES (shared with Underrated) and writing ENTRY_COPY clauses.
@@ -42,11 +43,7 @@ export function generateStaticParams(): { category: string }[] {
   return [];
 }
 
-const TIER_LABEL: Record<Tier, string> = {
-  icons: "Icons of the Burgh",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staples",
-};
+const TIER_LABEL: Record<Tier, string> = TIER_LABELS;
 
 const NUMERAL = ["01", "02", "03", "04", "05"] as const;
 
@@ -114,7 +111,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
 
   const { spec, entries } = result;
 
-  const headline = `Pittsburgh's Icons: ${spec.label}, Spring 2026`;
+  const headline = `Pittsburgh's Talk of the Town: ${spec.label}, Spring 2026`;
   const count = entries.length;
   const countWord = numberWord(count);
   const dek = `${capitalize(countWord)} ${
@@ -131,7 +128,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
       <div className="w-full bg-brand-black">
         <div className="mx-auto max-w-7xl px-6 py-3">
           <p className="font-display text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-lime">
-            PGH · Signal Index · The Icons
+            PGH · Signal Index · Talk of the Town
           </p>
         </div>
       </div>
@@ -149,7 +146,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
               </Link>
               <span className="mx-2 text-brand-black/30">›</span>
               <Link href="/top" className="hover:text-brand-purple">
-                The Icons
+                Talk of the Town
               </Link>
               <span className="mx-2 text-brand-black/30">›</span>
               <span className="text-brand-black">{spec.label}</span>
@@ -194,8 +191,8 @@ export default async function TopCategoryPage({ params }: PageProps) {
                 How we picked these
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
-                We filtered the {spec.pluralLower} to every Icons-tier
-                business this issue, sorted by composite score descending ,
+                We filtered the {spec.pluralLower} to every Talk of the
+                Town-tier business this issue, sorted by composite score descending ,
                 the highest-ranked first. Composite comes from five signals:
                 reviews, sentiment, photos, Instagram cadence, and creator
                 fit.{" "}
@@ -300,7 +297,7 @@ export default async function TopCategoryPage({ params }: PageProps) {
           <Reveal as="section" className="mt-14 md:mt-20">
             <div className="bg-brand-cream border-l-4 border-brand-lime px-6 py-6 md:px-10 md:py-8 max-w-3xl">
               <p className="font-display text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-brand-black/55">
-                Why these are the Icons
+                Why these are the Talk of the Town
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/85 leading-relaxed">
                 The index rewards businesses where both sides of the

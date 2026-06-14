@@ -1,6 +1,7 @@
 import type { BusinessArtifact } from "@/lib/data/load-business";
 import type { SocialRecord } from "@/lib/data/load-social";
 import { familyForCategory } from "@/lib/data/category-family";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * Quarter narrative, the "one-paragraph story" that sits above the
@@ -19,12 +20,6 @@ export type QuarterNarrative = {
   issue: string;
   body: string;
 };
-
-const TIER_PHRASE = {
-  icons: "Icons of the Burgh",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staples",
-} as const;
 
 export function buildQuarterNarrative(
   artifact: BusinessArtifact,
@@ -102,7 +97,7 @@ export function buildQuarterNarrative(
   let conclusion: string;
   switch (weakest[0]) {
     case "momentum":
-      conclusion = `The climb ${score.tier === "icons" ? "rides on holding" : "back to Icons depends on re-lighting"} the social layer.`;
+      conclusion = `The climb ${score.tier === "icons" ? "rides on holding" : `back to ${TIER_LABELS.icons} depends on re-lighting`} the social layer.`;
       break;
     case "content_canvas":
       conclusion = `The next move is more photographic evidence, the catalog is thinner than the case deserves.`;

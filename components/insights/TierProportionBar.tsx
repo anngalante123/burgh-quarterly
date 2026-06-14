@@ -3,13 +3,15 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * TierProportionBar replaces the per-business dot strip on the "Where
  * you sit" section.
  *
  * One horizontal bar split into three colored zones sized proportionally
- * to the tier counts (Icons / Ones to Watch / Neighborhood Staples).
+ * to the tier counts (Talk of the Town / In the Conversation / Word of
+ * Mouth).
  * A single small YOU arrow + label sits above the bar at the user's
  * rank position. Counts under each zone read out the tier's size.
  *
@@ -41,11 +43,7 @@ type Props = {
   peers: ScoreboardPeer[];
 };
 
-const TIER_LABEL: Record<Tier, string> = {
-  icons: "Icons",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Staples",
-};
+const TIER_LABEL: Record<Tier, string> = TIER_LABELS;
 
 const TIER_BG: Record<Tier, string> = {
   icons: "bg-brand-lime",
@@ -141,7 +139,7 @@ export function TierProportionBar({ currentSlug, peers }: Props) {
     : null;
 
   // Zone widths as percentages. Tiny tiers get a minimum so they remain
-  // visible; we shrink Staples (always the largest) to absorb the slack.
+  // visible; we shrink Word of Mouth (always the largest) to absorb the slack.
   const MIN_ZONE = 6;
   const orderedTiers: Tier[] = ["icons", "ones_to_watch", "neighborhood_staples"];
   const rawPct: Record<Tier, number> = {

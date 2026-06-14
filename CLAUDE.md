@@ -99,7 +99,7 @@ Read `.claude/memory/EDITORIAL_VOICE.md` for the full copy kit. Short version:
 - Name creators by handle when they appear in editorial. Never name Relay inside an article.
 - Relay appears in exactly two places: the masthead colophon and one sidebar CTA on *claimed* business pages.
 - Frame weaknesses as "distance to next tier" or "unclaimed opportunities," never as failures.
-- Every business page surfaces at least one dimension where the business outperforms the Icons tier — no business is only weak.
+- Every business page surfaces at least one dimension where the business outperforms the Talk of the Town tier (the `icons` key; display names renamed 2026-06-12, see `lib/tiers.ts`) — no business is only weak.
 
 ## Current phase
 

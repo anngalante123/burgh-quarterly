@@ -12,6 +12,7 @@ import {
   type BusinessSummary,
 } from "@/lib/data/load-business";
 import { CategorySchema, type Category, type Tier } from "@/lib/data/schemas";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * Generic category leaderboard. Mirrors `/top/[category]` visual language but
@@ -107,11 +108,7 @@ const CATEGORY_LABEL: Record<Category, CategoryLabel> = {
   spa: { singular: "spa", plural: "spas", title: "Spas" },
 };
 
-const TIER_LABEL: Record<Tier, string> = {
-  icons: "Icons of the Burgh",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staples",
-};
+const TIER_LABEL: Record<Tier, string> = TIER_LABELS;
 
 const TIER_ORDER: Tier[] = ["icons", "ones_to_watch", "neighborhood_staples"];
 

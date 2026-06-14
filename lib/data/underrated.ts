@@ -19,7 +19,7 @@ import type { Category } from "./schemas";
  *      not established winners.
  *   3. Sort by `composite` ASC so the most-underrated (lowest composite)
  *      appears first, editorially this is "the one the city is most behind on."
- *   4. Take up to 5. If fewer than 5 non-Icons exist in the broader match,
+ *   4. Take up to 5. If fewer than 5 non-icons-tier exist in the broader match,
  *      we return whatever we have (down to 3 minimum).
  *   5. If fewer than 3 qualify, return null so the page 404s.
  *
@@ -151,7 +151,7 @@ const TARGET_ENTRIES = 5;
  *
  * Returns null when:
  *   - the slug is not a known category, OR
- *   - fewer than MIN_ENTRIES (3) non-Icons qualify.
+ *   - fewer than MIN_ENTRIES (3) non-icons-tier qualify.
  *
  * The caller should `notFound()` on null.
  */

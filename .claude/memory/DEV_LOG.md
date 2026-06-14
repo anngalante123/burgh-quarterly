@@ -316,3 +316,15 @@ Shipped (all DB writes snapshotted in scripts/backups/):
 - Full rescore: 763 updates, 75 tier shifts (45 staples->otw, 15 otw->icons, 13 otw->staples, 2 icons->otw). Upward moves = collab_fit neighborhood credit (score.ts:397-399 gives 85 vs 55 for named neighborhood) now reaching backfilled rows. Anna approved. compute-ranks-all re-run; new #1 overall grim-wizard-coffee (91).
 
 Found for Batch 2: Benihana + The Capital Grille now in top-5 restaurants (chains, not blocklisted); follower-ceiling heuristic still todo; posts_30d true count needs scraper change; review-depth pilot needs Apify cost check.
+
+## 2026-06-12: Tier display rename, Talk of the Town / In the Conversation / Word of Mouth
+
+Anna approved renaming the three tier DISPLAY names to social-presence language. The tiers measure how a business shows up in the online conversation, not business quality; "Ones to Watch" misread when a true Pittsburgh institution sat mid-tier. Mapping: icons "Icons of the Burgh" -> "Talk of the Town"; ones_to_watch "Ones to Watch" -> "In the Conversation"; neighborhood_staples "Neighborhood Staples" -> "Word of Mouth". DB tier keys, thresholds (80-100 / 60-79 / <60), slugs, URLs, CSS classes, and variable names UNCHANGED.
+
+Shipped on branch feat/tier-rename (uncommitted, code + content only, NO DB writes):
+- New canonical map lib/tiers.ts (TIER_LABELS); every display site now imports from it (TierBadge, TierPill, ScoreHero, SignalStrip, LeaderboardBrowser, PeerScoreboard, TierProportionBar, HeroSearch, BusinessSearch, ListsBrowser, homepage, /top pages, /category, /underrated, /business, /how-we-rank).
+- "The Icons" feature branding on /top, breadcrumbs, kickers, and CompanionLink updated to "Talk of the Town" (URL /top unchanged).
+- Generator prompts/specs updated for future runs: scripts/analyze-business.ts, scripts/generate-owner-outreach.ts, scripts/fix-article-staleness.ts, content/lists/registry.ts (icons-of-spring-2026 title), lib/editorial/business-tldr.ts + quarter-narrative.ts.
+- Published article JSON display text: icons-of-spring-2026 retitled "Talk of the Town: Spring 2026"; underrated-cafes + underrated-asian-kitchens descriptors/intro updated. Slugs and data fields untouched.
+- Memory docs (EDITORIAL_VOICE, SCORING_RUBRIC, DECISIONS D-023, DESIGN_DIRECTION, SCALE_PLAN) carry dated rename notes; history preserved.
+- DB prose (analyses, underrated_lists, features) is handled separately by scripts/rename-tiers-prose.ts (survey/execute, NOT run in this pass). content/review-analysis/*.json and content/issues/* snapshots intentionally untouched (regeneration + archive).

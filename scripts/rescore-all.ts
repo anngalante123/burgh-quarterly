@@ -6,8 +6,8 @@
  * active issue, using the now-populated business_signals data. Phase
  * 7 ingest scored businesses against null/empty signals which inflated
  * composites and miscalled tiers. Pleasant Bar smoke-test showed the
- * recomputed score drops 60 -> 43 (Ones to Watch -> Neighborhood
- * Staple) once real review counts and ratings are in play.
+ * recomputed score drops 60 -> 43 (ones_to_watch -> neighborhood_staples
+ * tier) once real review counts and ratings are in play.
  *
  * Pass 2 of tonight's refresh: scripts/reanalyze-all.ts re-runs the
  * Claude editorial layer after this script writes fresh ranks.

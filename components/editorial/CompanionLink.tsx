@@ -11,13 +11,13 @@ import Link from "next/link";
 type CompanionLinkProps = {
   /** Where to send the reader. */
   href: string;
-  /** Small label that reads as the kicker ("The Icons" / "The Underrated List"). */
+  /** Small label that reads as the kicker ("Talk of the Town" / "The Underrated List"). */
   kicker: string;
   /** Headline of the destination piece. */
   headline: string;
   /** One-line reason to click. */
   dek: string;
-  /** Color scheme, lime for Icons, purple for Underrated. */
+  /** Color scheme, lime for Talk of the Town, purple for Underrated. */
   accent: "lime" | "purple";
 };
 

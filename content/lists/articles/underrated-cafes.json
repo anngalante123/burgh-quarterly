@@ -3,7 +3,7 @@
   "title": "Pittsburgh's Most Underrated Cafes",
   "subtitle": "Coffee, tea, juice. Loved locally, not yet viral.",
   "angle": "the cafes that Pittsburgh regulars rave about in reviews but the broader internet hasn't caught up to. Quietly excellent, quietly under-followed.",
-  "intro": "Biddle's Escape in Regent Square has 898 reviews and a 4.6 average. By review depth, it's the best-loved cafe in Pittsburgh this quarter. By Instagram presence, it's nearly invisible. That gap is the whole premise of this list.\n\nFive cafes earned the underrated tag this spring. De Fer in the Strip leads its category on the strength of its roasts, with a Google profile that leaves first-time visitors nowhere to go. Espresso A Mano in Lawrenceville is first in the Ones to Watch tier and stuck at 122nd overall. No hours, no phone, no social handle to find. Carnegie Coffee Company in Carnegie has 1,198 reviews and an Instagram account nobody can locate. Big Dog in the South Side has 1,025 reviews and a Google listing that can't tell you when the door is open. None of these cafes are struggling. They're visible businesses with invisible profiles.\n\nThe regulars are already there. The next move is letting the city find them. Issue 02 arrives in summer 2026, when patio season resets the discovery cycle.",
+  "intro": "Biddle's Escape in Regent Square has 898 reviews and a 4.6 average. By review depth, it's the best-loved cafe in Pittsburgh this quarter. By Instagram presence, it's nearly invisible. That gap is the whole premise of this list.\n\nFive cafes earned the underrated tag this spring. De Fer in the Strip leads its category on the strength of its roasts, with a Google profile that leaves first-time visitors nowhere to go. Espresso A Mano in Lawrenceville leads the In the Conversation tier and is stuck at 122nd overall. No hours, no phone, no social handle to find. Carnegie Coffee Company in Carnegie has 1,198 reviews and an Instagram account nobody can locate. Big Dog in the South Side has 1,025 reviews and a Google listing that can't tell you when the door is open. None of these cafes are struggling. They're visible businesses with invisible profiles.\n\nThe regulars are already there. The next move is letting the city find them. Issue 02 arrives in summer 2026, when patio season resets the discovery cycle.",
   "items": [
     {
       "rank": 1,
@@ -11,7 +11,7 @@
       "name": "Carnegie Coffee Company",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Pittsburgh",
-      "descriptor": "Ones to Watch tier, 142nd in Pittsburgh cafes. The building earns fans. The feed earns nothing.",
+      "descriptor": "In the Conversation tier, 142nd in Pittsburgh cafes. The building earns fans. The feed earns nothing.",
       "descriptor_highlight": "feed earns nothing",
       "stat_line": "1,198 reviews · 4.6★"
     },
@@ -51,7 +51,7 @@
       "name": "Espresso A Mano",
       "family_label": "Pittsburgh Cafes",
       "neighborhood": "Lawrenceville",
-      "descriptor": "First in Ones to Watch, stalled at 122nd. No hours, no phone, no social.",
+      "descriptor": "Top of the In the Conversation tier, stalled at 122nd. No hours, no phone, no social.",
       "descriptor_highlight": "no hours, no phone",
       "stat_line": "790 reviews · 4.7★"
     }

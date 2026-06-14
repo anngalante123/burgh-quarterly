@@ -117,8 +117,8 @@ The system is built for both editorial-loud surfaces (homepage hero, issue featu
 The palette has three roles: brand identity, editorial surface, and tier signaling.
 
 **Identity palette (Relay brand kit).**
-- `brand-purple` `#AB35EE` — primary accent, CTAs, links, "Ones to Watch" tier, Relay touch.
-- `brand-lime` `#C6F432` — highlight blocks behind key words, "Icons" tier, the "you are here" micro-celebration. Used as a highlighter, not as a background-fill.
+- `brand-purple` `#AB35EE` — primary accent, CTAs, links, "In the Conversation" tier (renamed from "Ones to Watch" 2026-06-12), Relay touch.
+- `brand-lime` `#C6F432` — highlight blocks behind key words, "Talk of the Town" tier (renamed from "Icons" 2026-06-12), the "you are here" micro-celebration. Used as a highlighter, not as a background-fill.
 - `brand-black` `#0F0F0F` — display type, primary text, "loud editorial" surface backgrounds (issue covers, masthead).
 
 **Surface palette.**

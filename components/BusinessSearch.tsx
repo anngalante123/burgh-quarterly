@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * BusinessSearch, browse-only canonical index list.
@@ -42,11 +43,8 @@ const TIER_PILL_CLASS: Record<SearchableBusiness["tier"], string> = {
     "bg-brand-cream text-brand-black border border-brand-black/25",
 };
 
-const TIER_SHORT: Record<SearchableBusiness["tier"], string> = {
-  icons: "Icons",
-  ones_to_watch: "Watch",
-  neighborhood_staples: "Staple",
-};
+// 2026-06-12 rename: index-row pills carry the full canonical label.
+const TIER_SHORT: Record<SearchableBusiness["tier"], string> = TIER_LABELS;
 
 export function BusinessSearch({ businesses }: BusinessSearchProps) {
   const [selectedNeighborhoods, setSelectedNeighborhoods] = useState<string[]>(

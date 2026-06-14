@@ -52,7 +52,7 @@ type FormatFilter = "all" | "business" | "posts";
 
 const TYPE_CHIPS: { value: TypeFilter; label: string }[] = [
   { value: "all", label: "All" },
-  { value: "icons", label: "Icons" },
+  { value: "icons", label: "Talk of the Town" },
   { value: "underrated", label: "Underrated" },
   { value: "best-on-social", label: "Best on social" },
 ];

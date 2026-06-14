@@ -115,7 +115,7 @@ export default async function UnderratedIndexPage() {
             <p className="mt-10 font-body text-sm text-brand-black/55">
               More categories coming next issue. See also{" "}
               <Link href="/top" className="text-brand-purple hover:underline">
-                The Icons →
+                Talk of the Town →
               </Link>
             </p>
           </Reveal>

@@ -21,6 +21,7 @@ import { estimateReadingMinutes } from "@/lib/editorial/reading-time";
 import { CategorySwitcher } from "@/components/editorial/CategorySwitcher";
 import { ListTOC, toEntryAnchor } from "@/components/editorial/ListTOC";
 import { CompanionLink } from "@/components/editorial/CompanionLink";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * The Underrated List, loud editorial, one category per quarterly issue.
@@ -49,11 +50,7 @@ export function generateStaticParams(): { category: string }[] {
   return [];
 }
 
-const TIER_LABEL: Record<Tier, string> = {
-  icons: "Icons of the Burgh",
-  ones_to_watch: "Ones to Watch",
-  neighborhood_staples: "Neighborhood Staples",
-};
+const TIER_LABEL: Record<Tier, string> = TIER_LABELS;
 
 const NUMERAL = ["01", "02", "03", "04", "05"] as const;
 
@@ -280,7 +277,7 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
               </p>
               <p className="mt-2 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
                 We filtered the {spec.pluralLower} to every business outside
-                the Icons tier this issue, then sorted by composite score
+                the Talk of the Town tier this issue, then sorted by composite score
                 ascending so the lowest-ranked land first. Composite comes
                 from five signals: reviews, sentiment, photos, Instagram
                 cadence, and creator fit.{" "}
@@ -342,7 +339,7 @@ export default async function UnderratedCategoryPage({ params }: PageProps) {
           <div className="mx-auto max-w-7xl px-6 py-14 md:py-20">
             <CompanionLink
               href={`/top/${category}`}
-              kicker="The Icons"
+              kicker="Talk of the Town"
               headline={`Pittsburgh's Top ${spec.label}, Spring 2026`}
               dek={`The ${spec.pluralLower} firing on every signal this quarter, the counterweight to this list.`}
               accent="lime"

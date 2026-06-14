@@ -36,7 +36,10 @@ export type ListSpec = {
 export const LISTS: ListSpec[] = [
   {
     slug: "icons-of-spring-2026",
-    title: "The 10 Pittsburgh Businesses Defining Social This Quarter",
+    // 2026-06-12: published article retitled "Talk of the Town: Spring
+    // 2026" (tier display rename). Slug stays for URL stability. Keep
+    // this title in sync so a future regeneration does not revert it.
+    title: "Talk of the Town: Spring 2026",
     subtitle: "Spring 2026, across every family",
     angle:
       "the businesses winning the conversation this quarter, regardless of category. We're surfacing who creators are filming, who customers are reviewing, and who is actually showing up on their own feeds.",

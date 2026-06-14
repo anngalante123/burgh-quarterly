@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
 import { loadBusinessBySlug } from "@/lib/data/load-business";
 import { familyForBusinessCategory } from "@/lib/data/category-family";
+import { TIER_LABELS } from "@/lib/tiers";
 
 /**
  * Dynamic per-business OG image. Generates a 1200x630 share card for
@@ -26,11 +27,10 @@ const COLORS = {
   cream: "#F5F8E8",
 } as const;
 
-const TIER_LABEL: Record<string, string> = {
-  icons: "ICON OF THE BURGH",
-  ones_to_watch: "ONE TO WATCH",
-  neighborhood_staples: "NEIGHBORHOOD STAPLE",
-};
+// Uppercase render of the canonical labels (2026-06-12 rename).
+const TIER_LABEL: Record<string, string> = Object.fromEntries(
+  Object.entries(TIER_LABELS).map(([k, v]) => [k, v.toUpperCase()]),
+);
 
 const TIER_COLOR: Record<string, { bg: string; fg: string }> = {
   icons: { bg: COLORS.lime, fg: COLORS.black },
