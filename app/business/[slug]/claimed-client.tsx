@@ -1,6 +1,6 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import { ClaimAffordance } from "@/components/ClaimAffordance";
 import { SidebarCTA } from "@/components/SidebarCTA";
 
@@ -42,5 +42,11 @@ export function ClaimAffordanceUnlessClaimed({ slug }: { slug: string }) {
 
 export function SidebarCTAIfClaimed() {
   const claimed = useClaimed();
-  return <SidebarCTA visible={claimed} />;
+  const params = useParams();
+  return (
+    <SidebarCTA
+      visible={claimed}
+      slug={typeof params.slug === "string" ? params.slug : undefined}
+    />
+  );
 }

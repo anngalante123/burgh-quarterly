@@ -1,6 +1,8 @@
 import manifest from "@/content/relay-collabs/manifest.json";
 import { Reveal } from "@/components/motion/Reveal";
 import { familyForBusinessCategory } from "@/lib/data/category-family";
+import { relayUrl } from "@/lib/relay/relay-url";
+import { TrackedRelayLink } from "@/components/analytics/TrackedRelayLink";
 import type { Category } from "@/lib/data/schemas";
 
 /**
@@ -240,16 +242,15 @@ export function RelayCollabGallery() {
               Hover any tile to see who shot what.
             </p>
           </div>
-          <a
-            href="https://run-relay.com/try"
-            target="_blank"
-            rel="noopener noreferrer"
+          <TrackedRelayLink
+            href={relayUrl("/try", { campaign: "creator-collabs", content: "home" })}
+            content="home"
             className="inline-flex items-center gap-2 bg-brand-purple text-brand-lavender font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] px-5 py-3 md:px-7 md:py-4 hover:bg-brand-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime"
             style={{ boxShadow: "5px 5px 0 0 var(--color-brand-lime)" }}
           >
             Get filmed
             <span aria-hidden="true">→</span>
-          </a>
+          </TrackedRelayLink>
         </div>
 
         {/* Magazine bento grid (md+). Mobile collapses to a uniform 2-col. */}

@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
+import { Suspense } from "react";
 import { Unbounded, DM_Sans } from "next/font/google";
 import { PageTransition } from "@/components/motion/PageTransition";
+import PostHogProvider from "@/components/providers/PostHogProvider";
+import PostHogPageview from "@/components/providers/PostHogPageview";
 import "./globals.css";
 
 const unbounded = Unbounded({
@@ -39,7 +42,12 @@ export default function RootLayout({
       className={`${unbounded.variable} ${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-body bg-editorial paper-grain">
-        <PageTransition>{children}</PageTransition>
+        <PostHogProvider>
+          <Suspense fallback={null}>
+            <PostHogPageview />
+          </Suspense>
+          <PageTransition>{children}</PageTransition>
+        </PostHogProvider>
       </body>
     </html>
   );

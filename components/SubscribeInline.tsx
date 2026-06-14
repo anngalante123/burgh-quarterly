@@ -3,6 +3,8 @@
 import { useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { fireConfettiFromElement } from "@/components/motion/ConfettiBurst";
+import { useTrackEvent } from "@/lib/hooks/use-track-event";
+import { EVENTS } from "@/lib/posthog/events";
 
 /**
  * SubscribeInline, inline subscribe form (gate 2).
@@ -36,6 +38,7 @@ export function SubscribeInline() {
   const [email, setEmail] = useState("");
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const reduced = useReducedMotion();
+  const track = useTrackEvent();
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -52,6 +55,7 @@ export function SubscribeInline() {
       }
       setState({ kind: "success" });
       setEmail("");
+      track(EVENTS.SUBSCRIBE_COMPLETED, { location: "inline" });
       // Celebrate. Brand-bounded confetti from the button position.
       fireConfettiFromElement(buttonRef.current);
     } catch (err) {

@@ -13,12 +13,17 @@
  * not shouted. One line, no exclamation.
  */
 
+import { relayUrl } from "@/lib/relay/relay-url";
+import { TrackedRelayLink } from "@/components/analytics/TrackedRelayLink";
+
 type SidebarCTAProps = {
   /** Gate: only renders when explicitly visible (i.e., page is claimed). */
   visible: boolean;
+  /** Business slug, encoded into utm_content for per-page attribution. */
+  slug?: string;
 };
 
-export function SidebarCTA({ visible }: SidebarCTAProps) {
+export function SidebarCTA({ visible, slug }: SidebarCTAProps) {
   if (!visible) return null;
   return (
     <aside
@@ -33,14 +38,13 @@ export function SidebarCTA({ visible }: SidebarCTAProps) {
       </p>
       <p className="mt-2 font-body text-sm md:text-base text-brand-black/80 leading-relaxed">
         Relay helps businesses test a creator partnership, free.{" "}
-        <a
-          href="https://run-relay.com"
-          target="_blank"
-          rel="noopener noreferrer"
+        <TrackedRelayLink
+          href={relayUrl("/", { campaign: "publisher-sidebar", content: slug ? `business:${slug}` : "business-profile" })}
+          content={slug ? `business:${slug}` : "business-profile"}
           className="text-brand-purple underline decoration-brand-purple/40 underline-offset-4 hover:decoration-brand-purple focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
         >
           →
-        </a>
+        </TrackedRelayLink>
       </p>
     </aside>
   );

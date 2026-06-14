@@ -73,15 +73,19 @@ async function sendConfirmation(email: string, follow: string | null): Promise<{
     // Live count, read at send time. Falls back to a generic phrasing
     // if the DB lookup fails so a transient DB error never blocks a
     // subscribe confirmation.
+    // Link back to the index, UTM-tagged so PostHog attributes return visits
+    // driven by this subscribe confirmation email. Display text stays clean.
+    const indexUrl =
+      "https://signal.run-relay.com/?utm_source=newsletter&utm_medium=email&utm_campaign=subscribe-confirmation&utm_content=confirmation-email";
     let countLineHtml: string;
     let countLineText: string;
     try {
       const liveCount = (await getAllBusinessSlugs()).length;
-      countLineHtml = `<p style="margin:0 0 16px 0;">Pittsburgh's most-talked-about businesses, ranked every quarter. ${liveCount} are live in the index right now at <a href="https://signal.run-relay.com" style="color:#AB35EE;">signal.run-relay.com</a>, ranked on reviews, social, and creator coverage.</p>`;
+      countLineHtml = `<p style="margin:0 0 16px 0;">Pittsburgh's most-talked-about businesses, ranked every quarter. ${liveCount} are live in the index right now at <a href="${indexUrl}" style="color:#AB35EE;">signal.run-relay.com</a>, ranked on reviews, social, and creator coverage.</p>`;
       countLineText = `Pittsburgh's most-talked-about businesses, ranked every quarter. ${liveCount} are live in the index right now at signal.run-relay.com, ranked on reviews, social, and creator coverage.`;
     } catch (err) {
       console.warn("[subscribe] live count lookup failed, falling back:", err);
-      countLineHtml = `<p style="margin:0 0 16px 0;">Pittsburgh's most-talked-about businesses, ranked every quarter at <a href="https://signal.run-relay.com" style="color:#AB35EE;">signal.run-relay.com</a>, on reviews, social, and creator coverage.</p>`;
+      countLineHtml = `<p style="margin:0 0 16px 0;">Pittsburgh's most-talked-about businesses, ranked every quarter at <a href="${indexUrl}" style="color:#AB35EE;">signal.run-relay.com</a>, on reviews, social, and creator coverage.</p>`;
       countLineText = `Pittsburgh's most-talked-about businesses, ranked every quarter at signal.run-relay.com, on reviews, social, and creator coverage.`;
     }
     const html = `<!doctype html>

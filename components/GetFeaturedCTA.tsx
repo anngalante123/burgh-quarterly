@@ -1,5 +1,7 @@
 import { Reveal } from "@/components/motion/Reveal";
 import { RelayCollabStrip } from "@/components/RelayCollabs";
+import { relayUrl } from "@/lib/relay/relay-url";
+import { TrackedRelayLink } from "@/components/analytics/TrackedRelayLink";
 import type { Category } from "@/lib/data/schemas";
 
 /**
@@ -40,9 +42,11 @@ export function GetFeaturedCTA({
 }: Props) {
   const href =
     applyUrl ??
-    (businessSlug
-      ? `https://run-relay.com/try?business=${encodeURIComponent(businessSlug)}`
-      : `https://run-relay.com/try`);
+    relayUrl("/try", {
+      campaign: "get-featured",
+      content: businessSlug ? `business:${businessSlug}` : "home",
+      params: businessSlug ? { business: businessSlug } : undefined,
+    });
   const compact = variant === "compact";
   const kicker = businessName ? "For the owner" : "For Pittsburgh business owners";
   const headline = businessName
@@ -85,15 +89,14 @@ export function GetFeaturedCTA({
               {body}
             </p>
           </div>
-          <a
+          <TrackedRelayLink
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
+            content={businessSlug ? `business:${businessSlug}` : "home"}
             className="inline-flex items-center justify-center gap-2 bg-brand-purple text-brand-lavender font-display text-xs md:text-sm font-semibold uppercase tracking-[0.18em] px-6 py-4 md:px-8 md:py-5 hover:bg-brand-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-lime whitespace-nowrap shrink-0"
           >
             Get filmed
             <span aria-hidden="true">→</span>
-          </a>
+          </TrackedRelayLink>
         </div>
         {/* Social proof strip: three rotating photos from real Relay
             collabs so the CTA isn't just copy. When a business

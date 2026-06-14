@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { useTrackEvent } from "@/lib/hooks/use-track-event";
+import { EVENTS } from "@/lib/posthog/events";
 
 /**
  * RequestProfileForm, client form for /request, the path an unranked
@@ -69,6 +71,7 @@ type Status =
 
 export function RequestProfileForm() {
   const [status, setStatus] = useState<Status>({ kind: "idle" });
+  const track = useTrackEvent();
 
   const {
     register,
@@ -107,6 +110,10 @@ export function RequestProfileForm() {
         });
         return;
       }
+      // Non-PII only: a flag, never the typed business name.
+      track(EVENTS.GET_FEATURED_SUBMITTED, {
+        has_business_name: Boolean(values.businessName),
+      });
       setStatus({ kind: "ok" });
     } catch {
       setStatus({

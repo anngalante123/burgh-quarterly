@@ -15,6 +15,7 @@
  */
 
 import Link from "next/link";
+import { relayUrl } from "@/lib/relay/relay-url";
 
 const FOOTER_LINKS: { label: string; href: string }[] = [
   { label: "About", href: "/about" },
@@ -50,7 +51,7 @@ export function Colophon() {
           <p className="font-body text-xs tracking-wide">
             Published by{" "}
             <a
-              href="https://run-relay.com"
+              href={relayUrl("/", { campaign: "publisher-credit", content: "colophon" })}
               target="_blank"
               rel="noopener noreferrer"
               className="text-brand-lavender hover:text-brand-lime transition-colors underline-offset-2 hover:underline"
