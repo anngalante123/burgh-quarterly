@@ -124,20 +124,22 @@ export function BusinessSearch({ businesses }: BusinessSearchProps) {
   const hasActiveFilter = selectedNeighborhoods.length > 0;
 
   function toggleNeighborhood(name: string) {
-    setSelectedNeighborhoods((prev) => {
-      const isAdding = !prev.includes(name);
-      // This list has no text box; applying a neighborhood filter IS the
-      // search action here. Fire only when turning a chip ON (not off), so
-      // it maps to "user ran a search" rather than every toggle.
-      if (isAdding) {
-        track(EVENTS.SEARCH_PERFORMED, {
-          query: name,
-          query_length: name.length,
-          source: "business_search",
-        });
-      }
-      return isAdding ? [...prev, name] : prev.filter((n) => n !== name);
-    });
+    const isAdding = !selectedNeighborhoods.includes(name);
+    // This list has no text box; applying a neighborhood filter IS the search
+    // action here. Fire only when turning a chip ON (not off), so it maps to
+    // "user ran a search" rather than every toggle. Fire OUTSIDE the state
+    // updater — updaters must stay pure; React can invoke them twice (strict
+    // mode / concurrent renders), which would double-count the event.
+    if (isAdding) {
+      track(EVENTS.SEARCH_PERFORMED, {
+        query: name,
+        query_length: name.length,
+        source: "business_search",
+      });
+    }
+    setSelectedNeighborhoods((prev) =>
+      isAdding ? [...prev, name] : prev.filter((n) => n !== name),
+    );
   }
 
   function resetFilters() {

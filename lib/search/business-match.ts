@@ -39,16 +39,18 @@ export function matchesQuery(fields: string[], query: string): boolean {
   const raw = query.trim();
   if (!raw) return true;
 
-  const haystackSpaced = toSpaced(fields.join(" "));
-  const haystackCollapsed = toCollapsed(fields.join(" "));
-
   // Every typed word must appear somewhere in the spaced haystack. This
   // handles spaces, hyphens, and word order ("gi jin" / "jin gi" → "gi-jin").
+  const haystackSpaced = toSpaced(fields.join(" "));
   const tokens = toSpaced(raw).split(" ").filter(Boolean);
   const allTokensHit =
     tokens.length > 0 && tokens.every((t) => haystackSpaced.includes(t));
   if (allTokensHit) return true;
 
   // Fallback: the run-together form ("gijin") found in the collapsed haystack.
-  return haystackCollapsed.includes(toCollapsed(raw));
+  // Guard the all-punctuation case — its collapsed form is "" and
+  // includes("") is always true, which would match every business.
+  const collapsedQuery = toCollapsed(raw);
+  if (!collapsedQuery) return false;
+  return toCollapsed(fields.join(" ")).includes(collapsedQuery);
 }
