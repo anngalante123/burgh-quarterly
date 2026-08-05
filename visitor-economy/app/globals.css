@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+
+  /* Relay brand, exact values, carried over from Signal Pittsburgh so the
+     two publications read as siblings. */
+  --color-brand-purple: #ab35ee;
+  --color-brand-lime: #c6f432;
+  --color-brand-black: #0f0f0f;
+  --color-brand-cream: #f5f8e8;
+  --color-brand-lavender: #f5f0fa;
+
+  /* Warm newsprint ground. The page should feel like a printed index,
+     not a SaaS landing. */
+  --color-brand-newsprint: #f0eee9;
+  --color-brand-newsprint-warm: #e8e3d6;
+
+  /* Second accent, used for data viz and "not measured" states. */
+  --color-brand-terracotta: #d97757;
+  --color-brand-slate: #6b6862;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-brand-newsprint);
+  color: var(--color-brand-black);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Rank and count columns must not reflow as numbers change width. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -1,0 +1,12 @@
+# Personal data. data/raw/ holds the Clay exports (~1,800 named individuals
+# with job titles and LinkedIn URLs) and orgs.json carries them forward under
+# an `internal` key. Only data/index.json has that stripped, and only it is
+# safe to publish. See README § Privacy.
+data/raw/
+data/orgs.json
+
+node_modules/
+.next/
+tsconfig.tsbuildinfo
+.DS_Store
+.vercel

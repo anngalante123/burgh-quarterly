@@ -8,3 +8,9 @@ e2e/screenshots
 .claude
 test-results
 playwright-report
+
+# Sibling publication with its own Vercel project and its own domain.
+# It lives in this repo so the two indexes share one workspace, but it must
+# never be built, typechecked, or deployed as part of signalpittsburgh.com.
+# Also excluded from the root tsconfig - keep both in sync.
+visitor-economy

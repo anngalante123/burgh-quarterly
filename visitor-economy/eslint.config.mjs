@@ -12,9 +12,6 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Sibling publication with its own app, own lint config, own deploy.
-    // Keep in sync with tsconfig "exclude" and .vercelignore.
-    "visitor-economy/**",
   ]),
 ]);
 
